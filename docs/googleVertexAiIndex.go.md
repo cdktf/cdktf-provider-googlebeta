@@ -1,6 +1,6 @@
 # `google_vertex_ai_index`
 
-Refer to the Terraform Registory for docs: [`google_vertex_ai_index`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index).
+Refer to the Terraform Registory for docs: [`google_vertex_ai_index`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index).
 
 # `googleVertexAiIndex` Submodule <a name="`googleVertexAiIndex` Submodule" id="@cdktf/provider-google-beta.googleVertexAiIndex"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_vertex_ai_index`](https://re
 
 ### GoogleVertexAiIndex <a name="GoogleVertexAiIndex" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index google_vertex_ai_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index google_vertex_ai_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndex(scope Construct, id *string, config GoogleVertexAiIndexConfig) GoogleVertexAiIndex
 ```
@@ -352,7 +352,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.GoogleVertexAiIndex_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.GoogleVertexAiIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ googlevertexaiindex.GoogleVertexAiIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.GoogleVertexAiIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,11 +429,13 @@ googlevertexaiindex.GoogleVertexAiIndex_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.deployedIndexes">DeployedIndexes</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList">GoogleVertexAiIndexDeployedIndexesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.indexStats">IndexStats</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexIndexStatsList">GoogleVertexAiIndexIndexStatsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.metadata">Metadata</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference">GoogleVertexAiIndexMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.metadataSchemaUri">MetadataSchemaUri</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeoutsOutputReference">GoogleVertexAiIndexTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
@@ -617,6 +619,16 @@ func DeployedIndexes() GoogleVertexAiIndexDeployedIndexesList
 
 ---
 
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.effectiveLabels"></a>
+
+```go
+func EffectiveLabels() StringMap
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+
+---
+
 ##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.etag"></a>
 
 ```go
@@ -664,6 +676,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndex.property.terraformLabels"></a>
+
+```go
+func TerraformLabels() StringMap
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
 
 ---
 
@@ -872,7 +894,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexConfig {
 	Connection: interface{},
@@ -887,10 +909,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 	Id: *string,
 	IndexUpdateMethod: *string,
 	Labels: *map[string]*string,
-	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexMetadata,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts,
 }
 ```
 
@@ -907,11 +929,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the Index. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Index. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#id GoogleVertexAiIndex#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#id GoogleVertexAiIndex#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.indexUpdateMethod">IndexUpdateMethod</a></code> | <code>*string</code> | The update method to use with this Index. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels with user-defined metadata to organize your Indexes. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata">GoogleVertexAiIndexMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#project GoogleVertexAiIndex#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#project GoogleVertexAiIndex#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.region">Region</a></code> | <code>*string</code> | The region of the index. eg us-central1. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts">GoogleVertexAiIndexTimeouts</a></code> | timeouts block. |
 
@@ -999,7 +1021,7 @@ The display name of the Index.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#display_name GoogleVertexAiIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#display_name GoogleVertexAiIndex#display_name}
 
 ---
 
@@ -1013,7 +1035,7 @@ Description *string
 
 The description of the Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#description GoogleVertexAiIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#description GoogleVertexAiIndex#description}
 
 ---
 
@@ -1025,7 +1047,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#id GoogleVertexAiIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#id GoogleVertexAiIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1068,7 @@ The value must be the followings. If not set, BATCH_UPDATE will be used by defau
 BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
 STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#index_update_method GoogleVertexAiIndex#index_update_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#index_update_method GoogleVertexAiIndex#index_update_method}
 
 ---
 
@@ -1060,7 +1082,10 @@ Labels *map[string]*string
 
 The labels with user-defined metadata to organize your Indexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#labels GoogleVertexAiIndex#labels}
+*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#labels GoogleVertexAiIndex#labels}
 
 ---
 
@@ -1074,7 +1099,7 @@ Metadata GoogleVertexAiIndexMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#metadata GoogleVertexAiIndex#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#metadata GoogleVertexAiIndex#metadata}
 
 ---
 
@@ -1086,7 +1111,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#project GoogleVertexAiIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#project GoogleVertexAiIndex#project}.
 
 ---
 
@@ -1100,7 +1125,7 @@ Region *string
 
 The region of the index. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#region GoogleVertexAiIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#region GoogleVertexAiIndex#region}
 
 ---
 
@@ -1114,7 +1139,7 @@ Timeouts GoogleVertexAiIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#timeouts GoogleVertexAiIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#timeouts GoogleVertexAiIndex#timeouts}
 
 ---
 
@@ -1123,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexDeployedIndexes {
 
@@ -1136,7 +1161,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexIndexStats.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexIndexStats {
 
@@ -1149,11 +1174,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexMetadata {
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig,
 	ContentsDeltaUri: *string,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig,
 	IsCompleteOverwrite: interface{},
 }
 ```
@@ -1162,27 +1187,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig">GoogleVertexAiIndexMetadataConfig</a></code> | config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.contentsDeltaUri">ContentsDeltaUri</a></code> | <code>*string</code> | Allows inserting, updating  or deleting the contents of the Matching Engine Index. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig">GoogleVertexAiIndexMetadataConfig</a></code> | config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.isCompleteOverwrite">IsCompleteOverwrite</a></code> | <code>interface{}</code> | If this field is set together with contentsDeltaUri when calling IndexService.UpdateIndex, then existing content of the Index will be replaced by the data from the contentsDeltaUri. |
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.config"></a>
-
-```go
-Config GoogleVertexAiIndexMetadataConfig
-```
-
-- *Type:* <a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig">GoogleVertexAiIndexMetadataConfig</a>
-
-config block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#config GoogleVertexAiIndex#config}
-
----
-
-##### `ContentsDeltaUri`<sup>Optional</sup> <a name="ContentsDeltaUri" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.contentsDeltaUri"></a>
+##### `ContentsDeltaUri`<sup>Required</sup> <a name="ContentsDeltaUri" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.contentsDeltaUri"></a>
 
 ```go
 ContentsDeltaUri *string
@@ -1198,7 +1209,21 @@ Index field can be also updated as part of the same call.
 The expected structure and format of the files this URI points to is
 described at https://cloud.google.com/vertex-ai/docs/matching-engine/using-matching-engine#input-data-format
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#contents_delta_uri GoogleVertexAiIndex#contents_delta_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#contents_delta_uri GoogleVertexAiIndex#contents_delta_uri}
+
+---
+
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadata.property.config"></a>
+
+```go
+Config GoogleVertexAiIndexMetadataConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig">GoogleVertexAiIndexMetadataConfig</a>
+
+config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#config GoogleVertexAiIndex#config}
 
 ---
 
@@ -1212,7 +1237,7 @@ IsCompleteOverwrite interface{}
 
 If this field is set together with contentsDeltaUri when calling IndexService.UpdateIndex, then existing content of the Index will be replaced by the data from the contentsDeltaUri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#is_complete_overwrite GoogleVertexAiIndex#is_complete_overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#is_complete_overwrite GoogleVertexAiIndex#is_complete_overwrite}
 
 ---
 
@@ -1221,11 +1246,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexMetadataConfig {
 	Dimensions: *f64,
-	AlgorithmConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfig,
+	AlgorithmConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfig,
 	ApproximateNeighborsCount: *f64,
 	DistanceMeasureType: *string,
 	FeatureNormType: *string,
@@ -1256,7 +1281,7 @@ Dimensions *f64
 
 The number of dimensions of the input vectors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#dimensions GoogleVertexAiIndex#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#dimensions GoogleVertexAiIndex#dimensions}
 
 ---
 
@@ -1270,7 +1295,7 @@ AlgorithmConfig GoogleVertexAiIndexMetadataConfigAlgorithmConfig
 
 algorithm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#algorithm_config GoogleVertexAiIndex#algorithm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#algorithm_config GoogleVertexAiIndex#algorithm_config}
 
 ---
 
@@ -1288,7 +1313,7 @@ Exact reordering is a procedure where results returned by an
 approximate search algorithm are reordered via a more expensive distance computation.
 Required if tree-AH algorithm is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#approximate_neighbors_count GoogleVertexAiIndex#approximate_neighbors_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#approximate_neighbors_count GoogleVertexAiIndex#approximate_neighbors_count}
 
 ---
 
@@ -1308,7 +1333,7 @@ L1_DISTANCE: Manhattan (L_1) Distance
 COSINE_DISTANCE: Cosine Distance. Defined as 1 - cosine similarity.
 DOT_PRODUCT_DISTANCE: Dot Product Distance. Defined as a negative of the dot product
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#distance_measure_type GoogleVertexAiIndex#distance_measure_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#distance_measure_type GoogleVertexAiIndex#distance_measure_type}
 
 ---
 
@@ -1326,7 +1351,7 @@ The value must be one of the followings:
 UNIT_L2_NORM: Unit L2 normalization type
 NONE: No normalization type is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#feature_norm_type GoogleVertexAiIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#feature_norm_type GoogleVertexAiIndex#feature_norm_type}
 
 ---
 
@@ -1346,7 +1371,7 @@ SHARD_SIZE_SMALL: Small (2GB)
 SHARD_SIZE_MEDIUM: Medium (20GB)
 SHARD_SIZE_LARGE: Large (50GB)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#shard_size GoogleVertexAiIndex#shard_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#shard_size GoogleVertexAiIndex#shard_size}
 
 ---
 
@@ -1355,11 +1380,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexMetadataConfigAlgorithmConfig {
-	BruteForceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig,
-	TreeAhConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig,
+	BruteForceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig,
+	TreeAhConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig,
 }
 ```
 
@@ -1382,7 +1407,7 @@ BruteForceConfig GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfi
 
 brute_force_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#brute_force_config GoogleVertexAiIndex#brute_force_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#brute_force_config GoogleVertexAiIndex#brute_force_config}
 
 ---
 
@@ -1396,7 +1421,7 @@ TreeAhConfig GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 
 tree_ah_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#tree_ah_config GoogleVertexAiIndex#tree_ah_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#tree_ah_config GoogleVertexAiIndex#tree_ah_config}
 
 ---
 
@@ -1405,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig {
 
@@ -1418,7 +1443,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig {
 	LeafNodeEmbeddingCount: *f64,
@@ -1445,7 +1470,7 @@ LeafNodeEmbeddingCount *f64
 
 Number of embeddings on each leaf node. The default value is 1000 if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#leaf_node_embedding_count GoogleVertexAiIndex#leaf_node_embedding_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#leaf_node_embedding_count GoogleVertexAiIndex#leaf_node_embedding_count}
 
 ---
 
@@ -1462,7 +1487,7 @@ The default percentage of leaf nodes that any query may be searched.
 Must be in
 range 1-100, inclusive. The default value is 10 (means 10%) if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#leaf_nodes_to_search_percent GoogleVertexAiIndex#leaf_nodes_to_search_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#leaf_nodes_to_search_percent GoogleVertexAiIndex#leaf_nodes_to_search_percent}
 
 ---
 
@@ -1471,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 &googlevertexaiindex.GoogleVertexAiIndexTimeouts {
 	Create: *string,
@@ -1484,9 +1509,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#create GoogleVertexAiIndex#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#delete GoogleVertexAiIndex#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#update GoogleVertexAiIndex#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#create GoogleVertexAiIndex#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#delete GoogleVertexAiIndex#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#update GoogleVertexAiIndex#update}. |
 
 ---
 
@@ -1498,7 +1523,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#create GoogleVertexAiIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#create GoogleVertexAiIndex#create}.
 
 ---
 
@@ -1510,7 +1535,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#delete GoogleVertexAiIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#delete GoogleVertexAiIndex#delete}.
 
 ---
 
@@ -1522,7 +1547,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_index#update GoogleVertexAiIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_index#update GoogleVertexAiIndex#update}.
 
 ---
 
@@ -1533,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexDeployedIndexesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiIndexDeployedIndexesList
 ```
@@ -1665,7 +1690,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexDeployedIndexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiIndexDeployedIndexesOutputReference
 ```
@@ -1954,7 +1979,7 @@ func InternalValue() GoogleVertexAiIndexDeployedIndexes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexIndexStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexIndexStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiIndexIndexStatsList
 ```
@@ -2086,7 +2111,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexIndexStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexIndexStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiIndexIndexStatsOutputReference
 ```
@@ -2375,7 +2400,7 @@ func InternalValue() GoogleVertexAiIndexIndexStats
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference
 ```
@@ -2624,7 +2649,7 @@ func InternalValue() GoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference
 ```
@@ -2957,7 +2982,7 @@ func InternalValue() GoogleVertexAiIndexMetadataConfigAlgorithmConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference
 ```
@@ -3264,7 +3289,7 @@ func InternalValue() GoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexMetadataConfigOutputReference
 ```
@@ -3693,7 +3718,7 @@ func InternalValue() GoogleVertexAiIndexMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexMetadataOutputReference
 ```
@@ -3740,7 +3765,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.putConfig">PutConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.resetConfig">ResetConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.resetContentsDeltaUri">ResetContentsDeltaUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.resetIsCompleteOverwrite">ResetIsCompleteOverwrite</a></code> | *No description.* |
 
 ---
@@ -3913,12 +3937,6 @@ func PutConfig(value GoogleVertexAiIndexMetadataConfig)
 func ResetConfig()
 ```
 
-##### `ResetContentsDeltaUri` <a name="ResetContentsDeltaUri" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.resetContentsDeltaUri"></a>
-
-```go
-func ResetContentsDeltaUri()
-```
-
 ##### `ResetIsCompleteOverwrite` <a name="ResetIsCompleteOverwrite" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexMetadataOutputReference.resetIsCompleteOverwrite"></a>
 
 ```go
@@ -4042,7 +4060,7 @@ func InternalValue() GoogleVertexAiIndexMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiindex"
 
 googlevertexaiindex.NewGoogleVertexAiIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiIndexTimeoutsOutputReference
 ```

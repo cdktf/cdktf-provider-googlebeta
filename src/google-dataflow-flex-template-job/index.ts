@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +10,27 @@ export interface GoogleDataflowFlexTemplateJobConfig extends cdktf.TerraformMeta
   /**
   * List of experiments that should be used by the job. An example value is ["enable_stackdriver_agent_metrics"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#additional_experiments GoogleDataflowFlexTemplateJob#additional_experiments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#additional_experiments GoogleDataflowFlexTemplateJob#additional_experiments}
   */
   readonly additionalExperiments?: string[];
   /**
   * The algorithm to use for autoscaling
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#autoscaling_algorithm GoogleDataflowFlexTemplateJob#autoscaling_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#autoscaling_algorithm GoogleDataflowFlexTemplateJob#autoscaling_algorithm}
   */
   readonly autoscalingAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#container_spec_gcs_path GoogleDataflowFlexTemplateJob#container_spec_gcs_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#container_spec_gcs_path GoogleDataflowFlexTemplateJob#container_spec_gcs_path}
   */
   readonly containerSpecGcsPath: string;
   /**
   * Indicates if the job should use the streaming engine feature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#enable_streaming_engine GoogleDataflowFlexTemplateJob#enable_streaming_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#enable_streaming_engine GoogleDataflowFlexTemplateJob#enable_streaming_engine}
   */
   readonly enableStreamingEngine?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#id GoogleDataflowFlexTemplateJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#id GoogleDataflowFlexTemplateJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,119 +39,120 @@ export interface GoogleDataflowFlexTemplateJobConfig extends cdktf.TerraformMeta
   /**
   * The configuration for VM IPs. Options are "WORKER_IP_PUBLIC" or "WORKER_IP_PRIVATE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#ip_configuration GoogleDataflowFlexTemplateJob#ip_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#ip_configuration GoogleDataflowFlexTemplateJob#ip_configuration}
   */
   readonly ipConfiguration?: string;
   /**
   * The name for the Cloud KMS key for the job. Key format is: projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#kms_key_name GoogleDataflowFlexTemplateJob#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#kms_key_name GoogleDataflowFlexTemplateJob#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
-  * User labels to be specified for the job. Keys and values should follow the restrictions specified in the labeling restrictions page. NOTE: Google-provided Dataflow templates often provide default labels that begin with goog-dataflow-provided. Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
+  * User labels to be specified for the job. Keys and values should follow the restrictions specified in the labeling restrictions page. NOTE: This field is non-authoritative, and will only manage the labels present in your configuration.
+				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#labels GoogleDataflowFlexTemplateJob#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#labels GoogleDataflowFlexTemplateJob#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The machine type to use for launching the job. The default is n1-standard-1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#launcher_machine_type GoogleDataflowFlexTemplateJob#launcher_machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#launcher_machine_type GoogleDataflowFlexTemplateJob#launcher_machine_type}
   */
   readonly launcherMachineType?: string;
   /**
   * The machine type to use for the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#machine_type GoogleDataflowFlexTemplateJob#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#machine_type GoogleDataflowFlexTemplateJob#machine_type}
   */
   readonly machineType?: string;
   /**
   * The maximum number of Google Compute Engine instances to be made available to your pipeline during execution, from 1 to 1000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#max_workers GoogleDataflowFlexTemplateJob#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#max_workers GoogleDataflowFlexTemplateJob#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#name GoogleDataflowFlexTemplateJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#name GoogleDataflowFlexTemplateJob#name}
   */
   readonly name: string;
   /**
   * The network to which VMs will be assigned. If it is not provided, "default" will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#network GoogleDataflowFlexTemplateJob#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#network GoogleDataflowFlexTemplateJob#network}
   */
   readonly network?: string;
   /**
   * The initial number of Google Compute Engine instances for the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#num_workers GoogleDataflowFlexTemplateJob#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#num_workers GoogleDataflowFlexTemplateJob#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#on_delete GoogleDataflowFlexTemplateJob#on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#on_delete GoogleDataflowFlexTemplateJob#on_delete}
   */
   readonly onDelete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#parameters GoogleDataflowFlexTemplateJob#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#parameters GoogleDataflowFlexTemplateJob#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#project GoogleDataflowFlexTemplateJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#project GoogleDataflowFlexTemplateJob#project}
   */
   readonly project?: string;
   /**
   * The region in which the created job should run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#region GoogleDataflowFlexTemplateJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#region GoogleDataflowFlexTemplateJob#region}
   */
   readonly region?: string;
   /**
   * Docker registry location of container image to use for the 'worker harness. Default is the container for the version of the SDK. Note this field is only valid for portable pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#sdk_container_image GoogleDataflowFlexTemplateJob#sdk_container_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#sdk_container_image GoogleDataflowFlexTemplateJob#sdk_container_image}
   */
   readonly sdkContainerImage?: string;
   /**
   * The Service Account email used to create the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#service_account_email GoogleDataflowFlexTemplateJob#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#service_account_email GoogleDataflowFlexTemplateJob#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
   * If true, treat DRAINING and CANCELLING as terminal job states and do not wait for further changes before removing from terraform state and moving on. WARNING: this will lead to job name conflicts if you do not ensure that the job names are different, e.g. by embedding a release ID or by using a random_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#skip_wait_on_job_termination GoogleDataflowFlexTemplateJob#skip_wait_on_job_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#skip_wait_on_job_termination GoogleDataflowFlexTemplateJob#skip_wait_on_job_termination}
   */
   readonly skipWaitOnJobTermination?: boolean | cdktf.IResolvable;
   /**
   * The Cloud Storage path to use for staging files. Must be a valid Cloud Storage URL, beginning with gs://.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#staging_location GoogleDataflowFlexTemplateJob#staging_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#staging_location GoogleDataflowFlexTemplateJob#staging_location}
   */
   readonly stagingLocation?: string;
   /**
   * The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#subnetwork GoogleDataflowFlexTemplateJob#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#subnetwork GoogleDataflowFlexTemplateJob#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * The Cloud Storage path to use for temporary files. Must be a valid Cloud Storage URL, beginning with gs://.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#temp_location GoogleDataflowFlexTemplateJob#temp_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#temp_location GoogleDataflowFlexTemplateJob#temp_location}
   */
   readonly tempLocation?: string;
   /**
   * Only applicable when updating a pipeline. Map of transform name prefixes of the job to be replaced with the corresponding name prefixes of the new job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job#transform_name_mapping GoogleDataflowFlexTemplateJob#transform_name_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job#transform_name_mapping GoogleDataflowFlexTemplateJob#transform_name_mapping}
   */
   readonly transformNameMapping?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}
 */
 export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
 
@@ -170,7 +166,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -181,8 +177,8 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataflow_flex_template_job',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -239,7 +235,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._additionalExperiments;
   }
 
-  // autoscaling_algorithm - computed: false, optional: true, required: false
+  // autoscaling_algorithm - computed: true, optional: true, required: false
   private _autoscalingAlgorithm?: string; 
   public get autoscalingAlgorithm() {
     return this.getStringAttribute('autoscaling_algorithm');
@@ -266,6 +262,12 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get containerSpecGcsPathInput() {
     return this._containerSpecGcsPath;
+  }
+
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
   }
 
   // enable_streaming_engine - computed: false, optional: true, required: false
@@ -321,7 +323,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this.getStringAttribute('job_id');
   }
 
-  // kms_key_name - computed: false, optional: true, required: false
+  // kms_key_name - computed: true, optional: true, required: false
   private _kmsKeyName?: string; 
   public get kmsKeyName() {
     return this.getStringAttribute('kms_key_name');
@@ -353,7 +355,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._labels;
   }
 
-  // launcher_machine_type - computed: false, optional: true, required: false
+  // launcher_machine_type - computed: true, optional: true, required: false
   private _launcherMachineType?: string; 
   public get launcherMachineType() {
     return this.getStringAttribute('launcher_machine_type');
@@ -369,7 +371,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._launcherMachineType;
   }
 
-  // machine_type - computed: false, optional: true, required: false
+  // machine_type - computed: true, optional: true, required: false
   private _machineType?: string; 
   public get machineType() {
     return this.getStringAttribute('machine_type');
@@ -385,7 +387,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._machineType;
   }
 
-  // max_workers - computed: false, optional: true, required: false
+  // max_workers - computed: true, optional: true, required: false
   private _maxWorkers?: number; 
   public get maxWorkers() {
     return this.getNumberAttribute('max_workers');
@@ -414,7 +416,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // network - computed: false, optional: true, required: false
+  // network - computed: true, optional: true, required: false
   private _network?: string; 
   public get network() {
     return this.getStringAttribute('network');
@@ -430,7 +432,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._network;
   }
 
-  // num_workers - computed: false, optional: true, required: false
+  // num_workers - computed: true, optional: true, required: false
   private _numWorkers?: number; 
   public get numWorkers() {
     return this.getNumberAttribute('num_workers');
@@ -510,7 +512,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this._region;
   }
 
-  // sdk_container_image - computed: false, optional: true, required: false
+  // sdk_container_image - computed: true, optional: true, required: false
   private _sdkContainerImage?: string; 
   public get sdkContainerImage() {
     return this.getStringAttribute('sdk_container_image');
@@ -579,7 +581,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
     return this.getStringAttribute('state');
   }
 
-  // subnetwork - computed: false, optional: true, required: false
+  // subnetwork - computed: true, optional: true, required: false
   private _subnetwork?: string; 
   public get subnetwork() {
     return this.getStringAttribute('subnetwork');
@@ -609,6 +611,12 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tempLocationInput() {
     return this._tempLocation;
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
   }
 
   // transform_name_mapping - computed: false, optional: true, required: false

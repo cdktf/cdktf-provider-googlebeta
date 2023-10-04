@@ -1,6 +1,6 @@
 # `google_apigee_target_server`
 
-Refer to the Terraform Registory for docs: [`google_apigee_target_server`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server).
+Refer to the Terraform Registory for docs: [`google_apigee_target_server`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server).
 
 # `googleApigeeTargetServer` Submodule <a name="`googleApigeeTargetServer` Submodule" id="@cdktf/provider-google-beta.googleApigeeTargetServer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_apigee_target_server`](https
 
 ### GoogleApigeeTargetServer <a name="GoogleApigeeTargetServer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server google_apigee_target_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server google_apigee_target_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.NewGoogleApigeeTargetServer(scope Construct, id *string, config GoogleApigeeTargetServerConfig) GoogleApigeeTargetServer
 ```
@@ -338,7 +338,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.GoogleApigeeTargetServer_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.GoogleApigeeTargetServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ googleapigeetargetserver.GoogleApigeeTargetServer_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.GoogleApigeeTargetServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 &googleapigeetargetserver.GoogleApigeeTargetServerConfig {
 	Connection: interface{},
@@ -821,8 +821,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigee
 	Id: *string,
 	IsEnabled: interface{},
 	Protocol: *string,
-	SSlInfo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts,
+	SSlInfo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts,
 }
 ```
 
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigee
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.name">Name</a></code> | <code>*string</code> | The resource id of this reference. Values must match the regular expression [\w\s-.]+. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.port">Port</a></code> | <code>*f64</code> | The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description of this TargetServer. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.isEnabled">IsEnabled</a></code> | <code>interface{}</code> | Enabling/disabling a TargetServer is useful when TargetServers are used in load balancing configurations, and one or more TargetServers need to taken out of rotation periodically. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig.property.sSlInfo">SSlInfo</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo">GoogleApigeeTargetServerSSlInfo</a></code> | s_sl_info block. |
@@ -930,7 +930,7 @@ EnvId *string
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#env_id GoogleApigeeTargetServer#env_id}
 
 ---
 
@@ -944,7 +944,7 @@ Host *string
 
 The host name this target connects to. Value must be a valid hostname as described by RFC-1123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#host GoogleApigeeTargetServer#host}
 
 ---
 
@@ -958,7 +958,7 @@ Name *string
 
 The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#name GoogleApigeeTargetServer#name}
 
 ---
 
@@ -972,7 +972,7 @@ Port *f64
 
 The port number this target connects to on the given host. Value must be between 1 and 65535, inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#port GoogleApigeeTargetServer#port}
 
 ---
 
@@ -986,7 +986,7 @@ Description *string
 
 A human-readable description of this TargetServer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#description GoogleApigeeTargetServer#description}
 
 ---
 
@@ -998,7 +998,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#id GoogleApigeeTargetServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1017,7 +1017,7 @@ Enabling/disabling a TargetServer is useful when TargetServers are used in load 
 
 Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#is_enabled GoogleApigeeTargetServer#is_enabled}
 
 ---
 
@@ -1031,7 +1031,7 @@ Protocol *string
 
 Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#protocol GoogleApigeeTargetServer#protocol}
 
 ---
 
@@ -1045,7 +1045,7 @@ SSlInfo GoogleApigeeTargetServerSSlInfo
 
 s_sl_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#s_sl_info GoogleApigeeTargetServer#s_sl_info}
 
 ---
 
@@ -1059,7 +1059,7 @@ Timeouts GoogleApigeeTargetServerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#timeouts GoogleApigeeTargetServer#timeouts}
 
 ---
 
@@ -1068,13 +1068,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 &googleapigeetargetserver.GoogleApigeeTargetServerSSlInfo {
 	Enabled: interface{},
 	Ciphers: *[]*string,
 	ClientAuthEnabled: interface{},
-	CommonName: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName,
+	CommonName: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName,
 	IgnoreValidationErrors: interface{},
 	KeyAlias: *string,
 	KeyStore: *string,
@@ -1109,7 +1109,7 @@ Enabled interface{}
 
 Enables TLS. If false, neither one-way nor two-way TLS will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#enabled GoogleApigeeTargetServer#enabled}
 
 ---
 
@@ -1125,7 +1125,7 @@ The SSL/TLS cipher suites to be used.
 
 For programmable proxies, it must be one of the cipher suite names listed in: http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#ciphersuites. For configurable proxies, it must follow the configuration specified in: https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#Cipher-suite-configuration. This setting has no effect for configurable proxies when negotiating TLS 1.3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#ciphers GoogleApigeeTargetServer#ciphers}
 
 ---
 
@@ -1139,7 +1139,7 @@ ClientAuthEnabled interface{}
 
 Enables two-way TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#client_auth_enabled GoogleApigeeTargetServer#client_auth_enabled}
 
 ---
 
@@ -1153,7 +1153,7 @@ CommonName GoogleApigeeTargetServerSSlInfoCommonName
 
 common_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#common_name GoogleApigeeTargetServer#common_name}
 
 ---
 
@@ -1169,7 +1169,7 @@ If true, Edge ignores TLS certificate errors.
 
 Valid when configuring TLS for target servers and target endpoints, and when configuring virtual hosts that use 2-way TLS. When used with a target endpoint/target server, if the backend system uses SNI and returns a cert with a subject Distinguished Name (DN) that does not match the hostname, there is no way to ignore the error and the connection fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#ignore_validation_errors GoogleApigeeTargetServer#ignore_validation_errors}
 
 ---
 
@@ -1183,7 +1183,7 @@ KeyAlias *string
 
 Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#key_alias GoogleApigeeTargetServer#key_alias}
 
 ---
 
@@ -1197,7 +1197,7 @@ KeyStore *string
 
 Required if clientAuthEnabled is true. The resource ID of the keystore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#key_store GoogleApigeeTargetServer#key_store}
 
 ---
 
@@ -1211,7 +1211,7 @@ Protocols *[]*string
 
 The TLS versioins to be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#protocols GoogleApigeeTargetServer#protocols}
 
 ---
 
@@ -1225,7 +1225,7 @@ TrustStore *string
 
 The resource ID of the truststore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#trust_store GoogleApigeeTargetServer#trust_store}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 &googleapigeetargetserver.GoogleApigeeTargetServerSSlInfoCommonName {
 	Value: *string,
@@ -1261,7 +1261,7 @@ Value *string
 
 The TLS Common Name string of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#value GoogleApigeeTargetServer#value}
 
 ---
 
@@ -1275,7 +1275,7 @@ WildcardMatch interface{}
 
 Indicates whether the cert should be matched against as a wildcard cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
 
 ---
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 &googleapigeetargetserver.GoogleApigeeTargetServerTimeouts {
 	Create: *string,
@@ -1297,9 +1297,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigee
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}. |
 
 ---
 
@@ -1311,7 +1311,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#create GoogleApigeeTargetServer#create}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#delete GoogleApigeeTargetServer#delete}.
 
 ---
 
@@ -1335,7 +1335,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_target_server#update GoogleApigeeTargetServer#update}.
 
 ---
 
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.NewGoogleApigeeTargetServerSSlInfoCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeTargetServerSSlInfoCommonNameOutputReference
 ```
@@ -1653,7 +1653,7 @@ func InternalValue() GoogleApigeeTargetServerSSlInfoCommonName
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.NewGoogleApigeeTargetServerSSlInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeTargetServerSSlInfoOutputReference
 ```
@@ -2169,7 +2169,7 @@ func InternalValue() GoogleApigeeTargetServerSSlInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeetargetserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeetargetserver"
 
 googleapigeetargetserver.NewGoogleApigeeTargetServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeTargetServerTimeoutsOutputReference
 ```

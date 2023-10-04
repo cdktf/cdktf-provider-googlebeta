@@ -1,6 +1,6 @@
 # `google_pubsub_subscription_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_pubsub_subscription_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding).
+Refer to the Terraform Registory for docs: [`google_pubsub_subscription_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding).
 
 # `googlePubsubSubscriptionIamBinding` Submodule <a name="`googlePubsubSubscriptionIamBinding` Submodule" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_pubsub_subscription_iam_bind
 
 ### GooglePubsubSubscriptionIamBinding <a name="GooglePubsubSubscriptionIamBinding" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding google_pubsub_subscription_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding google_pubsub_subscription_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer"></a>
 
@@ -47,12 +47,12 @@ GooglePubsubSubscriptionIamBinding.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.subscription">subscription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.subscription">subscription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition">GooglePubsubSubscriptionIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#condition GooglePubsubSubscriptionIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#condition GooglePubsubSubscriptionIamBinding#condition}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}.
 
 ---
 
@@ -824,9 +824,9 @@ GooglePubsubSubscriptionIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#expression GooglePubsubSubscriptionIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#title GooglePubsubSubscriptionIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#description GooglePubsubSubscriptionIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#expression GooglePubsubSubscriptionIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#title GooglePubsubSubscriptionIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#description GooglePubsubSubscriptionIamBinding#description}. |
 
 ---
 
@@ -838,7 +838,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#expression GooglePubsubSubscriptionIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#expression GooglePubsubSubscriptionIamBinding#expression}.
 
 ---
 
@@ -850,7 +850,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#title GooglePubsubSubscriptionIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#title GooglePubsubSubscriptionIamBinding#title}.
 
 ---
 
@@ -862,7 +862,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#description GooglePubsubSubscriptionIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#description GooglePubsubSubscriptionIamBinding#description}.
 
 ---
 
@@ -905,12 +905,12 @@ GooglePubsubSubscriptionIamBindingConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.subscription">subscription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.subscription">subscription</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition">GooglePubsubSubscriptionIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}. |
 
 ---
 
@@ -992,7 +992,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#members GooglePubsubSubscriptionIamBinding#members}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#role GooglePubsubSubscriptionIamBinding#role}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public java.lang.String getSubscription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#subscription GooglePubsubSubscriptionIamBinding#subscription}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public GooglePubsubSubscriptionIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#condition GooglePubsubSubscriptionIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#condition GooglePubsubSubscriptionIamBinding#condition}
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#id GooglePubsubSubscriptionIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_subscription_iam_binding#project GooglePubsubSubscriptionIamBinding#project}.
 
 ---
 

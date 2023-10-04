@@ -1,6 +1,6 @@
 # `data_google_compute_disk`
 
-Refer to the Terraform Registory for docs: [`data_google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk).
+Refer to the Terraform Registory for docs: [`data_google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk).
 
 # `dataGoogleComputeDisk` Submodule <a name="`dataGoogleComputeDisk` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeDisk"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_compute_disk`](https://
 
 ### DataGoogleComputeDisk <a name="DataGoogleComputeDisk" id="@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk google_compute_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk google_compute_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.Initializer"></a>
 
@@ -368,6 +368,7 @@ DataGoogleComputeDisk.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.creationTimestamp">CreationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.diskEncryptionKey">DiskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskDiskEncryptionKeyList">DataGoogleComputeDiskDiskEncryptionKeyList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.effectiveLabels">EffectiveLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.enableConfidentialCompute">EnableConfidentialCompute</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.guestOsFeatures">GuestOsFeatures</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskGuestOsFeaturesList">DataGoogleComputeDiskGuestOsFeaturesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.image">Image</a></code> | <code>string</code> | *No description.* |
@@ -391,6 +392,7 @@ DataGoogleComputeDisk.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.sourceImageId">SourceImageId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.sourceSnapshotEncryptionKey">SourceSnapshotEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyList">DataGoogleComputeDiskSourceSnapshotEncryptionKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.sourceSnapshotId">SourceSnapshotId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.terraformLabels">TerraformLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.users">Users</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -563,6 +565,16 @@ public DataGoogleComputeDiskDiskEncryptionKeyList DiskEncryptionKey { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskDiskEncryptionKeyList">DataGoogleComputeDiskDiskEncryptionKeyList</a>
+
+---
+
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.effectiveLabels"></a>
+
+```csharp
+public StringMap EffectiveLabels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
 
 ---
 
@@ -796,6 +808,16 @@ public string SourceSnapshotId { get; }
 
 ---
 
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.terraformLabels"></a>
+
+```csharp
+public StringMap TerraformLabels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDisk.property.type"></a>
 
 ```csharp
@@ -963,8 +985,8 @@ new DataGoogleComputeDiskConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#id DataGoogleComputeDisk#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#project DataGoogleComputeDisk#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#id DataGoogleComputeDisk#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#project DataGoogleComputeDisk#project}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskConfig.property.zone">Zone</a></code> | <code>string</code> | A reference to the zone where the disk resides. |
 
 ---
@@ -1057,7 +1079,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#name DataGoogleComputeDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#name DataGoogleComputeDisk#name}
 
 ---
 
@@ -1069,7 +1091,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#id DataGoogleComputeDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#id DataGoogleComputeDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1106,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#project DataGoogleComputeDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#project DataGoogleComputeDisk#project}.
 
 ---
 
@@ -1098,7 +1120,7 @@ public string Zone { get; set; }
 
 A reference to the zone where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_disk#zone DataGoogleComputeDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_disk#zone DataGoogleComputeDisk#zone}
 
 ---
 

@@ -1,6 +1,6 @@
 # `google_compute_machine_image_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_compute_machine_image_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member).
+Refer to the Terraform Registory for docs: [`google_compute_machine_image_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member).
 
 # `googleComputeMachineImageIamMember` Submodule <a name="`googleComputeMachineImageIamMember` Submodule" id="@cdktf/provider-google-beta.googleComputeMachineImageIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_machine_image_iam_me
 
 ### GoogleComputeMachineImageIamMember <a name="GoogleComputeMachineImageIamMember" id="@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member google_compute_machine_image_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer"></a>
 
@@ -45,12 +45,12 @@ googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.machineImage">machine_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.machineImage">machine_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition">GoogleComputeMachineImageIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#condition GoogleComputeMachineImageIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#condition GoogleComputeMachineImageIamMember#condition}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}.
 
 ---
 
@@ -417,7 +417,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}.
 
 ---
 
@@ -425,7 +425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}.
 
 ---
 
@@ -433,7 +433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}.
 
 ---
 
@@ -875,9 +875,9 @@ googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#expression GoogleComputeMachineImageIamMember#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#title GoogleComputeMachineImageIamMember#title}.
 
 ---
 
@@ -913,7 +913,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#description GoogleComputeMachineImageIamMember#description}.
 
 ---
 
@@ -952,12 +952,12 @@ googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.machineImage">machine_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.machineImage">machine_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberCondition">GoogleComputeMachineImageIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeMachineImageIamMember.GoogleComputeMachineImageIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}. |
 
 ---
 
@@ -1039,7 +1039,7 @@ machine_image: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#machine_image GoogleComputeMachineImageIamMember#machine_image}.
 
 ---
 
@@ -1051,7 +1051,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#member GoogleComputeMachineImageIamMember#member}.
 
 ---
 
@@ -1063,7 +1063,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#role GoogleComputeMachineImageIamMember#role}.
 
 ---
 
@@ -1077,7 +1077,7 @@ condition: GoogleComputeMachineImageIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#condition GoogleComputeMachineImageIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#condition GoogleComputeMachineImageIamMember#condition}
 
 ---
 
@@ -1089,7 +1089,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#id GoogleComputeMachineImageIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1104,7 +1104,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image_iam_member#project GoogleComputeMachineImageIamMember#project}.
 
 ---
 

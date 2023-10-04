@@ -1,6 +1,6 @@
 # `google_compute_router_nat`
 
-Refer to the Terraform Registory for docs: [`google_compute_router_nat`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat).
+Refer to the Terraform Registory for docs: [`google_compute_router_nat`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat).
 
 # `googleComputeRouterNat` Submodule <a name="`googleComputeRouterNat` Submodule" id="@cdktf/provider-google-beta.googleComputeRouterNat"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_compute_router_nat`](https:/
 
 ### GoogleComputeRouterNat <a name="GoogleComputeRouterNat" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat google_compute_router_nat}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNat(scope Construct, id *string, config GoogleComputeRouterNatConfig) GoogleComputeRouterNat
 ```
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetLogConfig">ResetLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetMaxPortsPerVm">ResetMaxPortsPerVm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetMinPortsPerVm">ResetMinPortsPerVm</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetNatIpAllocateOption">ResetNatIpAllocateOption</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetNatIps">ResetNatIps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetRegion">ResetRegion</a></code> | *No description.* |
@@ -91,6 +92,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetTcpTimeWaitTimeoutSec">ResetTcpTimeWaitTimeoutSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetTcpTransitoryIdleTimeoutSec">ResetTcpTransitoryIdleTimeoutSec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetType">ResetType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetUdpIdleTimeoutSec">ResetUdpIdleTimeoutSec</a></code> | *No description.* |
 
 ---
@@ -375,6 +377,12 @@ func ResetMaxPortsPerVm()
 func ResetMinPortsPerVm()
 ```
 
+##### `ResetNatIpAllocateOption` <a name="ResetNatIpAllocateOption" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetNatIpAllocateOption"></a>
+
+```go
+func ResetNatIpAllocateOption()
+```
+
 ##### `ResetNatIps` <a name="ResetNatIps" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetNatIps"></a>
 
 ```go
@@ -429,6 +437,12 @@ func ResetTcpTransitoryIdleTimeoutSec()
 func ResetTimeouts()
 ```
 
+##### `ResetType` <a name="ResetType" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetType"></a>
+
+```go
+func ResetType()
+```
+
 ##### `ResetUdpIdleTimeoutSec` <a name="ResetUdpIdleTimeoutSec" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.resetUdpIdleTimeoutSec"></a>
 
 ```go
@@ -448,7 +462,7 @@ func ResetUdpIdleTimeoutSec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.GoogleComputeRouterNat_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.GoogleComputeRouterNat_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +508,7 @@ googlecomputerouternat.GoogleComputeRouterNat_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.GoogleComputeRouterNat_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,6 +562,7 @@ googlecomputerouternat.GoogleComputeRouterNat_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.tcpTimeWaitTimeoutSecInput">TcpTimeWaitTimeoutSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.tcpTransitoryIdleTimeoutSecInput">TcpTransitoryIdleTimeoutSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.udpIdleTimeoutSecInput">UdpIdleTimeoutSecInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.drainNatIps">DrainNatIps</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.enableDynamicPortAllocation">EnableDynamicPortAllocation</a></code> | <code>interface{}</code> | *No description.* |
@@ -566,6 +581,7 @@ googlecomputerouternat.GoogleComputeRouterNat_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.tcpEstablishedIdleTimeoutSec">TcpEstablishedIdleTimeoutSec</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.tcpTimeWaitTimeoutSec">TcpTimeWaitTimeoutSec</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.tcpTransitoryIdleTimeoutSec">TcpTransitoryIdleTimeoutSec</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.udpIdleTimeoutSec">UdpIdleTimeoutSec</a></code> | <code>*f64</code> | *No description.* |
 
 ---
@@ -962,6 +978,16 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.typeInput"></a>
+
+```go
+func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `UdpIdleTimeoutSecInput`<sup>Optional</sup> <a name="UdpIdleTimeoutSecInput" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.udpIdleTimeoutSecInput"></a>
 
 ```go
@@ -1142,6 +1168,16 @@ func TcpTransitoryIdleTimeoutSec() *f64
 
 ---
 
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `UdpIdleTimeoutSec`<sup>Required</sup> <a name="UdpIdleTimeoutSec" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNat.property.udpIdleTimeoutSec"></a>
 
 ```go
@@ -1177,7 +1213,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatConfig {
 	Connection: interface{},
@@ -1188,7 +1224,6 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	NatIpAllocateOption: *string,
 	Router: *string,
 	SourceSubnetworkIpRangesToNat: *string,
 	DrainNatIps: *[]*string,
@@ -1196,9 +1231,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 	EnableEndpointIndependentMapping: interface{},
 	IcmpIdleTimeoutSec: *f64,
 	Id: *string,
-	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleComputeRouterNat.GoogleComputeRouterNatLogConfig,
+	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterNat.GoogleComputeRouterNatLogConfig,
 	MaxPortsPerVm: *f64,
 	MinPortsPerVm: *f64,
+	NatIpAllocateOption: *string,
 	NatIps: *[]*string,
 	Project: *string,
 	Region: *string,
@@ -1207,7 +1243,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 	TcpEstablishedIdleTimeoutSec: *f64,
 	TcpTimeWaitTimeoutSec: *f64,
 	TcpTransitoryIdleTimeoutSec: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleComputeRouterNat.GoogleComputeRouterNatTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts,
+	Type: *string,
 	UdpIdleTimeoutSec: *f64,
 }
 ```
@@ -1224,19 +1261,19 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.name">Name</a></code> | <code>*string</code> | Name of the NAT service. The name must be 1-63 characters long and comply with RFC1035. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.natIpAllocateOption">NatIpAllocateOption</a></code> | <code>*string</code> | How external IPs should be allocated for this NAT. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.router">Router</a></code> | <code>*string</code> | The name of the Cloud Router in which this NAT will be configured. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.sourceSubnetworkIpRangesToNat">SourceSubnetworkIpRangesToNat</a></code> | <code>*string</code> | How NAT should be configured per Subnetwork. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.drainNatIps">DrainNatIps</a></code> | <code>*[]*string</code> | A list of URLs of the IP resources to be drained. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.enableDynamicPortAllocation">EnableDynamicPortAllocation</a></code> | <code>interface{}</code> | Enable Dynamic Port Allocation. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.enableEndpointIndependentMapping">EnableEndpointIndependentMapping</a></code> | <code>interface{}</code> | Specifies if endpoint independent mapping is enabled. This is enabled by default. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs). |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.enableEndpointIndependentMapping">EnableEndpointIndependentMapping</a></code> | <code>interface{}</code> | Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs). |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.icmpIdleTimeoutSec">IcmpIdleTimeoutSec</a></code> | <code>*f64</code> | Timeout (in seconds) for ICMP connections. Defaults to 30s if not set. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#id GoogleComputeRouterNat#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#id GoogleComputeRouterNat#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfig">GoogleComputeRouterNatLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.maxPortsPerVm">MaxPortsPerVm</a></code> | <code>*f64</code> | Maximum number of ports allocated to a VM from this NAT. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.minPortsPerVm">MinPortsPerVm</a></code> | <code>*f64</code> | Minimum number of ports allocated to a VM from this NAT. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.natIpAllocateOption">NatIpAllocateOption</a></code> | <code>*string</code> | How external IPs should be allocated for this NAT. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.natIps">NatIps</a></code> | <code>*[]*string</code> | Self-links of NAT IPs. Only valid if natIpAllocateOption is set to MANUAL_ONLY. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#project GoogleComputeRouterNat#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#project GoogleComputeRouterNat#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router and NAT reside. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.subnetwork">Subnetwork</a></code> | <code>interface{}</code> | subnetwork block. |
@@ -1244,6 +1281,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.tcpTimeWaitTimeoutSec">TcpTimeWaitTimeoutSec</a></code> | <code>*f64</code> | Timeout (in seconds) for TCP connections that are in TIME_WAIT state. Defaults to 120s if not set. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.tcpTransitoryIdleTimeoutSec">TcpTransitoryIdleTimeoutSec</a></code> | <code>*f64</code> | Timeout (in seconds) for TCP transitory connections. Defaults to 30s if not set. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts">GoogleComputeRouterNatTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.type">Type</a></code> | <code>*string</code> | Indicates whether this NAT is used for public or private IP translation. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.udpIdleTimeoutSec">UdpIdleTimeoutSec</a></code> | <code>*f64</code> | Timeout (in seconds) for UDP connections. Defaults to 30s if not set. |
 
 ---
@@ -1328,25 +1366,7 @@ Name *string
 
 Name of the NAT service. The name must be 1-63 characters long and comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#name GoogleComputeRouterNat#name}
-
----
-
-##### `NatIpAllocateOption`<sup>Required</sup> <a name="NatIpAllocateOption" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.natIpAllocateOption"></a>
-
-```go
-NatIpAllocateOption *string
-```
-
-- *Type:* *string
-
-How external IPs should be allocated for this NAT.
-
-Valid values are
-'AUTO_ONLY' for only allowing NAT IPs allocated by Google Cloud
-Platform, or 'MANUAL_ONLY' for only user-allocated NAT IP addresses. Possible values: ["MANUAL_ONLY", "AUTO_ONLY"]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#nat_ip_allocate_option GoogleComputeRouterNat#nat_ip_allocate_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#name GoogleComputeRouterNat#name}
 
 ---
 
@@ -1360,7 +1380,7 @@ Router *string
 
 The name of the Cloud Router in which this NAT will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#router GoogleComputeRouterNat#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#router GoogleComputeRouterNat#router}
 
 ---
 
@@ -1384,7 +1404,7 @@ contains ALL_SUBNETWORKS_ALL_IP_RANGES or
 ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES, then there should not be any
 other RouterNat section in any Router for this network in this region. Possible values: ["ALL_SUBNETWORKS_ALL_IP_RANGES", "ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES", "LIST_OF_SUBNETWORKS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#source_subnetwork_ip_ranges_to_nat GoogleComputeRouterNat#source_subnetwork_ip_ranges_to_nat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_subnetwork_ip_ranges_to_nat GoogleComputeRouterNat#source_subnetwork_ip_ranges_to_nat}
 
 ---
 
@@ -1401,7 +1421,7 @@ A list of URLs of the IP resources to be drained.
 These IPs must be
 valid static external IPs that have been assigned to the NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#drain_nat_ips GoogleComputeRouterNat#drain_nat_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#drain_nat_ips GoogleComputeRouterNat#drain_nat_ips}
 
 ---
 
@@ -1422,7 +1442,7 @@ If maxPortsPerVm is not set, a maximum of 65536 ports will be allocated to a VM 
 
 Mutually exclusive with enableEndpointIndependentMapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#enable_dynamic_port_allocation GoogleComputeRouterNat#enable_dynamic_port_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#enable_dynamic_port_allocation GoogleComputeRouterNat#enable_dynamic_port_allocation}
 
 ---
 
@@ -1434,9 +1454,9 @@ EnableEndpointIndependentMapping interface{}
 
 - *Type:* interface{}
 
-Specifies if endpoint independent mapping is enabled. This is enabled by default. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs).
+Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#enable_endpoint_independent_mapping GoogleComputeRouterNat#enable_endpoint_independent_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#enable_endpoint_independent_mapping GoogleComputeRouterNat#enable_endpoint_independent_mapping}
 
 ---
 
@@ -1450,7 +1470,7 @@ IcmpIdleTimeoutSec *f64
 
 Timeout (in seconds) for ICMP connections. Defaults to 30s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#icmp_idle_timeout_sec GoogleComputeRouterNat#icmp_idle_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#icmp_idle_timeout_sec GoogleComputeRouterNat#icmp_idle_timeout_sec}
 
 ---
 
@@ -1462,7 +1482,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#id GoogleComputeRouterNat#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#id GoogleComputeRouterNat#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1479,7 +1499,7 @@ LogConfig GoogleComputeRouterNatLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#log_config GoogleComputeRouterNat#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#log_config GoogleComputeRouterNat#log_config}
 
 ---
 
@@ -1495,7 +1515,7 @@ Maximum number of ports allocated to a VM from this NAT.
 
 This field can only be set when enableDynamicPortAllocation is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#max_ports_per_vm GoogleComputeRouterNat#max_ports_per_vm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#max_ports_per_vm GoogleComputeRouterNat#max_ports_per_vm}
 
 ---
 
@@ -1509,7 +1529,25 @@ MinPortsPerVm *f64
 
 Minimum number of ports allocated to a VM from this NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#min_ports_per_vm GoogleComputeRouterNat#min_ports_per_vm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#min_ports_per_vm GoogleComputeRouterNat#min_ports_per_vm}
+
+---
+
+##### `NatIpAllocateOption`<sup>Optional</sup> <a name="NatIpAllocateOption" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.natIpAllocateOption"></a>
+
+```go
+NatIpAllocateOption *string
+```
+
+- *Type:* *string
+
+How external IPs should be allocated for this NAT.
+
+Valid values are
+'AUTO_ONLY' for only allowing NAT IPs allocated by Google Cloud
+Platform, or 'MANUAL_ONLY' for only user-allocated NAT IP addresses. Possible values: ["MANUAL_ONLY", "AUTO_ONLY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#nat_ip_allocate_option GoogleComputeRouterNat#nat_ip_allocate_option}
 
 ---
 
@@ -1523,7 +1561,7 @@ NatIps *[]*string
 
 Self-links of NAT IPs. Only valid if natIpAllocateOption is set to MANUAL_ONLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#nat_ips GoogleComputeRouterNat#nat_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#nat_ips GoogleComputeRouterNat#nat_ips}
 
 ---
 
@@ -1535,7 +1573,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#project GoogleComputeRouterNat#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#project GoogleComputeRouterNat#project}.
 
 ---
 
@@ -1549,7 +1587,7 @@ Region *string
 
 Region where the router and NAT reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#region GoogleComputeRouterNat#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#region GoogleComputeRouterNat#region}
 
 ---
 
@@ -1563,7 +1601,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#rules GoogleComputeRouterNat#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#rules GoogleComputeRouterNat#rules}
 
 ---
 
@@ -1577,7 +1615,7 @@ Subnetwork interface{}
 
 subnetwork block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#subnetwork GoogleComputeRouterNat#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#subnetwork GoogleComputeRouterNat#subnetwork}
 
 ---
 
@@ -1591,7 +1629,7 @@ TcpEstablishedIdleTimeoutSec *f64
 
 Timeout (in seconds) for TCP established connections. Defaults to 1200s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#tcp_established_idle_timeout_sec GoogleComputeRouterNat#tcp_established_idle_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#tcp_established_idle_timeout_sec GoogleComputeRouterNat#tcp_established_idle_timeout_sec}
 
 ---
 
@@ -1605,7 +1643,7 @@ TcpTimeWaitTimeoutSec *f64
 
 Timeout (in seconds) for TCP connections that are in TIME_WAIT state. Defaults to 120s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#tcp_time_wait_timeout_sec GoogleComputeRouterNat#tcp_time_wait_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#tcp_time_wait_timeout_sec GoogleComputeRouterNat#tcp_time_wait_timeout_sec}
 
 ---
 
@@ -1619,7 +1657,7 @@ TcpTransitoryIdleTimeoutSec *f64
 
 Timeout (in seconds) for TCP transitory connections. Defaults to 30s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#tcp_transitory_idle_timeout_sec GoogleComputeRouterNat#tcp_transitory_idle_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#tcp_transitory_idle_timeout_sec GoogleComputeRouterNat#tcp_transitory_idle_timeout_sec}
 
 ---
 
@@ -1633,7 +1671,25 @@ Timeouts GoogleComputeRouterNatTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#timeouts GoogleComputeRouterNat#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#timeouts GoogleComputeRouterNat#timeouts}
+
+---
+
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatConfig.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+Indicates whether this NAT is used for public or private IP translation.
+
+If unspecified, it defaults to PUBLIC.
+If 'PUBLIC' NAT used for public IP translation.
+If 'PRIVATE' NAT used for private IP translation. Default value: "PUBLIC" Possible values: ["PUBLIC", "PRIVATE"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#type GoogleComputeRouterNat#type}
 
 ---
 
@@ -1647,7 +1703,7 @@ UdpIdleTimeoutSec *f64
 
 Timeout (in seconds) for UDP connections. Defaults to 30s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#udp_idle_timeout_sec GoogleComputeRouterNat#udp_idle_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#udp_idle_timeout_sec GoogleComputeRouterNat#udp_idle_timeout_sec}
 
 ---
 
@@ -1656,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatLogConfig {
 	Enable: interface{},
@@ -1683,7 +1739,7 @@ Enable interface{}
 
 Indicates whether or not to export logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#enable GoogleComputeRouterNat#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#enable GoogleComputeRouterNat#enable}
 
 ---
 
@@ -1697,7 +1753,7 @@ Filter *string
 
 Specifies the desired filtering of logs on this NAT. Possible values: ["ERRORS_ONLY", "TRANSLATIONS_ONLY", "ALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#filter GoogleComputeRouterNat#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#filter GoogleComputeRouterNat#filter}
 
 ---
 
@@ -1706,12 +1762,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatRules {
 	Match: *string,
 	RuleNumber: *f64,
-	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleComputeRouterNat.GoogleComputeRouterNatRulesAction,
+	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction,
 	Description: *string,
 }
 ```
@@ -1749,7 +1805,7 @@ The following example is a valid match expression for private NAT:
 
 "nexthop.hub == 'https://networkconnectivity.googleapis.com/v1alpha1/projects/my-project/global/hub/hub-1'"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#match GoogleComputeRouterNat#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#match GoogleComputeRouterNat#match}
 
 ---
 
@@ -1765,7 +1821,7 @@ An integer uniquely identifying a rule in the list.
 
 The rule number must be a positive value between 0 and 65000, and must be unique among rules within a NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#rule_number GoogleComputeRouterNat#rule_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#rule_number GoogleComputeRouterNat#rule_number}
 
 ---
 
@@ -1779,7 +1835,7 @@ Action GoogleComputeRouterNatRulesAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#action GoogleComputeRouterNat#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#action GoogleComputeRouterNat#action}
 
 ---
 
@@ -1793,7 +1849,7 @@ Description *string
 
 An optional description of this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#description GoogleComputeRouterNat#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#description GoogleComputeRouterNat#description}
 
 ---
 
@@ -1802,11 +1858,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatRulesAction {
 	SourceNatActiveIps: *[]*string,
+	SourceNatActiveRanges: *[]*string,
 	SourceNatDrainIps: *[]*string,
+	SourceNatDrainRanges: *[]*string,
 }
 ```
 
@@ -1815,7 +1873,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatActiveIps">SourceNatActiveIps</a></code> | <code>*[]*string</code> | A list of URLs of the IP resources used for this NAT rule. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatActiveRanges">SourceNatActiveRanges</a></code> | <code>*[]*string</code> | A list of URLs of the subnetworks used as source ranges for this NAT Rule. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatDrainIps">SourceNatDrainIps</a></code> | <code>*[]*string</code> | A list of URLs of the IP resources to be drained. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatDrainRanges">SourceNatDrainRanges</a></code> | <code>*[]*string</code> | A list of URLs of subnetworks representing source ranges to be drained. |
 
 ---
 
@@ -1832,7 +1892,24 @@ A list of URLs of the IP resources used for this NAT rule.
 These IP addresses must be valid static external IP addresses assigned to the project.
 This field is used for public NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#source_nat_active_ips GoogleComputeRouterNat#source_nat_active_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_nat_active_ips GoogleComputeRouterNat#source_nat_active_ips}
+
+---
+
+##### `SourceNatActiveRanges`<sup>Optional</sup> <a name="SourceNatActiveRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatActiveRanges"></a>
+
+```go
+SourceNatActiveRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+A list of URLs of the subnetworks used as source ranges for this NAT Rule.
+
+These subnetworks must have purpose set to PRIVATE_NAT.
+This field is used for private NAT.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_nat_active_ranges GoogleComputeRouterNat#source_nat_active_ranges}
 
 ---
 
@@ -1850,7 +1927,24 @@ These IPs must be valid static external IPs that have been assigned to the NAT.
 These IPs should be used for updating/patching a NAT rule only.
 This field is used for public NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#source_nat_drain_ips GoogleComputeRouterNat#source_nat_drain_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_nat_drain_ips GoogleComputeRouterNat#source_nat_drain_ips}
+
+---
+
+##### `SourceNatDrainRanges`<sup>Optional</sup> <a name="SourceNatDrainRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction.property.sourceNatDrainRanges"></a>
+
+```go
+SourceNatDrainRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+A list of URLs of subnetworks representing source ranges to be drained.
+
+This is only supported on patch/update, and these subnetworks must have previously been used as active ranges in this NAT Rule.
+This field is used for private NAT.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_nat_drain_ranges GoogleComputeRouterNat#source_nat_drain_ranges}
 
 ---
 
@@ -1859,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatSubnetwork {
 	Name: *string,
@@ -1888,7 +1982,7 @@ Name *string
 
 Self-link of subnetwork to NAT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#name GoogleComputeRouterNat#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#name GoogleComputeRouterNat#name}
 
 ---
 
@@ -1902,7 +1996,7 @@ SourceIpRangesToNat *[]*string
 
 List of options for which source IPs in the subnetwork should have NAT enabled. Supported values include: 'ALL_IP_RANGES', 'LIST_OF_SECONDARY_IP_RANGES', 'PRIMARY_IP_RANGE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#source_ip_ranges_to_nat GoogleComputeRouterNat#source_ip_ranges_to_nat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#source_ip_ranges_to_nat GoogleComputeRouterNat#source_ip_ranges_to_nat}
 
 ---
 
@@ -1920,7 +2014,7 @@ This can be populated only if
 'LIST_OF_SECONDARY_IP_RANGES' is one of the values in
 sourceIpRangesToNat
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#secondary_ip_range_names GoogleComputeRouterNat#secondary_ip_range_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#secondary_ip_range_names GoogleComputeRouterNat#secondary_ip_range_names}
 
 ---
 
@@ -1929,7 +2023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 &googlecomputerouternat.GoogleComputeRouterNatTimeouts {
 	Create: *string,
@@ -1942,9 +2036,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#create GoogleComputeRouterNat#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#delete GoogleComputeRouterNat#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#update GoogleComputeRouterNat#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#create GoogleComputeRouterNat#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#delete GoogleComputeRouterNat#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#update GoogleComputeRouterNat#update}. |
 
 ---
 
@@ -1956,7 +2050,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#create GoogleComputeRouterNat#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#create GoogleComputeRouterNat#create}.
 
 ---
 
@@ -1968,7 +2062,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#delete GoogleComputeRouterNat#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#delete GoogleComputeRouterNat#delete}.
 
 ---
 
@@ -1980,7 +2074,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_router_nat#update GoogleComputeRouterNat#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_router_nat#update GoogleComputeRouterNat#update}.
 
 ---
 
@@ -1991,7 +2085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterNatLogConfigOutputReference
 ```
@@ -2284,7 +2378,7 @@ func InternalValue() GoogleComputeRouterNatLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterNatRulesActionOutputReference
 ```
@@ -2330,7 +2424,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatActiveIps">ResetSourceNatActiveIps</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatActiveRanges">ResetSourceNatActiveRanges</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatDrainIps">ResetSourceNatDrainIps</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatDrainRanges">ResetSourceNatDrainRanges</a></code> | *No description.* |
 
 ---
 
@@ -2490,10 +2586,22 @@ Returns a reversible string representation.
 func ResetSourceNatActiveIps()
 ```
 
+##### `ResetSourceNatActiveRanges` <a name="ResetSourceNatActiveRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatActiveRanges"></a>
+
+```go
+func ResetSourceNatActiveRanges()
+```
+
 ##### `ResetSourceNatDrainIps` <a name="ResetSourceNatDrainIps" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatDrainIps"></a>
 
 ```go
 func ResetSourceNatDrainIps()
+```
+
+##### `ResetSourceNatDrainRanges` <a name="ResetSourceNatDrainRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.resetSourceNatDrainRanges"></a>
+
+```go
+func ResetSourceNatDrainRanges()
 ```
 
 
@@ -2504,9 +2612,13 @@ func ResetSourceNatDrainIps()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveIpsInput">SourceNatActiveIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveRangesInput">SourceNatActiveRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainIpsInput">SourceNatDrainIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainRangesInput">SourceNatDrainRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveIps">SourceNatActiveIps</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveRanges">SourceNatActiveRanges</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainIps">SourceNatDrainIps</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainRanges">SourceNatDrainRanges</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesAction">GoogleComputeRouterNatRulesAction</a></code> | *No description.* |
 
 ---
@@ -2545,10 +2657,30 @@ func SourceNatActiveIpsInput() *[]*string
 
 ---
 
+##### `SourceNatActiveRangesInput`<sup>Optional</sup> <a name="SourceNatActiveRangesInput" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveRangesInput"></a>
+
+```go
+func SourceNatActiveRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `SourceNatDrainIpsInput`<sup>Optional</sup> <a name="SourceNatDrainIpsInput" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainIpsInput"></a>
 
 ```go
 func SourceNatDrainIpsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `SourceNatDrainRangesInput`<sup>Optional</sup> <a name="SourceNatDrainRangesInput" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainRangesInput"></a>
+
+```go
+func SourceNatDrainRangesInput() *[]*string
 ```
 
 - *Type:* *[]*string
@@ -2565,10 +2697,30 @@ func SourceNatActiveIps() *[]*string
 
 ---
 
+##### `SourceNatActiveRanges`<sup>Required</sup> <a name="SourceNatActiveRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatActiveRanges"></a>
+
+```go
+func SourceNatActiveRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `SourceNatDrainIps`<sup>Required</sup> <a name="SourceNatDrainIps" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainIps"></a>
 
 ```go
 func SourceNatDrainIps() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `SourceNatDrainRanges`<sup>Required</sup> <a name="SourceNatDrainRanges" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesActionOutputReference.property.sourceNatDrainRanges"></a>
+
+```go
+func SourceNatDrainRanges() *[]*string
 ```
 
 - *Type:* *[]*string
@@ -2591,7 +2743,7 @@ func InternalValue() GoogleComputeRouterNatRulesAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterNatRulesList
 ```
@@ -2734,7 +2886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterNatRulesOutputReference
 ```
@@ -3116,7 +3268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatSubnetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterNatSubnetworkList
 ```
@@ -3259,7 +3411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatSubnetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatSubnetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterNatSubnetworkOutputReference
 ```
@@ -3599,7 +3751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterNat.GoogleComputeRouterNatTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouternat"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouternat"
 
 googlecomputerouternat.NewGoogleComputeRouterNatTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterNatTimeoutsOutputReference
 ```

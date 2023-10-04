@@ -1,6 +1,6 @@
 # `google_spanner_instance_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy).
+Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy).
 
 # `googleSpannerInstanceIamPolicy` Submodule <a name="`googleSpannerInstanceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_policy`
 
 ### GoogleSpannerInstanceIamPolicy <a name="GoogleSpannerInstanceIamPolicy" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiampolicy"
 
 googlespannerinstanceiampolicy.NewGoogleSpannerInstanceIamPolicy(scope Construct, id *string, config GoogleSpannerInstanceIamPolicyConfig) GoogleSpannerInstanceIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiampolicy"
 
 googlespannerinstanceiampolicy.GoogleSpannerInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiampolicy"
 
 googlespannerinstanceiampolicy.GoogleSpannerInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googlespannerinstanceiampolicy.GoogleSpannerInstanceIamPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiampolicy"
 
 googlespannerinstanceiampolicy.GoogleSpannerInstanceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiampolicy"
 
 &googlespannerinstanceiampolicy.GoogleSpannerInstanceIamPolicyConfig {
 	Connection: interface{},
@@ -656,10 +656,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespanne
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamPolicy.GoogleSpannerInstanceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}. |
 
 ---
 
@@ -741,7 +741,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}.
 
 ---
 
@@ -753,7 +753,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}.
 
 ---
 
@@ -765,7 +765,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}.
 
 ---
 
