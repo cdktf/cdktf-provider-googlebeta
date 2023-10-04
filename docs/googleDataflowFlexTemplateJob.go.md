@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataflowflextemplatejob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataflowflextemplatejob"
 
 googledataflowflextemplatejob.NewGoogleDataflowFlexTemplateJob(scope Construct, id *string, config GoogleDataflowFlexTemplateJobConfig) GoogleDataflowFlexTemplateJob
 ```
@@ -431,7 +431,7 @@ func ResetTransformNameMapping()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataflowflextemplatejob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataflowflextemplatejob"
 
 googledataflowflextemplatejob.GoogleDataflowFlexTemplateJob_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataflowflextemplatejob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataflowflextemplatejob"
 
 googledataflowflextemplatejob.GoogleDataflowFlexTemplateJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ googledataflowflextemplatejob.GoogleDataflowFlexTemplateJob_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataflowflextemplatejob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataflowflextemplatejob"
 
 googledataflowflextemplatejob.GoogleDataflowFlexTemplateJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -1259,7 +1259,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataflowflextemplatejob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataflowflextemplatejob"
 
 &googledataflowflextemplatejob.GoogleDataflowFlexTemplateJobConfig {
 	Connection: interface{},
