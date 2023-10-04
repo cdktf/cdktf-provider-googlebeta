@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.NewGoogleDialogflowCxEnvironment(scope Construct, id *string, config GoogleDialogflowCxEnvironmentConfig) GoogleDialogflowCxEnvironment
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.GoogleDialogflowCxEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.GoogleDialogflowCxEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ googledialogflowcxenvironment.GoogleDialogflowCxEnvironment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.GoogleDialogflowCxEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 &googledialogflowcxenvironment.GoogleDialogflowCxEnvironmentConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflo
 	Description: *string,
 	Id: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeouts,
 }
 ```
 
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 &googledialogflowcxenvironment.GoogleDialogflowCxEnvironmentTimeouts {
 	Create: *string,
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 &googledialogflowcxenvironment.GoogleDialogflowCxEnvironmentVersionConfigs {
 	Version: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.NewGoogleDialogflowCxEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxEnvironmentTimeoutsOutputReference
 ```
@@ -1354,7 +1354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.NewGoogleDialogflowCxEnvironmentVersionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxEnvironmentVersionConfigsList
 ```
@@ -1497,7 +1497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxenvironment"
 
 googledialogflowcxenvironment.NewGoogleDialogflowCxEnvironmentVersionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxEnvironmentVersionConfigsOutputReference
 ```

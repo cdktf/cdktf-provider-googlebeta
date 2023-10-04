@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.NewDataGooglePubsubSubscriptionIamPolicy(scope Construct, id *string, config DataGooglePubsubSubscriptionIamPolicyConfig) DataGooglePubsubSubscriptionIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubsubscriptioniampolicy"
 
 &datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicyConfig {
 	Connection: interface{},
