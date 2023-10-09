@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 googledataprocclusteriambinding.NewGoogleDataprocClusterIamBinding(scope Construct, id *string, config GoogleDataprocClusterIamBindingConfig) GoogleDataprocClusterIamBinding
 ```
@@ -311,7 +311,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 googledataprocclusteriambinding.GoogleDataprocClusterIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 googledataprocclusteriambinding.GoogleDataprocClusterIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googledataprocclusteriambinding.GoogleDataprocClusterIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 googledataprocclusteriambinding.GoogleDataprocClusterIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 &googledataprocclusteriambinding.GoogleDataprocClusterIamBindingCondition {
 	Expression: *string,
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 &googledataprocclusteriambinding.GoogleDataprocClusterIamBindingConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocc
 	Cluster: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding.GoogleDataprocClusterIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocclusteriambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocclusteriambinding"
 
 googledataprocclusteriambinding.NewGoogleDataprocClusterIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocClusterIamBindingConditionOutputReference
 ```

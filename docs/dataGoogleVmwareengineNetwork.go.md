@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.NewDataGoogleVmwareengineNetwork(scope Construct, id *string, config DataGoogleVmwareengineNetworkConfig) DataGoogleVmwareengineNetwork
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.DataGoogleVmwareengineNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.DataGoogleVmwareengineNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglevmwareenginenetwork.DataGoogleVmwareengineNetwork_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.DataGoogleVmwareengineNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 &datagooglevmwareenginenetwork.DataGoogleVmwareengineNetworkConfig {
 	Connection: interface{},
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 &datagooglevmwareenginenetwork.DataGoogleVmwareengineNetworkVpcNetworks {
 
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwar
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.NewDataGoogleVmwareengineNetworkVpcNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineNetworkVpcNetworksList
 ```
@@ -962,7 +962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginenetwork"
 
 datagooglevmwareenginenetwork.NewDataGoogleVmwareengineNetworkVpcNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineNetworkVpcNetworksOutputReference
 ```
