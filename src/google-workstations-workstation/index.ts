@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation
 // generated from terraform resource schema
 
@@ -14,9 +9,9 @@ import * as cdktf from 'cdktf';
 export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
   */
@@ -42,9 +37,9 @@ Please refer to the field 'effective_annotations' for all of the annotations pre
   readonly id?: string;
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
   */

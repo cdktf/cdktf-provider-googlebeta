@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy
 // generated from terraform resource schema
 
@@ -53,7 +48,7 @@ export interface GoogleIamDenyPolicyConfig extends cdktf.TerraformMetaArguments 
 export interface GoogleIamDenyPolicyRulesDenyRuleDenialCondition {
   /**
   * Description of the expression. This is a longer text which describes the expression,
-e.g. when hovered over it in a UI.
+  * e.g. when hovered over it in a UI.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#description GoogleIamDenyPolicy#description}
   */
@@ -66,14 +61,14 @@ e.g. when hovered over it in a UI.
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting,
-e.g. a file name and a position in the file.
+  * e.g. a file name and a position in the file.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#location GoogleIamDenyPolicy#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
-This can be used e.g. in UIs which allow to enter the expression.
+  * This can be used e.g. in UIs which allow to enter the expression.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#title GoogleIamDenyPolicy#title}
   */
@@ -207,7 +202,7 @@ export class GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference exte
 export interface GoogleIamDenyPolicyRulesDenyRule {
   /**
   * The permissions that are explicitly denied by this rule. Each permission uses the format '{service-fqdn}/{resource}.{verb}',
-where '{service-fqdn}' is the fully qualified domain name for the service. For example, 'iam.googleapis.com/roles.list'.
+  * where '{service-fqdn}' is the fully qualified domain name for the service. For example, 'iam.googleapis.com/roles.list'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#denied_permissions GoogleIamDenyPolicy#denied_permissions}
   */
@@ -220,15 +215,15 @@ where '{service-fqdn}' is the fully qualified domain name for the service. For e
   readonly deniedPrincipals?: string[];
   /**
   * Specifies the permissions that this rule excludes from the set of denied permissions given by deniedPermissions.
-If a permission appears in deniedPermissions and in exceptionPermissions then it will not be denied.
-The excluded permissions can be specified using the same syntax as deniedPermissions.
+  * If a permission appears in deniedPermissions and in exceptionPermissions then it will not be denied.
+  * The excluded permissions can be specified using the same syntax as deniedPermissions.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#exception_permissions GoogleIamDenyPolicy#exception_permissions}
   */
   readonly exceptionPermissions?: string[];
   /**
   * The identities that are excluded from the deny rule, even if they are listed in the deniedPrincipals.
-For example, you could add a Google group to the deniedPrincipals, then exclude specific users who belong to that group.
+  * For example, you could add a Google group to the deniedPrincipals, then exclude specific users who belong to that group.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_deny_policy#exception_principals GoogleIamDenyPolicy#exception_principals}
   */

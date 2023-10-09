@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_federation
 // generated from terraform resource schema
 
@@ -14,8 +9,8 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataprocMetastoreFederationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the metastore federation. The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
-and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
-3 and 63 characters.
+  * and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
+  * 3 and 63 characters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_federation#federation_id GoogleDataprocMetastoreFederation#federation_id}
   */
@@ -29,9 +24,9 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   readonly id?: string;
   /**
   * User-defined labels for the metastore federation.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_federation#labels GoogleDataprocMetastoreFederation#labels}
   */

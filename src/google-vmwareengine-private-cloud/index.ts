@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_private_cloud
 // generated from terraform resource schema
 
@@ -300,9 +295,9 @@ export class GoogleVmwareenginePrivateCloudVcenterList extends cdktf.ComplexList
 export interface GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs {
   /**
   * Customized number of cores available to each node of the type.
-This number must always be one of 'nodeType.availableCustomCoreCounts'.
-If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
-This cannot be changed once the PrivateCloud is created.
+  * This number must always be one of 'nodeType.availableCustomCoreCounts'.
+  * If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
+  * This cannot be changed once the PrivateCloud is created.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
   */
@@ -452,11 +447,11 @@ export class GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList 
 export interface GoogleVmwareenginePrivateCloudManagementCluster {
   /**
   * The user-provided identifier of the new Cluster. The identifier must meet the following requirements:
-  * Only contains 1-63 alphanumeric characters and hyphens
-  * Begins with an alphabetical character
-  * Ends with a non-hyphen character
-  * Not formatted as a UUID
-  * Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
+  *   * Only contains 1-63 alphanumeric characters and hyphens
+  *   * Begins with an alphabetical character
+  *   * Ends with a non-hyphen character
+  *   * Not formatted as a UUID
+  *   * Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
   */
@@ -556,8 +551,8 @@ export interface GoogleVmwareenginePrivateCloudNetworkConfig {
   readonly managementCidr: string;
   /**
   * The relative resource name of the VMware Engine network attached to the private cloud.
-Specify the name in the following form: projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId}
-where {project} can either be a project number or a project ID.
+  * Specify the name in the following form: projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId}
+  * where {project} can either be a project number or a project ID.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
   */

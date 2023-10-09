@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_node_pool
 // generated from terraform resource schema
 
@@ -14,17 +9,17 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeonpremVmwareNodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Annotations on the node Pool.
-This field has the same restrictions as Kubernetes annotations.
-The total size of all keys and values combined is limited to 256k.
-Key can have 2 segments: prefix (optional) and name (required),
-separated by a slash (/).
-Prefix must be a DNS subdomain.
-Name must be 63 characters or less, begin and end with alphanumerics,
-with dashes (-), underscores (_), dots (.), and alphanumerics between.
-
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * This field has the same restrictions as Kubernetes annotations.
+  * The total size of all keys and values combined is limited to 256k.
+  * Key can have 2 segments: prefix (optional) and name (required),
+  * separated by a slash (/).
+  * Prefix must be a DNS subdomain.
+  * Name must be 63 characters or less, begin and end with alphanumerics,
+  * with dashes (-), underscores (_), dots (.), and alphanumerics between.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_node_pool#annotations GoogleGkeonpremVmwareNodePool#annotations}
   */
@@ -542,7 +537,7 @@ export interface GoogleGkeonpremVmwareNodePoolConfigA {
   readonly cpus?: number;
   /**
   * Allow node pool traffic to be load balanced. Only works for clusters with
-MetalLB load balancers.
+  * MetalLB load balancers.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_node_pool#enable_load_balancer GoogleGkeonpremVmwareNodePool#enable_load_balancer}
   */
@@ -555,18 +550,18 @@ MetalLB load balancers.
   readonly image?: string;
   /**
   * The OS image to be used for each node in a node pool.
-Currently 'cos', 'ubuntu', 'ubuntu_containerd' and 'windows' are supported.
+  * Currently 'cos', 'ubuntu', 'ubuntu_containerd' and 'windows' are supported.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_node_pool#image_type GoogleGkeonpremVmwareNodePool#image_type}
   */
   readonly imageType: string;
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to each node.
-These will added in addition to any default label(s) that
-Kubernetes may apply to the node.
-In case of conflict in label keys, the applied set may differ depending on
-the Kubernetes version -- it's best to assume the behavior is undefined
-and conflicts should be avoided.
+  * These will added in addition to any default label(s) that
+  * Kubernetes may apply to the node.
+  * In case of conflict in label keys, the applied set may differ depending on
+  * the Kubernetes version -- it's best to assume the behavior is undefined
+  * and conflicts should be avoided.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_node_pool#labels GoogleGkeonpremVmwareNodePool#labels}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_redis_cluster
 // generated from terraform resource schema
 
@@ -27,7 +22,7 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name of the resource in this scope including project and location using the form:
-projects/{projectId}/locations/{locationId}/clusters/{clusterId}
+  * projects/{projectId}/locations/{locationId}/clusters/{clusterId}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_redis_cluster#name GoogleRedisCluster#name}
   */
@@ -56,7 +51,7 @@ projects/{projectId}/locations/{locationId}/clusters/{clusterId}
   readonly shardCount: number;
   /**
   * Optional. The in-transit encryption for the Redis cluster.
-If not provided, encryption is disabled for the cluster. Default value: "TRANSIT_ENCRYPTION_MODE_DISABLED" Possible values: ["TRANSIT_ENCRYPTION_MODE_UNSPECIFIED", "TRANSIT_ENCRYPTION_MODE_DISABLED", "TRANSIT_ENCRYPTION_MODE_SERVER_AUTHENTICATION"]
+  * If not provided, encryption is disabled for the cluster. Default value: "TRANSIT_ENCRYPTION_MODE_DISABLED" Possible values: ["TRANSIT_ENCRYPTION_MODE_UNSPECIFIED", "TRANSIT_ENCRYPTION_MODE_DISABLED", "TRANSIT_ENCRYPTION_MODE_SERVER_AUTHENTICATION"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_redis_cluster#transit_encryption_mode GoogleRedisCluster#transit_encryption_mode}
   */
@@ -434,8 +429,8 @@ export class GoogleRedisClusterStateInfoList extends cdktf.ComplexList {
 export interface GoogleRedisClusterPscConfigs {
   /**
   * Required. The consumer network where the network address of
-the discovery endpoint will be reserved, in the form of
-projects/{network_project_id_or_number}/global/networks/{network_id}.
+  * the discovery endpoint will be reserved, in the form of
+  * projects/{network_project_id_or_number}/global/networks/{network_id}.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_redis_cluster#network GoogleRedisCluster#network}
   */

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRule(scope Construct, id *string, config GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule
 ```
@@ -408,7 +408,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -454,7 +454,7 @@ googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRule_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -1126,7 +1126,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 &googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRuleConfig {
 	Connection: interface{},
@@ -1153,7 +1153,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecompu
 	Project: *string,
 	SourceIpRanges: *[]*string,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleTimeouts,
 }
 ```
 
@@ -1303,10 +1303,11 @@ forwarding rule. For global forwarding rules, this target must be a global
 load balancing resource.
 
 The forwarded traffic must be of a type appropriate to the target object.
-For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
-For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
-'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
-'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
+
+* For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
+* For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
+* 'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
+* 'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
 
 For Private Service Connect forwarding rules that forward traffic to managed services, the target must be a service attachment.
 
@@ -1374,11 +1375,11 @@ to the referenced 'target'.
 While creating a forwarding rule, specifying an 'IPAddress' is
 required under the following circumstances:
 
-When the 'target' is set to 'targetGrpcProxy' and
-'validateForProxyless' is set to 'true', the
-'IPAddress' should be set to '0.0.0.0'.
-When the 'target' is a Private Service Connect Google APIs
-bundle, you must specify an 'IPAddress'.
+* When the 'target' is set to 'targetGrpcProxy' and
+  'validateForProxyless' is set to 'true', the
+  'IPAddress' should be set to '0.0.0.0'.
+* When the 'target' is a Private Service Connect Google APIs
+  bundle, you must specify an 'IPAddress'.
 
 Otherwise, you can optionally specify an IP address that references an
 existing static (reserved) IP address resource. When omitted, Google Cloud
@@ -1387,15 +1388,16 @@ assigns an ephemeral IP address.
 Use one of the following formats to specify an IP address while creating a
 forwarding rule:
 
-IP address number, as in '100.1.2.3'
-IPv6 address range, as in '2600:1234::/96'
-Full resource URL, as in
-'https://www.googleapis.com/compute/v1/projects/project_id/regions/region/addresses/address-name'
-Partial URL or by name, as in:
-'projects/project_id/regions/region/addresses/address-name'
-'regions/region/addresses/address-name'
-'global/addresses/address-name'
-'address-name'
+* IP address number, as in '100.1.2.3'
+* IPv6 address range, as in '2600:1234::/96'
+* Full resource URL, as in
+  'https://www.googleapis.com/compute/v1/projects/project_id/regions/region/addresses/address-name'
+* Partial URL or by name, as in:
+
+  * 'projects/project_id/regions/region/addresses/address-name'
+  * 'regions/region/addresses/address-name'
+  * 'global/addresses/address-name'
+  * 'address-name'
 
 The forwarding rule's 'target',
 and in most cases, also the 'loadBalancingScheme', determine the
@@ -1457,7 +1459,7 @@ Labels *map[string]*string
 
 Labels to apply to this forwarding rule.  A list of key->value pairs.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_forwarding_rule#labels GoogleComputeGlobalForwardingRule#labels}
@@ -1544,21 +1546,20 @@ PortRange *string
 
 This field can only be used:.
 
-If 'IPProtocol' is one of TCP, UDP, or SCTP.
-By backend service-based network load balancers, target pool-based
-network load balancers, internal proxy load balancers, external proxy load
-balancers, Traffic Director, external protocol forwarding, and Classic VPN.
-Some products have restrictions on what ports can be used. See
-[port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#port_specifications)
-for details.
-
-TargetHttpProxy: 80, 8080
-TargetHttpsProxy: 443
-TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-1883, 5222
-TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-1883, 5222
-TargetVpnGateway: 500, 4500
+* If 'IPProtocol' is one of TCP, UDP, or SCTP.
+* By backend service-based network load balancers, target pool-based
+  network load balancers, internal proxy load balancers, external proxy load
+  balancers, Traffic Director, external protocol forwarding, and Classic VPN.
+  Some products have restrictions on what ports can be used. See
+  [port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#port_specifications)
+  for details.
+* TargetHttpProxy: 80, 8080
+* TargetHttpsProxy: 443
+* TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+  1883, 5222
+* TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+  1883, 5222
+* TargetVpnGateway: 500, 4500
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_forwarding_rule#port_range GoogleComputeGlobalForwardingRule#port_range}
 
@@ -1629,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 &googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRuleMetadataFilters {
 	FilterLabels: interface{},
@@ -1684,7 +1685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 &googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels {
 	Name: *string,
@@ -1734,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 &googlecomputeglobalforwardingrule.GoogleComputeGlobalForwardingRuleTimeouts {
 	Create: *string,
@@ -1796,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList
 ```
@@ -1939,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference
 ```
@@ -2250,7 +2251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRuleMetadataFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersList
 ```
@@ -2393,7 +2394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference
 ```
@@ -2717,7 +2718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobalforwardingrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalforwardingrule"
 
 googlecomputeglobalforwardingrule.NewGoogleComputeGlobalForwardingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeGlobalForwardingRuleTimeoutsOutputReference
 ```

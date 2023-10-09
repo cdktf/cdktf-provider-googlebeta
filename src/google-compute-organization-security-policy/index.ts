@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_organization_security_policy
 // generated from terraform resource schema
 
@@ -33,15 +28,15 @@ export interface GoogleComputeOrganizationSecurityPolicyConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * The parent of this OrganizationSecurityPolicy in the Cloud Resource Hierarchy.
-Format: organizations/{organization_id} or folders/{folder_id}
+  * Format: organizations/{organization_id} or folders/{folder_id}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_organization_security_policy#parent GoogleComputeOrganizationSecurityPolicy#parent}
   */
   readonly parent: string;
   /**
   * The type indicates the intended use of the security policy.
-For organization security policies, the only supported type
-is "FIREWALL". Default value: "FIREWALL" Possible values: ["FIREWALL"]
+  * For organization security policies, the only supported type
+  * is "FIREWALL". Default value: "FIREWALL" Possible values: ["FIREWALL"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_organization_security_policy#type GoogleComputeOrganizationSecurityPolicy#type}
   */

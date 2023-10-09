@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy
 // generated from terraform resource schema
 
@@ -27,12 +22,12 @@ export interface GoogleComputeResourcePolicyConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The name of the resource, provided by the client when initially creating
-the resource. The resource name must be 1-63 characters long, and comply
-with RFC1035. Specifically, the name must be 1-63 characters long and
-match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])'? which means the
-first character must be a lowercase letter, and all following characters
-must be a dash, lowercase letter, or digit, except the last character,
-which cannot be a dash.
+  * the resource. The resource name must be 1-63 characters long, and comply
+  * with RFC1035. Specifically, the name must be 1-63 characters long and
+  * match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])'? which means the
+  * first character must be a lowercase letter, and all following characters
+  * must be a dash, lowercase letter, or digit, except the last character,
+  * which cannot be a dash.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#name GoogleComputeResourcePolicy#name}
   */
@@ -145,16 +140,16 @@ export class GoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenc
 export interface GoogleComputeResourcePolicyGroupPlacementPolicy {
   /**
   * The number of availability domains instances will be spread across. If two instances are in different
-availability domain, they will not be put in the same low latency network
+  * availability domain, they will not be put in the same low latency network
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#availability_domain_count GoogleComputeResourcePolicy#availability_domain_count}
   */
   readonly availabilityDomainCount?: number;
   /**
   * Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network.
-Specify 'COLLOCATED' to enable collocation. Can only be specified with 'vm_count'. If compute instances are created
-with a COLLOCATED policy, then exactly 'vm_count' instances must be created at the same time with the resource policy
-attached. Possible values: ["COLLOCATED"]
+  * Specify 'COLLOCATED' to enable collocation. Can only be specified with 'vm_count'. If compute instances are created
+  * with a COLLOCATED policy, then exactly 'vm_count' instances must be created at the same time with the resource policy
+  * attached. Possible values: ["COLLOCATED"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
   */
@@ -167,8 +162,8 @@ attached. Possible values: ["COLLOCATED"]
   readonly maxDistance?: number;
   /**
   * Number of VMs in this placement group. Google does not recommend that you use this field
-unless you use a compact policy and you want your policy to work only if it contains this
-exact number of VMs.
+  * unless you use a compact policy and you want your policy to work only if it contains this
+  * exact number of VMs.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#vm_count GoogleComputeResourcePolicy#vm_count}
   */
@@ -445,7 +440,7 @@ export interface GoogleComputeResourcePolicyInstanceSchedulePolicy {
   readonly startTime?: string;
   /**
   * Specifies the time zone to be used in interpreting the schedule. The value of this field must be a time zone name
-from the tz database: http://en.wikipedia.org/wiki/Tz_database.
+  * from the tz database: http://en.wikipedia.org/wiki/Tz_database.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#time_zone GoogleComputeResourcePolicy#time_zone}
   */
@@ -620,7 +615,7 @@ export interface GoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolic
   readonly maxRetentionDays: number;
   /**
   * Specifies the behavior to apply to scheduled snapshots when
-the source disk is deleted. Default value: "KEEP_AUTO_SNAPSHOTS" Possible values: ["KEEP_AUTO_SNAPSHOTS", "APPLY_RETENTION_POLICY"]
+  * the source disk is deleted. Default value: "KEEP_AUTO_SNAPSHOTS" Possible values: ["KEEP_AUTO_SNAPSHOTS", "APPLY_RETENTION_POLICY"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#on_source_disk_delete GoogleComputeResourcePolicy#on_source_disk_delete}
   */
@@ -714,8 +709,8 @@ export interface GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyS
   readonly daysInCycle: number;
   /**
   * This must be in UTC format that resolves to one of
-00:00, 04:00, 08:00, 12:00, 16:00, or 20:00. For example,
-both 13:00-5 and 08:00 are valid.
+  * 00:00, 04:00, 08:00, 12:00, 16:00, or 20:00. For example,
+  * both 13:00-5 and 08:00 are valid.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#start_time GoogleComputeResourcePolicy#start_time}
   */
@@ -806,9 +801,9 @@ export interface GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleHourly
   readonly hoursInCycle: number;
   /**
   * Time within the window to start the operations.
-It must be in an hourly format "HH:MM",
-where HH : [00-23] and MM : [00] GMT.
-eg: 21:00
+  * It must be in an hourly format "HH:MM",
+  * where HH : [00-23] and MM : [00] GMT.
+  * eg: 21:00
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#start_time GoogleComputeResourcePolicy#start_time}
   */
@@ -899,7 +894,7 @@ export interface GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeekly
   readonly day: string;
   /**
   * Time within the window to start the operations.
-It must be in format "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
+  * It must be in format "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#start_time GoogleComputeResourcePolicy#start_time}
   */
@@ -1205,8 +1200,8 @@ export class GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleOutputRefe
 export interface GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties {
   /**
   * Creates the new snapshot in the snapshot chain labeled with the
-specified name. The chain name must be 1-63 characters long and comply
-with RFC1035.
+  * specified name. The chain name must be 1-63 characters long and comply
+  * with RFC1035.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#chain_name GoogleComputeResourcePolicy#chain_name}
   */
@@ -1225,7 +1220,7 @@ with RFC1035.
   readonly labels?: { [key: string]: string };
   /**
   * Cloud Storage bucket location to store the auto snapshot
-(regional or multi-regional)
+  * (regional or multi-regional)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_resource_policy#storage_locations GoogleComputeResourcePolicy#storage_locations}
   */

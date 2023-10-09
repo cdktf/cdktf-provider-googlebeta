@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_trust_config
 // generated from terraform resource schema
 
@@ -27,9 +22,9 @@ export interface GoogleCertificateManagerTrustConfigConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Set of label tags associated with the trust config.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_trust_config#labels GoogleCertificateManagerTrustConfig#labels}
   */
@@ -195,7 +190,7 @@ export class GoogleCertificateManagerTrustConfigTimeoutsOutputReference extends 
 export interface GoogleCertificateManagerTrustConfigTrustStoresIntermediateCas {
   /**
   * PEM intermediate certificate used for building up paths for validation.
-Each certificate provided in PEM format may occupy up to 5kB.
+  * Each certificate provided in PEM format may occupy up to 5kB.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_trust_config#pem_certificate GoogleCertificateManagerTrustConfig#pem_certificate}
   */
@@ -295,7 +290,7 @@ export class GoogleCertificateManagerTrustConfigTrustStoresIntermediateCasList e
 export interface GoogleCertificateManagerTrustConfigTrustStoresTrustAnchors {
   /**
   * PEM root certificate of the PKI used for validation.
-Each certificate provided in PEM format may occupy up to 5kB.
+  * Each certificate provided in PEM format may occupy up to 5kB.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_trust_config#pem_certificate GoogleCertificateManagerTrustConfig#pem_certificate}
   */

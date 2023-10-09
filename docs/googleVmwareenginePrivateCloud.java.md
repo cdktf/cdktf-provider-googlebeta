@@ -1236,11 +1236,12 @@ public java.lang.String getClusterId();
 The user-provided identifier of the new Cluster.
 
 The identifier must meet the following requirements:
-Only contains 1-63 alphanumeric characters and hyphens
-Begins with an alphabetical character
-Ends with a non-hyphen character
-Not formatted as a UUID
-Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
+
+* Only contains 1-63 alphanumeric characters and hyphens
+* Begins with an alphabetical character
+* Ends with a non-hyphen character
+* Not formatted as a UUID
+* Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
 

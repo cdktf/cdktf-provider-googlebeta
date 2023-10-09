@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface GoogleContainerClusterAddonsConfigCloudrunConfig {
   /**
@@ -1634,8 +1629,8 @@ export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefault
   readonly batchPercentage?: number;
   /**
   * Soak time after each batch gets drained.
-
-																			A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * 
+  * 																			A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_cluster#batch_soak_duration GoogleContainerCluster#batch_soak_duration}
   */
@@ -1749,8 +1744,8 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpg
 export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings {
   /**
   * Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
-
-																A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * 
+  * 																A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_cluster#node_pool_soak_duration GoogleContainerCluster#node_pool_soak_duration}
   */
@@ -14136,10 +14131,10 @@ export class GoogleContainerClusterProtectConfigOutputReference extends cdktf.Co
 export interface GoogleContainerClusterReleaseChannel {
   /**
   * The selected release channel. Accepted values are:
-* UNSPECIFIED: Not set.
-* RAPID: Weekly upgrade cadence; Early testers and developers who requires new features.
-* REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel.
-* STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
+  * * UNSPECIFIED: Not set.
+  * * RAPID: Weekly upgrade cadence; Early testers and developers who requires new features.
+  * * REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel.
+  * * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_cluster#channel GoogleContainerCluster#channel}
   */

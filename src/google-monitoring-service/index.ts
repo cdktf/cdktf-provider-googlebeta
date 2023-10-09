@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_service
 // generated from terraform resource schema
 
@@ -31,18 +26,18 @@ export interface GoogleMonitoringServiceConfig extends cdktf.TerraformMetaArgume
   readonly project?: string;
   /**
   * An optional service ID to use. If not given, the server will generate a
-service ID.
+  * service ID.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_service#service_id GoogleMonitoringService#service_id}
   */
   readonly serviceId: string;
   /**
   * Labels which have been used to annotate the service. Label keys must start
-with a letter. Label keys and values may contain lowercase letters,
-numbers, underscores, and dashes. Label keys and values have a maximum
-length of 63 characters, and must be less than 128 bytes in size. Up to 64
-label entries may be stored. For labels which do not have a semantic value,
-the empty string may be supplied for the label value.
+  * with a letter. Label keys and values may contain lowercase letters,
+  * numbers, underscores, and dashes. Label keys and values have a maximum
+  * length of 63 characters, and must be less than 128 bytes in size. Up to 64
+  * label entries may be stored. For labels which do not have a semantic value,
+  * the empty string may be supplied for the label value.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_service#user_labels GoogleMonitoringService#user_labels}
   */
@@ -127,14 +122,14 @@ export class GoogleMonitoringServiceTelemetryList extends cdktf.ComplexList {
 export interface GoogleMonitoringServiceBasicService {
   /**
   * Labels that specify the resource that emits the monitoring data
-which is used for SLO reporting of this 'Service'.
+  * which is used for SLO reporting of this 'Service'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_service#service_labels GoogleMonitoringService#service_labels}
   */
   readonly serviceLabels?: { [key: string]: string };
   /**
   * The type of service that this basic service defines, e.g.
-APP_ENGINE service type
+  * APP_ENGINE service type
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_service#service_type GoogleMonitoringService#service_type}
   */

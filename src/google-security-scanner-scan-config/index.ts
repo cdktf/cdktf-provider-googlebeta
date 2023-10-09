@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleSecurityScannerScanConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The blacklist URL patterns as described in
-https://cloud.google.com/security-scanner/docs/excluded-urls
+  * https://cloud.google.com/security-scanner/docs/excluded-urls
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config#blacklist_patterns GoogleSecurityScannerScanConfig#blacklist_patterns}
   */
@@ -40,7 +35,7 @@ https://cloud.google.com/security-scanner/docs/excluded-urls
   readonly id?: string;
   /**
   * The maximum QPS during scanning. A valid value ranges from 5 to 20 inclusively.
-Defaults to 15.
+  * Defaults to 15.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config#max_qps GoogleSecurityScannerScanConfig#max_qps}
   */
@@ -95,7 +90,7 @@ export interface GoogleSecurityScannerScanConfigAuthenticationCustomAccount {
   readonly loginUrl: string;
   /**
   * The password of the custom account. The credential is stored encrypted
-in GCP.
+  * in GCP.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config#password GoogleSecurityScannerScanConfig#password}
   */
@@ -206,7 +201,7 @@ export class GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputRef
 export interface GoogleSecurityScannerScanConfigAuthenticationGoogleAccount {
   /**
   * The password of the Google account. The credential is stored encrypted
-in GCP.
+  * in GCP.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config#password GoogleSecurityScannerScanConfig#password}
   */
@@ -399,8 +394,8 @@ export interface GoogleSecurityScannerScanConfigSchedule {
   readonly intervalDurationDays: number;
   /**
   * A timestamp indicates when the next run will be scheduled. The value is refreshed
-by the server after each run. If unspecified, it will default to current server time,
-which means the scan will be scheduled to start immediately.
+  * by the server after each run. If unspecified, it will default to current server time,
+  * which means the scan will be scheduled to start immediately.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_security_scanner_scan_config#schedule_time GoogleSecurityScannerScanConfig#schedule_time}
   */

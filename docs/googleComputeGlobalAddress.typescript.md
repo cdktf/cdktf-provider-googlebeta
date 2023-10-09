@@ -1074,8 +1074,8 @@ public readonly addressType: string;
 
 The type of the address to reserve.
 
-EXTERNAL indicates public/external single IP address.
-INTERNAL indicates internal IP ranges belonging to some network. Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL"]
+* EXTERNAL indicates public/external single IP address.
+* INTERNAL indicates internal IP ranges belonging to some network. Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#address_type GoogleComputeGlobalAddress#address_type}
 
@@ -1134,7 +1134,7 @@ public readonly labels: {[ key: string ]: string};
 
 Labels to apply to this address.  A list of key->value pairs.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#labels GoogleComputeGlobalAddress#labels}
@@ -1200,9 +1200,9 @@ public readonly purpose: string;
 
 The purpose of the resource. Possible values include:.
 
-VPC_PEERING - for peer networks
+* VPC_PEERING - for peer networks
 
-PRIVATE_SERVICE_CONNECT - for ([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html) only) Private Service Connect networks
+* PRIVATE_SERVICE_CONNECT - for ([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html) only) Private Service Connect networks
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#purpose GoogleComputeGlobalAddress#purpose}
 

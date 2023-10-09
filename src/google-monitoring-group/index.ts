@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_group
 // generated from terraform resource schema
 
@@ -14,14 +9,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleMonitoringGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * A user-assigned name for this group, used only for display
-purposes.
+  * purposes.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_group#display_name GoogleMonitoringGroup#display_name}
   */
   readonly displayName: string;
   /**
   * The filter used to determine which monitored resources
-belong to this group.
+  * belong to this group.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_group#filter GoogleMonitoringGroup#filter}
   */
@@ -35,16 +30,16 @@ belong to this group.
   readonly id?: string;
   /**
   * If true, the members of this group are considered to be a
-cluster. The system can perform additional analysis on
-groups that are clusters.
+  * cluster. The system can perform additional analysis on
+  * groups that are clusters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_group#is_cluster GoogleMonitoringGroup#is_cluster}
   */
   readonly isCluster?: boolean | cdktf.IResolvable;
   /**
   * The name of the group's parent, if it has one. The format is
-"projects/{project_id_or_number}/groups/{group_id}". For
-groups with no parent, parentName is the empty string, "".
+  * "projects/{project_id_or_number}/groups/{group_id}". For
+  * groups with no parent, parentName is the empty string, "".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_monitoring_group#parent_name GoogleMonitoringGroup#parent_name}
   */

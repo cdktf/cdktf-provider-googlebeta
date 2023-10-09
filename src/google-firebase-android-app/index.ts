@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_android_app
 // generated from terraform resource schema
 
@@ -14,16 +9,16 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the AndroidApp.
-If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AndroidApp.
-This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+  * If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AndroidApp.
+  * This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_android_app#api_key_id GoogleFirebaseAndroidApp#api_key_id}
   */
   readonly apiKeyId?: string;
   /**
   * (Optional) Set to 'ABANDON' to allow the AndroidApp to be untracked from terraform state
-rather than deleted upon 'terraform destroy'. This is useful because the AndroidApp may be
-serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
+  * rather than deleted upon 'terraform destroy'. This is useful because the AndroidApp may be
+  * serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
   */
@@ -43,7 +38,7 @@ serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
   readonly id?: string;
   /**
   * Immutable. The canonical package name of the Android app as would appear in the Google Play
-Developer Console.
+  * Developer Console.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
   */

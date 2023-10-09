@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan
 // generated from terraform resource schema
 
@@ -39,10 +34,10 @@ export interface GoogleDataplexDatascanConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * User-defined labels for the scan. A list of key->value pairs.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
   */
@@ -166,7 +161,7 @@ export interface GoogleDataplexDatascanData {
   readonly entity?: string;
   /**
   * The service-qualified full resource name of the cloud resource for a DataScan job to scan against. The field could be:
-(Cloud Storage bucket for DataDiscoveryScan)BigQuery table of type "TABLE" for DataProfileScan/DataQualityScan.
+  * (Cloud Storage bucket for DataDiscoveryScan)BigQuery table of type "TABLE" for DataProfileScan/DataQualityScan.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
   */
@@ -257,8 +252,8 @@ export class GoogleDataplexDatascanDataOutputReference extends cdktf.ComplexObje
 export interface GoogleDataplexDatascanDataProfileSpecExcludeFields {
   /**
   * Expected input is a list of fully qualified names of fields as in the schema.
-Only top-level field names for nested fields are supported.
-For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
+  * Only top-level field names for nested fields are supported.
+  * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
   */
@@ -326,8 +321,8 @@ export class GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference e
 export interface GoogleDataplexDatascanDataProfileSpecIncludeFields {
   /**
   * Expected input is a list of fully qualified names of fields as in the schema.
-Only top-level field names for nested fields are supported.
-For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
+  * Only top-level field names for nested fields are supported.
+  * For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#field_names GoogleDataplexDatascan#field_names}
   */
@@ -395,7 +390,7 @@ export class GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference e
 export interface GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport {
   /**
   * The BigQuery table to export DataProfileScan results to.
-Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+  * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
   */
@@ -536,8 +531,8 @@ export interface GoogleDataplexDatascanDataProfileSpec {
   readonly rowFilter?: string;
   /**
   * The percentage of the records to be selected from the dataset for DataScan.
-Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
-Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
+  * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
+  * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
   */
@@ -715,7 +710,7 @@ export class GoogleDataplexDatascanDataProfileSpecOutputReference extends cdktf.
 export interface GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport {
   /**
   * The BigQuery table to export DataQualityScan results to.
-Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+  * Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#results_table GoogleDataplexDatascan#results_table}
   */
@@ -900,14 +895,14 @@ export interface GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation {
   readonly minValue?: string;
   /**
   * Whether each value needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
-Only relevant if a maxValue has been defined. Default = false.
+  * Only relevant if a maxValue has been defined. Default = false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether each value needs to be strictly greater than ('>') the minimum, or if equality is allowed.
-Only relevant if a minValue has been defined. Default = false.
+  * Only relevant if a minValue has been defined. Default = false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
   */
@@ -1236,14 +1231,14 @@ export class GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputRefer
 export interface GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation {
   /**
   * The maximum column statistic value allowed for a row to pass this validation.
-At least one of minValue and maxValue need to be provided.
+  * At least one of minValue and maxValue need to be provided.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
   */
   readonly maxValue?: string;
   /**
   * The minimum column statistic value allowed for a row to pass this validation.
-At least one of minValue and maxValue need to be provided.
+  * At least one of minValue and maxValue need to be provided.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
   */
@@ -1256,14 +1251,14 @@ At least one of minValue and maxValue need to be provided.
   readonly statistic: string;
   /**
   * Whether column statistic needs to be strictly lesser than ('<') the maximum, or if equality is allowed.
-Only relevant if a maxValue has been defined. Default = false.
+  * Only relevant if a maxValue has been defined. Default = false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
   */
   readonly strictMaxEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether column statistic needs to be strictly greater than ('>') the minimum, or if equality is allowed.
-Only relevant if a minValue has been defined. Default = false.
+  * Only relevant if a minValue has been defined. Default = false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
   */
@@ -1528,7 +1523,7 @@ export interface GoogleDataplexDatascanDataQualitySpecRules {
   readonly column?: string;
   /**
   * Description of the rule.
-The maximum length is 1,024 characters.
+  * The maximum length is 1,024 characters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
   */
@@ -1547,10 +1542,10 @@ The maximum length is 1,024 characters.
   readonly ignoreNull?: boolean | cdktf.IResolvable;
   /**
   * A mutable name for the rule.
-The name must contain only letters (a-z, A-Z), numbers (0-9), or hyphens (-).
-The maximum length is 63 characters.
-Must start with a letter.
-Must end with a number or a letter.
+  * The name must contain only letters (a-z, A-Z), numbers (0-9), or hyphens (-).
+  * The maximum length is 63 characters.
+  * Must start with a letter.
+  * Must end with a number or a letter.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#name GoogleDataplexDatascan#name}
   */
@@ -2006,8 +2001,8 @@ export interface GoogleDataplexDatascanDataQualitySpec {
   readonly rowFilter?: string;
   /**
   * The percentage of the records to be selected from the dataset for DataScan.
-Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
-Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
+  * Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
+  * Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
   */

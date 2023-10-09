@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template
 // generated from terraform resource schema
 
@@ -45,9 +40,9 @@ export interface GoogleComputeInstanceTemplateConfig extends cdktf.TerraformMeta
   readonly instanceDescription?: string;
   /**
   * A set of key/value label pairs to assign to instances created from this template.
-				
-				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-				Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 				
+  * 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#labels GoogleComputeInstanceTemplate#labels}
   */
@@ -435,15 +430,15 @@ export class GoogleComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference e
 export interface GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey {
   /**
   * The self link of the encryption key that is stored in
-Google Cloud KMS.
+  * Google Cloud KMS.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#kms_key_self_link GoogleComputeInstanceTemplate#kms_key_self_link}
   */
   readonly kmsKeySelfLink: string;
   /**
   * The service account being used for the encryption
-request for the given KMS key. If absent, the Compute
-Engine default service account is used.
+  * request for the given KMS key. If absent, the Compute
+  * Engine default service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#kms_key_service_account GoogleComputeInstanceTemplate#kms_key_service_account}
   */
@@ -531,15 +526,15 @@ export class GoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputRefe
 export interface GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey {
   /**
   * The self link of the encryption key that is stored in
-Google Cloud KMS.
+  * Google Cloud KMS.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#kms_key_self_link GoogleComputeInstanceTemplate#kms_key_self_link}
   */
   readonly kmsKeySelfLink: string;
   /**
   * The service account being used for the encryption
-request for the given KMS key. If absent, the Compute
-Engine default service account is used.
+  * request for the given KMS key. If absent, the Compute
+  * Engine default service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#kms_key_service_account GoogleComputeInstanceTemplate#kms_key_service_account}
   */
@@ -705,9 +700,9 @@ export interface GoogleComputeInstanceTemplateDisk {
   readonly sourceImage?: string;
   /**
   * The source snapshot to create this disk. When creating
-a new instance, one of initializeParams.sourceSnapshot,
-initializeParams.sourceImage, or disks.source is
-required except for local SSD.
+  * a new instance, one of initializeParams.sourceSnapshot,
+  * initializeParams.sourceImage, or disks.source is
+  * required except for local SSD.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#source_snapshot GoogleComputeInstanceTemplate#source_snapshot}
   */
@@ -2422,16 +2417,16 @@ export class GoogleComputeInstanceTemplateReservationAffinityOutputReference ext
 export interface GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeout {
   /**
   * Span of time that's a fraction of a second at nanosecond
-resolution. Durations less than one second are represented
-with a 0 seconds field and a positive nanos field. Must
-be from 0 to 999,999,999 inclusive.
+  * resolution. Durations less than one second are represented
+  * with a 0 seconds field and a positive nanos field. Must
+  * be from 0 to 999,999,999 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#nanos GoogleComputeInstanceTemplate#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
-Must be from 0 to 315,576,000,000 inclusive.
+  * Must be from 0 to 315,576,000,000 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#seconds GoogleComputeInstanceTemplate#seconds}
   */
@@ -2551,16 +2546,16 @@ export class GoogleComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList 
 export interface GoogleComputeInstanceTemplateSchedulingMaxRunDuration {
   /**
   * Span of time that's a fraction of a second at nanosecond
-resolution. Durations less than one second are represented
-with a 0 seconds field and a positive nanos field. Must
-be from 0 to 999,999,999 inclusive.
+  * resolution. Durations less than one second are represented
+  * with a 0 seconds field and a positive nanos field. Must
+  * be from 0 to 999,999,999 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#nanos GoogleComputeInstanceTemplate#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
-Must be from 0 to 315,576,000,000 inclusive.
+  * Must be from 0 to 315,576,000,000 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_template#seconds GoogleComputeInstanceTemplate#seconds}
   */

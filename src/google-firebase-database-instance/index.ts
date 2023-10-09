@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_database_instance
 // generated from terraform resource schema
 
@@ -27,7 +22,7 @@ export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The globally unique identifier of the Firebase Realtime Database instance.
-Instance IDs cannot be reused after deletion.
+  * Instance IDs cannot be reused after deletion.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_database_instance#instance_id GoogleFirebaseDatabaseInstance#instance_id}
   */
@@ -38,16 +33,16 @@ Instance IDs cannot be reused after deletion.
   readonly project?: string;
   /**
   * A reference to the region where the Firebase Realtime database resides.
-Check all [available regions](https://firebase.google.com/docs/projects/locations#rtdb-locations)
+  * Check all [available regions](https://firebase.google.com/docs/projects/locations#rtdb-locations)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_database_instance#region GoogleFirebaseDatabaseInstance#region}
   */
   readonly region: string;
   /**
   * The database type.
-Each project can create one default Firebase Realtime Database, which cannot be deleted once created.
-Creating user Databases is only available for projects on the Blaze plan.
-Projects can be upgraded using the Cloud Billing API https://cloud.google.com/billing/reference/rest/v1/projects/updateBillingInfo. Default value: "USER_DATABASE" Possible values: ["DEFAULT_DATABASE", "USER_DATABASE"]
+  * Each project can create one default Firebase Realtime Database, which cannot be deleted once created.
+  * Creating user Databases is only available for projects on the Blaze plan.
+  * Projects can be upgraded using the Cloud Billing API https://cloud.google.com/billing/reference/rest/v1/projects/updateBillingInfo. Default value: "USER_DATABASE" Possible values: ["DEFAULT_DATABASE", "USER_DATABASE"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_database_instance#type GoogleFirebaseDatabaseInstance#type}
   */

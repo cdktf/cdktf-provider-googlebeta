@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_identity_group_membership
 // generated from terraform resource schema
 
@@ -53,14 +48,14 @@ export interface GoogleCloudIdentityGroupMembershipConfig extends cdktf.Terrafor
 export interface GoogleCloudIdentityGroupMembershipMemberKey {
   /**
   * The ID of the entity.
-
-For Google-managed entities, the id must be the email address of an existing
-group or user.
-
-For external-identity-mapped entities, the id must be a string conforming
-to the Identity Source's requirements.
-
-Must be unique within a namespace.
+  * 
+  * For Google-managed entities, the id must be the email address of an existing
+  * group or user.
+  * 
+  * For external-identity-mapped entities, the id must be a string conforming
+  * to the Identity Source's requirements.
+  * 
+  * Must be unique within a namespace.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
   *
@@ -70,13 +65,13 @@ Must be unique within a namespace.
   readonly id: string;
   /**
   * The namespace in which the entity exists.
-
-If not specified, the EntityKey represents a Google-managed entity
-such as a Google user or a Google Group.
-
-If specified, the EntityKey represents an external-identity-mapped group.
-The namespace must correspond to an identity source created in Admin Console
-and must be in the form of 'identitysources/{identity_source_id}'.
+  * 
+  * If not specified, the EntityKey represents a Google-managed entity
+  * such as a Google user or a Google Group.
+  * 
+  * If specified, the EntityKey represents an external-identity-mapped group.
+  * The namespace must correspond to an identity source created in Admin Console
+  * and must be in the form of 'identitysources/{identity_source_id}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
   */
@@ -164,14 +159,14 @@ export class GoogleCloudIdentityGroupMembershipMemberKeyOutputReference extends 
 export interface GoogleCloudIdentityGroupMembershipPreferredMemberKey {
   /**
   * The ID of the entity.
-
-For Google-managed entities, the id must be the email address of an existing
-group or user.
-
-For external-identity-mapped entities, the id must be a string conforming
-to the Identity Source's requirements.
-
-Must be unique within a namespace.
+  * 
+  * For Google-managed entities, the id must be the email address of an existing
+  * group or user.
+  * 
+  * For external-identity-mapped entities, the id must be a string conforming
+  * to the Identity Source's requirements.
+  * 
+  * Must be unique within a namespace.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_identity_group_membership#id GoogleCloudIdentityGroupMembership#id}
   *
@@ -181,13 +176,13 @@ Must be unique within a namespace.
   readonly id: string;
   /**
   * The namespace in which the entity exists.
-
-If not specified, the EntityKey represents a Google-managed entity
-such as a Google user or a Google Group.
-
-If specified, the EntityKey represents an external-identity-mapped group.
-The namespace must correspond to an identity source created in Admin Console
-and must be in the form of 'identitysources/{identity_source_id}'.
+  * 
+  * If not specified, the EntityKey represents a Google-managed entity
+  * such as a Google user or a Google Group.
+  * 
+  * If specified, the EntityKey represents an external-identity-mapped group.
+  * The namespace must correspond to an identity source created in Admin Console
+  * and must be in the form of 'identitysources/{identity_source_id}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_identity_group_membership#namespace GoogleCloudIdentityGroupMembership#namespace}
   */

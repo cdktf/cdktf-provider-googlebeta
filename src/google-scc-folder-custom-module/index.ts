@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module
 // generated from terraform resource schema
 
@@ -14,10 +9,10 @@ import * as cdktf from 'cdktf';
 export interface GoogleSccFolderCustomModuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the Security Health Analytics custom module. This
-display name becomes the finding category for all findings that are
-returned by this custom module. The display name must be between 1 and
-128 characters, start with a lowercase letter, and contain alphanumeric
-characters or underscores only.
+  * display name becomes the finding category for all findings that are
+  * returned by this custom module. The display name must be between 1 and
+  * 128 characters, start with a lowercase letter, and contain alphanumeric
+  * characters or underscores only.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#display_name GoogleSccFolderCustomModule#display_name}
   */
@@ -57,7 +52,7 @@ characters or underscores only.
 export interface GoogleSccFolderCustomModuleCustomConfigCustomOutputPropertiesValueExpression {
   /**
   * Description of the expression. This is a longer text which describes the
-expression, e.g. when hovered over it in a UI.
+  * expression, e.g. when hovered over it in a UI.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#description GoogleSccFolderCustomModule#description}
   */
@@ -70,14 +65,14 @@ expression, e.g. when hovered over it in a UI.
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
-file name and a position in the file.
+  * file name and a position in the file.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#location GoogleSccFolderCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
-be used e.g. in UIs which allow to enter the expression.
+  * be used e.g. in UIs which allow to enter the expression.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#title GoogleSccFolderCustomModule#title}
   */
@@ -406,7 +401,7 @@ export class GoogleSccFolderCustomModuleCustomConfigCustomOutputOutputReference 
 export interface GoogleSccFolderCustomModuleCustomConfigPredicate {
   /**
   * Description of the expression. This is a longer text which describes the
-expression, e.g. when hovered over it in a UI.
+  * expression, e.g. when hovered over it in a UI.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#description GoogleSccFolderCustomModule#description}
   */
@@ -419,14 +414,14 @@ expression, e.g. when hovered over it in a UI.
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
-file name and a position in the file.
+  * file name and a position in the file.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#location GoogleSccFolderCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
-be used e.g. in UIs which allow to enter the expression.
+  * be used e.g. in UIs which allow to enter the expression.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#title GoogleSccFolderCustomModule#title}
   */
@@ -624,16 +619,16 @@ export class GoogleSccFolderCustomModuleCustomConfigResourceSelectorOutputRefere
 export interface GoogleSccFolderCustomModuleCustomConfig {
   /**
   * Text that describes the vulnerability or misconfiguration that the custom
-module detects. This explanation is returned with each finding instance to
-help investigators understand the detected issue. The text must be enclosed in quotation marks.
+  * module detects. This explanation is returned with each finding instance to
+  * help investigators understand the detected issue. The text must be enclosed in quotation marks.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#description GoogleSccFolderCustomModule#description}
   */
   readonly description?: string;
   /**
   * An explanation of the recommended steps that security teams can take to resolve
-the detected issue. This explanation is returned with each finding generated by
-this module in the nextSteps property of the finding JSON.
+  * the detected issue. This explanation is returned with each finding generated by
+  * this module in the nextSteps property of the finding JSON.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_folder_custom_module#recommendation GoogleSccFolderCustomModule#recommendation}
   */

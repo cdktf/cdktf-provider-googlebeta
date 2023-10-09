@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_cluster
 // generated from terraform resource schema
 
@@ -27,8 +22,8 @@ export interface GoogleVmwareengineClusterConfig extends cdktf.TerraformMetaArgu
   readonly name: string;
   /**
   * The resource name of the private cloud to create a new cluster in.
-Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
-For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
+  * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
+  * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_cluster#parent GoogleVmwareengineCluster#parent}
   */
@@ -49,9 +44,9 @@ For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 export interface GoogleVmwareengineClusterNodeTypeConfigs {
   /**
   * Customized number of cores available to each node of the type.
-This number must always be one of 'nodeType.availableCustomCoreCounts'.
-If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
-Once the customer is created then corecount cannot be changed.
+  * This number must always be one of 'nodeType.availableCustomCoreCounts'.
+  * If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
+  * Once the customer is created then corecount cannot be changed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vmwareengine_cluster#custom_core_count GoogleVmwareengineCluster#custom_core_count}
   */

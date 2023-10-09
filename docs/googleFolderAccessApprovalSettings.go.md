@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.NewGoogleFolderAccessApprovalSettings(scope Construct, id *string, config GoogleFolderAccessApprovalSettingsConfig) GoogleFolderAccessApprovalSettings
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettings_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettings_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -745,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 &googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettingsConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolde
 	ActiveKeyVersion: *string,
 	Id: *string,
 	NotificationEmails: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts,
 }
 ```
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 &googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettingsEnrolledServices {
 	CloudProduct: *string,
@@ -978,29 +978,31 @@ CloudProduct *string
 The product for which Access Approval will be enrolled.
 
 Allowed values are listed (case-sensitive):
-all
-App Engine
-BigQuery
-Cloud Bigtable
-Cloud Key Management Service
-Compute Engine
-Cloud Dataflow
-Cloud Identity and Access Management
-Cloud Pub/Sub
-Cloud Storage
-Persistent Disk
+
+* all
+* App Engine
+* BigQuery
+* Cloud Bigtable
+* Cloud Key Management Service
+* Compute Engine
+* Cloud Dataflow
+* Cloud Identity and Access Management
+* Cloud Pub/Sub
+* Cloud Storage
+* Persistent Disk
 
 Note: These values are supported as input, but considered a legacy format:
-all
-appengine.googleapis.com
-bigquery.googleapis.com
-bigtable.googleapis.com
-cloudkms.googleapis.com
-compute.googleapis.com
-dataflow.googleapis.com
-iam.googleapis.com
-pubsub.googleapis.com
-storage.googleapis.com
+
+* all
+* appengine.googleapis.com
+* bigquery.googleapis.com
+* bigtable.googleapis.com
+* cloudkms.googleapis.com
+* compute.googleapis.com
+* dataflow.googleapis.com
+* iam.googleapis.com
+* pubsub.googleapis.com
+* storage.googleapis.com
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_access_approval_settings#cloud_product GoogleFolderAccessApprovalSettings#cloud_product}
 
@@ -1025,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 &googlefolderaccessapprovalsettings.GoogleFolderAccessApprovalSettingsTimeouts {
 	Create: *string,
@@ -1087,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.NewGoogleFolderAccessApprovalSettingsEnrolledServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFolderAccessApprovalSettingsEnrolledServicesList
 ```
@@ -1230,7 +1232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.NewGoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference
 ```
@@ -1548,7 +1550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderaccessapprovalsettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderaccessapprovalsettings"
 
 googlefolderaccessapprovalsettings.NewGoogleFolderAccessApprovalSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFolderAccessApprovalSettingsTimeoutsOutputReference
 ```

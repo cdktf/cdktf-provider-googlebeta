@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_policy
 // generated from terraform resource schema
 
@@ -20,16 +15,16 @@ export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   /**
   * Allows networks bound to this policy to receive DNS queries sent
-by VMs or applications over VPN connections. When enabled, a
-virtual IP address will be allocated from each of the sub-networks
-that are bound to this policy.
+  * by VMs or applications over VPN connections. When enabled, a
+  * virtual IP address will be allocated from each of the sub-networks
+  * that are bound to this policy.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
   */
   readonly enableInboundForwarding?: boolean | cdktf.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
-Defaults to no logging if not set.
+  * Defaults to no logging if not set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
   */
@@ -73,8 +68,8 @@ Defaults to no logging if not set.
 export interface GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers {
   /**
   * Forwarding path for this TargetNameServer. If unset or 'default' Cloud DNS will make forwarding
-decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
+  * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+  * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
   */
@@ -264,8 +259,8 @@ export class GoogleDnsPolicyAlternativeNameServerConfigOutputReference extends c
 export interface GoogleDnsPolicyNetworks {
   /**
   * The id or fully qualified URL of the VPC network to forward queries to.
-This should be formatted like 'projects/{project}/global/networks/{network}' or
-'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
+  * This should be formatted like 'projects/{project}/global/networks/{network}' or
+  * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
   */

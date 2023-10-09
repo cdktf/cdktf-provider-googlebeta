@@ -1197,16 +1197,16 @@ public readonly specialGroup: string;
 
 A special group to grant access to. Possible values include:.
 
-'projectOwners': Owners of the enclosing project.
+* 'projectOwners': Owners of the enclosing project.
 
 
-'projectReaders': Readers of the enclosing project.
+* 'projectReaders': Readers of the enclosing project.
 
 
-'projectWriters': Writers of the enclosing project.
+* 'projectWriters': Writers of the enclosing project.
 
 
-'allAuthenticatedUsers': All authenticated BigQuery users.
+* 'allAuthenticatedUsers': All authenticated BigQuery users.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_dataset_access#special_group GoogleBigqueryDatasetAccessA#special_group}
 

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_node_pool
 // generated from terraform resource schema
 
@@ -14,17 +9,17 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeonpremBareMetalNodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Annotations on the Bare Metal Node Pool.
-This field has the same restrictions as Kubernetes annotations.
-The total size of all keys and values combined is limited to 256k.
-Key can have 2 segments: prefix (optional) and name (required),
-separated by a slash (/).
-Prefix must be a DNS subdomain.
-Name must be 63 characters or less, begin and end with alphanumerics,
-with dashes (-), underscores (_), dots (.), and alphanumerics between.
-
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * This field has the same restrictions as Kubernetes annotations.
+  * The total size of all keys and values combined is limited to 256k.
+  * Key can have 2 segments: prefix (optional) and name (required),
+  * separated by a slash (/).
+  * Prefix must be a DNS subdomain.
+  * Name must be 63 characters or less, begin and end with alphanumerics,
+  * with dashes (-), underscores (_), dots (.), and alphanumerics between.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_node_pool#annotations GoogleGkeonpremBareMetalNodePool#annotations}
   */
@@ -234,22 +229,22 @@ export class GoogleGkeonpremBareMetalNodePoolStatusList extends cdktf.ComplexLis
 export interface GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_node_pool#labels GoogleGkeonpremBareMetalNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
-Example: 192.168.0.1
+  * Example: 192.168.0.1
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_node_pool#node_ip GoogleGkeonpremBareMetalNodePool#node_ip}
   */
@@ -529,15 +524,15 @@ export class GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList extends cd
 export interface GoogleGkeonpremBareMetalNodePoolNodePoolConfig {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_node_pool#labels GoogleGkeonpremBareMetalNodePool#labels}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan
 // generated from terraform resource schema
 
@@ -20,9 +15,9 @@ export interface GoogleGkeBackupBackupPlanConfig extends cdktf.TerraformMetaArgu
   readonly cluster: string;
   /**
   * This flag indicates whether this BackupPlan has been deactivated.
-Setting this field to True locks the BackupPlan such that no further updates will be allowed
-(except deletes), including the deactivated field itself. It also prevents any new Backups
-from being created via this BackupPlan (including scheduled Backups).
+  * Setting this field to True locks the BackupPlan such that no further updates will be allowed
+  * (except deletes), including the deactivated field itself. It also prevents any new Backups
+  * from being created via this BackupPlan (including scheduled Backups).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#deactivated GoogleGkeBackupBackupPlan#deactivated}
   */
@@ -42,12 +37,12 @@ from being created via this BackupPlan (including scheduled Backups).
   readonly id?: string;
   /**
   * Description: A set of custom labels supplied by the user.
-A list of key->value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * A list of key->value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#labels GoogleGkeBackupBackupPlan#labels}
   */
@@ -418,14 +413,14 @@ export interface GoogleGkeBackupBackupPlanBackupConfig {
   readonly allNamespaces?: boolean | cdktf.IResolvable;
   /**
   * This flag specifies whether Kubernetes Secret resources should be included
-when they fall into the scope of Backups.
+  * when they fall into the scope of Backups.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#include_secrets GoogleGkeBackupBackupPlan#include_secrets}
   */
   readonly includeSecrets?: boolean | cdktf.IResolvable;
   /**
   * This flag specifies whether volume data should be backed up when PVCs are
-included in the scope of a Backup.
+  * included in the scope of a Backup.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#include_volume_data GoogleGkeBackupBackupPlan#include_volume_data}
   */
@@ -626,8 +621,8 @@ export class GoogleGkeBackupBackupPlanBackupConfigOutputReference extends cdktf.
 export interface GoogleGkeBackupBackupPlanBackupSchedule {
   /**
   * A standard cron string that defines a repeating schedule for
-creating Backups via this BackupPlan.
-If this is defined, then backupRetainDays must also be defined.
+  * creating Backups via this BackupPlan.
+  * If this is defined, then backupRetainDays must also be defined.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#cron_schedule GoogleGkeBackupBackupPlan#cron_schedule}
   */
@@ -724,34 +719,34 @@ export class GoogleGkeBackupBackupPlanBackupScheduleOutputReference extends cdkt
 export interface GoogleGkeBackupBackupPlanRetentionPolicy {
   /**
   * Minimum age for a Backup created via this BackupPlan (in days).
-Must be an integer value between 0-90 (inclusive).
-A Backup created under this BackupPlan will not be deletable
-until it reaches Backup's (create time + backup_delete_lock_days).
-Updating this field of a BackupPlan does not affect existing Backups.
-Backups created after a successful update will inherit this new value.
+  * Must be an integer value between 0-90 (inclusive).
+  * A Backup created under this BackupPlan will not be deletable
+  * until it reaches Backup's (create time + backup_delete_lock_days).
+  * Updating this field of a BackupPlan does not affect existing Backups.
+  * Backups created after a successful update will inherit this new value.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#backup_delete_lock_days GoogleGkeBackupBackupPlan#backup_delete_lock_days}
   */
   readonly backupDeleteLockDays?: number;
   /**
   * The default maximum age of a Backup created via this BackupPlan.
-This field MUST be an integer value >= 0 and <= 365. If specified,
-a Backup created under this BackupPlan will be automatically deleted
-after its age reaches (createTime + backupRetainDays).
-If not specified, Backups created under this BackupPlan will NOT be
-subject to automatic deletion. Updating this field does NOT affect
-existing Backups under it. Backups created AFTER a successful update
-will automatically pick up the new value.
-NOTE: backupRetainDays must be >= backupDeleteLockDays.
-If cronSchedule is defined, then this must be <= 360 * the creation interval.]
+  * This field MUST be an integer value >= 0 and <= 365. If specified,
+  * a Backup created under this BackupPlan will be automatically deleted
+  * after its age reaches (createTime + backupRetainDays).
+  * If not specified, Backups created under this BackupPlan will NOT be
+  * subject to automatic deletion. Updating this field does NOT affect
+  * existing Backups under it. Backups created AFTER a successful update
+  * will automatically pick up the new value.
+  * NOTE: backupRetainDays must be >= backupDeleteLockDays.
+  * If cronSchedule is defined, then this must be <= 360 * the creation interval.]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#backup_retain_days GoogleGkeBackupBackupPlan#backup_retain_days}
   */
   readonly backupRetainDays?: number;
   /**
   * This flag denotes whether the retention policy of this BackupPlan is locked.
-If set to True, no further update is allowed on this policy, including
-the locked field itself.
+  * If set to True, no further update is allowed on this policy, including
+  * the locked field itself.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_backup_plan#locked GoogleGkeBackupBackupPlan#locked}
   */

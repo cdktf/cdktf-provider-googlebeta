@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.NewGoogleDialogflowCxSecuritySettings(scope Construct, id *string, config GoogleDialogflowCxSecuritySettingsConfig) GoogleDialogflowCxSecuritySettings
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettings_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettings_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsAudioExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 &googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettingsAudioExportSettings {
 	AudioExportPattern: *string,
@@ -1003,9 +1003,10 @@ AudioFormat *string
 File format for exported audio file.
 
 Currently only in telephony recordings.
-MULAW: G.711 mu-law PCM with 8kHz sample rate.
-MP3: MP3 file format.
-OGG: OGG Vorbis. Possible values: ["MULAW", "MP3", "OGG"]
+
+* MULAW: G.711 mu-law PCM with 8kHz sample rate.
+* MP3: MP3 file format.
+* OGG: OGG Vorbis. Possible values: ["MULAW", "MP3", "OGG"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_security_settings#audio_format GoogleDialogflowCxSecuritySettings#audio_format}
 
@@ -1046,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 &googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettingsConfig {
 	Connection: interface{},
@@ -1058,10 +1059,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialo
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Location: *string,
-	AudioExportSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsAudioExportSettings,
+	AudioExportSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsAudioExportSettings,
 	DeidentifyTemplate: *string,
 	Id: *string,
-	InsightsExportSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsInsightsExportSettings,
+	InsightsExportSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsInsightsExportSettings,
 	InspectTemplate: *string,
 	Project: *string,
 	PurgeDataTypes: *[]*string,
@@ -1069,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialo
 	RedactionStrategy: *string,
 	RetentionStrategy: *string,
 	RetentionWindowDays: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsTimeouts,
 }
 ```
 
@@ -1310,7 +1311,8 @@ RedactionScope *string
 Defines what types of data to redact.
 
 If not set, defaults to not redacting any kind of data.
-REDACT_DISK_STORAGE: On data to be written to disk or similar devices that are capable of holding data even if power is disconnected. This includes data that are temporarily saved on disk. Possible values: ["REDACT_DISK_STORAGE"]
+
+* REDACT_DISK_STORAGE: On data to be written to disk or similar devices that are capable of holding data even if power is disconnected. This includes data that are temporarily saved on disk. Possible values: ["REDACT_DISK_STORAGE"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_security_settings#redaction_scope GoogleDialogflowCxSecuritySettings#redaction_scope}
 
@@ -1327,7 +1329,8 @@ RedactionStrategy *string
 Defines how we redact data.
 
 If not set, defaults to not redacting.
-REDACT_WITH_SERVICE: Call redaction service to clean up the data to be persisted. Possible values: ["REDACT_WITH_SERVICE"]
+
+* REDACT_WITH_SERVICE: Call redaction service to clean up the data to be persisted. Possible values: ["REDACT_WITH_SERVICE"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_security_settings#redaction_strategy GoogleDialogflowCxSecuritySettings#redaction_strategy}
 
@@ -1344,7 +1347,8 @@ RetentionStrategy *string
 Defines how long we retain persisted data that contains sensitive info.
 
 Only one of 'retention_window_days' and 'retention_strategy' may be set.
-REMOVE_AFTER_CONVERSATION: Removes data when the conversation ends. If there is no conversation explicitly established, a default conversation ends when the corresponding Dialogflow session ends. Possible values: ["REMOVE_AFTER_CONVERSATION"]
+
+* REMOVE_AFTER_CONVERSATION: Removes data when the conversation ends. If there is no conversation explicitly established, a default conversation ends when the corresponding Dialogflow session ends. Possible values: ["REMOVE_AFTER_CONVERSATION"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_security_settings#retention_strategy GoogleDialogflowCxSecuritySettings#retention_strategy}
 
@@ -1386,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsInsightsExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 &googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettingsInsightsExportSettings {
 	EnableInsightsExport: interface{},
@@ -1420,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 &googledialogflowcxsecuritysettings.GoogleDialogflowCxSecuritySettingsTimeouts {
 	Create: *string,
@@ -1482,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsAudioExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.NewGoogleDialogflowCxSecuritySettingsAudioExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxSecuritySettingsAudioExportSettingsOutputReference
 ```
@@ -1847,7 +1851,7 @@ func InternalValue() GoogleDialogflowCxSecuritySettingsAudioExportSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.NewGoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference
 ```
@@ -2118,7 +2122,7 @@ func InternalValue() GoogleDialogflowCxSecuritySettingsInsightsExportSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings.GoogleDialogflowCxSecuritySettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxsecuritysettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxsecuritysettings"
 
 googledialogflowcxsecuritysettings.NewGoogleDialogflowCxSecuritySettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxSecuritySettingsTimeoutsOutputReference
 ```

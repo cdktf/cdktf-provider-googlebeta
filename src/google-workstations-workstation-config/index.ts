@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config
 // generated from terraform resource schema
 
@@ -14,9 +9,9 @@ import * as cdktf from 'cdktf';
 export interface GoogleWorkstationsWorkstationConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#annotations GoogleWorkstationsWorkstationConfigA#annotations}
   */
@@ -42,16 +37,16 @@ Please refer to the field 'effective_annotations' for all of the annotations pre
   readonly id?: string;
   /**
   * How long to wait before automatically stopping an instance that hasn't recently received any user traffic. A value of 0 indicates that this instance should never time out from idleness. Defaults to 20 minutes.
-A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#idle_timeout GoogleWorkstationsWorkstationConfigA#idle_timeout}
   */
   readonly idleTimeout?: string;
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#labels GoogleWorkstationsWorkstationConfigA#labels}
   */
@@ -68,14 +63,14 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly project?: string;
   /**
   * Specifies the zones used to replicate the VM and disk resources within the region. If set, exactly two zones within the workstation cluster's region must be specified—for example, '['us-central1-a', 'us-central1-f']'.
-If this field is empty, two default zones within the region are used. Immutable after the workstation configuration is created.
+  * If this field is empty, two default zones within the region are used. Immutable after the workstation configuration is created.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#replica_zones GoogleWorkstationsWorkstationConfigA#replica_zones}
   */
   readonly replicaZones?: string[];
   /**
   * How long to wait before automatically stopping a workstation after it was started. A value of 0 indicates that workstations using this configuration should never time out from running duration. Must be greater than 0 and less than 24 hours if 'encryption_key' is set. Defaults to 12 hours.
-A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#running_timeout GoogleWorkstationsWorkstationConfigA#running_timeout}
   */
@@ -213,7 +208,7 @@ export interface GoogleWorkstationsWorkstationConfigContainer {
   readonly command?: string[];
   /**
   * Environment variables passed to the container.
-The elements are of the form "KEY=VALUE" for the environment variable "KEY" being given the value "VALUE".
+  * The elements are of the form "KEY=VALUE" for the environment variable "KEY" being given the value "VALUE".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#env GoogleWorkstationsWorkstationConfigA#env}
   */
@@ -830,8 +825,8 @@ export interface GoogleWorkstationsWorkstationConfigHostGceInstance {
   readonly disablePublicIpAddresses?: boolean | cdktf.IResolvable;
   /**
   * Whether to enable nested virtualization on the Compute Engine VMs backing the Workstations.
-
-See https://cloud.google.com/workstations/docs/reference/rest/v1beta/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
+  * 
+  * See https://cloud.google.com/workstations/docs/reference/rest/v1beta/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#enable_nested_virtualization GoogleWorkstationsWorkstationConfigA#enable_nested_virtualization}
   */
@@ -1262,7 +1257,7 @@ export interface GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd {
   readonly reclaimPolicy?: string;
   /**
   * The GB capacity of a persistent home directory for each workstation created with this configuration. Must be empty if 'sourceSnapshot' is set.
-Valid values are '10', '50', '100', '200', '500', or '1000'. Defaults to '200'. If less than '200' GB, the 'diskType' must be 'pd-balanced' or 'pd-ssd'.
+  * Valid values are '10', '50', '100', '200', '500', or '1000'. Defaults to '200'. If less than '200' GB, the 'diskType' must be 'pd-balanced' or 'pd-ssd'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config#size_gb GoogleWorkstationsWorkstationConfigA#size_gb}
   */

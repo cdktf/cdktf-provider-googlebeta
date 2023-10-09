@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataform_repository_release_config
 // generated from terraform resource schema
 
@@ -237,7 +232,7 @@ export interface GoogleDataformRepositoryReleaseConfigCodeCompilationConfig {
   readonly defaultDatabase?: string;
   /**
   * Optional. The default BigQuery location to use. Defaults to "US".
-See the BigQuery docs for a full list of locations: https://cloud.google.com/bigquery/docs/locations.
+  * See the BigQuery docs for a full list of locations: https://cloud.google.com/bigquery/docs/locations.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataform_repository_release_config#default_location GoogleDataformRepositoryReleaseConfig#default_location}
   */
@@ -262,8 +257,8 @@ See the BigQuery docs for a full list of locations: https://cloud.google.com/big
   readonly tablePrefix?: string;
   /**
   * Optional. User-defined variables that are made available to project code during compilation.
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataform_repository_release_config#vars GoogleDataformRepositoryReleaseConfig#vars}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint
 // generated from terraform resource schema
 
@@ -20,7 +15,7 @@ export interface GoogleServiceDirectoryEndpointConfig extends cdktf.TerraformMet
   readonly address?: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
-lowercase letters or the hyphen character.
+  * lowercase letters or the hyphen character.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
   */
@@ -34,9 +29,9 @@ lowercase letters or the hyphen character.
   readonly id?: string;
   /**
   * Metadata for the endpoint. This data can be consumed
-by service clients. The entire metadata dictionary may contain
-up to 512 characters, spread across all key-value pairs.
-Metadata that goes beyond any these limits will be rejected.
+  * by service clients. The entire metadata dictionary may contain
+  * up to 512 characters, spread across all key-value pairs.
+  * Metadata that goes beyond any these limits will be rejected.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
   */
@@ -49,7 +44,7 @@ Metadata that goes beyond any these limits will be rejected.
   readonly network?: string;
   /**
   * Port that the endpoint is running on, must be in the
-range of [0, 65535]. If unspecified, the default is 0.
+  * range of [0, 65535]. If unspecified, the default is 0.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
   */

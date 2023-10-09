@@ -925,9 +925,9 @@ the segment and an optional * to capture the rest of the URL. For example:
 
 ```hcl
 redirects {
-glob = "/:capture*"
-status_code = 302
-location = "https://example.com/foo/:capture"
+  glob = "/:capture*"
+  status_code = 302
+  location = "https://example.com/foo/:capture"
 }
 ```
 

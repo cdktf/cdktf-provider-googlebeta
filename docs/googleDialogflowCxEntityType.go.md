@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityType(scope Construct, id *string, config GoogleDialogflowCxEntityTypeConfig) GoogleDialogflowCxEntityType
 ```
@@ -365,7 +365,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformResource(x interface{}) *bool
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialo
 	LanguageCode: *string,
 	Parent: *string,
 	Redact: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts,
 }
 ```
 
@@ -1020,9 +1020,9 @@ Kind *string
 
 Indicates whether the entity type can be automatically expanded.
 
-KIND_MAP: Map entity types allow mapping of a group of synonyms to a canonical value.
-KIND_LIST: List entity types contain a set of entries that do not map to canonical values. However, list entity types can contain references to other entity types (with or without aliases).
-KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
+* KIND_MAP: Map entity types allow mapping of a group of synonyms to a canonical value.
+* KIND_LIST: List entity types contain a set of entries that do not map to canonical values. However, list entity types can contain references to other entity types (with or without aliases).
+* KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_entity_type#kind GoogleDialogflowCxEntityType#kind}
 
@@ -1038,8 +1038,8 @@ AutoExpansionMode *string
 
 Represents kinds of entities.
 
-AUTO_EXPANSION_MODE_UNSPECIFIED: Auto expansion disabled for the entity.
-AUTO_EXPANSION_MODE_DEFAULT: Allows an agent to recognize values that have not been explicitly listed in the entity. Possible values: ["AUTO_EXPANSION_MODE_DEFAULT", "AUTO_EXPANSION_MODE_UNSPECIFIED"]
+* AUTO_EXPANSION_MODE_UNSPECIFIED: Auto expansion disabled for the entity.
+* AUTO_EXPANSION_MODE_DEFAULT: Allows an agent to recognize values that have not been explicitly listed in the entity. Possible values: ["AUTO_EXPANSION_MODE_DEFAULT", "AUTO_EXPANSION_MODE_UNSPECIFIED"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_entity_type#auto_expansion_mode GoogleDialogflowCxEntityType#auto_expansion_mode}
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeEntities {
 	Synonyms: *[]*string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeExcludedPhrases {
 	Value: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeTimeouts {
 	Create: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxEntityTypeEntitiesList
 ```
@@ -1447,7 +1447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxEntityTypeEntitiesOutputReference
 ```
@@ -1772,7 +1772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeExcludedPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxEntityTypeExcludedPhrasesList
 ```
@@ -1915,7 +1915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference
 ```
@@ -2211,7 +2211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxEntityTypeTimeoutsOutputReference
 ```

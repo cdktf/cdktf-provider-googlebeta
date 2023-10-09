@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster
 // generated from terraform resource schema
 
@@ -14,24 +9,24 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeonpremBareMetalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Admin Cluster this Bare Metal User Cluster belongs to.
-This is the full resource name of the Admin Cluster's hub membership.
+  * This is the full resource name of the Admin Cluster's hub membership.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#admin_cluster_membership GoogleGkeonpremBareMetalCluster#admin_cluster_membership}
   */
   readonly adminClusterMembership: string;
   /**
   * Annotations on the Bare Metal User Cluster.
-This field has the same restrictions as Kubernetes annotations.
-The total size of all keys and values combined is limited to 256k.
-Key can have 2 segments: prefix (optional) and name (required),
-separated by a slash (/).
-Prefix must be a DNS subdomain.
-Name must be 63 characters or less, begin and end with alphanumerics,
-with dashes (-), underscores (_), dots (.), and alphanumerics between.
-
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * This field has the same restrictions as Kubernetes annotations.
+  * The total size of all keys and values combined is limited to 256k.
+  * Key can have 2 segments: prefix (optional) and name (required),
+  * separated by a slash (/).
+  * Prefix must be a DNS subdomain.
+  * Name must be 63 characters or less, begin and end with alphanumerics,
+  * with dashes (-), underscores (_), dots (.), and alphanumerics between.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#annotations GoogleGkeonpremBareMetalCluster#annotations}
   */
@@ -601,7 +596,7 @@ export class GoogleGkeonpremBareMetalClusterValidationCheckList extends cdktf.Co
 export interface GoogleGkeonpremBareMetalClusterBinaryAuthorization {
   /**
   * Mode of operation for binauthz policy evaluation. If unspecified,
-defaults to DISABLED. Possible values: ["DISABLED", "PROJECT_SINGLETON_POLICY_ENFORCE"]
+  * defaults to DISABLED. Possible values: ["DISABLED", "PROJECT_SINGLETON_POLICY_ENFORCE"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#evaluation_mode GoogleGkeonpremBareMetalCluster#evaluation_mode}
   */
@@ -858,22 +853,22 @@ export class GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList extend
 export interface GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigs {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
-Example: 192.168.0.1
+  * Example: 192.168.0.1
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
   */
@@ -1153,15 +1148,15 @@ export class GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConf
 export interface GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfig {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
@@ -1479,7 +1474,7 @@ export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPo
   readonly addresses: string[];
   /**
   * If true, avoid using IPs ending in .0 or .255.
-This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
+  * This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
   */
@@ -1654,17 +1649,17 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsL
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigBgpPeerConfigs {
   /**
   * BGP autonomous system number (ASN) for the network that contains the
-external peer device.
+  * external peer device.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
   */
   readonly asn: number;
   /**
   * The IP address of the control plane node that connects to the external
-peer.
-If you don't specify any control plane nodes, all control plane nodes
-can connect to the external peer. If you specify one or more IP addresses,
-only the nodes specified participate in peering sessions.
+  * peer.
+  * If you don't specify any control plane nodes, all control plane nodes
+  * can connect to the external peer. If you specify one or more IP addresses,
+  * only the nodes specified participate in peering sessions.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_nodes GoogleGkeonpremBareMetalCluster#control_plane_nodes}
   */
@@ -1810,31 +1805,31 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigBgpPeerConfig
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigKubeletConfig {
   /**
   * The maximum size of bursty pulls, temporarily allows pulls to burst to this
-number, while still not exceeding registry_pull_qps.
-The value must not be a negative number.
-Updating this field may impact scalability by changing the amount of
-traffic produced by image pulls.
-Defaults to 10.
+  * number, while still not exceeding registry_pull_qps.
+  * The value must not be a negative number.
+  * Updating this field may impact scalability by changing the amount of
+  * traffic produced by image pulls.
+  * Defaults to 10.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_burst GoogleGkeonpremBareMetalCluster#registry_burst}
   */
   readonly registryBurst?: number;
   /**
   * The limit of registry pulls per second.
-Setting this value to 0 means no limit.
-Updating this field may impact scalability by changing the amount of
-traffic produced by image pulls.
-Defaults to 5.
+  * Setting this value to 0 means no limit.
+  * Updating this field may impact scalability by changing the amount of
+  * traffic produced by image pulls.
+  * Defaults to 5.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_pull_qps GoogleGkeonpremBareMetalCluster#registry_pull_qps}
   */
   readonly registryPullQps?: number;
   /**
   * Prevents the Kubelet from pulling multiple images at a time.
-We recommend *not* changing the default value on nodes that run docker
-daemon with version  < 1.9 or an Another Union File System (Aufs) storage
-backend. Issue https://github.com/kubernetes/kubernetes/issues/10959 has
-more details.
+  * We recommend *not* changing the default value on nodes that run docker
+  * daemon with version  < 1.9 or an Another Union File System (Aufs) storage
+  * backend. Issue https://github.com/kubernetes/kubernetes/issues/10959 has
+  * more details.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GoogleGkeonpremBareMetalCluster#serialize_image_pulls_disabled}
   */
@@ -1948,22 +1943,22 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerN
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigNodeConfigs {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
-Example: 192.168.0.1
+  * Example: 192.168.0.1
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
   */
@@ -2243,15 +2238,15 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerN
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfig {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
@@ -2502,7 +2497,7 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerN
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfig {
   /**
   * BGP autonomous system number (ASN) of the cluster.
-This field can be updated after cluster creation.
+  * This field can be updated after cluster creation.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
   */
@@ -2718,7 +2713,7 @@ export interface GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddress
   readonly addresses: string[];
   /**
   * If true, avoid using IPs ending in .0 or .255.
-This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
+  * This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
   */
@@ -2893,22 +2888,22 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPool
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfigNodeConfigs {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
-Example: 192.168.0.1
+  * Example: 192.168.0.1
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
   */
@@ -3188,15 +3183,15 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalance
 export interface GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfigNodePoolConfig {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
   */
@@ -3842,9 +3837,9 @@ export class GoogleGkeonpremBareMetalClusterLoadBalancerOutputReference extends 
 export interface GoogleGkeonpremBareMetalClusterMaintenanceConfig {
   /**
   * All IPv4 address from these ranges will be placed into maintenance mode.
-Nodes in maintenance mode will be cordoned and drained. When both of these
-are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
-on the node resource.
+  * Nodes in maintenance mode will be cordoned and drained. When both of these
+  * are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
+  * on the node resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalCluster#maintenance_address_cidr_blocks}
   */
@@ -3999,8 +3994,8 @@ export class GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputRef
 export interface GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfig {
   /**
   * Whether to enable multiple network interfaces for your pods.
-When set network_config.advanced_networking is automatically
-set to true.
+  * When set network_config.advanced_networking is automatically
+  * set to true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
   */
@@ -4135,9 +4130,9 @@ export class GoogleGkeonpremBareMetalClusterNetworkConfigSrIovConfigOutputRefere
 export interface GoogleGkeonpremBareMetalClusterNetworkConfig {
   /**
   * Enables the use of advanced Anthos networking features, such as Bundled
-Load Balancing with BGP or the egress NAT gateway.
-Setting configuration for advanced networking features will automatically
-set this flag.
+  * Load Balancing with BGP or the egress NAT gateway.
+  * Setting configuration for advanced networking features will automatically
+  * set this flag.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#advanced_networking GoogleGkeonpremBareMetalCluster#advanced_networking}
   */
@@ -4292,7 +4287,7 @@ export class GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference extends
 export interface GoogleGkeonpremBareMetalClusterNodeAccessConfig {
   /**
   * LoginUser is the user name used to access node machines.
-It defaults to "root" if not set.
+  * It defaults to "root" if not set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#login_user GoogleGkeonpremBareMetalCluster#login_user}
   */
@@ -4366,7 +4361,7 @@ export interface GoogleGkeonpremBareMetalClusterNodeConfig {
   readonly containerRuntime?: string;
   /**
   * The maximum number of pods a node can run. The size of the CIDR range
-assigned to the node will be derived from this parameter.
+  * assigned to the node will be derived from this parameter.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#max_pods_per_node GoogleGkeonpremBareMetalCluster#max_pods_per_node}
   */
@@ -4457,7 +4452,7 @@ export class GoogleGkeonpremBareMetalClusterNodeConfigOutputReference extends cd
 export interface GoogleGkeonpremBareMetalClusterOsEnvironmentConfig {
   /**
   * Whether the package repo should not be included when initializing
-bare metal machines.
+  * bare metal machines.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#package_repo_excluded GoogleGkeonpremBareMetalCluster#package_repo_excluded}
   */
@@ -4522,16 +4517,16 @@ export class GoogleGkeonpremBareMetalClusterOsEnvironmentConfigOutputReference e
 export interface GoogleGkeonpremBareMetalClusterProxy {
   /**
   * A list of IPs, hostnames, and domains that should skip the proxy.
-Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
+  * Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#no_proxy GoogleGkeonpremBareMetalCluster#no_proxy}
   */
   readonly noProxy?: string[];
   /**
   * Specifies the address of your proxy server.
-Examples: http://domain
-WARNING: Do not provide credentials in the format
-http://(username:password@)domain these will be rejected by the server.
+  * Examples: http://domain
+  * WARNING: Do not provide credentials in the format
+  * http://(username:password@)domain these will be rejected by the server.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_cluster#uri GoogleGkeonpremBareMetalCluster#uri}
   */

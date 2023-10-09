@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleArtifactRegistryRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * If true, the cleanup pipeline is prevented from deleting versions in this
-repository.
+  * repository.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#cleanup_policy_dry_run GoogleArtifactRegistryRepository#cleanup_policy_dry_run}
   */
@@ -27,9 +22,9 @@ repository.
   readonly description?: string;
   /**
   * The format of packages that are stored in the repository. Supported formats
-can be found [here](https://cloud.google.com/artifact-registry/docs/supported-formats).
-You can only create alpha formats if you are a member of the
-[alpha user group](https://cloud.google.com/artifact-registry/docs/supported-formats#alpha-access).
+  * can be found [here](https://cloud.google.com/artifact-registry/docs/supported-formats).
+  * You can only create alpha formats if you are a member of the
+  * [alpha user group](https://cloud.google.com/artifact-registry/docs/supported-formats#alpha-access).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#format GoogleArtifactRegistryRepository#format}
   */
@@ -43,23 +38,23 @@ You can only create alpha formats if you are a member of the
   readonly id?: string;
   /**
   * The Cloud KMS resource name of the customer managed encryption key that’s
-used to encrypt the contents of the Repository. Has the form:
-'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
-This value may not be changed after the Repository has been created.
+  * used to encrypt the contents of the Repository. Has the form:
+  * 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
+  * This value may not be changed after the Repository has been created.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#kms_key_name GoogleArtifactRegistryRepository#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * Labels with user-defined metadata.
-This field may contain up to 64 entries. Label keys and values may be no
-longer than 63 characters. Label keys must begin with a lowercase letter
-and may only contain lowercase letters, numeric characters, underscores,
-and dashes.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * This field may contain up to 64 entries. Label keys and values may be no
+  * longer than 63 characters. Label keys must begin with a lowercase letter
+  * and may only contain lowercase letters, numeric characters, underscores,
+  * and dashes.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#labels GoogleArtifactRegistryRepository#labels}
   */
@@ -82,7 +77,7 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly project?: string;
   /**
   * The last part of the repository name, for example:
-"repo1"
+  * "repo1"
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#repository_id GoogleArtifactRegistryRepository#repository_id}
   */
@@ -686,7 +681,7 @@ export class GoogleArtifactRegistryRepositoryDockerConfigOutputReference extends
 export interface GoogleArtifactRegistryRepositoryMavenConfig {
   /**
   * The repository with this flag will allow publishing the same
-snapshot versions.
+  * snapshot versions.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#allow_snapshot_overwrites GoogleArtifactRegistryRepository#allow_snapshot_overwrites}
   */
@@ -1750,7 +1745,7 @@ export interface GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstream
   readonly priority?: number;
   /**
   * A reference to the repository resource, for example:
-"projects/p1/locations/us-central1/repository/repo1".
+  * "projects/p1/locations/us-central1/repository/repo1".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_repository#repository GoogleArtifactRegistryRepository#repository}
   */

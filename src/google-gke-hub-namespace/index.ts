@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_namespace
 // generated from terraform resource schema
 
@@ -21,20 +16,20 @@ export interface GoogleGkeHubNamespaceConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Labels for this Namespace.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_namespace#labels GoogleGkeHubNamespace#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Namespace-level cluster namespace labels. These labels are applied
-to the related namespace of the member clusters bound to the parent
-Scope. Scope-level labels ('namespace_labels' in the Fleet Scope
-resource) take precedence over Namespace-level labels if they share
-a key. Keys and values must be Kubernetes-conformant.
+  * to the related namespace of the member clusters bound to the parent
+  * Scope. Scope-level labels ('namespace_labels' in the Fleet Scope
+  * resource) take precedence over Namespace-level labels if they share
+  * a key. Keys and values must be Kubernetes-conformant.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_namespace#namespace_labels GoogleGkeHubNamespace#namespace_labels}
   */

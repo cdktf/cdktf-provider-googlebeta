@@ -1110,7 +1110,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 See [Creating and managing labels](https://cloud.google.com/recaptcha-enterprise/docs/labels).
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_recaptcha_enterprise_key#labels GoogleRecaptchaEnterpriseKey#labels}

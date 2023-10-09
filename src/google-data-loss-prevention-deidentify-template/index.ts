@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfig, 
@@ -36,19 +31,19 @@ export interface GoogleDataLossPreventionDeidentifyTemplateConfig extends cdktf.
   readonly id?: string;
   /**
   * The parent of the template in any of the following formats:
-
-* 'projects/{{project}}'
-* 'projects/{{project}}/locations/{{location}}'
-* 'organizations/{{organization_id}}'
-* 'organizations/{{organization_id}}/locations/{{location}}'
+  * 
+  * * 'projects/{{project}}'
+  * * 'projects/{{project}}/locations/{{location}}'
+  * * 'organizations/{{organization_id}}'
+  * * 'organizations/{{organization_id}}/locations/{{location}}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_deidentify_template#parent GoogleDataLossPreventionDeidentifyTemplate#parent}
   */
   readonly parent: string;
   /**
   * The template id can contain uppercase and lowercase letters, numbers, and hyphens;
-that is, it must match the regular expression: [a-zA-Z\d-_]+. The maximum length is
-100 characters. Can be empty to allow the system to generate one.
+  * that is, it must match the regular expression: [a-zA-Z\d-_]+. The maximum length is
+  * 100 characters. Can be empty to allow the system to generate one.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_deidentify_template#template_id GoogleDataLossPreventionDeidentifyTemplate#template_id}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_api_config
 // generated from terraform resource schema
 
@@ -45,10 +40,10 @@ export interface GoogleApiGatewayApiConfigAConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_api_config#labels GoogleApiGatewayApiConfigA#labels}
   */
@@ -91,7 +86,7 @@ Please refer to the field 'effective_labels' for all of the labels present on th
 export interface GoogleApiGatewayApiConfigGatewayConfigBackendConfig {
   /**
   * Google Cloud IAM service account used to sign OIDC tokens for backends that have authentication configured
-(https://cloud.google.com/service-infrastructure/docs/service-management/reference/rest/v1/services.configs#backend).
+  * (https://cloud.google.com/service-infrastructure/docs/service-management/reference/rest/v1/services.configs#backend).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_api_config#google_service_account GoogleApiGatewayApiConfigA#google_service_account}
   */

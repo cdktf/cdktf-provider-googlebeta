@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_workload_identity_pool
 // generated from terraform resource schema
 
@@ -20,8 +15,8 @@ export interface GoogleIamWorkloadIdentityPoolConfig extends cdktf.TerraformMeta
   readonly description?: string;
   /**
   * Whether the pool is disabled. You cannot use a disabled pool to exchange tokens, or use
-existing tokens to access resources. If the pool is re-enabled, existing tokens grant
-access again.
+  * existing tokens to access resources. If the pool is re-enabled, existing tokens grant
+  * access again.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_workload_identity_pool#disabled GoogleIamWorkloadIdentityPool#disabled}
   */
@@ -45,8 +40,8 @@ access again.
   readonly project?: string;
   /**
   * The ID to use for the pool, which becomes the final component of the resource name. This
-value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
-'gcp-' is reserved for use by Google, and may not be specified.
+  * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
+  * 'gcp-' is reserved for use by Google, and may not be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_workload_identity_pool#workload_identity_pool_id GoogleIamWorkloadIdentityPool#workload_identity_pool_id}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_response_policy
 // generated from terraform resource schema
 
@@ -57,8 +52,8 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
 export interface GoogleDnsResponsePolicyGkeClusters {
   /**
   * The resource name of the cluster to bind this ManagedZone to.
-This should be specified in the format like
-'projects/* /locations/* /clusters/*'
+  * This should be specified in the format like
+  * 'projects/* /locations/* /clusters/*'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_response_policy#gke_cluster_name GoogleDnsResponsePolicy#gke_cluster_name}
    *
@@ -157,8 +152,8 @@ export class GoogleDnsResponsePolicyGkeClustersList extends cdktf.ComplexList {
 export interface GoogleDnsResponsePolicyNetworks {
   /**
   * The fully qualified URL of the VPC network to bind to.
-This should be formatted like
-'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
+  * This should be formatted like
+  * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_response_policy#network_url GoogleDnsResponsePolicy#network_url}
   */

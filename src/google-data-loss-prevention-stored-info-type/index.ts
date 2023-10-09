@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_stored_info_type
 // generated from terraform resource schema
 
@@ -33,19 +28,19 @@ export interface GoogleDataLossPreventionStoredInfoTypeConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * The parent of the info type in any of the following formats:
-
-* 'projects/{{project}}'
-* 'projects/{{project}}/locations/{{location}}'
-* 'organizations/{{organization_id}}'
-* 'organizations/{{organization_id}}/locations/{{location}}'
+  * 
+  * * 'projects/{{project}}'
+  * * 'projects/{{project}}/locations/{{location}}'
+  * * 'organizations/{{organization_id}}'
+  * * 'organizations/{{organization_id}}/locations/{{location}}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_stored_info_type#parent GoogleDataLossPreventionStoredInfoType#parent}
   */
   readonly parent: string;
   /**
   * The storedInfoType ID can contain uppercase and lowercase letters, numbers, and hyphens;
-that is, it must match the regular expression: [a-zA-Z\d-_]+. The maximum length is 100
-characters. Can be empty to allow the system to generate one.
+  * that is, it must match the regular expression: [a-zA-Z\d-_]+. The maximum length is 100
+  * characters. Can be empty to allow the system to generate one.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_stored_info_type#stored_info_type_id GoogleDataLossPreventionStoredInfoType#stored_info_type_id}
   */
@@ -142,7 +137,7 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 export interface GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct {
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
-phrase and every phrase must contain at least 2 characters that are letters or digits.
+  * phrase and every phrase must contain at least 2 characters that are letters or digits.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_stored_info_type#words GoogleDataLossPreventionStoredInfoType#words}
   */
@@ -829,7 +824,7 @@ export interface GoogleDataLossPreventionStoredInfoTypeRegex {
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression.
-Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
+  * Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_stored_info_type#pattern GoogleDataLossPreventionStoredInfoType#pattern}
   */

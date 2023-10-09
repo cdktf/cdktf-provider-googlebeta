@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GooglePrivatecaCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Certificate Authority ID that should issue the certificate. For example, to issue a Certificate from
-a Certificate Authority with resource name 'projects/my-project/locations/us-central1/caPools/my-pool/certificateAuthorities/my-ca',
-argument 'pool' should be set to 'projects/my-project/locations/us-central1/caPools/my-pool', argument 'certificate_authority'
-should be set to 'my-ca'.
+  * a Certificate Authority with resource name 'projects/my-project/locations/us-central1/caPools/my-pool/certificateAuthorities/my-ca',
+  * argument 'pool' should be set to 'projects/my-project/locations/us-central1/caPools/my-pool', argument 'certificate_authority'
+  * should be set to 'my-ca'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#certificate_authority GooglePrivatecaCertificate#certificate_authority}
   */
   readonly certificateAuthority?: string;
   /**
   * The resource name for a CertificateTemplate used to issue this certificate,
-in the format 'projects/* /locations/* /certificateTemplates/*'. If this is specified,
-the caller must have the necessary permission to use this template. If this is
-omitted, no template will be used. This template must be in the same location
-as the Certificate.
+  * in the format 'projects/* /locations/* /certificateTemplates/*'. If this is specified,
+  * the caller must have the necessary permission to use this template. If this is
+  * omitted, no template will be used. This template must be in the same location
+  * as the Certificate.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#certificate_template GooglePrivatecaCertificate#certificate_template}
    *
@@ -42,25 +37,25 @@ as the Certificate.
   readonly id?: string;
   /**
   * Labels with user-defined metadata to apply to this resource.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#labels GooglePrivatecaCertificate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The desired lifetime of the CA certificate. Used to create the "notBeforeTime" and
-"notAfterTime" fields inside an X.509 certificate. A duration in seconds with up to nine
-fractional digits, terminated by 's'. Example: "3.5s".
+  * "notAfterTime" fields inside an X.509 certificate. A duration in seconds with up to nine
+  * fractional digits, terminated by 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#lifetime GooglePrivatecaCertificate#lifetime}
   */
   readonly lifetime?: string;
   /**
   * Location of the Certificate. A full list of valid locations can be found by
-running 'gcloud privateca locations list'.
+  * running 'gcloud privateca locations list'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#location GooglePrivatecaCertificate#location}
   */
@@ -2424,7 +2419,7 @@ export class GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjec
 export interface GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensions {
   /**
   * Indicates whether or not this extension is critical (i.e., if the client does not know how to
-handle this extension, the client should consider this to be an error).
+  * handle this extension, the client should consider this to be an error).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#critical GooglePrivatecaCertificate#critical}
   */
@@ -2579,22 +2574,22 @@ export interface GooglePrivatecaCertificateConfigX509ConfigCaOptions {
   readonly isCa?: boolean | cdktf.IResolvable;
   /**
   * Refers to the "path length constraint" in Basic Constraints extension. For a CA certificate, this value describes the depth of
-subordinate CA certificates that are allowed. If this value is less than 0, the request will fail.
+  * subordinate CA certificates that are allowed. If this value is less than 0, the request will fail.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#max_issuer_path_length GooglePrivatecaCertificate#max_issuer_path_length}
   */
   readonly maxIssuerPathLength?: number;
   /**
   * When true, the "CA" in Basic Constraints extension will be set to false.
-If both 'is_ca' and 'non_ca' are unset, the extension will be omitted from the CA certificate.
+  * If both 'is_ca' and 'non_ca' are unset, the extension will be omitted from the CA certificate.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#non_ca GooglePrivatecaCertificate#non_ca}
   */
   readonly nonCa?: boolean | cdktf.IResolvable;
   /**
   * When true, the "path length constraint" in Basic Constraints extension will be set to 0.
-if both 'max_issuer_path_length' and 'zero_max_issuer_path_length' are unset,
-the max path length will be omitted from the CA certificate.
+  * if both 'max_issuer_path_length' and 'zero_max_issuer_path_length' are unset,
+  * the max path length will be omitted from the CA certificate.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#zero_max_issuer_path_length GooglePrivatecaCertificate#zero_max_issuer_path_length}
   */
@@ -3463,72 +3458,72 @@ export interface GooglePrivatecaCertificateConfigX509ConfigNameConstraints {
   readonly critical: boolean | cdktf.IResolvable;
   /**
   * Contains excluded DNS names. Any DNS name that can be
-constructed by simply adding zero or more labels to
-the left-hand side of the name satisfies the name constraint.
-For example, 'example.com', 'www.example.com', 'www.sub.example.com'
-would satisfy 'example.com' while 'example1.com' does not.
+  * constructed by simply adding zero or more labels to
+  * the left-hand side of the name satisfies the name constraint.
+  * For example, 'example.com', 'www.example.com', 'www.sub.example.com'
+  * would satisfy 'example.com' while 'example1.com' does not.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#excluded_dns_names GooglePrivatecaCertificate#excluded_dns_names}
   */
   readonly excludedDnsNames?: string[];
   /**
   * Contains the excluded email addresses. The value can be a particular
-email address, a hostname to indicate all email addresses on that host or
-a domain with a leading period (e.g. '.example.com') to indicate
-all email addresses in that domain.
+  * email address, a hostname to indicate all email addresses on that host or
+  * a domain with a leading period (e.g. '.example.com') to indicate
+  * all email addresses in that domain.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#excluded_email_addresses GooglePrivatecaCertificate#excluded_email_addresses}
   */
   readonly excludedEmailAddresses?: string[];
   /**
   * Contains the excluded IP ranges. For IPv4 addresses, the ranges
-are expressed using CIDR notation as specified in RFC 4632.
-For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
-addresses.
+  * are expressed using CIDR notation as specified in RFC 4632.
+  * For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
+  * addresses.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#excluded_ip_ranges GooglePrivatecaCertificate#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: string[];
   /**
   * Contains the excluded URIs that apply to the host part of the name.
-The value can be a hostname or a domain with a
-leading period (like '.example.com')
+  * The value can be a hostname or a domain with a
+  * leading period (like '.example.com')
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#excluded_uris GooglePrivatecaCertificate#excluded_uris}
   */
   readonly excludedUris?: string[];
   /**
   * Contains permitted DNS names. Any DNS name that can be
-constructed by simply adding zero or more labels to
-the left-hand side of the name satisfies the name constraint.
-For example, 'example.com', 'www.example.com', 'www.sub.example.com'
-would satisfy 'example.com' while 'example1.com' does not.
+  * constructed by simply adding zero or more labels to
+  * the left-hand side of the name satisfies the name constraint.
+  * For example, 'example.com', 'www.example.com', 'www.sub.example.com'
+  * would satisfy 'example.com' while 'example1.com' does not.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#permitted_dns_names GooglePrivatecaCertificate#permitted_dns_names}
   */
   readonly permittedDnsNames?: string[];
   /**
   * Contains the permitted email addresses. The value can be a particular
-email address, a hostname to indicate all email addresses on that host or
-a domain with a leading period (e.g. '.example.com') to indicate
-all email addresses in that domain.
+  * email address, a hostname to indicate all email addresses on that host or
+  * a domain with a leading period (e.g. '.example.com') to indicate
+  * all email addresses in that domain.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#permitted_email_addresses GooglePrivatecaCertificate#permitted_email_addresses}
   */
   readonly permittedEmailAddresses?: string[];
   /**
   * Contains the permitted IP ranges. For IPv4 addresses, the ranges
-are expressed using CIDR notation as specified in RFC 4632.
-For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
-addresses.
+  * are expressed using CIDR notation as specified in RFC 4632.
+  * For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
+  * addresses.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#permitted_ip_ranges GooglePrivatecaCertificate#permitted_ip_ranges}
   */
   readonly permittedIpRanges?: string[];
   /**
   * Contains the permitted URIs that apply to the host part of the name.
-The value can be a hostname or a domain with a
-leading period (like '.example.com')
+  * The value can be a hostname or a domain with a
+  * leading period (like '.example.com')
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#permitted_uris GooglePrivatecaCertificate#permitted_uris}
   */
@@ -3873,7 +3868,7 @@ export class GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList extends cdk
 export interface GooglePrivatecaCertificateConfigX509Config {
   /**
   * Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the
-"Authority Information Access" extension in the certificate.
+  * "Authority Information Access" extension in the certificate.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_privateca_certificate#aia_ocsp_servers GooglePrivatecaCertificate#aia_ocsp_servers}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster
 // generated from terraform resource schema
 
@@ -14,26 +9,26 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeonpremVmwareClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The admin cluster this VMware User Cluster belongs to.
-This is the full resource name of the admin cluster's hub membership.
-In the future, references to other resource types might be allowed if
-admin clusters are modeled as their own resources.
+  * This is the full resource name of the admin cluster's hub membership.
+  * In the future, references to other resource types might be allowed if
+  * admin clusters are modeled as their own resources.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#admin_cluster_membership GoogleGkeonpremVmwareCluster#admin_cluster_membership}
   */
   readonly adminClusterMembership: string;
   /**
   * Annotations on the VMware User Cluster.
-This field has the same restrictions as Kubernetes annotations.
-The total size of all keys and values combined is limited to 256k.
-Key can have 2 segments: prefix (optional) and name (required),
-separated by a slash (/).
-Prefix must be a DNS subdomain.
-Name must be 63 characters or less, begin and end with alphanumerics,
-with dashes (-), underscores (_), dots (.), and alphanumerics between.
-
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * This field has the same restrictions as Kubernetes annotations.
+  * The total size of all keys and values combined is limited to 256k.
+  * Key can have 2 segments: prefix (optional) and name (required),
+  * separated by a slash (/).
+  * Prefix must be a DNS subdomain.
+  * Name must be 63 characters or less, begin and end with alphanumerics,
+  * with dashes (-), underscores (_), dots (.), and alphanumerics between.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#annotations GoogleGkeonpremVmwareCluster#annotations}
   */
@@ -690,8 +685,8 @@ export class GoogleGkeonpremVmwareClusterVcenterList extends cdktf.ComplexList {
 export interface GoogleGkeonpremVmwareClusterAntiAffinityGroups {
   /**
   * Spread nodes across at least three physical hosts (requires at least three
-hosts).
-Enabled by default.
+  * hosts).
+  * Enabled by default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#aag_config_disabled GoogleGkeonpremVmwareCluster#aag_config_disabled}
   */
@@ -1116,21 +1111,21 @@ export class GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputR
 export interface GoogleGkeonpremVmwareClusterControlPlaneNode {
   /**
   * The number of CPUs for each admin cluster node that serve as control planes
-for this VMware User Cluster. (default: 4 CPUs)
+  * for this VMware User Cluster. (default: 4 CPUs)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#cpus GoogleGkeonpremVmwareCluster#cpus}
   */
   readonly cpus?: number;
   /**
   * The megabytes of memory for each admin cluster node that serves as a
-control plane for this VMware User Cluster (default: 8192 MB memory).
+  * control plane for this VMware User Cluster (default: 8192 MB memory).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#memory GoogleGkeonpremVmwareCluster#memory}
   */
   readonly memory?: number;
   /**
   * The number of control plane nodes for this VMware User Cluster.
-(default: 1 replica).
+  * (default: 1 replica).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#replicas GoogleGkeonpremVmwareCluster#replicas}
   */
@@ -1410,8 +1405,8 @@ export interface GoogleGkeonpremVmwareClusterLoadBalancerF5Config {
   readonly address?: string;
   /**
   * he preexisting partition to be used by the load balancer. T
-his partition is usually created for the admin cluster for example:
-'my-f5-admin-partition'.
+  * his partition is usually created for the admin cluster for example:
+  * 'my-f5-admin-partition'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#partition GoogleGkeonpremVmwareCluster#partition}
   */
@@ -1531,28 +1526,28 @@ export class GoogleGkeonpremVmwareClusterLoadBalancerF5ConfigOutputReference ext
 export interface GoogleGkeonpremVmwareClusterLoadBalancerManualLbConfig {
   /**
   * NodePort for control plane service. The Kubernetes API server in the admin
-cluster is implemented as a Service of type NodePort (ex. 30968).
+  * cluster is implemented as a Service of type NodePort (ex. 30968).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#control_plane_node_port GoogleGkeonpremVmwareCluster#control_plane_node_port}
   */
   readonly controlPlaneNodePort?: number;
   /**
   * NodePort for ingress service's http. The ingress service in the admin
-cluster is implemented as a Service of type NodePort (ex. 32527).
+  * cluster is implemented as a Service of type NodePort (ex. 32527).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#ingress_http_node_port GoogleGkeonpremVmwareCluster#ingress_http_node_port}
   */
   readonly ingressHttpNodePort?: number;
   /**
   * NodePort for ingress service's https. The ingress service in the admin
-cluster is implemented as a Service of type NodePort (ex. 30139).
+  * cluster is implemented as a Service of type NodePort (ex. 30139).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#ingress_https_node_port GoogleGkeonpremVmwareCluster#ingress_https_node_port}
   */
   readonly ingressHttpsNodePort?: number;
   /**
   * NodePort for konnectivity server service running as a sidecar in each
-kube-apiserver pod (ex. 30564).
+  * kube-apiserver pod (ex. 30564).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#konnectivity_server_node_port GoogleGkeonpremVmwareCluster#konnectivity_server_node_port}
   */
@@ -1689,16 +1684,16 @@ export class GoogleGkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReferen
 export interface GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPools {
   /**
   * The addresses that are part of this pool. Each address
-must be either in the CIDR form (1.2.3.0/24) or range
-form (1.2.3.1-1.2.3.5).
+  * must be either in the CIDR form (1.2.3.0/24) or range
+  * form (1.2.3.1-1.2.3.5).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#addresses GoogleGkeonpremVmwareCluster#addresses}
   */
   readonly addresses: string[];
   /**
   * If true, avoid using IPs ending in .0 or .255.
-This avoids buggy consumer devices mistakenly dropping IPv4 traffic for
-those special IP addresses.
+  * This avoids buggy consumer devices mistakenly dropping IPv4 traffic for
+  * those special IP addresses.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#avoid_buggy_ips GoogleGkeonpremVmwareCluster#avoid_buggy_ips}
   */
@@ -2507,7 +2502,7 @@ export class GoogleGkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigOutput
 export interface GoogleGkeonpremVmwareClusterNetworkConfigDhcpIpConfig {
   /**
   * enabled is a flag to mark if DHCP IP allocation is
-used for VMware user clusters.
+  * used for VMware user clusters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#enabled GoogleGkeonpremVmwareCluster#enabled}
   */
@@ -3034,15 +3029,15 @@ export class GoogleGkeonpremVmwareClusterNetworkConfigStaticIpConfigOutputRefere
 export interface GoogleGkeonpremVmwareClusterNetworkConfig {
   /**
   * All pods in the cluster are assigned an RFC1918 IPv4 address from these ranges.
-Only a single range is supported. This field cannot be changed after creation.
+  * Only a single range is supported. This field cannot be changed after creation.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#pod_address_cidr_blocks GoogleGkeonpremVmwareCluster#pod_address_cidr_blocks}
   */
   readonly podAddressCidrBlocks: string[];
   /**
   * All services in the cluster are assigned an RFC1918 IPv4 address
-from these ranges. Only a single range is supported.. This field
-cannot be changed after creation.
+  * from these ranges. Only a single range is supported.. This field
+  * cannot be changed after creation.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#service_address_cidr_blocks GoogleGkeonpremVmwareCluster#service_address_cidr_blocks}
   */
@@ -3248,7 +3243,7 @@ export class GoogleGkeonpremVmwareClusterNetworkConfigOutputReference extends cd
 export interface GoogleGkeonpremVmwareClusterStorage {
   /**
   * Whether or not to deploy vSphere CSI components in the VMware User Cluster.
-Enabled by default.
+  * Enabled by default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster#vsphere_csi_disabled GoogleGkeonpremVmwareCluster#vsphere_csi_disabled}
   */

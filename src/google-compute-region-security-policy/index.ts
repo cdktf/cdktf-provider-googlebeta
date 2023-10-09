@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy
 // generated from terraform resource schema
 
@@ -27,7 +22,7 @@ export interface GoogleComputeRegionSecurityPolicyConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
-Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
+  * Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
   */
@@ -38,17 +33,17 @@ Specifically, the name must be 1-63 characters long and match the regular expres
   readonly project?: string;
   /**
   * The Region in which the created Region Security Policy should reside.
-If it is not provided, the provider region is used.
+  * If it is not provided, the provider region is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#region GoogleComputeRegionSecurityPolicy#region}
   */
   readonly region?: string;
   /**
   * The type indicates the intended use of the security policy.
-- CLOUD_ARMOR: Cloud Armor backend security policies can be configured to filter incoming HTTP requests targeting backend services. They filter requests before they hit the origin servers.
-- CLOUD_ARMOR_EDGE: Cloud Armor edge security policies can be configured to filter incoming HTTP requests targeting backend services (including Cloud CDN-enabled) as well as backend buckets (Cloud Storage). They filter requests before the request is served from Google's cache.
-- CLOUD_ARMOR_NETWORK: Cloud Armor network policies can be configured to filter packets targeting network load balancing resources such as backend services, target pools, target instances, and instances with external IPs. They filter requests before the request is served from the application.
-This field can be set only at resource creation time. Possible values: ["CLOUD_ARMOR", "CLOUD_ARMOR_EDGE", "CLOUD_ARMOR_NETWORK"]
+  * - CLOUD_ARMOR: Cloud Armor backend security policies can be configured to filter incoming HTTP requests targeting backend services. They filter requests before they hit the origin servers.
+  * - CLOUD_ARMOR_EDGE: Cloud Armor edge security policies can be configured to filter incoming HTTP requests targeting backend services (including Cloud CDN-enabled) as well as backend buckets (Cloud Storage). They filter requests before the request is served from Google's cache.
+  * - CLOUD_ARMOR_NETWORK: Cloud Armor network policies can be configured to filter packets targeting network load balancing resources such as backend services, target pools, target instances, and instances with external IPs. They filter requests before the request is served from the application.
+  * This field can be set only at resource creation time. Possible values: ["CLOUD_ARMOR", "CLOUD_ARMOR_EDGE", "CLOUD_ARMOR_NETWORK"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#type GoogleComputeRegionSecurityPolicy#type}
   */
@@ -75,9 +70,9 @@ This field can be set only at resource creation time. Possible values: ["CLOUD_A
 export interface GoogleComputeRegionSecurityPolicyDdosProtectionConfig {
   /**
   * Google Cloud Armor offers the following options to help protect systems against DDoS attacks:
-- STANDARD: basic always-on protection for network load balancers, protocol forwarding, or VMs with public IP addresses.
-- ADVANCED: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VMs with public IP addresses.
-- ADVANCED_PREVIEW: flag to enable the security policy in preview mode. Possible values: ["ADVANCED", "ADVANCED_PREVIEW", "STANDARD"]
+  * - STANDARD: basic always-on protection for network load balancers, protocol forwarding, or VMs with public IP addresses.
+  * - ADVANCED: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VMs with public IP addresses.
+  * - ADVANCED_PREVIEW: flag to enable the security policy in preview mode. Possible values: ["ADVANCED", "ADVANCED_PREVIEW", "STANDARD"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#ddos_protection GoogleComputeRegionSecurityPolicy#ddos_protection}
   */
@@ -271,18 +266,18 @@ export class GoogleComputeRegionSecurityPolicyTimeoutsOutputReference extends cd
 export interface GoogleComputeRegionSecurityPolicyUserDefinedFields {
   /**
   * The base relative to which 'offset' is measured. Possible values are:
-- IPV4: Points to the beginning of the IPv4 header.
-- IPV6: Points to the beginning of the IPv6 header.
-- TCP: Points to the beginning of the TCP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments.
-- UDP: Points to the beginning of the UDP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments. Possible values: ["IPV4", "IPV6", "TCP", "UDP"]
+  * - IPV4: Points to the beginning of the IPv4 header.
+  * - IPV6: Points to the beginning of the IPv6 header.
+  * - TCP: Points to the beginning of the TCP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments.
+  * - UDP: Points to the beginning of the UDP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments. Possible values: ["IPV4", "IPV6", "TCP", "UDP"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#base GoogleComputeRegionSecurityPolicy#base}
   */
   readonly base: string;
   /**
   * If specified, apply this mask (bitwise AND) to the field to ignore bits before matching.
-Encoded as a hexadecimal number (starting with "0x").
-The last byte of the field (in network byte order) corresponds to the least significant byte of the mask.
+  * Encoded as a hexadecimal number (starting with "0x").
+  * The last byte of the field (in network byte order) corresponds to the least significant byte of the mask.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy#mask GoogleComputeRegionSecurityPolicy#mask}
   */

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_rbac_role_binding
 // generated from terraform resource schema
 
@@ -43,9 +38,9 @@ export interface GoogleGkeHubMembershipRbacRoleBindingConfig extends cdktf.Terra
   readonly project?: string;
   /**
   * Principal that is be authorized in the cluster (at least of one the oneof
-is required). Updating one will unset the other automatically.
-user is the name of the user as seen by the kubernetes cluster, example
-"alice" or "alice@domain.tld"
+  * is required). Updating one will unset the other automatically.
+  * user is the name of the user as seen by the kubernetes cluster, example
+  * "alice" or "alice@domain.tld"
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_rbac_role_binding#user GoogleGkeHubMembershipRbacRoleBinding#user}
   */

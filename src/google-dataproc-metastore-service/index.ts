@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service
 // generated from terraform resource schema
 
@@ -27,24 +22,24 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * User-defined labels for the metastore service.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#labels GoogleDataprocMetastoreService#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the metastore service should reside.
-The default value is 'global'.
+  * The default value is 'global'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#location GoogleDataprocMetastoreService#location}
   */
   readonly location?: string;
   /**
   * The relative resource name of the VPC network on which the instance can be accessed. It is specified in the following form:
-
-"projects/{projectNumber}/global/networks/{network_id}".
+  * 
+  * "projects/{projectNumber}/global/networks/{network_id}".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#network GoogleDataprocMetastoreService#network}
   */
@@ -67,8 +62,8 @@ The default value is 'global'.
   readonly releaseChannel?: string;
   /**
   * The ID of the metastore service. The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
-and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
-3 and 63 characters.
+  * and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
+  * 3 and 63 characters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#service_id GoogleDataprocMetastoreService#service_id}
   */
@@ -131,7 +126,7 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
 export interface GoogleDataprocMetastoreServiceEncryptionConfig {
   /**
   * The fully qualified customer provided Cloud KMS key name to use for customer data encryption.
-Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
+  * Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#kms_key GoogleDataprocMetastoreService#kms_key}
   */
@@ -196,7 +191,7 @@ export class GoogleDataprocMetastoreServiceEncryptionConfigOutputReference exten
 export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions {
   /**
   * A mapping of Hive metastore configuration key-value pairs to apply to the auxiliary Hive metastore (configured in hive-site.xml) in addition to the primary version's overrides.
-If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence.
+  * If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
   */
@@ -346,8 +341,8 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsL
 export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab {
   /**
   * The relative resource name of a Secret Manager secret version, in the following form:
-
-"projects/{projectNumber}/secrets/{secret_id}/versions/{version_id}".
+  * 
+  * "projects/{projectNumber}/secrets/{secret_id}/versions/{version_id}".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#cloud_secret GoogleDataprocMetastoreService#cloud_secret}
   */
@@ -528,7 +523,7 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutp
 export interface GoogleDataprocMetastoreServiceHiveMetastoreConfig {
   /**
   * A mapping of Hive metastore configuration key-value pairs to apply to the Hive metastore (configured in hive-site.xml).
-The mappings override system defaults (some keys cannot be overridden)
+  * The mappings override system defaults (some keys cannot be overridden)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
   */
@@ -927,9 +922,9 @@ export class GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference ex
 export interface GoogleDataprocMetastoreServiceNetworkConfigConsumers {
   /**
   * The subnetwork of the customer project from which an IP address is reserved and used as the Dataproc Metastore service's endpoint.
-It is accessible to hosts in the subnet and to all hosts in a subnet in the same region and same network.
-There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
-'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
+  * It is accessible to hosts in the subnet and to all hosts in a subnet in the same region and same network.
+  * There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
+  * 'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service#subnetwork GoogleDataprocMetastoreService#subnetwork}
   */

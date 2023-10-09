@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 googlecomputeaddress.NewGoogleComputeAddress(scope Construct, id *string, config GoogleComputeAddressConfig) GoogleComputeAddress
 ```
@@ -388,7 +388,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 googlecomputeaddress.GoogleComputeAddress_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 googlecomputeaddress.GoogleComputeAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ googlecomputeaddress.GoogleComputeAddress_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 googlecomputeaddress.GoogleComputeAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -1051,7 +1051,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 &googlecomputeaddress.GoogleComputeAddressConfig {
 	Connection: interface{},
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecompu
 	Purpose: *string,
 	Region: *string,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeAddress.GoogleComputeAddressTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeAddress.GoogleComputeAddressTimeouts,
 }
 ```
 
@@ -1305,7 +1305,7 @@ Labels *map[string]*string
 
 Labels to apply to this address.  A list of key->value pairs.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_address#labels GoogleComputeAddress#labels}
@@ -1384,21 +1384,17 @@ Purpose *string
 
 The purpose of this resource, which can be one of the following values.
 
-GCE_ENDPOINT for addresses that are used by VM instances, alias IP
-ranges, load balancers, and similar resources.
-
-SHARED_LOADBALANCER_VIP for an address that can be used by multiple
-internal load balancers.
-
-VPC_PEERING for addresses that are reserved for VPC peer networks.
-
-IPSEC_INTERCONNECT for addresses created from a private IP range that
-are reserved for a VLAN attachment in an HA VPN over Cloud Interconnect
-configuration. These addresses are regional resources.
-
-PRIVATE_SERVICE_CONNECT for a private network address that is used to
-configure Private Service Connect. Only global internal addresses can use
-this purpose.
+* GCE_ENDPOINT for addresses that are used by VM instances, alias IP
+  ranges, load balancers, and similar resources.
+* SHARED_LOADBALANCER_VIP for an address that can be used by multiple
+  internal load balancers.
+* VPC_PEERING for addresses that are reserved for VPC peer networks.
+* IPSEC_INTERCONNECT for addresses created from a private IP range that
+  are reserved for a VLAN attachment in an HA VPN over Cloud Interconnect
+  configuration. These addresses are regional resources.
+* PRIVATE_SERVICE_CONNECT for a private network address that is used to
+  configure Private Service Connect. Only global internal addresses can use
+  this purpose.
 
 This should only be set when using an Internal address.
 
@@ -1458,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddressTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 &googlecomputeaddress.GoogleComputeAddressTimeouts {
 	Create: *string,
@@ -1520,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeAddress.GoogleComputeAddressTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeaddress"
 
 googlecomputeaddress.NewGoogleComputeAddressTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeAddressTimeoutsOutputReference
 ```

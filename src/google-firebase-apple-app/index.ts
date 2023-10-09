@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_apple_app
 // generated from terraform resource schema
 
@@ -14,8 +9,8 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the AppleApp.
-If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AppleApp.
-This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+  * If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AppleApp.
+  * This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_apple_app#api_key_id GoogleFirebaseAppleApp#api_key_id}
   */
@@ -34,8 +29,8 @@ This auto-associated key may be an existing valid key or, if no valid key exists
   readonly bundleId: string;
   /**
   * (Optional) Set to 'ABANDON' to allow the Apple to be untracked from terraform state
-rather than deleted upon 'terraform destroy'. This is useful because the Apple may be
-serving traffic. Set to 'DELETE' to delete the Apple. Defaults to 'DELETE'.
+  * rather than deleted upon 'terraform destroy'. This is useful because the Apple may be
+  * serving traffic. Set to 'DELETE' to delete the Apple. Defaults to 'DELETE'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_apple_app#deletion_policy GoogleFirebaseAppleApp#deletion_policy}
   */

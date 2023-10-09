@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_sql_user
 // generated from terraform resource schema
 
@@ -14,8 +9,8 @@ import * as cdktf from 'cdktf';
 export interface GoogleSqlUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The deletion policy for the user. Setting ABANDON allows the resource
-				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
-				have been granted SQL roles. Possible values are: "ABANDON".
+  * 				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
+  * 				have been granted SQL roles. Possible values are: "ABANDON".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_sql_user#deletion_policy GoogleSqlUser#deletion_policy}
   */
@@ -47,7 +42,7 @@ export interface GoogleSqlUserConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * The password for the user. Can be updated. For Postgres instances this is a Required field, unless type is set to
-                either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
+  *                 either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_sql_user#password GoogleSqlUser#password}
   */
@@ -60,7 +55,7 @@ export interface GoogleSqlUserConfig extends cdktf.TerraformMetaArguments {
   readonly project?: string;
   /**
   * The user type. It determines the method to authenticate the user during login.
-                The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
+  *                 The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_sql_user#type GoogleSqlUser#type}
   */

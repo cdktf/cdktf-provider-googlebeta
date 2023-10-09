@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfig(scope Construct, id *string, config GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig
 ```
@@ -378,7 +378,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.GoogleIdentityPlatformConfig_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.GoogleIdentityPlatformConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ googleidentityplatformconfig.GoogleIdentityPlatformConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.GoogleIdentityPlatformConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -810,11 +810,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigBlockingFunctions {
 	Triggers: interface{},
-	ForwardInboundCredentials: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials,
+	ForwardInboundCredentials: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials,
 }
 ```
 
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials {
 	AccessToken: interface{},
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsTriggers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigBlockingFunctionsTriggers {
 	EventType: *string,
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigConfig {
 	Connection: interface{},
@@ -986,12 +986,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleident
 	Provisioners: *[]interface{},
 	AuthorizedDomains: *[]*string,
 	AutodeleteAnonymousUsers: interface{},
-	BlockingFunctions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctions,
+	BlockingFunctions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctions,
 	Id: *string,
 	Project: *string,
-	Quota: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuota,
-	SignIn: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignIn,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigTimeouts,
+	Quota: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuota,
+	SignIn: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignIn,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigTimeouts,
 }
 ```
 
@@ -1203,10 +1203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigQuota {
-	SignUpQuotaConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig,
+	SignUpQuotaConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig,
 }
 ```
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig {
 	Quota: *f64,
@@ -1303,13 +1303,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigSignIn {
 	AllowDuplicateEmails: interface{},
-	Anonymous: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInAnonymous,
-	Email: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInEmail,
-	PhoneNumber: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInPhoneNumber,
+	Anonymous: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInAnonymous,
+	Email: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInEmail,
+	PhoneNumber: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInPhoneNumber,
 }
 ```
 
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInAnonymous.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigSignInAnonymous {
 	Enabled: interface{},
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigSignInEmail {
 	Enabled: interface{},
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInHashConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigSignInHashConfig {
 
@@ -1486,7 +1486,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleident
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInPhoneNumber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigSignInPhoneNumber {
 	Enabled: interface{},
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 &googleidentityplatformconfig.GoogleIdentityPlatformConfigTimeouts {
 	Create: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference
 ```
@@ -1934,7 +1934,7 @@ func InternalValue() GoogleIdentityPlatformConfigBlockingFunctionsForwardInbound
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigBlockingFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigBlockingFunctionsOutputReference
 ```
@@ -2260,7 +2260,7 @@ func InternalValue() GoogleIdentityPlatformConfigBlockingFunctions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsTriggersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigBlockingFunctionsTriggersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIdentityPlatformConfigBlockingFunctionsTriggersList
 ```
@@ -2403,7 +2403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigBlockingFunctionsTriggersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigBlockingFunctionsTriggersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIdentityPlatformConfigBlockingFunctionsTriggersOutputReference
 ```
@@ -2725,7 +2725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigQuotaOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() GoogleIdentityPlatformConfigQuota
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference
 ```
@@ -3352,7 +3352,7 @@ func InternalValue() GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInAnonymousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInAnonymousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigSignInAnonymousOutputReference
 ```
@@ -3623,7 +3623,7 @@ func InternalValue() GoogleIdentityPlatformConfigSignInAnonymous
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigSignInEmailOutputReference
 ```
@@ -3923,7 +3923,7 @@ func InternalValue() GoogleIdentityPlatformConfigSignInEmail
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInHashConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInHashConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIdentityPlatformConfigSignInHashConfigList
 ```
@@ -4055,7 +4055,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInHashConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInHashConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIdentityPlatformConfigSignInHashConfigOutputReference
 ```
@@ -4377,7 +4377,7 @@ func InternalValue() GoogleIdentityPlatformConfigSignInHashConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigSignInOutputReference
 ```
@@ -4792,7 +4792,7 @@ func InternalValue() GoogleIdentityPlatformConfigSignIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigSignInPhoneNumberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigSignInPhoneNumberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigSignInPhoneNumberOutputReference
 ```
@@ -5092,7 +5092,7 @@ func InternalValue() GoogleIdentityPlatformConfigSignInPhoneNumber
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleidentityplatformconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformconfig"
 
 googleidentityplatformconfig.NewGoogleIdentityPlatformConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigTimeoutsOutputReference
 ```

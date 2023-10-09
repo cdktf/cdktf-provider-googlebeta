@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_transfer_agent_pool
 // generated from terraform resource schema
 
@@ -27,15 +22,15 @@ export interface GoogleStorageTransferAgentPoolConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The ID of the agent pool to create.
-
-The agentPoolId must meet the following requirements:
-* Length of 128 characters or less.
-* Not start with the string goog.
-* Start with a lowercase ASCII character, followed by:
-  * Zero or more: lowercase Latin alphabet characters, numerals, hyphens (-), periods (.), underscores (_), or tildes (~).
-  * One or more numerals or lowercase ASCII characters.
-
-As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
+  * 
+  * The agentPoolId must meet the following requirements:
+  * * Length of 128 characters or less.
+  * * Not start with the string goog.
+  * * Start with a lowercase ASCII character, followed by:
+  *   * Zero or more: lowercase Latin alphabet characters, numerals, hyphens (-), periods (.), underscores (_), or tildes (~).
+  *   * One or more numerals or lowercase ASCII characters.
+  * 
+  * As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_transfer_agent_pool#name GoogleStorageTransferAgentPool#name}
   */

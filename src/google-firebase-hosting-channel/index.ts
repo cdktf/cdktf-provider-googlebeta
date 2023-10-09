@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_channel
 // generated from terraform resource schema
 
@@ -20,8 +15,8 @@ export interface GoogleFirebaseHostingChannelConfig extends cdktf.TerraformMetaA
   readonly channelId: string;
   /**
   * The time at which the channel will be automatically deleted. If null, the channel
-will not be automatically deleted. This field is present in the output whether it's
-set directly or via the 'ttl' field.
+  * will not be automatically deleted. This field is present in the output whether it's
+  * set directly or via the 'ttl' field.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_channel#expire_time GoogleFirebaseHostingChannel#expire_time}
   */
@@ -35,16 +30,16 @@ set directly or via the 'ttl' field.
   readonly id?: string;
   /**
   * Text labels used for extra metadata and/or filtering
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_channel#labels GoogleFirebaseHostingChannel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The number of previous releases to retain on the channel for rollback or other
-purposes. Must be a number between 1-100. Defaults to 10 for new channels.
+  * purposes. Must be a number between 1-100. Defaults to 10 for new channels.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_channel#retained_release_count GoogleFirebaseHostingChannel#retained_release_count}
   */
@@ -57,8 +52,8 @@ purposes. Must be a number between 1-100. Defaults to 10 for new channels.
   readonly siteId: string;
   /**
   * Input only. A time-to-live for this channel. Sets 'expire_time' to the provided
-duration past the time of the request. A duration in seconds with up to nine fractional
-digits, terminated by 's'. Example: "86400s" (one day).
+  * duration past the time of the request. A duration in seconds with up to nine fractional
+  * digits, terminated by 's'. Example: "86400s" (one day).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_channel#ttl GoogleFirebaseHostingChannel#ttl}
   */

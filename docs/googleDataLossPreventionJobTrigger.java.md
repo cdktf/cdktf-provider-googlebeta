@@ -4806,8 +4806,9 @@ Label values must be between 0 and 63 characters long and must conform to the re
 No more than 10 labels can be associated with a given finding.
 
 Examples:
-'"environment" : "production"'
-'"pipeline" : "etl"'
+
+* '"environment" : "production"'
+* '"pipeline" : "etl"'
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_job_trigger#labels GoogleDataLossPreventionJobTrigger#labels}
 

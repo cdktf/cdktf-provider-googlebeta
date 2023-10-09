@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeyset(scope Construct, id *string, config GoogleNetworkServicesEdgeCacheKeysetConfig) GoogleNetworkServicesEdgeCacheKeyset
 ```
@@ -358,7 +358,7 @@ func ResetValidationSharedKeys()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeyset_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeyset_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeyset_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeyset_IsTerraformResource(x interface{}) *bool
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 &googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeysetConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetwo
 	Labels: *map[string]*string,
 	Project: *string,
 	PublicKey: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetTimeouts,
 	ValidationSharedKeys: interface{},
 }
 ```
@@ -971,7 +971,7 @@ Labels *map[string]*string
 
 Set of label tags associated with the EdgeCache resource.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_keyset#labels GoogleNetworkServicesEdgeCacheKeyset#labels}
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 &googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeysetPublicKey {
 	Id: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 &googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeysetTimeouts {
 	Create: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 &googlenetworkservicesedgecachekeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeys {
 	SecretVersion: *string,
@@ -1200,9 +1200,10 @@ The name of the secret version in Secret Manager.
 
 The resource name of the secret version must be in the format 'projects/* /secrets/* /versions/*' where the '*' values are replaced by the secrets themselves.
 The secrets must be at least 16 bytes large.  The recommended secret size depends on the signature algorithm you are using.
-If you are using HMAC-SHA1, we suggest 20-byte secrets.
-If you are using HMAC-SHA256, we suggest 32-byte secrets.
-See RFC 2104, Section 3 for more details on these recommendations.
+
+* If you are using HMAC-SHA1, we suggest 20-byte secrets.
+* If you are using HMAC-SHA256, we suggest 32-byte secrets.
+  See RFC 2104, Section 3 for more details on these recommendations.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_keyset#secret_version GoogleNetworkServicesEdgeCacheKeyset#secret_version}
 
@@ -1217,7 +1218,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetPublicKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeysetPublicKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesEdgeCacheKeysetPublicKeyList
 ```
@@ -1360,7 +1361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference
 ```
@@ -1707,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference
 ```
@@ -2043,7 +2044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList
 ```
@@ -2186,7 +2187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecachekeyset"
 
 googlenetworkservicesedgecachekeyset.NewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference
 ```

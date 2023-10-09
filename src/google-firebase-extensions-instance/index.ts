@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_extensions_instance
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface GoogleFirebaseExtensionsInstanceConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * The ID to use for the Extension Instance, which will become the final
-component of the instance's name.
+  * component of the instance's name.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_extensions_instance#instance_id GoogleFirebaseExtensionsInstance#instance_id}
   */
@@ -330,7 +325,7 @@ export class GoogleFirebaseExtensionsInstanceRuntimeDataList extends cdktf.Compl
 export interface GoogleFirebaseExtensionsInstanceConfigA {
   /**
   * List of extension events selected by consumer that extension is allowed to
-emit, identified by their types.
+  * emit, identified by their types.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_extensions_instance#allowed_event_types GoogleFirebaseExtensionsInstance#allowed_event_types}
   */
@@ -361,8 +356,8 @@ emit, identified by their types.
   readonly params: { [key: string]: string };
   /**
   * Params whose values are only available at deployment time.
-Unlike other params, these will not be set as environment variables on
-functions.
+  * Unlike other params, these will not be set as environment variables on
+  * functions.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_extensions_instance#system_params GoogleFirebaseExtensionsInstance#system_params}
   */

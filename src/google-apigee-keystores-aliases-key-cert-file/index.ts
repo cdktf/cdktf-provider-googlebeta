@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_keystores_aliases_key_cert_file
 // generated from terraform resource schema
 
@@ -89,7 +84,7 @@ export interface GoogleApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo {
   readonly expiryDate?: string;
   /**
   * Flag that specifies whether the certificate is valid. 
-Flag is set to Yes if the certificate is valid, No if expired, or Not yet if not yet valid.
+  * Flag is set to Yes if the certificate is valid, No if expired, or Not yet if not yet valid.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_keystores_aliases_key_cert_file#is_valid GoogleApigeeKeystoresAliasesKeyCertFile#is_valid}
   */
