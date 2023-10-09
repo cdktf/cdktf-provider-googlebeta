@@ -21,27 +21,27 @@ export interface GoogleServiceDirectoryNamespaceConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * Resource labels associated with this Namespace. No more than 64 user
-labels can be associated with a given resource. Label keys and values can
-be no longer than 63 characters.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * labels can be associated with a given resource. Label keys and values can
+  * be no longer than 63 characters.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the Namespace.
-A full list of valid locations can be found by running
-'gcloud beta service-directory locations list'.
+  * A full list of valid locations can be found by running
+  * 'gcloud beta service-directory locations list'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
   */
   readonly location: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
-lowercase letters or the hyphen character.
+  * lowercase letters or the hyphen character.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
   */

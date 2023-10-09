@@ -145,9 +145,10 @@ The deletion policy for the secret version.
 Setting 'ABANDON' allows the resource
 to be abandoned rather than deleted. Setting 'DISABLE' allows the resource to be
 disabled rather than deleted. Default is 'DELETE'. Possible values are:
-DELETE
-DISABLE
-ABANDON
+
+* DELETE
+* DISABLE
+* ABANDON
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret_version#deletion_policy GoogleSecretManagerSecretVersion#deletion_policy}
 
@@ -1101,9 +1102,10 @@ The deletion policy for the secret version.
 Setting 'ABANDON' allows the resource
 to be abandoned rather than deleted. Setting 'DISABLE' allows the resource to be
 disabled rather than deleted. Default is 'DELETE'. Possible values are:
-DELETE
-DISABLE
-ABANDON
+
+* DELETE
+* DISABLE
+* ABANDON
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret_version#deletion_policy GoogleSecretManagerSecretVersion#deletion_policy}
 

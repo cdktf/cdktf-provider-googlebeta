@@ -223,7 +223,7 @@ export class GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference exten
 export interface GoogleDataCatalogTagTemplateFieldsType {
   /**
   * Represents primitive types - string, bool etc.
- Exactly one of 'primitive_type' or 'enum_type' must be set Possible values: ["DOUBLE", "STRING", "BOOL", "TIMESTAMP"]
+  *  Exactly one of 'primitive_type' or 'enum_type' must be set Possible values: ["DOUBLE", "STRING", "BOOL", "TIMESTAMP"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_catalog_tag_template#primitive_type GoogleDataCatalogTagTemplate#primitive_type}
   */
@@ -342,8 +342,8 @@ export interface GoogleDataCatalogTagTemplateFields {
   readonly isRequired?: boolean | cdktf.IResolvable;
   /**
   * The order of this field with respect to other fields in this tag template.
-A higher value indicates a more important field. The value can be negative.
-Multiple fields can have the same order, and field orders within a tag do not have to be sequential.
+  * A higher value indicates a more important field. The value can be negative.
+  * Multiple fields can have the same order, and field orders within a tag do not have to be sequential.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_catalog_tag_template#order GoogleDataCatalogTagTemplate#order}
   */

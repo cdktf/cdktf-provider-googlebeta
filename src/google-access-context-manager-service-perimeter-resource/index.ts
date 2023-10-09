@@ -27,8 +27,8 @@ export interface GoogleAccessContextManagerServicePerimeterResourceConfig extend
   readonly perimeterName: string;
   /**
   * A GCP resource that is inside of the service perimeter.
-Currently only projects are allowed.
-Format: projects/{project_number}
+  * Currently only projects are allowed.
+  * Format: projects/{project_number}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_access_context_manager_service_perimeter_resource#resource GoogleAccessContextManagerServicePerimeterResource#resource}
   */

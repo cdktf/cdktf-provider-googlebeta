@@ -14,16 +14,16 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp.
-If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the WebApp.
-This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+  * If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the WebApp.
+  * This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_web_app#api_key_id GoogleFirebaseWebApp#api_key_id}
   */
   readonly apiKeyId?: string;
   /**
   * Set to 'ABANDON' to allow the WebApp to be untracked from terraform state
-rather than deleted upon 'terraform destroy'. This is useful becaue the WebApp may be
-serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'DELETE'
+  * rather than deleted upon 'terraform destroy'. This is useful becaue the WebApp may be
+  * serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'DELETE'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
   */

@@ -14,17 +14,17 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeGlobalAddressConfig extends cdktf.TerraformMetaArguments {
   /**
   * The IP address or beginning of the address range represented by this
-resource. This can be supplied as an input to reserve a specific
-address or omitted to allow GCP to choose a valid one for you.
+  * resource. This can be supplied as an input to reserve a specific
+  * address or omitted to allow GCP to choose a valid one for you.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#address GoogleComputeGlobalAddress#address}
   */
   readonly address?: string;
   /**
   * The type of the address to reserve.
-
-* EXTERNAL indicates public/external single IP address.
-* INTERNAL indicates internal IP ranges belonging to some network. Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL"]
+  * 
+  * * EXTERNAL indicates public/external single IP address.
+  * * INTERNAL indicates internal IP ranges belonging to some network. Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#address_type GoogleComputeGlobalAddress#address_type}
   */
@@ -50,42 +50,42 @@ address or omitted to allow GCP to choose a valid one for you.
   readonly ipVersion?: string;
   /**
   * Labels to apply to this address.  A list of key->value pairs.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#labels GoogleComputeGlobalAddress#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the resource. Provided by the client when the resource is
-created. The name must be 1-63 characters long, and comply with
-RFC1035.  Specifically, the name must be 1-63 characters long and
-match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means
-the first character must be a lowercase letter, and all following
-characters must be a dash, lowercase letter, or digit, except the last
-character, which cannot be a dash.
+  * created. The name must be 1-63 characters long, and comply with
+  * RFC1035.  Specifically, the name must be 1-63 characters long and
+  * match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means
+  * the first character must be a lowercase letter, and all following
+  * characters must be a dash, lowercase letter, or digit, except the last
+  * character, which cannot be a dash.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#name GoogleComputeGlobalAddress#name}
   */
   readonly name: string;
   /**
   * The URL of the network in which to reserve the IP range. The IP range
-must be in RFC1918 space. The network cannot be deleted if there are
-any reserved IP ranges referring to it.
-
-This should only be set when using an Internal address.
+  * must be in RFC1918 space. The network cannot be deleted if there are
+  * any reserved IP ranges referring to it.
+  * 
+  * This should only be set when using an Internal address.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#network GoogleComputeGlobalAddress#network}
   */
   readonly network?: string;
   /**
   * The prefix length of the IP range. If not present, it means the
-address field is a single IP address.
-
-This field is not applicable to addresses with addressType=INTERNAL
-when purpose=PRIVATE_SERVICE_CONNECT
+  * address field is a single IP address.
+  * 
+  * This field is not applicable to addresses with addressType=INTERNAL
+  * when purpose=PRIVATE_SERVICE_CONNECT
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#prefix_length GoogleComputeGlobalAddress#prefix_length}
   */
@@ -96,10 +96,10 @@ when purpose=PRIVATE_SERVICE_CONNECT
   readonly project?: string;
   /**
   * The purpose of the resource. Possible values include:
-
-* VPC_PEERING - for peer networks
-
-* PRIVATE_SERVICE_CONNECT - for ([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html) only) Private Service Connect networks
+  * 
+  * * VPC_PEERING - for peer networks
+  * 
+  * * PRIVATE_SERVICE_CONNECT - for ([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html) only) Private Service Connect networks
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address#purpose GoogleComputeGlobalAddress#purpose}
   */

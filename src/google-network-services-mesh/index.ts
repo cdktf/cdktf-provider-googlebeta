@@ -27,19 +27,19 @@ export interface GoogleNetworkServicesMeshConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Optional. If set to a valid TCP port (1-65535), instructs the SIDECAR proxy to listen on the
-specified port of localhost (127.0.0.1) address. The SIDECAR proxy will expect all traffic to
-be redirected to this port regardless of its actual ip:port destination. If unset, a port
-'15001' is used as the interception port. This will is applicable only for sidecar proxy
-deployments.
+  * specified port of localhost (127.0.0.1) address. The SIDECAR proxy will expect all traffic to
+  * be redirected to this port regardless of its actual ip:port destination. If unset, a port
+  * '15001' is used as the interception port. This will is applicable only for sidecar proxy
+  * deployments.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
   */
   readonly interceptionPort?: number;
   /**
   * Set of label tags associated with the Mesh resource.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
   */

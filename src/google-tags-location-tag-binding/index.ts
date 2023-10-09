@@ -21,7 +21,7 @@ export interface GoogleTagsLocationTagBindingConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * The geographic location where the transfer config should reside.
-Examples: US, EU, asia-northeast1. The default value is US.
+  * Examples: US, EU, asia-northeast1. The default value is US.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_tags_location_tag_binding#location GoogleTagsLocationTagBinding#location}
   */

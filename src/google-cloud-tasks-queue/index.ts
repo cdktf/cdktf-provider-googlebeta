@@ -69,24 +69,24 @@ export interface GoogleCloudTasksQueueConfig extends cdktf.TerraformMetaArgument
 export interface GoogleCloudTasksQueueAppEngineRoutingOverride {
   /**
   * App instance.
-
-By default, the task is sent to an instance which is available when the task is attempted.
+  * 
+  * By default, the task is sent to an instance which is available when the task is attempted.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#instance GoogleCloudTasksQueue#instance}
   */
   readonly instance?: string;
   /**
   * App service.
-
-By default, the task is sent to the service which is the default service when the task is attempted.
+  * 
+  * By default, the task is sent to the service which is the default service when the task is attempted.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#service GoogleCloudTasksQueue#service}
   */
   readonly service?: string;
   /**
   * App version.
-
-By default, the task is sent to the version which is the default version when the task is attempted.
+  * 
+  * By default, the task is sent to the version which is the default version when the task is attempted.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#version GoogleCloudTasksQueue#version}
   */
@@ -205,17 +205,17 @@ export class GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference extend
 export interface GoogleCloudTasksQueueRateLimits {
   /**
   * The maximum number of concurrent tasks that Cloud Tasks allows to
-be dispatched for this queue. After this threshold has been
-reached, Cloud Tasks stops dispatching tasks until the number of
-concurrent requests decreases.
+  * be dispatched for this queue. After this threshold has been
+  * reached, Cloud Tasks stops dispatching tasks until the number of
+  * concurrent requests decreases.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_concurrent_dispatches GoogleCloudTasksQueue#max_concurrent_dispatches}
   */
   readonly maxConcurrentDispatches?: number;
   /**
   * The maximum rate at which tasks are dispatched from this queue.
-
-If unspecified when the queue is created, Cloud Tasks will pick the default.
+  * 
+  * If unspecified when the queue is created, Cloud Tasks will pick the default.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_dispatches_per_second GoogleCloudTasksQueue#max_dispatches_per_second}
   */
@@ -311,53 +311,53 @@ export class GoogleCloudTasksQueueRateLimitsOutputReference extends cdktf.Comple
 export interface GoogleCloudTasksQueueRetryConfig {
   /**
   * Number of attempts per task.
-
-Cloud Tasks will attempt the task maxAttempts times (that is, if
-the first attempt fails, then there will be maxAttempts - 1
-retries). Must be >= -1.
-
-If unspecified when the queue is created, Cloud Tasks will pick
-the default.
-
--1 indicates unlimited attempts.
+  * 
+  * Cloud Tasks will attempt the task maxAttempts times (that is, if
+  * the first attempt fails, then there will be maxAttempts - 1
+  * retries). Must be >= -1.
+  * 
+  * If unspecified when the queue is created, Cloud Tasks will pick
+  * the default.
+  * 
+  * -1 indicates unlimited attempts.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_attempts GoogleCloudTasksQueue#max_attempts}
   */
   readonly maxAttempts?: number;
   /**
   * A task will be scheduled for retry between minBackoff and
-maxBackoff duration after it fails, if the queue's RetryConfig
-specifies that the task should be retried.
+  * maxBackoff duration after it fails, if the queue's RetryConfig
+  * specifies that the task should be retried.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_backoff GoogleCloudTasksQueue#max_backoff}
   */
   readonly maxBackoff?: string;
   /**
   * The time between retries will double maxDoublings times.
-
-A task's retry interval starts at minBackoff, then doubles maxDoublings times,
-then increases linearly, and finally retries retries at intervals of maxBackoff
-up to maxAttempts times.
+  * 
+  * A task's retry interval starts at minBackoff, then doubles maxDoublings times,
+  * then increases linearly, and finally retries retries at intervals of maxBackoff
+  * up to maxAttempts times.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_doublings GoogleCloudTasksQueue#max_doublings}
   */
   readonly maxDoublings?: number;
   /**
   * If positive, maxRetryDuration specifies the time limit for
-retrying a failed task, measured from when the task was first
-attempted. Once maxRetryDuration time has passed and the task has
-been attempted maxAttempts times, no further attempts will be
-made and the task will be deleted.
-
-If zero, then the task age is unlimited.
+  * retrying a failed task, measured from when the task was first
+  * attempted. Once maxRetryDuration time has passed and the task has
+  * been attempted maxAttempts times, no further attempts will be
+  * made and the task will be deleted.
+  * 
+  * If zero, then the task age is unlimited.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#max_retry_duration GoogleCloudTasksQueue#max_retry_duration}
   */
   readonly maxRetryDuration?: string;
   /**
   * A task will be scheduled for retry between minBackoff and
-maxBackoff duration after it fails, if the queue's RetryConfig
-specifies that the task should be retried.
+  * maxBackoff duration after it fails, if the queue's RetryConfig
+  * specifies that the task should be retried.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#min_backoff GoogleCloudTasksQueue#min_backoff}
   */
@@ -517,8 +517,8 @@ export class GoogleCloudTasksQueueRetryConfigOutputReference extends cdktf.Compl
 export interface GoogleCloudTasksQueueStackdriverLoggingConfig {
   /**
   * Specifies the fraction of operations to write to Stackdriver Logging.
-This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
-default and means that no operations are logged.
+  * This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
+  * default and means that no operations are logged.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_tasks_queue#sampling_ratio GoogleCloudTasksQueue#sampling_ratio}
   */

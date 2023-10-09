@@ -27,7 +27,7 @@ export interface GoogleComputeBackendServiceSignedUrlKeyConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * 128-bit key value used for signing the URL. The key value must be a
-valid RFC 4648 Section 5 base64url encoded string.
+  * valid RFC 4648 Section 5 base64url encoded string.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_backend_service_signed_url_key#key_value GoogleComputeBackendServiceSignedUrlKey#key_value}
   */

@@ -51,7 +51,7 @@ export interface GoogleEdgenetworkSubnetConfig extends cdktf.TerraformMetaArgume
   readonly location: string;
   /**
   * The ID of the network to which this router belongs.
-Must be of the form: 'projects/{{project}}/locations/{{location}}/zones/{{zone}}/networks/{{network_id}}'
+  * Must be of the form: 'projects/{{project}}/locations/{{location}}/zones/{{zone}}/networks/{{network_id}}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
   */

@@ -193,8 +193,8 @@ export interface GoogleIdentityPlatformProjectDefaultConfigSignInEmail {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Whether a password is required for email auth or not. If true, both an email and
-password must be provided to sign in. If false, a user may sign in via either
-email/password or email link.
+  * password must be provided to sign in. If false, a user may sign in via either
+  * email/password or email link.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_project_default_config#password_required GoogleIdentityPlatformProjectDefaultConfig#password_required}
   */

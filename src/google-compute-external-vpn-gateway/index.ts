@@ -27,21 +27,21 @@ export interface GoogleComputeExternalVpnGatewayConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * Labels for the external VPN gateway resource.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_external_vpn_gateway#labels GoogleComputeExternalVpnGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the resource. Provided by the client when the resource is
-created. The name must be 1-63 characters long, and comply with
-RFC1035.  Specifically, the name must be 1-63 characters long and
-match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means
-the first character must be a lowercase letter, and all following
-characters must be a dash, lowercase letter, or digit, except the last
-character, which cannot be a dash.
+  * created. The name must be 1-63 characters long, and comply with
+  * RFC1035.  Specifically, the name must be 1-63 characters long and
+  * match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means
+  * the first character must be a lowercase letter, and all following
+  * characters must be a dash, lowercase letter, or digit, except the last
+  * character, which cannot be a dash.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_external_vpn_gateway#name GoogleComputeExternalVpnGateway#name}
   */
@@ -72,10 +72,10 @@ character, which cannot be a dash.
 export interface GoogleComputeExternalVpnGatewayInterface {
   /**
   * The numeric ID for this interface. Allowed values are based on the redundancy type
-of this external VPN gateway
-* '0 - SINGLE_IP_INTERNALLY_REDUNDANT'
-* '0, 1 - TWO_IPS_REDUNDANCY'
-* '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
+  * of this external VPN gateway
+  * * '0 - SINGLE_IP_INTERNALLY_REDUNDANT'
+  * * '0, 1 - TWO_IPS_REDUNDANCY'
+  * * '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_external_vpn_gateway#id GoogleComputeExternalVpnGateway#id}
   *
@@ -85,9 +85,9 @@ of this external VPN gateway
   readonly id?: number;
   /**
   * IP address of the interface in the external VPN gateway.
-Only IPv4 is supported. This IP address can be either from
-your on-premise gateway or another Cloud provider's VPN gateway,
-it cannot be an IP address from Google Compute Engine.
+  * Only IPv4 is supported. This IP address can be either from
+  * your on-premise gateway or another Cloud provider's VPN gateway,
+  * it cannot be an IP address from Google Compute Engine.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_external_vpn_gateway#ip_address GoogleComputeExternalVpnGateway#ip_address}
   */

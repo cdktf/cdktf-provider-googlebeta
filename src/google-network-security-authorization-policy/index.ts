@@ -33,16 +33,16 @@ export interface GoogleNetworkSecurityAuthorizationPolicyConfig extends cdktf.Te
   readonly id?: string;
   /**
   * Set of label tags associated with the AuthorizationPolicy resource.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_authorization_policy#labels GoogleNetworkSecurityAuthorizationPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the authorization policy.
-The default value is 'global'.
+  * The default value is 'global'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_authorization_policy#location GoogleNetworkSecurityAuthorizationPolicy#location}
   */
@@ -340,14 +340,14 @@ export class GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList exten
 export interface GoogleNetworkSecurityAuthorizationPolicyRulesSources {
   /**
   * List of CIDR ranges to match based on source IP address. At least one IP block should match. Single IP (e.g., "1.2.3.4") and CIDR (e.g., "1.2.3.0/24") are supported. Authorization based on source IP alone should be avoided.
-The IP addresses of any load balancers or proxies should be considered untrusted.
+  * The IP addresses of any load balancers or proxies should be considered untrusted.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_authorization_policy#ip_blocks GoogleNetworkSecurityAuthorizationPolicy#ip_blocks}
   */
   readonly ipBlocks?: string[];
   /**
   * List of peer identities to match for authorization. At least one principal should match. Each peer can be an exact match, or a prefix match (example, "namespace/*") or a suffix match (example, "* /service-account") or a presence match "*".
-Authorization based on the principal name without certificate validation (configured by ServerTlsPolicy resource) is considered insecure.
+  * Authorization based on the principal name without certificate validation (configured by ServerTlsPolicy resource) is considered insecure.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_authorization_policy#principals GoogleNetworkSecurityAuthorizationPolicy#principals}
    *

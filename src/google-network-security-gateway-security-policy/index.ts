@@ -27,14 +27,14 @@ export interface GoogleNetworkSecurityGatewaySecurityPolicyConfig extends cdktf.
   readonly id?: string;
   /**
   * The location of the gateway security policy.
-The default value is 'global'.
+  * The default value is 'global'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_gateway_security_policy#location GoogleNetworkSecurityGatewaySecurityPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy}
-gatewaySecurityPolicy should match the pattern:(^a-z?$).
+  * gatewaySecurityPolicy should match the pattern:(^a-z?$).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_gateway_security_policy#name GoogleNetworkSecurityGatewaySecurityPolicy#name}
   */

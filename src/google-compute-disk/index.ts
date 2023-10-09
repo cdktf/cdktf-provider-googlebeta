@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of this resource. Provide this property when
-you create the resource.
+  * you create the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
   */
   readonly description?: string;
   /**
   * Whether this disk is using confidential compute mode.
-Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
+  * Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#enable_confidential_compute GoogleComputeDisk#enable_confidential_compute}
   */
@@ -35,14 +35,14 @@ Note: Only supported on hyperdisk skus, disk_encryption_key is required when set
   readonly id?: string;
   /**
   * The image from which to initialize this disk. This can be
-one of: the image's 'self_link', 'projects/{project}/global/images/{image}',
-'projects/{project}/global/images/family/{family}', 'global/images/{image}',
-'global/images/family/{family}', 'family/{family}', '{project}/{family}',
-'{project}/{image}', '{family}', or '{image}'. If referred by family, the
-images names must include the family name. If they don't, use the
-[google_compute_image data source](/docs/providers/google/d/compute_image.html).
-For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
-These images can be referred by family name here.
+  * one of: the image's 'self_link', 'projects/{project}/global/images/{image}',
+  * 'projects/{project}/global/images/family/{family}', 'global/images/{image}',
+  * 'global/images/family/{family}', 'family/{family}', '{project}/{family}',
+  * '{project}/{image}', '{family}', or '{image}'. If referred by family, the
+  * images names must include the family name. If they don't, use the
+  * [google_compute_image data source](/docs/providers/google/d/compute_image.html).
+  * For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
+  * These images can be referred by family name here.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
   */
@@ -55,10 +55,10 @@ These images can be referred by family name here.
   readonly interface?: string;
   /**
   * Labels to apply to this disk.  A list of key->value pairs.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
   */
@@ -77,22 +77,22 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly multiWriter?: boolean | cdktf.IResolvable;
   /**
   * Name of the resource. Provided by the client when the resource is
-created. The name must be 1-63 characters long, and comply with
-RFC1035. Specifically, the name must be 1-63 characters long and match
-the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
-first character must be a lowercase letter, and all following
-characters must be a dash, lowercase letter, or digit, except the last
-character, which cannot be a dash.
+  * created. The name must be 1-63 characters long, and comply with
+  * RFC1035. Specifically, the name must be 1-63 characters long and match
+  * the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
+  * first character must be a lowercase letter, and all following
+  * characters must be a dash, lowercase letter, or digit, except the last
+  * character, which cannot be a dash.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
   */
   readonly name: string;
   /**
   * Physical block size of the persistent disk, in bytes. If not present
-in a request, a default value is used. Currently supported sizes
-are 4096 and 16384, other sizes may be added in the future.
-If an unsupported value is requested, the error message will list
-the supported values for the caller's project.
+  * in a request, a default value is used. Currently supported sizes
+  * are 4096 and 16384, other sizes may be added in the future.
+  * If an unsupported value is requested, the error message will list
+  * the supported values for the caller's project.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
   */
@@ -103,81 +103,81 @@ the supported values for the caller's project.
   readonly project?: string;
   /**
   * Indicates how many IOPS must be provisioned for the disk.
-Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
-allows for an update of IOPS every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
+  * Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
+  * allows for an update of IOPS every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
   * Indicates how much Throughput must be provisioned for the disk.
-Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
-allows for an update of Throughput every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
+  * Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
+  * allows for an update of Throughput every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#provisioned_throughput GoogleComputeDisk#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
   * Resource policies applied to this disk for automatic snapshot creations.
-
-~>**NOTE** This value does not support updating the
-resource policy, as resource policies can not be updated more than
-one at a time. Use
-['google_compute_disk_resource_policy_attachment'](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk_resource_policy_attachment)
-to allow for updating the resource policy attached to the disk.
+  * 
+  * ~>**NOTE** This value does not support updating the
+  * resource policy, as resource policies can not be updated more than
+  * one at a time. Use
+  * ['google_compute_disk_resource_policy_attachment'](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk_resource_policy_attachment)
+  * to allow for updating the resource policy attached to the disk.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
   */
   readonly resourcePolicies?: string[];
   /**
   * Size of the persistent disk, specified in GB. You can specify this
-field when creating a persistent disk using the 'image' or
-'snapshot' parameter, or specify it alone to create an empty
-persistent disk.
-
-If you specify this field along with 'image' or 'snapshot',
-the value must not be less than the size of the image
-or the size of the snapshot.
-
-~>**NOTE** If you change the size, Terraform updates the disk size
-if upsizing is detected but recreates the disk if downsizing is requested.
-You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
-and recreating.
+  * field when creating a persistent disk using the 'image' or
+  * 'snapshot' parameter, or specify it alone to create an empty
+  * persistent disk.
+  * 
+  * If you specify this field along with 'image' or 'snapshot',
+  * the value must not be less than the size of the image
+  * or the size of the snapshot.
+  * 
+  * ~>**NOTE** If you change the size, Terraform updates the disk size
+  * if upsizing is detected but recreates the disk if downsizing is requested.
+  * You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
+  * and recreating.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
   */
   readonly size?: number;
   /**
   * The source snapshot used to create this disk. You can provide this as
-a partial or full URL to the resource. If the snapshot is in another
-project than this disk, you must supply a full URL. For example, the
-following are valid values:
-
-* 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
-* 'projects/project/global/snapshots/snapshot'
-* 'global/snapshots/snapshot'
-* 'snapshot'
+  * a partial or full URL to the resource. If the snapshot is in another
+  * project than this disk, you must supply a full URL. For example, the
+  * following are valid values:
+  * 
+  * * 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
+  * * 'projects/project/global/snapshots/snapshot'
+  * * 'global/snapshots/snapshot'
+  * * 'snapshot'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
   */
   readonly snapshot?: string;
   /**
   * The source disk used to create this disk. You can provide this as a partial or full URL to the resource.
-For example, the following are valid values:
-
-* https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
-* https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
-* projects/{project}/zones/{zone}/disks/{disk}
-* projects/{project}/regions/{region}/disks/{disk}
-* zones/{zone}/disks/{disk}
-* regions/{region}/disks/{disk}
+  * For example, the following are valid values:
+  * 
+  * * https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+  * * https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+  * * projects/{project}/zones/{zone}/disks/{disk}
+  * * projects/{project}/regions/{region}/disks/{disk}
+  * * zones/{zone}/disks/{disk}
+  * * regions/{region}/disks/{disk}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
   */
   readonly sourceDisk?: string;
   /**
   * URL of the disk type resource describing which disk type to use to
-create the disk. Provide this when creating the disk.
+  * create the disk. Provide this when creating the disk.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
   */
@@ -292,32 +292,32 @@ export class GoogleComputeDiskAsyncPrimaryDiskOutputReference extends cdktf.Comp
 export interface GoogleComputeDiskDiskEncryptionKey {
   /**
   * The self link of the encryption key used to encrypt the disk. Also called KmsKeyName
-in the cloud console. Your project's Compute Engine System service account
-('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
-'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
-See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
+  * in the cloud console. Your project's Compute Engine System service account
+  * ('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
+  * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
+  * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
-If absent, the Compute Engine Service Agent service account is used.
+  * If absent, the Compute Engine Service Agent service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
-RFC 4648 base64 to either encrypt or decrypt this resource.
+  * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
   readonly rawKey?: string;
   /**
   * Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
-customer-supplied encryption key to either encrypt or decrypt
-this resource. You can provide either the rawKey or the rsaEncryptedKey.
+  * customer-supplied encryption key to either encrypt or decrypt
+  * this resource. You can provide either the rawKey or the rsaEncryptedKey.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
   */
@@ -555,24 +555,24 @@ export class GoogleComputeDiskGuestOsFeaturesList extends cdktf.ComplexList {
 export interface GoogleComputeDiskSourceImageEncryptionKey {
   /**
   * The self link of the encryption key used to encrypt the disk. Also called KmsKeyName
-in the cloud console. Your project's Compute Engine System service account
-('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
-'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
-See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
+  * in the cloud console. Your project's Compute Engine System service account
+  * ('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
+  * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
+  * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
-If absent, the Compute Engine Service Agent service account is used.
+  * If absent, the Compute Engine Service Agent service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
-RFC 4648 base64 to either encrypt or decrypt this resource.
+  * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
@@ -691,24 +691,24 @@ export class GoogleComputeDiskSourceImageEncryptionKeyOutputReference extends cd
 export interface GoogleComputeDiskSourceSnapshotEncryptionKey {
   /**
   * The self link of the encryption key used to encrypt the disk. Also called KmsKeyName
-in the cloud console. Your project's Compute Engine System service account
-('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
-'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
-See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
+  * in the cloud console. Your project's Compute Engine System service account
+  * ('service-{{PROJECT_NUMBER}}@compute-system.iam.gserviceaccount.com') must have
+  * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
+  * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
-If absent, the Compute Engine Service Agent service account is used.
+  * If absent, the Compute Engine Service Agent service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
-RFC 4648 base64 to either encrypt or decrypt this resource.
+  * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */

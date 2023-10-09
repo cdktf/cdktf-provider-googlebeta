@@ -37,8 +37,8 @@ export interface GooglePubsubLiteReservationConfig extends cdktf.TerraformMetaAr
   readonly region?: string;
   /**
   * The reserved throughput capacity. Every unit of throughput capacity is
-equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
-messages.
+  * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
+  * messages.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_pubsub_lite_reservation#throughput_capacity GooglePubsubLiteReservation#throughput_capacity}
   */

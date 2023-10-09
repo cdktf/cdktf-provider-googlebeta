@@ -27,9 +27,9 @@ export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * Labels.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_private_connection#labels GoogleDatastreamPrivateConnection#labels}
   */
@@ -244,7 +244,7 @@ export interface GoogleDatastreamPrivateConnectionVpcPeeringConfig {
   readonly subnet: string;
   /**
   * Fully qualified name of the VPC that Datastream will peer to.
-Format: projects/{project}/global/{networks}/{name}
+  * Format: projects/{project}/global/{networks}/{name}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_private_connection#vpc GoogleDatastreamPrivateConnection#vpc}
   */

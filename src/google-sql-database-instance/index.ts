@@ -2986,11 +2986,11 @@ export interface GoogleSqlDatabaseInstanceSettings {
   readonly activationPolicy?: string;
   /**
   * The availability type of the Cloud SQL instance, high availability
-(REGIONAL) or single zone (ZONAL). For all instances, ensure that
-settings.backup_configuration.enabled is set to true.
-For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
-For Postgres instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
-is set to true. Defaults to ZONAL.
+  * (REGIONAL) or single zone (ZONAL). For all instances, ensure that
+  * settings.backup_configuration.enabled is set to true.
+  * For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
+  * For Postgres instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
+  * is set to true. Defaults to ZONAL.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
   */

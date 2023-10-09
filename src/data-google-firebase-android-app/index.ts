@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The globally unique, Firebase-assigned identifier of the AndroidApp.
-This identifier should be treated as an opaque token, as the data format is not specified.
+  * This identifier should be treated as an opaque token, as the data format is not specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_android_app#app_id DataGoogleFirebaseAndroidApp#app_id}
   */

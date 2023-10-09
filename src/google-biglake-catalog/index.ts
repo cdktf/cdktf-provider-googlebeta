@@ -27,7 +27,7 @@ export interface GoogleBiglakeCatalogConfig extends cdktf.TerraformMetaArguments
   readonly location: string;
   /**
   * The name of the Catalog. Format:
-projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}
+  * projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
   */

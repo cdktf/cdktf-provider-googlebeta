@@ -33,14 +33,14 @@ export interface GoogleDialogflowCxTestCaseConfig extends cdktf.TerraformMetaArg
   readonly notes?: string;
   /**
   * The agent to create the test case for.
-Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
+  * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#parent GoogleDialogflowCxTestCase#parent}
   */
   readonly parent?: string;
   /**
   * Tags are short descriptions that users may apply to test cases for organizational and filtering purposes.
-Each tag should start with "#" and has a limit of 30 characters
+  * Each tag should start with "#" and has a limit of 30 characters
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#tags GoogleDialogflowCxTestCase#tags}
   */
@@ -1245,7 +1245,7 @@ export class GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTe
 export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInput {
   /**
   * The language of the input. See [Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language) for a list of the currently supported language codes.
-Note that queries in the same session do not necessarily need to specify the same language.
+  * Note that queries in the same session do not necessarily need to specify the same language.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#language_code GoogleDialogflowCxTestCase#language_code}
   */
@@ -1554,7 +1554,7 @@ export class GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage {
   /**
   * The unique identifier of the page.
-Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
+  * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
   */
@@ -1726,7 +1726,7 @@ export class GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent {
   /**
   * The unique identifier of the intent.
-Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
+  * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
   */
@@ -2081,16 +2081,16 @@ export class GoogleDialogflowCxTestCaseTestCaseConversationTurnsList extends cdk
 export interface GoogleDialogflowCxTestCaseTestConfig {
   /**
   * Flow name to start the test case with.
-Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
-Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
+  * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
+  * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#flow GoogleDialogflowCxTestCase#flow}
   */
   readonly flow?: string;
   /**
   * The page to start the test case with.
-Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
-Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
+  * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
+  * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_test_case#page GoogleDialogflowCxTestCase#page}
   */

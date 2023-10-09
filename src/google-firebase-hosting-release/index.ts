@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the channel to which the release belongs. If not provided, the release will
-belong to the default "live" channel
+  * belong to the default "live" channel
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_release#channel_id GoogleFirebaseHostingRelease#channel_id}
   */
@@ -40,19 +40,19 @@ belong to the default "live" channel
   readonly siteId: string;
   /**
   * The type of the release; indicates what happened to the content of the site. There is no need to specify
-'DEPLOY' or 'ROLLBACK' type if a 'version_name' is provided.
-DEPLOY: A version was uploaded to Firebase Hosting and released. Output only.
-ROLLBACK: The release points back to a previously deployed version. Output only.
-SITE_DISABLE: The release prevents the site from serving content. Firebase Hosting acts as if the site never existed Possible values: ["DEPLOY", "ROLLBACK", "SITE_DISABLE"]
+  * 'DEPLOY' or 'ROLLBACK' type if a 'version_name' is provided.
+  * DEPLOY: A version was uploaded to Firebase Hosting and released. Output only.
+  * ROLLBACK: The release points back to a previously deployed version. Output only.
+  * SITE_DISABLE: The release prevents the site from serving content. Firebase Hosting acts as if the site never existed Possible values: ["DEPLOY", "ROLLBACK", "SITE_DISABLE"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_release#type GoogleFirebaseHostingRelease#type}
   */
   readonly type?: string;
   /**
   * The unique identifier for a version, in the format: sites/SITE_ID/versions/VERSION_ID.
-The content of the version specified will be actively displayed on the appropriate URL.
-The Version must belong to the same site as in the 'site_id'.
-This parameter must be empty if the 'type' of the release is 'SITE_DISABLE'.
+  * The content of the version specified will be actively displayed on the appropriate URL.
+  * The Version must belong to the same site as in the 'site_id'.
+  * This parameter must be empty if the 'type' of the release is 'SITE_DISABLE'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_release#version_name GoogleFirebaseHostingRelease#version_name}
   */

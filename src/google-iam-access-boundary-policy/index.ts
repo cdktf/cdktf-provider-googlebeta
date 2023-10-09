@@ -53,7 +53,7 @@ export interface GoogleIamAccessBoundaryPolicyConfig extends cdktf.TerraformMeta
 export interface GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition {
   /**
   * Description of the expression. This is a longer text which describes the expression,
-e.g. when hovered over it in a UI.
+  * e.g. when hovered over it in a UI.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_access_boundary_policy#description GoogleIamAccessBoundaryPolicy#description}
   */
@@ -66,14 +66,14 @@ e.g. when hovered over it in a UI.
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting,
-e.g. a file name and a position in the file.
+  * e.g. a file name and a position in the file.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_access_boundary_policy#location GoogleIamAccessBoundaryPolicy#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
-This can be used e.g. in UIs which allow to enter the expression.
+  * This can be used e.g. in UIs which allow to enter the expression.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iam_access_boundary_policy#title GoogleIamAccessBoundaryPolicy#title}
   */

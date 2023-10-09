@@ -2042,7 +2042,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlestora
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.createdBefore">CreatedBefore</a></code> | <code>*string</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.customTimeBefore">CustomTimeBefore</a></code> | <code>*string</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.daysSinceCustomTime">DaysSinceCustomTime</a></code> | <code>*f64</code> | Number of days elapsed since the user-specified timestamp set on an object. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime">DaysSinceNoncurrentTime</a></code> | <code>*f64</code> | Number of days elapsed since the noncurrent timestamp of an object. This 						condition is relevant only for versioned objects. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime">DaysSinceNoncurrentTime</a></code> | <code>*f64</code> | Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.matchesPrefix">MatchesPrefix</a></code> | <code>*[]*string</code> | One or more matching name prefixes to satisfy this condition. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.matchesStorageClass">MatchesStorageClass</a></code> | <code>*[]*string</code> | Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD, DURABLE_REDUCED_AVAILABILITY. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition.property.matchesSuffix">MatchesSuffix</a></code> | <code>*[]*string</code> | One or more matching name suffixes to satisfy this condition. |
@@ -2116,7 +2116,7 @@ DaysSinceNoncurrentTime *f64
 
 - *Type:* *f64
 
-Number of days elapsed since the noncurrent timestamp of an object. This 						condition is relevant only for versioned objects.
+Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_bucket#days_since_noncurrent_time GoogleStorageBucket#days_since_noncurrent_time}
 

@@ -25,8 +25,8 @@ export interface DataGoogleIamWorkloadIdentityPoolConfig extends cdktf.Terraform
   readonly project?: string;
   /**
   * The ID to use for the pool, which becomes the final component of the resource name. This
-value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
-'gcp-' is reserved for use by Google, and may not be specified.
+  * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
+  * 'gcp-' is reserved for use by Google, and may not be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_iam_workload_identity_pool#workload_identity_pool_id DataGoogleIamWorkloadIdentityPool#workload_identity_pool_id}
   */

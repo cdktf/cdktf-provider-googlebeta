@@ -26,7 +26,7 @@ export interface GoogleDataCatalogEntryGroupConfig extends cdktf.TerraformMetaAr
   readonly displayName?: string;
   /**
   * The id of the entry group to create. The id must begin with a letter or underscore,
-contain only English letters, numbers and underscores, and be at most 64 characters.
+  * contain only English letters, numbers and underscores, and be at most 64 characters.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_catalog_entry_group#entry_group_id GoogleDataCatalogEntryGroup#entry_group_id}
   */

@@ -21,9 +21,9 @@ export interface GoogleServiceDirectoryServiceConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * Metadata for the service. This data can be consumed
-by service clients. The entire metadata dictionary may contain
-up to 2000 characters, spread across all key-value pairs.
-Metadata that goes beyond any these limits will be rejected.
+  * by service clients. The entire metadata dictionary may contain
+  * up to 2000 characters, spread across all key-value pairs.
+  * Metadata that goes beyond any these limits will be rejected.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
   */
@@ -36,7 +36,7 @@ Metadata that goes beyond any these limits will be rejected.
   readonly namespace: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
-lowercase letters or the hyphen character.
+  * lowercase letters or the hyphen character.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
   */

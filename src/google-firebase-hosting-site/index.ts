@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseHostingSiteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. The [ID of a Web App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id)
-associated with the Hosting site.
+  * associated with the Hosting site.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_site#app_id GoogleFirebaseHostingSite#app_id}
   */
@@ -32,8 +32,8 @@ associated with the Hosting site.
   readonly project?: string;
   /**
   * Required. Immutable. A globally unique identifier for the Hosting site. This identifier is
-used to construct the Firebase-provisioned subdomains for the site, so it must also be a valid
-domain name label.
+  * used to construct the Firebase-provisioned subdomains for the site, so it must also be a valid
+  * domain name label.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_site#site_id GoogleFirebaseHostingSite#site_id}
   */

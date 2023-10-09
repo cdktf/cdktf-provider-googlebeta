@@ -47,16 +47,16 @@ export interface GoogleFirebaseHostingVersionConfigRedirects {
   readonly glob?: string;
   /**
   * The value to put in the HTTP location header of the response.
-The location can contain capture group values from the pattern using a : prefix to identify
-the segment and an optional * to capture the rest of the URL. For example:
-
-```hcl
-redirects {
-  glob = "/:capture*"
-  status_code = 302
-  location = "https://example.com/foo/:capture"
-}
-```
+  * The location can contain capture group values from the pattern using a : prefix to identify
+  * the segment and an optional * to capture the rest of the URL. For example:
+  * 
+  * ```hcl
+  * redirects {
+  *   glob = "/:capture*"
+  *   status_code = 302
+  *   location = "https://example.com/foo/:capture"
+  * }
+  * ```
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
   */

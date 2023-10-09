@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Labels to apply to this disk.  A list of key->value pairs.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
@@ -399,10 +399,10 @@ a partial or full URL to the resource. If the snapshot is in another
 project than this disk, you must supply a full URL. For example, the
 following are valid values:
 
-'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
-'projects/project/global/snapshots/snapshot'
-'global/snapshots/snapshot'
-'snapshot'
+* 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
+* 'projects/project/global/snapshots/snapshot'
+* 'global/snapshots/snapshot'
+* 'snapshot'
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
 
@@ -417,12 +417,12 @@ The source disk used to create this disk.
 You can provide this as a partial or full URL to the resource.
 For example, the following are valid values:
 
-https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
-https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
-projects/{project}/zones/{zone}/disks/{disk}
-projects/{project}/regions/{region}/disks/{disk}
-zones/{zone}/disks/{disk}
-regions/{region}/disks/{disk}
+* https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+* https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+* projects/{project}/zones/{zone}/disks/{disk}
+* projects/{project}/regions/{region}/disks/{disk}
+* zones/{zone}/disks/{disk}
+* regions/{region}/disks/{disk}
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
 
@@ -2384,7 +2384,7 @@ labels: typing.Mapping[str]
 
 Labels to apply to this disk.  A list of key->value pairs.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
@@ -2548,10 +2548,10 @@ a partial or full URL to the resource. If the snapshot is in another
 project than this disk, you must supply a full URL. For example, the
 following are valid values:
 
-'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
-'projects/project/global/snapshots/snapshot'
-'global/snapshots/snapshot'
-'snapshot'
+* 'https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot'
+* 'projects/project/global/snapshots/snapshot'
+* 'global/snapshots/snapshot'
+* 'snapshot'
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
 
@@ -2570,12 +2570,12 @@ The source disk used to create this disk.
 You can provide this as a partial or full URL to the resource.
 For example, the following are valid values:
 
-https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
-https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
-projects/{project}/zones/{zone}/disks/{disk}
-projects/{project}/regions/{region}/disks/{disk}
-zones/{zone}/disks/{disk}
-regions/{region}/disks/{disk}
+* https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+* https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+* projects/{project}/zones/{zone}/disks/{disk}
+* projects/{project}/regions/{region}/disks/{disk}
+* zones/{zone}/disks/{disk}
+* regions/{region}/disks/{disk}
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
 

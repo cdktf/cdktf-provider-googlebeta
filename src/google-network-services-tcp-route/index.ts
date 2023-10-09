@@ -20,7 +20,7 @@ export interface GoogleNetworkServicesTcpRouteConfig extends cdktf.TerraformMeta
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TcpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
-Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+  * Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tcp_route#gateways GoogleNetworkServicesTcpRoute#gateways}
    *
@@ -36,17 +36,17 @@ Each gateway reference should match the pattern: projects/* /locations/global/ga
   readonly id?: string;
   /**
   * Set of label tags associated with the TcpRoute resource.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tcp_route#labels GoogleNetworkServicesTcpRoute#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Meshes defines a list of meshes this TcpRoute is attached to, as one of the routing rules to route the requests served by the mesh.
-Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
-The attached Mesh should be of a type SIDECAR
+  * Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
+  * The attached Mesh should be of a type SIDECAR
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tcp_route#meshes GoogleNetworkServicesTcpRoute#meshes}
    *
@@ -85,9 +85,9 @@ export interface GoogleNetworkServicesTcpRouteRulesActionDestinations {
   readonly serviceName?: string;
   /**
   * Specifies the proportion of requests forwarded to the backend referenced by the serviceName field. This is computed as: weight/Sum(weights in this destination list). For non-zero values, there may be some epsilon from the exact proportion defined here depending on the precision an implementation supports.
-If only one serviceName is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend.
-If weights are specified for any one service name, they need to be specified for all of them.
-If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
+  * If only one serviceName is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend.
+  * If weights are specified for any one service name, they need to be specified for all of them.
+  * If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tcp_route#weight GoogleNetworkServicesTcpRoute#weight}
   */
@@ -306,7 +306,7 @@ export class GoogleNetworkServicesTcpRouteRulesActionOutputReference extends cdk
 export interface GoogleNetworkServicesTcpRouteRulesMatches {
   /**
   * Must be specified in the CIDR range format. A CIDR range consists of an IP Address and a prefix length to construct the subnet mask.
-By default, the prefix length is 32 (i.e. matches a single IP address). Only IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this exact IP address. "10.0.0.0/8" - matches against any IP address within the 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any IP address'.
+  * By default, the prefix length is 32 (i.e. matches a single IP address). Only IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this exact IP address. "10.0.0.0/8" - matches against any IP address within the 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any IP address'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tcp_route#address GoogleNetworkServicesTcpRoute#address}
   */

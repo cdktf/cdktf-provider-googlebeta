@@ -1495,7 +1495,7 @@ Name must be 63 characters or less, begin and end with alphanumerics,
 with dashes (-), underscores (_), dots (.), and alphanumerics between.
 
 
-*Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#annotations GoogleGkeonpremBareMetalAdminCluster#annotations}
@@ -1874,7 +1874,7 @@ label keys, the applied set may differ depending on the Kubernetes
 version -- it's best to assume the behavior is undefined and
 conflicts should be avoided. For more information, including usage
 and the valid values, see:
-http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
@@ -1959,7 +1959,7 @@ label keys, the applied set may differ depending on the Kubernetes
 version -- it's best to assume the behavior is undefined and
 conflicts should be avoided. For more information, including usage
 and the valid values, see:
-http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 

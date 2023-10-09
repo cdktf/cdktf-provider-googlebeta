@@ -20,7 +20,7 @@ export interface GoogleApigeeEnvReferencesConfig extends cdktf.TerraformMetaArgu
   readonly description?: string;
   /**
   * The Apigee environment group associated with the Apigee environment,
-in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
+  * in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_env_references#env_id GoogleApigeeEnvReferences#env_id}
   */

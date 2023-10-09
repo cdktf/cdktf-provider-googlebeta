@@ -27,8 +27,8 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktf.TerraformMeta
   readonly name: string;
   /**
   * The resource name of the private cloud to create a new cluster in.
-Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
-For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
+  * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
+  * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
   */

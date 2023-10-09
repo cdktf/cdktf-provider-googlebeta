@@ -57,7 +57,7 @@ export interface GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig extends cd
   readonly location: string;
   /**
   * Name of the resource. ame is the full resource name so projects/{project}/locations/{location}/gatewaySecurityPolicies/{gateway_security_policy}/rules/{rule}
-rule should match the pattern: (^a-z?$).
+  * rule should match the pattern: (^a-z?$).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_gateway_security_policy_rule#name GoogleNetworkSecurityGatewaySecurityPolicyRule#name}
   */
@@ -80,7 +80,7 @@ rule should match the pattern: (^a-z?$).
   readonly sessionMatcher: string;
   /**
   * Flag to enable TLS inspection of traffic matching on. Can only be true if the
-parent GatewaySecurityPolicy references a TLSInspectionConfig.
+  * parent GatewaySecurityPolicy references a TLSInspectionConfig.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_security_gateway_security_policy_rule#tls_inspection_enabled GoogleNetworkSecurityGatewaySecurityPolicyRule#tls_inspection_enabled}
   */

@@ -20,7 +20,7 @@ export interface GoogleComputeMachineImageConfig extends cdktf.TerraformMetaArgu
   readonly description?: string;
   /**
   * Specify this to create an application consistent machine image by informing the OS to prepare for the snapshot process.
-Currently only supported on Windows instances using the Volume Shadow Copy Service (VSS).
+  * Currently only supported on Windows instances using the Volume Shadow Copy Service (VSS).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image#guest_flush GoogleComputeMachineImage#guest_flush}
   */
@@ -70,14 +70,14 @@ export interface GoogleComputeMachineImageMachineImageEncryptionKey {
   readonly kmsKeyName?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
-If absent, the Compute Engine Service Agent service account is used.
+  * If absent, the Compute Engine Service Agent service account is used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image#kms_key_service_account GoogleComputeMachineImage#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
-RFC 4648 base64 to either encrypt or decrypt this resource.
+  * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_machine_image#raw_key GoogleComputeMachineImage#raw_key}
   */

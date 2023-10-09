@@ -26,11 +26,11 @@ export interface GoogleOsConfigGuestPoliciesConfig extends cdktf.TerraformMetaAr
   readonly etag?: string;
   /**
   * The logical name of the guest policy in the project with the following restrictions:
-* Must contain only lowercase letters, numbers, and hyphens.
-* Must start with a letter.
-* Must be between 1-63 characters.
-* Must end with a number or a letter.
-* Must be unique within the project.
+  * * Must contain only lowercase letters, numbers, and hyphens.
+  * * Must start with a letter.
+  * * Must be between 1-63 characters.
+  * * Must end with a number or a letter.
+  * * Must be unique within the project.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#guest_policy_id GoogleOsConfigGuestPolicies#guest_policy_id}
   */
@@ -333,26 +333,26 @@ export class GoogleOsConfigGuestPoliciesAssignmentOsTypesList extends cdktf.Comp
 export interface GoogleOsConfigGuestPoliciesAssignment {
   /**
   * Targets VM instances whose name starts with one of these prefixes.
-Like labels, this is another way to group VM instances when targeting configs,
-for example prefix="prod-".
-Only supported for project-level policies.
+  * Like labels, this is another way to group VM instances when targeting configs,
+  * for example prefix="prod-".
+  * Only supported for project-level policies.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#instance_name_prefixes GoogleOsConfigGuestPolicies#instance_name_prefixes}
   */
   readonly instanceNamePrefixes?: string[];
   /**
   * Targets any of the instances specified. Instances are specified by their URI in the form
-zones/[ZONE]/instances/[INSTANCE_NAME].
-Instance targeting is uncommon and is supported to facilitate the management of changes
-by the instance or to target specific VM instances for development and testing.
-Only supported for project-level policies and must reference instances within this project.
+  * zones/[ZONE]/instances/[INSTANCE_NAME].
+  * Instance targeting is uncommon and is supported to facilitate the management of changes
+  * by the instance or to target specific VM instances for development and testing.
+  * Only supported for project-level policies and must reference instances within this project.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#instances GoogleOsConfigGuestPolicies#instances}
   */
   readonly instances?: string[];
   /**
   * Targets instances in any of these zones. Leave empty to target instances in any zone.
-Zonal targeting is uncommon and is supported to facilitate the management of changes by zone.
+  * Zonal targeting is uncommon and is supported to facilitate the management of changes by zone.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#zones GoogleOsConfigGuestPolicies#zones}
   */
@@ -542,7 +542,7 @@ export interface GoogleOsConfigGuestPoliciesPackageRepositoriesApt {
   readonly distribution: string;
   /**
   * URI of the key file for this repository. The agent maintains a keyring at
-/etc/apt/trusted.gpg.d/osconfig_agent_managed.gpg containing all the keys in any applied guest policy.
+  * /etc/apt/trusted.gpg.d/osconfig_agent_managed.gpg containing all the keys in any applied guest policy.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#gpg_key GoogleOsConfigGuestPolicies#gpg_key}
   */
@@ -807,7 +807,7 @@ export interface GoogleOsConfigGuestPoliciesPackageRepositoriesYum {
   readonly gpgKeys?: string[];
   /**
   * A one word, unique name for this repository. This is the repo id in the Yum config file and also the displayName
-if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
+  * if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
   *
@@ -959,7 +959,7 @@ export interface GoogleOsConfigGuestPoliciesPackageRepositoriesZypper {
   readonly gpgKeys?: string[];
   /**
   * A one word, unique name for this repository. This is the repo id in the zypper config file and also the displayName
-if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
+  * if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
   *
@@ -1285,17 +1285,17 @@ export interface GoogleOsConfigGuestPoliciesPackages {
   readonly desiredState?: string;
   /**
   * Type of package manager that can be used to install this package. If a system does not have the package manager,
-the package is not installed or removed no error message is returned. By default, or if you specify ANY,
-the agent attempts to install and remove this package using the default package manager.
-This is useful when creating a policy that applies to different types of systems.
-The default behavior is ANY. Default value: "ANY" Possible values: ["ANY", "APT", "YUM", "ZYPPER", "GOO"]
+  * the package is not installed or removed no error message is returned. By default, or if you specify ANY,
+  * the agent attempts to install and remove this package using the default package manager.
+  * This is useful when creating a policy that applies to different types of systems.
+  * The default behavior is ANY. Default value: "ANY" Possible values: ["ANY", "APT", "YUM", "ZYPPER", "GOO"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#manager GoogleOsConfigGuestPolicies#manager}
   */
   readonly manager?: string;
   /**
   * The name of the package. A package is uniquely identified for conflict validation
-by checking the package name and the manager(s) that the package targets.
+  * by checking the package name and the manager(s) that the package targets.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
   */
@@ -1438,21 +1438,21 @@ export class GoogleOsConfigGuestPoliciesPackagesList extends cdktf.ComplexList {
 export interface GoogleOsConfigGuestPoliciesRecipesArtifactsGcs {
   /**
   * Bucket of the Google Cloud Storage object. Given an example URL: https://storage.googleapis.com/my-bucket/foo/bar#1234567
-this value would be my-bucket.
+  * this value would be my-bucket.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#bucket GoogleOsConfigGuestPolicies#bucket}
   */
   readonly bucket?: string;
   /**
   * Must be provided if allowInsecure is false. Generation number of the Google Cloud Storage object.
-https://storage.googleapis.com/my-bucket/foo/bar#1234567 this value would be 1234567.
+  * https://storage.googleapis.com/my-bucket/foo/bar#1234567 this value would be 1234567.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#generation GoogleOsConfigGuestPolicies#generation}
   */
   readonly generation?: number;
   /**
   * Name of the Google Cloud Storage object. Given an example URL: https://storage.googleapis.com/my-bucket/foo/bar#1234567
-this value would be foo/bar.
+  * this value would be foo/bar.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#object GoogleOsConfigGuestPolicies#object}
   */
@@ -1566,8 +1566,8 @@ export class GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference exten
 export interface GoogleOsConfigGuestPoliciesRecipesArtifactsRemote {
   /**
   * Must be provided if allowInsecure is false. SHA256 checksum in hex format, to compare to the checksum of the artifact.
-If the checksum is not empty and it doesn't match the artifact then the recipe installation fails before running any
-of the steps.
+  * If the checksum is not empty and it doesn't match the artifact then the recipe installation fails before running any
+  * of the steps.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#check_sum GoogleOsConfigGuestPolicies#check_sum}
   */
@@ -1664,15 +1664,15 @@ export class GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference ex
 export interface GoogleOsConfigGuestPoliciesRecipesArtifacts {
   /**
   * Defaults to false. When false, recipes are subject to validations based on the artifact type:
-Remote: A checksum must be specified, and only protocols with transport-layer security are permitted.
-GCS: An object generation number must be specified.
+  * Remote: A checksum must be specified, and only protocols with transport-layer security are permitted.
+  * GCS: An object generation number must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#allow_insecure GoogleOsConfigGuestPolicies#allow_insecure}
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
   * Id of the artifact, which the installation and update steps of this recipe can reference.
-Artifacts in a recipe cannot have the same id.
+  * Artifacts in a recipe cannot have the same id.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
   *
@@ -2048,19 +2048,19 @@ export interface GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy {
   readonly destination: string;
   /**
   * Whether to allow this step to overwrite existing files.If this is false and the file already exists the file
-is not overwritten and the step is considered a success. Defaults to false.
+  * is not overwritten and the step is considered a success. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
   */
   readonly overwrite?: boolean | cdktf.IResolvable;
   /**
   * Consists of three octal digits which represent, in order, the permissions of the owner, group, and other users
-for the file (similarly to the numeric mode used in the linux chmod utility). Each digit represents a three bit
-number with the 4 bit corresponding to the read permissions, the 2 bit corresponds to the write bit, and the one
-bit corresponds to the execute permission. Default behavior is 755.
-
-Below are some examples of permissions and their associated values:
-read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
+  * for the file (similarly to the numeric mode used in the linux chmod utility). Each digit represents a three bit
+  * number with the 4 bit corresponding to the read permissions, the 2 bit corresponds to the write bit, and the one
+  * bit corresponds to the execute permission. Default behavior is 755.
+  * 
+  * Below are some examples of permissions and their associated values:
+  * read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
   */
@@ -2537,7 +2537,7 @@ export interface GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun {
   readonly allowedExitCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script is executed directly,
-which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
+  * which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
   */
@@ -3122,19 +3122,19 @@ export interface GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy {
   readonly destination: string;
   /**
   * Whether to allow this step to overwrite existing files.If this is false and the file already exists the file
-is not overwritten and the step is considered a success. Defaults to false.
+  * is not overwritten and the step is considered a success. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
   */
   readonly overwrite?: boolean | cdktf.IResolvable;
   /**
   * Consists of three octal digits which represent, in order, the permissions of the owner, group, and other users
-for the file (similarly to the numeric mode used in the linux chmod utility). Each digit represents a three bit
-number with the 4 bit corresponding to the read permissions, the 2 bit corresponds to the write bit, and the one
-bit corresponds to the execute permission. Default behavior is 755.
-
-Below are some examples of permissions and their associated values:
-read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
+  * for the file (similarly to the numeric mode used in the linux chmod utility). Each digit represents a three bit
+  * number with the 4 bit corresponding to the read permissions, the 2 bit corresponds to the write bit, and the one
+  * bit corresponds to the execute permission. Default behavior is 755.
+  * 
+  * Below are some examples of permissions and their associated values:
+  * read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
   */
@@ -3611,7 +3611,7 @@ export interface GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun {
   readonly allowedExitCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script is executed directly,
-which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
+  * which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
   */
@@ -4001,20 +4001,20 @@ export class GoogleOsConfigGuestPoliciesRecipesUpdateStepsList extends cdktf.Com
 export interface GoogleOsConfigGuestPoliciesRecipes {
   /**
   * Default is INSTALLED. The desired state the agent should maintain for this recipe.
-
-INSTALLED: The software recipe is installed on the instance but won't be updated to new versions.
-INSTALLED_KEEP_UPDATED: The software recipe is installed on the instance. The recipe is updated to a higher version,
-if a higher version of the recipe is assigned to this instance.
-REMOVE: Remove is unsupported for software recipes and attempts to create or update a recipe to the REMOVE state is rejected. Default value: "INSTALLED" Possible values: ["INSTALLED", "UPDATED", "REMOVED"]
+  * 
+  * INSTALLED: The software recipe is installed on the instance but won't be updated to new versions.
+  * INSTALLED_KEEP_UPDATED: The software recipe is installed on the instance. The recipe is updated to a higher version,
+  * if a higher version of the recipe is assigned to this instance.
+  * REMOVE: Remove is unsupported for software recipes and attempts to create or update a recipe to the REMOVE state is rejected. Default value: "INSTALLED" Possible values: ["INSTALLED", "UPDATED", "REMOVED"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#desired_state GoogleOsConfigGuestPolicies#desired_state}
   */
   readonly desiredState?: string;
   /**
   * Unique identifier for the recipe. Only one recipe with a given name is installed on an instance.
-Names are also used to identify resources which helps to determine whether guest policies have conflicts.
-This means that requests to create multiple recipes with the same name and version are rejected since they
-could potentially have conflicting assignments.
+  * Names are also used to identify resources which helps to determine whether guest policies have conflicts.
+  * This means that requests to create multiple recipes with the same name and version are rejected since they
+  * could potentially have conflicting assignments.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
   */

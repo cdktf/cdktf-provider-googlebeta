@@ -20,7 +20,7 @@ export interface GoogleServiceUsageConsumerQuotaOverrideConfig extends cdktf.Ter
   readonly dimensions?: { [key: string]: string };
   /**
   * If the new quota would decrease the existing quota by more than 10%, the request is rejected.
-If 'force' is 'true', that safety check is ignored.
+  * If 'force' is 'true', that safety check is ignored.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_usage_consumer_quota_override#force GoogleServiceUsageConsumerQuotaOverride#force}
   */
@@ -34,9 +34,9 @@ If 'force' is 'true', that safety check is ignored.
   readonly id?: string;
   /**
   * The limit on the metric, e.g. '/project/region'.
-
-~> Make sure that 'limit' is in a format that doesn't start with '1/' or contain curly braces.
-E.g. use '/project/user' instead of '1/{project}/{user}'.
+  * 
+  * ~> Make sure that 'limit' is in a format that doesn't start with '1/' or contain curly braces.
+  * E.g. use '/project/user' instead of '1/{project}/{user}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_usage_consumer_quota_override#limit GoogleServiceUsageConsumerQuotaOverride#limit}
   */

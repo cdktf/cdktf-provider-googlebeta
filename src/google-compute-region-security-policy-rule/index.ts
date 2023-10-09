@@ -14,16 +14,16 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeRegionSecurityPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Action to perform when the rule is matched. The following are the valid actions:
-
-* allow: allow access to target.
-
-* deny(STATUS): deny access to target, returns the HTTP response code specified. Valid values for STATUS are 403, 404, and 502.
-
-* rate_based_ban: limit client traffic to the configured threshold and ban the client if the traffic exceeds the threshold. Configure parameters for this action in RateLimitOptions. Requires rateLimitOptions to be set.
-
-* redirect: redirect to a different target. This can either be an internal reCAPTCHA redirect, or an external URL-based redirect via a 302 response. Parameters for this action can be configured via redirectOptions. This action is only supported in Global Security Policies of type CLOUD_ARMOR.
-
-* throttle: limit client traffic to the configured threshold. Configure parameters for this action in rateLimitOptions. Requires rateLimitOptions to be set for this.
+  * 
+  * * allow: allow access to target.
+  * 
+  * * deny(STATUS): deny access to target, returns the HTTP response code specified. Valid values for STATUS are 403, 404, and 502.
+  * 
+  * * rate_based_ban: limit client traffic to the configured threshold and ban the client if the traffic exceeds the threshold. Configure parameters for this action in RateLimitOptions. Requires rateLimitOptions to be set.
+  * 
+  * * redirect: redirect to a different target. This can either be an internal reCAPTCHA redirect, or an external URL-based redirect via a 302 response. Parameters for this action can be configured via redirectOptions. This action is only supported in Global Security Policies of type CLOUD_ARMOR.
+  * 
+  * * throttle: limit client traffic to the configured threshold. Configure parameters for this action in rateLimitOptions. Requires rateLimitOptions to be set for this.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy_rule#action GoogleComputeRegionSecurityPolicyRule#action}
   */
@@ -49,8 +49,8 @@ export interface GoogleComputeRegionSecurityPolicyRuleConfig extends cdktf.Terra
   readonly preview?: boolean | cdktf.IResolvable;
   /**
   * An integer indicating the priority of a rule in the list.
-The priority must be a positive value between 0 and 2147483647.
-Rules are evaluated from highest to lowest priority where 0 is the highest priority and 2147483647 is the lowest priority.
+  * The priority must be a positive value between 0 and 2147483647.
+  * Rules are evaluated from highest to lowest priority where 0 is the highest priority and 2147483647 is the lowest priority.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy_rule#priority GoogleComputeRegionSecurityPolicyRule#priority}
   */
@@ -160,7 +160,7 @@ export class GoogleComputeRegionSecurityPolicyRuleMatchConfigOutputReference ext
 export interface GoogleComputeRegionSecurityPolicyRuleMatch {
   /**
   * Preconfigured versioned expression. If this field is specified, config must also be specified.
-Available preconfigured expressions along with their requirements are: SRC_IPS_V1 - must specify the corresponding srcIpRange field in config. Possible values: ["SRC_IPS_V1"]
+  * Available preconfigured expressions along with their requirements are: SRC_IPS_V1 - must specify the corresponding srcIpRange field in config. Possible values: ["SRC_IPS_V1"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_region_security_policy_rule#versioned_expr GoogleComputeRegionSecurityPolicyRule#versioned_expr}
   */

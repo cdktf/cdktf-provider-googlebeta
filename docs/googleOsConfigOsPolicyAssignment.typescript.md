@@ -1358,7 +1358,7 @@ const googleOsConfigOsPolicyAssignmentOsPolicies: googleOsConfigOsPolicyAssignme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPolicies.property.id">id</a></code> | <code>string</code> | The id of the OS policy with the following restrictions: Must contain only lowercase letters, numbers, and hyphens. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPolicies.property.id">id</a></code> | <code>string</code> | The id of the OS policy with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPolicies.property.mode">mode</a></code> | <code>string</code> | Policy mode Possible values: ["MODE_UNSPECIFIED", "VALIDATION", "ENFORCEMENT"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPolicies.property.resourceGroups">resourceGroups</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroups">GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroups</a>[]</code> | resource_groups block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPolicies.property.allowNoResourceGroupMatch">allowNoResourceGroupMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | This flag determines the OS policy compliance status when none of the resource groups within the policy are applicable for a VM. |
@@ -1374,12 +1374,12 @@ public readonly id: string;
 
 - *Type:* string
 
-The id of the OS policy with the following restrictions: Must contain only lowercase letters, numbers, and hyphens.
+The id of the OS policy with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens.
 
-Must start with a letter.
-Must be between 1-63 characters.
-Must end with a number or a letter.
-Must be unique within the assignment.
+* Must start with a letter.
+* Must be between 1-63 characters.
+* Must end with a number or a letter.
+* Must be unique within the assignment.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_os_policy_assignment#id GoogleOsConfigOsPolicyAssignment#id}
 
@@ -1557,7 +1557,7 @@ const googleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources: googleO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources.property.id">id</a></code> | <code>string</code> | The id of the resource with the following restrictions: Must contain only lowercase letters, numbers, and hyphens. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources.property.id">id</a></code> | <code>string</code> | The id of the resource with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources.property.exec">exec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExec">GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExec</a></code> | exec block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources.property.file">file</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFile">GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFile</a></code> | file block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResources.property.pkg">pkg</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkg">GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkg</a></code> | pkg block. |
@@ -1573,12 +1573,12 @@ public readonly id: string;
 
 - *Type:* string
 
-The id of the resource with the following restrictions: Must contain only lowercase letters, numbers, and hyphens.
+The id of the resource with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens.
 
-Must start with a letter.
-Must be between 1-63 characters.
-Must end with a number or a letter.
-Must be unique within the OS policy.
+* Must start with a letter.
+* Must be between 1-63 characters.
+* Must end with a number or a letter.
+* Must be unique within the OS policy.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_os_config_os_policy_assignment#id GoogleOsConfigOsPolicyAssignment#id}
 

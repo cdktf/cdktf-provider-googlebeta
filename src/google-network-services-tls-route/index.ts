@@ -20,7 +20,7 @@ export interface GoogleNetworkServicesTlsRouteConfig extends cdktf.TerraformMeta
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
-Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+  * Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tls_route#gateways GoogleNetworkServicesTlsRoute#gateways}
    *
@@ -36,8 +36,8 @@ Each gateway reference should match the pattern: projects/* /locations/global/ga
   readonly id?: string;
   /**
   * Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh.
-Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
-The attached Mesh should be of a type SIDECAR
+  * Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
+  * The attached Mesh should be of a type SIDECAR
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tls_route#meshes GoogleNetworkServicesTlsRoute#meshes}
    *
@@ -271,7 +271,7 @@ export interface GoogleNetworkServicesTlsRouteRulesMatches {
   readonly alpn?: string[];
   /**
   * SNI (server name indicator) to match against. SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
-Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
+  * Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_tls_route#sni_host GoogleNetworkServicesTlsRoute#sni_host}
   */

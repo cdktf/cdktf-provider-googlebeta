@@ -14,9 +14,9 @@ import * as cdktf from 'cdktf';
 export interface GoogleWorkstationsWorkstationClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster#annotations GoogleWorkstationsWorkstationCluster#annotations}
   */
@@ -36,9 +36,9 @@ Please refer to the field 'effective_annotations' for all of the annotations pre
   readonly id?: string;
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster#labels GoogleWorkstationsWorkstationCluster#labels}
   */
@@ -51,7 +51,7 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly location?: string;
   /**
   * The relative resource name of the VPC network on which the instance can be accessed.
-It is specified in the following form: "projects/{projectNumber}/global/networks/{network_id}".
+  * It is specified in the following form: "projects/{projectNumber}/global/networks/{network_id}".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster#network GoogleWorkstationsWorkstationCluster#network}
   */
@@ -62,7 +62,7 @@ It is specified in the following form: "projects/{projectNumber}/global/networks
   readonly project?: string;
   /**
   * Name of the Compute Engine subnetwork in which instances associated with this cluster will be created.
-Must be part of the subnetwork specified for this cluster.
+  * Must be part of the subnetwork specified for this cluster.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster#subnetwork GoogleWorkstationsWorkstationCluster#subnetwork}
   */
@@ -164,7 +164,7 @@ export class GoogleWorkstationsWorkstationClusterConditionsList extends cdktf.Co
 export interface GoogleWorkstationsWorkstationClusterPrivateClusterConfig {
   /**
   * Additional project IDs that are allowed to attach to the workstation cluster's service attachment.
-By default, the workstation cluster's project and the VPC host project (if different) are allowed.
+  * By default, the workstation cluster's project and the VPC host project (if different) are allowed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster#allowed_projects GoogleWorkstationsWorkstationCluster#allowed_projects}
   */

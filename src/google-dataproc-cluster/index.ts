@@ -27,9 +27,9 @@ export interface GoogleDataprocClusterConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * The list of the labels (key/value pairs) configured on the resource and to be applied to instances in the cluster.
-				
-				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-				Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 				
+  * 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
   */
@@ -2159,7 +2159,7 @@ export interface GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig 
   readonly crossRealmTrustRealm?: string;
   /**
   * The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster
-Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
+  * Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
   */
@@ -2184,8 +2184,8 @@ Kerberos realm and the remote trusted realm, in a cross realm trust relationship
   readonly keyPasswordUri?: string;
   /**
   * The Cloud Storage URI of a KMS encrypted file containing
-the password to the user provided keystore. For the self-signed certificate, this password is generated
-by Dataproc
+  * the password to the user provided keystore. For the self-signed certificate, this password is generated
+  * by Dataproc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
   */

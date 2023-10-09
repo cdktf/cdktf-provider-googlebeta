@@ -69,9 +69,9 @@ export interface GoogleComputeInstanceFromMachineImageConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * A set of key/value label pairs assigned to the instance.
-				
-				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-				Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 				
+  * 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_from_machine_image#labels GoogleComputeInstanceFromMachineImage#labels}
   */
@@ -2300,16 +2300,16 @@ export class GoogleComputeInstanceFromMachineImageReservationAffinityOutputRefer
 export interface GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecoveryTimeout {
   /**
   * Span of time that's a fraction of a second at nanosecond
-resolution. Durations less than one second are represented
-with a 0 seconds field and a positive nanos field. Must
-be from 0 to 999,999,999 inclusive.
+  * resolution. Durations less than one second are represented
+  * with a 0 seconds field and a positive nanos field. Must
+  * be from 0 to 999,999,999 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
-Must be from 0 to 315,576,000,000 inclusive.
+  * Must be from 0 to 315,576,000,000 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
   */
@@ -2397,16 +2397,16 @@ export class GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecoveryTime
 export interface GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration {
   /**
   * Span of time that's a fraction of a second at nanosecond
-resolution. Durations less than one second are represented
-with a 0 seconds field and a positive nanos field. Must
-be from 0 to 999,999,999 inclusive.
+  * resolution. Durations less than one second are represented
+  * with a 0 seconds field and a positive nanos field. Must
+  * be from 0 to 999,999,999 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
-Must be from 0 to 315,576,000,000 inclusive.
+  * Must be from 0 to 315,576,000,000 inclusive.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
   */

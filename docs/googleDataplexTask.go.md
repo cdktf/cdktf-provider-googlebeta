@@ -1235,7 +1235,7 @@ Labels *map[string]*string
 
 User-defined labels for the task.
 
-*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_task#labels GoogleDataplexTask#labels}

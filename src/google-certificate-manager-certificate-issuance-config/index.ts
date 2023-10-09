@@ -33,18 +33,18 @@ export interface GoogleCertificateManagerCertificateIssuanceConfigConfig extends
   readonly keyAlgorithm: string;
   /**
   * 'Set of label tags associated with the CertificateIssuanceConfig resource.
- An object containing a list of "key": value pairs. Example: { "name": "wrench", "count": "3" }.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  *  An object containing a list of "key": value pairs. Example: { "name": "wrench", "count": "3" }.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate_issuance_config#labels GoogleCertificateManagerCertificateIssuanceConfig#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Lifetime of issued certificates. A duration in seconds with up to nine fractional digits, ending with 's'.
-Example: "1814400s". Valid values are from 21 days (1814400s) to 30 days (2592000s)
+  * Example: "1814400s". Valid values are from 21 days (1814400s) to 30 days (2592000s)
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate_issuance_config#lifetime GoogleCertificateManagerCertificateIssuanceConfig#lifetime}
   */
@@ -57,7 +57,7 @@ Example: "1814400s". Valid values are from 21 days (1814400s) to 30 days (259200
   readonly location?: string;
   /**
   * A user-defined name of the certificate issuance config.
-CertificateIssuanceConfig names must be unique globally.
+  * CertificateIssuanceConfig names must be unique globally.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate_issuance_config#name GoogleCertificateManagerCertificateIssuanceConfig#name}
   */
@@ -68,9 +68,9 @@ CertificateIssuanceConfig names must be unique globally.
   readonly project?: string;
   /**
   * It specifies the percentage of elapsed time of the certificate lifetime to wait before renewing the certificate.
-Must be a number between 1-99, inclusive.
-You must set the rotation window percentage in relation to the certificate lifetime so that certificate renewal occurs at least 7 days after
-the certificate has been issued and at least 7 days before it expires.
+  * Must be a number between 1-99, inclusive.
+  * You must set the rotation window percentage in relation to the certificate lifetime so that certificate renewal occurs at least 7 days after
+  * the certificate has been issued and at least 7 days before it expires.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate_issuance_config#rotation_window_percentage GoogleCertificateManagerCertificateIssuanceConfig#rotation_window_percentage}
   */
@@ -91,8 +91,8 @@ the certificate has been issued and at least 7 days before it expires.
 export interface GoogleCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig {
   /**
   * A CA pool resource used to issue a certificate.
-The CA pool string has a relative resource path following the form
-"projects/{project}/locations/{location}/caPools/{caPool}".
+  * The CA pool string has a relative resource path following the form
+  * "projects/{project}/locations/{location}/caPools/{caPool}".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate_issuance_config#ca_pool GoogleCertificateManagerCertificateIssuanceConfig#ca_pool}
   */

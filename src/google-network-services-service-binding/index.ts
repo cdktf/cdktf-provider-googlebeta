@@ -27,9 +27,9 @@ export interface GoogleNetworkServicesServiceBindingConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Set of label tags associated with the ServiceBinding resource.
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_service_binding#labels GoogleNetworkServicesServiceBinding#labels}
   */
@@ -46,7 +46,7 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly project?: string;
   /**
   * The full Service Directory Service name of the format
-projects/* /locations/* /namespaces/* /services/*
+  * projects/* /locations/* /namespaces/* /services/*
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_service_binding#service GoogleNetworkServicesServiceBinding#service}
    *

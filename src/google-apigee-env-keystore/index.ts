@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleApigeeEnvKeystoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Apigee environment group associated with the Apigee environment,
-in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
+  * in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_env_keystore#env_id GoogleApigeeEnvKeystore#env_id}
   */

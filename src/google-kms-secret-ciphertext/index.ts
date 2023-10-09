@@ -20,7 +20,7 @@ export interface GoogleKmsSecretCiphertextConfig extends cdktf.TerraformMetaArgu
   readonly additionalAuthenticatedData?: string;
   /**
   * The full name of the CryptoKey that will be used to encrypt the provided plaintext.
-Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}/cryptoKeys/{{cryptoKey}}''
+  * Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}/cryptoKeys/{{cryptoKey}}''
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_secret_ciphertext#crypto_key GoogleKmsSecretCiphertext#crypto_key}
   */

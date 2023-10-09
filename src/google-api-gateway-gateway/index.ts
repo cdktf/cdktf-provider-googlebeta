@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleApiGatewayGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Resource name of the API Config for this Gateway. Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}.
-When changing api configs please ensure the new config is a new resource and the lifecycle rule 'create_before_destroy' is set.
+  * When changing api configs please ensure the new config is a new resource and the lifecycle rule 'create_before_destroy' is set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
   */
@@ -40,10 +40,10 @@ When changing api configs please ensure the new config is a new resource and the
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
   */

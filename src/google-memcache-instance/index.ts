@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleMemcacheInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The full name of the GCE network to connect the instance to.  If not provided,
-'default' will be used.
+  * 'default' will be used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#authorized_network GoogleMemcacheInstance#authorized_network}
   */
@@ -34,18 +34,18 @@ export interface GoogleMemcacheInstanceConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#labels GoogleMemcacheInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The major version of Memcached software. If not provided, latest supported version will be used.
-Currently the latest supported major version is MEMCACHE_1_5. The minor version will be automatically
-determined by our system based on the latest supported minor version. Default value: "MEMCACHE_1_5" Possible values: ["MEMCACHE_1_5"]
+  * Currently the latest supported major version is MEMCACHE_1_5. The minor version will be automatically
+  * determined by our system based on the latest supported minor version. Default value: "MEMCACHE_1_5" Possible values: ["MEMCACHE_1_5"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#memcache_version GoogleMemcacheInstance#memcache_version}
   */
@@ -74,7 +74,7 @@ determined by our system based on the latest supported minor version. Default va
   readonly region?: string;
   /**
   * Zones where memcache nodes should be provisioned.  If not
-provided, all zones will be used.
+  * provided, all zones will be used.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#zones GoogleMemcacheInstance#zones}
   */
@@ -265,7 +265,7 @@ export class GoogleMemcacheInstanceMemcacheNodesList extends cdktf.ComplexList {
 export interface GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
-An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#hours GoogleMemcacheInstance#hours}
   */
@@ -284,7 +284,7 @@ An API may choose to allow the value "24:00:00" for scenarios like business clos
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
-An API may allow the value 60 if it allows leap-seconds.
+  * An API may allow the value 60 if it allows leap-seconds.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#seconds GoogleMemcacheInstance#seconds}
   */
@@ -421,22 +421,22 @@ export class GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStart
 export interface GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow {
   /**
   * Required. The day of week that maintenance updates occur.
-- DAY_OF_WEEK_UNSPECIFIED: The day of the week is unspecified.
-- MONDAY: Monday
-- TUESDAY: Tuesday
-- WEDNESDAY: Wednesday
-- THURSDAY: Thursday
-- FRIDAY: Friday
-- SATURDAY: Saturday
-- SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * - DAY_OF_WEEK_UNSPECIFIED: The day of the week is unspecified.
+  * - MONDAY: Monday
+  * - TUESDAY: Tuesday
+  * - WEDNESDAY: Wednesday
+  * - THURSDAY: Thursday
+  * - FRIDAY: Friday
+  * - SATURDAY: Saturday
+  * - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#day GoogleMemcacheInstance#day}
   */
   readonly day: string;
   /**
   * Required. The length of the maintenance window, ranging from 3 hours to 8 hours.
-A duration in seconds with up to nine fractional digits,
-terminated by 's'. Example: "3.5s".
+  * A duration in seconds with up to nine fractional digits,
+  * terminated by 's'. Example: "3.5s".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#duration GoogleMemcacheInstance#duration}
   */
@@ -579,8 +579,8 @@ export class GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList 
 export interface GoogleMemcacheInstanceMaintenancePolicy {
   /**
   * Optional. Description of what this policy is for.
-Create/Update methods return INVALID_ARGUMENT if the
-length is greater than 512.
+  * Create/Update methods return INVALID_ARGUMENT if the
+  * length is greater than 512.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_memcache_instance#description GoogleMemcacheInstance#description}
   */

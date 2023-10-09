@@ -21,7 +21,7 @@ export interface GoogleApigeeNatAddressConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * The Apigee instance associated with the Apigee environment,
-in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
+  * in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_nat_address#instance_id GoogleApigeeNatAddress#instance_id}
   */

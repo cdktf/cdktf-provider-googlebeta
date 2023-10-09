@@ -33,11 +33,11 @@ export interface GoogleAppEngineFirewallRuleConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * A positive integer that defines the order of rule evaluation.
-Rules with the lowest priority are evaluated first.
-
-A default rule at priority Int32.MaxValue matches all IPv4 and
-IPv6 traffic when no previous rule matches. Only the action of
-this rule can be modified by the user.
+  * Rules with the lowest priority are evaluated first.
+  * 
+  * A default rule at priority Int32.MaxValue matches all IPv4 and
+  * IPv6 traffic when no previous rule matches. Only the action of
+  * this rule can be modified by the user.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_app_engine_firewall_rule#priority GoogleAppEngineFirewallRule#priority}
   */

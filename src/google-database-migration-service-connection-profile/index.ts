@@ -33,10 +33,10 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileConfig extends c
   readonly id?: string;
   /**
   * The resource labels for connection profile to use to annotate any related underlying resources such as Compute Engine VMs.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
   */
@@ -481,7 +481,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettings 
   readonly labels?: { [key: string]: string };
   /**
   * Required. The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster.
-It is specified in the form: 'projects/{project_number}/global/networks/{network_id}'. This is required to create a cluster.
+  * It is specified in the form: 'projects/{project_number}/global/networks/{network_id}'. This is required to create a cluster.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#vpc_network GoogleDatabaseMigrationServiceConnectionProfile#vpc_network}
   */
@@ -906,7 +906,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings
   readonly enableIpv4?: boolean | cdktf.IResolvable;
   /**
   * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default.
-This setting can be updated, but it cannot be removed after it is set.
+  * This setting can be updated, but it cannot be removed after it is set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#private_network GoogleDatabaseMigrationServiceConnectionProfile#private_network}
   */
@@ -1061,7 +1061,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings
   readonly activationPolicy?: string;
   /**
   * If you enable this setting, Cloud SQL checks your available storage every 30 seconds. If the available storage falls below a threshold size, Cloud SQL automatically adds additional storage capacity.
-If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
+  * If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#auto_storage_increase GoogleDatabaseMigrationServiceConnectionProfile#auto_storage_increase}
   */
@@ -1098,7 +1098,7 @@ If the available storage repeatedly falls below the threshold size, Cloud SQL co
   readonly databaseFlags?: { [key: string]: string };
   /**
   * The database engine type and version.
-Currently supported values located at https://cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles#sqldatabaseversion
+  * Currently supported values located at https://cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles#sqldatabaseversion
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#database_version GoogleDatabaseMigrationServiceConnectionProfile#database_version}
   */
@@ -1129,7 +1129,7 @@ Currently supported values located at https://cloud.google.com/database-migratio
   readonly storageAutoResizeLimit?: string;
   /**
   * The tier (or machine type) for this instance, for example: db-n1-standard-1 (MySQL instances) or db-custom-1-3840 (PostgreSQL instances).
-For more information, see https://cloud.google.com/sql/docs/mysql/instance-settings
+  * For more information, see https://cloud.google.com/sql/docs/mysql/instance-settings
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#tier GoogleDatabaseMigrationServiceConnectionProfile#tier}
   */
@@ -1644,21 +1644,21 @@ export class GoogleDatabaseMigrationServiceConnectionProfileCloudsqlOutputRefere
 export interface GoogleDatabaseMigrationServiceConnectionProfileMysqlSsl {
   /**
   * Required. Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
-The replica will use this certificate to verify it's connecting to the right host.
+  * The replica will use this certificate to verify it's connecting to the right host.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
-If this field is used then the 'clientKey' field is mandatory
+  * If this field is used then the 'clientKey' field is mandatory
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
-If this field is used then the 'clientCertificate' field is mandatory.
+  * If this field is used then the 'clientCertificate' field is mandatory.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
   */
@@ -1786,7 +1786,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileMysql {
   readonly host: string;
   /**
   * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
-This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
+  * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
   */
@@ -1980,21 +1980,21 @@ export class GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference
 export interface GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSsl {
   /**
   * Required. Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
-The replica will use this certificate to verify it's connecting to the right host.
+  * The replica will use this certificate to verify it's connecting to the right host.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
-If this field is used then the 'clientKey' field is mandatory
+  * If this field is used then the 'clientKey' field is mandatory
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
-If this field is used then the 'clientCertificate' field is mandatory.
+  * If this field is used then the 'clientCertificate' field is mandatory.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
   */
@@ -2122,7 +2122,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfilePostgresql {
   readonly host: string;
   /**
   * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
-This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
+  * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
   */

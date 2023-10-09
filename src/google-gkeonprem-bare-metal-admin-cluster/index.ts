@@ -14,17 +14,17 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeonpremBareMetalAdminClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Annotations on the Bare Metal Admin Cluster.
-This field has the same restrictions as Kubernetes annotations.
-The total size of all keys and values combined is limited to 256k.
-Key can have 2 segments: prefix (optional) and name (required),
-separated by a slash (/).
-Prefix must be a DNS subdomain.
-Name must be 63 characters or less, begin and end with alphanumerics,
-with dashes (-), underscores (_), dots (.), and alphanumerics between.
-
-
-**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
-Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  * This field has the same restrictions as Kubernetes annotations.
+  * The total size of all keys and values combined is limited to 256k.
+  * Key can have 2 segments: prefix (optional) and name (required),
+  * separated by a slash (/).
+  * Prefix must be a DNS subdomain.
+  * Name must be 63 characters or less, begin and end with alphanumerics,
+  * with dashes (-), underscores (_), dots (.), and alphanumerics between.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+  * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#annotations GoogleGkeonpremBareMetalAdminCluster#annotations}
   */
@@ -765,22 +765,22 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsList e
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigs {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#labels GoogleGkeonpremBareMetalAdminCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
-Example: 192.168.0.1
+  * Example: 192.168.0.1
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_ip GoogleGkeonpremBareMetalAdminCluster#node_ip}
   */
@@ -1060,15 +1060,15 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfig {
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to
-each node. These will added in addition to any default label(s)
-that Kubernetes may apply to the node. In case of conflict in
-label keys, the applied set may differ depending on the Kubernetes
-version -- it's best to assume the behavior is undefined and
-conflicts should be avoided. For more information, including usage
-and the valid values, see:
-  http://kubernetes.io/v1.1/docs/user-guide/labels.html
-An object containing a list of "key": value pairs.
-Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * each node. These will added in addition to any default label(s)
+  * that Kubernetes may apply to the node. In case of conflict in
+  * label keys, the applied set may differ depending on the Kubernetes
+  * version -- it's best to assume the behavior is undefined and
+  * conflicts should be avoided. For more information, including usage
+  * and the valid values, see:
+  *   http://kubernetes.io/v1.1/docs/user-guide/labels.html
+  * An object containing a list of "key": value pairs.
+  * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#labels GoogleGkeonpremBareMetalAdminCluster#labels}
   */
@@ -1691,9 +1691,9 @@ export class GoogleGkeonpremBareMetalAdminClusterLoadBalancerOutputReference ext
 export interface GoogleGkeonpremBareMetalAdminClusterMaintenanceConfig {
   /**
   * All IPv4 address from these ranges will be placed into maintenance mode.
-Nodes in maintenance mode will be cordoned and drained. When both of these
-are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
-on the node resource.
+  * Nodes in maintenance mode will be cordoned and drained. When both of these
+  * are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
+  * on the node resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalAdminCluster#maintenance_address_cidr_blocks}
   */
@@ -1915,7 +1915,7 @@ export class GoogleGkeonpremBareMetalAdminClusterNetworkConfigOutputReference ex
 export interface GoogleGkeonpremBareMetalAdminClusterNodeAccessConfig {
   /**
   * LoginUser is the user name used to access node machines.
-It defaults to "root" if not set.
+  * It defaults to "root" if not set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#login_user GoogleGkeonpremBareMetalAdminCluster#login_user}
   */
@@ -1983,7 +1983,7 @@ export class GoogleGkeonpremBareMetalAdminClusterNodeAccessConfigOutputReference
 export interface GoogleGkeonpremBareMetalAdminClusterNodeConfig {
   /**
   * The maximum number of pods a node can run. The size of the CIDR range
-assigned to the node will be derived from this parameter.
+  * assigned to the node will be derived from this parameter.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#max_pods_per_node GoogleGkeonpremBareMetalAdminCluster#max_pods_per_node}
   */
@@ -2051,16 +2051,16 @@ export class GoogleGkeonpremBareMetalAdminClusterNodeConfigOutputReference exten
 export interface GoogleGkeonpremBareMetalAdminClusterProxy {
   /**
   * A list of IPs, hostnames, and domains that should skip the proxy.
-Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
+  * Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#no_proxy GoogleGkeonpremBareMetalAdminCluster#no_proxy}
   */
   readonly noProxy?: string[];
   /**
   * Specifies the address of your proxy server.
-Examples: http://domain
-WARNING: Do not provide credentials in the format
-http://(username:password@)domain these will be rejected by the server.
+  * Examples: http://domain
+  * WARNING: Do not provide credentials in the format
+  * http://(username:password@)domain these will be rejected by the server.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#uri GoogleGkeonpremBareMetalAdminCluster#uri}
   */

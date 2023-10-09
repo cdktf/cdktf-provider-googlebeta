@@ -39,17 +39,17 @@ export interface GoogleDnsManagedZoneConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * A set of key/value label pairs to assign to this ManagedZone.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#labels GoogleDnsManagedZone#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * User assigned name for this resource.
-Must be unique within the project.
+  * Must be unique within the project.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#name GoogleDnsManagedZone#name}
   */
@@ -60,15 +60,15 @@ Must be unique within the project.
   readonly project?: string;
   /**
   * Specifies if this is a managed reverse lookup zone. If true, Cloud DNS will resolve reverse
-lookup queries using automatically configured records for VPC resources. This only applies
-to networks listed under 'private_visibility_config'.
+  * lookup queries using automatically configured records for VPC resources. This only applies
+  * to networks listed under 'private_visibility_config'.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#reverse_lookup GoogleDnsManagedZone#reverse_lookup}
   */
   readonly reverseLookup?: boolean | cdktf.IResolvable;
   /**
   * The zone's visibility: public zones are exposed to the Internet,
-while private zones are visible only to Virtual Private Cloud resources. Default value: "public" Possible values: ["private", "public"]
+  * while private zones are visible only to Virtual Private Cloud resources. Default value: "public" Possible values: ["private", "public"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#visibility GoogleDnsManagedZone#visibility}
   */
@@ -195,11 +195,11 @@ export interface GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs {
   readonly keyLength?: number;
   /**
   * Specifies whether this is a key signing key (KSK) or a zone
-signing key (ZSK). Key signing keys have the Secure Entry
-Point flag set and, when active, will only be used to sign
-resource record sets of type DNSKEY. Zone signing keys do
-not have the Secure Entry Point flag set and will be used
-to sign all other types of resource record sets. Possible values: ["keySigning", "zoneSigning"]
+  * signing key (ZSK). Key signing keys have the Secure Entry
+  * Point flag set and, when active, will only be used to sign
+  * resource record sets of type DNSKEY. Zone signing keys do
+  * not have the Secure Entry Point flag set and will be used
+  * to sign all other types of resource record sets. Possible values: ["keySigning", "zoneSigning"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#key_type GoogleDnsManagedZone#key_type}
   */
@@ -380,7 +380,7 @@ export interface GoogleDnsManagedZoneDnssecConfig {
   readonly kind?: string;
   /**
   * Specifies the mechanism used to provide authenticated denial-of-existence responses.
-non_existence can only be updated when the state is 'off'. Possible values: ["nsec", "nsec3"]
+  * non_existence can only be updated when the state is 'off'. Possible values: ["nsec", "nsec3"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#non_existence GoogleDnsManagedZone#non_existence}
   */
@@ -529,8 +529,8 @@ export class GoogleDnsManagedZoneDnssecConfigOutputReference extends cdktf.Compl
 export interface GoogleDnsManagedZoneForwardingConfigTargetNameServers {
   /**
   * Forwarding path for this TargetNameServer. If unset or 'default' Cloud DNS will make forwarding
-decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
+  * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+  * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#forwarding_path GoogleDnsManagedZone#forwarding_path}
   */
@@ -720,8 +720,8 @@ export class GoogleDnsManagedZoneForwardingConfigOutputReference extends cdktf.C
 export interface GoogleDnsManagedZonePeeringConfigTargetNetwork {
   /**
   * The id or fully qualified URL of the VPC network to forward queries to.
-This should be formatted like 'projects/{project}/global/networks/{network}' or
-'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
+  * This should be formatted like 'projects/{project}/global/networks/{network}' or
+  * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
   */
@@ -850,8 +850,8 @@ export class GoogleDnsManagedZonePeeringConfigOutputReference extends cdktf.Comp
 export interface GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters {
   /**
   * The resource name of the cluster to bind this ManagedZone to.
-This should be specified in the format like
-'projects/* /locations/* /clusters/*'
+  * This should be specified in the format like
+  * 'projects/* /locations/* /clusters/*'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#gke_cluster_name GoogleDnsManagedZone#gke_cluster_name}
    *
@@ -950,8 +950,8 @@ export class GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList extends 
 export interface GoogleDnsManagedZonePrivateVisibilityConfigNetworks {
   /**
   * The id or fully qualified URL of the VPC network to bind to.
-This should be formatted like 'projects/{project}/global/networks/{network}' or
-'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
+  * This should be formatted like 'projects/{project}/global/networks/{network}' or
+  * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#network_url GoogleDnsManagedZone#network_url}
   */
@@ -1144,10 +1144,10 @@ export class GoogleDnsManagedZonePrivateVisibilityConfigOutputReference extends 
 export interface GoogleDnsManagedZoneServiceDirectoryConfigNamespace {
   /**
   * The fully qualified or partial URL of the service directory namespace that should be
-associated with the zone. This should be formatted like
-'https://servicedirectory.googleapis.com/v1/projects/{project}/locations/{location}/namespaces/{namespace_id}'
-or simply 'projects/{project}/locations/{location}/namespaces/{namespace_id}'
-Ignored for 'public' visibility zones.
+  * associated with the zone. This should be formatted like
+  * 'https://servicedirectory.googleapis.com/v1/projects/{project}/locations/{location}/namespaces/{namespace_id}'
+  * or simply 'projects/{project}/locations/{location}/namespaces/{namespace_id}'
+  * Ignored for 'public' visibility zones.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone#namespace_url GoogleDnsManagedZone#namespace_url}
   */

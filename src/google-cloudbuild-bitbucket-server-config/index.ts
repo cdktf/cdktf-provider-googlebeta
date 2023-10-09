@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleCloudbuildBitbucketServerConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Immutable. API Key that will be attached to webhook. Once this field has been set, it cannot be changed.
-Changing this field will result in deleting/ recreating the resource.
+  * Changing this field will result in deleting/ recreating the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudbuild_bitbucket_server_config#api_key GoogleCloudbuildBitbucketServerConfig#api_key}
   */
@@ -27,7 +27,7 @@ Changing this field will result in deleting/ recreating the resource.
   readonly configId: string;
   /**
   * Immutable. The URI of the Bitbucket Server host. Once this field has been set, it cannot be changed.
-If you need to change it, please create another BitbucketServerConfig.
+  * If you need to change it, please create another BitbucketServerConfig.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudbuild_bitbucket_server_config#host_uri GoogleCloudbuildBitbucketServerConfig#host_uri}
   */
@@ -47,9 +47,9 @@ If you need to change it, please create another BitbucketServerConfig.
   readonly location: string;
   /**
   * The network to be used when reaching out to the Bitbucket Server instance. The VPC network must be enabled for private service connection.
-This should be set if the Bitbucket Server instance is hosted on-premises and not reachable by public internet. If this field is left empty,
-no network peering will occur and calls to the Bitbucket Server instance will be made over the public internet. Must be in the format
-projects/{project}/global/networks/{network}, where {project} is a project number or id and {network} is the name of a VPC network in the project.
+  * This should be set if the Bitbucket Server instance is hosted on-premises and not reachable by public internet. If this field is left empty,
+  * no network peering will occur and calls to the Bitbucket Server instance will be made over the public internet. Must be in the format
+  * projects/{project}/global/networks/{network}, where {project} is a project number or id and {network} is the name of a VPC network in the project.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudbuild_bitbucket_server_config#peered_network GoogleCloudbuildBitbucketServerConfig#peered_network}
   */
@@ -226,7 +226,7 @@ export interface GoogleCloudbuildBitbucketServerConfigSecrets {
   readonly readAccessTokenVersionName: string;
   /**
   * Immutable. The resource name for the webhook secret's secret version. Once this field has been set, it cannot be changed.
-Changing this field will result in deleting/ recreating the resource.
+  * Changing this field will result in deleting/ recreating the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudbuild_bitbucket_server_config#webhook_secret_version_name GoogleCloudbuildBitbucketServerConfig#webhook_secret_version_name}
   */

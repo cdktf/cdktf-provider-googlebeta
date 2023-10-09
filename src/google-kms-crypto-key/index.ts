@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED.
-If not specified at creation time, the default duration is 24 hours.
+  * If not specified at creation time, the default duration is 24 hours.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#destroy_scheduled_duration GoogleKmsCryptoKey#destroy_scheduled_duration}
   */
@@ -34,17 +34,17 @@ If not specified at creation time, the default duration is 24 hours.
   readonly importOnly?: boolean | cdktf.IResolvable;
   /**
   * The KeyRing that this key belongs to.
-Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
+  * Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#key_ring GoogleKmsCryptoKey#key_ring}
   */
   readonly keyRing: string;
   /**
   * Labels with user-defined metadata to apply to this resource.
-
-
-**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
-Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  * 
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#labels GoogleKmsCryptoKey#labels}
   */
@@ -57,25 +57,25 @@ Please refer to the field 'effective_labels' for all of the labels present on th
   readonly name: string;
   /**
   * The immutable purpose of this CryptoKey. See the
-[purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose)
-for possible inputs.
-Default value is "ENCRYPT_DECRYPT".
+  * [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose)
+  * for possible inputs.
+  * Default value is "ENCRYPT_DECRYPT".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#purpose GoogleKmsCryptoKey#purpose}
   */
   readonly purpose?: string;
   /**
   * Every time this period passes, generate a new CryptoKeyVersion and set it as the primary.
-The first rotation will take place after the specified period. The rotation period has
-the format of a decimal number with up to 9 fractional digits, followed by the
-letter 's' (seconds). It must be greater than a day (ie, 86400).
+  * The first rotation will take place after the specified period. The rotation period has
+  * the format of a decimal number with up to 9 fractional digits, followed by the
+  * letter 's' (seconds). It must be greater than a day (ie, 86400).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#rotation_period GoogleKmsCryptoKey#rotation_period}
   */
   readonly rotationPeriod?: string;
   /**
   * If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
-You must use the 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
+  * You must use the 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#skip_initial_version_creation GoogleKmsCryptoKey#skip_initial_version_creation}
   */
@@ -225,7 +225,7 @@ export class GoogleKmsCryptoKeyTimeoutsOutputReference extends cdktf.ComplexObje
 export interface GoogleKmsCryptoKeyVersionTemplate {
   /**
   * The algorithm to use when creating a version based on this template.
-See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
+  * See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_kms_crypto_key#algorithm GoogleKmsCryptoKey#algorithm}
   */
