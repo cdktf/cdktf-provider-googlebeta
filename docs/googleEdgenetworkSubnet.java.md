@@ -1,6 +1,6 @@
 # `google_edgenetwork_subnet`
 
-Refer to the Terraform Registory for docs: [`google_edgenetwork_subnet`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet).
+Refer to the Terraform Registory for docs: [`google_edgenetwork_subnet`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet).
 
 # `googleEdgenetworkSubnet` Submodule <a name="`googleEdgenetworkSubnet` Submodule" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_edgenetwork_subnet`](https:/
 
 ### GoogleEdgenetworkSubnet <a name="GoogleEdgenetworkSubnet" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet google_edgenetwork_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer"></a>
 
@@ -58,11 +58,11 @@ GoogleEdgenetworkSubnet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | A unique ID that identifies this subnet. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | The name of the target Distributed Cloud Edge zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.ipv4Cidr">ipv4Cidr</a></code> | <code>java.util.List<java.lang.String></code> | The ranges of ipv4 addresses that are owned by this subnetwork, in CIDR format. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.ipv6Cidr">ipv6Cidr</a></code> | <code>java.util.List<java.lang.String></code> | The ranges of ipv6 addresses that are owned by this subnetwork, in CIDR format. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels associated with this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts">GoogleEdgenetworkSubnetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer.parameter.vlanId">vlanId</a></code> | <code>java.lang.Number</code> | VLAN ID for this subnetwork. If not specified, one is assigned automatically. |
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the network to which this router belongs. Must be of the form: 'projects/{{project}}/locations/{{location}}/zones/{{zone}}/networks/{{network_id}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A unique ID that identifies this subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the target Distributed Cloud Edge zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The ranges of ipv4 addresses that are owned by this subnetwork, in CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ranges of ipv6 addresses that are owned by this subnetwork, in CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Labels associated with this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}.
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 VLAN ID for this subnetwork. If not specified, one is assigned automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
 
 ---
 
@@ -1134,11 +1134,11 @@ GoogleEdgenetworkSubnetConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | A unique ID that identifies this subnet. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | The name of the target Distributed Cloud Edge zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.ipv4Cidr">ipv4Cidr</a></code> | <code>java.util.List<java.lang.String></code> | The ranges of ipv4 addresses that are owned by this subnetwork, in CIDR format. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.ipv6Cidr">ipv6Cidr</a></code> | <code>java.util.List<java.lang.String></code> | The ranges of ipv6 addresses that are owned by this subnetwork, in CIDR format. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels associated with this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts">GoogleEdgenetworkSubnetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.property.vlanId">vlanId</a></code> | <code>java.lang.Number</code> | VLAN ID for this subnetwork. If not specified, one is assigned automatically. |
 
@@ -1224,7 +1224,7 @@ public java.lang.String getLocation();
 
 The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#location GoogleEdgenetworkSubnet#location}
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getNetwork();
 
 The ID of the network to which this router belongs. Must be of the form: 'projects/{{project}}/locations/{{location}}/zones/{{zone}}/networks/{{network_id}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#network GoogleEdgenetworkSubnet#network}
 
 ---
 
@@ -1252,7 +1252,7 @@ public java.lang.String getSubnetId();
 
 A unique ID that identifies this subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#subnet_id GoogleEdgenetworkSubnet#subnet_id}
 
 ---
 
@@ -1266,7 +1266,7 @@ public java.lang.String getZone();
 
 The name of the target Distributed Cloud Edge zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#zone GoogleEdgenetworkSubnet#zone}
 
 ---
 
@@ -1280,7 +1280,7 @@ public java.lang.String getDescription();
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#description GoogleEdgenetworkSubnet#description}
 
 ---
 
@@ -1292,7 +1292,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#id GoogleEdgenetworkSubnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1309,7 +1309,7 @@ public java.util.List<java.lang.String> getIpv4Cidr();
 
 The ranges of ipv4 addresses that are owned by this subnetwork, in CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#ipv4_cidr GoogleEdgenetworkSubnet#ipv4_cidr}
 
 ---
 
@@ -1323,7 +1323,7 @@ public java.util.List<java.lang.String> getIpv6Cidr();
 
 The ranges of ipv6 addresses that are owned by this subnetwork, in CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#ipv6_cidr GoogleEdgenetworkSubnet#ipv6_cidr}
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 Labels associated with this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#labels GoogleEdgenetworkSubnet#labels}
 
 ---
 
@@ -1349,7 +1349,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#project GoogleEdgenetworkSubnet#project}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public GoogleEdgenetworkSubnetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#timeouts GoogleEdgenetworkSubnet#timeouts}
 
 ---
 
@@ -1377,7 +1377,7 @@ public java.lang.Number getVlanId();
 
 VLAN ID for this subnetwork. If not specified, one is assigned automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#vlan_id GoogleEdgenetworkSubnet#vlan_id}
 
 ---
 
@@ -1398,8 +1398,8 @@ GoogleEdgenetworkSubnetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#create GoogleEdgenetworkSubnet#create}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_edgenetwork_subnet#delete GoogleEdgenetworkSubnet#delete}.
 
 ---
 

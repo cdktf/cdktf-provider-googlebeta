@@ -1,6 +1,6 @@
 # `google_gke_hub_membership_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_gke_hub_membership_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy).
+Refer to the Terraform Registory for docs: [`google_gke_hub_membership_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy).
 
 # `googleGkeHubMembershipIamPolicy` Submodule <a name="`googleGkeHubMembershipIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_gke_hub_membership_iam_polic
 
 ### GoogleGkeHubMembershipIamPolicy <a name="GoogleGkeHubMembershipIamPolicy" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
@@ -265,6 +266,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetLocation` <a name="ResetLocation" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.resetLocation"></a>
+
+```csharp
+private void ResetLocation()
+```
+
 ##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.resetProject"></a>
 
 ```csharp
@@ -361,10 +368,12 @@ GoogleGkeHubMembershipIamPolicy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.membershipIdInput">MembershipIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.policyDataInput">PolicyDataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.location">Location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.membershipId">MembershipId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.policyData">PolicyData</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -533,6 +542,16 @@ public string IdInput { get; }
 
 ---
 
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.locationInput"></a>
+
+```csharp
+public string LocationInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `MembershipIdInput`<sup>Optional</sup> <a name="MembershipIdInput" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.membershipIdInput"></a>
 
 ```csharp
@@ -567,6 +586,16 @@ public string ProjectInput { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicy.property.location"></a>
+
+```csharp
+public string Location { get; }
 ```
 
 - *Type:* string
@@ -641,6 +670,7 @@ new GoogleGkeHubMembershipIamPolicyConfig {
     string MembershipId,
     string PolicyData,
     string Id = null,
+    string Location = null,
     string Project = null
 };
 ```
@@ -656,10 +686,11 @@ new GoogleGkeHubMembershipIamPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.membershipId">MembershipId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#membership_id GoogleGkeHubMembershipIamPolicy#membership_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#policy_data GoogleGkeHubMembershipIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#id GoogleGkeHubMembershipIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#project GoogleGkeHubMembershipIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.membershipId">MembershipId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#membership_id GoogleGkeHubMembershipIamPolicy#membership_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#policy_data GoogleGkeHubMembershipIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#id GoogleGkeHubMembershipIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#location GoogleGkeHubMembershipIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#project GoogleGkeHubMembershipIamPolicy#project}. |
 
 ---
 
@@ -741,7 +772,7 @@ public string MembershipId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#membership_id GoogleGkeHubMembershipIamPolicy#membership_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#membership_id GoogleGkeHubMembershipIamPolicy#membership_id}.
 
 ---
 
@@ -753,7 +784,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#policy_data GoogleGkeHubMembershipIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#policy_data GoogleGkeHubMembershipIamPolicy#policy_data}.
 
 ---
 
@@ -765,10 +796,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#id GoogleGkeHubMembershipIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#id GoogleGkeHubMembershipIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Location`<sup>Optional</sup> <a name="Location" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamPolicy.GoogleGkeHubMembershipIamPolicyConfig.property.location"></a>
+
+```csharp
+public string Location { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#location GoogleGkeHubMembershipIamPolicy#location}.
 
 ---
 
@@ -780,7 +823,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_policy#project GoogleGkeHubMembershipIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy#project GoogleGkeHubMembershipIamPolicy#project}.
 
 ---
 

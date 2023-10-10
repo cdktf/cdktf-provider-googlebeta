@@ -360,6 +360,7 @@ Object.defineProperty(exports, 'googleDataLossPreventionJobTrigger', { get: func
 Object.defineProperty(exports, 'googleDataLossPreventionStoredInfoType', { get: function () { return require('./google-data-loss-prevention-stored-info-type'); } });
 Object.defineProperty(exports, 'googleDataPipelinePipeline', { get: function () { return require('./google-data-pipeline-pipeline'); } });
 Object.defineProperty(exports, 'googleDatabaseMigrationServiceConnectionProfile', { get: function () { return require('./google-database-migration-service-connection-profile'); } });
+Object.defineProperty(exports, 'googleDatabaseMigrationServicePrivateConnection', { get: function () { return require('./google-database-migration-service-private-connection'); } });
 Object.defineProperty(exports, 'googleDataflowFlexTemplateJob', { get: function () { return require('./google-dataflow-flex-template-job'); } });
 Object.defineProperty(exports, 'googleDataflowJob', { get: function () { return require('./google-dataflow-job'); } });
 Object.defineProperty(exports, 'googleDataformRepository', { get: function () { return require('./google-dataform-repository'); } });
@@ -437,6 +438,9 @@ Object.defineProperty(exports, 'googleDocumentAiProcessor', { get: function () {
 Object.defineProperty(exports, 'googleDocumentAiProcessorDefaultVersion', { get: function () { return require('./google-document-ai-processor-default-version'); } });
 Object.defineProperty(exports, 'googleDocumentAiWarehouseDocumentSchema', { get: function () { return require('./google-document-ai-warehouse-document-schema'); } });
 Object.defineProperty(exports, 'googleDocumentAiWarehouseLocation', { get: function () { return require('./google-document-ai-warehouse-location'); } });
+Object.defineProperty(exports, 'googleEdgecontainerCluster', { get: function () { return require('./google-edgecontainer-cluster'); } });
+Object.defineProperty(exports, 'googleEdgecontainerNodePool', { get: function () { return require('./google-edgecontainer-node-pool'); } });
+Object.defineProperty(exports, 'googleEdgecontainerVpnConnection', { get: function () { return require('./google-edgecontainer-vpn-connection'); } });
 Object.defineProperty(exports, 'googleEdgenetworkNetwork', { get: function () { return require('./google-edgenetwork-network'); } });
 Object.defineProperty(exports, 'googleEdgenetworkSubnet', { get: function () { return require('./google-edgenetwork-subnet'); } });
 Object.defineProperty(exports, 'googleEndpointsService', { get: function () { return require('./google-endpoints-service'); } });
@@ -458,6 +462,7 @@ Object.defineProperty(exports, 'googleFirebaseAppleApp', { get: function () { re
 Object.defineProperty(exports, 'googleFirebaseDatabaseInstance', { get: function () { return require('./google-firebase-database-instance'); } });
 Object.defineProperty(exports, 'googleFirebaseExtensionsInstance', { get: function () { return require('./google-firebase-extensions-instance'); } });
 Object.defineProperty(exports, 'googleFirebaseHostingChannel', { get: function () { return require('./google-firebase-hosting-channel'); } });
+Object.defineProperty(exports, 'googleFirebaseHostingCustomDomain', { get: function () { return require('./google-firebase-hosting-custom-domain'); } });
 Object.defineProperty(exports, 'googleFirebaseHostingRelease', { get: function () { return require('./google-firebase-hosting-release'); } });
 Object.defineProperty(exports, 'googleFirebaseHostingSite', { get: function () { return require('./google-firebase-hosting-site'); } });
 Object.defineProperty(exports, 'googleFirebaseHostingVersion', { get: function () { return require('./google-firebase-hosting-version'); } });
@@ -490,6 +495,7 @@ Object.defineProperty(exports, 'googleGkeHubFeatureIamBinding', { get: function 
 Object.defineProperty(exports, 'googleGkeHubFeatureIamMember', { get: function () { return require('./google-gke-hub-feature-iam-member'); } });
 Object.defineProperty(exports, 'googleGkeHubFeatureIamPolicy', { get: function () { return require('./google-gke-hub-feature-iam-policy'); } });
 Object.defineProperty(exports, 'googleGkeHubFeatureMembership', { get: function () { return require('./google-gke-hub-feature-membership'); } });
+Object.defineProperty(exports, 'googleGkeHubFleet', { get: function () { return require('./google-gke-hub-fleet'); } });
 Object.defineProperty(exports, 'googleGkeHubMembership', { get: function () { return require('./google-gke-hub-membership'); } });
 Object.defineProperty(exports, 'googleGkeHubMembershipBinding', { get: function () { return require('./google-gke-hub-membership-binding'); } });
 Object.defineProperty(exports, 'googleGkeHubMembershipIamBinding', { get: function () { return require('./google-gke-hub-membership-iam-binding'); } });

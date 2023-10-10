@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,24 +16,24 @@ export interface DataGoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArgum
   * The globally unique, Firebase-assigned identifier of the App.
   * This identifier should be treated as an opaque token, as the data format is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app#app_id DataGoogleFirebaseWebApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app#app_id DataGoogleFirebaseWebApp#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app#id DataGoogleFirebaseWebApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app#id DataGoogleFirebaseWebApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app#project DataGoogleFirebaseWebApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app#project DataGoogleFirebaseWebApp#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app google_firebase_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app google_firebase_web_app}
 */
 export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
 
@@ -47,7 +47,7 @@ export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_web_app google_firebase_web_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

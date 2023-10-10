@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileConfig extends c
   /**
   * The ID of the connection profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#connection_profile_id GoogleDatabaseMigrationServiceConnectionProfile#connection_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#connection_profile_id GoogleDatabaseMigrationServiceConnectionProfile#connection_profile_id}
   */
   readonly connectionProfileId: string;
   /**
   * The connection profile display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#display_name GoogleDatabaseMigrationServiceConnectionProfile#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#display_name GoogleDatabaseMigrationServiceConnectionProfile#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#id GoogleDatabaseMigrationServiceConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#id GoogleDatabaseMigrationServiceConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,47 +38,53 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileConfig extends c
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the connection profile should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#location GoogleDatabaseMigrationServiceConnectionProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#location GoogleDatabaseMigrationServiceConnectionProfile#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#project GoogleDatabaseMigrationServiceConnectionProfile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#project GoogleDatabaseMigrationServiceConnectionProfile#project}
   */
   readonly project?: string;
   /**
   * alloydb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#alloydb GoogleDatabaseMigrationServiceConnectionProfile#alloydb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#alloydb GoogleDatabaseMigrationServiceConnectionProfile#alloydb}
   */
   readonly alloydb?: GoogleDatabaseMigrationServiceConnectionProfileAlloydb;
   /**
   * cloudsql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cloudsql GoogleDatabaseMigrationServiceConnectionProfile#cloudsql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cloudsql GoogleDatabaseMigrationServiceConnectionProfile#cloudsql}
   */
   readonly cloudsql?: GoogleDatabaseMigrationServiceConnectionProfileCloudsql;
   /**
   * mysql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#mysql GoogleDatabaseMigrationServiceConnectionProfile#mysql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#mysql GoogleDatabaseMigrationServiceConnectionProfile#mysql}
   */
   readonly mysql?: GoogleDatabaseMigrationServiceConnectionProfileMysql;
   /**
+  * oracle block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#oracle GoogleDatabaseMigrationServiceConnectionProfile#oracle}
+  */
+  readonly oracle?: GoogleDatabaseMigrationServiceConnectionProfileOracle;
+  /**
   * postgresql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#postgresql GoogleDatabaseMigrationServiceConnectionProfile#postgresql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#postgresql GoogleDatabaseMigrationServiceConnectionProfile#postgresql}
   */
   readonly postgresql?: GoogleDatabaseMigrationServiceConnectionProfilePostgresql;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#timeouts GoogleDatabaseMigrationServiceConnectionProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#timeouts GoogleDatabaseMigrationServiceConnectionProfile#timeouts}
   */
   readonly timeouts?: GoogleDatabaseMigrationServiceConnectionProfileTimeouts;
 }
@@ -161,13 +167,13 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsI
   /**
   * The initial password for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password: string;
   /**
   * The database username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#user GoogleDatabaseMigrationServiceConnectionProfile#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#user GoogleDatabaseMigrationServiceConnectionProfile#user}
   */
   readonly user: string;
 }
@@ -256,7 +262,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsP
   /**
   * The number of CPU's in the VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cpu_count GoogleDatabaseMigrationServiceConnectionProfile#cpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cpu_count GoogleDatabaseMigrationServiceConnectionProfile#cpu_count}
   */
   readonly cpuCount: number;
 }
@@ -320,13 +326,13 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsP
   /**
   * Database flags to pass to AlloyDB when DMS is creating the AlloyDB cluster and instances. See the AlloyDB documentation for how these can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#database_flags GoogleDatabaseMigrationServiceConnectionProfile#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#database_flags GoogleDatabaseMigrationServiceConnectionProfile#database_flags}
   */
   readonly databaseFlags?: { [key: string]: string };
   /**
   * The database username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#id GoogleDatabaseMigrationServiceConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#id GoogleDatabaseMigrationServiceConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -335,13 +341,13 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsP
   /**
   * Labels for the AlloyDB primary instance created by DMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * machine_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#machine_config GoogleDatabaseMigrationServiceConnectionProfile#machine_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#machine_config GoogleDatabaseMigrationServiceConnectionProfile#machine_config}
   */
   readonly machineConfig: GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig;
 }
@@ -476,26 +482,26 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettings 
   /**
   * Labels for the AlloyDB cluster created by DMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#labels GoogleDatabaseMigrationServiceConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Required. The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster.
   * It is specified in the form: 'projects/{project_number}/global/networks/{network_id}'. This is required to create a cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#vpc_network GoogleDatabaseMigrationServiceConnectionProfile#vpc_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#vpc_network GoogleDatabaseMigrationServiceConnectionProfile#vpc_network}
   */
   readonly vpcNetwork: string;
   /**
   * initial_user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#initial_user GoogleDatabaseMigrationServiceConnectionProfile#initial_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#initial_user GoogleDatabaseMigrationServiceConnectionProfile#initial_user}
   */
   readonly initialUser: GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser;
   /**
   * primary_instance_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#primary_instance_settings GoogleDatabaseMigrationServiceConnectionProfile#primary_instance_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#primary_instance_settings GoogleDatabaseMigrationServiceConnectionProfile#primary_instance_settings}
   */
   readonly primaryInstanceSettings?: GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings;
 }
@@ -625,13 +631,13 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileAlloydb {
   /**
   * Required. The AlloyDB cluster ID that this connection profile is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cluster_id GoogleDatabaseMigrationServiceConnectionProfile#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cluster_id GoogleDatabaseMigrationServiceConnectionProfile#cluster_id}
   */
   readonly clusterId: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#settings GoogleDatabaseMigrationServiceConnectionProfile#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#settings GoogleDatabaseMigrationServiceConnectionProfile#settings}
   */
   readonly settings?: GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettings;
 }
@@ -718,25 +724,25 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings
   /**
   * The time when this access control entry expires in RFC 3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#expire_time GoogleDatabaseMigrationServiceConnectionProfile#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#expire_time GoogleDatabaseMigrationServiceConnectionProfile#expire_time}
   */
   readonly expireTime?: string;
   /**
   * A label to identify this entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#label GoogleDatabaseMigrationServiceConnectionProfile#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#label GoogleDatabaseMigrationServiceConnectionProfile#label}
   */
   readonly label?: string;
   /**
   * Input only. The time-to-leave of this access control entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ttl GoogleDatabaseMigrationServiceConnectionProfile#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ttl GoogleDatabaseMigrationServiceConnectionProfile#ttl}
   */
   readonly ttl?: string;
   /**
   * The allowlisted value for the access control list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#value GoogleDatabaseMigrationServiceConnectionProfile#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#value GoogleDatabaseMigrationServiceConnectionProfile#value}
   */
   readonly value: string;
 }
@@ -901,26 +907,26 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings
   /**
   * Whether the instance should be assigned an IPv4 address or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#enable_ipv4 GoogleDatabaseMigrationServiceConnectionProfile#enable_ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#enable_ipv4 GoogleDatabaseMigrationServiceConnectionProfile#enable_ipv4}
   */
   readonly enableIpv4?: boolean | cdktf.IResolvable;
   /**
   * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default.
   * This setting can be updated, but it cannot be removed after it is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#private_network GoogleDatabaseMigrationServiceConnectionProfile#private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#private_network GoogleDatabaseMigrationServiceConnectionProfile#private_network}
   */
   readonly privateNetwork?: string;
   /**
   * Whether SSL connections over IP should be enforced or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#require_ssl GoogleDatabaseMigrationServiceConnectionProfile#require_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#require_ssl GoogleDatabaseMigrationServiceConnectionProfile#require_ssl}
   */
   readonly requireSsl?: boolean | cdktf.IResolvable;
   /**
   * authorized_networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#authorized_networks GoogleDatabaseMigrationServiceConnectionProfile#authorized_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#authorized_networks GoogleDatabaseMigrationServiceConnectionProfile#authorized_networks}
   */
   readonly authorizedNetworks?: GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks[] | cdktf.IResolvable;
 }
@@ -1056,100 +1062,100 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings
   /**
   * The activation policy specifies when the instance is activated; it is applicable only when the instance state is 'RUNNABLE'. Possible values: ["ALWAYS", "NEVER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#activation_policy GoogleDatabaseMigrationServiceConnectionProfile#activation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#activation_policy GoogleDatabaseMigrationServiceConnectionProfile#activation_policy}
   */
   readonly activationPolicy?: string;
   /**
   * If you enable this setting, Cloud SQL checks your available storage every 30 seconds. If the available storage falls below a threshold size, Cloud SQL automatically adds additional storage capacity.
   * If the available storage repeatedly falls below the threshold size, Cloud SQL continues to add storage until it reaches the maximum of 30 TB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#auto_storage_increase GoogleDatabaseMigrationServiceConnectionProfile#auto_storage_increase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#auto_storage_increase GoogleDatabaseMigrationServiceConnectionProfile#auto_storage_increase}
   */
   readonly autoStorageIncrease?: boolean | cdktf.IResolvable;
   /**
   * The KMS key name used for the csql instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cmek_key_name GoogleDatabaseMigrationServiceConnectionProfile#cmek_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cmek_key_name GoogleDatabaseMigrationServiceConnectionProfile#cmek_key_name}
   */
   readonly cmekKeyName?: string;
   /**
   * The Cloud SQL default instance level collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#collation GoogleDatabaseMigrationServiceConnectionProfile#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#collation GoogleDatabaseMigrationServiceConnectionProfile#collation}
   */
   readonly collation?: string;
   /**
   * The storage capacity available to the database, in GB. The minimum (and default) size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#data_disk_size_gb GoogleDatabaseMigrationServiceConnectionProfile#data_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#data_disk_size_gb GoogleDatabaseMigrationServiceConnectionProfile#data_disk_size_gb}
   */
   readonly dataDiskSizeGb?: string;
   /**
   * The type of storage. Possible values: ["PD_SSD", "PD_HDD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#data_disk_type GoogleDatabaseMigrationServiceConnectionProfile#data_disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#data_disk_type GoogleDatabaseMigrationServiceConnectionProfile#data_disk_type}
   */
   readonly dataDiskType?: string;
   /**
   * The database flags passed to the Cloud SQL instance at startup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#database_flags GoogleDatabaseMigrationServiceConnectionProfile#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#database_flags GoogleDatabaseMigrationServiceConnectionProfile#database_flags}
   */
   readonly databaseFlags?: { [key: string]: string };
   /**
   * The database engine type and version.
   * Currently supported values located at https://cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles#sqldatabaseversion
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#database_version GoogleDatabaseMigrationServiceConnectionProfile#database_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#database_version GoogleDatabaseMigrationServiceConnectionProfile#database_version}
   */
   readonly databaseVersion?: string;
   /**
   * The edition of the given Cloud SQL instance. Possible values: ["ENTERPRISE", "ENTERPRISE_PLUS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#edition GoogleDatabaseMigrationServiceConnectionProfile#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#edition GoogleDatabaseMigrationServiceConnectionProfile#edition}
   */
   readonly edition?: string;
   /**
   * Input only. Initial root password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#root_password GoogleDatabaseMigrationServiceConnectionProfile#root_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#root_password GoogleDatabaseMigrationServiceConnectionProfile#root_password}
   */
   readonly rootPassword?: string;
   /**
   * The Database Migration Service source connection profile ID, in the format: projects/my_project_name/locations/us-central1/connectionProfiles/connection_profile_ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#source_id GoogleDatabaseMigrationServiceConnectionProfile#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#source_id GoogleDatabaseMigrationServiceConnectionProfile#source_id}
   */
   readonly sourceId: string;
   /**
   * The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#storage_auto_resize_limit GoogleDatabaseMigrationServiceConnectionProfile#storage_auto_resize_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#storage_auto_resize_limit GoogleDatabaseMigrationServiceConnectionProfile#storage_auto_resize_limit}
   */
   readonly storageAutoResizeLimit?: string;
   /**
   * The tier (or machine type) for this instance, for example: db-n1-standard-1 (MySQL instances) or db-custom-1-3840 (PostgreSQL instances).
   * For more information, see https://cloud.google.com/sql/docs/mysql/instance-settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#tier GoogleDatabaseMigrationServiceConnectionProfile#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#tier GoogleDatabaseMigrationServiceConnectionProfile#tier}
   */
   readonly tier?: string;
   /**
   * The resource labels for a Cloud SQL instance to use to annotate any related underlying resources such as Compute Engine VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#user_labels GoogleDatabaseMigrationServiceConnectionProfile#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#user_labels GoogleDatabaseMigrationServiceConnectionProfile#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * The Google Cloud Platform zone where your Cloud SQL datdabse instance is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#zone GoogleDatabaseMigrationServiceConnectionProfile#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#zone GoogleDatabaseMigrationServiceConnectionProfile#zone}
   */
   readonly zone?: string;
   /**
   * ip_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ip_config GoogleDatabaseMigrationServiceConnectionProfile#ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ip_config GoogleDatabaseMigrationServiceConnectionProfile#ip_config}
   */
   readonly ipConfig?: GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig;
 }
@@ -1563,7 +1569,7 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileCloudsql {
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#settings GoogleDatabaseMigrationServiceConnectionProfile#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#settings GoogleDatabaseMigrationServiceConnectionProfile#settings}
   */
   readonly settings?: GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettings;
 }
@@ -1646,21 +1652,21 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileMysqlSsl {
   * Required. Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
   * The replica will use this certificate to verify it's connecting to the right host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
   * If this field is used then the 'clientKey' field is mandatory
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
   * If this field is used then the 'clientCertificate' field is mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
   */
   readonly clientKey?: string;
 }
@@ -1775,38 +1781,38 @@ export interface GoogleDatabaseMigrationServiceConnectionProfileMysql {
   /**
   * If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cloud_sql_id GoogleDatabaseMigrationServiceConnectionProfile#cloud_sql_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cloud_sql_id GoogleDatabaseMigrationServiceConnectionProfile#cloud_sql_id}
   */
   readonly cloudSqlId?: string;
   /**
   * Required. The IP or hostname of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#host GoogleDatabaseMigrationServiceConnectionProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#host GoogleDatabaseMigrationServiceConnectionProfile#host}
   */
   readonly host: string;
   /**
   * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
   * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Required. The network port of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port: number;
   /**
   * Required. The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username: string;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ssl GoogleDatabaseMigrationServiceConnectionProfile#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ssl GoogleDatabaseMigrationServiceConnectionProfile#ssl}
   */
   readonly ssl?: GoogleDatabaseMigrationServiceConnectionProfileMysqlSsl;
 }
@@ -1977,26 +1983,722 @@ export class GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference
     return this._ssl.internalValue;
   }
 }
-export interface GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSsl {
+export interface GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity {
+  /**
+  * Required. Hostname for the SSH tunnel.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#hostname GoogleDatabaseMigrationServiceConnectionProfile#hostname}
+  */
+  readonly hostname: string;
+  /**
+  * Input only. SSH password. Only one of 'password' and 'private_key' can be configured.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
+  */
+  readonly password?: string;
+  /**
+  * Port for the SSH tunnel, default value is 22.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
+  */
+  readonly port: number;
+  /**
+  * Input only. SSH private key. Only one of 'password' and 'private_key' can be configured.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#private_key GoogleDatabaseMigrationServiceConnectionProfile#private_key}
+  */
+  readonly privateKey?: string;
+  /**
+  * Required. Username for the SSH tunnel.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
+  */
+  readonly username: string;
+}
+
+export function googleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityToTerraform(struct?: GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference | GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hostname: cdktf.stringToTerraform(struct!.hostname),
+    password: cdktf.stringToTerraform(struct!.password),
+    port: cdktf.numberToTerraform(struct!.port),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._privateKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKey = this._privateKey;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostname = undefined;
+      this._password = undefined;
+      this._port = undefined;
+      this._privateKey = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostname = value.hostname;
+      this._password = value.password;
+      this._port = value.port;
+      this._privateKey = value.privateKey;
+      this._username = value.username;
+    }
+  }
+
+  // hostname - computed: false, optional: false, required: true
+  private _hostname?: string; 
+  public get hostname() {
+    return this.getStringAttribute('hostname');
+  }
+  public set hostname(value: string) {
+    this._hostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname;
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // private_key - computed: false, optional: true, required: false
+  private _privateKey?: string; 
+  public get privateKey() {
+    return this.getStringAttribute('private_key');
+  }
+  public set privateKey(value: string) {
+    this._privateKey = value;
+  }
+  public resetPrivateKey() {
+    this._privateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyInput() {
+    return this._privateKey;
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity {
+  /**
+  * Required. The resource name (URI) of the private connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#private_connection GoogleDatabaseMigrationServiceConnectionProfile#private_connection}
+  */
+  readonly privateConnection: string;
+}
+
+export function googleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityToTerraform(struct?: GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference | GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    private_connection: cdktf.stringToTerraform(struct!.privateConnection),
+  }
+}
+
+export class GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._privateConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateConnection = this._privateConnection;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._privateConnection = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._privateConnection = value.privateConnection;
+    }
+  }
+
+  // private_connection - computed: false, optional: false, required: true
+  private _privateConnection?: string; 
+  public get privateConnection() {
+    return this.getStringAttribute('private_connection');
+  }
+  public set privateConnection(value: string) {
+    this._privateConnection = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectionInput() {
+    return this._privateConnection;
+  }
+}
+export interface GoogleDatabaseMigrationServiceConnectionProfileOracleSsl {
   /**
   * Required. Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
   * The replica will use this certificate to verify it's connecting to the right host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
   */
   readonly caCertificate: string;
   /**
   * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
   * If this field is used then the 'clientKey' field is mandatory
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
   * If this field is used then the 'clientCertificate' field is mandatory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
+  */
+  readonly clientKey?: string;
+}
+
+export function googleDatabaseMigrationServiceConnectionProfileOracleSslToTerraform(struct?: GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference | GoogleDatabaseMigrationServiceConnectionProfileOracleSsl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ca_certificate: cdktf.stringToTerraform(struct!.caCertificate),
+    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktf.stringToTerraform(struct!.clientKey),
+  }
+}
+
+export class GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatabaseMigrationServiceConnectionProfileOracleSsl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caCertificate = this._caCertificate;
+    }
+    if (this._clientCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientCertificate = this._clientCertificate;
+    }
+    if (this._clientKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientKey = this._clientKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatabaseMigrationServiceConnectionProfileOracleSsl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._caCertificate = undefined;
+      this._clientCertificate = undefined;
+      this._clientKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._caCertificate = value.caCertificate;
+      this._clientCertificate = value.clientCertificate;
+      this._clientKey = value.clientKey;
+    }
+  }
+
+  // ca_certificate - computed: false, optional: false, required: true
+  private _caCertificate?: string; 
+  public get caCertificate() {
+    return this.getStringAttribute('ca_certificate');
+  }
+  public set caCertificate(value: string) {
+    this._caCertificate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertificateInput() {
+    return this._caCertificate;
+  }
+
+  // client_certificate - computed: false, optional: true, required: false
+  private _clientCertificate?: string; 
+  public get clientCertificate() {
+    return this.getStringAttribute('client_certificate');
+  }
+  public set clientCertificate(value: string) {
+    this._clientCertificate = value;
+  }
+  public resetClientCertificate() {
+    this._clientCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientCertificateInput() {
+    return this._clientCertificate;
+  }
+
+  // client_key - computed: false, optional: true, required: false
+  private _clientKey?: string; 
+  public get clientKey() {
+    return this.getStringAttribute('client_key');
+  }
+  public set clientKey(value: string) {
+    this._clientKey = value;
+  }
+  public resetClientKey() {
+    this._clientKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientKeyInput() {
+    return this._clientKey;
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export interface GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity {
+}
+
+export function googleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityToTerraform(struct?: GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference | GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleDatabaseMigrationServiceConnectionProfileOracle {
+  /**
+  * Required. Database service for the Oracle connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#database_service GoogleDatabaseMigrationServiceConnectionProfile#database_service}
+  */
+  readonly databaseService: string;
+  /**
+  * Required. The IP or hostname of the source Oracle database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#host GoogleDatabaseMigrationServiceConnectionProfile#host}
+  */
+  readonly host: string;
+  /**
+  * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
+  * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
+  */
+  readonly password: string;
+  /**
+  * Required. The network port of the source Oracle database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
+  */
+  readonly port: number;
+  /**
+  * Required. The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
+  */
+  readonly username: string;
+  /**
+  * forward_ssh_connectivity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#forward_ssh_connectivity GoogleDatabaseMigrationServiceConnectionProfile#forward_ssh_connectivity}
+  */
+  readonly forwardSshConnectivity?: GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity;
+  /**
+  * private_connectivity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#private_connectivity GoogleDatabaseMigrationServiceConnectionProfile#private_connectivity}
+  */
+  readonly privateConnectivity?: GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity;
+  /**
+  * ssl block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ssl GoogleDatabaseMigrationServiceConnectionProfile#ssl}
+  */
+  readonly ssl?: GoogleDatabaseMigrationServiceConnectionProfileOracleSsl;
+  /**
+  * static_service_ip_connectivity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#static_service_ip_connectivity GoogleDatabaseMigrationServiceConnectionProfile#static_service_ip_connectivity}
+  */
+  readonly staticServiceIpConnectivity?: GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity;
+}
+
+export function googleDatabaseMigrationServiceConnectionProfileOracleToTerraform(struct?: GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference | GoogleDatabaseMigrationServiceConnectionProfileOracle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    database_service: cdktf.stringToTerraform(struct!.databaseService),
+    host: cdktf.stringToTerraform(struct!.host),
+    password: cdktf.stringToTerraform(struct!.password),
+    port: cdktf.numberToTerraform(struct!.port),
+    username: cdktf.stringToTerraform(struct!.username),
+    forward_ssh_connectivity: googleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityToTerraform(struct!.forwardSshConnectivity),
+    private_connectivity: googleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityToTerraform(struct!.privateConnectivity),
+    ssl: googleDatabaseMigrationServiceConnectionProfileOracleSslToTerraform(struct!.ssl),
+    static_service_ip_connectivity: googleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityToTerraform(struct!.staticServiceIpConnectivity),
+  }
+}
+
+export class GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatabaseMigrationServiceConnectionProfileOracle | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databaseService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseService = this._databaseService;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    if (this._forwardSshConnectivity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardSshConnectivity = this._forwardSshConnectivity?.internalValue;
+    }
+    if (this._privateConnectivity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateConnectivity = this._privateConnectivity?.internalValue;
+    }
+    if (this._ssl?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ssl = this._ssl?.internalValue;
+    }
+    if (this._staticServiceIpConnectivity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.staticServiceIpConnectivity = this._staticServiceIpConnectivity?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatabaseMigrationServiceConnectionProfileOracle | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._databaseService = undefined;
+      this._host = undefined;
+      this._password = undefined;
+      this._port = undefined;
+      this._username = undefined;
+      this._forwardSshConnectivity.internalValue = undefined;
+      this._privateConnectivity.internalValue = undefined;
+      this._ssl.internalValue = undefined;
+      this._staticServiceIpConnectivity.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._databaseService = value.databaseService;
+      this._host = value.host;
+      this._password = value.password;
+      this._port = value.port;
+      this._username = value.username;
+      this._forwardSshConnectivity.internalValue = value.forwardSshConnectivity;
+      this._privateConnectivity.internalValue = value.privateConnectivity;
+      this._ssl.internalValue = value.ssl;
+      this._staticServiceIpConnectivity.internalValue = value.staticServiceIpConnectivity;
+    }
+  }
+
+  // database_service - computed: false, optional: false, required: true
+  private _databaseService?: string; 
+  public get databaseService() {
+    return this.getStringAttribute('database_service');
+  }
+  public set databaseService(value: string) {
+    this._databaseService = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseServiceInput() {
+    return this._databaseService;
+  }
+
+  // host - computed: false, optional: false, required: true
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // password_set - computed: true, optional: false, required: false
+  public get passwordSet() {
+    return this.getBooleanAttribute('password_set');
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+
+  // forward_ssh_connectivity - computed: false, optional: true, required: false
+  private _forwardSshConnectivity = new GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference(this, "forward_ssh_connectivity");
+  public get forwardSshConnectivity() {
+    return this._forwardSshConnectivity;
+  }
+  public putForwardSshConnectivity(value: GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivity) {
+    this._forwardSshConnectivity.internalValue = value;
+  }
+  public resetForwardSshConnectivity() {
+    this._forwardSshConnectivity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardSshConnectivityInput() {
+    return this._forwardSshConnectivity.internalValue;
+  }
+
+  // private_connectivity - computed: false, optional: true, required: false
+  private _privateConnectivity = new GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference(this, "private_connectivity");
+  public get privateConnectivity() {
+    return this._privateConnectivity;
+  }
+  public putPrivateConnectivity(value: GoogleDatabaseMigrationServiceConnectionProfileOraclePrivateConnectivity) {
+    this._privateConnectivity.internalValue = value;
+  }
+  public resetPrivateConnectivity() {
+    this._privateConnectivity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectivityInput() {
+    return this._privateConnectivity.internalValue;
+  }
+
+  // ssl - computed: false, optional: true, required: false
+  private _ssl = new GoogleDatabaseMigrationServiceConnectionProfileOracleSslOutputReference(this, "ssl");
+  public get ssl() {
+    return this._ssl;
+  }
+  public putSsl(value: GoogleDatabaseMigrationServiceConnectionProfileOracleSsl) {
+    this._ssl.internalValue = value;
+  }
+  public resetSsl() {
+    this._ssl.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslInput() {
+    return this._ssl.internalValue;
+  }
+
+  // static_service_ip_connectivity - computed: false, optional: true, required: false
+  private _staticServiceIpConnectivity = new GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference(this, "static_service_ip_connectivity");
+  public get staticServiceIpConnectivity() {
+    return this._staticServiceIpConnectivity;
+  }
+  public putStaticServiceIpConnectivity(value: GoogleDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivity) {
+    this._staticServiceIpConnectivity.internalValue = value;
+  }
+  public resetStaticServiceIpConnectivity() {
+    this._staticServiceIpConnectivity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticServiceIpConnectivityInput() {
+    return this._staticServiceIpConnectivity.internalValue;
+  }
+}
+export interface GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSsl {
+  /**
+  * Required. Input only. The x509 PEM-encoded certificate of the CA that signed the source database server's certificate.
+  * The replica will use this certificate to verify it's connecting to the right host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ca_certificate GoogleDatabaseMigrationServiceConnectionProfile#ca_certificate}
+  */
+  readonly caCertificate: string;
+  /**
+  * Input only. The x509 PEM-encoded certificate that will be used by the replica to authenticate against the source database server.
+  * If this field is used then the 'clientKey' field is mandatory
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_certificate GoogleDatabaseMigrationServiceConnectionProfile#client_certificate}
+  */
+  readonly clientCertificate?: string;
+  /**
+  * Input only. The unencrypted PKCS#1 or PKCS#8 PEM-encoded private key associated with the Client Certificate.
+  * If this field is used then the 'clientCertificate' field is mandatory.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#client_key GoogleDatabaseMigrationServiceConnectionProfile#client_key}
   */
   readonly clientKey?: string;
 }
@@ -2111,38 +2813,38 @@ export interface GoogleDatabaseMigrationServiceConnectionProfilePostgresql {
   /**
   * If the source is a Cloud SQL database, use this field to provide the Cloud SQL instance ID of the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#cloud_sql_id GoogleDatabaseMigrationServiceConnectionProfile#cloud_sql_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#cloud_sql_id GoogleDatabaseMigrationServiceConnectionProfile#cloud_sql_id}
   */
   readonly cloudSqlId?: string;
   /**
   * Required. The IP or hostname of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#host GoogleDatabaseMigrationServiceConnectionProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#host GoogleDatabaseMigrationServiceConnectionProfile#host}
   */
   readonly host: string;
   /**
   * Required. Input only. The password for the user that Database Migration Service will be using to connect to the database.
   * This field is not returned on request, and the value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#password GoogleDatabaseMigrationServiceConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Required. The network port of the source MySQL database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#port GoogleDatabaseMigrationServiceConnectionProfile#port}
   */
   readonly port: number;
   /**
   * Required. The username that Database Migration Service will use to connect to the database. The value is encrypted when stored in Database Migration Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#username GoogleDatabaseMigrationServiceConnectionProfile#username}
   */
   readonly username: string;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#ssl GoogleDatabaseMigrationServiceConnectionProfile#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#ssl GoogleDatabaseMigrationServiceConnectionProfile#ssl}
   */
   readonly ssl?: GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSsl;
 }
@@ -2320,15 +3022,15 @@ export class GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 }
 export interface GoogleDatabaseMigrationServiceConnectionProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#create GoogleDatabaseMigrationServiceConnectionProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#create GoogleDatabaseMigrationServiceConnectionProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#delete GoogleDatabaseMigrationServiceConnectionProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#delete GoogleDatabaseMigrationServiceConnectionProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile#update GoogleDatabaseMigrationServiceConnectionProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile#update GoogleDatabaseMigrationServiceConnectionProfile#update}
   */
   readonly update?: string;
 }
@@ -2449,7 +3151,7 @@ export class GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile}
 */
 export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.TerraformResource {
 
@@ -2463,7 +3165,7 @@ export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2474,7 +3176,7 @@ export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.Terra
       terraformResourceType: 'google_database_migration_service_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.0.0',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2494,6 +3196,7 @@ export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.Terra
     this._alloydb.internalValue = config.alloydb;
     this._cloudsql.internalValue = config.cloudsql;
     this._mysql.internalValue = config.mysql;
+    this._oracle.internalValue = config.oracle;
     this._postgresql.internalValue = config.postgresql;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -2681,6 +3384,22 @@ export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.Terra
     return this._mysql.internalValue;
   }
 
+  // oracle - computed: false, optional: true, required: false
+  private _oracle = new GoogleDatabaseMigrationServiceConnectionProfileOracleOutputReference(this, "oracle");
+  public get oracle() {
+    return this._oracle;
+  }
+  public putOracle(value: GoogleDatabaseMigrationServiceConnectionProfileOracle) {
+    this._oracle.internalValue = value;
+  }
+  public resetOracle() {
+    this._oracle.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oracleInput() {
+    return this._oracle.internalValue;
+  }
+
   // postgresql - computed: false, optional: true, required: false
   private _postgresql = new GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference(this, "postgresql");
   public get postgresql() {
@@ -2728,6 +3447,7 @@ export class GoogleDatabaseMigrationServiceConnectionProfile extends cdktf.Terra
       alloydb: googleDatabaseMigrationServiceConnectionProfileAlloydbToTerraform(this._alloydb.internalValue),
       cloudsql: googleDatabaseMigrationServiceConnectionProfileCloudsqlToTerraform(this._cloudsql.internalValue),
       mysql: googleDatabaseMigrationServiceConnectionProfileMysqlToTerraform(this._mysql.internalValue),
+      oracle: googleDatabaseMigrationServiceConnectionProfileOracleToTerraform(this._oracle.internalValue),
       postgresql: googleDatabaseMigrationServiceConnectionProfilePostgresqlToTerraform(this._postgresql.internalValue),
       timeouts: googleDatabaseMigrationServiceConnectionProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
