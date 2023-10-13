@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 googlesccsourceiambinding.NewGoogleSccSourceIamBinding(scope Construct, id *string, config GoogleSccSourceIamBindingConfig) GoogleSccSourceIamBinding
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 googlesccsourceiambinding.GoogleSccSourceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 googlesccsourceiambinding.GoogleSccSourceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ googlesccsourceiambinding.GoogleSccSourceIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 googlesccsourceiambinding.GoogleSccSourceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 &googlesccsourceiambinding.GoogleSccSourceIamBindingCondition {
 	Expression: *string,
@@ -745,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 &googlesccsourceiambinding.GoogleSccSourceIamBindingConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsource
 	Organization: *string,
 	Role: *string,
 	Source: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSccSourceIamBinding.GoogleSccSourceIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleSccSourceIamBinding.GoogleSccSourceIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -938,7 +938,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding"
 
 googlesccsourceiambinding.NewGoogleSccSourceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSccSourceIamBindingConditionOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 googlepubsubtopiciammember.NewGooglePubsubTopicIamMember(scope Construct, id *string, config GooglePubsubTopicIamMemberConfig) GooglePubsubTopicIamMember
 ```
@@ -304,7 +304,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 googlepubsubtopiciammember.GooglePubsubTopicIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 googlepubsubtopiciammember.GooglePubsubTopicIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googlepubsubtopiciammember.GooglePubsubTopicIamMember_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 googlepubsubtopiciammember.GooglePubsubTopicIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 &googlepubsubtopiciammember.GooglePubsubTopicIamMemberCondition {
 	Expression: *string,
@@ -752,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 &googlepubsubtopiciammember.GooglePubsubTopicIamMemberConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtop
 	Member: *string,
 	Role: *string,
 	Topic: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlepubsubtopiciammember"
 
 googlepubsubtopiciammember.NewGooglePubsubTopicIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubTopicIamMemberConditionOutputReference
 ```
