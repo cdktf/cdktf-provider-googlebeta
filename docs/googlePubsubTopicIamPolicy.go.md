@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlepubsubtopiciampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciampolicy"
 
 googlepubsubtopiciampolicy.NewGooglePubsubTopicIamPolicy(scope Construct, id *string, config GooglePubsubTopicIamPolicyConfig) GooglePubsubTopicIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlepubsubtopiciampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciampolicy"
 
 googlepubsubtopiciampolicy.GooglePubsubTopicIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlepubsubtopiciampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciampolicy"
 
 googlepubsubtopiciampolicy.GooglePubsubTopicIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googlepubsubtopiciampolicy.GooglePubsubTopicIamPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlepubsubtopiciampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciampolicy"
 
 googlepubsubtopiciampolicy.GooglePubsubTopicIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlepubsubtopiciampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciampolicy"
 
 &googlepubsubtopiciampolicy.GooglePubsubTopicIamPolicyConfig {
 	Connection: interface{},
