@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 googlecomputeprojectdefaultnetworktier.NewGoogleComputeProjectDefaultNetworkTier(scope Construct, id *string, config GoogleComputeProjectDefaultNetworkTierConfig) GoogleComputeProjectDefaultNetworkTier
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTier_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTier_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTier_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTier_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 &googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTierConfig {
 	Connection: interface{},
@@ -650,7 +650,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputepr
 	NetworkTier: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts,
 }
 ```
 
@@ -808,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 &googlecomputeprojectdefaultnetworktier.GoogleComputeProjectDefaultNetworkTierTimeouts {
 	Create: *string,
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTierTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeprojectdefaultnetworktier"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeprojectdefaultnetworktier"
 
 googlecomputeprojectdefaultnetworktier.NewGoogleComputeProjectDefaultNetworkTierTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeProjectDefaultNetworkTierTimeoutsOutputReference
 ```
