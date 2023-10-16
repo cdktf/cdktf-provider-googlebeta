@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2runtimeversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogletpuv2runtimeversions"
 
 datagoogletpuv2runtimeversions.NewDataGoogleTpuV2RuntimeVersions(scope Construct, id *string, config DataGoogleTpuV2RuntimeVersionsConfig) DataGoogleTpuV2RuntimeVersions
 ```
@@ -291,7 +291,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2runtimeversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogletpuv2runtimeversions"
 
 datagoogletpuv2runtimeversions.DataGoogleTpuV2RuntimeVersions_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2runtimeversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogletpuv2runtimeversions"
 
 datagoogletpuv2runtimeversions.DataGoogleTpuV2RuntimeVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagoogletpuv2runtimeversions.DataGoogleTpuV2RuntimeVersions_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2runtimeversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogletpuv2runtimeversions"
 
 datagoogletpuv2runtimeversions.DataGoogleTpuV2RuntimeVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletpuv2runtimeversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogletpuv2runtimeversions"
 
 &datagoogletpuv2runtimeversions.DataGoogleTpuV2RuntimeVersionsConfig {
 	Connection: interface{},

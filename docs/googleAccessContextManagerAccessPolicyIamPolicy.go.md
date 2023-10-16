@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleaccesscontextmanageraccesspolicyiampolicy"
 
 googleaccesscontextmanageraccesspolicyiampolicy.NewGoogleAccessContextManagerAccessPolicyIamPolicy(scope Construct, id *string, config GoogleAccessContextManagerAccessPolicyIamPolicyConfig) GoogleAccessContextManagerAccessPolicyIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleaccesscontextmanageraccesspolicyiampolicy"
 
 googleaccesscontextmanageraccesspolicyiampolicy.GoogleAccessContextManagerAccessPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleaccesscontextmanageraccesspolicyiampolicy"
 
 googleaccesscontextmanageraccesspolicyiampolicy.GoogleAccessContextManagerAccessPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googleaccesscontextmanageraccesspolicyiampolicy.GoogleAccessContextManagerAccess
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleaccesscontextmanageraccesspolicyiampolicy"
 
 googleaccesscontextmanageraccesspolicyiampolicy.GoogleAccessContextManagerAccessPolicyIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleaccesscontextmanageraccesspolicyiampolicy"
 
 &googleaccesscontextmanageraccesspolicyiampolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig {
 	Connection: interface{},
