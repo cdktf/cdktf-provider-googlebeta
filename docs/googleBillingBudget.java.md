@@ -1,6 +1,6 @@
 # `google_billing_budget`
 
-Refer to the Terraform Registory for docs: [`google_billing_budget`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget).
+Refer to the Terraform Registory for docs: [`google_billing_budget`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget).
 
 # `googleBillingBudget` Submodule <a name="`googleBillingBudget` Submodule" id="@cdktf/provider-google-beta.googleBillingBudget"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_billing_budget`](https://reg
 
 ### GoogleBillingBudget <a name="GoogleBillingBudget" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget google_billing_budget}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget google_billing_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer"></a>
 
@@ -55,7 +55,7 @@ GoogleBillingBudget.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.allUpdatesRule">allUpdatesRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule">GoogleBillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.budgetFilter">budgetFilter</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilter">GoogleBillingBudgetBudgetFilter</a></code> | budget_filter block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User data for display name in UI. Must be <= 60 chars. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.thresholdRules">thresholdRules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRules">GoogleBillingBudgetThresholdRules</a>></code> | threshold_rules block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts">GoogleBillingBudgetTimeouts</a></code> | timeouts block. |
 
@@ -127,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the billing account to set a budget on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 all_updates_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 budget_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User data for display name in UI. Must be <= 60 chars.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -188,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 threshold_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
 
 ---
 
@@ -998,7 +998,7 @@ when a threshold is exceeded. Default recipients are
 those with Billing Account Administrators and Billing
 Account Users IAM roles for the target account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#disable_default_iam_recipients GoogleBillingBudget#disable_default_iam_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#disable_default_iam_recipients GoogleBillingBudget#disable_default_iam_recipients}
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.util.List<java.lang.String> getMonitoringNotificationChannels();
 
 The full resource name of a monitoring notification channel in the form projects/{project_id}/notificationChannels/{channel_id}. A maximum of 5 channels are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#monitoring_notification_channels GoogleBillingBudget#monitoring_notification_channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#monitoring_notification_channels GoogleBillingBudget#monitoring_notification_channels}
 
 ---
 
@@ -1029,7 +1029,7 @@ The name of the Cloud Pub/Sub topic where budget related messages will be publis
 Updates are sent
 at regular intervals to the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#pubsub_topic GoogleBillingBudget#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#pubsub_topic GoogleBillingBudget#pubsub_topic}
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getSchemaVersion();
 
 The schema version of the notification. Only "1.0" is accepted. It represents the JSON schema as defined in https://cloud.google.com/billing/docs/how-to/budgets#notification_format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#schema_version GoogleBillingBudget#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#schema_version GoogleBillingBudget#schema_version}
 
 ---
 
@@ -1083,7 +1083,7 @@ Configures a budget amount that is automatically set to 100% of last period's sp
 Boolean. Set value to true to use. Do not set to false, instead
 use the 'specified_amount' block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#last_period_amount GoogleBillingBudget#last_period_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#last_period_amount GoogleBillingBudget#last_period_amount}
 
 ---
 
@@ -1097,7 +1097,7 @@ public GoogleBillingBudgetAmountSpecifiedAmount getSpecifiedAmount();
 
 specified_amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#specified_amount GoogleBillingBudget#specified_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#specified_amount GoogleBillingBudget#specified_amount}
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getCurrencyCode();
 
 The 3-letter currency code defined in ISO 4217.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#currency_code GoogleBillingBudget#currency_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#currency_code GoogleBillingBudget#currency_code}
 
 ---
 
@@ -1156,7 +1156,7 @@ negative. If units is negative, nanos must be negative or
 zero. For example $-1.75 is represented as units=-1 and
 nanos=-750,000,000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#nanos GoogleBillingBudget#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#nanos GoogleBillingBudget#nanos}
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.lang.String getUnits();
 
 The whole units of the amount. For example if currencyCode is "USD", then 1 unit is one US dollar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#units GoogleBillingBudget#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#units GoogleBillingBudget#units}
 
 ---
 
@@ -1225,7 +1225,7 @@ All calendar times begin at 12 AM US and Canadian Pacific Time (UTC-8).
 
 Exactly one of 'calendar_period', 'custom_period' must be provided. Possible values: ["MONTH", "QUARTER", "YEAR", "CALENDAR_PERIOD_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#calendar_period GoogleBillingBudget#calendar_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#calendar_period GoogleBillingBudget#calendar_period}
 
 ---
 
@@ -1245,7 +1245,7 @@ If creditTypesTreatment is not INCLUDE_SPECIFIED_CREDITS, this field must be emp
 
 **Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#credit_types GoogleBillingBudget#credit_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#credit_types GoogleBillingBudget#credit_types}
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getCreditTypesTreatment();
 
 Specifies how credits should be treated when determining spend for threshold calculations. Default value: "INCLUDE_ALL_CREDITS" Possible values: ["INCLUDE_ALL_CREDITS", "EXCLUDE_ALL_CREDITS", "INCLUDE_SPECIFIED_CREDITS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#credit_types_treatment GoogleBillingBudget#credit_types_treatment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#credit_types_treatment GoogleBillingBudget#credit_types_treatment}
 
 ---
 
@@ -1273,7 +1273,7 @@ public GoogleBillingBudgetBudgetFilterCustomPeriod getCustomPeriod();
 
 custom_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#custom_period GoogleBillingBudget#custom_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#custom_period GoogleBillingBudget#custom_period}
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#labels GoogleBillingBudget#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#labels GoogleBillingBudget#labels}
 
 ---
 
@@ -1305,7 +1305,7 @@ If omitted, the report will include
 all usage for the billing account, regardless of which project
 the usage occurred on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#projects GoogleBillingBudget#projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#projects GoogleBillingBudget#projects}
 
 ---
 
@@ -1322,7 +1322,7 @@ A set of folder and organization names of the form folders/{folderId} or organiz
 If omitted, the budget includes all usage that the billing account pays for. If the folder or organization
 contains projects that are paid for by a different Cloud Billing account, the budget doesn't apply to those projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#resource_ancestors GoogleBillingBudget#resource_ancestors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#resource_ancestors GoogleBillingBudget#resource_ancestors}
 
 ---
 
@@ -1341,7 +1341,7 @@ usage for all the services. The service names are available
 through the Catalog API:
 https://cloud.google.com/billing/v1/how-tos/catalog-api.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#services GoogleBillingBudget#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#services GoogleBillingBudget#services}
 
 ---
 
@@ -1362,7 +1362,7 @@ account and all subaccounts, if they exist.
 
 **Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#subaccounts GoogleBillingBudget#subaccounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#subaccounts GoogleBillingBudget#subaccounts}
 
 ---
 
@@ -1398,7 +1398,7 @@ public GoogleBillingBudgetBudgetFilterCustomPeriodStartDate getStartDate();
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#start_date GoogleBillingBudget#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#start_date GoogleBillingBudget#start_date}
 
 ---
 
@@ -1412,7 +1412,7 @@ public GoogleBillingBudgetBudgetFilterCustomPeriodEndDate getEndDate();
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#end_date GoogleBillingBudget#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#end_date GoogleBillingBudget#end_date}
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.Number getDay();
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
 
 ---
 
@@ -1464,7 +1464,7 @@ public java.lang.Number getMonth();
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
 
 ---
 
@@ -1478,7 +1478,7 @@ public java.lang.Number getYear();
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
 
 ---
 
@@ -1516,7 +1516,7 @@ public java.lang.Number getDay();
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
 
 ---
 
@@ -1530,7 +1530,7 @@ public java.lang.Number getMonth();
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.Number getYear();
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
 
 ---
 
@@ -1595,7 +1595,7 @@ GoogleBillingBudgetConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.allUpdatesRule">allUpdatesRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule">GoogleBillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.budgetFilter">budgetFilter</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilter">GoogleBillingBudgetBudgetFilter</a></code> | budget_filter block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User data for display name in UI. Must be <= 60 chars. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.thresholdRules">thresholdRules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRules">GoogleBillingBudgetThresholdRules</a>></code> | threshold_rules block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts">GoogleBillingBudgetTimeouts</a></code> | timeouts block. |
 
@@ -1681,7 +1681,7 @@ public GoogleBillingBudgetAmount getAmount();
 
 amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
 
 ---
 
@@ -1695,7 +1695,7 @@ public java.lang.String getBillingAccount();
 
 ID of the billing account to set a budget on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
 
 ---
 
@@ -1709,7 +1709,7 @@ public GoogleBillingBudgetAllUpdatesRule getAllUpdatesRule();
 
 all_updates_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
 
 ---
 
@@ -1723,7 +1723,7 @@ public GoogleBillingBudgetBudgetFilter getBudgetFilter();
 
 budget_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
 
 ---
 
@@ -1737,7 +1737,7 @@ public java.lang.String getDisplayName();
 
 User data for display name in UI. Must be <= 60 chars.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
 
 ---
 
@@ -1749,7 +1749,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1766,7 +1766,7 @@ public java.lang.Object getThresholdRules();
 
 threshold_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
 
 ---
 
@@ -1780,7 +1780,7 @@ public GoogleBillingBudgetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
 
 ---
 
@@ -1819,7 +1819,7 @@ Send an alert when this threshold is exceeded.
 This is a
 1.0-based percentage, so 0.5 = 50%. Must be >= 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#threshold_percent GoogleBillingBudget#threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#threshold_percent GoogleBillingBudget#threshold_percent}
 
 ---
 
@@ -1833,7 +1833,7 @@ public java.lang.String getSpendBasis();
 
 The type of basis used to determine if spend has passed the threshold. Default value: "CURRENT_SPEND" Possible values: ["CURRENT_SPEND", "FORECASTED_SPEND"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#spend_basis GoogleBillingBudget#spend_basis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#spend_basis GoogleBillingBudget#spend_basis}
 
 ---
 
@@ -1855,9 +1855,9 @@ GoogleBillingBudgetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}. |
 
 ---
 
@@ -1869,7 +1869,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}.
 
 ---
 
@@ -1881,7 +1881,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}.
 
 ---
 
@@ -1893,7 +1893,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}.
 
 ---
 

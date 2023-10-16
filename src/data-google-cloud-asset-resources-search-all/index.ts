@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleCloudAssetResourcesSearchAllConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all#asset_types DataGoogleCloudAssetResourcesSearchAll#asset_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all#asset_types DataGoogleCloudAssetResourcesSearchAll#asset_types}
   */
   readonly assetTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all#id DataGoogleCloudAssetResourcesSearchAll#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all#id DataGoogleCloudAssetResourcesSearchAll#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all#query DataGoogleCloudAssetResourcesSearchAll#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all#query DataGoogleCloudAssetResourcesSearchAll#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all#scope DataGoogleCloudAssetResourcesSearchAll#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all#scope DataGoogleCloudAssetResourcesSearchAll#scope}
   */
   readonly scope: string;
 }
@@ -139,7 +134,7 @@ export class DataGoogleCloudAssetResourcesSearchAllResultsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all google_cloud_asset_resources_search_all}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all google_cloud_asset_resources_search_all}
 */
 export class DataGoogleCloudAssetResourcesSearchAll extends cdktf.TerraformDataSource {
 
@@ -153,7 +148,7 @@ export class DataGoogleCloudAssetResourcesSearchAll extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_cloud_asset_resources_search_all google_cloud_asset_resources_search_all} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_cloud_asset_resources_search_all google_cloud_asset_resources_search_all} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +159,7 @@ export class DataGoogleCloudAssetResourcesSearchAll extends cdktf.TerraformDataS
       terraformResourceType: 'google_cloud_asset_resources_search_all',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

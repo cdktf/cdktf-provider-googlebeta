@@ -1,6 +1,6 @@
 # `data_google_tpu_v2_runtime_versions`
 
-Refer to the Terraform Registory for docs: [`data_google_tpu_v2_runtime_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions).
+Refer to the Terraform Registory for docs: [`data_google_tpu_v2_runtime_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions).
 
 # `dataGoogleTpuV2RuntimeVersions` Submodule <a name="`dataGoogleTpuV2RuntimeVersions` Submodule" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_tpu_v2_runtime_versions
 
 ### DataGoogleTpuV2RuntimeVersions <a name="DataGoogleTpuV2RuntimeVersions" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersions.Initializer"></a>
 
@@ -607,9 +607,9 @@ const dataGoogleTpuV2RuntimeVersionsConfig: dataGoogleTpuV2RuntimeVersions.DataG
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.zone">zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions.DataGoogleTpuV2RuntimeVersionsConfig.property.zone">zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}. |
 
 ---
 
@@ -691,7 +691,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#id DataGoogleTpuV2RuntimeVersions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -706,7 +706,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#project DataGoogleTpuV2RuntimeVersions#project}.
 
 ---
 
@@ -718,7 +718,7 @@ public readonly zone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_runtime_versions#zone DataGoogleTpuV2RuntimeVersions#zone}.
 
 ---
 

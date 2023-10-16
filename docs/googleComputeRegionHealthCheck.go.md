@@ -1,6 +1,6 @@
 # `google_compute_region_health_check`
 
-Refer to the Terraform Registory for docs: [`google_compute_region_health_check`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check).
+Refer to the Terraform Registory for docs: [`google_compute_region_health_check`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check).
 
 # `googleComputeRegionHealthCheck` Submodule <a name="`googleComputeRegionHealthCheck` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_compute_region_health_check`
 
 ### GoogleComputeRegionHealthCheck <a name="GoogleComputeRegionHealthCheck" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check google_compute_region_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check google_compute_region_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheck(scope Construct, id *string, config GoogleComputeRegionHealthCheckConfig) GoogleComputeRegionHealthCheck
 ```
@@ -486,7 +486,7 @@ func ResetUnhealthyThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -1138,7 +1138,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckConfig {
 	Connection: interface{},
@@ -1151,18 +1151,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecompu
 	Name: *string,
 	CheckIntervalSec: *f64,
 	Description: *string,
-	GrpcHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck,
+	GrpcHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck,
 	HealthyThreshold: *f64,
-	Http2HealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck,
-	HttpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck,
-	HttpsHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck,
+	Http2HealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck,
+	HttpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck,
+	HttpsHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck,
 	Id: *string,
-	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig,
+	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig,
 	Project: *string,
 	Region: *string,
-	SslHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck,
-	TcpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts,
+	SslHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck,
+	TcpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts,
 	TimeoutSec: *f64,
 	UnhealthyThreshold: *f64,
 }
@@ -1187,9 +1187,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.http2HealthCheck">Http2HealthCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck">GoogleComputeRegionHealthCheckHttp2HealthCheck</a></code> | http2_health_check block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.httpHealthCheck">HttpHealthCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck">GoogleComputeRegionHealthCheckHttpHealthCheck</a></code> | http_health_check block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.httpsHealthCheck">HttpsHealthCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck">GoogleComputeRegionHealthCheckHttpsHealthCheck</a></code> | https_health_check block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#id GoogleComputeRegionHealthCheck#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#id GoogleComputeRegionHealthCheck#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig">GoogleComputeRegionHealthCheckLogConfig</a></code> | log_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#project GoogleComputeRegionHealthCheck#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#project GoogleComputeRegionHealthCheck#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.region">Region</a></code> | <code>*string</code> | The Region in which the created health check should reside. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.sslHealthCheck">SslHealthCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck">GoogleComputeRegionHealthCheckSslHealthCheck</a></code> | ssl_health_check block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.property.tcpHealthCheck">TcpHealthCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck">GoogleComputeRegionHealthCheckTcpHealthCheck</a></code> | tcp_health_check block. |
@@ -1287,7 +1287,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#name GoogleComputeRegionHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#name GoogleComputeRegionHealthCheck#name}
 
 ---
 
@@ -1301,7 +1301,7 @@ CheckIntervalSec *f64
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#check_interval_sec GoogleComputeRegionHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#check_interval_sec GoogleComputeRegionHealthCheck#check_interval_sec}
 
 ---
 
@@ -1315,7 +1315,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#description GoogleComputeRegionHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#description GoogleComputeRegionHealthCheck#description}
 
 ---
 
@@ -1329,7 +1329,7 @@ GrpcHealthCheck GoogleComputeRegionHealthCheckGrpcHealthCheck
 
 grpc_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#grpc_health_check GoogleComputeRegionHealthCheck#grpc_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#grpc_health_check GoogleComputeRegionHealthCheck#grpc_health_check}
 
 ---
 
@@ -1343,7 +1343,7 @@ HealthyThreshold *f64
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#healthy_threshold GoogleComputeRegionHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#healthy_threshold GoogleComputeRegionHealthCheck#healthy_threshold}
 
 ---
 
@@ -1357,7 +1357,7 @@ Http2HealthCheck GoogleComputeRegionHealthCheckHttp2HealthCheck
 
 http2_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#http2_health_check GoogleComputeRegionHealthCheck#http2_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#http2_health_check GoogleComputeRegionHealthCheck#http2_health_check}
 
 ---
 
@@ -1371,7 +1371,7 @@ HttpHealthCheck GoogleComputeRegionHealthCheckHttpHealthCheck
 
 http_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#http_health_check GoogleComputeRegionHealthCheck#http_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#http_health_check GoogleComputeRegionHealthCheck#http_health_check}
 
 ---
 
@@ -1385,7 +1385,7 @@ HttpsHealthCheck GoogleComputeRegionHealthCheckHttpsHealthCheck
 
 https_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#https_health_check GoogleComputeRegionHealthCheck#https_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#https_health_check GoogleComputeRegionHealthCheck#https_health_check}
 
 ---
 
@@ -1397,7 +1397,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#id GoogleComputeRegionHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#id GoogleComputeRegionHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1414,7 +1414,7 @@ LogConfig GoogleComputeRegionHealthCheckLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#log_config GoogleComputeRegionHealthCheck#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#log_config GoogleComputeRegionHealthCheck#log_config}
 
 ---
 
@@ -1426,7 +1426,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#project GoogleComputeRegionHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#project GoogleComputeRegionHealthCheck#project}.
 
 ---
 
@@ -1440,7 +1440,7 @@ Region *string
 
 The Region in which the created health check should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#region GoogleComputeRegionHealthCheck#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#region GoogleComputeRegionHealthCheck#region}
 
 ---
 
@@ -1454,7 +1454,7 @@ SslHealthCheck GoogleComputeRegionHealthCheckSslHealthCheck
 
 ssl_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#ssl_health_check GoogleComputeRegionHealthCheck#ssl_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#ssl_health_check GoogleComputeRegionHealthCheck#ssl_health_check}
 
 ---
 
@@ -1468,7 +1468,7 @@ TcpHealthCheck GoogleComputeRegionHealthCheckTcpHealthCheck
 
 tcp_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#tcp_health_check GoogleComputeRegionHealthCheck#tcp_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#tcp_health_check GoogleComputeRegionHealthCheck#tcp_health_check}
 
 ---
 
@@ -1482,7 +1482,7 @@ Timeouts GoogleComputeRegionHealthCheckTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#timeouts GoogleComputeRegionHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#timeouts GoogleComputeRegionHealthCheck#timeouts}
 
 ---
 
@@ -1499,7 +1499,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#timeout_sec GoogleComputeRegionHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#timeout_sec GoogleComputeRegionHealthCheck#timeout_sec}
 
 ---
 
@@ -1513,7 +1513,7 @@ UnhealthyThreshold *f64
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#unhealthy_threshold GoogleComputeRegionHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#unhealthy_threshold GoogleComputeRegionHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckGrpcHealthCheck {
 	GrpcServiceName: *string,
@@ -1558,7 +1558,7 @@ The gRPC service name for the health check. The value of grpcServiceName has the
 
 The grpcServiceName can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#grpc_service_name GoogleComputeRegionHealthCheck#grpc_service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#grpc_service_name GoogleComputeRegionHealthCheck#grpc_service_name}
 
 ---
 
@@ -1575,7 +1575,7 @@ The port number for the health check request.
 Must be specified if portName and portSpecification are not set
 or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -1589,7 +1589,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -1614,7 +1614,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, gRPC health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttp2HealthCheck {
 	Host: *string,
@@ -1663,7 +1663,7 @@ The value of the host header in the HTTP2 health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
 
 ---
 
@@ -1677,7 +1677,7 @@ Port *f64
 
 The TCP port number for the HTTP2 health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -1691,7 +1691,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -1716,7 +1716,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP2 health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -1732,7 +1732,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -1746,7 +1746,7 @@ RequestPath *string
 
 The request path of the HTTP2 health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -1764,7 +1764,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
 
 ---
 
@@ -1773,7 +1773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttpHealthCheck {
 	Host: *string,
@@ -1813,7 +1813,7 @@ The value of the host header in the HTTP health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
 
 ---
 
@@ -1827,7 +1827,7 @@ Port *f64
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -1841,7 +1841,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -1866,7 +1866,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -1882,7 +1882,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -1896,7 +1896,7 @@ RequestPath *string
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -1914,7 +1914,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
 
 ---
 
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttpsHealthCheck {
 	Host: *string,
@@ -1963,7 +1963,7 @@ The value of the host header in the HTTPS health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#host GoogleComputeRegionHealthCheck#host}
 
 ---
 
@@ -1977,7 +1977,7 @@ Port *f64
 
 The TCP port number for the HTTPS health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -1991,7 +1991,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2016,7 +2016,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTPS health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2032,7 +2032,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2046,7 +2046,7 @@ RequestPath *string
 
 The request path of the HTTPS health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#request_path GoogleComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -2064,7 +2064,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
 
 ---
 
@@ -2073,7 +2073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckLogConfig {
 	Enable: interface{},
@@ -2101,7 +2101,7 @@ Indicates whether or not to export logs.
 This is false by default,
 which means no health check logging will be done.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#enable GoogleComputeRegionHealthCheck#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#enable GoogleComputeRegionHealthCheck#enable}
 
 ---
 
@@ -2110,7 +2110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckSslHealthCheck {
 	Port: *f64,
@@ -2145,7 +2145,7 @@ Port *f64
 
 The TCP port number for the SSL health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -2159,7 +2159,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2184,7 +2184,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, SSL health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2200,7 +2200,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2218,7 +2218,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#request GoogleComputeRegionHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#request GoogleComputeRegionHealthCheck#request}
 
 ---
 
@@ -2236,7 +2236,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
 
 ---
 
@@ -2245,7 +2245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckTcpHealthCheck {
 	Port: *f64,
@@ -2280,7 +2280,7 @@ Port *f64
 
 The TCP port number for the TCP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port GoogleComputeRegionHealthCheck#port}
 
 ---
 
@@ -2294,7 +2294,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_name GoogleComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2319,7 +2319,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, TCP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#port_specification GoogleComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2335,7 +2335,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#proxy_header GoogleComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2353,7 +2353,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#request GoogleComputeRegionHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#request GoogleComputeRegionHealthCheck#request}
 
 ---
 
@@ -2371,7 +2371,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#response GoogleComputeRegionHealthCheck#response}
 
 ---
 
@@ -2380,7 +2380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckTimeouts {
 	Create: *string,
@@ -2393,9 +2393,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#create GoogleComputeRegionHealthCheck#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#delete GoogleComputeRegionHealthCheck#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#update GoogleComputeRegionHealthCheck#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#create GoogleComputeRegionHealthCheck#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#delete GoogleComputeRegionHealthCheck#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#update GoogleComputeRegionHealthCheck#update}. |
 
 ---
 
@@ -2407,7 +2407,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#create GoogleComputeRegionHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#create GoogleComputeRegionHealthCheck#create}.
 
 ---
 
@@ -2419,7 +2419,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#delete GoogleComputeRegionHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#delete GoogleComputeRegionHealthCheck#delete}.
 
 ---
 
@@ -2431,7 +2431,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_health_check#update GoogleComputeRegionHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_health_check#update GoogleComputeRegionHealthCheck#update}.
 
 ---
 
@@ -2442,7 +2442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference
 ```
@@ -2807,7 +2807,7 @@ func InternalValue() GoogleComputeRegionHealthCheckGrpcHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 ```
@@ -3259,7 +3259,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttp2HealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference
 ```
@@ -3711,7 +3711,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference
 ```
@@ -4163,7 +4163,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttpsHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckLogConfigOutputReference
 ```
@@ -4441,7 +4441,7 @@ func InternalValue() GoogleComputeRegionHealthCheckLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckSslHealthCheckOutputReference
 ```
@@ -4864,7 +4864,7 @@ func InternalValue() GoogleComputeRegionHealthCheckSslHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckTcpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference
 ```
@@ -5287,7 +5287,7 @@ func InternalValue() GoogleComputeRegionHealthCheckTcpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckTimeoutsOutputReference
 ```

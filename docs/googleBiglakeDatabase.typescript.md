@@ -1,6 +1,6 @@
 # `google_biglake_database`
 
-Refer to the Terraform Registory for docs: [`google_biglake_database`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database).
+Refer to the Terraform Registory for docs: [`google_biglake_database`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database).
 
 # `googleBiglakeDatabase` Submodule <a name="`googleBiglakeDatabase` Submodule" id="@cdktf/provider-google-beta.googleBiglakeDatabase"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_biglake_database`](https://r
 
 ### GoogleBiglakeDatabase <a name="GoogleBiglakeDatabase" id="@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database google_biglake_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database google_biglake_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabase.Initializer"></a>
 
@@ -751,7 +751,7 @@ const googleBiglakeDatabaseConfig: googleBiglakeDatabase.GoogleBiglakeDatabaseCo
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.hiveOptions">hiveOptions</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseHiveOptions">GoogleBiglakeDatabaseHiveOptions</a></code> | hive_options block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.name">name</a></code> | <code>string</code> | The name of the database. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.type">type</a></code> | <code>string</code> | The database type. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#id GoogleBiglakeDatabase#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#id GoogleBiglakeDatabase#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts">GoogleBiglakeDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -836,7 +836,7 @@ public readonly catalog: string;
 
 The parent catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#catalog GoogleBiglakeDatabase#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#catalog GoogleBiglakeDatabase#catalog}
 
 ---
 
@@ -850,7 +850,7 @@ public readonly hiveOptions: GoogleBiglakeDatabaseHiveOptions;
 
 hive_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#hive_options GoogleBiglakeDatabase#hive_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#hive_options GoogleBiglakeDatabase#hive_options}
 
 ---
 
@@ -864,7 +864,7 @@ public readonly name: string;
 
 The name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#name GoogleBiglakeDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#name GoogleBiglakeDatabase#name}
 
 ---
 
@@ -878,7 +878,7 @@ public readonly type: string;
 
 The database type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#type GoogleBiglakeDatabase#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#type GoogleBiglakeDatabase#type}
 
 ---
 
@@ -890,7 +890,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#id GoogleBiglakeDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#id GoogleBiglakeDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public readonly timeouts: GoogleBiglakeDatabaseTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#timeouts GoogleBiglakeDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#timeouts GoogleBiglakeDatabase#timeouts}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly locationUri: string;
 
 Cloud Storage folder URI where the database data is stored, starting with "gs://".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#location_uri GoogleBiglakeDatabase#location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#location_uri GoogleBiglakeDatabase#location_uri}
 
 ---
 
@@ -958,7 +958,7 @@ An object containing a
 list of"key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#parameters GoogleBiglakeDatabase#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#parameters GoogleBiglakeDatabase#parameters}
 
 ---
 
@@ -976,9 +976,9 @@ const googleBiglakeDatabaseTimeouts: googleBiglakeDatabase.GoogleBiglakeDatabase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#create GoogleBiglakeDatabase#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#delete GoogleBiglakeDatabase#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#update GoogleBiglakeDatabase#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#create GoogleBiglakeDatabase#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#delete GoogleBiglakeDatabase#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#update GoogleBiglakeDatabase#update}. |
 
 ---
 
@@ -990,7 +990,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#create GoogleBiglakeDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#create GoogleBiglakeDatabase#create}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#delete GoogleBiglakeDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#delete GoogleBiglakeDatabase#delete}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_biglake_database#update GoogleBiglakeDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_biglake_database#update GoogleBiglakeDatabase#update}.
 
 ---
 

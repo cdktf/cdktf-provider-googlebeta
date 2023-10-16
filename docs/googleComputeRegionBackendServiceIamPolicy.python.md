@@ -1,6 +1,6 @@
 # `google_compute_region_backend_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_compute_region_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy).
+Refer to the Terraform Registory for docs: [`google_compute_region_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy).
 
 # `googleComputeRegionBackendServiceIamPolicy` Submodule <a name="`googleComputeRegionBackendServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_region_backend_servi
 
 ### GoogleComputeRegionBackendServiceIamPolicy <a name="GoogleComputeRegionBackendServiceIamPolicy" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy google_compute_region_backend_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy google_compute_region_backend_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer"></a>
 
@@ -44,11 +44,11 @@ googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamP
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}.
 
 ---
 
@@ -822,11 +822,11 @@ googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamP
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}. |
 
 ---
 
@@ -908,7 +908,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#name GoogleComputeRegionBackendServiceIamPolicy#name}.
 
 ---
 
@@ -920,7 +920,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#policy_data GoogleComputeRegionBackendServiceIamPolicy#policy_data}.
 
 ---
 
@@ -932,7 +932,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#id GoogleComputeRegionBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#project GoogleComputeRegionBackendServiceIamPolicy#project}.
 
 ---
 
@@ -959,7 +959,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_backend_service_iam_policy#region GoogleComputeRegionBackendServiceIamPolicy#region}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleDataplexLakeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. Description of the lake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#description GoogleDataplexLake#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#description GoogleDataplexLake#description}
   */
   readonly description?: string;
   /**
   * Optional. User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,37 +32,37 @@ export interface GoogleDataplexLakeConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field `effective_labels` for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#labels GoogleDataplexLake#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#labels GoogleDataplexLake#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#location GoogleDataplexLake#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#location GoogleDataplexLake#location}
   */
   readonly location: string;
   /**
   * The name of the lake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#name GoogleDataplexLake#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#name GoogleDataplexLake#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#project GoogleDataplexLake#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#project GoogleDataplexLake#project}
   */
   readonly project?: string;
   /**
   * metastore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
   */
   readonly metastore?: GoogleDataplexLakeMetastore;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
   */
   readonly timeouts?: GoogleDataplexLakeTimeouts;
 }
@@ -228,7 +223,7 @@ export interface GoogleDataplexLakeMetastore {
   /**
   * Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: `projects/{project_id}/locations/{location_id}/services/{service_id}`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#service GoogleDataplexLake#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#service GoogleDataplexLake#service}
   */
   readonly service?: string;
 }
@@ -293,15 +288,15 @@ export class GoogleDataplexLakeMetastoreOutputReference extends cdktf.ComplexObj
 }
 export interface GoogleDataplexLakeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}
   */
   readonly update?: string;
 }
@@ -422,7 +417,7 @@ export class GoogleDataplexLakeTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake google_dataplex_lake}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake google_dataplex_lake}
 */
 export class GoogleDataplexLake extends cdktf.TerraformResource {
 
@@ -436,7 +431,7 @@ export class GoogleDataplexLake extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -447,7 +442,7 @@ export class GoogleDataplexLake extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_lake',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

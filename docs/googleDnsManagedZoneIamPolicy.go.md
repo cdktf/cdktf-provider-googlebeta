@@ -1,6 +1,6 @@
 # `google_dns_managed_zone_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_dns_managed_zone_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy).
+Refer to the Terraform Registory for docs: [`google_dns_managed_zone_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy).
 
 # `googleDnsManagedZoneIamPolicy` Submodule <a name="`googleDnsManagedZoneIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_dns_managed_zone_iam_policy`
 
 ### GoogleDnsManagedZoneIamPolicy <a name="GoogleDnsManagedZoneIamPolicy" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzoneiampolicy"
 
 googlednsmanagedzoneiampolicy.NewGoogleDnsManagedZoneIamPolicy(scope Construct, id *string, config GoogleDnsManagedZoneIamPolicyConfig) GoogleDnsManagedZoneIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzoneiampolicy"
 
 googlednsmanagedzoneiampolicy.GoogleDnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzoneiampolicy"
 
 googlednsmanagedzoneiampolicy.GoogleDnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googlednsmanagedzoneiampolicy.GoogleDnsManagedZoneIamPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzoneiampolicy"
 
 googlednsmanagedzoneiampolicy.GoogleDnsManagedZoneIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzoneiampolicy"
 
 &googlednsmanagedzoneiampolicy.GoogleDnsManagedZoneIamPolicyConfig {
 	Connection: interface{},
@@ -656,10 +656,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsma
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.managedZone">ManagedZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.managedZone">ManagedZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
 
 ---
 
@@ -741,7 +741,7 @@ ManagedZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
 
 ---
 
@@ -753,7 +753,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
 
 ---
 
@@ -765,7 +765,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
 
 ---
 

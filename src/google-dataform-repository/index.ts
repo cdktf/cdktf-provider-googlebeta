@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#id GoogleDataformRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#id GoogleDataformRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,59 +17,163 @@ export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArgum
   /**
   * The repository's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#name GoogleDataformRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#name GoogleDataformRepository#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#project GoogleDataformRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#project GoogleDataformRepository#project}
   */
   readonly project?: string;
   /**
   * A reference to the region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#region GoogleDataformRepository#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#region GoogleDataformRepository#region}
   */
   readonly region?: string;
   /**
+  * The service account to run workflow invocations under.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#service_account GoogleDataformRepository#service_account}
+  */
+  readonly serviceAccount?: string;
+  /**
   * git_remote_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#git_remote_settings GoogleDataformRepository#git_remote_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#git_remote_settings GoogleDataformRepository#git_remote_settings}
   */
   readonly gitRemoteSettings?: GoogleDataformRepositoryGitRemoteSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#timeouts GoogleDataformRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#timeouts GoogleDataformRepository#timeouts}
   */
   readonly timeouts?: GoogleDataformRepositoryTimeouts;
   /**
   * workspace_compilation_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#workspace_compilation_overrides GoogleDataformRepository#workspace_compilation_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#workspace_compilation_overrides GoogleDataformRepository#workspace_compilation_overrides}
   */
   readonly workspaceCompilationOverrides?: GoogleDataformRepositoryWorkspaceCompilationOverrides;
 }
-export interface GoogleDataformRepositoryGitRemoteSettings {
+export interface GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig {
   /**
-  * The name of the Secret Manager secret version to use as an authentication token for Git operations. Must be in the format projects/* /secrets/* /versions/*.
+  * Content of a public SSH key to verify an identity of a remote Git host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#host_public_key GoogleDataformRepository#host_public_key}
+  */
+  readonly hostPublicKey: string;
+  /**
+  * The name of the Secret Manager secret version to use as a ssh private key for Git operations. Must be in the format projects/* /secrets/* /versions/*.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#user_private_key_secret_version GoogleDataformRepository#user_private_key_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
-  readonly authenticationTokenSecretVersion: string;
+  readonly userPrivateKeySecretVersion: string;
+}
+
+export function googleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigToTerraform(struct?: GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference | GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    host_public_key: cdktf.stringToTerraform(struct!.hostPublicKey),
+    user_private_key_secret_version: cdktf.stringToTerraform(struct!.userPrivateKeySecretVersion),
+  }
+}
+
+export class GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostPublicKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostPublicKey = this._hostPublicKey;
+    }
+    if (this._userPrivateKeySecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userPrivateKeySecretVersion = this._userPrivateKeySecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostPublicKey = undefined;
+      this._userPrivateKeySecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostPublicKey = value.hostPublicKey;
+      this._userPrivateKeySecretVersion = value.userPrivateKeySecretVersion;
+    }
+  }
+
+  // host_public_key - computed: false, optional: false, required: true
+  private _hostPublicKey?: string; 
+  public get hostPublicKey() {
+    return this.getStringAttribute('host_public_key');
+  }
+  public set hostPublicKey(value: string) {
+    this._hostPublicKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostPublicKeyInput() {
+    return this._hostPublicKey;
+  }
+
+  // user_private_key_secret_version - computed: false, optional: false, required: true
+  private _userPrivateKeySecretVersion?: string; 
+  public get userPrivateKeySecretVersion() {
+    return this.getStringAttribute('user_private_key_secret_version');
+  }
+  public set userPrivateKeySecretVersion(value: string) {
+    this._userPrivateKeySecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userPrivateKeySecretVersionInput() {
+    return this._userPrivateKeySecretVersion;
+  }
+}
+export interface GoogleDataformRepositoryGitRemoteSettings {
+  /**
+  * The name of the Secret Manager secret version to use as an authentication token for Git operations. This secret is for assigning with HTTPS only(for SSH use 'ssh_authentication_config'). Must be in the format projects/* /secrets/* /versions/*.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly authenticationTokenSecretVersion?: string;
   /**
   * The Git remote's default branch name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#default_branch GoogleDataformRepository#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#default_branch GoogleDataformRepository#default_branch}
   */
   readonly defaultBranch: string;
   /**
   * The Git remote's URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#url GoogleDataformRepository#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#url GoogleDataformRepository#url}
   */
   readonly url: string;
+  /**
+  * ssh_authentication_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#ssh_authentication_config GoogleDataformRepository#ssh_authentication_config}
+  */
+  readonly sshAuthenticationConfig?: GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig;
 }
 
 export function googleDataformRepositoryGitRemoteSettingsToTerraform(struct?: GoogleDataformRepositoryGitRemoteSettingsOutputReference | GoogleDataformRepositoryGitRemoteSettings): any {
@@ -86,6 +185,7 @@ export function googleDataformRepositoryGitRemoteSettingsToTerraform(struct?: Go
     authentication_token_secret_version: cdktf.stringToTerraform(struct!.authenticationTokenSecretVersion),
     default_branch: cdktf.stringToTerraform(struct!.defaultBranch),
     url: cdktf.stringToTerraform(struct!.url),
+    ssh_authentication_config: googleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigToTerraform(struct!.sshAuthenticationConfig),
   }
 }
 
@@ -115,6 +215,10 @@ export class GoogleDataformRepositoryGitRemoteSettingsOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
+    if (this._sshAuthenticationConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sshAuthenticationConfig = this._sshAuthenticationConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -124,22 +228,27 @@ export class GoogleDataformRepositoryGitRemoteSettingsOutputReference extends cd
       this._authenticationTokenSecretVersion = undefined;
       this._defaultBranch = undefined;
       this._url = undefined;
+      this._sshAuthenticationConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._authenticationTokenSecretVersion = value.authenticationTokenSecretVersion;
       this._defaultBranch = value.defaultBranch;
       this._url = value.url;
+      this._sshAuthenticationConfig.internalValue = value.sshAuthenticationConfig;
     }
   }
 
-  // authentication_token_secret_version - computed: false, optional: false, required: true
+  // authentication_token_secret_version - computed: false, optional: true, required: false
   private _authenticationTokenSecretVersion?: string; 
   public get authenticationTokenSecretVersion() {
     return this.getStringAttribute('authentication_token_secret_version');
   }
   public set authenticationTokenSecretVersion(value: string) {
     this._authenticationTokenSecretVersion = value;
+  }
+  public resetAuthenticationTokenSecretVersion() {
+    this._authenticationTokenSecretVersion = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get authenticationTokenSecretVersionInput() {
@@ -176,18 +285,34 @@ export class GoogleDataformRepositoryGitRemoteSettingsOutputReference extends cd
   public get urlInput() {
     return this._url;
   }
+
+  // ssh_authentication_config - computed: false, optional: true, required: false
+  private _sshAuthenticationConfig = new GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference(this, "ssh_authentication_config");
+  public get sshAuthenticationConfig() {
+    return this._sshAuthenticationConfig;
+  }
+  public putSshAuthenticationConfig(value: GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig) {
+    this._sshAuthenticationConfig.internalValue = value;
+  }
+  public resetSshAuthenticationConfig() {
+    this._sshAuthenticationConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshAuthenticationConfigInput() {
+    return this._sshAuthenticationConfig.internalValue;
+  }
 }
 export interface GoogleDataformRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#create GoogleDataformRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#create GoogleDataformRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#delete GoogleDataformRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#delete GoogleDataformRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#update GoogleDataformRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#update GoogleDataformRepository#update}
   */
   readonly update?: string;
 }
@@ -308,21 +433,21 @@ export class GoogleDataformRepositoryTimeoutsOutputReference extends cdktf.Compl
 }
 export interface GoogleDataformRepositoryWorkspaceCompilationOverrides {
   /**
-  * Optional. The default database (Google Cloud project ID).
+  * The default database (Google Cloud project ID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#default_database GoogleDataformRepository#default_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#default_database GoogleDataformRepository#default_database}
   */
   readonly defaultDatabase?: string;
   /**
-  * Optional. The suffix that should be appended to all schema (BigQuery dataset ID) names.
+  * The suffix that should be appended to all schema (BigQuery dataset ID) names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#schema_suffix GoogleDataformRepository#schema_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#schema_suffix GoogleDataformRepository#schema_suffix}
   */
   readonly schemaSuffix?: string;
   /**
-  * Optional. The prefix that should be prepended to all table names.
+  * The prefix that should be prepended to all table names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository#table_prefix GoogleDataformRepository#table_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository#table_prefix GoogleDataformRepository#table_prefix}
   */
   readonly tablePrefix?: string;
 }
@@ -433,7 +558,7 @@ export class GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReferenc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository google_dataform_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository google_dataform_repository}
 */
 export class GoogleDataformRepository extends cdktf.TerraformResource {
 
@@ -447,7 +572,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataform_repository google_dataform_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataform_repository google_dataform_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -458,7 +583,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataform_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -473,6 +598,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._region = config.region;
+    this._serviceAccount = config.serviceAccount;
     this._gitRemoteSettings.internalValue = config.gitRemoteSettings;
     this._timeouts.internalValue = config.timeouts;
     this._workspaceCompilationOverrides.internalValue = config.workspaceCompilationOverrides;
@@ -543,6 +669,22 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
     return this._region;
   }
 
+  // service_account - computed: false, optional: true, required: false
+  private _serviceAccount?: string; 
+  public get serviceAccount() {
+    return this.getStringAttribute('service_account');
+  }
+  public set serviceAccount(value: string) {
+    this._serviceAccount = value;
+  }
+  public resetServiceAccount() {
+    this._serviceAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountInput() {
+    return this._serviceAccount;
+  }
+
   // git_remote_settings - computed: false, optional: true, required: false
   private _gitRemoteSettings = new GoogleDataformRepositoryGitRemoteSettingsOutputReference(this, "git_remote_settings");
   public get gitRemoteSettings() {
@@ -601,6 +743,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
+      service_account: cdktf.stringToTerraform(this._serviceAccount),
       git_remote_settings: googleDataformRepositoryGitRemoteSettingsToTerraform(this._gitRemoteSettings.internalValue),
       timeouts: googleDataformRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
       workspace_compilation_overrides: googleDataformRepositoryWorkspaceCompilationOverridesToTerraform(this._workspaceCompilationOverrides.internalValue),

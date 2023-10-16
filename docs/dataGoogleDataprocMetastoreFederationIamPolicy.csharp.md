@@ -1,6 +1,6 @@
 # `data_google_dataproc_metastore_federation_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_dataproc_metastore_federation_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy).
+Refer to the Terraform Registory for docs: [`data_google_dataproc_metastore_federation_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy).
 
 # `dataGoogleDataprocMetastoreFederationIamPolicy` Submodule <a name="`dataGoogleDataprocMetastoreFederationIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_dataproc_metastore_fede
 
 ### DataGoogleDataprocMetastoreFederationIamPolicy <a name="DataGoogleDataprocMetastoreFederationIamPolicy" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.Initializer"></a>
 
@@ -652,10 +652,10 @@ new DataGoogleDataprocMetastoreFederationIamPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.federationId">FederationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#federation_id DataGoogleDataprocMetastoreFederationIamPolicy#federation_id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#id DataGoogleDataprocMetastoreFederationIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#location DataGoogleDataprocMetastoreFederationIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#project DataGoogleDataprocMetastoreFederationIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.federationId">FederationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#federation_id DataGoogleDataprocMetastoreFederationIamPolicy#federation_id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#id DataGoogleDataprocMetastoreFederationIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#location DataGoogleDataprocMetastoreFederationIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#project DataGoogleDataprocMetastoreFederationIamPolicy#project}. |
 
 ---
 
@@ -737,7 +737,7 @@ public string FederationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#federation_id DataGoogleDataprocMetastoreFederationIamPolicy#federation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#federation_id DataGoogleDataprocMetastoreFederationIamPolicy#federation_id}.
 
 ---
 
@@ -749,7 +749,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#id DataGoogleDataprocMetastoreFederationIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#id DataGoogleDataprocMetastoreFederationIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -764,7 +764,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#location DataGoogleDataprocMetastoreFederationIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#location DataGoogleDataprocMetastoreFederationIamPolicy#location}.
 
 ---
 
@@ -776,7 +776,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#project DataGoogleDataprocMetastoreFederationIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_dataproc_metastore_federation_iam_policy#project DataGoogleDataprocMetastoreFederationIamPolicy#project}.
 
 ---
 

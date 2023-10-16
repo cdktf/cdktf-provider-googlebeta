@@ -1,6 +1,6 @@
 # `data_google_service_directory_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_service_directory_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy).
+Refer to the Terraform Registory for docs: [`data_google_service_directory_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy).
 
 # `dataGoogleServiceDirectoryServiceIamPolicy` Submodule <a name="`dataGoogleServiceDirectoryServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_service_directory_servi
 
 ### DataGoogleServiceDirectoryServiceIamPolicy <a name="DataGoogleServiceDirectoryServiceIamPolicy" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy google_service_directory_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy google_service_directory_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleservicedirectoryserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectoryserviceiampolicy"
 
 datagoogleservicedirectoryserviceiampolicy.NewDataGoogleServiceDirectoryServiceIamPolicy(scope Construct, id *string, config DataGoogleServiceDirectoryServiceIamPolicyConfig) DataGoogleServiceDirectoryServiceIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleservicedirectoryserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectoryserviceiampolicy"
 
 datagoogleservicedirectoryserviceiampolicy.DataGoogleServiceDirectoryServiceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleservicedirectoryserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectoryserviceiampolicy"
 
 datagoogleservicedirectoryserviceiampolicy.DataGoogleServiceDirectoryServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagoogleservicedirectoryserviceiampolicy.DataGoogleServiceDirectoryServiceIamP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleservicedirectoryserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectoryserviceiampolicy"
 
 datagoogleservicedirectoryserviceiampolicy.DataGoogleServiceDirectoryServiceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleservicedirectoryserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectoryserviceiampolicy"
 
 &datagoogleservicedirectoryserviceiampolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig {
 	Connection: interface{},
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogles
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy#name DataGoogleServiceDirectoryServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy#id DataGoogleServiceDirectoryServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy#name DataGoogleServiceDirectoryServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleServiceDirectoryServiceIamPolicy.DataGoogleServiceDirectoryServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy#id DataGoogleServiceDirectoryServiceIamPolicy#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy#name DataGoogleServiceDirectoryServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy#name DataGoogleServiceDirectoryServiceIamPolicy#name}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_service_directory_service_iam_policy#id DataGoogleServiceDirectoryServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_service_directory_service_iam_policy#id DataGoogleServiceDirectoryServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

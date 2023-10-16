@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,17 +15,17 @@ export interface GoogleSecretManagerSecretVersionConfig extends cdktf.TerraformM
   *   * DISABLE
   *   * ABANDON
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#deletion_policy GoogleSecretManagerSecretVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#deletion_policy GoogleSecretManagerSecretVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The current state of the SecretVersion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#enabled GoogleSecretManagerSecretVersion#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#enabled GoogleSecretManagerSecretVersion#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#id GoogleSecretManagerSecretVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#id GoogleSecretManagerSecretVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,35 +34,35 @@ export interface GoogleSecretManagerSecretVersionConfig extends cdktf.TerraformM
   /**
   * If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#is_secret_data_base64 GoogleSecretManagerSecretVersion#is_secret_data_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#is_secret_data_base64 GoogleSecretManagerSecretVersion#is_secret_data_base64}
   */
   readonly isSecretDataBase64?: boolean | cdktf.IResolvable;
   /**
   * Secret Manager secret resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#secret GoogleSecretManagerSecretVersion#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#secret GoogleSecretManagerSecretVersion#secret}
   */
   readonly secret: string;
   /**
   * The secret data. Must be no larger than 64KiB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#secret_data GoogleSecretManagerSecretVersion#secret_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#secret_data GoogleSecretManagerSecretVersion#secret_data}
   */
   readonly secretData: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#timeouts GoogleSecretManagerSecretVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#timeouts GoogleSecretManagerSecretVersion#timeouts}
   */
   readonly timeouts?: GoogleSecretManagerSecretVersionTimeouts;
 }
 export interface GoogleSecretManagerSecretVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#create GoogleSecretManagerSecretVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#create GoogleSecretManagerSecretVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version#delete GoogleSecretManagerSecretVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version#delete GoogleSecretManagerSecretVersion#delete}
   */
   readonly delete?: string;
 }
@@ -165,7 +160,7 @@ export class GoogleSecretManagerSecretVersionTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version}
 */
 export class GoogleSecretManagerSecretVersion extends cdktf.TerraformResource {
 
@@ -179,7 +174,7 @@ export class GoogleSecretManagerSecretVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +185,7 @@ export class GoogleSecretManagerSecretVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_secret_manager_secret_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

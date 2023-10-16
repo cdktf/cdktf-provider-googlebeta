@@ -1,6 +1,6 @@
 # `google_artifact_registry_vpcsc_config`
 
-Refer to the Terraform Registory for docs: [`google_artifact_registry_vpcsc_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config).
+Refer to the Terraform Registory for docs: [`google_artifact_registry_vpcsc_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config).
 
 # `googleArtifactRegistryVpcscConfig` Submodule <a name="`googleArtifactRegistryVpcscConfig` Submodule" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_artifact_registry_vpcsc_conf
 
 ### GoogleArtifactRegistryVpcscConfig <a name="GoogleArtifactRegistryVpcscConfig" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.Initializer"></a>
 
@@ -713,9 +713,9 @@ new GoogleArtifactRegistryVpcscConfigConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#id GoogleArtifactRegistryVpcscConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#id GoogleArtifactRegistryVpcscConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.location">Location</a></code> | <code>string</code> | The name of the location this config is located in. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#project GoogleArtifactRegistryVpcscConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#project GoogleArtifactRegistryVpcscConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts">GoogleArtifactRegistryVpcscConfigTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.property.vpcscPolicy">VpcscPolicy</a></code> | <code>string</code> | The VPC SC policy for project and location. Possible values: ["DENY", "ALLOW"]. |
 
@@ -799,7 +799,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#id GoogleArtifactRegistryVpcscConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#id GoogleArtifactRegistryVpcscConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ public string Location { get; set; }
 
 The name of the location this config is located in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#location GoogleArtifactRegistryVpcscConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#location GoogleArtifactRegistryVpcscConfig#location}
 
 ---
 
@@ -828,7 +828,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#project GoogleArtifactRegistryVpcscConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#project GoogleArtifactRegistryVpcscConfig#project}.
 
 ---
 
@@ -842,7 +842,7 @@ public GoogleArtifactRegistryVpcscConfigTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#timeouts GoogleArtifactRegistryVpcscConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#timeouts GoogleArtifactRegistryVpcscConfig#timeouts}
 
 ---
 
@@ -856,7 +856,7 @@ public string VpcscPolicy { get; set; }
 
 The VPC SC policy for project and location. Possible values: ["DENY", "ALLOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#vpcsc_policy GoogleArtifactRegistryVpcscConfig#vpcsc_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#vpcsc_policy GoogleArtifactRegistryVpcscConfig#vpcsc_policy}
 
 ---
 
@@ -878,9 +878,9 @@ new GoogleArtifactRegistryVpcscConfigTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#create GoogleArtifactRegistryVpcscConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#delete GoogleArtifactRegistryVpcscConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#update GoogleArtifactRegistryVpcscConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#create GoogleArtifactRegistryVpcscConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#delete GoogleArtifactRegistryVpcscConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#update GoogleArtifactRegistryVpcscConfig#update}. |
 
 ---
 
@@ -892,7 +892,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#create GoogleArtifactRegistryVpcscConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#create GoogleArtifactRegistryVpcscConfig#create}.
 
 ---
 
@@ -904,7 +904,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#delete GoogleArtifactRegistryVpcscConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#delete GoogleArtifactRegistryVpcscConfig#delete}.
 
 ---
 
@@ -916,7 +916,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config#update GoogleArtifactRegistryVpcscConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_artifact_registry_vpcsc_config#update GoogleArtifactRegistryVpcscConfig#update}.
 
 ---
 

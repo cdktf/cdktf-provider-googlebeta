@@ -1,6 +1,6 @@
 # `google_vmwareengine_cluster`
 
-Refer to the Terraform Registory for docs: [`google_vmwareengine_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster).
+Refer to the Terraform Registory for docs: [`google_vmwareengine_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster).
 
 # `googleVmwareengineCluster` Submodule <a name="`googleVmwareengineCluster` Submodule" id="@cdktf/provider-google-beta.googleVmwareengineCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_vmwareengine_cluster`](https
 
 ### GoogleVmwareengineCluster <a name="GoogleVmwareengineCluster" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineCluster(scope Construct, id *string, config GoogleVmwareengineClusterConfig) GoogleVmwareengineCluster
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwar
 	Parent: *string,
 	Id: *string,
 	NodeTypeConfigs: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
 }
 ```
 
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwar
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the Cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.parent">Parent</a></code> | <code>*string</code> | The resource name of the private cloud to create a new cluster in. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#id GoogleVmwareengineCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#id GoogleVmwareengineCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.nodeTypeConfigs">NodeTypeConfigs</a></code> | <code>interface{}</code> | node_type_configs block. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts">GoogleVmwareengineClusterTimeouts</a></code> | timeouts block. |
 
@@ -822,7 +822,7 @@ Name *string
 
 The ID of the Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#name GoogleVmwareengineCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#name GoogleVmwareengineCluster#name}
 
 ---
 
@@ -839,7 +839,7 @@ The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#parent GoogleVmwareengineCluster#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#parent GoogleVmwareengineCluster#parent}
 
 ---
 
@@ -851,7 +851,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#id GoogleVmwareengineCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#id GoogleVmwareengineCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -868,7 +868,7 @@ NodeTypeConfigs interface{}
 
 node_type_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#node_type_configs GoogleVmwareengineCluster#node_type_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#node_type_configs GoogleVmwareengineCluster#node_type_configs}
 
 ---
 
@@ -882,7 +882,7 @@ Timeouts GoogleVmwareengineClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#timeouts GoogleVmwareengineCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#timeouts GoogleVmwareengineCluster#timeouts}
 
 ---
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterNodeTypeConfigs {
 	NodeCount: *f64,
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwar
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | The number of nodes of this type in the cluster. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#node_type_id GoogleVmwareengineCluster#node_type_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#node_type_id GoogleVmwareengineCluster#node_type_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.property.customCoreCount">CustomCoreCount</a></code> | <code>*f64</code> | Customized number of cores available to each node of the type. |
 
 ---
@@ -920,7 +920,7 @@ NodeCount *f64
 
 The number of nodes of this type in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#node_count GoogleVmwareengineCluster#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#node_count GoogleVmwareengineCluster#node_count}
 
 ---
 
@@ -932,7 +932,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#node_type_id GoogleVmwareengineCluster#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#node_type_id GoogleVmwareengineCluster#node_type_id}.
 
 ---
 
@@ -950,7 +950,7 @@ This number must always be one of 'nodeType.availableCustomCoreCounts'.
 If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
 Once the customer is created then corecount cannot be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#custom_core_count GoogleVmwareengineCluster#custom_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#custom_core_count GoogleVmwareengineCluster#custom_core_count}
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterTimeouts {
 	Create: *string,
@@ -972,9 +972,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#create GoogleVmwareengineCluster#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#delete GoogleVmwareengineCluster#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#update GoogleVmwareengineCluster#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#create GoogleVmwareengineCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#delete GoogleVmwareengineCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#update GoogleVmwareengineCluster#update}. |
 
 ---
 
@@ -986,7 +986,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#create GoogleVmwareengineCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#create GoogleVmwareengineCluster#create}.
 
 ---
 
@@ -998,7 +998,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#delete GoogleVmwareengineCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#delete GoogleVmwareengineCluster#delete}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_vmwareengine_cluster#update GoogleVmwareengineCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_vmwareengine_cluster#update GoogleVmwareengineCluster#update}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareengineClusterNodeTypeConfigsList
 ```
@@ -1164,7 +1164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareengineClusterNodeTypeConfigsOutputReference
 ```
@@ -1504,7 +1504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `data_google_vmwareengine_cluster`
 
-Refer to the Terraform Registory for docs: [`data_google_vmwareengine_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster).
+Refer to the Terraform Registory for docs: [`data_google_vmwareengine_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster).
 
 # `dataGoogleVmwareengineCluster` Submodule <a name="`dataGoogleVmwareengineCluster` Submodule" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_vmwareengine_cluster`](
 
 ### DataGoogleVmwareengineCluster <a name="DataGoogleVmwareengineCluster" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.NewDataGoogleVmwareengineCluster(scope Construct, id *string, config DataGoogleVmwareengineClusterConfig) DataGoogleVmwareengineCluster
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.DataGoogleVmwareengineCluster_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.DataGoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagooglevmwareenginecluster.DataGoogleVmwareengineCluster_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.DataGoogleVmwareengineCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 &datagooglevmwareenginecluster.DataGoogleVmwareengineClusterConfig {
 	Connection: interface{},
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglev
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the Cluster. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.parent">Parent</a></code> | <code>*string</code> | The resource name of the private cloud to create a new cluster in. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ Name *string
 
 The ID of the Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
 
 ---
 
@@ -740,7 +740,7 @@ The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
 
 ---
 
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -764,7 +764,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 &datagooglevmwareenginecluster.DataGoogleVmwareengineClusterNodeTypeConfigs {
 
@@ -779,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglev
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.NewDataGoogleVmwareengineClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineClusterNodeTypeConfigsList
 ```
@@ -911,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginecluster"
 
 datagooglevmwareenginecluster.NewDataGoogleVmwareengineClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineClusterNodeTypeConfigsOutputReference
 ```

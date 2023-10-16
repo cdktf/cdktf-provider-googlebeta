@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMet
   /**
   * The intended database state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#desired_state GoogleFirebaseDatabaseInstance#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#desired_state GoogleFirebaseDatabaseInstance#desired_state}
   */
   readonly desiredState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#id GoogleFirebaseDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#id GoogleFirebaseDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,18 +24,18 @@ export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMet
   * The globally unique identifier of the Firebase Realtime Database instance.
   * Instance IDs cannot be reused after deletion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#instance_id GoogleFirebaseDatabaseInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#instance_id GoogleFirebaseDatabaseInstance#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#project GoogleFirebaseDatabaseInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#project GoogleFirebaseDatabaseInstance#project}
   */
   readonly project?: string;
   /**
   * A reference to the region where the Firebase Realtime database resides.
   * Check all [available regions](https://firebase.google.com/docs/projects/locations#rtdb-locations)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#region GoogleFirebaseDatabaseInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#region GoogleFirebaseDatabaseInstance#region}
   */
   readonly region: string;
   /**
@@ -49,27 +44,27 @@ export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMet
   * Creating user Databases is only available for projects on the Blaze plan.
   * Projects can be upgraded using the Cloud Billing API https://cloud.google.com/billing/reference/rest/v1/projects/updateBillingInfo. Default value: "USER_DATABASE" Possible values: ["DEFAULT_DATABASE", "USER_DATABASE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#type GoogleFirebaseDatabaseInstance#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#type GoogleFirebaseDatabaseInstance#type}
   */
   readonly type?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#timeouts GoogleFirebaseDatabaseInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#timeouts GoogleFirebaseDatabaseInstance#timeouts}
   */
   readonly timeouts?: GoogleFirebaseDatabaseInstanceTimeouts;
 }
 export interface GoogleFirebaseDatabaseInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#create GoogleFirebaseDatabaseInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#create GoogleFirebaseDatabaseInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#delete GoogleFirebaseDatabaseInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#delete GoogleFirebaseDatabaseInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance#update GoogleFirebaseDatabaseInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance#update GoogleFirebaseDatabaseInstance#update}
   */
   readonly update?: string;
 }
@@ -190,7 +185,7 @@ export class GoogleFirebaseDatabaseInstanceTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance google_firebase_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance google_firebase_database_instance}
 */
 export class GoogleFirebaseDatabaseInstance extends cdktf.TerraformResource {
 
@@ -204,7 +199,7 @@ export class GoogleFirebaseDatabaseInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -215,7 +210,7 @@ export class GoogleFirebaseDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
