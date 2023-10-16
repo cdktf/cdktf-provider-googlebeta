@@ -1,6 +1,6 @@
 # `google_dataplex_asset`
 
-Refer to the Terraform Registory for docs: [`google_dataplex_asset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset).
+Refer to the Terraform Registory for docs: [`google_dataplex_asset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset).
 
 # `googleDataplexAsset` Submodule <a name="`googleDataplexAsset` Submodule" id="@cdktf/provider-google-beta.googleDataplexAsset"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_dataplex_asset`](https://reg
 
 ### GoogleDataplexAsset <a name="GoogleDataplexAsset" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset google_dataplex_asset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset google_dataplex_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAsset(scope Construct, id *string, config GoogleDataplexAssetConfig) GoogleDataplexAsset
 ```
@@ -351,7 +351,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.GoogleDataplexAsset_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.GoogleDataplexAsset_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ googledataplexasset.GoogleDataplexAsset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.GoogleDataplexAsset_IsTerraformResource(x interface{}) *bool
 ```
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetConfig {
 	Connection: interface{},
@@ -970,17 +970,17 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DataplexZone: *string,
-	DiscoverySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataplexAsset.GoogleDataplexAssetDiscoverySpec,
+	DiscoverySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataplexAsset.GoogleDataplexAssetDiscoverySpec,
 	Lake: *string,
 	Location: *string,
 	Name: *string,
-	ResourceSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataplexAsset.GoogleDataplexAssetResourceSpec,
+	ResourceSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataplexAsset.GoogleDataplexAssetResourceSpec,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataplexAsset.GoogleDataplexAssetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataplexAsset.GoogleDataplexAssetTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.resourceSpec">ResourceSpec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpec">GoogleDataplexAssetResourceSpec</a></code> | resource_spec block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Description of the asset. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#id GoogleDataplexAsset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#id GoogleDataplexAsset#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. User defined labels for the asset. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts">GoogleDataplexAssetTimeouts</a></code> | timeouts block. |
@@ -1090,7 +1090,7 @@ DataplexZone *string
 
 The zone for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#dataplex_zone GoogleDataplexAsset#dataplex_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#dataplex_zone GoogleDataplexAsset#dataplex_zone}
 
 ---
 
@@ -1104,7 +1104,7 @@ DiscoverySpec GoogleDataplexAssetDiscoverySpec
 
 discovery_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#discovery_spec GoogleDataplexAsset#discovery_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#discovery_spec GoogleDataplexAsset#discovery_spec}
 
 ---
 
@@ -1118,7 +1118,7 @@ Lake *string
 
 The lake for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#lake GoogleDataplexAsset#lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#lake GoogleDataplexAsset#lake}
 
 ---
 
@@ -1132,7 +1132,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#location GoogleDataplexAsset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#location GoogleDataplexAsset#location}
 
 ---
 
@@ -1146,7 +1146,7 @@ Name *string
 
 The name of the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#name GoogleDataplexAsset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#name GoogleDataplexAsset#name}
 
 ---
 
@@ -1160,7 +1160,7 @@ ResourceSpec GoogleDataplexAssetResourceSpec
 
 resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#resource_spec GoogleDataplexAsset#resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#resource_spec GoogleDataplexAsset#resource_spec}
 
 ---
 
@@ -1174,7 +1174,7 @@ Description *string
 
 Optional. Description of the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#description GoogleDataplexAsset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#description GoogleDataplexAsset#description}
 
 ---
 
@@ -1188,7 +1188,7 @@ DisplayName *string
 
 Optional. User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#display_name GoogleDataplexAsset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#display_name GoogleDataplexAsset#display_name}
 
 ---
 
@@ -1200,7 +1200,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#id GoogleDataplexAsset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#id GoogleDataplexAsset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1220,7 @@ Optional. User defined labels for the asset.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#labels GoogleDataplexAsset#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#labels GoogleDataplexAsset#labels}
 
 ---
 
@@ -1234,7 +1234,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#project GoogleDataplexAsset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#project GoogleDataplexAsset#project}
 
 ---
 
@@ -1248,7 +1248,7 @@ Timeouts GoogleDataplexAssetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#timeouts GoogleDataplexAsset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#timeouts GoogleDataplexAsset#timeouts}
 
 ---
 
@@ -1257,14 +1257,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetDiscoverySpec {
 	Enabled: interface{},
-	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptions,
+	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptions,
 	ExcludePatterns: *[]*string,
 	IncludePatterns: *[]*string,
-	JsonOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptions,
+	JsonOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptions,
 	Schedule: *string,
 }
 ```
@@ -1292,7 +1292,7 @@ Enabled interface{}
 
 Required. Whether discovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#enabled GoogleDataplexAsset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#enabled GoogleDataplexAsset#enabled}
 
 ---
 
@@ -1306,7 +1306,7 @@ CsvOptions GoogleDataplexAssetDiscoverySpecCsvOptions
 
 csv_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#csv_options GoogleDataplexAsset#csv_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#csv_options GoogleDataplexAsset#csv_options}
 
 ---
 
@@ -1322,7 +1322,7 @@ Optional.
 
 The list of patterns to apply for selecting data to exclude during discovery. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#exclude_patterns GoogleDataplexAsset#exclude_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#exclude_patterns GoogleDataplexAsset#exclude_patterns}
 
 ---
 
@@ -1338,7 +1338,7 @@ Optional.
 
 The list of patterns to apply for selecting data to include during discovery if only a subset of the data should considered. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#include_patterns GoogleDataplexAsset#include_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#include_patterns GoogleDataplexAsset#include_patterns}
 
 ---
 
@@ -1352,7 +1352,7 @@ JsonOptions GoogleDataplexAssetDiscoverySpecJsonOptions
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#json_options GoogleDataplexAsset#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#json_options GoogleDataplexAsset#json_options}
 
 ---
 
@@ -1368,7 +1368,7 @@ Optional.
 
 Cron schedule (https://en.wikipedia.org/wiki/Cron) for running discovery periodically. Successive discovery runs must be scheduled at least 60 minutes apart. The default value is to run discovery every 60 minutes. To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: "CRON_TZ=${IANA_TIME_ZONE}" or TZ=${IANA_TIME_ZONE}". The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone database. For example, "CRON_TZ=America/New_York 1 * * * *", or "TZ=America/New_York 1 * * * *".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#schedule GoogleDataplexAsset#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#schedule GoogleDataplexAsset#schedule}
 
 ---
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetDiscoverySpecCsvOptions {
 	Delimiter: *string,
@@ -1408,7 +1408,7 @@ Delimiter *string
 
 Optional. The delimiter being used to separate values. This defaults to ','.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#delimiter GoogleDataplexAsset#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#delimiter GoogleDataplexAsset#delimiter}
 
 ---
 
@@ -1424,7 +1424,7 @@ Optional.
 
 Whether to disable the inference of data type for CSV data. If true, all columns will be registered as strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#disable_type_inference GoogleDataplexAsset#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#disable_type_inference GoogleDataplexAsset#disable_type_inference}
 
 ---
 
@@ -1438,7 +1438,7 @@ Encoding *string
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#encoding GoogleDataplexAsset#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#encoding GoogleDataplexAsset#encoding}
 
 ---
 
@@ -1452,7 +1452,7 @@ HeaderRows *f64
 
 Optional. The number of rows to interpret as header rows that should be skipped when reading data rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#header_rows GoogleDataplexAsset#header_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#header_rows GoogleDataplexAsset#header_rows}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetDiscoverySpecJsonOptions {
 	DisableTypeInference: interface{},
@@ -1490,7 +1490,7 @@ Optional.
 
 Whether to disable the inference of data type for Json data. If true, all columns will be registered as their primitive types (strings, number or boolean).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#disable_type_inference GoogleDataplexAsset#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#disable_type_inference GoogleDataplexAsset#disable_type_inference}
 
 ---
 
@@ -1504,7 +1504,7 @@ Encoding *string
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#encoding GoogleDataplexAsset#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#encoding GoogleDataplexAsset#encoding}
 
 ---
 
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetDiscoveryStatus {
 
@@ -1526,7 +1526,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusStats.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetDiscoveryStatusStats {
 
@@ -1539,7 +1539,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetResourceSpec {
 	Type: *string,
@@ -1568,7 +1568,7 @@ Type *string
 
 Required. Immutable. Type of resource. Possible values: STORAGE_BUCKET, BIGQUERY_DATASET.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#type GoogleDataplexAsset#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#type GoogleDataplexAsset#type}
 
 ---
 
@@ -1584,7 +1584,7 @@ Immutable.
 
 Relative name of the cloud resource that contains the data that is being managed within a lake. For example: `projects/{project_number}/buckets/{bucket_id}` `projects/{project_number}/datasets/{dataset_id}`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#name GoogleDataplexAsset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#name GoogleDataplexAsset#name}
 
 ---
 
@@ -1600,7 +1600,7 @@ Optional.
 
 Determines how read permissions are handled for each asset and their associated tables. Only available to storage buckets assets. Possible values: DIRECT, MANAGED
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#read_access_mode GoogleDataplexAsset#read_access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#read_access_mode GoogleDataplexAsset#read_access_mode}
 
 ---
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetResourceStatus {
 
@@ -1622,7 +1622,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetSecurityStatus {
 
@@ -1635,7 +1635,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 &googledataplexasset.GoogleDataplexAssetTimeouts {
 	Create: *string,
@@ -1648,9 +1648,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#create GoogleDataplexAsset#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#delete GoogleDataplexAsset#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#update GoogleDataplexAsset#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#create GoogleDataplexAsset#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#delete GoogleDataplexAsset#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#update GoogleDataplexAsset#update}. |
 
 ---
 
@@ -1662,7 +1662,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#create GoogleDataplexAsset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#create GoogleDataplexAsset#create}.
 
 ---
 
@@ -1674,7 +1674,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#delete GoogleDataplexAsset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#delete GoogleDataplexAsset#delete}.
 
 ---
 
@@ -1686,7 +1686,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_asset#update GoogleDataplexAsset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_asset#update GoogleDataplexAsset#update}.
 
 ---
 
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetDiscoverySpecCsvOptionsOutputReference
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() GoogleDataplexAssetDiscoverySpecCsvOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetDiscoverySpecJsonOptionsOutputReference
 ```
@@ -2369,7 +2369,7 @@ func InternalValue() GoogleDataplexAssetDiscoverySpecJsonOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoverySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoverySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetDiscoverySpecOutputReference
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() GoogleDataplexAssetDiscoverySpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoveryStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexAssetDiscoveryStatusList
 ```
@@ -2943,7 +2943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoveryStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexAssetDiscoveryStatusOutputReference
 ```
@@ -3276,7 +3276,7 @@ func InternalValue() GoogleDataplexAssetDiscoveryStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoveryStatusStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexAssetDiscoveryStatusStatsList
 ```
@@ -3408,7 +3408,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetDiscoveryStatusStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexAssetDiscoveryStatusStatsOutputReference
 ```
@@ -3719,7 +3719,7 @@ func InternalValue() GoogleDataplexAssetDiscoveryStatusStats
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetResourceSpecOutputReference
 ```
@@ -4048,7 +4048,7 @@ func InternalValue() GoogleDataplexAssetResourceSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetResourceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexAssetResourceStatusList
 ```
@@ -4180,7 +4180,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetResourceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetResourceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexAssetResourceStatusOutputReference
 ```
@@ -4480,7 +4480,7 @@ func InternalValue() GoogleDataplexAssetResourceStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetSecurityStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexAssetSecurityStatusList
 ```
@@ -4612,7 +4612,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetSecurityStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetSecurityStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexAssetSecurityStatusOutputReference
 ```
@@ -4912,7 +4912,7 @@ func InternalValue() GoogleDataplexAssetSecurityStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexasset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexasset"
 
 googledataplexasset.NewGoogleDataplexAssetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetTimeoutsOutputReference
 ```

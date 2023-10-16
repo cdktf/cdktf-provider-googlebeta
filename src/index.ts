@@ -26,6 +26,7 @@ export * as googleActiveDirectoryPeering from './google-active-directory-peering
 export * as googleAlloydbBackup from './google-alloydb-backup';
 export * as googleAlloydbCluster from './google-alloydb-cluster';
 export * as googleAlloydbInstance from './google-alloydb-instance';
+export * as googleAlloydbUser from './google-alloydb-user';
 export * as googleApiGatewayApi from './google-api-gateway-api';
 export * as googleApiGatewayApiConfig from './google-api-gateway-api-config';
 export * as googleApiGatewayApiConfigIamBinding from './google-api-gateway-api-config-iam-binding';
@@ -471,6 +472,7 @@ export * as googleFirebaseStorageBucket from './google-firebase-storage-bucket';
 export * as googleFirebaseWebApp from './google-firebase-web-app';
 export * as googleFirebaserulesRelease from './google-firebaserules-release';
 export * as googleFirebaserulesRuleset from './google-firebaserules-ruleset';
+export * as googleFirestoreBackupSchedule from './google-firestore-backup-schedule';
 export * as googleFirestoreDatabase from './google-firestore-database';
 export * as googleFirestoreDocument from './google-firestore-document';
 export * as googleFirestoreField from './google-firestore-field';
@@ -1018,6 +1020,7 @@ export * as dataGoogleSecretManagerSecret from './data-google-secret-manager-sec
 export * as dataGoogleSecretManagerSecretIamPolicy from './data-google-secret-manager-secret-iam-policy';
 export * as dataGoogleSecretManagerSecretVersion from './data-google-secret-manager-secret-version';
 export * as dataGoogleSecretManagerSecretVersionAccess from './data-google-secret-manager-secret-version-access';
+export * as dataGoogleSecretManagerSecrets from './data-google-secret-manager-secrets';
 export * as dataGoogleServiceAccount from './data-google-service-account';
 export * as dataGoogleServiceAccountAccessToken from './data-google-service-account-access-token';
 export * as dataGoogleServiceAccountIamPolicy from './data-google-service-account-iam-policy';

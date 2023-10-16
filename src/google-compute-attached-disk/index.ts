@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleComputeAttachedDiskConfig extends cdktf.TerraformMetaArgu
   /**
   * Specifies a unique device name of your choice that is reflected into the /dev/disk/by-id/google-* tree of a Linux operating system running within the instance. This name can be used to reference the device for mounting, resizing, and so on, from within the instance. If not specified, the server chooses a default device name to apply to this disk, in the form persistent-disks-x, where x is a number assigned by Google Compute Engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#device_name GoogleComputeAttachedDisk#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#device_name GoogleComputeAttachedDisk#device_name}
   */
   readonly deviceName?: string;
   /**
   * name or self_link of the disk that will be attached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#disk GoogleComputeAttachedDisk#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#disk GoogleComputeAttachedDisk#disk}
   */
   readonly disk: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#id GoogleComputeAttachedDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#id GoogleComputeAttachedDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,41 +34,41 @@ export interface GoogleComputeAttachedDiskConfig extends cdktf.TerraformMetaArgu
   /**
   * name or self_link of the compute instance that the disk will be attached to. If the self_link is provided then zone and project are extracted from the self link. If only the name is used then zone and project must be defined as properties on the resource or provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#instance GoogleComputeAttachedDisk#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#instance GoogleComputeAttachedDisk#instance}
   */
   readonly instance: string;
   /**
   * The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If not specified, the default is to attach the disk in READ_WRITE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#mode GoogleComputeAttachedDisk#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#mode GoogleComputeAttachedDisk#mode}
   */
   readonly mode?: string;
   /**
   * The project that the referenced compute instance is a part of. If instance is referenced by its self_link the project defined in the link will take precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#project GoogleComputeAttachedDisk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#project GoogleComputeAttachedDisk#project}
   */
   readonly project?: string;
   /**
   * The zone that the referenced compute instance is located within. If instance is referenced by its self_link the zone defined in the link will take precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#zone GoogleComputeAttachedDisk#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#zone GoogleComputeAttachedDisk#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#timeouts GoogleComputeAttachedDisk#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#timeouts GoogleComputeAttachedDisk#timeouts}
   */
   readonly timeouts?: GoogleComputeAttachedDiskTimeouts;
 }
 export interface GoogleComputeAttachedDiskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#create GoogleComputeAttachedDisk#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#create GoogleComputeAttachedDisk#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk#delete GoogleComputeAttachedDisk#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk#delete GoogleComputeAttachedDisk#delete}
   */
   readonly delete?: string;
 }
@@ -166,7 +166,7 @@ export class GoogleComputeAttachedDiskTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk google_compute_attached_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk google_compute_attached_disk}
 */
 export class GoogleComputeAttachedDisk extends cdktf.TerraformResource {
 
@@ -180,7 +180,7 @@ export class GoogleComputeAttachedDisk extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -191,7 +191,7 @@ export class GoogleComputeAttachedDisk extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_attached_disk',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

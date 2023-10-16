@@ -26,6 +26,7 @@ Object.defineProperty(exports, 'googleActiveDirectoryPeering', { get: function (
 Object.defineProperty(exports, 'googleAlloydbBackup', { get: function () { return require('./google-alloydb-backup'); } });
 Object.defineProperty(exports, 'googleAlloydbCluster', { get: function () { return require('./google-alloydb-cluster'); } });
 Object.defineProperty(exports, 'googleAlloydbInstance', { get: function () { return require('./google-alloydb-instance'); } });
+Object.defineProperty(exports, 'googleAlloydbUser', { get: function () { return require('./google-alloydb-user'); } });
 Object.defineProperty(exports, 'googleApiGatewayApi', { get: function () { return require('./google-api-gateway-api'); } });
 Object.defineProperty(exports, 'googleApiGatewayApiConfig', { get: function () { return require('./google-api-gateway-api-config'); } });
 Object.defineProperty(exports, 'googleApiGatewayApiConfigIamBinding', { get: function () { return require('./google-api-gateway-api-config-iam-binding'); } });
@@ -471,6 +472,7 @@ Object.defineProperty(exports, 'googleFirebaseStorageBucket', { get: function ()
 Object.defineProperty(exports, 'googleFirebaseWebApp', { get: function () { return require('./google-firebase-web-app'); } });
 Object.defineProperty(exports, 'googleFirebaserulesRelease', { get: function () { return require('./google-firebaserules-release'); } });
 Object.defineProperty(exports, 'googleFirebaserulesRuleset', { get: function () { return require('./google-firebaserules-ruleset'); } });
+Object.defineProperty(exports, 'googleFirestoreBackupSchedule', { get: function () { return require('./google-firestore-backup-schedule'); } });
 Object.defineProperty(exports, 'googleFirestoreDatabase', { get: function () { return require('./google-firestore-database'); } });
 Object.defineProperty(exports, 'googleFirestoreDocument', { get: function () { return require('./google-firestore-document'); } });
 Object.defineProperty(exports, 'googleFirestoreField', { get: function () { return require('./google-firestore-field'); } });
@@ -1018,6 +1020,7 @@ Object.defineProperty(exports, 'dataGoogleSecretManagerSecret', { get: function 
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecretIamPolicy', { get: function () { return require('./data-google-secret-manager-secret-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecretVersion', { get: function () { return require('./data-google-secret-manager-secret-version'); } });
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecretVersionAccess', { get: function () { return require('./data-google-secret-manager-secret-version-access'); } });
+Object.defineProperty(exports, 'dataGoogleSecretManagerSecrets', { get: function () { return require('./data-google-secret-manager-secrets'); } });
 Object.defineProperty(exports, 'dataGoogleServiceAccount', { get: function () { return require('./data-google-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleServiceAccountAccessToken', { get: function () { return require('./data-google-service-account-access-token'); } });
 Object.defineProperty(exports, 'dataGoogleServiceAccountIamPolicy', { get: function () { return require('./data-google-service-account-iam-policy'); } });
