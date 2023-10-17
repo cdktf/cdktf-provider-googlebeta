@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTarget(scope Construct, id *string, config GoogleClouddeployTargetConfig) GoogleClouddeployTarget
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.GoogleClouddeployTarget_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.GoogleClouddeployTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googleclouddeploytarget.GoogleClouddeployTarget_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.GoogleClouddeployTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -1102,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetAnthosCluster {
 	Membership: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetConfig {
 	Connection: interface{},
@@ -1149,18 +1149,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddepl
 	Location: *string,
 	Name: *string,
 	Annotations: *map[string]*string,
-	AnthosCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster,
+	AnthosCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster,
 	DeployParameters: *map[string]*string,
 	Description: *string,
 	ExecutionConfigs: interface{},
-	Gke: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployTarget.GoogleClouddeployTargetGke,
+	Gke: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleClouddeployTarget.GoogleClouddeployTargetGke,
 	Id: *string,
 	Labels: *map[string]*string,
-	MultiTarget: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget,
+	MultiTarget: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget,
 	Project: *string,
 	RequireApproval: interface{},
-	Run: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployTarget.GoogleClouddeployTargetRun,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployTarget.GoogleClouddeployTargetTimeouts,
+	Run: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleClouddeployTarget.GoogleClouddeployTargetRun,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleClouddeployTarget.GoogleClouddeployTargetTimeouts,
 }
 ```
 
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetExecutionConfigs {
 	Usages: *[]*string,
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGke.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetGke {
 	Cluster: *string,
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetMultiTarget {
 	TargetIds: *[]*string,
@@ -1679,7 +1679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetRun {
 	Location: *string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 &googleclouddeploytarget.GoogleClouddeployTargetTimeouts {
 	Create: *string,
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetAnthosClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetAnthosClusterOutputReference
 ```
@@ -2053,7 +2053,7 @@ func InternalValue() GoogleClouddeployTargetAnthosCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetExecutionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleClouddeployTargetExecutionConfigsList
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetExecutionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleClouddeployTargetExecutionConfigsOutputReference
 ```
@@ -2601,7 +2601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetGkeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetGkeOutputReference
 ```
@@ -2908,7 +2908,7 @@ func InternalValue() GoogleClouddeployTargetGke
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetMultiTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetMultiTargetOutputReference
 ```
@@ -3179,7 +3179,7 @@ func InternalValue() GoogleClouddeployTargetMultiTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetRunOutputReference
 ```
@@ -3450,7 +3450,7 @@ func InternalValue() GoogleClouddeployTargetRun
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploytarget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleclouddeploytarget"
 
 googleclouddeploytarget.NewGoogleClouddeployTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployTargetTimeoutsOutputReference
 ```

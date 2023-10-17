@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreService(scope Construct, id *string, config GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService
 ```
@@ -493,7 +493,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.GoogleDataprocMetastoreService_IsConstruct(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.GoogleDataprocMetastoreService_IsTerraformElement(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ googledataprocmetastoreservice.GoogleDataprocMetastoreService_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.GoogleDataprocMetastoreService_IsTerraformResource(x interface{}) *bool
 ```
@@ -1222,7 +1222,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceConfig {
 	Connection: interface{},
@@ -1234,22 +1234,22 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocm
 	Provisioners: *[]interface{},
 	ServiceId: *string,
 	DatabaseType: *string,
-	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceEncryptionConfig,
-	HiveMetastoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceEncryptionConfig,
+	HiveMetastoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfig,
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMaintenanceWindow,
-	MetadataIntegration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegration,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMaintenanceWindow,
+	MetadataIntegration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegration,
 	Network: *string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfig,
 	Port: *f64,
 	Project: *string,
 	ReleaseChannel: *string,
-	ScalingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceScalingConfig,
-	TelemetryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTelemetryConfig,
+	ScalingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceScalingConfig,
+	TelemetryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTelemetryConfig,
 	Tier: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTimeouts,
 }
 ```
 
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceEncryptionConfig {
 	KmsKey: *string,
@@ -1656,14 +1656,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceHiveMetastoreConfig {
 	Version: *string,
 	AuxiliaryVersions: interface{},
 	ConfigOverrides: *map[string]*string,
 	EndpointProtocol: *string,
-	KerberosConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig,
+	KerberosConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig,
 }
 ```
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions {
 	Key: *string,
@@ -1820,10 +1820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig {
-	Keytab: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab,
+	Keytab: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab,
 	Krb5ConfigGcsUri: *string,
 	Principal: *string,
 }
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab {
 	CloudSecret: *string,
@@ -1924,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceMaintenanceWindow {
 	DayOfWeek: *string,
@@ -1974,10 +1974,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceMetadataIntegration {
-	DataCatalogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig,
+	DataCatalogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig,
 }
 ```
 
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig {
 	Enabled: interface{},
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceNetworkConfig {
 	Consumers: interface{},
@@ -2078,7 +2078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceNetworkConfigConsumers {
 	Subnetwork: *string,
@@ -2116,7 +2116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceScalingConfig {
 	InstanceSize: *string,
@@ -2166,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTelemetryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceTelemetryConfig {
 	LogFormat: *string,
@@ -2200,7 +2200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 &googledataprocmetastoreservice.GoogleDataprocMetastoreServiceTimeouts {
 	Create: *string,
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceEncryptionConfigOutputReference
 ```
@@ -2533,7 +2533,7 @@ func InternalValue() GoogleDataprocMetastoreServiceEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
 ```
@@ -2676,7 +2676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference
 ```
@@ -3287,7 +3287,7 @@ func InternalValue() GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference
 ```
@@ -3615,7 +3615,7 @@ func InternalValue() GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference
 ```
@@ -4028,7 +4028,7 @@ func InternalValue() GoogleDataprocMetastoreServiceHiveMetastoreConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceMaintenanceWindowOutputReference
 ```
@@ -4321,7 +4321,7 @@ func InternalValue() GoogleDataprocMetastoreServiceMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference
 ```
@@ -4592,7 +4592,7 @@ func InternalValue() GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference
 ```
@@ -4876,7 +4876,7 @@ func InternalValue() GoogleDataprocMetastoreServiceMetadataIntegration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceNetworkConfigConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataprocMetastoreServiceNetworkConfigConsumersList
 ```
@@ -5019,7 +5019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference
 ```
@@ -5319,7 +5319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceNetworkConfigOutputReference
 ```
@@ -5603,7 +5603,7 @@ func InternalValue() GoogleDataprocMetastoreServiceNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceScalingConfigOutputReference
 ```
@@ -5910,7 +5910,7 @@ func InternalValue() GoogleDataprocMetastoreServiceScalingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTelemetryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceTelemetryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 ```
@@ -6188,7 +6188,7 @@ func InternalValue() GoogleDataprocMetastoreServiceTelemetryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocmetastoreservice"
 
 googledataprocmetastoreservice.NewGoogleDataprocMetastoreServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceTimeoutsOutputReference
 ```
