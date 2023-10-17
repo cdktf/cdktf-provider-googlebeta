@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.NewGoogleKmsCryptoKeyIamMember(scope Construct, id *string, config GoogleKmsCryptoKeyIamMemberConfig) GoogleKmsCryptoKeyIamMember
 ```
@@ -359,7 +359,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 &googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMemberCondition {
 	Expression: *string,
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 &googlekmscryptokeyiammember.GoogleKmsCryptoKeyIamMemberConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscr
 	CryptoKeyId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1008,7 +1008,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmscryptokeyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiammember"
 
 googlekmscryptokeyiammember.NewGoogleKmsCryptoKeyIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsCryptoKeyIamMemberConditionOutputReference
 ```
