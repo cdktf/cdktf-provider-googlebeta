@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_tpu_v2_vm
 // generated from terraform resource schema
 
@@ -199,6 +194,20 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "google_tpu_v2_vm";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleTpuV2Vm resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleTpuV2Vm to import
+  * @param importFromId The id of the existing GoogleTpuV2Vm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_tpu_v2_vm#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleTpuV2Vm to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tpu_v2_vm", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

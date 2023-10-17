@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_certificate_manager_certificate_map
 // generated from terraform resource schema
 
@@ -338,6 +333,20 @@ export class GoogleCertificateManagerCertificateMap extends cdktf.TerraformResou
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "google_certificate_manager_certificate_map";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleCertificateManagerCertificateMap resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleCertificateManagerCertificateMap to import
+  * @param importFromId The id of the existing GoogleCertificateManagerCertificateMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_certificate_manager_certificate_map#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleCertificateManagerCertificateMap to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_certificate_manager_certificate_map", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

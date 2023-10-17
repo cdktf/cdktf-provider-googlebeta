@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_accelerator_types
 // generated from terraform resource schema
 
@@ -38,6 +33,20 @@ export class DataGoogleTpuV2AcceleratorTypes extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "google_tpu_v2_accelerator_types";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataGoogleTpuV2AcceleratorTypes resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataGoogleTpuV2AcceleratorTypes to import
+  * @param importFromId The id of the existing DataGoogleTpuV2AcceleratorTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_tpu_v2_accelerator_types#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataGoogleTpuV2AcceleratorTypes to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tpu_v2_accelerator_types", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

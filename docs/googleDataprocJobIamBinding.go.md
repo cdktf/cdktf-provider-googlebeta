@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 googledataprocjobiambinding.NewGoogleDataprocJobIamBinding(scope Construct, id *string, config GoogleDataprocJobIamBindingConfig) GoogleDataprocJobIamBinding
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.putCondition">PutCondition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.resetCondition">ResetCondition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.resetId">ResetId</a></code> | *No description.* |
@@ -141,6 +144,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.getAnyMapAttribute"></a>
 
@@ -250,6 +269,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.interpolationForAttribute"></a>
 
 ```go
@@ -259,6 +296,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -305,13 +366,14 @@ func ResetRegion()
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a GoogleDataprocJobIamBinding resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +419,7 @@ googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -365,6 +427,50 @@ googledataprocjobiambinding.GoogleDataprocJobIamBinding_IsTerraformResource(x in
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
+
+googledataprocjobiambinding.GoogleDataprocJobIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a GoogleDataprocJobIamBinding resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the GoogleDataprocJobIamBinding to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing GoogleDataprocJobIamBinding that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataproc_job_iam_binding#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the GoogleDataprocJobIamBinding to import is found.
 
 ---
 
@@ -721,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 &googledataprocjobiambinding.GoogleDataprocJobIamBindingCondition {
 	Expression: *string,
@@ -781,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 &googledataprocjobiambinding.GoogleDataprocJobIamBindingConfig {
 	Connection: interface{},
@@ -794,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledatap
 	JobId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -988,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataprocjobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocjobiambinding"
 
 googledataprocjobiambinding.NewGoogleDataprocJobIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocJobIamBindingConditionOutputReference
 ```

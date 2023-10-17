@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_network_endpoint_group
 // generated from terraform resource schema
 
@@ -754,6 +749,20 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "google_compute_region_network_endpoint_group";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleComputeRegionNetworkEndpointGroup resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleComputeRegionNetworkEndpointGroup to import
+  * @param importFromId The id of the existing GoogleComputeRegionNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_region_network_endpoint_group#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleComputeRegionNetworkEndpointGroup to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_network_endpoint_group", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
