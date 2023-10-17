@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSlo(scope Construct, id *string, config GoogleMonitoringSloConfig) GoogleMonitoringSlo
 ```
@@ -399,7 +399,7 @@ func ResetWindowsBasedSli()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.GoogleMonitoringSlo_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.GoogleMonitoringSlo_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googlemonitoringslo.GoogleMonitoringSlo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.GoogleMonitoringSlo_IsTerraformResource(x interface{}) *bool
 ```
@@ -941,11 +941,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSli.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloBasicSli {
-	Availability: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailability,
-	Latency: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatency,
+	Availability: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailability,
+	Latency: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatency,
 	Location: *[]*string,
 	Method: *[]*string,
 	Version: *[]*string,
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloBasicSliAvailability {
 	Enabled: interface{},
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloBasicSliLatency {
 	Threshold: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloConfig {
 	Connection: interface{},
@@ -1137,17 +1137,17 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonit
 	Provisioners: *[]interface{},
 	Goal: *f64,
 	Service: *string,
-	BasicSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloBasicSli,
+	BasicSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloBasicSli,
 	CalendarPeriod: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	RequestBasedSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSli,
+	RequestBasedSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSli,
 	RollingPeriodDays: *f64,
 	SloId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloTimeouts,
 	UserLabels: *map[string]*string,
-	WindowsBasedSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSli,
+	WindowsBasedSli: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSli,
 }
 ```
 
@@ -1436,11 +1436,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSli.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloRequestBasedSli {
-	DistributionCut: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCut,
-	GoodTotalRatio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio,
+	DistributionCut: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCut,
+	GoodTotalRatio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio,
 }
 ```
 
@@ -1486,11 +1486,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCut.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloRequestBasedSliDistributionCut {
 	DistributionFilter: *string,
-	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange,
+	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange,
 }
 ```
 
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloRequestBasedSliDistributionCutRange {
 	Max: *f64,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio {
 	BadServiceFilter: *string,
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloTimeouts {
 	Create: *string,
@@ -1730,13 +1730,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSli.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSli {
 	GoodBadMetricFilter: *string,
-	GoodTotalRatioThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold,
-	MetricMeanInRange: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange,
-	MetricSumInRange: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange,
+	GoodTotalRatioThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold,
+	MetricMeanInRange: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange,
+	MetricSumInRange: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange,
 	WindowPeriod: *string,
 }
 ```
@@ -1831,11 +1831,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold {
-	BasicSliPerformance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance,
-	Performance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance,
+	BasicSliPerformance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance,
+	Performance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance,
 	Threshold: *f64,
 }
 ```
@@ -1897,11 +1897,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance {
-	Availability: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability,
-	Latency: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency,
+	Availability: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability,
+	Latency: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency,
 	Location: *[]*string,
 	Method: *[]*string,
 	Version: *[]*string,
@@ -2013,7 +2013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability {
 	Enabled: interface{},
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency {
 	Threshold: *string,
@@ -2081,11 +2081,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance {
-	DistributionCut: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut,
-	GoodTotalRatio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio,
+	DistributionCut: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut,
+	GoodTotalRatio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio,
 }
 ```
 
@@ -2131,11 +2131,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut {
 	DistributionFilter: *string,
-	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange,
+	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange,
 }
 ```
 
@@ -2184,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange {
 	Max: *f64,
@@ -2234,7 +2234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio {
 	BadServiceFilter: *string,
@@ -2309,10 +2309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange {
-	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange,
+	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange,
 	TimeSeries: *string,
 }
 ```
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange {
 	Max: *f64,
@@ -2409,10 +2409,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange {
-	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange,
+	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange,
 	TimeSeries: *string,
 }
 ```
@@ -2462,7 +2462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 &googlemonitoringslo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange {
 	Max: *f64,
@@ -2514,7 +2514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloBasicSliAvailabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloBasicSliAvailabilityOutputReference
 ```
@@ -2792,7 +2792,7 @@ func InternalValue() GoogleMonitoringSloBasicSliAvailability
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloBasicSliLatencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloBasicSliLatencyOutputReference
 ```
@@ -3063,7 +3063,7 @@ func InternalValue() GoogleMonitoringSloBasicSliLatency
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloBasicSliOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloBasicSliOutputReference
 ```
@@ -3483,7 +3483,7 @@ func InternalValue() GoogleMonitoringSloBasicSli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloRequestBasedSliDistributionCutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference
 ```
@@ -3789,7 +3789,7 @@ func InternalValue() GoogleMonitoringSloRequestBasedSliDistributionCut
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference
 ```
@@ -4096,7 +4096,7 @@ func InternalValue() GoogleMonitoringSloRequestBasedSliDistributionCutRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference
 ```
@@ -4432,7 +4432,7 @@ func InternalValue() GoogleMonitoringSloRequestBasedSliGoodTotalRatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloRequestBasedSliOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloRequestBasedSliOutputReference
 ```
@@ -4765,7 +4765,7 @@ func InternalValue() GoogleMonitoringSloRequestBasedSli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloTimeoutsOutputReference
 ```
@@ -5101,7 +5101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference
 ```
@@ -5379,7 +5379,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference
 ```
@@ -5650,7 +5650,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference
 ```
@@ -6070,7 +6070,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference
 ```
@@ -6432,7 +6432,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference
 ```
@@ -6738,7 +6738,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference
 ```
@@ -7045,7 +7045,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference
 ```
@@ -7381,7 +7381,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference
 ```
@@ -7714,7 +7714,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference
 ```
@@ -8020,7 +8020,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliMetricMeanInRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference
 ```
@@ -8327,7 +8327,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference
 ```
@@ -8633,7 +8633,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliMetricSumInRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference
 ```
@@ -8940,7 +8940,7 @@ func InternalValue() GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlemonitoringslo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringslo"
 
 googlemonitoringslo.NewGoogleMonitoringSloWindowsBasedSliOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringSloWindowsBasedSliOutputReference
 ```

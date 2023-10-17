@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogledatafusioninstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatafusioninstanceiampolicy"
 
 datagoogledatafusioninstanceiampolicy.NewDataGoogleDataFusionInstanceIamPolicy(scope Construct, id *string, config DataGoogleDataFusionInstanceIamPolicyConfig) DataGoogleDataFusionInstanceIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogledatafusioninstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatafusioninstanceiampolicy"
 
 datagoogledatafusioninstanceiampolicy.DataGoogleDataFusionInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogledatafusioninstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatafusioninstanceiampolicy"
 
 datagoogledatafusioninstanceiampolicy.DataGoogleDataFusionInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagoogledatafusioninstanceiampolicy.DataGoogleDataFusionInstanceIamPolicy_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogledatafusioninstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatafusioninstanceiampolicy"
 
 datagoogledatafusioninstanceiampolicy.DataGoogleDataFusionInstanceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagoogledatafusioninstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatafusioninstanceiampolicy"
 
 &datagoogledatafusioninstanceiampolicy.DataGoogleDataFusionInstanceIamPolicyConfig {
 	Connection: interface{},

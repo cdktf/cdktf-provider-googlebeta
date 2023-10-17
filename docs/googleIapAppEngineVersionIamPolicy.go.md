@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamPolicy.GoogleIapAppEngineVersionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleiapappengineversioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapappengineversioniampolicy"
 
 googleiapappengineversioniampolicy.NewGoogleIapAppEngineVersionIamPolicy(scope Construct, id *string, config GoogleIapAppEngineVersionIamPolicyConfig) GoogleIapAppEngineVersionIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamPolicy.GoogleIapAppEngineVersionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleiapappengineversioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapappengineversioniampolicy"
 
 googleiapappengineversioniampolicy.GoogleIapAppEngineVersionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamPolicy.GoogleIapAppEngineVersionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleiapappengineversioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapappengineversioniampolicy"
 
 googleiapappengineversioniampolicy.GoogleIapAppEngineVersionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googleiapappengineversioniampolicy.GoogleIapAppEngineVersionIamPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamPolicy.GoogleIapAppEngineVersionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleiapappengineversioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapappengineversioniampolicy"
 
 googleiapappengineversioniampolicy.GoogleIapAppEngineVersionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamPolicy.GoogleIapAppEngineVersionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleiapappengineversioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapappengineversioniampolicy"
 
 &googleiapappengineversioniampolicy.GoogleIapAppEngineVersionIamPolicyConfig {
 	Connection: interface{},

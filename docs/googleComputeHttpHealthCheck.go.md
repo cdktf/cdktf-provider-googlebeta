@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 googlecomputehttphealthcheck.NewGoogleComputeHttpHealthCheck(scope Construct, id *string, config GoogleComputeHttpHealthCheckConfig) GoogleComputeHttpHealthCheck
 ```
@@ -360,7 +360,7 @@ func ResetUnhealthyThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 googlecomputehttphealthcheck.GoogleComputeHttpHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 googlecomputehttphealthcheck.GoogleComputeHttpHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ googlecomputehttphealthcheck.GoogleComputeHttpHealthCheck_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 googlecomputehttphealthcheck.GoogleComputeHttpHealthCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 &googlecomputehttphealthcheck.GoogleComputeHttpHealthCheckConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecompu
 	Port: *f64,
 	Project: *string,
 	RequestPath: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheckTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheckTimeouts,
 	TimeoutSec: *f64,
 	UnhealthyThreshold: *f64,
 }
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheckTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 &googlecomputehttphealthcheck.GoogleComputeHttpHealthCheckTimeouts {
 	Create: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck.GoogleComputeHttpHealthCheckTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehttphealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputehttphealthcheck"
 
 googlecomputehttphealthcheck.NewGoogleComputeHttpHealthCheckTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeHttpHealthCheckTimeoutsOutputReference
 ```

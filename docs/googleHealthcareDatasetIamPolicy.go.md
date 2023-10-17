@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiampolicy"
 
 googlehealthcaredatasetiampolicy.NewGoogleHealthcareDatasetIamPolicy(scope Construct, id *string, config GoogleHealthcareDatasetIamPolicyConfig) GoogleHealthcareDatasetIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiampolicy"
 
 googlehealthcaredatasetiampolicy.GoogleHealthcareDatasetIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiampolicy"
 
 googlehealthcaredatasetiampolicy.GoogleHealthcareDatasetIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googlehealthcaredatasetiampolicy.GoogleHealthcareDatasetIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiampolicy"
 
 googlehealthcaredatasetiampolicy.GoogleHealthcareDatasetIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiampolicy"
 
 &googlehealthcaredatasetiampolicy.GoogleHealthcareDatasetIamPolicyConfig {
 	Connection: interface{},

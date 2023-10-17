@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSpannerInstance.DataGoogleSpannerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglespannerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstance(scope Construct, id *string, config DataGoogleSpannerInstanceConfig) DataGoogleSpannerInstance
 ```
@@ -298,7 +298,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglespannerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglespannerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglespannerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSpannerInstance.DataGoogleSpannerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglespannerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceConfig {
 	Connection: interface{},

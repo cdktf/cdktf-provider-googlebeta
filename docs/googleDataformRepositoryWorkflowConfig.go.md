@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfig(scope Construct, id *string, config GoogleDataformRepositoryWorkflowConfigConfig) GoogleDataformRepositoryWorkflowConfig
 ```
@@ -352,7 +352,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfig_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfig_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigConfig {
 	Connection: interface{},
@@ -842,11 +842,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataf
 	ReleaseConfig: *string,
 	CronSchedule: *string,
 	Id: *string,
-	InvocationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfig,
+	InvocationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfig,
 	Project: *string,
 	Region: *string,
 	Repository: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigInvocationConfig {
 	FullyRefreshIncrementalTablesEnabled: interface{},
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets {
 	Database: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords {
 
@@ -1288,7 +1288,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataf
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus {
 
@@ -1301,7 +1301,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataf
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 &googledataformrepositoryworkflowconfig.GoogleDataformRepositoryWorkflowConfigTimeouts {
 	Create: *string,
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference
 ```
@@ -2296,7 +2296,7 @@ func InternalValue() GoogleDataformRepositoryWorkflowConfigInvocationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusList
 ```
@@ -2428,7 +2428,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference
 ```
@@ -2717,7 +2717,7 @@ func InternalValue() GoogleDataformRepositoryWorkflowConfigRecentScheduledExecut
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsList
 ```
@@ -2849,7 +2849,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference
 ```
@@ -3149,7 +3149,7 @@ func InternalValue() GoogleDataformRepositoryWorkflowConfigRecentScheduledExecut
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryWorkflowConfig.GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataformrepositoryworkflowconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryworkflowconfig"
 
 googledataformrepositoryworkflowconfig.NewGoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference
 ```

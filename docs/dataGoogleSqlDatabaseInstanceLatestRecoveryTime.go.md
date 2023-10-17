@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime(scope Construct, id *string, config DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) DataGoogleSqlDatabaseInstanceLatestRecoveryTime
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabaseinstancelatestrecoverytime"
 
 &datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig {
 	Connection: interface{},

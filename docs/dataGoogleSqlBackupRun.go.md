@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqlbackuprun"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.NewDataGoogleSqlBackupRun(scope Construct, id *string, config DataGoogleSqlBackupRunConfig) DataGoogleSqlBackupRun
 ```
@@ -298,7 +298,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqlbackuprun"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqlbackuprun"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqlbackuprun"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglesqlbackuprun"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlbackuprun"
 
 &datagooglesqlbackuprun.DataGoogleSqlBackupRunConfig {
 	Connection: interface{},
