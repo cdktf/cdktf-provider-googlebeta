@@ -650,6 +650,20 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // =================
   public static readonly tfResourceType = "google-beta";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleBetaProvider resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleBetaProvider to import
+  * @param importFromId The id of the existing GoogleBetaProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleBetaProvider to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google-beta", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

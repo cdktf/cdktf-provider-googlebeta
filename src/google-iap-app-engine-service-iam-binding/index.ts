@@ -170,6 +170,20 @@ export class GoogleIapAppEngineServiceIamBinding extends cdktf.TerraformResource
   // =================
   public static readonly tfResourceType = "google_iap_app_engine_service_iam_binding";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleIapAppEngineServiceIamBinding resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleIapAppEngineServiceIamBinding to import
+  * @param importFromId The id of the existing GoogleIapAppEngineServiceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_iap_app_engine_service_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleIapAppEngineServiceIamBinding to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_app_engine_service_iam_binding", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

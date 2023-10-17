@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRoute(scope Construct, id *string, config GoogleNetworkServicesGrpcRouteConfig) GoogleNetworkServicesGrpcRoute
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.resetDescription">ResetDescription</a></code> | *No description.* |
@@ -145,6 +148,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.getAnyMapAttribute"></a>
 
@@ -254,6 +273,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.interpolationForAttribute"></a>
 
 ```go
@@ -263,6 +300,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -339,13 +400,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a GoogleNetworkServicesGrpcRoute resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +453,7 @@ googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,6 +461,50 @@ googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_IsTerraformResourc
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
+
+googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a GoogleNetworkServicesGrpcRoute resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the GoogleNetworkServicesGrpcRoute to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing GoogleNetworkServicesGrpcRoute that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_services_grpc_route#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the GoogleNetworkServicesGrpcRoute to import is found.
 
 ---
 
@@ -865,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteConfig {
 	Connection: interface{},
@@ -884,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetwo
 	Labels: *map[string]*string,
 	Meshes: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteTimeouts,
 }
 ```
 
@@ -1129,10 +1235,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRules {
-	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesAction,
+	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesAction,
 	Matches: interface{},
 }
 ```
@@ -1179,12 +1285,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesAction {
 	Destinations: interface{},
-	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicy,
-	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy,
+	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicy,
+	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy,
 	Timeout: *string,
 }
 ```
@@ -1261,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesActionDestinations {
 	ServiceName: *string,
@@ -1311,11 +1417,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicy {
-	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -1361,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -1411,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay {
 	FixedDelay: *string,
@@ -1461,7 +1567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy {
 	NumRetries: *f64,
@@ -1511,11 +1617,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesMatches {
 	Headers: interface{},
-	Method: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesMethod,
+	Method: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesMethod,
 }
 ```
 
@@ -1561,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesMatchesHeaders {
 	Key: *string,
@@ -1627,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteRulesMatchesMethod {
 	GrpcMethod: *string,
@@ -1693,7 +1799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 &googlenetworkservicesgrpcroute.GoogleNetworkServicesGrpcRouteTimeouts {
 	Create: *string,
@@ -1755,7 +1861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesGrpcRouteRulesActionDestinationsList
 ```
@@ -1898,7 +2004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesGrpcRouteRulesActionDestinationsOutputReference
 ```
@@ -2223,7 +2329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -2530,7 +2636,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -2837,7 +2943,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference
 ```
@@ -3170,7 +3276,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesActionOutputReference
 ```
@@ -3574,7 +3680,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference
 ```
@@ -3881,7 +3987,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesGrpcRouteRulesList
 ```
@@ -4024,7 +4130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesMatchesHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesGrpcRouteRulesMatchesHeadersList
 ```
@@ -4167,7 +4273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesMatchesHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesGrpcRouteRulesMatchesHeadersOutputReference
 ```
@@ -4507,7 +4613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesGrpcRouteRulesMatchesList
 ```
@@ -4650,7 +4756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference
 ```
@@ -4972,7 +5078,7 @@ func InternalValue() GoogleNetworkServicesGrpcRouteRulesMatchesMethod
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesGrpcRouteRulesMatchesOutputReference
 ```
@@ -5323,7 +5429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesGrpcRouteRulesOutputReference
 ```
@@ -5674,7 +5780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesgrpcroute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesgrpcroute"
 
 googlenetworkservicesgrpcroute.NewGoogleNetworkServicesGrpcRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesGrpcRouteTimeoutsOutputReference
 ```

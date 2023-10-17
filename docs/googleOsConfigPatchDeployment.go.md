@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeployment(scope Construct, id *string, config GoogleOsConfigPatchDeploymentConfig) GoogleOsConfigPatchDeployment
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.putInstanceFilter">PutInstanceFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.putOneTimeSchedule">PutOneTimeSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.putPatchConfig">PutPatchConfig</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -405,13 +466,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a GoogleOsConfigPatchDeployment resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +519,7 @@ googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,6 +527,50 @@ googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_IsTerraformResource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
+
+googleosconfigpatchdeployment.GoogleOsConfigPatchDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a GoogleOsConfigPatchDeployment resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the GoogleOsConfigPatchDeployment to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing GoogleOsConfigPatchDeployment that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_os_config_patch_deployment#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeployment.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the GoogleOsConfigPatchDeployment to import is found.
 
 ---
 
@@ -942,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentConfig {
 	Connection: interface{},
@@ -952,17 +1058,17 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleoscon
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	InstanceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilter,
+	InstanceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilter,
 	PatchDeploymentId: *string,
 	Description: *string,
 	Duration: *string,
 	Id: *string,
-	OneTimeSchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeSchedule,
-	PatchConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfig,
+	OneTimeSchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeSchedule,
+	PatchConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfig,
 	Project: *string,
-	RecurringSchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringSchedule,
-	Rollout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRollout,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeouts,
+	RecurringSchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringSchedule,
+	Rollout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRollout,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeouts,
 }
 ```
 
@@ -1230,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentInstanceFilter {
 	All: interface{},
@@ -1331,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels {
 	Labels: *map[string]*string,
@@ -1365,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentOneTimeSchedule {
 	ExecuteTime: *string,
@@ -1399,18 +1505,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfig {
-	Apt: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigApt,
-	Goo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGoo,
+	Apt: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigApt,
+	Goo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGoo,
 	MigInstancesAllowed: interface{},
-	PostStep: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStep,
-	PreStep: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStep,
+	PostStep: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStep,
+	PreStep: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStep,
 	RebootConfig: *string,
-	WindowsUpdate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate,
-	Yum: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYum,
-	Zypper: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypper,
+	WindowsUpdate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate,
+	Yum: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYum,
+	Zypper: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypper,
 }
 ```
 
@@ -1561,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigApt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigApt {
 	Excludes: *[]*string,
@@ -1631,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGoo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigGoo {
 	Enabled: interface{},
@@ -1665,11 +1771,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStep {
-	LinuxExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig,
-	WindowsExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig,
+	LinuxExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig,
+	WindowsExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig,
 }
 ```
 
@@ -1715,11 +1821,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject,
+	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -1800,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject {
 	Bucket: *string,
@@ -1868,11 +1974,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject,
+	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -1953,7 +2059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2021,11 +2127,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStep {
-	LinuxExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig,
-	WindowsExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig,
+	LinuxExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig,
+	WindowsExecStepConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig,
 }
 ```
 
@@ -2071,11 +2177,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject,
+	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -2156,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2224,11 +2330,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject,
+	GcsObject: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -2309,7 +2415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2377,7 +2483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate {
 	Classifications: *[]*string,
@@ -2448,7 +2554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYum.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigYum {
 	Excludes: *[]*string,
@@ -2534,7 +2640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentPatchConfigZypper {
 	Categories: *[]*string,
@@ -2651,15 +2757,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringSchedule {
-	TimeOfDay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay,
-	TimeZone: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone,
+	TimeOfDay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay,
+	TimeZone: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone,
 	EndTime: *string,
-	Monthly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthly,
+	Monthly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthly,
 	StartTime: *string,
-	Weekly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeekly,
+	Weekly: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeekly,
 }
 ```
 
@@ -2770,11 +2876,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthly {
 	MonthDay: *f64,
-	WeekDayOfMonth: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth,
+	WeekDayOfMonth: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth,
 }
 ```
 
@@ -2824,7 +2930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth {
 	DayOfWeek: *string,
@@ -2892,7 +2998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay {
 	Hours: *f64,
@@ -2979,7 +3085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone {
 	Id: *string,
@@ -3032,7 +3138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeekly {
 	DayOfWeek: *string,
@@ -3066,10 +3172,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRollout {
-	DisruptionBudget: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudget,
+	DisruptionBudget: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudget,
 	Mode: *string,
 }
 ```
@@ -3116,7 +3222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudget {
 	Fixed: *f64,
@@ -3166,7 +3272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 &googleosconfigpatchdeployment.GoogleOsConfigPatchDeploymentTimeouts {
 	Create: *string,
@@ -3214,7 +3320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList
 ```
@@ -3357,7 +3463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference
 ```
@@ -3646,7 +3752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentInstanceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentInstanceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentInstanceFilterOutputReference
 ```
@@ -4053,7 +4159,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentInstanceFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference
 ```
@@ -4324,7 +4430,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentOneTimeSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigAptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference
 ```
@@ -4660,7 +4766,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigApt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigGooOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference
 ```
@@ -4931,7 +5037,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigGoo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigOutputReference
 ```
@@ -5532,7 +5638,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference
 ```
@@ -5847,7 +5953,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecSt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference
 ```
@@ -6225,7 +6331,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecSt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference
 ```
@@ -6558,7 +6664,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPostStep
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference
 ```
@@ -6873,7 +6979,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference
 ```
@@ -7251,7 +7357,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference
 ```
@@ -7566,7 +7672,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecSte
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference
 ```
@@ -7944,7 +8050,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecSte
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference
 ```
@@ -8277,7 +8383,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPreStep
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference
 ```
@@ -8592,7 +8698,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecS
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference
 ```
@@ -8970,7 +9076,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecS
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference
 ```
@@ -9306,7 +9412,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigYumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference
 ```
@@ -9671,7 +9777,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigYum
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference
 ```
@@ -10094,7 +10200,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentPatchConfigZypper
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference
 ```
@@ -10414,7 +10520,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringScheduleMonthly
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference
 ```
@@ -10736,7 +10842,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference
 ```
@@ -11219,7 +11325,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference
 ```
@@ -11584,7 +11690,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference
 ```
@@ -11884,7 +11990,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference
 ```
@@ -12155,7 +12261,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRecurringScheduleWeekly
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference
 ```
@@ -12462,7 +12568,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRolloutDisruptionBudget
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRolloutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentRolloutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentRolloutOutputReference
 ```
@@ -12768,7 +12874,7 @@ func InternalValue() GoogleOsConfigPatchDeploymentRollout
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleosconfigpatchdeployment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleosconfigpatchdeployment"
 
 googleosconfigpatchdeployment.NewGoogleOsConfigPatchDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentTimeoutsOutputReference
 ```

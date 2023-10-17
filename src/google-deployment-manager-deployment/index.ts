@@ -642,6 +642,20 @@ export class GoogleDeploymentManagerDeployment extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "google_deployment_manager_deployment";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GoogleDeploymentManagerDeployment resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GoogleDeploymentManagerDeployment to import
+  * @param importFromId The id of the existing GoogleDeploymentManagerDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_deployment_manager_deployment#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GoogleDeploymentManagerDeployment to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_deployment_manager_deployment", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
