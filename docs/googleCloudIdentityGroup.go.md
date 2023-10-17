@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroup(scope Construct, id *string, config GoogleCloudIdentityGroupConfig) GoogleCloudIdentityGroup
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupConfig {
 	Connection: interface{},
@@ -901,14 +901,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey,
+	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey,
 	Labels: *map[string]*string,
 	Parent: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	InitialGroupConfig: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupGroupKey {
 	Id: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupTimeouts {
 	Create: *string,
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupGroupKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudIdentityGroupGroupKeyOutputReference
 ```
@@ -1569,7 +1569,7 @@ func InternalValue() GoogleCloudIdentityGroupGroupKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudIdentityGroupTimeoutsOutputReference
 ```
