@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.NewGoogleBigqueryBiReservation(scope Construct, id *string, config GoogleBigqueryBiReservationConfig) GoogleBigqueryBiReservation
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.GoogleBigqueryBiReservation_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.GoogleBigqueryBiReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ googlebigquerybireservation.GoogleBigqueryBiReservation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.GoogleBigqueryBiReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ googlebigquerybireservation.GoogleBigqueryBiReservation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.GoogleBigqueryBiReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -836,7 +836,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 &googlebigquerybireservation.GoogleBigqueryBiReservationConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryb
 	PreferredTables: interface{},
 	Project: *string,
 	Size: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeouts,
 }
 ```
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 &googlebigquerybireservation.GoogleBigqueryBiReservationPreferredTables {
 	DatasetId: *string,
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 &googlebigquerybireservation.GoogleBigqueryBiReservationTimeouts {
 	Create: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.NewGoogleBigqueryBiReservationPreferredTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigqueryBiReservationPreferredTablesList
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationPreferredTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.NewGoogleBigqueryBiReservationPreferredTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleBigqueryBiReservationPreferredTablesOutputReference
 ```
@@ -1658,7 +1658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryBiReservation.GoogleBigqueryBiReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerybireservation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerybireservation"
 
 googlebigquerybireservation.NewGoogleBigqueryBiReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryBiReservationTimeoutsOutputReference
 ```
