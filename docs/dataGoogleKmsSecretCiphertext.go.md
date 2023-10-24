@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 datagooglekmssecretciphertext.NewDataGoogleKmsSecretCiphertext(scope Construct, id *string, config DataGoogleKmsSecretCiphertextConfig) DataGoogleKmsSecretCiphertext
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertext_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglekmssecretciphertext"
 
 &datagooglekmssecretciphertext.DataGoogleKmsSecretCiphertextConfig {
 	Connection: interface{},

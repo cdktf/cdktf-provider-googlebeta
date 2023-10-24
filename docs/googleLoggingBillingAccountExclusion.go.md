@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 googleloggingbillingaccountexclusion.NewGoogleLoggingBillingAccountExclusion(scope Construct, id *string, config GoogleLoggingBillingAccountExclusionConfig) GoogleLoggingBillingAccountExclusion
 ```
@@ -353,7 +353,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingbillingaccountexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingbillingaccountexclusion"
 
 &googleloggingbillingaccountexclusion.GoogleLoggingBillingAccountExclusionConfig {
 	Connection: interface{},

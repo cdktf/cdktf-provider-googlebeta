@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecret(scope Construct, id *string, config GoogleSecretManagerSecretConfig) GoogleSecretManagerSecret
 ```
@@ -454,7 +454,7 @@ func ResetVersionAliases()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.GoogleSecretManagerSecret_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.GoogleSecretManagerSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ googlesecretmanagersecret.GoogleSecretManagerSecret_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.GoogleSecretManagerSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ googlesecretmanagersecret.GoogleSecretManagerSecret_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.GoogleSecretManagerSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1062,7 +1062,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretConfig {
 	Connection: interface{},
@@ -1072,15 +1072,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretman
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Replication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretReplication,
+	Replication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretReplication,
 	SecretId: *string,
 	Annotations: *map[string]*string,
 	ExpireTime: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Rotation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretRotation,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretTimeouts,
+	Rotation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretRotation,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretTimeouts,
 	Topics: interface{},
 	Ttl: *string,
 	VersionAliases: *map[string]*string,
@@ -1400,11 +1400,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplication {
-	Auto: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAuto,
-	UserManaged: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManaged,
+	Auto: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAuto,
+	UserManaged: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManaged,
 }
 ```
 
@@ -1450,10 +1450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAuto.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplicationAuto {
-	CustomerManagedEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption,
+	CustomerManagedEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption,
 }
 ```
 
@@ -1484,7 +1484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption {
 	KmsKeyName: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplicationUserManaged {
 	Replicas: interface{},
@@ -1552,11 +1552,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplicationUserManagedReplicas {
 	Location: *string,
-	CustomerManagedEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption,
+	CustomerManagedEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption,
 }
 ```
 
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption {
 	KmsKeyName: *string,
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretRotation {
 	NextRotationTime: *string,
@@ -1691,7 +1691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretTimeouts {
 	Create: *string,
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 &googlesecretmanagersecret.GoogleSecretManagerSecretTopics {
 	Name: *string,
@@ -1791,7 +1791,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() GoogleSecretManagerSecretReplicationAutoCustomerManagedEncr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationAutoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationAutoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationAutoOutputReference
 ```
@@ -2353,7 +2353,7 @@ func InternalValue() GoogleSecretManagerSecretReplicationAuto
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationOutputReference
 ```
@@ -2686,7 +2686,7 @@ func InternalValue() GoogleSecretManagerSecretReplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationUserManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationUserManagedOutputReference
 ```
@@ -2970,7 +2970,7 @@ func InternalValue() GoogleSecretManagerSecretReplicationUserManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() GoogleSecretManagerSecretReplicationUserManagedReplicasCust
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationUserManagedReplicasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecretManagerSecretReplicationUserManagedReplicasList
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference
 ```
@@ -3715,7 +3715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretRotationOutputReference
 ```
@@ -4022,7 +4022,7 @@ func InternalValue() GoogleSecretManagerSecretRotation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretTimeoutsOutputReference
 ```
@@ -4358,7 +4358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSecretManagerSecretTopicsList
 ```
@@ -4501,7 +4501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecret"
 
 googlesecretmanagersecret.NewGoogleSecretManagerSecretTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSecretManagerSecretTopicsOutputReference
 ```

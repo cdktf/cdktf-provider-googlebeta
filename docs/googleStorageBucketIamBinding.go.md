@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.NewGoogleStorageBucketIamBinding(scope Construct, id *string, config GoogleStorageBucketIamBindingConfig) GoogleStorageBucketIamBinding
 ```
@@ -359,7 +359,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.GoogleStorageBucketIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.GoogleStorageBucketIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ googlestoragebucketiambinding.GoogleStorageBucketIamBinding_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.GoogleStorageBucketIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ googlestoragebucketiambinding.GoogleStorageBucketIamBinding_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.GoogleStorageBucketIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 &googlestoragebucketiambinding.GoogleStorageBucketIamBindingCondition {
 	Expression: *string,
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 &googlestoragebucketiambinding.GoogleStorageBucketIamBindingConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebu
 	Bucket: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1008,7 +1008,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageBucketIamBinding.GoogleStorageBucketIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragebucketiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestoragebucketiambinding"
 
 googlestoragebucketiambinding.NewGoogleStorageBucketIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketIamBindingConditionOutputReference
 ```
