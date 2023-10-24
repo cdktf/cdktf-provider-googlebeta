@@ -852,7 +852,9 @@ Object.defineProperty(exports, 'dataGoogleCloudIdentityGroups', { get: function 
 Object.defineProperty(exports, 'dataGoogleCloudRunLocations', { get: function () { return require('./data-google-cloud-run-locations'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunService', { get: function () { return require('./data-google-cloud-run-service'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunServiceIamPolicy', { get: function () { return require('./data-google-cloud-run-service-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleCloudRunV2Job', { get: function () { return require('./data-google-cloud-run-v2-job'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2JobIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-job-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleCloudRunV2Service', { get: function () { return require('./data-google-cloud-run-v2-service'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2ServiceIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-service-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudTasksQueueIamPolicy', { get: function () { return require('./data-google-cloud-tasks-queue-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudbuildTrigger', { get: function () { return require('./data-google-cloudbuild-trigger'); } });
@@ -890,6 +892,7 @@ Object.defineProperty(exports, 'dataGoogleComputeMachineImageIamPolicy', { get: 
 Object.defineProperty(exports, 'dataGoogleComputeNetwork', { get: function () { return require('./data-google-compute-network'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkEndpointGroup', { get: function () { return require('./data-google-compute-network-endpoint-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkPeering', { get: function () { return require('./data-google-compute-network-peering'); } });
+Object.defineProperty(exports, 'dataGoogleComputeNetworks', { get: function () { return require('./data-google-compute-networks'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNodeTypes', { get: function () { return require('./data-google-compute-node-types'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionBackendServiceIamPolicy', { get: function () { return require('./data-google-compute-region-backend-service-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionDiskIamPolicy', { get: function () { return require('./data-google-compute-region-disk-iam-policy'); } });

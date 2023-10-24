@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface GoogleCloudIdentityGroupConfig extends cdktf.TerraformMetaArgum
   * An extended description to help users determine the purpose of a Group.
   * Must not be longer than 4,096 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#description GoogleCloudIdentityGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#description GoogleCloudIdentityGroup#description}
   */
   readonly description?: string;
   /**
   * The display name of the Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#display_name GoogleCloudIdentityGroup#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#display_name GoogleCloudIdentityGroup#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#id GoogleCloudIdentityGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#id GoogleCloudIdentityGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,7 +39,7 @@ export interface GoogleCloudIdentityGroupConfig extends cdktf.TerraformMetaArgum
   * [API reference](https://cloud.google.com/identity/docs/reference/rest/v1beta1/groups/create#initialgroupconfig)
   * for possible values. Default value: "EMPTY" Possible values: ["INITIAL_GROUP_CONFIG_UNSPECIFIED", "WITH_INITIAL_OWNER", "EMPTY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#initial_group_config GoogleCloudIdentityGroup#initial_group_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#initial_group_config GoogleCloudIdentityGroup#initial_group_config}
   */
   readonly initialGroupConfig?: string;
   /**
@@ -53,7 +53,7 @@ export interface GoogleCloudIdentityGroupConfig extends cdktf.TerraformMetaArgum
   * 
   * Identity-mapped groups for Cloud Search have a label with a key of system/groups/external and an empty value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#labels GoogleCloudIdentityGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#labels GoogleCloudIdentityGroup#labels}
   */
   readonly labels: { [key: string]: string };
   /**
@@ -63,21 +63,90 @@ export interface GoogleCloudIdentityGroupConfig extends cdktf.TerraformMetaArgum
   * Must be of the form identitysources/{identity_source_id} for external-identity-mapped
   * groups or customers/{customer_id} for Google Groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#parent GoogleCloudIdentityGroup#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#parent GoogleCloudIdentityGroup#parent}
   */
   readonly parent: string;
   /**
   * group_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#group_key GoogleCloudIdentityGroup#group_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#group_key GoogleCloudIdentityGroup#group_key}
   */
   readonly groupKey: GoogleCloudIdentityGroupGroupKey;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#timeouts GoogleCloudIdentityGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#timeouts GoogleCloudIdentityGroup#timeouts}
   */
   readonly timeouts?: GoogleCloudIdentityGroupTimeouts;
+}
+export interface GoogleCloudIdentityGroupAdditionalGroupKeys {
+}
+
+export function googleCloudIdentityGroupAdditionalGroupKeysToTerraform(struct?: GoogleCloudIdentityGroupAdditionalGroupKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudIdentityGroupAdditionalGroupKeys | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudIdentityGroupAdditionalGroupKeys | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // namespace - computed: true, optional: false, required: false
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+}
+
+export class GoogleCloudIdentityGroupAdditionalGroupKeysList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference {
+    return new GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleCloudIdentityGroupGroupKey {
   /**
@@ -91,7 +160,7 @@ export interface GoogleCloudIdentityGroupGroupKey {
   * 
   * Must be unique within a namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#id GoogleCloudIdentityGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#id GoogleCloudIdentityGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -107,7 +176,7 @@ export interface GoogleCloudIdentityGroupGroupKey {
   * The namespace must correspond to an identity source created in Admin Console
   * and must be in the form of 'identitysources/{identity_source_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#namespace GoogleCloudIdentityGroup#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#namespace GoogleCloudIdentityGroup#namespace}
   */
   readonly namespace?: string;
 }
@@ -192,15 +261,15 @@ export class GoogleCloudIdentityGroupGroupKeyOutputReference extends cdktf.Compl
 }
 export interface GoogleCloudIdentityGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#create GoogleCloudIdentityGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#create GoogleCloudIdentityGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#delete GoogleCloudIdentityGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#delete GoogleCloudIdentityGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#update GoogleCloudIdentityGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#update GoogleCloudIdentityGroup#update}
   */
   readonly update?: string;
 }
@@ -321,7 +390,7 @@ export class GoogleCloudIdentityGroupTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}
 */
 export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
 
@@ -337,7 +406,7 @@ export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCloudIdentityGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudIdentityGroup to import
-  * @param importFromId The id of the existing GoogleCloudIdentityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudIdentityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudIdentityGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -349,7 +418,7 @@ export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -360,7 +429,7 @@ export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_identity_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -384,6 +453,12 @@ export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // additional_group_keys - computed: true, optional: false, required: false
+  private _additionalGroupKeys = new GoogleCloudIdentityGroupAdditionalGroupKeysList(this, "additional_group_keys", false);
+  public get additionalGroupKeys() {
+    return this._additionalGroupKeys;
+  }
 
   // create_time - computed: true, optional: false, required: false
   public get createTime() {

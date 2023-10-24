@@ -852,7 +852,9 @@ export * as dataGoogleCloudIdentityGroups from './data-google-cloud-identity-gro
 export * as dataGoogleCloudRunLocations from './data-google-cloud-run-locations';
 export * as dataGoogleCloudRunService from './data-google-cloud-run-service';
 export * as dataGoogleCloudRunServiceIamPolicy from './data-google-cloud-run-service-iam-policy';
+export * as dataGoogleCloudRunV2Job from './data-google-cloud-run-v2-job';
 export * as dataGoogleCloudRunV2JobIamPolicy from './data-google-cloud-run-v2-job-iam-policy';
+export * as dataGoogleCloudRunV2Service from './data-google-cloud-run-v2-service';
 export * as dataGoogleCloudRunV2ServiceIamPolicy from './data-google-cloud-run-v2-service-iam-policy';
 export * as dataGoogleCloudTasksQueueIamPolicy from './data-google-cloud-tasks-queue-iam-policy';
 export * as dataGoogleCloudbuildTrigger from './data-google-cloudbuild-trigger';
@@ -890,6 +892,7 @@ export * as dataGoogleComputeMachineImageIamPolicy from './data-google-compute-m
 export * as dataGoogleComputeNetwork from './data-google-compute-network';
 export * as dataGoogleComputeNetworkEndpointGroup from './data-google-compute-network-endpoint-group';
 export * as dataGoogleComputeNetworkPeering from './data-google-compute-network-peering';
+export * as dataGoogleComputeNetworks from './data-google-compute-networks';
 export * as dataGoogleComputeNodeTypes from './data-google-compute-node-types';
 export * as dataGoogleComputeRegionBackendServiceIamPolicy from './data-google-compute-region-backend-service-iam-policy';
 export * as dataGoogleComputeRegionDiskIamPolicy from './data-google-compute-region-disk-iam-policy';

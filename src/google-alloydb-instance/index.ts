@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface GoogleAlloydbInstanceConfig extends cdktf.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#annotations GoogleAlloydbInstance#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#annotations GoogleAlloydbInstance#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -29,36 +29,36 @@ export interface GoogleAlloydbInstanceConfig extends cdktf.TerraformMetaArgument
   * Read pool of size 1 can only have zonal availability. Read pools with node count of 2 or more
   * can have regional availability (nodes are present in 2 or more zones in a region).' Possible values: ["AVAILABILITY_TYPE_UNSPECIFIED", "ZONAL", "REGIONAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#availability_type GoogleAlloydbInstance#availability_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#availability_type GoogleAlloydbInstance#availability_type}
   */
   readonly availabilityType?: string;
   /**
   * Identifies the alloydb cluster. Must be in the format
   * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#cluster GoogleAlloydbInstance#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#cluster GoogleAlloydbInstance#cluster}
   */
   readonly cluster: string;
   /**
   * Database flags. Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#database_flags GoogleAlloydbInstance#database_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#database_flags GoogleAlloydbInstance#database_flags}
   */
   readonly databaseFlags?: { [key: string]: string };
   /**
   * User-settable and human-readable display name for the Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#display_name GoogleAlloydbInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#display_name GoogleAlloydbInstance#display_name}
   */
   readonly displayName?: string;
   /**
   * The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#gce_zone GoogleAlloydbInstance#gce_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#gce_zone GoogleAlloydbInstance#gce_zone}
   */
   readonly gceZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#id GoogleAlloydbInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#id GoogleAlloydbInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -67,13 +67,13 @@ export interface GoogleAlloydbInstanceConfig extends cdktf.TerraformMetaArgument
   /**
   * The ID of the alloydb instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#instance_id GoogleAlloydbInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#instance_id GoogleAlloydbInstance#instance_id}
   */
   readonly instanceId: string;
   /**
   * The type of the instance. If the instance type is READ_POOL, provide the associated PRIMARY instance in the 'depends_on' meta-data attribute. Possible values: ["PRIMARY", "READ_POOL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#instance_type GoogleAlloydbInstance#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#instance_type GoogleAlloydbInstance#instance_type}
   */
   readonly instanceType: string;
   /**
@@ -82,39 +82,208 @@ export interface GoogleAlloydbInstanceConfig extends cdktf.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#labels GoogleAlloydbInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#labels GoogleAlloydbInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
+  * client_connection_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#client_connection_config GoogleAlloydbInstance#client_connection_config}
+  */
+  readonly clientConnectionConfig?: GoogleAlloydbInstanceClientConnectionConfig;
+  /**
   * machine_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#machine_config GoogleAlloydbInstance#machine_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#machine_config GoogleAlloydbInstance#machine_config}
   */
   readonly machineConfig?: GoogleAlloydbInstanceMachineConfig;
   /**
   * query_insights_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#query_insights_config GoogleAlloydbInstance#query_insights_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#query_insights_config GoogleAlloydbInstance#query_insights_config}
   */
   readonly queryInsightsConfig?: GoogleAlloydbInstanceQueryInsightsConfig;
   /**
   * read_pool_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#read_pool_config GoogleAlloydbInstance#read_pool_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#read_pool_config GoogleAlloydbInstance#read_pool_config}
   */
   readonly readPoolConfig?: GoogleAlloydbInstanceReadPoolConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#timeouts GoogleAlloydbInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#timeouts GoogleAlloydbInstance#timeouts}
   */
   readonly timeouts?: GoogleAlloydbInstanceTimeouts;
+}
+export interface GoogleAlloydbInstanceClientConnectionConfigSslConfig {
+  /**
+  * SSL mode. Specifies client-server SSL/TLS connection behavior. Possible values: ["ENCRYPTED_ONLY", "ALLOW_UNENCRYPTED_AND_ENCRYPTED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#ssl_mode GoogleAlloydbInstance#ssl_mode}
+  */
+  readonly sslMode?: string;
+}
+
+export function googleAlloydbInstanceClientConnectionConfigSslConfigToTerraform(struct?: GoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference | GoogleAlloydbInstanceClientConnectionConfigSslConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ssl_mode: cdktf.stringToTerraform(struct!.sslMode),
+  }
+}
+
+export class GoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAlloydbInstanceClientConnectionConfigSslConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._sslMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslMode = this._sslMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAlloydbInstanceClientConnectionConfigSslConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._sslMode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._sslMode = value.sslMode;
+    }
+  }
+
+  // ssl_mode - computed: true, optional: true, required: false
+  private _sslMode?: string; 
+  public get sslMode() {
+    return this.getStringAttribute('ssl_mode');
+  }
+  public set sslMode(value: string) {
+    this._sslMode = value;
+  }
+  public resetSslMode() {
+    this._sslMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslModeInput() {
+    return this._sslMode;
+  }
+}
+export interface GoogleAlloydbInstanceClientConnectionConfig {
+  /**
+  * Configuration to enforce connectors only (ex: AuthProxy) connections to the database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#require_connectors GoogleAlloydbInstance#require_connectors}
+  */
+  readonly requireConnectors?: boolean | cdktf.IResolvable;
+  /**
+  * ssl_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#ssl_config GoogleAlloydbInstance#ssl_config}
+  */
+  readonly sslConfig?: GoogleAlloydbInstanceClientConnectionConfigSslConfig;
+}
+
+export function googleAlloydbInstanceClientConnectionConfigToTerraform(struct?: GoogleAlloydbInstanceClientConnectionConfigOutputReference | GoogleAlloydbInstanceClientConnectionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    require_connectors: cdktf.booleanToTerraform(struct!.requireConnectors),
+    ssl_config: googleAlloydbInstanceClientConnectionConfigSslConfigToTerraform(struct!.sslConfig),
+  }
+}
+
+export class GoogleAlloydbInstanceClientConnectionConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAlloydbInstanceClientConnectionConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requireConnectors !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireConnectors = this._requireConnectors;
+    }
+    if (this._sslConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslConfig = this._sslConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAlloydbInstanceClientConnectionConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._requireConnectors = undefined;
+      this._sslConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._requireConnectors = value.requireConnectors;
+      this._sslConfig.internalValue = value.sslConfig;
+    }
+  }
+
+  // require_connectors - computed: false, optional: true, required: false
+  private _requireConnectors?: boolean | cdktf.IResolvable; 
+  public get requireConnectors() {
+    return this.getBooleanAttribute('require_connectors');
+  }
+  public set requireConnectors(value: boolean | cdktf.IResolvable) {
+    this._requireConnectors = value;
+  }
+  public resetRequireConnectors() {
+    this._requireConnectors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireConnectorsInput() {
+    return this._requireConnectors;
+  }
+
+  // ssl_config - computed: false, optional: true, required: false
+  private _sslConfig = new GoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference(this, "ssl_config");
+  public get sslConfig() {
+    return this._sslConfig;
+  }
+  public putSslConfig(value: GoogleAlloydbInstanceClientConnectionConfigSslConfig) {
+    this._sslConfig.internalValue = value;
+  }
+  public resetSslConfig() {
+    this._sslConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslConfigInput() {
+    return this._sslConfig.internalValue;
+  }
 }
 export interface GoogleAlloydbInstanceMachineConfig {
   /**
   * The number of CPU's in the VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#cpu_count GoogleAlloydbInstance#cpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#cpu_count GoogleAlloydbInstance#cpu_count}
   */
   readonly cpuCount?: number;
 }
@@ -181,25 +350,25 @@ export interface GoogleAlloydbInstanceQueryInsightsConfig {
   /**
   * Number of query execution plans captured by Insights per minute for all queries combined. The default value is 5. Any integer between 0 and 20 is considered valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#query_plans_per_minute GoogleAlloydbInstance#query_plans_per_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#query_plans_per_minute GoogleAlloydbInstance#query_plans_per_minute}
   */
   readonly queryPlansPerMinute?: number;
   /**
   * Query string length. The default value is 1024. Any integer between 256 and 4500 is considered valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#query_string_length GoogleAlloydbInstance#query_string_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#query_string_length GoogleAlloydbInstance#query_string_length}
   */
   readonly queryStringLength?: number;
   /**
   * Record application tags for an instance. This flag is turned "on" by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#record_application_tags GoogleAlloydbInstance#record_application_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#record_application_tags GoogleAlloydbInstance#record_application_tags}
   */
   readonly recordApplicationTags?: boolean | cdktf.IResolvable;
   /**
   * Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#record_client_address GoogleAlloydbInstance#record_client_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#record_client_address GoogleAlloydbInstance#record_client_address}
   */
   readonly recordClientAddress?: boolean | cdktf.IResolvable;
 }
@@ -335,7 +504,7 @@ export interface GoogleAlloydbInstanceReadPoolConfig {
   /**
   * Read capacity, i.e. number of nodes in a read pool instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#node_count GoogleAlloydbInstance#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#node_count GoogleAlloydbInstance#node_count}
   */
   readonly nodeCount?: number;
 }
@@ -400,15 +569,15 @@ export class GoogleAlloydbInstanceReadPoolConfigOutputReference extends cdktf.Co
 }
 export interface GoogleAlloydbInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#create GoogleAlloydbInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#create GoogleAlloydbInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#delete GoogleAlloydbInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#delete GoogleAlloydbInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#update GoogleAlloydbInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#update GoogleAlloydbInstance#update}
   */
   readonly update?: string;
 }
@@ -529,7 +698,7 @@ export class GoogleAlloydbInstanceTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance google_alloydb_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance google_alloydb_instance}
 */
 export class GoogleAlloydbInstance extends cdktf.TerraformResource {
 
@@ -545,7 +714,7 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAlloydbInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAlloydbInstance to import
-  * @param importFromId The id of the existing GoogleAlloydbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAlloydbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAlloydbInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -557,7 +726,7 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -568,7 +737,7 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -589,6 +758,7 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
     this._instanceId = config.instanceId;
     this._instanceType = config.instanceType;
     this._labels = config.labels;
+    this._clientConnectionConfig.internalValue = config.clientConnectionConfig;
     this._machineConfig.internalValue = config.machineConfig;
     this._queryInsightsConfig.internalValue = config.queryInsightsConfig;
     this._readPoolConfig.internalValue = config.readPoolConfig;
@@ -803,6 +973,22 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // client_connection_config - computed: false, optional: true, required: false
+  private _clientConnectionConfig = new GoogleAlloydbInstanceClientConnectionConfigOutputReference(this, "client_connection_config");
+  public get clientConnectionConfig() {
+    return this._clientConnectionConfig;
+  }
+  public putClientConnectionConfig(value: GoogleAlloydbInstanceClientConnectionConfig) {
+    this._clientConnectionConfig.internalValue = value;
+  }
+  public resetClientConnectionConfig() {
+    this._clientConnectionConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientConnectionConfigInput() {
+    return this._clientConnectionConfig.internalValue;
+  }
+
   // machine_config - computed: false, optional: true, required: false
   private _machineConfig = new GoogleAlloydbInstanceMachineConfigOutputReference(this, "machine_config");
   public get machineConfig() {
@@ -883,6 +1069,7 @@ export class GoogleAlloydbInstance extends cdktf.TerraformResource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      client_connection_config: googleAlloydbInstanceClientConnectionConfigToTerraform(this._clientConnectionConfig.internalValue),
       machine_config: googleAlloydbInstanceMachineConfigToTerraform(this._machineConfig.internalValue),
       query_insights_config: googleAlloydbInstanceQueryInsightsConfigToTerraform(this._queryInsightsConfig.internalValue),
       read_pool_config: googleAlloydbInstanceReadPoolConfigToTerraform(this._readPoolConfig.internalValue),
