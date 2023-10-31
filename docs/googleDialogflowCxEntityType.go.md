@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityType(scope Construct, id *string, config GoogleDialogflowCxEntityTypeConfig) GoogleDialogflowCxEntityType
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ googledialogflowcxentitytype.GoogleDialogflowCxEntityType_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.GoogleDialogflowCxEntityType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflo
 	LanguageCode: *string,
 	Parent: *string,
 	Redact: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts,
 }
 ```
 
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeEntities {
 	Synonyms: *[]*string,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeExcludedPhrases {
 	Value: *string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 &googledialogflowcxentitytype.GoogleDialogflowCxEntityTypeTimeouts {
 	Create: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxEntityTypeEntitiesList
 ```
@@ -1553,7 +1553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxEntityTypeEntitiesOutputReference
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeExcludedPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxEntityTypeExcludedPhrasesList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference
 ```
@@ -2317,7 +2317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxentitytype"
 
 googledialogflowcxentitytype.NewGoogleDialogflowCxEntityTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxEntityTypeTimeoutsOutputReference
 ```

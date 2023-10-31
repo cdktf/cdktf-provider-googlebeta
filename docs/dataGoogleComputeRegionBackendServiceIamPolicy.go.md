@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 datagooglecomputeregionbackendserviceiampolicy.NewDataGoogleComputeRegionBackendServiceIamPolicy(scope Construct, id *string, config DataGoogleComputeRegionBackendServiceIamPolicyConfig) DataGoogleComputeRegionBackendServiceIamPolicy
 ```
@@ -292,7 +292,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendServiceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendSer
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendServiceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendSer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendServiceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeRegionBackendServiceIamPolicy.DataGoogleComputeRegionBackendServiceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionbackendserviceiampolicy"
 
 &datagooglecomputeregionbackendserviceiampolicy.DataGoogleComputeRegionBackendServiceIamPolicyConfig {
 	Connection: interface{},
