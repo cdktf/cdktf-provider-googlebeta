@@ -1,6 +1,6 @@
 # `google_compute_image_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_compute_image_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy).
+Refer to the Terraform Registory for docs: [`google_compute_image_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy).
 
 # `googleComputeImageIamPolicy` Submodule <a name="`googleComputeImageIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_compute_image_iam_policy`](h
 
 ### GoogleComputeImageIamPolicy <a name="GoogleComputeImageIamPolicy" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 googlecomputeimageiampolicy.NewGoogleComputeImageIamPolicy(scope Construct, id *string, config GoogleComputeImageIamPolicyConfig) GoogleComputeImageIamPolicy
 ```
@@ -346,7 +346,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 googlecomputeimageiampolicy.GoogleComputeImageIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the GoogleComputeImageIamPolic
 
 The id of the existing GoogleComputeImageIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiampolicy"
 
 &googlecomputeimageiampolicy.GoogleComputeImageIamPolicyConfig {
 	Connection: interface{},
@@ -762,10 +762,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.image">Image</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#image GoogleComputeImageIamPolicy#image}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#policy_data GoogleComputeImageIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#id GoogleComputeImageIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#project GoogleComputeImageIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.image">Image</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#image GoogleComputeImageIamPolicy#image}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#policy_data GoogleComputeImageIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#id GoogleComputeImageIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamPolicy.GoogleComputeImageIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#project GoogleComputeImageIamPolicy#project}. |
 
 ---
 
@@ -847,7 +847,7 @@ Image *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#image GoogleComputeImageIamPolicy#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#image GoogleComputeImageIamPolicy#image}.
 
 ---
 
@@ -859,7 +859,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#policy_data GoogleComputeImageIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#policy_data GoogleComputeImageIamPolicy#policy_data}.
 
 ---
 
@@ -871,7 +871,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#id GoogleComputeImageIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#id GoogleComputeImageIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -886,7 +886,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_image_iam_policy#project GoogleComputeImageIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_policy#project GoogleComputeImageIamPolicy#project}.
 
 ---
 

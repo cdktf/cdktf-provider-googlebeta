@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterAddonsConfigCloudrunConfig {
 }
@@ -5191,6 +5186,11 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
   private _effectiveTaints = new DataGoogleContainerClusterNodeConfigEffectiveTaintsList(this, "effective_taints", false);
   public get effectiveTaints() {
     return this._effectiveTaints;
+  }
+
+  // enable_confidential_storage - computed: true, optional: false, required: false
+  public get enableConfidentialStorage() {
+    return this.getBooleanAttribute('enable_confidential_storage');
   }
 
   // ephemeral_storage_config - computed: true, optional: false, required: false

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -24,31 +19,31 @@ export interface GoogleContainerAttachedClusterConfig extends cdktf.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#annotations GoogleContainerAttachedCluster#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#annotations GoogleContainerAttachedCluster#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Policy to determine what flags to send on delete.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#deletion_policy GoogleContainerAttachedCluster#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#deletion_policy GoogleContainerAttachedCluster#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human readable description of this attached cluster. Cannot be longer
   * than 255 UTF-8 encoded bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#description GoogleContainerAttachedCluster#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#description GoogleContainerAttachedCluster#description}
   */
   readonly description?: string;
   /**
   * The Kubernetes distribution of the underlying attached cluster. Supported values:
   * "eks", "aks".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#distribution GoogleContainerAttachedCluster#distribution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#distribution GoogleContainerAttachedCluster#distribution}
   */
   readonly distribution: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#id GoogleContainerAttachedCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#id GoogleContainerAttachedCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,65 +52,65 @@ export interface GoogleContainerAttachedClusterConfig extends cdktf.TerraformMet
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#location GoogleContainerAttachedCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#location GoogleContainerAttachedCluster#location}
   */
   readonly location: string;
   /**
   * The name of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#name GoogleContainerAttachedCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#name GoogleContainerAttachedCluster#name}
   */
   readonly name: string;
   /**
   * The platform version for the cluster (e.g. '1.23.0-gke.1').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#platform_version GoogleContainerAttachedCluster#platform_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#platform_version GoogleContainerAttachedCluster#platform_version}
   */
   readonly platformVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#project GoogleContainerAttachedCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#project GoogleContainerAttachedCluster#project}
   */
   readonly project?: string;
   /**
   * authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#authorization GoogleContainerAttachedCluster#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#authorization GoogleContainerAttachedCluster#authorization}
   */
   readonly authorization?: GoogleContainerAttachedClusterAuthorization;
   /**
   * binary_authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#binary_authorization GoogleContainerAttachedCluster#binary_authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#binary_authorization GoogleContainerAttachedCluster#binary_authorization}
   */
   readonly binaryAuthorization?: GoogleContainerAttachedClusterBinaryAuthorization;
   /**
   * fleet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#fleet GoogleContainerAttachedCluster#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#fleet GoogleContainerAttachedCluster#fleet}
   */
   readonly fleet: GoogleContainerAttachedClusterFleet;
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#logging_config GoogleContainerAttachedCluster#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#logging_config GoogleContainerAttachedCluster#logging_config}
   */
   readonly loggingConfig?: GoogleContainerAttachedClusterLoggingConfig;
   /**
   * monitoring_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#monitoring_config GoogleContainerAttachedCluster#monitoring_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#monitoring_config GoogleContainerAttachedCluster#monitoring_config}
   */
   readonly monitoringConfig?: GoogleContainerAttachedClusterMonitoringConfig;
   /**
   * oidc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#oidc_config GoogleContainerAttachedCluster#oidc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#oidc_config GoogleContainerAttachedCluster#oidc_config}
   */
   readonly oidcConfig: GoogleContainerAttachedClusterOidcConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#timeouts GoogleContainerAttachedCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#timeouts GoogleContainerAttachedCluster#timeouts}
   */
   readonly timeouts?: GoogleContainerAttachedClusterTimeouts;
 }
@@ -259,6 +254,17 @@ export class GoogleContainerAttachedClusterWorkloadIdentityConfigList extends cd
 }
 export interface GoogleContainerAttachedClusterAuthorization {
   /**
+  * Groups that can perform operations as a cluster admin. A managed
+  * ClusterRoleBinding will be created to grant the 'cluster-admin' ClusterRole
+  * to the groups. Up to ten admin groups can be provided.
+  * 
+  * For more info on RBAC, see
+  * https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#admin_groups GoogleContainerAttachedCluster#admin_groups}
+  */
+  readonly adminGroups?: string[];
+  /**
   * Users that can perform operations as a cluster admin. A managed
   * ClusterRoleBinding will be created to grant the 'cluster-admin' ClusterRole
   * to the users. Up to ten admin users can be provided.
@@ -266,7 +272,7 @@ export interface GoogleContainerAttachedClusterAuthorization {
   * For more info on RBAC, see
   * https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#admin_users GoogleContainerAttachedCluster#admin_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#admin_users GoogleContainerAttachedCluster#admin_users}
   */
   readonly adminUsers?: string[];
 }
@@ -277,6 +283,7 @@ export function googleContainerAttachedClusterAuthorizationToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    admin_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.adminGroups),
     admin_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.adminUsers),
   }
 }
@@ -295,6 +302,10 @@ export class GoogleContainerAttachedClusterAuthorizationOutputReference extends 
   public get internalValue(): GoogleContainerAttachedClusterAuthorization | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._adminGroups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.adminGroups = this._adminGroups;
+    }
     if (this._adminUsers !== undefined) {
       hasAnyValues = true;
       internalValueResult.adminUsers = this._adminUsers;
@@ -305,12 +316,30 @@ export class GoogleContainerAttachedClusterAuthorizationOutputReference extends 
   public set internalValue(value: GoogleContainerAttachedClusterAuthorization | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._adminGroups = undefined;
       this._adminUsers = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._adminGroups = value.adminGroups;
       this._adminUsers = value.adminUsers;
     }
+  }
+
+  // admin_groups - computed: false, optional: true, required: false
+  private _adminGroups?: string[]; 
+  public get adminGroups() {
+    return this.getListAttribute('admin_groups');
+  }
+  public set adminGroups(value: string[]) {
+    this._adminGroups = value;
+  }
+  public resetAdminGroups() {
+    this._adminGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminGroupsInput() {
+    return this._adminGroups;
   }
 
   // admin_users - computed: false, optional: true, required: false
@@ -333,7 +362,7 @@ export interface GoogleContainerAttachedClusterBinaryAuthorization {
   /**
   * Configure Binary Authorization evaluation mode. Possible values: ["DISABLED", "PROJECT_SINGLETON_POLICY_ENFORCE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#evaluation_mode GoogleContainerAttachedCluster#evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#evaluation_mode GoogleContainerAttachedCluster#evaluation_mode}
   */
   readonly evaluationMode?: string;
 }
@@ -400,7 +429,7 @@ export interface GoogleContainerAttachedClusterFleet {
   /**
   * The number of the Fleet host project where this cluster will be registered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#project GoogleContainerAttachedCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#project GoogleContainerAttachedCluster#project}
   */
   readonly project: string;
 }
@@ -469,7 +498,7 @@ export interface GoogleContainerAttachedClusterLoggingConfigComponentConfig {
   /**
   * The components to be enabled. Possible values: ["SYSTEM_COMPONENTS", "WORKLOADS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#enable_components GoogleContainerAttachedCluster#enable_components}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#enable_components GoogleContainerAttachedCluster#enable_components}
   */
   readonly enableComponents?: string[];
 }
@@ -536,7 +565,7 @@ export interface GoogleContainerAttachedClusterLoggingConfig {
   /**
   * component_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#component_config GoogleContainerAttachedCluster#component_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#component_config GoogleContainerAttachedCluster#component_config}
   */
   readonly componentConfig?: GoogleContainerAttachedClusterLoggingConfigComponentConfig;
 }
@@ -603,7 +632,7 @@ export interface GoogleContainerAttachedClusterMonitoringConfigManagedPrometheus
   /**
   * Enable Managed Collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#enabled GoogleContainerAttachedCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#enabled GoogleContainerAttachedCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -670,7 +699,7 @@ export interface GoogleContainerAttachedClusterMonitoringConfig {
   /**
   * managed_prometheus_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#managed_prometheus_config GoogleContainerAttachedCluster#managed_prometheus_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#managed_prometheus_config GoogleContainerAttachedCluster#managed_prometheus_config}
   */
   readonly managedPrometheusConfig?: GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig;
 }
@@ -737,13 +766,13 @@ export interface GoogleContainerAttachedClusterOidcConfig {
   /**
   * A JSON Web Token (JWT) issuer URI. 'issuer' must start with 'https://'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#issuer_url GoogleContainerAttachedCluster#issuer_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#issuer_url GoogleContainerAttachedCluster#issuer_url}
   */
   readonly issuerUrl: string;
   /**
   * OIDC verification keys in JWKS format (RFC 7517).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#jwks GoogleContainerAttachedCluster#jwks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#jwks GoogleContainerAttachedCluster#jwks}
   */
   readonly jwks?: string;
 }
@@ -828,15 +857,15 @@ export class GoogleContainerAttachedClusterOidcConfigOutputReference extends cdk
 }
 export interface GoogleContainerAttachedClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#create GoogleContainerAttachedCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#create GoogleContainerAttachedCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#delete GoogleContainerAttachedCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#delete GoogleContainerAttachedCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#update GoogleContainerAttachedCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#update GoogleContainerAttachedCluster#update}
   */
   readonly update?: string;
 }
@@ -957,7 +986,7 @@ export class GoogleContainerAttachedClusterTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster google_container_attached_cluster}
 */
 export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
 
@@ -973,7 +1002,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleContainerAttachedCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleContainerAttachedCluster to import
-  * @param importFromId The id of the existing GoogleContainerAttachedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleContainerAttachedCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleContainerAttachedCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -985,7 +1014,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_container_attached_cluster google_container_attached_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -996,7 +1025,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_attached_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
