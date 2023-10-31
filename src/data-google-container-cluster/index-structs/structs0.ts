@@ -5193,6 +5193,11 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
     return this._effectiveTaints;
   }
 
+  // enable_confidential_storage - computed: true, optional: false, required: false
+  public get enableConfidentialStorage() {
+    return this.getBooleanAttribute('enable_confidential_storage');
+  }
+
   // ephemeral_storage_config - computed: true, optional: false, required: false
   private _ephemeralStorageConfig = new DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList(this, "ephemeral_storage_config", false);
   public get ephemeralStorageConfig() {
