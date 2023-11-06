@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.NewGoogleCloudAssetOrganizationFeed(scope Construct, id *string, config GoogleCloudAssetOrganizationFeedConfig) GoogleCloudAssetOrganizationFeed
 ```
@@ -413,7 +413,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeed_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 &googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeedCondition {
 	Expression: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 &googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeedConfig {
 	Connection: interface{},
@@ -1030,14 +1030,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Provisioners: *[]interface{},
 	BillingProject: *string,
 	FeedId: *string,
-	FeedOutputConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfig,
+	FeedOutputConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfig,
 	OrgId: *string,
 	AssetNames: *[]*string,
 	AssetTypes: *[]*string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedCondition,
 	ContentType: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedTimeouts,
 }
 ```
 
@@ -1297,10 +1297,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 &googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeedFeedOutputConfig {
-	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination,
+	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination,
 }
 ```
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 &googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination {
 	Topic: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 &googlecloudassetorganizationfeed.GoogleCloudAssetOrganizationFeedTimeouts {
 	Create: *string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.NewGoogleCloudAssetOrganizationFeedConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetOrganizationFeedConditionOutputReference
 ```
@@ -1785,7 +1785,7 @@ func InternalValue() GoogleCloudAssetOrganizationFeedCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.NewGoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() GoogleCloudAssetOrganizationFeedFeedOutputConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.NewGoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDesti
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetorganizationfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudassetorganizationfeed"
 
 googlecloudassetorganizationfeed.NewGoogleCloudAssetOrganizationFeedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetOrganizationFeedTimeoutsOutputReference
 ```
