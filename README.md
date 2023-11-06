@@ -1,7 +1,9 @@
 
-# Terraform CDK google-beta Provider ~> 5.0
+# Terraform CDK google-beta Provider tracks ~> 5.0
 
 This repo builds and publishes the Terraform google-beta Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on google-beta 5.4.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform google-beta Provider versi
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform google-beta Provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0)
+- [Terraform google-beta Provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-google-beta/releases)
 - [Terraform Engine](https://terraform.io)
 
