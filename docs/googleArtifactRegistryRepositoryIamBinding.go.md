@@ -1,6 +1,6 @@
 # `google_artifact_registry_repository_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_artifact_registry_repository_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding).
+Refer to the Terraform Registory for docs: [`google_artifact_registry_repository_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding).
 
 # `googleArtifactRegistryRepositoryIamBinding` Submodule <a name="`googleArtifactRegistryRepositoryIamBinding` Submodule" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_artifact_registry_repository
 
 ### GoogleArtifactRegistryRepositoryIamBinding <a name="GoogleArtifactRegistryRepositoryIamBinding" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding google_artifact_registry_repository_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.NewGoogleArtifactRegistryRepositoryIamBinding(scope Construct, id *string, config GoogleArtifactRegistryRepositoryIamBindingConfig) GoogleArtifactRegistryRepositoryIamBinding
 ```
@@ -373,7 +373,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -462,7 +462,7 @@ The construct id used in the generated config for the GoogleArtifactRegistryRepo
 
 The id of the existing GoogleArtifactRegistryRepositoryIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 &googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBindingCondition {
 	Expression: *string,
@@ -840,9 +840,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#expression GoogleArtifactRegistryRepositoryIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#title GoogleArtifactRegistryRepositoryIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#description GoogleArtifactRegistryRepositoryIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#expression GoogleArtifactRegistryRepositoryIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#title GoogleArtifactRegistryRepositoryIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#description GoogleArtifactRegistryRepositoryIamBinding#description}. |
 
 ---
 
@@ -854,7 +854,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#expression GoogleArtifactRegistryRepositoryIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#expression GoogleArtifactRegistryRepositoryIamBinding#expression}.
 
 ---
 
@@ -866,7 +866,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#title GoogleArtifactRegistryRepositoryIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#title GoogleArtifactRegistryRepositoryIamBinding#title}.
 
 ---
 
@@ -878,7 +878,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#description GoogleArtifactRegistryRepositoryIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#description GoogleArtifactRegistryRepositoryIamBinding#description}.
 
 ---
 
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 &googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBindingConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartif
 	Members: *[]*string,
 	Repository: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -918,13 +918,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartif
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#members GoogleArtifactRegistryRepositoryIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#repository GoogleArtifactRegistryRepositoryIamBinding#repository}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#role GoogleArtifactRegistryRepositoryIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#members GoogleArtifactRegistryRepositoryIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#repository GoogleArtifactRegistryRepositoryIamBinding#repository}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#role GoogleArtifactRegistryRepositoryIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition">GoogleArtifactRegistryRepositoryIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#id GoogleArtifactRegistryRepositoryIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#location GoogleArtifactRegistryRepositoryIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#project GoogleArtifactRegistryRepositoryIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#id GoogleArtifactRegistryRepositoryIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#location GoogleArtifactRegistryRepositoryIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#project GoogleArtifactRegistryRepositoryIamBinding#project}. |
 
 ---
 
@@ -1006,7 +1006,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#members GoogleArtifactRegistryRepositoryIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#members GoogleArtifactRegistryRepositoryIamBinding#members}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#repository GoogleArtifactRegistryRepositoryIamBinding#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#repository GoogleArtifactRegistryRepositoryIamBinding#repository}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#role GoogleArtifactRegistryRepositoryIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#role GoogleArtifactRegistryRepositoryIamBinding#role}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Condition GoogleArtifactRegistryRepositoryIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#condition GoogleArtifactRegistryRepositoryIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#condition GoogleArtifactRegistryRepositoryIamBinding#condition}
 
 ---
 
@@ -1056,7 +1056,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#id GoogleArtifactRegistryRepositoryIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#id GoogleArtifactRegistryRepositoryIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1071,7 +1071,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#location GoogleArtifactRegistryRepositoryIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#location GoogleArtifactRegistryRepositoryIamBinding#location}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_artifact_registry_repository_iam_binding#project GoogleArtifactRegistryRepositoryIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_artifact_registry_repository_iam_binding#project GoogleArtifactRegistryRepositoryIamBinding#project}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.NewGoogleArtifactRegistryRepositoryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference
 ```

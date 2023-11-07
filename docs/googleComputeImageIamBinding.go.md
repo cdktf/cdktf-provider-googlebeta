@@ -1,6 +1,6 @@
 # `google_compute_image_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_compute_image_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding).
+Refer to the Terraform Registory for docs: [`google_compute_image_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding).
 
 # `googleComputeImageIamBinding` Submodule <a name="`googleComputeImageIamBinding` Submodule" id="@cdktf/provider-google-beta.googleComputeImageIamBinding"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_compute_image_iam_binding`](
 
 ### GoogleComputeImageIamBinding <a name="GoogleComputeImageIamBinding" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding google_compute_image_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding google_compute_image_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.NewGoogleComputeImageIamBinding(scope Construct, id *string, config GoogleComputeImageIamBindingConfig) GoogleComputeImageIamBinding
 ```
@@ -366,7 +366,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.GoogleComputeImageIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.GoogleComputeImageIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ googlecomputeimageiambinding.GoogleComputeImageIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.GoogleComputeImageIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ googlecomputeimageiambinding.GoogleComputeImageIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.GoogleComputeImageIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +455,7 @@ The construct id used in the generated config for the GoogleComputeImageIamBindi
 
 The id of the existing GoogleComputeImageIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 &googlecomputeimageiambinding.GoogleComputeImageIamBindingCondition {
 	Expression: *string,
@@ -811,9 +811,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#expression GoogleComputeImageIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#title GoogleComputeImageIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#description GoogleComputeImageIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#expression GoogleComputeImageIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#title GoogleComputeImageIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#description GoogleComputeImageIamBinding#description}. |
 
 ---
 
@@ -825,7 +825,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#expression GoogleComputeImageIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#expression GoogleComputeImageIamBinding#expression}.
 
 ---
 
@@ -837,7 +837,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#title GoogleComputeImageIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#title GoogleComputeImageIamBinding#title}.
 
 ---
 
@@ -849,7 +849,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#description GoogleComputeImageIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#description GoogleComputeImageIamBinding#description}.
 
 ---
 
@@ -858,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 &googlecomputeimageiambinding.GoogleComputeImageIamBindingConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Image: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -888,12 +888,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.image">Image</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#image GoogleComputeImageIamBinding#image}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#members GoogleComputeImageIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#role GoogleComputeImageIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.image">Image</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#image GoogleComputeImageIamBinding#image}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#members GoogleComputeImageIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#role GoogleComputeImageIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingCondition">GoogleComputeImageIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#id GoogleComputeImageIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#project GoogleComputeImageIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#id GoogleComputeImageIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#project GoogleComputeImageIamBinding#project}. |
 
 ---
 
@@ -975,7 +975,7 @@ Image *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#image GoogleComputeImageIamBinding#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#image GoogleComputeImageIamBinding#image}.
 
 ---
 
@@ -987,7 +987,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#members GoogleComputeImageIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#members GoogleComputeImageIamBinding#members}.
 
 ---
 
@@ -999,7 +999,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#role GoogleComputeImageIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#role GoogleComputeImageIamBinding#role}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Condition GoogleComputeImageIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#condition GoogleComputeImageIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#condition GoogleComputeImageIamBinding#condition}
 
 ---
 
@@ -1025,7 +1025,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#id GoogleComputeImageIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#id GoogleComputeImageIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_image_iam_binding#project GoogleComputeImageIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_compute_image_iam_binding#project GoogleComputeImageIamBinding#project}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImageIamBinding.GoogleComputeImageIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimageiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeimageiambinding"
 
 googlecomputeimageiambinding.NewGoogleComputeImageIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeImageIamBindingConditionOutputReference
 ```

@@ -1,6 +1,6 @@
 # `google_api_gateway_gateway`
 
-Refer to the Terraform Registory for docs: [`google_api_gateway_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway).
+Refer to the Terraform Registory for docs: [`google_api_gateway_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway).
 
 # `googleApiGatewayGateway` Submodule <a name="`googleApiGatewayGateway` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_api_gateway_gateway`](https:
 
 ### GoogleApiGatewayGateway <a name="GoogleApiGatewayGateway" id="@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway.Initializer"></a>
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the GoogleApiGatewayGateway to
 
 The id of the existing GoogleApiGatewayGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,9 +931,9 @@ new GoogleApiGatewayGatewayConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.apiConfig">ApiConfig</a></code> | <code>string</code> | Resource name of the API Config for this Gateway. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.gatewayId">GatewayId</a></code> | <code>string</code> | Identifier to assign to the Gateway. Must be unique within scope of the parent resource(project). |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.displayName">DisplayName</a></code> | <code>string</code> | A user-visible name for the API. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.region">Region</a></code> | <code>string</code> | The region of the gateway for the API. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts">GoogleApiGatewayGatewayTimeouts</a></code> | timeouts block. |
 
@@ -1022,7 +1022,7 @@ Resource name of the API Config for this Gateway.
 Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}.
 When changing api configs please ensure the new config is a new resource and the lifecycle rule 'create_before_destroy' is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
 
 ---
 
@@ -1036,7 +1036,7 @@ public string GatewayId { get; set; }
 
 Identifier to assign to the Gateway. Must be unique within scope of the parent resource(project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
 
 ---
 
@@ -1050,7 +1050,7 @@ public string DisplayName { get; set; }
 
 A user-visible name for the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
 
 ---
 
@@ -1094,7 +1094,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public string Region { get; set; }
 
 The region of the gateway for the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
 
 ---
 
@@ -1122,7 +1122,7 @@ public GoogleApiGatewayGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
 
 ---
 
@@ -1144,9 +1144,9 @@ new GoogleApiGatewayGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}.
 
 ---
 

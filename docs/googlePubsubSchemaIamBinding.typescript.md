@@ -1,6 +1,6 @@
 # `google_pubsub_schema_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_pubsub_schema_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding).
+Refer to the Terraform Registory for docs: [`google_pubsub_schema_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding).
 
 # `googlePubsubSchemaIamBinding` Submodule <a name="`googlePubsubSchemaIamBinding` Submodule" id="@cdktf/provider-google-beta.googlePubsubSchemaIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_pubsub_schema_iam_binding`](
 
 ### GooglePubsubSchemaIamBinding <a name="GooglePubsubSchemaIamBinding" id="@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding google_pubsub_schema_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding google_pubsub_schema_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBinding.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the GooglePubsubSchemaIamBindi
 
 The id of the existing GooglePubsubSchemaIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,9 +807,9 @@ const googlePubsubSchemaIamBindingCondition: googlePubsubSchemaIamBinding.Google
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#expression GooglePubsubSchemaIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#title GooglePubsubSchemaIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#description GooglePubsubSchemaIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#expression GooglePubsubSchemaIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#title GooglePubsubSchemaIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#description GooglePubsubSchemaIamBinding#description}. |
 
 ---
 
@@ -821,7 +821,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#expression GooglePubsubSchemaIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#expression GooglePubsubSchemaIamBinding#expression}.
 
 ---
 
@@ -833,7 +833,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#title GooglePubsubSchemaIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#title GooglePubsubSchemaIamBinding#title}.
 
 ---
 
@@ -845,7 +845,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#description GooglePubsubSchemaIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#description GooglePubsubSchemaIamBinding#description}.
 
 ---
 
@@ -870,12 +870,12 @@ const googlePubsubSchemaIamBindingConfig: googlePubsubSchemaIamBinding.GooglePub
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#members GooglePubsubSchemaIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#role GooglePubsubSchemaIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#schema GooglePubsubSchemaIamBinding#schema}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#members GooglePubsubSchemaIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#role GooglePubsubSchemaIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#schema GooglePubsubSchemaIamBinding#schema}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingCondition">GooglePubsubSchemaIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#id GooglePubsubSchemaIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#project GooglePubsubSchemaIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#id GooglePubsubSchemaIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamBinding.GooglePubsubSchemaIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#project GooglePubsubSchemaIamBinding#project}. |
 
 ---
 
@@ -957,7 +957,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#members GooglePubsubSchemaIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#members GooglePubsubSchemaIamBinding#members}.
 
 ---
 
@@ -969,7 +969,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#role GooglePubsubSchemaIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#role GooglePubsubSchemaIamBinding#role}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly schema: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#schema GooglePubsubSchemaIamBinding#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#schema GooglePubsubSchemaIamBinding#schema}.
 
 ---
 
@@ -995,7 +995,7 @@ public readonly condition: GooglePubsubSchemaIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#condition GooglePubsubSchemaIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#condition GooglePubsubSchemaIamBinding#condition}
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#id GooglePubsubSchemaIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#id GooglePubsubSchemaIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_pubsub_schema_iam_binding#project GooglePubsubSchemaIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_pubsub_schema_iam_binding#project GooglePubsubSchemaIamBinding#project}.
 
 ---
 
