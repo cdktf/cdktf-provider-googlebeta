@@ -1,6 +1,6 @@
 # `data_google_compute_backend_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_compute_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy).
+Refer to the Terraform Registory for docs: [`data_google_compute_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy).
 
 # `dataGoogleComputeBackendServiceIamPolicy` Submodule <a name="`dataGoogleComputeBackendServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_compute_backend_service
 
 ### DataGoogleComputeBackendServiceIamPolicy <a name="DataGoogleComputeBackendServiceIamPolicy" id="@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy google_compute_backend_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy google_compute_backend_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicy.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataGoogleComputeBackendSe
 
 The id of the existing DataGoogleComputeBackendServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,9 +667,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#name DataGoogleComputeBackendServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#id DataGoogleComputeBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#project DataGoogleComputeBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#name DataGoogleComputeBackendServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#id DataGoogleComputeBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy.DataGoogleComputeBackendServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#project DataGoogleComputeBackendServiceIamPolicy#project}. |
 
 ---
 
@@ -751,7 +751,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#name DataGoogleComputeBackendServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#name DataGoogleComputeBackendServiceIamPolicy#name}.
 
 ---
 
@@ -763,7 +763,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#id DataGoogleComputeBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#id DataGoogleComputeBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/data-sources/google_compute_backend_service_iam_policy#project DataGoogleComputeBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_compute_backend_service_iam_policy#project DataGoogleComputeBackendServiceIamPolicy#project}.
 
 ---
 

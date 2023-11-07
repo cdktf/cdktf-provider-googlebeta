@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataGoogleBigqueryAnalyticsHubListingIamPolicy](./dataGoogleBigqueryAnalyticsHubListingIamPolicy.java.md)
 - [dataGoogleBigqueryConnectionIamPolicy](./dataGoogleBigqueryConnectionIamPolicy.java.md)
 - [dataGoogleBigqueryDatapolicyDataPolicyIamPolicy](./dataGoogleBigqueryDatapolicyDataPolicyIamPolicy.java.md)
+- [dataGoogleBigqueryDataset](./dataGoogleBigqueryDataset.java.md)
 - [dataGoogleBigqueryDatasetIamPolicy](./dataGoogleBigqueryDatasetIamPolicy.java.md)
 - [dataGoogleBigqueryDefaultServiceAccount](./dataGoogleBigqueryDefaultServiceAccount.java.md)
 - [dataGoogleBigqueryTableIamPolicy](./dataGoogleBigqueryTableIamPolicy.java.md)
