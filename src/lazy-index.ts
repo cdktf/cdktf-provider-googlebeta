@@ -231,6 +231,7 @@ Object.defineProperty(exports, 'googleComputeInstanceGroupNamedPort', { get: fun
 Object.defineProperty(exports, 'googleComputeInstanceIamBinding', { get: function () { return require('./google-compute-instance-iam-binding'); } });
 Object.defineProperty(exports, 'googleComputeInstanceIamMember', { get: function () { return require('./google-compute-instance-iam-member'); } });
 Object.defineProperty(exports, 'googleComputeInstanceIamPolicy', { get: function () { return require('./google-compute-instance-iam-policy'); } });
+Object.defineProperty(exports, 'googleComputeInstanceSettings', { get: function () { return require('./google-compute-instance-settings'); } });
 Object.defineProperty(exports, 'googleComputeInstanceTemplate', { get: function () { return require('./google-compute-instance-template'); } });
 Object.defineProperty(exports, 'googleComputeInterconnectAttachment', { get: function () { return require('./google-compute-interconnect-attachment'); } });
 Object.defineProperty(exports, 'googleComputeMachineImage', { get: function () { return require('./google-compute-machine-image'); } });
@@ -579,6 +580,7 @@ Object.defineProperty(exports, 'googleIdentityPlatformTenant', { get: function (
 Object.defineProperty(exports, 'googleIdentityPlatformTenantDefaultSupportedIdpConfig', { get: function () { return require('./google-identity-platform-tenant-default-supported-idp-config'); } });
 Object.defineProperty(exports, 'googleIdentityPlatformTenantInboundSamlConfig', { get: function () { return require('./google-identity-platform-tenant-inbound-saml-config'); } });
 Object.defineProperty(exports, 'googleIdentityPlatformTenantOauthIdpConfig', { get: function () { return require('./google-identity-platform-tenant-oauth-idp-config'); } });
+Object.defineProperty(exports, 'googleIntegrationConnectorsConnection', { get: function () { return require('./google-integration-connectors-connection'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKey', { get: function () { return require('./google-kms-crypto-key'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamBinding', { get: function () { return require('./google-kms-crypto-key-iam-binding'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamMember', { get: function () { return require('./google-kms-crypto-key-iam-member'); } });
@@ -832,6 +834,7 @@ Object.defineProperty(exports, 'dataGoogleApigeeEnvironmentIamPolicy', { get: fu
 Object.defineProperty(exports, 'dataGoogleAppEngineDefaultServiceAccount', { get: function () { return require('./data-google-app-engine-default-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: function () { return require('./data-google-artifact-registry-repository'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositoryIamPolicy', { get: function () { return require('./data-google-artifact-registry-repository-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleBackupDrManagementServer', { get: function () { return require('./data-google-backup-dr-management-server'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnection', { get: function () { return require('./data-google-beyondcorp-app-connection'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnector', { get: function () { return require('./data-google-beyondcorp-app-connector'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppGateway', { get: function () { return require('./data-google-beyondcorp-app-gateway'); } });

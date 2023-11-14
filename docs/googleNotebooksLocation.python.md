@@ -1,6 +1,6 @@
 # `google_notebooks_location`
 
-Refer to the Terraform Registory for docs: [`google_notebooks_location`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location).
+Refer to the Terraform Registory for docs: [`google_notebooks_location`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location).
 
 # `googleNotebooksLocation` Submodule <a name="`googleNotebooksLocation` Submodule" id="@cdktf/provider-google-beta.googleNotebooksLocation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_notebooks_location`](https:/
 
 ### GoogleNotebooksLocation <a name="GoogleNotebooksLocation" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location google_notebooks_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location google_notebooks_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer"></a>
 
@@ -43,9 +43,9 @@ googleNotebooksLocation.GoogleNotebooksLocation(
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Location resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the Location resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
 
 ---
 
@@ -469,7 +469,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}.
 
 ---
 
@@ -477,7 +477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}.
 
 ---
 
@@ -485,7 +485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}.
 
 ---
 
@@ -627,7 +627,7 @@ The construct id used in the generated config for the GoogleNotebooksLocation to
 
 The id of the existing GoogleNotebooksLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,9 +954,9 @@ googleNotebooksLocation.GoogleNotebooksLocationConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.name">name</a></code> | <code>str</code> | Name of the Location resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1039,7 +1039,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1056,7 +1056,7 @@ name: str
 
 Name of the Location resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
 
 ---
 
@@ -1068,7 +1068,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}.
 
 ---
 
@@ -1082,7 +1082,7 @@ timeouts: GoogleNotebooksLocationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
 
 ---
 
@@ -1104,9 +1104,9 @@ googleNotebooksLocation.GoogleNotebooksLocationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}. |
 
 ---
 
@@ -1118,7 +1118,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}.
 
 ---
 
@@ -1130,7 +1130,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}.
 
 ---
 
@@ -1142,7 +1142,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}.
 
 ---
 

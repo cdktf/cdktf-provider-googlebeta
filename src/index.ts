@@ -231,6 +231,7 @@ export * as googleComputeInstanceGroupNamedPort from './google-compute-instance-
 export * as googleComputeInstanceIamBinding from './google-compute-instance-iam-binding';
 export * as googleComputeInstanceIamMember from './google-compute-instance-iam-member';
 export * as googleComputeInstanceIamPolicy from './google-compute-instance-iam-policy';
+export * as googleComputeInstanceSettings from './google-compute-instance-settings';
 export * as googleComputeInstanceTemplate from './google-compute-instance-template';
 export * as googleComputeInterconnectAttachment from './google-compute-interconnect-attachment';
 export * as googleComputeMachineImage from './google-compute-machine-image';
@@ -579,6 +580,7 @@ export * as googleIdentityPlatformTenant from './google-identity-platform-tenant
 export * as googleIdentityPlatformTenantDefaultSupportedIdpConfig from './google-identity-platform-tenant-default-supported-idp-config';
 export * as googleIdentityPlatformTenantInboundSamlConfig from './google-identity-platform-tenant-inbound-saml-config';
 export * as googleIdentityPlatformTenantOauthIdpConfig from './google-identity-platform-tenant-oauth-idp-config';
+export * as googleIntegrationConnectorsConnection from './google-integration-connectors-connection';
 export * as googleKmsCryptoKey from './google-kms-crypto-key';
 export * as googleKmsCryptoKeyIamBinding from './google-kms-crypto-key-iam-binding';
 export * as googleKmsCryptoKeyIamMember from './google-kms-crypto-key-iam-member';
@@ -832,6 +834,7 @@ export * as dataGoogleApigeeEnvironmentIamPolicy from './data-google-apigee-envi
 export * as dataGoogleAppEngineDefaultServiceAccount from './data-google-app-engine-default-service-account';
 export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
 export * as dataGoogleArtifactRegistryRepositoryIamPolicy from './data-google-artifact-registry-repository-iam-policy';
+export * as dataGoogleBackupDrManagementServer from './data-google-backup-dr-management-server';
 export * as dataGoogleBeyondcorpAppConnection from './data-google-beyondcorp-app-connection';
 export * as dataGoogleBeyondcorpAppConnector from './data-google-beyondcorp-app-connector';
 export * as dataGoogleBeyondcorpAppGateway from './data-google-beyondcorp-app-gateway';
