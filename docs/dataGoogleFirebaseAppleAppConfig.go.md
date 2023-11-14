@@ -1,6 +1,6 @@
 # `data_google_firebase_apple_app_config`
 
-Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_firebase_apple_app_config).
+Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_firebase_apple_app_config).
 
 # `dataGoogleFirebaseAppleAppConfig` Submodule <a name="`dataGoogleFirebaseAppleAppConfig` Submodule" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_conf
 
 ### DataGoogleFirebaseAppleAppConfigA <a name="DataGoogleFirebaseAppleAppConfigA" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.NewDataGoogleFirebaseAppleAppConfigA(scope Construct, id *string, config DataGoogleFirebaseAppleAppConfigAConfig) DataGoogleFirebaseAppleAppConfigA
 ```
@@ -278,7 +278,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformEl
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformDa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGoogleFirebaseAppleApp
 
 The id of the existing DataGoogleFirebaseAppleAppConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_firebase_apple_app_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_firebase_apple_app_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 &datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigAConfig {
 	Connection: interface{},
@@ -733,7 +733,7 @@ AppId *string
 
 The id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
 
 ---
 
@@ -747,7 +747,7 @@ Project *string
 
 The project id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
 
 ---
 

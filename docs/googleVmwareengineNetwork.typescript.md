@@ -1,6 +1,6 @@
 # `google_vmwareengine_network`
 
-Refer to the Terraform Registory for docs: [`google_vmwareengine_network`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network).
+Refer to the Terraform Registory for docs: [`google_vmwareengine_network`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network).
 
 # `googleVmwareengineNetwork` Submodule <a name="`googleVmwareengineNetwork` Submodule" id="@cdktf/provider-google-beta.googleVmwareengineNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_vmwareengine_network`](https
 
 ### GoogleVmwareengineNetwork <a name="GoogleVmwareengineNetwork" id="@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network google_vmwareengine_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network google_vmwareengine_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the GoogleVmwareengineNetwork 
 
 The id of the existing GoogleVmwareengineNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,8 +869,8 @@ const googleVmwareengineNetworkConfig: googleVmwareengineNetwork.GoogleVmwareeng
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.name">name</a></code> | <code>string</code> | The ID of the VMwareEngineNetwork. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.type">type</a></code> | <code>string</code> | VMware Engine network type. Possible values: ["LEGACY"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.description">description</a></code> | <code>string</code> | User-provided description for this VMware Engine network. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#id GoogleVmwareengineNetwork#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#project GoogleVmwareengineNetwork#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#id GoogleVmwareengineNetwork#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#project GoogleVmwareengineNetwork#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts">GoogleVmwareengineNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -955,7 +955,7 @@ public readonly location: string;
 
 The location where the VMwareEngineNetwork should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#location GoogleVmwareengineNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#location GoogleVmwareengineNetwork#location}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly name: string;
 
 The ID of the VMwareEngineNetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#name GoogleVmwareengineNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#name GoogleVmwareengineNetwork#name}
 
 ---
 
@@ -983,7 +983,7 @@ public readonly type: string;
 
 VMware Engine network type. Possible values: ["LEGACY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#type GoogleVmwareengineNetwork#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#type GoogleVmwareengineNetwork#type}
 
 ---
 
@@ -997,7 +997,7 @@ public readonly description: string;
 
 User-provided description for this VMware Engine network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#description GoogleVmwareengineNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#description GoogleVmwareengineNetwork#description}
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#id GoogleVmwareengineNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#id GoogleVmwareengineNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1024,7 +1024,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#project GoogleVmwareengineNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#project GoogleVmwareengineNetwork#project}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly timeouts: GoogleVmwareengineNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#timeouts GoogleVmwareengineNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#timeouts GoogleVmwareengineNetwork#timeouts}
 
 ---
 
@@ -1056,9 +1056,9 @@ const googleVmwareengineNetworkTimeouts: googleVmwareengineNetwork.GoogleVmwaree
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#create GoogleVmwareengineNetwork#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#delete GoogleVmwareengineNetwork#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#update GoogleVmwareengineNetwork#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#create GoogleVmwareengineNetwork#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#delete GoogleVmwareengineNetwork#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#update GoogleVmwareengineNetwork#update}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#create GoogleVmwareengineNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#create GoogleVmwareengineNetwork#create}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#delete GoogleVmwareengineNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#delete GoogleVmwareengineNetwork#delete}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_vmwareengine_network#update GoogleVmwareengineNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_vmwareengine_network#update GoogleVmwareengineNetwork#update}.
 
 ---
 

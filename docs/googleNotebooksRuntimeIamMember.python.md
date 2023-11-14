@@ -1,6 +1,6 @@
 # `google_notebooks_runtime_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member).
+Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member).
 
 # `googleNotebooksRuntimeIamMember` Submodule <a name="`googleNotebooksRuntimeIamMember` Submodule" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_member
 
 ### GoogleNotebooksRuntimeIamMember <a name="GoogleNotebooksRuntimeIamMember" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer"></a>
 
@@ -46,13 +46,13 @@ googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember(
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.runtimeName">runtime_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.runtimeName">runtime_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition">GoogleNotebooksRuntimeIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#condition GoogleNotebooksRuntimeIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#condition GoogleNotebooksRuntimeIamMember#condition}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}.
 
 ---
 
@@ -497,7 +497,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}.
 
 ---
 
@@ -505,7 +505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}.
 
 ---
 
@@ -513,7 +513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}.
 
 ---
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the GoogleNotebooksRuntimeIamM
 
 The id of the existing GoogleNotebooksRuntimeIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,9 +1033,9 @@ googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}. |
 
 ---
 
@@ -1047,7 +1047,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#expression GoogleNotebooksRuntimeIamMember#expression}.
 
 ---
 
@@ -1059,7 +1059,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#title GoogleNotebooksRuntimeIamMember#title}.
 
 ---
 
@@ -1071,7 +1071,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#description GoogleNotebooksRuntimeIamMember#description}.
 
 ---
 
@@ -1111,13 +1111,13 @@ googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.runtimeName">runtime_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.runtimeName">runtime_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition">GoogleNotebooksRuntimeIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}. |
 
 ---
 
@@ -1199,7 +1199,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#member GoogleNotebooksRuntimeIamMember#member}.
 
 ---
 
@@ -1211,7 +1211,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#role GoogleNotebooksRuntimeIamMember#role}.
 
 ---
 
@@ -1223,7 +1223,7 @@ runtime_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#runtime_name GoogleNotebooksRuntimeIamMember#runtime_name}.
 
 ---
 
@@ -1237,7 +1237,7 @@ condition: GoogleNotebooksRuntimeIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#condition GoogleNotebooksRuntimeIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#condition GoogleNotebooksRuntimeIamMember#condition}
 
 ---
 
@@ -1249,7 +1249,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#id GoogleNotebooksRuntimeIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1264,7 +1264,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#location GoogleNotebooksRuntimeIamMember#location}.
 
 ---
 
@@ -1276,7 +1276,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_notebooks_runtime_iam_member#project GoogleNotebooksRuntimeIamMember#project}.
 
 ---
 

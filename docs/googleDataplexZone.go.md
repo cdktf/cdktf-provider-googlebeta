@@ -1,6 +1,6 @@
 # `google_dataplex_zone`
 
-Refer to the Terraform Registory for docs: [`google_dataplex_zone`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone).
+Refer to the Terraform Registory for docs: [`google_dataplex_zone`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone).
 
 # `googleDataplexZone` Submodule <a name="`googleDataplexZone` Submodule" id="@cdktf/provider-google-beta.googleDataplexZone"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_dataplex_zone`](https://regi
 
 ### GoogleDataplexZone <a name="GoogleDataplexZone" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZone(scope Construct, id *string, config GoogleDataplexZoneConfig) GoogleDataplexZone
 ```
@@ -413,7 +413,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.GoogleDataplexZone_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.GoogleDataplexZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googledataplexzone.GoogleDataplexZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.GoogleDataplexZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ googledataplexzone.GoogleDataplexZone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.GoogleDataplexZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the GoogleDataplexZone to impo
 
 The id of the existing GoogleDataplexZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneAssetStatus {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneConfig {
 	Connection: interface{},
@@ -1066,18 +1066,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DiscoverySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZone.GoogleDataplexZoneDiscoverySpec,
+	DiscoverySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZone.GoogleDataplexZoneDiscoverySpec,
 	Lake: *string,
 	Location: *string,
 	Name: *string,
-	ResourceSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZone.GoogleDataplexZoneResourceSpec,
+	ResourceSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZone.GoogleDataplexZoneResourceSpec,
 	Type: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZone.GoogleDataplexZoneTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZone.GoogleDataplexZoneTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.type">Type</a></code> | <code>*string</code> | Required. Immutable. The type of the zone. Possible values: TYPE_UNSPECIFIED, RAW, CURATED. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Description of the zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. User defined labels for the zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts">GoogleDataplexZoneTimeouts</a></code> | timeouts block. |
@@ -1187,7 +1187,7 @@ DiscoverySpec GoogleDataplexZoneDiscoverySpec
 
 discovery_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#discovery_spec GoogleDataplexZone#discovery_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#discovery_spec GoogleDataplexZone#discovery_spec}
 
 ---
 
@@ -1201,7 +1201,7 @@ Lake *string
 
 The lake for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#lake GoogleDataplexZone#lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#lake GoogleDataplexZone#lake}
 
 ---
 
@@ -1215,7 +1215,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#location GoogleDataplexZone#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#location GoogleDataplexZone#location}
 
 ---
 
@@ -1229,7 +1229,7 @@ Name *string
 
 The name of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#name GoogleDataplexZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#name GoogleDataplexZone#name}
 
 ---
 
@@ -1243,7 +1243,7 @@ ResourceSpec GoogleDataplexZoneResourceSpec
 
 resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#resource_spec GoogleDataplexZone#resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#resource_spec GoogleDataplexZone#resource_spec}
 
 ---
 
@@ -1257,7 +1257,7 @@ Type *string
 
 Required. Immutable. The type of the zone. Possible values: TYPE_UNSPECIFIED, RAW, CURATED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#type GoogleDataplexZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#type GoogleDataplexZone#type}
 
 ---
 
@@ -1271,7 +1271,7 @@ Description *string
 
 Optional. Description of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#description GoogleDataplexZone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#description GoogleDataplexZone#description}
 
 ---
 
@@ -1285,7 +1285,7 @@ DisplayName *string
 
 Optional. User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#display_name GoogleDataplexZone#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#display_name GoogleDataplexZone#display_name}
 
 ---
 
@@ -1297,7 +1297,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#id GoogleDataplexZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1317,7 +1317,7 @@ Optional. User defined labels for the zone.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#labels GoogleDataplexZone#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#labels GoogleDataplexZone#labels}
 
 ---
 
@@ -1331,7 +1331,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#project GoogleDataplexZone#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#project GoogleDataplexZone#project}
 
 ---
 
@@ -1345,7 +1345,7 @@ Timeouts GoogleDataplexZoneTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#timeouts GoogleDataplexZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#timeouts GoogleDataplexZone#timeouts}
 
 ---
 
@@ -1354,14 +1354,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneDiscoverySpec {
 	Enabled: interface{},
-	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZone.GoogleDataplexZoneDiscoverySpecCsvOptions,
+	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecCsvOptions,
 	ExcludePatterns: *[]*string,
 	IncludePatterns: *[]*string,
-	JsonOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptions,
+	JsonOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptions,
 	Schedule: *string,
 }
 ```
@@ -1389,7 +1389,7 @@ Enabled interface{}
 
 Required. Whether discovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#enabled GoogleDataplexZone#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#enabled GoogleDataplexZone#enabled}
 
 ---
 
@@ -1403,7 +1403,7 @@ CsvOptions GoogleDataplexZoneDiscoverySpecCsvOptions
 
 csv_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#csv_options GoogleDataplexZone#csv_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#csv_options GoogleDataplexZone#csv_options}
 
 ---
 
@@ -1419,7 +1419,7 @@ Optional.
 
 The list of patterns to apply for selecting data to exclude during discovery. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#exclude_patterns GoogleDataplexZone#exclude_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#exclude_patterns GoogleDataplexZone#exclude_patterns}
 
 ---
 
@@ -1435,7 +1435,7 @@ Optional.
 
 The list of patterns to apply for selecting data to include during discovery if only a subset of the data should considered. For Cloud Storage bucket assets, these are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#include_patterns GoogleDataplexZone#include_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#include_patterns GoogleDataplexZone#include_patterns}
 
 ---
 
@@ -1449,7 +1449,7 @@ JsonOptions GoogleDataplexZoneDiscoverySpecJsonOptions
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#json_options GoogleDataplexZone#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#json_options GoogleDataplexZone#json_options}
 
 ---
 
@@ -1465,7 +1465,7 @@ Optional.
 
 Cron schedule (https://en.wikipedia.org/wiki/Cron) for running discovery periodically. Successive discovery runs must be scheduled at least 60 minutes apart. The default value is to run discovery every 60 minutes. To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: "CRON_TZ=${IANA_TIME_ZONE}" or TZ=${IANA_TIME_ZONE}". The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone database. For example, "CRON_TZ=America/New_York 1 * * * *", or "TZ=America/New_York 1 * * * *".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#schedule GoogleDataplexZone#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#schedule GoogleDataplexZone#schedule}
 
 ---
 
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecCsvOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneDiscoverySpecCsvOptions {
 	Delimiter: *string,
@@ -1505,7 +1505,7 @@ Delimiter *string
 
 Optional. The delimiter being used to separate values. This defaults to ','.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#delimiter GoogleDataplexZone#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#delimiter GoogleDataplexZone#delimiter}
 
 ---
 
@@ -1521,7 +1521,7 @@ Optional.
 
 Whether to disable the inference of data type for CSV data. If true, all columns will be registered as strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
 
 ---
 
@@ -1535,7 +1535,7 @@ Encoding *string
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
 
 ---
 
@@ -1549,7 +1549,7 @@ HeaderRows *f64
 
 Optional. The number of rows to interpret as header rows that should be skipped when reading data rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#header_rows GoogleDataplexZone#header_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#header_rows GoogleDataplexZone#header_rows}
 
 ---
 
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneDiscoverySpecJsonOptions {
 	DisableTypeInference: interface{},
@@ -1587,7 +1587,7 @@ Optional.
 
 Whether to disable the inference of data type for Json data. If true, all columns will be registered as their primitive types (strings, number or boolean).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#disable_type_inference GoogleDataplexZone#disable_type_inference}
 
 ---
 
@@ -1601,7 +1601,7 @@ Encoding *string
 
 Optional. The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#encoding GoogleDataplexZone#encoding}
 
 ---
 
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneResourceSpec {
 	LocationType: *string,
@@ -1637,7 +1637,7 @@ Required.
 
 Immutable. The location type of the resources that are allowed to be attached to the assets within this zone. Possible values: LOCATION_TYPE_UNSPECIFIED, SINGLE_REGION, MULTI_REGION
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#location_type GoogleDataplexZone#location_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#location_type GoogleDataplexZone#location_type}
 
 ---
 
@@ -1646,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 &googledataplexzone.GoogleDataplexZoneTimeouts {
 	Create: *string,
@@ -1659,9 +1659,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}. |
 
 ---
 
@@ -1673,7 +1673,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#create GoogleDataplexZone#create}.
 
 ---
 
@@ -1685,7 +1685,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#delete GoogleDataplexZone#delete}.
 
 ---
 
@@ -1697,7 +1697,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dataplex_zone#update GoogleDataplexZone#update}.
 
 ---
 
@@ -1708,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneAssetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexZoneAssetStatusList
 ```
@@ -1840,7 +1840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneAssetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneAssetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexZoneAssetStatusOutputReference
 ```
@@ -2140,7 +2140,7 @@ func InternalValue() GoogleDataplexZoneAssetStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecCsvOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneDiscoverySpecCsvOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneDiscoverySpecCsvOptionsOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() GoogleDataplexZoneDiscoverySpecCsvOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneDiscoverySpecJsonOptionsOutputReference
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() GoogleDataplexZoneDiscoverySpecJsonOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneDiscoverySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneDiscoverySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneDiscoverySpecOutputReference
 ```
@@ -3254,7 +3254,7 @@ func InternalValue() GoogleDataplexZoneDiscoverySpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneResourceSpecOutputReference
 ```
@@ -3525,7 +3525,7 @@ func InternalValue() GoogleDataplexZoneResourceSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZone.GoogleDataplexZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzone"
 
 googledataplexzone.NewGoogleDataplexZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneTimeoutsOutputReference
 ```

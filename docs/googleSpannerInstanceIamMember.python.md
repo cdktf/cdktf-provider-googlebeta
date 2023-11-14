@@ -1,6 +1,6 @@
 # `google_spanner_instance_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member).
+Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member).
 
 # `googleSpannerInstanceIamMember` Submodule <a name="`googleSpannerInstanceIamMember` Submodule" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_member`
 
 ### GoogleSpannerInstanceIamMember <a name="GoogleSpannerInstanceIamMember" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member google_spanner_instance_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member google_spanner_instance_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer"></a>
 
@@ -45,12 +45,12 @@ googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember(
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition">GoogleSpannerInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#condition GoogleSpannerInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#condition GoogleSpannerInstanceIamMember#condition}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}.
 
 ---
 
@@ -486,7 +486,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}.
 
 ---
 
@@ -494,7 +494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}.
 
 ---
 
@@ -502,7 +502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}.
 
 ---
 
@@ -638,7 +638,7 @@ The construct id used in the generated config for the GoogleSpannerInstanceIamMe
 
 The id of the existing GoogleSpannerInstanceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,9 +994,9 @@ googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}. |
 
 ---
 
@@ -1008,7 +1008,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#expression GoogleSpannerInstanceIamMember#expression}.
 
 ---
 
@@ -1020,7 +1020,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#title GoogleSpannerInstanceIamMember#title}.
 
 ---
 
@@ -1032,7 +1032,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#description GoogleSpannerInstanceIamMember#description}.
 
 ---
 
@@ -1071,12 +1071,12 @@ googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition">GoogleSpannerInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ instance: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#instance GoogleSpannerInstanceIamMember#instance}.
 
 ---
 
@@ -1170,7 +1170,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#member GoogleSpannerInstanceIamMember#member}.
 
 ---
 
@@ -1182,7 +1182,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#role GoogleSpannerInstanceIamMember#role}.
 
 ---
 
@@ -1196,7 +1196,7 @@ condition: GoogleSpannerInstanceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#condition GoogleSpannerInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#condition GoogleSpannerInstanceIamMember#condition}
 
 ---
 
@@ -1208,7 +1208,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#id GoogleSpannerInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1223,7 +1223,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance_iam_member#project GoogleSpannerInstanceIamMember#project}.
 
 ---
 

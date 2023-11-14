@@ -1,6 +1,6 @@
 # `google_firebaserules_ruleset`
 
-Refer to the Terraform Registory for docs: [`google_firebaserules_ruleset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset).
+Refer to the Terraform Registory for docs: [`google_firebaserules_ruleset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset).
 
 # `googleFirebaserulesRuleset` Submodule <a name="`googleFirebaserulesRuleset` Submodule" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_firebaserules_ruleset`](http
 
 ### GoogleFirebaserulesRuleset <a name="GoogleFirebaserulesRuleset" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.Initializer"></a>
 
@@ -468,7 +468,7 @@ The construct id used in the generated config for the GoogleFirebaserulesRuleset
 
 The id of the existing GoogleFirebaserulesRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ const googleFirebaserulesRulesetConfig: googleFirebaserulesRuleset.GoogleFirebas
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.source">source</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSource">GoogleFirebaserulesRulesetSource</a></code> | source block. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.project">project</a></code> | <code>string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts">GoogleFirebaserulesRulesetTimeouts</a></code> | timeouts block. |
 
@@ -892,7 +892,7 @@ public readonly source: GoogleFirebaserulesRulesetSource;
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#source GoogleFirebaserulesRuleset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#source GoogleFirebaserulesRuleset#source}
 
 ---
 
@@ -904,7 +904,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ public readonly project: string;
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#project GoogleFirebaserulesRuleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#project GoogleFirebaserulesRuleset#project}
 
 ---
 
@@ -935,7 +935,7 @@ public readonly timeouts: GoogleFirebaserulesRulesetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#timeouts GoogleFirebaserulesRuleset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#timeouts GoogleFirebaserulesRuleset#timeouts}
 
 ---
 
@@ -979,7 +979,7 @@ public readonly files: IResolvable | GoogleFirebaserulesRulesetSourceFiles[];
 
 files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#files GoogleFirebaserulesRuleset#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#files GoogleFirebaserulesRuleset#files}
 
 ---
 
@@ -993,7 +993,7 @@ public readonly language: string;
 
 `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#language GoogleFirebaserulesRuleset#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#language GoogleFirebaserulesRuleset#language}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly content: string;
 
 Textual Content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#content GoogleFirebaserulesRuleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#content GoogleFirebaserulesRuleset#content}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly name: string;
 
 File name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#name GoogleFirebaserulesRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#name GoogleFirebaserulesRuleset#name}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly fingerprint: string;
 
 Fingerprint (e.g. github sha) associated with the `File`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#fingerprint GoogleFirebaserulesRuleset#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#fingerprint GoogleFirebaserulesRuleset#fingerprint}
 
 ---
 
@@ -1073,8 +1073,8 @@ const googleFirebaserulesRulesetTimeouts: googleFirebaserulesRuleset.GoogleFireb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}. |
 
 ---
 
@@ -1086,7 +1086,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,25 +15,25 @@ export interface GoogleSpannerInstanceConfig extends cdktf.TerraformMetaArgument
   * In order to obtain a valid list please consult the
   * [Configuration section of the docs](https://cloud.google.com/spanner/docs/instances).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#config GoogleSpannerInstance#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#config GoogleSpannerInstance#config}
   */
   readonly config: string;
   /**
   * The descriptive name for this instance as it appears in UIs. Must be
   * unique per project and between 4 and 30 characters in length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#display_name GoogleSpannerInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#display_name GoogleSpannerInstance#display_name}
   */
   readonly displayName: string;
   /**
   * When deleting a spanner instance, this boolean option will delete all backups of this instance.
   * This must be set to true if you created a backup manually in the console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#force_destroy GoogleSpannerInstance#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#force_destroy GoogleSpannerInstance#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#id GoogleSpannerInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#id GoogleSpannerInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,7 +47,7 @@ export interface GoogleSpannerInstanceConfig extends cdktf.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#labels GoogleSpannerInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#labels GoogleSpannerInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -63,45 +58,346 @@ export interface GoogleSpannerInstanceConfig extends cdktf.TerraformMetaArgument
   * 
   * If not provided, a random string starting with 'tf-' will be selected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#name GoogleSpannerInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#name GoogleSpannerInstance#name}
   */
   readonly name?: string;
   /**
   * The number of nodes allocated to this instance. Exactly one of either node_count or processing_units
   * must be present in terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#num_nodes GoogleSpannerInstance#num_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#num_nodes GoogleSpannerInstance#num_nodes}
   */
   readonly numNodes?: number;
   /**
   * The number of processing units allocated to this instance. Exactly one of processing_units
   * or node_count must be present in terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#processing_units GoogleSpannerInstance#processing_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#processing_units GoogleSpannerInstance#processing_units}
   */
   readonly processingUnits?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#project GoogleSpannerInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#project GoogleSpannerInstance#project}
   */
   readonly project?: string;
   /**
+  * autoscaling_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#autoscaling_config GoogleSpannerInstance#autoscaling_config}
+  */
+  readonly autoscalingConfig?: GoogleSpannerInstanceAutoscalingConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#timeouts GoogleSpannerInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#timeouts GoogleSpannerInstance#timeouts}
   */
   readonly timeouts?: GoogleSpannerInstanceTimeouts;
 }
+export interface GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits {
+  /**
+  * Specifies maximum number of processing units allocated to the instance.
+  * If set, this number should be multiples of 1000 and be greater than or equal to
+  * min_processing_units.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#max_processing_units GoogleSpannerInstance#max_processing_units}
+  */
+  readonly maxProcessingUnits?: number;
+  /**
+  * Specifies minimum number of processing units allocated to the instance.
+  * If set, this number should be multiples of 1000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#min_processing_units GoogleSpannerInstance#min_processing_units}
+  */
+  readonly minProcessingUnits?: number;
+}
+
+export function googleSpannerInstanceAutoscalingConfigAutoscalingLimitsToTerraform(struct?: GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference | GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_processing_units: cdktf.numberToTerraform(struct!.maxProcessingUnits),
+    min_processing_units: cdktf.numberToTerraform(struct!.minProcessingUnits),
+  }
+}
+
+export class GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxProcessingUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxProcessingUnits = this._maxProcessingUnits;
+    }
+    if (this._minProcessingUnits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minProcessingUnits = this._minProcessingUnits;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxProcessingUnits = undefined;
+      this._minProcessingUnits = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxProcessingUnits = value.maxProcessingUnits;
+      this._minProcessingUnits = value.minProcessingUnits;
+    }
+  }
+
+  // max_processing_units - computed: false, optional: true, required: false
+  private _maxProcessingUnits?: number; 
+  public get maxProcessingUnits() {
+    return this.getNumberAttribute('max_processing_units');
+  }
+  public set maxProcessingUnits(value: number) {
+    this._maxProcessingUnits = value;
+  }
+  public resetMaxProcessingUnits() {
+    this._maxProcessingUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxProcessingUnitsInput() {
+    return this._maxProcessingUnits;
+  }
+
+  // min_processing_units - computed: false, optional: true, required: false
+  private _minProcessingUnits?: number; 
+  public get minProcessingUnits() {
+    return this.getNumberAttribute('min_processing_units');
+  }
+  public set minProcessingUnits(value: number) {
+    this._minProcessingUnits = value;
+  }
+  public resetMinProcessingUnits() {
+    this._minProcessingUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minProcessingUnitsInput() {
+    return this._minProcessingUnits;
+  }
+}
+export interface GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets {
+  /**
+  * Specifies the target high priority cpu utilization percentage that the autoscaler
+  * should be trying to achieve for the instance.
+  * This number is on a scale from 0 (no utilization) to 100 (full utilization)..
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#high_priority_cpu_utilization_percent GoogleSpannerInstance#high_priority_cpu_utilization_percent}
+  */
+  readonly highPriorityCpuUtilizationPercent?: number;
+  /**
+  * Specifies the target storage utilization percentage that the autoscaler
+  * should be trying to achieve for the instance.
+  * This number is on a scale from 0 (no utilization) to 100 (full utilization).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#storage_utilization_percent GoogleSpannerInstance#storage_utilization_percent}
+  */
+  readonly storageUtilizationPercent?: number;
+}
+
+export function googleSpannerInstanceAutoscalingConfigAutoscalingTargetsToTerraform(struct?: GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference | GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    high_priority_cpu_utilization_percent: cdktf.numberToTerraform(struct!.highPriorityCpuUtilizationPercent),
+    storage_utilization_percent: cdktf.numberToTerraform(struct!.storageUtilizationPercent),
+  }
+}
+
+export class GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._highPriorityCpuUtilizationPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.highPriorityCpuUtilizationPercent = this._highPriorityCpuUtilizationPercent;
+    }
+    if (this._storageUtilizationPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageUtilizationPercent = this._storageUtilizationPercent;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._highPriorityCpuUtilizationPercent = undefined;
+      this._storageUtilizationPercent = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._highPriorityCpuUtilizationPercent = value.highPriorityCpuUtilizationPercent;
+      this._storageUtilizationPercent = value.storageUtilizationPercent;
+    }
+  }
+
+  // high_priority_cpu_utilization_percent - computed: false, optional: true, required: false
+  private _highPriorityCpuUtilizationPercent?: number; 
+  public get highPriorityCpuUtilizationPercent() {
+    return this.getNumberAttribute('high_priority_cpu_utilization_percent');
+  }
+  public set highPriorityCpuUtilizationPercent(value: number) {
+    this._highPriorityCpuUtilizationPercent = value;
+  }
+  public resetHighPriorityCpuUtilizationPercent() {
+    this._highPriorityCpuUtilizationPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get highPriorityCpuUtilizationPercentInput() {
+    return this._highPriorityCpuUtilizationPercent;
+  }
+
+  // storage_utilization_percent - computed: false, optional: true, required: false
+  private _storageUtilizationPercent?: number; 
+  public get storageUtilizationPercent() {
+    return this.getNumberAttribute('storage_utilization_percent');
+  }
+  public set storageUtilizationPercent(value: number) {
+    this._storageUtilizationPercent = value;
+  }
+  public resetStorageUtilizationPercent() {
+    this._storageUtilizationPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageUtilizationPercentInput() {
+    return this._storageUtilizationPercent;
+  }
+}
+export interface GoogleSpannerInstanceAutoscalingConfig {
+  /**
+  * autoscaling_limits block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#autoscaling_limits GoogleSpannerInstance#autoscaling_limits}
+  */
+  readonly autoscalingLimits?: GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits;
+  /**
+  * autoscaling_targets block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#autoscaling_targets GoogleSpannerInstance#autoscaling_targets}
+  */
+  readonly autoscalingTargets?: GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets;
+}
+
+export function googleSpannerInstanceAutoscalingConfigToTerraform(struct?: GoogleSpannerInstanceAutoscalingConfigOutputReference | GoogleSpannerInstanceAutoscalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    autoscaling_limits: googleSpannerInstanceAutoscalingConfigAutoscalingLimitsToTerraform(struct!.autoscalingLimits),
+    autoscaling_targets: googleSpannerInstanceAutoscalingConfigAutoscalingTargetsToTerraform(struct!.autoscalingTargets),
+  }
+}
+
+export class GoogleSpannerInstanceAutoscalingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSpannerInstanceAutoscalingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoscalingLimits?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalingLimits = this._autoscalingLimits?.internalValue;
+    }
+    if (this._autoscalingTargets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalingTargets = this._autoscalingTargets?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSpannerInstanceAutoscalingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._autoscalingLimits.internalValue = undefined;
+      this._autoscalingTargets.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoscalingLimits.internalValue = value.autoscalingLimits;
+      this._autoscalingTargets.internalValue = value.autoscalingTargets;
+    }
+  }
+
+  // autoscaling_limits - computed: false, optional: true, required: false
+  private _autoscalingLimits = new GoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference(this, "autoscaling_limits");
+  public get autoscalingLimits() {
+    return this._autoscalingLimits;
+  }
+  public putAutoscalingLimits(value: GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits) {
+    this._autoscalingLimits.internalValue = value;
+  }
+  public resetAutoscalingLimits() {
+    this._autoscalingLimits.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingLimitsInput() {
+    return this._autoscalingLimits.internalValue;
+  }
+
+  // autoscaling_targets - computed: false, optional: true, required: false
+  private _autoscalingTargets = new GoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference(this, "autoscaling_targets");
+  public get autoscalingTargets() {
+    return this._autoscalingTargets;
+  }
+  public putAutoscalingTargets(value: GoogleSpannerInstanceAutoscalingConfigAutoscalingTargets) {
+    this._autoscalingTargets.internalValue = value;
+  }
+  public resetAutoscalingTargets() {
+    this._autoscalingTargets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingTargetsInput() {
+    return this._autoscalingTargets.internalValue;
+  }
+}
 export interface GoogleSpannerInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#create GoogleSpannerInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#create GoogleSpannerInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#delete GoogleSpannerInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#delete GoogleSpannerInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#update GoogleSpannerInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#update GoogleSpannerInstance#update}
   */
   readonly update?: string;
 }
@@ -222,7 +518,7 @@ export class GoogleSpannerInstanceTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance google_spanner_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance google_spanner_instance}
 */
 export class GoogleSpannerInstance extends cdktf.TerraformResource {
 
@@ -238,7 +534,7 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSpannerInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSpannerInstance to import
-  * @param importFromId The id of the existing GoogleSpannerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSpannerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSpannerInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -250,7 +546,7 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance google_spanner_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance google_spanner_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -261,7 +557,7 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -281,6 +577,7 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
     this._numNodes = config.numNodes;
     this._processingUnits = config.processingUnits;
     this._project = config.project;
+    this._autoscalingConfig.internalValue = config.autoscalingConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -443,6 +740,22 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
     return this._terraformLabels;
   }
 
+  // autoscaling_config - computed: false, optional: true, required: false
+  private _autoscalingConfig = new GoogleSpannerInstanceAutoscalingConfigOutputReference(this, "autoscaling_config");
+  public get autoscalingConfig() {
+    return this._autoscalingConfig;
+  }
+  public putAutoscalingConfig(value: GoogleSpannerInstanceAutoscalingConfig) {
+    this._autoscalingConfig.internalValue = value;
+  }
+  public resetAutoscalingConfig() {
+    this._autoscalingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingConfigInput() {
+    return this._autoscalingConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleSpannerInstanceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -474,6 +787,7 @@ export class GoogleSpannerInstance extends cdktf.TerraformResource {
       num_nodes: cdktf.numberToTerraform(this._numNodes),
       processing_units: cdktf.numberToTerraform(this._processingUnits),
       project: cdktf.stringToTerraform(this._project),
+      autoscaling_config: googleSpannerInstanceAutoscalingConfigToTerraform(this._autoscalingConfig.internalValue),
       timeouts: googleSpannerInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

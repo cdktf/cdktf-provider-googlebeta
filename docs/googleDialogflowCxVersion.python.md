@@ -1,6 +1,6 @@
 # `google_dialogflow_cx_version`
 
-Refer to the Terraform Registory for docs: [`google_dialogflow_cx_version`](https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version).
+Refer to the Terraform Registory for docs: [`google_dialogflow_cx_version`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version).
 
 # `googleDialogflowCxVersion` Submodule <a name="`googleDialogflowCxVersion` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxVersion"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dialogflow_cx_version`](http
 
 ### GoogleDialogflowCxVersion <a name="GoogleDialogflowCxVersion" id="@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version google_dialogflow_cx_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer"></a>
 
@@ -46,7 +46,7 @@ googleDialogflowCxVersion.GoogleDialogflowCxVersion(
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the version. Limit of 64 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the version. The maximum length is 500 characters. If exceeded, the request is rejected. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The Flow to create an Version for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts">GoogleDialogflowCxVersionTimeouts</a></code> | timeouts block. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The human-readable name of the version. Limit of 64 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#display_name GoogleDialogflowCxVersion#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#display_name GoogleDialogflowCxVersion#display_name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the version. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#description GoogleDialogflowCxVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#description GoogleDialogflowCxVersion#description}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The Flow to create an Version for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#parent GoogleDialogflowCxVersion#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#parent GoogleDialogflowCxVersion#parent}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#timeouts GoogleDialogflowCxVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#timeouts GoogleDialogflowCxVersion#timeouts}
 
 ---
 
@@ -483,7 +483,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}.
 
 ---
 
@@ -491,7 +491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}.
 
 ---
 
@@ -499,7 +499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}.
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the GoogleDialogflowCxVersion 
 
 The id of the existing GoogleDialogflowCxVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the version. Limit of 64 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.description">description</a></code> | <code>str</code> | The description of the version. The maximum length is 500 characters. If exceeded, the request is rejected. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.parent">parent</a></code> | <code>str</code> | The Flow to create an Version for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts">GoogleDialogflowCxVersionTimeouts</a></code> | timeouts block. |
 
@@ -1112,7 +1112,7 @@ display_name: str
 
 The human-readable name of the version. Limit of 64 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#display_name GoogleDialogflowCxVersion#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#display_name GoogleDialogflowCxVersion#display_name}
 
 ---
 
@@ -1126,7 +1126,7 @@ description: str
 
 The description of the version. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#description GoogleDialogflowCxVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#description GoogleDialogflowCxVersion#description}
 
 ---
 
@@ -1138,7 +1138,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#id GoogleDialogflowCxVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ parent: str
 
 The Flow to create an Version for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#parent GoogleDialogflowCxVersion#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#parent GoogleDialogflowCxVersion#parent}
 
 ---
 
@@ -1169,7 +1169,7 @@ timeouts: GoogleDialogflowCxVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#timeouts GoogleDialogflowCxVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#timeouts GoogleDialogflowCxVersion#timeouts}
 
 ---
 
@@ -1202,9 +1202,9 @@ googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}. |
 
 ---
 
@@ -1216,7 +1216,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#create GoogleDialogflowCxVersion#create}.
 
 ---
 
@@ -1228,7 +1228,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#delete GoogleDialogflowCxVersion#delete}.
 
 ---
 
@@ -1240,7 +1240,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_version#update GoogleDialogflowCxVersion#update}.
 
 ---
 
