@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.NewGoogleBigtableTableIamMember(scope Construct, id *string, config GoogleBigtableTableIamMemberConfig) GoogleBigtableTableIamMember
 ```
@@ -366,7 +366,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.GoogleBigtableTableIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.GoogleBigtableTableIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ googlebigtabletableiammember.GoogleBigtableTableIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.GoogleBigtableTableIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ googlebigtabletableiammember.GoogleBigtableTableIamMember_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.GoogleBigtableTableIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 &googlebigtabletableiammember.GoogleBigtableTableIamMemberCondition {
 	Expression: *string,
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 &googlebigtabletableiammember.GoogleBigtableTableIamMemberConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtablet
 	Member: *string,
 	Role: *string,
 	Table: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtabletableiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigtabletableiammember"
 
 googlebigtabletableiammember.NewGoogleBigtableTableIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigtableTableIamMemberConditionOutputReference
 ```
