@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedCluster(scope Construct, id *string, config GoogleContainerAttachedClusterConfig) GoogleContainerAttachedCluster
 ```
@@ -493,7 +493,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.GoogleContainerAttachedCluster_IsConstruct(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.GoogleContainerAttachedCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ googlecontainerattachedcluster.GoogleContainerAttachedCluster_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.GoogleContainerAttachedCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ googlecontainerattachedcluster.GoogleContainerAttachedCluster_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.GoogleContainerAttachedCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1244,7 +1244,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterAuthorization {
 	AdminGroups: *[]*string,
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterBinaryAuthorization {
 	EvaluationMode: *string,
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterConfig {
 	Connection: interface{},
@@ -1353,21 +1353,21 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleconta
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Distribution: *string,
-	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterFleet,
+	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterFleet,
 	Location: *string,
 	Name: *string,
-	OidcConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterOidcConfig,
+	OidcConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterOidcConfig,
 	PlatformVersion: *string,
 	Annotations: *map[string]*string,
-	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterAuthorization,
-	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterBinaryAuthorization,
+	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterAuthorization,
+	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterBinaryAuthorization,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfig,
-	MonitoringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfig,
+	LoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfig,
+	MonitoringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfig,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterTimeouts,
 }
 ```
 
@@ -1709,7 +1709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterErrors {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleconta
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterFleet {
 	Project: *string,
@@ -1756,10 +1756,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterLoggingConfig {
-	ComponentConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfigComponentConfig,
+	ComponentConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfigComponentConfig,
 }
 ```
 
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfigComponentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterLoggingConfigComponentConfig {
 	EnableComponents: *[]*string,
@@ -1824,10 +1824,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterMonitoringConfig {
-	ManagedPrometheusConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig,
+	ManagedPrometheusConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig,
 }
 ```
 
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig {
 	Enabled: interface{},
@@ -1892,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterOidcConfig {
 	IssuerUrl: *string,
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterTimeouts {
 	Create: *string,
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 &googlecontainerattachedcluster.GoogleContainerAttachedClusterWorkloadIdentityConfig {
 
@@ -2017,7 +2017,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleconta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterAuthorizationOutputReference
 ```
@@ -2324,7 +2324,7 @@ func InternalValue() GoogleContainerAttachedClusterAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterBinaryAuthorizationOutputReference
 ```
@@ -2602,7 +2602,7 @@ func InternalValue() GoogleContainerAttachedClusterBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAttachedClusterErrorsList
 ```
@@ -2734,7 +2734,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAttachedClusterErrorsOutputReference
 ```
@@ -3012,7 +3012,7 @@ func InternalValue() GoogleContainerAttachedClusterErrors
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterFleetOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() GoogleContainerAttachedClusterFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfigComponentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterLoggingConfigComponentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterLoggingConfigComponentConfigOutputReference
 ```
@@ -3572,7 +3572,7 @@ func InternalValue() GoogleContainerAttachedClusterLoggingConfigComponentConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterLoggingConfigOutputReference
 ```
@@ -3863,7 +3863,7 @@ func InternalValue() GoogleContainerAttachedClusterLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference
 ```
@@ -4141,7 +4141,7 @@ func InternalValue() GoogleContainerAttachedClusterMonitoringConfigManagedPromet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterMonitoringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterMonitoringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterMonitoringConfigOutputReference
 ```
@@ -4432,7 +4432,7 @@ func InternalValue() GoogleContainerAttachedClusterMonitoringConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterOidcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterOidcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterOidcConfigOutputReference
 ```
@@ -4732,7 +4732,7 @@ func InternalValue() GoogleContainerAttachedClusterOidcConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAttachedClusterTimeoutsOutputReference
 ```
@@ -5068,7 +5068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterWorkloadIdentityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterWorkloadIdentityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAttachedClusterWorkloadIdentityConfigList
 ```
@@ -5200,7 +5200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontainerattachedcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerattachedcluster"
 
 googlecontainerattachedcluster.NewGoogleContainerAttachedClusterWorkloadIdentityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAttachedClusterWorkloadIdentityConfigOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 datagooglebinaryauthorizationattestoriampolicy.NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope Construct, id *string, config DataGoogleBinaryAuthorizationAttestorIamPolicyConfig) DataGoogleBinaryAuthorizationAttestorIamPolicy
 ```
@@ -285,7 +285,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAtte
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAtte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebinaryauthorizationattestoriampolicy"
 
 &datagooglebinaryauthorizationattestoriampolicy.DataGoogleBinaryAuthorizationAttestorIamPolicyConfig {
 	Connection: interface{},

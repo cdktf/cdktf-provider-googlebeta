@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.NewDataGoogleProjects(scope Construct, id *string, config DataGoogleProjectsConfig) DataGoogleProjects
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.DataGoogleProjects_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.DataGoogleProjects_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagoogleprojects.DataGoogleProjects_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.DataGoogleProjects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagoogleprojects.DataGoogleProjects_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.DataGoogleProjects_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 &datagoogleprojects.DataGoogleProjectsConfig {
 	Connection: interface{},
@@ -733,7 +733,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 &datagoogleprojects.DataGoogleProjectsProjects {
 
@@ -748,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglep
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.NewDataGoogleProjectsProjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleProjectsProjectsList
 ```
@@ -880,7 +880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprojects"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprojects"
 
 datagoogleprojects.NewDataGoogleProjectsProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleProjectsProjectsOutputReference
 ```
