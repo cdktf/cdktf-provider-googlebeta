@@ -1,6 +1,6 @@
 # `google_secret_manager_secret_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_secret_manager_secret_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy).
+Refer to the Terraform Registory for docs: [`google_secret_manager_secret_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy).
 
 # `googleSecretManagerSecretIamPolicy` Submodule <a name="`googleSecretManagerSecretIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_secret_manager_secret_iam_po
 
 ### GoogleSecretManagerSecretIamPolicy <a name="GoogleSecretManagerSecretIamPolicy" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicy.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the GoogleSecretManagerSecretI
 
 The id of the existing GoogleSecretManagerSecretIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -750,10 +750,10 @@ const googleSecretManagerSecretIamPolicyConfig: googleSecretManagerSecretIamPoli
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#policy_data GoogleSecretManagerSecretIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.secretId">secretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#secret_id GoogleSecretManagerSecretIamPolicy#secret_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#id GoogleSecretManagerSecretIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#project GoogleSecretManagerSecretIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#policy_data GoogleSecretManagerSecretIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.secretId">secretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#secret_id GoogleSecretManagerSecretIamPolicy#secret_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#id GoogleSecretManagerSecretIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamPolicy.GoogleSecretManagerSecretIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#project GoogleSecretManagerSecretIamPolicy#project}. |
 
 ---
 
@@ -835,7 +835,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#policy_data GoogleSecretManagerSecretIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#policy_data GoogleSecretManagerSecretIamPolicy#policy_data}.
 
 ---
 
@@ -847,7 +847,7 @@ public readonly secretId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#secret_id GoogleSecretManagerSecretIamPolicy#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#secret_id GoogleSecretManagerSecretIamPolicy#secret_id}.
 
 ---
 
@@ -859,7 +859,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#id GoogleSecretManagerSecretIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#id GoogleSecretManagerSecretIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -874,7 +874,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_secret_manager_secret_iam_policy#project GoogleSecretManagerSecretIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_iam_policy#project GoogleSecretManagerSecretIamPolicy#project}.
 
 ---
 
