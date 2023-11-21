@@ -1,6 +1,6 @@
 # `google_iap_web_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_iap_web_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member).
+Refer to the Terraform Registory for docs: [`google_iap_web_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member).
 
 # `googleIapWebIamMember` Submodule <a name="`googleIapWebIamMember` Submodule" id="@cdktf/provider-google-beta.googleIapWebIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_web_iam_member`](https:/
 
 ### GoogleIapWebIamMember <a name="GoogleIapWebIamMember" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member google_iap_web_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member google_iap_web_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the GoogleIapWebIamMember to i
 
 The id of the existing GoogleIapWebIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,9 +789,9 @@ new GoogleIapWebIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#expression GoogleIapWebIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#title GoogleIapWebIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#description GoogleIapWebIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#expression GoogleIapWebIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#title GoogleIapWebIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#description GoogleIapWebIamMember#description}. |
 
 ---
 
@@ -803,7 +803,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#expression GoogleIapWebIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#expression GoogleIapWebIamMember#expression}.
 
 ---
 
@@ -815,7 +815,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#title GoogleIapWebIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#title GoogleIapWebIamMember#title}.
 
 ---
 
@@ -827,7 +827,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#description GoogleIapWebIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#description GoogleIapWebIamMember#description}.
 
 ---
 
@@ -865,11 +865,11 @@ new GoogleIapWebIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#member GoogleIapWebIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#role GoogleIapWebIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#member GoogleIapWebIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#role GoogleIapWebIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition">GoogleIapWebIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#id GoogleIapWebIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#project GoogleIapWebIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#id GoogleIapWebIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#project GoogleIapWebIamMember#project}. |
 
 ---
 
@@ -951,7 +951,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#member GoogleIapWebIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#member GoogleIapWebIamMember#member}.
 
 ---
 
@@ -963,7 +963,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#role GoogleIapWebIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#role GoogleIapWebIamMember#role}.
 
 ---
 
@@ -977,7 +977,7 @@ public GoogleIapWebIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#condition GoogleIapWebIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#condition GoogleIapWebIamMember#condition}
 
 ---
 
@@ -989,7 +989,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#id GoogleIapWebIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#id GoogleIapWebIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1004,7 +1004,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_iap_web_iam_member#project GoogleIapWebIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_iam_member#project GoogleIapWebIamMember#project}.
 
 ---
 

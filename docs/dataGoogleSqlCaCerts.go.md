@@ -1,6 +1,6 @@
 # `data_google_sql_ca_certs`
 
-Refer to the Terraform Registory for docs: [`data_google_sql_ca_certs`](https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs).
+Refer to the Terraform Registory for docs: [`data_google_sql_ca_certs`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs).
 
 # `dataGoogleSqlCaCerts` Submodule <a name="`dataGoogleSqlCaCerts` Submodule" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_sql_ca_certs`](https://
 
 ### DataGoogleSqlCaCerts <a name="DataGoogleSqlCaCerts" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs google_sql_ca_certs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs google_sql_ca_certs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.NewDataGoogleSqlCaCerts(scope Construct, id *string, config DataGoogleSqlCaCertsConfig) DataGoogleSqlCaCerts
 ```
@@ -285,7 +285,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.DataGoogleSqlCaCerts_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.DataGoogleSqlCaCerts_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datagooglesqlcacerts.DataGoogleSqlCaCerts_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.DataGoogleSqlCaCerts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datagooglesqlcacerts.DataGoogleSqlCaCerts_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.DataGoogleSqlCaCerts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataGoogleSqlCaCerts to im
 
 The id of the existing DataGoogleSqlCaCerts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 &datagooglesqlcacerts.DataGoogleSqlCaCertsCerts {
 
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogles
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 &datagooglesqlcacerts.DataGoogleSqlCaCertsConfig {
 	Connection: interface{},
@@ -680,9 +680,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogles
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#instance DataGoogleSqlCaCerts#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#id DataGoogleSqlCaCerts#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#project DataGoogleSqlCaCerts#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#instance DataGoogleSqlCaCerts#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#id DataGoogleSqlCaCerts#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#project DataGoogleSqlCaCerts#project}. |
 
 ---
 
@@ -764,7 +764,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#instance DataGoogleSqlCaCerts#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#instance DataGoogleSqlCaCerts#instance}.
 
 ---
 
@@ -776,7 +776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#id DataGoogleSqlCaCerts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#id DataGoogleSqlCaCerts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -791,7 +791,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/data-sources/google_sql_ca_certs#project DataGoogleSqlCaCerts#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_ca_certs#project DataGoogleSqlCaCerts#project}.
 
 ---
 
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.NewDataGoogleSqlCaCertsCertsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSqlCaCertsCertsList
 ```
@@ -934,7 +934,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqlcacerts"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqlcacerts"
 
 datagooglesqlcacerts.NewDataGoogleSqlCaCertsCertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSqlCaCertsCertsOutputReference
 ```
