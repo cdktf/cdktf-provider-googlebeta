@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 datagooglesqldatabase.NewDataGoogleSqlDatabase(scope Construct, id *string, config DataGoogleSqlDatabaseConfig) DataGoogleSqlDatabase
 ```
@@ -285,7 +285,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 datagooglesqldatabase.DataGoogleSqlDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 datagooglesqldatabase.DataGoogleSqlDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datagooglesqldatabase.DataGoogleSqlDatabase_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 datagooglesqldatabase.DataGoogleSqlDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datagooglesqldatabase.DataGoogleSqlDatabase_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 datagooglesqldatabase.DataGoogleSqlDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase.DataGoogleSqlDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglesqldatabase"
 
 &datagooglesqldatabase.DataGoogleSqlDatabaseConfig {
 	Connection: interface{},

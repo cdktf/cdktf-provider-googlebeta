@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.NewDataGoogleCloudIdentityGroupLookup(scope Construct, id *string, config DataGoogleCloudIdentityGroupLookupConfig) DataGoogleCloudIdentityGroupLookup
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 &datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookupConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloud
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookupGroupKey,
+	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookupGroupKey,
 	Id: *string,
 }
 ```
@@ -748,7 +748,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookupGroupKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 &datagooglecloudidentitygrouplookup.DataGoogleCloudIdentityGroupLookupGroupKey {
 	Id: *string,
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupLookup.DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudidentitygrouplookup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecloudidentitygrouplookup"
 
 datagooglecloudidentitygrouplookup.NewDataGoogleCloudIdentityGroupLookupGroupKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference
 ```

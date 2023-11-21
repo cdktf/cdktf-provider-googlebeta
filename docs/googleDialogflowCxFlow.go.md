@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlow(scope Construct, id *string, config GoogleDialogflowCxFlowConfig) GoogleDialogflowCxFlow
 ```
@@ -474,7 +474,7 @@ func ResetTransitionRoutes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.GoogleDialogflowCxFlow_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.GoogleDialogflowCxFlow_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googledialogflowcxflow.GoogleDialogflowCxFlow_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.GoogleDialogflowCxFlow_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ googledialogflowcxflow.GoogleDialogflowCxFlow_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.GoogleDialogflowCxFlow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,11 +1038,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowAdvancedSettings {
-	AudioExportGcsDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestination,
-	DtmfSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings,
+	AudioExportGcsDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestination,
+	DtmfSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings,
 }
 ```
 
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestination {
 	Uri: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings {
 	Enabled: interface{},
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowConfig {
 	Connection: interface{},
@@ -1204,15 +1204,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflo
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	AdvancedSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettings,
+	AdvancedSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettings,
 	Description: *string,
 	EventHandlers: interface{},
 	Id: *string,
 	IsDefaultStartFlow: interface{},
 	LanguageCode: *string,
-	NluSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowNluSettings,
+	NluSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowNluSettings,
 	Parent: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTimeouts,
 	TransitionRouteGroups: *[]*string,
 	TransitionRoutes: interface{},
 }
@@ -1493,13 +1493,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlers {
 	Event: *string,
 	TargetFlow: *string,
 	TargetPage: *string,
-	TriggerFulfillment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillment,
+	TriggerFulfillment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillment,
 }
 ```
 
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillment {
 	ConditionalCases: interface{},
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases {
 	Cases: *string,
@@ -1730,17 +1730,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages {
 	Channel: *string,
-	ConversationSuccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess,
-	LiveAgentHandoff: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff,
-	OutputAudioText: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText,
+	ConversationSuccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess,
+	LiveAgentHandoff: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff,
+	OutputAudioText: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText,
 	Payload: *string,
-	PlayAudio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio,
-	TelephonyTransferCall: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall,
-	Text: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText,
+	PlayAudio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio,
+	TelephonyTransferCall: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall,
+	Text: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText,
 }
 ```
 
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess {
 	Metadata: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff {
 	Metadata: *string,
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText {
 	Ssml: *string,
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio {
 	AudioUri: *string,
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall {
 	PhoneNumber: *string,
@@ -2066,7 +2066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText {
 	Text: *[]*string,
@@ -2100,7 +2100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions {
 	Parameter: *string,
@@ -2150,7 +2150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowNluSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowNluSettings {
 	ClassificationThreshold: *f64,
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTimeouts {
 	Create: *string,
@@ -2284,14 +2284,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutes {
 	Condition: *string,
 	Intent: *string,
 	TargetFlow: *string,
 	TargetPage: *string,
-	TriggerFulfillment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment,
+	TriggerFulfillment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment,
 }
 ```
 
@@ -2386,7 +2386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment {
 	ConditionalCases: interface{},
@@ -2504,7 +2504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases {
 	Cases: *string,
@@ -2541,17 +2541,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages {
 	Channel: *string,
-	ConversationSuccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess,
-	LiveAgentHandoff: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff,
-	OutputAudioText: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText,
+	ConversationSuccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess,
+	LiveAgentHandoff: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff,
+	OutputAudioText: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText,
 	Payload: *string,
-	PlayAudio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio,
-	TelephonyTransferCall: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall,
-	Text: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText,
+	PlayAudio: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio,
+	TelephonyTransferCall: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall,
+	Text: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText,
 }
 ```
 
@@ -2689,7 +2689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess {
 	Metadata: *string,
@@ -2723,7 +2723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff {
 	Metadata: *string,
@@ -2757,7 +2757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText {
 	Ssml: *string,
@@ -2807,7 +2807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio {
 	AudioUri: *string,
@@ -2843,7 +2843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall {
 	PhoneNumber: *string,
@@ -2877,7 +2877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText {
 	Text: *[]*string,
@@ -2911,7 +2911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 &googledialogflowcxflow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions {
 	Parameter: *string,
@@ -2963,7 +2963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() GoogleDialogflowCxFlowAdvancedSettingsAudioExportGcsDestina
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference
 ```
@@ -3577,7 +3577,7 @@ func InternalValue() GoogleDialogflowCxFlowAdvancedSettingsDtmfSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowAdvancedSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowAdvancedSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowAdvancedSettingsOutputReference
 ```
@@ -3910,7 +3910,7 @@ func InternalValue() GoogleDialogflowCxFlowAdvancedSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowEventHandlersList
 ```
@@ -4053,7 +4053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowEventHandlersOutputReference
 ```
@@ -4460,7 +4460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList
 ```
@@ -4603,7 +4603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference
 ```
@@ -4899,7 +4899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference
 ```
@@ -5177,7 +5177,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList
 ```
@@ -5320,7 +5320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference
 ```
@@ -5598,7 +5598,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference
 ```
@@ -5916,7 +5916,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference
 ```
@@ -6493,7 +6493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference
 ```
@@ -6775,7 +6775,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference
 ```
@@ -7046,7 +7046,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference
 ```
@@ -7335,7 +7335,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference
 ```
@@ -7797,7 +7797,7 @@ func InternalValue() GoogleDialogflowCxFlowEventHandlersTriggerFulfillment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList
 ```
@@ -7940,7 +7940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference
 ```
@@ -8265,7 +8265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowNluSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowNluSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowNluSettingsOutputReference
 ```
@@ -8601,7 +8601,7 @@ func InternalValue() GoogleDialogflowCxFlowNluSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTimeoutsOutputReference
 ```
@@ -8937,7 +8937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowTransitionRoutesList
 ```
@@ -9080,7 +9080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowTransitionRoutesOutputReference
 ```
@@ -9516,7 +9516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList
 ```
@@ -9659,7 +9659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesOutputReference
 ```
@@ -9955,7 +9955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference
 ```
@@ -10233,7 +10233,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList
 ```
@@ -10376,7 +10376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference
 ```
@@ -10654,7 +10654,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference
 ```
@@ -10972,7 +10972,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference
 ```
@@ -11549,7 +11549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference
 ```
@@ -11831,7 +11831,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference
 ```
@@ -12102,7 +12102,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference
 ```
@@ -12391,7 +12391,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference
 ```
@@ -12853,7 +12853,7 @@ func InternalValue() GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList
 ```
@@ -12996,7 +12996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxflow"
 
 googledialogflowcxflow.NewGoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsOutputReference
 ```
