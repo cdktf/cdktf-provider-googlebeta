@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.NewGoogleBiglakeCatalog(scope Construct, id *string, config GoogleBiglakeCatalogConfig) GoogleBiglakeCatalog
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.GoogleBiglakeCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.GoogleBiglakeCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ googlebiglakecatalog.GoogleBiglakeCatalog_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.GoogleBiglakeCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ googlebiglakecatalog.GoogleBiglakeCatalog_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.GoogleBiglakeCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 &googlebiglakecatalog.GoogleBiglakeCatalogConfig {
 	Connection: interface{},
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigla
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts,
 }
 ```
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 &googlebiglakecatalog.GoogleBiglakeCatalogTimeouts {
 	Create: *string,
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebiglakecatalog"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebiglakecatalog"
 
 googlebiglakecatalog.NewGoogleBiglakeCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBiglakeCatalogTimeoutsOutputReference
 ```

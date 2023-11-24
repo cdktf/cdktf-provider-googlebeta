@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntent(scope Construct, id *string, config GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent
 ```
@@ -455,7 +455,7 @@ func ResetTrainingPhrases()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.GoogleDialogflowCxIntent_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.GoogleDialogflowCxIntent_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ googledialogflowcxintent.GoogleDialogflowCxIntent_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.GoogleDialogflowCxIntent_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ googledialogflowcxintent.GoogleDialogflowCxIntent_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.GoogleDialogflowCxIntent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 &googledialogflowcxintent.GoogleDialogflowCxIntentConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialo
 	Parameters: interface{},
 	Parent: *string,
 	Priority: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowCxIntent.GoogleDialogflowCxIntentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTimeouts,
 	TrainingPhrases: interface{},
 }
 ```
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 &googledialogflowcxintent.GoogleDialogflowCxIntentParameters {
 	EntityType: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 &googledialogflowcxintent.GoogleDialogflowCxIntentTimeouts {
 	Create: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 &googledialogflowcxintent.GoogleDialogflowCxIntentTrainingPhrases {
 	Parts: interface{},
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesParts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 &googledialogflowcxintent.GoogleDialogflowCxIntentTrainingPhrasesParts {
 	Text: *string,
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxIntentParametersList
 ```
@@ -1790,7 +1790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxIntentParametersOutputReference
 ```
@@ -2159,7 +2159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxIntentTimeoutsOutputReference
 ```
@@ -2495,7 +2495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentTrainingPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxIntentTrainingPhrasesList
 ```
@@ -2638,7 +2638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentTrainingPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxIntentTrainingPhrasesOutputReference
 ```
@@ -2980,7 +2980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesPartsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentTrainingPhrasesPartsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowCxIntentTrainingPhrasesPartsList
 ```
@@ -3123,7 +3123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowcxintent"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowcxintent"
 
 googledialogflowcxintent.NewGoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference
 ```
