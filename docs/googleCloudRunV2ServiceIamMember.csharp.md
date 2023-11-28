@@ -1,7 +1,3 @@
-# `google_cloud_run_v2_service_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_cloud_run_v2_service_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_run_v2_service_iam_member).
-
 # `googleCloudRunV2ServiceIamMember` Submodule <a name="`googleCloudRunV2ServiceIamMember` Submodule" id="@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

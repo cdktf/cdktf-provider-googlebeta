@@ -1,7 +1,3 @@
-# `data_google_folder`
-
-Refer to the Terraform Registory for docs: [`data_google_folder`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_folder).
-
 # `dataGoogleFolder` Submodule <a name="`dataGoogleFolder` Submodule" id="@cdktf/provider-google-beta.dataGoogleFolder"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

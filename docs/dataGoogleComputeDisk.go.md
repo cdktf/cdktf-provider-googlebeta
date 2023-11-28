@@ -1,7 +1,3 @@
-# `data_google_compute_disk`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_disk).
-
 # `dataGoogleComputeDisk` Submodule <a name="`dataGoogleComputeDisk` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeDisk"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

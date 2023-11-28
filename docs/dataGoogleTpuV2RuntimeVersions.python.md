@@ -1,7 +1,3 @@
-# `data_google_tpu_v2_runtime_versions`
-
-Refer to the Terraform Registory for docs: [`data_google_tpu_v2_runtime_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_tpu_v2_runtime_versions).
-
 # `dataGoogleTpuV2RuntimeVersions` Submodule <a name="`dataGoogleTpuV2RuntimeVersions` Submodule" id="@cdktf/provider-google-beta.dataGoogleTpuV2RuntimeVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

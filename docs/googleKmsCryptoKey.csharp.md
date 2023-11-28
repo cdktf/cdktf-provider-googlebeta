@@ -1,7 +1,3 @@
-# `google_kms_crypto_key`
-
-Refer to the Terraform Registory for docs: [`google_kms_crypto_key`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_kms_crypto_key).
-
 # `googleKmsCryptoKey` Submodule <a name="`googleKmsCryptoKey` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

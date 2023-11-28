@@ -1,7 +1,3 @@
-# `google_backup_dr_management_server`
-
-Refer to the Terraform Registory for docs: [`google_backup_dr_management_server`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_backup_dr_management_server).
-
 # `googleBackupDrManagementServer` Submodule <a name="`googleBackupDrManagementServer` Submodule" id="@cdktf/provider-google-beta.googleBackupDrManagementServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_compute_network_attachment`
-
-Refer to the Terraform Registory for docs: [`google_compute_network_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_network_attachment).
-
 # `googleComputeNetworkAttachment` Submodule <a name="`googleComputeNetworkAttachment` Submodule" id="@cdktf/provider-google-beta.googleComputeNetworkAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_access_context_manager_gcp_user_access_binding`
-
-Refer to the Terraform Registory for docs: [`google_access_context_manager_gcp_user_access_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_access_context_manager_gcp_user_access_binding).
-
 # `googleAccessContextManagerGcpUserAccessBinding` Submodule <a name="`googleAccessContextManagerGcpUserAccessBinding` Submodule" id="@cdktf/provider-google-beta.googleAccessContextManagerGcpUserAccessBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

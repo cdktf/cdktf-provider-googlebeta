@@ -1,7 +1,3 @@
-# `data_google_dataproc_metastore_service`
-
-Refer to the Terraform Registory for docs: [`data_google_dataproc_metastore_service`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_dataproc_metastore_service).
-
 # `dataGoogleDataprocMetastoreService` Submodule <a name="`dataGoogleDataprocMetastoreService` Submodule" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

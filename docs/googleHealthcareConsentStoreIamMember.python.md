@@ -1,7 +1,3 @@
-# `google_healthcare_consent_store_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_healthcare_consent_store_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_healthcare_consent_store_iam_member).
-
 # `googleHealthcareConsentStoreIamMember` Submodule <a name="`googleHealthcareConsentStoreIamMember` Submodule" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

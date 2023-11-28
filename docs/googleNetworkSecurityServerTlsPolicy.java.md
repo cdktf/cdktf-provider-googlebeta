@@ -1,7 +1,3 @@
-# `google_network_security_server_tls_policy`
-
-Refer to the Terraform Registory for docs: [`google_network_security_server_tls_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_security_server_tls_policy).
-
 # `googleNetworkSecurityServerTlsPolicy` Submodule <a name="`googleNetworkSecurityServerTlsPolicy` Submodule" id="@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

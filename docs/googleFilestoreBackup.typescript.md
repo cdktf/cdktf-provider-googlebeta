@@ -1,7 +1,3 @@
-# `google_filestore_backup`
-
-Refer to the Terraform Registory for docs: [`google_filestore_backup`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_backup).
-
 # `googleFilestoreBackup` Submodule <a name="`googleFilestoreBackup` Submodule" id="@cdktf/provider-google-beta.googleFilestoreBackup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

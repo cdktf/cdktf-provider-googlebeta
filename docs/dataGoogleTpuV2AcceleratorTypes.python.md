@@ -1,7 +1,3 @@
-# `data_google_tpu_v2_accelerator_types`
-
-Refer to the Terraform Registory for docs: [`data_google_tpu_v2_accelerator_types`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_tpu_v2_accelerator_types).
-
 # `dataGoogleTpuV2AcceleratorTypes` Submodule <a name="`dataGoogleTpuV2AcceleratorTypes` Submodule" id="@cdktf/provider-google-beta.dataGoogleTpuV2AcceleratorTypes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

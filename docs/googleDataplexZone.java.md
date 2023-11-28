@@ -1,7 +1,3 @@
-# `google_dataplex_zone`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_zone`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_zone).
-
 # `googleDataplexZone` Submodule <a name="`googleDataplexZone` Submodule" id="@cdktf/provider-google-beta.googleDataplexZone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

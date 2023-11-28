@@ -1,7 +1,3 @@
-# `google_storage_default_object_access_control`
-
-Refer to the Terraform Registory for docs: [`google_storage_default_object_access_control`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_default_object_access_control).
-
 # `googleStorageDefaultObjectAccessControl` Submodule <a name="`googleStorageDefaultObjectAccessControl` Submodule" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_edgenetwork_network`
-
-Refer to the Terraform Registory for docs: [`google_edgenetwork_network`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_edgenetwork_network).
-
 # `googleEdgenetworkNetwork` Submodule <a name="`googleEdgenetworkNetwork` Submodule" id="@cdktf/provider-google-beta.googleEdgenetworkNetwork"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

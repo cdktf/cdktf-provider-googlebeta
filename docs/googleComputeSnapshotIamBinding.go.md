@@ -1,7 +1,3 @@
-# `google_compute_snapshot_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_compute_snapshot_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_snapshot_iam_binding).
-
 # `googleComputeSnapshotIamBinding` Submodule <a name="`googleComputeSnapshotIamBinding` Submodule" id="@cdktf/provider-google-beta.googleComputeSnapshotIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

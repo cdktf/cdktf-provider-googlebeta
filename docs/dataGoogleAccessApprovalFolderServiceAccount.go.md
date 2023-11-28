@@ -1,7 +1,3 @@
-# `data_google_access_approval_folder_service_account`
-
-Refer to the Terraform Registory for docs: [`data_google_access_approval_folder_service_account`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_access_approval_folder_service_account).
-
 # `dataGoogleAccessApprovalFolderServiceAccount` Submodule <a name="`dataGoogleAccessApprovalFolderServiceAccount` Submodule" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalFolderServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_datastream_stream`
-
-Refer to the Terraform Registory for docs: [`google_datastream_stream`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_datastream_stream).
-
 # `googleDatastreamStream` Submodule <a name="`googleDatastreamStream` Submodule" id="@cdktf/provider-google-beta.googleDatastreamStream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

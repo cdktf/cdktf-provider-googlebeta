@@ -1,7 +1,3 @@
-# `google_vertex_ai_metadata_store`
-
-Refer to the Terraform Registory for docs: [`google_vertex_ai_metadata_store`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_metadata_store).
-
 # `googleVertexAiMetadataStore` Submodule <a name="`googleVertexAiMetadataStore` Submodule" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

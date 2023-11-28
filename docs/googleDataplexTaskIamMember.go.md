@@ -1,7 +1,3 @@
-# `google_dataplex_task_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_task_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_task_iam_member).
-
 # `googleDataplexTaskIamMember` Submodule <a name="`googleDataplexTaskIamMember` Submodule" id="@cdktf/provider-google-beta.googleDataplexTaskIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

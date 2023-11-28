@@ -1,7 +1,3 @@
-# `google_bigquery_datapolicy_data_policy_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_datapolicy_data_policy_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member).
-
 # `googleBigqueryDatapolicyDataPolicyIamMember` Submodule <a name="`googleBigqueryDatapolicyDataPolicyIamMember` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

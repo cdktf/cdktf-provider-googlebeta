@@ -1,7 +1,3 @@
-# `google_compute_network_firewall_policy_association`
-
-Refer to the Terraform Registory for docs: [`google_compute_network_firewall_policy_association`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_network_firewall_policy_association).
-
 # `googleComputeNetworkFirewallPolicyAssociation` Submodule <a name="`googleComputeNetworkFirewallPolicyAssociation` Submodule" id="@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_healthcare_hl7_v2_store_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_healthcare_hl7_v2_store_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding).
-
 # `googleHealthcareHl7V2StoreIamBinding` Submodule <a name="`googleHealthcareHl7V2StoreIamBinding` Submodule" id="@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

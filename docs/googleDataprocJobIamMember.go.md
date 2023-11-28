@@ -1,7 +1,3 @@
-# `google_dataproc_job_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_job_iam_member).
-
 # `googleDataprocJobIamMember` Submodule <a name="`googleDataprocJobIamMember` Submodule" id="@cdktf/provider-google-beta.googleDataprocJobIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

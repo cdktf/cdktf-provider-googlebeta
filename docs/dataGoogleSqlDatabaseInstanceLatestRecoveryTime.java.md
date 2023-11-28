@@ -1,7 +1,3 @@
-# `data_google_sql_database_instance_latest_recovery_time`
-
-Refer to the Terraform Registory for docs: [`data_google_sql_database_instance_latest_recovery_time`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_database_instance_latest_recovery_time).
-
 # `dataGoogleSqlDatabaseInstanceLatestRecoveryTime` Submodule <a name="`dataGoogleSqlDatabaseInstanceLatestRecoveryTime` Submodule" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstanceLatestRecoveryTime"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

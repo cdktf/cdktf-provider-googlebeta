@@ -1,7 +1,3 @@
-# `google_scc_organization_custom_module`
-
-Refer to the Terraform Registory for docs: [`google_scc_organization_custom_module`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_organization_custom_module).
-
 # `googleSccOrganizationCustomModule` Submodule <a name="`googleSccOrganizationCustomModule` Submodule" id="@cdktf/provider-google-beta.googleSccOrganizationCustomModule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

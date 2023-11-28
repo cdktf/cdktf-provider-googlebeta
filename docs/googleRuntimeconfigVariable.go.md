@@ -1,7 +1,3 @@
-# `google_runtimeconfig_variable`
-
-Refer to the Terraform Registory for docs: [`google_runtimeconfig_variable`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_runtimeconfig_variable).
-
 # `googleRuntimeconfigVariable` Submodule <a name="`googleRuntimeconfigVariable` Submodule" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

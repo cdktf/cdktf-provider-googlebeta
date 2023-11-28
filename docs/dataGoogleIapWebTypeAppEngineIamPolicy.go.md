@@ -1,7 +1,3 @@
-# `data_google_iap_web_type_app_engine_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_iap_web_type_app_engine_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_iap_web_type_app_engine_iam_policy).
-
 # `dataGoogleIapWebTypeAppEngineIamPolicy` Submodule <a name="`dataGoogleIapWebTypeAppEngineIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeAppEngineIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

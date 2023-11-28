@@ -1,7 +1,3 @@
-# `google_scc_source_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_scc_source_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_source_iam_policy).
-
 # `googleSccSourceIamPolicy` Submodule <a name="`googleSccSourceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

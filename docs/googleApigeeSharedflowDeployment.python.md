@@ -1,7 +1,3 @@
-# `google_apigee_sharedflow_deployment`
-
-Refer to the Terraform Registory for docs: [`google_apigee_sharedflow_deployment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_sharedflow_deployment).
-
 # `googleApigeeSharedflowDeployment` Submodule <a name="`googleApigeeSharedflowDeployment` Submodule" id="@cdktf/provider-google-beta.googleApigeeSharedflowDeployment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

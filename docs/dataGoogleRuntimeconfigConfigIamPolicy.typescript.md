@@ -1,7 +1,3 @@
-# `data_google_runtimeconfig_config_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_runtimeconfig_config_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_runtimeconfig_config_iam_policy).
-
 # `dataGoogleRuntimeconfigConfigIamPolicy` Submodule <a name="`dataGoogleRuntimeconfigConfigIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

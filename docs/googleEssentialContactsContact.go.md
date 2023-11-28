@@ -1,7 +1,3 @@
-# `google_essential_contacts_contact`
-
-Refer to the Terraform Registory for docs: [`google_essential_contacts_contact`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_essential_contacts_contact).
-
 # `googleEssentialContactsContact` Submodule <a name="`googleEssentialContactsContact` Submodule" id="@cdktf/provider-google-beta.googleEssentialContactsContact"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

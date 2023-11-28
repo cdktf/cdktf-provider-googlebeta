@@ -1,7 +1,3 @@
-# `google_firebase_extensions_instance`
-
-Refer to the Terraform Registory for docs: [`google_firebase_extensions_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_extensions_instance).
-
 # `googleFirebaseExtensionsInstance` Submodule <a name="`googleFirebaseExtensionsInstance` Submodule" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_apigee_instance`
-
-Refer to the Terraform Registory for docs: [`google_apigee_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_instance).
-
 # `googleApigeeInstance` Submodule <a name="`googleApigeeInstance` Submodule" id="@cdktf/provider-google-beta.googleApigeeInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

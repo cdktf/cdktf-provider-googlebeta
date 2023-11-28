@@ -1,7 +1,3 @@
-# `google_iam_deny_policy`
-
-Refer to the Terraform Registory for docs: [`google_iam_deny_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_deny_policy).
-
 # `googleIamDenyPolicy` Submodule <a name="`googleIamDenyPolicy` Submodule" id="@cdktf/provider-google-beta.googleIamDenyPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

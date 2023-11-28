@@ -1,7 +1,3 @@
-# `data_google_privateca_certificate_template_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_privateca_certificate_template_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_privateca_certificate_template_iam_policy).
-
 # `dataGooglePrivatecaCertificateTemplateIamPolicy` Submodule <a name="`dataGooglePrivatecaCertificateTemplateIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGooglePrivatecaCertificateTemplateIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

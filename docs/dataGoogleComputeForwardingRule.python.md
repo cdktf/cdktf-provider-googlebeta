@@ -1,7 +1,3 @@
-# `data_google_compute_forwarding_rule`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_forwarding_rule`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_forwarding_rule).
-
 # `dataGoogleComputeForwardingRule` Submodule <a name="`dataGoogleComputeForwardingRule` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeForwardingRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

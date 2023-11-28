@@ -1,7 +1,3 @@
-# `google_apigee_envgroup_attachment`
-
-Refer to the Terraform Registory for docs: [`google_apigee_envgroup_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_envgroup_attachment).
-
 # `googleApigeeEnvgroupAttachment` Submodule <a name="`googleApigeeEnvgroupAttachment` Submodule" id="@cdktf/provider-google-beta.googleApigeeEnvgroupAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

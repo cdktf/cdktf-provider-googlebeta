@@ -1,7 +1,3 @@
-# `google_service_directory_service_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_service_directory_service_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_service_directory_service_iam_binding).
-
 # `googleServiceDirectoryServiceIamBinding` Submodule <a name="`googleServiceDirectoryServiceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

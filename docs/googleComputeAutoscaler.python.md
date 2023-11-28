@@ -1,7 +1,3 @@
-# `google_compute_autoscaler`
-
-Refer to the Terraform Registory for docs: [`google_compute_autoscaler`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_autoscaler).
-
 # `googleComputeAutoscaler` Submodule <a name="`googleComputeAutoscaler` Submodule" id="@cdktf/provider-google-beta.googleComputeAutoscaler"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

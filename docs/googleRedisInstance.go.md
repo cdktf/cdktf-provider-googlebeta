@@ -1,7 +1,3 @@
-# `google_redis_instance`
-
-Refer to the Terraform Registory for docs: [`google_redis_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_redis_instance).
-
 # `googleRedisInstance` Submodule <a name="`googleRedisInstance` Submodule" id="@cdktf/provider-google-beta.googleRedisInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

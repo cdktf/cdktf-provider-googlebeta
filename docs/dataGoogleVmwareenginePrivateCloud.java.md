@@ -1,7 +1,3 @@
-# `data_google_vmwareengine_private_cloud`
-
-Refer to the Terraform Registory for docs: [`data_google_vmwareengine_private_cloud`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud).
-
 # `dataGoogleVmwareenginePrivateCloud` Submodule <a name="`dataGoogleVmwareenginePrivateCloud` Submodule" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_google_iam_workload_identity_pool`
-
-Refer to the Terraform Registory for docs: [`data_google_iam_workload_identity_pool`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_iam_workload_identity_pool).
-
 # `dataGoogleIamWorkloadIdentityPool` Submodule <a name="`dataGoogleIamWorkloadIdentityPool` Submodule" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_spanner_database_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_spanner_database_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_spanner_database_iam_policy).
-
 # `googleSpannerDatabaseIamPolicy` Submodule <a name="`googleSpannerDatabaseIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

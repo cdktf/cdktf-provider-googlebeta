@@ -1,7 +1,3 @@
-# `google_workstations_workstation_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_workstations_workstation_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_workstations_workstation_iam_binding).
-
 # `googleWorkstationsWorkstationIamBinding` Submodule <a name="`googleWorkstationsWorkstationIamBinding` Submodule" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

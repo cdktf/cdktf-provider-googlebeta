@@ -1,7 +1,3 @@
-# `google_pubsub_lite_reservation`
-
-Refer to the Terraform Registory for docs: [`google_pubsub_lite_reservation`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation).
-
 # `googlePubsubLiteReservation` Submodule <a name="`googlePubsubLiteReservation` Submodule" id="@cdktf/provider-google-beta.googlePubsubLiteReservation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

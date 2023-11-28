@@ -1,7 +1,3 @@
-# `data_google_dataplex_lake_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_dataplex_lake_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_dataplex_lake_iam_policy).
-
 # `dataGoogleDataplexLakeIamPolicy` Submodule <a name="`dataGoogleDataplexLakeIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

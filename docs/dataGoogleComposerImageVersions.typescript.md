@@ -1,7 +1,3 @@
-# `data_google_composer_image_versions`
-
-Refer to the Terraform Registory for docs: [`data_google_composer_image_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_composer_image_versions).
-
 # `dataGoogleComposerImageVersions` Submodule <a name="`dataGoogleComposerImageVersions` Submodule" id="@cdktf/provider-google-beta.dataGoogleComposerImageVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

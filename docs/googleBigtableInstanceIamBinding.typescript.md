@@ -1,7 +1,3 @@
-# `google_bigtable_instance_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_bigtable_instance_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigtable_instance_iam_binding).
-
 # `googleBigtableInstanceIamBinding` Submodule <a name="`googleBigtableInstanceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigtableInstanceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

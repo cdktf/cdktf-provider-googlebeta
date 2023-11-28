@@ -1,7 +1,3 @@
-# `google_bigquery_dataset_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_dataset_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_dataset_iam_policy).
-
 # `googleBigqueryDatasetIamPolicy` Submodule <a name="`googleBigqueryDatasetIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

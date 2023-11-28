@@ -1,7 +1,3 @@
-# `google_pubsub_subscription_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_pubsub_subscription_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_subscription_iam_policy).
-
 # `googlePubsubSubscriptionIamPolicy` Submodule <a name="`googlePubsubSubscriptionIamPolicy` Submodule" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_bigquery_dataset_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_dataset_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_dataset_iam_binding).
-
 # `googleBigqueryDatasetIamBinding` Submodule <a name="`googleBigqueryDatasetIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

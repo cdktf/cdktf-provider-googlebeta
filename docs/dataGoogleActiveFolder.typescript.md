@@ -1,7 +1,3 @@
-# `data_google_active_folder`
-
-Refer to the Terraform Registory for docs: [`data_google_active_folder`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_active_folder).
-
 # `dataGoogleActiveFolder` Submodule <a name="`dataGoogleActiveFolder` Submodule" id="@cdktf/provider-google-beta.dataGoogleActiveFolder"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

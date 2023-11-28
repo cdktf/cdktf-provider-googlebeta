@@ -1,7 +1,3 @@
-# `google_dialogflow_cx_flow`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_cx_flow`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_cx_flow).
-
 # `googleDialogflowCxFlow` Submodule <a name="`googleDialogflowCxFlow` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxFlow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

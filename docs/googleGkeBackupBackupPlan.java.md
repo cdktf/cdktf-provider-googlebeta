@@ -1,7 +1,3 @@
-# `google_gke_backup_backup_plan`
-
-Refer to the Terraform Registory for docs: [`google_gke_backup_backup_plan`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_backup_backup_plan).
-
 # `googleGkeBackupBackupPlan` Submodule <a name="`googleGkeBackupBackupPlan` Submodule" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_vertex_ai_featurestore_entitytype_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_vertex_ai_featurestore_entitytype_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_policy).
-
 # `googleVertexAiFeaturestoreEntitytypeIamPolicy` Submodule <a name="`googleVertexAiFeaturestoreEntitytypeIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

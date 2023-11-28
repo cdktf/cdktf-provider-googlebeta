@@ -1,7 +1,3 @@
-# `google_edgecontainer_cluster`
-
-Refer to the Terraform Registory for docs: [`google_edgecontainer_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_edgecontainer_cluster).
-
 # `googleEdgecontainerCluster` Submodule <a name="`googleEdgecontainerCluster` Submodule" id="@cdktf/provider-google-beta.googleEdgecontainerCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

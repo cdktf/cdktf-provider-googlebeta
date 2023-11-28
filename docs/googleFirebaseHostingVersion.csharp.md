@@ -1,7 +1,3 @@
-# `google_firebase_hosting_version`
-
-Refer to the Terraform Registory for docs: [`google_firebase_hosting_version`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_version).
-
 # `googleFirebaseHostingVersion` Submodule <a name="`googleFirebaseHostingVersion` Submodule" id="@cdktf/provider-google-beta.googleFirebaseHostingVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

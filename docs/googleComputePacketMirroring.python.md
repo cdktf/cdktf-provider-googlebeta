@@ -1,7 +1,3 @@
-# `google_compute_packet_mirroring`
-
-Refer to the Terraform Registory for docs: [`google_compute_packet_mirroring`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_packet_mirroring).
-
 # `googleComputePacketMirroring` Submodule <a name="`googleComputePacketMirroring` Submodule" id="@cdktf/provider-google-beta.googleComputePacketMirroring"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

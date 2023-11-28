@@ -1,7 +1,3 @@
-# `google_apigee_env_keystore`
-
-Refer to the Terraform Registory for docs: [`google_apigee_env_keystore`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_env_keystore).
-
 # `googleApigeeEnvKeystore` Submodule <a name="`googleApigeeEnvKeystore` Submodule" id="@cdktf/provider-google-beta.googleApigeeEnvKeystore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_dataproc_cluster_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_dataproc_cluster_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_cluster_iam_binding).
-
 # `googleDataprocClusterIamBinding` Submodule <a name="`googleDataprocClusterIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataprocClusterIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

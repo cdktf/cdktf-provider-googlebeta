@@ -1,7 +1,3 @@
-# `google_gke_hub_membership_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_gke_hub_membership_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_membership_iam_binding).
-
 # `googleGkeHubMembershipIamBinding` Submodule <a name="`googleGkeHubMembershipIamBinding` Submodule" id="@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

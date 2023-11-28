@@ -1,7 +1,3 @@
-# `google_scc_source_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_scc_source_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_source_iam_member).
-
 # `googleSccSourceIamMember` Submodule <a name="`googleSccSourceIamMember` Submodule" id="@cdktf/provider-google-beta.googleSccSourceIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

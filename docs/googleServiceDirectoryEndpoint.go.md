@@ -1,7 +1,3 @@
-# `google_service_directory_endpoint`
-
-Refer to the Terraform Registory for docs: [`google_service_directory_endpoint`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_service_directory_endpoint).
-
 # `googleServiceDirectoryEndpoint` Submodule <a name="`googleServiceDirectoryEndpoint` Submodule" id="@cdktf/provider-google-beta.googleServiceDirectoryEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

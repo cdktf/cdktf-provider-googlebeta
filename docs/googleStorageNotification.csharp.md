@@ -1,7 +1,3 @@
-# `google_storage_notification`
-
-Refer to the Terraform Registory for docs: [`google_storage_notification`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_notification).
-
 # `googleStorageNotification` Submodule <a name="`googleStorageNotification` Submodule" id="@cdktf/provider-google-beta.googleStorageNotification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_network_security_address_group`
-
-Refer to the Terraform Registory for docs: [`google_network_security_address_group`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_security_address_group).
-
 # `googleNetworkSecurityAddressGroup` Submodule <a name="`googleNetworkSecurityAddressGroup` Submodule" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

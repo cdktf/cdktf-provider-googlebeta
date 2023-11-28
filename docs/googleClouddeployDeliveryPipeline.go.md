@@ -1,7 +1,3 @@
-# `google_clouddeploy_delivery_pipeline`
-
-Refer to the Terraform Registory for docs: [`google_clouddeploy_delivery_pipeline`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_clouddeploy_delivery_pipeline).
-
 # `googleClouddeployDeliveryPipeline` Submodule <a name="`googleClouddeployDeliveryPipeline` Submodule" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

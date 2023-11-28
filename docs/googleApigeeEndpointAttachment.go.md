@@ -1,7 +1,3 @@
-# `google_apigee_endpoint_attachment`
-
-Refer to the Terraform Registory for docs: [`google_apigee_endpoint_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_endpoint_attachment).
-
 # `googleApigeeEndpointAttachment` Submodule <a name="`googleApigeeEndpointAttachment` Submodule" id="@cdktf/provider-google-beta.googleApigeeEndpointAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

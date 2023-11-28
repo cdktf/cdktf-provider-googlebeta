@@ -1,7 +1,3 @@
-# `google_service_networking_connection`
-
-Refer to the Terraform Registory for docs: [`google_service_networking_connection`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_service_networking_connection).
-
 # `googleServiceNetworkingConnection` Submodule <a name="`googleServiceNetworkingConnection` Submodule" id="@cdktf/provider-google-beta.googleServiceNetworkingConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

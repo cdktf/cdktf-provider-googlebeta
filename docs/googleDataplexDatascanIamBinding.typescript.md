@@ -1,7 +1,3 @@
-# `google_dataplex_datascan_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_datascan_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_datascan_iam_binding).
-
 # `googleDataplexDatascanIamBinding` Submodule <a name="`googleDataplexDatascanIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataplexDatascanIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

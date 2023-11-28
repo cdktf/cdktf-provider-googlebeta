@@ -1,7 +1,3 @@
-# `google_dialogflow_cx_version`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_cx_version`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_cx_version).
-
 # `googleDialogflowCxVersion` Submodule <a name="`googleDialogflowCxVersion` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

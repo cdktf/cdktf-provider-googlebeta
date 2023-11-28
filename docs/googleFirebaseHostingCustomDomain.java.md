@@ -1,7 +1,3 @@
-# `google_firebase_hosting_custom_domain`
-
-Refer to the Terraform Registory for docs: [`google_firebase_hosting_custom_domain`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_custom_domain).
-
 # `googleFirebaseHostingCustomDomain` Submodule <a name="`googleFirebaseHostingCustomDomain` Submodule" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

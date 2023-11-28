@@ -1,7 +1,3 @@
-# `data_google_monitoring_cluster_istio_service`
-
-Refer to the Terraform Registory for docs: [`data_google_monitoring_cluster_istio_service`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_monitoring_cluster_istio_service).
-
 # `dataGoogleMonitoringClusterIstioService` Submodule <a name="`dataGoogleMonitoringClusterIstioService` Submodule" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_spanner_database`
-
-Refer to the Terraform Registory for docs: [`google_spanner_database`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_spanner_database).
-
 # `googleSpannerDatabase` Submodule <a name="`googleSpannerDatabase` Submodule" id="@cdktf/provider-google-beta.googleSpannerDatabase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

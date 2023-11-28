@@ -1,7 +1,3 @@
-# `google_deployment_manager_deployment`
-
-Refer to the Terraform Registory for docs: [`google_deployment_manager_deployment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_deployment_manager_deployment).
-
 # `googleDeploymentManagerDeployment` Submodule <a name="`googleDeploymentManagerDeployment` Submodule" id="@cdktf/provider-google-beta.googleDeploymentManagerDeployment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

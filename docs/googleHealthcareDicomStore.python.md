@@ -1,7 +1,3 @@
-# `google_healthcare_dicom_store`
-
-Refer to the Terraform Registory for docs: [`google_healthcare_dicom_store`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_healthcare_dicom_store).
-
 # `googleHealthcareDicomStore` Submodule <a name="`googleHealthcareDicomStore` Submodule" id="@cdktf/provider-google-beta.googleHealthcareDicomStore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

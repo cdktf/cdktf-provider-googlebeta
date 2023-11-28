@@ -1,7 +1,3 @@
-# `google_filestore_snapshot`
-
-Refer to the Terraform Registory for docs: [`google_filestore_snapshot`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot).
-
 # `googleFilestoreSnapshot` Submodule <a name="`googleFilestoreSnapshot` Submodule" id="@cdktf/provider-google-beta.googleFilestoreSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_org_policy_custom_constraint`
-
-Refer to the Terraform Registory for docs: [`google_org_policy_custom_constraint`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_org_policy_custom_constraint).
-
 # `googleOrgPolicyCustomConstraint` Submodule <a name="`googleOrgPolicyCustomConstraint` Submodule" id="@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

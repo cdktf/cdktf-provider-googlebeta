@@ -1,7 +1,3 @@
-# `data_google_workstations_workstation_config_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_workstations_workstation_config_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_workstations_workstation_config_iam_policy).
-
 # `dataGoogleWorkstationsWorkstationConfigIamPolicy` Submodule <a name="`dataGoogleWorkstationsWorkstationConfigIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleWorkstationsWorkstationConfigIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

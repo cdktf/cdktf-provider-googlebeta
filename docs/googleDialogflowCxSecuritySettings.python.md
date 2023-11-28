@@ -1,7 +1,3 @@
-# `google_dialogflow_cx_security_settings`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_cx_security_settings`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_cx_security_settings).
-
 # `googleDialogflowCxSecuritySettings` Submodule <a name="`googleDialogflowCxSecuritySettings` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxSecuritySettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

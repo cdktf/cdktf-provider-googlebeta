@@ -1,7 +1,3 @@
-# `google_monitoring_monitored_project`
-
-Refer to the Terraform Registory for docs: [`google_monitoring_monitored_project`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_monitoring_monitored_project).
-
 # `googleMonitoringMonitoredProject` Submodule <a name="`googleMonitoringMonitoredProject` Submodule" id="@cdktf/provider-google-beta.googleMonitoringMonitoredProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

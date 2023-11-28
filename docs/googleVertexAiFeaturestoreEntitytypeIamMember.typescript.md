@@ -1,7 +1,3 @@
-# `google_vertex_ai_featurestore_entitytype_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_vertex_ai_featurestore_entitytype_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_member).
-
 # `googleVertexAiFeaturestoreEntitytypeIamMember` Submodule <a name="`googleVertexAiFeaturestoreEntitytypeIamMember` Submodule" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

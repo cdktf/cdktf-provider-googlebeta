@@ -1,7 +1,3 @@
-# `google_dataflow_flex_template_job`
-
-Refer to the Terraform Registory for docs: [`google_dataflow_flex_template_job`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataflow_flex_template_job).
-
 # `googleDataflowFlexTemplateJob` Submodule <a name="`googleDataflowFlexTemplateJob` Submodule" id="@cdktf/provider-google-beta.googleDataflowFlexTemplateJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

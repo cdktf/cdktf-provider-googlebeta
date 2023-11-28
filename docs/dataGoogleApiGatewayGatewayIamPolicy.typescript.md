@@ -1,7 +1,3 @@
-# `data_google_api_gateway_gateway_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_api_gateway_gateway_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_api_gateway_gateway_iam_policy).
-
 # `dataGoogleApiGatewayGatewayIamPolicy` Submodule <a name="`dataGoogleApiGatewayGatewayIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_kms_crypto_key_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_kms_crypto_key_iam_policy).
-
 # `googleKmsCryptoKeyIamPolicy` Submodule <a name="`googleKmsCryptoKeyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

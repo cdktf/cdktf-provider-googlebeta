@@ -1,7 +1,3 @@
-# `google_scc_folder_custom_module`
-
-Refer to the Terraform Registory for docs: [`google_scc_folder_custom_module`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_folder_custom_module).
-
 # `googleSccFolderCustomModule` Submodule <a name="`googleSccFolderCustomModule` Submodule" id="@cdktf/provider-google-beta.googleSccFolderCustomModule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

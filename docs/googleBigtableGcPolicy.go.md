@@ -1,7 +1,3 @@
-# `google_bigtable_gc_policy`
-
-Refer to the Terraform Registory for docs: [`google_bigtable_gc_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigtable_gc_policy).
-
 # `googleBigtableGcPolicy` Submodule <a name="`googleBigtableGcPolicy` Submodule" id="@cdktf/provider-google-beta.googleBigtableGcPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

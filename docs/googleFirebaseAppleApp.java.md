@@ -1,7 +1,3 @@
-# `google_firebase_apple_app`
-
-Refer to the Terraform Registory for docs: [`google_firebase_apple_app`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_apple_app).
-
 # `googleFirebaseAppleApp` Submodule <a name="`googleFirebaseAppleApp` Submodule" id="@cdktf/provider-google-beta.googleFirebaseAppleApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

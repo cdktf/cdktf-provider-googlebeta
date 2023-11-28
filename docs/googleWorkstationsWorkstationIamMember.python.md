@@ -1,7 +1,3 @@
-# `google_workstations_workstation_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_workstations_workstation_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_workstations_workstation_iam_member).
-
 # `googleWorkstationsWorkstationIamMember` Submodule <a name="`googleWorkstationsWorkstationIamMember` Submodule" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

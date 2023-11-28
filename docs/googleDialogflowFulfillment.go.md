@@ -1,7 +1,3 @@
-# `google_dialogflow_fulfillment`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_fulfillment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_fulfillment).
-
 # `googleDialogflowFulfillment` Submodule <a name="`googleDialogflowFulfillment` Submodule" id="@cdktf/provider-google-beta.googleDialogflowFulfillment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

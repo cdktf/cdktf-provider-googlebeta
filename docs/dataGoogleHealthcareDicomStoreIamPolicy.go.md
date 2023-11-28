@@ -1,7 +1,3 @@
-# `data_google_healthcare_dicom_store_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_healthcare_dicom_store_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_healthcare_dicom_store_iam_policy).
-
 # `dataGoogleHealthcareDicomStoreIamPolicy` Submodule <a name="`dataGoogleHealthcareDicomStoreIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleHealthcareDicomStoreIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

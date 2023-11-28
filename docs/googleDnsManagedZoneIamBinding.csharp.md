@@ -1,7 +1,3 @@
-# `google_dns_managed_zone_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_dns_managed_zone_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_managed_zone_iam_binding).
-
 # `googleDnsManagedZoneIamBinding` Submodule <a name="`googleDnsManagedZoneIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
