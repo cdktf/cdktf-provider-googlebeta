@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePool(scope Construct, id *string, config GoogleGkeonpremBareMetalNodePoolConfig) GoogleGkeonpremBareMetalNodePool
 ```
@@ -389,7 +389,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -975,7 +975,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolConfig {
 	Connection: interface{},
@@ -988,12 +988,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprem
 	BareMetalCluster: *string,
 	Location: *string,
 	Name: *string,
-	NodePoolConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfig,
+	NodePoolConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfig,
 	Annotations: *map[string]*string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeouts,
 }
 ```
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolNodePoolConfig {
 	NodeConfigs: interface{},
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigs {
 	Labels: *map[string]*string,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaints {
 	Effect: *string,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolStatus {
 
@@ -1462,7 +1462,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprem
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolStatusConditions {
 
@@ -1475,7 +1475,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprem
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 &googlegkeonprembaremetalnodepool.GoogleGkeonpremBareMetalNodePoolTimeouts {
 	Create: *string,
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList
 ```
@@ -1680,7 +1680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsOutputReference
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremBareMetalNodePoolNodePoolConfigOutputReference
 ```
@@ -2389,7 +2389,7 @@ func InternalValue() GoogleGkeonpremBareMetalNodePoolNodePoolConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList
 ```
@@ -2532,7 +2532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsOutputReference
 ```
@@ -2886,7 +2886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolStatusConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeonpremBareMetalNodePoolStatusConditionsList
 ```
@@ -3018,7 +3018,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeonpremBareMetalNodePoolStatusConditionsOutputReference
 ```
@@ -3340,7 +3340,7 @@ func InternalValue() GoogleGkeonpremBareMetalNodePoolStatusConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeonpremBareMetalNodePoolStatusList
 ```
@@ -3472,7 +3472,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeonpremBareMetalNodePoolStatusOutputReference
 ```
@@ -3761,7 +3761,7 @@ func InternalValue() GoogleGkeonpremBareMetalNodePoolStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkeonprembaremetalnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkeonprembaremetalnodepool"
 
 googlegkeonprembaremetalnodepool.NewGoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremBareMetalNodePoolTimeoutsOutputReference
 ```

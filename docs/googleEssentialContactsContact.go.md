@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.NewGoogleEssentialContactsContact(scope Construct, id *string, config GoogleEssentialContactsContactConfig) GoogleEssentialContactsContact
 ```
@@ -355,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.GoogleEssentialContactsContact_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.GoogleEssentialContactsContact_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ googleessentialcontactscontact.GoogleEssentialContactsContact_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.GoogleEssentialContactsContact_IsTerraformResource(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ googleessentialcontactscontact.GoogleEssentialContactsContact_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.GoogleEssentialContactsContact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 &googleessentialcontactscontact.GoogleEssentialContactsContactConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessential
 	NotificationCategorySubscriptions: *[]*string,
 	Parent: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 &googleessentialcontactscontact.GoogleEssentialContactsContactTimeouts {
 	Create: *string,
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleessentialcontactscontact"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleessentialcontactscontact"
 
 googleessentialcontactscontact.NewGoogleEssentialContactsContactTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEssentialContactsContactTimeoutsOutputReference
 ```

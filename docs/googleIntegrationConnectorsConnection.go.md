@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnection(scope Construct, id *string, config GoogleIntegrationConnectorsConnectionConfig) GoogleIntegrationConnectorsConnection
 ```
@@ -557,7 +557,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_IsConstruct(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1385,17 +1385,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfig {
 	AuthType: *string,
 	AdditionalVariable: interface{},
 	AuthKey: *string,
-	Oauth2AuthCodeFlow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow,
-	Oauth2ClientCredentials: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials,
-	Oauth2JwtBearer: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearer,
-	SshPublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey,
-	UserPassword: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPassword,
+	Oauth2AuthCodeFlow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow,
+	Oauth2ClientCredentials: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials,
+	Oauth2JwtBearer: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearer,
+	SshPublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey,
+	UserPassword: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPassword,
 }
 ```
 
@@ -1531,14 +1531,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariable {
 	Key: *string,
 	BooleanValue: interface{},
-	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue,
+	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue,
 	IntegerValue: *f64,
-	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue,
+	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue,
 	StringValue: *string,
 }
 ```
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue {
 	Type: *string,
@@ -1701,7 +1701,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue {
 	SecretVersion: *string,
@@ -1735,12 +1735,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow {
 	AuthUri: *string,
 	ClientId: *string,
-	ClientSecret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret,
+	ClientSecret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret,
 	EnablePkce: interface{},
 	Scopes: *[]*string,
 }
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret {
 	SecretVersion: *string,
@@ -1869,11 +1869,11 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials {
 	ClientId: *string,
-	ClientSecret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret,
+	ClientSecret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret,
 }
 ```
 
@@ -1919,7 +1919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret {
 	SecretVersion: *string,
@@ -1955,11 +1955,11 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearer {
-	ClientKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey,
-	JwtClaims: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims,
+	ClientKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey,
+	JwtClaims: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims,
 }
 ```
 
@@ -2005,7 +2005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey {
 	SecretVersion: *string,
@@ -2041,7 +2041,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims {
 	Audience: *string,
@@ -2107,13 +2107,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey {
 	Username: *string,
 	CertType: *string,
-	SshClientCert: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert,
-	SshClientCertPass: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass,
+	SshClientCert: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert,
+	SshClientCertPass: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass,
 }
 ```
 
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert {
 	SecretVersion: *string,
@@ -2225,7 +2225,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass {
 	SecretVersion: *string,
@@ -2261,11 +2261,11 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPassword {
 	Username: *string,
-	Password: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPassword,
+	Password: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPassword,
 }
 ```
 
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPassword {
 	SecretVersion: *string,
@@ -2347,7 +2347,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionConfig {
 	Connection: interface{},
@@ -2360,22 +2360,22 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrati
 	ConnectorVersion: *string,
 	Location: *string,
 	Name: *string,
-	AuthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfig,
+	AuthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfig,
 	ConfigVariable: interface{},
 	Description: *string,
 	DestinationConfig: interface{},
-	EventingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfig,
+	EventingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfig,
 	EventingEnablementType: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	LockConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfig,
-	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLogConfig,
-	NodeConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionNodeConfig,
+	LockConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfig,
+	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLogConfig,
+	NodeConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionNodeConfig,
 	Project: *string,
 	ServiceAccount: *string,
-	SslConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfig,
+	SslConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfig,
 	Suspended: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionTimeouts,
 }
 ```
 
@@ -2755,14 +2755,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionConfigVariable {
 	Key: *string,
 	BooleanValue: interface{},
-	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValue,
+	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValue,
 	IntegerValue: *f64,
-	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableSecretValue,
+	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableSecretValue,
 	StringValue: *string,
 }
 ```
@@ -2869,7 +2869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValue {
 	Type: *string,
@@ -2925,7 +2925,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableSecretValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionConfigVariableSecretValue {
 	SecretVersion: *string,
@@ -2959,7 +2959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfig {
 
@@ -2972,7 +2972,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionDestinationConfig {
 	Key: *string,
@@ -3022,7 +3022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfigDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionDestinationConfigDestination {
 	Host: *string,
@@ -3090,12 +3090,12 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfig {
-	RegistrationDestinationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig,
+	RegistrationDestinationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig,
 	AdditionalVariable: interface{},
-	AuthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig,
+	AuthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig,
 	EnrichmentEnabled: interface{},
 }
 ```
@@ -3172,14 +3172,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariable {
 	Key: *string,
 	BooleanValue: interface{},
-	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue,
+	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue,
 	IntegerValue: *f64,
-	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue,
+	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue,
 	StringValue: *string,
 }
 ```
@@ -3286,7 +3286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue {
 	KmsKeyName: *string,
@@ -3342,7 +3342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue {
 	SecretVersion: *string,
@@ -3376,11 +3376,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig {
 	AuthType: *string,
-	UserPassword: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword,
+	UserPassword: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword,
 	AdditionalVariable: interface{},
 	AuthKey: *string,
 }
@@ -3458,14 +3458,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable {
 	Key: *string,
 	BooleanValue: interface{},
-	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue,
+	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue,
 	IntegerValue: *f64,
-	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue,
+	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue,
 	StringValue: *string,
 }
 ```
@@ -3572,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue {
 	KmsKeyName: *string,
@@ -3628,7 +3628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue {
 	SecretVersion: *string,
@@ -3662,10 +3662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword {
-	Password: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword,
+	Password: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword,
 	Username: *string,
 }
 ```
@@ -3712,7 +3712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword {
 	SecretVersion: *string,
@@ -3748,7 +3748,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig {
 	Destination: interface{},
@@ -3798,7 +3798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination {
 	Host: *string,
@@ -3864,7 +3864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingRuntimeData {
 
@@ -3877,7 +3877,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatus {
 
@@ -3890,7 +3890,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionLockConfig {
 	Locked: interface{},
@@ -3940,7 +3940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionLogConfig {
 	Enabled: interface{},
@@ -3974,7 +3974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionNodeConfig {
 	MaxNodeCount: *f64,
@@ -4024,16 +4024,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfig {
 	Type: *string,
 	AdditionalVariable: interface{},
-	ClientCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientCertificate,
+	ClientCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientCertificate,
 	ClientCertType: *string,
-	ClientPrivateKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKey,
-	ClientPrivateKeyPass: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPass,
-	PrivateServerCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificate,
+	ClientPrivateKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKey,
+	ClientPrivateKeyPass: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPass,
+	PrivateServerCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificate,
 	ServerCertType: *string,
 	TrustModel: *string,
 	UseSsl: interface{},
@@ -4202,14 +4202,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariable {
 	Key: *string,
 	BooleanValue: interface{},
-	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue,
+	EncryptionKeyValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue,
 	IntegerValue: *f64,
-	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue,
+	SecretValue: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue,
 	StringValue: *string,
 }
 ```
@@ -4316,7 +4316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue {
 	KmsKeyName: *string,
@@ -4372,7 +4372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue {
 	SecretVersion: *string,
@@ -4406,7 +4406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigClientCertificate {
 	SecretVersion: *string,
@@ -4440,7 +4440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKey {
 	SecretVersion: *string,
@@ -4474,7 +4474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPass {
 	SecretVersion: *string,
@@ -4508,7 +4508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificate {
 	SecretVersion: *string,
@@ -4542,7 +4542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionStatus {
 
@@ -4555,7 +4555,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 &googleintegrationconnectorsconnection.GoogleIntegrationConnectorsConnectionTimeouts {
 	Create: *string,
@@ -4617,7 +4617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableList
 ```
@@ -5060,7 +5060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference
 ```
@@ -5520,7 +5520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference
 ```
@@ -5791,7 +5791,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigAdditionalVa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference
 ```
@@ -6062,7 +6062,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference
 ```
@@ -6469,7 +6469,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2AuthCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference
 ```
@@ -6740,7 +6740,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2Client
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference
 ```
@@ -7053,7 +7053,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2Client
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference
 ```
@@ -7324,7 +7324,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference
 ```
@@ -7660,7 +7660,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference
 ```
@@ -7993,7 +7993,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigOauth2JwtBea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigOutputReference
 ```
@@ -8545,7 +8545,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference
 ```
@@ -8929,7 +8929,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference
 ```
@@ -9200,7 +9200,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference
 ```
@@ -9471,7 +9471,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference
 ```
@@ -9784,7 +9784,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigUserPassword
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference
 ```
@@ -10055,7 +10055,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionAuthConfigUserPassword
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference
 ```
@@ -10355,7 +10355,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionConfigVariableEncrypti
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConfigVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionConfigVariableList
 ```
@@ -10498,7 +10498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConfigVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionConfigVariableOutputReference
 ```
@@ -10958,7 +10958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConfigVariableSecretValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionConfigVariableSecretValueOutputReference
 ```
@@ -11229,7 +11229,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionConfigVariableSecretVa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigList
 ```
@@ -11361,7 +11361,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference
 ```
@@ -11639,7 +11639,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionConnectorVersionInfraC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionDestinationConfigDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionDestinationConfigDestinationList
 ```
@@ -11782,7 +11782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionDestinationConfigDestinationOutputReference
 ```
@@ -12136,7 +12136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionDestinationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionDestinationConfigList
 ```
@@ -12279,7 +12279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionDestinationConfigOutputReference
 ```
@@ -12610,7 +12610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference
 ```
@@ -12917,7 +12917,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAddition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableList
 ```
@@ -13060,7 +13060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference
 ```
@@ -13520,7 +13520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference
 ```
@@ -13791,7 +13791,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAddition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference
 ```
@@ -14098,7 +14098,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList
 ```
@@ -14241,7 +14241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference
 ```
@@ -14701,7 +14701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference
 ```
@@ -14972,7 +14972,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference
 ```
@@ -15349,7 +15349,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference
 ```
@@ -15669,7 +15669,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference
 ```
@@ -15940,7 +15940,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigAuthConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigOutputReference
 ```
@@ -16337,7 +16337,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList
 ```
@@ -16480,7 +16480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference
 ```
@@ -16834,7 +16834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference
 ```
@@ -17154,7 +17154,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingConfigRegistra
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingRuntimeDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionEventingRuntimeDataList
 ```
@@ -17286,7 +17286,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionEventingRuntimeDataOutputReference
 ```
@@ -17575,7 +17575,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingRuntimeData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusList
 ```
@@ -17707,7 +17707,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference
 ```
@@ -17996,7 +17996,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionEventingRuntimeDataSta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionLockConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionLockConfigOutputReference
 ```
@@ -18296,7 +18296,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionLockConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionLogConfigOutputReference
 ```
@@ -18567,7 +18567,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionNodeConfigOutputReference
 ```
@@ -18874,7 +18874,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionNodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference
 ```
@@ -19181,7 +19181,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigAdditionalVar
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableList
 ```
@@ -19324,7 +19324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference
 ```
@@ -19784,7 +19784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference
 ```
@@ -20055,7 +20055,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigAdditionalVar
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigClientCertificateOutputReference
 ```
@@ -20326,7 +20326,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigClientCertifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference
 ```
@@ -20597,7 +20597,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigClientPrivate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference
 ```
@@ -20868,7 +20868,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigClientPrivate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigOutputReference
 ```
@@ -21465,7 +21465,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference
 ```
@@ -21736,7 +21736,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionSslConfigPrivateServer
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIntegrationConnectorsConnectionStatusList
 ```
@@ -21868,7 +21868,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIntegrationConnectorsConnectionStatusOutputReference
 ```
@@ -22168,7 +22168,7 @@ func InternalValue() GoogleIntegrationConnectorsConnectionStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleintegrationconnectorsconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsconnection"
 
 googleintegrationconnectorsconnection.NewGoogleIntegrationConnectorsConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionTimeoutsOutputReference
 ```

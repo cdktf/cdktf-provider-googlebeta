@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersion(scope Construct, id *string, config GoogleAppEngineStandardAppVersionConfig) GoogleAppEngineStandardAppVersion
 ```
@@ -578,7 +578,7 @@ func ResetVpcAccessConnector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_IsConstruct(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.GoogleAppEngineStandardAppVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1384,7 +1384,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionAutomaticScaling {
 	MaxConcurrentRequests: *f64,
@@ -1392,7 +1392,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengine
 	MaxPendingLatency: *string,
 	MinIdleInstances: *f64,
 	MinPendingLatency: *string,
-	StandardSchedulerSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings,
+	StandardSchedulerSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings,
 }
 ```
 
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings {
 	MaxInstances: *f64,
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionBasicScaling {
 	MaxInstances: *f64,
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionConfig {
 	Connection: interface{},
@@ -1654,13 +1654,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengine
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Deployment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment,
-	Entrypoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint,
+	Deployment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment,
+	Entrypoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint,
 	Runtime: *string,
 	Service: *string,
 	AppEngineApis: interface{},
-	AutomaticScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling,
-	BasicScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling,
+	AutomaticScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling,
+	BasicScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling,
 	DeleteServiceOnDestroy: interface{},
 	EnvVariables: *map[string]*string,
 	Handlers: interface{},
@@ -1668,15 +1668,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengine
 	InboundServices: *[]*string,
 	InstanceClass: *string,
 	Libraries: interface{},
-	ManualScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling,
+	ManualScaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling,
 	NoopOnDestroy: interface{},
 	Project: *string,
 	RuntimeApiVersion: *string,
 	ServiceAccount: *string,
 	Threadsafe: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts,
 	VersionId: *string,
-	VpcAccessConnector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector,
+	VpcAccessConnector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector,
 }
 ```
 
@@ -2127,11 +2127,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionDeployment {
 	Files: interface{},
-	Zip: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip,
+	Zip: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip,
 }
 ```
 
@@ -2177,7 +2177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionDeploymentFiles {
 	Name: *string,
@@ -2241,7 +2241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionDeploymentZip {
 	SourceUrl: *string,
@@ -2291,7 +2291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionEntrypoint {
 	Shell: *string,
@@ -2325,15 +2325,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionHandlers {
 	AuthFailAction: *string,
 	Login: *string,
 	RedirectHttpResponseCode: *string,
-	Script: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript,
+	Script: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript,
 	SecurityLevel: *string,
-	StaticFiles: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles,
+	StaticFiles: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles,
 	UrlRegex: *string,
 }
 ```
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionHandlersScript {
 	ScriptPath: *string,
@@ -2492,7 +2492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionHandlersStaticFiles {
 	ApplicationReadable: interface{},
@@ -2632,7 +2632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibraries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionLibraries {
 	Name: *string,
@@ -2682,7 +2682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionManualScaling {
 	Instances: *f64,
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionTimeouts {
 	Create: *string,
@@ -2779,7 +2779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 &googleappenginestandardappversion.GoogleAppEngineStandardAppVersionVpcAccessConnector {
 	Name: *string,
@@ -2831,7 +2831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionAutomaticScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference
 ```
@@ -3267,7 +3267,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionAutomaticScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference
 ```
@@ -3632,7 +3632,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionAutomaticScalingStandardSc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionBasicScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionBasicScalingOutputReference
 ```
@@ -3932,7 +3932,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionBasicScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionDeploymentFilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineStandardAppVersionDeploymentFilesList
 ```
@@ -4075,7 +4075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionDeploymentFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference
 ```
@@ -4415,7 +4415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionDeploymentOutputReference
 ```
@@ -4748,7 +4748,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionDeploymentZipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionDeploymentZipOutputReference
 ```
@@ -5048,7 +5048,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionDeploymentZip
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionEntrypointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionEntrypointOutputReference
 ```
@@ -5319,7 +5319,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionEntrypoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionHandlersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineStandardAppVersionHandlersList
 ```
@@ -5462,7 +5462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionHandlersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAppEngineStandardAppVersionHandlersOutputReference
 ```
@@ -5958,7 +5958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScriptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionHandlersScriptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionHandlersScriptOutputReference
 ```
@@ -6229,7 +6229,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionHandlersScript
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference
 ```
@@ -6681,7 +6681,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionHandlersStaticFiles
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionLibrariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineStandardAppVersionLibrariesList
 ```
@@ -6824,7 +6824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionLibrariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAppEngineStandardAppVersionLibrariesOutputReference
 ```
@@ -7149,7 +7149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionManualScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionManualScalingOutputReference
 ```
@@ -7420,7 +7420,7 @@ func InternalValue() GoogleAppEngineStandardAppVersionManualScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionTimeoutsOutputReference
 ```
@@ -7756,7 +7756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappenginestandardappversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleappenginestandardappversion"
 
 googleappenginestandardappversion.NewGoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference
 ```

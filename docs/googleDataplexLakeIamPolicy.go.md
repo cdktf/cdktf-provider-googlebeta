@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.NewGoogleDataplexLakeIamPolicy(scope Construct, id *string, config GoogleDataplexLakeIamPolicyConfig) GoogleDataplexLakeIamPolicy
 ```
@@ -349,7 +349,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLakeIamPolicy.GoogleDataplexLakeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlakeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlakeiampolicy"
 
 &googledataplexlakeiampolicy.GoogleDataplexLakeIamPolicyConfig {
 	Connection: interface{},

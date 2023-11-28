@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.NewGoogleIapWebRegionBackendServiceIamBinding(scope Construct, id *string, config GoogleIapWebRegionBackendServiceIamBindingConfig) GoogleIapWebRegionBackendServiceIamBinding
 ```
@@ -369,7 +369,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 &googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBindingCondition {
 	Expression: *string,
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 &googleiapwebregionbackendserviceiambinding.GoogleIapWebRegionBackendServiceIamBindingConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebreg
 	Members: *[]*string,
 	Role: *string,
 	WebRegionBackendService: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding.GoogleIapWebRegionBackendServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebregionbackendserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebregionbackendserviceiambinding"
 
 googleiapwebregionbackendserviceiambinding.NewGoogleIapWebRegionBackendServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebRegionBackendServiceIamBindingConditionOutputReference
 ```

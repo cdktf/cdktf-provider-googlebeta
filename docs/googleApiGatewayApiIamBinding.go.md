@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.NewGoogleApiGatewayApiIamBinding(scope Construct, id *string, config GoogleApiGatewayApiIamBindingConfig) GoogleApiGatewayApiIamBinding
 ```
@@ -362,7 +362,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.GoogleApiGatewayApiIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 &googleapigatewayapiiambinding.GoogleApiGatewayApiIamBindingCondition {
 	Expression: *string,
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 &googleapigatewayapiiambinding.GoogleApiGatewayApiIamBindingConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewa
 	Api: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiiambinding"
 
 googleapigatewayapiiambinding.NewGoogleApiGatewayApiIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiIamBindingConditionOutputReference
 ```

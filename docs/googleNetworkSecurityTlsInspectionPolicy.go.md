@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.NewGoogleNetworkSecurityTlsInspectionPolicy(scope Construct, id *string, config GoogleNetworkSecurityTlsInspectionPolicyConfig) GoogleNetworkSecurityTlsInspectionPolicy
 ```
@@ -383,7 +383,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 &googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicyConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkse
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicyTimeouts,
 }
 ```
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 &googlenetworksecuritytlsinspectionpolicy.GoogleNetworkSecurityTlsInspectionPolicyTimeouts {
 	Create: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityTlsInspectionPolicy.GoogleNetworkSecurityTlsInspectionPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritytlsinspectionpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritytlsinspectionpolicy"
 
 googlenetworksecuritytlsinspectionpolicy.NewGoogleNetworkSecurityTlsInspectionPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityTlsInspectionPolicyTimeoutsOutputReference
 ```

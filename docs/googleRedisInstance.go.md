@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstance(scope Construct, id *string, config GoogleRedisInstanceConfig) GoogleRedisInstance
 ```
@@ -521,7 +521,7 @@ func ResetTransitEncryptionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.GoogleRedisInstance_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.GoogleRedisInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ googleredisinstance.GoogleRedisInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.GoogleRedisInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ googleredisinstance.GoogleRedisInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.GoogleRedisInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1481,7 +1481,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceConfig {
 	Connection: interface{},
@@ -1502,8 +1502,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinst
 	Id: *string,
 	Labels: *map[string]*string,
 	LocationId: *string,
-	MaintenancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicy,
-	PersistenceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleRedisInstance.GoogleRedisInstancePersistenceConfig,
+	MaintenancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleRedisInstance.GoogleRedisInstanceMaintenancePolicy,
+	PersistenceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleRedisInstance.GoogleRedisInstancePersistenceConfig,
 	Project: *string,
 	ReadReplicasMode: *string,
 	RedisConfigs: *map[string]*string,
@@ -1513,7 +1513,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinst
 	ReservedIpRange: *string,
 	SecondaryIpRange: *string,
 	Tier: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleRedisInstance.GoogleRedisInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleRedisInstance.GoogleRedisInstanceTimeouts,
 	TransitEncryptionMode: *string,
 }
 ```
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceMaintenancePolicy {
 	Description: *string,
@@ -2070,11 +2070,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow {
 	Day: *string,
-	StartTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime,
+	StartTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime,
 }
 ```
 
@@ -2129,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime {
 	Hours: *f64,
@@ -2217,7 +2217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceMaintenanceSchedule {
 
@@ -2230,7 +2230,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinst
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceNodes {
 
@@ -2243,7 +2243,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinst
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstancePersistenceConfig {
 	PersistenceMode: *string,
@@ -2324,7 +2324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceServerCaCerts {
 
@@ -2337,7 +2337,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinst
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 &googleredisinstance.GoogleRedisInstanceTimeouts {
 	Create: *string,
@@ -2399,7 +2399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleRedisInstanceMaintenancePolicyOutputReference
 ```
@@ -2741,7 +2741,7 @@ func InternalValue() GoogleRedisInstanceMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList
 ```
@@ -2884,7 +2884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference
 ```
@@ -3219,7 +3219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference
 ```
@@ -3584,7 +3584,7 @@ func InternalValue() GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleRedisInstanceMaintenanceScheduleList
 ```
@@ -3716,7 +3716,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleRedisInstanceMaintenanceScheduleOutputReference
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() GoogleRedisInstanceMaintenanceSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleRedisInstanceNodesList
 ```
@@ -4148,7 +4148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleRedisInstanceNodesOutputReference
 ```
@@ -4437,7 +4437,7 @@ func InternalValue() GoogleRedisInstanceNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstancePersistenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleRedisInstancePersistenceConfigOutputReference
 ```
@@ -4784,7 +4784,7 @@ func InternalValue() GoogleRedisInstancePersistenceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCertsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceServerCaCertsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleRedisInstanceServerCaCertsList
 ```
@@ -4916,7 +4916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceServerCaCertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceServerCaCertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleRedisInstanceServerCaCertsOutputReference
 ```
@@ -5238,7 +5238,7 @@ func InternalValue() GoogleRedisInstanceServerCaCerts
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleredisinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleredisinstance"
 
 googleredisinstance.NewGoogleRedisInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleRedisInstanceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.NewGoogleComputeRegionDiskIamBinding(scope Construct, id *string, config GoogleComputeRegionDiskIamBindingConfig) GoogleComputeRegionDiskIamBinding
 ```
@@ -369,7 +369,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 &googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBindingCondition {
 	Expression: *string,
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 &googlecomputeregiondiskiambinding.GoogleComputeRegionDiskIamBindingConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputere
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskiambinding"
 
 googlecomputeregiondiskiambinding.NewGoogleComputeRegionDiskIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskIamBindingConditionOutputReference
 ```

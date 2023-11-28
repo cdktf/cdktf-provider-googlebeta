@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.NewGoogleIdentityPlatformDefaultSupportedIdpConfig(scope Construct, id *string, config GoogleIdentityPlatformDefaultSupportedIdpConfigConfig) GoogleIdentityPlatformDefaultSupportedIdpConfig
 ```
@@ -369,7 +369,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfig_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSup
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSup
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 &googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfigConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityp
 	Enabled: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfigTimeouts,
 }
 ```
 
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 &googleidentityplatformdefaultsupportedidpconfig.GoogleIdentityPlatformDefaultSupportedIdpConfigTimeouts {
 	Create: *string,
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformDefaultSupportedIdpConfig.GoogleIdentityPlatformDefaultSupportedIdpConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformdefaultsupportedidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleidentityplatformdefaultsupportedidpconfig"
 
 googleidentityplatformdefaultsupportedidpconfig.NewGoogleIdentityPlatformDefaultSupportedIdpConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformDefaultSupportedIdpConfigTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlan(scope Construct, id *string, config GoogleGkeBackupRestorePlanConfig) GoogleGkeBackupRestorePlan
 ```
@@ -389,7 +389,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsConstruct(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanConfig {
 	Connection: interface{},
@@ -967,12 +967,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackup
 	Cluster: *string,
 	Location: *string,
 	Name: *string,
-	RestoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig,
+	RestoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts,
 }
 ```
 
@@ -1220,17 +1220,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfig {
 	AllNamespaces: interface{},
 	ClusterResourceConflictPolicy: *string,
-	ClusterResourceRestoreScope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope,
-	ExcludedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces,
+	ClusterResourceRestoreScope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope,
+	ExcludedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces,
 	NamespacedResourceRestoreMode: *string,
 	NoNamespaces: interface{},
-	SelectedApplications: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications,
-	SelectedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces,
+	SelectedApplications: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications,
+	SelectedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces,
 	TransformationRules: interface{},
 	VolumeDataRestorePolicy: *string,
 }
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope {
 	AllGroupKinds: interface{},
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds {
 	ResourceGroup: *string,
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds {
 	ResourceGroup: *string,
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces {
 	Namespaces: *[]*string,
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications {
 	NamespacedNames: interface{},
@@ -1664,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames {
 	Name: *string,
@@ -1714,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces {
 	Namespaces: *[]*string,
@@ -1748,12 +1748,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRules {
 	FieldActions: interface{},
 	Description: *string,
-	ResourceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter,
+	ResourceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter,
 }
 ```
 
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions {
 	Op: *string,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter {
 	GroupKinds: interface{},
@@ -1968,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds {
 	ResourceGroup: *string,
@@ -2018,7 +2018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanTimeouts {
 	Create: *string,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList
 ```
@@ -2223,7 +2223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference
 ```
@@ -2548,7 +2548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference
 ```
@@ -2939,7 +2939,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigClusterResourceResto
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList
 ```
@@ -3082,7 +3082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference
 ```
@@ -3407,7 +3407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference
 ```
@@ -3678,7 +3678,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigOutputReference
 ```
@@ -4282,7 +4282,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList
 ```
@@ -4425,7 +4425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference
 ```
@@ -4736,7 +4736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference
 ```
@@ -5020,7 +5020,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference
 ```
@@ -5291,7 +5291,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList
 ```
@@ -5434,7 +5434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference
 ```
@@ -5810,7 +5810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList
 ```
@@ -5953,7 +5953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference
 ```
@@ -6326,7 +6326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList
 ```
@@ -6469,7 +6469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference
 ```
@@ -6794,7 +6794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference
 ```
@@ -7143,7 +7143,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesR
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanTimeoutsOutputReference
 ```

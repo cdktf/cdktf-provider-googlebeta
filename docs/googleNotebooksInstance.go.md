@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstance(scope Construct, id *string, config GoogleNotebooksInstanceConfig) GoogleNotebooksInstance
 ```
@@ -623,7 +623,7 @@ func ResetVmImage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsConstruct(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1704,7 +1704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceAcceleratorConfig {
 	CoreCount: *f64,
@@ -1754,7 +1754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceConfig {
 	Connection: interface{},
@@ -1767,10 +1767,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooks
 	Location: *string,
 	MachineType: *string,
 	Name: *string,
-	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig,
+	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig,
 	BootDiskSizeGb: *f64,
 	BootDiskType: *string,
-	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage,
+	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage,
 	CreateTime: *string,
 	CustomGpuDriverPath: *string,
 	DataDiskSizeGb: *f64,
@@ -1789,15 +1789,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooks
 	NoRemoveDataDisk: interface{},
 	PostStartupScript: *string,
 	Project: *string,
-	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity,
+	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity,
 	ServiceAccount: *string,
 	ServiceAccountScopes: *[]*string,
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig,
 	Subnet: *string,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts,
 	UpdateTime: *string,
-	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage,
+	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNotebooksInstance.GoogleNotebooksInstanceVmImage,
 }
 ```
 
@@ -2437,7 +2437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceContainerImage {
 	Repository: *string,
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceReservationAffinity {
 	ConsumeReservationType: *string,
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -2629,7 +2629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceTimeouts {
 	Create: *string,
@@ -2689,7 +2689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceVmImage {
 	Project: *string,
@@ -2757,7 +2757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceAcceleratorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceAcceleratorConfigOutputReference
 ```
@@ -3050,7 +3050,7 @@ func InternalValue() GoogleNotebooksInstanceAcceleratorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceContainerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceContainerImageOutputReference
 ```
@@ -3350,7 +3350,7 @@ func InternalValue() GoogleNotebooksInstanceContainerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceReservationAffinityOutputReference
 ```
@@ -3679,7 +3679,7 @@ func InternalValue() GoogleNotebooksInstanceReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceShieldedInstanceConfigOutputReference
 ```
@@ -4015,7 +4015,7 @@ func InternalValue() GoogleNotebooksInstanceShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceTimeoutsOutputReference
 ```
@@ -4351,7 +4351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceVmImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceVmImageOutputReference
 ```

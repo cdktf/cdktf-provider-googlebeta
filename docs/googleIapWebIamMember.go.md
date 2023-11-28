@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.NewGoogleIapWebIamMember(scope Construct, id *string, config GoogleIapWebIamMemberConfig) GoogleIapWebIamMember
 ```
@@ -362,7 +362,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.GoogleIapWebIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.GoogleIapWebIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ googleiapwebiammember.GoogleIapWebIamMember_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.GoogleIapWebIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ googleiapwebiammember.GoogleIapWebIamMember_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.GoogleIapWebIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 &googleiapwebiammember.GoogleIapWebIamMemberCondition {
 	Expression: *string,
@@ -832,7 +832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 &googleiapwebiammember.GoogleIapWebIamMemberConfig {
 	Connection: interface{},
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiam
 	Provisioners: *[]interface{},
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebIamMember.GoogleIapWebIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIapWebIamMember.GoogleIapWebIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebiammember"
 
 googleiapwebiammember.NewGoogleIapWebIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebIamMemberConditionOutputReference
 ```

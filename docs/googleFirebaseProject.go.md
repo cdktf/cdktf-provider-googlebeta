@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.NewGoogleFirebaseProject(scope Construct, id *string, config GoogleFirebaseProjectConfig) GoogleFirebaseProject
 ```
@@ -362,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.GoogleFirebaseProject_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.GoogleFirebaseProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ googlefirebaseproject.GoogleFirebaseProject_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.GoogleFirebaseProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ googlefirebaseproject.GoogleFirebaseProject_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.GoogleFirebaseProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 &googlefirebaseproject.GoogleFirebaseProjectConfig {
 	Connection: interface{},
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasep
 	Provisioners: *[]interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseProject.GoogleFirebaseProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFirebaseProject.GoogleFirebaseProjectTimeouts,
 }
 ```
 
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 &googlefirebaseproject.GoogleFirebaseProjectTimeouts {
 	Create: *string,
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaseproject"
 
 googlefirebaseproject.NewGoogleFirebaseProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseProjectTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroup(scope Construct, id *string, config GoogleComputeRegionNetworkEndpointGroupConfig) GoogleComputeRegionNetworkEndpointGroup
 ```
@@ -477,7 +477,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1085,7 +1085,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupAppEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupAppEngine {
 	Service: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupCloudFunction {
 	Function: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupCloudRun {
 	Service: *string,
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupConfig {
 	Connection: interface{},
@@ -1309,18 +1309,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputere
 	Provisioners: *[]interface{},
 	Name: *string,
 	Region: *string,
-	AppEngine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupAppEngine,
-	CloudFunction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunction,
-	CloudRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudRun,
+	AppEngine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupAppEngine,
+	CloudFunction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunction,
+	CloudRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudRun,
 	Description: *string,
 	Id: *string,
 	Network: *string,
 	NetworkEndpointType: *string,
 	Project: *string,
 	PscTargetService: *string,
-	ServerlessDeployment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupServerlessDeployment,
+	ServerlessDeployment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupServerlessDeployment,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupTimeouts,
 }
 ```
 
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupServerlessDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupServerlessDeployment {
 	Platform: *string,
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 &googlecomputeregionnetworkendpointgroup.GoogleComputeRegionNetworkEndpointGroupTimeouts {
 	Create: *string,
@@ -1777,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() GoogleComputeRegionNetworkEndpointGroupAppEngine
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference
 ```
@@ -2420,7 +2420,7 @@ func InternalValue() GoogleComputeRegionNetworkEndpointGroupCloudFunction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference
 ```
@@ -2756,7 +2756,7 @@ func InternalValue() GoogleComputeRegionNetworkEndpointGroupCloudRun
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference
 ```
@@ -3114,7 +3114,7 @@ func InternalValue() GoogleComputeRegionNetworkEndpointGroupServerlessDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkEndpointGroup.GoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionnetworkendpointgroup"
 
 googlecomputeregionnetworkendpointgroup.NewGoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference
 ```

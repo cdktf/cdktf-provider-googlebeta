@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascan(scope Construct, id *string, config GoogleDataplexDatascanConfig) GoogleDataplexDatascan
 ```
@@ -449,7 +449,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.GoogleDataplexDatascan_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.GoogleDataplexDatascan_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ googledataplexdatascan.GoogleDataplexDatascan_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.GoogleDataplexDatascan_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ googledataplexdatascan.GoogleDataplexDatascan_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.GoogleDataplexDatascan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1101,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanConfig {
 	Connection: interface{},
@@ -1111,18 +1111,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Data: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanData,
+	Data: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanData,
 	DataScanId: *string,
-	ExecutionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpec,
+	ExecutionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpec,
 	Location: *string,
-	DataProfileSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpec,
-	DataQualitySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpec,
+	DataProfileSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpec,
+	DataQualitySpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpec,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanTimeouts,
 }
 ```
 
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanData {
 	Entity: *string,
@@ -1452,12 +1452,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataProfileSpec {
-	ExcludeFields: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecExcludeFields,
-	IncludeFields: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecIncludeFields,
-	PostScanActions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActions,
+	ExcludeFields: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecExcludeFields,
+	IncludeFields: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecIncludeFields,
+	PostScanActions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActions,
 	RowFilter: *string,
 	SamplingPercent: *f64,
 }
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecExcludeFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataProfileSpecExcludeFields {
 	FieldNames: *[]*string,
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecIncludeFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataProfileSpecIncludeFields {
 	FieldNames: *[]*string,
@@ -1629,10 +1629,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataProfileSpecPostScanActions {
-	BigqueryExport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport,
+	BigqueryExport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport,
 }
 ```
 
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport {
 	ResultsTable: *string,
@@ -1697,10 +1697,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpec {
-	PostScanActions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActions,
+	PostScanActions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActions,
 	RowFilter: *string,
 	Rules: interface{},
 	SamplingPercent: *f64,
@@ -1784,10 +1784,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecPostScanActions {
-	BigqueryExport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport,
+	BigqueryExport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport,
 }
 ```
 
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport {
 	ResultsTable: *string,
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRules {
 	Dimension: *string,
@@ -1860,15 +1860,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 	Description: *string,
 	IgnoreNull: interface{},
 	Name: *string,
-	NonNullExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation,
-	RangeExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation,
-	RegexExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation,
-	RowConditionExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation,
-	SetExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSetExpectation,
-	StatisticRangeExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation,
-	TableConditionExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation,
+	NonNullExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation,
+	RangeExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation,
+	RegexExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation,
+	RowConditionExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation,
+	SetExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSetExpectation,
+	StatisticRangeExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation,
+	TableConditionExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation,
 	Threshold: *f64,
-	UniquenessExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation,
+	UniquenessExpectation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation,
 }
 ```
 
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation {
 
@@ -2116,7 +2116,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation {
 	MaxValue: *string,
@@ -2206,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation {
 	Regex: *string,
@@ -2240,7 +2240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation {
 	SqlExpression: *string,
@@ -2274,7 +2274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSetExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesSetExpectation {
 	Values: *[]*string,
@@ -2308,7 +2308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation {
 	Statistic: *string,
@@ -2414,7 +2414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation {
 	SqlExpression: *string,
@@ -2448,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation {
 
@@ -2461,10 +2461,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanExecutionSpec {
-	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTrigger,
+	Trigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTrigger,
 	Field: *string,
 }
 ```
@@ -2513,11 +2513,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanExecutionSpecTrigger {
-	OnDemand: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemand,
-	Schedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerSchedule,
+	OnDemand: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemand,
+	Schedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerSchedule,
 }
 ```
 
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemand {
 
@@ -2576,7 +2576,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanExecutionSpecTriggerSchedule {
 	Cron: *string,
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanExecutionStatus {
 
@@ -2623,7 +2623,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 &googledataplexdatascan.GoogleDataplexDatascanTimeouts {
 	Create: *string,
@@ -2685,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataOutputReference
 ```
@@ -2992,7 +2992,7 @@ func InternalValue() GoogleDataplexDatascanData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference
 ```
@@ -3270,7 +3270,7 @@ func InternalValue() GoogleDataplexDatascanDataProfileSpecExcludeFields
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference
 ```
@@ -3548,7 +3548,7 @@ func InternalValue() GoogleDataplexDatascanDataProfileSpecIncludeFields
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataProfileSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataProfileSpecOutputReference
 ```
@@ -3981,7 +3981,7 @@ func InternalValue() GoogleDataplexDatascanDataProfileSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference
 ```
@@ -4259,7 +4259,7 @@ func InternalValue() GoogleDataplexDatascanDataProfileSpecPostScanActionsBigquer
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference
 ```
@@ -4550,7 +4550,7 @@ func InternalValue() GoogleDataplexDatascanDataProfileSpecPostScanActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecOutputReference
 ```
@@ -4941,7 +4941,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference
 ```
@@ -5219,7 +5219,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecPostScanActionsBigquer
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference
 ```
@@ -5510,7 +5510,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecPostScanActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexDatascanDataQualitySpecRulesList
 ```
@@ -5653,7 +5653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference
 ```
@@ -5902,7 +5902,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexDatascanDataQualitySpecRulesOutputReference
 ```
@@ -6672,7 +6672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference
 ```
@@ -7037,7 +7037,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference
 ```
@@ -7308,7 +7308,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference
 ```
@@ -7579,7 +7579,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference
 ```
@@ -7850,7 +7850,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesSetExpectation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference
 ```
@@ -8237,7 +8237,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference
 ```
@@ -8508,7 +8508,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesTableConditionExp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference
 ```
@@ -8757,7 +8757,7 @@ func InternalValue() GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpecta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanExecutionSpecOutputReference
 ```
@@ -9070,7 +9070,7 @@ func InternalValue() GoogleDataplexDatascanExecutionSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference
 ```
@@ -9319,7 +9319,7 @@ func InternalValue() GoogleDataplexDatascanExecutionSpecTriggerOnDemand
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionSpecTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanExecutionSpecTriggerOutputReference
 ```
@@ -9652,7 +9652,7 @@ func InternalValue() GoogleDataplexDatascanExecutionSpecTrigger
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionSpecTriggerScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanExecutionSpecTriggerScheduleOutputReference
 ```
@@ -9923,7 +9923,7 @@ func InternalValue() GoogleDataplexDatascanExecutionSpecTriggerSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexDatascanExecutionStatusList
 ```
@@ -10055,7 +10055,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanExecutionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexDatascanExecutionStatusOutputReference
 ```
@@ -10344,7 +10344,7 @@ func InternalValue() GoogleDataplexDatascanExecutionStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexdatascan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexdatascan"
 
 googledataplexdatascan.NewGoogleDataplexDatascanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanTimeoutsOutputReference
 ```

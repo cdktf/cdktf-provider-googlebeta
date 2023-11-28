@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.NewGoogleComputeTargetPool(scope Construct, id *string, config GoogleComputeTargetPoolConfig) GoogleComputeTargetPool
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.GoogleComputeTargetPool_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.GoogleComputeTargetPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ googlecomputetargetpool.GoogleComputeTargetPool_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.GoogleComputeTargetPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googlecomputetargetpool.GoogleComputeTargetPool_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.GoogleComputeTargetPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 &googlecomputetargetpool.GoogleComputeTargetPoolConfig {
 	Connection: interface{},
@@ -1003,7 +1003,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeta
 	Region: *string,
 	SecurityPolicy: *string,
 	SessionAffinity: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts,
 }
 ```
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 &googlecomputetargetpool.GoogleComputeTargetPoolTimeouts {
 	Create: *string,
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputetargetpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputetargetpool"
 
 googlecomputetargetpool.NewGoogleComputeTargetPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeTargetPoolTimeoutsOutputReference
 ```

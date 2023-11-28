@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.NewGoogleAccessContextManagerAccessPolicyIamMember(scope Construct, id *string, config GoogleAccessContextManagerAccessPolicyIamMemberConfig) GoogleAccessContextManagerAccessPolicyIamMember
 ```
@@ -355,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccess
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccess
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 &googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMemberCondition {
 	Expression: *string,
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 &googleaccesscontextmanageraccesspolicyiammember.GoogleAccessContextManagerAccessPolicyIamMemberConfig {
 	Connection: interface{},
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscon
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1004,7 +1004,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamMember.GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageraccesspolicyiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleaccesscontextmanageraccesspolicyiammember"
 
 googleaccesscontextmanageraccesspolicyiammember.NewGoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputReference
 ```
