@@ -1,7 +1,3 @@
-# `google_kms_secret_ciphertext`
-
-Refer to the Terraform Registory for docs: [`google_kms_secret_ciphertext`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_kms_secret_ciphertext).
-
 # `googleKmsSecretCiphertext` Submodule <a name="`googleKmsSecretCiphertext` Submodule" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.NewGoogleKmsSecretCiphertext(scope Construct, id *string, config GoogleKmsSecretCiphertextConfig) GoogleKmsSecretCiphertext
 ```
@@ -366,7 +362,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.GoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.GoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ googlekmssecretciphertext.GoogleKmsSecretCiphertext_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.GoogleKmsSecretCiphertext_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googlekmssecretciphertext.GoogleKmsSecretCiphertext_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.GoogleKmsSecretCiphertext_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 &googlekmssecretciphertext.GoogleKmsSecretCiphertextConfig {
 	Connection: interface{},
@@ -790,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmsse
 	Plaintext: *string,
 	AdditionalAuthenticatedData: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeouts,
 }
 ```
 
@@ -959,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 &googlekmssecretciphertext.GoogleKmsSecretCiphertextTimeouts {
 	Create: *string,
@@ -1007,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertextTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmssecretciphertext"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmssecretciphertext"
 
 googlekmssecretciphertext.NewGoogleKmsSecretCiphertextTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsSecretCiphertextTimeoutsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `google_dataplex_asset`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_asset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_asset).
-
 # `googleDataplexAsset` Submodule <a name="`googleDataplexAsset` Submodule" id="@cdktf/provider-google-beta.googleDataplexAsset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

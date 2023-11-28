@@ -1,7 +1,3 @@
-# `google_storage_transfer_job`
-
-Refer to the Terraform Registory for docs: [`google_storage_transfer_job`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_transfer_job).
-
 # `googleStorageTransferJob` Submodule <a name="`googleStorageTransferJob` Submodule" id="@cdktf/provider-google-beta.googleStorageTransferJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

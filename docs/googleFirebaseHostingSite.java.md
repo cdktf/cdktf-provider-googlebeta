@@ -1,7 +1,3 @@
-# `google_firebase_hosting_site`
-
-Refer to the Terraform Registory for docs: [`google_firebase_hosting_site`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_site).
-
 # `googleFirebaseHostingSite` Submodule <a name="`googleFirebaseHostingSite` Submodule" id="@cdktf/provider-google-beta.googleFirebaseHostingSite"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

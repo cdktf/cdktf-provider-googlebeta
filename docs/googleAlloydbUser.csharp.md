@@ -1,7 +1,3 @@
-# `google_alloydb_user`
-
-Refer to the Terraform Registory for docs: [`google_alloydb_user`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_alloydb_user).
-
 # `googleAlloydbUser` Submodule <a name="`googleAlloydbUser` Submodule" id="@cdktf/provider-google-beta.googleAlloydbUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

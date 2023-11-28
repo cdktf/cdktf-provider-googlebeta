@@ -1,7 +1,3 @@
-# `google_artifact_registry_repository_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_artifact_registry_repository_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_artifact_registry_repository_iam_binding).
-
 # `googleArtifactRegistryRepositoryIamBinding` Submodule <a name="`googleArtifactRegistryRepositoryIamBinding` Submodule" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.NewGoogleArtifactRegistryRepositoryIamBinding(scope Construct, id *string, config GoogleArtifactRegistryRepositoryIamBindingConfig) GoogleArtifactRegistryRepositoryIamBinding
 ```
@@ -373,7 +369,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 &googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBindingCondition {
 	Expression: *string,
@@ -887,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 &googleartifactregistryrepositoryiambinding.GoogleArtifactRegistryRepositoryIamBindingConfig {
 	Connection: interface{},
@@ -900,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartif
 	Members: *[]*string,
 	Repository: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1094,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding.GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryrepositoryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiambinding"
 
 googleartifactregistryrepositoryiambinding.NewGoogleArtifactRegistryRepositoryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryRepositoryIamBindingConditionOutputReference
 ```

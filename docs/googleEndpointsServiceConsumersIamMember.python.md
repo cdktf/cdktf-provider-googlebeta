@@ -1,7 +1,3 @@
-# `google_endpoints_service_consumers_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_endpoints_service_consumers_iam_member).
-
 # `googleEndpointsServiceConsumersIamMember` Submodule <a name="`googleEndpointsServiceConsumersIamMember` Submodule" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

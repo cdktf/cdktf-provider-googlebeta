@@ -1,7 +1,3 @@
-# `data_google_compute_networks`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_networks`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_networks).
-
 # `dataGoogleComputeNetworks` Submodule <a name="`dataGoogleComputeNetworks` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 datagooglecomputenetworks.NewDataGoogleComputeNetworks(scope Construct, id *string, config DataGoogleComputeNetworksConfig) DataGoogleComputeNetworks
 ```
@@ -285,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 datagooglecomputenetworks.DataGoogleComputeNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 datagooglecomputenetworks.DataGoogleComputeNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datagooglecomputenetworks.DataGoogleComputeNetworks_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 datagooglecomputenetworks.DataGoogleComputeNetworks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datagooglecomputenetworks.DataGoogleComputeNetworks_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 datagooglecomputenetworks.DataGoogleComputeNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeNetworks.DataGoogleComputeNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputenetworks"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworks"
 
 &datagooglecomputenetworks.DataGoogleComputeNetworksConfig {
 	Connection: interface{},

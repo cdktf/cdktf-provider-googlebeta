@@ -1,7 +1,3 @@
-# `google_data_catalog_entry_group_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_data_catalog_entry_group_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_entry_group_iam_policy).
-
 # `googleDataCatalogEntryGroupIamPolicy` Submodule <a name="`googleDataCatalogEntryGroupIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

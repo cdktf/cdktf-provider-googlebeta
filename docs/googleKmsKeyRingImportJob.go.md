@@ -1,7 +1,3 @@
-# `google_kms_key_ring_import_job`
-
-Refer to the Terraform Registory for docs: [`google_kms_key_ring_import_job`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_kms_key_ring_import_job).
-
 # `googleKmsKeyRingImportJob` Submodule <a name="`googleKmsKeyRingImportJob` Submodule" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJob(scope Construct, id *string, config GoogleKmsKeyRingImportJobConfig) GoogleKmsKeyRingImportJob
 ```
@@ -359,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.GoogleKmsKeyRingImportJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 &googlekmskeyringimportjob.GoogleKmsKeyRingImportJobAttestation {
 
@@ -848,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmske
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 &googlekmskeyringimportjob.GoogleKmsKeyRingImportJobConfig {
 	Connection: interface{},
@@ -863,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmske
 	KeyRing: *string,
 	ProtectionLevel: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobTimeouts,
 }
 ```
 
@@ -1050,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 &googlekmskeyringimportjob.GoogleKmsKeyRingImportJobPublicKey {
 
@@ -1063,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmske
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 &googlekmskeyringimportjob.GoogleKmsKeyRingImportJobTimeouts {
 	Create: *string,
@@ -1111,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJobAttestationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleKmsKeyRingImportJobAttestationList
 ```
@@ -1243,7 +1239,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJobAttestationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleKmsKeyRingImportJobAttestationOutputReference
 ```
@@ -1532,7 +1528,7 @@ func InternalValue() GoogleKmsKeyRingImportJobAttestation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobPublicKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJobPublicKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleKmsKeyRingImportJobPublicKeyList
 ```
@@ -1664,7 +1660,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJobPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleKmsKeyRingImportJobPublicKeyOutputReference
 ```
@@ -1942,7 +1938,7 @@ func InternalValue() GoogleKmsKeyRingImportJobPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringimportjob"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringimportjob"
 
 googlekmskeyringimportjob.NewGoogleKmsKeyRingImportJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsKeyRingImportJobTimeoutsOutputReference
 ```

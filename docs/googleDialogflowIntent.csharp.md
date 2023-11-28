@@ -1,7 +1,3 @@
-# `google_dialogflow_intent`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_intent`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_intent).
-
 # `googleDialogflowIntent` Submodule <a name="`googleDialogflowIntent` Submodule" id="@cdktf/provider-google-beta.googleDialogflowIntent"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

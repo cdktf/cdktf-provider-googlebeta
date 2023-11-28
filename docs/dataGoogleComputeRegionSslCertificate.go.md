@@ -1,7 +1,3 @@
-# `data_google_compute_region_ssl_certificate`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_region_ssl_certificate`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_region_ssl_certificate).
-
 # `dataGoogleComputeRegionSslCertificate` Submodule <a name="`dataGoogleComputeRegionSslCertificate` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 datagooglecomputeregionsslcertificate.NewDataGoogleComputeRegionSslCertificate(scope Construct, id *string, config DataGoogleComputeRegionSslCertificateConfig) DataGoogleComputeRegionSslCertificate
 ```
@@ -292,7 +288,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -735,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregionsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregionsslcertificate"
 
 &datagooglecomputeregionsslcertificate.DataGoogleComputeRegionSslCertificateConfig {
 	Connection: interface{},

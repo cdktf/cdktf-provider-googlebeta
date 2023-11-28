@@ -1,7 +1,3 @@
-# `data_google_access_approval_organization_service_account`
-
-Refer to the Terraform Registory for docs: [`data_google_access_approval_organization_service_account`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_access_approval_organization_service_account).
-
 # `dataGoogleAccessApprovalOrganizationServiceAccount` Submodule <a name="`dataGoogleAccessApprovalOrganizationServiceAccount` Submodule" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.NewDataGoogleAccessApprovalOrganizationServiceAccount(scope Construct, id *string, config DataGoogleAccessApprovalOrganizationServiceAccountConfig) DataGoogleAccessApprovalOrganizationServiceAccount
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrgan
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrgan
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 &datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `google_cloud_run_v2_job_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_cloud_run_v2_job_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_run_v2_job_iam_binding).
-
 # `googleCloudRunV2JobIamBinding` Submodule <a name="`googleCloudRunV2JobIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.NewGoogleCloudRunV2JobIamBinding(scope Construct, id *string, config GoogleCloudRunV2JobIamBindingConfig) GoogleCloudRunV2JobIamBinding
 ```
@@ -373,7 +369,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 &googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBindingCondition {
 	Expression: *string,
@@ -887,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 &googlecloudrunv2jobiambinding.GoogleCloudRunV2JobIamBindingConfig {
 	Connection: interface{},
@@ -900,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1094,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiambinding"
 
 googlecloudrunv2jobiambinding.NewGoogleCloudRunV2JobIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobIamBindingConditionOutputReference
 ```

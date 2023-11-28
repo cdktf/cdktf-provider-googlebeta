@@ -1,7 +1,3 @@
-# `data_google_compute_image_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_image_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_image_iam_policy).
-
 # `dataGoogleComputeImageIamPolicy` Submodule <a name="`dataGoogleComputeImageIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeImageIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

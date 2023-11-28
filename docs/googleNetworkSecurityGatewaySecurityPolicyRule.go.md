@@ -1,7 +1,3 @@
-# `google_network_security_gateway_security_policy_rule`
-
-Refer to the Terraform Registory for docs: [`google_network_security_gateway_security_policy_rule`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_security_gateway_security_policy_rule).
-
 # `googleNetworkSecurityGatewaySecurityPolicyRule` Submodule <a name="`googleNetworkSecurityGatewaySecurityPolicyRule` Submodule" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.NewGoogleNetworkSecurityGatewaySecurityPolicyRule(scope Construct, id *string, config GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig) GoogleNetworkSecurityGatewaySecurityPolicyRule
 ```
@@ -387,7 +383,7 @@ func ResetTlsInspectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecur
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecur
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 &googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig {
 	Connection: interface{},
@@ -1016,7 +1012,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetwo
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeouts,
 	TlsInspectionEnabled: interface{},
 }
 ```
@@ -1306,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 &googlenetworksecuritygatewaysecuritypolicyrule.GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeouts {
 	Create: *string,
@@ -1368,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule.GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecuritygatewaysecuritypolicyrule"
 
 googlenetworksecuritygatewaysecuritypolicyrule.NewGoogleNetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference
 ```

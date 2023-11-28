@@ -1,7 +1,3 @@
-# `google_bigquery_bi_reservation`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_bi_reservation`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_bi_reservation).
-
 # `googleBigqueryBiReservation` Submodule <a name="`googleBigqueryBiReservation` Submodule" id="@cdktf/provider-google-beta.googleBigqueryBiReservation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

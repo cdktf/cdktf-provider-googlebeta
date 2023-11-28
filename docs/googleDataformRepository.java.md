@@ -1,7 +1,3 @@
-# `google_dataform_repository`
-
-Refer to the Terraform Registory for docs: [`google_dataform_repository`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataform_repository).
-
 # `googleDataformRepository` Submodule <a name="`googleDataformRepository` Submodule" id="@cdktf/provider-google-beta.googleDataformRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_storage_object_acl`
-
-Refer to the Terraform Registory for docs: [`google_storage_object_acl`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_object_acl).
-
 # `googleStorageObjectAcl` Submodule <a name="`googleStorageObjectAcl` Submodule" id="@cdktf/provider-google-beta.googleStorageObjectAcl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 googlestorageobjectacl.NewGoogleStorageObjectAcl(scope Construct, id *string, config GoogleStorageObjectAclConfig) GoogleStorageObjectAcl
 ```
@@ -353,7 +349,7 @@ func ResetRoleEntity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 googlestorageobjectacl.GoogleStorageObjectAcl_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 googlestorageobjectacl.GoogleStorageObjectAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googlestorageobjectacl.GoogleStorageObjectAcl_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 googlestorageobjectacl.GoogleStorageObjectAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googlestorageobjectacl.GoogleStorageObjectAcl_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 googlestorageobjectacl.GoogleStorageObjectAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlestorageobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestorageobjectacl"
 
 &googlestorageobjectacl.GoogleStorageObjectAclConfig {
 	Connection: interface{},

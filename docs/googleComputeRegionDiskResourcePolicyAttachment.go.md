@@ -1,7 +1,3 @@
-# `google_compute_region_disk_resource_policy_attachment`
-
-Refer to the Terraform Registory for docs: [`google_compute_region_disk_resource_policy_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_disk_resource_policy_attachment).
-
 # `googleComputeRegionDiskResourcePolicyAttachment` Submodule <a name="`googleComputeRegionDiskResourcePolicyAttachment` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.NewGoogleComputeRegionDiskResourcePolicyAttachment(scope Construct, id *string, config GoogleComputeRegionDiskResourcePolicyAttachmentConfig) GoogleComputeRegionDiskResourcePolicyAttachment
 ```
@@ -373,7 +369,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourceP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourceP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 &googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachmentConfig {
 	Connection: interface{},
@@ -809,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeouts,
 }
 ```
 
@@ -991,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 &googlecomputeregiondiskresourcepolicyattachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeouts {
 	Create: *string,
@@ -1039,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondiskresourcepolicyattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskresourcepolicyattachment"
 
 googlecomputeregiondiskresourcepolicyattachment.NewGoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference
 ```

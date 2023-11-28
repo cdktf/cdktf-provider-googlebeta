@@ -1,7 +1,3 @@
-# `data_google_cloudfunctions_function`
-
-Refer to the Terraform Registory for docs: [`data_google_cloudfunctions_function`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_cloudfunctions_function).
-
 # `dataGoogleCloudfunctionsFunction` Submodule <a name="`dataGoogleCloudfunctionsFunction` Submodule" id="@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

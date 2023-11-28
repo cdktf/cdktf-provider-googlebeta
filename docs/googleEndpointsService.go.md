@@ -1,7 +1,3 @@
-# `google_endpoints_service`
-
-Refer to the Terraform Registory for docs: [`google_endpoints_service`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_endpoints_service).
-
 # `googleEndpointsService` Submodule <a name="`googleEndpointsService` Submodule" id="@cdktf/provider-google-beta.googleEndpointsService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsService(scope Construct, id *string, config GoogleEndpointsServiceConfig) GoogleEndpointsService
 ```
@@ -387,7 +383,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.GoogleEndpointsService_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.GoogleEndpointsService_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googleendpointsservice.GoogleEndpointsService_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.GoogleEndpointsService_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ googleendpointsservice.GoogleEndpointsService_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.GoogleEndpointsService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 &googleendpointsservice.GoogleEndpointsServiceApis {
 
@@ -887,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpo
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 &googleendpointsservice.GoogleEndpointsServiceApisMethods {
 
@@ -900,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpo
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 &googleendpointsservice.GoogleEndpointsServiceConfig {
 	Connection: interface{},
@@ -916,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpo
 	OpenapiConfig: *string,
 	Project: *string,
 	ProtocOutputBase64: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEndpointsService.GoogleEndpointsServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEndpointsService.GoogleEndpointsServiceTimeouts,
 }
 ```
 
@@ -1119,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 &googleendpointsservice.GoogleEndpointsServiceEndpoints {
 
@@ -1132,7 +1128,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpo
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 &googleendpointsservice.GoogleEndpointsServiceTimeouts {
 	Create: *string,
@@ -1194,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceApisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEndpointsServiceApisList
 ```
@@ -1326,7 +1322,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceApisMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEndpointsServiceApisMethodsList
 ```
@@ -1458,7 +1454,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceApisMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEndpointsServiceApisMethodsOutputReference
 ```
@@ -1769,7 +1765,7 @@ func InternalValue() GoogleEndpointsServiceApisMethods
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceApisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEndpointsServiceApisOutputReference
 ```
@@ -2080,7 +2076,7 @@ func InternalValue() GoogleEndpointsServiceApis
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEndpointsServiceEndpointsList
 ```
@@ -2212,7 +2208,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEndpointsServiceEndpointsOutputReference
 ```
@@ -2501,7 +2497,7 @@ func InternalValue() GoogleEndpointsServiceEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsservice"
 
 googleendpointsservice.NewGoogleEndpointsServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEndpointsServiceTimeoutsOutputReference
 ```

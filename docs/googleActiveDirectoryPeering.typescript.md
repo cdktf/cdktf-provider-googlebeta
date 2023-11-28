@@ -1,7 +1,3 @@
-# `google_active_directory_peering`
-
-Refer to the Terraform Registory for docs: [`google_active_directory_peering`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_active_directory_peering).
-
 # `googleActiveDirectoryPeering` Submodule <a name="`googleActiveDirectoryPeering` Submodule" id="@cdktf/provider-google-beta.googleActiveDirectoryPeering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

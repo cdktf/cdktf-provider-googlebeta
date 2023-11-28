@@ -1,7 +1,3 @@
-# `google_cloudfunctions2_function_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_cloudfunctions2_function_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions2_function_iam_binding).
-
 # `googleCloudfunctions2FunctionIamBinding` Submodule <a name="`googleCloudfunctions2FunctionIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

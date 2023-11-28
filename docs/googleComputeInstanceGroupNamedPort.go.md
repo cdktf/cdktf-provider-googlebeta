@@ -1,7 +1,3 @@
-# `google_compute_instance_group_named_port`
-
-Refer to the Terraform Registory for docs: [`google_compute_instance_group_named_port`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_group_named_port).
-
 # `googleComputeInstanceGroupNamedPort` Submodule <a name="`googleComputeInstanceGroupNamedPort` Submodule" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.NewGoogleComputeInstanceGroupNamedPortA(scope Construct, id *string, config GoogleComputeInstanceGroupNamedPortAConfig) GoogleComputeInstanceGroupNamedPortA
 ```
@@ -373,7 +369,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_IsTerra
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_IsTerra
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 &googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortAConfig {
 	Connection: interface{},
@@ -831,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Port: *f64,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortTimeouts,
 	Zone: *string,
 }
 ```
@@ -1029,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 &googlecomputeinstancegroupnamedport.GoogleComputeInstanceGroupNamedPortTimeouts {
 	Create: *string,
@@ -1077,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceGroupNamedPort.GoogleComputeInstanceGroupNamedPortTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancegroupnamedport"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancegroupnamedport"
 
 googlecomputeinstancegroupnamedport.NewGoogleComputeInstanceGroupNamedPortTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceGroupNamedPortTimeoutsOutputReference
 ```

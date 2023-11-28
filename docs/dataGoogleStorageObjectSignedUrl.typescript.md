@@ -1,7 +1,3 @@
-# `data_google_storage_object_signed_url`
-
-Refer to the Terraform Registory for docs: [`data_google_storage_object_signed_url`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_storage_object_signed_url).
-
 # `dataGoogleStorageObjectSignedUrl` Submodule <a name="`dataGoogleStorageObjectSignedUrl` Submodule" id="@cdktf/provider-google-beta.dataGoogleStorageObjectSignedUrl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

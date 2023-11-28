@@ -1,7 +1,3 @@
-# `google_apigee_instance_attachment`
-
-Refer to the Terraform Registory for docs: [`google_apigee_instance_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_instance_attachment).
-
 # `googleApigeeInstanceAttachment` Submodule <a name="`googleApigeeInstanceAttachment` Submodule" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.NewGoogleApigeeInstanceAttachment(scope Construct, id *string, config GoogleApigeeInstanceAttachmentConfig) GoogleApigeeInstanceAttachment
 ```
@@ -359,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.GoogleApigeeInstanceAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 &googleapigeeinstanceattachment.GoogleApigeeInstanceAttachmentConfig {
 	Connection: interface{},
@@ -760,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapige
 	Environment: *string,
 	InstanceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts,
 }
 ```
 
@@ -914,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 &googleapigeeinstanceattachment.GoogleApigeeInstanceAttachmentTimeouts {
 	Create: *string,
@@ -962,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeinstanceattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeinstanceattachment"
 
 googleapigeeinstanceattachment.NewGoogleApigeeInstanceAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeInstanceAttachmentTimeoutsOutputReference
 ```

@@ -1,7 +1,3 @@
-# `google_service_account_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_service_account_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_service_account_iam_member).
-
 # `googleServiceAccountIamMember` Submodule <a name="`googleServiceAccountIamMember` Submodule" id="@cdktf/provider-google-beta.googleServiceAccountIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

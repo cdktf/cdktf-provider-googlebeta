@@ -1,7 +1,3 @@
-# `google_compute_region_backend_service_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_compute_region_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_backend_service_iam_policy).
-
 # `googleComputeRegionBackendServiceIamPolicy` Submodule <a name="`googleComputeRegionBackendServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 googlecomputeregionbackendserviceiampolicy.NewGoogleComputeRegionBackendServiceIamPolicy(scope Construct, id *string, config GoogleComputeRegionBackendServiceIamPolicyConfig) GoogleComputeRegionBackendServiceIamPolicy
 ```
@@ -353,7 +349,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionBackendServiceIamPolicy.GoogleComputeRegionBackendServiceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionbackendserviceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionbackendserviceiampolicy"
 
 &googlecomputeregionbackendserviceiampolicy.GoogleComputeRegionBackendServiceIamPolicyConfig {
 	Connection: interface{},

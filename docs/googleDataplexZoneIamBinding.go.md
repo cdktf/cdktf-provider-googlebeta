@@ -1,7 +1,3 @@
-# `google_dataplex_zone_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_zone_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_zone_iam_binding).
-
 # `googleDataplexZoneIamBinding` Submodule <a name="`googleDataplexZoneIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.NewGoogleDataplexZoneIamBinding(scope Construct, id *string, config GoogleDataplexZoneIamBindingConfig) GoogleDataplexZoneIamBinding
 ```
@@ -373,7 +369,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.GoogleDataplexZoneIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 &googledataplexzoneiambinding.GoogleDataplexZoneIamBindingCondition {
 	Expression: *string,
@@ -909,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 &googledataplexzoneiambinding.GoogleDataplexZoneIamBindingConfig {
 	Connection: interface{},
@@ -923,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 	Lake: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1130,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding.GoogleDataplexZoneIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexzoneiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexzoneiambinding"
 
 googledataplexzoneiambinding.NewGoogleDataplexZoneIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexZoneIamBindingConditionOutputReference
 ```

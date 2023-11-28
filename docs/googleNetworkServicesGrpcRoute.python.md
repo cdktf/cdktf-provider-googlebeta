@@ -1,7 +1,3 @@
-# `google_network_services_grpc_route`
-
-Refer to the Terraform Registory for docs: [`google_network_services_grpc_route`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_services_grpc_route).
-
 # `googleNetworkServicesGrpcRoute` Submodule <a name="`googleNetworkServicesGrpcRoute` Submodule" id="@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

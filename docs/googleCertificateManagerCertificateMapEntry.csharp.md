@@ -1,7 +1,3 @@
-# `google_certificate_manager_certificate_map_entry`
-
-Refer to the Terraform Registory for docs: [`google_certificate_manager_certificate_map_entry`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_certificate_manager_certificate_map_entry).
-
 # `googleCertificateManagerCertificateMapEntry` Submodule <a name="`googleCertificateManagerCertificateMapEntry` Submodule" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

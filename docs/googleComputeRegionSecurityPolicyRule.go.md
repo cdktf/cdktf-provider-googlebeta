@@ -1,7 +1,3 @@
-# `google_compute_region_security_policy_rule`
-
-Refer to the Terraform Registory for docs: [`google_compute_region_security_policy_rule`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_security_policy_rule).
-
 # `googleComputeRegionSecurityPolicyRule` Submodule <a name="`googleComputeRegionSecurityPolicyRule` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRule(scope Construct, id *string, config GoogleComputeRegionSecurityPolicyRuleConfig) GoogleComputeRegionSecurityPolicyRule
 ```
@@ -420,7 +416,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +462,7 @@ googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +476,7 @@ googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,7 +947,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleConfig {
 	Connection: interface{},
@@ -967,11 +963,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	SecurityPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatch,
-	NetworkMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatch,
+	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatch,
+	NetworkMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatch,
 	Preview: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleTimeouts,
 }
 ```
 
@@ -1237,10 +1233,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleMatch {
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatchConfig,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatchConfig,
 	VersionedExpr: *string,
 }
 ```
@@ -1290,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleMatchConfig {
 	SrcIpRanges: *[]*string,
@@ -1324,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleNetworkMatch {
 	DestIpRanges: *[]*string,
@@ -1476,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields {
 	Name: *string,
@@ -1528,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 &googlecomputeregionsecuritypolicyrule.GoogleComputeRegionSecurityPolicyRuleTimeouts {
 	Create: *string,
@@ -1590,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleMatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRuleMatchConfigOutputReference
 ```
@@ -1868,7 +1864,7 @@ func InternalValue() GoogleComputeRegionSecurityPolicyRuleMatchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRuleMatchOutputReference
 ```
@@ -2188,7 +2184,7 @@ func InternalValue() GoogleComputeRegionSecurityPolicyRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleNetworkMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRuleNetworkMatchOutputReference
 ```
@@ -2682,7 +2678,7 @@ func InternalValue() GoogleComputeRegionSecurityPolicyRuleNetworkMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList
 ```
@@ -2825,7 +2821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference
 ```
@@ -3150,7 +3146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicyRule.GoogleComputeRegionSecurityPolicyRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicyrule"
 
 googlecomputeregionsecuritypolicyrule.NewGoogleComputeRegionSecurityPolicyRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRuleTimeoutsOutputReference
 ```

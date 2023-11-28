@@ -1,7 +1,3 @@
-# `google_scc_mute_config`
-
-Refer to the Terraform Registory for docs: [`google_scc_mute_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_mute_config).
-
 # `googleSccMuteConfig` Submodule <a name="`googleSccMuteConfig` Submodule" id="@cdktf/provider-google-beta.googleSccMuteConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

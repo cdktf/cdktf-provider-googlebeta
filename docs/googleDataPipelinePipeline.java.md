@@ -1,7 +1,3 @@
-# `google_data_pipeline_pipeline`
-
-Refer to the Terraform Registory for docs: [`google_data_pipeline_pipeline`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_pipeline_pipeline).
-
 # `googleDataPipelinePipeline` Submodule <a name="`googleDataPipelinePipeline` Submodule" id="@cdktf/provider-google-beta.googleDataPipelinePipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

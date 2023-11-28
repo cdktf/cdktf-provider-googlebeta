@@ -1,7 +1,3 @@
-# `google_access_context_manager_access_policy`
-
-Refer to the Terraform Registory for docs: [`google_access_context_manager_access_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_access_context_manager_access_policy).
-
 # `googleAccessContextManagerAccessPolicy` Submodule <a name="`googleAccessContextManagerAccessPolicy` Submodule" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

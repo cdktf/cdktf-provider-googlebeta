@@ -1,7 +1,3 @@
-# `google_cloudfunctions_function_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_cloudfunctions_function_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_policy).
-
 # `googleCloudfunctionsFunctionIamPolicy` Submodule <a name="`googleCloudfunctionsFunctionIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 googlecloudfunctionsfunctioniampolicy.NewGoogleCloudfunctionsFunctionIamPolicy(scope Construct, id *string, config GoogleCloudfunctionsFunctionIamPolicyConfig) GoogleCloudfunctionsFunctionIamPolicy
 ```
@@ -353,7 +349,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamPolicy.GoogleCloudfunctionsFunctionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniampolicy"
 
 &googlecloudfunctionsfunctioniampolicy.GoogleCloudfunctionsFunctionIamPolicyConfig {
 	Connection: interface{},

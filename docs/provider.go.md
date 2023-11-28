@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`google-beta`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-google-beta.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.NewGoogleBetaProvider(scope Construct, id *string, config GoogleBetaProviderConfig) GoogleBetaProvider
 ```
@@ -1205,7 +1201,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsConstruct(x interface{}) *bool
 ```
@@ -1237,7 +1233,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -1251,7 +1247,7 @@ provider.GoogleBetaProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1265,7 +1261,7 @@ provider.GoogleBetaProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -4772,7 +4768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.provider.GoogleBetaProviderBatching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 &provider.GoogleBetaProviderBatching {
 	EnableBatching: interface{},
@@ -4818,7 +4814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 &provider.GoogleBetaProviderConfig {
 	AccessApprovalCustomEndpoint: *string,
@@ -4834,7 +4830,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
 	ArtifactRegistryCustomEndpoint: *string,
 	AssuredWorkloadsCustomEndpoint: *string,
 	BackupDrCustomEndpoint: *string,
-	Batching: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.provider.GoogleBetaProviderBatching,
+	Batching: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.provider.GoogleBetaProviderBatching,
 	BeyondcorpCustomEndpoint: *string,
 	BiglakeCustomEndpoint: *string,
 	BigqueryAnalyticsHubCustomEndpoint: *string,

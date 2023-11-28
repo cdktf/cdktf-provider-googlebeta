@@ -1,7 +1,3 @@
-# `google_tpu_v2_vm`
-
-Refer to the Terraform Registory for docs: [`google_tpu_v2_vm`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_tpu_v2_vm).
-
 # `googleTpuV2Vm` Submodule <a name="`googleTpuV2Vm` Submodule" id="@cdktf/provider-google-beta.googleTpuV2Vm"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

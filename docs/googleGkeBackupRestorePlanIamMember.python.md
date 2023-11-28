@@ -1,7 +1,3 @@
-# `google_gke_backup_restore_plan_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_gke_backup_restore_plan_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_backup_restore_plan_iam_member).
-
 # `googleGkeBackupRestorePlanIamMember` Submodule <a name="`googleGkeBackupRestorePlanIamMember` Submodule" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

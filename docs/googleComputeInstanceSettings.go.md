@@ -1,7 +1,3 @@
-# `google_compute_instance_settings`
-
-Refer to the Terraform Registory for docs: [`google_compute_instance_settings`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings).
-
 # `googleComputeInstanceSettings` Submodule <a name="`googleComputeInstanceSettings` Submodule" id="@cdktf/provider-google-beta.googleComputeInstanceSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.NewGoogleComputeInstanceSettings(scope Construct, id *string, config GoogleComputeInstanceSettingsConfig) GoogleComputeInstanceSettings
 ```
@@ -386,7 +382,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.GoogleComputeInstanceSettings_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.GoogleComputeInstanceSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +428,7 @@ googlecomputeinstancesettings.GoogleComputeInstanceSettings_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.GoogleComputeInstanceSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +442,7 @@ googlecomputeinstancesettings.GoogleComputeInstanceSettings_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.GoogleComputeInstanceSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -796,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 &googlecomputeinstancesettings.GoogleComputeInstanceSettingsConfig {
 	Connection: interface{},
@@ -808,9 +804,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Provisioners: *[]interface{},
 	Zone: *string,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeInstanceSettings.GoogleComputeInstanceSettingsMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsMetadata,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts,
 }
 ```
 
@@ -977,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 &googlecomputeinstancesettings.GoogleComputeInstanceSettingsMetadata {
 	Items: *map[string]*string,
@@ -1011,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 &googlecomputeinstancesettings.GoogleComputeInstanceSettingsTimeouts {
 	Create: *string,
@@ -1073,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.NewGoogleComputeInstanceSettingsMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceSettingsMetadataOutputReference
 ```
@@ -1351,7 +1347,7 @@ func InternalValue() GoogleComputeInstanceSettingsMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeinstancesettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancesettings"
 
 googlecomputeinstancesettings.NewGoogleComputeInstanceSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceSettingsTimeoutsOutputReference
 ```

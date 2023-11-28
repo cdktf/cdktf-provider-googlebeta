@@ -1,7 +1,3 @@
-# `google_vertex_ai_dataset`
-
-Refer to the Terraform Registory for docs: [`google_vertex_ai_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_dataset).
-
 # `googleVertexAiDataset` Submodule <a name="`googleVertexAiDataset` Submodule" id="@cdktf/provider-google-beta.googleVertexAiDataset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

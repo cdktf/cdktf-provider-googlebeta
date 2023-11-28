@@ -1,7 +1,3 @@
-# `data_google_compute_regions`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_regions`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_regions).
-
 # `dataGoogleComputeRegions` Submodule <a name="`dataGoogleComputeRegions` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeRegions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 datagooglecomputeregions.NewDataGoogleComputeRegions(scope Construct, id *string, config DataGoogleComputeRegionsConfig) DataGoogleComputeRegions
 ```
@@ -292,7 +288,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 datagooglecomputeregions.DataGoogleComputeRegions_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 datagooglecomputeregions.DataGoogleComputeRegions_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglecomputeregions.DataGoogleComputeRegions_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 datagooglecomputeregions.DataGoogleComputeRegions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagooglecomputeregions.DataGoogleComputeRegions_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 datagooglecomputeregions.DataGoogleComputeRegions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeregions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeregions"
 
 &datagooglecomputeregions.DataGoogleComputeRegionsConfig {
 	Connection: interface{},

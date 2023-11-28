@@ -1,7 +1,3 @@
-# `google_vertex_ai_featurestore_entitytype_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_vertex_ai_featurestore_entitytype_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding).
-
 # `googleVertexAiFeaturestoreEntitytypeIamBinding` Submodule <a name="`googleVertexAiFeaturestoreEntitytypeIamBinding` Submodule" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.NewGoogleVertexAiFeaturestoreEntitytypeIamBinding(scope Construct, id *string, config GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig) GoogleVertexAiFeaturestoreEntitytypeIamBinding
 ```
@@ -359,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntityt
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntityt
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 &googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition {
 	Expression: *string,
@@ -851,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 &googlevertexaifeaturestoreentitytypeiambinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig {
 	Connection: interface{},
@@ -865,7 +861,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 	Featurestore: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1044,7 +1040,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreentitytypeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreentitytypeiambinding"
 
 googlevertexaifeaturestoreentitytypeiambinding.NewGoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference
 ```

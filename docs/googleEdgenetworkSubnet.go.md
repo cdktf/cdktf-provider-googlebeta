@@ -1,7 +1,3 @@
-# `google_edgenetwork_subnet`
-
-Refer to the Terraform Registory for docs: [`google_edgenetwork_subnet`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_edgenetwork_subnet).
-
 # `googleEdgenetworkSubnet` Submodule <a name="`googleEdgenetworkSubnet` Submodule" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.NewGoogleEdgenetworkSubnet(scope Construct, id *string, config GoogleEdgenetworkSubnetConfig) GoogleEdgenetworkSubnet
 ```
@@ -401,7 +397,7 @@ func ResetVlanId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.GoogleEdgenetworkSubnet_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.GoogleEdgenetworkSubnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ googleedgenetworksubnet.GoogleEdgenetworkSubnet_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.GoogleEdgenetworkSubnet_IsTerraformResource(x interface{}) *bool
 ```
@@ -461,7 +457,7 @@ googleedgenetworksubnet.GoogleEdgenetworkSubnet_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.GoogleEdgenetworkSubnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -998,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 &googleedgenetworksubnet.GoogleEdgenetworkSubnetConfig {
 	Connection: interface{},
@@ -1018,7 +1014,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgen
 	Ipv6Cidr: *[]*string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts,
 	VlanId: *f64,
 }
 ```
@@ -1291,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 &googleedgenetworksubnet.GoogleEdgenetworkSubnetTimeouts {
 	Create: *string,
@@ -1339,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgenetworkSubnet.GoogleEdgenetworkSubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgenetworksubnet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgenetworksubnet"
 
 googleedgenetworksubnet.NewGoogleEdgenetworkSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgenetworkSubnetTimeoutsOutputReference
 ```

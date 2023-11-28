@@ -1,7 +1,3 @@
-# `google_organization_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_organization_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_organization_iam_policy).
-
 # `googleOrganizationIamPolicy` Submodule <a name="`googleOrganizationIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.NewGoogleOrganizationIamPolicy(scope Construct, id *string, config GoogleOrganizationIamPolicyConfig) GoogleOrganizationIamPolicy
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 &googleorganizationiampolicy.GoogleOrganizationIamPolicyConfig {
 	Connection: interface{},

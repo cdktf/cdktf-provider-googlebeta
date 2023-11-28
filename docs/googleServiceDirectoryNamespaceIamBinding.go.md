@@ -1,7 +1,3 @@
-# `google_service_directory_namespace_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_service_directory_namespace_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_service_directory_namespace_iam_binding).
-
 # `googleServiceDirectoryNamespaceIamBinding` Submodule <a name="`googleServiceDirectoryNamespaceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.NewGoogleServiceDirectoryNamespaceIamBinding(scope Construct, id *string, config GoogleServiceDirectoryNamespaceIamBindingConfig) GoogleServiceDirectoryNamespaceIamBinding
 ```
@@ -359,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBind
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBind
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 &googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBindingCondition {
 	Expression: *string,
@@ -829,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 &googleservicedirectorynamespaceiambinding.GoogleServiceDirectoryNamespaceIamBindingConfig {
 	Connection: interface{},
@@ -842,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservi
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1008,7 +1004,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectorynamespaceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiambinding"
 
 googleservicedirectorynamespaceiambinding.NewGoogleServiceDirectoryNamespaceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleServiceDirectoryNamespaceIamBindingConditionOutputReference
 ```

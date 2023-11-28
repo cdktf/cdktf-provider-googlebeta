@@ -1,7 +1,3 @@
-# `google_beyondcorp_app_connector`
-
-Refer to the Terraform Registory for docs: [`google_beyondcorp_app_connector`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_beyondcorp_app_connector).
-
 # `googleBeyondcorpAppConnector` Submodule <a name="`googleBeyondcorpAppConnector` Submodule" id="@cdktf/provider-google-beta.googleBeyondcorpAppConnector"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

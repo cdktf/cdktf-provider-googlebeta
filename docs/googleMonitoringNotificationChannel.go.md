@@ -1,7 +1,3 @@
-# `google_monitoring_notification_channel`
-
-Refer to the Terraform Registory for docs: [`google_monitoring_notification_channel`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_monitoring_notification_channel).
-
 # `googleMonitoringNotificationChannel` Submodule <a name="`googleMonitoringNotificationChannel` Submodule" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.NewGoogleMonitoringNotificationChannel(scope Construct, id *string, config GoogleMonitoringNotificationChannelConfig) GoogleMonitoringNotificationChannel
 ```
@@ -428,7 +424,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +456,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +470,7 @@ googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +484,7 @@ googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 &googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannelConfig {
 	Connection: interface{},
@@ -999,8 +995,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonit
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	SensitiveLabels: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabels,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeouts,
+	SensitiveLabels: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabels,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -1280,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 &googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannelSensitiveLabels {
 	AuthToken: *string,
@@ -1346,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 &googlemonitoringnotificationchannel.GoogleMonitoringNotificationChannelTimeouts {
 	Create: *string,
@@ -1408,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.NewGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference
 ```
@@ -1744,7 +1740,7 @@ func InternalValue() GoogleMonitoringNotificationChannelSensitiveLabels
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringnotificationchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringnotificationchannel"
 
 googlemonitoringnotificationchannel.NewGoogleMonitoringNotificationChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringNotificationChannelTimeoutsOutputReference
 ```

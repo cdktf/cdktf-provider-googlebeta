@@ -1,7 +1,3 @@
-# `google_spanner_instance_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_spanner_instance_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_spanner_instance_iam_member).
-
 # `googleSpannerInstanceIamMember` Submodule <a name="`googleSpannerInstanceIamMember` Submodule" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.NewGoogleSpannerInstanceIamMember(scope Construct, id *string, config GoogleSpannerInstanceIamMemberConfig) GoogleSpannerInstanceIamMember
 ```
@@ -366,7 +362,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.GoogleSpannerInstanceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 &googlespannerinstanceiammember.GoogleSpannerInstanceIamMemberCondition {
 	Expression: *string,
@@ -858,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 &googlespannerinstanceiammember.GoogleSpannerInstanceIamMemberConfig {
 	Connection: interface{},
@@ -871,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespann
 	Instance: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1051,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamMember.GoogleSpannerInstanceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiammember"
 
 googlespannerinstanceiammember.NewGoogleSpannerInstanceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerInstanceIamMemberConditionOutputReference
 ```

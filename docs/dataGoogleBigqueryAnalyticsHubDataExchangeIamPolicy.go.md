@@ -1,7 +1,3 @@
-# `data_google_bigquery_analytics_hub_data_exchange_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_bigquery_analytics_hub_data_exchange_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_bigquery_analytics_hub_data_exchange_iam_policy).
-
 # `dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy` Submodule <a name="`dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.NewDataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy(scope Construct, id *string, config DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig) DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy
 ```
@@ -292,7 +288,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsH
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsH
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigqueryanalyticshubdataexchangeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigqueryanalyticshubdataexchangeiampolicy"
 
 &datagooglebigqueryanalyticshubdataexchangeiampolicy.DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicyConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `google_healthcare_dicom_store_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_healthcare_dicom_store_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_healthcare_dicom_store_iam_binding).
-
 # `googleHealthcareDicomStoreIamBinding` Submodule <a name="`googleHealthcareDicomStoreIamBinding` Submodule" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.NewGoogleHealthcareDicomStoreIamBinding(scope Construct, id *string, config GoogleHealthcareDicomStoreIamBindingConfig) GoogleHealthcareDicomStoreIamBinding
 ```
@@ -359,7 +355,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 &googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBindingCondition {
 	Expression: *string,
@@ -829,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 &googlehealthcaredicomstoreiambinding.GoogleHealthcareDicomStoreIamBindingConfig {
 	Connection: interface{},
@@ -842,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealt
 	DicomStoreId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1008,7 +1004,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlehealthcaredicomstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredicomstoreiambinding"
 
 googlehealthcaredicomstoreiambinding.NewGoogleHealthcareDicomStoreIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleHealthcareDicomStoreIamBindingConditionOutputReference
 ```

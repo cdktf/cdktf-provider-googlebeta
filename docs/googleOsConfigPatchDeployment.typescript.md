@@ -1,7 +1,3 @@
-# `google_os_config_patch_deployment`
-
-Refer to the Terraform Registory for docs: [`google_os_config_patch_deployment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_patch_deployment).
-
 # `googleOsConfigPatchDeployment` Submodule <a name="`googleOsConfigPatchDeployment` Submodule" id="@cdktf/provider-google-beta.googleOsConfigPatchDeployment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

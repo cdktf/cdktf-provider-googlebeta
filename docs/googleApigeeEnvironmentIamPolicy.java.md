@@ -1,7 +1,3 @@
-# `google_apigee_environment_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_apigee_environment_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_apigee_environment_iam_policy).
-
 # `googleApigeeEnvironmentIamPolicy` Submodule <a name="`googleApigeeEnvironmentIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

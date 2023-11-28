@@ -1,7 +1,3 @@
-# `google_dialogflow_cx_test_case`
-
-Refer to the Terraform Registory for docs: [`google_dialogflow_cx_test_case`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_cx_test_case).
-
 # `googleDialogflowCxTestCase` Submodule <a name="`googleDialogflowCxTestCase` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxTestCase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

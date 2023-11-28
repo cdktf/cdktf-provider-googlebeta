@@ -1,7 +1,3 @@
-# `google_dataplex_asset_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_dataplex_asset_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataplex_asset_iam_policy).
-
 # `googleDataplexAssetIamPolicy` Submodule <a name="`googleDataplexAssetIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 googledataplexassetiampolicy.NewGoogleDataplexAssetIamPolicy(scope Construct, id *string, config GoogleDataplexAssetIamPolicyConfig) GoogleDataplexAssetIamPolicy
 ```
@@ -353,7 +349,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 googledataplexassetiampolicy.GoogleDataplexAssetIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -807,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexassetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiampolicy"
 
 &googledataplexassetiampolicy.GoogleDataplexAssetIamPolicyConfig {
 	Connection: interface{},

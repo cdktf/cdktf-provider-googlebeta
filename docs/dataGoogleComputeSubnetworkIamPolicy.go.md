@@ -1,7 +1,3 @@
-# `data_google_compute_subnetwork_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_subnetwork_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_subnetwork_iam_policy).
-
 # `dataGoogleComputeSubnetworkIamPolicy` Submodule <a name="`dataGoogleComputeSubnetworkIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.NewDataGoogleComputeSubnetworkIamPolicy(scope Construct, id *string, config DataGoogleComputeSubnetworkIamPolicyConfig) DataGoogleComputeSubnetworkIamPolicy
 ```
@@ -292,7 +288,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetworkiampolicy"
 
 &datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicyConfig {
 	Connection: interface{},

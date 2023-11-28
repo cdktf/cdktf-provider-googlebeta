@@ -1,7 +1,3 @@
-# `google_compute_region_security_policy`
-
-Refer to the Terraform Registory for docs: [`google_compute_region_security_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_security_policy).
-
 # `googleComputeRegionSecurityPolicy` Submodule <a name="`googleComputeRegionSecurityPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.NewGoogleComputeRegionSecurityPolicy(scope Construct, id *string, config GoogleComputeRegionSecurityPolicyConfig) GoogleComputeRegionSecurityPolicy
 ```
@@ -427,7 +423,7 @@ func ResetUserDefinedFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +455,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +469,7 @@ googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +483,7 @@ googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -958,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 &googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicyConfig {
 	Connection: interface{},
@@ -969,12 +965,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DdosProtectionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyDdosProtectionConfig,
+	DdosProtectionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyDdosProtectionConfig,
 	Description: *string,
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyTimeouts,
 	Type: *string,
 	UserDefinedFields: interface{},
 }
@@ -1213,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyDdosProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 &googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicyDdosProtectionConfig {
 	DdosProtection: *string,
@@ -1250,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 &googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicyTimeouts {
 	Create: *string,
@@ -1310,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 &googlecomputeregionsecuritypolicy.GoogleComputeRegionSecurityPolicyUserDefinedFields {
 	Base: *string,
@@ -1420,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.NewGoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference
 ```
@@ -1691,7 +1687,7 @@ func InternalValue() GoogleComputeRegionSecurityPolicyDdosProtectionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.NewGoogleComputeRegionSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyTimeoutsOutputReference
 ```
@@ -2027,7 +2023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.NewGoogleComputeRegionSecurityPolicyUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionSecurityPolicyUserDefinedFieldsList
 ```
@@ -2170,7 +2166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsecuritypolicy"
 
 googlecomputeregionsecuritypolicy.NewGoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference
 ```

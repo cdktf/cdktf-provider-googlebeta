@@ -1,7 +1,3 @@
-# `google_pubsub_schema_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_pubsub_schema_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_schema_iam_member).
-
 # `googlePubsubSchemaIamMember` Submodule <a name="`googlePubsubSchemaIamMember` Submodule" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.NewGooglePubsubSchemaIamMember(scope Construct, id *string, config GooglePubsubSchemaIamMemberConfig) GooglePubsubSchemaIamMember
 ```
@@ -366,7 +362,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 &googlepubsubschemaiammember.GooglePubsubSchemaIamMemberCondition {
 	Expression: *string,
@@ -858,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 &googlepubsubschemaiammember.GooglePubsubSchemaIamMemberConfig {
 	Connection: interface{},
@@ -871,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 	Member: *string,
 	Role: *string,
 	Schema: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1051,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.NewGooglePubsubSchemaIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubSchemaIamMemberConditionOutputReference
 ```

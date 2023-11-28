@@ -1,7 +1,3 @@
-# `google_cloud_ids_endpoint`
-
-Refer to the Terraform Registory for docs: [`google_cloud_ids_endpoint`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_ids_endpoint).
-
 # `googleCloudIdsEndpoint` Submodule <a name="`googleCloudIdsEndpoint` Submodule" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.NewGoogleCloudIdsEndpoint(scope Construct, id *string, config GoogleCloudIdsEndpointConfig) GoogleCloudIdsEndpoint
 ```
@@ -380,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.GoogleCloudIdsEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.GoogleCloudIdsEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googlecloudidsendpoint.GoogleCloudIdsEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.GoogleCloudIdsEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ googlecloudidsendpoint.GoogleCloudIdsEndpoint_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.GoogleCloudIdsEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -911,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 &googlecloudidsendpoint.GoogleCloudIdsEndpointConfig {
 	Connection: interface{},
@@ -929,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Id: *string,
 	Project: *string,
 	ThreatExceptions: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts,
 }
 ```
 
@@ -1158,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 &googlecloudidsendpoint.GoogleCloudIdsEndpointTimeouts {
 	Create: *string,
@@ -1220,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidsendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudidsendpoint"
 
 googlecloudidsendpoint.NewGoogleCloudIdsEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudIdsEndpointTimeoutsOutputReference
 ```

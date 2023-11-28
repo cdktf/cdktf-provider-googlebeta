@@ -1,7 +1,3 @@
-# `google_organization_policy`
-
-Refer to the Terraform Registory for docs: [`google_organization_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_organization_policy).
-
 # `googleOrganizationPolicy` Submodule <a name="`googleOrganizationPolicy` Submodule" id="@cdktf/provider-google-beta.googleOrganizationPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

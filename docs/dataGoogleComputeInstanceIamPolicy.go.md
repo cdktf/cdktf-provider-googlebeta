@@ -1,7 +1,3 @@
-# `data_google_compute_instance_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_instance_iam_policy).
-
 # `dataGoogleComputeInstanceIamPolicy` Submodule <a name="`dataGoogleComputeInstanceIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 datagooglecomputeinstanceiampolicy.NewDataGoogleComputeInstanceIamPolicy(scope Construct, id *string, config DataGoogleComputeInstanceIamPolicyConfig) DataGoogleComputeInstanceIamPolicy
 ```
@@ -292,7 +288,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceIamPolicy.DataGoogleComputeInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstanceiampolicy"
 
 &datagooglecomputeinstanceiampolicy.DataGoogleComputeInstanceIamPolicyConfig {
 	Connection: interface{},

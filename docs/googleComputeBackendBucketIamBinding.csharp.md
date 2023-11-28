@@ -1,7 +1,3 @@
-# `google_compute_backend_bucket_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_compute_backend_bucket_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_iam_binding).
-
 # `googleComputeBackendBucketIamBinding` Submodule <a name="`googleComputeBackendBucketIamBinding` Submodule" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

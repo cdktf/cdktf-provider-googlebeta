@@ -1,7 +1,3 @@
-# `google_network_security_gateway_security_policy_rule`
-
-Refer to the Terraform Registory for docs: [`google_network_security_gateway_security_policy_rule`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_security_gateway_security_policy_rule).
-
 # `googleNetworkSecurityGatewaySecurityPolicyRule` Submodule <a name="`googleNetworkSecurityGatewaySecurityPolicyRule` Submodule" id="@cdktf/provider-google-beta.googleNetworkSecurityGatewaySecurityPolicyRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

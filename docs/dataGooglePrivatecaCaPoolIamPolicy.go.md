@@ -1,7 +1,3 @@
-# `data_google_privateca_ca_pool_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_privateca_ca_pool_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_privateca_ca_pool_iam_policy).
-
 # `dataGooglePrivatecaCaPoolIamPolicy` Submodule <a name="`dataGooglePrivatecaCaPoolIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.NewDataGooglePrivatecaCaPoolIamPolicy(scope Construct, id *string, config DataGooglePrivatecaCaPoolIamPolicyConfig) DataGooglePrivatecaCaPoolIamPolicy
 ```
@@ -292,7 +288,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleprivatecacapooliampolicy"
 
 &datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicyConfig {
 	Connection: interface{},

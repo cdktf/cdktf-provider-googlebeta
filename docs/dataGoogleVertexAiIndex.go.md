@@ -1,7 +1,3 @@
-# `data_google_vertex_ai_index`
-
-Refer to the Terraform Registory for docs: [`data_google_vertex_ai_index`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vertex_ai_index).
-
 # `dataGoogleVertexAiIndex` Submodule <a name="`dataGoogleVertexAiIndex` Submodule" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndex(scope Construct, id *string, config DataGoogleVertexAiIndexConfig) DataGoogleVertexAiIndex
 ```
@@ -285,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.DataGoogleVertexAiIndex_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.DataGoogleVertexAiIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datagooglevertexaiindex.DataGoogleVertexAiIndex_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.DataGoogleVertexAiIndex_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datagooglevertexaiindex.DataGoogleVertexAiIndex_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.DataGoogleVertexAiIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -783,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexConfig {
 	Connection: interface{},
@@ -948,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexDeployedIndexes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexDeployedIndexes {
 
@@ -961,7 +957,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStats.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexIndexStats {
 
@@ -974,7 +970,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexMetadata {
 
@@ -987,7 +983,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexMetadataConfig {
 
@@ -1000,7 +996,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig {
 
@@ -1013,7 +1009,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig {
 
@@ -1026,7 +1022,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 &datagooglevertexaiindex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig {
 
@@ -1041,7 +1037,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexDeployedIndexesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexDeployedIndexesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexDeployedIndexesList
 ```
@@ -1173,7 +1169,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexDeployedIndexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexDeployedIndexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexDeployedIndexesOutputReference
 ```
@@ -1462,7 +1458,7 @@ func InternalValue() DataGoogleVertexAiIndexDeployedIndexes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexIndexStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexIndexStatsList
 ```
@@ -1594,7 +1590,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexIndexStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexIndexStatsOutputReference
 ```
@@ -1883,7 +1879,7 @@ func InternalValue() DataGoogleVertexAiIndexIndexStats
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList
 ```
@@ -2015,7 +2011,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference
 ```
@@ -2282,7 +2278,7 @@ func InternalValue() DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteFo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigList
 ```
@@ -2414,7 +2410,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigOutputReference
 ```
@@ -2703,7 +2699,7 @@ func InternalValue() DataGoogleVertexAiIndexMetadataConfigAlgorithmConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList
 ```
@@ -2835,7 +2831,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference
 ```
@@ -3124,7 +3120,7 @@ func InternalValue() DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexMetadataConfigList
 ```
@@ -3256,7 +3252,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexMetadataConfigOutputReference
 ```
@@ -3589,7 +3585,7 @@ func InternalValue() DataGoogleVertexAiIndexMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVertexAiIndexMetadataList
 ```
@@ -3721,7 +3717,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiindex"
 
 datagooglevertexaiindex.NewDataGoogleVertexAiIndexMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVertexAiIndexMetadataOutputReference
 ```

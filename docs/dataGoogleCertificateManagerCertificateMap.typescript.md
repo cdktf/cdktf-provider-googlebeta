@@ -1,7 +1,3 @@
-# `data_google_certificate_manager_certificate_map`
-
-Refer to the Terraform Registory for docs: [`data_google_certificate_manager_certificate_map`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_certificate_manager_certificate_map).
-
 # `dataGoogleCertificateManagerCertificateMap` Submodule <a name="`dataGoogleCertificateManagerCertificateMap` Submodule" id="@cdktf/provider-google-beta.dataGoogleCertificateManagerCertificateMap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

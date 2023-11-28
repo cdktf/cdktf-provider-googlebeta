@@ -1,7 +1,3 @@
-# `google_cloud_tasks_queue_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_cloud_tasks_queue_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_tasks_queue_iam_binding).
-
 # `googleCloudTasksQueueIamBinding` Submodule <a name="`googleCloudTasksQueueIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

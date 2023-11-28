@@ -1,7 +1,3 @@
-# `data_google_pubsub_subscription`
-
-Refer to the Terraform Registory for docs: [`data_google_pubsub_subscription`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_pubsub_subscription).
-
 # `dataGooglePubsubSubscription` Submodule <a name="`dataGooglePubsubSubscription` Submodule" id="@cdktf/provider-google-beta.dataGooglePubsubSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

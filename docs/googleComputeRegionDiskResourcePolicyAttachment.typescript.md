@@ -1,7 +1,3 @@
-# `google_compute_region_disk_resource_policy_attachment`
-
-Refer to the Terraform Registory for docs: [`google_compute_region_disk_resource_policy_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_disk_resource_policy_attachment).
-
 # `googleComputeRegionDiskResourcePolicyAttachment` Submodule <a name="`googleComputeRegionDiskResourcePolicyAttachment` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

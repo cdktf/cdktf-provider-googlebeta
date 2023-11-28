@@ -1,7 +1,3 @@
-# `google_iam_access_boundary_policy`
-
-Refer to the Terraform Registory for docs: [`google_iam_access_boundary_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_access_boundary_policy).
-
 # `googleIamAccessBoundaryPolicy` Submodule <a name="`googleIamAccessBoundaryPolicy` Submodule" id="@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

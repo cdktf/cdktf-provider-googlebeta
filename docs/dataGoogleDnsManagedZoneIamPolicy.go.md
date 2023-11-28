@@ -1,7 +1,3 @@
-# `data_google_dns_managed_zone_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_dns_managed_zone_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_dns_managed_zone_iam_policy).
-
 # `dataGoogleDnsManagedZoneIamPolicy` Submodule <a name="`dataGoogleDnsManagedZoneIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 datagooglednsmanagedzoneiampolicy.NewDataGoogleDnsManagedZoneIamPolicy(scope Construct, id *string, config DataGoogleDnsManagedZoneIamPolicyConfig) DataGoogleDnsManagedZoneIamPolicy
 ```
@@ -285,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglednsmanagedzoneiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsmanagedzoneiampolicy"
 
 &datagooglednsmanagedzoneiampolicy.DataGoogleDnsManagedZoneIamPolicyConfig {
 	Connection: interface{},

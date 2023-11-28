@@ -1,7 +1,3 @@
-# `google_gke_hub_scope_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_gke_hub_scope_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_scope_iam_policy).
-
 # `googleGkeHubScopeIamPolicy` Submodule <a name="`googleGkeHubScopeIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

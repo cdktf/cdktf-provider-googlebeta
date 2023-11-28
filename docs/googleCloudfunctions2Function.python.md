@@ -1,7 +1,3 @@
-# `google_cloudfunctions2_function`
-
-Refer to the Terraform Registory for docs: [`google_cloudfunctions2_function`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions2_function).
-
 # `googleCloudfunctions2Function` Submodule <a name="`googleCloudfunctions2Function` Submodule" id="@cdktf/provider-google-beta.googleCloudfunctions2Function"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

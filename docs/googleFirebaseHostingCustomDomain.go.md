@@ -1,7 +1,3 @@
-# `google_firebase_hosting_custom_domain`
-
-Refer to the Terraform Registory for docs: [`google_firebase_hosting_custom_domain`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_custom_domain).
-
 # `googleFirebaseHostingCustomDomain` Submodule <a name="`googleFirebaseHostingCustomDomain` Submodule" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomain(scope Construct, id *string, config GoogleFirebaseHostingCustomDomainConfig) GoogleFirebaseHostingCustomDomain
 ```
@@ -387,7 +383,7 @@ func ResetWaitDnsVerification()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -984,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCert {
 
@@ -997,7 +993,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerification {
 
@@ -1010,7 +1006,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationDns {
 
@@ -1023,7 +1019,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesired.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesired {
 
@@ -1036,7 +1032,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecords {
 
@@ -1049,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscovered.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscovered {
 
@@ -1062,7 +1058,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecords {
 
@@ -1075,7 +1071,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainCertVerificationHttp {
 
@@ -1088,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainConfig {
 	Connection: interface{},
@@ -1104,7 +1100,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 	Id: *string,
 	Project: *string,
 	RedirectTarget: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainTimeouts,
 	WaitDnsVerification: interface{},
 }
 ```
@@ -1328,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainIssues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainIssues {
 
@@ -1341,7 +1337,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdates {
 
@@ -1354,7 +1350,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesired.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesired {
 
@@ -1367,7 +1363,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecords {
 
@@ -1380,7 +1376,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscovered.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscovered {
 
@@ -1393,7 +1389,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecords {
 
@@ -1406,7 +1402,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 &googlefirebasehostingcustomdomain.GoogleFirebaseHostingCustomDomainTimeouts {
 	Create: *string,
@@ -1468,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertList
 ```
@@ -1600,7 +1596,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertOutputReference
 ```
@@ -1900,7 +1896,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredList
 ```
@@ -2032,7 +2028,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredOutputReference
 ```
@@ -2321,7 +2317,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationDnsDesired
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsList
 ```
@@ -2453,7 +2449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsOutputReference
 ```
@@ -2764,7 +2760,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationDnsDesired
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredList
 ```
@@ -2896,7 +2892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredOutputReference
 ```
@@ -3185,7 +3181,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscove
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsList
 ```
@@ -3317,7 +3313,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference
 ```
@@ -3628,7 +3624,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscove
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsList
 ```
@@ -3760,7 +3756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationDnsOutputReference
 ```
@@ -4060,7 +4056,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationHttpList
 ```
@@ -4192,7 +4188,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationHttpOutputReference
 ```
@@ -4503,7 +4499,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerificationHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationList
 ```
@@ -4635,7 +4631,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainCertVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainCertVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainCertVerificationOutputReference
 ```
@@ -4924,7 +4920,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainCertVerification
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainIssuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainIssuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainIssuesList
 ```
@@ -5056,7 +5052,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainIssuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainIssuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainIssuesOutputReference
 ```
@@ -5356,7 +5352,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainIssues
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredList
 ```
@@ -5488,7 +5484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference
 ```
@@ -5777,7 +5773,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesired
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsList
 ```
@@ -5909,7 +5905,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsOutputReference
 ```
@@ -6220,7 +6216,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredR
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredList
 ```
@@ -6352,7 +6348,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredOutputReference
 ```
@@ -6641,7 +6637,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscover
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsList
 ```
@@ -6773,7 +6769,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsOutputReference
 ```
@@ -7084,7 +7080,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscover
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesList
 ```
@@ -7216,7 +7212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesOutputReference
 ```
@@ -7516,7 +7512,7 @@ func InternalValue() GoogleFirebaseHostingCustomDomainRequiredDnsUpdates
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingCustomDomain.GoogleFirebaseHostingCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingcustomdomain"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingcustomdomain"
 
 googlefirebasehostingcustomdomain.NewGoogleFirebaseHostingCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseHostingCustomDomainTimeoutsOutputReference
 ```

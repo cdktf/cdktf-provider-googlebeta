@@ -1,7 +1,3 @@
-# `google_network_connectivity_policy_based_route`
-
-Refer to the Terraform Registory for docs: [`google_network_connectivity_policy_based_route`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_connectivity_policy_based_route).
-
 # `googleNetworkConnectivityPolicyBasedRoute` Submodule <a name="`googleNetworkConnectivityPolicyBasedRoute` Submodule" id="@cdktf/provider-google-beta.googleNetworkConnectivityPolicyBasedRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

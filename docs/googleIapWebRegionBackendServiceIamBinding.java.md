@@ -1,7 +1,3 @@
-# `google_iap_web_region_backend_service_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_iap_web_region_backend_service_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iap_web_region_backend_service_iam_binding).
-
 # `googleIapWebRegionBackendServiceIamBinding` Submodule <a name="`googleIapWebRegionBackendServiceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

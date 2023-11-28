@@ -1,7 +1,3 @@
-# `google_clouddeploy_target`
-
-Refer to the Terraform Registory for docs: [`google_clouddeploy_target`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_clouddeploy_target).
-
 # `googleClouddeployTarget` Submodule <a name="`googleClouddeployTarget` Submodule" id="@cdktf/provider-google-beta.googleClouddeployTarget"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

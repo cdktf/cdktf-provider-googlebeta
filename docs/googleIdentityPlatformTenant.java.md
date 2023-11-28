@@ -1,7 +1,3 @@
-# `google_identity_platform_tenant`
-
-Refer to the Terraform Registory for docs: [`google_identity_platform_tenant`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_identity_platform_tenant).
-
 # `googleIdentityPlatformTenant` Submodule <a name="`googleIdentityPlatformTenant` Submodule" id="@cdktf/provider-google-beta.googleIdentityPlatformTenant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_google_compute_backend_service_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_compute_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_compute_backend_service_iam_policy).
-
 # `dataGoogleComputeBackendServiceIamPolicy` Submodule <a name="`dataGoogleComputeBackendServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeBackendServiceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

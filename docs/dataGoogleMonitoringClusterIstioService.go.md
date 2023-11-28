@@ -1,7 +1,3 @@
-# `data_google_monitoring_cluster_istio_service`
-
-Refer to the Terraform Registory for docs: [`data_google_monitoring_cluster_istio_service`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_monitoring_cluster_istio_service).
-
 # `dataGoogleMonitoringClusterIstioService` Submodule <a name="`dataGoogleMonitoringClusterIstioService` Submodule" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioService(scope Construct, id *string, config DataGoogleMonitoringClusterIstioServiceConfig) DataGoogleMonitoringClusterIstioService
 ```
@@ -285,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -739,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 &datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioServiceConfig {
 	Connection: interface{},
@@ -944,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 &datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioServiceTelemetry {
 
@@ -959,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglem
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringClusterIstioServiceTelemetryList
 ```
@@ -1091,7 +1087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringclusteristioservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference
 ```

@@ -1,7 +1,3 @@
-# `google_storage_bucket`
-
-Refer to the Terraform Registory for docs: [`google_storage_bucket`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket).
-
 # `googleStorageBucket` Submodule <a name="`googleStorageBucket` Submodule" id="@cdktf/provider-google-beta.googleStorageBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

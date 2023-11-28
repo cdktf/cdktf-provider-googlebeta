@@ -1,7 +1,3 @@
-# `google_healthcare_dicom_store_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_healthcare_dicom_store_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_healthcare_dicom_store_iam_binding).
-
 # `googleHealthcareDicomStoreIamBinding` Submodule <a name="`googleHealthcareDicomStoreIamBinding` Submodule" id="@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

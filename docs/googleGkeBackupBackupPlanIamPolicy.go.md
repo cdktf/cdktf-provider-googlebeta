@@ -1,7 +1,3 @@
-# `google_gke_backup_backup_plan_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_gke_backup_backup_plan_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_backup_backup_plan_iam_policy).
-
 # `googleGkeBackupBackupPlanIamPolicy` Submodule <a name="`googleGkeBackupBackupPlanIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 googlegkebackupbackupplaniampolicy.NewGoogleGkeBackupBackupPlanIamPolicy(scope Construct, id *string, config GoogleGkeBackupBackupPlanIamPolicyConfig) GoogleGkeBackupBackupPlanIamPolicy
 ```
@@ -353,7 +349,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackupbackupplaniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackupbackupplaniampolicy"
 
 &googlegkebackupbackupplaniampolicy.GoogleGkeBackupBackupPlanIamPolicyConfig {
 	Connection: interface{},

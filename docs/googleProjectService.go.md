@@ -1,7 +1,3 @@
-# `google_project_service`
-
-Refer to the Terraform Registory for docs: [`google_project_service`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_project_service).
-
 # `googleProjectService` Submodule <a name="`googleProjectService` Submodule" id="@cdktf/provider-google-beta.googleProjectService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.NewGoogleProjectService(scope Construct, id *string, config GoogleProjectServiceConfig) GoogleProjectService
 ```
@@ -380,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.GoogleProjectService_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.GoogleProjectService_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googleprojectservice.GoogleProjectService_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.GoogleProjectService_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ googleprojectservice.GoogleProjectService_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.GoogleProjectService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 &googleprojectservice.GoogleProjectServiceConfig {
 	Connection: interface{},
@@ -816,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleproje
 	DisableOnDestroy: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleProjectService.GoogleProjectServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectService.GoogleProjectServiceTimeouts,
 }
 ```
 
@@ -992,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 &googleprojectservice.GoogleProjectServiceTimeouts {
 	Create: *string,
@@ -1068,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprojectservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectservice"
 
 googleprojectservice.NewGoogleProjectServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectServiceTimeoutsOutputReference
 ```

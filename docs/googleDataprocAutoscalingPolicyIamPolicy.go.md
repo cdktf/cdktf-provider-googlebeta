@@ -1,7 +1,3 @@
-# `google_dataproc_autoscaling_policy_iam_policy`
-
-Refer to the Terraform Registory for docs: [`google_dataproc_autoscaling_policy_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_autoscaling_policy_iam_policy).
-
 # `googleDataprocAutoscalingPolicyIamPolicy` Submodule <a name="`googleDataprocAutoscalingPolicyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 googledataprocautoscalingpolicyiampolicy.NewGoogleDataprocAutoscalingPolicyIamPolicy(scope Construct, id *string, config GoogleDataprocAutoscalingPolicyIamPolicyConfig) GoogleDataprocAutoscalingPolicyIamPolicy
 ```
@@ -353,7 +349,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocautoscalingpolicyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicyiampolicy"
 
 &googledataprocautoscalingpolicyiampolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `google_tags_tag_value_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_tags_tag_value_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_tags_tag_value_iam_member).
-
 # `googleTagsTagValueIamMember` Submodule <a name="`googleTagsTagValueIamMember` Submodule" id="@cdktf/provider-google-beta.googleTagsTagValueIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

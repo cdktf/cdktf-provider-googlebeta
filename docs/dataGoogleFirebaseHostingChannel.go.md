@@ -1,7 +1,3 @@
-# `data_google_firebase_hosting_channel`
-
-Refer to the Terraform Registory for docs: [`data_google_firebase_hosting_channel`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_firebase_hosting_channel).
-
 # `dataGoogleFirebaseHostingChannel` Submodule <a name="`dataGoogleFirebaseHostingChannel` Submodule" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 datagooglefirebasehostingchannel.NewDataGoogleFirebaseHostingChannel(scope Construct, id *string, config DataGoogleFirebaseHostingChannelConfig) DataGoogleFirebaseHostingChannel
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -688,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseHostingChannel.DataGoogleFirebaseHostingChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebasehostingchannel"
 
 &datagooglefirebasehostingchannel.DataGoogleFirebaseHostingChannelConfig {
 	Connection: interface{},

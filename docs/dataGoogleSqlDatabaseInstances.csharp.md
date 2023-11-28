@@ -1,7 +1,3 @@
-# `data_google_sql_database_instances`
-
-Refer to the Terraform Registory for docs: [`data_google_sql_database_instances`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_sql_database_instances).
-
 # `dataGoogleSqlDatabaseInstances` Submodule <a name="`dataGoogleSqlDatabaseInstances` Submodule" id="@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

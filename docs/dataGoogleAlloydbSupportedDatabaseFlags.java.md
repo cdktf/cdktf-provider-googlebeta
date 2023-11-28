@@ -1,7 +1,3 @@
-# `data_google_alloydb_supported_database_flags`
-
-Refer to the Terraform Registory for docs: [`data_google_alloydb_supported_database_flags`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_alloydb_supported_database_flags).
-
 # `dataGoogleAlloydbSupportedDatabaseFlags` Submodule <a name="`dataGoogleAlloydbSupportedDatabaseFlags` Submodule" id="@cdktf/provider-google-beta.dataGoogleAlloydbSupportedDatabaseFlags"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

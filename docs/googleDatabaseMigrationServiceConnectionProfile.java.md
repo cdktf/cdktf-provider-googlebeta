@@ -1,7 +1,3 @@
-# `google_database_migration_service_connection_profile`
-
-Refer to the Terraform Registory for docs: [`google_database_migration_service_connection_profile`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_database_migration_service_connection_profile).
-
 # `googleDatabaseMigrationServiceConnectionProfile` Submodule <a name="`googleDatabaseMigrationServiceConnectionProfile` Submodule" id="@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

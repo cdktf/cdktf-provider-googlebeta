@@ -1,7 +1,3 @@
-# `google_project_iam_audit_config`
-
-Refer to the Terraform Registory for docs: [`google_project_iam_audit_config`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_project_iam_audit_config).
-
 # `googleProjectIamAuditConfig` Submodule <a name="`googleProjectIamAuditConfig` Submodule" id="@cdktf/provider-google-beta.googleProjectIamAuditConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

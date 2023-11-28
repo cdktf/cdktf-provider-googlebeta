@@ -1,7 +1,3 @@
-# `google_firebase_project`
-
-Refer to the Terraform Registory for docs: [`google_firebase_project`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_project).
-
 # `googleFirebaseProject` Submodule <a name="`googleFirebaseProject` Submodule" id="@cdktf/provider-google-beta.googleFirebaseProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

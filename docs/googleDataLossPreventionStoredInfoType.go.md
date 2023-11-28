@@ -1,7 +1,3 @@
-# `google_data_loss_prevention_stored_info_type`
-
-Refer to the Terraform Registory for docs: [`google_data_loss_prevention_stored_info_type`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_loss_prevention_stored_info_type).
-
 # `googleDataLossPreventionStoredInfoType` Submodule <a name="`googleDataLossPreventionStoredInfoType` Submodule" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoType(scope Construct, id *string, config GoogleDataLossPreventionStoredInfoTypeConfig) GoogleDataLossPreventionStoredInfoType
 ```
@@ -440,7 +436,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +468,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +482,7 @@ googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +496,7 @@ googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +934,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeConfig {
 	Connection: interface{},
@@ -950,13 +946,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatal
 	Provisioners: *[]interface{},
 	Parent: *string,
 	Description: *string,
-	Dictionary: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionary,
+	Dictionary: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionary,
 	DisplayName: *string,
 	Id: *string,
-	LargeCustomDictionary: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary,
-	Regex: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegex,
+	LargeCustomDictionary: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary,
+	Regex: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegex,
 	StoredInfoTypeId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeTimeouts,
 }
 ```
 
@@ -1193,11 +1189,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeDictionary {
-	CloudStoragePath: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath,
-	WordList: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct,
+	CloudStoragePath: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath,
+	WordList: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct,
 }
 ```
 
@@ -1243,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath {
 	Path: *string,
@@ -1277,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct {
 	Words: *[]*string,
@@ -1314,12 +1310,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary {
-	OutputPath: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath,
-	BigQueryField: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField,
-	CloudStorageFileSet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet,
+	OutputPath: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath,
+	BigQueryField: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField,
+	CloudStorageFileSet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet,
 }
 ```
 
@@ -1380,11 +1376,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField {
-	Field: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField,
-	Table: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable,
+	Field: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField,
+	Table: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable,
 }
 ```
 
@@ -1430,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField {
 	Name: *string,
@@ -1464,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable {
 	DatasetId: *string,
@@ -1530,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet {
 	Url: *string,
@@ -1564,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath {
 	Path: *string,
@@ -1598,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeRegex {
 	Pattern: *string,
@@ -1650,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 &googledatalosspreventionstoredinfotype.GoogleDataLossPreventionStoredInfoTypeTimeouts {
 	Create: *string,
@@ -1712,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference
 ```
@@ -1983,7 +1979,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStorag
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference
 ```
@@ -2316,7 +2312,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
 ```
@@ -2587,7 +2583,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference
 ```
@@ -2858,7 +2854,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference
 ```
@@ -3177,7 +3173,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference
 ```
@@ -3492,7 +3488,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference
 ```
@@ -3763,7 +3759,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference
 ```
@@ -4034,7 +4030,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference
 ```
@@ -4402,7 +4398,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeRegexOutputReference
 ```
@@ -4702,7 +4698,7 @@ func InternalValue() GoogleDataLossPreventionStoredInfoTypeRegex
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatalosspreventionstoredinfotype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatalosspreventionstoredinfotype"
 
 googledatalosspreventionstoredinfotype.NewGoogleDataLossPreventionStoredInfoTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeTimeoutsOutputReference
 ```

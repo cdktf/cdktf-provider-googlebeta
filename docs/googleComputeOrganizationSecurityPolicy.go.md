@@ -1,7 +1,3 @@
-# `google_compute_organization_security_policy`
-
-Refer to the Terraform Registory for docs: [`google_compute_organization_security_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_organization_security_policy).
-
 # `googleComputeOrganizationSecurityPolicy` Submodule <a name="`googleComputeOrganizationSecurityPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.NewGoogleComputeOrganizationSecurityPolicy(scope Construct, id *string, config GoogleComputeOrganizationSecurityPolicyConfig) GoogleComputeOrganizationSecurityPolicy
 ```
@@ -373,7 +369,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 &googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicyConfig {
 	Connection: interface{},
@@ -830,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Parent: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1018,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 &googlecomputeorganizationsecuritypolicy.GoogleComputeOrganizationSecurityPolicyTimeouts {
 	Create: *string,
@@ -1080,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicy.GoogleComputeOrganizationSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeorganizationsecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicy"
 
 googlecomputeorganizationsecuritypolicy.NewGoogleComputeOrganizationSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeOrganizationSecurityPolicyTimeoutsOutputReference
 ```

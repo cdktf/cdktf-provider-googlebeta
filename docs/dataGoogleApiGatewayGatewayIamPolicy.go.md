@@ -1,7 +1,3 @@
-# `data_google_api_gateway_gateway_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_api_gateway_gateway_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_api_gateway_gateway_iam_policy).
-
 # `dataGoogleApiGatewayGatewayIamPolicy` Submodule <a name="`dataGoogleApiGatewayGatewayIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 datagoogleapigatewaygatewayiampolicy.NewDataGoogleApiGatewayGatewayIamPolicy(scope Construct, id *string, config DataGoogleApiGatewayGatewayIamPolicyConfig) DataGoogleApiGatewayGatewayIamPolicy
 ```
@@ -292,7 +288,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleApiGatewayGatewayIamPolicy.DataGoogleApiGatewayGatewayIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewaygatewayiampolicy"
 
 &datagoogleapigatewaygatewayiampolicy.DataGoogleApiGatewayGatewayIamPolicyConfig {
 	Connection: interface{},

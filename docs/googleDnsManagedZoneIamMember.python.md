@@ -1,7 +1,3 @@
-# `google_dns_managed_zone_iam_member`
-
-Refer to the Terraform Registory for docs: [`google_dns_managed_zone_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_managed_zone_iam_member).
-
 # `googleDnsManagedZoneIamMember` Submodule <a name="`googleDnsManagedZoneIamMember` Submodule" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_iam_workforce_pool_provider`
-
-Refer to the Terraform Registory for docs: [`google_iam_workforce_pool_provider`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool_provider).
-
 # `googleIamWorkforcePoolProvider` Submodule <a name="`googleIamWorkforcePoolProvider` Submodule" id="@cdktf/provider-google-beta.googleIamWorkforcePoolProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

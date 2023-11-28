@@ -1,7 +1,3 @@
-# `data_google_tags_tag_value_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_google_tags_tag_value_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_tags_tag_value_iam_policy).
-
 # `dataGoogleTagsTagValueIamPolicy` Submodule <a name="`dataGoogleTagsTagValueIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 datagoogletagstagvalueiampolicy.NewDataGoogleTagsTagValueIamPolicy(scope Construct, id *string, config DataGoogleTagsTagValueIamPolicyConfig) DataGoogleTagsTagValueIamPolicy
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogletagstagvalueiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletagstagvalueiampolicy"
 
 &datagoogletagstagvalueiampolicy.DataGoogleTagsTagValueIamPolicyConfig {
 	Connection: interface{},

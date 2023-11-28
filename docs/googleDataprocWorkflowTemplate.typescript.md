@@ -1,7 +1,3 @@
-# `google_dataproc_workflow_template`
-
-Refer to the Terraform Registory for docs: [`google_dataproc_workflow_template`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_workflow_template).
-
 # `googleDataprocWorkflowTemplate` Submodule <a name="`googleDataprocWorkflowTemplate` Submodule" id="@cdktf/provider-google-beta.googleDataprocWorkflowTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

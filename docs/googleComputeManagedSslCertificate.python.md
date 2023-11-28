@@ -1,7 +1,3 @@
-# `google_compute_managed_ssl_certificate`
-
-Refer to the Terraform Registory for docs: [`google_compute_managed_ssl_certificate`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_managed_ssl_certificate).
-
 # `googleComputeManagedSslCertificate` Submodule <a name="`googleComputeManagedSslCertificate` Submodule" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `google_bigquery_table`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_table`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_table).
-
 # `googleBigqueryTable` Submodule <a name="`googleBigqueryTable` Submodule" id="@cdktf/provider-google-beta.googleBigqueryTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

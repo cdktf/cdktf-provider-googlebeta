@@ -1,7 +1,3 @@
-# `google_secret_manager_secret_version`
-
-Refer to the Terraform Registory for docs: [`google_secret_manager_secret_version`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_secret_manager_secret_version).
-
 # `googleSecretManagerSecretVersion` Submodule <a name="`googleSecretManagerSecretVersion` Submodule" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.NewGoogleSecretManagerSecretVersion(scope Construct, id *string, config GoogleSecretManagerSecretVersionConfig) GoogleSecretManagerSecretVersion
 ```
@@ -380,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.GoogleSecretManagerSecretVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 &googlesecretmanagersecretversion.GoogleSecretManagerSecretVersionConfig {
 	Connection: interface{},
@@ -883,7 +879,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecre
 	Enabled: interface{},
 	Id: *string,
 	IsSecretDataBase64: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersionTimeouts,
 }
 ```
 
@@ -1090,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 &googlesecretmanagersecretversion.GoogleSecretManagerSecretVersionTimeouts {
 	Create: *string,
@@ -1138,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretversion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretversion"
 
 googlesecretmanagersecretversion.NewGoogleSecretManagerSecretVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretVersionTimeoutsOutputReference
 ```

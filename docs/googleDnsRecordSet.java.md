@@ -1,7 +1,3 @@
-# `google_dns_record_set`
-
-Refer to the Terraform Registory for docs: [`google_dns_record_set`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_record_set).
-
 # `googleDnsRecordSet` Submodule <a name="`googleDnsRecordSet` Submodule" id="@cdktf/provider-google-beta.googleDnsRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

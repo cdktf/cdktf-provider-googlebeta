@@ -1,7 +1,3 @@
-# `google_bigquery_analytics_hub_listing_iam_binding`
-
-Refer to the Terraform Registory for docs: [`google_bigquery_analytics_hub_listing_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_bigquery_analytics_hub_listing_iam_binding).
-
 # `googleBigqueryAnalyticsHubListingIamBinding` Submodule <a name="`googleBigqueryAnalyticsHubListingIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.NewGoogleBigqueryAnalyticsHubListingIamBinding(scope Construct, id *string, config GoogleBigqueryAnalyticsHubListingIamBindingConfig) GoogleBigqueryAnalyticsHubListingIamBinding
 ```
@@ -373,7 +369,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIam
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIam
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 &googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBindingCondition {
 	Expression: *string,
@@ -909,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 &googlebigqueryanalyticshublistingiambinding.GoogleBigqueryAnalyticsHubListingIamBindingConfig {
 	Connection: interface{},
@@ -923,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqu
 	ListingId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1130,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigqueryanalyticshublistingiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshublistingiambinding"
 
 googlebigqueryanalyticshublistingiambinding.NewGoogleBigqueryAnalyticsHubListingIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryAnalyticsHubListingIamBindingConditionOutputReference
 ```

@@ -1,7 +1,3 @@
-# `google_privateca_certificate_template`
-
-Refer to the Terraform Registory for docs: [`google_privateca_certificate_template`](https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_privateca_certificate_template).
-
 # `googlePrivatecaCertificateTemplate` Submodule <a name="`googlePrivatecaCertificateTemplate` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplate(scope Construct, id *string, config GooglePrivatecaCertificateTemplateConfig) GooglePrivatecaCertificateTemplate
 ```
@@ -440,7 +436,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +468,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +482,7 @@ googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +496,7 @@ googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplateConfig {
 	Connection: interface{},
@@ -1007,12 +1003,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepriva
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	IdentityConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraints,
+	IdentityConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraints,
 	Labels: *map[string]*string,
-	PassthroughExtensions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensions,
-	PredefinedValues: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValues,
+	PassthroughExtensions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensions,
+	PredefinedValues: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValues,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateTimeouts,
 }
 ```
 
@@ -1261,12 +1257,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplateIdentityConstraints {
 	AllowSubjectAltNamesPassthrough: interface{},
 	AllowSubjectPassthrough: interface{},
-	CelExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpression,
+	CelExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpression,
 }
 ```
 
@@ -1331,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpression {
 	Description: *string,
@@ -1419,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePassthroughExtensions {
 	AdditionalExtensions: interface{},
@@ -1471,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensions {
 	ObjectIdPath: *[]*f64,
@@ -1505,13 +1501,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValues {
 	AdditionalExtensions: interface{},
 	AiaOcspServers: *[]*string,
-	CaOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions,
-	KeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage,
+	CaOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions,
+	KeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage,
 	PolicyIds: interface{},
 }
 ```
@@ -1605,10 +1601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions {
-	ObjectId: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId,
+	ObjectId: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId,
 	Value: *string,
 	Critical: interface{},
 }
@@ -1673,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId {
 	ObjectIdPath: *[]*f64,
@@ -1707,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions {
 	IsCa: interface{},
@@ -1761,11 +1757,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage {
-	BaseKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage,
-	ExtendedKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage,
+	BaseKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage,
+	ExtendedKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage,
 	UnknownExtendedKeyUsages: interface{},
 }
 ```
@@ -1827,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage {
 	CertSign: interface{},
@@ -1989,7 +1985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage {
 	ClientAuth: interface{},
@@ -2103,7 +2099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsages {
 	ObjectIdPath: *[]*f64,
@@ -2137,7 +2133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIds {
 	ObjectIdPath: *[]*f64,
@@ -2171,7 +2167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 &googleprivatecacertificatetemplate.GooglePrivatecaCertificateTemplateTimeouts {
 	Create: *string,
@@ -2233,7 +2229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference
 ```
@@ -2598,7 +2594,7 @@ func InternalValue() GooglePrivatecaCertificateTemplateIdentityConstraintsCelExp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateIdentityConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplateIdentityConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplateIdentityConstraintsOutputReference
 ```
@@ -2933,7 +2929,7 @@ func InternalValue() GooglePrivatecaCertificateTemplateIdentityConstraints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList
 ```
@@ -3076,7 +3072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference
 ```
@@ -3365,7 +3361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference
 ```
@@ -3685,7 +3681,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePassthroughExtensions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList
 ```
@@ -3828,7 +3824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference
 ```
@@ -4099,7 +4095,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValuesAdditiona
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference
 ```
@@ -4452,7 +4448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference
 ```
@@ -4759,7 +4755,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValuesCaOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference
 ```
@@ -5269,7 +5265,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageB
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference
 ```
@@ -5692,7 +5688,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageE
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference
 ```
@@ -6067,7 +6063,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList
 ```
@@ -6210,7 +6206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference
 ```
@@ -6499,7 +6495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesOutputReference
 ```
@@ -6945,7 +6941,7 @@ func InternalValue() GooglePrivatecaCertificateTemplatePredefinedValues
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsList
 ```
@@ -7088,7 +7084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference
 ```
@@ -7377,7 +7373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacertificatetemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplate"
 
 googleprivatecacertificatetemplate.NewGooglePrivatecaCertificateTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplateTimeoutsOutputReference
 ```
