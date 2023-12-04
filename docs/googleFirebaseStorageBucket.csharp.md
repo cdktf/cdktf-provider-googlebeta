@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.resetBucketId">ResetBucketId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.resetId">ResetId</a></code> | *No description.* |
@@ -265,6 +268,12 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.hasResourceMove"></a>
+
+```csharp
+private object HasResourceMove()
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.importFrom"></a>
 
 ```csharp
@@ -295,6 +304,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveTo"></a>
 
 ```csharp
@@ -316,6 +343,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* object
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
