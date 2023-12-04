@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOrigin(scope Construct, id *string, config GoogleNetworkServicesEdgeCacheOriginConfig) GoogleNetworkServicesEdgeCacheOrigin
 ```
@@ -534,7 +534,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOrigin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1197,7 +1197,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication {
 	AccessKeyId: *string,
@@ -1267,7 +1267,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginConfig {
 	Connection: interface{},
@@ -1279,20 +1279,20 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkse
 	Provisioners: *[]interface{},
 	Name: *string,
 	OriginAddress: *string,
-	AwsV4Authentication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication,
+	AwsV4Authentication: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication,
 	Description: *string,
 	FailoverOrigin: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	MaxAttempts: *f64,
-	OriginOverrideAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction,
-	OriginRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginRedirect,
+	OriginOverrideAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction,
+	OriginRedirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginRedirect,
 	Port: *f64,
 	Project: *string,
 	Protocol: *string,
 	RetryConditions: *[]*string,
-	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeout,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeouts,
+	Timeout: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeout,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeouts,
 }
 ```
 
@@ -1677,11 +1677,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction {
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction,
-	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction,
+	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite,
 }
 ```
 
@@ -1727,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite {
 	HostRewrite: *string,
@@ -1870,7 +1870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginOriginRedirect {
 	RedirectConditions: *[]*string,
@@ -1904,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginTimeout {
 	ConnectTimeout: *string,
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 &googlenetworkservicesedgecacheorigin.GoogleNetworkServicesEdgeCacheOriginTimeouts {
 	Create: *string,
@@ -2072,7 +2072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference
 ```
@@ -2678,7 +2678,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList
 ```
@@ -2821,7 +2821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -3161,7 +3161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
 ```
@@ -3494,7 +3494,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference
 ```
@@ -3772,7 +3772,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference
 ```
@@ -4050,7 +4050,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginOriginRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginTimeoutOutputReference
 ```
@@ -4415,7 +4415,7 @@ func InternalValue() GoogleNetworkServicesEdgeCacheOriginTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkservicesedgecacheorigin"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworkservicesedgecacheorigin"
 
 googlenetworkservicesedgecacheorigin.NewGoogleNetworkServicesEdgeCacheOriginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginTimeoutsOutputReference
 ```

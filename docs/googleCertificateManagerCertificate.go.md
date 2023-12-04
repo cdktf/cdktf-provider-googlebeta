@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificate(scope Construct, id *string, config GoogleCertificateManagerCertificateConfig) GoogleCertificateManagerCertificate
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.GoogleCertificateManagerCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateConfig {
 	Connection: interface{},
@@ -1019,11 +1019,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertifica
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManaged,
+	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManaged,
 	Project: *string,
 	Scope: *string,
-	SelfManaged: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateSelfManaged,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateTimeouts,
+	SelfManaged: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateSelfManaged,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateTimeouts,
 }
 ```
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateManaged {
 	DnsAuthorizations: *[]*string,
@@ -1352,7 +1352,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfo {
 
@@ -1365,7 +1365,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertifica
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateManagedProvisioningIssue {
 
@@ -1378,7 +1378,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertifica
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateSelfManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateSelfManaged {
 	CertificatePem: *string,
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 &googlecertificatemanagercertificate.GoogleCertificateManagerCertificateTimeouts {
 	Create: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList
 ```
@@ -1658,7 +1658,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference
 ```
@@ -1969,7 +1969,7 @@ func InternalValue() GoogleCertificateManagerCertificateManagedAuthorizationAtte
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCertificateManagerCertificateManagedOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() GoogleCertificateManagerCertificateManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateManagedProvisioningIssueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCertificateManagerCertificateManagedProvisioningIssueList
 ```
@@ -2470,7 +2470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedProvisioningIssueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateManagedProvisioningIssueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCertificateManagerCertificateManagedProvisioningIssueOutputReference
 ```
@@ -2759,7 +2759,7 @@ func InternalValue() GoogleCertificateManagerCertificateManagedProvisioningIssue
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateSelfManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateSelfManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCertificateManagerCertificateSelfManagedOutputReference
 ```
@@ -3124,7 +3124,7 @@ func InternalValue() GoogleCertificateManagerCertificateSelfManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecertificatemanagercertificate"
 
 googlecertificatemanagercertificate.NewGoogleCertificateManagerCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCertificateManagerCertificateTimeoutsOutputReference
 ```
