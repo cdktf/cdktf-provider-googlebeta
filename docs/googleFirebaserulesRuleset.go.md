@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRuleset(scope Construct, id *string, config GoogleFirebaserulesRulesetConfig) GoogleFirebaserulesRuleset
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.GoogleFirebaserulesRuleset_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.GoogleFirebaserulesRuleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ googlefirebaserulesruleset.GoogleFirebaserulesRuleset_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.GoogleFirebaserulesRuleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googlefirebaserulesruleset.GoogleFirebaserulesRuleset_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRuleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.GoogleFirebaserulesRuleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 &googlefirebaserulesruleset.GoogleFirebaserulesRulesetConfig {
 	Connection: interface{},
@@ -838,10 +838,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaser
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSource,
+	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSource,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts,
 }
 ```
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 &googlefirebaserulesruleset.GoogleFirebaserulesRulesetMetadata {
 
@@ -1008,7 +1008,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaser
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 &googlefirebaserulesruleset.GoogleFirebaserulesRulesetSource {
 	Files: interface{},
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 &googlefirebaserulesruleset.GoogleFirebaserulesRulesetSourceFiles {
 	Content: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 &googlefirebaserulesruleset.GoogleFirebaserulesRulesetTimeouts {
 	Create: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaserulesRulesetMetadataList
 ```
@@ -1304,7 +1304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaserulesRulesetMetadataOutputReference
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() GoogleFirebaserulesRulesetMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetSourceFilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaserulesRulesetSourceFilesList
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetSourceFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaserulesRulesetSourceFilesOutputReference
 ```
@@ -2065,7 +2065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaserulesRulesetSourceOutputReference
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() GoogleFirebaserulesRulesetSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset.GoogleFirebaserulesRulesetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaserulesruleset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebaserulesruleset"
 
 googlefirebaserulesruleset.NewGoogleFirebaserulesRulesetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaserulesRulesetTimeoutsOutputReference
 ```

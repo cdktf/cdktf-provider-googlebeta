@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.NewGoogleTagsTagValueIamBinding(scope Construct, id *string, config GoogleTagsTagValueIamBindingConfig) GoogleTagsTagValueIamBinding
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.GoogleTagsTagValueIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 &googletagstagvalueiambinding.GoogleTagsTagValueIamBindingCondition {
 	Expression: *string,
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 &googletagstagvalueiambinding.GoogleTagsTagValueIamBindingConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagva
 	Members: *[]*string,
 	Role: *string,
 	TagValue: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1047,7 +1047,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletagstagvalueiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googletagstagvalueiambinding"
 
 googletagstagvalueiambinding.NewGoogleTagsTagValueIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTagsTagValueIamBindingConditionOutputReference
 ```
