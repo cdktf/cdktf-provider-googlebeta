@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.hasResourceMove">hasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.resetProject">resetProject</a></code> | *No description.* |
@@ -263,6 +266,12 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.importFrom"></a>
 
 ```typescript
@@ -293,6 +302,24 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `moveTo` <a name="moveTo" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveTo"></a>
 
 ```typescript
@@ -314,6 +341,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* string | number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
