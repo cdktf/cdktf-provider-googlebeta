@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.NewDataGoogleMonitoringUptimeCheckIps(scope Construct, id *string, config DataGoogleMonitoringUptimeCheckIpsConfig) DataGoogleMonitoringUptimeCheckIps
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 &datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIpsConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 &datagooglemonitoringuptimecheckips.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglem
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList
 ```
@@ -840,7 +840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglemonitoringuptimecheckips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringuptimecheckips"
 
 datagooglemonitoringuptimecheckips.NewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference
 ```
