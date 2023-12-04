@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfig(scope Construct, id *string, config GoogleDataformRepositoryReleaseConfigConfig) GoogleDataformRepositoryReleaseConfig
 ```
@@ -453,7 +453,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigCodeCompilationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 &googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfigCodeCompilationConfig {
 	AssertionSchema: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 &googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfigConfig {
 	Connection: interface{},
@@ -1138,13 +1138,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformr
 	Provisioners: *[]interface{},
 	GitCommitish: *string,
 	Name: *string,
-	CodeCompilationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigCodeCompilationConfig,
+	CodeCompilationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigCodeCompilationConfig,
 	CronSchedule: *string,
 	Id: *string,
 	Project: *string,
 	Region: *string,
 	Repository: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 &googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecords {
 
@@ -1402,7 +1402,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformr
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 &googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatus {
 
@@ -1415,7 +1415,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformr
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 &googledataformrepositoryreleaseconfig.GoogleDataformRepositoryReleaseConfigTimeouts {
 	Create: *string,
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutputReference
 ```
@@ -1958,7 +1958,7 @@ func InternalValue() GoogleDataformRepositoryReleaseConfigCodeCompilationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusList
 ```
@@ -2090,7 +2090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsErrorStatusOutputReference
 ```
@@ -2379,7 +2379,7 @@ func InternalValue() GoogleDataformRepositoryReleaseConfigRecentScheduledRelease
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsList
 ```
@@ -2511,7 +2511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsOutputReference
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() GoogleDataformRepositoryReleaseConfigRecentScheduledRelease
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryReleaseConfig.GoogleDataformRepositoryReleaseConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataformrepositoryreleaseconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryreleaseconfig"
 
 googledataformrepositoryreleaseconfig.NewGoogleDataformRepositoryReleaseConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryReleaseConfigTimeoutsOutputReference
 ```

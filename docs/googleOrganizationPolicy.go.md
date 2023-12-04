@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicy(scope Construct, id *string, config GoogleOrganizationPolicyConfig) GoogleOrganizationPolicy
 ```
@@ -465,7 +465,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.GoogleOrganizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.GoogleOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ googleorganizationpolicy.GoogleOrganizationPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.GoogleOrganizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ googleorganizationpolicy.GoogleOrganizationPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.GoogleOrganizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -952,7 +952,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyBooleanPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyBooleanPolicy {
 	Enforced: interface{},
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyConfig {
 	Connection: interface{},
@@ -998,11 +998,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizat
 	Provisioners: *[]interface{},
 	Constraint: *string,
 	OrgId: *string,
-	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyBooleanPolicy,
+	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyBooleanPolicy,
 	Id: *string,
-	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicy,
-	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyRestorePolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeouts,
+	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicy,
+	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyRestorePolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyTimeouts,
 	Version: *f64,
 }
 ```
@@ -1215,11 +1215,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyListPolicy {
-	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyAllow,
-	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyDeny,
+	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyAllow,
+	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyDeny,
 	InheritFromParent: interface{},
 	SuggestedValue: *string,
 }
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyListPolicyAllow {
 	All: interface{},
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyDeny.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyListPolicyDeny {
 	All: interface{},
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyRestorePolicy {
 	Default: interface{},
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 &googleorganizationpolicy.GoogleOrganizationPolicyTimeouts {
 	Create: *string,
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyBooleanPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyBooleanPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyBooleanPolicyOutputReference
 ```
@@ -1778,7 +1778,7 @@ func InternalValue() GoogleOrganizationPolicyBooleanPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyListPolicyAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyListPolicyAllowOutputReference
 ```
@@ -2085,7 +2085,7 @@ func InternalValue() GoogleOrganizationPolicyListPolicyAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyDenyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyListPolicyDenyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyListPolicyDenyOutputReference
 ```
@@ -2392,7 +2392,7 @@ func InternalValue() GoogleOrganizationPolicyListPolicyDeny
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyListPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyListPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyListPolicyOutputReference
 ```
@@ -2783,7 +2783,7 @@ func InternalValue() GoogleOrganizationPolicyListPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyRestorePolicyOutputReference
 ```
@@ -3054,7 +3054,7 @@ func InternalValue() GoogleOrganizationPolicyRestorePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleorganizationpolicy"
 
 googleorganizationpolicy.NewGoogleOrganizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationPolicyTimeoutsOutputReference
 ```
