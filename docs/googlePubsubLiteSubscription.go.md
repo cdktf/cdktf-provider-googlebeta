@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.NewGooglePubsubLiteSubscription(scope Construct, id *string, config GooglePubsubLiteSubscriptionConfig) GooglePubsubLiteSubscription
 ```
@@ -439,7 +439,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.GooglePubsubLiteSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.GooglePubsubLiteSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlepubsublitesubscription.GooglePubsubLiteSubscription_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.GooglePubsubLiteSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlepubsublitesubscription.GooglePubsubLiteSubscription_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.GooglePubsubLiteSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 &googlepubsublitesubscription.GooglePubsubLiteSubscriptionConfig {
 	Connection: interface{},
@@ -916,11 +916,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublit
 	Provisioners: *[]interface{},
 	Name: *string,
 	Topic: *string,
-	DeliveryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionDeliveryConfig,
+	DeliveryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionDeliveryConfig,
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionTimeouts,
 	Zone: *string,
 }
 ```
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionDeliveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 &googlepubsublitesubscription.GooglePubsubLiteSubscriptionDeliveryConfig {
 	DeliveryRequirement: *string,
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 &googlepubsublitesubscription.GooglePubsubLiteSubscriptionTimeouts {
 	Create: *string,
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionDeliveryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.NewGooglePubsubLiteSubscriptionDeliveryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteSubscriptionDeliveryConfigOutputReference
 ```
@@ -1500,7 +1500,7 @@ func InternalValue() GooglePubsubLiteSubscriptionDeliveryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitesubscription"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitesubscription"
 
 googlepubsublitesubscription.NewGooglePubsubLiteSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteSubscriptionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfig(scope Construct, id *string, config GoogleComputeRegionPerInstanceConfigConfig) GoogleComputeRegionPerInstanceConfig
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -962,7 +962,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigConfig {
 	Connection: interface{},
@@ -977,11 +977,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputere
 	Id: *string,
 	MinimalAction: *string,
 	MostDisruptiveAllowedAction: *string,
-	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedState,
+	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedState,
 	Project: *string,
 	Region: *string,
 	RemoveInstanceStateOnDestroy: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigTimeouts,
 }
 ```
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedState {
 	Disk: interface{},
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedStateDisk {
 	DeviceName: *string,
@@ -1409,12 +1409,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress,
 }
 ```
 
@@ -1475,7 +1475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress {
 	Address: *string,
@@ -1509,12 +1509,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress,
 }
 ```
 
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress {
 	Address: *string,
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 &googlecomputeregionperinstanceconfig.GoogleComputeRegionPerInstanceConfigTimeouts {
 	Create: *string,
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateDiskList
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference
 ```
@@ -2183,7 +2183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 ```
@@ -2461,7 +2461,7 @@ func InternalValue() GoogleComputeRegionPerInstanceConfigPreservedStateExternalI
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList
 ```
@@ -2604,7 +2604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference
 ```
@@ -2964,7 +2964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference
 ```
@@ -3242,7 +3242,7 @@ func InternalValue() GoogleComputeRegionPerInstanceConfigPreservedStateInternalI
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference
 ```
@@ -3745,7 +3745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigPreservedStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference
 ```
@@ -4149,7 +4149,7 @@ func InternalValue() GoogleComputeRegionPerInstanceConfigPreservedState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionperinstanceconfig"
 
 googlecomputeregionperinstanceconfig.NewGoogleComputeRegionPerInstanceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionPerInstanceConfigTimeoutsOutputReference
 ```
