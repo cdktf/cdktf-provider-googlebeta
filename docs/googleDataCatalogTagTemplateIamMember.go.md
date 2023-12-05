@@ -4,7 +4,7 @@
 
 ### GoogleDataCatalogTagTemplateIamMember <a name="GoogleDataCatalogTagTemplateIamMember" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMember.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleDataCatalogTagTempla
 
 The id of the existing GoogleDataCatalogTagTemplateIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#expression GoogleDataCatalogTagTemplateIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#title GoogleDataCatalogTagTemplateIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#description GoogleDataCatalogTagTemplateIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#expression GoogleDataCatalogTagTemplateIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#title GoogleDataCatalogTagTemplateIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#description GoogleDataCatalogTagTemplateIamMember#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#expression GoogleDataCatalogTagTemplateIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#expression GoogleDataCatalogTagTemplateIamMember#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#title GoogleDataCatalogTagTemplateIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#title GoogleDataCatalogTagTemplateIamMember#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#description GoogleDataCatalogTagTemplateIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#description GoogleDataCatalogTagTemplateIamMember#description}.
 
 ---
 
@@ -957,13 +957,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatac
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#member GoogleDataCatalogTagTemplateIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#role GoogleDataCatalogTagTemplateIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.tagTemplate">TagTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#tag_template GoogleDataCatalogTagTemplateIamMember#tag_template}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#member GoogleDataCatalogTagTemplateIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#role GoogleDataCatalogTagTemplateIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.tagTemplate">TagTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#tag_template GoogleDataCatalogTagTemplateIamMember#tag_template}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberCondition">GoogleDataCatalogTagTemplateIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#id GoogleDataCatalogTagTemplateIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#project GoogleDataCatalogTagTemplateIamMember#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#region GoogleDataCatalogTagTemplateIamMember#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#id GoogleDataCatalogTagTemplateIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#project GoogleDataCatalogTagTemplateIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamMember.GoogleDataCatalogTagTemplateIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#region GoogleDataCatalogTagTemplateIamMember#region}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#member GoogleDataCatalogTagTemplateIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#member GoogleDataCatalogTagTemplateIamMember#member}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#role GoogleDataCatalogTagTemplateIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#role GoogleDataCatalogTagTemplateIamMember#role}.
 
 ---
 
@@ -1069,7 +1069,7 @@ TagTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#tag_template GoogleDataCatalogTagTemplateIamMember#tag_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#tag_template GoogleDataCatalogTagTemplateIamMember#tag_template}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Condition GoogleDataCatalogTagTemplateIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#condition GoogleDataCatalogTagTemplateIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#condition GoogleDataCatalogTagTemplateIamMember#condition}
 
 ---
 
@@ -1095,7 +1095,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#id GoogleDataCatalogTagTemplateIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#id GoogleDataCatalogTagTemplateIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#project GoogleDataCatalogTagTemplateIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#project GoogleDataCatalogTagTemplateIamMember#project}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_data_catalog_tag_template_iam_member#region GoogleDataCatalogTagTemplateIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_tag_template_iam_member#region GoogleDataCatalogTagTemplateIamMember#region}.
 
 ---
 

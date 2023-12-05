@@ -4,7 +4,7 @@
 
 ### GoogleApiGatewayGatewayIamBinding <a name="GoogleApiGatewayGatewayIamBinding" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding google_api_gateway_gateway_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding google_api_gateway_gateway_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleApiGatewayGatewayIam
 
 The id of the existing GoogleApiGatewayGatewayIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new GoogleApiGatewayGatewayIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}.
 
 ---
 
@@ -957,13 +957,13 @@ new GoogleApiGatewayGatewayIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.gateway">Gateway</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.gateway">Gateway</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ public string Gateway { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}.
 
 ---
 
@@ -1083,7 +1083,7 @@ public GoogleApiGatewayGatewayIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#condition GoogleApiGatewayGatewayIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#condition GoogleApiGatewayGatewayIamBinding#condition}
 
 ---
 
@@ -1095,7 +1095,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}.
 
 ---
 
@@ -1122,7 +1122,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}.
 
 ---
 

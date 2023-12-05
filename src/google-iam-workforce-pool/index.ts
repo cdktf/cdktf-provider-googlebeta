@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,24 +15,24 @@ export interface GoogleIamWorkforcePoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * A user-specified description of the pool. Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#description GoogleIamWorkforcePool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#description GoogleIamWorkforcePool#description}
   */
   readonly description?: string;
   /**
   * Whether the pool is disabled. You cannot use a disabled pool to exchange tokens,
   * or use existing tokens to access resources. If the pool is re-enabled, existing tokens grant access again.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#disabled GoogleIamWorkforcePool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#disabled GoogleIamWorkforcePool#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * A user-specified display name of the pool in Google Cloud Console. Cannot exceed 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#display_name GoogleIamWorkforcePool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#display_name GoogleIamWorkforcePool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,13 +41,13 @@ export interface GoogleIamWorkforcePoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * The location for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#location GoogleIamWorkforcePool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#location GoogleIamWorkforcePool#location}
   */
   readonly location: string;
   /**
   * Immutable. The resource name of the parent. Format: 'organizations/{org-id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#parent GoogleIamWorkforcePool#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#parent GoogleIamWorkforcePool#parent}
   */
   readonly parent: string;
   /**
@@ -57,7 +57,7 @@ export interface GoogleIamWorkforcePoolConfig extends cdktf.TerraformMetaArgumen
   * If 'sessionDuration' is not configured, minted credentials have a default duration of one hour (3600s).
   * A duration in seconds with up to nine fractional digits, ending with ''s''. Example: "'3.5s'".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#session_duration GoogleIamWorkforcePool#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#session_duration GoogleIamWorkforcePool#session_duration}
   */
   readonly sessionDuration?: string;
   /**
@@ -65,27 +65,230 @@ export interface GoogleIamWorkforcePoolConfig extends cdktf.TerraformMetaArgumen
   * digits, or hyphens. It must start with a letter, and cannot have a trailing hyphen.
   * The prefix 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#workforce_pool_id GoogleIamWorkforcePool#workforce_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#workforce_pool_id GoogleIamWorkforcePool#workforce_pool_id}
   */
   readonly workforcePoolId: string;
   /**
+  * access_restrictions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#access_restrictions GoogleIamWorkforcePool#access_restrictions}
+  */
+  readonly accessRestrictions?: GoogleIamWorkforcePoolAccessRestrictions;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#timeouts GoogleIamWorkforcePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#timeouts GoogleIamWorkforcePool#timeouts}
   */
   readonly timeouts?: GoogleIamWorkforcePoolTimeouts;
 }
+export interface GoogleIamWorkforcePoolAccessRestrictionsAllowedServices {
+  /**
+  * Domain name of the service.
+  * Example: console.cloud.google
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#domain GoogleIamWorkforcePool#domain}
+  */
+  readonly domain?: string;
+}
+
+export function googleIamWorkforcePoolAccessRestrictionsAllowedServicesToTerraform(struct?: GoogleIamWorkforcePoolAccessRestrictionsAllowedServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+export class GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolAccessRestrictionsAllowedServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolAccessRestrictionsAllowedServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+    }
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+}
+
+export class GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleIamWorkforcePoolAccessRestrictionsAllowedServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference {
+    return new GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleIamWorkforcePoolAccessRestrictions {
+  /**
+  * Disable programmatic sign-in by disabling token issue via the Security Token API endpoint.
+  * See [Security Token Service API](https://cloud.google.com/iam/docs/reference/sts/rest).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#disable_programmatic_signin GoogleIamWorkforcePool#disable_programmatic_signin}
+  */
+  readonly disableProgrammaticSignin?: boolean | cdktf.IResolvable;
+  /**
+  * allowed_services block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#allowed_services GoogleIamWorkforcePool#allowed_services}
+  */
+  readonly allowedServices?: GoogleIamWorkforcePoolAccessRestrictionsAllowedServices[] | cdktf.IResolvable;
+}
+
+export function googleIamWorkforcePoolAccessRestrictionsToTerraform(struct?: GoogleIamWorkforcePoolAccessRestrictionsOutputReference | GoogleIamWorkforcePoolAccessRestrictions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disable_programmatic_signin: cdktf.booleanToTerraform(struct!.disableProgrammaticSignin),
+    allowed_services: cdktf.listMapper(googleIamWorkforcePoolAccessRestrictionsAllowedServicesToTerraform, true)(struct!.allowedServices),
+  }
+}
+
+export class GoogleIamWorkforcePoolAccessRestrictionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolAccessRestrictions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disableProgrammaticSignin !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableProgrammaticSignin = this._disableProgrammaticSignin;
+    }
+    if (this._allowedServices?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedServices = this._allowedServices?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolAccessRestrictions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._disableProgrammaticSignin = undefined;
+      this._allowedServices.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._disableProgrammaticSignin = value.disableProgrammaticSignin;
+      this._allowedServices.internalValue = value.allowedServices;
+    }
+  }
+
+  // disable_programmatic_signin - computed: false, optional: true, required: false
+  private _disableProgrammaticSignin?: boolean | cdktf.IResolvable; 
+  public get disableProgrammaticSignin() {
+    return this.getBooleanAttribute('disable_programmatic_signin');
+  }
+  public set disableProgrammaticSignin(value: boolean | cdktf.IResolvable) {
+    this._disableProgrammaticSignin = value;
+  }
+  public resetDisableProgrammaticSignin() {
+    this._disableProgrammaticSignin = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableProgrammaticSigninInput() {
+    return this._disableProgrammaticSignin;
+  }
+
+  // allowed_services - computed: false, optional: true, required: false
+  private _allowedServices = new GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList(this, "allowed_services", false);
+  public get allowedServices() {
+    return this._allowedServices;
+  }
+  public putAllowedServices(value: GoogleIamWorkforcePoolAccessRestrictionsAllowedServices[] | cdktf.IResolvable) {
+    this._allowedServices.internalValue = value;
+  }
+  public resetAllowedServices() {
+    this._allowedServices.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedServicesInput() {
+    return this._allowedServices.internalValue;
+  }
+}
 export interface GoogleIamWorkforcePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}
   */
   readonly update?: string;
 }
@@ -206,7 +409,7 @@ export class GoogleIamWorkforcePoolTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}
 */
 export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
 
@@ -222,7 +425,7 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIamWorkforcePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIamWorkforcePool to import
-  * @param importFromId The id of the existing GoogleIamWorkforcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIamWorkforcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIamWorkforcePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -234,7 +437,7 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +448,7 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_iam_workforce_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -264,6 +467,7 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
     this._parent = config.parent;
     this._sessionDuration = config.sessionDuration;
     this._workforcePoolId = config.workforcePoolId;
+    this._accessRestrictions.internalValue = config.accessRestrictions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -400,6 +604,22 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
     return this._workforcePoolId;
   }
 
+  // access_restrictions - computed: false, optional: true, required: false
+  private _accessRestrictions = new GoogleIamWorkforcePoolAccessRestrictionsOutputReference(this, "access_restrictions");
+  public get accessRestrictions() {
+    return this._accessRestrictions;
+  }
+  public putAccessRestrictions(value: GoogleIamWorkforcePoolAccessRestrictions) {
+    this._accessRestrictions.internalValue = value;
+  }
+  public resetAccessRestrictions() {
+    this._accessRestrictions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessRestrictionsInput() {
+    return this._accessRestrictions.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleIamWorkforcePoolTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -430,6 +650,7 @@ export class GoogleIamWorkforcePool extends cdktf.TerraformResource {
       parent: cdktf.stringToTerraform(this._parent),
       session_duration: cdktf.stringToTerraform(this._sessionDuration),
       workforce_pool_id: cdktf.stringToTerraform(this._workforcePoolId),
+      access_restrictions: googleIamWorkforcePoolAccessRestrictionsToTerraform(this._accessRestrictions.internalValue),
       timeouts: googleIamWorkforcePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

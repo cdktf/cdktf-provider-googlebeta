@@ -366,6 +366,9 @@ export * as googleDatabaseMigrationServicePrivateConnection from './google-datab
 export * as googleDataflowFlexTemplateJob from './google-dataflow-flex-template-job';
 export * as googleDataflowJob from './google-dataflow-job';
 export * as googleDataformRepository from './google-dataform-repository';
+export * as googleDataformRepositoryIamBinding from './google-dataform-repository-iam-binding';
+export * as googleDataformRepositoryIamMember from './google-dataform-repository-iam-member';
+export * as googleDataformRepositoryIamPolicy from './google-dataform-repository-iam-policy';
 export * as googleDataformRepositoryReleaseConfig from './google-dataform-repository-release-config';
 export * as googleDataformRepositoryWorkflowConfig from './google-dataform-repository-workflow-config';
 export * as googleDataplexAsset from './google-dataplex-asset';
@@ -609,6 +612,7 @@ export * as googleLoggingProjectExclusion from './google-logging-project-exclusi
 export * as googleLoggingProjectSink from './google-logging-project-sink';
 export * as googleLookerInstance from './google-looker-instance';
 export * as googleMemcacheInstance from './google-memcache-instance';
+export * as googleMigrationCenterGroup from './google-migration-center-group';
 export * as googleMlEngineModel from './google-ml-engine-model';
 export * as googleMonitoringAlertPolicy from './google-monitoring-alert-policy';
 export * as googleMonitoringCustomService from './google-monitoring-custom-service';
@@ -620,6 +624,7 @@ export * as googleMonitoringNotificationChannel from './google-monitoring-notifi
 export * as googleMonitoringService from './google-monitoring-service';
 export * as googleMonitoringSlo from './google-monitoring-slo';
 export * as googleMonitoringUptimeCheckConfig from './google-monitoring-uptime-check-config';
+export * as googleNetappStoragePool from './google-netapp-storage-pool';
 export * as googleNetworkConnectivityHub from './google-network-connectivity-hub';
 export * as googleNetworkConnectivityPolicyBasedRoute from './google-network-connectivity-policy-based-route';
 export * as googleNetworkConnectivityServiceConnectionPolicy from './google-network-connectivity-service-connection-policy';
@@ -793,6 +798,9 @@ export * as googleTpuNode from './google-tpu-node';
 export * as googleTpuV2Vm from './google-tpu-v2-vm';
 export * as googleVertexAiDataset from './google-vertex-ai-dataset';
 export * as googleVertexAiEndpoint from './google-vertex-ai-endpoint';
+export * as googleVertexAiEndpointIamBinding from './google-vertex-ai-endpoint-iam-binding';
+export * as googleVertexAiEndpointIamMember from './google-vertex-ai-endpoint-iam-member';
+export * as googleVertexAiEndpointIamPolicy from './google-vertex-ai-endpoint-iam-policy';
 export * as googleVertexAiFeaturestore from './google-vertex-ai-featurestore';
 export * as googleVertexAiFeaturestoreEntitytype from './google-vertex-ai-featurestore-entitytype';
 export * as googleVertexAiFeaturestoreEntitytypeFeature from './google-vertex-ai-featurestore-entitytype-feature';
@@ -808,6 +816,7 @@ export * as googleVertexAiMetadataStore from './google-vertex-ai-metadata-store'
 export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
 export * as googleVmwareengineCluster from './google-vmwareengine-cluster';
 export * as googleVmwareengineNetwork from './google-vmwareengine-network';
+export * as googleVmwareengineNetworkPeering from './google-vmwareengine-network-peering';
 export * as googleVmwareenginePrivateCloud from './google-vmwareengine-private-cloud';
 export * as googleVpcAccessConnector from './google-vpc-access-connector';
 export * as googleWorkflowsWorkflow from './google-workflows-workflow';
@@ -936,6 +945,7 @@ export * as dataGoogleDataCatalogPolicyTagIamPolicy from './data-google-data-cat
 export * as dataGoogleDataCatalogTagTemplateIamPolicy from './data-google-data-catalog-tag-template-iam-policy';
 export * as dataGoogleDataCatalogTaxonomyIamPolicy from './data-google-data-catalog-taxonomy-iam-policy';
 export * as dataGoogleDataFusionInstanceIamPolicy from './data-google-data-fusion-instance-iam-policy';
+export * as dataGoogleDataformRepositoryIamPolicy from './data-google-dataform-repository-iam-policy';
 export * as dataGoogleDataplexAssetIamPolicy from './data-google-dataplex-asset-iam-policy';
 export * as dataGoogleDataplexDatascanIamPolicy from './data-google-dataplex-datascan-iam-policy';
 export * as dataGoogleDataplexLakeIamPolicy from './data-google-dataplex-lake-iam-policy';
@@ -1070,11 +1080,13 @@ export * as dataGoogleTagsTagValueIamPolicy from './data-google-tags-tag-value-i
 export * as dataGoogleTpuTensorflowVersions from './data-google-tpu-tensorflow-versions';
 export * as dataGoogleTpuV2AcceleratorTypes from './data-google-tpu-v2-accelerator-types';
 export * as dataGoogleTpuV2RuntimeVersions from './data-google-tpu-v2-runtime-versions';
+export * as dataGoogleVertexAiEndpointIamPolicy from './data-google-vertex-ai-endpoint-iam-policy';
 export * as dataGoogleVertexAiFeaturestoreEntitytypeIamPolicy from './data-google-vertex-ai-featurestore-entitytype-iam-policy';
 export * as dataGoogleVertexAiFeaturestoreIamPolicy from './data-google-vertex-ai-featurestore-iam-policy';
 export * as dataGoogleVertexAiIndex from './data-google-vertex-ai-index';
 export * as dataGoogleVmwareengineCluster from './data-google-vmwareengine-cluster';
 export * as dataGoogleVmwareengineNetwork from './data-google-vmwareengine-network';
+export * as dataGoogleVmwareengineNetworkPeering from './data-google-vmwareengine-network-peering';
 export * as dataGoogleVmwareenginePrivateCloud from './data-google-vmwareengine-private-cloud';
 export * as dataGoogleVpcAccessConnector from './data-google-vpc-access-connector';
 export * as dataGoogleWorkstationsWorkstationConfigIamPolicy from './data-google-workstations-workstation-config-iam-policy';

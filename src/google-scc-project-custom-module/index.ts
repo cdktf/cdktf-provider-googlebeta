@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,36 +19,36 @@ export interface GoogleSccProjectCustomModuleConfig extends cdktf.TerraformMetaA
   * 128 characters, start with a lowercase letter, and contain alphanumeric
   * characters or underscores only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#display_name GoogleSccProjectCustomModule#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#display_name GoogleSccProjectCustomModule#display_name}
   */
   readonly displayName: string;
   /**
   * The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#enablement_state GoogleSccProjectCustomModule#enablement_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#enablement_state GoogleSccProjectCustomModule#enablement_state}
   */
   readonly enablementState: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#id GoogleSccProjectCustomModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#id GoogleSccProjectCustomModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#project GoogleSccProjectCustomModule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#project GoogleSccProjectCustomModule#project}
   */
   readonly project?: string;
   /**
   * custom_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#custom_config GoogleSccProjectCustomModule#custom_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#custom_config GoogleSccProjectCustomModule#custom_config}
   */
   readonly customConfig: GoogleSccProjectCustomModuleCustomConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#timeouts GoogleSccProjectCustomModule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#timeouts GoogleSccProjectCustomModule#timeouts}
   */
   readonly timeouts?: GoogleSccProjectCustomModuleTimeouts;
 }
@@ -57,27 +57,27 @@ export interface GoogleSccProjectCustomModuleCustomConfigCustomOutputPropertiesV
   * Description of the expression. This is a longer text which describes the
   * expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#expression GoogleSccProjectCustomModule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#expression GoogleSccProjectCustomModule#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
   * file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#location GoogleSccProjectCustomModule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#location GoogleSccProjectCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
   * be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#title GoogleSccProjectCustomModule#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#title GoogleSccProjectCustomModule#title}
   */
   readonly title?: string;
 }
@@ -210,13 +210,13 @@ export interface GoogleSccProjectCustomModuleCustomConfigCustomOutputProperties 
   /**
   * Name of the property for the custom output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#name GoogleSccProjectCustomModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#name GoogleSccProjectCustomModule#name}
   */
   readonly name?: string;
   /**
   * value_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#value_expression GoogleSccProjectCustomModule#value_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#value_expression GoogleSccProjectCustomModule#value_expression}
   */
   readonly valueExpression?: GoogleSccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression;
 }
@@ -338,7 +338,7 @@ export interface GoogleSccProjectCustomModuleCustomConfigCustomOutput {
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#properties GoogleSccProjectCustomModule#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#properties GoogleSccProjectCustomModule#properties}
   */
   readonly properties?: GoogleSccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable;
 }
@@ -406,27 +406,27 @@ export interface GoogleSccProjectCustomModuleCustomConfigPredicate {
   * Description of the expression. This is a longer text which describes the
   * expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#expression GoogleSccProjectCustomModule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#expression GoogleSccProjectCustomModule#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a
   * file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#location GoogleSccProjectCustomModule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#location GoogleSccProjectCustomModule#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose. This can
   * be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#title GoogleSccProjectCustomModule#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#title GoogleSccProjectCustomModule#title}
   */
   readonly title?: string;
 }
@@ -559,7 +559,7 @@ export interface GoogleSccProjectCustomModuleCustomConfigResourceSelector {
   /**
   * The resource types to run the detector on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#resource_types GoogleSccProjectCustomModule#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#resource_types GoogleSccProjectCustomModule#resource_types}
   */
   readonly resourceTypes: string[];
 }
@@ -625,7 +625,7 @@ export interface GoogleSccProjectCustomModuleCustomConfig {
   * module detects. This explanation is returned with each finding instance to
   * help investigators understand the detected issue. The text must be enclosed in quotation marks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#description GoogleSccProjectCustomModule#description}
   */
   readonly description?: string;
   /**
@@ -633,31 +633,31 @@ export interface GoogleSccProjectCustomModuleCustomConfig {
   * the detected issue. This explanation is returned with each finding generated by
   * this module in the nextSteps property of the finding JSON.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#recommendation GoogleSccProjectCustomModule#recommendation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#recommendation GoogleSccProjectCustomModule#recommendation}
   */
   readonly recommendation: string;
   /**
   * The severity to assign to findings generated by the module. Possible values: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#severity GoogleSccProjectCustomModule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#severity GoogleSccProjectCustomModule#severity}
   */
   readonly severity: string;
   /**
   * custom_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#custom_output GoogleSccProjectCustomModule#custom_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#custom_output GoogleSccProjectCustomModule#custom_output}
   */
   readonly customOutput?: GoogleSccProjectCustomModuleCustomConfigCustomOutput;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#predicate GoogleSccProjectCustomModule#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#predicate GoogleSccProjectCustomModule#predicate}
   */
   readonly predicate: GoogleSccProjectCustomModuleCustomConfigPredicate;
   /**
   * resource_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#resource_selector GoogleSccProjectCustomModule#resource_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#resource_selector GoogleSccProjectCustomModule#resource_selector}
   */
   readonly resourceSelector: GoogleSccProjectCustomModuleCustomConfigResourceSelector;
 }
@@ -825,15 +825,15 @@ export class GoogleSccProjectCustomModuleCustomConfigOutputReference extends cdk
 }
 export interface GoogleSccProjectCustomModuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#create GoogleSccProjectCustomModule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#create GoogleSccProjectCustomModule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#delete GoogleSccProjectCustomModule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#delete GoogleSccProjectCustomModule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#update GoogleSccProjectCustomModule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#update GoogleSccProjectCustomModule#update}
   */
   readonly update?: string;
 }
@@ -954,7 +954,7 @@ export class GoogleSccProjectCustomModuleTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module}
 */
 export class GoogleSccProjectCustomModule extends cdktf.TerraformResource {
 
@@ -970,7 +970,7 @@ export class GoogleSccProjectCustomModule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSccProjectCustomModule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccProjectCustomModule to import
-  * @param importFromId The id of the existing GoogleSccProjectCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccProjectCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccProjectCustomModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -982,7 +982,7 @@ export class GoogleSccProjectCustomModule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_scc_project_custom_module google_scc_project_custom_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -993,7 +993,7 @@ export class GoogleSccProjectCustomModule extends cdktf.TerraformResource {
       terraformResourceType: 'google_scc_project_custom_module',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
