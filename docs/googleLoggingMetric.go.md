@@ -4,12 +4,12 @@
 
 ### GoogleLoggingMetric <a name="GoogleLoggingMetric" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric google_logging_metric}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric google_logging_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetric(scope Construct, id *string, config GoogleLoggingMetricConfig) GoogleLoggingMetric
 ```
@@ -480,7 +480,7 @@ func ResetValueExtractor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.GoogleLoggingMetric_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.GoogleLoggingMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ googleloggingmetric.GoogleLoggingMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.GoogleLoggingMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ googleloggingmetric.GoogleLoggingMetric_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.GoogleLoggingMetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +569,7 @@ The construct id used in the generated config for the GoogleLoggingMetric to imp
 
 The id of the existing GoogleLoggingMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,12 +1033,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricBucketOptions {
-	ExplicitBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets,
-	ExponentialBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets,
-	LinearBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets,
+	ExplicitBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets,
+	ExponentialBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets,
+	LinearBuckets: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets,
 }
 ```
 
@@ -1062,7 +1062,7 @@ ExplicitBuckets GoogleLoggingMetricBucketOptionsExplicitBuckets
 
 explicit_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#explicit_buckets GoogleLoggingMetric#explicit_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#explicit_buckets GoogleLoggingMetric#explicit_buckets}
 
 ---
 
@@ -1076,7 +1076,7 @@ ExponentialBuckets GoogleLoggingMetricBucketOptionsExponentialBuckets
 
 exponential_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#exponential_buckets GoogleLoggingMetric#exponential_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#exponential_buckets GoogleLoggingMetric#exponential_buckets}
 
 ---
 
@@ -1090,7 +1090,7 @@ LinearBuckets GoogleLoggingMetricBucketOptionsLinearBuckets
 
 linear_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#linear_buckets GoogleLoggingMetric#linear_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#linear_buckets GoogleLoggingMetric#linear_buckets}
 
 ---
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricBucketOptionsExplicitBuckets {
 	Bounds: *[]*f64,
@@ -1124,7 +1124,7 @@ Bounds *[]*f64
 
 The values must be monotonically increasing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#bounds GoogleLoggingMetric#bounds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#bounds GoogleLoggingMetric#bounds}
 
 ---
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricBucketOptionsExponentialBuckets {
 	GrowthFactor: *f64,
@@ -1162,7 +1162,7 @@ GrowthFactor *f64
 
 Must be greater than 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#growth_factor GoogleLoggingMetric#growth_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#growth_factor GoogleLoggingMetric#growth_factor}
 
 ---
 
@@ -1176,7 +1176,7 @@ NumFiniteBuckets *f64
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
 
 ---
 
@@ -1190,7 +1190,7 @@ Scale *f64
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#scale GoogleLoggingMetric#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#scale GoogleLoggingMetric#scale}
 
 ---
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricBucketOptionsLinearBuckets {
 	NumFiniteBuckets: *f64,
@@ -1228,7 +1228,7 @@ NumFiniteBuckets *f64
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
 
 ---
 
@@ -1242,7 +1242,7 @@ Offset *f64
 
 Lower bound of the first bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#offset GoogleLoggingMetric#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#offset GoogleLoggingMetric#offset}
 
 ---
 
@@ -1256,7 +1256,7 @@ Width *f64
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#width GoogleLoggingMetric#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#width GoogleLoggingMetric#width}
 
 ---
 
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricConfig {
 	Connection: interface{},
@@ -1278,14 +1278,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggi
 	Filter: *string,
 	Name: *string,
 	BucketName: *string,
-	BucketOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricBucketOptions,
+	BucketOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricBucketOptions,
 	Description: *string,
 	Disabled: interface{},
 	Id: *string,
 	LabelExtractors: *map[string]*string,
-	MetricDescriptor: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor,
+	MetricDescriptor: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleLoggingMetric.GoogleLoggingMetricTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingMetric.GoogleLoggingMetricTimeouts,
 	ValueExtractor: *string,
 }
 ```
@@ -1307,10 +1307,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggi
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.bucketOptions">BucketOptions</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions">GoogleLoggingMetricBucketOptions</a></code> | bucket_options block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.description">Description</a></code> | <code>*string</code> | A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | If set to True, then this metric is disabled and it does not generate any points. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.labelExtractors">LabelExtractors</a></code> | <code>*map[string]*string</code> | A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.metricDescriptor">MetricDescriptor</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor">GoogleLoggingMetricMetricDescriptor</a></code> | metric_descriptor block. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts">GoogleLoggingMetricTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.valueExtractor">ValueExtractor</a></code> | <code>*string</code> | A valueExtractor is required when using a distribution logs-based metric to extract the values to record from a log entry. |
 
@@ -1396,7 +1396,7 @@ Filter *string
 
 An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced-filters) which is used to match log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#filter GoogleLoggingMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#filter GoogleLoggingMetric#filter}
 
 ---
 
@@ -1416,7 +1416,7 @@ characters A-Z, a-z, 0-9, and the special characters _-.,+!*',()%/. The forward-
 character (/) denotes a hierarchy of name pieces, and it cannot be the first character
 of the name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#name GoogleLoggingMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#name GoogleLoggingMetric#name}
 
 ---
 
@@ -1433,7 +1433,7 @@ The resource name of the Log Bucket that owns the Log Metric.
 Only Log Buckets in projects
 are supported. The bucket has to be in the same project as the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
 
 ---
 
@@ -1447,7 +1447,7 @@ BucketOptions GoogleLoggingMetricBucketOptions
 
 bucket_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
 
 ---
 
@@ -1461,7 +1461,7 @@ Description *string
 
 A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
 
 ---
 
@@ -1475,7 +1475,7 @@ Disabled interface{}
 
 If set to True, then this metric is disabled and it does not generate any points.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#disabled GoogleLoggingMetric#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#disabled GoogleLoggingMetric#disabled}
 
 ---
 
@@ -1487,7 +1487,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1508,7 +1508,7 @@ Each label key specified in the LabelDescriptor must
 have an associated extractor expression in this map. The syntax of the extractor expression is
 the same as for the valueExtractor field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
 
 ---
 
@@ -1522,7 +1522,7 @@ MetricDescriptor GoogleLoggingMetricMetricDescriptor
 
 metric_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
 
 ---
 
@@ -1534,7 +1534,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}.
 
 ---
 
@@ -1548,7 +1548,7 @@ Timeouts GoogleLoggingMetricTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#timeouts GoogleLoggingMetric#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#timeouts GoogleLoggingMetric#timeouts}
 
 ---
 
@@ -1569,7 +1569,7 @@ the value is to be extracted. 2. regex - A regular expression using the Google R
 log entry field. The value of the field is converted to a string before applying the regex. It is an
 error to specify a regex that does not include exactly one capture group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#value_extractor GoogleLoggingMetric#value_extractor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#value_extractor GoogleLoggingMetric#value_extractor}
 
 ---
 
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricMetricDescriptor {
 	MetricKind: *string,
@@ -1614,7 +1614,7 @@ Whether the metric records instantaneous values, changes to a value, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to DELTA. Possible values: ["DELTA", "GAUGE", "CUMULATIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#metric_kind GoogleLoggingMetric#metric_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#metric_kind GoogleLoggingMetric#metric_kind}
 
 ---
 
@@ -1631,7 +1631,7 @@ Whether the measurement is an integer, a floating-point number, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to INT64. Possible values: ["BOOL", "INT64", "DOUBLE", "STRING", "DISTRIBUTION", "MONEY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
 
 ---
 
@@ -1649,7 +1649,7 @@ Use sentence case
 without an ending period, for example "Request count". This field is optional but it is
 recommended to be set for any metrics associated with user-visible concepts, such as Quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#display_name GoogleLoggingMetric#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#display_name GoogleLoggingMetric#display_name}
 
 ---
 
@@ -1663,7 +1663,7 @@ Labels interface{}
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
 
 ---
 
@@ -1681,7 +1681,7 @@ It is only applicable if the valueType is
 'INT64', 'DOUBLE', or 'DISTRIBUTION'. The supported units are a subset of
 [The Unified Code for Units of Measure](http://unitsofmeasure.org/ucum.html) standard
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
 
 ---
 
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricMetricDescriptorLabels {
 	Key: *string,
@@ -1719,7 +1719,7 @@ Key *string
 
 The label key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#key GoogleLoggingMetric#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#key GoogleLoggingMetric#key}
 
 ---
 
@@ -1733,7 +1733,7 @@ Description *string
 
 A human-readable description for the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
 
 ---
 
@@ -1747,7 +1747,7 @@ ValueType *string
 
 The type of data that can be assigned to the label. Default value: "STRING" Possible values: ["BOOL", "INT64", "STRING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
 
 ---
 
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 &googleloggingmetric.GoogleLoggingMetricTimeouts {
 	Create: *string,
@@ -1769,9 +1769,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}. |
 
 ---
 
@@ -1783,7 +1783,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}.
 
 ---
 
@@ -1795,7 +1795,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}.
 
 ---
 
@@ -1807,7 +1807,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}.
 
 ---
 
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference
 ```
@@ -2089,7 +2089,7 @@ func InternalValue() GoogleLoggingMetricBucketOptionsExplicitBuckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference
 ```
@@ -2404,7 +2404,7 @@ func InternalValue() GoogleLoggingMetricBucketOptionsExponentialBuckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricBucketOptionsLinearBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference
 ```
@@ -2719,7 +2719,7 @@ func InternalValue() GoogleLoggingMetricBucketOptionsLinearBuckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricBucketOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricBucketOptionsOutputReference
 ```
@@ -3094,7 +3094,7 @@ func InternalValue() GoogleLoggingMetricBucketOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricMetricDescriptorLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleLoggingMetricMetricDescriptorLabelsList
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricMetricDescriptorLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleLoggingMetricMetricDescriptorLabelsOutputReference
 ```
@@ -3584,7 +3584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricMetricDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricMetricDescriptorOutputReference
 ```
@@ -3977,7 +3977,7 @@ func InternalValue() GoogleLoggingMetricMetricDescriptor
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleloggingmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingmetric"
 
 googleloggingmetric.NewGoogleLoggingMetricTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingMetricTimeoutsOutputReference
 ```

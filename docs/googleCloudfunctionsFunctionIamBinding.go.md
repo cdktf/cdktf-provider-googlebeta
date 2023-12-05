@@ -4,12 +4,12 @@
 
 ### GoogleCloudfunctionsFunctionIamBinding <a name="GoogleCloudfunctionsFunctionIamBinding" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding google_cloudfunctions_function_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding google_cloudfunctions_function_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.NewGoogleCloudfunctionsFunctionIamBinding(scope Construct, id *string, config GoogleCloudfunctionsFunctionIamBindingConfig) GoogleCloudfunctionsFunctionIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleCloudfunctionsFuncti
 
 The id of the existing GoogleCloudfunctionsFunctionIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 &googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBindingCondition {
 	Expression: *string,
@@ -879,9 +879,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#expression GoogleCloudfunctionsFunctionIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#title GoogleCloudfunctionsFunctionIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#description GoogleCloudfunctionsFunctionIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#expression GoogleCloudfunctionsFunctionIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#title GoogleCloudfunctionsFunctionIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#description GoogleCloudfunctionsFunctionIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#expression GoogleCloudfunctionsFunctionIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#expression GoogleCloudfunctionsFunctionIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#title GoogleCloudfunctionsFunctionIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#title GoogleCloudfunctionsFunctionIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#description GoogleCloudfunctionsFunctionIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#description GoogleCloudfunctionsFunctionIamBinding#description}.
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 &googlecloudfunctionsfunctioniambinding.GoogleCloudfunctionsFunctionIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	CloudFunction: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -957,13 +957,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.cloudFunction">CloudFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#cloud_function GoogleCloudfunctionsFunctionIamBinding#cloud_function}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#members GoogleCloudfunctionsFunctionIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#role GoogleCloudfunctionsFunctionIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.cloudFunction">CloudFunction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#cloud_function GoogleCloudfunctionsFunctionIamBinding#cloud_function}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#members GoogleCloudfunctionsFunctionIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#role GoogleCloudfunctionsFunctionIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingCondition">GoogleCloudfunctionsFunctionIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#id GoogleCloudfunctionsFunctionIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#project GoogleCloudfunctionsFunctionIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#region GoogleCloudfunctionsFunctionIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#id GoogleCloudfunctionsFunctionIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#project GoogleCloudfunctionsFunctionIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#region GoogleCloudfunctionsFunctionIamBinding#region}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ CloudFunction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#cloud_function GoogleCloudfunctionsFunctionIamBinding#cloud_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#cloud_function GoogleCloudfunctionsFunctionIamBinding#cloud_function}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#members GoogleCloudfunctionsFunctionIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#members GoogleCloudfunctionsFunctionIamBinding#members}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#role GoogleCloudfunctionsFunctionIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#role GoogleCloudfunctionsFunctionIamBinding#role}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Condition GoogleCloudfunctionsFunctionIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#condition GoogleCloudfunctionsFunctionIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#condition GoogleCloudfunctionsFunctionIamBinding#condition}
 
 ---
 
@@ -1095,7 +1095,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#id GoogleCloudfunctionsFunctionIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#id GoogleCloudfunctionsFunctionIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#project GoogleCloudfunctionsFunctionIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#project GoogleCloudfunctionsFunctionIamBinding#project}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_binding#region GoogleCloudfunctionsFunctionIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_binding#region GoogleCloudfunctionsFunctionIamBinding#region}.
 
 ---
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamBinding.GoogleCloudfunctionsFunctionIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctionsfunctioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniambinding"
 
 googlecloudfunctionsfunctioniambinding.NewGoogleCloudfunctionsFunctionIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctionsFunctionIamBindingConditionOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### GoogleBinaryAuthorizationAttestorIamPolicy <a name="GoogleBinaryAuthorizationAttestorIamPolicy" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 googlebinaryauthorizationattestoriampolicy.NewGoogleBinaryAuthorizationAttestorIamPolicy(scope Construct, id *string, config GoogleBinaryAuthorizationAttestorIamPolicyConfig) GoogleBinaryAuthorizationAttestorIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GoogleBinaryAuthorizationA
 
 The id of the existing GoogleBinaryAuthorizationAttestorIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinaryauthorizationattestoriampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebinaryauthorizationattestoriampolicy"
 
 &googlebinaryauthorizationattestoriampolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig {
 	Connection: interface{},
@@ -801,10 +801,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebinar
 | <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.attestor">Attestor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#attestor GoogleBinaryAuthorizationAttestorIamPolicy#attestor}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#policy_data GoogleBinaryAuthorizationAttestorIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#id GoogleBinaryAuthorizationAttestorIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#project GoogleBinaryAuthorizationAttestorIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.attestor">Attestor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#attestor GoogleBinaryAuthorizationAttestorIamPolicy#attestor}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#policy_data GoogleBinaryAuthorizationAttestorIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#id GoogleBinaryAuthorizationAttestorIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamPolicy.GoogleBinaryAuthorizationAttestorIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#project GoogleBinaryAuthorizationAttestorIamPolicy#project}. |
 
 ---
 
@@ -886,7 +886,7 @@ Attestor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#attestor GoogleBinaryAuthorizationAttestorIamPolicy#attestor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#attestor GoogleBinaryAuthorizationAttestorIamPolicy#attestor}.
 
 ---
 
@@ -898,7 +898,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#policy_data GoogleBinaryAuthorizationAttestorIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#policy_data GoogleBinaryAuthorizationAttestorIamPolicy#policy_data}.
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#id GoogleBinaryAuthorizationAttestorIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#id GoogleBinaryAuthorizationAttestorIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +925,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_binary_authorization_attestor_iam_policy#project GoogleBinaryAuthorizationAttestorIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_binary_authorization_attestor_iam_policy#project GoogleBinaryAuthorizationAttestorIamPolicy#project}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### GooglePubsubTopicIamBinding <a name="GooglePubsubTopicIamBinding" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.NewGooglePubsubTopicIamBinding(scope Construct, id *string, config GooglePubsubTopicIamBindingConfig) GooglePubsubTopicIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.GooglePubsubTopicIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GooglePubsubTopicIamBindin
 
 The id of the existing GooglePubsubTopicIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 &googlepubsubtopiciambinding.GooglePubsubTopicIamBindingCondition {
 	Expression: *string,
@@ -850,9 +850,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#expression GooglePubsubTopicIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#title GooglePubsubTopicIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#description GooglePubsubTopicIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#expression GooglePubsubTopicIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#title GooglePubsubTopicIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#description GooglePubsubTopicIamBinding#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#expression GooglePubsubTopicIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#expression GooglePubsubTopicIamBinding#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#title GooglePubsubTopicIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#title GooglePubsubTopicIamBinding#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#description GooglePubsubTopicIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#description GooglePubsubTopicIamBinding#description}.
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 &googlepubsubtopiciambinding.GooglePubsubTopicIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 	Members: *[]*string,
 	Role: *string,
 	Topic: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -927,12 +927,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#members GooglePubsubTopicIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#role GooglePubsubTopicIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#topic GooglePubsubTopicIamBinding#topic}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#members GooglePubsubTopicIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#role GooglePubsubTopicIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#topic GooglePubsubTopicIamBinding#topic}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingCondition">GooglePubsubTopicIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#id GooglePubsubTopicIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#project GooglePubsubTopicIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#id GooglePubsubTopicIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#project GooglePubsubTopicIamBinding#project}. |
 
 ---
 
@@ -1014,7 +1014,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#members GooglePubsubTopicIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#members GooglePubsubTopicIamBinding#members}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#role GooglePubsubTopicIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#role GooglePubsubTopicIamBinding#role}.
 
 ---
 
@@ -1038,7 +1038,7 @@ Topic *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#topic GooglePubsubTopicIamBinding#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#topic GooglePubsubTopicIamBinding#topic}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Condition GooglePubsubTopicIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#condition GooglePubsubTopicIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#condition GooglePubsubTopicIamBinding#condition}
 
 ---
 
@@ -1064,7 +1064,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#id GooglePubsubTopicIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#id GooglePubsubTopicIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1079,7 +1079,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_binding#project GooglePubsubTopicIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_topic_iam_binding#project GooglePubsubTopicIamBinding#project}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamBinding.GooglePubsubTopicIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubtopiciambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubtopiciambinding"
 
 googlepubsubtopiciambinding.NewGooglePubsubTopicIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubTopicIamBindingConditionOutputReference
 ```

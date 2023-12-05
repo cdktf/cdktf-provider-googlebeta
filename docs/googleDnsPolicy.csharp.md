@@ -4,7 +4,7 @@
 
 ### GoogleDnsPolicy <a name="GoogleDnsPolicy" id="@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy google_dns_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy google_dns_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy.Initializer"></a>
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the GoogleDnsPolicy to import.
 
 The id of the existing GoogleDnsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,7 +978,7 @@ public object TargetNameServers { get; set; }
 
 target_name_servers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#target_name_servers GoogleDnsPolicy#target_name_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#target_name_servers GoogleDnsPolicy#target_name_servers}
 
 ---
 
@@ -1014,7 +1014,7 @@ public string Ipv4Address { get; set; }
 
 IPv4 address to forward to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#ipv4_address GoogleDnsPolicy#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#ipv4_address GoogleDnsPolicy#ipv4_address}
 
 ---
 
@@ -1032,7 +1032,7 @@ If unset or 'default' Cloud DNS will make forwarding
 decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
 to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
 
 ---
 
@@ -1079,9 +1079,9 @@ new GoogleDnsPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.description">Description</a></code> | <code>string</code> | A textual description field. Defaults to 'Managed by Terraform'. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.enableInboundForwarding">EnableInboundForwarding</a></code> | <code>object</code> | Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.enableLogging">EnableLogging</a></code> | <code>object</code> | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.networks">Networks</a></code> | <code>object</code> | networks block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts">GoogleDnsPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1166,7 +1166,7 @@ public string Name { get; set; }
 
 User assigned name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
 
 ---
 
@@ -1180,7 +1180,7 @@ public GoogleDnsPolicyAlternativeNameServerConfig AlternativeNameServerConfig { 
 
 alternative_name_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#alternative_name_server_config GoogleDnsPolicy#alternative_name_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#alternative_name_server_config GoogleDnsPolicy#alternative_name_server_config}
 
 ---
 
@@ -1194,7 +1194,7 @@ public string Description { get; set; }
 
 A textual description field. Defaults to 'Managed by Terraform'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#description GoogleDnsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#description GoogleDnsPolicy#description}
 
 ---
 
@@ -1212,7 +1212,7 @@ When enabled, a
 virtual IP address will be allocated from each of the sub-networks
 that are bound to this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
 
 ---
 
@@ -1226,7 +1226,7 @@ public object EnableLogging { get; set; }
 
 Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
 
 ---
 
@@ -1238,7 +1238,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1255,7 +1255,7 @@ public object Networks { get; set; }
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
 
 ---
 
@@ -1267,7 +1267,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public GoogleDnsPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
 
 ---
 
@@ -1318,7 +1318,7 @@ The id or fully qualified URL of the VPC network to forward queries to.
 This should be formatted like 'projects/{project}/global/networks/{network}' or
 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
 
 ---
 
@@ -1340,9 +1340,9 @@ new GoogleDnsPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}. |
 
 ---
 
@@ -1354,7 +1354,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#create GoogleDnsPolicy#create}.
 
 ---
 
@@ -1366,7 +1366,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#delete GoogleDnsPolicy#delete}.
 
 ---
 
@@ -1378,7 +1378,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dns_policy#update GoogleDnsPolicy#update}.
 
 ---
 

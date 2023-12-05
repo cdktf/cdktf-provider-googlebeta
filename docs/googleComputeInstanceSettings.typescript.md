@@ -4,7 +4,7 @@
 
 ### GoogleComputeInstanceSettings <a name="GoogleComputeInstanceSettings" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings google_compute_instance_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings google_compute_instance_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettings.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the GoogleComputeInstanceSetti
 
 The id of the existing GoogleComputeInstanceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,9 +852,9 @@ const googleComputeInstanceSettingsConfig: googleComputeInstanceSettings.GoogleC
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.zone">zone</a></code> | <code>string</code> | A reference to the zone where the machine resides. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#id GoogleComputeInstanceSettings#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#id GoogleComputeInstanceSettings#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsMetadata">GoogleComputeInstanceSettingsMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#project GoogleComputeInstanceSettings#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#project GoogleComputeInstanceSettings#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts">GoogleComputeInstanceSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -939,7 +939,7 @@ public readonly zone: string;
 
 A reference to the zone where the machine resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#zone GoogleComputeInstanceSettings#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#zone GoogleComputeInstanceSettings#zone}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#id GoogleComputeInstanceSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#id GoogleComputeInstanceSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ public readonly metadata: GoogleComputeInstanceSettingsMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#metadata GoogleComputeInstanceSettings#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#metadata GoogleComputeInstanceSettings#metadata}
 
 ---
 
@@ -980,7 +980,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#project GoogleComputeInstanceSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#project GoogleComputeInstanceSettings#project}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly timeouts: GoogleComputeInstanceSettingsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#timeouts GoogleComputeInstanceSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#timeouts GoogleComputeInstanceSettings#timeouts}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly items: {[ key: string ]: string};
 
 A metadata key/value items map. The total size of all keys and values must be less than 512KB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#items GoogleComputeInstanceSettings#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#items GoogleComputeInstanceSettings#items}
 
 ---
 
@@ -1044,9 +1044,9 @@ const googleComputeInstanceSettingsTimeouts: googleComputeInstanceSettings.Googl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#create GoogleComputeInstanceSettings#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#delete GoogleComputeInstanceSettings#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#update GoogleComputeInstanceSettings#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#create GoogleComputeInstanceSettings#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#delete GoogleComputeInstanceSettings#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceSettings.GoogleComputeInstanceSettingsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#update GoogleComputeInstanceSettings#update}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#create GoogleComputeInstanceSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#create GoogleComputeInstanceSettings#create}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#delete GoogleComputeInstanceSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#delete GoogleComputeInstanceSettings#delete}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_instance_settings#update GoogleComputeInstanceSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_instance_settings#update GoogleComputeInstanceSettings#update}.
 
 ---
 

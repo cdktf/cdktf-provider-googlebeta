@@ -4,12 +4,12 @@
 
 ### GoogleGkeHubFleet <a name="GoogleGkeHubFleet" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet google_gke_hub_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet google_gke_hub_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.NewGoogleGkeHubFleet(scope Construct, id *string, config GoogleGkeHubFleetConfig) GoogleGkeHubFleet
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.GoogleGkeHubFleet_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.GoogleGkeHubFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlegkehubfleet.GoogleGkeHubFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.GoogleGkeHubFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlegkehubfleet.GoogleGkeHubFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.GoogleGkeHubFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleGkeHubFleet to impor
 
 The id of the existing GoogleGkeHubFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 &googlegkehubfleet.GoogleGkeHubFleetConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeHubFleet.GoogleGkeHubFleetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts,
 }
 ```
 
@@ -873,8 +873,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A user-assigned display name of the Fleet. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#id GoogleGkeHubFleet#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#project GoogleGkeHubFleet#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#id GoogleGkeHubFleet#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#project GoogleGkeHubFleet#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts">GoogleGkeHubFleetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -962,7 +962,7 @@ A user-assigned display name of the Fleet.
 When present, it must be between 4 to 30 characters.
 Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#display_name GoogleGkeHubFleet#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#display_name GoogleGkeHubFleet#display_name}
 
 ---
 
@@ -974,7 +974,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#id GoogleGkeHubFleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#id GoogleGkeHubFleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#project GoogleGkeHubFleet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#project GoogleGkeHubFleet#project}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Timeouts GoogleGkeHubFleetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#timeouts GoogleGkeHubFleet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#timeouts GoogleGkeHubFleet#timeouts}
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 &googlegkehubfleet.GoogleGkeHubFleetState {
 
@@ -1025,7 +1025,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 &googlegkehubfleet.GoogleGkeHubFleetTimeouts {
 	Create: *string,
@@ -1038,9 +1038,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#create GoogleGkeHubFleet#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#delete GoogleGkeHubFleet#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#update GoogleGkeHubFleet#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#create GoogleGkeHubFleet#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#delete GoogleGkeHubFleet#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#update GoogleGkeHubFleet#update}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#create GoogleGkeHubFleet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#create GoogleGkeHubFleet#create}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#delete GoogleGkeHubFleet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#delete GoogleGkeHubFleet#delete}.
 
 ---
 
@@ -1076,7 +1076,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gke_hub_fleet#update GoogleGkeHubFleet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gke_hub_fleet#update GoogleGkeHubFleet#update}.
 
 ---
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.NewGoogleGkeHubFleetStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeHubFleetStateList
 ```
@@ -1219,7 +1219,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.NewGoogleGkeHubFleetStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeHubFleetStateOutputReference
 ```
@@ -1497,7 +1497,7 @@ func InternalValue() GoogleGkeHubFleetState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubFleet.GoogleGkeHubFleetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubfleet"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubfleet"
 
 googlegkehubfleet.NewGoogleGkeHubFleetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubFleetTimeoutsOutputReference
 ```

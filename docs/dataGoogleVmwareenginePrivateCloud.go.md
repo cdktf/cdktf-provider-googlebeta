@@ -4,12 +4,12 @@
 
 ### DataGoogleVmwareenginePrivateCloud <a name="DataGoogleVmwareenginePrivateCloud" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloud(scope Construct, id *string, config DataGoogleVmwareenginePrivateCloudConfig) DataGoogleVmwareenginePrivateCloud
 ```
@@ -281,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloud_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataGoogleVmwareenginePriv
 
 The id of the existing DataGoogleVmwareenginePrivateCloud that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudConfig {
 	Connection: interface{},
@@ -754,8 +754,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.location">Location</a></code> | <code>*string</code> | The location where the PrivateCloud should reside. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the PrivateCloud. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#id DataGoogleVmwareenginePrivateCloud#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#project DataGoogleVmwareenginePrivateCloud#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#id DataGoogleVmwareenginePrivateCloud#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#project DataGoogleVmwareenginePrivateCloud#project}. |
 
 ---
 
@@ -839,7 +839,7 @@ Location *string
 
 The location where the PrivateCloud should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#location DataGoogleVmwareenginePrivateCloud#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#location DataGoogleVmwareenginePrivateCloud#location}
 
 ---
 
@@ -853,7 +853,7 @@ Name *string
 
 The ID of the PrivateCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#name DataGoogleVmwareenginePrivateCloud#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#name DataGoogleVmwareenginePrivateCloud#name}
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#id DataGoogleVmwareenginePrivateCloud#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#id DataGoogleVmwareenginePrivateCloud#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -880,7 +880,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/data-sources/google_vmwareengine_private_cloud#project DataGoogleVmwareenginePrivateCloud#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/data-sources/google_vmwareengine_private_cloud#project DataGoogleVmwareenginePrivateCloud#project}.
 
 ---
 
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudHcx {
 
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementCluster {
 
@@ -915,7 +915,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs {
 
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudNetworkConfig {
 
@@ -941,7 +941,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudNsx {
 
@@ -954,7 +954,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 &datagooglevmwareengineprivatecloud.DataGoogleVmwareenginePrivateCloudVcenter {
 
@@ -969,7 +969,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudHcxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudHcxList
 ```
@@ -1101,7 +1101,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudHcxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudHcxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudHcxOutputReference
 ```
@@ -1412,7 +1412,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudHcx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterList
 ```
@@ -1544,7 +1544,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList
 ```
@@ -1676,7 +1676,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference
 ```
@@ -1976,7 +1976,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementClusterNodeType
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudManagementClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference
 ```
@@ -2265,7 +2265,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudManagementCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNetworkConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudNetworkConfigList
 ```
@@ -2397,7 +2397,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference
 ```
@@ -2620,6 +2620,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.dnsServerIp">DnsServerIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.managementCidr">ManagementCidr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.managementIpAddressLayoutVersion">ManagementIpAddressLayoutVersion</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.vmwareEngineNetwork">VmwareEngineNetwork</a></code> | <code>*string</code> | *No description.* |
@@ -2646,6 +2647,16 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DnsServerIp`<sup>Required</sup> <a name="DnsServerIp" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference.property.dnsServerIp"></a>
+
+```go
+func DnsServerIp() *string
 ```
 
 - *Type:* *string
@@ -2708,7 +2719,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNsxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudNsxList
 ```
@@ -2840,7 +2851,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudNsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudNsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudNsxOutputReference
 ```
@@ -3151,7 +3162,7 @@ func InternalValue() DataGoogleVmwareenginePrivateCloudNsx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudVcenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareenginePrivateCloudVcenterList
 ```
@@ -3283,7 +3294,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloudVcenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareengineprivatecloud"
 
 datagooglevmwareengineprivatecloud.NewDataGoogleVmwareenginePrivateCloudVcenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareenginePrivateCloudVcenterOutputReference
 ```

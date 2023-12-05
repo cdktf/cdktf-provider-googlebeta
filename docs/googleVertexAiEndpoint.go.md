@@ -4,12 +4,12 @@
 
 ### GoogleVertexAiEndpoint <a name="GoogleVertexAiEndpoint" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpoint(scope Construct, id *string, config GoogleVertexAiEndpointConfig) GoogleVertexAiEndpoint
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.GoogleVertexAiEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.GoogleVertexAiEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlevertexaiendpoint.GoogleVertexAiEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.GoogleVertexAiEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlevertexaiendpoint.GoogleVertexAiEndpoint_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.GoogleVertexAiEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the GoogleVertexAiEndpoint to 
 
 The id of the existing GoogleVertexAiEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointConfig {
 	Connection: interface{},
@@ -1075,13 +1075,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 	Location: *string,
 	Name: *string,
 	Description: *string,
-	EncryptionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec,
+	EncryptionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Network: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts,
 }
 ```
 
@@ -1101,10 +1101,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the Endpoint. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Endpoint. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec">GoogleVertexAiEndpointEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#id GoogleVertexAiEndpoint#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#id GoogleVertexAiEndpoint#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels with user-defined metadata to organize your Endpoints. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.network">Network</a></code> | <code>*string</code> | The full name of the Google Compute Engine [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks) to which the Endpoint should be peered. Private services access must already be configured for the network. If left unspecified, the Endpoint is not peered with any network. Only one of the fields, network or enable_private_service_connect, can be set. [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert): 'projects/{project}/global/networks/{network}'. Where '{project}' is a project number, as in '12345', and '{network}' is network name. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#project GoogleVertexAiEndpoint#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#project GoogleVertexAiEndpoint#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.region">Region</a></code> | <code>*string</code> | The region for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts">GoogleVertexAiEndpointTimeouts</a></code> | timeouts block. |
 
@@ -1192,7 +1192,7 @@ Required.
 
 The display name of the Endpoint. The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#display_name GoogleVertexAiEndpoint#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#display_name GoogleVertexAiEndpoint#display_name}
 
 ---
 
@@ -1206,7 +1206,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#location GoogleVertexAiEndpoint#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#location GoogleVertexAiEndpoint#location}
 
 ---
 
@@ -1222,7 +1222,7 @@ The resource name of the Endpoint.
 
 The name must be numeric with no leading zeros and can be at most 10 digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#name GoogleVertexAiEndpoint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#name GoogleVertexAiEndpoint#name}
 
 ---
 
@@ -1236,7 +1236,7 @@ Description *string
 
 The description of the Endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#description GoogleVertexAiEndpoint#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#description GoogleVertexAiEndpoint#description}
 
 ---
 
@@ -1250,7 +1250,7 @@ EncryptionSpec GoogleVertexAiEndpointEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#encryption_spec GoogleVertexAiEndpoint#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#encryption_spec GoogleVertexAiEndpoint#encryption_spec}
 
 ---
 
@@ -1262,7 +1262,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#id GoogleVertexAiEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#id GoogleVertexAiEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ Label keys and values can be no longer than 64 characters (Unicode codepoints), 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#labels GoogleVertexAiEndpoint#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#labels GoogleVertexAiEndpoint#labels}
 
 ---
 
@@ -1298,7 +1298,7 @@ Network *string
 
 The full name of the Google Compute Engine [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks) to which the Endpoint should be peered. Private services access must already be configured for the network. If left unspecified, the Endpoint is not peered with any network. Only one of the fields, network or enable_private_service_connect, can be set. [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert): 'projects/{project}/global/networks/{network}'. Where '{project}' is a project number, as in '12345', and '{network}' is network name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#network GoogleVertexAiEndpoint#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#network GoogleVertexAiEndpoint#network}
 
 ---
 
@@ -1310,7 +1310,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#project GoogleVertexAiEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#project GoogleVertexAiEndpoint#project}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Region *string
 
 The region for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#region GoogleVertexAiEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#region GoogleVertexAiEndpoint#region}
 
 ---
 
@@ -1338,7 +1338,7 @@ Timeouts GoogleVertexAiEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#timeouts GoogleVertexAiEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#timeouts GoogleVertexAiEndpoint#timeouts}
 
 ---
 
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModels {
 
@@ -1360,7 +1360,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResources {
 
@@ -1373,7 +1373,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResources {
 
@@ -1386,7 +1386,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs {
 
@@ -1399,7 +1399,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec {
 
@@ -1412,7 +1412,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpoints {
 
@@ -1425,7 +1425,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointEncryptionSpec {
 	KmsKeyName: *string,
@@ -1452,7 +1452,7 @@ Required.
 
 The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'. The key needs to be in the same region as where the compute resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#kms_key_name GoogleVertexAiEndpoint#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#kms_key_name GoogleVertexAiEndpoint#kms_key_name}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 &googlevertexaiendpoint.GoogleVertexAiEndpointTimeouts {
 	Create: *string,
@@ -1474,9 +1474,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleverte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#create GoogleVertexAiEndpoint#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#delete GoogleVertexAiEndpoint#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#update GoogleVertexAiEndpoint#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#create GoogleVertexAiEndpoint#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#delete GoogleVertexAiEndpoint#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#update GoogleVertexAiEndpoint#update}. |
 
 ---
 
@@ -1488,7 +1488,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#create GoogleVertexAiEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#create GoogleVertexAiEndpoint#create}.
 
 ---
 
@@ -1500,7 +1500,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#delete GoogleVertexAiEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#delete GoogleVertexAiEndpoint#delete}.
 
 ---
 
@@ -1512,7 +1512,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_vertex_ai_endpoint#update GoogleVertexAiEndpoint#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint#update GoogleVertexAiEndpoint#update}.
 
 ---
 
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsAutomaticResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsAutomaticResourcesList
 ```
@@ -1655,7 +1655,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference
 ```
@@ -1944,7 +1944,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModelsAutomaticResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList
 ```
@@ -2076,7 +2076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutos
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList
 ```
@@ -2497,7 +2497,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList
 ```
@@ -2629,7 +2629,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference
 ```
@@ -2929,7 +2929,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference
 ```
@@ -3240,7 +3240,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModelsDedicatedResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsList
 ```
@@ -3372,7 +3372,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsOutputReference
 ```
@@ -3771,7 +3771,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModels
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsPrivateEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList
 ```
@@ -3903,7 +3903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference
 ```
@@ -4214,7 +4214,7 @@ func InternalValue() GoogleVertexAiEndpointDeployedModelsPrivateEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiEndpointEncryptionSpecOutputReference
 ```
@@ -4485,7 +4485,7 @@ func InternalValue() GoogleVertexAiEndpointEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaiendpoint"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaiendpoint"
 
 googlevertexaiendpoint.NewGoogleVertexAiEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiEndpointTimeoutsOutputReference
 ```

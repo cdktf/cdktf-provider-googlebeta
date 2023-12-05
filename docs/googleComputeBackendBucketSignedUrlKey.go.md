@@ -4,12 +4,12 @@
 
 ### GoogleComputeBackendBucketSignedUrlKey <a name="GoogleComputeBackendBucketSignedUrlKey" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key google_compute_backend_bucket_signed_url_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.NewGoogleComputeBackendBucketSignedUrlKey(scope Construct, id *string, config GoogleComputeBackendBucketSignedUrlKeyConfig) GoogleComputeBackendBucketSignedUrlKey
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleComputeBackendBucket
 
 The id of the existing GoogleComputeBackendBucketSignedUrlKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 &googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKeyConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts,
 }
 ```
 
@@ -859,8 +859,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.backendBucket">BackendBucket</a></code> | <code>*string</code> | The backend bucket this signed URL key belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.keyValue">KeyValue</a></code> | <code>*string</code> | 128-bit key value used for signing the URL. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the signed URL key. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#id GoogleComputeBackendBucketSignedUrlKey#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#project GoogleComputeBackendBucketSignedUrlKey#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#id GoogleComputeBackendBucketSignedUrlKey#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#project GoogleComputeBackendBucketSignedUrlKey#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -945,7 +945,7 @@ BackendBucket *string
 
 The backend bucket this signed URL key belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#backend_bucket GoogleComputeBackendBucketSignedUrlKey#backend_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#backend_bucket GoogleComputeBackendBucketSignedUrlKey#backend_bucket}
 
 ---
 
@@ -962,7 +962,7 @@ KeyValue *string
 The key value must be a
 valid RFC 4648 Section 5 base64url encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#key_value GoogleComputeBackendBucketSignedUrlKey#key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#key_value GoogleComputeBackendBucketSignedUrlKey#key_value}
 
 ---
 
@@ -976,7 +976,7 @@ Name *string
 
 Name of the signed URL key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#name GoogleComputeBackendBucketSignedUrlKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#name GoogleComputeBackendBucketSignedUrlKey#name}
 
 ---
 
@@ -988,7 +988,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#id GoogleComputeBackendBucketSignedUrlKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#id GoogleComputeBackendBucketSignedUrlKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1003,7 +1003,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#project GoogleComputeBackendBucketSignedUrlKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#project GoogleComputeBackendBucketSignedUrlKey#project}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Timeouts GoogleComputeBackendBucketSignedUrlKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#timeouts GoogleComputeBackendBucketSignedUrlKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#timeouts GoogleComputeBackendBucketSignedUrlKey#timeouts}
 
 ---
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 &googlecomputebackendbucketsignedurlkey.GoogleComputeBackendBucketSignedUrlKeyTimeouts {
 	Create: *string,
@@ -1038,8 +1038,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#create GoogleComputeBackendBucketSignedUrlKey#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#delete GoogleComputeBackendBucketSignedUrlKey#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#create GoogleComputeBackendBucketSignedUrlKey#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#delete GoogleComputeBackendBucketSignedUrlKey#delete}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#create GoogleComputeBackendBucketSignedUrlKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#create GoogleComputeBackendBucketSignedUrlKey#create}.
 
 ---
 
@@ -1063,7 +1063,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_bucket_signed_url_key#delete GoogleComputeBackendBucketSignedUrlKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_signed_url_key#delete GoogleComputeBackendBucketSignedUrlKey#delete}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendbucketsignedurlkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputebackendbucketsignedurlkey"
 
 googlecomputebackendbucketsignedurlkey.NewGoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference
 ```

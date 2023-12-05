@@ -4,12 +4,12 @@
 
 ### GoogleFilestoreSnapshot <a name="GoogleFilestoreSnapshot" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.NewGoogleFilestoreSnapshot(scope Construct, id *string, config GoogleFilestoreSnapshotConfig) GoogleFilestoreSnapshot
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.GoogleFilestoreSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.GoogleFilestoreSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlefilestoresnapshot.GoogleFilestoreSnapshot_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.GoogleFilestoreSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlefilestoresnapshot.GoogleFilestoreSnapshot_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.GoogleFilestoreSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleFilestoreSnapshot to
 
 The id of the existing GoogleFilestoreSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 &googlefilestoresnapshot.GoogleFilestoreSnapshotConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefiles
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts,
 }
 ```
 
@@ -975,9 +975,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefiles
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.location">Location</a></code> | <code>*string</code> | The name of the location of the instance. This can be a region for ENTERPRISE tier instances. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the snapshot. The name must be unique within the specified instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.description">Description</a></code> | <code>*string</code> | A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts">GoogleFilestoreSnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1062,7 +1062,7 @@ Instance *string
 
 The resource name of the filestore instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#instance GoogleFilestoreSnapshot#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#instance GoogleFilestoreSnapshot#instance}
 
 ---
 
@@ -1076,7 +1076,7 @@ Location *string
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#location GoogleFilestoreSnapshot#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#location GoogleFilestoreSnapshot#location}
 
 ---
 
@@ -1097,7 +1097,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#name GoogleFilestoreSnapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#name GoogleFilestoreSnapshot#name}
 
 ---
 
@@ -1111,7 +1111,7 @@ Description *string
 
 A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#description GoogleFilestoreSnapshot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#description GoogleFilestoreSnapshot#description}
 
 ---
 
@@ -1123,7 +1123,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#id GoogleFilestoreSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#labels GoogleFilestoreSnapshot#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#labels GoogleFilestoreSnapshot#labels}
 
 ---
 
@@ -1155,7 +1155,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#project GoogleFilestoreSnapshot#project}.
 
 ---
 
@@ -1169,7 +1169,7 @@ Timeouts GoogleFilestoreSnapshotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#timeouts GoogleFilestoreSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#timeouts GoogleFilestoreSnapshot#timeouts}
 
 ---
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 &googlefilestoresnapshot.GoogleFilestoreSnapshotTimeouts {
 	Create: *string,
@@ -1191,9 +1191,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefiles
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#create GoogleFilestoreSnapshot#create}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#delete GoogleFilestoreSnapshot#delete}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_filestore_snapshot#update GoogleFilestoreSnapshot#update}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFilestoreSnapshot.GoogleFilestoreSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefilestoresnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefilestoresnapshot"
 
 googlefilestoresnapshot.NewGoogleFilestoreSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFilestoreSnapshotTimeoutsOutputReference
 ```

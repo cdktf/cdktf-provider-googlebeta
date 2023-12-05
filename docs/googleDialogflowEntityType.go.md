@@ -4,12 +4,12 @@
 
 ### GoogleDialogflowEntityType <a name="GoogleDialogflowEntityType" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.NewGoogleDialogflowEntityType(scope Construct, id *string, config GoogleDialogflowEntityTypeConfig) GoogleDialogflowEntityType
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.GoogleDialogflowEntityType_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.GoogleDialogflowEntityType_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googledialogflowentitytype.GoogleDialogflowEntityType_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.GoogleDialogflowEntityType_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googledialogflowentitytype.GoogleDialogflowEntityType_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.GoogleDialogflowEntityType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the GoogleDialogflowEntityType
 
 The id of the existing GoogleDialogflowEntityType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 &googledialogflowentitytype.GoogleDialogflowEntityTypeConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialo
 	Entities: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts,
 }
 ```
 
@@ -921,8 +921,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialo
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.kind">Kind</a></code> | <code>*string</code> | Indicates the kind of entity type. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.enableFuzzyExtraction">EnableFuzzyExtraction</a></code> | <code>interface{}</code> | Enables fuzzy entity extraction during classification. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.entities">Entities</a></code> | <code>interface{}</code> | entities block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts">GoogleDialogflowEntityTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1007,7 +1007,7 @@ DisplayName *string
 
 The name of this entity type to be displayed on the console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#display_name GoogleDialogflowEntityType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#display_name GoogleDialogflowEntityType#display_name}
 
 ---
 
@@ -1026,7 +1026,7 @@ Indicates the kind of entity type.
   types can contain references to other entity types (with or without aliases).
 * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#kind GoogleDialogflowEntityType#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#kind GoogleDialogflowEntityType#kind}
 
 ---
 
@@ -1040,7 +1040,7 @@ EnableFuzzyExtraction interface{}
 
 Enables fuzzy entity extraction during classification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#enable_fuzzy_extraction GoogleDialogflowEntityType#enable_fuzzy_extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#enable_fuzzy_extraction GoogleDialogflowEntityType#enable_fuzzy_extraction}
 
 ---
 
@@ -1054,7 +1054,7 @@ Entities interface{}
 
 entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#entities GoogleDialogflowEntityType#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#entities GoogleDialogflowEntityType#entities}
 
 ---
 
@@ -1066,7 +1066,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1081,7 +1081,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Timeouts GoogleDialogflowEntityTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#timeouts GoogleDialogflowEntityType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#timeouts GoogleDialogflowEntityType#timeouts}
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 &googledialogflowentitytype.GoogleDialogflowEntityTypeEntities {
 	Synonyms: *[]*string,
@@ -1137,7 +1137,7 @@ For KIND_LIST entity types:
 
 * This collection must contain exactly one synonym equal to value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#synonyms GoogleDialogflowEntityType#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#synonyms GoogleDialogflowEntityType#synonyms}
 
 ---
 
@@ -1159,7 +1159,7 @@ For KIND_MAP entity types:
   For KIND_LIST entity types:
 * A string that can contain references to other entity types (with or without aliases).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#value GoogleDialogflowEntityType#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#value GoogleDialogflowEntityType#value}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 &googledialogflowentitytype.GoogleDialogflowEntityTypeTimeouts {
 	Create: *string,
@@ -1181,9 +1181,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}. |
 
 ---
 
@@ -1195,7 +1195,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}.
 
 ---
 
@@ -1207,7 +1207,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.NewGoogleDialogflowEntityTypeEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDialogflowEntityTypeEntitiesList
 ```
@@ -1373,7 +1373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.NewGoogleDialogflowEntityTypeEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDialogflowEntityTypeEntitiesOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDialogflowEntityType.GoogleDialogflowEntityTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledialogflowentitytype"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledialogflowentitytype"
 
 googledialogflowentitytype.NewGoogleDialogflowEntityTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDialogflowEntityTypeTimeoutsOutputReference
 ```

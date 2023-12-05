@@ -4,12 +4,12 @@
 
 ### GoogleFirebaseHostingChannel <a name="GoogleFirebaseHostingChannel" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.NewGoogleFirebaseHostingChannel(scope Construct, id *string, config GoogleFirebaseHostingChannelConfig) GoogleFirebaseHostingChannel
 ```
@@ -426,7 +426,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.GoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.GoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlefirebasehostingchannel.GoogleFirebaseHostingChannel_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.GoogleFirebaseHostingChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlefirebasehostingchannel.GoogleFirebaseHostingChannel_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.GoogleFirebaseHostingChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleFirebaseHostingChann
 
 The id of the existing GoogleFirebaseHostingChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 &googlefirebasehostingchannel.GoogleFirebaseHostingChannelConfig {
 	Connection: interface{},
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 	Id: *string,
 	Labels: *map[string]*string,
 	RetainedReleaseCount: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts,
 	Ttl: *string,
 }
 ```
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.channelId">ChannelId</a></code> | <code>*string</code> | Required. Immutable. A unique ID within the site that identifies the channel. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Required. The ID of the site in which to create this channel. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.expireTime">ExpireTime</a></code> | <code>*string</code> | The time at which the channel will be automatically deleted. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Text labels used for extra metadata and/or filtering. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.retainedReleaseCount">RetainedReleaseCount</a></code> | <code>*f64</code> | The number of previous releases to retain on the channel for rollback or other purposes. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts">GoogleFirebaseHostingChannelTimeouts</a></code> | timeouts block. |
@@ -1047,7 +1047,7 @@ ChannelId *string
 
 Required. Immutable. A unique ID within the site that identifies the channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#channel_id GoogleFirebaseHostingChannel#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#channel_id GoogleFirebaseHostingChannel#channel_id}
 
 ---
 
@@ -1061,7 +1061,7 @@ SiteId *string
 
 Required. The ID of the site in which to create this channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#site_id GoogleFirebaseHostingChannel#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#site_id GoogleFirebaseHostingChannel#site_id}
 
 ---
 
@@ -1079,7 +1079,7 @@ If null, the channel
 will not be automatically deleted. This field is present in the output whether it's
 set directly or via the 'ttl' field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#expire_time GoogleFirebaseHostingChannel#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#expire_time GoogleFirebaseHostingChannel#expire_time}
 
 ---
 
@@ -1091,7 +1091,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1111,7 +1111,7 @@ Text labels used for extra metadata and/or filtering.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#labels GoogleFirebaseHostingChannel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#labels GoogleFirebaseHostingChannel#labels}
 
 ---
 
@@ -1127,7 +1127,7 @@ The number of previous releases to retain on the channel for rollback or other p
 
 Must be a number between 1-100. Defaults to 10 for new channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#retained_release_count GoogleFirebaseHostingChannel#retained_release_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#retained_release_count GoogleFirebaseHostingChannel#retained_release_count}
 
 ---
 
@@ -1141,7 +1141,7 @@ Timeouts GoogleFirebaseHostingChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#timeouts GoogleFirebaseHostingChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#timeouts GoogleFirebaseHostingChannel#timeouts}
 
 ---
 
@@ -1159,7 +1159,7 @@ A time-to-live for this channel. Sets 'expire_time' to the provided
 duration past the time of the request. A duration in seconds with up to nine fractional
 digits, terminated by 's'. Example: "86400s" (one day).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#ttl GoogleFirebaseHostingChannel#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#ttl GoogleFirebaseHostingChannel#ttl}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 &googlefirebasehostingchannel.GoogleFirebaseHostingChannelTimeouts {
 	Create: *string,
@@ -1181,9 +1181,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefireb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}. |
 
 ---
 
@@ -1195,7 +1195,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}.
 
 ---
 
@@ -1207,7 +1207,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirebasehostingchannel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasehostingchannel"
 
 googlefirebasehostingchannel.NewGoogleFirebaseHostingChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseHostingChannelTimeoutsOutputReference
 ```

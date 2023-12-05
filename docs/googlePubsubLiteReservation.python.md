@@ -4,7 +4,7 @@
 
 ### GooglePubsubLiteReservation <a name="GooglePubsubLiteReservation" id="@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation google_pubsub_lite_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation google_pubsub_lite_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer"></a>
 
@@ -43,8 +43,8 @@ googlePubsubLiteReservation.GooglePubsubLiteReservation(
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the reservation. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.throughputCapacity">throughput_capacity</a></code> | <code>typing.Union[int, float]</code> | The reserved throughput capacity. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the pubsub lite reservation. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts">GooglePubsubLiteReservationTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#name GooglePubsubLiteReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#name GooglePubsubLiteReservation#name}
 
 ---
 
@@ -130,7 +130,7 @@ Every unit of throughput capacity is
 equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#throughput_capacity GooglePubsubLiteReservation#throughput_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#throughput_capacity GooglePubsubLiteReservation#throughput_capacity}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the pubsub lite reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#region GooglePubsubLiteReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#region GooglePubsubLiteReservation#region}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#timeouts GooglePubsubLiteReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#timeouts GooglePubsubLiteReservation#timeouts}
 
 ---
 
@@ -540,7 +540,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}.
 
 ---
 
@@ -548,7 +548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}.
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}.
 
 ---
 
@@ -698,7 +698,7 @@ The construct id used in the generated config for the GooglePubsubLiteReservatio
 
 The id of the existing GooglePubsubLiteReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,8 +1062,8 @@ googlePubsubLiteReservation.GooglePubsubLiteReservationConfig(
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.name">name</a></code> | <code>str</code> | Name of the reservation. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.throughputCapacity">throughput_capacity</a></code> | <code>typing.Union[int, float]</code> | The reserved throughput capacity. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.region">region</a></code> | <code>str</code> | The region of the pubsub lite reservation. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts">GooglePubsubLiteReservationTimeouts</a></code> | timeouts block. |
 
@@ -1149,7 +1149,7 @@ name: str
 
 Name of the reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#name GooglePubsubLiteReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#name GooglePubsubLiteReservation#name}
 
 ---
 
@@ -1167,7 +1167,7 @@ Every unit of throughput capacity is
 equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#throughput_capacity GooglePubsubLiteReservation#throughput_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#throughput_capacity GooglePubsubLiteReservation#throughput_capacity}
 
 ---
 
@@ -1179,7 +1179,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#id GooglePubsubLiteReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1194,7 +1194,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#project GooglePubsubLiteReservation#project}.
 
 ---
 
@@ -1208,7 +1208,7 @@ region: str
 
 The region of the pubsub lite reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#region GooglePubsubLiteReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#region GooglePubsubLiteReservation#region}
 
 ---
 
@@ -1222,7 +1222,7 @@ timeouts: GooglePubsubLiteReservationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#timeouts GooglePubsubLiteReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#timeouts GooglePubsubLiteReservation#timeouts}
 
 ---
 
@@ -1244,9 +1244,9 @@ googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}. |
 
 ---
 
@@ -1258,7 +1258,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#create GooglePubsubLiteReservation#create}.
 
 ---
 
@@ -1270,7 +1270,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#delete GooglePubsubLiteReservation#delete}.
 
 ---
 
@@ -1282,7 +1282,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_pubsub_lite_reservation#update GooglePubsubLiteReservation#update}.
 
 ---
 

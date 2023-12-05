@@ -4,7 +4,7 @@
 
 ### GoogleStorageBucketIamMember <a name="GoogleStorageBucketIamMember" id="@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member google_storage_bucket_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMember.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the GoogleStorageBucketIamMemb
 
 The id of the existing GoogleStorageBucketIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,9 +817,9 @@ const googleStorageBucketIamMemberCondition: googleStorageBucketIamMember.Google
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#expression GoogleStorageBucketIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#title GoogleStorageBucketIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#description GoogleStorageBucketIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#expression GoogleStorageBucketIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#title GoogleStorageBucketIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#description GoogleStorageBucketIamMember#description}. |
 
 ---
 
@@ -831,7 +831,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#expression GoogleStorageBucketIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#expression GoogleStorageBucketIamMember#expression}.
 
 ---
 
@@ -843,7 +843,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#title GoogleStorageBucketIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#title GoogleStorageBucketIamMember#title}.
 
 ---
 
@@ -855,7 +855,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#description GoogleStorageBucketIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#description GoogleStorageBucketIamMember#description}.
 
 ---
 
@@ -880,11 +880,11 @@ const googleStorageBucketIamMemberConfig: googleStorageBucketIamMember.GoogleSto
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#bucket GoogleStorageBucketIamMember#bucket}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#member GoogleStorageBucketIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#role GoogleStorageBucketIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#bucket GoogleStorageBucketIamMember#bucket}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#member GoogleStorageBucketIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#role GoogleStorageBucketIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberCondition">GoogleStorageBucketIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#id GoogleStorageBucketIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageBucketIamMember.GoogleStorageBucketIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#id GoogleStorageBucketIamMember#id}. |
 
 ---
 
@@ -966,7 +966,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#bucket GoogleStorageBucketIamMember#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#bucket GoogleStorageBucketIamMember#bucket}.
 
 ---
 
@@ -978,7 +978,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#member GoogleStorageBucketIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#member GoogleStorageBucketIamMember#member}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#role GoogleStorageBucketIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#role GoogleStorageBucketIamMember#role}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly condition: GoogleStorageBucketIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#condition GoogleStorageBucketIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#condition GoogleStorageBucketIamMember#condition}
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_iam_member#id GoogleStorageBucketIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_iam_member#id GoogleStorageBucketIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
