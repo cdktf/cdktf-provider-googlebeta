@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2Job(scope Construct, id *string, config GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.GoogleCloudRunV2Job_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.GoogleCloudRunV2Job_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googlecloudrunv2job.GoogleCloudRunV2Job_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.GoogleCloudRunV2Job_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ googlecloudrunv2job.GoogleCloudRunV2Job_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2Job.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.GoogleCloudRunV2Job_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1224,7 +1224,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobBinaryAuthorization {
 	BreakglassJustification: *string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobConditions {
 
@@ -1289,7 +1289,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobConfig {
 	Connection: interface{},
@@ -1301,16 +1301,16 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplate,
+	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplate,
 	Annotations: *map[string]*string,
-	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobBinaryAuthorization,
+	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobBinaryAuthorization,
 	Client: *string,
 	ClientVersion: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	LaunchStage: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTimeouts,
 }
 ```
 
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobLatestCreatedExecution {
 
@@ -1616,10 +1616,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplate {
-	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplate,
+	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplate,
 	Annotations: *map[string]*string,
 	Labels: *map[string]*string,
 	Parallelism: *f64,
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplate {
 	Containers: interface{},
@@ -1742,7 +1742,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	ServiceAccount: *string,
 	Timeout: *string,
 	Volumes: interface{},
-	VpcAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccess,
+	VpcAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccess,
 }
 ```
 
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainers {
 	Image: *string,
@@ -1895,7 +1895,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Env: interface{},
 	Name: *string,
 	Ports: interface{},
-	Resources: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersResources,
+	Resources: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersResources,
 	VolumeMounts: interface{},
 	WorkingDir: *string,
 }
@@ -2054,12 +2054,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersEnv {
 	Name: *string,
 	Value: *string,
-	ValueSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource,
+	ValueSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource,
 }
 ```
 
@@ -2122,10 +2122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource {
-	SecretKeyRef: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef,
+	SecretKeyRef: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef,
 }
 ```
 
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef {
 	Secret: *string,
@@ -2210,7 +2210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersPorts {
 	ContainerPort: *f64,
@@ -2260,7 +2260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersResources {
 	Limits: *map[string]*string,
@@ -2296,7 +2296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateContainersVolumeMounts {
 	MountPath: *string,
@@ -2348,13 +2348,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVolumes {
 	Name: *string,
-	CloudSqlInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance,
-	EmptyDir: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir,
-	Secret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecret,
+	CloudSqlInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance,
+	EmptyDir: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir,
+	Secret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecret,
 }
 ```
 
@@ -2430,7 +2430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance {
 	Instances: *[]*string,
@@ -2464,7 +2464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir {
 	Medium: *string,
@@ -2516,7 +2516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVolumesSecret {
 	Secret: *string,
@@ -2586,7 +2586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItems {
 	Path: *string,
@@ -2656,7 +2656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVpcAccess {
 	Connector: *string,
@@ -2722,7 +2722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfaces {
 	Network: *string,
@@ -2796,7 +2796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTerminalCondition {
 
@@ -2809,7 +2809,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 &googlecloudrunv2job.GoogleCloudRunV2JobTimeouts {
 	Create: *string,
@@ -2871,7 +2871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobBinaryAuthorizationOutputReference
 ```
@@ -3178,7 +3178,7 @@ func InternalValue() GoogleCloudRunV2JobBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobConditionsList
 ```
@@ -3310,7 +3310,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobConditionsOutputReference
 ```
@@ -3665,7 +3665,7 @@ func InternalValue() GoogleCloudRunV2JobConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobLatestCreatedExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobLatestCreatedExecutionList
 ```
@@ -3797,7 +3797,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobLatestCreatedExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobLatestCreatedExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobLatestCreatedExecutionOutputReference
 ```
@@ -4097,7 +4097,7 @@ func InternalValue() GoogleCloudRunV2JobLatestCreatedExecution
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() GoogleCloudRunV2JobTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersEnvList
 ```
@@ -4640,7 +4640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference
 ```
@@ -5000,7 +5000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference
 ```
@@ -5291,7 +5291,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference
 ```
@@ -5584,7 +5584,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersList
 ```
@@ -5727,7 +5727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersOutputReference
 ```
@@ -6300,7 +6300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersPortsList
 ```
@@ -6443,7 +6443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference
 ```
@@ -6768,7 +6768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference
 ```
@@ -7046,7 +7046,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateContainersResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList
 ```
@@ -7189,7 +7189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference
 ```
@@ -7500,7 +7500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateOutputReference
 ```
@@ -8020,7 +8020,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference
 ```
@@ -8298,7 +8298,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference
 ```
@@ -8605,7 +8605,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateVolumesList
 ```
@@ -8748,7 +8748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference
 ```
@@ -9163,7 +9163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList
 ```
@@ -9306,7 +9306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference
 ```
@@ -9646,7 +9646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference
 ```
@@ -9988,7 +9988,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateVolumesSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList
 ```
@@ -10131,7 +10131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference
 ```
@@ -10485,7 +10485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference
 ```
@@ -10834,7 +10834,7 @@ func InternalValue() GoogleCloudRunV2JobTemplateTemplateVpcAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTerminalConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTerminalConditionList
 ```
@@ -10966,7 +10966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTerminalConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTerminalConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2JobTerminalConditionOutputReference
 ```
@@ -11321,7 +11321,7 @@ func InternalValue() GoogleCloudRunV2JobTerminalCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2job"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2job"
 
 googlecloudrunv2job.NewGoogleCloudRunV2JobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTimeoutsOutputReference
 ```

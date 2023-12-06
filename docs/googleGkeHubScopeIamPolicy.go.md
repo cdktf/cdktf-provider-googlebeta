@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 googlegkehubscopeiampolicy.NewGoogleGkeHubScopeIamPolicy(scope Construct, id *string, config GoogleGkeHubScopeIamPolicyConfig) GoogleGkeHubScopeIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubScopeIamPolicy.GoogleGkeHubScopeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubscopeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubscopeiampolicy"
 
 &googlegkehubscopeiampolicy.GoogleGkeHubScopeIamPolicyConfig {
 	Connection: interface{},
