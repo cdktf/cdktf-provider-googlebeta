@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 datagooglenetblockipranges.NewDataGoogleNetblockIpRanges(scope Construct, id *string, config DataGoogleNetblockIpRangesConfig) DataGoogleNetblockIpRanges
 ```
@@ -281,7 +281,7 @@ func ResetRangeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 datagooglenetblockipranges.DataGoogleNetblockIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 datagooglenetblockipranges.DataGoogleNetblockIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglenetblockipranges.DataGoogleNetblockIpRanges_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 datagooglenetblockipranges.DataGoogleNetblockIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglenetblockipranges.DataGoogleNetblockIpRanges_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 datagooglenetblockipranges.DataGoogleNetblockIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglenetblockipranges"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglenetblockipranges"
 
 &datagooglenetblockipranges.DataGoogleNetblockIpRangesConfig {
 	Connection: interface{},
