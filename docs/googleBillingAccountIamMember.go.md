@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.NewGoogleBillingAccountIamMember(scope Construct, id *string, config GoogleBillingAccountIamMemberConfig) GoogleBillingAccountIamMember
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.GoogleBillingAccountIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.GoogleBillingAccountIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ googlebillingaccountiammember.GoogleBillingAccountIamMember_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.GoogleBillingAccountIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlebillingaccountiammember.GoogleBillingAccountIamMember_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.GoogleBillingAccountIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 &googlebillingaccountiammember.GoogleBillingAccountIamMemberCondition {
 	Expression: *string,
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 &googlebillingaccountiammember.GoogleBillingAccountIamMemberConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingac
 	BillingAccountId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBillingAccountIamMember.GoogleBillingAccountIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1047,7 +1047,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingAccountIamMember.GoogleBillingAccountIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingaccountiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingaccountiammember"
 
 googlebillingaccountiammember.NewGoogleBillingAccountIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingAccountIamMemberConditionOutputReference
 ```
