@@ -4,12 +4,12 @@
 
 ### GoogleServiceDirectoryService <a name="GoogleServiceDirectoryService" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service google_service_directory_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service google_service_directory_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.NewGoogleServiceDirectoryService(scope Construct, id *string, config GoogleServiceDirectoryServiceConfig) GoogleServiceDirectoryService
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.GoogleServiceDirectoryService_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.GoogleServiceDirectoryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleservicedirectoryservice.GoogleServiceDirectoryService_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.GoogleServiceDirectoryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleservicedirectoryservice.GoogleServiceDirectoryService_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.GoogleServiceDirectoryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleServiceDirectoryServ
 
 The id of the existing GoogleServiceDirectoryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 &googleservicedirectoryservice.GoogleServiceDirectoryServiceConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservi
 	ServiceId: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts,
 }
 ```
 
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservi
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The resource name of the namespace this service will belong to. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.serviceId">ServiceId</a></code> | <code>*string</code> | The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Metadata for the service. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts">GoogleServiceDirectoryServiceTimeouts</a></code> | timeouts block. |
 
@@ -932,7 +932,7 @@ Namespace *string
 
 The resource name of the namespace this service will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
 
 ---
 
@@ -946,7 +946,7 @@ ServiceId *string
 
 The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
 
 ---
 
@@ -958,7 +958,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +980,7 @@ by service clients. The entire metadata dictionary may contain
 up to 2000 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
 
 ---
 
@@ -994,7 +994,7 @@ Timeouts GoogleServiceDirectoryServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 &googleservicedirectoryservice.GoogleServiceDirectoryServiceTimeouts {
 	Create: *string,
@@ -1016,9 +1016,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleservicedirectoryservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectoryservice"
 
 googleservicedirectoryservice.NewGoogleServiceDirectoryServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleServiceDirectoryServiceTimeoutsOutputReference
 ```

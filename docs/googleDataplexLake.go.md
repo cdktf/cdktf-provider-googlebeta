@@ -4,12 +4,12 @@
 
 ### GoogleDataplexLake <a name="GoogleDataplexLake" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLake(scope Construct, id *string, config GoogleDataplexLakeConfig) GoogleDataplexLake
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.GoogleDataplexLake_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.GoogleDataplexLake_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googledataplexlake.GoogleDataplexLake_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.GoogleDataplexLake_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googledataplexlake.GoogleDataplexLake_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.GoogleDataplexLake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the GoogleDataplexLake to impo
 
 The id of the existing GoogleDataplexLake that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 &googledataplexlake.GoogleDataplexLakeAssetStatus {
 
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 &googledataplexlake.GoogleDataplexLakeConfig {
 	Connection: interface{},
@@ -1061,9 +1061,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 	DisplayName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	Metastore: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexLake.GoogleDataplexLakeMetastore,
+	Metastore: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexLake.GoogleDataplexLakeMetastore,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataplexLake.GoogleDataplexLakeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexLake.GoogleDataplexLakeTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.name">Name</a></code> | <code>*string</code> | The name of the lake. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Description of the lake. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. User-defined labels for the lake. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.metastore">Metastore</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastore">GoogleDataplexLakeMetastore</a></code> | metastore block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
@@ -1170,7 +1170,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#location GoogleDataplexLake#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#location GoogleDataplexLake#location}
 
 ---
 
@@ -1184,7 +1184,7 @@ Name *string
 
 The name of the lake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#name GoogleDataplexLake#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#name GoogleDataplexLake#name}
 
 ---
 
@@ -1198,7 +1198,7 @@ Description *string
 
 Optional. Description of the lake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#description GoogleDataplexLake#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#description GoogleDataplexLake#description}
 
 ---
 
@@ -1212,7 +1212,7 @@ DisplayName *string
 
 Optional. User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
 
 ---
 
@@ -1224,7 +1224,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1244,7 +1244,7 @@ Optional. User-defined labels for the lake.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#labels GoogleDataplexLake#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#labels GoogleDataplexLake#labels}
 
 ---
 
@@ -1258,7 +1258,7 @@ Metastore GoogleDataplexLakeMetastore
 
 metastore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
 
 ---
 
@@ -1272,7 +1272,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#project GoogleDataplexLake#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#project GoogleDataplexLake#project}
 
 ---
 
@@ -1286,7 +1286,7 @@ Timeouts GoogleDataplexLakeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
 
 ---
 
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 &googledataplexlake.GoogleDataplexLakeMetastore {
 	Service: *string,
@@ -1320,7 +1320,7 @@ Service *string
 
 Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: `projects/{project_id}/locations/{location_id}/services/{service_id}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#service GoogleDataplexLake#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#service GoogleDataplexLake#service}
 
 ---
 
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 &googledataplexlake.GoogleDataplexLakeMetastoreStatus {
 
@@ -1342,7 +1342,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 &googledataplexlake.GoogleDataplexLakeTimeouts {
 	Create: *string,
@@ -1355,9 +1355,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}. |
 
 ---
 
@@ -1369,7 +1369,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}.
 
 ---
 
@@ -1381,7 +1381,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}.
 
 ---
 
@@ -1393,7 +1393,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}.
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeAssetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexLakeAssetStatusList
 ```
@@ -1536,7 +1536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeAssetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeAssetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexLakeAssetStatusOutputReference
 ```
@@ -1836,7 +1836,7 @@ func InternalValue() GoogleDataplexLakeAssetStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeMetastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexLakeMetastoreOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() GoogleDataplexLakeMetastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeMetastoreStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDataplexLakeMetastoreStatusList
 ```
@@ -2246,7 +2246,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeMetastoreStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeMetastoreStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDataplexLakeMetastoreStatusOutputReference
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() GoogleDataplexLakeMetastoreStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexLake.GoogleDataplexLakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataplexlake"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexlake"
 
 googledataplexlake.NewGoogleDataplexLakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexLakeTimeoutsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### GoogleVertexAiEndpointIamBinding <a name="GoogleVertexAiEndpointIamBinding" id="@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBinding.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleVertexAiEndpointIamB
 
 The id of the existing GoogleVertexAiEndpointIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const googleVertexAiEndpointIamBindingCondition: googleVertexAiEndpointIamBindin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#expression GoogleVertexAiEndpointIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#title GoogleVertexAiEndpointIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#description GoogleVertexAiEndpointIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#expression GoogleVertexAiEndpointIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#title GoogleVertexAiEndpointIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#description GoogleVertexAiEndpointIamBinding#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#expression GoogleVertexAiEndpointIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#expression GoogleVertexAiEndpointIamBinding#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#title GoogleVertexAiEndpointIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#title GoogleVertexAiEndpointIamBinding#title}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#description GoogleVertexAiEndpointIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#description GoogleVertexAiEndpointIamBinding#description}.
 
 ---
 
@@ -938,13 +938,13 @@ const googleVertexAiEndpointIamBindingConfig: googleVertexAiEndpointIamBinding.G
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#endpoint GoogleVertexAiEndpointIamBinding#endpoint}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#members GoogleVertexAiEndpointIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#role GoogleVertexAiEndpointIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#endpoint GoogleVertexAiEndpointIamBinding#endpoint}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#members GoogleVertexAiEndpointIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#role GoogleVertexAiEndpointIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingCondition">GoogleVertexAiEndpointIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#id GoogleVertexAiEndpointIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#location GoogleVertexAiEndpointIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#project GoogleVertexAiEndpointIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#id GoogleVertexAiEndpointIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#location GoogleVertexAiEndpointIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiEndpointIamBinding.GoogleVertexAiEndpointIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#project GoogleVertexAiEndpointIamBinding#project}. |
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly endpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#endpoint GoogleVertexAiEndpointIamBinding#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#endpoint GoogleVertexAiEndpointIamBinding#endpoint}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#members GoogleVertexAiEndpointIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#members GoogleVertexAiEndpointIamBinding#members}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#role GoogleVertexAiEndpointIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#role GoogleVertexAiEndpointIamBinding#role}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly condition: GoogleVertexAiEndpointIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#condition GoogleVertexAiEndpointIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#condition GoogleVertexAiEndpointIamBinding#condition}
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#id GoogleVertexAiEndpointIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#id GoogleVertexAiEndpointIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#location GoogleVertexAiEndpointIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#location GoogleVertexAiEndpointIamBinding#location}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_vertex_ai_endpoint_iam_binding#project GoogleVertexAiEndpointIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_vertex_ai_endpoint_iam_binding#project GoogleVertexAiEndpointIamBinding#project}.
 
 ---
 

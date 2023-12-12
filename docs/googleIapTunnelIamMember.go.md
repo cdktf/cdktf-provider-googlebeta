@@ -4,12 +4,12 @@
 
 ### GoogleIapTunnelIamMember <a name="GoogleIapTunnelIamMember" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member google_iap_tunnel_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member google_iap_tunnel_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.NewGoogleIapTunnelIamMember(scope Construct, id *string, config GoogleIapTunnelIamMemberConfig) GoogleIapTunnelIamMember
 ```
@@ -405,7 +405,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleIapTunnelIamMember t
 
 The id of the existing GoogleIapTunnelIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 &googleiaptunneliammember.GoogleIapTunnelIamMemberCondition {
 	Expression: *string,
@@ -828,9 +828,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#expression GoogleIapTunnelIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#title GoogleIapTunnelIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#description GoogleIapTunnelIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#expression GoogleIapTunnelIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#title GoogleIapTunnelIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#description GoogleIapTunnelIamMember#description}. |
 
 ---
 
@@ -842,7 +842,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#expression GoogleIapTunnelIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#expression GoogleIapTunnelIamMember#expression}.
 
 ---
 
@@ -854,7 +854,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#title GoogleIapTunnelIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#title GoogleIapTunnelIamMember#title}.
 
 ---
 
@@ -866,7 +866,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#description GoogleIapTunnelIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#description GoogleIapTunnelIamMember#description}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 &googleiaptunneliammember.GoogleIapTunnelIamMemberConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptu
 	Provisioners: *[]interface{},
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -904,11 +904,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptu
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#member GoogleIapTunnelIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#role GoogleIapTunnelIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#member GoogleIapTunnelIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#role GoogleIapTunnelIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition">GoogleIapTunnelIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#id GoogleIapTunnelIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#project GoogleIapTunnelIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#id GoogleIapTunnelIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#project GoogleIapTunnelIamMember#project}. |
 
 ---
 
@@ -990,7 +990,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#member GoogleIapTunnelIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#member GoogleIapTunnelIamMember#member}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#role GoogleIapTunnelIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#role GoogleIapTunnelIamMember#role}.
 
 ---
 
@@ -1016,7 +1016,7 @@ Condition GoogleIapTunnelIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#condition GoogleIapTunnelIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#condition GoogleIapTunnelIamMember#condition}
 
 ---
 
@@ -1028,7 +1028,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#id GoogleIapTunnelIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#id GoogleIapTunnelIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_iap_tunnel_iam_member#project GoogleIapTunnelIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_tunnel_iam_member#project GoogleIapTunnelIamMember#project}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.NewGoogleIapTunnelIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapTunnelIamMemberConditionOutputReference
 ```

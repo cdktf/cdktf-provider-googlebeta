@@ -4,12 +4,12 @@
 
 ### GoogleDocumentAiWarehouseDocumentSchema <a name="GoogleDocumentAiWarehouseDocumentSchema" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchema(scope Construct, id *string, config GoogleDocumentAiWarehouseDocumentSchemaConfig) GoogleDocumentAiWarehouseDocumentSchema
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the GoogleDocumentAiWarehouseD
 
 The id of the existing GoogleDocumentAiWarehouseDocumentSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 	PropertyDefinitions: interface{},
 	DocumentIsFolder: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts,
 }
 ```
 
@@ -908,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 | <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.projectNumber">ProjectNumber</a></code> | <code>*string</code> | The unique identifier of the project. |
 | <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.propertyDefinitions">PropertyDefinitions</a></code> | <code>interface{}</code> | property_definitions block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.documentIsFolder">DocumentIsFolder</a></code> | <code>interface{}</code> | Tells whether the document is a folder or a typical document. |
-| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#id GoogleDocumentAiWarehouseDocumentSchema#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#id GoogleDocumentAiWarehouseDocumentSchema#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts">GoogleDocumentAiWarehouseDocumentSchemaTimeouts</a></code> | timeouts block. |
 
 ---
@@ -993,7 +993,7 @@ DisplayName *string
 
 Name of the schema given by the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
 
 ---
 
@@ -1007,7 +1007,7 @@ Location *string
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#location GoogleDocumentAiWarehouseDocumentSchema#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#location GoogleDocumentAiWarehouseDocumentSchema#location}
 
 ---
 
@@ -1021,7 +1021,7 @@ ProjectNumber *string
 
 The unique identifier of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#project_number GoogleDocumentAiWarehouseDocumentSchema#project_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#project_number GoogleDocumentAiWarehouseDocumentSchema#project_number}
 
 ---
 
@@ -1035,7 +1035,7 @@ PropertyDefinitions interface{}
 
 property_definitions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#property_definitions GoogleDocumentAiWarehouseDocumentSchema#property_definitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#property_definitions GoogleDocumentAiWarehouseDocumentSchema#property_definitions}
 
 ---
 
@@ -1049,7 +1049,7 @@ DocumentIsFolder interface{}
 
 Tells whether the document is a folder or a typical document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#document_is_folder GoogleDocumentAiWarehouseDocumentSchema#document_is_folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#document_is_folder GoogleDocumentAiWarehouseDocumentSchema#document_is_folder}
 
 ---
 
@@ -1061,7 +1061,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#id GoogleDocumentAiWarehouseDocumentSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#id GoogleDocumentAiWarehouseDocumentSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1078,7 @@ Timeouts GoogleDocumentAiWarehouseDocumentSchemaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#timeouts GoogleDocumentAiWarehouseDocumentSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#timeouts GoogleDocumentAiWarehouseDocumentSchema#timeouts}
 
 ---
 
@@ -1087,26 +1087,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitions {
 	Name: *string,
-	DateTimeTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions,
+	DateTimeTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions,
 	DisplayName: *string,
-	EnumTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions,
-	FloatTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions,
-	IntegerTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions,
+	EnumTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions,
+	FloatTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions,
+	IntegerTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions,
 	IsFilterable: interface{},
 	IsMetadata: interface{},
 	IsRepeatable: interface{},
 	IsRequired: interface{},
 	IsSearchable: interface{},
-	MapTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions,
-	PropertyTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions,
+	MapTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions,
+	PropertyTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions,
 	RetrievalImportance: *string,
 	SchemaSources: interface{},
-	TextTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions,
-	TimestampTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions,
+	TextTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions,
+	TimestampTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions,
 }
 ```
 
@@ -1144,7 +1144,7 @@ Name *string
 
 The name of the metadata property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
 
 ---
 
@@ -1158,7 +1158,7 @@ DateTimeTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDa
 
 date_time_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#date_time_type_options GoogleDocumentAiWarehouseDocumentSchema#date_time_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#date_time_type_options GoogleDocumentAiWarehouseDocumentSchema#date_time_type_options}
 
 ---
 
@@ -1172,7 +1172,7 @@ DisplayName *string
 
 The display-name for the property, used for front-end.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
 
 ---
 
@@ -1186,7 +1186,7 @@ EnumTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTy
 
 enum_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#enum_type_options GoogleDocumentAiWarehouseDocumentSchema#enum_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#enum_type_options GoogleDocumentAiWarehouseDocumentSchema#enum_type_options}
 
 ---
 
@@ -1200,7 +1200,7 @@ FloatTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloat
 
 float_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#float_type_options GoogleDocumentAiWarehouseDocumentSchema#float_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#float_type_options GoogleDocumentAiWarehouseDocumentSchema#float_type_options}
 
 ---
 
@@ -1214,7 +1214,7 @@ IntegerTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsInt
 
 integer_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#integer_type_options GoogleDocumentAiWarehouseDocumentSchema#integer_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#integer_type_options GoogleDocumentAiWarehouseDocumentSchema#integer_type_options}
 
 ---
 
@@ -1228,7 +1228,7 @@ IsFilterable interface{}
 
 Whether the property can be filtered. If this is a sub-property, all the parent properties must be marked filterable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_filterable GoogleDocumentAiWarehouseDocumentSchema#is_filterable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_filterable GoogleDocumentAiWarehouseDocumentSchema#is_filterable}
 
 ---
 
@@ -1242,7 +1242,7 @@ IsMetadata interface{}
 
 Whether the property is user supplied metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_metadata GoogleDocumentAiWarehouseDocumentSchema#is_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_metadata GoogleDocumentAiWarehouseDocumentSchema#is_metadata}
 
 ---
 
@@ -1256,7 +1256,7 @@ IsRepeatable interface{}
 
 Whether the property can have multiple values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_repeatable GoogleDocumentAiWarehouseDocumentSchema#is_repeatable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_repeatable GoogleDocumentAiWarehouseDocumentSchema#is_repeatable}
 
 ---
 
@@ -1270,7 +1270,7 @@ IsRequired interface{}
 
 Whether the property is mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_required GoogleDocumentAiWarehouseDocumentSchema#is_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_required GoogleDocumentAiWarehouseDocumentSchema#is_required}
 
 ---
 
@@ -1284,7 +1284,7 @@ IsSearchable interface{}
 
 Indicates that the property should be included in a global search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_searchable GoogleDocumentAiWarehouseDocumentSchema#is_searchable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_searchable GoogleDocumentAiWarehouseDocumentSchema#is_searchable}
 
 ---
 
@@ -1298,7 +1298,7 @@ MapTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapType
 
 map_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#map_type_options GoogleDocumentAiWarehouseDocumentSchema#map_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#map_type_options GoogleDocumentAiWarehouseDocumentSchema#map_type_options}
 
 ---
 
@@ -1312,7 +1312,7 @@ PropertyTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPr
 
 property_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#property_type_options GoogleDocumentAiWarehouseDocumentSchema#property_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#property_type_options GoogleDocumentAiWarehouseDocumentSchema#property_type_options}
 
 ---
 
@@ -1326,7 +1326,7 @@ RetrievalImportance *string
 
 Stores the retrieval importance. Possible values: ["HIGHEST", "HIGHER", "HIGH", "MEDIUM", "LOW", "LOWEST"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#retrieval_importance GoogleDocumentAiWarehouseDocumentSchema#retrieval_importance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#retrieval_importance GoogleDocumentAiWarehouseDocumentSchema#retrieval_importance}
 
 ---
 
@@ -1340,7 +1340,7 @@ SchemaSources interface{}
 
 schema_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#schema_sources GoogleDocumentAiWarehouseDocumentSchema#schema_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#schema_sources GoogleDocumentAiWarehouseDocumentSchema#schema_sources}
 
 ---
 
@@ -1354,7 +1354,7 @@ TextTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTy
 
 text_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#text_type_options GoogleDocumentAiWarehouseDocumentSchema#text_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#text_type_options GoogleDocumentAiWarehouseDocumentSchema#text_type_options}
 
 ---
 
@@ -1368,7 +1368,7 @@ TimestampTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsT
 
 timestamp_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#timestamp_type_options GoogleDocumentAiWarehouseDocumentSchema#timestamp_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#timestamp_type_options GoogleDocumentAiWarehouseDocumentSchema#timestamp_type_options}
 
 ---
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions {
 
@@ -1390,7 +1390,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions {
 	PossibleValues: *[]*string,
@@ -1417,7 +1417,7 @@ PossibleValues *[]*string
 
 List of possible enum values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#possible_values GoogleDocumentAiWarehouseDocumentSchema#possible_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#possible_values GoogleDocumentAiWarehouseDocumentSchema#possible_values}
 
 ---
 
@@ -1433,7 +1433,7 @@ Make sure the enum property value provided in the document is in the possile val
 
 The validation check runs by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#validation_check_disabled GoogleDocumentAiWarehouseDocumentSchema#validation_check_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#validation_check_disabled GoogleDocumentAiWarehouseDocumentSchema#validation_check_disabled}
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions {
 
@@ -1455,7 +1455,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions {
 
@@ -1468,7 +1468,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions {
 
@@ -1481,7 +1481,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions {
 	PropertyDefinitions: interface{},
@@ -1506,7 +1506,7 @@ PropertyDefinitions interface{}
 
 property_definitions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#property_definitions GoogleDocumentAiWarehouseDocumentSchema#property_definitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#property_definitions GoogleDocumentAiWarehouseDocumentSchema#property_definitions}
 
 ---
 
@@ -1515,25 +1515,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions {
 	Name: *string,
-	DateTimeTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions,
+	DateTimeTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions,
 	DisplayName: *string,
-	EnumTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions,
-	FloatTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions,
-	IntegerTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions,
+	EnumTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions,
+	FloatTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions,
+	IntegerTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions,
 	IsFilterable: interface{},
 	IsMetadata: interface{},
 	IsRepeatable: interface{},
 	IsRequired: interface{},
 	IsSearchable: interface{},
-	MapTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions,
+	MapTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions,
 	RetrievalImportance: *string,
 	SchemaSources: interface{},
-	TextTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions,
-	TimestampTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions,
+	TextTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions,
+	TimestampTypeOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions,
 }
 ```
 
@@ -1570,7 +1570,7 @@ Name *string
 
 The name of the metadata property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
 
 ---
 
@@ -1584,7 +1584,7 @@ DateTimeTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPr
 
 date_time_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#date_time_type_options GoogleDocumentAiWarehouseDocumentSchema#date_time_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#date_time_type_options GoogleDocumentAiWarehouseDocumentSchema#date_time_type_options}
 
 ---
 
@@ -1598,7 +1598,7 @@ DisplayName *string
 
 The display-name for the property, used for front-end.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#display_name GoogleDocumentAiWarehouseDocumentSchema#display_name}
 
 ---
 
@@ -1612,7 +1612,7 @@ EnumTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
 
 enum_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#enum_type_options GoogleDocumentAiWarehouseDocumentSchema#enum_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#enum_type_options GoogleDocumentAiWarehouseDocumentSchema#enum_type_options}
 
 ---
 
@@ -1626,7 +1626,7 @@ FloatTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPrope
 
 float_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#float_type_options GoogleDocumentAiWarehouseDocumentSchema#float_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#float_type_options GoogleDocumentAiWarehouseDocumentSchema#float_type_options}
 
 ---
 
@@ -1640,7 +1640,7 @@ IntegerTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPro
 
 integer_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#integer_type_options GoogleDocumentAiWarehouseDocumentSchema#integer_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#integer_type_options GoogleDocumentAiWarehouseDocumentSchema#integer_type_options}
 
 ---
 
@@ -1654,7 +1654,7 @@ IsFilterable interface{}
 
 Whether the property can be filtered. If this is a sub-property, all the parent properties must be marked filterable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_filterable GoogleDocumentAiWarehouseDocumentSchema#is_filterable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_filterable GoogleDocumentAiWarehouseDocumentSchema#is_filterable}
 
 ---
 
@@ -1668,7 +1668,7 @@ IsMetadata interface{}
 
 Whether the property is user supplied metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_metadata GoogleDocumentAiWarehouseDocumentSchema#is_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_metadata GoogleDocumentAiWarehouseDocumentSchema#is_metadata}
 
 ---
 
@@ -1682,7 +1682,7 @@ IsRepeatable interface{}
 
 Whether the property can have multiple values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_repeatable GoogleDocumentAiWarehouseDocumentSchema#is_repeatable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_repeatable GoogleDocumentAiWarehouseDocumentSchema#is_repeatable}
 
 ---
 
@@ -1696,7 +1696,7 @@ IsRequired interface{}
 
 Whether the property is mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_required GoogleDocumentAiWarehouseDocumentSchema#is_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_required GoogleDocumentAiWarehouseDocumentSchema#is_required}
 
 ---
 
@@ -1710,7 +1710,7 @@ IsSearchable interface{}
 
 Indicates that the property should be included in a global search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#is_searchable GoogleDocumentAiWarehouseDocumentSchema#is_searchable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#is_searchable GoogleDocumentAiWarehouseDocumentSchema#is_searchable}
 
 ---
 
@@ -1724,7 +1724,7 @@ MapTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropert
 
 map_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#map_type_options GoogleDocumentAiWarehouseDocumentSchema#map_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#map_type_options GoogleDocumentAiWarehouseDocumentSchema#map_type_options}
 
 ---
 
@@ -1738,7 +1738,7 @@ RetrievalImportance *string
 
 Stores the retrieval importance. Possible values: ["HIGHEST", "HIGHER", "HIGH", "MEDIUM", "LOW", "LOWEST"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#retrieval_importance GoogleDocumentAiWarehouseDocumentSchema#retrieval_importance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#retrieval_importance GoogleDocumentAiWarehouseDocumentSchema#retrieval_importance}
 
 ---
 
@@ -1752,7 +1752,7 @@ SchemaSources interface{}
 
 schema_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#schema_sources GoogleDocumentAiWarehouseDocumentSchema#schema_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#schema_sources GoogleDocumentAiWarehouseDocumentSchema#schema_sources}
 
 ---
 
@@ -1766,7 +1766,7 @@ TextTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
 
 text_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#text_type_options GoogleDocumentAiWarehouseDocumentSchema#text_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#text_type_options GoogleDocumentAiWarehouseDocumentSchema#text_type_options}
 
 ---
 
@@ -1780,7 +1780,7 @@ TimestampTypeOptions GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 
 timestamp_type_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#timestamp_type_options GoogleDocumentAiWarehouseDocumentSchema#timestamp_type_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#timestamp_type_options GoogleDocumentAiWarehouseDocumentSchema#timestamp_type_options}
 
 ---
 
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions {
 
@@ -1802,7 +1802,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions {
 	PossibleValues: *[]*string,
@@ -1829,7 +1829,7 @@ PossibleValues *[]*string
 
 List of possible enum values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#possible_values GoogleDocumentAiWarehouseDocumentSchema#possible_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#possible_values GoogleDocumentAiWarehouseDocumentSchema#possible_values}
 
 ---
 
@@ -1845,7 +1845,7 @@ Make sure the enum property value provided in the document is in the possile val
 
 The validation check runs by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#validation_check_disabled GoogleDocumentAiWarehouseDocumentSchema#validation_check_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#validation_check_disabled GoogleDocumentAiWarehouseDocumentSchema#validation_check_disabled}
 
 ---
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions {
 
@@ -1867,7 +1867,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions {
 
@@ -1880,7 +1880,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions {
 
@@ -1893,7 +1893,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources {
 	Name: *string,
@@ -1920,7 +1920,7 @@ Name *string
 
 The schema name in the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
 
 ---
 
@@ -1934,7 +1934,7 @@ ProcessorType *string
 
 The Doc AI processor type name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#processor_type GoogleDocumentAiWarehouseDocumentSchema#processor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#processor_type GoogleDocumentAiWarehouseDocumentSchema#processor_type}
 
 ---
 
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions {
 
@@ -1956,7 +1956,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions {
 
@@ -1969,7 +1969,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources {
 	Name: *string,
@@ -1996,7 +1996,7 @@ Name *string
 
 The schema name in the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#name GoogleDocumentAiWarehouseDocumentSchema#name}
 
 ---
 
@@ -2010,7 +2010,7 @@ ProcessorType *string
 
 The Doc AI processor type name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#processor_type GoogleDocumentAiWarehouseDocumentSchema#processor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#processor_type GoogleDocumentAiWarehouseDocumentSchema#processor_type}
 
 ---
 
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions {
 
@@ -2032,7 +2032,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions {
 
@@ -2045,7 +2045,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 &googledocumentaiwarehousedocumentschema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts {
 	Create: *string,
@@ -2057,8 +2057,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocum
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#create GoogleDocumentAiWarehouseDocumentSchema#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#delete GoogleDocumentAiWarehouseDocumentSchema#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#create GoogleDocumentAiWarehouseDocumentSchema#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#delete GoogleDocumentAiWarehouseDocumentSchema#delete}. |
 
 ---
 
@@ -2070,7 +2070,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#create GoogleDocumentAiWarehouseDocumentSchema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#create GoogleDocumentAiWarehouseDocumentSchema#create}.
 
 ---
 
@@ -2082,7 +2082,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_document_ai_warehouse_document_schema#delete GoogleDocumentAiWarehouseDocumentSchema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_document_ai_warehouse_document_schema#delete GoogleDocumentAiWarehouseDocumentSchema#delete}.
 
 ---
 
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference
 ```
@@ -2342,7 +2342,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsD
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference
 ```
@@ -2642,7 +2642,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsE
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference
 ```
@@ -2891,7 +2891,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsF
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference
 ```
@@ -3140,7 +3140,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsI
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsList
 ```
@@ -3283,7 +3283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference
 ```
@@ -3532,7 +3532,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsM
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
 ```
@@ -4402,7 +4402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference
 ```
@@ -4686,7 +4686,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference
 ```
@@ -4935,7 +4935,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference
 ```
@@ -5235,7 +5235,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference
 ```
@@ -5484,7 +5484,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference
 ```
@@ -5733,7 +5733,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList
 ```
@@ -5876,7 +5876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference
 ```
@@ -6125,7 +6125,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference
 ```
@@ -6953,7 +6953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList
 ```
@@ -7096,7 +7096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference
 ```
@@ -7421,7 +7421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference
 ```
@@ -7670,7 +7670,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference
 ```
@@ -7919,7 +7919,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList
 ```
@@ -8062,7 +8062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference
 ```
@@ -8387,7 +8387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference
 ```
@@ -8636,7 +8636,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsT
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference
 ```
@@ -8885,7 +8885,7 @@ func InternalValue() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsT
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledocumentaiwarehousedocumentschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledocumentaiwarehousedocumentschema"
 
 googledocumentaiwarehousedocumentschema.NewGoogleDocumentAiWarehouseDocumentSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDocumentAiWarehouseDocumentSchemaTimeoutsOutputReference
 ```
