@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.NewDataGoogleBigqueryDefaultServiceAccount(scope Construct, id *string, config DataGoogleBigqueryDefaultServiceAccountConfig) DataGoogleBigqueryDefaultServiceAccount
 ```
@@ -281,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebigquerydefaultserviceaccount"
 
 &datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccountConfig {
 	Connection: interface{},
