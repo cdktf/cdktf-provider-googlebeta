@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.NewGooglePubsubSubscriptionIamBinding(scope Construct, id *string, config GooglePubsubSubscriptionIamBindingConfig) GooglePubsubSubscriptionIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 &googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 &googlepubsubsubscriptioniambinding.GooglePubsubSubscriptionIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 	Members: *[]*string,
 	Role: *string,
 	Subscription: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsubsubscriptioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubsubscriptioniambinding"
 
 googlepubsubsubscriptioniambinding.NewGooglePubsubSubscriptionIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubSubscriptionIamBindingConditionOutputReference
 ```
