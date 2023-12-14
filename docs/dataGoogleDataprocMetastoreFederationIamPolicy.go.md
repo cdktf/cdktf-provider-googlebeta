@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 datagoogledataprocmetastorefederationiampolicy.NewDataGoogleDataprocMetastoreFederationIamPolicy(scope Construct, id *string, config DataGoogleDataprocMetastoreFederationIamPolicyConfig) DataGoogleDataprocMetastoreFederationIamPolicy
 ```
@@ -288,7 +288,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFedera
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFedera
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFederationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledataprocmetastorefederationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogledataprocmetastorefederationiampolicy"
 
 &datagoogledataprocmetastorefederationiampolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig {
 	Connection: interface{},
