@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.NewGoogleGkeBackupRestorePlanIamBinding(scope Construct, id *string, config GoogleGkeBackupRestorePlanIamBindingConfig) GoogleGkeBackupRestorePlanIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 &googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 &googlegkebackuprestoreplaniambinding.GoogleGkeBackupRestorePlanIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackup
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlanIamBinding.GoogleGkeBackupRestorePlanIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplaniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkebackuprestoreplaniambinding"
 
 googlegkebackuprestoreplaniambinding.NewGoogleGkeBackupRestorePlanIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanIamBindingConditionOutputReference
 ```
