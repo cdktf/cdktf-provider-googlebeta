@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessA(scope Construct, id *string, config GoogleBigqueryDatasetAccessAConfig) GoogleBigqueryDatasetAccessA
 ```
@@ -507,7 +507,7 @@ func ResetView()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_IsTerraformElement(x in
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_IsTerraformResource(x i
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1093,7 +1093,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessAConfig {
 	Connection: interface{},
@@ -1104,18 +1104,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryd
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DatasetId: *string,
-	Dataset: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetA,
+	Dataset: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetA,
 	Domain: *string,
 	GroupByEmail: *string,
 	IamMember: *string,
 	Id: *string,
 	Project: *string,
 	Role: *string,
-	Routine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineA,
+	Routine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineA,
 	SpecialGroup: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeouts,
 	UserByEmail: *string,
-	View: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewA,
+	View: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewA,
 }
 ```
 
@@ -1419,10 +1419,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessDatasetA {
-	Dataset: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetA,
+	Dataset: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetA,
 	TargetTypes: *[]*string,
 }
 ```
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessDatasetDatasetA {
 	DatasetId: *string,
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessRoutineA {
 	DatasetId: *string,
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessTimeouts {
 	Create: *string,
@@ -1638,7 +1638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 &googlebigquerydatasetaccess.GoogleBigqueryDatasetAccessViewA {
 	DatasetId: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessDatasetAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessDatasetAOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() GoogleBigqueryDatasetAccessDatasetA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessDatasetDatasetAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessDatasetDatasetAOutputReference
 ```
@@ -2309,7 +2309,7 @@ func InternalValue() GoogleBigqueryDatasetAccessDatasetDatasetA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessRoutineAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessRoutineAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessRoutineAOutputReference
 ```
@@ -2624,7 +2624,7 @@ func InternalValue() GoogleBigqueryDatasetAccessRoutineA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessTimeoutsOutputReference
 ```
@@ -2931,7 +2931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetAccess.GoogleBigqueryDatasetAccessViewAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetaccess"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebigquerydatasetaccess"
 
 googlebigquerydatasetaccess.NewGoogleBigqueryDatasetAccessViewAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatasetAccessViewAOutputReference
 ```
