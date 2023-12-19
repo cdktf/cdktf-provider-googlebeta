@@ -4,12 +4,12 @@
 
 ### DataGoogleVmwareengineNetworkPolicy <a name="DataGoogleVmwareengineNetworkPolicy" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy google_vmwareengine_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy google_vmwareengine_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.NewDataGoogleVmwareengineNetworkPolicy(scope Construct, id *string, config DataGoogleVmwareengineNetworkPolicyConfig) DataGoogleVmwareengineNetworkPolicy
 ```
@@ -281,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataGoogleVmwareengineNetw
 
 The id of the existing DataGoogleVmwareengineNetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 &datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicyConfig {
 	Connection: interface{},
@@ -765,8 +765,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.location">Location</a></code> | <code>*string</code> | The resource name of the location (region) to create the new network policy in. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the Network Policy. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#id DataGoogleVmwareengineNetworkPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#project DataGoogleVmwareengineNetworkPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#id DataGoogleVmwareengineNetworkPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#project DataGoogleVmwareengineNetworkPolicy#project}. |
 
 ---
 
@@ -853,7 +853,7 @@ The resource name of the location (region) to create the new network policy in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-central1
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#location DataGoogleVmwareengineNetworkPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#location DataGoogleVmwareengineNetworkPolicy#location}
 
 ---
 
@@ -867,7 +867,7 @@ Name *string
 
 The ID of the Network Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#name DataGoogleVmwareengineNetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#name DataGoogleVmwareengineNetworkPolicy#name}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#id DataGoogleVmwareengineNetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#id DataGoogleVmwareengineNetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -894,7 +894,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/data-sources/google_vmwareengine_network_policy#project DataGoogleVmwareengineNetworkPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_vmwareengine_network_policy#project DataGoogleVmwareengineNetworkPolicy#project}.
 
 ---
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 &datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicyExternalIp {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyInternetAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 &datagooglevmwareenginenetworkpolicy.DataGoogleVmwareengineNetworkPolicyInternetAccess {
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglev
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.NewDataGoogleVmwareengineNetworkPolicyExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineNetworkPolicyExternalIpList
 ```
@@ -1063,7 +1063,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.NewDataGoogleVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference
 ```
@@ -1352,7 +1352,7 @@ func InternalValue() DataGoogleVmwareengineNetworkPolicyExternalIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyInternetAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.NewDataGoogleVmwareengineNetworkPolicyInternetAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineNetworkPolicyInternetAccessList
 ```
@@ -1484,7 +1484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVmwareengineNetworkPolicy.DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevmwareenginenetworkpolicy"
 
 datagooglevmwareenginenetworkpolicy.NewDataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference
 ```

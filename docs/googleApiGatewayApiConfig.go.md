@@ -4,12 +4,12 @@
 
 ### GoogleApiGatewayApiConfigA <a name="GoogleApiGatewayApiConfigA" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config google_api_gateway_api_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config google_api_gateway_api_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigA(scope Construct, id *string, config GoogleApiGatewayApiConfigAConfig) GoogleApiGatewayApiConfigA
 ```
@@ -513,7 +513,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_IsTerraformElement(x interf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_IsTerraformResource(x inter
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.GoogleApiGatewayApiConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -602,7 +602,7 @@ The construct id used in the generated config for the GoogleApiGatewayApiConfigA
 
 The id of the existing GoogleApiGatewayApiConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1110,7 +1110,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigAConfig {
 	Connection: interface{},
@@ -1124,14 +1124,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapiga
 	ApiConfigId: *string,
 	ApiConfigIdPrefix: *string,
 	DisplayName: *string,
-	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfig,
+	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfig,
 	GrpcServices: interface{},
 	Id: *string,
 	Labels: *map[string]*string,
 	ManagedServiceConfigs: interface{},
 	OpenapiDocuments: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts,
 }
 ```
 
@@ -1152,11 +1152,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapiga
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A user-visible name for the API. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.gatewayConfig">GatewayConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfig">GoogleApiGatewayApiConfigGatewayConfig</a></code> | gateway_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.grpcServices">GrpcServices</a></code> | <code>interface{}</code> | grpc_services block. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#id GoogleApiGatewayApiConfigA#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#id GoogleApiGatewayApiConfigA#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user-provided metadata. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.managedServiceConfigs">ManagedServiceConfigs</a></code> | <code>interface{}</code> | managed_service_configs block. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.openapiDocuments">OpenapiDocuments</a></code> | <code>interface{}</code> | openapi_documents block. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#project GoogleApiGatewayApiConfigA#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#project GoogleApiGatewayApiConfigA#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts">GoogleApiGatewayApiConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1241,7 +1241,7 @@ Api *string
 
 The API to attach the config to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#api GoogleApiGatewayApiConfigA#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#api GoogleApiGatewayApiConfigA#api}
 
 ---
 
@@ -1255,7 +1255,7 @@ ApiConfigId *string
 
 Identifier to assign to the API Config. Must be unique within scope of the parent resource(api).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#api_config_id GoogleApiGatewayApiConfigA#api_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#api_config_id GoogleApiGatewayApiConfigA#api_config_id}
 
 ---
 
@@ -1271,7 +1271,7 @@ Creates a unique name beginning with the specified prefix.
 
 If this and api_config_id are unspecified, a random value is chosen for the name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#api_config_id_prefix GoogleApiGatewayApiConfigA#api_config_id_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#api_config_id_prefix GoogleApiGatewayApiConfigA#api_config_id_prefix}
 
 ---
 
@@ -1285,7 +1285,7 @@ DisplayName *string
 
 A user-visible name for the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#display_name GoogleApiGatewayApiConfigA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#display_name GoogleApiGatewayApiConfigA#display_name}
 
 ---
 
@@ -1299,7 +1299,7 @@ GatewayConfig GoogleApiGatewayApiConfigGatewayConfig
 
 gateway_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#gateway_config GoogleApiGatewayApiConfigA#gateway_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#gateway_config GoogleApiGatewayApiConfigA#gateway_config}
 
 ---
 
@@ -1313,7 +1313,7 @@ GrpcServices interface{}
 
 grpc_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#grpc_services GoogleApiGatewayApiConfigA#grpc_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#grpc_services GoogleApiGatewayApiConfigA#grpc_services}
 
 ---
 
@@ -1325,7 +1325,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#id GoogleApiGatewayApiConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#id GoogleApiGatewayApiConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1345,7 +1345,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#labels GoogleApiGatewayApiConfigA#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#labels GoogleApiGatewayApiConfigA#labels}
 
 ---
 
@@ -1359,7 +1359,7 @@ ManagedServiceConfigs interface{}
 
 managed_service_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#managed_service_configs GoogleApiGatewayApiConfigA#managed_service_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#managed_service_configs GoogleApiGatewayApiConfigA#managed_service_configs}
 
 ---
 
@@ -1373,7 +1373,7 @@ OpenapiDocuments interface{}
 
 openapi_documents block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#openapi_documents GoogleApiGatewayApiConfigA#openapi_documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#openapi_documents GoogleApiGatewayApiConfigA#openapi_documents}
 
 ---
 
@@ -1385,7 +1385,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#project GoogleApiGatewayApiConfigA#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#project GoogleApiGatewayApiConfigA#project}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Timeouts GoogleApiGatewayApiConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#timeouts GoogleApiGatewayApiConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#timeouts GoogleApiGatewayApiConfigA#timeouts}
 
 ---
 
@@ -1408,10 +1408,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigGatewayConfig {
-	BackendConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfig,
+	BackendConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfig,
 }
 ```
 
@@ -1433,7 +1433,7 @@ BackendConfig GoogleApiGatewayApiConfigGatewayConfigBackendConfig
 
 backend_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#backend_config GoogleApiGatewayApiConfigA#backend_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#backend_config GoogleApiGatewayApiConfigA#backend_config}
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfig {
 	GoogleServiceAccount: *string,
@@ -1467,7 +1467,7 @@ GoogleServiceAccount *string
 
 Google Cloud IAM service account used to sign OIDC tokens for backends that have authentication configured (https://cloud.google.com/service-infrastructure/docs/service-management/reference/rest/v1/services.configs#backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#google_service_account GoogleApiGatewayApiConfigA#google_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#google_service_account GoogleApiGatewayApiConfigA#google_service_account}
 
 ---
 
@@ -1476,10 +1476,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigGrpcServices {
-	FileDescriptorSet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet,
+	FileDescriptorSet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet,
 	Source: interface{},
 }
 ```
@@ -1503,7 +1503,7 @@ FileDescriptorSet GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet
 
 file_descriptor_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#file_descriptor_set GoogleApiGatewayApiConfigA#file_descriptor_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#file_descriptor_set GoogleApiGatewayApiConfigA#file_descriptor_set}
 
 ---
 
@@ -1517,7 +1517,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#source GoogleApiGatewayApiConfigA#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#source GoogleApiGatewayApiConfigA#source}
 
 ---
 
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet {
 	Contents: *string,
@@ -1553,7 +1553,7 @@ Contents *string
 
 Base64 encoded content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
 
 ---
 
@@ -1567,7 +1567,7 @@ Path *string
 
 The file path (full or relative path). This is typically the path of the file when it is uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
 
 ---
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigGrpcServicesSource {
 	Contents: *string,
@@ -1603,7 +1603,7 @@ Contents *string
 
 Base64 encoded content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
 
 ---
 
@@ -1617,7 +1617,7 @@ Path *string
 
 The file path (full or relative path). This is typically the path of the file when it is uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
 
 ---
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigManagedServiceConfigs {
 	Contents: *string,
@@ -1653,7 +1653,7 @@ Contents *string
 
 Base64 encoded content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
 
 ---
 
@@ -1667,7 +1667,7 @@ Path *string
 
 The file path (full or relative path). This is typically the path of the file when it is uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
 
 ---
 
@@ -1676,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocuments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigOpenapiDocuments {
-	Document: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocument,
+	Document: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocument,
 }
 ```
 
@@ -1701,7 +1701,7 @@ Document GoogleApiGatewayApiConfigOpenapiDocumentsDocument
 
 document block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#document GoogleApiGatewayApiConfigA#document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#document GoogleApiGatewayApiConfigA#document}
 
 ---
 
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocument {
 	Contents: *string,
@@ -1737,7 +1737,7 @@ Contents *string
 
 Base64 encoded content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
 
 ---
 
@@ -1751,7 +1751,7 @@ Path *string
 
 The file path (full or relative path). This is typically the path of the file when it is uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
 
 ---
 
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 &googleapigatewayapiconfig.GoogleApiGatewayApiConfigTimeouts {
 	Create: *string,
@@ -1773,9 +1773,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapiga
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#create GoogleApiGatewayApiConfigA#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#delete GoogleApiGatewayApiConfigA#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#update GoogleApiGatewayApiConfigA#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#create GoogleApiGatewayApiConfigA#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#delete GoogleApiGatewayApiConfigA#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#update GoogleApiGatewayApiConfigA#update}. |
 
 ---
 
@@ -1787,7 +1787,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#create GoogleApiGatewayApiConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#create GoogleApiGatewayApiConfigA#create}.
 
 ---
 
@@ -1799,7 +1799,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#delete GoogleApiGatewayApiConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#delete GoogleApiGatewayApiConfigA#delete}.
 
 ---
 
@@ -1811,7 +1811,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_api_gateway_api_config#update GoogleApiGatewayApiConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_api_gateway_api_config#update GoogleApiGatewayApiConfigA#update}.
 
 ---
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference
 ```
@@ -2093,7 +2093,7 @@ func InternalValue() GoogleApiGatewayApiConfigGatewayConfigBackendConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGatewayConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigGatewayConfigOutputReference
 ```
@@ -2377,7 +2377,7 @@ func InternalValue() GoogleApiGatewayApiConfigGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGrpcServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApiGatewayApiConfigGrpcServicesList
 ```
@@ -2813,7 +2813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGrpcServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApiGatewayApiConfigGrpcServicesOutputReference
 ```
@@ -3157,7 +3157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGrpcServicesSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApiGatewayApiConfigGrpcServicesSourceList
 ```
@@ -3300,7 +3300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigGrpcServicesSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference
 ```
@@ -3611,7 +3611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigManagedServiceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApiGatewayApiConfigManagedServiceConfigsList
 ```
@@ -3754,7 +3754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigManagedServiceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference
 ```
@@ -4065,7 +4065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference
 ```
@@ -4358,7 +4358,7 @@ func InternalValue() GoogleApiGatewayApiConfigOpenapiDocumentsDocument
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigOpenapiDocumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApiGatewayApiConfigOpenapiDocumentsList
 ```
@@ -4501,7 +4501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigOpenapiDocumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference
 ```
@@ -4803,7 +4803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigatewayapiconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfig"
 
 googleapigatewayapiconfig.NewGoogleApiGatewayApiConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigTimeoutsOutputReference
 ```

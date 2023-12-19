@@ -4,7 +4,7 @@
 
 ### GoogleFolderIamMember <a name="GoogleFolderIamMember" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member google_folder_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member google_folder_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMember.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the GoogleFolderIamMember to i
 
 The id of the existing GoogleFolderIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,9 +817,9 @@ const googleFolderIamMemberCondition: googleFolderIamMember.GoogleFolderIamMembe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#expression GoogleFolderIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#title GoogleFolderIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#description GoogleFolderIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#expression GoogleFolderIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#title GoogleFolderIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#description GoogleFolderIamMember#description}. |
 
 ---
 
@@ -831,7 +831,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#expression GoogleFolderIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#expression GoogleFolderIamMember#expression}.
 
 ---
 
@@ -843,7 +843,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#title GoogleFolderIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#title GoogleFolderIamMember#title}.
 
 ---
 
@@ -855,7 +855,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#description GoogleFolderIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#description GoogleFolderIamMember#description}.
 
 ---
 
@@ -880,11 +880,11 @@ const googleFolderIamMemberConfig: googleFolderIamMember.GoogleFolderIamMemberCo
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#folder GoogleFolderIamMember#folder}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#member GoogleFolderIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#role GoogleFolderIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#folder GoogleFolderIamMember#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#member GoogleFolderIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#role GoogleFolderIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberCondition">GoogleFolderIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#id GoogleFolderIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamMember.GoogleFolderIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#id GoogleFolderIamMember#id}. |
 
 ---
 
@@ -966,7 +966,7 @@ public readonly folder: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#folder GoogleFolderIamMember#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#folder GoogleFolderIamMember#folder}.
 
 ---
 
@@ -978,7 +978,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#member GoogleFolderIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#member GoogleFolderIamMember#member}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#role GoogleFolderIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#role GoogleFolderIamMember#role}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly condition: GoogleFolderIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#condition GoogleFolderIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#condition GoogleFolderIamMember#condition}
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_folder_iam_member#id GoogleFolderIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_folder_iam_member#id GoogleFolderIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### GoogleIapWebRegionBackendServiceIamMember <a name="GoogleIapWebRegionBackendServiceIamMember" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member google_iap_web_region_backend_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer"></a>
 
@@ -42,13 +42,13 @@ googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMem
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.webRegionBackendService">web_region_backend_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.webRegionBackendService">web_region_backend_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition">GoogleIapWebRegionBackendServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMember.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#condition GoogleIapWebRegionBackendServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#condition GoogleIapWebRegionBackendServiceIamMember#condition}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}.
 
 ---
 
@@ -540,7 +540,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}.
 
 ---
 
@@ -548,7 +548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}.
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}.
 
 ---
 
@@ -698,7 +698,7 @@ The construct id used in the generated config for the GoogleIapWebRegionBackendS
 
 The id of the existing GoogleIapWebRegionBackendServiceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1076,9 +1076,9 @@ googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}. |
 
 ---
 
@@ -1090,7 +1090,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#expression GoogleIapWebRegionBackendServiceIamMember#expression}.
 
 ---
 
@@ -1102,7 +1102,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#title GoogleIapWebRegionBackendServiceIamMember#title}.
 
 ---
 
@@ -1114,7 +1114,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#description GoogleIapWebRegionBackendServiceIamMember#description}.
 
 ---
 
@@ -1154,13 +1154,13 @@ googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMem
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.webRegionBackendService">web_region_backend_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.webRegionBackendService">web_region_backend_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberCondition">GoogleIapWebRegionBackendServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebRegionBackendServiceIamMember.GoogleIapWebRegionBackendServiceIamMemberConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}. |
 
 ---
 
@@ -1242,7 +1242,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#member GoogleIapWebRegionBackendServiceIamMember#member}.
 
 ---
 
@@ -1254,7 +1254,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#role GoogleIapWebRegionBackendServiceIamMember#role}.
 
 ---
 
@@ -1266,7 +1266,7 @@ web_region_backend_service: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#web_region_backend_service GoogleIapWebRegionBackendServiceIamMember#web_region_backend_service}.
 
 ---
 
@@ -1280,7 +1280,7 @@ condition: GoogleIapWebRegionBackendServiceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#condition GoogleIapWebRegionBackendServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#condition GoogleIapWebRegionBackendServiceIamMember#condition}
 
 ---
 
@@ -1292,7 +1292,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#id GoogleIapWebRegionBackendServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1307,7 +1307,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#project GoogleIapWebRegionBackendServiceIamMember#project}.
 
 ---
 
@@ -1319,7 +1319,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_region_backend_service_iam_member#region GoogleIapWebRegionBackendServiceIamMember#region}.
 
 ---
 

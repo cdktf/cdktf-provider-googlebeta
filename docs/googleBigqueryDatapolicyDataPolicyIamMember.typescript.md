@@ -4,7 +4,7 @@
 
 ### GoogleBigqueryDatapolicyDataPolicyIamMember <a name="GoogleBigqueryDatapolicyDataPolicyIamMember" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMember.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleBigqueryDatapolicyDa
 
 The id of the existing GoogleBigqueryDatapolicyDataPolicyIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const googleBigqueryDatapolicyDataPolicyIamMemberCondition: googleBigqueryDatapo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#expression GoogleBigqueryDatapolicyDataPolicyIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#title GoogleBigqueryDatapolicyDataPolicyIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#description GoogleBigqueryDatapolicyDataPolicyIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#expression GoogleBigqueryDatapolicyDataPolicyIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#title GoogleBigqueryDatapolicyDataPolicyIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#description GoogleBigqueryDatapolicyDataPolicyIamMember#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#expression GoogleBigqueryDatapolicyDataPolicyIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#expression GoogleBigqueryDatapolicyDataPolicyIamMember#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#title GoogleBigqueryDatapolicyDataPolicyIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#title GoogleBigqueryDatapolicyDataPolicyIamMember#title}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#description GoogleBigqueryDatapolicyDataPolicyIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#description GoogleBigqueryDatapolicyDataPolicyIamMember#description}.
 
 ---
 
@@ -938,13 +938,13 @@ const googleBigqueryDatapolicyDataPolicyIamMemberConfig: googleBigqueryDatapolic
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.dataPolicyId">dataPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamMember#data_policy_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#member GoogleBigqueryDatapolicyDataPolicyIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#role GoogleBigqueryDatapolicyDataPolicyIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.dataPolicyId">dataPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamMember#data_policy_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#member GoogleBigqueryDatapolicyDataPolicyIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#role GoogleBigqueryDatapolicyDataPolicyIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberCondition">GoogleBigqueryDatapolicyDataPolicyIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#id GoogleBigqueryDatapolicyDataPolicyIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#location GoogleBigqueryDatapolicyDataPolicyIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#project GoogleBigqueryDatapolicyDataPolicyIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#id GoogleBigqueryDatapolicyDataPolicyIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#location GoogleBigqueryDatapolicyDataPolicyIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#project GoogleBigqueryDatapolicyDataPolicyIamMember#project}. |
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly dataPolicyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamMember#data_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamMember#data_policy_id}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#member GoogleBigqueryDatapolicyDataPolicyIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#member GoogleBigqueryDatapolicyDataPolicyIamMember#member}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#role GoogleBigqueryDatapolicyDataPolicyIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#role GoogleBigqueryDatapolicyDataPolicyIamMember#role}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly condition: GoogleBigqueryDatapolicyDataPolicyIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#condition GoogleBigqueryDatapolicyDataPolicyIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#condition GoogleBigqueryDatapolicyDataPolicyIamMember#condition}
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#id GoogleBigqueryDatapolicyDataPolicyIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#id GoogleBigqueryDatapolicyDataPolicyIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#location GoogleBigqueryDatapolicyDataPolicyIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#location GoogleBigqueryDatapolicyDataPolicyIamMember#location}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#project GoogleBigqueryDatapolicyDataPolicyIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_member#project GoogleBigqueryDatapolicyDataPolicyIamMember#project}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### GoogleIapWebTypeComputeIamMember <a name="GoogleIapWebTypeComputeIamMember" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.NewGoogleIapWebTypeComputeIamMember(scope Construct, id *string, config GoogleIapWebTypeComputeIamMemberConfig) GoogleIapWebTypeComputeIamMember
 ```
@@ -405,7 +405,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleIapWebTypeComputeIam
 
 The id of the existing GoogleIapWebTypeComputeIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 &googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMemberCondition {
 	Expression: *string,
@@ -828,9 +828,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#expression GoogleIapWebTypeComputeIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#title GoogleIapWebTypeComputeIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#description GoogleIapWebTypeComputeIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#expression GoogleIapWebTypeComputeIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#title GoogleIapWebTypeComputeIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#description GoogleIapWebTypeComputeIamMember#description}. |
 
 ---
 
@@ -842,7 +842,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#expression GoogleIapWebTypeComputeIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#expression GoogleIapWebTypeComputeIamMember#expression}.
 
 ---
 
@@ -854,7 +854,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#title GoogleIapWebTypeComputeIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#title GoogleIapWebTypeComputeIamMember#title}.
 
 ---
 
@@ -866,7 +866,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#description GoogleIapWebTypeComputeIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#description GoogleIapWebTypeComputeIamMember#description}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 &googleiapwebtypecomputeiammember.GoogleIapWebTypeComputeIamMemberConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwe
 	Provisioners: *[]interface{},
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -904,11 +904,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwe
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#member GoogleIapWebTypeComputeIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#role GoogleIapWebTypeComputeIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#member GoogleIapWebTypeComputeIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#role GoogleIapWebTypeComputeIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberCondition">GoogleIapWebTypeComputeIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#id GoogleIapWebTypeComputeIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#project GoogleIapWebTypeComputeIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#id GoogleIapWebTypeComputeIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#project GoogleIapWebTypeComputeIamMember#project}. |
 
 ---
 
@@ -990,7 +990,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#member GoogleIapWebTypeComputeIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#member GoogleIapWebTypeComputeIamMember#member}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#role GoogleIapWebTypeComputeIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#role GoogleIapWebTypeComputeIamMember#role}.
 
 ---
 
@@ -1016,7 +1016,7 @@ Condition GoogleIapWebTypeComputeIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#condition GoogleIapWebTypeComputeIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#condition GoogleIapWebTypeComputeIamMember#condition}
 
 ---
 
@@ -1028,7 +1028,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#id GoogleIapWebTypeComputeIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#id GoogleIapWebTypeComputeIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_iap_web_type_compute_iam_member#project GoogleIapWebTypeComputeIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_iap_web_type_compute_iam_member#project GoogleIapWebTypeComputeIamMember#project}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiapwebtypecomputeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiammember"
 
 googleiapwebtypecomputeiammember.NewGoogleIapWebTypeComputeIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebTypeComputeIamMemberConditionOutputReference
 ```

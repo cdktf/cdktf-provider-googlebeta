@@ -4,12 +4,12 @@
 
 ### GooglePubsubLiteTopic <a name="GooglePubsubLiteTopic" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic google_pubsub_lite_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic google_pubsub_lite_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopic(scope Construct, id *string, config GooglePubsubLiteTopicConfig) GooglePubsubLiteTopic
 ```
@@ -479,7 +479,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.GooglePubsubLiteTopic_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ googlepubsublitetopic.GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.GooglePubsubLiteTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ googlepubsublitetopic.GooglePubsubLiteTopic_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.GooglePubsubLiteTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -568,7 +568,7 @@ The construct id used in the generated config for the GooglePubsubLiteTopic to i
 
 The id of the existing GooglePubsubLiteTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicConfig {
 	Connection: interface{},
@@ -978,12 +978,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	PartitionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig,
+	PartitionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig,
 	Project: *string,
 	Region: *string,
-	ReservationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig,
-	RetentionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts,
+	ReservationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig,
+	RetentionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts,
 	Zone: *string,
 }
 ```
@@ -1000,9 +1000,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.name">Name</a></code> | <code>*string</code> | Name of the topic. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#id GooglePubsubLiteTopic#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#id GooglePubsubLiteTopic#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.partitionConfig">PartitionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig">GooglePubsubLiteTopicPartitionConfig</a></code> | partition_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#project GooglePubsubLiteTopic#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#project GooglePubsubLiteTopic#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.region">Region</a></code> | <code>*string</code> | The region of the pubsub lite topic. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.reservationConfig">ReservationConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig">GooglePubsubLiteTopicReservationConfig</a></code> | reservation_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig.property.retentionConfig">RetentionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig">GooglePubsubLiteTopicRetentionConfig</a></code> | retention_config block. |
@@ -1091,7 +1091,7 @@ Name *string
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#name GooglePubsubLiteTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#name GooglePubsubLiteTopic#name}
 
 ---
 
@@ -1103,7 +1103,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#id GooglePubsubLiteTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#id GooglePubsubLiteTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ PartitionConfig GooglePubsubLiteTopicPartitionConfig
 
 partition_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#partition_config GooglePubsubLiteTopic#partition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#partition_config GooglePubsubLiteTopic#partition_config}
 
 ---
 
@@ -1132,7 +1132,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#project GooglePubsubLiteTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#project GooglePubsubLiteTopic#project}.
 
 ---
 
@@ -1146,7 +1146,7 @@ Region *string
 
 The region of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#region GooglePubsubLiteTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#region GooglePubsubLiteTopic#region}
 
 ---
 
@@ -1160,7 +1160,7 @@ ReservationConfig GooglePubsubLiteTopicReservationConfig
 
 reservation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#reservation_config GooglePubsubLiteTopic#reservation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#reservation_config GooglePubsubLiteTopic#reservation_config}
 
 ---
 
@@ -1174,7 +1174,7 @@ RetentionConfig GooglePubsubLiteTopicRetentionConfig
 
 retention_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#retention_config GooglePubsubLiteTopic#retention_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#retention_config GooglePubsubLiteTopic#retention_config}
 
 ---
 
@@ -1188,7 +1188,7 @@ Timeouts GooglePubsubLiteTopicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#timeouts GooglePubsubLiteTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#timeouts GooglePubsubLiteTopic#timeouts}
 
 ---
 
@@ -1202,7 +1202,7 @@ Zone *string
 
 The zone of the pubsub lite topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#zone GooglePubsubLiteTopic#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#zone GooglePubsubLiteTopic#zone}
 
 ---
 
@@ -1211,11 +1211,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicPartitionConfig {
 	Count: *f64,
-	Capacity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacity,
+	Capacity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacity,
 }
 ```
 
@@ -1238,7 +1238,7 @@ Count *f64
 
 The number of partitions in the topic. Must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#count GooglePubsubLiteTopic#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#count GooglePubsubLiteTopic#count}
 
 ---
 
@@ -1252,7 +1252,7 @@ Capacity GooglePubsubLiteTopicPartitionConfigCapacity
 
 capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#capacity GooglePubsubLiteTopic#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#capacity GooglePubsubLiteTopic#capacity}
 
 ---
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicPartitionConfigCapacity {
 	PublishMibPerSec: *f64,
@@ -1288,7 +1288,7 @@ PublishMibPerSec *f64
 
 Subscribe throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#publish_mib_per_sec GooglePubsubLiteTopic#publish_mib_per_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#publish_mib_per_sec GooglePubsubLiteTopic#publish_mib_per_sec}
 
 ---
 
@@ -1302,7 +1302,7 @@ SubscribeMibPerSec *f64
 
 Publish throughput capacity per partition in MiB/s. Must be >= 4 and <= 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#subscribe_mib_per_sec GooglePubsubLiteTopic#subscribe_mib_per_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#subscribe_mib_per_sec GooglePubsubLiteTopic#subscribe_mib_per_sec}
 
 ---
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicReservationConfig {
 	ThroughputReservation: *string,
@@ -1336,7 +1336,7 @@ ThroughputReservation *string
 
 The Reservation to use for this topic's throughput capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#throughput_reservation GooglePubsubLiteTopic#throughput_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#throughput_reservation GooglePubsubLiteTopic#throughput_reservation}
 
 ---
 
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicRetentionConfig {
 	PerPartitionBytes: *string,
@@ -1376,7 +1376,7 @@ If the number of bytes stored
 in any of the topic's partitions grows beyond this value, older messages will be
 dropped to make room for newer ones, regardless of the value of period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#per_partition_bytes GooglePubsubLiteTopic#per_partition_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#per_partition_bytes GooglePubsubLiteTopic#per_partition_bytes}
 
 ---
 
@@ -1395,7 +1395,7 @@ long as the bytes retained for each partition is below perPartitionBytes. A
 duration in seconds with up to nine fractional digits, terminated by 's'.
 Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#period GooglePubsubLiteTopic#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#period GooglePubsubLiteTopic#period}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 &googlepubsublitetopic.GooglePubsubLiteTopicTimeouts {
 	Create: *string,
@@ -1417,9 +1417,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#create GooglePubsubLiteTopic#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#delete GooglePubsubLiteTopic#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#update GooglePubsubLiteTopic#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#create GooglePubsubLiteTopic#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#delete GooglePubsubLiteTopic#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#update GooglePubsubLiteTopic#update}. |
 
 ---
 
@@ -1431,7 +1431,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#create GooglePubsubLiteTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#create GooglePubsubLiteTopic#create}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#delete GooglePubsubLiteTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#delete GooglePubsubLiteTopic#delete}.
 
 ---
 
@@ -1455,7 +1455,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_pubsub_lite_topic#update GooglePubsubLiteTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_pubsub_lite_topic#update GooglePubsubLiteTopic#update}.
 
 ---
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopicPartitionConfigCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteTopicPartitionConfigCapacityOutputReference
 ```
@@ -1759,7 +1759,7 @@ func InternalValue() GooglePubsubLiteTopicPartitionConfigCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopicPartitionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteTopicPartitionConfigOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() GooglePubsubLiteTopicPartitionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopicReservationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteTopicReservationConfigOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() GooglePubsubLiteTopicReservationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopicRetentionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteTopicRetentionConfigOutputReference
 ```
@@ -2650,7 +2650,7 @@ func InternalValue() GooglePubsubLiteTopicRetentionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepubsublitetopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsublitetopic"
 
 googlepubsublitetopic.NewGooglePubsubLiteTopicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubLiteTopicTimeoutsOutputReference
 ```
