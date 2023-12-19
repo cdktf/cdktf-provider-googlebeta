@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 datagooglecomputeimage.NewDataGoogleComputeImage(scope Construct, id *string, config DataGoogleComputeImageConfig) DataGoogleComputeImage
 ```
@@ -309,7 +309,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 datagooglecomputeimage.DataGoogleComputeImage_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 datagooglecomputeimage.DataGoogleComputeImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ datagooglecomputeimage.DataGoogleComputeImage_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 datagooglecomputeimage.DataGoogleComputeImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datagooglecomputeimage.DataGoogleComputeImage_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 datagooglecomputeimage.DataGoogleComputeImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeImage.DataGoogleComputeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeimage"
 
 &datagooglecomputeimage.DataGoogleComputeImageConfig {
 	Connection: interface{},
