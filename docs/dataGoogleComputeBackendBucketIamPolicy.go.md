@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 datagooglecomputebackendbucketiampolicy.NewDataGoogleComputeBackendBucketIamPolicy(scope Construct, id *string, config DataGoogleComputeBackendBucketIamPolicyConfig) DataGoogleComputeBackendBucketIamPolicy
 ```
@@ -281,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputebackendbucketiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputebackendbucketiampolicy"
 
 &datagooglecomputebackendbucketiampolicy.DataGoogleComputeBackendBucketIamPolicyConfig {
 	Connection: interface{},
