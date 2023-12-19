@@ -4,7 +4,7 @@
 
 ### GoogleComputeBackendBucketIamBinding <a name="GoogleComputeBackendBucketIamBinding" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleComputeBackendBucket
 
 The id of the existing GoogleComputeBackendBucketIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,9 +846,9 @@ const googleComputeBackendBucketIamBindingCondition: googleComputeBackendBucketI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#expression GoogleComputeBackendBucketIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#title GoogleComputeBackendBucketIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#description GoogleComputeBackendBucketIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#expression GoogleComputeBackendBucketIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#title GoogleComputeBackendBucketIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#description GoogleComputeBackendBucketIamBinding#description}. |
 
 ---
 
@@ -860,7 +860,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#expression GoogleComputeBackendBucketIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#expression GoogleComputeBackendBucketIamBinding#expression}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#title GoogleComputeBackendBucketIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#title GoogleComputeBackendBucketIamBinding#title}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#description GoogleComputeBackendBucketIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#description GoogleComputeBackendBucketIamBinding#description}.
 
 ---
 
@@ -909,12 +909,12 @@ const googleComputeBackendBucketIamBindingConfig: googleComputeBackendBucketIamB
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#members GoogleComputeBackendBucketIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#name GoogleComputeBackendBucketIamBinding#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#role GoogleComputeBackendBucketIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#members GoogleComputeBackendBucketIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#name GoogleComputeBackendBucketIamBinding#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#role GoogleComputeBackendBucketIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingCondition">GoogleComputeBackendBucketIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#id GoogleComputeBackendBucketIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#project GoogleComputeBackendBucketIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#id GoogleComputeBackendBucketIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#project GoogleComputeBackendBucketIamBinding#project}. |
 
 ---
 
@@ -996,7 +996,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#members GoogleComputeBackendBucketIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#members GoogleComputeBackendBucketIamBinding#members}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#name GoogleComputeBackendBucketIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#name GoogleComputeBackendBucketIamBinding#name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#role GoogleComputeBackendBucketIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#role GoogleComputeBackendBucketIamBinding#role}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly condition: GoogleComputeBackendBucketIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#condition GoogleComputeBackendBucketIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#condition GoogleComputeBackendBucketIamBinding#condition}
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#id GoogleComputeBackendBucketIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#id GoogleComputeBackendBucketIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1061,7 +1061,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_binding#project GoogleComputeBackendBucketIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_backend_bucket_iam_binding#project GoogleComputeBackendBucketIamBinding#project}.
 
 ---
 

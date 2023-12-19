@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleOrgPolicyPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#id GoogleOrgPolicyPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#id GoogleOrgPolicyPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,51 +22,657 @@ export interface GoogleOrgPolicyPolicyConfig extends cdktf.TerraformMetaArgument
   /**
   * Immutable. The resource name of the Policy. Must be one of the following forms, where constraint_name is the name of the constraint which this Policy configures: * `projects/{project_number}/policies/{constraint_name}` * `folders/{folder_id}/policies/{constraint_name}` * `organizations/{organization_id}/policies/{constraint_name}` For example, "projects/123/policies/compute.disableSerialPortAccess". Note: `projects/{project_id}/policies/{constraint_name}` is also an acceptable name for API requests, but responses will return the name using the equivalent project number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#name GoogleOrgPolicyPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#name GoogleOrgPolicyPolicy#name}
   */
   readonly name: string;
   /**
   * The parent of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#parent GoogleOrgPolicyPolicy#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#parent GoogleOrgPolicyPolicy#parent}
   */
   readonly parent: string;
   /**
+  * dry_run_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#dry_run_spec GoogleOrgPolicyPolicy#dry_run_spec}
+  */
+  readonly dryRunSpec?: GoogleOrgPolicyPolicyDryRunSpec;
+  /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#spec GoogleOrgPolicyPolicy#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#spec GoogleOrgPolicyPolicy#spec}
   */
   readonly spec?: GoogleOrgPolicyPolicySpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#timeouts GoogleOrgPolicyPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#timeouts GoogleOrgPolicyPolicy#timeouts}
   */
   readonly timeouts?: GoogleOrgPolicyPolicyTimeouts;
 }
-export interface GoogleOrgPolicyPolicySpecRulesCondition {
+export interface GoogleOrgPolicyPolicyDryRunSpecRulesCondition {
   /**
   * Optional. Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#description GoogleOrgPolicyPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#description GoogleOrgPolicyPolicy#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#expression GoogleOrgPolicyPolicy#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#expression GoogleOrgPolicyPolicy#expression}
   */
   readonly expression?: string;
   /**
   * Optional. String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#location GoogleOrgPolicyPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#location GoogleOrgPolicyPolicy#location}
   */
   readonly location?: string;
   /**
   * Optional. Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#title GoogleOrgPolicyPolicy#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#title GoogleOrgPolicyPolicy#title}
+  */
+  readonly title?: string;
+}
+
+export function googleOrgPolicyPolicyDryRunSpecRulesConditionToTerraform(struct?: GoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference | GoogleOrgPolicyPolicyDryRunSpecRulesCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    expression: cdktf.stringToTerraform(struct!.expression),
+    location: cdktf.stringToTerraform(struct!.location),
+    title: cdktf.stringToTerraform(struct!.title),
+  }
+}
+
+export class GoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleOrgPolicyPolicyDryRunSpecRulesCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOrgPolicyPolicyDryRunSpecRulesCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._expression = undefined;
+      this._location = undefined;
+      this._title = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._expression = value.expression;
+      this._location = value.location;
+      this._title = value.title;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
+export interface GoogleOrgPolicyPolicyDryRunSpecRulesValues {
+  /**
+  * List of values allowed at this resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#allowed_values GoogleOrgPolicyPolicy#allowed_values}
+  */
+  readonly allowedValues?: string[];
+  /**
+  * List of values denied at this resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#denied_values GoogleOrgPolicyPolicy#denied_values}
+  */
+  readonly deniedValues?: string[];
+}
+
+export function googleOrgPolicyPolicyDryRunSpecRulesValuesToTerraform(struct?: GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference | GoogleOrgPolicyPolicyDryRunSpecRulesValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedValues),
+    denied_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedValues),
+  }
+}
+
+export class GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleOrgPolicyPolicyDryRunSpecRulesValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedValues = this._allowedValues;
+    }
+    if (this._deniedValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deniedValues = this._deniedValues;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOrgPolicyPolicyDryRunSpecRulesValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedValues = undefined;
+      this._deniedValues = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedValues = value.allowedValues;
+      this._deniedValues = value.deniedValues;
+    }
+  }
+
+  // allowed_values - computed: false, optional: true, required: false
+  private _allowedValues?: string[]; 
+  public get allowedValues() {
+    return this.getListAttribute('allowed_values');
+  }
+  public set allowedValues(value: string[]) {
+    this._allowedValues = value;
+  }
+  public resetAllowedValues() {
+    this._allowedValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesInput() {
+    return this._allowedValues;
+  }
+
+  // denied_values - computed: false, optional: true, required: false
+  private _deniedValues?: string[]; 
+  public get deniedValues() {
+    return this.getListAttribute('denied_values');
+  }
+  public set deniedValues(value: string[]) {
+    this._deniedValues = value;
+  }
+  public resetDeniedValues() {
+    this._deniedValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deniedValuesInput() {
+    return this._deniedValues;
+  }
+}
+export interface GoogleOrgPolicyPolicyDryRunSpecRules {
+  /**
+  * Setting this to true means that all values are allowed. This field can be set only in policies for list constraints.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#allow_all GoogleOrgPolicyPolicy#allow_all}
+  */
+  readonly allowAll?: string;
+  /**
+  * Setting this to true means that all values are denied. This field can be set only in policies for list constraints.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#deny_all GoogleOrgPolicyPolicy#deny_all}
+  */
+  readonly denyAll?: string;
+  /**
+  * If `true`, then the policy is enforced. If `false`, then any configuration is acceptable. This field can be set only in policies for boolean constraints.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#enforce GoogleOrgPolicyPolicy#enforce}
+  */
+  readonly enforce?: string;
+  /**
+  * condition block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#condition GoogleOrgPolicyPolicy#condition}
+  */
+  readonly condition?: GoogleOrgPolicyPolicyDryRunSpecRulesCondition;
+  /**
+  * values block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#values GoogleOrgPolicyPolicy#values}
+  */
+  readonly values?: GoogleOrgPolicyPolicyDryRunSpecRulesValues;
+}
+
+export function googleOrgPolicyPolicyDryRunSpecRulesToTerraform(struct?: GoogleOrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_all: cdktf.stringToTerraform(struct!.allowAll),
+    deny_all: cdktf.stringToTerraform(struct!.denyAll),
+    enforce: cdktf.stringToTerraform(struct!.enforce),
+    condition: googleOrgPolicyPolicyDryRunSpecRulesConditionToTerraform(struct!.condition),
+    values: googleOrgPolicyPolicyDryRunSpecRulesValuesToTerraform(struct!.values),
+  }
+}
+
+export class GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowAll !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowAll = this._allowAll;
+    }
+    if (this._denyAll !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.denyAll = this._denyAll;
+    }
+    if (this._enforce !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforce = this._enforce;
+    }
+    if (this._condition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition?.internalValue;
+    }
+    if (this._values?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOrgPolicyPolicyDryRunSpecRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowAll = undefined;
+      this._denyAll = undefined;
+      this._enforce = undefined;
+      this._condition.internalValue = undefined;
+      this._values.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowAll = value.allowAll;
+      this._denyAll = value.denyAll;
+      this._enforce = value.enforce;
+      this._condition.internalValue = value.condition;
+      this._values.internalValue = value.values;
+    }
+  }
+
+  // allow_all - computed: false, optional: true, required: false
+  private _allowAll?: string; 
+  public get allowAll() {
+    return this.getStringAttribute('allow_all');
+  }
+  public set allowAll(value: string) {
+    this._allowAll = value;
+  }
+  public resetAllowAll() {
+    this._allowAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowAllInput() {
+    return this._allowAll;
+  }
+
+  // deny_all - computed: false, optional: true, required: false
+  private _denyAll?: string; 
+  public get denyAll() {
+    return this.getStringAttribute('deny_all');
+  }
+  public set denyAll(value: string) {
+    this._denyAll = value;
+  }
+  public resetDenyAll() {
+    this._denyAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get denyAllInput() {
+    return this._denyAll;
+  }
+
+  // enforce - computed: false, optional: true, required: false
+  private _enforce?: string; 
+  public get enforce() {
+    return this.getStringAttribute('enforce');
+  }
+  public set enforce(value: string) {
+    this._enforce = value;
+  }
+  public resetEnforce() {
+    this._enforce = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceInput() {
+    return this._enforce;
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition = new GoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference(this, "condition");
+  public get condition() {
+    return this._condition;
+  }
+  public putCondition(value: GoogleOrgPolicyPolicyDryRunSpecRulesCondition) {
+    this._condition.internalValue = value;
+  }
+  public resetCondition() {
+    this._condition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition.internalValue;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values = new GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference(this, "values");
+  public get values() {
+    return this._values;
+  }
+  public putValues(value: GoogleOrgPolicyPolicyDryRunSpecRulesValues) {
+    this._values.internalValue = value;
+  }
+  public resetValues() {
+    this._values.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values.internalValue;
+  }
+}
+
+export class GoogleOrgPolicyPolicyDryRunSpecRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleOrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference {
+    return new GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleOrgPolicyPolicyDryRunSpec {
+  /**
+  * Determines the inheritance behavior for this policy. If `inherit_from_parent` is true, policy rules set higher up in the hierarchy (up to the closest root) are inherited and present in the effective policy. If it is false, then no rules are inherited, and this policy becomes the new root for evaluation. This field can be set only for policies which configure list constraints.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#inherit_from_parent GoogleOrgPolicyPolicy#inherit_from_parent}
+  */
+  readonly inheritFromParent?: boolean | cdktf.IResolvable;
+  /**
+  * Ignores policies set above this resource and restores the `constraint_default` enforcement behavior of the specific constraint at this resource. This field can be set in policies for either list or boolean constraints. If set, `rules` must be empty and `inherit_from_parent` must be set to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#reset GoogleOrgPolicyPolicy#reset}
+  */
+  readonly reset?: boolean | cdktf.IResolvable;
+  /**
+  * rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#rules GoogleOrgPolicyPolicy#rules}
+  */
+  readonly rules?: GoogleOrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable;
+}
+
+export function googleOrgPolicyPolicyDryRunSpecToTerraform(struct?: GoogleOrgPolicyPolicyDryRunSpecOutputReference | GoogleOrgPolicyPolicyDryRunSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    inherit_from_parent: cdktf.booleanToTerraform(struct!.inheritFromParent),
+    reset: cdktf.booleanToTerraform(struct!.reset),
+    rules: cdktf.listMapper(googleOrgPolicyPolicyDryRunSpecRulesToTerraform, true)(struct!.rules),
+  }
+}
+
+export class GoogleOrgPolicyPolicyDryRunSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleOrgPolicyPolicyDryRunSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inheritFromParent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inheritFromParent = this._inheritFromParent;
+    }
+    if (this._reset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reset = this._reset;
+    }
+    if (this._rules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rules = this._rules?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOrgPolicyPolicyDryRunSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._inheritFromParent = undefined;
+      this._reset = undefined;
+      this._rules.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._inheritFromParent = value.inheritFromParent;
+      this._reset = value.reset;
+      this._rules.internalValue = value.rules;
+    }
+  }
+
+  // etag - computed: true, optional: false, required: false
+  public get etag() {
+    return this.getStringAttribute('etag');
+  }
+
+  // inherit_from_parent - computed: false, optional: true, required: false
+  private _inheritFromParent?: boolean | cdktf.IResolvable; 
+  public get inheritFromParent() {
+    return this.getBooleanAttribute('inherit_from_parent');
+  }
+  public set inheritFromParent(value: boolean | cdktf.IResolvable) {
+    this._inheritFromParent = value;
+  }
+  public resetInheritFromParent() {
+    this._inheritFromParent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritFromParentInput() {
+    return this._inheritFromParent;
+  }
+
+  // reset - computed: false, optional: true, required: false
+  private _reset?: boolean | cdktf.IResolvable; 
+  public get reset() {
+    return this.getBooleanAttribute('reset');
+  }
+  public set reset(value: boolean | cdktf.IResolvable) {
+    this._reset = value;
+  }
+  public resetReset() {
+    this._reset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resetInput() {
+    return this._reset;
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
+  }
+
+  // rules - computed: false, optional: true, required: false
+  private _rules = new GoogleOrgPolicyPolicyDryRunSpecRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: GoogleOrgPolicyPolicyDryRunSpecRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  public resetRules() {
+    this._rules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
+}
+export interface GoogleOrgPolicyPolicySpecRulesCondition {
+  /**
+  * Optional. Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#description GoogleOrgPolicyPolicy#description}
+  */
+  readonly description?: string;
+  /**
+  * Textual representation of an expression in Common Expression Language syntax.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#expression GoogleOrgPolicyPolicy#expression}
+  */
+  readonly expression?: string;
+  /**
+  * Optional. String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#location GoogleOrgPolicyPolicy#location}
+  */
+  readonly location?: string;
+  /**
+  * Optional. Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#title GoogleOrgPolicyPolicy#title}
   */
   readonly title?: string;
 }
@@ -202,13 +808,13 @@ export interface GoogleOrgPolicyPolicySpecRulesValues {
   /**
   * List of values allowed at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#allowed_values GoogleOrgPolicyPolicy#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#allowed_values GoogleOrgPolicyPolicy#allowed_values}
   */
   readonly allowedValues?: string[];
   /**
   * List of values denied at this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#denied_values GoogleOrgPolicyPolicy#denied_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#denied_values GoogleOrgPolicyPolicy#denied_values}
   */
   readonly deniedValues?: string[];
 }
@@ -298,31 +904,31 @@ export interface GoogleOrgPolicyPolicySpecRules {
   /**
   * Setting this to true means that all values are allowed. This field can be set only in Policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#allow_all GoogleOrgPolicyPolicy#allow_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#allow_all GoogleOrgPolicyPolicy#allow_all}
   */
   readonly allowAll?: string;
   /**
   * Setting this to true means that all values are denied. This field can be set only in Policies for list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#deny_all GoogleOrgPolicyPolicy#deny_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#deny_all GoogleOrgPolicyPolicy#deny_all}
   */
   readonly denyAll?: string;
   /**
   * If `true`, then the `Policy` is enforced. If `false`, then any configuration is acceptable. This field can be set only in Policies for boolean constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#enforce GoogleOrgPolicyPolicy#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#enforce GoogleOrgPolicyPolicy#enforce}
   */
   readonly enforce?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#condition GoogleOrgPolicyPolicy#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#condition GoogleOrgPolicyPolicy#condition}
   */
   readonly condition?: GoogleOrgPolicyPolicySpecRulesCondition;
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#values GoogleOrgPolicyPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#values GoogleOrgPolicyPolicy#values}
   */
   readonly values?: GoogleOrgPolicyPolicySpecRulesValues;
 }
@@ -513,19 +1119,19 @@ export interface GoogleOrgPolicyPolicySpec {
   /**
   * Determines the inheritance behavior for this `Policy`. If `inherit_from_parent` is true, PolicyRules set higher up in the hierarchy (up to the closest root) are inherited and present in the effective policy. If it is false, then no rules are inherited, and this Policy becomes the new root for evaluation. This field can be set only for Policies which configure list constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#inherit_from_parent GoogleOrgPolicyPolicy#inherit_from_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#inherit_from_parent GoogleOrgPolicyPolicy#inherit_from_parent}
   */
   readonly inheritFromParent?: boolean | cdktf.IResolvable;
   /**
   * Ignores policies set above this resource and restores the `constraint_default` enforcement behavior of the specific `Constraint` at this resource. This field can be set in policies for either list or boolean constraints. If set, `rules` must be empty and `inherit_from_parent` must be set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#reset GoogleOrgPolicyPolicy#reset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#reset GoogleOrgPolicyPolicy#reset}
   */
   readonly reset?: boolean | cdktf.IResolvable;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#rules GoogleOrgPolicyPolicy#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#rules GoogleOrgPolicyPolicy#rules}
   */
   readonly rules?: GoogleOrgPolicyPolicySpecRules[] | cdktf.IResolvable;
 }
@@ -646,15 +1252,15 @@ export class GoogleOrgPolicyPolicySpecOutputReference extends cdktf.ComplexObjec
 }
 export interface GoogleOrgPolicyPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#create GoogleOrgPolicyPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#create GoogleOrgPolicyPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#delete GoogleOrgPolicyPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#delete GoogleOrgPolicyPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#update GoogleOrgPolicyPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#update GoogleOrgPolicyPolicy#update}
   */
   readonly update?: string;
 }
@@ -775,7 +1381,7 @@ export class GoogleOrgPolicyPolicyTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy google_org_policy_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy google_org_policy_policy}
 */
 export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
 
@@ -791,7 +1397,7 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleOrgPolicyPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleOrgPolicyPolicy to import
-  * @param importFromId The id of the existing GoogleOrgPolicyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleOrgPolicyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleOrgPolicyPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -803,7 +1409,7 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_org_policy_policy google_org_policy_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -814,7 +1420,7 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_org_policy_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -828,6 +1434,7 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._parent = config.parent;
+    this._dryRunSpec.internalValue = config.dryRunSpec;
     this._spec.internalValue = config.spec;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -878,6 +1485,22 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
     return this._parent;
   }
 
+  // dry_run_spec - computed: false, optional: true, required: false
+  private _dryRunSpec = new GoogleOrgPolicyPolicyDryRunSpecOutputReference(this, "dry_run_spec");
+  public get dryRunSpec() {
+    return this._dryRunSpec;
+  }
+  public putDryRunSpec(value: GoogleOrgPolicyPolicyDryRunSpec) {
+    this._dryRunSpec.internalValue = value;
+  }
+  public resetDryRunSpec() {
+    this._dryRunSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dryRunSpecInput() {
+    return this._dryRunSpec.internalValue;
+  }
+
   // spec - computed: false, optional: true, required: false
   private _spec = new GoogleOrgPolicyPolicySpecOutputReference(this, "spec");
   public get spec() {
@@ -919,6 +1542,7 @@ export class GoogleOrgPolicyPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent: cdktf.stringToTerraform(this._parent),
+      dry_run_spec: googleOrgPolicyPolicyDryRunSpecToTerraform(this._dryRunSpec.internalValue),
       spec: googleOrgPolicyPolicySpecToTerraform(this._spec.internalValue),
       timeouts: googleOrgPolicyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };

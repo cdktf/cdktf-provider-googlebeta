@@ -4,7 +4,7 @@
 
 ### GoogleDataplexTaskIamMember <a name="GoogleDataplexTaskIamMember" id="@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member google_dataplex_task_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member google_dataplex_task_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer"></a>
 
@@ -45,14 +45,14 @@ GoogleDataplexTaskIamMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.lake">lake</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.lake">lake</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition">GoogleDataplexTaskIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#condition GoogleDataplexTaskIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#condition GoogleDataplexTaskIamMember#condition}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}.
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the GoogleDataplexTaskIamMembe
 
 The id of the existing GoogleDataplexTaskIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,9 +1042,9 @@ GoogleDataplexTaskIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#expression GoogleDataplexTaskIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#title GoogleDataplexTaskIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#description GoogleDataplexTaskIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#expression GoogleDataplexTaskIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#title GoogleDataplexTaskIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#description GoogleDataplexTaskIamMember#description}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#expression GoogleDataplexTaskIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#expression GoogleDataplexTaskIamMember#expression}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#title GoogleDataplexTaskIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#title GoogleDataplexTaskIamMember#title}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#description GoogleDataplexTaskIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#description GoogleDataplexTaskIamMember#description}.
 
 ---
 
@@ -1125,14 +1125,14 @@ GoogleDataplexTaskIamMemberConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.lake">lake</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.lake">lake</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition">GoogleDataplexTaskIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.String getLake();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#lake GoogleDataplexTaskIamMember#lake}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#member GoogleDataplexTaskIamMember#member}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#role GoogleDataplexTaskIamMember#role}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public java.lang.String getTaskId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#task_id GoogleDataplexTaskIamMember#task_id}.
 
 ---
 
@@ -1264,7 +1264,7 @@ public GoogleDataplexTaskIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#condition GoogleDataplexTaskIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#condition GoogleDataplexTaskIamMember#condition}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#id GoogleDataplexTaskIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1291,7 +1291,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#location GoogleDataplexTaskIamMember#location}.
 
 ---
 
@@ -1303,7 +1303,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_task_iam_member#project GoogleDataplexTaskIamMember#project}.
 
 ---
 
