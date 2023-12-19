@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.NewGoogleApigeeSharedflow(scope Construct, id *string, config GoogleApigeeSharedflowConfig) GoogleApigeeSharedflow
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.GoogleApigeeSharedflow_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.GoogleApigeeSharedflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleapigeesharedflow.GoogleApigeeSharedflow_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.GoogleApigeeSharedflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleapigeesharedflow.GoogleApigeeSharedflow_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.GoogleApigeeSharedflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 &googleapigeesharedflow.GoogleApigeeSharedflowConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesha
 	OrgId: *string,
 	DetectMd5Hash: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts,
 }
 ```
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 &googleapigeesharedflow.GoogleApigeeSharedflowMetaData {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesha
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 &googleapigeesharedflow.GoogleApigeeSharedflowTimeouts {
 	Create: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.NewGoogleApigeeSharedflowMetaDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeSharedflowMetaDataList
 ```
@@ -1278,7 +1278,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.NewGoogleApigeeSharedflowMetaDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeSharedflowMetaDataOutputReference
 ```
@@ -1578,7 +1578,7 @@ func InternalValue() GoogleApigeeSharedflowMetaData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesharedflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeesharedflow"
 
 googleapigeesharedflow.NewGoogleApigeeSharedflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeSharedflowTimeoutsOutputReference
 ```
