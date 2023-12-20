@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 datagooglecomputemachineimageiampolicy.NewDataGoogleComputeMachineImageIamPolicy(scope Construct, id *string, config DataGoogleComputeMachineImageIamPolicyConfig) DataGoogleComputeMachineImageIamPolicy
 ```
@@ -281,7 +281,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputemachineimageiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputemachineimageiampolicy"
 
 &datagooglecomputemachineimageiampolicy.DataGoogleComputeMachineImageIamPolicyConfig {
 	Connection: interface{},
