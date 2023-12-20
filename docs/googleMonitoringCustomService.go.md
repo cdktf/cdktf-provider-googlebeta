@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.NewGoogleMonitoringCustomService(scope Construct, id *string, config GoogleMonitoringCustomServiceConfig) GoogleMonitoringCustomService
 ```
@@ -446,7 +446,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.GoogleMonitoringCustomService_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.GoogleMonitoringCustomService_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googlemonitoringcustomservice.GoogleMonitoringCustomService_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.GoogleMonitoringCustomService_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googlemonitoringcustomservice.GoogleMonitoringCustomService_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.GoogleMonitoringCustomService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 &googlemonitoringcustomservice.GoogleMonitoringCustomServiceConfig {
 	Connection: interface{},
@@ -914,8 +914,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonit
 	Id: *string,
 	Project: *string,
 	ServiceId: *string,
-	Telemetry: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts,
+	Telemetry: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 &googlemonitoringcustomservice.GoogleMonitoringCustomServiceTelemetry {
 	ResourceName: *string,
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 &googlemonitoringcustomservice.GoogleMonitoringCustomServiceTimeouts {
 	Create: *string,
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.NewGoogleMonitoringCustomServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringCustomServiceTelemetryOutputReference
 ```
@@ -1494,7 +1494,7 @@ func InternalValue() GoogleMonitoringCustomServiceTelemetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemonitoringcustomservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringcustomservice"
 
 googlemonitoringcustomservice.NewGoogleMonitoringCustomServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringCustomServiceTimeoutsOutputReference
 ```

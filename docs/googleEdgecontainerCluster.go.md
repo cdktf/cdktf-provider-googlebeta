@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerCluster(scope Construct, id *string, config GoogleEdgecontainerClusterConfig) GoogleEdgecontainerCluster
 ```
@@ -559,7 +559,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.GoogleEdgecontainerCluster_IsConstruct(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.GoogleEdgecontainerCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ googleedgecontainercluster.GoogleEdgecontainerCluster_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.GoogleEdgecontainerCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ googleedgecontainercluster.GoogleEdgecontainerCluster_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.GoogleEdgecontainerCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1343,10 +1343,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterAuthorization {
-	AdminUsers: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorizationAdminUsers,
+	AdminUsers: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorizationAdminUsers,
 }
 ```
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorizationAdminUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterAuthorizationAdminUsers {
 	Username: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterConfig {
 	Connection: interface{},
@@ -1421,23 +1421,23 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgec
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorization,
-	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterFleet,
+	Authorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorization,
+	Fleet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterFleet,
 	Location: *string,
 	Name: *string,
-	Networking: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworking,
-	ControlPlane: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlane,
-	ControlPlaneEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryption,
+	Networking: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworking,
+	ControlPlane: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlane,
+	ControlPlaneEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryption,
 	DefaultMaxPodsPerNode: *f64,
 	ExternalLoadBalancerIpv4AddressPools: *[]*string,
 	Id: *string,
 	Labels: *map[string]*string,
-	MaintenancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicy,
+	MaintenancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicy,
 	Project: *string,
 	ReleaseChannel: *string,
-	SystemAddonsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfig,
+	SystemAddonsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfig,
 	TargetVersion: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts,
 }
 ```
 
@@ -1790,11 +1790,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlane.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterControlPlane {
-	Local: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneLocal,
-	Remote: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneRemote,
+	Local: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneLocal,
+	Remote: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneRemote,
 }
 ```
 
@@ -1840,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterControlPlaneEncryption {
 	KmsKey: *string,
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatus {
 
@@ -1887,7 +1887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgec
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterControlPlaneLocal {
 	MachineFilter: *string,
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterControlPlaneRemote {
 	NodeLocation: *string,
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterFleet {
 	Project: *string,
@@ -2040,7 +2040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenanceEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterMaintenanceEvents {
 
@@ -2053,10 +2053,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgec
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterMaintenancePolicy {
-	Window: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindow,
+	Window: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindow,
 }
 ```
 
@@ -2087,10 +2087,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterMaintenancePolicyWindow {
-	RecurringWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindow,
+	RecurringWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindow,
 }
 ```
 
@@ -2121,11 +2121,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindow {
 	Recurrence: *string,
-	Window: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow,
+	Window: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow,
 }
 ```
 
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow {
 	EndTime: *string,
@@ -2221,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworking.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterNetworking {
 	ClusterIpv4CidrBlocks: *[]*string,
@@ -2315,10 +2315,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterSystemAddonsConfig {
-	Ingress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfigIngress,
+	Ingress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfigIngress,
 }
 ```
 
@@ -2349,7 +2349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfigIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterSystemAddonsConfigIngress {
 	Disabled: interface{},
@@ -2399,7 +2399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 &googleedgecontainercluster.GoogleEdgecontainerClusterTimeouts {
 	Create: *string,
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorizationAdminUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterAuthorizationAdminUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterAuthorizationAdminUsersOutputReference
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() GoogleEdgecontainerClusterAuthorizationAdminUsers
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterAuthorizationOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() GoogleEdgecontainerClusterAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusList
 ```
@@ -3148,7 +3148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference
 ```
@@ -3437,7 +3437,7 @@ func InternalValue() GoogleEdgecontainerClusterControlPlaneEncryptionKmsStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterControlPlaneEncryptionOutputReference
 ```
@@ -3748,7 +3748,7 @@ func InternalValue() GoogleEdgecontainerClusterControlPlaneEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterControlPlaneLocalOutputReference
 ```
@@ -4113,7 +4113,7 @@ func InternalValue() GoogleEdgecontainerClusterControlPlaneLocal
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterControlPlaneOutputReference
 ```
@@ -4446,7 +4446,7 @@ func InternalValue() GoogleEdgecontainerClusterControlPlane
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterControlPlaneRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterControlPlaneRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterControlPlaneRemoteOutputReference
 ```
@@ -4724,7 +4724,7 @@ func InternalValue() GoogleEdgecontainerClusterControlPlaneRemote
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterFleetOutputReference
 ```
@@ -5006,7 +5006,7 @@ func InternalValue() GoogleEdgecontainerClusterFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenanceEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenanceEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEdgecontainerClusterMaintenanceEventsList
 ```
@@ -5138,7 +5138,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenanceEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenanceEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEdgecontainerClusterMaintenanceEventsOutputReference
 ```
@@ -5515,7 +5515,7 @@ func InternalValue() GoogleEdgecontainerClusterMaintenanceEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterMaintenancePolicyOutputReference
 ```
@@ -5799,7 +5799,7 @@ func InternalValue() GoogleEdgecontainerClusterMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenancePolicyWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterMaintenancePolicyWindowOutputReference
 ```
@@ -6083,7 +6083,7 @@ func InternalValue() GoogleEdgecontainerClusterMaintenancePolicyWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowOutputReference
 ```
@@ -6403,7 +6403,7 @@ func InternalValue() GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringW
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference
 ```
@@ -6710,7 +6710,7 @@ func InternalValue() GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringW
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworkingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterNetworkingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterNetworkingOutputReference
 ```
@@ -7072,7 +7072,7 @@ func InternalValue() GoogleEdgecontainerClusterNetworking
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterSystemAddonsConfigIngressOutputReference
 ```
@@ -7379,7 +7379,7 @@ func InternalValue() GoogleEdgecontainerClusterSystemAddonsConfigIngress
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterSystemAddonsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterSystemAddonsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterSystemAddonsConfigOutputReference
 ```
@@ -7670,7 +7670,7 @@ func InternalValue() GoogleEdgecontainerClusterSystemAddonsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleedgecontainercluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleedgecontainercluster"
 
 googleedgecontainercluster.NewGoogleEdgecontainerClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterTimeoutsOutputReference
 ```
