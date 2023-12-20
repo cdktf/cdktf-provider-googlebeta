@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.NewGoogleSqlDatabase(scope Construct, id *string, config GoogleSqlDatabaseConfig) GoogleSqlDatabase
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.GoogleSqlDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.GoogleSqlDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlesqldatabase.GoogleSqlDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.GoogleSqlDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlesqldatabase.GoogleSqlDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.GoogleSqlDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 &googlesqldatabase.GoogleSqlDatabaseConfig {
 	Connection: interface{},
@@ -919,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqlda
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSqlDatabase.GoogleSqlDatabaseTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabase.GoogleSqlDatabaseTimeouts,
 }
 ```
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 &googlesqldatabase.GoogleSqlDatabaseTimeouts {
 	Create: *string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabase.GoogleSqlDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesqldatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabase"
 
 googlesqldatabase.NewGoogleSqlDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseTimeoutsOutputReference
 ```
