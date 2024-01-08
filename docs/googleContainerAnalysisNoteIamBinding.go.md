@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.NewGoogleContainerAnalysisNoteIamBinding(scope Construct, id *string, config GoogleContainerAnalysisNoteIamBindingConfig) GoogleContainerAnalysisNoteIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 &googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 &googlecontaineranalysisnoteiambinding.GoogleContainerAnalysisNoteIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainer
 	Members: *[]*string,
 	Note: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontaineranalysisnoteiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiambinding"
 
 googlecontaineranalysisnoteiambinding.NewGoogleContainerAnalysisNoteIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAnalysisNoteIamBindingConditionOutputReference
 ```
