@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.NewDataGoogleFirebaseAppleAppConfigA(scope Construct, id *string, config DataGoogleFirebaseAppleAppConfigAConfig) DataGoogleFirebaseAppleAppConfigA
 ```
@@ -274,7 +274,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformEl
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_IsTerraformDa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglefirebaseappleappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleappconfig"
 
 &datagooglefirebaseappleappconfig.DataGoogleFirebaseAppleAppConfigAConfig {
 	Connection: interface{},

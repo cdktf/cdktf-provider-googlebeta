@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.NewDataGoogleComputeSnapshot(scope Construct, id *string, config DataGoogleComputeSnapshotConfig) DataGoogleComputeSnapshot
 ```
@@ -302,7 +302,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.DataGoogleComputeSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.DataGoogleComputeSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datagooglecomputesnapshot.DataGoogleComputeSnapshot_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.DataGoogleComputeSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ datagooglecomputesnapshot.DataGoogleComputeSnapshot_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.DataGoogleComputeSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 &datagooglecomputesnapshot.DataGoogleComputeSnapshotConfig {
 	Connection: interface{},
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 &datagooglecomputesnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey {
 
@@ -1064,7 +1064,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglec
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 &datagooglecomputesnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.NewDataGoogleComputeSnapshotSnapshotEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeSnapshotSnapshotEncryptionKeyList
 ```
@@ -1211,7 +1211,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.NewDataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() DataGoogleComputeSnapshotSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.NewDataGoogleComputeSnapshotSourceDiskEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeSnapshotSourceDiskEncryptionKeyList
 ```
@@ -1654,7 +1654,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesnapshot"
 
 datagooglecomputesnapshot.NewDataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference
 ```

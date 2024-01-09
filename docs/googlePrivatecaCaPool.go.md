@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPool(scope Construct, id *string, config GooglePrivatecaCaPoolConfig) GooglePrivatecaCaPool
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.GooglePrivatecaCaPool_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.GooglePrivatecaCaPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ googleprivatecacapool.GooglePrivatecaCaPool_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.GooglePrivatecaCaPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ googleprivatecacapool.GooglePrivatecaCaPool_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.GooglePrivatecaCaPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolConfig {
 	Connection: interface{},
@@ -975,11 +975,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlepriva
 	Name: *string,
 	Tier: *string,
 	Id: *string,
-	IssuancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicy,
+	IssuancePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicy,
 	Labels: *map[string]*string,
 	Project: *string,
-	PublishingOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolPublishingOptions,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeouts,
+	PublishingOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolPublishingOptions,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeouts,
 }
 ```
 
@@ -1212,13 +1212,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicy {
-	AllowedIssuanceModes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModes,
+	AllowedIssuanceModes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModes,
 	AllowedKeyTypes: interface{},
-	BaselineValues: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValues,
-	IdentityConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraints,
+	BaselineValues: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValues,
+	IdentityConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraints,
 	MaximumLifetime: *string,
 }
 ```
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModes {
 	AllowConfigBasedIssuance: interface{},
@@ -1363,11 +1363,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypes {
-	EllipticCurve: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve,
-	Rsa: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa,
+	EllipticCurve: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve,
+	Rsa: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa,
 }
 ```
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve {
 	SignatureAlgorithm: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa {
 	MaxModulusSize: *string,
@@ -1503,14 +1503,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValues {
-	CaOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions,
-	KeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage,
+	CaOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions,
+	KeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage,
 	AdditionalExtensions: interface{},
 	AiaOcspServers: *[]*string,
-	NameConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints,
+	NameConstraints: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints,
 	PolicyIds: interface{},
 }
 ```
@@ -1617,11 +1617,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions {
 	Critical: interface{},
-	ObjectId: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId,
+	ObjectId: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId,
 	Value: *string,
 }
 ```
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId {
 	ObjectIdPath: *[]*f64,
@@ -1717,7 +1717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions {
 	IsCa: interface{},
@@ -1807,11 +1807,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage {
-	BaseKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage,
-	ExtendedKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage,
+	BaseKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage,
+	ExtendedKeyUsage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage,
 	UnknownExtendedKeyUsages: interface{},
 }
 ```
@@ -1873,7 +1873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage {
 	CertSign: interface{},
@@ -2035,7 +2035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage {
 	ClientAuth: interface{},
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages {
 	ObjectIdPath: *[]*f64,
@@ -2183,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints {
 	Critical: interface{},
@@ -2383,7 +2383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds {
 	ObjectIdPath: *[]*f64,
@@ -2417,12 +2417,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraints {
 	AllowSubjectAltNamesPassthrough: interface{},
 	AllowSubjectPassthrough: interface{},
-	CelExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression,
+	CelExpression: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression,
 }
 ```
 
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression {
 	Expression: *string,
@@ -2571,7 +2571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolPublishingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolPublishingOptions {
 	PublishCaCert: interface{},
@@ -2640,7 +2640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 &googleprivatecacapool.GooglePrivatecaCaPoolTimeouts {
 	Create: *string,
@@ -2702,7 +2702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference
 ```
@@ -2995,7 +2995,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference
 ```
@@ -3266,7 +3266,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList
 ```
@@ -3409,7 +3409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference
 ```
@@ -3760,7 +3760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference
 ```
@@ -4067,7 +4067,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList
 ```
@@ -4210,7 +4210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference
 ```
@@ -4481,7 +4481,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditional
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference
 ```
@@ -4827,7 +4827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference
 ```
@@ -5192,7 +5192,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference
 ```
@@ -5702,7 +5702,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBa
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference
 ```
@@ -6125,7 +6125,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageEx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference
 ```
@@ -6486,7 +6486,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList
 ```
@@ -6629,7 +6629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference
 ```
@@ -6918,7 +6918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference
 ```
@@ -7421,7 +7421,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValuesNameConstr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference
 ```
@@ -7895,7 +7895,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyBaselineValues
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList
 ```
@@ -8038,7 +8038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference
 ```
@@ -8327,7 +8327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference
 ```
@@ -8685,7 +8685,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsCelEx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference
 ```
@@ -9020,7 +9020,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicyIdentityConstraints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolIssuancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolIssuancePolicyOutputReference
 ```
@@ -9466,7 +9466,7 @@ func InternalValue() GooglePrivatecaCaPoolIssuancePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolPublishingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolPublishingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolPublishingOptionsOutputReference
 ```
@@ -9788,7 +9788,7 @@ func InternalValue() GooglePrivatecaCaPoolPublishingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleprivatecacapool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacapool"
 
 googleprivatecacapool.NewGooglePrivatecaCaPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCaPoolTimeoutsOutputReference
 ```
