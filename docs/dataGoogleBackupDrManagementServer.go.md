@@ -4,12 +4,12 @@
 
 ### DataGoogleBackupDrManagementServer <a name="DataGoogleBackupDrManagementServer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_backup_dr_management_server google_backup_dr_management_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_backup_dr_management_server google_backup_dr_management_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServer(scope Construct, id *string, config DataGoogleBackupDrManagementServerConfig) DataGoogleBackupDrManagementServer
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataGoogleBackupDrManageme
 
 The id of the existing DataGoogleBackupDrManagementServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_backup_dr_management_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_backup_dr_management_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerConfig {
 	Connection: interface{},
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleb
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.property.location">Location</a></code> | <code>*string</code> | The location for the management server (management console). |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_backup_dr_management_server#id DataGoogleBackupDrManagementServer#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_backup_dr_management_server#id DataGoogleBackupDrManagementServer#id}. |
 
 ---
 
@@ -762,7 +762,7 @@ Location *string
 
 The location for the management server (management console).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_backup_dr_management_server#location DataGoogleBackupDrManagementServer#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_backup_dr_management_server#location DataGoogleBackupDrManagementServer#location}
 
 ---
 
@@ -774,7 +774,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/data-sources/google_backup_dr_management_server#id DataGoogleBackupDrManagementServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_backup_dr_management_server#id DataGoogleBackupDrManagementServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -786,7 +786,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerManagementUri {
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerNetworks {
 
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleb
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerManagementUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrManagementServerManagementUriList
 ```
@@ -946,7 +946,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerManagementUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrManagementServerManagementUriOutputReference
 ```
@@ -1235,7 +1235,7 @@ func InternalValue() DataGoogleBackupDrManagementServerManagementUri
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrManagementServerNetworksList
 ```
@@ -1367,7 +1367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrManagementServerNetworksOutputReference
 ```

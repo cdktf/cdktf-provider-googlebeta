@@ -4,7 +4,7 @@
 
 ### GoogleWorkbenchInstanceIamPolicy <a name="GoogleWorkbenchInstanceIamPolicy" id="@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy google_workbench_instance_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy google_workbench_instance_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GoogleWorkbenchInstanceIam
 
 The id of the existing GoogleWorkbenchInstanceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,11 +818,11 @@ const googleWorkbenchInstanceIamPolicyConfig: googleWorkbenchInstanceIamPolicy.G
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#name GoogleWorkbenchInstanceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#policy_data GoogleWorkbenchInstanceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#id GoogleWorkbenchInstanceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#location GoogleWorkbenchInstanceIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#project GoogleWorkbenchInstanceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#name GoogleWorkbenchInstanceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#policy_data GoogleWorkbenchInstanceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#id GoogleWorkbenchInstanceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#location GoogleWorkbenchInstanceIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkbenchInstanceIamPolicy.GoogleWorkbenchInstanceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#project GoogleWorkbenchInstanceIamPolicy#project}. |
 
 ---
 
@@ -904,7 +904,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#name GoogleWorkbenchInstanceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#name GoogleWorkbenchInstanceIamPolicy#name}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#policy_data GoogleWorkbenchInstanceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#policy_data GoogleWorkbenchInstanceIamPolicy#policy_data}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#id GoogleWorkbenchInstanceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#id GoogleWorkbenchInstanceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -943,7 +943,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#location GoogleWorkbenchInstanceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#location GoogleWorkbenchInstanceIamPolicy#location}.
 
 ---
 
@@ -955,7 +955,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_workbench_instance_iam_policy#project GoogleWorkbenchInstanceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workbench_instance_iam_policy#project GoogleWorkbenchInstanceIamPolicy#project}.
 
 ---
 
