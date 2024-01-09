@@ -4,7 +4,7 @@
 
 ### GoogleDataplexZoneIamPolicy <a name="GoogleDataplexZoneIamPolicy" id="@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GoogleDataplexZoneIamPolic
 
 The id of the existing GoogleDataplexZoneIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,12 +854,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.dataplexZone">DataplexZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#dataplex_zone GoogleDataplexZoneIamPolicy#dataplex_zone}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#lake GoogleDataplexZoneIamPolicy#lake}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#policy_data GoogleDataplexZoneIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#id GoogleDataplexZoneIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#location GoogleDataplexZoneIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#project GoogleDataplexZoneIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.dataplexZone">DataplexZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#dataplex_zone GoogleDataplexZoneIamPolicy#dataplex_zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#lake GoogleDataplexZoneIamPolicy#lake}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#policy_data GoogleDataplexZoneIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#id GoogleDataplexZoneIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#location GoogleDataplexZoneIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexZoneIamPolicy.GoogleDataplexZoneIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#project GoogleDataplexZoneIamPolicy#project}. |
 
 ---
 
@@ -941,7 +941,7 @@ DataplexZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#dataplex_zone GoogleDataplexZoneIamPolicy#dataplex_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#dataplex_zone GoogleDataplexZoneIamPolicy#dataplex_zone}.
 
 ---
 
@@ -953,7 +953,7 @@ Lake *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#lake GoogleDataplexZoneIamPolicy#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#lake GoogleDataplexZoneIamPolicy#lake}.
 
 ---
 
@@ -965,7 +965,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#policy_data GoogleDataplexZoneIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#policy_data GoogleDataplexZoneIamPolicy#policy_data}.
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#id GoogleDataplexZoneIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#id GoogleDataplexZoneIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#location GoogleDataplexZoneIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#location GoogleDataplexZoneIamPolicy#location}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataplex_zone_iam_policy#project GoogleDataplexZoneIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_zone_iam_policy#project GoogleDataplexZoneIamPolicy#project}.
 
 ---
 

@@ -174,6 +174,7 @@ Object.defineProperty(exports, 'googleCloudbuildv2ConnectionIamBinding', { get: 
 Object.defineProperty(exports, 'googleCloudbuildv2ConnectionIamMember', { get: function () { return require('./google-cloudbuildv2-connection-iam-member'); } });
 Object.defineProperty(exports, 'googleCloudbuildv2ConnectionIamPolicy', { get: function () { return require('./google-cloudbuildv2-connection-iam-policy'); } });
 Object.defineProperty(exports, 'googleCloudbuildv2Repository', { get: function () { return require('./google-cloudbuildv2-repository'); } });
+Object.defineProperty(exports, 'googleClouddeployAutomation', { get: function () { return require('./google-clouddeploy-automation'); } });
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipeline', { get: function () { return require('./google-clouddeploy-delivery-pipeline'); } });
 Object.defineProperty(exports, 'googleClouddeployTarget', { get: function () { return require('./google-clouddeploy-target'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2Function', { get: function () { return require('./google-cloudfunctions2-function'); } });
@@ -584,6 +585,7 @@ Object.defineProperty(exports, 'googleIdentityPlatformTenantDefaultSupportedIdpC
 Object.defineProperty(exports, 'googleIdentityPlatformTenantInboundSamlConfig', { get: function () { return require('./google-identity-platform-tenant-inbound-saml-config'); } });
 Object.defineProperty(exports, 'googleIdentityPlatformTenantOauthIdpConfig', { get: function () { return require('./google-identity-platform-tenant-oauth-idp-config'); } });
 Object.defineProperty(exports, 'googleIntegrationConnectorsConnection', { get: function () { return require('./google-integration-connectors-connection'); } });
+Object.defineProperty(exports, 'googleIntegrationConnectorsEndpointAttachment', { get: function () { return require('./google-integration-connectors-endpoint-attachment'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKey', { get: function () { return require('./google-kms-crypto-key'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamBinding', { get: function () { return require('./google-kms-crypto-key-iam-binding'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamMember', { get: function () { return require('./google-kms-crypto-key-iam-member'); } });
@@ -600,12 +602,14 @@ Object.defineProperty(exports, 'googleLoggingBillingAccountExclusion', { get: fu
 Object.defineProperty(exports, 'googleLoggingBillingAccountSink', { get: function () { return require('./google-logging-billing-account-sink'); } });
 Object.defineProperty(exports, 'googleLoggingFolderBucketConfig', { get: function () { return require('./google-logging-folder-bucket-config'); } });
 Object.defineProperty(exports, 'googleLoggingFolderExclusion', { get: function () { return require('./google-logging-folder-exclusion'); } });
+Object.defineProperty(exports, 'googleLoggingFolderSettings', { get: function () { return require('./google-logging-folder-settings'); } });
 Object.defineProperty(exports, 'googleLoggingFolderSink', { get: function () { return require('./google-logging-folder-sink'); } });
 Object.defineProperty(exports, 'googleLoggingLinkedDataset', { get: function () { return require('./google-logging-linked-dataset'); } });
 Object.defineProperty(exports, 'googleLoggingLogView', { get: function () { return require('./google-logging-log-view'); } });
 Object.defineProperty(exports, 'googleLoggingMetric', { get: function () { return require('./google-logging-metric'); } });
 Object.defineProperty(exports, 'googleLoggingOrganizationBucketConfig', { get: function () { return require('./google-logging-organization-bucket-config'); } });
 Object.defineProperty(exports, 'googleLoggingOrganizationExclusion', { get: function () { return require('./google-logging-organization-exclusion'); } });
+Object.defineProperty(exports, 'googleLoggingOrganizationSettings', { get: function () { return require('./google-logging-organization-settings'); } });
 Object.defineProperty(exports, 'googleLoggingOrganizationSink', { get: function () { return require('./google-logging-organization-sink'); } });
 Object.defineProperty(exports, 'googleLoggingProjectBucketConfig', { get: function () { return require('./google-logging-project-bucket-config'); } });
 Object.defineProperty(exports, 'googleLoggingProjectExclusion', { get: function () { return require('./google-logging-project-exclusion'); } });
@@ -624,6 +628,8 @@ Object.defineProperty(exports, 'googleMonitoringNotificationChannel', { get: fun
 Object.defineProperty(exports, 'googleMonitoringService', { get: function () { return require('./google-monitoring-service'); } });
 Object.defineProperty(exports, 'googleMonitoringSlo', { get: function () { return require('./google-monitoring-slo'); } });
 Object.defineProperty(exports, 'googleMonitoringUptimeCheckConfig', { get: function () { return require('./google-monitoring-uptime-check-config'); } });
+Object.defineProperty(exports, 'googleNetappActiveDirectory', { get: function () { return require('./google-netapp-active-directory'); } });
+Object.defineProperty(exports, 'googleNetappBackupVault', { get: function () { return require('./google-netapp-backup-vault'); } });
 Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { return require('./google-netapp-storage-pool'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityHub', { get: function () { return require('./google-network-connectivity-hub'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityPolicyBasedRoute', { get: function () { return require('./google-network-connectivity-policy-based-route'); } });
@@ -806,6 +812,8 @@ Object.defineProperty(exports, 'googleVertexAiEndpoint', { get: function () { re
 Object.defineProperty(exports, 'googleVertexAiEndpointIamBinding', { get: function () { return require('./google-vertex-ai-endpoint-iam-binding'); } });
 Object.defineProperty(exports, 'googleVertexAiEndpointIamMember', { get: function () { return require('./google-vertex-ai-endpoint-iam-member'); } });
 Object.defineProperty(exports, 'googleVertexAiEndpointIamPolicy', { get: function () { return require('./google-vertex-ai-endpoint-iam-policy'); } });
+Object.defineProperty(exports, 'googleVertexAiFeatureGroup', { get: function () { return require('./google-vertex-ai-feature-group'); } });
+Object.defineProperty(exports, 'googleVertexAiFeatureOnlineStore', { get: function () { return require('./google-vertex-ai-feature-online-store'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestore', { get: function () { return require('./google-vertex-ai-featurestore'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestoreEntitytype', { get: function () { return require('./google-vertex-ai-featurestore-entitytype'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestoreEntitytypeFeature', { get: function () { return require('./google-vertex-ai-featurestore-entitytype-feature'); } });
@@ -932,6 +940,7 @@ Object.defineProperty(exports, 'dataGoogleComputeRegionInstanceTemplate', { get:
 Object.defineProperty(exports, 'dataGoogleComputeRegionNetworkEndpointGroup', { get: function () { return require('./data-google-compute-region-network-endpoint-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionSslCertificate', { get: function () { return require('./data-google-compute-region-ssl-certificate'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegions', { get: function () { return require('./data-google-compute-regions'); } });
+Object.defineProperty(exports, 'dataGoogleComputeReservation', { get: function () { return require('./data-google-compute-reservation'); } });
 Object.defineProperty(exports, 'dataGoogleComputeResourcePolicy', { get: function () { return require('./data-google-compute-resource-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRouter', { get: function () { return require('./data-google-compute-router'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRouterNat', { get: function () { return require('./data-google-compute-router-nat'); } });
