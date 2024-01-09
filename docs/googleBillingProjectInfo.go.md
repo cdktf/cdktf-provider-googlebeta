@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.NewGoogleBillingProjectInfo(scope Construct, id *string, config GoogleBillingProjectInfoConfig) GoogleBillingProjectInfo
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.GoogleBillingProjectInfo_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.GoogleBillingProjectInfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlebillingprojectinfo.GoogleBillingProjectInfo_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.GoogleBillingProjectInfo_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlebillingprojectinfo.GoogleBillingProjectInfo_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.GoogleBillingProjectInfo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 &googlebillingprojectinfo.GoogleBillingProjectInfoConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingpr
 	BillingAccount: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingProjectInfo.GoogleBillingProjectInfoTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleBillingProjectInfo.GoogleBillingProjectInfoTimeouts,
 }
 ```
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfoTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 &googlebillingprojectinfo.GoogleBillingProjectInfoTimeouts {
 	Create: *string,
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingProjectInfo.GoogleBillingProjectInfoTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingprojectinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlebillingprojectinfo"
 
 googlebillingprojectinfo.NewGoogleBillingProjectInfoTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingProjectInfoTimeoutsOutputReference
 ```
