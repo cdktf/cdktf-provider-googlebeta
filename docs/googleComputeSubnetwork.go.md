@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.NewGoogleComputeSubnetwork(scope Construct, id *string, config GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork
 ```
@@ -515,7 +515,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.GoogleComputeSubnetwork_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.GoogleComputeSubnetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ googlecomputesubnetwork.GoogleComputeSubnetwork_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.GoogleComputeSubnetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ googlecomputesubnetwork.GoogleComputeSubnetwork_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.GoogleComputeSubnetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1266,7 +1266,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 &googlecomputesubnetwork.GoogleComputeSubnetworkConfig {
 	Connection: interface{},
@@ -1284,7 +1284,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesu
 	ExternalIpv6Prefix: *string,
 	Id: *string,
 	Ipv6AccessType: *string,
-	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig,
+	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig,
 	PrivateIpGoogleAccess: interface{},
 	PrivateIpv6GoogleAccess: *string,
 	Project: *string,
@@ -1293,7 +1293,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesu
 	Role: *string,
 	SecondaryIpRange: interface{},
 	StackType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts,
 }
 ```
 
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 &googlecomputesubnetwork.GoogleComputeSubnetworkLogConfig {
 	AggregationInterval: *string,
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 &googlecomputesubnetwork.GoogleComputeSubnetworkSecondaryIpRange {
 	IpCidrRange: *string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 &googlecomputesubnetwork.GoogleComputeSubnetworkTimeouts {
 	Create: *string,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.NewGoogleComputeSubnetworkLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSubnetworkLogConfigOutputReference
 ```
@@ -2320,7 +2320,7 @@ func InternalValue() GoogleComputeSubnetworkLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.NewGoogleComputeSubnetworkSecondaryIpRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSubnetworkSecondaryIpRangeList
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.NewGoogleComputeSubnetworkSecondaryIpRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSubnetworkSecondaryIpRangeOutputReference
 ```
@@ -2788,7 +2788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesubnetwork"
 
 googlecomputesubnetwork.NewGoogleComputeSubnetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSubnetworkTimeoutsOutputReference
 ```
