@@ -69,6 +69,37 @@ export function googleHealthcareConsentStoreIamMemberConditionToTerraform(struct
   }
 }
 
+
+export function googleHealthcareConsentStoreIamMemberConditionToHclTerraform(struct?: GoogleHealthcareConsentStoreIamMemberConditionOutputReference | GoogleHealthcareConsentStoreIamMemberCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleHealthcareConsentStoreIamMemberConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -321,5 +352,49 @@ export class GoogleHealthcareConsentStoreIamMember extends cdktf.TerraformResour
       role: cdktf.stringToTerraform(this._role),
       condition: googleHealthcareConsentStoreIamMemberConditionToTerraform(this._condition.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      consent_store_id: {
+        value: cdktf.stringToHclTerraform(this._consentStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset: {
+        value: cdktf.stringToHclTerraform(this._dataset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member: {
+        value: cdktf.stringToHclTerraform(this._member),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: googleHealthcareConsentStoreIamMemberConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleHealthcareConsentStoreIamMemberConditionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

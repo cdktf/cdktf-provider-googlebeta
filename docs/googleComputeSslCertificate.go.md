@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.NewGoogleComputeSslCertificate(scope Construct, id *string, config GoogleComputeSslCertificateConfig) GoogleComputeSslCertificate
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.GoogleComputeSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.GoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googlecomputesslcertificate.GoogleComputeSslCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.GoogleComputeSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ googlecomputesslcertificate.GoogleComputeSslCertificate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.GoogleComputeSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 &googlecomputesslcertificate.GoogleComputeSslCertificateConfig {
 	Connection: interface{},
@@ -952,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Name: *string,
 	NamePrefix: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSslCertificate.GoogleComputeSslCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSslCertificate.GoogleComputeSslCertificateTimeouts,
 }
 ```
 
@@ -1177,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 &googlecomputesslcertificate.GoogleComputeSslCertificateTimeouts {
 	Create: *string,
@@ -1225,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesslcertificate"
 
 googlecomputesslcertificate.NewGoogleComputeSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSslCertificateTimeoutsOutputReference
 ```

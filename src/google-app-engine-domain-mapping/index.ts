@@ -61,6 +61,17 @@ export function googleAppEngineDomainMappingResourceRecordsToTerraform(struct?: 
   }
 }
 
+
+export function googleAppEngineDomainMappingResourceRecordsToHclTerraform(struct?: GoogleAppEngineDomainMappingResourceRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleAppEngineDomainMappingResourceRecordsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -153,6 +164,31 @@ export function googleAppEngineDomainMappingSslSettingsToTerraform(struct?: Goog
     certificate_id: cdktf.stringToTerraform(struct!.certificateId),
     ssl_management_type: cdktf.stringToTerraform(struct!.sslManagementType),
   }
+}
+
+
+export function googleAppEngineDomainMappingSslSettingsToHclTerraform(struct?: GoogleAppEngineDomainMappingSslSettingsOutputReference | GoogleAppEngineDomainMappingSslSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_id: {
+      value: cdktf.stringToHclTerraform(struct!.certificateId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl_management_type: {
+      value: cdktf.stringToHclTerraform(struct!.sslManagementType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineDomainMappingSslSettingsOutputReference extends cdktf.ComplexObject {
@@ -252,6 +288,37 @@ export function googleAppEngineDomainMappingTimeoutsToTerraform(struct?: GoogleA
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleAppEngineDomainMappingTimeoutsToHclTerraform(struct?: GoogleAppEngineDomainMappingTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineDomainMappingTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -537,5 +604,49 @@ export class GoogleAppEngineDomainMapping extends cdktf.TerraformResource {
       ssl_settings: googleAppEngineDomainMappingSslSettingsToTerraform(this._sslSettings.internalValue),
       timeouts: googleAppEngineDomainMappingTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      override_strategy: {
+        value: cdktf.stringToHclTerraform(this._overrideStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl_settings: {
+        value: googleAppEngineDomainMappingSslSettingsToHclTerraform(this._sslSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineDomainMappingSslSettingsList",
+      },
+      timeouts: {
+        value: googleAppEngineDomainMappingTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleAppEngineDomainMappingTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

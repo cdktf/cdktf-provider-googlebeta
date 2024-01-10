@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicy(scope Construct, id *string, config GoogleNetworkSecurityClientTlsPolicyConfig) GoogleNetworkSecurityClientTlsPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.toMetadata"></a>
 
@@ -473,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +526,7 @@ googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +540,7 @@ googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,11 +1033,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificate {
-	CertificateProviderInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance,
-	GrpcEndpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint,
+	CertificateProviderInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance,
+	GrpcEndpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint,
 }
 ```
 
@@ -1076,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance {
 	PluginInstance: *string,
@@ -1112,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint {
 	TargetUri: *string,
@@ -1146,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyConfig {
 	Connection: interface{},
@@ -1157,7 +1164,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetwo
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ClientCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificate,
+	ClientCertificate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificate,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1165,7 +1172,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetwo
 	Project: *string,
 	ServerValidationCa: interface{},
 	Sni: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyTimeouts,
 }
 ```
 
@@ -1410,11 +1417,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCa {
-	CertificateProviderInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance,
-	GrpcEndpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint,
+	CertificateProviderInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance,
+	GrpcEndpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint,
 }
 ```
 
@@ -1460,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance {
 	PluginInstance: *string,
@@ -1496,7 +1503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint {
 	TargetUri: *string,
@@ -1530,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 &googlenetworksecurityclienttlspolicy.GoogleNetworkSecurityClientTlsPolicyTimeouts {
 	Create: *string,
@@ -1592,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference
 ```
@@ -1863,7 +1870,7 @@ func InternalValue() GoogleNetworkSecurityClientTlsPolicyClientCertificateCertif
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOutputReference
 ```
@@ -2134,7 +2141,7 @@ func InternalValue() GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEn
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference
 ```
@@ -2467,7 +2474,7 @@ func InternalValue() GoogleNetworkSecurityClientTlsPolicyClientCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference
 ```
@@ -2738,7 +2745,7 @@ func InternalValue() GoogleNetworkSecurityClientTlsPolicyServerValidationCaCerti
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointOutputReference
 ```
@@ -3009,7 +3016,7 @@ func InternalValue() GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcE
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyServerValidationCaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkSecurityClientTlsPolicyServerValidationCaList
 ```
@@ -3050,10 +3057,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3152,7 +3176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyServerValidationCaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyServerValidationCaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkSecurityClientTlsPolicyServerValidationCaOutputReference
 ```
@@ -3503,7 +3527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityClientTlsPolicy.GoogleNetworkSecurityClientTlsPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetworksecurityclienttlspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworksecurityclienttlspolicy"
 
 googlenetworksecurityclienttlspolicy.NewGoogleNetworkSecurityClientTlsPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityClientTlsPolicyTimeoutsOutputReference
 ```

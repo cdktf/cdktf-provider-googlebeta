@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.NewGoogleCloudRunV2JobIamMember(scope Construct, id *string, config GoogleCloudRunV2JobIamMemberConfig) GoogleCloudRunV2JobIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 &googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMemberCondition {
 	Expression: *string,
@@ -926,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 &googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1133,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.NewGoogleCloudRunV2JobIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobIamMemberConditionOutputReference
 ```

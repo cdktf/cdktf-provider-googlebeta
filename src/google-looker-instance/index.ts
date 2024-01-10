@@ -140,6 +140,25 @@ export function googleLookerInstanceAdminSettingsToTerraform(struct?: GoogleLook
   }
 }
 
+
+export function googleLookerInstanceAdminSettingsToHclTerraform(struct?: GoogleLookerInstanceAdminSettingsOutputReference | GoogleLookerInstanceAdminSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_email_domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedEmailDomains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLookerInstanceAdminSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -222,6 +241,37 @@ export function googleLookerInstanceDenyMaintenancePeriodEndDateToTerraform(stru
     month: cdktf.numberToTerraform(struct!.month),
     year: cdktf.numberToTerraform(struct!.year),
   }
+}
+
+
+export function googleLookerInstanceDenyMaintenancePeriodEndDateToHclTerraform(struct?: GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference | GoogleLookerInstanceDenyMaintenancePeriodEndDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference extends cdktf.ComplexObject {
@@ -350,6 +400,37 @@ export function googleLookerInstanceDenyMaintenancePeriodStartDateToTerraform(st
     month: cdktf.numberToTerraform(struct!.month),
     year: cdktf.numberToTerraform(struct!.year),
   }
+}
+
+
+export function googleLookerInstanceDenyMaintenancePeriodStartDateToHclTerraform(struct?: GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference | GoogleLookerInstanceDenyMaintenancePeriodStartDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference extends cdktf.ComplexObject {
@@ -482,6 +563,43 @@ export function googleLookerInstanceDenyMaintenancePeriodTimeToTerraform(struct?
     nanos: cdktf.numberToTerraform(struct!.nanos),
     seconds: cdktf.numberToTerraform(struct!.seconds),
   }
+}
+
+
+export function googleLookerInstanceDenyMaintenancePeriodTimeToHclTerraform(struct?: GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference | GoogleLookerInstanceDenyMaintenancePeriodTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nanos: {
+      value: cdktf.numberToHclTerraform(struct!.nanos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    seconds: {
+      value: cdktf.numberToHclTerraform(struct!.seconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference extends cdktf.ComplexObject {
@@ -631,6 +749,37 @@ export function googleLookerInstanceDenyMaintenancePeriodToTerraform(struct?: Go
   }
 }
 
+
+export function googleLookerInstanceDenyMaintenancePeriodToHclTerraform(struct?: GoogleLookerInstanceDenyMaintenancePeriodOutputReference | GoogleLookerInstanceDenyMaintenancePeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_date: {
+      value: googleLookerInstanceDenyMaintenancePeriodEndDateToHclTerraform(struct!.endDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLookerInstanceDenyMaintenancePeriodEndDateList",
+    },
+    start_date: {
+      value: googleLookerInstanceDenyMaintenancePeriodStartDateToHclTerraform(struct!.startDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLookerInstanceDenyMaintenancePeriodStartDateList",
+    },
+    time: {
+      value: googleLookerInstanceDenyMaintenancePeriodTimeToHclTerraform(struct!.time),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLookerInstanceDenyMaintenancePeriodTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLookerInstanceDenyMaintenancePeriodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -733,6 +882,25 @@ export function googleLookerInstanceEncryptionConfigToTerraform(struct?: GoogleL
   }
 }
 
+
+export function googleLookerInstanceEncryptionConfigToHclTerraform(struct?: GoogleLookerInstanceEncryptionConfigOutputReference | GoogleLookerInstanceEncryptionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLookerInstanceEncryptionConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -829,6 +997,43 @@ export function googleLookerInstanceMaintenanceWindowStartTimeToTerraform(struct
     nanos: cdktf.numberToTerraform(struct!.nanos),
     seconds: cdktf.numberToTerraform(struct!.seconds),
   }
+}
+
+
+export function googleLookerInstanceMaintenanceWindowStartTimeToHclTerraform(struct?: GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference | GoogleLookerInstanceMaintenanceWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nanos: {
+      value: cdktf.numberToHclTerraform(struct!.nanos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    seconds: {
+      value: cdktf.numberToHclTerraform(struct!.seconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
@@ -979,6 +1184,31 @@ export function googleLookerInstanceMaintenanceWindowToTerraform(struct?: Google
   }
 }
 
+
+export function googleLookerInstanceMaintenanceWindowToHclTerraform(struct?: GoogleLookerInstanceMaintenanceWindowOutputReference | GoogleLookerInstanceMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: googleLookerInstanceMaintenanceWindowStartTimeToHclTerraform(struct!.startTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLookerInstanceMaintenanceWindowStartTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLookerInstanceMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1067,6 +1297,31 @@ export function googleLookerInstanceOauthConfigToTerraform(struct?: GoogleLooker
     client_id: cdktf.stringToTerraform(struct!.clientId),
     client_secret: cdktf.stringToTerraform(struct!.clientSecret),
   }
+}
+
+
+export function googleLookerInstanceOauthConfigToHclTerraform(struct?: GoogleLookerInstanceOauthConfigOutputReference | GoogleLookerInstanceOauthConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceOauthConfigOutputReference extends cdktf.ComplexObject {
@@ -1158,6 +1413,37 @@ export function googleLookerInstanceTimeoutsToTerraform(struct?: GoogleLookerIns
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleLookerInstanceTimeoutsToHclTerraform(struct?: GoogleLookerInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1293,6 +1579,37 @@ export function googleLookerInstanceUserMetadataToTerraform(struct?: GoogleLooke
     additional_standard_user_count: cdktf.numberToTerraform(struct!.additionalStandardUserCount),
     additional_viewer_user_count: cdktf.numberToTerraform(struct!.additionalViewerUserCount),
   }
+}
+
+
+export function googleLookerInstanceUserMetadataToHclTerraform(struct?: GoogleLookerInstanceUserMetadataOutputReference | GoogleLookerInstanceUserMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_developer_user_count: {
+      value: cdktf.numberToHclTerraform(struct!.additionalDeveloperUserCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    additional_standard_user_count: {
+      value: cdktf.numberToHclTerraform(struct!.additionalStandardUserCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    additional_viewer_user_count: {
+      value: cdktf.numberToHclTerraform(struct!.additionalViewerUserCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLookerInstanceUserMetadataOutputReference extends cdktf.ComplexObject {
@@ -1772,5 +2089,109 @@ export class GoogleLookerInstance extends cdktf.TerraformResource {
       timeouts: googleLookerInstanceTimeoutsToTerraform(this._timeouts.internalValue),
       user_metadata: googleLookerInstanceUserMetadataToTerraform(this._userMetadata.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      consumer_network: {
+        value: cdktf.stringToHclTerraform(this._consumerNetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_edition: {
+        value: cdktf.stringToHclTerraform(this._platformEdition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_ip_enabled: {
+        value: cdktf.booleanToHclTerraform(this._privateIpEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ip_enabled: {
+        value: cdktf.booleanToHclTerraform(this._publicIpEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reserved_range: {
+        value: cdktf.stringToHclTerraform(this._reservedRange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_settings: {
+        value: googleLookerInstanceAdminSettingsToHclTerraform(this._adminSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceAdminSettingsList",
+      },
+      deny_maintenance_period: {
+        value: googleLookerInstanceDenyMaintenancePeriodToHclTerraform(this._denyMaintenancePeriod.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceDenyMaintenancePeriodList",
+      },
+      encryption_config: {
+        value: googleLookerInstanceEncryptionConfigToHclTerraform(this._encryptionConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceEncryptionConfigList",
+      },
+      maintenance_window: {
+        value: googleLookerInstanceMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceMaintenanceWindowList",
+      },
+      oauth_config: {
+        value: googleLookerInstanceOauthConfigToHclTerraform(this._oauthConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceOauthConfigList",
+      },
+      timeouts: {
+        value: googleLookerInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleLookerInstanceTimeouts",
+      },
+      user_metadata: {
+        value: googleLookerInstanceUserMetadataToHclTerraform(this._userMetadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLookerInstanceUserMetadataList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

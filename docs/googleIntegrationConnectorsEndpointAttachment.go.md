@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.NewGoogleIntegrationConnectorsEndpointAttachment(scope Construct, id *string, config GoogleIntegrationConnectorsEndpointAttachmentConfig) GoogleIntegrationConnectorsEndpointAttachment
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpoin
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpoin
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 &googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachmentConfig {
 	Connection: interface{},
@@ -956,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleinteg
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachmentTimeouts,
 }
 ```
 
@@ -1171,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 &googleintegrationconnectorsendpointattachment.GoogleIntegrationConnectorsEndpointAttachmentTimeouts {
 	Create: *string,
@@ -1233,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationConnectorsEndpointAttachment.GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleintegrationconnectorsendpointattachment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsendpointattachment"
 
 googleintegrationconnectorsendpointattachment.NewGoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference
 ```

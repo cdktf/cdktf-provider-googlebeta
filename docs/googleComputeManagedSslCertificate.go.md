@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificate(scope Construct, id *string, config GoogleComputeManagedSslCertificateConfig) GoogleComputeManagedSslCertificate
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.toMetadata"></a>
 
@@ -453,7 +460,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +520,7 @@ googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -962,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateConfig {
 	Connection: interface{},
@@ -975,10 +982,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	CertificateId: *f64,
 	Description: *string,
 	Id: *string,
-	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged,
+	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged,
 	Name: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1203,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateManaged {
 	Domains: *[]*string,
@@ -1240,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateTimeouts {
 	Create: *string,
@@ -1288,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificateManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeManagedSslCertificateManagedOutputReference
 ```
@@ -1559,7 +1566,7 @@ func InternalValue() GoogleComputeManagedSslCertificateManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeManagedSslCertificateTimeoutsOutputReference
 ```

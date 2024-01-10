@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.NewGoogleKmsKeyRingIamBinding(scope Construct, id *string, config GoogleKmsKeyRingIamBindingConfig) GoogleKmsKeyRingIamBinding
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.GoogleKmsKeyRingIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 &googlekmskeyringiambinding.GoogleKmsKeyRingIamBindingCondition {
 	Expression: *string,
@@ -868,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 &googlekmskeyringiambinding.GoogleKmsKeyRingIamBindingConfig {
 	Connection: interface{},
@@ -881,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmske
 	KeyRingId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1047,7 +1054,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamBinding.GoogleKmsKeyRingIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmskeyringiambinding"
 
 googlekmskeyringiambinding.NewGoogleKmsKeyRingIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsKeyRingIamBindingConditionOutputReference
 ```

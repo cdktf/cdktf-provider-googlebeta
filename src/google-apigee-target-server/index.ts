@@ -101,6 +101,31 @@ export function googleApigeeTargetServerSSlInfoCommonNameToTerraform(struct?: Go
   }
 }
 
+
+export function googleApigeeTargetServerSSlInfoCommonNameToHclTerraform(struct?: GoogleApigeeTargetServerSSlInfoCommonNameOutputReference | GoogleApigeeTargetServerSSlInfoCommonName): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildcard_match: {
+      value: cdktf.booleanToHclTerraform(struct!.wildcardMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApigeeTargetServerSSlInfoCommonNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -244,6 +269,73 @@ export function googleApigeeTargetServerSSlInfoToTerraform(struct?: GoogleApigee
     trust_store: cdktf.stringToTerraform(struct!.trustStore),
     common_name: googleApigeeTargetServerSSlInfoCommonNameToTerraform(struct!.commonName),
   }
+}
+
+
+export function googleApigeeTargetServerSSlInfoToHclTerraform(struct?: GoogleApigeeTargetServerSSlInfoOutputReference | GoogleApigeeTargetServerSSlInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ciphers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ciphers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    client_auth_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.clientAuthEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore_validation_errors: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreValidationErrors),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key_alias: {
+      value: cdktf.stringToHclTerraform(struct!.keyAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_store: {
+      value: cdktf.stringToHclTerraform(struct!.keyStore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocols: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocols),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    trust_store: {
+      value: cdktf.stringToHclTerraform(struct!.trustStore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    common_name: {
+      value: googleApigeeTargetServerSSlInfoCommonNameToHclTerraform(struct!.commonName),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeTargetServerSSlInfoCommonNameList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObject {
@@ -492,6 +584,37 @@ export function googleApigeeTargetServerTimeoutsToTerraform(struct?: GoogleApige
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleApigeeTargetServerTimeoutsToHclTerraform(struct?: GoogleApigeeTargetServerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeTargetServerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -829,5 +952,73 @@ export class GoogleApigeeTargetServer extends cdktf.TerraformResource {
       s_sl_info: googleApigeeTargetServerSSlInfoToTerraform(this._sSlInfo.internalValue),
       timeouts: googleApigeeTargetServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      env_id: {
+        value: cdktf.stringToHclTerraform(this._envId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s_sl_info: {
+        value: googleApigeeTargetServerSSlInfoToHclTerraform(this._sSlInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApigeeTargetServerSSlInfoList",
+      },
+      timeouts: {
+        value: googleApigeeTargetServerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleApigeeTargetServerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

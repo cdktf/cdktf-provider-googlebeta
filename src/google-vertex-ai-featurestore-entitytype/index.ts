@@ -85,6 +85,25 @@ export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalT
   }
 }
 
+
+export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference | GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -160,6 +179,31 @@ export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeatur
     anomaly_detection_baseline: cdktf.stringToTerraform(struct!.anomalyDetectionBaseline),
     state: cdktf.stringToTerraform(struct!.state),
   }
+}
+
+
+export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference | GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    anomaly_detection_baseline: {
+      value: cdktf.stringToHclTerraform(struct!.anomalyDetectionBaseline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference extends cdktf.ComplexObject {
@@ -251,6 +295,25 @@ export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThr
   }
 }
 
+
+export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference | GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -337,6 +400,43 @@ export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnal
     monitoring_interval_days: cdktf.numberToTerraform(struct!.monitoringIntervalDays),
     staleness_days: cdktf.numberToTerraform(struct!.stalenessDays),
   }
+}
+
+
+export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference | GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    monitoring_interval: {
+      value: cdktf.stringToHclTerraform(struct!.monitoringInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    monitoring_interval_days: {
+      value: cdktf.numberToHclTerraform(struct!.monitoringIntervalDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    staleness_days: {
+      value: cdktf.numberToHclTerraform(struct!.stalenessDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference extends cdktf.ComplexObject {
@@ -493,6 +593,43 @@ export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigToTerraform(
   }
 }
 
+
+export function googleVertexAiFeaturestoreEntitytypeMonitoringConfigToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference | GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    categorical_threshold_config: {
+      value: googleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigToHclTerraform(struct!.categoricalThresholdConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigList",
+    },
+    import_features_analysis: {
+      value: googleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisToHclTerraform(struct!.importFeaturesAnalysis),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisList",
+    },
+    numerical_threshold_config: {
+      value: googleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigToHclTerraform(struct!.numericalThresholdConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigList",
+    },
+    snapshot_analysis: {
+      value: googleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisToHclTerraform(struct!.snapshotAnalysis),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -632,6 +769,37 @@ export function googleVertexAiFeaturestoreEntitytypeTimeoutsToTerraform(struct?:
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleVertexAiFeaturestoreEntitytypeTimeoutsToHclTerraform(struct?: GoogleVertexAiFeaturestoreEntitytypeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreEntitytypeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -974,5 +1142,61 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
       monitoring_config: googleVertexAiFeaturestoreEntitytypeMonitoringConfigToTerraform(this._monitoringConfig.internalValue),
       timeouts: googleVertexAiFeaturestoreEntitytypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      featurestore: {
+        value: cdktf.stringToHclTerraform(this._featurestore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      offline_storage_ttl_days: {
+        value: cdktf.numberToHclTerraform(this._offlineStorageTtlDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      monitoring_config: {
+        value: googleVertexAiFeaturestoreEntitytypeMonitoringConfigToHclTerraform(this._monitoringConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigList",
+      },
+      timeouts: {
+        value: googleVertexAiFeaturestoreEntitytypeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleVertexAiFeaturestoreEntitytypeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

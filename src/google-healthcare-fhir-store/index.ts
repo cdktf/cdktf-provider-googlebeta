@@ -172,6 +172,25 @@ export function googleHealthcareFhirStoreNotificationConfigToTerraform(struct?: 
   }
 }
 
+
+export function googleHealthcareFhirStoreNotificationConfigToHclTerraform(struct?: GoogleHealthcareFhirStoreNotificationConfigOutputReference | GoogleHealthcareFhirStoreNotificationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pubsub_topic: {
+      value: cdktf.stringToHclTerraform(struct!.pubsubTopic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleHealthcareFhirStoreNotificationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -261,6 +280,37 @@ export function googleHealthcareFhirStoreNotificationConfigsToTerraform(struct?:
     send_full_resource: cdktf.booleanToTerraform(struct!.sendFullResource),
     send_previous_resource_on_delete: cdktf.booleanToTerraform(struct!.sendPreviousResourceOnDelete),
   }
+}
+
+
+export function googleHealthcareFhirStoreNotificationConfigsToHclTerraform(struct?: GoogleHealthcareFhirStoreNotificationConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pubsub_topic: {
+      value: cdktf.stringToHclTerraform(struct!.pubsubTopic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    send_full_resource: {
+      value: cdktf.booleanToHclTerraform(struct!.sendFullResource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    send_previous_resource_on_delete: {
+      value: cdktf.booleanToHclTerraform(struct!.sendPreviousResourceOnDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleHealthcareFhirStoreNotificationConfigsOutputReference extends cdktf.ComplexObject {
@@ -410,6 +460,31 @@ export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaC
   }
 }
 
+
+export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigToHclTerraform(struct?: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference | GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expiration_ms: {
+      value: cdktf.stringToHclTerraform(struct!.expirationMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -515,6 +590,37 @@ export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaC
     schema_type: cdktf.stringToTerraform(struct!.schemaType),
     last_updated_partition_config: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigToTerraform(struct!.lastUpdatedPartitionConfig),
   }
+}
+
+
+export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigToHclTerraform(struct?: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference | GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recursive_structure_depth: {
+      value: cdktf.numberToHclTerraform(struct!.recursiveStructureDepth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    schema_type: {
+      value: cdktf.stringToHclTerraform(struct!.schemaType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_updated_partition_config: {
+      value: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigToHclTerraform(struct!.lastUpdatedPartitionConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference extends cdktf.ComplexObject {
@@ -632,6 +738,31 @@ export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationToTerra
   }
 }
 
+
+export function googleHealthcareFhirStoreStreamConfigsBigqueryDestinationToHclTerraform(struct?: GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference | GoogleHealthcareFhirStoreStreamConfigsBigqueryDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_uri: {
+      value: cdktf.stringToHclTerraform(struct!.datasetUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_config: {
+      value: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigToHclTerraform(struct!.schemaConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -722,6 +853,31 @@ export function googleHealthcareFhirStoreStreamConfigsToTerraform(struct?: Googl
     resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
     bigquery_destination: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationToTerraform(struct!.bigqueryDestination),
   }
+}
+
+
+export function googleHealthcareFhirStoreStreamConfigsToHclTerraform(struct?: GoogleHealthcareFhirStoreStreamConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    bigquery_destination: {
+      value: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationToHclTerraform(struct!.bigqueryDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleHealthcareFhirStoreStreamConfigsOutputReference extends cdktf.ComplexObject {
@@ -848,6 +1004,37 @@ export function googleHealthcareFhirStoreTimeoutsToTerraform(struct?: GoogleHeal
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleHealthcareFhirStoreTimeoutsToHclTerraform(struct?: GoogleHealthcareFhirStoreTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleHealthcareFhirStoreTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1298,5 +1485,103 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       stream_configs: cdktf.listMapper(googleHealthcareFhirStoreStreamConfigsToTerraform, true)(this._streamConfigs.internalValue),
       timeouts: googleHealthcareFhirStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      complex_data_type_reference_parsing: {
+        value: cdktf.stringToHclTerraform(this._complexDataTypeReferenceParsing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset: {
+        value: cdktf.stringToHclTerraform(this._dataset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_search_handling_strict: {
+        value: cdktf.booleanToHclTerraform(this._defaultSearchHandlingStrict),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_referential_integrity: {
+        value: cdktf.booleanToHclTerraform(this._disableReferentialIntegrity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_resource_versioning: {
+        value: cdktf.booleanToHclTerraform(this._disableResourceVersioning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_history_import: {
+        value: cdktf.booleanToHclTerraform(this._enableHistoryImport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_update_create: {
+        value: cdktf.booleanToHclTerraform(this._enableUpdateCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_config: {
+        value: googleHealthcareFhirStoreNotificationConfigToHclTerraform(this._notificationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleHealthcareFhirStoreNotificationConfigList",
+      },
+      notification_configs: {
+        value: cdktf.listMapperHcl(googleHealthcareFhirStoreNotificationConfigsToHclTerraform, true)(this._notificationConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleHealthcareFhirStoreNotificationConfigsList",
+      },
+      stream_configs: {
+        value: cdktf.listMapperHcl(googleHealthcareFhirStoreStreamConfigsToHclTerraform, true)(this._streamConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleHealthcareFhirStoreStreamConfigsList",
+      },
+      timeouts: {
+        value: googleHealthcareFhirStoreTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleHealthcareFhirStoreTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

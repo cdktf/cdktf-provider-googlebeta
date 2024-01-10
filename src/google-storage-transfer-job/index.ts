@@ -101,6 +101,37 @@ export function googleStorageTransferJobEventStreamToTerraform(struct?: GoogleSt
   }
 }
 
+
+export function googleStorageTransferJobEventStreamToHclTerraform(struct?: GoogleStorageTransferJobEventStreamOutputReference | GoogleStorageTransferJobEventStream): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_stream_expiration_time: {
+      value: cdktf.stringToHclTerraform(struct!.eventStreamExpirationTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    event_stream_start_time: {
+      value: cdktf.stringToHclTerraform(struct!.eventStreamStartTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobEventStreamOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -223,6 +254,37 @@ export function googleStorageTransferJobNotificationConfigToTerraform(struct?: G
   }
 }
 
+
+export function googleStorageTransferJobNotificationConfigToHclTerraform(struct?: GoogleStorageTransferJobNotificationConfigOutputReference | GoogleStorageTransferJobNotificationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    payload_format: {
+      value: cdktf.stringToHclTerraform(struct!.payloadFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pubsub_topic: {
+      value: cdktf.stringToHclTerraform(struct!.pubsubTopic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobNotificationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -342,6 +404,37 @@ export function googleStorageTransferJobScheduleScheduleEndDateToTerraform(struc
   }
 }
 
+
+export function googleStorageTransferJobScheduleScheduleEndDateToHclTerraform(struct?: GoogleStorageTransferJobScheduleScheduleEndDateOutputReference | GoogleStorageTransferJobScheduleScheduleEndDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobScheduleScheduleEndDateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -456,6 +549,37 @@ export function googleStorageTransferJobScheduleScheduleStartDateToTerraform(str
     month: cdktf.numberToTerraform(struct!.month),
     year: cdktf.numberToTerraform(struct!.year),
   }
+}
+
+
+export function googleStorageTransferJobScheduleScheduleStartDateToHclTerraform(struct?: GoogleStorageTransferJobScheduleScheduleStartDateOutputReference | GoogleStorageTransferJobScheduleScheduleStartDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobScheduleScheduleStartDateOutputReference extends cdktf.ComplexObject {
@@ -579,6 +703,43 @@ export function googleStorageTransferJobScheduleStartTimeOfDayToTerraform(struct
     nanos: cdktf.numberToTerraform(struct!.nanos),
     seconds: cdktf.numberToTerraform(struct!.seconds),
   }
+}
+
+
+export function googleStorageTransferJobScheduleStartTimeOfDayToHclTerraform(struct?: GoogleStorageTransferJobScheduleStartTimeOfDayOutputReference | GoogleStorageTransferJobScheduleStartTimeOfDay): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nanos: {
+      value: cdktf.numberToHclTerraform(struct!.nanos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    seconds: {
+      value: cdktf.numberToHclTerraform(struct!.seconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobScheduleStartTimeOfDayOutputReference extends cdktf.ComplexObject {
@@ -723,6 +884,43 @@ export function googleStorageTransferJobScheduleToTerraform(struct?: GoogleStora
   }
 }
 
+
+export function googleStorageTransferJobScheduleToHclTerraform(struct?: GoogleStorageTransferJobScheduleOutputReference | GoogleStorageTransferJobSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repeat_interval: {
+      value: cdktf.stringToHclTerraform(struct!.repeatInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schedule_end_date: {
+      value: googleStorageTransferJobScheduleScheduleEndDateToHclTerraform(struct!.scheduleEndDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobScheduleScheduleEndDateList",
+    },
+    schedule_start_date: {
+      value: googleStorageTransferJobScheduleScheduleStartDateToHclTerraform(struct!.scheduleStartDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobScheduleScheduleStartDateList",
+    },
+    start_time_of_day: {
+      value: googleStorageTransferJobScheduleStartTimeOfDayToHclTerraform(struct!.startTimeOfDay),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobScheduleStartTimeOfDayList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -860,6 +1058,31 @@ export function googleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyT
   }
 }
 
+
+export function googleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference | GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -962,6 +1185,43 @@ export function googleStorageTransferJobTransferSpecAwsS3DataSourceToTerraform(s
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     aws_access_key: googleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyToTerraform(struct!.awsAccessKey),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecAwsS3DataSourceToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference | GoogleStorageTransferJobTransferSpecAwsS3DataSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_access_key: {
+      value: googleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyToHclTerraform(struct!.awsAccessKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference extends cdktf.ComplexObject {
@@ -1094,6 +1354,25 @@ export function googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAz
   }
 }
 
+
+export function googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference | GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sas_token: {
+      value: cdktf.stringToHclTerraform(struct!.sasToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1177,6 +1456,43 @@ export function googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceTo
     storage_account: cdktf.stringToTerraform(struct!.storageAccount),
     azure_credentials: googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsToTerraform(struct!.azureCredentials),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference | GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    container: {
+      value: cdktf.stringToHclTerraform(struct!.container),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_account: {
+      value: cdktf.stringToHclTerraform(struct!.storageAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_credentials: {
+      value: googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsToHclTerraform(struct!.azureCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference extends cdktf.ComplexObject {
@@ -1310,6 +1626,31 @@ export function googleStorageTransferJobTransferSpecGcsDataSinkToTerraform(struc
   }
 }
 
+
+export function googleStorageTransferJobTransferSpecGcsDataSinkToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference | GoogleStorageTransferJobTransferSpecGcsDataSink): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1403,6 +1744,31 @@ export function googleStorageTransferJobTransferSpecGcsDataSourceToTerraform(str
   }
 }
 
+
+export function googleStorageTransferJobTransferSpecGcsDataSourceToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecGcsDataSourceOutputReference | GoogleStorageTransferJobTransferSpecGcsDataSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobTransferSpecGcsDataSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1487,6 +1853,25 @@ export function googleStorageTransferJobTransferSpecHttpDataSourceToTerraform(st
   return {
     list_url: cdktf.stringToTerraform(struct!.listUrl),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecHttpDataSourceToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecHttpDataSourceOutputReference | GoogleStorageTransferJobTransferSpecHttpDataSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    list_url: {
+      value: cdktf.stringToHclTerraform(struct!.listUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecHttpDataSourceOutputReference extends cdktf.ComplexObject {
@@ -1586,6 +1971,55 @@ export function googleStorageTransferJobTransferSpecObjectConditionsToTerraform(
     max_time_elapsed_since_last_modification: cdktf.stringToTerraform(struct!.maxTimeElapsedSinceLastModification),
     min_time_elapsed_since_last_modification: cdktf.stringToTerraform(struct!.minTimeElapsedSinceLastModification),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecObjectConditionsToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference | GoogleStorageTransferJobTransferSpecObjectConditions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exclude_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    include_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    last_modified_before: {
+      value: cdktf.stringToHclTerraform(struct!.lastModifiedBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_modified_since: {
+      value: cdktf.stringToHclTerraform(struct!.lastModifiedSince),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_time_elapsed_since_last_modification: {
+      value: cdktf.stringToHclTerraform(struct!.maxTimeElapsedSinceLastModification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_time_elapsed_since_last_modification: {
+      value: cdktf.stringToHclTerraform(struct!.minTimeElapsedSinceLastModification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference extends cdktf.ComplexObject {
@@ -1765,6 +2199,25 @@ export function googleStorageTransferJobTransferSpecPosixDataSinkToTerraform(str
   }
 }
 
+
+export function googleStorageTransferJobTransferSpecPosixDataSinkToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference | GoogleStorageTransferJobTransferSpecPosixDataSink): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    root_directory: {
+      value: cdktf.stringToHclTerraform(struct!.rootDirectory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1827,6 +2280,25 @@ export function googleStorageTransferJobTransferSpecPosixDataSourceToTerraform(s
   return {
     root_directory: cdktf.stringToTerraform(struct!.rootDirectory),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecPosixDataSourceToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference | GoogleStorageTransferJobTransferSpecPosixDataSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    root_directory: {
+      value: cdktf.stringToHclTerraform(struct!.rootDirectory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecPosixDataSourceOutputReference extends cdktf.ComplexObject {
@@ -1912,6 +2384,43 @@ export function googleStorageTransferJobTransferSpecTransferOptionsToTerraform(s
     overwrite_objects_already_existing_in_sink: cdktf.booleanToTerraform(struct!.overwriteObjectsAlreadyExistingInSink),
     overwrite_when: cdktf.stringToTerraform(struct!.overwriteWhen),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecTransferOptionsToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference | GoogleStorageTransferJobTransferSpecTransferOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_objects_from_source_after_transfer: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteObjectsFromSourceAfterTransfer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    delete_objects_unique_in_sink: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteObjectsUniqueInSink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    overwrite_objects_already_existing_in_sink: {
+      value: cdktf.booleanToHclTerraform(struct!.overwriteObjectsAlreadyExistingInSink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    overwrite_when: {
+      value: cdktf.stringToHclTerraform(struct!.overwriteWhen),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference extends cdktf.ComplexObject {
@@ -2115,6 +2624,85 @@ export function googleStorageTransferJobTransferSpecToTerraform(struct?: GoogleS
     posix_data_source: googleStorageTransferJobTransferSpecPosixDataSourceToTerraform(struct!.posixDataSource),
     transfer_options: googleStorageTransferJobTransferSpecTransferOptionsToTerraform(struct!.transferOptions),
   }
+}
+
+
+export function googleStorageTransferJobTransferSpecToHclTerraform(struct?: GoogleStorageTransferJobTransferSpecOutputReference | GoogleStorageTransferJobTransferSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sink_agent_pool_name: {
+      value: cdktf.stringToHclTerraform(struct!.sinkAgentPoolName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_agent_pool_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceAgentPoolName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_s3_data_source: {
+      value: googleStorageTransferJobTransferSpecAwsS3DataSourceToHclTerraform(struct!.awsS3DataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecAwsS3DataSourceList",
+    },
+    azure_blob_storage_data_source: {
+      value: googleStorageTransferJobTransferSpecAzureBlobStorageDataSourceToHclTerraform(struct!.azureBlobStorageDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceList",
+    },
+    gcs_data_sink: {
+      value: googleStorageTransferJobTransferSpecGcsDataSinkToHclTerraform(struct!.gcsDataSink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecGcsDataSinkList",
+    },
+    gcs_data_source: {
+      value: googleStorageTransferJobTransferSpecGcsDataSourceToHclTerraform(struct!.gcsDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecGcsDataSourceList",
+    },
+    http_data_source: {
+      value: googleStorageTransferJobTransferSpecHttpDataSourceToHclTerraform(struct!.httpDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecHttpDataSourceList",
+    },
+    object_conditions: {
+      value: googleStorageTransferJobTransferSpecObjectConditionsToHclTerraform(struct!.objectConditions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecObjectConditionsList",
+    },
+    posix_data_sink: {
+      value: googleStorageTransferJobTransferSpecPosixDataSinkToHclTerraform(struct!.posixDataSink),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecPosixDataSinkList",
+    },
+    posix_data_source: {
+      value: googleStorageTransferJobTransferSpecPosixDataSourceToHclTerraform(struct!.posixDataSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecPosixDataSourceList",
+    },
+    transfer_options: {
+      value: googleStorageTransferJobTransferSpecTransferOptionsToHclTerraform(struct!.transferOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageTransferJobTransferSpecTransferOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageTransferJobTransferSpecOutputReference extends cdktf.ComplexObject {
@@ -2621,5 +3209,67 @@ export class GoogleStorageTransferJob extends cdktf.TerraformResource {
       schedule: googleStorageTransferJobScheduleToTerraform(this._schedule.internalValue),
       transfer_spec: googleStorageTransferJobTransferSpecToTerraform(this._transferSpec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_stream: {
+        value: googleStorageTransferJobEventStreamToHclTerraform(this._eventStream.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageTransferJobEventStreamList",
+      },
+      notification_config: {
+        value: googleStorageTransferJobNotificationConfigToHclTerraform(this._notificationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageTransferJobNotificationConfigList",
+      },
+      schedule: {
+        value: googleStorageTransferJobScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageTransferJobScheduleList",
+      },
+      transfer_spec: {
+        value: googleStorageTransferJobTransferSpecToHclTerraform(this._transferSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageTransferJobTransferSpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

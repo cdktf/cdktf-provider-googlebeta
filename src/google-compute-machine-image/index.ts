@@ -96,6 +96,37 @@ export function googleComputeMachineImageMachineImageEncryptionKeyToTerraform(st
   }
 }
 
+
+export function googleComputeMachineImageMachineImageEncryptionKeyToHclTerraform(struct?: GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference | GoogleComputeMachineImageMachineImageEncryptionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_service_account: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyServiceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    raw_key: {
+      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -213,6 +244,31 @@ export function googleComputeMachineImageTimeoutsToTerraform(struct?: GoogleComp
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleComputeMachineImageTimeoutsToHclTerraform(struct?: GoogleComputeMachineImageTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeMachineImageTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -508,5 +564,61 @@ export class GoogleComputeMachineImage extends cdktf.TerraformResource {
       machine_image_encryption_key: googleComputeMachineImageMachineImageEncryptionKeyToTerraform(this._machineImageEncryptionKey.internalValue),
       timeouts: googleComputeMachineImageTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      guest_flush: {
+        value: cdktf.booleanToHclTerraform(this._guestFlush),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_instance: {
+        value: cdktf.stringToHclTerraform(this._sourceInstance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      machine_image_encryption_key: {
+        value: googleComputeMachineImageMachineImageEncryptionKeyToHclTerraform(this._machineImageEncryptionKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeMachineImageMachineImageEncryptionKeyList",
+      },
+      timeouts: {
+        value: googleComputeMachineImageTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeMachineImageTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

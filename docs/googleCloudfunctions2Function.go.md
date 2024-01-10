@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2Function(scope Construct, id *string, config GoogleCloudfunctions2FunctionConfig) GoogleCloudfunctions2Function
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.toMetadata"></a>
 
@@ -486,7 +493,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.GoogleCloudfunctions2Function_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.GoogleCloudfunctions2Function_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +539,7 @@ googlecloudfunctions2function.GoogleCloudfunctions2Function_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.GoogleCloudfunctions2Function_IsTerraformResource(x interface{}) *bool
 ```
@@ -546,7 +553,7 @@ googlecloudfunctions2function.GoogleCloudfunctions2Function_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.GoogleCloudfunctions2Function_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,14 +1090,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionBuildConfig {
 	DockerRepository: *string,
 	EntryPoint: *string,
 	EnvironmentVariables: *map[string]*string,
 	Runtime: *string,
-	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSource,
+	Source: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSource,
 	WorkerPool: *string,
 }
 ```
@@ -1202,11 +1209,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionBuildConfigSource {
-	RepoSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource,
-	StorageSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource,
+	RepoSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource,
+	StorageSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource,
 }
 ```
 
@@ -1252,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource {
 	BranchName: *string,
@@ -1382,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource {
 	Bucket: *string,
@@ -1448,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionConfig {
 	Connection: interface{},
@@ -1460,15 +1467,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	BuildConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfig,
+	BuildConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfig,
 	Description: *string,
-	EventTrigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTrigger,
+	EventTrigger: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTrigger,
 	Id: *string,
 	KmsKeyName: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	ServiceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeouts,
+	ServiceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeouts,
 }
 ```
 
@@ -1732,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionEventTrigger {
 	EventFilters: interface{},
@@ -1857,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionEventTriggerEventFilters {
 	Attribute: *string,
@@ -1936,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionServiceConfig {
 	AllTrafficOnLatestRevision: interface{},
@@ -2201,7 +2208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables {
 	Key: *string,
@@ -2287,7 +2294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumes {
 	MountPath: *string,
@@ -2373,7 +2380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions {
 	Path: *string,
@@ -2427,7 +2434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 &googlecloudfunctions2function.GoogleCloudfunctions2FunctionTimeouts {
 	Create: *string,
@@ -2489,7 +2496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionBuildConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionBuildConfigOutputReference
 ```
@@ -2936,7 +2943,7 @@ func InternalValue() GoogleCloudfunctions2FunctionBuildConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference
 ```
@@ -3269,7 +3276,7 @@ func InternalValue() GoogleCloudfunctions2FunctionBuildConfigSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference
 ```
@@ -3721,7 +3728,7 @@ func InternalValue() GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference
 ```
@@ -4057,7 +4064,7 @@ func InternalValue() GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionEventTriggerEventFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudfunctions2FunctionEventTriggerEventFiltersList
 ```
@@ -4098,10 +4105,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4200,7 +4224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference
 ```
@@ -4540,7 +4564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionEventTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionEventTriggerOutputReference
 ```
@@ -4987,7 +5011,7 @@ func InternalValue() GoogleCloudfunctions2FunctionEventTrigger
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionServiceConfigOutputReference
 ```
@@ -5719,7 +5743,7 @@ func InternalValue() GoogleCloudfunctions2FunctionServiceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList
 ```
@@ -5760,10 +5784,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5862,7 +5903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference
 ```
@@ -6217,7 +6258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList
 ```
@@ -6258,10 +6299,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6360,7 +6418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference
 ```
@@ -6735,7 +6793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList
 ```
@@ -6776,10 +6834,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6878,7 +6953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference
 ```
@@ -7189,7 +7264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2function"
 
 googlecloudfunctions2function.NewGoogleCloudfunctions2FunctionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctions2FunctionTimeoutsOutputReference
 ```

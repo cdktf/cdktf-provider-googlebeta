@@ -97,6 +97,37 @@ export function googleFirestoreFieldIndexConfigIndexesToTerraform(struct?: Googl
   }
 }
 
+
+export function googleFirestoreFieldIndexConfigIndexesToHclTerraform(struct?: GoogleFirestoreFieldIndexConfigIndexes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    array_config: {
+      value: cdktf.stringToHclTerraform(struct!.arrayConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    order: {
+      value: cdktf.stringToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_scope: {
+      value: cdktf.stringToHclTerraform(struct!.queryScope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleFirestoreFieldIndexConfigIndexesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -240,6 +271,25 @@ export function googleFirestoreFieldIndexConfigToTerraform(struct?: GoogleFirest
   }
 }
 
+
+export function googleFirestoreFieldIndexConfigToHclTerraform(struct?: GoogleFirestoreFieldIndexConfigOutputReference | GoogleFirestoreFieldIndexConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    indexes: {
+      value: cdktf.listMapperHcl(googleFirestoreFieldIndexConfigIndexesToHclTerraform, true)(struct!.indexes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleFirestoreFieldIndexConfigIndexesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleFirestoreFieldIndexConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -313,6 +363,37 @@ export function googleFirestoreFieldTimeoutsToTerraform(struct?: GoogleFirestore
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleFirestoreFieldTimeoutsToHclTerraform(struct?: GoogleFirestoreFieldTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleFirestoreFieldTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -427,6 +508,17 @@ export function googleFirestoreFieldTtlConfigToTerraform(struct?: GoogleFirestor
   }
   return {
   }
+}
+
+
+export function googleFirestoreFieldTtlConfigToHclTerraform(struct?: GoogleFirestoreFieldTtlConfigOutputReference | GoogleFirestoreFieldTtlConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirestoreFieldTtlConfigOutputReference extends cdktf.ComplexObject {
@@ -668,5 +760,61 @@ export class GoogleFirestoreField extends cdktf.TerraformResource {
       timeouts: googleFirestoreFieldTimeoutsToTerraform(this._timeouts.internalValue),
       ttl_config: googleFirestoreFieldTtlConfigToTerraform(this._ttlConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      collection: {
+        value: cdktf.stringToHclTerraform(this._collection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      field: {
+        value: cdktf.stringToHclTerraform(this._field),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index_config: {
+        value: googleFirestoreFieldIndexConfigToHclTerraform(this._indexConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleFirestoreFieldIndexConfigList",
+      },
+      timeouts: {
+        value: googleFirestoreFieldTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleFirestoreFieldTimeouts",
+      },
+      ttl_config: {
+        value: googleFirestoreFieldTtlConfigToHclTerraform(this._ttlConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleFirestoreFieldTtlConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -86,6 +86,17 @@ export function googleRedisClusterDiscoveryEndpointsPscConfigToTerraform(struct?
   }
 }
 
+
+export function googleRedisClusterDiscoveryEndpointsPscConfigToHclTerraform(struct?: GoogleRedisClusterDiscoveryEndpointsPscConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -148,6 +159,17 @@ export function googleRedisClusterDiscoveryEndpointsToTerraform(struct?: GoogleR
   }
   return {
   }
+}
+
+
+export function googleRedisClusterDiscoveryEndpointsToHclTerraform(struct?: GoogleRedisClusterDiscoveryEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleRedisClusterDiscoveryEndpointsOutputReference extends cdktf.ComplexObject {
@@ -223,6 +245,17 @@ export function googleRedisClusterPscConnectionsToTerraform(struct?: GoogleRedis
   }
   return {
   }
+}
+
+
+export function googleRedisClusterPscConnectionsToHclTerraform(struct?: GoogleRedisClusterPscConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleRedisClusterPscConnectionsOutputReference extends cdktf.ComplexObject {
@@ -309,6 +342,17 @@ export function googleRedisClusterStateInfoUpdateInfoToTerraform(struct?: Google
   }
 }
 
+
+export function googleRedisClusterStateInfoUpdateInfoToHclTerraform(struct?: GoogleRedisClusterStateInfoUpdateInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleRedisClusterStateInfoUpdateInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -376,6 +420,17 @@ export function googleRedisClusterStateInfoToTerraform(struct?: GoogleRedisClust
   }
   return {
   }
+}
+
+
+export function googleRedisClusterStateInfoToHclTerraform(struct?: GoogleRedisClusterStateInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleRedisClusterStateInfoOutputReference extends cdktf.ComplexObject {
@@ -450,6 +505,25 @@ export function googleRedisClusterPscConfigsToTerraform(struct?: GoogleRedisClus
   return {
     network: cdktf.stringToTerraform(struct!.network),
   }
+}
+
+
+export function googleRedisClusterPscConfigsToHclTerraform(struct?: GoogleRedisClusterPscConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleRedisClusterPscConfigsOutputReference extends cdktf.ComplexObject {
@@ -554,6 +628,37 @@ export function googleRedisClusterTimeoutsToTerraform(struct?: GoogleRedisCluste
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleRedisClusterTimeoutsToHclTerraform(struct?: GoogleRedisClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleRedisClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -935,5 +1040,73 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       psc_configs: cdktf.listMapper(googleRedisClusterPscConfigsToTerraform, true)(this._pscConfigs.internalValue),
       timeouts: googleRedisClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorization_mode: {
+        value: cdktf.stringToHclTerraform(this._authorizationMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replica_count: {
+        value: cdktf.numberToHclTerraform(this._replicaCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shard_count: {
+        value: cdktf.numberToHclTerraform(this._shardCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      transit_encryption_mode: {
+        value: cdktf.stringToHclTerraform(this._transitEncryptionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      psc_configs: {
+        value: cdktf.listMapperHcl(googleRedisClusterPscConfigsToHclTerraform, true)(this._pscConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRedisClusterPscConfigsList",
+      },
+      timeouts: {
+        value: googleRedisClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleRedisClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

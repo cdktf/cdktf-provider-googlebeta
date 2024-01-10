@@ -125,6 +125,17 @@ export function googleDataprocJobStatusToTerraform(struct?: GoogleDataprocJobSta
   }
 }
 
+
+export function googleDataprocJobStatusToHclTerraform(struct?: GoogleDataprocJobStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDataprocJobStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -209,6 +220,25 @@ export function googleDataprocJobHadoopConfigLoggingConfigToTerraform(struct?: G
   return {
     driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
   }
+}
+
+
+export function googleDataprocJobHadoopConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobHadoopConfigLoggingConfigOutputReference | GoogleDataprocJobHadoopConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobHadoopConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -322,6 +352,67 @@ export function googleDataprocJobHadoopConfigToTerraform(struct?: GoogleDataproc
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     logging_config: googleDataprocJobHadoopConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobHadoopConfigToHclTerraform(struct?: GoogleDataprocJobHadoopConfigOutputReference | GoogleDataprocJobHadoopConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    archive_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    args: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    main_class: {
+      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    main_jar_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.mainJarFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    logging_config: {
+      value: googleDataprocJobHadoopConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobHadoopConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobHadoopConfigOutputReference extends cdktf.ComplexObject {
@@ -580,6 +671,55 @@ export function googleDataprocJobHiveConfigToTerraform(struct?: GoogleDataprocJo
   }
 }
 
+
+export function googleDataprocJobHiveConfigToHclTerraform(struct?: GoogleDataprocJobHiveConfigOutputReference | GoogleDataprocJobHiveConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continue_on_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    query_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    script_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobHiveConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -757,6 +897,25 @@ export function googleDataprocJobPigConfigLoggingConfigToTerraform(struct?: Goog
   }
 }
 
+
+export function googleDataprocJobPigConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobPigConfigLoggingConfigOutputReference | GoogleDataprocJobPigConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobPigConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -861,6 +1020,61 @@ export function googleDataprocJobPigConfigToTerraform(struct?: GoogleDataprocJob
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
     logging_config: googleDataprocJobPigConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobPigConfigToHclTerraform(struct?: GoogleDataprocJobPigConfigOutputReference | GoogleDataprocJobPigConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continue_on_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    query_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    script_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    logging_config: {
+      value: googleDataprocJobPigConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobPigConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobPigConfigOutputReference extends cdktf.ComplexObject {
@@ -1062,6 +1276,25 @@ export function googleDataprocJobPlacementToTerraform(struct?: GoogleDataprocJob
   }
 }
 
+
+export function googleDataprocJobPlacementToHclTerraform(struct?: GoogleDataprocJobPlacementOutputReference | GoogleDataprocJobPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobPlacementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1129,6 +1362,25 @@ export function googleDataprocJobPrestoConfigLoggingConfigToTerraform(struct?: G
   return {
     driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
   }
+}
+
+
+export function googleDataprocJobPrestoConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobPrestoConfigLoggingConfigOutputReference | GoogleDataprocJobPrestoConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobPrestoConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -1235,6 +1487,61 @@ export function googleDataprocJobPrestoConfigToTerraform(struct?: GoogleDataproc
     query_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryList),
     logging_config: googleDataprocJobPrestoConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobPrestoConfigToHclTerraform(struct?: GoogleDataprocJobPrestoConfigOutputReference | GoogleDataprocJobPrestoConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clientTags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    continue_on_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.continueOnFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    output_format: {
+      value: cdktf.stringToHclTerraform(struct!.outputFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    query_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    logging_config: {
+      value: googleDataprocJobPrestoConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobPrestoConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobPrestoConfigOutputReference extends cdktf.ComplexObject {
@@ -1436,6 +1743,25 @@ export function googleDataprocJobPysparkConfigLoggingConfigToTerraform(struct?: 
   }
 }
 
+
+export function googleDataprocJobPysparkConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobPysparkConfigLoggingConfigOutputReference | GoogleDataprocJobPysparkConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobPysparkConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1547,6 +1873,67 @@ export function googleDataprocJobPysparkConfigToTerraform(struct?: GoogleDatapro
     python_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonFileUris),
     logging_config: googleDataprocJobPysparkConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobPysparkConfigToHclTerraform(struct?: GoogleDataprocJobPysparkConfigOutputReference | GoogleDataprocJobPysparkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    archive_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    args: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    main_python_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.mainPythonFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    python_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pythonFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    logging_config: {
+      value: googleDataprocJobPysparkConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobPysparkConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobPysparkConfigOutputReference extends cdktf.ComplexObject {
@@ -1767,6 +2154,25 @@ export function googleDataprocJobReferenceToTerraform(struct?: GoogleDataprocJob
   }
 }
 
+
+export function googleDataprocJobReferenceToHclTerraform(struct?: GoogleDataprocJobReferenceOutputReference | GoogleDataprocJobReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    job_id: {
+      value: cdktf.stringToHclTerraform(struct!.jobId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobReferenceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1839,6 +2245,31 @@ export function googleDataprocJobSchedulingToTerraform(struct?: GoogleDataprocJo
     max_failures_per_hour: cdktf.numberToTerraform(struct!.maxFailuresPerHour),
     max_failures_total: cdktf.numberToTerraform(struct!.maxFailuresTotal),
   }
+}
+
+
+export function googleDataprocJobSchedulingToHclTerraform(struct?: GoogleDataprocJobSchedulingOutputReference | GoogleDataprocJobScheduling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_failures_per_hour: {
+      value: cdktf.numberToHclTerraform(struct!.maxFailuresPerHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_failures_total: {
+      value: cdktf.numberToHclTerraform(struct!.maxFailuresTotal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobSchedulingOutputReference extends cdktf.ComplexObject {
@@ -1922,6 +2353,25 @@ export function googleDataprocJobSparkConfigLoggingConfigToTerraform(struct?: Go
   return {
     driver_log_levels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverLogLevels),
   }
+}
+
+
+export function googleDataprocJobSparkConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobSparkConfigLoggingConfigOutputReference | GoogleDataprocJobSparkConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobSparkConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -2035,6 +2485,67 @@ export function googleDataprocJobSparkConfigToTerraform(struct?: GoogleDataprocJ
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     logging_config: googleDataprocJobSparkConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobSparkConfigToHclTerraform(struct?: GoogleDataprocJobSparkConfigOutputReference | GoogleDataprocJobSparkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    archive_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    args: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    main_class: {
+      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    main_jar_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.mainJarFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    logging_config: {
+      value: googleDataprocJobSparkConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobSparkConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobSparkConfigOutputReference extends cdktf.ComplexObject {
@@ -2258,6 +2769,25 @@ export function googleDataprocJobSparksqlConfigLoggingConfigToTerraform(struct?:
   }
 }
 
+
+export function googleDataprocJobSparksqlConfigLoggingConfigToHclTerraform(struct?: GoogleDataprocJobSparksqlConfigLoggingConfigOutputReference | GoogleDataprocJobSparksqlConfigLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    driver_log_levels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.driverLogLevels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataprocJobSparksqlConfigLoggingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2355,6 +2885,55 @@ export function googleDataprocJobSparksqlConfigToTerraform(struct?: GoogleDatapr
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
     logging_config: googleDataprocJobSparksqlConfigLoggingConfigToTerraform(struct!.loggingConfig),
   }
+}
+
+
+export function googleDataprocJobSparksqlConfigToHclTerraform(struct?: GoogleDataprocJobSparksqlConfigOutputReference | GoogleDataprocJobSparksqlConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    jar_file_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    query_file_uri: {
+      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    script_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    logging_config: {
+      value: googleDataprocJobSparksqlConfigLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataprocJobSparksqlConfigLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobSparksqlConfigOutputReference extends cdktf.ComplexObject {
@@ -2535,6 +3114,31 @@ export function googleDataprocJobTimeoutsToTerraform(struct?: GoogleDataprocJobT
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleDataprocJobTimeoutsToHclTerraform(struct?: GoogleDataprocJobTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataprocJobTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2995,5 +3599,109 @@ export class GoogleDataprocJob extends cdktf.TerraformResource {
       sparksql_config: googleDataprocJobSparksqlConfigToTerraform(this._sparksqlConfig.internalValue),
       timeouts: googleDataprocJobTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      force_delete: {
+        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hadoop_config: {
+        value: googleDataprocJobHadoopConfigToHclTerraform(this._hadoopConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobHadoopConfigList",
+      },
+      hive_config: {
+        value: googleDataprocJobHiveConfigToHclTerraform(this._hiveConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobHiveConfigList",
+      },
+      pig_config: {
+        value: googleDataprocJobPigConfigToHclTerraform(this._pigConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobPigConfigList",
+      },
+      placement: {
+        value: googleDataprocJobPlacementToHclTerraform(this._placement.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobPlacementList",
+      },
+      presto_config: {
+        value: googleDataprocJobPrestoConfigToHclTerraform(this._prestoConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobPrestoConfigList",
+      },
+      pyspark_config: {
+        value: googleDataprocJobPysparkConfigToHclTerraform(this._pysparkConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobPysparkConfigList",
+      },
+      reference: {
+        value: googleDataprocJobReferenceToHclTerraform(this._reference.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobReferenceList",
+      },
+      scheduling: {
+        value: googleDataprocJobSchedulingToHclTerraform(this._scheduling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobSchedulingList",
+      },
+      spark_config: {
+        value: googleDataprocJobSparkConfigToHclTerraform(this._sparkConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobSparkConfigList",
+      },
+      sparksql_config: {
+        value: googleDataprocJobSparksqlConfigToHclTerraform(this._sparksqlConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocJobSparksqlConfigList",
+      },
+      timeouts: {
+        value: googleDataprocJobTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataprocJobTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

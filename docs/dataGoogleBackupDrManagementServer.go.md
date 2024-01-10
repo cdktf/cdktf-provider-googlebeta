@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServer(scope Construct, id *string, config DataGoogleBackupDrManagementServerConfig) DataGoogleBackupDrManagementServer
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerConfig {
 	Connection: interface{},
@@ -786,7 +795,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerManagementUri {
 
@@ -799,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 &datagooglebackupdrmanagementserver.DataGoogleBackupDrManagementServerNetworks {
 
@@ -814,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleb
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerManagementUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrManagementServerManagementUriList
 ```
@@ -855,10 +864,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -946,7 +972,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerManagementUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerManagementUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrManagementServerManagementUriOutputReference
 ```
@@ -1235,7 +1261,7 @@ func InternalValue() DataGoogleBackupDrManagementServerManagementUri
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrManagementServerNetworksList
 ```
@@ -1276,10 +1302,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1367,7 +1410,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBackupDrManagementServer.DataGoogleBackupDrManagementServerNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglebackupdrmanagementserver"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglebackupdrmanagementserver"
 
 datagooglebackupdrmanagementserver.NewDataGoogleBackupDrManagementServerNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrManagementServerNetworksOutputReference
 ```

@@ -175,4 +175,36 @@ export class DataGoogleKmsSecretAsymmetric extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ciphertext: {
+        value: cdktf.stringToHclTerraform(this._ciphertext),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crc32: {
+        value: cdktf.stringToHclTerraform(this._crc32),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crypto_key_version: {
+        value: cdktf.stringToHclTerraform(this._cryptoKeyVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

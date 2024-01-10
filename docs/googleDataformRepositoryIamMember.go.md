@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.NewGoogleDataformRepositoryIamMember(scope Construct, id *string, config GoogleDataformRepositoryIamMemberConfig) GoogleDataformRepositoryIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.GoogleDataformRepositoryIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 &googledataformrepositoryiammember.GoogleDataformRepositoryIamMemberCondition {
 	Expression: *string,
@@ -926,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 &googledataformrepositoryiammember.GoogleDataformRepositoryIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataf
 	Member: *string,
 	Repository: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1133,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryIamMember.GoogleDataformRepositoryIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataformrepositoryiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiammember"
 
 googledataformrepositoryiammember.NewGoogleDataformRepositoryIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataformRepositoryIamMemberConditionOutputReference
 ```

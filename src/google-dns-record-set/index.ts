@@ -123,6 +123,61 @@ export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLo
   }
 }
 
+
+export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    load_balancer_type: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -336,6 +391,25 @@ export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerrafor
   }
 }
 
+
+export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    internal_load_balancers: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -410,6 +484,37 @@ export function googleDnsRecordSetRoutingPolicyGeoToTerraform(struct?: GoogleDns
     rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
     health_checked_targets: googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyGeoToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rrdatas: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    health_checked_targets: {
+      value: googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerraform(struct!.healthCheckedTargets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexObject {
@@ -592,6 +697,61 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheck
     project: cdktf.stringToTerraform(struct!.project),
     region: cdktf.stringToTerraform(struct!.region),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    load_balancer_type: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
@@ -807,6 +967,25 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheck
   }
 }
 
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    internal_load_balancers: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -881,6 +1060,37 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform
     rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
     health_checked_targets: googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rrdatas: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    health_checked_targets: {
+      value: googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToHclTerraform(struct!.healthCheckedTargets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference extends cdktf.ComplexObject {
@@ -1063,6 +1273,61 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadB
     project: cdktf.stringToTerraform(struct!.project),
     region: cdktf.stringToTerraform(struct!.region),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    load_balancer_type: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
@@ -1278,6 +1543,25 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(s
   }
 }
 
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    internal_load_balancers: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1361,6 +1645,43 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct?:
     backup_geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform, true)(struct!.backupGeo),
     primary: googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct!.primary),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_geo_fencing_for_backups: {
+      value: cdktf.booleanToHclTerraform(struct!.enableGeoFencingForBackups),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    trickle_ratio: {
+      value: cdktf.numberToHclTerraform(struct!.trickleRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_geo: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform, true)(struct!.backupGeo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
+    },
+    primary: {
+      value: googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerraform(struct!.primary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktf.ComplexObject {
@@ -1530,6 +1851,61 @@ export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLo
     project: cdktf.stringToTerraform(struct!.project),
     region: cdktf.stringToTerraform(struct!.region),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    load_balancer_type: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
@@ -1745,6 +2121,25 @@ export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerrafor
   }
 }
 
+
+export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    internal_load_balancers: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1819,6 +2214,37 @@ export function googleDnsRecordSetRoutingPolicyWrrToTerraform(struct?: GoogleDns
     weight: cdktf.numberToTerraform(struct!.weight),
     health_checked_targets: googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyWrrToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrr | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rrdatas: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_checked_targets: {
+      value: googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerraform(struct!.healthCheckedTargets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexObject {
@@ -1980,6 +2406,43 @@ export function googleDnsRecordSetRoutingPolicyToTerraform(struct?: GoogleDnsRec
     primary_backup: googleDnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct!.primaryBackup),
     wrr: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
   }
+}
+
+
+export function googleDnsRecordSetRoutingPolicyToHclTerraform(struct?: GoogleDnsRecordSetRoutingPolicyOutputReference | GoogleDnsRecordSetRoutingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_geo_fencing: {
+      value: cdktf.booleanToHclTerraform(struct!.enableGeoFencing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    geo: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyGeoToHclTerraform, true)(struct!.geo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyGeoList",
+    },
+    primary_backup: {
+      value: googleDnsRecordSetRoutingPolicyPrimaryBackupToHclTerraform(struct!.primaryBackup),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyPrimaryBackupList",
+    },
+    wrr: {
+      value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyWrrToHclTerraform, true)(struct!.wrr),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsRecordSetRoutingPolicyWrrList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObject {
@@ -2296,5 +2759,61 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       routing_policy: googleDnsRecordSetRoutingPolicyToTerraform(this._routingPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_zone: {
+        value: cdktf.stringToHclTerraform(this._managedZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rrdatas: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rrdatas),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_policy: {
+        value: googleDnsRecordSetRoutingPolicyToHclTerraform(this._routingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsRecordSetRoutingPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

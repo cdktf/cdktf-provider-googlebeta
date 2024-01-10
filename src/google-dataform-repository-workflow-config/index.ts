@@ -86,6 +86,17 @@ export function googleDataformRepositoryWorkflowConfigRecentScheduledExecutionRe
   }
 }
 
+
+export function googleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusToHclTerraform(struct?: GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsErrorStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -153,6 +164,17 @@ export function googleDataformRepositoryWorkflowConfigRecentScheduledExecutionRe
   }
   return {
   }
+}
+
+
+export function googleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsToHclTerraform(struct?: GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDataformRepositoryWorkflowConfigRecentScheduledExecutionRecordsOutputReference extends cdktf.ComplexObject {
@@ -249,6 +271,37 @@ export function googleDataformRepositoryWorkflowConfigInvocationConfigIncludedTa
     name: cdktf.stringToTerraform(struct!.name),
     schema: cdktf.stringToTerraform(struct!.schema),
   }
+}
+
+
+export function googleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsToHclTerraform(struct?: GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsOutputReference extends cdktf.ComplexObject {
@@ -427,6 +480,55 @@ export function googleDataformRepositoryWorkflowConfigInvocationConfigToTerrafor
     transitive_dependents_included: cdktf.booleanToTerraform(struct!.transitiveDependentsIncluded),
     included_targets: cdktf.listMapper(googleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsToTerraform, true)(struct!.includedTargets),
   }
+}
+
+
+export function googleDataformRepositoryWorkflowConfigInvocationConfigToHclTerraform(struct?: GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference | GoogleDataformRepositoryWorkflowConfigInvocationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fully_refresh_incremental_tables_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.fullyRefreshIncrementalTablesEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    included_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedTags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    service_account: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transitive_dependencies_included: {
+      value: cdktf.booleanToHclTerraform(struct!.transitiveDependenciesIncluded),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    transitive_dependents_included: {
+      value: cdktf.booleanToHclTerraform(struct!.transitiveDependentsIncluded),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    included_targets: {
+      value: cdktf.listMapperHcl(googleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsToHclTerraform, true)(struct!.includedTargets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataformRepositoryWorkflowConfigInvocationConfigIncludedTargetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataformRepositoryWorkflowConfigInvocationConfigOutputReference extends cdktf.ComplexObject {
@@ -612,6 +714,37 @@ export function googleDataformRepositoryWorkflowConfigTimeoutsToTerraform(struct
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDataformRepositoryWorkflowConfigTimeoutsToHclTerraform(struct?: GoogleDataformRepositoryWorkflowConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataformRepositoryWorkflowConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -961,5 +1094,73 @@ export class GoogleDataformRepositoryWorkflowConfig extends cdktf.TerraformResou
       invocation_config: googleDataformRepositoryWorkflowConfigInvocationConfigToTerraform(this._invocationConfig.internalValue),
       timeouts: googleDataformRepositoryWorkflowConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cron_schedule: {
+        value: cdktf.stringToHclTerraform(this._cronSchedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      release_config: {
+        value: cdktf.stringToHclTerraform(this._releaseConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_zone: {
+        value: cdktf.stringToHclTerraform(this._timeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invocation_config: {
+        value: googleDataformRepositoryWorkflowConfigInvocationConfigToHclTerraform(this._invocationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataformRepositoryWorkflowConfigInvocationConfigList",
+      },
+      timeouts: {
+        value: googleDataformRepositoryWorkflowConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataformRepositoryWorkflowConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

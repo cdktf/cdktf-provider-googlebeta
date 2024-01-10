@@ -180,6 +180,31 @@ export function googleDataFusionInstanceAcceleratorsToTerraform(struct?: GoogleD
   }
 }
 
+
+export function googleDataFusionInstanceAcceleratorsToHclTerraform(struct?: GoogleDataFusionInstanceAccelerators | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accelerator_type: {
+      value: cdktf.stringToHclTerraform(struct!.acceleratorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataFusionInstanceAcceleratorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -297,6 +322,25 @@ export function googleDataFusionInstanceCryptoKeyConfigToTerraform(struct?: Goog
   }
 }
 
+
+export function googleDataFusionInstanceCryptoKeyConfigToHclTerraform(struct?: GoogleDataFusionInstanceCryptoKeyConfigOutputReference | GoogleDataFusionInstanceCryptoKeyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_reference: {
+      value: cdktf.stringToHclTerraform(struct!.keyReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataFusionInstanceCryptoKeyConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -366,6 +410,31 @@ export function googleDataFusionInstanceEventPublishConfigToTerraform(struct?: G
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     topic: cdktf.stringToTerraform(struct!.topic),
   }
+}
+
+
+export function googleDataFusionInstanceEventPublishConfigToHclTerraform(struct?: GoogleDataFusionInstanceEventPublishConfigOutputReference | GoogleDataFusionInstanceEventPublishConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataFusionInstanceEventPublishConfigOutputReference extends cdktf.ComplexObject {
@@ -461,6 +530,31 @@ export function googleDataFusionInstanceNetworkConfigToTerraform(struct?: Google
   }
 }
 
+
+export function googleDataFusionInstanceNetworkConfigToHclTerraform(struct?: GoogleDataFusionInstanceNetworkConfigOutputReference | GoogleDataFusionInstanceNetworkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_allocation: {
+      value: cdktf.stringToHclTerraform(struct!.ipAllocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataFusionInstanceNetworkConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -550,6 +644,37 @@ export function googleDataFusionInstanceTimeoutsToTerraform(struct?: GoogleDataF
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDataFusionInstanceTimeoutsToHclTerraform(struct?: GoogleDataFusionInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataFusionInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1153,5 +1278,139 @@ export class GoogleDataFusionInstance extends cdktf.TerraformResource {
       network_config: googleDataFusionInstanceNetworkConfigToTerraform(this._networkConfig.internalValue),
       timeouts: googleDataFusionInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dataproc_service_account: {
+        value: cdktf.stringToHclTerraform(this._dataprocServiceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_rbac: {
+        value: cdktf.booleanToHclTerraform(this._enableRbac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_stackdriver_logging: {
+        value: cdktf.booleanToHclTerraform(this._enableStackdriverLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_stackdriver_monitoring: {
+        value: cdktf.booleanToHclTerraform(this._enableStackdriverMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      private_instance: {
+        value: cdktf.booleanToHclTerraform(this._privateInstance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      accelerators: {
+        value: cdktf.listMapperHcl(googleDataFusionInstanceAcceleratorsToHclTerraform, true)(this._accelerators.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataFusionInstanceAcceleratorsList",
+      },
+      crypto_key_config: {
+        value: googleDataFusionInstanceCryptoKeyConfigToHclTerraform(this._cryptoKeyConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataFusionInstanceCryptoKeyConfigList",
+      },
+      event_publish_config: {
+        value: googleDataFusionInstanceEventPublishConfigToHclTerraform(this._eventPublishConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataFusionInstanceEventPublishConfigList",
+      },
+      network_config: {
+        value: googleDataFusionInstanceNetworkConfigToHclTerraform(this._networkConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataFusionInstanceNetworkConfigList",
+      },
+      timeouts: {
+        value: googleDataFusionInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataFusionInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

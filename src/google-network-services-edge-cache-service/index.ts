@@ -140,6 +140,31 @@ export function googleNetworkServicesEdgeCacheServiceLogConfigToTerraform(struct
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceLogConfigToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceLogConfigOutputReference | GoogleNetworkServicesEdgeCacheServiceLogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sample_rate: {
+      value: cdktf.numberToHclTerraform(struct!.sampleRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceLogConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -258,6 +283,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingHostRuleToTerraform(
     hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     path_matcher: cdktf.stringToTerraform(struct!.pathMatcher),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingHostRuleToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingHostRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hosts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    path_matcher: {
+      value: cdktf.stringToHclTerraform(struct!.pathMatcher),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleOutputReference extends cdktf.ComplexObject {
@@ -411,6 +467,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAdd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_value: {
+      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replace: {
+      value: cdktf.booleanToHclTerraform(struct!.replace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -548,6 +635,25 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemove | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -656,6 +762,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     header_value: cdktf.stringToTerraform(struct!.headerValue),
     replace: cdktf.booleanToTerraform(struct!.replace),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAdd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_value: {
+      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replace: {
+      value: cdktf.booleanToHclTerraform(struct!.replace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddOutputReference extends cdktf.ComplexObject {
@@ -797,6 +934,25 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemove | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -912,6 +1068,43 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     response_header_to_add: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddToTerraform, true)(struct!.responseHeaderToAdd),
     response_header_to_remove: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveToTerraform, true)(struct!.responseHeaderToRemove),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    request_header_to_add: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddToHclTerraform, true)(struct!.requestHeaderToAdd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddList",
+    },
+    request_header_to_remove: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveToHclTerraform, true)(struct!.requestHeaderToRemove),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveList",
+    },
+    response_header_to_add: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddToHclTerraform, true)(struct!.responseHeaderToAdd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddList",
+    },
+    response_header_to_remove: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveToHclTerraform, true)(struct!.responseHeaderToRemove),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionOutputReference extends cdktf.ComplexObject {
@@ -1081,6 +1274,55 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     present_match: cdktf.booleanToTerraform(struct!.presentMatch),
     suffix_match: cdktf.stringToTerraform(struct!.suffixMatch),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact_match: {
+      value: cdktf.stringToHclTerraform(struct!.exactMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    invert_match: {
+      value: cdktf.booleanToHclTerraform(struct!.invertMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    prefix_match: {
+      value: cdktf.stringToHclTerraform(struct!.prefixMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    present_match: {
+      value: cdktf.booleanToHclTerraform(struct!.presentMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    suffix_match: {
+      value: cdktf.stringToHclTerraform(struct!.suffixMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchOutputReference extends cdktf.ComplexObject {
@@ -1303,6 +1545,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact_match: {
+      value: cdktf.stringToHclTerraform(struct!.exactMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    present_match: {
+      value: cdktf.booleanToHclTerraform(struct!.presentMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1484,6 +1757,55 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     header_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchToTerraform, true)(struct!.headerMatch),
     query_parameter_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchToTerraform, true)(struct!.queryParameterMatch),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    full_path_match: {
+      value: cdktf.stringToHclTerraform(struct!.fullPathMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_case: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreCase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    path_template_match: {
+      value: cdktf.stringToHclTerraform(struct!.pathTemplateMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix_match: {
+      value: cdktf.stringToHclTerraform(struct!.prefixMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_match: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchToHclTerraform, true)(struct!.headerMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchList",
+    },
+    query_parameter_match: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchToHclTerraform, true)(struct!.queryParameterMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleOutputReference extends cdktf.ComplexObject {
@@ -1762,6 +2084,49 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    copied_parameters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.copiedParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    keyset: {
+      value: cdktf.stringToHclTerraform(struct!.keyset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_query_parameter: {
+      value: cdktf.stringToHclTerraform(struct!.tokenQueryParameter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.tokenTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1983,6 +2348,61 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exclude_host: {
+      value: cdktf.booleanToHclTerraform(struct!.excludeHost),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    exclude_query_string: {
+      value: cdktf.booleanToHclTerraform(struct!.excludeQueryString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    excluded_query_parameters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedQueryParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    include_protocol: {
+      value: cdktf.booleanToHclTerraform(struct!.includeProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    included_cookie_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedCookieNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_header_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedHeaderNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    included_query_parameters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedQueryParameters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2195,6 +2615,31 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     allowed_signature_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedSignatureAlgorithms),
     token_query_parameter: cdktf.stringToTerraform(struct!.tokenQueryParameter),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_signature_algorithms: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedSignatureAlgorithms),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    token_query_parameter: {
+      value: cdktf.stringToHclTerraform(struct!.tokenQueryParameter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsOutputReference extends cdktf.ComplexObject {
@@ -2423,6 +2868,91 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     cache_key_policy: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyToTerraform(struct!.cacheKeyPolicy),
     signed_token_options: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsToTerraform(struct!.signedTokenOptions),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cache_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cacheMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.clientTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.defaultTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.maxTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negative_caching: {
+      value: cdktf.booleanToHclTerraform(struct!.negativeCaching),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    negative_caching_policy: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.negativeCachingPolicy),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    signed_request_keyset: {
+      value: cdktf.stringToHclTerraform(struct!.signedRequestKeyset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signed_request_maximum_expiration_ttl: {
+      value: cdktf.stringToHclTerraform(struct!.signedRequestMaximumExpirationTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signed_request_mode: {
+      value: cdktf.stringToHclTerraform(struct!.signedRequestMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    add_signatures: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesToHclTerraform(struct!.addSignatures),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesList",
+    },
+    cache_key_policy: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyToHclTerraform(struct!.cacheKeyPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyList",
+    },
+    signed_token_options: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsToHclTerraform(struct!.signedTokenOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference extends cdktf.ComplexObject {
@@ -2786,6 +3316,61 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_credentials: {
+      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allow_methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allow_origins: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    expose_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    max_age: {
+      value: cdktf.stringToHclTerraform(struct!.maxAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3009,6 +3594,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewrite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_rewrite: {
+      value: cdktf.stringToHclTerraform(struct!.hostRewrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_prefix_rewrite: {
+      value: cdktf.stringToHclTerraform(struct!.pathPrefixRewrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_template_rewrite: {
+      value: cdktf.stringToHclTerraform(struct!.pathTemplateRewrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3132,6 +3748,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     cors_policy: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyToTerraform(struct!.corsPolicy),
     url_rewrite: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteToTerraform(struct!.urlRewrite),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cdn_policy: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyToHclTerraform(struct!.cdnPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyList",
+    },
+    cors_policy: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyToHclTerraform(struct!.corsPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyList",
+    },
+    url_rewrite: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteToHclTerraform(struct!.urlRewrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewriteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference extends cdktf.ComplexObject {
@@ -3294,6 +3941,55 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     redirect_response_code: cdktf.stringToTerraform(struct!.redirectResponseCode),
     strip_query: cdktf.booleanToTerraform(struct!.stripQuery),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectOutputReference | GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_redirect: {
+      value: cdktf.stringToHclTerraform(struct!.hostRedirect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    https_redirect: {
+      value: cdktf.booleanToHclTerraform(struct!.httpsRedirect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    path_redirect: {
+      value: cdktf.stringToHclTerraform(struct!.pathRedirect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix_redirect: {
+      value: cdktf.stringToHclTerraform(struct!.prefixRedirect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_response_code: {
+      value: cdktf.stringToHclTerraform(struct!.redirectResponseCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strip_query: {
+      value: cdktf.booleanToHclTerraform(struct!.stripQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectOutputReference extends cdktf.ComplexObject {
@@ -3520,6 +4216,61 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     route_action: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionToTerraform(struct!.routeAction),
     url_redirect: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectToTerraform(struct!.urlRedirect),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    origin: {
+      value: cdktf.stringToHclTerraform(struct!.origin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.stringToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_action: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionToHclTerraform(struct!.headerAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionList",
+    },
+    match_rule: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleToHclTerraform, true)(struct!.matchRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleList",
+    },
+    route_action: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionToHclTerraform(struct!.routeAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionList",
+    },
+    url_redirect: {
+      value: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectToHclTerraform(struct!.urlRedirect),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference extends cdktf.ComplexObject {
@@ -3761,6 +4512,37 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToTerrafo
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcher | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route_rule: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleToHclTerraform, true)(struct!.routeRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3905,6 +4687,31 @@ export function googleNetworkServicesEdgeCacheServiceRoutingToTerraform(struct?:
   }
 }
 
+
+export function googleNetworkServicesEdgeCacheServiceRoutingToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference | GoogleNetworkServicesEdgeCacheServiceRouting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_rule: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingHostRuleToHclTerraform, true)(struct!.hostRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingHostRuleList",
+    },
+    path_matcher: {
+      value: cdktf.listMapperHcl(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToHclTerraform, true)(struct!.pathMatcher),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3994,6 +4801,37 @@ export function googleNetworkServicesEdgeCacheServiceTimeoutsToTerraform(struct?
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNetworkServicesEdgeCacheServiceTimeoutsToHclTerraform(struct?: GoogleNetworkServicesEdgeCacheServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesEdgeCacheServiceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -4431,5 +5269,97 @@ export class GoogleNetworkServicesEdgeCacheService extends cdktf.TerraformResour
       routing: googleNetworkServicesEdgeCacheServiceRoutingToTerraform(this._routing.internalValue),
       timeouts: googleNetworkServicesEdgeCacheServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_http2: {
+        value: cdktf.booleanToHclTerraform(this._disableHttp2),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_quic: {
+        value: cdktf.booleanToHclTerraform(this._disableQuic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      edge_security_policy: {
+        value: cdktf.stringToHclTerraform(this._edgeSecurityPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      edge_ssl_certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._edgeSslCertificates),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_tls: {
+        value: cdktf.booleanToHclTerraform(this._requireTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ssl_policy: {
+        value: cdktf.stringToHclTerraform(this._sslPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_config: {
+        value: googleNetworkServicesEdgeCacheServiceLogConfigToHclTerraform(this._logConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkServicesEdgeCacheServiceLogConfigList",
+      },
+      routing: {
+        value: googleNetworkServicesEdgeCacheServiceRoutingToHclTerraform(this._routing.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkServicesEdgeCacheServiceRoutingList",
+      },
+      timeouts: {
+        value: googleNetworkServicesEdgeCacheServiceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNetworkServicesEdgeCacheServiceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

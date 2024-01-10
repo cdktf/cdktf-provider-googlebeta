@@ -38,6 +38,17 @@ export function dataGoogleBackupDrManagementServerManagementUriToTerraform(struc
   }
 }
 
+
+export function dataGoogleBackupDrManagementServerManagementUriToHclTerraform(struct?: DataGoogleBackupDrManagementServerManagementUri): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleBackupDrManagementServerManagementUriOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -105,6 +116,17 @@ export function dataGoogleBackupDrManagementServerNetworksToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataGoogleBackupDrManagementServerNetworksToHclTerraform(struct?: DataGoogleBackupDrManagementServerNetworks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleBackupDrManagementServerNetworksOutputReference extends cdktf.ComplexObject {
@@ -294,5 +316,25 @@ export class DataGoogleBackupDrManagementServer extends cdktf.TerraformDataSourc
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

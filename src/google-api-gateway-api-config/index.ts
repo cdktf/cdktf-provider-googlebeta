@@ -108,6 +108,25 @@ export function googleApiGatewayApiConfigGatewayConfigBackendConfigToTerraform(s
   }
 }
 
+
+export function googleApiGatewayApiConfigGatewayConfigBackendConfigToHclTerraform(struct?: GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference | GoogleApiGatewayApiConfigGatewayConfigBackendConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    google_service_account: {
+      value: cdktf.stringToHclTerraform(struct!.googleServiceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -170,6 +189,25 @@ export function googleApiGatewayApiConfigGatewayConfigToTerraform(struct?: Googl
   return {
     backend_config: googleApiGatewayApiConfigGatewayConfigBackendConfigToTerraform(struct!.backendConfig),
   }
+}
+
+
+export function googleApiGatewayApiConfigGatewayConfigToHclTerraform(struct?: GoogleApiGatewayApiConfigGatewayConfigOutputReference | GoogleApiGatewayApiConfigGatewayConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backend_config: {
+      value: googleApiGatewayApiConfigGatewayConfigBackendConfigToHclTerraform(struct!.backendConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApiGatewayApiConfigGatewayConfigBackendConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigGatewayConfigOutputReference extends cdktf.ComplexObject {
@@ -241,6 +279,31 @@ export function googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToTerrafor
     contents: cdktf.stringToTerraform(struct!.contents),
     path: cdktf.stringToTerraform(struct!.path),
   }
+}
+
+
+export function googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToHclTerraform(struct?: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference | GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contents: {
+      value: cdktf.stringToHclTerraform(struct!.contents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference extends cdktf.ComplexObject {
@@ -331,6 +394,31 @@ export function googleApiGatewayApiConfigGrpcServicesSourceToTerraform(struct?: 
     contents: cdktf.stringToTerraform(struct!.contents),
     path: cdktf.stringToTerraform(struct!.path),
   }
+}
+
+
+export function googleApiGatewayApiConfigGrpcServicesSourceToHclTerraform(struct?: GoogleApiGatewayApiConfigGrpcServicesSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contents: {
+      value: cdktf.stringToHclTerraform(struct!.contents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference extends cdktf.ComplexObject {
@@ -453,6 +541,31 @@ export function googleApiGatewayApiConfigGrpcServicesToTerraform(struct?: Google
     file_descriptor_set: googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToTerraform(struct!.fileDescriptorSet),
     source: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesSourceToTerraform, true)(struct!.source),
   }
+}
+
+
+export function googleApiGatewayApiConfigGrpcServicesToHclTerraform(struct?: GoogleApiGatewayApiConfigGrpcServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_descriptor_set: {
+      value: googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToHclTerraform(struct!.fileDescriptorSet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetList",
+    },
+    source: {
+      value: cdktf.listMapperHcl(googleApiGatewayApiConfigGrpcServicesSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApiGatewayApiConfigGrpcServicesSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigGrpcServicesOutputReference extends cdktf.ComplexObject {
@@ -580,6 +693,31 @@ export function googleApiGatewayApiConfigManagedServiceConfigsToTerraform(struct
   }
 }
 
+
+export function googleApiGatewayApiConfigManagedServiceConfigsToHclTerraform(struct?: GoogleApiGatewayApiConfigManagedServiceConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contents: {
+      value: cdktf.stringToHclTerraform(struct!.contents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -702,6 +840,31 @@ export function googleApiGatewayApiConfigOpenapiDocumentsDocumentToTerraform(str
   }
 }
 
+
+export function googleApiGatewayApiConfigOpenapiDocumentsDocumentToHclTerraform(struct?: GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference | GoogleApiGatewayApiConfigOpenapiDocumentsDocument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contents: {
+      value: cdktf.stringToHclTerraform(struct!.contents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -783,6 +946,25 @@ export function googleApiGatewayApiConfigOpenapiDocumentsToTerraform(struct?: Go
   return {
     document: googleApiGatewayApiConfigOpenapiDocumentsDocumentToTerraform(struct!.document),
   }
+}
+
+
+export function googleApiGatewayApiConfigOpenapiDocumentsToHclTerraform(struct?: GoogleApiGatewayApiConfigOpenapiDocuments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    document: {
+      value: googleApiGatewayApiConfigOpenapiDocumentsDocumentToHclTerraform(struct!.document),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApiGatewayApiConfigOpenapiDocumentsDocumentList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference extends cdktf.ComplexObject {
@@ -887,6 +1069,37 @@ export function googleApiGatewayApiConfigTimeoutsToTerraform(struct?: GoogleApiG
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleApiGatewayApiConfigTimeoutsToHclTerraform(struct?: GoogleApiGatewayApiConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApiGatewayApiConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1291,5 +1504,85 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
       openapi_documents: cdktf.listMapper(googleApiGatewayApiConfigOpenapiDocumentsToTerraform, true)(this._openapiDocuments.internalValue),
       timeouts: googleApiGatewayApiConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api: {
+        value: cdktf.stringToHclTerraform(this._api),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_config_id: {
+        value: cdktf.stringToHclTerraform(this._apiConfigId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_config_id_prefix: {
+        value: cdktf.stringToHclTerraform(this._apiConfigIdPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_config: {
+        value: googleApiGatewayApiConfigGatewayConfigToHclTerraform(this._gatewayConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApiGatewayApiConfigGatewayConfigList",
+      },
+      grpc_services: {
+        value: cdktf.listMapperHcl(googleApiGatewayApiConfigGrpcServicesToHclTerraform, true)(this._grpcServices.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApiGatewayApiConfigGrpcServicesList",
+      },
+      managed_service_configs: {
+        value: cdktf.listMapperHcl(googleApiGatewayApiConfigManagedServiceConfigsToHclTerraform, true)(this._managedServiceConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApiGatewayApiConfigManagedServiceConfigsList",
+      },
+      openapi_documents: {
+        value: cdktf.listMapperHcl(googleApiGatewayApiConfigOpenapiDocumentsToHclTerraform, true)(this._openapiDocuments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApiGatewayApiConfigOpenapiDocumentsList",
+      },
+      timeouts: {
+        value: googleApiGatewayApiConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleApiGatewayApiConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.NewGoogleContainerAnalysisNoteIamMember(scope Construct, id *string, config GoogleContainerAnalysisNoteIamMemberConfig) GoogleContainerAnalysisNoteIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 &googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMemberCondition {
 	Expression: *string,
@@ -897,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 &googlecontaineranalysisnoteiammember.GoogleContainerAnalysisNoteIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleconta
 	Member: *string,
 	Note: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAnalysisNoteIamMember.GoogleContainerAnalysisNoteIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecontaineranalysisnoteiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontaineranalysisnoteiammember"
 
 googlecontaineranalysisnoteiammember.NewGoogleContainerAnalysisNoteIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAnalysisNoteIamMemberConditionOutputReference
 ```

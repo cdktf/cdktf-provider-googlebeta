@@ -68,6 +68,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTi
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -118,6 +129,31 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTy
     possible_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.possibleValues),
     validation_check_disabled: cdktf.booleanToTerraform(struct!.validationCheckDisabled),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    possible_values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.possibleValues),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    validation_check_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.validationCheckDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -199,6 +235,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatT
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -235,6 +282,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntege
   }
   return {
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -275,6 +333,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTyp
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -311,6 +380,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
   return {
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -363,6 +443,31 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
     possible_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.possibleValues),
     validation_check_disabled: cdktf.booleanToTerraform(struct!.validationCheckDisabled),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    possible_values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.possibleValues),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    validation_check_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.validationCheckDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -444,6 +549,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -482,6 +598,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -518,6 +645,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
   return {
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -570,6 +708,31 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
     name: cdktf.stringToTerraform(struct!.name),
     processor_type: cdktf.stringToTerraform(struct!.processorType),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    processor_type: {
+      value: cdktf.stringToHclTerraform(struct!.processorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference extends cdktf.ComplexObject {
@@ -686,6 +849,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -722,6 +896,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
   return {
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -872,6 +1057,115 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
     text_type_options: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToTerraform(struct!.textTypeOptions),
     timestamp_type_options: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToTerraform(struct!.timestampTypeOptions),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_filterable: {
+      value: cdktf.booleanToHclTerraform(struct!.isFilterable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_metadata: {
+      value: cdktf.booleanToHclTerraform(struct!.isMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_repeatable: {
+      value: cdktf.booleanToHclTerraform(struct!.isRepeatable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_searchable: {
+      value: cdktf.booleanToHclTerraform(struct!.isSearchable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retrieval_importance: {
+      value: cdktf.stringToHclTerraform(struct!.retrievalImportance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_time_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct!.dateTimeTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsList",
+    },
+    enum_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct!.enumTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsList",
+    },
+    float_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct!.floatTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsList",
+    },
+    integer_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct!.integerTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsList",
+    },
+    map_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsToHclTerraform(struct!.mapTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsList",
+    },
+    schema_sources: {
+      value: cdktf.listMapperHcl(googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList",
+    },
+    text_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToHclTerraform(struct!.textTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsList",
+    },
+    timestamp_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct!.timestampTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference extends cdktf.ComplexObject {
@@ -1300,6 +1594,25 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsProper
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    property_definitions: {
+      value: cdktf.listMapperHcl(googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform, true)(struct!.propertyDefinitions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1369,6 +1682,31 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchema
     name: cdktf.stringToTerraform(struct!.name),
     processor_type: cdktf.stringToTerraform(struct!.processorType),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    processor_type: {
+      value: cdktf.stringToHclTerraform(struct!.processorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference extends cdktf.ComplexObject {
@@ -1485,6 +1823,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTy
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1521,6 +1870,17 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimest
   }
   return {
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference | GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktf.ComplexObject {
@@ -1678,6 +2038,121 @@ export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsToTerr
     text_type_options: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToTerraform(struct!.textTypeOptions),
     timestamp_type_options: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToTerraform(struct!.timestampTypeOptions),
   }
+}
+
+
+export function googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_filterable: {
+      value: cdktf.booleanToHclTerraform(struct!.isFilterable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_metadata: {
+      value: cdktf.booleanToHclTerraform(struct!.isMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_repeatable: {
+      value: cdktf.booleanToHclTerraform(struct!.isRepeatable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_searchable: {
+      value: cdktf.booleanToHclTerraform(struct!.isSearchable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retrieval_importance: {
+      value: cdktf.stringToHclTerraform(struct!.retrievalImportance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_time_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct!.dateTimeTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsList",
+    },
+    enum_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct!.enumTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsList",
+    },
+    float_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct!.floatTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsList",
+    },
+    integer_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct!.integerTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsList",
+    },
+    map_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsToHclTerraform(struct!.mapTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsList",
+    },
+    property_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsToHclTerraform(struct!.propertyTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsList",
+    },
+    schema_sources: {
+      value: cdktf.listMapperHcl(googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList",
+    },
+    text_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToHclTerraform(struct!.textTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsList",
+    },
+    timestamp_type_options: {
+      value: googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct!.timestampTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference extends cdktf.ComplexObject {
@@ -2131,6 +2606,31 @@ export function googleDocumentAiWarehouseDocumentSchemaTimeoutsToTerraform(struc
   }
 }
 
+
+export function googleDocumentAiWarehouseDocumentSchemaTimeoutsToHclTerraform(struct?: GoogleDocumentAiWarehouseDocumentSchemaTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDocumentAiWarehouseDocumentSchemaTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2395,5 +2895,55 @@ export class GoogleDocumentAiWarehouseDocumentSchema extends cdktf.TerraformReso
       property_definitions: cdktf.listMapper(googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsToTerraform, true)(this._propertyDefinitions.internalValue),
       timeouts: googleDocumentAiWarehouseDocumentSchemaTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_is_folder: {
+        value: cdktf.booleanToHclTerraform(this._documentIsFolder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_number: {
+        value: cdktf.stringToHclTerraform(this._projectNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      property_definitions: {
+        value: cdktf.listMapperHcl(googleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform, true)(this._propertyDefinitions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsList",
+      },
+      timeouts: {
+        value: googleDocumentAiWarehouseDocumentSchemaTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDocumentAiWarehouseDocumentSchemaTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

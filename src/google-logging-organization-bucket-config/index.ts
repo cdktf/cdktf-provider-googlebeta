@@ -86,6 +86,25 @@ export function googleLoggingOrganizationBucketConfigCmekSettingsToTerraform(str
   }
 }
 
+
+export function googleLoggingOrganizationBucketConfigCmekSettingsToHclTerraform(struct?: GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference | GoogleLoggingOrganizationBucketConfigCmekSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -172,6 +191,31 @@ export function googleLoggingOrganizationBucketConfigIndexConfigsToTerraform(str
     field_path: cdktf.stringToTerraform(struct!.fieldPath),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function googleLoggingOrganizationBucketConfigIndexConfigsToHclTerraform(struct?: GoogleLoggingOrganizationBucketConfigIndexConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_path: {
+      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingOrganizationBucketConfigIndexConfigsOutputReference extends cdktf.ComplexObject {
@@ -480,5 +524,61 @@ export class GoogleLoggingOrganizationBucketConfig extends cdktf.TerraformResour
       cmek_settings: googleLoggingOrganizationBucketConfigCmekSettingsToTerraform(this._cmekSettings.internalValue),
       index_configs: cdktf.listMapper(googleLoggingOrganizationBucketConfigIndexConfigsToTerraform, true)(this._indexConfigs.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket_id: {
+        value: cdktf.stringToHclTerraform(this._bucketId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_days: {
+        value: cdktf.numberToHclTerraform(this._retentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cmek_settings: {
+        value: googleLoggingOrganizationBucketConfigCmekSettingsToHclTerraform(this._cmekSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLoggingOrganizationBucketConfigCmekSettingsList",
+      },
+      index_configs: {
+        value: cdktf.listMapperHcl(googleLoggingOrganizationBucketConfigIndexConfigsToHclTerraform, true)(this._indexConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleLoggingOrganizationBucketConfigIndexConfigsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

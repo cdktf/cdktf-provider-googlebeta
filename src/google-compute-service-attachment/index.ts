@@ -124,6 +124,17 @@ export function googleComputeServiceAttachmentConnectedEndpointsToTerraform(stru
   }
 }
 
+
+export function googleComputeServiceAttachmentConnectedEndpointsToHclTerraform(struct?: GoogleComputeServiceAttachmentConnectedEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleComputeServiceAttachmentConnectedEndpointsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -206,6 +217,31 @@ export function googleComputeServiceAttachmentConsumerAcceptListsToTerraform(str
     connection_limit: cdktf.numberToTerraform(struct!.connectionLimit),
     project_id_or_num: cdktf.stringToTerraform(struct!.projectIdOrNum),
   }
+}
+
+
+export function googleComputeServiceAttachmentConsumerAcceptListsToHclTerraform(struct?: GoogleComputeServiceAttachmentConsumerAcceptLists | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_limit: {
+      value: cdktf.numberToHclTerraform(struct!.connectionLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    project_id_or_num: {
+      value: cdktf.stringToHclTerraform(struct!.projectIdOrNum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference extends cdktf.ComplexObject {
@@ -329,6 +365,37 @@ export function googleComputeServiceAttachmentTimeoutsToTerraform(struct?: Googl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeServiceAttachmentTimeoutsToHclTerraform(struct?: GoogleComputeServiceAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeServiceAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -751,5 +818,97 @@ export class GoogleComputeServiceAttachment extends cdktf.TerraformResource {
       consumer_accept_lists: cdktf.listMapper(googleComputeServiceAttachmentConsumerAcceptListsToTerraform, true)(this._consumerAcceptLists.internalValue),
       timeouts: googleComputeServiceAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_preference: {
+        value: cdktf.stringToHclTerraform(this._connectionPreference),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      consumer_reject_lists: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._consumerRejectLists),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      enable_proxy_protocol: {
+        value: cdktf.booleanToHclTerraform(this._enableProxyProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_subnets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._natSubnets),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reconcile_connections: {
+        value: cdktf.booleanToHclTerraform(this._reconcileConnections),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_service: {
+        value: cdktf.stringToHclTerraform(this._targetService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      consumer_accept_lists: {
+        value: cdktf.listMapperHcl(googleComputeServiceAttachmentConsumerAcceptListsToHclTerraform, true)(this._consumerAcceptLists.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleComputeServiceAttachmentConsumerAcceptListsList",
+      },
+      timeouts: {
+        value: googleComputeServiceAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeServiceAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

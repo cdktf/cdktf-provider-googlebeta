@@ -94,6 +94,31 @@ export function googleCloudIdentityGroupMembershipMemberKeyToTerraform(struct?: 
   }
 }
 
+
+export function googleCloudIdentityGroupMembershipMemberKeyToHclTerraform(struct?: GoogleCloudIdentityGroupMembershipMemberKeyOutputReference | GoogleCloudIdentityGroupMembershipMemberKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudIdentityGroupMembershipMemberKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -205,6 +230,31 @@ export function googleCloudIdentityGroupMembershipPreferredMemberKeyToTerraform(
   }
 }
 
+
+export function googleCloudIdentityGroupMembershipPreferredMemberKeyToHclTerraform(struct?: GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference | GoogleCloudIdentityGroupMembershipPreferredMemberKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -296,6 +346,25 @@ export function googleCloudIdentityGroupMembershipRolesExpiryDetailToTerraform(s
   }
 }
 
+
+export function googleCloudIdentityGroupMembershipRolesExpiryDetailToHclTerraform(struct?: GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference | GoogleCloudIdentityGroupMembershipRolesExpiryDetail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expire_time: {
+      value: cdktf.stringToHclTerraform(struct!.expireTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudIdentityGroupMembershipRolesExpiryDetailOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -365,6 +434,31 @@ export function googleCloudIdentityGroupMembershipRolesToTerraform(struct?: Goog
     name: cdktf.stringToTerraform(struct!.name),
     expiry_detail: googleCloudIdentityGroupMembershipRolesExpiryDetailToTerraform(struct!.expiryDetail),
   }
+}
+
+
+export function googleCloudIdentityGroupMembershipRolesToHclTerraform(struct?: GoogleCloudIdentityGroupMembershipRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expiry_detail: {
+      value: googleCloudIdentityGroupMembershipRolesExpiryDetailToHclTerraform(struct!.expiryDetail),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudIdentityGroupMembershipRolesExpiryDetailList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudIdentityGroupMembershipRolesOutputReference extends cdktf.ComplexObject {
@@ -491,6 +585,37 @@ export function googleCloudIdentityGroupMembershipTimeoutsToTerraform(struct?: G
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleCloudIdentityGroupMembershipTimeoutsToHclTerraform(struct?: GoogleCloudIdentityGroupMembershipTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudIdentityGroupMembershipTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -782,5 +907,49 @@ export class GoogleCloudIdentityGroupMembership extends cdktf.TerraformResource 
       roles: cdktf.listMapper(googleCloudIdentityGroupMembershipRolesToTerraform, true)(this._roles.internalValue),
       timeouts: googleCloudIdentityGroupMembershipTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_key: {
+        value: googleCloudIdentityGroupMembershipMemberKeyToHclTerraform(this._memberKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudIdentityGroupMembershipMemberKeyList",
+      },
+      preferred_member_key: {
+        value: googleCloudIdentityGroupMembershipPreferredMemberKeyToHclTerraform(this._preferredMemberKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudIdentityGroupMembershipPreferredMemberKeyList",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(googleCloudIdentityGroupMembershipRolesToHclTerraform, true)(this._roles.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleCloudIdentityGroupMembershipRolesList",
+      },
+      timeouts: {
+        value: googleCloudIdentityGroupMembershipTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudIdentityGroupMembershipTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

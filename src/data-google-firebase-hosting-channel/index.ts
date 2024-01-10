@@ -184,4 +184,30 @@ export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource 
       site_id: cdktf.stringToTerraform(this._siteId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      channel_id: {
+        value: cdktf.stringToHclTerraform(this._channelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

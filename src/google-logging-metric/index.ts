@@ -119,6 +119,25 @@ export function googleLoggingMetricBucketOptionsExplicitBucketsToTerraform(struc
   }
 }
 
+
+export function googleLoggingMetricBucketOptionsExplicitBucketsToHclTerraform(struct?: GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference | GoogleLoggingMetricBucketOptionsExplicitBuckets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bounds: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.bounds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -195,6 +214,37 @@ export function googleLoggingMetricBucketOptionsExponentialBucketsToTerraform(st
     num_finite_buckets: cdktf.numberToTerraform(struct!.numFiniteBuckets),
     scale: cdktf.numberToTerraform(struct!.scale),
   }
+}
+
+
+export function googleLoggingMetricBucketOptionsExponentialBucketsToHclTerraform(struct?: GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference | GoogleLoggingMetricBucketOptionsExponentialBuckets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    growth_factor: {
+      value: cdktf.numberToHclTerraform(struct!.growthFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    num_finite_buckets: {
+      value: cdktf.numberToHclTerraform(struct!.numFiniteBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale: {
+      value: cdktf.numberToHclTerraform(struct!.scale),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference extends cdktf.ComplexObject {
@@ -313,6 +363,37 @@ export function googleLoggingMetricBucketOptionsLinearBucketsToTerraform(struct?
   }
 }
 
+
+export function googleLoggingMetricBucketOptionsLinearBucketsToHclTerraform(struct?: GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference | GoogleLoggingMetricBucketOptionsLinearBuckets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    num_finite_buckets: {
+      value: cdktf.numberToHclTerraform(struct!.numFiniteBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    offset: {
+      value: cdktf.numberToHclTerraform(struct!.offset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -427,6 +508,37 @@ export function googleLoggingMetricBucketOptionsToTerraform(struct?: GoogleLoggi
     exponential_buckets: googleLoggingMetricBucketOptionsExponentialBucketsToTerraform(struct!.exponentialBuckets),
     linear_buckets: googleLoggingMetricBucketOptionsLinearBucketsToTerraform(struct!.linearBuckets),
   }
+}
+
+
+export function googleLoggingMetricBucketOptionsToHclTerraform(struct?: GoogleLoggingMetricBucketOptionsOutputReference | GoogleLoggingMetricBucketOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    explicit_buckets: {
+      value: googleLoggingMetricBucketOptionsExplicitBucketsToHclTerraform(struct!.explicitBuckets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLoggingMetricBucketOptionsExplicitBucketsList",
+    },
+    exponential_buckets: {
+      value: googleLoggingMetricBucketOptionsExponentialBucketsToHclTerraform(struct!.exponentialBuckets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLoggingMetricBucketOptionsExponentialBucketsList",
+    },
+    linear_buckets: {
+      value: googleLoggingMetricBucketOptionsLinearBucketsToHclTerraform(struct!.linearBuckets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleLoggingMetricBucketOptionsLinearBucketsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingMetricBucketOptionsOutputReference extends cdktf.ComplexObject {
@@ -552,6 +664,37 @@ export function googleLoggingMetricMetricDescriptorLabelsToTerraform(struct?: Go
     key: cdktf.stringToTerraform(struct!.key),
     value_type: cdktf.stringToTerraform(struct!.valueType),
   }
+}
+
+
+export function googleLoggingMetricMetricDescriptorLabelsToHclTerraform(struct?: GoogleLoggingMetricMetricDescriptorLabels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.ComplexObject {
@@ -730,6 +873,49 @@ export function googleLoggingMetricMetricDescriptorToTerraform(struct?: GoogleLo
   }
 }
 
+
+export function googleLoggingMetricMetricDescriptorToHclTerraform(struct?: GoogleLoggingMetricMetricDescriptorOutputReference | GoogleLoggingMetricMetricDescriptor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric_kind: {
+      value: cdktf.stringToHclTerraform(struct!.metricKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    labels: {
+      value: cdktf.listMapperHcl(googleLoggingMetricMetricDescriptorLabelsToHclTerraform, true)(struct!.labels),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleLoggingMetricMetricDescriptorLabelsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLoggingMetricMetricDescriptorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -885,6 +1071,37 @@ export function googleLoggingMetricTimeoutsToTerraform(struct?: GoogleLoggingMet
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleLoggingMetricTimeoutsToHclTerraform(struct?: GoogleLoggingMetricTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingMetricTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1264,5 +1481,85 @@ export class GoogleLoggingMetric extends cdktf.TerraformResource {
       metric_descriptor: googleLoggingMetricMetricDescriptorToTerraform(this._metricDescriptor.internalValue),
       timeouts: googleLoggingMetricTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label_extractors: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labelExtractors),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_extractor: {
+        value: cdktf.stringToHclTerraform(this._valueExtractor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_options: {
+        value: googleLoggingMetricBucketOptionsToHclTerraform(this._bucketOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLoggingMetricBucketOptionsList",
+      },
+      metric_descriptor: {
+        value: googleLoggingMetricMetricDescriptorToHclTerraform(this._metricDescriptor.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLoggingMetricMetricDescriptorList",
+      },
+      timeouts: {
+        value: googleLoggingMetricTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleLoggingMetricTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

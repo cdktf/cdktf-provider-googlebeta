@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImage(scope Construct, id *string, config GoogleComputeImageConfig) GoogleComputeImage
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -143,6 +144,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.toMetadata"></a>
 
@@ -528,7 +535,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.GoogleComputeImage_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.GoogleComputeImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +581,7 @@ googlecomputeimage.GoogleComputeImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.GoogleComputeImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +595,7 @@ googlecomputeimage.GoogleComputeImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.GoogleComputeImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1235,7 +1242,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 &googlecomputeimage.GoogleComputeImageConfig {
 	Connection: interface{},
@@ -1251,16 +1258,16 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Family: *string,
 	GuestOsFeatures: interface{},
 	Id: *string,
-	ImageEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeImage.GoogleComputeImageImageEncryptionKey,
+	ImageEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeImage.GoogleComputeImageImageEncryptionKey,
 	Labels: *map[string]*string,
 	Licenses: *[]*string,
 	Project: *string,
-	RawDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeImage.GoogleComputeImageRawDisk,
+	RawDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeImage.GoogleComputeImageRawDisk,
 	SourceDisk: *string,
 	SourceImage: *string,
 	SourceSnapshot: *string,
 	StorageLocations: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeImage.GoogleComputeImageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeImage.GoogleComputeImageTimeouts,
 }
 ```
 
@@ -1628,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 &googlecomputeimage.GoogleComputeImageGuestOsFeatures {
 	Type: *string,
@@ -1664,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageImageEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 &googlecomputeimage.GoogleComputeImageImageEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -1717,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageRawDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 &googlecomputeimage.GoogleComputeImageRawDisk {
 	Source: *string,
@@ -1789,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 &googlecomputeimage.GoogleComputeImageTimeouts {
 	Create: *string,
@@ -1851,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImageGuestOsFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeImageGuestOsFeaturesList
 ```
@@ -1892,10 +1899,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1994,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageGuestOsFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImageGuestOsFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeImageGuestOsFeaturesOutputReference
 ```
@@ -2283,7 +2307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageImageEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImageImageEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeImageImageEncryptionKeyOutputReference
 ```
@@ -2590,7 +2614,7 @@ func InternalValue() GoogleComputeImageImageEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageRawDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImageRawDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeImageRawDiskOutputReference
 ```
@@ -2919,7 +2943,7 @@ func InternalValue() GoogleComputeImageRawDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeImage.GoogleComputeImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeimage"
 
 googlecomputeimage.NewGoogleComputeImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeImageTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.NewGoogleNetappStoragePool(scope Construct, id *string, config GoogleNetappStoragePoolConfig) GoogleNetappStoragePool
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.toMetadata"></a>
 
@@ -440,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.GoogleNetappStoragePool_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.GoogleNetappStoragePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ googlenetappstoragepool.GoogleNetappStoragePool_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.GoogleNetappStoragePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +507,7 @@ googlenetappstoragepool.GoogleNetappStoragePool_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.GoogleNetappStoragePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1070,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 &googlenetappstoragepool.GoogleNetappStoragePoolConfig {
 	Connection: interface{},
@@ -1092,7 +1099,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetap
 	Labels: *map[string]*string,
 	LdapEnabled: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts,
 }
 ```
 
@@ -1393,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 &googlenetappstoragepool.GoogleNetappStoragePoolTimeouts {
 	Create: *string,
@@ -1455,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlenetappstoragepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetappstoragepool"
 
 googlenetappstoragepool.NewGoogleNetappStoragePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetappStoragePoolTimeoutsOutputReference
 ```

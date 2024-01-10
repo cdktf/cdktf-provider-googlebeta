@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicy(scope Construct, id *string, config GoogleComputeSecurityPolicyConfig) GoogleComputeSecurityPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.toMetadata"></a>
 
@@ -499,7 +506,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +552,7 @@ googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +566,7 @@ googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.GoogleComputeSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,11 +1037,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfig {
-	AutoDeployConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig,
-	Layer7DdosDefenseConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig,
+	AutoDeployConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig,
+	Layer7DdosDefenseConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig,
 }
 ```
 
@@ -1080,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig {
 	ConfidenceThreshold: *f64,
@@ -1164,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig {
 	Enable: interface{},
@@ -1214,10 +1221,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfig {
-	JsonCustomConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
+	JsonCustomConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
 	JsonParsing: *string,
 	LogLevel: *string,
 	UserIpRequestHeaders: *[]*string,
@@ -1296,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 	ContentTypes: *[]*string,
@@ -1330,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyConfig {
 	Connection: interface{},
@@ -1341,14 +1348,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AdaptiveProtectionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfig,
-	AdvancedOptionsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfig,
+	AdaptiveProtectionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfig,
+	AdvancedOptionsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfig,
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	RecaptchaOptionsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRecaptchaOptionsConfig,
+	RecaptchaOptionsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRecaptchaOptionsConfig,
 	Rule: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1595,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRecaptchaOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRecaptchaOptionsConfig {
 	RedirectSiteKey: *string,
@@ -1631,18 +1638,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRule {
 	Action: *string,
-	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatch,
+	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatch,
 	Priority: *f64,
 	Description: *string,
-	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderAction,
-	PreconfiguredWafConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfig,
+	HeaderAction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderAction,
+	PreconfiguredWafConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfig,
 	Preview: interface{},
-	RateLimitOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptions,
-	RedirectOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRedirectOptions,
+	RateLimitOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptions,
+	RedirectOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRedirectOptions,
 }
 ```
 
@@ -1797,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleHeaderAction {
 	RequestHeadersToAdds: interface{},
@@ -1831,7 +1838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds {
 	HeaderName: *string,
@@ -1881,11 +1888,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleMatch {
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchConfig,
-	Expr: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExpr,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchConfig,
+	Expr: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExpr,
 	VersionedExpr: *string,
 }
 ```
@@ -1949,7 +1956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleMatchConfig {
 	SrcIpRanges: *[]*string,
@@ -1985,7 +1992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExpr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleMatchExpr {
 	Expression: *string,
@@ -2021,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfig {
 	Exclusion: interface{},
@@ -2055,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion {
 	TargetRuleSet: *string,
@@ -2171,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie {
 	Operator: *string,
@@ -2225,7 +2232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader {
 	Operator: *string,
@@ -2279,7 +2286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam {
 	Operator: *string,
@@ -2333,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri {
 	Operator: *string,
@@ -2387,18 +2394,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRateLimitOptions {
 	ConformAction: *string,
 	ExceedAction: *string,
-	RateLimitThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold,
+	RateLimitThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold,
 	BanDurationSec: *f64,
-	BanThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold,
+	BanThreshold: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold,
 	EnforceOnKey: *string,
 	EnforceOnKeyConfigs: interface{},
 	EnforceOnKeyName: *string,
-	ExceedRedirectOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions,
+	ExceedRedirectOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions,
 }
 ```
 
@@ -2555,7 +2562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold {
 	Count: *f64,
@@ -2605,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs {
 	EnforceOnKeyName: *string,
@@ -2657,7 +2664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions {
 	Type: *string,
@@ -2707,7 +2714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold {
 	Count: *f64,
@@ -2757,7 +2764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRedirectOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyRuleRedirectOptions {
 	Type: *string,
@@ -2809,7 +2816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 &googlecomputesecuritypolicy.GoogleComputeSecurityPolicyTimeouts {
 	Create: *string,
@@ -2871,7 +2878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference
 ```
@@ -3236,7 +3243,7 @@ func InternalValue() GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDepl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference
 ```
@@ -3543,7 +3550,7 @@ func InternalValue() GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Dd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference
 ```
@@ -3876,7 +3883,7 @@ func InternalValue() GoogleComputeSecurityPolicyAdaptiveProtectionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
 ```
@@ -4147,7 +4154,7 @@ func InternalValue() GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomC
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference
 ```
@@ -4525,7 +4532,7 @@ func InternalValue() GoogleComputeSecurityPolicyAdvancedOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
 ```
@@ -4796,7 +4803,7 @@ func InternalValue() GoogleComputeSecurityPolicyRecaptchaOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleHeaderActionOutputReference
 ```
@@ -5080,7 +5087,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleHeaderAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList
 ```
@@ -5121,10 +5128,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5223,7 +5247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference
 ```
@@ -5541,7 +5565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRuleList
 ```
@@ -5582,10 +5606,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5684,7 +5725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleMatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleMatchConfigOutputReference
 ```
@@ -5955,7 +5996,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleMatchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExprOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleMatchExprOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleMatchExprOutputReference
 ```
@@ -6226,7 +6267,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleMatchExpr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleMatchOutputReference
 ```
@@ -6588,7 +6629,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRuleOutputReference
 ```
@@ -7160,7 +7201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList
 ```
@@ -7201,10 +7242,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7303,7 +7361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference
 ```
@@ -7789,7 +7847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList
 ```
@@ -7830,10 +7888,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7932,7 +8007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference
 ```
@@ -8250,7 +8325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList
 ```
@@ -8291,10 +8366,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -8393,7 +8485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference
 ```
@@ -8711,7 +8803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList
 ```
@@ -8752,10 +8844,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -8854,7 +8963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference
 ```
@@ -9172,7 +9281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList
 ```
@@ -9213,10 +9322,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -9315,7 +9441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference
 ```
@@ -9633,7 +9759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
 ```
@@ -9924,7 +10050,7 @@ func InternalValue() GoogleComputeSecurityPolicyRulePreconfiguredWafConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference
 ```
@@ -10217,7 +10343,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
 ```
@@ -10258,10 +10384,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -10360,7 +10503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference
 ```
@@ -10685,7 +10828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference
 ```
@@ -10985,7 +11128,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedire
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference
 ```
@@ -11526,7 +11669,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleRateLimitOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference
 ```
@@ -11819,7 +11962,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleRedirectOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyRuleRedirectOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleRedirectOptionsOutputReference
 ```
@@ -12119,7 +12262,7 @@ func InternalValue() GoogleComputeSecurityPolicyRuleRedirectOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesecuritypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesecuritypolicy"
 
 googlecomputesecuritypolicy.NewGoogleComputeSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyTimeoutsOutputReference
 ```

@@ -74,6 +74,25 @@ export function googleDialogflowFulfillmentFeaturesToTerraform(struct?: GoogleDi
   }
 }
 
+
+export function googleDialogflowFulfillmentFeaturesToHclTerraform(struct?: GoogleDialogflowFulfillmentFeatures | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDialogflowFulfillmentFeaturesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -189,6 +208,43 @@ export function googleDialogflowFulfillmentGenericWebServiceToTerraform(struct?:
     uri: cdktf.stringToTerraform(struct!.uri),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function googleDialogflowFulfillmentGenericWebServiceToHclTerraform(struct?: GoogleDialogflowFulfillmentGenericWebServiceOutputReference | GoogleDialogflowFulfillmentGenericWebService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowFulfillmentGenericWebServiceOutputReference extends cdktf.ComplexObject {
@@ -327,6 +383,37 @@ export function googleDialogflowFulfillmentTimeoutsToTerraform(struct?: GoogleDi
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDialogflowFulfillmentTimeoutsToHclTerraform(struct?: GoogleDialogflowFulfillmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowFulfillmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -624,5 +711,55 @@ export class GoogleDialogflowFulfillment extends cdktf.TerraformResource {
       generic_web_service: googleDialogflowFulfillmentGenericWebServiceToTerraform(this._genericWebService.internalValue),
       timeouts: googleDialogflowFulfillmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      features: {
+        value: cdktf.listMapperHcl(googleDialogflowFulfillmentFeaturesToHclTerraform, true)(this._features.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowFulfillmentFeaturesList",
+      },
+      generic_web_service: {
+        value: googleDialogflowFulfillmentGenericWebServiceToHclTerraform(this._genericWebService.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowFulfillmentGenericWebServiceList",
+      },
+      timeouts: {
+        value: googleDialogflowFulfillmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDialogflowFulfillmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

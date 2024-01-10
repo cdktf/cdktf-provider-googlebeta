@@ -75,6 +75,17 @@ export function googleGkeHubFeatureResourceStateToTerraform(struct?: GoogleGkeHu
   }
 }
 
+
+export function googleGkeHubFeatureResourceStateToHclTerraform(struct?: GoogleGkeHubFeatureResourceState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleGkeHubFeatureResourceStateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -142,6 +153,17 @@ export function googleGkeHubFeatureStateStateToTerraform(struct?: GoogleGkeHubFe
   }
   return {
   }
+}
+
+
+export function googleGkeHubFeatureStateStateToHclTerraform(struct?: GoogleGkeHubFeatureStateState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleGkeHubFeatureStateStateOutputReference extends cdktf.ComplexObject {
@@ -216,6 +238,17 @@ export function googleGkeHubFeatureStateToTerraform(struct?: GoogleGkeHubFeature
   }
   return {
   }
+}
+
+
+export function googleGkeHubFeatureStateToHclTerraform(struct?: GoogleGkeHubFeatureState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleGkeHubFeatureStateOutputReference extends cdktf.ComplexObject {
@@ -337,6 +370,67 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfi
     sync_rev: cdktf.stringToTerraform(struct!.syncRev),
     sync_wait_secs: cdktf.stringToTerraform(struct!.syncWaitSecs),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gcp_service_account_email: {
+      value: cdktf.stringToHclTerraform(struct!.gcpServiceAccountEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    https_proxy: {
+      value: cdktf.stringToHclTerraform(struct!.httpsProxy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_dir: {
+      value: cdktf.stringToHclTerraform(struct!.policyDir),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_type: {
+      value: cdktf.stringToHclTerraform(struct!.secretType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_branch: {
+      value: cdktf.stringToHclTerraform(struct!.syncBranch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_repo: {
+      value: cdktf.stringToHclTerraform(struct!.syncRepo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_rev: {
+      value: cdktf.stringToHclTerraform(struct!.syncRev),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_wait_secs: {
+      value: cdktf.stringToHclTerraform(struct!.syncWaitSecs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference extends cdktf.ComplexObject {
@@ -592,6 +686,55 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfi
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gcp_service_account_email: {
+      value: cdktf.stringToHclTerraform(struct!.gcpServiceAccountEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_dir: {
+      value: cdktf.stringToHclTerraform(struct!.policyDir),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_type: {
+      value: cdktf.stringToHclTerraform(struct!.secretType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_repo: {
+      value: cdktf.stringToHclTerraform(struct!.syncRepo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_wait_secs: {
+      value: cdktf.stringToHclTerraform(struct!.syncWaitSecs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -780,6 +923,37 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfi
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_format: {
+      value: cdktf.stringToHclTerraform(struct!.sourceFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    git: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitToHclTerraform(struct!.git),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitList",
+    },
+    oci: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciToHclTerraform(struct!.oci),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -898,6 +1072,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementToTer
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    config_sync: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncToHclTerraform(struct!.configSync),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -987,6 +1186,25 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigMeshToTerraform(struc
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigMeshToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigMesh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    management: {
+      value: cdktf.stringToHclTerraform(struct!.management),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1056,6 +1274,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     cpu: cdktf.stringToTerraform(struct!.cpu),
     memory: cdktf.stringToTerraform(struct!.memory),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.stringToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference extends cdktf.ComplexObject {
@@ -1154,6 +1397,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.stringToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1248,6 +1516,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     limits: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsToTerraform(struct!.limits),
     requests: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsToTerraform(struct!.requests),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    limits: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsToHclTerraform(struct!.limits),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsList",
+    },
+    requests: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsToHclTerraform(struct!.requests),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference extends cdktf.ComplexObject {
@@ -1358,6 +1651,43 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     operator: cdktf.stringToTerraform(struct!.operator),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodToleration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    effect: {
+      value: cdktf.stringToHclTerraform(struct!.effect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationOutputReference extends cdktf.ComplexObject {
@@ -1551,6 +1881,49 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    component: {
+      value: cdktf.stringToHclTerraform(struct!.component),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pod_affinity: {
+      value: cdktf.stringToHclTerraform(struct!.podAffinity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replica_count: {
+      value: cdktf.numberToHclTerraform(struct!.replicaCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    container_resources: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesToHclTerraform(struct!.containerResources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesList",
+    },
+    pod_toleration: {
+      value: cdktf.listMapperHcl(googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationToHclTerraform, true)(struct!.podToleration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1735,6 +2108,25 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoring): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backends: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.backends),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1805,6 +2197,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     bundle: cdktf.stringToTerraform(struct!.bundle),
     exempted_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exemptedNamespaces),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bundle: {
+      value: cdktf.stringToHclTerraform(struct!.bundle),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exempted_namespaces: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exemptedNamespaces),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference extends cdktf.ComplexObject {
@@ -1925,6 +2342,25 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    installation: {
+      value: cdktf.stringToHclTerraform(struct!.installation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1997,6 +2433,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     bundles: cdktf.listMapper(googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesToTerraform, true)(struct!.bundles),
     template_library: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryToTerraform(struct!.templateLibrary),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContent): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bundles: {
+      value: cdktf.listMapperHcl(googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesToHclTerraform, true)(struct!.bundles),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList",
+    },
+    template_library: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryToHclTerraform(struct!.templateLibrary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference extends cdktf.ComplexObject {
@@ -2149,6 +2610,79 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolic
     monitoring: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringToTerraform(struct!.monitoring),
     policy_content: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentToTerraform(struct!.policyContent),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_interval_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.auditIntervalSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    constraint_violation_limit: {
+      value: cdktf.numberToHclTerraform(struct!.constraintViolationLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    exemptable_namespaces: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exemptableNamespaces),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    install_spec: {
+      value: cdktf.stringToHclTerraform(struct!.installSpec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_denies_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.logDeniesEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    mutation_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.mutationEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    referential_rules_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.referentialRulesEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    deployment_configs: {
+      value: cdktf.listMapperHcl(googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsToHclTerraform, true)(struct!.deploymentConfigs),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList",
+    },
+    monitoring: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringToHclTerraform(struct!.monitoring),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringList",
+    },
+    policy_content: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentToHclTerraform(struct!.policyContent),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigOutputReference extends cdktf.ComplexObject {
@@ -2420,6 +2954,31 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerToTer
   }
 }
 
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_controller_hub_config: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigToHclTerraform(struct!.policyControllerHubConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2518,6 +3077,37 @@ export function googleGkeHubFeatureFleetDefaultMemberConfigToTerraform(struct?: 
     mesh: googleGkeHubFeatureFleetDefaultMemberConfigMeshToTerraform(struct!.mesh),
     policycontroller: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerToTerraform(struct!.policycontroller),
   }
+}
+
+
+export function googleGkeHubFeatureFleetDefaultMemberConfigToHclTerraform(struct?: GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference | GoogleGkeHubFeatureFleetDefaultMemberConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    configmanagement: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementToHclTerraform(struct!.configmanagement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList",
+    },
+    mesh: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigMeshToHclTerraform(struct!.mesh),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigMeshList",
+    },
+    policycontroller: {
+      value: googleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerToHclTerraform(struct!.policycontroller),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference extends cdktf.ComplexObject {
@@ -2631,6 +3221,25 @@ export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultCon
   }
 }
 
+
+export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigToHclTerraform(struct?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference | GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2696,6 +3305,25 @@ export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScope
   return {
     mode: cdktf.stringToTerraform(struct!.mode),
   }
+}
+
+
+export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigToHclTerraform(struct?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference | GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference extends cdktf.ComplexObject {
@@ -2770,6 +3398,31 @@ export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigToTerrafor
     default_config: googleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigToTerraform(struct!.defaultConfig),
     fleet_scope_logs_config: googleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigToTerraform(struct!.fleetScopeLogsConfig),
   }
+}
+
+
+export function googleGkeHubFeatureSpecFleetobservabilityLoggingConfigToHclTerraform(struct?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference | GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_config: {
+      value: googleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigToHclTerraform(struct!.defaultConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList",
+    },
+    fleet_scope_logs_config: {
+      value: googleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigToHclTerraform(struct!.fleetScopeLogsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -2861,6 +3514,25 @@ export function googleGkeHubFeatureSpecFleetobservabilityToTerraform(struct?: Go
   }
 }
 
+
+export function googleGkeHubFeatureSpecFleetobservabilityToHclTerraform(struct?: GoogleGkeHubFeatureSpecFleetobservabilityOutputReference | GoogleGkeHubFeatureSpecFleetobservability): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    logging_config: {
+      value: googleGkeHubFeatureSpecFleetobservabilityLoggingConfigToHclTerraform(struct!.loggingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubFeatureSpecFleetobservabilityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2926,6 +3598,25 @@ export function googleGkeHubFeatureSpecMulticlusteringressToTerraform(struct?: G
   return {
     config_membership: cdktf.stringToTerraform(struct!.configMembership),
   }
+}
+
+
+export function googleGkeHubFeatureSpecMulticlusteringressToHclTerraform(struct?: GoogleGkeHubFeatureSpecMulticlusteringressOutputReference | GoogleGkeHubFeatureSpecMulticlusteringress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    config_membership: {
+      value: cdktf.stringToHclTerraform(struct!.configMembership),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureSpecMulticlusteringressOutputReference extends cdktf.ComplexObject {
@@ -2997,6 +3688,31 @@ export function googleGkeHubFeatureSpecToTerraform(struct?: GoogleGkeHubFeatureS
     fleetobservability: googleGkeHubFeatureSpecFleetobservabilityToTerraform(struct!.fleetobservability),
     multiclusteringress: googleGkeHubFeatureSpecMulticlusteringressToTerraform(struct!.multiclusteringress),
   }
+}
+
+
+export function googleGkeHubFeatureSpecToHclTerraform(struct?: GoogleGkeHubFeatureSpecOutputReference | GoogleGkeHubFeatureSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fleetobservability: {
+      value: googleGkeHubFeatureSpecFleetobservabilityToHclTerraform(struct!.fleetobservability),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureSpecFleetobservabilityList",
+    },
+    multiclusteringress: {
+      value: googleGkeHubFeatureSpecMulticlusteringressToHclTerraform(struct!.multiclusteringress),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubFeatureSpecMulticlusteringressList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureSpecOutputReference extends cdktf.ComplexObject {
@@ -3094,6 +3810,37 @@ export function googleGkeHubFeatureTimeoutsToTerraform(struct?: GoogleGkeHubFeat
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleGkeHubFeatureTimeoutsToHclTerraform(struct?: GoogleGkeHubFeatureTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubFeatureTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -3443,5 +4190,61 @@ export class GoogleGkeHubFeature extends cdktf.TerraformResource {
       spec: googleGkeHubFeatureSpecToTerraform(this._spec.internalValue),
       timeouts: googleGkeHubFeatureTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fleet_default_member_config: {
+        value: googleGkeHubFeatureFleetDefaultMemberConfigToHclTerraform(this._fleetDefaultMemberConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleGkeHubFeatureFleetDefaultMemberConfigList",
+      },
+      spec: {
+        value: googleGkeHubFeatureSpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleGkeHubFeatureSpecList",
+      },
+      timeouts: {
+        value: googleGkeHubFeatureTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleGkeHubFeatureTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -92,6 +92,31 @@ export function googlePubsubLiteTopicPartitionConfigCapacityToTerraform(struct?:
   }
 }
 
+
+export function googlePubsubLiteTopicPartitionConfigCapacityToHclTerraform(struct?: GooglePubsubLiteTopicPartitionConfigCapacityOutputReference | GooglePubsubLiteTopicPartitionConfigCapacity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    publish_mib_per_sec: {
+      value: cdktf.numberToHclTerraform(struct!.publishMibPerSec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    subscribe_mib_per_sec: {
+      value: cdktf.numberToHclTerraform(struct!.subscribeMibPerSec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubLiteTopicPartitionConfigCapacityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +207,31 @@ export function googlePubsubLiteTopicPartitionConfigToTerraform(struct?: GoogleP
   }
 }
 
+
+export function googlePubsubLiteTopicPartitionConfigToHclTerraform(struct?: GooglePubsubLiteTopicPartitionConfigOutputReference | GooglePubsubLiteTopicPartitionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    capacity: {
+      value: googlePubsubLiteTopicPartitionConfigCapacityToHclTerraform(struct!.capacity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GooglePubsubLiteTopicPartitionConfigCapacityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubLiteTopicPartitionConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -268,6 +318,25 @@ export function googlePubsubLiteTopicReservationConfigToTerraform(struct?: Googl
   }
 }
 
+
+export function googlePubsubLiteTopicReservationConfigToHclTerraform(struct?: GooglePubsubLiteTopicReservationConfigOutputReference | GooglePubsubLiteTopicReservationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    throughput_reservation: {
+      value: cdktf.stringToHclTerraform(struct!.throughputReservation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubLiteTopicReservationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -345,6 +414,31 @@ export function googlePubsubLiteTopicRetentionConfigToTerraform(struct?: GoogleP
     per_partition_bytes: cdktf.stringToTerraform(struct!.perPartitionBytes),
     period: cdktf.stringToTerraform(struct!.period),
   }
+}
+
+
+export function googlePubsubLiteTopicRetentionConfigToHclTerraform(struct?: GooglePubsubLiteTopicRetentionConfigOutputReference | GooglePubsubLiteTopicRetentionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    per_partition_bytes: {
+      value: cdktf.stringToHclTerraform(struct!.perPartitionBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    period: {
+      value: cdktf.stringToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubLiteTopicRetentionConfigOutputReference extends cdktf.ComplexObject {
@@ -439,6 +533,37 @@ export function googlePubsubLiteTopicTimeoutsToTerraform(struct?: GooglePubsubLi
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googlePubsubLiteTopicTimeoutsToHclTerraform(struct?: GooglePubsubLiteTopicTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubLiteTopicTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -767,5 +892,67 @@ export class GooglePubsubLiteTopic extends cdktf.TerraformResource {
       retention_config: googlePubsubLiteTopicRetentionConfigToTerraform(this._retentionConfig.internalValue),
       timeouts: googlePubsubLiteTopicTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_config: {
+        value: googlePubsubLiteTopicPartitionConfigToHclTerraform(this._partitionConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubLiteTopicPartitionConfigList",
+      },
+      reservation_config: {
+        value: googlePubsubLiteTopicReservationConfigToHclTerraform(this._reservationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubLiteTopicReservationConfigList",
+      },
+      retention_config: {
+        value: googlePubsubLiteTopicRetentionConfigToHclTerraform(this._retentionConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubLiteTopicRetentionConfigList",
+      },
+      timeouts: {
+        value: googlePubsubLiteTopicTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GooglePubsubLiteTopicTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

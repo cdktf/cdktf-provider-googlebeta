@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.NewGoogleWorkflowsWorkflow(scope Construct, id *string, config GoogleWorkflowsWorkflowConfig) GoogleWorkflowsWorkflow
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.toMetadata"></a>
 
@@ -468,7 +475,7 @@ func ResetUserEnvVars()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +521,7 @@ googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +535,7 @@ googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 &googleworkflowsworkflow.GoogleWorkflowsWorkflowConfig {
 	Connection: interface{},
@@ -1107,7 +1114,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkf
 	Region: *string,
 	ServiceAccount: *string,
 	SourceContents: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts,
 	UserEnvVars: *map[string]*string,
 }
 ```
@@ -1393,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 &googleworkflowsworkflow.GoogleWorkflowsWorkflowTimeouts {
 	Create: *string,
@@ -1455,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkflowsworkflow"
 
 googleworkflowsworkflow.NewGoogleWorkflowsWorkflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkflowsWorkflowTimeoutsOutputReference
 ```

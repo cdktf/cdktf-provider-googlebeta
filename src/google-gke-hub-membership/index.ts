@@ -91,6 +91,25 @@ export function googleGkeHubMembershipAuthorityToTerraform(struct?: GoogleGkeHub
   }
 }
 
+
+export function googleGkeHubMembershipAuthorityToHclTerraform(struct?: GoogleGkeHubMembershipAuthorityOutputReference | GoogleGkeHubMembershipAuthority): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubMembershipAuthorityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -159,6 +178,25 @@ export function googleGkeHubMembershipEndpointGkeClusterToTerraform(struct?: Goo
   }
 }
 
+
+export function googleGkeHubMembershipEndpointGkeClusterToHclTerraform(struct?: GoogleGkeHubMembershipEndpointGkeClusterOutputReference | GoogleGkeHubMembershipEndpointGkeCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_link: {
+      value: cdktf.stringToHclTerraform(struct!.resourceLink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleGkeHubMembershipEndpointGkeClusterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -221,6 +259,25 @@ export function googleGkeHubMembershipEndpointToTerraform(struct?: GoogleGkeHubM
   return {
     gke_cluster: googleGkeHubMembershipEndpointGkeClusterToTerraform(struct!.gkeCluster),
   }
+}
+
+
+export function googleGkeHubMembershipEndpointToHclTerraform(struct?: GoogleGkeHubMembershipEndpointOutputReference | GoogleGkeHubMembershipEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gke_cluster: {
+      value: googleGkeHubMembershipEndpointGkeClusterToHclTerraform(struct!.gkeCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeHubMembershipEndpointGkeClusterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubMembershipEndpointOutputReference extends cdktf.ComplexObject {
@@ -296,6 +353,37 @@ export function googleGkeHubMembershipTimeoutsToTerraform(struct?: GoogleGkeHubM
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleGkeHubMembershipTimeoutsToHclTerraform(struct?: GoogleGkeHubMembershipTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleGkeHubMembershipTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -641,5 +729,67 @@ export class GoogleGkeHubMembership extends cdktf.TerraformResource {
       endpoint: googleGkeHubMembershipEndpointToTerraform(this._endpoint.internalValue),
       timeouts: googleGkeHubMembershipTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      membership_id: {
+        value: cdktf.stringToHclTerraform(this._membershipId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authority: {
+        value: googleGkeHubMembershipAuthorityToHclTerraform(this._authority.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleGkeHubMembershipAuthorityList",
+      },
+      endpoint: {
+        value: googleGkeHubMembershipEndpointToHclTerraform(this._endpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleGkeHubMembershipEndpointList",
+      },
+      timeouts: {
+        value: googleGkeHubMembershipTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleGkeHubMembershipTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

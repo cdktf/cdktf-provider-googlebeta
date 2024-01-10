@@ -96,6 +96,31 @@ export function googleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHea
   }
 }
 
+
+export function googleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchToHclTerraform(struct?: GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference | GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex_match: {
+      value: cdktf.stringToHclTerraform(struct!.regexMatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -198,6 +223,43 @@ export function googleNetworkSecurityAuthorizationPolicyRulesDestinationsToTerra
     ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
     http_header_match: googleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchToTerraform(struct!.httpHeaderMatch),
   }
+}
+
+
+export function googleNetworkSecurityAuthorizationPolicyRulesDestinationsToHclTerraform(struct?: GoogleNetworkSecurityAuthorizationPolicyRulesDestinations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hosts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.methods),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    ports: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    http_header_match: {
+      value: googleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchToHclTerraform(struct!.httpHeaderMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference extends cdktf.ComplexObject {
@@ -367,6 +429,31 @@ export function googleNetworkSecurityAuthorizationPolicyRulesSourcesToTerraform(
   }
 }
 
+
+export function googleNetworkSecurityAuthorizationPolicyRulesSourcesToHclTerraform(struct?: GoogleNetworkSecurityAuthorizationPolicyRulesSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipBlocks),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    principals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkSecurityAuthorizationPolicyRulesSourcesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -493,6 +580,31 @@ export function googleNetworkSecurityAuthorizationPolicyRulesToTerraform(struct?
     destinations: cdktf.listMapper(googleNetworkSecurityAuthorizationPolicyRulesDestinationsToTerraform, true)(struct!.destinations),
     sources: cdktf.listMapper(googleNetworkSecurityAuthorizationPolicyRulesSourcesToTerraform, true)(struct!.sources),
   }
+}
+
+
+export function googleNetworkSecurityAuthorizationPolicyRulesToHclTerraform(struct?: GoogleNetworkSecurityAuthorizationPolicyRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destinations: {
+      value: cdktf.listMapperHcl(googleNetworkSecurityAuthorizationPolicyRulesDestinationsToHclTerraform, true)(struct!.destinations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(googleNetworkSecurityAuthorizationPolicyRulesSourcesToHclTerraform, true)(struct!.sources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityAuthorizationPolicyRulesOutputReference extends cdktf.ComplexObject {
@@ -622,6 +734,37 @@ export function googleNetworkSecurityAuthorizationPolicyTimeoutsToTerraform(stru
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNetworkSecurityAuthorizationPolicyTimeoutsToHclTerraform(struct?: GoogleNetworkSecurityAuthorizationPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityAuthorizationPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -969,5 +1112,67 @@ export class GoogleNetworkSecurityAuthorizationPolicy extends cdktf.TerraformRes
       rules: cdktf.listMapper(googleNetworkSecurityAuthorizationPolicyRulesToTerraform, true)(this._rules.internalValue),
       timeouts: googleNetworkSecurityAuthorizationPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleNetworkSecurityAuthorizationPolicyRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkSecurityAuthorizationPolicyRulesList",
+      },
+      timeouts: {
+        value: googleNetworkSecurityAuthorizationPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNetworkSecurityAuthorizationPolicyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.NewGoogleGkeHubMembershipRbacRoleBinding(scope Construct, id *string, config GoogleGkeHubMembershipRbacRoleBindingConfig) GoogleGkeHubMembershipRbacRoleBinding
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.toMetadata"></a>
 
@@ -418,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -949,7 +956,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 &googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBindingConfig {
 	Connection: interface{},
@@ -962,11 +969,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 	Location: *string,
 	MembershipId: *string,
 	MembershipRbacRoleBindingId: *string,
-	Role: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingRole,
+	Role: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingRole,
 	User: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingTimeouts,
 }
 ```
 
@@ -1182,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 &googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBindingRole {
 	PredefinedRole: *string,
@@ -1216,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 &googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBindingState {
 
@@ -1229,7 +1236,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 &googlegkehubmembershiprbacrolebinding.GoogleGkeHubMembershipRbacRoleBindingTimeouts {
 	Create: *string,
@@ -1277,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.NewGoogleGkeHubMembershipRbacRoleBindingRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipRbacRoleBindingRoleOutputReference
 ```
@@ -1548,7 +1555,7 @@ func InternalValue() GoogleGkeHubMembershipRbacRoleBindingRole
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.NewGoogleGkeHubMembershipRbacRoleBindingStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeHubMembershipRbacRoleBindingStateList
 ```
@@ -1589,10 +1596,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1680,7 +1704,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.NewGoogleGkeHubMembershipRbacRoleBindingStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeHubMembershipRbacRoleBindingStateOutputReference
 ```
@@ -1958,7 +1982,7 @@ func InternalValue() GoogleGkeHubMembershipRbacRoleBindingState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembershipRbacRoleBinding.GoogleGkeHubMembershipRbacRoleBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlegkehubmembershiprbacrolebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkehubmembershiprbacrolebinding"
 
 googlegkehubmembershiprbacrolebinding.NewGoogleGkeHubMembershipRbacRoleBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipRbacRoleBindingTimeoutsOutputReference
 ```

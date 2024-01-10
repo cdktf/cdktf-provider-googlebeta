@@ -146,6 +146,25 @@ export function googleBigqueryDataTransferConfigEmailPreferencesToTerraform(stru
   }
 }
 
+
+export function googleBigqueryDataTransferConfigEmailPreferencesToHclTerraform(struct?: GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference | GoogleBigqueryDataTransferConfigEmailPreferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_failure_email: {
+      value: cdktf.booleanToHclTerraform(struct!.enableFailureEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -233,6 +252,37 @@ export function googleBigqueryDataTransferConfigScheduleOptionsToTerraform(struc
     end_time: cdktf.stringToTerraform(struct!.endTime),
     start_time: cdktf.stringToTerraform(struct!.startTime),
   }
+}
+
+
+export function googleBigqueryDataTransferConfigScheduleOptionsToHclTerraform(struct?: GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference | GoogleBigqueryDataTransferConfigScheduleOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_auto_scheduling: {
+      value: cdktf.booleanToHclTerraform(struct!.disableAutoScheduling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference extends cdktf.ComplexObject {
@@ -346,6 +396,25 @@ export function googleBigqueryDataTransferConfigSensitiveParamsToTerraform(struc
   }
 }
 
+
+export function googleBigqueryDataTransferConfigSensitiveParamsToHclTerraform(struct?: GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference | GoogleBigqueryDataTransferConfigSensitiveParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -416,6 +485,37 @@ export function googleBigqueryDataTransferConfigTimeoutsToTerraform(struct?: Goo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleBigqueryDataTransferConfigTimeoutsToHclTerraform(struct?: GoogleBigqueryDataTransferConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryDataTransferConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -869,5 +969,109 @@ export class GoogleBigqueryDataTransferConfig extends cdktf.TerraformResource {
       sensitive_params: googleBigqueryDataTransferConfigSensitiveParamsToTerraform(this._sensitiveParams.internalValue),
       timeouts: googleBigqueryDataTransferConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_refresh_window_days: {
+        value: cdktf.numberToHclTerraform(this._dataRefreshWindowDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      data_source_id: {
+        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_dataset_id: {
+        value: cdktf.stringToHclTerraform(this._destinationDatasetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_pubsub_topic: {
+        value: cdktf.stringToHclTerraform(this._notificationPubsubTopic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      params: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._params),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_name: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_preferences: {
+        value: googleBigqueryDataTransferConfigEmailPreferencesToHclTerraform(this._emailPreferences.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryDataTransferConfigEmailPreferencesList",
+      },
+      schedule_options: {
+        value: googleBigqueryDataTransferConfigScheduleOptionsToHclTerraform(this._scheduleOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryDataTransferConfigScheduleOptionsList",
+      },
+      sensitive_params: {
+        value: googleBigqueryDataTransferConfigSensitiveParamsToHclTerraform(this._sensitiveParams.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryDataTransferConfigSensitiveParamsList",
+      },
+      timeouts: {
+        value: googleBigqueryDataTransferConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigqueryDataTransferConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

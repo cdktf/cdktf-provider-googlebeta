@@ -111,6 +111,43 @@ export function googleBigtableInstanceClusterAutoscalingConfigToTerraform(struct
   }
 }
 
+
+export function googleBigtableInstanceClusterAutoscalingConfigToHclTerraform(struct?: GoogleBigtableInstanceClusterAutoscalingConfigOutputReference | GoogleBigtableInstanceClusterAutoscalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu_target: {
+      value: cdktf.numberToHclTerraform(struct!.cpuTarget),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.maxNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.minNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_target: {
+      value: cdktf.numberToHclTerraform(struct!.storageTarget),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigtableInstanceClusterAutoscalingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -268,6 +305,55 @@ export function googleBigtableInstanceClusterToTerraform(struct?: GoogleBigtable
     zone: cdktf.stringToTerraform(struct!.zone),
     autoscaling_config: googleBigtableInstanceClusterAutoscalingConfigToTerraform(struct!.autoscalingConfig),
   }
+}
+
+
+export function googleBigtableInstanceClusterToHclTerraform(struct?: GoogleBigtableInstanceCluster | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_id: {
+      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    num_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.numNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_type: {
+      value: cdktf.stringToHclTerraform(struct!.storageType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone: {
+      value: cdktf.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    autoscaling_config: {
+      value: googleBigtableInstanceClusterAutoscalingConfigToHclTerraform(struct!.autoscalingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigtableInstanceClusterAutoscalingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigtableInstanceClusterOutputReference extends cdktf.ComplexObject {
@@ -487,6 +573,37 @@ export function googleBigtableInstanceTimeoutsToTerraform(struct?: GoogleBigtabl
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleBigtableInstanceTimeoutsToHclTerraform(struct?: GoogleBigtableInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -827,5 +944,67 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
       cluster: cdktf.listMapper(googleBigtableInstanceClusterToTerraform, true)(this._cluster.internalValue),
       timeouts: googleBigtableInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      deletion_protection: {
+        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster: {
+        value: cdktf.listMapperHcl(googleBigtableInstanceClusterToHclTerraform, true)(this._cluster.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigtableInstanceClusterList",
+      },
+      timeouts: {
+        value: googleBigtableInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigtableInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

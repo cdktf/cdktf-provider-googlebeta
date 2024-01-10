@@ -126,6 +126,43 @@ export function googleCloudAssetOrganizationFeedConditionToTerraform(struct?: Go
   }
 }
 
+
+export function googleCloudAssetOrganizationFeedConditionToHclTerraform(struct?: GoogleCloudAssetOrganizationFeedConditionOutputReference | GoogleCloudAssetOrganizationFeedCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudAssetOrganizationFeedConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -256,6 +293,25 @@ export function googleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinatio
   }
 }
 
+
+export function googleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationToHclTerraform(struct?: GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference | GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -318,6 +374,25 @@ export function googleCloudAssetOrganizationFeedFeedOutputConfigToTerraform(stru
   return {
     pubsub_destination: googleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationToTerraform(struct!.pubsubDestination),
   }
+}
+
+
+export function googleCloudAssetOrganizationFeedFeedOutputConfigToHclTerraform(struct?: GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference | GoogleCloudAssetOrganizationFeedFeedOutputConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pubsub_destination: {
+      value: googleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationToHclTerraform(struct!.pubsubDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleCloudAssetOrganizationFeedFeedOutputConfigPubsubDestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudAssetOrganizationFeedFeedOutputConfigOutputReference extends cdktf.ComplexObject {
@@ -390,6 +465,37 @@ export function googleCloudAssetOrganizationFeedTimeoutsToTerraform(struct?: Goo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleCloudAssetOrganizationFeedTimeoutsToHclTerraform(struct?: GoogleCloudAssetOrganizationFeedTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudAssetOrganizationFeedTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -732,5 +838,73 @@ export class GoogleCloudAssetOrganizationFeed extends cdktf.TerraformResource {
       feed_output_config: googleCloudAssetOrganizationFeedFeedOutputConfigToTerraform(this._feedOutputConfig.internalValue),
       timeouts: googleCloudAssetOrganizationFeedTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      asset_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assetNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      asset_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assetTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      billing_project: {
+        value: cdktf.stringToHclTerraform(this._billingProject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_type: {
+        value: cdktf.stringToHclTerraform(this._contentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      feed_id: {
+        value: cdktf.stringToHclTerraform(this._feedId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: googleCloudAssetOrganizationFeedConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudAssetOrganizationFeedConditionList",
+      },
+      feed_output_config: {
+        value: googleCloudAssetOrganizationFeedFeedOutputConfigToHclTerraform(this._feedOutputConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudAssetOrganizationFeedFeedOutputConfigList",
+      },
+      timeouts: {
+        value: googleCloudAssetOrganizationFeedTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudAssetOrganizationFeedTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

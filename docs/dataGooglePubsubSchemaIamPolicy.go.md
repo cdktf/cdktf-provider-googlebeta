@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 datagooglepubsubschemaiampolicy.NewDataGooglePubsubSchemaIamPolicy(scope Construct, id *string, config DataGooglePubsubSchemaIamPolicyConfig) DataGooglePubsubSchemaIamPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGooglePubsubSchemaIamPolicy.DataGooglePubsubSchemaIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglepubsubschemaiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglepubsubschemaiampolicy"
 
 &datagooglepubsubschemaiampolicy.DataGooglePubsubSchemaIamPolicyConfig {
 	Connection: interface{},

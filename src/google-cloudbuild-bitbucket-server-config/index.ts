@@ -115,6 +115,31 @@ export function googleCloudbuildBitbucketServerConfigConnectedRepositoriesToTerr
   }
 }
 
+
+export function googleCloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform(struct?: GoogleCloudbuildBitbucketServerConfigConnectedRepositories | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    project_key: {
+      value: cdktf.stringToHclTerraform(struct!.projectKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repo_slug: {
+      value: cdktf.stringToHclTerraform(struct!.repoSlug),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -245,6 +270,37 @@ export function googleCloudbuildBitbucketServerConfigSecretsToTerraform(struct?:
   }
 }
 
+
+export function googleCloudbuildBitbucketServerConfigSecretsToHclTerraform(struct?: GoogleCloudbuildBitbucketServerConfigSecretsOutputReference | GoogleCloudbuildBitbucketServerConfigSecrets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    admin_access_token_version_name: {
+      value: cdktf.stringToHclTerraform(struct!.adminAccessTokenVersionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read_access_token_version_name: {
+      value: cdktf.stringToHclTerraform(struct!.readAccessTokenVersionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webhook_secret_version_name: {
+      value: cdktf.stringToHclTerraform(struct!.webhookSecretVersionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudbuildBitbucketServerConfigSecretsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -353,6 +409,37 @@ export function googleCloudbuildBitbucketServerConfigTimeoutsToTerraform(struct?
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleCloudbuildBitbucketServerConfigTimeoutsToHclTerraform(struct?: GoogleCloudbuildBitbucketServerConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -730,5 +817,85 @@ export class GoogleCloudbuildBitbucketServerConfig extends cdktf.TerraformResour
       secrets: googleCloudbuildBitbucketServerConfigSecretsToTerraform(this._secrets.internalValue),
       timeouts: googleCloudbuildBitbucketServerConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_id: {
+        value: cdktf.stringToHclTerraform(this._configId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_uri: {
+        value: cdktf.stringToHclTerraform(this._hostUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peered_network: {
+        value: cdktf.stringToHclTerraform(this._peeredNetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl_ca: {
+        value: cdktf.stringToHclTerraform(this._sslCa),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connected_repositories: {
+        value: cdktf.listMapperHcl(googleCloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform, true)(this._connectedRepositories.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
+      },
+      secrets: {
+        value: googleCloudbuildBitbucketServerConfigSecretsToHclTerraform(this._secrets.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudbuildBitbucketServerConfigSecretsList",
+      },
+      timeouts: {
+        value: googleCloudbuildBitbucketServerConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudbuildBitbucketServerConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

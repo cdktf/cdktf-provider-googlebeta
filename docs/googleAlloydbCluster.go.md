@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbCluster(scope Construct, id *string, config GoogleAlloydbClusterConfig) GoogleAlloydbCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -151,6 +152,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.toMetadata"></a>
 
@@ -614,7 +621,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.GoogleAlloydbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -646,7 +653,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.GoogleAlloydbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -660,7 +667,7 @@ googlealloydbcluster.GoogleAlloydbCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.GoogleAlloydbCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -674,7 +681,7 @@ googlealloydbcluster.GoogleAlloydbCluster_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.GoogleAlloydbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1475,17 +1482,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicy {
 	BackupWindow: *string,
 	Enabled: interface{},
-	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig,
 	Labels: *map[string]*string,
 	Location: *string,
-	QuantityBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention,
-	TimeBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention,
-	WeeklySchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule,
+	QuantityBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention,
+	TimeBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention,
+	WeeklySchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule,
 }
 ```
 
@@ -1629,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig {
 	KmsKeyName: *string,
@@ -1665,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention {
 	Count: *f64,
@@ -1699,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention {
 	RetentionPeriod: *string,
@@ -1733,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule {
 	StartTimes: interface{},
@@ -1785,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes {
 	Hours: *f64,
@@ -1869,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterBackupSource {
 
@@ -1882,7 +1889,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterConfig {
 	Connection: interface{},
@@ -1895,23 +1902,23 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 	ClusterId: *string,
 	Location: *string,
 	Annotations: *map[string]*string,
-	AutomatedBackupPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy,
+	AutomatedBackupPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy,
 	ClusterType: *string,
-	ContinuousBackupConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfig,
+	ContinuousBackupConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfig,
 	DeletionPolicy: *string,
 	DisplayName: *string,
-	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfig,
 	Etag: *string,
 	Id: *string,
-	InitialUser: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterInitialUser,
+	InitialUser: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterInitialUser,
 	Labels: *map[string]*string,
 	Network: *string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfig,
 	Project: *string,
-	RestoreBackupSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSource,
-	RestoreContinuousBackupSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSource,
-	SecondaryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterTimeouts,
+	RestoreBackupSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSource,
+	RestoreContinuousBackupSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSource,
+	SecondaryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterTimeouts,
 }
 ```
 
@@ -2319,11 +2326,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterContinuousBackupConfig {
 	Enabled: interface{},
-	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig,
 	RecoveryWindowDays: *f64,
 }
 ```
@@ -2389,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig {
 	KmsKeyName: *string,
@@ -2425,7 +2432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterContinuousBackupInfo {
 
@@ -2438,7 +2445,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo {
 
@@ -2451,7 +2458,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterEncryptionConfig {
 	KmsKeyName: *string,
@@ -2487,7 +2494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterEncryptionInfo {
 
@@ -2500,7 +2507,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterInitialUser {
 	Password: *string,
@@ -2550,7 +2557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterMigrationSource {
 
@@ -2563,7 +2570,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloy
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterNetworkConfig {
 	AllocatedIpRange: *string,
@@ -2619,7 +2626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterRestoreBackupSource {
 	BackupName: *string,
@@ -2653,7 +2660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterRestoreContinuousBackupSource {
 	Cluster: *string,
@@ -2703,7 +2710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterSecondaryConfig {
 	PrimaryClusterName: *string,
@@ -2737,7 +2744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterTimeouts {
 	Create: *string,
@@ -2799,7 +2806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference
 ```
@@ -3077,7 +3084,7 @@ func InternalValue() GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
 ```
@@ -3610,7 +3617,7 @@ func InternalValue() GoogleAlloydbClusterAutomatedBackupPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference
 ```
@@ -3888,7 +3895,7 @@ func InternalValue() GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedReten
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference
 ```
@@ -4166,7 +4173,7 @@ func InternalValue() GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference
 ```
@@ -4479,7 +4486,7 @@ func InternalValue() GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList
 ```
@@ -4520,10 +4527,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4622,7 +4646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference
 ```
@@ -5005,7 +5029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterBackupSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterBackupSourceList
 ```
@@ -5046,10 +5070,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5137,7 +5178,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterBackupSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterBackupSourceOutputReference
 ```
@@ -5415,7 +5456,7 @@ func InternalValue() GoogleAlloydbClusterBackupSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference
 ```
@@ -5693,7 +5734,7 @@ func InternalValue() GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterContinuousBackupConfigOutputReference
 ```
@@ -6042,7 +6083,7 @@ func InternalValue() GoogleAlloydbClusterContinuousBackupConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList
 ```
@@ -6083,10 +6124,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6174,7 +6232,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference
 ```
@@ -6463,7 +6521,7 @@ func InternalValue() GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterContinuousBackupInfoList
 ```
@@ -6504,10 +6562,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6595,7 +6670,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterContinuousBackupInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterContinuousBackupInfoOutputReference
 ```
@@ -6906,7 +6981,7 @@ func InternalValue() GoogleAlloydbClusterContinuousBackupInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterEncryptionConfigOutputReference
 ```
@@ -7184,7 +7259,7 @@ func InternalValue() GoogleAlloydbClusterEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterEncryptionInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterEncryptionInfoList
 ```
@@ -7225,10 +7300,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7316,7 +7408,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterEncryptionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterEncryptionInfoOutputReference
 ```
@@ -7605,7 +7697,7 @@ func InternalValue() GoogleAlloydbClusterEncryptionInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterInitialUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterInitialUserOutputReference
 ```
@@ -7905,7 +7997,7 @@ func InternalValue() GoogleAlloydbClusterInitialUser
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterMigrationSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAlloydbClusterMigrationSourceList
 ```
@@ -7946,10 +8038,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -8037,7 +8146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterMigrationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAlloydbClusterMigrationSourceOutputReference
 ```
@@ -8337,7 +8446,7 @@ func InternalValue() GoogleAlloydbClusterMigrationSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterNetworkConfigOutputReference
 ```
@@ -8644,7 +8753,7 @@ func InternalValue() GoogleAlloydbClusterNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterRestoreBackupSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterRestoreBackupSourceOutputReference
 ```
@@ -8915,7 +9024,7 @@ func InternalValue() GoogleAlloydbClusterRestoreBackupSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference
 ```
@@ -9208,7 +9317,7 @@ func InternalValue() GoogleAlloydbClusterRestoreContinuousBackupSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterSecondaryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterSecondaryConfigOutputReference
 ```
@@ -9479,7 +9588,7 @@ func InternalValue() GoogleAlloydbClusterSecondaryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlealloydbcluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlealloydbcluster"
 
 googlealloydbcluster.NewGoogleAlloydbClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterTimeoutsOutputReference
 ```

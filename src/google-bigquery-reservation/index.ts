@@ -102,6 +102,25 @@ export function googleBigqueryReservationAutoscaleToTerraform(struct?: GoogleBig
   }
 }
 
+
+export function googleBigqueryReservationAutoscaleToHclTerraform(struct?: GoogleBigqueryReservationAutoscaleOutputReference | GoogleBigqueryReservationAutoscale): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_slots: {
+      value: cdktf.numberToHclTerraform(struct!.maxSlots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryReservationAutoscaleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -180,6 +199,37 @@ export function googleBigqueryReservationTimeoutsToTerraform(struct?: GoogleBigq
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleBigqueryReservationTimeoutsToHclTerraform(struct?: GoogleBigqueryReservationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryReservationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -541,5 +591,79 @@ export class GoogleBigqueryReservation extends cdktf.TerraformResource {
       autoscale: googleBigqueryReservationAutoscaleToTerraform(this._autoscale.internalValue),
       timeouts: googleBigqueryReservationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      concurrency: {
+        value: cdktf.numberToHclTerraform(this._concurrency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      edition: {
+        value: cdktf.stringToHclTerraform(this._edition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_idle_slots: {
+        value: cdktf.booleanToHclTerraform(this._ignoreIdleSlots),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_region_auxiliary: {
+        value: cdktf.booleanToHclTerraform(this._multiRegionAuxiliary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slot_capacity: {
+        value: cdktf.numberToHclTerraform(this._slotCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      autoscale: {
+        value: googleBigqueryReservationAutoscaleToHclTerraform(this._autoscale.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryReservationAutoscaleList",
+      },
+      timeouts: {
+        value: googleBigqueryReservationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigqueryReservationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

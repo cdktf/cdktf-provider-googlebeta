@@ -195,6 +195,43 @@ export function googleAppEngineStandardAppVersionAutomaticScalingStandardSchedul
   }
 }
 
+
+export function googleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToHclTerraform(struct?: GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference | GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_instances: {
+      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_instances: {
+      value: cdktf.numberToHclTerraform(struct!.minInstances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_cpu_utilization: {
+      value: cdktf.numberToHclTerraform(struct!.targetCpuUtilization),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_throughput_utilization: {
+      value: cdktf.numberToHclTerraform(struct!.targetThroughputUtilization),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -365,6 +402,55 @@ export function googleAppEngineStandardAppVersionAutomaticScalingToTerraform(str
     min_pending_latency: cdktf.stringToTerraform(struct!.minPendingLatency),
     standard_scheduler_settings: googleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToTerraform(struct!.standardSchedulerSettings),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionAutomaticScalingToHclTerraform(struct?: GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference | GoogleAppEngineStandardAppVersionAutomaticScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_concurrent_requests: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentRequests),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_idle_instances: {
+      value: cdktf.numberToHclTerraform(struct!.maxIdleInstances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_pending_latency: {
+      value: cdktf.stringToHclTerraform(struct!.maxPendingLatency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_idle_instances: {
+      value: cdktf.numberToHclTerraform(struct!.minIdleInstances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_pending_latency: {
+      value: cdktf.stringToHclTerraform(struct!.minPendingLatency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    standard_scheduler_settings: {
+      value: googleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToHclTerraform(struct!.standardSchedulerSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference extends cdktf.ComplexObject {
@@ -552,6 +638,31 @@ export function googleAppEngineStandardAppVersionBasicScalingToTerraform(struct?
   }
 }
 
+
+export function googleAppEngineStandardAppVersionBasicScalingToHclTerraform(struct?: GoogleAppEngineStandardAppVersionBasicScalingOutputReference | GoogleAppEngineStandardAppVersionBasicScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    idle_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.idleTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_instances: {
+      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionBasicScalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -648,6 +759,37 @@ export function googleAppEngineStandardAppVersionDeploymentFilesToTerraform(stru
     sha1_sum: cdktf.stringToTerraform(struct!.sha1Sum),
     source_url: cdktf.stringToTerraform(struct!.sourceUrl),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionDeploymentFilesToHclTerraform(struct?: GoogleAppEngineStandardAppVersionDeploymentFiles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sha1_sum: {
+      value: cdktf.stringToHclTerraform(struct!.sha1Sum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_url: {
+      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference extends cdktf.ComplexObject {
@@ -794,6 +936,31 @@ export function googleAppEngineStandardAppVersionDeploymentZipToTerraform(struct
   }
 }
 
+
+export function googleAppEngineStandardAppVersionDeploymentZipToHclTerraform(struct?: GoogleAppEngineStandardAppVersionDeploymentZipOutputReference | GoogleAppEngineStandardAppVersionDeploymentZip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    files_count: {
+      value: cdktf.numberToHclTerraform(struct!.filesCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    source_url: {
+      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionDeploymentZipOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -887,6 +1054,31 @@ export function googleAppEngineStandardAppVersionDeploymentToTerraform(struct?: 
   }
 }
 
+
+export function googleAppEngineStandardAppVersionDeploymentToHclTerraform(struct?: GoogleAppEngineStandardAppVersionDeploymentOutputReference | GoogleAppEngineStandardAppVersionDeployment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    files: {
+      value: cdktf.listMapperHcl(googleAppEngineStandardAppVersionDeploymentFilesToHclTerraform, true)(struct!.files),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleAppEngineStandardAppVersionDeploymentFilesList",
+    },
+    zip: {
+      value: googleAppEngineStandardAppVersionDeploymentZipToHclTerraform(struct!.zip),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAppEngineStandardAppVersionDeploymentZipList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionDeploymentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -976,6 +1168,25 @@ export function googleAppEngineStandardAppVersionEntrypointToTerraform(struct?: 
   }
 }
 
+
+export function googleAppEngineStandardAppVersionEntrypointToHclTerraform(struct?: GoogleAppEngineStandardAppVersionEntrypointOutputReference | GoogleAppEngineStandardAppVersionEntrypoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    shell: {
+      value: cdktf.stringToHclTerraform(struct!.shell),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionEntrypointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1038,6 +1249,25 @@ export function googleAppEngineStandardAppVersionHandlersScriptToTerraform(struc
   return {
     script_path: cdktf.stringToTerraform(struct!.scriptPath),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionHandlersScriptToHclTerraform(struct?: GoogleAppEngineStandardAppVersionHandlersScriptOutputReference | GoogleAppEngineStandardAppVersionHandlersScript): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    script_path: {
+      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionHandlersScriptOutputReference extends cdktf.ComplexObject {
@@ -1149,6 +1379,61 @@ export function googleAppEngineStandardAppVersionHandlersStaticFilesToTerraform(
     require_matching_file: cdktf.booleanToTerraform(struct!.requireMatchingFile),
     upload_path_regex: cdktf.stringToTerraform(struct!.uploadPathRegex),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionHandlersStaticFilesToHclTerraform(struct?: GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference | GoogleAppEngineStandardAppVersionHandlersStaticFiles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_readable: {
+      value: cdktf.booleanToHclTerraform(struct!.applicationReadable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    expiration: {
+      value: cdktf.stringToHclTerraform(struct!.expiration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    mime_type: {
+      value: cdktf.stringToHclTerraform(struct!.mimeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    require_matching_file: {
+      value: cdktf.booleanToHclTerraform(struct!.requireMatchingFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    upload_path_regex: {
+      value: cdktf.stringToHclTerraform(struct!.uploadPathRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference extends cdktf.ComplexObject {
@@ -1393,6 +1678,61 @@ export function googleAppEngineStandardAppVersionHandlersToTerraform(struct?: Go
   }
 }
 
+
+export function googleAppEngineStandardAppVersionHandlersToHclTerraform(struct?: GoogleAppEngineStandardAppVersionHandlers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_fail_action: {
+      value: cdktf.stringToHclTerraform(struct!.authFailAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    login: {
+      value: cdktf.stringToHclTerraform(struct!.login),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_http_response_code: {
+      value: cdktf.stringToHclTerraform(struct!.redirectHttpResponseCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_level: {
+      value: cdktf.stringToHclTerraform(struct!.securityLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url_regex: {
+      value: cdktf.stringToHclTerraform(struct!.urlRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    script: {
+      value: googleAppEngineStandardAppVersionHandlersScriptToHclTerraform(struct!.script),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAppEngineStandardAppVersionHandlersScriptList",
+    },
+    static_files: {
+      value: googleAppEngineStandardAppVersionHandlersStaticFilesToHclTerraform(struct!.staticFiles),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAppEngineStandardAppVersionHandlersStaticFilesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionHandlersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1631,6 +1971,31 @@ export function googleAppEngineStandardAppVersionLibrariesToTerraform(struct?: G
   }
 }
 
+
+export function googleAppEngineStandardAppVersionLibrariesToHclTerraform(struct?: GoogleAppEngineStandardAppVersionLibraries | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionLibrariesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1755,6 +2120,25 @@ export function googleAppEngineStandardAppVersionManualScalingToTerraform(struct
   }
 }
 
+
+export function googleAppEngineStandardAppVersionManualScalingToHclTerraform(struct?: GoogleAppEngineStandardAppVersionManualScalingOutputReference | GoogleAppEngineStandardAppVersionManualScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instances: {
+      value: cdktf.numberToHclTerraform(struct!.instances),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAppEngineStandardAppVersionManualScalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1825,6 +2209,37 @@ export function googleAppEngineStandardAppVersionTimeoutsToTerraform(struct?: Go
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionTimeoutsToHclTerraform(struct?: GoogleAppEngineStandardAppVersionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1953,6 +2368,31 @@ export function googleAppEngineStandardAppVersionVpcAccessConnectorToTerraform(s
     egress_setting: cdktf.stringToTerraform(struct!.egressSetting),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function googleAppEngineStandardAppVersionVpcAccessConnectorToHclTerraform(struct?: GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference | GoogleAppEngineStandardAppVersionVpcAccessConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    egress_setting: {
+      value: cdktf.stringToHclTerraform(struct!.egressSetting),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference extends cdktf.ComplexObject {
@@ -2494,5 +2934,151 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       timeouts: googleAppEngineStandardAppVersionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_access_connector: googleAppEngineStandardAppVersionVpcAccessConnectorToTerraform(this._vpcAccessConnector.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_engine_apis: {
+        value: cdktf.booleanToHclTerraform(this._appEngineApis),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delete_service_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._deleteServiceOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      env_variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._envVariables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inbound_services: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._inboundServices),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      instance_class: {
+        value: cdktf.stringToHclTerraform(this._instanceClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      noop_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._noopOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime: {
+        value: cdktf.stringToHclTerraform(this._runtime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_api_version: {
+        value: cdktf.stringToHclTerraform(this._runtimeApiVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account: {
+        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      threadsafe: {
+        value: cdktf.booleanToHclTerraform(this._threadsafe),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      version_id: {
+        value: cdktf.stringToHclTerraform(this._versionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      automatic_scaling: {
+        value: googleAppEngineStandardAppVersionAutomaticScalingToHclTerraform(this._automaticScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionAutomaticScalingList",
+      },
+      basic_scaling: {
+        value: googleAppEngineStandardAppVersionBasicScalingToHclTerraform(this._basicScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionBasicScalingList",
+      },
+      deployment: {
+        value: googleAppEngineStandardAppVersionDeploymentToHclTerraform(this._deployment.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionDeploymentList",
+      },
+      entrypoint: {
+        value: googleAppEngineStandardAppVersionEntrypointToHclTerraform(this._entrypoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionEntrypointList",
+      },
+      handlers: {
+        value: cdktf.listMapperHcl(googleAppEngineStandardAppVersionHandlersToHclTerraform, true)(this._handlers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionHandlersList",
+      },
+      libraries: {
+        value: cdktf.listMapperHcl(googleAppEngineStandardAppVersionLibrariesToHclTerraform, true)(this._libraries.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionLibrariesList",
+      },
+      manual_scaling: {
+        value: googleAppEngineStandardAppVersionManualScalingToHclTerraform(this._manualScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionManualScalingList",
+      },
+      timeouts: {
+        value: googleAppEngineStandardAppVersionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleAppEngineStandardAppVersionTimeouts",
+      },
+      vpc_access_connector: {
+        value: googleAppEngineStandardAppVersionVpcAccessConnectorToHclTerraform(this._vpcAccessConnector.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAppEngineStandardAppVersionVpcAccessConnectorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

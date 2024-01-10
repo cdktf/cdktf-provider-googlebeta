@@ -101,6 +101,31 @@ export function googleNotebooksEnvironmentContainerImageToTerraform(struct?: Goo
   }
 }
 
+
+export function googleNotebooksEnvironmentContainerImageToHclTerraform(struct?: GoogleNotebooksEnvironmentContainerImageOutputReference | GoogleNotebooksEnvironmentContainerImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag: {
+      value: cdktf.stringToHclTerraform(struct!.tag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksEnvironmentContainerImageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -193,6 +218,37 @@ export function googleNotebooksEnvironmentTimeoutsToTerraform(struct?: GoogleNot
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNotebooksEnvironmentTimeoutsToHclTerraform(struct?: GoogleNotebooksEnvironmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -329,6 +385,37 @@ export function googleNotebooksEnvironmentVmImageToTerraform(struct?: GoogleNote
     image_name: cdktf.stringToTerraform(struct!.imageName),
     project: cdktf.stringToTerraform(struct!.project),
   }
+}
+
+
+export function googleNotebooksEnvironmentVmImageToHclTerraform(struct?: GoogleNotebooksEnvironmentVmImageOutputReference | GoogleNotebooksEnvironmentVmImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    image_family: {
+      value: cdktf.stringToHclTerraform(struct!.imageFamily),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksEnvironmentVmImageOutputReference extends cdktf.ComplexObject {
@@ -664,5 +751,73 @@ export class GoogleNotebooksEnvironment extends cdktf.TerraformResource {
       timeouts: googleNotebooksEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
       vm_image: googleNotebooksEnvironmentVmImageToTerraform(this._vmImage.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      post_startup_script: {
+        value: cdktf.stringToHclTerraform(this._postStartupScript),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_image: {
+        value: googleNotebooksEnvironmentContainerImageToHclTerraform(this._containerImage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksEnvironmentContainerImageList",
+      },
+      timeouts: {
+        value: googleNotebooksEnvironmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNotebooksEnvironmentTimeouts",
+      },
+      vm_image: {
+        value: googleNotebooksEnvironmentVmImageToHclTerraform(this._vmImage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksEnvironmentVmImageList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -179,6 +179,25 @@ export function googleIamWorkforcePoolProviderOidcClientSecretValueToTerraform(s
   }
 }
 
+
+export function googleIamWorkforcePoolProviderOidcClientSecretValueToHclTerraform(struct?: GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference | GoogleIamWorkforcePoolProviderOidcClientSecretValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    plain_text: {
+      value: cdktf.stringToHclTerraform(struct!.plainText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -246,6 +265,25 @@ export function googleIamWorkforcePoolProviderOidcClientSecretToTerraform(struct
   return {
     value: googleIamWorkforcePoolProviderOidcClientSecretValueToTerraform(struct!.value),
   }
+}
+
+
+export function googleIamWorkforcePoolProviderOidcClientSecretToHclTerraform(struct?: GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference | GoogleIamWorkforcePoolProviderOidcClientSecret): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: googleIamWorkforcePoolProviderOidcClientSecretValueToHclTerraform(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderOidcClientSecretValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamWorkforcePoolProviderOidcClientSecretOutputReference extends cdktf.ComplexObject {
@@ -334,6 +372,37 @@ export function googleIamWorkforcePoolProviderOidcWebSsoConfigToTerraform(struct
     assertion_claims_behavior: cdktf.stringToTerraform(struct!.assertionClaimsBehavior),
     response_type: cdktf.stringToTerraform(struct!.responseType),
   }
+}
+
+
+export function googleIamWorkforcePoolProviderOidcWebSsoConfigToHclTerraform(struct?: GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference | GoogleIamWorkforcePoolProviderOidcWebSsoConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    assertion_claims_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.assertionClaimsBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_type: {
+      value: cdktf.stringToHclTerraform(struct!.responseType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference extends cdktf.ComplexObject {
@@ -489,6 +558,49 @@ export function googleIamWorkforcePoolProviderOidcToTerraform(struct?: GoogleIam
     client_secret: googleIamWorkforcePoolProviderOidcClientSecretToTerraform(struct!.clientSecret),
     web_sso_config: googleIamWorkforcePoolProviderOidcWebSsoConfigToTerraform(struct!.webSsoConfig),
   }
+}
+
+
+export function googleIamWorkforcePoolProviderOidcToHclTerraform(struct?: GoogleIamWorkforcePoolProviderOidcOutputReference | GoogleIamWorkforcePoolProviderOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer_uri: {
+      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwks_json: {
+      value: cdktf.stringToHclTerraform(struct!.jwksJson),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: googleIamWorkforcePoolProviderOidcClientSecretToHclTerraform(struct!.clientSecret),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderOidcClientSecretList",
+    },
+    web_sso_config: {
+      value: googleIamWorkforcePoolProviderOidcWebSsoConfigToHclTerraform(struct!.webSsoConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderOidcWebSsoConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamWorkforcePoolProviderOidcOutputReference extends cdktf.ComplexObject {
@@ -654,6 +766,25 @@ export function googleIamWorkforcePoolProviderSamlToTerraform(struct?: GoogleIam
   }
 }
 
+
+export function googleIamWorkforcePoolProviderSamlToHclTerraform(struct?: GoogleIamWorkforcePoolProviderSamlOutputReference | GoogleIamWorkforcePoolProviderSaml): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    idp_metadata_xml: {
+      value: cdktf.stringToHclTerraform(struct!.idpMetadataXml),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIamWorkforcePoolProviderSamlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -724,6 +855,37 @@ export function googleIamWorkforcePoolProviderTimeoutsToTerraform(struct?: Googl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleIamWorkforcePoolProviderTimeoutsToHclTerraform(struct?: GoogleIamWorkforcePoolProviderTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamWorkforcePoolProviderTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1110,5 +1272,85 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
       saml: googleIamWorkforcePoolProviderSamlToTerraform(this._saml.internalValue),
       timeouts: googleIamWorkforcePoolProviderTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attribute_condition: {
+        value: cdktf.stringToHclTerraform(this._attributeCondition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attribute_mapping: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributeMapping),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_id: {
+        value: cdktf.stringToHclTerraform(this._providerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workforce_pool_id: {
+        value: cdktf.stringToHclTerraform(this._workforcePoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc: {
+        value: googleIamWorkforcePoolProviderOidcToHclTerraform(this._oidc.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIamWorkforcePoolProviderOidcList",
+      },
+      saml: {
+        value: googleIamWorkforcePoolProviderSamlToHclTerraform(this._saml.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIamWorkforcePoolProviderSamlList",
+      },
+      timeouts: {
+        value: googleIamWorkforcePoolProviderTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleIamWorkforcePoolProviderTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

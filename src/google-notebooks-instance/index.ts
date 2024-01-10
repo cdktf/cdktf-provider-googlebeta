@@ -272,6 +272,31 @@ export function googleNotebooksInstanceAcceleratorConfigToTerraform(struct?: Goo
   }
 }
 
+
+export function googleNotebooksInstanceAcceleratorConfigToHclTerraform(struct?: GoogleNotebooksInstanceAcceleratorConfigOutputReference | GoogleNotebooksInstanceAcceleratorConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    core_count: {
+      value: cdktf.numberToHclTerraform(struct!.coreCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksInstanceAcceleratorConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -361,6 +386,31 @@ export function googleNotebooksInstanceContainerImageToTerraform(struct?: Google
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
   }
+}
+
+
+export function googleNotebooksInstanceContainerImageToHclTerraform(struct?: GoogleNotebooksInstanceContainerImageOutputReference | GoogleNotebooksInstanceContainerImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag: {
+      value: cdktf.stringToHclTerraform(struct!.tag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksInstanceContainerImageOutputReference extends cdktf.ComplexObject {
@@ -461,6 +511,37 @@ export function googleNotebooksInstanceReservationAffinityToTerraform(struct?: G
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function googleNotebooksInstanceReservationAffinityToHclTerraform(struct?: GoogleNotebooksInstanceReservationAffinityOutputReference | GoogleNotebooksInstanceReservationAffinity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    consume_reservation_type: {
+      value: cdktf.stringToHclTerraform(struct!.consumeReservationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksInstanceReservationAffinityOutputReference extends cdktf.ComplexObject {
@@ -592,6 +673,37 @@ export function googleNotebooksInstanceShieldedInstanceConfigToTerraform(struct?
   }
 }
 
+
+export function googleNotebooksInstanceShieldedInstanceConfigToHclTerraform(struct?: GoogleNotebooksInstanceShieldedInstanceConfigOutputReference | GoogleNotebooksInstanceShieldedInstanceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_integrity_monitoring: {
+      value: cdktf.booleanToHclTerraform(struct!.enableIntegrityMonitoring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_secure_boot: {
+      value: cdktf.booleanToHclTerraform(struct!.enableSecureBoot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_vtpm: {
+      value: cdktf.booleanToHclTerraform(struct!.enableVtpm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksInstanceShieldedInstanceConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -709,6 +821,37 @@ export function googleNotebooksInstanceTimeoutsToTerraform(struct?: GoogleNotebo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNotebooksInstanceTimeoutsToHclTerraform(struct?: GoogleNotebooksInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -845,6 +988,37 @@ export function googleNotebooksInstanceVmImageToTerraform(struct?: GoogleNoteboo
     image_name: cdktf.stringToTerraform(struct!.imageName),
     project: cdktf.stringToTerraform(struct!.project),
   }
+}
+
+
+export function googleNotebooksInstanceVmImageToHclTerraform(struct?: GoogleNotebooksInstanceVmImageOutputReference | GoogleNotebooksInstanceVmImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    image_family: {
+      value: cdktf.stringToHclTerraform(struct!.imageFamily),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksInstanceVmImageOutputReference extends cdktf.ComplexObject {
@@ -1626,5 +1800,217 @@ export class GoogleNotebooksInstance extends cdktf.TerraformResource {
       timeouts: googleNotebooksInstanceTimeoutsToTerraform(this._timeouts.internalValue),
       vm_image: googleNotebooksInstanceVmImageToTerraform(this._vmImage.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      boot_disk_size_gb: {
+        value: cdktf.numberToHclTerraform(this._bootDiskSizeGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      boot_disk_type: {
+        value: cdktf.stringToHclTerraform(this._bootDiskType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      create_time: {
+        value: cdktf.stringToHclTerraform(this._createTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_gpu_driver_path: {
+        value: cdktf.stringToHclTerraform(this._customGpuDriverPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_disk_size_gb: {
+        value: cdktf.numberToHclTerraform(this._dataDiskSizeGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      data_disk_type: {
+        value: cdktf.stringToHclTerraform(this._dataDiskType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_encryption: {
+        value: cdktf.stringToHclTerraform(this._diskEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      install_gpu_driver: {
+        value: cdktf.booleanToHclTerraform(this._installGpuDriver),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      instance_owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceOwners),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      kms_key: {
+        value: cdktf.stringToHclTerraform(this._kmsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      machine_type: {
+        value: cdktf.stringToHclTerraform(this._machineType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network: {
+        value: cdktf.stringToHclTerraform(this._network),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nic_type: {
+        value: cdktf.stringToHclTerraform(this._nicType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      no_proxy_access: {
+        value: cdktf.booleanToHclTerraform(this._noProxyAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      no_public_ip: {
+        value: cdktf.booleanToHclTerraform(this._noPublicIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      no_remove_data_disk: {
+        value: cdktf.booleanToHclTerraform(this._noRemoveDataDisk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      post_startup_script: {
+        value: cdktf.stringToHclTerraform(this._postStartupScript),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account: {
+        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceAccountScopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      subnet: {
+        value: cdktf.stringToHclTerraform(this._subnet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      update_time: {
+        value: cdktf.stringToHclTerraform(this._updateTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      accelerator_config: {
+        value: googleNotebooksInstanceAcceleratorConfigToHclTerraform(this._acceleratorConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksInstanceAcceleratorConfigList",
+      },
+      container_image: {
+        value: googleNotebooksInstanceContainerImageToHclTerraform(this._containerImage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksInstanceContainerImageList",
+      },
+      reservation_affinity: {
+        value: googleNotebooksInstanceReservationAffinityToHclTerraform(this._reservationAffinity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksInstanceReservationAffinityList",
+      },
+      shielded_instance_config: {
+        value: googleNotebooksInstanceShieldedInstanceConfigToHclTerraform(this._shieldedInstanceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksInstanceShieldedInstanceConfigList",
+      },
+      timeouts: {
+        value: googleNotebooksInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNotebooksInstanceTimeouts",
+      },
+      vm_image: {
+        value: googleNotebooksInstanceVmImageToHclTerraform(this._vmImage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksInstanceVmImageList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -66,6 +66,17 @@ export function googleBackupDrManagementServerManagementUriToTerraform(struct?: 
   }
 }
 
+
+export function googleBackupDrManagementServerManagementUriToHclTerraform(struct?: GoogleBackupDrManagementServerManagementUri): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleBackupDrManagementServerManagementUriOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -147,6 +158,31 @@ export function googleBackupDrManagementServerNetworksToTerraform(struct?: Googl
     network: cdktf.stringToTerraform(struct!.network),
     peering_mode: cdktf.stringToTerraform(struct!.peeringMode),
   }
+}
+
+
+export function googleBackupDrManagementServerNetworksToHclTerraform(struct?: GoogleBackupDrManagementServerNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    peering_mode: {
+      value: cdktf.stringToHclTerraform(struct!.peeringMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBackupDrManagementServerNetworksOutputReference extends cdktf.ComplexObject {
@@ -268,6 +304,31 @@ export function googleBackupDrManagementServerTimeoutsToTerraform(struct?: Googl
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleBackupDrManagementServerTimeoutsToHclTerraform(struct?: GoogleBackupDrManagementServerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBackupDrManagementServerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -543,5 +604,55 @@ export class GoogleBackupDrManagementServer extends cdktf.TerraformResource {
       networks: cdktf.listMapper(googleBackupDrManagementServerNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleBackupDrManagementServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      networks: {
+        value: cdktf.listMapperHcl(googleBackupDrManagementServerNetworksToHclTerraform, true)(this._networks.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBackupDrManagementServerNetworksList",
+      },
+      timeouts: {
+        value: googleBackupDrManagementServerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBackupDrManagementServerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

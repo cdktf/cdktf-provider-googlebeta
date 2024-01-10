@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroup(scope Construct, id *string, config GoogleCloudIdentityGroupConfig) GoogleCloudIdentityGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ googlecloudidentitygroup.GoogleCloudIdentityGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.GoogleCloudIdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -941,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupAdditionalGroupKeys {
 
@@ -954,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupConfig {
 	Connection: interface{},
@@ -964,14 +971,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey,
+	GroupKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey,
 	Labels: *map[string]*string,
 	Parent: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	InitialGroupConfig: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts,
 }
 ```
 
@@ -1202,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupGroupKey {
 	Id: *string,
@@ -1270,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 &googlecloudidentitygroup.GoogleCloudIdentityGroupTimeouts {
 	Create: *string,
@@ -1332,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupAdditionalGroupKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudIdentityGroupAdditionalGroupKeysList
 ```
@@ -1373,10 +1380,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1464,7 +1488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupAdditionalGroupKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference
 ```
@@ -1753,7 +1777,7 @@ func InternalValue() GoogleCloudIdentityGroupAdditionalGroupKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupGroupKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudIdentityGroupGroupKeyOutputReference
 ```
@@ -2053,7 +2077,7 @@ func InternalValue() GoogleCloudIdentityGroupGroupKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudidentitygroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudidentitygroup"
 
 googlecloudidentitygroup.NewGoogleCloudIdentityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudIdentityGroupTimeoutsOutputReference
 ```

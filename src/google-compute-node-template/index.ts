@@ -107,6 +107,31 @@ export function googleComputeNodeTemplateNodeTypeFlexibilityToTerraform(struct?:
   }
 }
 
+
+export function googleComputeNodeTemplateNodeTypeFlexibilityToHclTerraform(struct?: GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference | GoogleComputeNodeTemplateNodeTypeFlexibility): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpus: {
+      value: cdktf.stringToHclTerraform(struct!.cpus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -212,6 +237,25 @@ export function googleComputeNodeTemplateServerBindingToTerraform(struct?: Googl
   }
 }
 
+
+export function googleComputeNodeTemplateServerBindingToHclTerraform(struct?: GoogleComputeNodeTemplateServerBindingOutputReference | GoogleComputeNodeTemplateServerBinding): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeNodeTemplateServerBindingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -277,6 +321,31 @@ export function googleComputeNodeTemplateTimeoutsToTerraform(struct?: GoogleComp
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleComputeNodeTemplateTimeoutsToHclTerraform(struct?: GoogleComputeNodeTemplateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeNodeTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -632,5 +701,79 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
       server_binding: googleComputeNodeTemplateServerBindingToTerraform(this._serverBinding.internalValue),
       timeouts: googleComputeNodeTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cpu_overcommit_type: {
+        value: cdktf.stringToHclTerraform(this._cpuOvercommitType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_affinity_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._nodeAffinityLabels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      node_type: {
+        value: cdktf.stringToHclTerraform(this._nodeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_type_flexibility: {
+        value: googleComputeNodeTemplateNodeTypeFlexibilityToHclTerraform(this._nodeTypeFlexibility.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeTemplateNodeTypeFlexibilityList",
+      },
+      server_binding: {
+        value: googleComputeNodeTemplateServerBindingToHclTerraform(this._serverBinding.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeTemplateServerBindingList",
+      },
+      timeouts: {
+        value: googleComputeNodeTemplateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeNodeTemplateTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

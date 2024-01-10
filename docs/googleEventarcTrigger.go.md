@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTrigger(scope Construct, id *string, config GoogleEventarcTriggerConfig) GoogleEventarcTrigger
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.toMetadata"></a>
 
@@ -479,7 +486,7 @@ func ResetTransport()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.GoogleEventarcTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.GoogleEventarcTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +532,7 @@ googleeventarctrigger.GoogleEventarcTrigger_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.GoogleEventarcTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +546,7 @@ googleeventarctrigger.GoogleEventarcTrigger_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.GoogleEventarcTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1109,7 +1116,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerConfig {
 	Connection: interface{},
@@ -1119,7 +1126,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleevent
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerDestination,
+	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerDestination,
 	Location: *string,
 	MatchingCriteria: interface{},
 	Name: *string,
@@ -1129,8 +1136,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleevent
 	Labels: *map[string]*string,
 	Project: *string,
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerTimeouts,
-	Transport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerTransport,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerTimeouts,
+	Transport: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerTransport,
 }
 ```
 
@@ -1413,12 +1420,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerDestination {
 	CloudFunction: *string,
-	CloudRunService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunService,
-	Gke: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerDestinationGke,
+	CloudRunService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunService,
+	Gke: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerDestinationGke,
 	Workflow: *string,
 }
 ```
@@ -1499,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerDestinationCloudRunService {
 	Service: *string,
@@ -1569,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationGke.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerDestinationGke {
 	Cluster: *string,
@@ -1673,7 +1680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerMatchingCriteria {
 	Attribute: *string,
@@ -1743,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerTimeouts {
 	Create: *string,
@@ -1803,10 +1810,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTransport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerTransport {
-	Pubsub: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsub,
+	Pubsub: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsub,
 }
 ```
 
@@ -1837,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 &googleeventarctrigger.GoogleEventarcTriggerTransportPubsub {
 	Topic: *string,
@@ -1875,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationCloudRunServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerDestinationCloudRunServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerDestinationCloudRunServiceOutputReference
 ```
@@ -2204,7 +2211,7 @@ func InternalValue() GoogleEventarcTriggerDestinationCloudRunService
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationGkeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerDestinationGkeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerDestinationGkeOutputReference
 ```
@@ -2570,7 +2577,7 @@ func InternalValue() GoogleEventarcTriggerDestinationGke
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerDestinationOutputReference
 ```
@@ -2961,7 +2968,7 @@ func InternalValue() GoogleEventarcTriggerDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerMatchingCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleEventarcTriggerMatchingCriteriaList
 ```
@@ -3002,10 +3009,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3104,7 +3128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerMatchingCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerMatchingCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleEventarcTriggerMatchingCriteriaOutputReference
 ```
@@ -3444,7 +3468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerTimeoutsOutputReference
 ```
@@ -3780,7 +3804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTransportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerTransportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerTransportOutputReference
 ```
@@ -4071,7 +4095,7 @@ func InternalValue() GoogleEventarcTriggerTransport
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTransportPubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleeventarctrigger"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleeventarctrigger"
 
 googleeventarctrigger.NewGoogleEventarcTriggerTransportPubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcTriggerTransportPubsubOutputReference
 ```

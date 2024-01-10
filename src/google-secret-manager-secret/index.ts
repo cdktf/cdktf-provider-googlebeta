@@ -147,6 +147,25 @@ export function googleSecretManagerSecretReplicationAutoCustomerManagedEncryptio
   }
 }
 
+
+export function googleSecretManagerSecretReplicationAutoCustomerManagedEncryptionToHclTerraform(struct?: GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference | GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -209,6 +228,25 @@ export function googleSecretManagerSecretReplicationAutoToTerraform(struct?: Goo
   return {
     customer_managed_encryption: googleSecretManagerSecretReplicationAutoCustomerManagedEncryptionToTerraform(struct!.customerManagedEncryption),
   }
+}
+
+
+export function googleSecretManagerSecretReplicationAutoToHclTerraform(struct?: GoogleSecretManagerSecretReplicationAutoOutputReference | GoogleSecretManagerSecretReplicationAuto): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    customer_managed_encryption: {
+      value: googleSecretManagerSecretReplicationAutoCustomerManagedEncryptionToHclTerraform(struct!.customerManagedEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretReplicationAutoOutputReference extends cdktf.ComplexObject {
@@ -276,6 +314,25 @@ export function googleSecretManagerSecretReplicationUserManagedReplicasCustomerM
   return {
     kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
   }
+}
+
+
+export function googleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionToHclTerraform(struct?: GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference | GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference extends cdktf.ComplexObject {
@@ -347,6 +404,31 @@ export function googleSecretManagerSecretReplicationUserManagedReplicasToTerrafo
     location: cdktf.stringToTerraform(struct!.location),
     customer_managed_encryption: googleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionToTerraform(struct!.customerManagedEncryption),
   }
+}
+
+
+export function googleSecretManagerSecretReplicationUserManagedReplicasToHclTerraform(struct?: GoogleSecretManagerSecretReplicationUserManagedReplicas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customer_managed_encryption: {
+      value: googleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionToHclTerraform(struct!.customerManagedEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference extends cdktf.ComplexObject {
@@ -467,6 +549,25 @@ export function googleSecretManagerSecretReplicationUserManagedToTerraform(struc
   }
 }
 
+
+export function googleSecretManagerSecretReplicationUserManagedToHclTerraform(struct?: GoogleSecretManagerSecretReplicationUserManagedOutputReference | GoogleSecretManagerSecretReplicationUserManaged): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    replicas: {
+      value: cdktf.listMapperHcl(googleSecretManagerSecretReplicationUserManagedReplicasToHclTerraform, true)(struct!.replicas),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecretManagerSecretReplicationUserManagedReplicasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecretManagerSecretReplicationUserManagedOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -536,6 +637,31 @@ export function googleSecretManagerSecretReplicationToTerraform(struct?: GoogleS
     auto: googleSecretManagerSecretReplicationAutoToTerraform(struct!.auto),
     user_managed: googleSecretManagerSecretReplicationUserManagedToTerraform(struct!.userManaged),
   }
+}
+
+
+export function googleSecretManagerSecretReplicationToHclTerraform(struct?: GoogleSecretManagerSecretReplicationOutputReference | GoogleSecretManagerSecretReplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto: {
+      value: googleSecretManagerSecretReplicationAutoToHclTerraform(struct!.auto),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecretManagerSecretReplicationAutoList",
+    },
+    user_managed: {
+      value: googleSecretManagerSecretReplicationUserManagedToHclTerraform(struct!.userManaged),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecretManagerSecretReplicationUserManagedList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretReplicationOutputReference extends cdktf.ComplexObject {
@@ -636,6 +762,31 @@ export function googleSecretManagerSecretRotationToTerraform(struct?: GoogleSecr
   }
 }
 
+
+export function googleSecretManagerSecretRotationToHclTerraform(struct?: GoogleSecretManagerSecretRotationOutputReference | GoogleSecretManagerSecretRotation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    next_rotation_time: {
+      value: cdktf.stringToHclTerraform(struct!.nextRotationTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rotation_period: {
+      value: cdktf.stringToHclTerraform(struct!.rotationPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecretManagerSecretRotationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -731,6 +882,37 @@ export function googleSecretManagerSecretTimeoutsToTerraform(struct?: GoogleSecr
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleSecretManagerSecretTimeoutsToHclTerraform(struct?: GoogleSecretManagerSecretTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -855,6 +1037,25 @@ export function googleSecretManagerSecretTopicsToTerraform(struct?: GoogleSecret
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function googleSecretManagerSecretTopicsToHclTerraform(struct?: GoogleSecretManagerSecretTopics | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecretManagerSecretTopicsOutputReference extends cdktf.ComplexObject {
@@ -1237,5 +1438,85 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
       timeouts: googleSecretManagerSecretTimeoutsToTerraform(this._timeouts.internalValue),
       topics: cdktf.listMapper(googleSecretManagerSecretTopicsToTerraform, true)(this._topics.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      expire_time: {
+        value: cdktf.stringToHclTerraform(this._expireTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_id: {
+        value: cdktf.stringToHclTerraform(this._secretId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_aliases: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._versionAliases),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      replication: {
+        value: googleSecretManagerSecretReplicationToHclTerraform(this._replication.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecretManagerSecretReplicationList",
+      },
+      rotation: {
+        value: googleSecretManagerSecretRotationToHclTerraform(this._rotation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecretManagerSecretRotationList",
+      },
+      timeouts: {
+        value: googleSecretManagerSecretTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSecretManagerSecretTimeouts",
+      },
+      topics: {
+        value: cdktf.listMapperHcl(googleSecretManagerSecretTopicsToHclTerraform, true)(this._topics.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecretManagerSecretTopicsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

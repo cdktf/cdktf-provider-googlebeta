@@ -69,6 +69,37 @@ export function googleDnsManagedZoneIamMemberConditionToTerraform(struct?: Googl
   }
 }
 
+
+export function googleDnsManagedZoneIamMemberConditionToHclTerraform(struct?: GoogleDnsManagedZoneIamMemberConditionOutputReference | GoogleDnsManagedZoneIamMemberCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneIamMemberConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -324,5 +355,49 @@ export class GoogleDnsManagedZoneIamMember extends cdktf.TerraformResource {
       role: cdktf.stringToTerraform(this._role),
       condition: googleDnsManagedZoneIamMemberConditionToTerraform(this._condition.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_zone: {
+        value: cdktf.stringToHclTerraform(this._managedZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member: {
+        value: cdktf.stringToHclTerraform(this._member),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: googleDnsManagedZoneIamMemberConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZoneIamMemberConditionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

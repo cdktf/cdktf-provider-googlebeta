@@ -114,6 +114,31 @@ export function googleDeploymentManagerDeploymentLabelsToTerraform(struct?: Goog
   }
 }
 
+
+export function googleDeploymentManagerDeploymentLabelsToHclTerraform(struct?: GoogleDeploymentManagerDeploymentLabels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDeploymentManagerDeploymentLabelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -235,6 +260,25 @@ export function googleDeploymentManagerDeploymentTargetConfigToTerraform(struct?
   }
 }
 
+
+export function googleDeploymentManagerDeploymentTargetConfigToHclTerraform(struct?: GoogleDeploymentManagerDeploymentTargetConfigOutputReference | GoogleDeploymentManagerDeploymentTargetConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDeploymentManagerDeploymentTargetConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -305,6 +349,31 @@ export function googleDeploymentManagerDeploymentTargetImportsToTerraform(struct
     content: cdktf.stringToTerraform(struct!.content),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function googleDeploymentManagerDeploymentTargetImportsToHclTerraform(struct?: GoogleDeploymentManagerDeploymentTargetImports | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDeploymentManagerDeploymentTargetImportsOutputReference extends cdktf.ComplexObject {
@@ -435,6 +504,31 @@ export function googleDeploymentManagerDeploymentTargetToTerraform(struct?: Goog
   }
 }
 
+
+export function googleDeploymentManagerDeploymentTargetToHclTerraform(struct?: GoogleDeploymentManagerDeploymentTargetOutputReference | GoogleDeploymentManagerDeploymentTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    config: {
+      value: googleDeploymentManagerDeploymentTargetConfigToHclTerraform(struct!.config),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeploymentManagerDeploymentTargetConfigList",
+    },
+    imports: {
+      value: cdktf.listMapperHcl(googleDeploymentManagerDeploymentTargetImportsToHclTerraform, true)(struct!.imports),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeploymentManagerDeploymentTargetImportsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDeploymentManagerDeploymentTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -527,6 +621,37 @@ export function googleDeploymentManagerDeploymentTimeoutsToTerraform(struct?: Go
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDeploymentManagerDeploymentTimeoutsToHclTerraform(struct?: GoogleDeploymentManagerDeploymentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDeploymentManagerDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -885,5 +1010,73 @@ export class GoogleDeploymentManagerDeployment extends cdktf.TerraformResource {
       target: googleDeploymentManagerDeploymentTargetToTerraform(this._target.internalValue),
       timeouts: googleDeploymentManagerDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      create_policy: {
+        value: cdktf.stringToHclTerraform(this._createPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_policy: {
+        value: cdktf.stringToHclTerraform(this._deletePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preview: {
+        value: cdktf.booleanToHclTerraform(this._preview),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(googleDeploymentManagerDeploymentLabelsToHclTerraform, true)(this._labels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleDeploymentManagerDeploymentLabelsList",
+      },
+      target: {
+        value: googleDeploymentManagerDeploymentTargetToHclTerraform(this._target.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDeploymentManagerDeploymentTargetList",
+      },
+      timeouts: {
+        value: googleDeploymentManagerDeploymentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDeploymentManagerDeploymentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

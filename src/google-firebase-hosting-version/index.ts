@@ -88,6 +88,43 @@ export function googleFirebaseHostingVersionConfigRedirectsToTerraform(struct?: 
   }
 }
 
+
+export function googleFirebaseHostingVersionConfigRedirectsToHclTerraform(struct?: GoogleFirebaseHostingVersionConfigRedirects | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    glob: {
+      value: cdktf.stringToHclTerraform(struct!.glob),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleFirebaseHostingVersionConfigRedirectsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -254,6 +291,31 @@ export function googleFirebaseHostingVersionConfigRewritesRunToTerraform(struct?
   }
 }
 
+
+export function googleFirebaseHostingVersionConfigRewritesRunToHclTerraform(struct?: GoogleFirebaseHostingVersionConfigRewritesRunOutputReference | GoogleFirebaseHostingVersionConfigRewritesRun): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_id: {
+      value: cdktf.stringToHclTerraform(struct!.serviceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleFirebaseHostingVersionConfigRewritesRunOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -359,6 +421,43 @@ export function googleFirebaseHostingVersionConfigRewritesToTerraform(struct?: G
     regex: cdktf.stringToTerraform(struct!.regex),
     run: googleFirebaseHostingVersionConfigRewritesRunToTerraform(struct!.run),
   }
+}
+
+
+export function googleFirebaseHostingVersionConfigRewritesToHclTerraform(struct?: GoogleFirebaseHostingVersionConfigRewrites | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    function: {
+      value: cdktf.stringToHclTerraform(struct!.function),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    glob: {
+      value: cdktf.stringToHclTerraform(struct!.glob),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    run: {
+      value: googleFirebaseHostingVersionConfigRewritesRunToHclTerraform(struct!.run),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleFirebaseHostingVersionConfigRewritesRunList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleFirebaseHostingVersionConfigRewritesOutputReference extends cdktf.ComplexObject {
@@ -533,6 +632,31 @@ export function googleFirebaseHostingVersionConfigAToTerraform(struct?: GoogleFi
   }
 }
 
+
+export function googleFirebaseHostingVersionConfigAToHclTerraform(struct?: GoogleFirebaseHostingVersionConfigAOutputReference | GoogleFirebaseHostingVersionConfigA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    redirects: {
+      value: cdktf.listMapperHcl(googleFirebaseHostingVersionConfigRedirectsToHclTerraform, true)(struct!.redirects),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleFirebaseHostingVersionConfigRedirectsList",
+    },
+    rewrites: {
+      value: cdktf.listMapperHcl(googleFirebaseHostingVersionConfigRewritesToHclTerraform, true)(struct!.rewrites),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleFirebaseHostingVersionConfigRewritesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleFirebaseHostingVersionConfigAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -623,6 +747,31 @@ export function googleFirebaseHostingVersionTimeoutsToTerraform(struct?: GoogleF
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleFirebaseHostingVersionTimeoutsToHclTerraform(struct?: GoogleFirebaseHostingVersionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleFirebaseHostingVersionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -849,5 +998,37 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
       config: googleFirebaseHostingVersionConfigAToTerraform(this._config.internalValue),
       timeouts: googleFirebaseHostingVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: googleFirebaseHostingVersionConfigAToHclTerraform(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleFirebaseHostingVersionConfigAList",
+      },
+      timeouts: {
+        value: googleFirebaseHostingVersionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleFirebaseHostingVersionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

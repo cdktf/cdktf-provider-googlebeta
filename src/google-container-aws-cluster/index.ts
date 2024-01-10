@@ -113,6 +113,17 @@ export function googleContainerAwsClusterWorkloadIdentityConfigToTerraform(struc
   }
 }
 
+
+export function googleContainerAwsClusterWorkloadIdentityConfigToHclTerraform(struct?: GoogleContainerAwsClusterWorkloadIdentityConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleContainerAwsClusterWorkloadIdentityConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -192,6 +203,25 @@ export function googleContainerAwsClusterAuthorizationAdminGroupsToTerraform(str
   return {
     group: cdktf.stringToTerraform(struct!.group),
   }
+}
+
+
+export function googleContainerAwsClusterAuthorizationAdminGroupsToHclTerraform(struct?: GoogleContainerAwsClusterAuthorizationAdminGroups | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group: {
+      value: cdktf.stringToHclTerraform(struct!.group),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterAuthorizationAdminGroupsOutputReference extends cdktf.ComplexObject {
@@ -288,6 +318,25 @@ export function googleContainerAwsClusterAuthorizationAdminUsersToTerraform(stru
   return {
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function googleContainerAwsClusterAuthorizationAdminUsersToHclTerraform(struct?: GoogleContainerAwsClusterAuthorizationAdminUsers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference extends cdktf.ComplexObject {
@@ -393,6 +442,31 @@ export function googleContainerAwsClusterAuthorizationToTerraform(struct?: Googl
   }
 }
 
+
+export function googleContainerAwsClusterAuthorizationToHclTerraform(struct?: GoogleContainerAwsClusterAuthorizationOutputReference | GoogleContainerAwsClusterAuthorization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    admin_groups: {
+      value: cdktf.listMapperHcl(googleContainerAwsClusterAuthorizationAdminGroupsToHclTerraform, true)(struct!.adminGroups),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterAuthorizationAdminGroupsList",
+    },
+    admin_users: {
+      value: cdktf.listMapperHcl(googleContainerAwsClusterAuthorizationAdminUsersToHclTerraform, true)(struct!.adminUsers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterAuthorizationAdminUsersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterAuthorizationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -479,6 +553,25 @@ export function googleContainerAwsClusterBinaryAuthorizationToTerraform(struct?:
   }
 }
 
+
+export function googleContainerAwsClusterBinaryAuthorizationToHclTerraform(struct?: GoogleContainerAwsClusterBinaryAuthorizationOutputReference | GoogleContainerAwsClusterBinaryAuthorization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    evaluation_mode: {
+      value: cdktf.stringToHclTerraform(struct!.evaluationMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterBinaryAuthorizationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -551,6 +644,31 @@ export function googleContainerAwsClusterControlPlaneAwsServicesAuthenticationTo
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     role_session_name: cdktf.stringToTerraform(struct!.roleSessionName),
   }
+}
+
+
+export function googleContainerAwsClusterControlPlaneAwsServicesAuthenticationToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference | GoogleContainerAwsClusterControlPlaneAwsServicesAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_session_name: {
+      value: cdktf.stringToHclTerraform(struct!.roleSessionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference extends cdktf.ComplexObject {
@@ -639,6 +757,25 @@ export function googleContainerAwsClusterControlPlaneConfigEncryptionToTerraform
   }
 }
 
+
+export function googleContainerAwsClusterControlPlaneConfigEncryptionToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneConfigEncryptionOutputReference | GoogleContainerAwsClusterControlPlaneConfigEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterControlPlaneConfigEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -703,6 +840,25 @@ export function googleContainerAwsClusterControlPlaneDatabaseEncryptionToTerrafo
   }
 }
 
+
+export function googleContainerAwsClusterControlPlaneDatabaseEncryptionToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference | GoogleContainerAwsClusterControlPlaneDatabaseEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -765,6 +921,25 @@ export function googleContainerAwsClusterControlPlaneInstancePlacementToTerrafor
   return {
     tenancy: cdktf.stringToTerraform(struct!.tenancy),
   }
+}
+
+
+export function googleContainerAwsClusterControlPlaneInstancePlacementToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference | GoogleContainerAwsClusterControlPlaneInstancePlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tenancy: {
+      value: cdktf.stringToHclTerraform(struct!.tenancy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference extends cdktf.ComplexObject {
@@ -860,6 +1035,49 @@ export function googleContainerAwsClusterControlPlaneMainVolumeToTerraform(struc
     throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
+}
+
+
+export function googleContainerAwsClusterControlPlaneMainVolumeToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneMainVolumeOutputReference | GoogleContainerAwsClusterControlPlaneMainVolume): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size_gib: {
+      value: cdktf.numberToHclTerraform(struct!.sizeGib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throughput: {
+      value: cdktf.numberToHclTerraform(struct!.throughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterControlPlaneMainVolumeOutputReference extends cdktf.ComplexObject {
@@ -1024,6 +1242,31 @@ export function googleContainerAwsClusterControlPlaneProxyConfigToTerraform(stru
   }
 }
 
+
+export function googleContainerAwsClusterControlPlaneProxyConfigToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneProxyConfigOutputReference | GoogleContainerAwsClusterControlPlaneProxyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    secret_arn: {
+      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterControlPlaneProxyConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1133,6 +1376,49 @@ export function googleContainerAwsClusterControlPlaneRootVolumeToTerraform(struc
     throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
+}
+
+
+export function googleContainerAwsClusterControlPlaneRootVolumeToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference | GoogleContainerAwsClusterControlPlaneRootVolume): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size_gib: {
+      value: cdktf.numberToHclTerraform(struct!.sizeGib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throughput: {
+      value: cdktf.numberToHclTerraform(struct!.throughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference extends cdktf.ComplexObject {
@@ -1290,6 +1576,25 @@ export function googleContainerAwsClusterControlPlaneSshConfigToTerraform(struct
   }
 }
 
+
+export function googleContainerAwsClusterControlPlaneSshConfigToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneSshConfigOutputReference | GoogleContainerAwsClusterControlPlaneSshConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ec2_key_pair: {
+      value: cdktf.stringToHclTerraform(struct!.ec2KeyPair),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterControlPlaneSshConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1443,6 +1748,103 @@ export function googleContainerAwsClusterControlPlaneToTerraform(struct?: Google
     root_volume: googleContainerAwsClusterControlPlaneRootVolumeToTerraform(struct!.rootVolume),
     ssh_config: googleContainerAwsClusterControlPlaneSshConfigToTerraform(struct!.sshConfig),
   }
+}
+
+
+export function googleContainerAwsClusterControlPlaneToHclTerraform(struct?: GoogleContainerAwsClusterControlPlaneOutputReference | GoogleContainerAwsClusterControlPlane): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iam_instance_profile: {
+      value: cdktf.stringToHclTerraform(struct!.iamInstanceProfile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_services_authentication: {
+      value: googleContainerAwsClusterControlPlaneAwsServicesAuthenticationToHclTerraform(struct!.awsServicesAuthentication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationList",
+    },
+    config_encryption: {
+      value: googleContainerAwsClusterControlPlaneConfigEncryptionToHclTerraform(struct!.configEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneConfigEncryptionList",
+    },
+    database_encryption: {
+      value: googleContainerAwsClusterControlPlaneDatabaseEncryptionToHclTerraform(struct!.databaseEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneDatabaseEncryptionList",
+    },
+    instance_placement: {
+      value: googleContainerAwsClusterControlPlaneInstancePlacementToHclTerraform(struct!.instancePlacement),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneInstancePlacementList",
+    },
+    main_volume: {
+      value: googleContainerAwsClusterControlPlaneMainVolumeToHclTerraform(struct!.mainVolume),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneMainVolumeList",
+    },
+    proxy_config: {
+      value: googleContainerAwsClusterControlPlaneProxyConfigToHclTerraform(struct!.proxyConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneProxyConfigList",
+    },
+    root_volume: {
+      value: googleContainerAwsClusterControlPlaneRootVolumeToHclTerraform(struct!.rootVolume),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneRootVolumeList",
+    },
+    ssh_config: {
+      value: googleContainerAwsClusterControlPlaneSshConfigToHclTerraform(struct!.sshConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterControlPlaneSshConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterControlPlaneOutputReference extends cdktf.ComplexObject {
@@ -1780,6 +2182,25 @@ export function googleContainerAwsClusterFleetToTerraform(struct?: GoogleContain
   }
 }
 
+
+export function googleContainerAwsClusterFleetToHclTerraform(struct?: GoogleContainerAwsClusterFleetOutputReference | GoogleContainerAwsClusterFleet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterFleetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1852,6 +2273,25 @@ export function googleContainerAwsClusterLoggingConfigComponentConfigToTerraform
   }
 }
 
+
+export function googleContainerAwsClusterLoggingConfigComponentConfigToHclTerraform(struct?: GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference | GoogleContainerAwsClusterLoggingConfigComponentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_components: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enableComponents),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1917,6 +2357,25 @@ export function googleContainerAwsClusterLoggingConfigToTerraform(struct?: Googl
   return {
     component_config: googleContainerAwsClusterLoggingConfigComponentConfigToTerraform(struct!.componentConfig),
   }
+}
+
+
+export function googleContainerAwsClusterLoggingConfigToHclTerraform(struct?: GoogleContainerAwsClusterLoggingConfigOutputReference | GoogleContainerAwsClusterLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    component_config: {
+      value: googleContainerAwsClusterLoggingConfigComponentConfigToHclTerraform(struct!.componentConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleContainerAwsClusterLoggingConfigComponentConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterLoggingConfigOutputReference extends cdktf.ComplexObject {
@@ -2005,6 +2464,43 @@ export function googleContainerAwsClusterNetworkingToTerraform(struct?: GoogleCo
     service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAddressCidrBlocks),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function googleContainerAwsClusterNetworkingToHclTerraform(struct?: GoogleContainerAwsClusterNetworkingOutputReference | GoogleContainerAwsClusterNetworking): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    per_node_pool_sg_rules_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.perNodePoolSgRulesDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pod_address_cidr_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.podAddressCidrBlocks),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    service_address_cidr_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceAddressCidrBlocks),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterNetworkingOutputReference extends cdktf.ComplexObject {
@@ -2137,6 +2633,37 @@ export function googleContainerAwsClusterTimeoutsToTerraform(struct?: GoogleCont
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleContainerAwsClusterTimeoutsToHclTerraform(struct?: GoogleContainerAwsClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAwsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2584,5 +3111,97 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
       networking: googleContainerAwsClusterNetworkingToTerraform(this._networking.internalValue),
       timeouts: googleContainerAwsClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      aws_region: {
+        value: cdktf.stringToHclTerraform(this._awsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorization: {
+        value: googleContainerAwsClusterAuthorizationToHclTerraform(this._authorization.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterAuthorizationList",
+      },
+      binary_authorization: {
+        value: googleContainerAwsClusterBinaryAuthorizationToHclTerraform(this._binaryAuthorization.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterBinaryAuthorizationList",
+      },
+      control_plane: {
+        value: googleContainerAwsClusterControlPlaneToHclTerraform(this._controlPlane.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterControlPlaneList",
+      },
+      fleet: {
+        value: googleContainerAwsClusterFleetToHclTerraform(this._fleet.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterFleetList",
+      },
+      logging_config: {
+        value: googleContainerAwsClusterLoggingConfigToHclTerraform(this._loggingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterLoggingConfigList",
+      },
+      networking: {
+        value: googleContainerAwsClusterNetworkingToHclTerraform(this._networking.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAwsClusterNetworkingList",
+      },
+      timeouts: {
+        value: googleContainerAwsClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleContainerAwsClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

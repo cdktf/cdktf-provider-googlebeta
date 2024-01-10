@@ -110,6 +110,31 @@ export function googleBeyondcorpAppConnectionApplicationEndpointToTerraform(stru
   }
 }
 
+
+export function googleBeyondcorpAppConnectionApplicationEndpointToHclTerraform(struct?: GoogleBeyondcorpAppConnectionApplicationEndpointOutputReference | GoogleBeyondcorpAppConnectionApplicationEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBeyondcorpAppConnectionApplicationEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -200,6 +225,31 @@ export function googleBeyondcorpAppConnectionGatewayToTerraform(struct?: GoogleB
     app_gateway: cdktf.stringToTerraform(struct!.appGateway),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function googleBeyondcorpAppConnectionGatewayToHclTerraform(struct?: GoogleBeyondcorpAppConnectionGatewayOutputReference | GoogleBeyondcorpAppConnectionGateway): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_gateway: {
+      value: cdktf.stringToHclTerraform(struct!.appGateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBeyondcorpAppConnectionGatewayOutputReference extends cdktf.ComplexObject {
@@ -304,6 +354,37 @@ export function googleBeyondcorpAppConnectionTimeoutsToTerraform(struct?: Google
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleBeyondcorpAppConnectionTimeoutsToHclTerraform(struct?: GoogleBeyondcorpAppConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBeyondcorpAppConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -677,5 +758,79 @@ export class GoogleBeyondcorpAppConnection extends cdktf.TerraformResource {
       gateway: googleBeyondcorpAppConnectionGatewayToTerraform(this._gateway.internalValue),
       timeouts: googleBeyondcorpAppConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connectors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._connectors),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_endpoint: {
+        value: googleBeyondcorpAppConnectionApplicationEndpointToHclTerraform(this._applicationEndpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBeyondcorpAppConnectionApplicationEndpointList",
+      },
+      gateway: {
+        value: googleBeyondcorpAppConnectionGatewayToHclTerraform(this._gateway.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBeyondcorpAppConnectionGatewayList",
+      },
+      timeouts: {
+        value: googleBeyondcorpAppConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBeyondcorpAppConnectionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

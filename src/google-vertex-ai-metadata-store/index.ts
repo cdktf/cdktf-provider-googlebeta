@@ -66,6 +66,17 @@ export function googleVertexAiMetadataStoreStateToTerraform(struct?: GoogleVerte
   }
 }
 
+
+export function googleVertexAiMetadataStoreStateToHclTerraform(struct?: GoogleVertexAiMetadataStoreState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleVertexAiMetadataStoreStateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -138,6 +149,25 @@ export function googleVertexAiMetadataStoreEncryptionSpecToTerraform(struct?: Go
   }
 }
 
+
+export function googleVertexAiMetadataStoreEncryptionSpecToHclTerraform(struct?: GoogleVertexAiMetadataStoreEncryptionSpecOutputReference | GoogleVertexAiMetadataStoreEncryptionSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleVertexAiMetadataStoreEncryptionSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -206,6 +236,31 @@ export function googleVertexAiMetadataStoreTimeoutsToTerraform(struct?: GoogleVe
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleVertexAiMetadataStoreTimeoutsToHclTerraform(struct?: GoogleVertexAiMetadataStoreTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiMetadataStoreTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -495,5 +550,55 @@ export class GoogleVertexAiMetadataStore extends cdktf.TerraformResource {
       encryption_spec: googleVertexAiMetadataStoreEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       timeouts: googleVertexAiMetadataStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_spec: {
+        value: googleVertexAiMetadataStoreEncryptionSpecToHclTerraform(this._encryptionSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleVertexAiMetadataStoreEncryptionSpecList",
+      },
+      timeouts: {
+        value: googleVertexAiMetadataStoreTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleVertexAiMetadataStoreTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

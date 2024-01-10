@@ -81,6 +81,25 @@ export function googleMonitoringCustomServiceTelemetryToTerraform(struct?: Googl
   }
 }
 
+
+export function googleMonitoringCustomServiceTelemetryToHclTerraform(struct?: GoogleMonitoringCustomServiceTelemetryOutputReference | GoogleMonitoringCustomServiceTelemetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringCustomServiceTelemetryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -154,6 +173,37 @@ export function googleMonitoringCustomServiceTimeoutsToTerraform(struct?: Google
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleMonitoringCustomServiceTimeoutsToHclTerraform(struct?: GoogleMonitoringCustomServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringCustomServiceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -454,5 +504,55 @@ export class GoogleMonitoringCustomService extends cdktf.TerraformResource {
       telemetry: googleMonitoringCustomServiceTelemetryToTerraform(this._telemetry.internalValue),
       timeouts: googleMonitoringCustomServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_id: {
+        value: cdktf.stringToHclTerraform(this._serviceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._userLabels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      telemetry: {
+        value: googleMonitoringCustomServiceTelemetryToHclTerraform(this._telemetry.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMonitoringCustomServiceTelemetryList",
+      },
+      timeouts: {
+        value: googleMonitoringCustomServiceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleMonitoringCustomServiceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

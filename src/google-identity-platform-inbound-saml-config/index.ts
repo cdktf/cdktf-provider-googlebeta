@@ -81,6 +81,25 @@ export function googleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesT
   }
 }
 
+
+export function googleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesToHclTerraform(struct?: GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificates | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    x509_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.x509Certificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -201,6 +220,43 @@ export function googleIdentityPlatformInboundSamlConfigIdpConfigToTerraform(stru
   }
 }
 
+
+export function googleIdentityPlatformInboundSamlConfigIdpConfigToHclTerraform(struct?: GoogleIdentityPlatformInboundSamlConfigIdpConfigOutputReference | GoogleIdentityPlatformInboundSamlConfigIdpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    idp_entity_id: {
+      value: cdktf.stringToHclTerraform(struct!.idpEntityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sign_request: {
+      value: cdktf.booleanToHclTerraform(struct!.signRequest),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sso_url: {
+      value: cdktf.stringToHclTerraform(struct!.ssoUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    idp_certificates: {
+      value: cdktf.listMapperHcl(googleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesToHclTerraform, true)(struct!.idpCertificates),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIdentityPlatformInboundSamlConfigIdpConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -318,6 +374,17 @@ export function googleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesToT
   }
 }
 
+
+export function googleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesToHclTerraform(struct?: GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -394,6 +461,31 @@ export function googleIdentityPlatformInboundSamlConfigSpConfigToTerraform(struc
     callback_uri: cdktf.stringToTerraform(struct!.callbackUri),
     sp_entity_id: cdktf.stringToTerraform(struct!.spEntityId),
   }
+}
+
+
+export function googleIdentityPlatformInboundSamlConfigSpConfigToHclTerraform(struct?: GoogleIdentityPlatformInboundSamlConfigSpConfigOutputReference | GoogleIdentityPlatformInboundSamlConfigSpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    callback_uri: {
+      value: cdktf.stringToHclTerraform(struct!.callbackUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sp_entity_id: {
+      value: cdktf.stringToHclTerraform(struct!.spEntityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformInboundSamlConfigSpConfigOutputReference extends cdktf.ComplexObject {
@@ -497,6 +589,37 @@ export function googleIdentityPlatformInboundSamlConfigTimeoutsToTerraform(struc
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleIdentityPlatformInboundSamlConfigTimeoutsToHclTerraform(struct?: GoogleIdentityPlatformInboundSamlConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -798,5 +921,61 @@ export class GoogleIdentityPlatformInboundSamlConfig extends cdktf.TerraformReso
       sp_config: googleIdentityPlatformInboundSamlConfigSpConfigToTerraform(this._spConfig.internalValue),
       timeouts: googleIdentityPlatformInboundSamlConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_config: {
+        value: googleIdentityPlatformInboundSamlConfigIdpConfigToHclTerraform(this._idpConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIdentityPlatformInboundSamlConfigIdpConfigList",
+      },
+      sp_config: {
+        value: googleIdentityPlatformInboundSamlConfigSpConfigToHclTerraform(this._spConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIdentityPlatformInboundSamlConfigSpConfigList",
+      },
+      timeouts: {
+        value: googleIdentityPlatformInboundSamlConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleIdentityPlatformInboundSamlConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 googlecloudfunctions2functioniampolicy.NewGoogleCloudfunctions2FunctionIamPolicy(scope Construct, id *string, config GoogleCloudfunctions2FunctionIamPolicyConfig) GoogleCloudfunctions2FunctionIamPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamPolicy.GoogleCloudfunctions2FunctionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2functioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudfunctions2functioniampolicy"
 
 &googlecloudfunctions2functioniampolicy.GoogleCloudfunctions2FunctionIamPolicyConfig {
 	Connection: interface{},

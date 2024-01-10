@@ -62,6 +62,17 @@ export function googleApigeeSharedflowMetaDataToTerraform(struct?: GoogleApigeeS
   }
 }
 
+
+export function googleApigeeSharedflowMetaDataToHclTerraform(struct?: GoogleApigeeSharedflowMetaData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleApigeeSharedflowMetaDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -149,6 +160,37 @@ export function googleApigeeSharedflowTimeoutsToTerraform(struct?: GoogleApigeeS
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleApigeeSharedflowTimeoutsToHclTerraform(struct?: GoogleApigeeSharedflowTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeSharedflowTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -438,5 +480,49 @@ export class GoogleApigeeSharedflow extends cdktf.TerraformResource {
       org_id: cdktf.stringToTerraform(this._orgId),
       timeouts: googleApigeeSharedflowTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config_bundle: {
+        value: cdktf.stringToHclTerraform(this._configBundle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      detect_md5hash: {
+        value: cdktf.stringToHclTerraform(this._detectMd5Hash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleApigeeSharedflowTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleApigeeSharedflowTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

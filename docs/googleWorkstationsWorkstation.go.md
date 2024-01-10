@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstation(scope Construct, id *string, config GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.toMetadata"></a>
 
@@ -433,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationConfig {
 	Connection: interface{},
@@ -1072,7 +1079,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworks
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
 }
 ```
 
@@ -1335,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationTimeouts {
 	Create: *string,
@@ -1397,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationTimeoutsOutputReference
 ```
