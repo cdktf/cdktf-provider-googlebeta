@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.NewGoogleArtifactRegistryVpcscConfig(scope Construct, id *string, config GoogleArtifactRegistryVpcscConfigConfig) GoogleArtifactRegistryVpcscConfig
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetVpcscPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +836,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 &googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfigConfig {
 	Connection: interface{},
@@ -842,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartif
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts,
 	VpcscPolicy: *string,
 }
 ```
@@ -1010,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 &googleartifactregistryvpcscconfig.GoogleArtifactRegistryVpcscConfigTimeouts {
 	Create: *string,
@@ -1072,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryVpcscConfig.GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleartifactregistryvpcscconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryvpcscconfig"
 
 googleartifactregistryvpcscconfig.NewGoogleArtifactRegistryVpcscConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryVpcscConfigTimeoutsOutputReference
 ```

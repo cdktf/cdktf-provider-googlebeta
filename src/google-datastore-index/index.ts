@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_datastore_index
 // generated from terraform resource schema
 
@@ -72,6 +67,31 @@ export function googleDatastoreIndexPropertiesToTerraform(struct?: GoogleDatasto
     direction: cdktf.stringToTerraform(struct!.direction),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function googleDatastoreIndexPropertiesToHclTerraform(struct?: GoogleDatastoreIndexProperties | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatastoreIndexPropertiesOutputReference extends cdktf.ComplexObject {
@@ -190,6 +210,31 @@ export function googleDatastoreIndexTimeoutsToTerraform(struct?: GoogleDatastore
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleDatastoreIndexTimeoutsToHclTerraform(struct?: GoogleDatastoreIndexTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatastoreIndexTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -447,5 +492,49 @@ export class GoogleDatastoreIndex extends cdktf.TerraformResource {
       properties: cdktf.listMapper(googleDatastoreIndexPropertiesToTerraform, true)(this._properties.internalValue),
       timeouts: googleDatastoreIndexTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ancestor: {
+        value: cdktf.stringToHclTerraform(this._ancestor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      properties: {
+        value: cdktf.listMapperHcl(googleDatastoreIndexPropertiesToHclTerraform, true)(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDatastoreIndexPropertiesList",
+      },
+      timeouts: {
+        value: googleDatastoreIndexTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDatastoreIndexTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_bigquery_job
 // generated from terraform resource schema
 
@@ -94,6 +89,17 @@ export function googleBigqueryJobStatusErrorResultToTerraform(struct?: GoogleBig
   }
 }
 
+
+export function googleBigqueryJobStatusErrorResultToHclTerraform(struct?: GoogleBigqueryJobStatusErrorResult): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleBigqueryJobStatusErrorResultOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -168,6 +174,17 @@ export function googleBigqueryJobStatusErrorsToTerraform(struct?: GoogleBigquery
   }
 }
 
+
+export function googleBigqueryJobStatusErrorsToHclTerraform(struct?: GoogleBigqueryJobStatusErrors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleBigqueryJobStatusErrorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -240,6 +257,17 @@ export function googleBigqueryJobStatusToTerraform(struct?: GoogleBigqueryJobSta
   }
   return {
   }
+}
+
+
+export function googleBigqueryJobStatusToHclTerraform(struct?: GoogleBigqueryJobStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleBigqueryJobStatusOutputReference extends cdktf.ComplexObject {
@@ -326,6 +354,25 @@ export function googleBigqueryJobCopyDestinationEncryptionConfigurationToTerrafo
   }
 }
 
+
+export function googleBigqueryJobCopyDestinationEncryptionConfigurationToHclTerraform(struct?: GoogleBigqueryJobCopyDestinationEncryptionConfigurationOutputReference | GoogleBigqueryJobCopyDestinationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobCopyDestinationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -408,6 +455,37 @@ export function googleBigqueryJobCopyDestinationTableToTerraform(struct?: Google
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleBigqueryJobCopyDestinationTableToHclTerraform(struct?: GoogleBigqueryJobCopyDestinationTableOutputReference | GoogleBigqueryJobCopyDestinationTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobCopyDestinationTableOutputReference extends cdktf.ComplexObject {
@@ -531,6 +609,37 @@ export function googleBigqueryJobCopySourceTablesToTerraform(struct?: GoogleBigq
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleBigqueryJobCopySourceTablesToHclTerraform(struct?: GoogleBigqueryJobCopySourceTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobCopySourceTablesOutputReference extends cdktf.ComplexObject {
@@ -709,6 +818,49 @@ export function googleBigqueryJobCopyToTerraform(struct?: GoogleBigqueryJobCopyO
   }
 }
 
+
+export function googleBigqueryJobCopyToHclTerraform(struct?: GoogleBigqueryJobCopyOutputReference | GoogleBigqueryJobCopy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.createDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    write_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.writeDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_encryption_configuration: {
+      value: googleBigqueryJobCopyDestinationEncryptionConfigurationToHclTerraform(struct!.destinationEncryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobCopyDestinationEncryptionConfigurationList",
+    },
+    destination_table: {
+      value: googleBigqueryJobCopyDestinationTableToHclTerraform(struct!.destinationTable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobCopyDestinationTableList",
+    },
+    source_tables: {
+      value: cdktf.listMapperHcl(googleBigqueryJobCopySourceTablesToHclTerraform, true)(struct!.sourceTables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobCopySourceTablesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobCopyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -875,6 +1027,37 @@ export function googleBigqueryJobExtractSourceModelToTerraform(struct?: GoogleBi
   }
 }
 
+
+export function googleBigqueryJobExtractSourceModelToHclTerraform(struct?: GoogleBigqueryJobExtractSourceModelOutputReference | GoogleBigqueryJobExtractSourceModel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_id: {
+      value: cdktf.stringToHclTerraform(struct!.modelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobExtractSourceModelOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -990,6 +1173,37 @@ export function googleBigqueryJobExtractSourceTableToTerraform(struct?: GoogleBi
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleBigqueryJobExtractSourceTableToHclTerraform(struct?: GoogleBigqueryJobExtractSourceTableOutputReference | GoogleBigqueryJobExtractSourceTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobExtractSourceTableOutputReference extends cdktf.ComplexObject {
@@ -1151,6 +1365,67 @@ export function googleBigqueryJobExtractToTerraform(struct?: GoogleBigqueryJobEx
     source_model: googleBigqueryJobExtractSourceModelToTerraform(struct!.sourceModel),
     source_table: googleBigqueryJobExtractSourceTableToTerraform(struct!.sourceTable),
   }
+}
+
+
+export function googleBigqueryJobExtractToHclTerraform(struct?: GoogleBigqueryJobExtractOutputReference | GoogleBigqueryJobExtract): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compression: {
+      value: cdktf.stringToHclTerraform(struct!.compression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_format: {
+      value: cdktf.stringToHclTerraform(struct!.destinationFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    field_delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.fieldDelimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    print_header: {
+      value: cdktf.booleanToHclTerraform(struct!.printHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_avro_logical_types: {
+      value: cdktf.booleanToHclTerraform(struct!.useAvroLogicalTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    source_model: {
+      value: googleBigqueryJobExtractSourceModelToHclTerraform(struct!.sourceModel),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobExtractSourceModelList",
+    },
+    source_table: {
+      value: googleBigqueryJobExtractSourceTableToHclTerraform(struct!.sourceTable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobExtractSourceTableList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobExtractOutputReference extends cdktf.ComplexObject {
@@ -1372,6 +1647,25 @@ export function googleBigqueryJobLoadDestinationEncryptionConfigurationToTerrafo
   }
 }
 
+
+export function googleBigqueryJobLoadDestinationEncryptionConfigurationToHclTerraform(struct?: GoogleBigqueryJobLoadDestinationEncryptionConfigurationOutputReference | GoogleBigqueryJobLoadDestinationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobLoadDestinationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1454,6 +1748,37 @@ export function googleBigqueryJobLoadDestinationTableToTerraform(struct?: Google
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleBigqueryJobLoadDestinationTableToHclTerraform(struct?: GoogleBigqueryJobLoadDestinationTableOutputReference | GoogleBigqueryJobLoadDestinationTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobLoadDestinationTableOutputReference extends cdktf.ComplexObject {
@@ -1571,6 +1896,31 @@ export function googleBigqueryJobLoadParquetOptionsToTerraform(struct?: GoogleBi
   }
 }
 
+
+export function googleBigqueryJobLoadParquetOptionsToHclTerraform(struct?: GoogleBigqueryJobLoadParquetOptionsOutputReference | GoogleBigqueryJobLoadParquetOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_list_inference: {
+      value: cdktf.booleanToHclTerraform(struct!.enableListInference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enum_as_string: {
+      value: cdktf.booleanToHclTerraform(struct!.enumAsString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobLoadParquetOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1675,6 +2025,37 @@ export function googleBigqueryJobLoadTimePartitioningToTerraform(struct?: Google
     field: cdktf.stringToTerraform(struct!.field),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function googleBigqueryJobLoadTimePartitioningToHclTerraform(struct?: GoogleBigqueryJobLoadTimePartitioningOutputReference | GoogleBigqueryJobLoadTimePartitioning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expiration_ms: {
+      value: cdktf.stringToHclTerraform(struct!.expirationMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobLoadTimePartitioningOutputReference extends cdktf.ComplexObject {
@@ -1976,6 +2357,145 @@ export function googleBigqueryJobLoadToTerraform(struct?: GoogleBigqueryJobLoadO
     parquet_options: googleBigqueryJobLoadParquetOptionsToTerraform(struct!.parquetOptions),
     time_partitioning: googleBigqueryJobLoadTimePartitioningToTerraform(struct!.timePartitioning),
   }
+}
+
+
+export function googleBigqueryJobLoadToHclTerraform(struct?: GoogleBigqueryJobLoadOutputReference | GoogleBigqueryJobLoad): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_jagged_rows: {
+      value: cdktf.booleanToHclTerraform(struct!.allowJaggedRows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_quoted_newlines: {
+      value: cdktf.booleanToHclTerraform(struct!.allowQuotedNewlines),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    autodetect: {
+      value: cdktf.booleanToHclTerraform(struct!.autodetect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    create_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.createDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encoding: {
+      value: cdktf.stringToHclTerraform(struct!.encoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.fieldDelimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_unknown_values: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreUnknownValues),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    json_extension: {
+      value: cdktf.stringToHclTerraform(struct!.jsonExtension),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_bad_records: {
+      value: cdktf.numberToHclTerraform(struct!.maxBadRecords),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    null_marker: {
+      value: cdktf.stringToHclTerraform(struct!.nullMarker),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    projection_fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.projectionFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    quote: {
+      value: cdktf.stringToHclTerraform(struct!.quote),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_update_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.schemaUpdateOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    skip_leading_rows: {
+      value: cdktf.numberToHclTerraform(struct!.skipLeadingRows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    source_format: {
+      value: cdktf.stringToHclTerraform(struct!.sourceFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_uris: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceUris),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    write_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.writeDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_encryption_configuration: {
+      value: googleBigqueryJobLoadDestinationEncryptionConfigurationToHclTerraform(struct!.destinationEncryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobLoadDestinationEncryptionConfigurationList",
+    },
+    destination_table: {
+      value: googleBigqueryJobLoadDestinationTableToHclTerraform(struct!.destinationTable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobLoadDestinationTableList",
+    },
+    parquet_options: {
+      value: googleBigqueryJobLoadParquetOptionsToHclTerraform(struct!.parquetOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobLoadParquetOptionsList",
+    },
+    time_partitioning: {
+      value: googleBigqueryJobLoadTimePartitioningToHclTerraform(struct!.timePartitioning),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobLoadTimePartitioningList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobLoadOutputReference extends cdktf.ComplexObject {
@@ -2487,6 +3007,31 @@ export function googleBigqueryJobQueryDefaultDatasetToTerraform(struct?: GoogleB
   }
 }
 
+
+export function googleBigqueryJobQueryDefaultDatasetToHclTerraform(struct?: GoogleBigqueryJobQueryDefaultDatasetOutputReference | GoogleBigqueryJobQueryDefaultDataset): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobQueryDefaultDatasetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2574,6 +3119,25 @@ export function googleBigqueryJobQueryDestinationEncryptionConfigurationToTerraf
   }
 }
 
+
+export function googleBigqueryJobQueryDestinationEncryptionConfigurationToHclTerraform(struct?: GoogleBigqueryJobQueryDestinationEncryptionConfigurationOutputReference | GoogleBigqueryJobQueryDestinationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobQueryDestinationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2656,6 +3220,37 @@ export function googleBigqueryJobQueryDestinationTableToTerraform(struct?: Googl
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleBigqueryJobQueryDestinationTableToHclTerraform(struct?: GoogleBigqueryJobQueryDestinationTableOutputReference | GoogleBigqueryJobQueryDestinationTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobQueryDestinationTableOutputReference extends cdktf.ComplexObject {
@@ -2781,6 +3376,37 @@ export function googleBigqueryJobQueryScriptOptionsToTerraform(struct?: GoogleBi
   }
 }
 
+
+export function googleBigqueryJobQueryScriptOptionsToHclTerraform(struct?: GoogleBigqueryJobQueryScriptOptionsOutputReference | GoogleBigqueryJobQueryScriptOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_result_statement: {
+      value: cdktf.stringToHclTerraform(struct!.keyResultStatement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    statement_byte_budget: {
+      value: cdktf.stringToHclTerraform(struct!.statementByteBudget),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    statement_timeout_ms: {
+      value: cdktf.stringToHclTerraform(struct!.statementTimeoutMs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobQueryScriptOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2898,6 +3524,31 @@ export function googleBigqueryJobQueryUserDefinedFunctionResourcesToTerraform(st
     inline_code: cdktf.stringToTerraform(struct!.inlineCode),
     resource_uri: cdktf.stringToTerraform(struct!.resourceUri),
   }
+}
+
+
+export function googleBigqueryJobQueryUserDefinedFunctionResourcesToHclTerraform(struct?: GoogleBigqueryJobQueryUserDefinedFunctionResources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    inline_code: {
+      value: cdktf.stringToHclTerraform(struct!.inlineCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_uri: {
+      value: cdktf.stringToHclTerraform(struct!.resourceUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobQueryUserDefinedFunctionResourcesOutputReference extends cdktf.ComplexObject {
@@ -3155,6 +3806,121 @@ export function googleBigqueryJobQueryToTerraform(struct?: GoogleBigqueryJobQuer
     script_options: googleBigqueryJobQueryScriptOptionsToTerraform(struct!.scriptOptions),
     user_defined_function_resources: cdktf.listMapper(googleBigqueryJobQueryUserDefinedFunctionResourcesToTerraform, true)(struct!.userDefinedFunctionResources),
   }
+}
+
+
+export function googleBigqueryJobQueryToHclTerraform(struct?: GoogleBigqueryJobQueryOutputReference | GoogleBigqueryJobQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_large_results: {
+      value: cdktf.booleanToHclTerraform(struct!.allowLargeResults),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    create_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.createDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    flatten_results: {
+      value: cdktf.booleanToHclTerraform(struct!.flattenResults),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    maximum_billing_tier: {
+      value: cdktf.numberToHclTerraform(struct!.maximumBillingTier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_bytes_billed: {
+      value: cdktf.stringToHclTerraform(struct!.maximumBytesBilled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_mode: {
+      value: cdktf.stringToHclTerraform(struct!.parameterMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.stringToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_update_options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.schemaUpdateOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    use_legacy_sql: {
+      value: cdktf.booleanToHclTerraform(struct!.useLegacySql),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_query_cache: {
+      value: cdktf.booleanToHclTerraform(struct!.useQueryCache),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    write_disposition: {
+      value: cdktf.stringToHclTerraform(struct!.writeDisposition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_dataset: {
+      value: googleBigqueryJobQueryDefaultDatasetToHclTerraform(struct!.defaultDataset),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobQueryDefaultDatasetList",
+    },
+    destination_encryption_configuration: {
+      value: googleBigqueryJobQueryDestinationEncryptionConfigurationToHclTerraform(struct!.destinationEncryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobQueryDestinationEncryptionConfigurationList",
+    },
+    destination_table: {
+      value: googleBigqueryJobQueryDestinationTableToHclTerraform(struct!.destinationTable),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobQueryDestinationTableList",
+    },
+    script_options: {
+      value: googleBigqueryJobQueryScriptOptionsToHclTerraform(struct!.scriptOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobQueryScriptOptionsList",
+    },
+    user_defined_function_resources: {
+      value: cdktf.listMapperHcl(googleBigqueryJobQueryUserDefinedFunctionResourcesToHclTerraform, true)(struct!.userDefinedFunctionResources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryJobQueryUserDefinedFunctionResourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBigqueryJobQueryOutputReference extends cdktf.ComplexObject {
@@ -3576,6 +4342,31 @@ export function googleBigqueryJobTimeoutsToTerraform(struct?: GoogleBigqueryJobT
   }
 }
 
+
+export function googleBigqueryJobTimeoutsToHclTerraform(struct?: GoogleBigqueryJobTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBigqueryJobTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3944,5 +4735,79 @@ export class GoogleBigqueryJob extends cdktf.TerraformResource {
       query: googleBigqueryJobQueryToTerraform(this._query.internalValue),
       timeouts: googleBigqueryJobTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_id: {
+        value: cdktf.stringToHclTerraform(this._jobId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_timeout_ms: {
+        value: cdktf.stringToHclTerraform(this._jobTimeoutMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      copy: {
+        value: googleBigqueryJobCopyToHclTerraform(this._copy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryJobCopyList",
+      },
+      extract: {
+        value: googleBigqueryJobExtractToHclTerraform(this._extract.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryJobExtractList",
+      },
+      load: {
+        value: googleBigqueryJobLoadToHclTerraform(this._load.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryJobLoadList",
+      },
+      query: {
+        value: googleBigqueryJobQueryToHclTerraform(this._query.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryJobQueryList",
+      },
+      timeouts: {
+        value: googleBigqueryJobTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBigqueryJobTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

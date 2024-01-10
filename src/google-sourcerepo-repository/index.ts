@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_sourcerepo_repository
 // generated from terraform resource schema
 
@@ -77,6 +72,37 @@ export function googleSourcerepoRepositoryPubsubConfigsToTerraform(struct?: Goog
     service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
     topic: cdktf.stringToTerraform(struct!.topic),
   }
+}
+
+
+export function googleSourcerepoRepositoryPubsubConfigsToHclTerraform(struct?: GoogleSourcerepoRepositoryPubsubConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    message_format: {
+      value: cdktf.stringToHclTerraform(struct!.messageFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_account_email: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSourcerepoRepositoryPubsubConfigsOutputReference extends cdktf.ComplexObject {
@@ -222,6 +248,37 @@ export function googleSourcerepoRepositoryTimeoutsToTerraform(struct?: GoogleSou
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleSourcerepoRepositoryTimeoutsToHclTerraform(struct?: GoogleSourcerepoRepositoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSourcerepoRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -488,5 +545,43 @@ export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
       pubsub_configs: cdktf.listMapper(googleSourcerepoRepositoryPubsubConfigsToTerraform, true)(this._pubsubConfigs.internalValue),
       timeouts: googleSourcerepoRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pubsub_configs: {
+        value: cdktf.listMapperHcl(googleSourcerepoRepositoryPubsubConfigsToHclTerraform, true)(this._pubsubConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleSourcerepoRepositoryPubsubConfigsList",
+      },
+      timeouts: {
+        value: googleSourcerepoRepositoryTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSourcerepoRepositoryTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_iam_access_boundary_policy
 // generated from terraform resource schema
 
@@ -91,6 +86,43 @@ export function googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailability
     location: cdktf.stringToTerraform(struct!.location),
     title: cdktf.stringToTerraform(struct!.title),
   }
+}
+
+
+export function googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionToHclTerraform(struct?: GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference | GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference extends cdktf.ComplexObject {
@@ -237,6 +269,37 @@ export function googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleToTerraform(
   }
 }
 
+
+export function googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleToHclTerraform(struct?: GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference | GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    available_permissions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.availablePermissions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    available_resource: {
+      value: cdktf.stringToHclTerraform(struct!.availableResource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    availability_condition: {
+      value: googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionToHclTerraform(struct!.availabilityCondition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -353,6 +416,31 @@ export function googleIamAccessBoundaryPolicyRulesToTerraform(struct?: GoogleIam
     description: cdktf.stringToTerraform(struct!.description),
     access_boundary_rule: googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleToTerraform(struct!.accessBoundaryRule),
   }
+}
+
+
+export function googleIamAccessBoundaryPolicyRulesToHclTerraform(struct?: GoogleIamAccessBoundaryPolicyRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_boundary_rule: {
+      value: googleIamAccessBoundaryPolicyRulesAccessBoundaryRuleToHclTerraform(struct!.accessBoundaryRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamAccessBoundaryPolicyRulesOutputReference extends cdktf.ComplexObject {
@@ -482,6 +570,37 @@ export function googleIamAccessBoundaryPolicyTimeoutsToTerraform(struct?: Google
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleIamAccessBoundaryPolicyTimeoutsToHclTerraform(struct?: GoogleIamAccessBoundaryPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIamAccessBoundaryPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -755,5 +874,49 @@ export class GoogleIamAccessBoundaryPolicy extends cdktf.TerraformResource {
       rules: cdktf.listMapper(googleIamAccessBoundaryPolicyRulesToTerraform, true)(this._rules.internalValue),
       timeouts: googleIamAccessBoundaryPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleIamAccessBoundaryPolicyRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIamAccessBoundaryPolicyRulesList",
+      },
+      timeouts: {
+        value: googleIamAccessBoundaryPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleIamAccessBoundaryPolicyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

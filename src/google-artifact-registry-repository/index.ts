@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_artifact_registry_repository
 // generated from terraform resource schema
 
@@ -176,6 +171,55 @@ export function googleArtifactRegistryRepositoryCleanupPoliciesConditionToTerraf
     tag_state: cdktf.stringToTerraform(struct!.tagState),
     version_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.versionNamePrefixes),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryCleanupPoliciesConditionToHclTerraform(struct?: GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference | GoogleArtifactRegistryRepositoryCleanupPoliciesCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    newer_than: {
+      value: cdktf.stringToHclTerraform(struct!.newerThan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    older_than: {
+      value: cdktf.stringToHclTerraform(struct!.olderThan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    package_name_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    tag_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagPrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    tag_state: {
+      value: cdktf.stringToHclTerraform(struct!.tagState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version_name_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.versionNamePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference extends cdktf.ComplexObject {
@@ -362,6 +406,31 @@ export function googleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersion
   }
 }
 
+
+export function googleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToHclTerraform(struct?: GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference | GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keep_count: {
+      value: cdktf.numberToHclTerraform(struct!.keepCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    package_name_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -471,6 +540,43 @@ export function googleArtifactRegistryRepositoryCleanupPoliciesToTerraform(struc
     condition: googleArtifactRegistryRepositoryCleanupPoliciesConditionToTerraform(struct!.condition),
     most_recent_versions: googleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToTerraform(struct!.mostRecentVersions),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryCleanupPoliciesToHclTerraform(struct?: GoogleArtifactRegistryRepositoryCleanupPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    condition: {
+      value: googleArtifactRegistryRepositoryCleanupPoliciesConditionToHclTerraform(struct!.condition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryCleanupPoliciesConditionList",
+    },
+    most_recent_versions: {
+      value: googleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToHclTerraform(struct!.mostRecentVersions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cdktf.ComplexObject {
@@ -635,6 +741,25 @@ export function googleArtifactRegistryRepositoryDockerConfigToTerraform(struct?:
   }
 }
 
+
+export function googleArtifactRegistryRepositoryDockerConfigToHclTerraform(struct?: GoogleArtifactRegistryRepositoryDockerConfigOutputReference | GoogleArtifactRegistryRepositoryDockerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    immutable_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.immutableTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryDockerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -708,6 +833,31 @@ export function googleArtifactRegistryRepositoryMavenConfigToTerraform(struct?: 
     allow_snapshot_overwrites: cdktf.booleanToTerraform(struct!.allowSnapshotOverwrites),
     version_policy: cdktf.stringToTerraform(struct!.versionPolicy),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryMavenConfigToHclTerraform(struct?: GoogleArtifactRegistryRepositoryMavenConfigOutputReference | GoogleArtifactRegistryRepositoryMavenConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_snapshot_overwrites: {
+      value: cdktf.booleanToHclTerraform(struct!.allowSnapshotOverwrites),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    version_policy: {
+      value: cdktf.stringToHclTerraform(struct!.versionPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryMavenConfigOutputReference extends cdktf.ComplexObject {
@@ -806,6 +956,31 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigAptReposit
   }
 }
 
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_base: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryBase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository_path: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -889,6 +1064,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigAptReposit
   }
 }
 
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryToHclTerraform(struct!.publicRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -954,6 +1148,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepo
   return {
     public_repository: cdktf.stringToTerraform(struct!.publicRepository),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference extends cdktf.ComplexObject {
@@ -1023,6 +1236,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepos
   }
 }
 
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1090,6 +1322,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigNpmReposit
   }
 }
 
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1155,6 +1406,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepo
   return {
     public_repository: cdktf.stringToTerraform(struct!.publicRepository),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference extends cdktf.ComplexObject {
@@ -1231,6 +1501,31 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCr
     password_secret_version: cdktf.stringToTerraform(struct!.passwordSecretVersion),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.passwordSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference extends cdktf.ComplexObject {
@@ -1322,6 +1617,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCr
   }
 }
 
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    username_password_credentials: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsToHclTerraform(struct!.usernamePasswordCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1394,6 +1708,31 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigYumReposit
     repository_base: cdktf.stringToTerraform(struct!.repositoryBase),
     repository_path: cdktf.stringToTerraform(struct!.repositoryPath),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_base: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryBase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository_path: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference extends cdktf.ComplexObject {
@@ -1477,6 +1816,25 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigYumReposit
   return {
     public_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryToTerraform(struct!.publicRepository),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryToHclTerraform(struct!.publicRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference extends cdktf.ComplexObject {
@@ -1593,6 +1951,67 @@ export function googleArtifactRegistryRepositoryRemoteRepositoryConfigToTerrafor
     upstream_credentials: googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsToTerraform(struct!.upstreamCredentials),
     yum_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToTerraform(struct!.yumRepository),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigToHclTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apt_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToHclTerraform(struct!.aptRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList",
+    },
+    docker_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToHclTerraform(struct!.dockerRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList",
+    },
+    maven_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToHclTerraform(struct!.mavenRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryList",
+    },
+    npm_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToHclTerraform(struct!.npmRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryList",
+    },
+    python_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToHclTerraform(struct!.pythonRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryList",
+    },
+    upstream_credentials: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsToHclTerraform(struct!.upstreamCredentials),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList",
+    },
+    yum_repository: {
+      value: googleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToHclTerraform(struct!.yumRepository),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference extends cdktf.ComplexObject {
@@ -1824,6 +2243,37 @@ export function googleArtifactRegistryRepositoryTimeoutsToTerraform(struct?: Goo
   }
 }
 
+
+export function googleArtifactRegistryRepositoryTimeoutsToHclTerraform(struct?: GoogleArtifactRegistryRepositoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleArtifactRegistryRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1961,6 +2411,37 @@ export function googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamP
     priority: cdktf.numberToTerraform(struct!.priority),
     repository: cdktf.stringToTerraform(struct!.repository),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform(struct?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference extends cdktf.ComplexObject {
@@ -2104,6 +2585,25 @@ export function googleArtifactRegistryRepositoryVirtualRepositoryConfigToTerrafo
   return {
     upstream_policies: cdktf.listMapper(googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform, true)(struct!.upstreamPolicies),
   }
+}
+
+
+export function googleArtifactRegistryRepositoryVirtualRepositoryConfigToHclTerraform(struct?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference | GoogleArtifactRegistryRepositoryVirtualRepositoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    upstream_policies: {
+      value: cdktf.listMapperHcl(googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform, true)(struct!.upstreamPolicies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference extends cdktf.ComplexObject {
@@ -2528,5 +3028,109 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
       timeouts: googleArtifactRegistryRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
       virtual_repository_config: googleArtifactRegistryRepositoryVirtualRepositoryConfigToTerraform(this._virtualRepositoryConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cleanup_policy_dry_run: {
+        value: cdktf.booleanToHclTerraform(this._cleanupPolicyDryRun),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      format: {
+        value: cdktf.stringToHclTerraform(this._format),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_name: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mode: {
+        value: cdktf.stringToHclTerraform(this._mode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_id: {
+        value: cdktf.stringToHclTerraform(this._repositoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cleanup_policies: {
+        value: cdktf.listMapperHcl(googleArtifactRegistryRepositoryCleanupPoliciesToHclTerraform, true)(this._cleanupPolicies.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleArtifactRegistryRepositoryCleanupPoliciesList",
+      },
+      docker_config: {
+        value: googleArtifactRegistryRepositoryDockerConfigToHclTerraform(this._dockerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleArtifactRegistryRepositoryDockerConfigList",
+      },
+      maven_config: {
+        value: googleArtifactRegistryRepositoryMavenConfigToHclTerraform(this._mavenConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleArtifactRegistryRepositoryMavenConfigList",
+      },
+      remote_repository_config: {
+        value: googleArtifactRegistryRepositoryRemoteRepositoryConfigToHclTerraform(this._remoteRepositoryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleArtifactRegistryRepositoryRemoteRepositoryConfigList",
+      },
+      timeouts: {
+        value: googleArtifactRegistryRepositoryTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleArtifactRegistryRepositoryTimeouts",
+      },
+      virtual_repository_config: {
+        value: googleArtifactRegistryRepositoryVirtualRepositoryConfigToHclTerraform(this._virtualRepositoryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleArtifactRegistryRepositoryVirtualRepositoryConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

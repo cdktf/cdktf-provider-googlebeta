@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_data_loss_prevention_stored_info_type
 // generated from terraform resource schema
 
@@ -94,6 +89,25 @@ export function googleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath
   }
 }
 
+
+export function googleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -157,6 +171,25 @@ export function googleDataLossPreventionStoredInfoTypeDictionaryWordListStructTo
   return {
     words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeDictionaryWordListStructToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    words: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.words),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
@@ -228,6 +261,31 @@ export function googleDataLossPreventionStoredInfoTypeDictionaryToTerraform(stru
     cloud_storage_path: googleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathToTerraform(struct!.cloudStoragePath),
     word_list: googleDataLossPreventionStoredInfoTypeDictionaryWordListStructToTerraform(struct!.wordList),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeDictionaryToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloud_storage_path: {
+      value: googleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathToHclTerraform(struct!.cloudStoragePath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathList",
+    },
+    word_list: {
+      value: googleDataLossPreventionStoredInfoTypeDictionaryWordListStructToHclTerraform(struct!.wordList),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference extends cdktf.ComplexObject {
@@ -319,6 +377,25 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQu
   }
 }
 
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -395,6 +472,37 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQu
     project_id: cdktf.stringToTerraform(struct!.projectId),
     table_id: cdktf.stringToTerraform(struct!.tableId),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference extends cdktf.ComplexObject {
@@ -506,6 +614,31 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQu
   }
 }
 
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldToHclTerraform(struct!.field),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldList",
+    },
+    table: {
+      value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableToHclTerraform(struct!.table),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -589,6 +722,25 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloud
   }
 }
 
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -651,6 +803,25 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutpu
   return {
     path: cdktf.stringToTerraform(struct!.path),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference extends cdktf.ComplexObject {
@@ -729,6 +900,37 @@ export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryToTer
     cloud_storage_file_set: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetToTerraform(struct!.cloudStorageFileSet),
     output_path: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathToTerraform(struct!.outputPath),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference | GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    big_query_field: {
+      value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldToHclTerraform(struct!.bigQueryField),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldList",
+    },
+    cloud_storage_file_set: {
+      value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetToHclTerraform(struct!.cloudStorageFileSet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetList",
+    },
+    output_path: {
+      value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathToHclTerraform(struct!.outputPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference extends cdktf.ComplexObject {
@@ -847,6 +1049,31 @@ export function googleDataLossPreventionStoredInfoTypeRegexToTerraform(struct?: 
   }
 }
 
+
+export function googleDataLossPreventionStoredInfoTypeRegexToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeRegexOutputReference | GoogleDataLossPreventionStoredInfoTypeRegex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_indexes: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.groupIndexes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataLossPreventionStoredInfoTypeRegexOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -939,6 +1166,37 @@ export function googleDataLossPreventionStoredInfoTypeTimeoutsToTerraform(struct
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDataLossPreventionStoredInfoTypeTimeoutsToHclTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataLossPreventionStoredInfoTypeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1272,5 +1530,67 @@ export class GoogleDataLossPreventionStoredInfoType extends cdktf.TerraformResou
       regex: googleDataLossPreventionStoredInfoTypeRegexToTerraform(this._regex.internalValue),
       timeouts: googleDataLossPreventionStoredInfoTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stored_info_type_id: {
+        value: cdktf.stringToHclTerraform(this._storedInfoTypeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dictionary: {
+        value: googleDataLossPreventionStoredInfoTypeDictionaryToHclTerraform(this._dictionary.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataLossPreventionStoredInfoTypeDictionaryList",
+      },
+      large_custom_dictionary: {
+        value: googleDataLossPreventionStoredInfoTypeLargeCustomDictionaryToHclTerraform(this._largeCustomDictionary.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryList",
+      },
+      regex: {
+        value: googleDataLossPreventionStoredInfoTypeRegexToHclTerraform(this._regex.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataLossPreventionStoredInfoTypeRegexList",
+      },
+      timeouts: {
+        value: googleDataLossPreventionStoredInfoTypeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataLossPreventionStoredInfoTypeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

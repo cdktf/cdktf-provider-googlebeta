@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.NewGoogleIapTunnelIamBinding(scope Construct, id *string, config GoogleIapTunnelIamBindingConfig) GoogleIapTunnelIamBinding
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.GoogleIapTunnelIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.GoogleIapTunnelIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ googleiaptunneliambinding.GoogleIapTunnelIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.GoogleIapTunnelIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googleiaptunneliambinding.GoogleIapTunnelIamBinding_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.GoogleIapTunnelIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 &googleiaptunneliambinding.GoogleIapTunnelIamBindingCondition {
 	Expression: *string,
@@ -875,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 &googleiaptunneliambinding.GoogleIapTunnelIamBindingConfig {
 	Connection: interface{},
@@ -887,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptu
 	Provisioners: *[]interface{},
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1054,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamBinding.GoogleIapTunnelIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleiaptunneliambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliambinding"
 
 googleiaptunneliambinding.NewGoogleIapTunnelIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapTunnelIamBindingConditionOutputReference
 ```

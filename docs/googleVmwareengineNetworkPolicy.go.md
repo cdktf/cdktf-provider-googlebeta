@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicy(scope Construct, id *string, config GoogleVmwareengineNetworkPolicyConfig) GoogleVmwareengineNetworkPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.toMetadata"></a>
 
@@ -452,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +505,7 @@ googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1005,7 +1012,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyConfig {
 	Connection: interface{},
@@ -1020,11 +1027,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwar
 	Name: *string,
 	VmwareEngineNetwork: *string,
 	Description: *string,
-	ExternalIp: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp,
+	ExternalIp: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp,
 	Id: *string,
-	InternetAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess,
+	InternetAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts,
 }
 ```
 
@@ -1276,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyExternalIp {
 	Enabled: interface{},
@@ -1310,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyInternetAccess {
 	Enabled: interface{},
@@ -1344,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 &googlevmwareenginenetworkpolicy.GoogleVmwareengineNetworkPolicyTimeouts {
 	Create: *string,
@@ -1406,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyExternalIpOutputReference
 ```
@@ -1695,7 +1702,7 @@ func InternalValue() GoogleVmwareengineNetworkPolicyExternalIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyInternetAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyInternetAccessOutputReference
 ```
@@ -1984,7 +1991,7 @@ func InternalValue() GoogleVmwareengineNetworkPolicyInternetAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineNetworkPolicy.GoogleVmwareengineNetworkPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevmwareenginenetworkpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginenetworkpolicy"
 
 googlevmwareenginenetworkpolicy.NewGoogleVmwareengineNetworkPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineNetworkPolicyTimeoutsOutputReference
 ```

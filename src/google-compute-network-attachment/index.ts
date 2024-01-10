@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_network_attachment
 // generated from terraform resource schema
 
@@ -75,6 +70,17 @@ export function googleComputeNetworkAttachmentConnectionEndpointsToTerraform(str
   }
   return {
   }
+}
+
+
+export function googleComputeNetworkAttachmentConnectionEndpointsToHclTerraform(struct?: GoogleComputeNetworkAttachmentConnectionEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleComputeNetworkAttachmentConnectionEndpointsOutputReference extends cdktf.ComplexObject {
@@ -169,6 +175,31 @@ export function googleComputeNetworkAttachmentTimeoutsToTerraform(struct?: Googl
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleComputeNetworkAttachmentTimeoutsToHclTerraform(struct?: GoogleComputeNetworkAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeNetworkAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -510,5 +541,67 @@ export class GoogleComputeNetworkAttachment extends cdktf.TerraformResource {
       subnetworks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetworks),
       timeouts: googleComputeNetworkAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_preference: {
+        value: cdktf.stringToHclTerraform(this._connectionPreference),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      producer_accept_lists: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._producerAcceptLists),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      producer_reject_lists: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._producerRejectLists),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnetworks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetworks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      timeouts: {
+        value: googleComputeNetworkAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeNetworkAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

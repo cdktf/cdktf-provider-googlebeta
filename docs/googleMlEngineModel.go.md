@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModel(scope Construct, id *string, config GoogleMlEngineModelConfig) GoogleMlEngineModel
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -135,6 +136,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.toMetadata"></a>
 
@@ -460,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ googlemlenginemodel.GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ googlemlenginemodel.GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.GoogleMlEngineModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelConfig {
 	Connection: interface{},
@@ -1002,7 +1009,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemleng
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DefaultVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMlEngineModel.GoogleMlEngineModelDefaultVersion,
+	DefaultVersion: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1010,7 +1017,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemleng
 	OnlinePredictionLogging: interface{},
 	Project: *string,
 	Regions: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleMlEngineModel.GoogleMlEngineModelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMlEngineModel.GoogleMlEngineModelTimeouts,
 }
 ```
 
@@ -1255,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelDefaultVersion {
 	Name: *string,
@@ -1289,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 &googlemlenginemodel.GoogleMlEngineModelTimeouts {
 	Create: *string,
@@ -1337,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelDefaultVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModelDefaultVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMlEngineModelDefaultVersionOutputReference
 ```
@@ -1608,7 +1615,7 @@ func InternalValue() GoogleMlEngineModelDefaultVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMlEngineModel.GoogleMlEngineModelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlemlenginemodel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemlenginemodel"
 
 googlemlenginemodel.NewGoogleMlEngineModelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMlEngineModelTimeoutsOutputReference
 ```

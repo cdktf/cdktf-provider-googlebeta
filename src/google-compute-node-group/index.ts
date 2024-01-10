@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_node_group
 // generated from terraform resource schema
 
@@ -132,6 +127,37 @@ export function googleComputeNodeGroupAutoscalingPolicyToTerraform(struct?: Goog
   }
 }
 
+
+export function googleComputeNodeGroupAutoscalingPolicyToHclTerraform(struct?: GoogleComputeNodeGroupAutoscalingPolicyOutputReference | GoogleComputeNodeGroupAutoscalingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.maxNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.minNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeNodeGroupAutoscalingPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -243,6 +269,25 @@ export function googleComputeNodeGroupMaintenanceWindowToTerraform(struct?: Goog
   }
 }
 
+
+export function googleComputeNodeGroupMaintenanceWindowToHclTerraform(struct?: GoogleComputeNodeGroupMaintenanceWindowOutputReference | GoogleComputeNodeGroupMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeNodeGroupMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -313,6 +358,31 @@ export function googleComputeNodeGroupShareSettingsProjectMapToTerraform(struct?
     id: cdktf.stringToTerraform(struct!.id),
     project_id: cdktf.stringToTerraform(struct!.projectId),
   }
+}
+
+
+export function googleComputeNodeGroupShareSettingsProjectMapToHclTerraform(struct?: GoogleComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeNodeGroupShareSettingsProjectMapOutputReference extends cdktf.ComplexObject {
@@ -437,6 +507,31 @@ export function googleComputeNodeGroupShareSettingsToTerraform(struct?: GoogleCo
   }
 }
 
+
+export function googleComputeNodeGroupShareSettingsToHclTerraform(struct?: GoogleComputeNodeGroupShareSettingsOutputReference | GoogleComputeNodeGroupShareSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    share_type: {
+      value: cdktf.stringToHclTerraform(struct!.shareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_map: {
+      value: cdktf.listMapperHcl(googleComputeNodeGroupShareSettingsProjectMapToHclTerraform, true)(struct!.projectMap),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleComputeNodeGroupShareSettingsProjectMapList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeNodeGroupShareSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -529,6 +624,37 @@ export function googleComputeNodeGroupTimeoutsToTerraform(struct?: GoogleCompute
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeNodeGroupTimeoutsToHclTerraform(struct?: GoogleComputeNodeGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -944,5 +1070,91 @@ export class GoogleComputeNodeGroup extends cdktf.TerraformResource {
       share_settings: googleComputeNodeGroupShareSettingsToTerraform(this._shareSettings.internalValue),
       timeouts: googleComputeNodeGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initial_size: {
+        value: cdktf.numberToHclTerraform(this._initialSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      maintenance_interval: {
+        value: cdktf.stringToHclTerraform(this._maintenanceInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_policy: {
+        value: cdktf.stringToHclTerraform(this._maintenancePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_template: {
+        value: cdktf.stringToHclTerraform(this._nodeTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      autoscaling_policy: {
+        value: googleComputeNodeGroupAutoscalingPolicyToHclTerraform(this._autoscalingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeGroupAutoscalingPolicyList",
+      },
+      maintenance_window: {
+        value: googleComputeNodeGroupMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeGroupMaintenanceWindowList",
+      },
+      share_settings: {
+        value: googleComputeNodeGroupShareSettingsToHclTerraform(this._shareSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeGroupShareSettingsList",
+      },
+      timeouts: {
+        value: googleComputeNodeGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeNodeGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

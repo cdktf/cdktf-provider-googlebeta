@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_vertex_ai_featurestore
 // generated from terraform resource schema
 
@@ -95,6 +90,25 @@ export function googleVertexAiFeaturestoreEncryptionSpecToTerraform(struct?: Goo
   }
 }
 
+
+export function googleVertexAiFeaturestoreEncryptionSpecToHclTerraform(struct?: GoogleVertexAiFeaturestoreEncryptionSpecOutputReference | GoogleVertexAiFeaturestoreEncryptionSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleVertexAiFeaturestoreEncryptionSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -164,6 +178,31 @@ export function googleVertexAiFeaturestoreOnlineServingConfigScalingToTerraform(
     max_node_count: cdktf.numberToTerraform(struct!.maxNodeCount),
     min_node_count: cdktf.numberToTerraform(struct!.minNodeCount),
   }
+}
+
+
+export function googleVertexAiFeaturestoreOnlineServingConfigScalingToHclTerraform(struct?: GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference | GoogleVertexAiFeaturestoreOnlineServingConfigScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.minNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference extends cdktf.ComplexObject {
@@ -254,6 +293,31 @@ export function googleVertexAiFeaturestoreOnlineServingConfigToTerraform(struct?
     fixed_node_count: cdktf.numberToTerraform(struct!.fixedNodeCount),
     scaling: googleVertexAiFeaturestoreOnlineServingConfigScalingToTerraform(struct!.scaling),
   }
+}
+
+
+export function googleVertexAiFeaturestoreOnlineServingConfigToHclTerraform(struct?: GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference | GoogleVertexAiFeaturestoreOnlineServingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fixed_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.fixedNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scaling: {
+      value: googleVertexAiFeaturestoreOnlineServingConfigScalingToHclTerraform(struct!.scaling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeaturestoreOnlineServingConfigScalingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference extends cdktf.ComplexObject {
@@ -351,6 +415,37 @@ export function googleVertexAiFeaturestoreTimeoutsToTerraform(struct?: GoogleVer
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleVertexAiFeaturestoreTimeoutsToHclTerraform(struct?: GoogleVertexAiFeaturestoreTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVertexAiFeaturestoreTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -727,5 +822,73 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       online_serving_config: googleVertexAiFeaturestoreOnlineServingConfigToTerraform(this._onlineServingConfig.internalValue),
       timeouts: googleVertexAiFeaturestoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      online_storage_ttl_days: {
+        value: cdktf.numberToHclTerraform(this._onlineStorageTtlDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_spec: {
+        value: googleVertexAiFeaturestoreEncryptionSpecToHclTerraform(this._encryptionSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleVertexAiFeaturestoreEncryptionSpecList",
+      },
+      online_serving_config: {
+        value: googleVertexAiFeaturestoreOnlineServingConfigToHclTerraform(this._onlineServingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleVertexAiFeaturestoreOnlineServingConfigList",
+      },
+      timeouts: {
+        value: googleVertexAiFeaturestoreTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleVertexAiFeaturestoreTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_firebase_hosting_channel
 // generated from terraform resource schema
 
@@ -183,5 +178,31 @@ export class DataGoogleFirebaseHostingChannel extends cdktf.TerraformDataSource 
       id: cdktf.stringToTerraform(this._id),
       site_id: cdktf.stringToTerraform(this._siteId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      channel_id: {
+        value: cdktf.stringToHclTerraform(this._channelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

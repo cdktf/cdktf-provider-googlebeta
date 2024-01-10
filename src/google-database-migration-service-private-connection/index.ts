@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_database_migration_service_private_connection
 // generated from terraform resource schema
 
@@ -73,6 +68,17 @@ export function googleDatabaseMigrationServicePrivateConnectionErrorToTerraform(
   }
   return {
   }
+}
+
+
+export function googleDatabaseMigrationServicePrivateConnectionErrorToHclTerraform(struct?: GoogleDatabaseMigrationServicePrivateConnectionError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDatabaseMigrationServicePrivateConnectionErrorOutputReference extends cdktf.ComplexObject {
@@ -153,6 +159,31 @@ export function googleDatabaseMigrationServicePrivateConnectionTimeoutsToTerrafo
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleDatabaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(struct?: GoogleDatabaseMigrationServicePrivateConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -260,6 +291,31 @@ export function googleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigT
     subnet: cdktf.stringToTerraform(struct!.subnet),
     vpc_name: cdktf.stringToTerraform(struct!.vpcName),
   }
+}
+
+
+export function googleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigToHclTerraform(struct?: GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference | GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subnet: {
+      value: cdktf.stringToHclTerraform(struct!.subnet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_name: {
+      value: cdktf.stringToHclTerraform(struct!.vpcName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference extends cdktf.ComplexObject {
@@ -554,5 +610,61 @@ export class GoogleDatabaseMigrationServicePrivateConnection extends cdktf.Terra
       timeouts: googleDatabaseMigrationServicePrivateConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_peering_config: googleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigToTerraform(this._vpcPeeringConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_connection_id: {
+        value: cdktf.stringToHclTerraform(this._privateConnectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleDatabaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDatabaseMigrationServicePrivateConnectionTimeouts",
+      },
+      vpc_peering_config: {
+        value: googleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigToHclTerraform(this._vpcPeeringConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

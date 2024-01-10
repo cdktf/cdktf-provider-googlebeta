@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.NewGoogleSpannerInstanceIamBinding(scope Construct, id *string, config GoogleSpannerInstanceIamBindingConfig) GoogleSpannerInstanceIamBinding
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.GoogleSpannerInstanceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 &googlespannerinstanceiambinding.GoogleSpannerInstanceIamBindingCondition {
 	Expression: *string,
@@ -897,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 &googlespannerinstanceiambinding.GoogleSpannerInstanceIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespann
 	Instance: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlespannerinstanceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerinstanceiambinding"
 
 googlespannerinstanceiambinding.NewGoogleSpannerInstanceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerInstanceIamBindingConditionOutputReference
 ```

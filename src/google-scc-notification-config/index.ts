@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_scc_notification_config
 // generated from terraform resource schema
 
@@ -101,6 +96,25 @@ export function googleSccNotificationConfigStreamingConfigToTerraform(struct?: G
   }
 }
 
+
+export function googleSccNotificationConfigStreamingConfigToHclTerraform(struct?: GoogleSccNotificationConfigStreamingConfigOutputReference | GoogleSccNotificationConfigStreamingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSccNotificationConfigStreamingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -171,6 +185,37 @@ export function googleSccNotificationConfigTimeoutsToTerraform(struct?: GoogleSc
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleSccNotificationConfigTimeoutsToHclTerraform(struct?: GoogleSccNotificationConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSccNotificationConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -464,5 +509,55 @@ export class GoogleSccNotificationConfig extends cdktf.TerraformResource {
       streaming_config: googleSccNotificationConfigStreamingConfigToTerraform(this._streamingConfig.internalValue),
       timeouts: googleSccNotificationConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config_id: {
+        value: cdktf.stringToHclTerraform(this._configId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pubsub_topic: {
+        value: cdktf.stringToHclTerraform(this._pubsubTopic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      streaming_config: {
+        value: googleSccNotificationConfigStreamingConfigToHclTerraform(this._streamingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSccNotificationConfigStreamingConfigList",
+      },
+      timeouts: {
+        value: googleSccNotificationConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSccNotificationConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

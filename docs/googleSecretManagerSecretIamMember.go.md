@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.NewGoogleSecretManagerSecretIamMember(scope Construct, id *string, config GoogleSecretManagerSecretIamMemberConfig) GoogleSecretManagerSecretIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 &googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMemberCondition {
 	Expression: *string,
@@ -897,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 &googlesecretmanagersecretiammember.GoogleSecretManagerSecretIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecre
 	Member: *string,
 	Role: *string,
 	SecretId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamMember.GoogleSecretManagerSecretIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlesecretmanagersecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagersecretiammember"
 
 googlesecretmanagersecretiammember.NewGoogleSecretManagerSecretIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretIamMemberConditionOutputReference
 ```

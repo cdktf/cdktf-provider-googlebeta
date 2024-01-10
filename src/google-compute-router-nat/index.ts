@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_router_nat
 // generated from terraform resource schema
 
@@ -204,6 +199,31 @@ export function googleComputeRouterNatLogConfigToTerraform(struct?: GoogleComput
   }
 }
 
+
+export function googleComputeRouterNatLogConfigToHclTerraform(struct?: GoogleComputeRouterNatLogConfigOutputReference | GoogleComputeRouterNatLogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRouterNatLogConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -315,6 +335,43 @@ export function googleComputeRouterNatRulesActionToTerraform(struct?: GoogleComp
     source_nat_drain_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceNatDrainIps),
     source_nat_drain_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceNatDrainRanges),
   }
+}
+
+
+export function googleComputeRouterNatRulesActionToHclTerraform(struct?: GoogleComputeRouterNatRulesActionOutputReference | GoogleComputeRouterNatRulesAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_nat_active_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceNatActiveIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_nat_active_ranges: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceNatActiveRanges),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_nat_drain_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceNatDrainIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_nat_drain_ranges: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceNatDrainRanges),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRouterNatRulesActionOutputReference extends cdktf.ComplexObject {
@@ -481,6 +538,43 @@ export function googleComputeRouterNatRulesToTerraform(struct?: GoogleComputeRou
     rule_number: cdktf.numberToTerraform(struct!.ruleNumber),
     action: googleComputeRouterNatRulesActionToTerraform(struct!.action),
   }
+}
+
+
+export function googleComputeRouterNatRulesToHclTerraform(struct?: GoogleComputeRouterNatRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match: {
+      value: cdktf.stringToHclTerraform(struct!.match),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_number: {
+      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    action: {
+      value: googleComputeRouterNatRulesActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeRouterNatRulesActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRouterNatRulesOutputReference extends cdktf.ComplexObject {
@@ -662,6 +756,37 @@ export function googleComputeRouterNatSubnetworkToTerraform(struct?: GoogleCompu
   }
 }
 
+
+export function googleComputeRouterNatSubnetworkToHclTerraform(struct?: GoogleComputeRouterNatSubnetwork | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_ip_range_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.secondaryIpRangeNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    source_ip_ranges_to_nat: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceIpRangesToNat),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRouterNatSubnetworkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -805,6 +930,37 @@ export function googleComputeRouterNatTimeoutsToTerraform(struct?: GoogleCompute
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeRouterNatTimeoutsToHclTerraform(struct?: GoogleComputeRouterNatTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRouterNatTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1379,5 +1535,151 @@ export class GoogleComputeRouterNat extends cdktf.TerraformResource {
       subnetwork: cdktf.listMapper(googleComputeRouterNatSubnetworkToTerraform, true)(this._subnetwork.internalValue),
       timeouts: googleComputeRouterNatTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      drain_nat_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._drainNatIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      enable_dynamic_port_allocation: {
+        value: cdktf.booleanToHclTerraform(this._enableDynamicPortAllocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_endpoint_independent_mapping: {
+        value: cdktf.booleanToHclTerraform(this._enableEndpointIndependentMapping),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      icmp_idle_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._icmpIdleTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_ports_per_vm: {
+        value: cdktf.numberToHclTerraform(this._maxPortsPerVm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_ports_per_vm: {
+        value: cdktf.numberToHclTerraform(this._minPortsPerVm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_ip_allocate_option: {
+        value: cdktf.stringToHclTerraform(this._natIpAllocateOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._natIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      router: {
+        value: cdktf.stringToHclTerraform(this._router),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_subnetwork_ip_ranges_to_nat: {
+        value: cdktf.stringToHclTerraform(this._sourceSubnetworkIpRangesToNat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tcp_established_idle_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._tcpEstablishedIdleTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tcp_time_wait_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._tcpTimeWaitTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tcp_transitory_idle_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._tcpTransitoryIdleTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      udp_idle_timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._udpIdleTimeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      log_config: {
+        value: googleComputeRouterNatLogConfigToHclTerraform(this._logConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRouterNatLogConfigList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleComputeRouterNatRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleComputeRouterNatRulesList",
+      },
+      subnetwork: {
+        value: cdktf.listMapperHcl(googleComputeRouterNatSubnetworkToHclTerraform, true)(this._subnetwork.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleComputeRouterNatSubnetworkList",
+      },
+      timeouts: {
+        value: googleComputeRouterNatTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeRouterNatTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

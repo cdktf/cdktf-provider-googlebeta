@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dns_managed_zone
 // generated from terraform resource schema
 
@@ -135,6 +130,25 @@ export function googleDnsManagedZoneCloudLoggingConfigToTerraform(struct?: Googl
   }
 }
 
+
+export function googleDnsManagedZoneCloudLoggingConfigToHclTerraform(struct?: GoogleDnsManagedZoneCloudLoggingConfigOutputReference | GoogleDnsManagedZoneCloudLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_logging: {
+      value: cdktf.booleanToHclTerraform(struct!.enableLogging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneCloudLoggingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -223,6 +237,43 @@ export function googleDnsManagedZoneDnssecConfigDefaultKeySpecsToTerraform(struc
     key_type: cdktf.stringToTerraform(struct!.keyType),
     kind: cdktf.stringToTerraform(struct!.kind),
   }
+}
+
+
+export function googleDnsManagedZoneDnssecConfigDefaultKeySpecsToHclTerraform(struct?: GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_length: {
+      value: cdktf.numberToHclTerraform(struct!.keyLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    key_type: {
+      value: cdktf.stringToHclTerraform(struct!.keyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kind: {
+      value: cdktf.stringToHclTerraform(struct!.kind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference extends cdktf.ComplexObject {
@@ -412,6 +463,43 @@ export function googleDnsManagedZoneDnssecConfigToTerraform(struct?: GoogleDnsMa
   }
 }
 
+
+export function googleDnsManagedZoneDnssecConfigToHclTerraform(struct?: GoogleDnsManagedZoneDnssecConfigOutputReference | GoogleDnsManagedZoneDnssecConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kind: {
+      value: cdktf.stringToHclTerraform(struct!.kind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    non_existence: {
+      value: cdktf.stringToHclTerraform(struct!.nonExistence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_key_specs: {
+      value: cdktf.listMapperHcl(googleDnsManagedZoneDnssecConfigDefaultKeySpecsToHclTerraform, true)(struct!.defaultKeySpecs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneDnssecConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -554,6 +642,31 @@ export function googleDnsManagedZoneForwardingConfigTargetNameServersToTerraform
   }
 }
 
+
+export function googleDnsManagedZoneForwardingConfigTargetNameServersToHclTerraform(struct?: GoogleDnsManagedZoneForwardingConfigTargetNameServers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    forwarding_path: {
+      value: cdktf.stringToHclTerraform(struct!.forwardingPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv4_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4Address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -672,6 +785,25 @@ export function googleDnsManagedZoneForwardingConfigToTerraform(struct?: GoogleD
   }
 }
 
+
+export function googleDnsManagedZoneForwardingConfigToHclTerraform(struct?: GoogleDnsManagedZoneForwardingConfigOutputReference | GoogleDnsManagedZoneForwardingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_name_servers: {
+      value: cdktf.listMapperHcl(googleDnsManagedZoneForwardingConfigTargetNameServersToHclTerraform, true)(struct!.targetNameServers),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDnsManagedZoneForwardingConfigTargetNameServersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneForwardingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -738,6 +870,25 @@ export function googleDnsManagedZonePeeringConfigTargetNetworkToTerraform(struct
   }
 }
 
+
+export function googleDnsManagedZonePeeringConfigTargetNetworkToHclTerraform(struct?: GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference | GoogleDnsManagedZonePeeringConfigTargetNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -800,6 +951,25 @@ export function googleDnsManagedZonePeeringConfigToTerraform(struct?: GoogleDnsM
   return {
     target_network: googleDnsManagedZonePeeringConfigTargetNetworkToTerraform(struct!.targetNetwork),
   }
+}
+
+
+export function googleDnsManagedZonePeeringConfigToHclTerraform(struct?: GoogleDnsManagedZonePeeringConfigOutputReference | GoogleDnsManagedZonePeeringConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_network: {
+      value: googleDnsManagedZonePeeringConfigTargetNetworkToHclTerraform(struct!.targetNetwork),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsManagedZonePeeringConfigTargetNetworkList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZonePeeringConfigOutputReference extends cdktf.ComplexObject {
@@ -868,6 +1038,25 @@ export function googleDnsManagedZonePrivateVisibilityConfigGkeClustersToTerrafor
   return {
     gke_cluster_name: cdktf.stringToTerraform(struct!.gkeClusterName),
   }
+}
+
+
+export function googleDnsManagedZonePrivateVisibilityConfigGkeClustersToHclTerraform(struct?: GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gke_cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.gkeClusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference extends cdktf.ComplexObject {
@@ -966,6 +1155,25 @@ export function googleDnsManagedZonePrivateVisibilityConfigNetworksToTerraform(s
   return {
     network_url: cdktf.stringToTerraform(struct!.networkUrl),
   }
+}
+
+
+export function googleDnsManagedZonePrivateVisibilityConfigNetworksToHclTerraform(struct?: GoogleDnsManagedZonePrivateVisibilityConfigNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference extends cdktf.ComplexObject {
@@ -1071,6 +1279,31 @@ export function googleDnsManagedZonePrivateVisibilityConfigToTerraform(struct?: 
   }
 }
 
+
+export function googleDnsManagedZonePrivateVisibilityConfigToHclTerraform(struct?: GoogleDnsManagedZonePrivateVisibilityConfigOutputReference | GoogleDnsManagedZonePrivateVisibilityConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gke_clusters: {
+      value: cdktf.listMapperHcl(googleDnsManagedZonePrivateVisibilityConfigGkeClustersToHclTerraform, true)(struct!.gkeClusters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList",
+    },
+    networks: {
+      value: cdktf.listMapperHcl(googleDnsManagedZonePrivateVisibilityConfigNetworksToHclTerraform, true)(struct!.networks),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDnsManagedZonePrivateVisibilityConfigNetworksList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZonePrivateVisibilityConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1164,6 +1397,25 @@ export function googleDnsManagedZoneServiceDirectoryConfigNamespaceToTerraform(s
   }
 }
 
+
+export function googleDnsManagedZoneServiceDirectoryConfigNamespaceToHclTerraform(struct?: GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference | GoogleDnsManagedZoneServiceDirectoryConfigNamespace): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    namespace_url: {
+      value: cdktf.stringToHclTerraform(struct!.namespaceUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1226,6 +1478,25 @@ export function googleDnsManagedZoneServiceDirectoryConfigToTerraform(struct?: G
   return {
     namespace: googleDnsManagedZoneServiceDirectoryConfigNamespaceToTerraform(struct!.namespace),
   }
+}
+
+
+export function googleDnsManagedZoneServiceDirectoryConfigToHclTerraform(struct?: GoogleDnsManagedZoneServiceDirectoryConfigOutputReference | GoogleDnsManagedZoneServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    namespace: {
+      value: googleDnsManagedZoneServiceDirectoryConfigNamespaceToHclTerraform(struct!.namespace),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsManagedZoneServiceDirectoryConfigNamespaceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZoneServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
@@ -1298,6 +1569,37 @@ export function googleDnsManagedZoneTimeoutsToTerraform(struct?: GoogleDnsManage
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDnsManagedZoneTimeoutsToHclTerraform(struct?: GoogleDnsManagedZoneTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsManagedZoneTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1776,5 +2078,109 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
       service_directory_config: googleDnsManagedZoneServiceDirectoryConfigToTerraform(this._serviceDirectoryConfig.internalValue),
       timeouts: googleDnsManagedZoneTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_name: {
+        value: cdktf.stringToHclTerraform(this._dnsName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reverse_lookup: {
+        value: cdktf.booleanToHclTerraform(this._reverseLookup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloud_logging_config: {
+        value: googleDnsManagedZoneCloudLoggingConfigToHclTerraform(this._cloudLoggingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZoneCloudLoggingConfigList",
+      },
+      dnssec_config: {
+        value: googleDnsManagedZoneDnssecConfigToHclTerraform(this._dnssecConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZoneDnssecConfigList",
+      },
+      forwarding_config: {
+        value: googleDnsManagedZoneForwardingConfigToHclTerraform(this._forwardingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZoneForwardingConfigList",
+      },
+      peering_config: {
+        value: googleDnsManagedZonePeeringConfigToHclTerraform(this._peeringConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZonePeeringConfigList",
+      },
+      private_visibility_config: {
+        value: googleDnsManagedZonePrivateVisibilityConfigToHclTerraform(this._privateVisibilityConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZonePrivateVisibilityConfigList",
+      },
+      service_directory_config: {
+        value: googleDnsManagedZoneServiceDirectoryConfigToHclTerraform(this._serviceDirectoryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsManagedZoneServiceDirectoryConfigList",
+      },
+      timeouts: {
+        value: googleDnsManagedZoneTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDnsManagedZoneTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

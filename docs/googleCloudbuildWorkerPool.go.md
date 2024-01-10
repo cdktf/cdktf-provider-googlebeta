@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.NewGoogleCloudbuildWorkerPool(scope Construct, id *string, config GoogleCloudbuildWorkerPoolConfig) GoogleCloudbuildWorkerPool
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.toMetadata"></a>
 
@@ -459,7 +466,7 @@ func ResetWorkerConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +526,7 @@ googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.GoogleCloudbuildWorkerPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1012,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 &googlecloudbuildworkerpool.GoogleCloudbuildWorkerPoolConfig {
 	Connection: interface{},
@@ -1027,10 +1034,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Annotations: *map[string]*string,
 	DisplayName: *string,
 	Id: *string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfig,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeouts,
-	WorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeouts,
+	WorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfig,
 }
 ```
 
@@ -1262,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 &googlecloudbuildworkerpool.GoogleCloudbuildWorkerPoolNetworkConfig {
 	PeeredNetwork: *string,
@@ -1316,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 &googlecloudbuildworkerpool.GoogleCloudbuildWorkerPoolTimeouts {
 	Create: *string,
@@ -1376,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 &googlecloudbuildworkerpool.GoogleCloudbuildWorkerPoolWorkerConfig {
 	DiskSizeGb: *f64,
@@ -1448,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.NewGoogleCloudbuildWorkerPoolNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildWorkerPoolNetworkConfigOutputReference
 ```
@@ -1748,7 +1755,7 @@ func InternalValue() GoogleCloudbuildWorkerPoolNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.NewGoogleCloudbuildWorkerPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildWorkerPoolTimeoutsOutputReference
 ```
@@ -2084,7 +2091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolWorkerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudbuildworkerpool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildworkerpool"
 
 googlecloudbuildworkerpool.NewGoogleCloudbuildWorkerPoolWorkerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildWorkerPoolWorkerConfigOutputReference
 ```

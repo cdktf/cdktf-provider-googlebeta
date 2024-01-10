@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_access_context_manager_service_perimeter_ingress_policy
 // generated from terraform resource schema
 
@@ -80,6 +75,31 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyIngressFr
     access_level: cdktf.stringToTerraform(struct!.accessLevel),
     resource: cdktf.stringToTerraform(struct!.resource),
   }
+}
+
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference extends cdktf.ComplexObject {
@@ -221,6 +241,37 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyIngressFr
   }
 }
 
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyIngressFromToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference | GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFrom): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    identities: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identities),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    identity_type: {
+      value: cdktf.stringToHclTerraform(struct!.identityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sources: {
+      value: cdktf.listMapperHcl(googleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesToHclTerraform, true)(struct!.sources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -340,6 +391,31 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyIngressTo
     method: cdktf.stringToTerraform(struct!.method),
     permission: cdktf.stringToTerraform(struct!.permission),
   }
+}
+
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference extends cdktf.ComplexObject {
@@ -470,6 +546,31 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyIngressTo
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     method_selectors: cdktf.listMapper(googleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
   }
+}
+
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method_selectors: {
+      value: cdktf.listMapperHcl(googleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference extends cdktf.ComplexObject {
@@ -607,6 +708,31 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyIngressTo
   }
 }
 
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyIngressToToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference | GoogleAccessContextManagerServicePerimeterIngressPolicyIngressTo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    operations: {
+      value: cdktf.listMapperHcl(googleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsToHclTerraform, true)(struct!.operations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -702,6 +828,37 @@ export function googleAccessContextManagerServicePerimeterIngressPolicyTimeoutsT
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleAccessContextManagerServicePerimeterIngressPolicyTimeoutsToHclTerraform(struct?: GoogleAccessContextManagerServicePerimeterIngressPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -958,5 +1115,43 @@ export class GoogleAccessContextManagerServicePerimeterIngressPolicy extends cdk
       ingress_to: googleAccessContextManagerServicePerimeterIngressPolicyIngressToToTerraform(this._ingressTo.internalValue),
       timeouts: googleAccessContextManagerServicePerimeterIngressPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      perimeter: {
+        value: cdktf.stringToHclTerraform(this._perimeter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ingress_from: {
+        value: googleAccessContextManagerServicePerimeterIngressPolicyIngressFromToHclTerraform(this._ingressFrom.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyIngressFromList",
+      },
+      ingress_to: {
+        value: googleAccessContextManagerServicePerimeterIngressPolicyIngressToToHclTerraform(this._ingressTo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyIngressToList",
+      },
+      timeouts: {
+        value: googleAccessContextManagerServicePerimeterIngressPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleAccessContextManagerServicePerimeterIngressPolicyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

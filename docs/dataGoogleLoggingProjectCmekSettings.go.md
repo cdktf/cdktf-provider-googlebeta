@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.NewDataGoogleLoggingProjectCmekSettings(scope Construct, id *string, config DataGoogleLoggingProjectCmekSettingsConfig) DataGoogleLoggingProjectCmekSettings
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetKmsKeyName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingprojectcmeksettings"
 
 &datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettingsConfig {
 	Connection: interface{},

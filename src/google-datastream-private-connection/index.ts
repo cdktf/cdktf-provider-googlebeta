@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_datastream_private_connection
 // generated from terraform resource schema
 
@@ -73,6 +68,17 @@ export function googleDatastreamPrivateConnectionErrorToTerraform(struct?: Googl
   }
   return {
   }
+}
+
+
+export function googleDatastreamPrivateConnectionErrorToHclTerraform(struct?: GoogleDatastreamPrivateConnectionError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDatastreamPrivateConnectionErrorOutputReference extends cdktf.ComplexObject {
@@ -153,6 +159,31 @@ export function googleDatastreamPrivateConnectionTimeoutsToTerraform(struct?: Go
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleDatastreamPrivateConnectionTimeoutsToHclTerraform(struct?: GoogleDatastreamPrivateConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatastreamPrivateConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -260,6 +291,31 @@ export function googleDatastreamPrivateConnectionVpcPeeringConfigToTerraform(str
     subnet: cdktf.stringToTerraform(struct!.subnet),
     vpc: cdktf.stringToTerraform(struct!.vpc),
   }
+}
+
+
+export function googleDatastreamPrivateConnectionVpcPeeringConfigToHclTerraform(struct?: GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference | GoogleDatastreamPrivateConnectionVpcPeeringConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    subnet: {
+      value: cdktf.stringToHclTerraform(struct!.subnet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc: {
+      value: cdktf.stringToHclTerraform(struct!.vpc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDatastreamPrivateConnectionVpcPeeringConfigOutputReference extends cdktf.ComplexObject {
@@ -551,5 +607,61 @@ export class GoogleDatastreamPrivateConnection extends cdktf.TerraformResource {
       timeouts: googleDatastreamPrivateConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_peering_config: googleDatastreamPrivateConnectionVpcPeeringConfigToTerraform(this._vpcPeeringConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_connection_id: {
+        value: cdktf.stringToHclTerraform(this._privateConnectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleDatastreamPrivateConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDatastreamPrivateConnectionTimeouts",
+      },
+      vpc_peering_config: {
+        value: googleDatastreamPrivateConnectionVpcPeeringConfigToHclTerraform(this._vpcPeeringConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDatastreamPrivateConnectionVpcPeeringConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

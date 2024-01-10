@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_apigee_keystores_aliases_pkcs12
 // generated from terraform resource schema
 
@@ -78,6 +73,17 @@ export function googleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoToTerraform(s
   }
   return {
   }
+}
+
+
+export function googleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoToHclTerraform(struct?: GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference extends cdktf.ComplexObject {
@@ -194,6 +200,17 @@ export function googleApigeeKeystoresAliasesPkcs12CertsInfoToTerraform(struct?: 
   }
 }
 
+
+export function googleApigeeKeystoresAliasesPkcs12CertsInfoToHclTerraform(struct?: GoogleApigeeKeystoresAliasesPkcs12CertsInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleApigeeKeystoresAliasesPkcs12CertsInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -267,6 +284,31 @@ export function googleApigeeKeystoresAliasesPkcs12TimeoutsToTerraform(struct?: G
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleApigeeKeystoresAliasesPkcs12TimeoutsToHclTerraform(struct?: GoogleApigeeKeystoresAliasesPkcs12Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -569,5 +611,67 @@ export class GoogleApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource 
       password: cdktf.stringToTerraform(this._password),
       timeouts: googleApigeeKeystoresAliasesPkcs12TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file: {
+        value: cdktf.stringToHclTerraform(this._file),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filehash: {
+        value: cdktf.stringToHclTerraform(this._filehash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keystore: {
+        value: cdktf.stringToHclTerraform(this._keystore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_id: {
+        value: cdktf.stringToHclTerraform(this._orgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleApigeeKeystoresAliasesPkcs12TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleApigeeKeystoresAliasesPkcs12Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_target_ssl_proxy
 // generated from terraform resource schema
 
@@ -110,6 +105,37 @@ export function googleComputeTargetSslProxyTimeoutsToTerraform(struct?: GoogleCo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeTargetSslProxyTimeoutsToHclTerraform(struct?: GoogleComputeTargetSslProxyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeTargetSslProxyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -468,5 +494,73 @@ export class GoogleComputeTargetSslProxy extends cdktf.TerraformResource {
       ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
       timeouts: googleComputeTargetSslProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backend_service: {
+        value: cdktf.stringToHclTerraform(this._backendService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificate_map: {
+        value: cdktf.stringToHclTerraform(this._certificateMap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_header: {
+        value: cdktf.stringToHclTerraform(this._proxyHeader),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssl_certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sslCertificates),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ssl_policy: {
+        value: cdktf.stringToHclTerraform(this._sslPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleComputeTargetSslProxyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeTargetSslProxyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

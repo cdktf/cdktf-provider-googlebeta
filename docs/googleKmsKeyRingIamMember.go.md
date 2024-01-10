@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.NewGoogleKmsKeyRingIamMember(scope Construct, id *string, config GoogleKmsKeyRingIamMemberConfig) GoogleKmsKeyRingIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 &googlekmskeyringiammember.GoogleKmsKeyRingIamMemberCondition {
 	Expression: *string,
@@ -868,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 &googlekmskeyringiammember.GoogleKmsKeyRingIamMemberConfig {
 	Connection: interface{},
@@ -881,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmske
 	KeyRingId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1047,7 +1054,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
 
 googlekmskeyringiammember.NewGoogleKmsKeyRingIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsKeyRingIamMemberConditionOutputReference
 ```

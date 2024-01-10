@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dns_policy
 // generated from terraform resource schema
 
@@ -96,6 +91,31 @@ export function googleDnsPolicyAlternativeNameServerConfigTargetNameServersToTer
     forwarding_path: cdktf.stringToTerraform(struct!.forwardingPath),
     ipv4_address: cdktf.stringToTerraform(struct!.ipv4Address),
   }
+}
+
+
+export function googleDnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform(struct?: GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    forwarding_path: {
+      value: cdktf.stringToHclTerraform(struct!.forwardingPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv4_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4Address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference extends cdktf.ComplexObject {
@@ -216,6 +236,25 @@ export function googleDnsPolicyAlternativeNameServerConfigToTerraform(struct?: G
   }
 }
 
+
+export function googleDnsPolicyAlternativeNameServerConfigToHclTerraform(struct?: GoogleDnsPolicyAlternativeNameServerConfigOutputReference | GoogleDnsPolicyAlternativeNameServerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_name_servers: {
+      value: cdktf.listMapperHcl(googleDnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform, true)(struct!.targetNameServers),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsPolicyAlternativeNameServerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -280,6 +319,25 @@ export function googleDnsPolicyNetworksToTerraform(struct?: GoogleDnsPolicyNetwo
   return {
     network_url: cdktf.stringToTerraform(struct!.networkUrl),
   }
+}
+
+
+export function googleDnsPolicyNetworksToHclTerraform(struct?: GoogleDnsPolicyNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_url: {
+      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsPolicyNetworksOutputReference extends cdktf.ComplexObject {
@@ -384,6 +442,37 @@ export function googleDnsPolicyTimeoutsToTerraform(struct?: GoogleDnsPolicyTimeo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDnsPolicyTimeoutsToHclTerraform(struct?: GoogleDnsPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -712,5 +801,67 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
       networks: cdktf.listMapper(googleDnsPolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleDnsPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_inbound_forwarding: {
+        value: cdktf.booleanToHclTerraform(this._enableInboundForwarding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_logging: {
+        value: cdktf.booleanToHclTerraform(this._enableLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alternative_name_server_config: {
+        value: googleDnsPolicyAlternativeNameServerConfigToHclTerraform(this._alternativeNameServerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsPolicyAlternativeNameServerConfigList",
+      },
+      networks: {
+        value: cdktf.listMapperHcl(googleDnsPolicyNetworksToHclTerraform, true)(this._networks.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleDnsPolicyNetworksList",
+      },
+      timeouts: {
+        value: googleDnsPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDnsPolicyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

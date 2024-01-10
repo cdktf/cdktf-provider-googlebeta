@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_usage_consumer_quota_override
 // generated from terraform resource schema
 
@@ -95,6 +90,37 @@ export function googleServiceUsageConsumerQuotaOverrideTimeoutsToTerraform(struc
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleServiceUsageConsumerQuotaOverrideTimeoutsToHclTerraform(struct?: GoogleServiceUsageConsumerQuotaOverrideTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -419,5 +445,67 @@ export class GoogleServiceUsageConsumerQuotaOverride extends cdktf.TerraformReso
       service: cdktf.stringToTerraform(this._service),
       timeouts: googleServiceUsageConsumerQuotaOverrideTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dimensions: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._dimensions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      force: {
+        value: cdktf.booleanToHclTerraform(this._force),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit: {
+        value: cdktf.stringToHclTerraform(this._limit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric: {
+        value: cdktf.stringToHclTerraform(this._metric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      override_value: {
+        value: cdktf.stringToHclTerraform(this._overrideValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleServiceUsageConsumerQuotaOverrideTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleServiceUsageConsumerQuotaOverrideTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

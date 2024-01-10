@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_vmwareengine_cluster
 // generated from terraform resource schema
 
@@ -78,6 +73,37 @@ export function googleVmwareengineClusterNodeTypeConfigsToTerraform(struct?: Goo
     node_count: cdktf.numberToTerraform(struct!.nodeCount),
     node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
   }
+}
+
+
+export function googleVmwareengineClusterNodeTypeConfigsToHclTerraform(struct?: GoogleVmwareengineClusterNodeTypeConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_core_count: {
+      value: cdktf.numberToHclTerraform(struct!.customCoreCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_count: {
+      value: cdktf.numberToHclTerraform(struct!.nodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_type_id: {
+      value: cdktf.stringToHclTerraform(struct!.nodeTypeId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVmwareengineClusterNodeTypeConfigsOutputReference extends cdktf.ComplexObject {
@@ -223,6 +249,37 @@ export function googleVmwareengineClusterTimeoutsToTerraform(struct?: GoogleVmwa
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleVmwareengineClusterTimeoutsToHclTerraform(struct?: GoogleVmwareengineClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleVmwareengineClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -491,5 +548,43 @@ export class GoogleVmwareengineCluster extends cdktf.TerraformResource {
       node_type_configs: cdktf.listMapper(googleVmwareengineClusterNodeTypeConfigsToTerraform, true)(this._nodeTypeConfigs.internalValue),
       timeouts: googleVmwareengineClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_type_configs: {
+        value: cdktf.listMapperHcl(googleVmwareengineClusterNodeTypeConfigsToHclTerraform, true)(this._nodeTypeConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleVmwareengineClusterNodeTypeConfigsList",
+      },
+      timeouts: {
+        value: googleVmwareengineClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleVmwareengineClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

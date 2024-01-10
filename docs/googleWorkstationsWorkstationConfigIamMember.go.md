@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.NewGoogleWorkstationsWorkstationConfigIamMember(scope Construct, id *string, config GoogleWorkstationsWorkstationConfigIamMemberConfig) GoogleWorkstationsWorkstationConfigIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfig
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfig
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 &googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMemberCondition {
 	Expression: *string,
@@ -948,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 &googleworkstationsworkstationconfigiammember.GoogleWorkstationsWorkstationConfigIamMemberConfig {
 	Connection: interface{},
@@ -962,7 +969,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworks
 	Role: *string,
 	WorkstationClusterId: *string,
 	WorkstationConfigId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1169,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamMember.GoogleWorkstationsWorkstationConfigIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleworkstationsworkstationconfigiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstationconfigiammember"
 
 googleworkstationsworkstationconfigiammember.NewGoogleWorkstationsWorkstationConfigIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationConfigIamMemberConditionOutputReference
 ```

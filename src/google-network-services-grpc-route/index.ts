@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_network_services_grpc_route
 // generated from terraform resource schema
 
@@ -99,6 +94,31 @@ export function googleNetworkServicesGrpcRouteRulesActionDestinationsToTerraform
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesActionDestinationsToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionDestinations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesActionDestinationsOutputReference extends cdktf.ComplexObject {
@@ -229,6 +249,31 @@ export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbo
   }
 }
 
+
+export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference | GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    http_status: {
+      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -323,6 +368,31 @@ export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDel
     fixed_delay: cdktf.stringToTerraform(struct!.fixedDelay),
     percentage: cdktf.numberToTerraform(struct!.percentage),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference | GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fixed_delay: {
+      value: cdktf.stringToHclTerraform(struct!.fixedDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
@@ -421,6 +491,31 @@ export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyToT
   }
 }
 
+
+export function googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference | GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    abort: {
+      value: googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortToHclTerraform(struct!.abort),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortList",
+    },
+    delay: {
+      value: googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayToHclTerraform(struct!.delay),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -515,6 +610,31 @@ export function googleNetworkServicesGrpcRouteRulesActionRetryPolicyToTerraform(
     num_retries: cdktf.numberToTerraform(struct!.numRetries),
     retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesActionRetryPolicyToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference | GoogleNetworkServicesGrpcRouteRulesActionRetryPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    num_retries: {
+      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retry_conditions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference extends cdktf.ComplexObject {
@@ -625,6 +745,43 @@ export function googleNetworkServicesGrpcRouteRulesActionToTerraform(struct?: Go
     fault_injection_policy: googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyToTerraform(struct!.faultInjectionPolicy),
     retry_policy: googleNetworkServicesGrpcRouteRulesActionRetryPolicyToTerraform(struct!.retryPolicy),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesActionToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesActionOutputReference | GoogleNetworkServicesGrpcRouteRulesAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timeout: {
+      value: cdktf.stringToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destinations: {
+      value: cdktf.listMapperHcl(googleNetworkServicesGrpcRouteRulesActionDestinationsToHclTerraform, true)(struct!.destinations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionDestinationsList",
+    },
+    fault_injection_policy: {
+      value: googleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyToHclTerraform(struct!.faultInjectionPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyList",
+    },
+    retry_policy: {
+      value: googleNetworkServicesGrpcRouteRulesActionRetryPolicyToHclTerraform(struct!.retryPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionRetryPolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesActionOutputReference extends cdktf.ComplexObject {
@@ -772,6 +929,37 @@ export function googleNetworkServicesGrpcRouteRulesMatchesHeadersToTerraform(str
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesMatchesHeadersToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesMatchesHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends cdktf.ComplexObject {
@@ -925,6 +1113,37 @@ export function googleNetworkServicesGrpcRouteRulesMatchesMethodToTerraform(stru
   }
 }
 
+
+export function googleNetworkServicesGrpcRouteRulesMatchesMethodToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference | GoogleNetworkServicesGrpcRouteRulesMatchesMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    case_sensitive: {
+      value: cdktf.booleanToHclTerraform(struct!.caseSensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    grpc_method: {
+      value: cdktf.stringToHclTerraform(struct!.grpcMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grpc_service: {
+      value: cdktf.stringToHclTerraform(struct!.grpcService),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1035,6 +1254,31 @@ export function googleNetworkServicesGrpcRouteRulesMatchesToTerraform(struct?: G
     headers: cdktf.listMapper(googleNetworkServicesGrpcRouteRulesMatchesHeadersToTerraform, true)(struct!.headers),
     method: googleNetworkServicesGrpcRouteRulesMatchesMethodToTerraform(struct!.method),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteRulesMatchesToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRulesMatches | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    headers: {
+      value: cdktf.listMapperHcl(googleNetworkServicesGrpcRouteRulesMatchesHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesMatchesHeadersList",
+    },
+    method: {
+      value: googleNetworkServicesGrpcRouteRulesMatchesMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesMatchesMethodList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.ComplexObject {
@@ -1165,6 +1409,31 @@ export function googleNetworkServicesGrpcRouteRulesToTerraform(struct?: GoogleNe
   }
 }
 
+
+export function googleNetworkServicesGrpcRouteRulesToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: googleNetworkServicesGrpcRouteRulesActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesActionList",
+    },
+    matches: {
+      value: cdktf.listMapperHcl(googleNetworkServicesGrpcRouteRulesMatchesToHclTerraform, true)(struct!.matches),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesGrpcRouteRulesMatchesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1292,6 +1561,37 @@ export function googleNetworkServicesGrpcRouteTimeoutsToTerraform(struct?: Googl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNetworkServicesGrpcRouteTimeoutsToHclTerraform(struct?: GoogleNetworkServicesGrpcRouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesGrpcRouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1659,5 +1959,73 @@ export class GoogleNetworkServicesGrpcRoute extends cdktf.TerraformResource {
       rules: cdktf.listMapper(googleNetworkServicesGrpcRouteRulesToTerraform, true)(this._rules.internalValue),
       timeouts: googleNetworkServicesGrpcRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateways: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gateways),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      hostnames: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostnames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      meshes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._meshes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleNetworkServicesGrpcRouteRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkServicesGrpcRouteRulesList",
+      },
+      timeouts: {
+        value: googleNetworkServicesGrpcRouteTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNetworkServicesGrpcRouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

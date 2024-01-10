@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.NewDataGoogleVertexAiEndpointIamPolicy(scope Construct, id *string, config DataGoogleVertexAiEndpointIamPolicyConfig) DataGoogleVertexAiEndpointIamPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleVertexAiEndpointIamPolicy.DataGoogleVertexAiEndpointIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglevertexaiendpointiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglevertexaiendpointiampolicy"
 
 &datagooglevertexaiendpointiampolicy.DataGoogleVertexAiEndpointIamPolicyConfig {
 	Connection: interface{},

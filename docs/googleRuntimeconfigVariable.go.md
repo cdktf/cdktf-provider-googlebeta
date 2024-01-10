@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.NewGoogleRuntimeconfigVariable(scope Construct, id *string, config GoogleRuntimeconfigVariableConfig) GoogleRuntimeconfigVariable
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 &googleruntimeconfigvariable.GoogleRuntimeconfigVariableConfig {
 	Connection: interface{},

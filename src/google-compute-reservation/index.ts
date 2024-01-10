@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_reservation
 // generated from terraform resource schema
 
@@ -99,6 +94,31 @@ export function googleComputeReservationShareSettingsProjectMapToTerraform(struc
     id: cdktf.stringToTerraform(struct!.id),
     project_id: cdktf.stringToTerraform(struct!.projectId),
   }
+}
+
+
+export function googleComputeReservationShareSettingsProjectMapToHclTerraform(struct?: GoogleComputeReservationShareSettingsProjectMap | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeReservationShareSettingsProjectMapOutputReference extends cdktf.ComplexObject {
@@ -226,6 +246,31 @@ export function googleComputeReservationShareSettingsToTerraform(struct?: Google
   }
 }
 
+
+export function googleComputeReservationShareSettingsToHclTerraform(struct?: GoogleComputeReservationShareSettingsOutputReference | GoogleComputeReservationShareSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    share_type: {
+      value: cdktf.stringToHclTerraform(struct!.shareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_map: {
+      value: cdktf.listMapperHcl(googleComputeReservationShareSettingsProjectMapToHclTerraform, true)(struct!.projectMap),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleComputeReservationShareSettingsProjectMapList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeReservationShareSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -325,6 +370,31 @@ export function googleComputeReservationSpecificReservationInstancePropertiesGue
     accelerator_count: cdktf.numberToTerraform(struct!.acceleratorCount),
     accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
   }
+}
+
+
+export function googleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsToHclTerraform(struct?: GoogleComputeReservationSpecificReservationInstancePropertiesGuestAccelerators | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accelerator_count: {
+      value: cdktf.numberToHclTerraform(struct!.acceleratorCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    accelerator_type: {
+      value: cdktf.stringToHclTerraform(struct!.acceleratorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference extends cdktf.ComplexObject {
@@ -447,6 +517,31 @@ export function googleComputeReservationSpecificReservationInstancePropertiesLoc
     disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
     interface: cdktf.stringToTerraform(struct!.interface),
   }
+}
+
+
+export function googleComputeReservationSpecificReservationInstancePropertiesLocalSsdsToHclTerraform(struct?: GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsds | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk_size_gb: {
+      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interface: {
+      value: cdktf.stringToHclTerraform(struct!.interface),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference extends cdktf.ComplexObject {
@@ -591,6 +686,43 @@ export function googleComputeReservationSpecificReservationInstancePropertiesToT
   }
 }
 
+
+export function googleComputeReservationSpecificReservationInstancePropertiesToHclTerraform(struct?: GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference | GoogleComputeReservationSpecificReservationInstanceProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    machine_type: {
+      value: cdktf.stringToHclTerraform(struct!.machineType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_cpu_platform: {
+      value: cdktf.stringToHclTerraform(struct!.minCpuPlatform),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    guest_accelerators: {
+      value: cdktf.listMapperHcl(googleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsToHclTerraform, true)(struct!.guestAccelerators),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
+    },
+    local_ssds: {
+      value: cdktf.listMapperHcl(googleComputeReservationSpecificReservationInstancePropertiesLocalSsdsToHclTerraform, true)(struct!.localSsds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -728,6 +860,31 @@ export function googleComputeReservationSpecificReservationToTerraform(struct?: 
   }
 }
 
+
+export function googleComputeReservationSpecificReservationToHclTerraform(struct?: GoogleComputeReservationSpecificReservationOutputReference | GoogleComputeReservationSpecificReservation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_properties: {
+      value: googleComputeReservationSpecificReservationInstancePropertiesToHclTerraform(struct!.instanceProperties),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeReservationSpecificReservationInstancePropertiesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeReservationSpecificReservationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -822,6 +979,37 @@ export function googleComputeReservationTimeoutsToTerraform(struct?: GoogleCompu
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeReservationTimeoutsToHclTerraform(struct?: GoogleComputeReservationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeReservationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1164,5 +1352,67 @@ export class GoogleComputeReservation extends cdktf.TerraformResource {
       specific_reservation: googleComputeReservationSpecificReservationToTerraform(this._specificReservation.internalValue),
       timeouts: googleComputeReservationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      specific_reservation_required: {
+        value: cdktf.booleanToHclTerraform(this._specificReservationRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      share_settings: {
+        value: googleComputeReservationShareSettingsToHclTerraform(this._shareSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeReservationShareSettingsList",
+      },
+      specific_reservation: {
+        value: googleComputeReservationSpecificReservationToHclTerraform(this._specificReservation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeReservationSpecificReservationList",
+      },
+      timeouts: {
+        value: googleComputeReservationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeReservationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

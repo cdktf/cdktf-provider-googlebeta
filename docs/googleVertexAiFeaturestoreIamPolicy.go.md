@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 googlevertexaifeaturestoreiampolicy.NewGoogleVertexAiFeaturestoreIamPolicy(scope Construct, id *string, config GoogleVertexAiFeaturestoreIamPolicyConfig) GoogleVertexAiFeaturestoreIamPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamPolicy.GoogleVertexAiFeaturestoreIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlevertexaifeaturestoreiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiampolicy"
 
 &googlevertexaifeaturestoreiampolicy.GoogleVertexAiFeaturestoreIamPolicyConfig {
 	Connection: interface{},

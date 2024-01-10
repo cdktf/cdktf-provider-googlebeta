@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_monitoring_slo
 // generated from terraform resource schema
 
@@ -116,6 +111,25 @@ export function googleMonitoringSloBasicSliAvailabilityToTerraform(struct?: Goog
   }
 }
 
+
+export function googleMonitoringSloBasicSliAvailabilityToHclTerraform(struct?: GoogleMonitoringSloBasicSliAvailabilityOutputReference | GoogleMonitoringSloBasicSliAvailability): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloBasicSliAvailabilityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +197,25 @@ export function googleMonitoringSloBasicSliLatencyToTerraform(struct?: GoogleMon
   return {
     threshold: cdktf.stringToTerraform(struct!.threshold),
   }
+}
+
+
+export function googleMonitoringSloBasicSliLatencyToHclTerraform(struct?: GoogleMonitoringSloBasicSliLatencyOutputReference | GoogleMonitoringSloBasicSliLatency): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threshold: {
+      value: cdktf.stringToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloBasicSliLatencyOutputReference extends cdktf.ComplexObject {
@@ -290,6 +323,49 @@ export function googleMonitoringSloBasicSliToTerraform(struct?: GoogleMonitoring
     availability: googleMonitoringSloBasicSliAvailabilityToTerraform(struct!.availability),
     latency: googleMonitoringSloBasicSliLatencyToTerraform(struct!.latency),
   }
+}
+
+
+export function googleMonitoringSloBasicSliToHclTerraform(struct?: GoogleMonitoringSloBasicSliOutputReference | GoogleMonitoringSloBasicSli): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.location),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    method: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.method),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    version: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.version),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    availability: {
+      value: googleMonitoringSloBasicSliAvailabilityToHclTerraform(struct!.availability),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloBasicSliAvailabilityList",
+    },
+    latency: {
+      value: googleMonitoringSloBasicSliLatencyToHclTerraform(struct!.latency),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloBasicSliLatencyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloBasicSliOutputReference extends cdktf.ComplexObject {
@@ -456,6 +532,31 @@ export function googleMonitoringSloRequestBasedSliDistributionCutRangeToTerrafor
   }
 }
 
+
+export function googleMonitoringSloRequestBasedSliDistributionCutRangeToHclTerraform(struct?: GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference | GoogleMonitoringSloRequestBasedSliDistributionCutRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.numberToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min: {
+      value: cdktf.numberToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -554,6 +655,31 @@ export function googleMonitoringSloRequestBasedSliDistributionCutToTerraform(str
     distribution_filter: cdktf.stringToTerraform(struct!.distributionFilter),
     range: googleMonitoringSloRequestBasedSliDistributionCutRangeToTerraform(struct!.range),
   }
+}
+
+
+export function googleMonitoringSloRequestBasedSliDistributionCutToHclTerraform(struct?: GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference | GoogleMonitoringSloRequestBasedSliDistributionCut): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    distribution_filter: {
+      value: cdktf.stringToHclTerraform(struct!.distributionFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: googleMonitoringSloRequestBasedSliDistributionCutRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloRequestBasedSliDistributionCutRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference extends cdktf.ComplexObject {
@@ -675,6 +801,37 @@ export function googleMonitoringSloRequestBasedSliGoodTotalRatioToTerraform(stru
   }
 }
 
+
+export function googleMonitoringSloRequestBasedSliGoodTotalRatioToHclTerraform(struct?: GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference | GoogleMonitoringSloRequestBasedSliGoodTotalRatio): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bad_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.badServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    good_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.goodServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    total_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.totalServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -793,6 +950,31 @@ export function googleMonitoringSloRequestBasedSliToTerraform(struct?: GoogleMon
   }
 }
 
+
+export function googleMonitoringSloRequestBasedSliToHclTerraform(struct?: GoogleMonitoringSloRequestBasedSliOutputReference | GoogleMonitoringSloRequestBasedSli): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    distribution_cut: {
+      value: googleMonitoringSloRequestBasedSliDistributionCutToHclTerraform(struct!.distributionCut),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloRequestBasedSliDistributionCutList",
+    },
+    good_total_ratio: {
+      value: googleMonitoringSloRequestBasedSliGoodTotalRatioToHclTerraform(struct!.goodTotalRatio),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloRequestBasedSliGoodTotalRatioList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloRequestBasedSliOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -888,6 +1070,37 @@ export function googleMonitoringSloTimeoutsToTerraform(struct?: GoogleMonitoring
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleMonitoringSloTimeoutsToHclTerraform(struct?: GoogleMonitoringSloTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1011,6 +1224,25 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSl
   }
 }
 
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1078,6 +1310,25 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSl
   return {
     threshold: cdktf.stringToTerraform(struct!.threshold),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threshold: {
+      value: cdktf.stringToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference extends cdktf.ComplexObject {
@@ -1185,6 +1436,49 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSl
     availability: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityToTerraform(struct!.availability),
     latency: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyToTerraform(struct!.latency),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.location),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    method: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.method),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    version: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.version),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    availability: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityToHclTerraform(struct!.availability),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityList",
+    },
+    latency: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyToHclTerraform(struct!.latency),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference extends cdktf.ComplexObject {
@@ -1351,6 +1645,31 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerform
   }
 }
 
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.numberToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min: {
+      value: cdktf.numberToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1449,6 +1768,31 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerform
     distribution_filter: cdktf.stringToTerraform(struct!.distributionFilter),
     range: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeToTerraform(struct!.range),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    distribution_filter: {
+      value: cdktf.stringToHclTerraform(struct!.distributionFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference extends cdktf.ComplexObject {
@@ -1566,6 +1910,37 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerform
     good_service_filter: cdktf.stringToTerraform(struct!.goodServiceFilter),
     total_service_filter: cdktf.stringToTerraform(struct!.totalServiceFilter),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bad_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.badServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    good_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.goodServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    total_service_filter: {
+      value: cdktf.stringToHclTerraform(struct!.totalServiceFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference extends cdktf.ComplexObject {
@@ -1686,6 +2061,31 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerform
   }
 }
 
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    distribution_cut: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutToHclTerraform(struct!.distributionCut),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutList",
+    },
+    good_total_ratio: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioToHclTerraform(struct!.goodTotalRatio),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1788,6 +2188,37 @@ export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdToTerra
     basic_sli_performance: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceToTerraform(struct!.basicSliPerformance),
     performance: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceToTerraform(struct!.performance),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference | GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    basic_sli_performance: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceToHclTerraform(struct!.basicSliPerformance),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceList",
+    },
+    performance: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceToHclTerraform(struct!.performance),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference extends cdktf.ComplexObject {
@@ -1912,6 +2343,31 @@ export function googleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeToTerraf
   }
 }
 
+
+export function googleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference | GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.numberToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min: {
+      value: cdktf.numberToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2013,6 +2469,31 @@ export function googleMonitoringSloWindowsBasedSliMetricMeanInRangeToTerraform(s
   }
 }
 
+
+export function googleMonitoringSloWindowsBasedSliMetricMeanInRangeToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference | GoogleMonitoringSloWindowsBasedSliMetricMeanInRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    time_series: {
+      value: cdktf.stringToHclTerraform(struct!.timeSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: googleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2105,6 +2586,31 @@ export function googleMonitoringSloWindowsBasedSliMetricSumInRangeRangeToTerrafo
     max: cdktf.numberToTerraform(struct!.max),
     min: cdktf.numberToTerraform(struct!.min),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliMetricSumInRangeRangeToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference | GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max: {
+      value: cdktf.numberToHclTerraform(struct!.max),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min: {
+      value: cdktf.numberToHclTerraform(struct!.min),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference extends cdktf.ComplexObject {
@@ -2208,6 +2714,31 @@ export function googleMonitoringSloWindowsBasedSliMetricSumInRangeToTerraform(st
     time_series: cdktf.stringToTerraform(struct!.timeSeries),
     range: googleMonitoringSloWindowsBasedSliMetricSumInRangeRangeToTerraform(struct!.range),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliMetricSumInRangeToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference | GoogleMonitoringSloWindowsBasedSliMetricSumInRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    time_series: {
+      value: cdktf.stringToHclTerraform(struct!.timeSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: googleMonitoringSloWindowsBasedSliMetricSumInRangeRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference extends cdktf.ComplexObject {
@@ -2325,6 +2856,49 @@ export function googleMonitoringSloWindowsBasedSliToTerraform(struct?: GoogleMon
     metric_mean_in_range: googleMonitoringSloWindowsBasedSliMetricMeanInRangeToTerraform(struct!.metricMeanInRange),
     metric_sum_in_range: googleMonitoringSloWindowsBasedSliMetricSumInRangeToTerraform(struct!.metricSumInRange),
   }
+}
+
+
+export function googleMonitoringSloWindowsBasedSliToHclTerraform(struct?: GoogleMonitoringSloWindowsBasedSliOutputReference | GoogleMonitoringSloWindowsBasedSli): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    good_bad_metric_filter: {
+      value: cdktf.stringToHclTerraform(struct!.goodBadMetricFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    window_period: {
+      value: cdktf.stringToHclTerraform(struct!.windowPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    good_total_ratio_threshold: {
+      value: googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdToHclTerraform(struct!.goodTotalRatioThreshold),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdList",
+    },
+    metric_mean_in_range: {
+      value: googleMonitoringSloWindowsBasedSliMetricMeanInRangeToHclTerraform(struct!.metricMeanInRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeList",
+    },
+    metric_sum_in_range: {
+      value: googleMonitoringSloWindowsBasedSliMetricSumInRangeToHclTerraform(struct!.metricSumInRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleMonitoringSloWindowsBasedSliMetricSumInRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringSloWindowsBasedSliOutputReference extends cdktf.ComplexObject {
@@ -2761,5 +3335,91 @@ export class GoogleMonitoringSlo extends cdktf.TerraformResource {
       timeouts: googleMonitoringSloTimeoutsToTerraform(this._timeouts.internalValue),
       windows_based_sli: googleMonitoringSloWindowsBasedSliToTerraform(this._windowsBasedSli.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      calendar_period: {
+        value: cdktf.stringToHclTerraform(this._calendarPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      goal: {
+        value: cdktf.numberToHclTerraform(this._goal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rolling_period_days: {
+        value: cdktf.numberToHclTerraform(this._rollingPeriodDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slo_id: {
+        value: cdktf.stringToHclTerraform(this._sloId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._userLabels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      basic_sli: {
+        value: googleMonitoringSloBasicSliToHclTerraform(this._basicSli.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMonitoringSloBasicSliList",
+      },
+      request_based_sli: {
+        value: googleMonitoringSloRequestBasedSliToHclTerraform(this._requestBasedSli.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMonitoringSloRequestBasedSliList",
+      },
+      timeouts: {
+        value: googleMonitoringSloTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleMonitoringSloTimeouts",
+      },
+      windows_based_sli: {
+        value: googleMonitoringSloWindowsBasedSliToHclTerraform(this._windowsBasedSli.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMonitoringSloWindowsBasedSliList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

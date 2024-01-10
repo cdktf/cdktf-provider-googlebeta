@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_monitoring_metric_descriptor
 // generated from terraform resource schema
 
@@ -134,6 +129,37 @@ export function googleMonitoringMetricDescriptorLabelsToTerraform(struct?: Googl
     key: cdktf.stringToTerraform(struct!.key),
     value_type: cdktf.stringToTerraform(struct!.valueType),
   }
+}
+
+
+export function googleMonitoringMetricDescriptorLabelsToHclTerraform(struct?: GoogleMonitoringMetricDescriptorLabels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringMetricDescriptorLabelsOutputReference extends cdktf.ComplexObject {
@@ -283,6 +309,31 @@ export function googleMonitoringMetricDescriptorMetadataToTerraform(struct?: Goo
   }
 }
 
+
+export function googleMonitoringMetricDescriptorMetadataToHclTerraform(struct?: GoogleMonitoringMetricDescriptorMetadataOutputReference | GoogleMonitoringMetricDescriptorMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ingest_delay: {
+      value: cdktf.stringToHclTerraform(struct!.ingestDelay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sample_period: {
+      value: cdktf.stringToHclTerraform(struct!.samplePeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleMonitoringMetricDescriptorMetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -378,6 +429,37 @@ export function googleMonitoringMetricDescriptorTimeoutsToTerraform(struct?: Goo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleMonitoringMetricDescriptorTimeoutsToHclTerraform(struct?: GoogleMonitoringMetricDescriptorTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleMonitoringMetricDescriptorTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -758,5 +840,85 @@ export class GoogleMonitoringMetricDescriptor extends cdktf.TerraformResource {
       metadata: googleMonitoringMetricDescriptorMetadataToTerraform(this._metadata.internalValue),
       timeouts: googleMonitoringMetricDescriptorTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      launch_stage: {
+        value: cdktf.stringToHclTerraform(this._launchStage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_kind: {
+        value: cdktf.stringToHclTerraform(this._metricKind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unit: {
+        value: cdktf.stringToHclTerraform(this._unit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_type: {
+        value: cdktf.stringToHclTerraform(this._valueType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(googleMonitoringMetricDescriptorLabelsToHclTerraform, true)(this._labels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleMonitoringMetricDescriptorLabelsList",
+      },
+      metadata: {
+        value: googleMonitoringMetricDescriptorMetadataToHclTerraform(this._metadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleMonitoringMetricDescriptorMetadataList",
+      },
+      timeouts: {
+        value: googleMonitoringMetricDescriptorTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleMonitoringMetricDescriptorTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

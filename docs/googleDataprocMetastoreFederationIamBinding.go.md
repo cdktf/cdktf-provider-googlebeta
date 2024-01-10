@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.NewGoogleDataprocMetastoreFederationIamBinding(scope Construct, id *string, config GoogleDataprocMetastoreFederationIamBindingConfig) GoogleDataprocMetastoreFederationIamBinding
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIam
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIam
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 &googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBindingCondition {
 	Expression: *string,
@@ -926,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 &googledataprocmetastorefederationiambinding.GoogleDataprocMetastoreFederationIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatap
 	FederationId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1133,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledataprocmetastorefederationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastorefederationiambinding"
 
 googledataprocmetastorefederationiambinding.NewGoogleDataprocMetastoreFederationIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreFederationIamBindingConditionOutputReference
 ```

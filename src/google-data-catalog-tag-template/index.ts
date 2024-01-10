@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_data_catalog_tag_template
 // generated from terraform resource schema
 
@@ -77,6 +72,25 @@ export function googleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesToTer
   return {
     display_name: cdktf.stringToTerraform(struct!.displayName),
   }
+}
+
+
+export function googleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesToHclTerraform(struct?: GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference extends cdktf.ComplexObject {
@@ -175,6 +189,25 @@ export function googleDataCatalogTagTemplateFieldsTypeEnumTypeToTerraform(struct
   }
 }
 
+
+export function googleDataCatalogTagTemplateFieldsTypeEnumTypeToHclTerraform(struct?: GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference | GoogleDataCatalogTagTemplateFieldsTypeEnumType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_values: {
+      value: cdktf.listMapperHcl(googleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesToHclTerraform, true)(struct!.allowedValues),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -245,6 +278,31 @@ export function googleDataCatalogTagTemplateFieldsTypeToTerraform(struct?: Googl
     primitive_type: cdktf.stringToTerraform(struct!.primitiveType),
     enum_type: googleDataCatalogTagTemplateFieldsTypeEnumTypeToTerraform(struct!.enumType),
   }
+}
+
+
+export function googleDataCatalogTagTemplateFieldsTypeToHclTerraform(struct?: GoogleDataCatalogTagTemplateFieldsTypeOutputReference | GoogleDataCatalogTagTemplateFieldsType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    primitive_type: {
+      value: cdktf.stringToHclTerraform(struct!.primitiveType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enum_type: {
+      value: googleDataCatalogTagTemplateFieldsTypeEnumTypeToHclTerraform(struct!.enumType),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataCatalogTagTemplateFieldsTypeEnumTypeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataCatalogTagTemplateFieldsTypeOutputReference extends cdktf.ComplexObject {
@@ -369,6 +427,55 @@ export function googleDataCatalogTagTemplateFieldsToTerraform(struct?: GoogleDat
     order: cdktf.numberToTerraform(struct!.order),
     type: googleDataCatalogTagTemplateFieldsTypeToTerraform(struct!.type),
   }
+}
+
+
+export function googleDataCatalogTagTemplateFieldsToHclTerraform(struct?: GoogleDataCatalogTagTemplateFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_id: {
+      value: cdktf.stringToHclTerraform(struct!.fieldId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_required: {
+      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    order: {
+      value: cdktf.numberToHclTerraform(struct!.order),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: googleDataCatalogTagTemplateFieldsTypeToHclTerraform(struct!.type),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataCatalogTagTemplateFieldsTypeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataCatalogTagTemplateFieldsOutputReference extends cdktf.ComplexObject {
@@ -585,6 +692,37 @@ export function googleDataCatalogTagTemplateTimeoutsToTerraform(struct?: GoogleD
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDataCatalogTagTemplateTimeoutsToHclTerraform(struct?: GoogleDataCatalogTagTemplateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataCatalogTagTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -897,5 +1035,61 @@ export class GoogleDataCatalogTagTemplate extends cdktf.TerraformResource {
       fields: cdktf.listMapper(googleDataCatalogTagTemplateFieldsToTerraform, true)(this._fields.internalValue),
       timeouts: googleDataCatalogTagTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_delete: {
+        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_template_id: {
+        value: cdktf.stringToHclTerraform(this._tagTemplateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fields: {
+        value: cdktf.listMapperHcl(googleDataCatalogTagTemplateFieldsToHclTerraform, true)(this._fields.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleDataCatalogTagTemplateFieldsList",
+      },
+      timeouts: {
+        value: googleDataCatalogTagTemplateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataCatalogTagTemplateTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

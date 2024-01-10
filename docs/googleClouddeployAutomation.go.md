@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomation(scope Construct, id *string, config GoogleClouddeployAutomationConfig) GoogleClouddeployAutomation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.toMetadata"></a>
 
@@ -459,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.GoogleClouddeployAutomation_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.GoogleClouddeployAutomation_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ googleclouddeployautomation.GoogleClouddeployAutomation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.GoogleClouddeployAutomation_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +526,7 @@ googleclouddeployautomation.GoogleClouddeployAutomation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.GoogleClouddeployAutomation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1111,7 +1118,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationConfig {
 	Connection: interface{},
@@ -1125,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Location: *string,
 	Name: *string,
 	Rules: interface{},
-	Selector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleClouddeployAutomation.GoogleClouddeployAutomationSelector,
+	Selector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployAutomation.GoogleClouddeployAutomationSelector,
 	ServiceAccount: *string,
 	Annotations: *map[string]*string,
 	Description: *string,
@@ -1133,7 +1140,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloud
 	Labels: *map[string]*string,
 	Project: *string,
 	Suspended: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleClouddeployAutomation.GoogleClouddeployAutomationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployAutomation.GoogleClouddeployAutomationTimeouts,
 }
 ```
 
@@ -1430,11 +1437,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationRules {
-	AdvanceRolloutRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleClouddeployAutomation.GoogleClouddeployAutomationRulesAdvanceRolloutRule,
-	PromoteReleaseRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRule,
+	AdvanceRolloutRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesAdvanceRolloutRule,
+	PromoteReleaseRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRule,
 }
 ```
 
@@ -1480,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesAdvanceRolloutRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationRulesAdvanceRolloutRule {
 	Id: *string,
@@ -1553,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationRulesPromoteReleaseRule {
 	Id: *string,
@@ -1642,7 +1649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationSelector {
 	Targets: interface{},
@@ -1676,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationSelectorTargets {
 	Id: *string,
@@ -1731,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 &googleclouddeployautomation.GoogleClouddeployAutomationTimeouts {
 	Create: *string,
@@ -1793,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationRulesAdvanceRolloutRuleOutputReference
 ```
@@ -2122,7 +2129,7 @@ func InternalValue() GoogleClouddeployAutomationRulesAdvanceRolloutRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleClouddeployAutomationRulesList
 ```
@@ -2163,10 +2170,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2265,7 +2289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleClouddeployAutomationRulesOutputReference
 ```
@@ -2616,7 +2640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 ```
@@ -2974,7 +2998,7 @@ func InternalValue() GoogleClouddeployAutomationRulesPromoteReleaseRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationSelectorOutputReference
 ```
@@ -3258,7 +3282,7 @@ func InternalValue() GoogleClouddeployAutomationSelector
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationSelectorTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleClouddeployAutomationSelectorTargetsList
 ```
@@ -3299,10 +3323,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3401,7 +3442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationSelectorTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationSelectorTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleClouddeployAutomationSelectorTargetsOutputReference
 ```
@@ -3726,7 +3767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleclouddeployautomation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeployautomation"
 
 googleclouddeployautomation.NewGoogleClouddeployAutomationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationTimeoutsOutputReference
 ```

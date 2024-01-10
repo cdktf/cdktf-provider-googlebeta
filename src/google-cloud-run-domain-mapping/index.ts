@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_cloud_run_domain_mapping
 // generated from terraform resource schema
 
@@ -64,6 +59,17 @@ export function googleCloudRunDomainMappingStatusConditionsToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function googleCloudRunDomainMappingStatusConditionsToHclTerraform(struct?: GoogleCloudRunDomainMappingStatusConditions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleCloudRunDomainMappingStatusConditionsOutputReference extends cdktf.ComplexObject {
@@ -145,6 +151,17 @@ export function googleCloudRunDomainMappingStatusResourceRecordsToTerraform(stru
   }
 }
 
+
+export function googleCloudRunDomainMappingStatusResourceRecordsToHclTerraform(struct?: GoogleCloudRunDomainMappingStatusResourceRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleCloudRunDomainMappingStatusResourceRecordsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -217,6 +234,17 @@ export function googleCloudRunDomainMappingStatusToTerraform(struct?: GoogleClou
   }
   return {
   }
+}
+
+
+export function googleCloudRunDomainMappingStatusToHclTerraform(struct?: GoogleCloudRunDomainMappingStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleCloudRunDomainMappingStatusOutputReference extends cdktf.ComplexObject {
@@ -335,6 +363,37 @@ export function googleCloudRunDomainMappingMetadataToTerraform(struct?: GoogleCl
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     namespace: cdktf.stringToTerraform(struct!.namespace),
   }
+}
+
+
+export function googleCloudRunDomainMappingMetadataToHclTerraform(struct?: GoogleCloudRunDomainMappingMetadataOutputReference | GoogleCloudRunDomainMappingMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    annotations: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    labels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudRunDomainMappingMetadataOutputReference extends cdktf.ComplexObject {
@@ -501,6 +560,37 @@ export function googleCloudRunDomainMappingSpecToTerraform(struct?: GoogleCloudR
   }
 }
 
+
+export function googleCloudRunDomainMappingSpecToHclTerraform(struct?: GoogleCloudRunDomainMappingSpecOutputReference | GoogleCloudRunDomainMappingSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_mode: {
+      value: cdktf.stringToHclTerraform(struct!.certificateMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    force_override: {
+      value: cdktf.booleanToHclTerraform(struct!.forceOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    route_name: {
+      value: cdktf.stringToHclTerraform(struct!.routeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudRunDomainMappingSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -610,6 +700,31 @@ export function googleCloudRunDomainMappingTimeoutsToTerraform(struct?: GoogleCl
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleCloudRunDomainMappingTimeoutsToHclTerraform(struct?: GoogleCloudRunDomainMappingTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudRunDomainMappingTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -880,5 +995,55 @@ export class GoogleCloudRunDomainMapping extends cdktf.TerraformResource {
       spec: googleCloudRunDomainMappingSpecToTerraform(this._spec.internalValue),
       timeouts: googleCloudRunDomainMappingTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: googleCloudRunDomainMappingMetadataToHclTerraform(this._metadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudRunDomainMappingMetadataList",
+      },
+      spec: {
+        value: googleCloudRunDomainMappingSpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudRunDomainMappingSpecList",
+      },
+      timeouts: {
+        value: googleCloudRunDomainMappingTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudRunDomainMappingTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

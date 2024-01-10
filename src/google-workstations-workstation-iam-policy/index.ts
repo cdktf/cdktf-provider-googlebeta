@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workstations_workstation_iam_policy
 // generated from terraform resource schema
 
@@ -228,5 +223,55 @@ export class GoogleWorkstationsWorkstationIamPolicy extends cdktf.TerraformResou
       workstation_config_id: cdktf.stringToTerraform(this._workstationConfigId),
       workstation_id: cdktf.stringToTerraform(this._workstationId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_data: {
+        value: cdktf.stringToHclTerraform(this._policyData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workstation_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._workstationClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workstation_config_id: {
+        value: cdktf.stringToHclTerraform(this._workstationConfigId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workstation_id: {
+        value: cdktf.stringToHclTerraform(this._workstationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.NewGoogleApigeeEnvgroup(scope Construct, id *string, config GoogleApigeeEnvgroupConfig) GoogleApigeeEnvgroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.GoogleApigeeEnvgroup_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.GoogleApigeeEnvgroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ googleapigeeenvgroup.GoogleApigeeEnvgroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.GoogleApigeeEnvgroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ googleapigeeenvgroup.GoogleApigeeEnvgroup_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.GoogleApigeeEnvgroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 &googleapigeeenvgroup.GoogleApigeeEnvgroupConfig {
 	Connection: interface{},
@@ -818,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapige
 	OrgId: *string,
 	Hostnames: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeouts,
 }
 ```
 
@@ -987,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 &googleapigeeenvgroup.GoogleApigeeEnvgroupTimeouts {
 	Create: *string,
@@ -1049,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvgroup.GoogleApigeeEnvgroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvgroup"
 
 googleapigeeenvgroup.NewGoogleApigeeEnvgroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeEnvgroupTimeoutsOutputReference
 ```

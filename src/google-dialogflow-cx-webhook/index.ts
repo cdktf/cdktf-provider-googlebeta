@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dialogflow_cx_webhook
 // generated from terraform resource schema
 
@@ -112,6 +107,37 @@ export function googleDialogflowCxWebhookGenericWebServiceToTerraform(struct?: G
     request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
     uri: cdktf.stringToTerraform(struct!.uri),
   }
+}
+
+
+export function googleDialogflowCxWebhookGenericWebServiceToHclTerraform(struct?: GoogleDialogflowCxWebhookGenericWebServiceOutputReference | GoogleDialogflowCxWebhookGenericWebService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_ca_certs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedCaCerts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    request_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends cdktf.ComplexObject {
@@ -236,6 +262,37 @@ export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToTerr
   }
 }
 
+
+export function googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToHclTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference | GoogleDialogflowCxWebhookServiceDirectoryGenericWebService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_ca_certs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedCaCerts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    request_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -351,6 +408,31 @@ export function googleDialogflowCxWebhookServiceDirectoryToTerraform(struct?: Go
   }
 }
 
+
+export function googleDialogflowCxWebhookServiceDirectoryToHclTerraform(struct?: GoogleDialogflowCxWebhookServiceDirectoryOutputReference | GoogleDialogflowCxWebhookServiceDirectory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    generic_web_service: {
+      value: googleDialogflowCxWebhookServiceDirectoryGenericWebServiceToHclTerraform(struct!.genericWebService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDialogflowCxWebhookServiceDirectoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -440,6 +522,37 @@ export function googleDialogflowCxWebhookTimeoutsToTerraform(struct?: GoogleDial
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDialogflowCxWebhookTimeoutsToHclTerraform(struct?: GoogleDialogflowCxWebhookTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowCxWebhookTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -814,5 +927,79 @@ export class GoogleDialogflowCxWebhook extends cdktf.TerraformResource {
       service_directory: googleDialogflowCxWebhookServiceDirectoryToTerraform(this._serviceDirectory.internalValue),
       timeouts: googleDialogflowCxWebhookTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_spell_correction: {
+        value: cdktf.booleanToHclTerraform(this._enableSpellCorrection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_stackdriver_logging: {
+        value: cdktf.booleanToHclTerraform(this._enableStackdriverLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_settings: {
+        value: cdktf.stringToHclTerraform(this._securitySettings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeout: {
+        value: cdktf.stringToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      generic_web_service: {
+        value: googleDialogflowCxWebhookGenericWebServiceToHclTerraform(this._genericWebService.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowCxWebhookGenericWebServiceList",
+      },
+      service_directory: {
+        value: googleDialogflowCxWebhookServiceDirectoryToHclTerraform(this._serviceDirectory.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowCxWebhookServiceDirectoryList",
+      },
+      timeouts: {
+        value: googleDialogflowCxWebhookTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDialogflowCxWebhookTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

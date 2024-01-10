@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_region_health_check
 // generated from terraform resource schema
 
@@ -187,6 +182,43 @@ export function googleComputeRegionHealthCheckGrpcHealthCheckToTerraform(struct?
     port_name: cdktf.stringToTerraform(struct!.portName),
     port_specification: cdktf.stringToTerraform(struct!.portSpecification),
   }
+}
+
+
+export function googleComputeRegionHealthCheckGrpcHealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference | GoogleComputeRegionHealthCheckGrpcHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    grpc_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.grpcServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -383,6 +415,61 @@ export function googleComputeRegionHealthCheckHttp2HealthCheckToTerraform(struct
     request_path: cdktf.stringToTerraform(struct!.requestPath),
     response: cdktf.stringToTerraform(struct!.response),
   }
+}
+
+
+export function googleComputeRegionHealthCheckHttp2HealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference | GoogleComputeRegionHealthCheckHttp2HealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_header: {
+      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request_path: {
+      value: cdktf.stringToHclTerraform(struct!.requestPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference extends cdktf.ComplexObject {
@@ -647,6 +734,61 @@ export function googleComputeRegionHealthCheckHttpHealthCheckToTerraform(struct?
   }
 }
 
+
+export function googleComputeRegionHealthCheckHttpHealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference | GoogleComputeRegionHealthCheckHttpHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_header: {
+      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request_path: {
+      value: cdktf.stringToHclTerraform(struct!.requestPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -909,6 +1051,61 @@ export function googleComputeRegionHealthCheckHttpsHealthCheckToTerraform(struct
   }
 }
 
+
+export function googleComputeRegionHealthCheckHttpsHealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference | GoogleComputeRegionHealthCheckHttpsHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_header: {
+      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request_path: {
+      value: cdktf.stringToHclTerraform(struct!.requestPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1109,6 +1306,25 @@ export function googleComputeRegionHealthCheckLogConfigToTerraform(struct?: Goog
   }
 }
 
+
+export function googleComputeRegionHealthCheckLogConfigToHclTerraform(struct?: GoogleComputeRegionHealthCheckLogConfigOutputReference | GoogleComputeRegionHealthCheckLogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionHealthCheckLogConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1230,6 +1446,55 @@ export function googleComputeRegionHealthCheckSslHealthCheckToTerraform(struct?:
     request: cdktf.stringToTerraform(struct!.request),
     response: cdktf.stringToTerraform(struct!.response),
   }
+}
+
+
+export function googleComputeRegionHealthCheckSslHealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckSslHealthCheckOutputReference | GoogleComputeRegionHealthCheckSslHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_header: {
+      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request: {
+      value: cdktf.stringToHclTerraform(struct!.request),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionHealthCheckSslHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -1465,6 +1730,55 @@ export function googleComputeRegionHealthCheckTcpHealthCheckToTerraform(struct?:
   }
 }
 
+
+export function googleComputeRegionHealthCheckTcpHealthCheckToHclTerraform(struct?: GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference | GoogleComputeRegionHealthCheckTcpHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port_name: {
+      value: cdktf.stringToHclTerraform(struct!.portName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_specification: {
+      value: cdktf.stringToHclTerraform(struct!.portSpecification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    proxy_header: {
+      value: cdktf.stringToHclTerraform(struct!.proxyHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    request: {
+      value: cdktf.stringToHclTerraform(struct!.request),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1648,6 +1962,37 @@ export function googleComputeRegionHealthCheckTimeoutsToTerraform(struct?: Googl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeRegionHealthCheckTimeoutsToHclTerraform(struct?: GoogleComputeRegionHealthCheckTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionHealthCheckTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2135,5 +2480,115 @@ export class GoogleComputeRegionHealthCheck extends cdktf.TerraformResource {
       tcp_health_check: googleComputeRegionHealthCheckTcpHealthCheckToTerraform(this._tcpHealthCheck.internalValue),
       timeouts: googleComputeRegionHealthCheckTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      check_interval_sec: {
+        value: cdktf.numberToHclTerraform(this._checkIntervalSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      healthy_threshold: {
+        value: cdktf.numberToHclTerraform(this._healthyThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeout_sec: {
+        value: cdktf.numberToHclTerraform(this._timeoutSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      unhealthy_threshold: {
+        value: cdktf.numberToHclTerraform(this._unhealthyThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      grpc_health_check: {
+        value: googleComputeRegionHealthCheckGrpcHealthCheckToHclTerraform(this._grpcHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckGrpcHealthCheckList",
+      },
+      http2_health_check: {
+        value: googleComputeRegionHealthCheckHttp2HealthCheckToHclTerraform(this._http2HealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckHttp2HealthCheckList",
+      },
+      http_health_check: {
+        value: googleComputeRegionHealthCheckHttpHealthCheckToHclTerraform(this._httpHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckHttpHealthCheckList",
+      },
+      https_health_check: {
+        value: googleComputeRegionHealthCheckHttpsHealthCheckToHclTerraform(this._httpsHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckHttpsHealthCheckList",
+      },
+      log_config: {
+        value: googleComputeRegionHealthCheckLogConfigToHclTerraform(this._logConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckLogConfigList",
+      },
+      ssl_health_check: {
+        value: googleComputeRegionHealthCheckSslHealthCheckToHclTerraform(this._sslHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckSslHealthCheckList",
+      },
+      tcp_health_check: {
+        value: googleComputeRegionHealthCheckTcpHealthCheckToHclTerraform(this._tcpHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionHealthCheckTcpHealthCheckList",
+      },
+      timeouts: {
+        value: googleComputeRegionHealthCheckTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeRegionHealthCheckTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

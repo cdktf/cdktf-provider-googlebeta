@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_network_security_server_tls_policy
 // generated from terraform resource schema
 
@@ -97,6 +92,25 @@ export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa
   }
 }
 
+
+export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference | GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    plugin_instance: {
+      value: cdktf.stringToHclTerraform(struct!.pluginInstance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -159,6 +173,25 @@ export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa
   return {
     target_uri: cdktf.stringToTerraform(struct!.targetUri),
   }
+}
+
+
+export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference | GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_uri: {
+      value: cdktf.stringToHclTerraform(struct!.targetUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference extends cdktf.ComplexObject {
@@ -230,6 +263,31 @@ export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa
     certificate_provider_instance: googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceToTerraform(struct!.certificateProviderInstance),
     grpc_endpoint: googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointToTerraform(struct!.grpcEndpoint),
   }
+}
+
+
+export function googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_provider_instance: {
+      value: googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceToHclTerraform(struct!.certificateProviderInstance),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceList",
+    },
+    grpc_endpoint: {
+      value: googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointToHclTerraform(struct!.grpcEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference extends cdktf.ComplexObject {
@@ -370,6 +428,37 @@ export function googleNetworkSecurityServerTlsPolicyMtlsPolicyToTerraform(struct
   }
 }
 
+
+export function googleNetworkSecurityServerTlsPolicyMtlsPolicyToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference | GoogleNetworkSecurityServerTlsPolicyMtlsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_validation_mode: {
+      value: cdktf.stringToHclTerraform(struct!.clientValidationMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_validation_trust_config: {
+      value: cdktf.stringToHclTerraform(struct!.clientValidationTrustConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_validation_ca: {
+      value: cdktf.listMapperHcl(googleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaToHclTerraform, true)(struct!.clientValidationCa),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -481,6 +570,25 @@ export function googleNetworkSecurityServerTlsPolicyServerCertificateCertificate
   }
 }
 
+
+export function googleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference | GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    plugin_instance: {
+      value: cdktf.stringToHclTerraform(struct!.pluginInstance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -543,6 +651,25 @@ export function googleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoin
   return {
     target_uri: cdktf.stringToTerraform(struct!.targetUri),
   }
+}
+
+
+export function googleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference | GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_uri: {
+      value: cdktf.stringToHclTerraform(struct!.targetUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference extends cdktf.ComplexObject {
@@ -614,6 +741,31 @@ export function googleNetworkSecurityServerTlsPolicyServerCertificateToTerraform
     certificate_provider_instance: googleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceToTerraform(struct!.certificateProviderInstance),
     grpc_endpoint: googleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointToTerraform(struct!.grpcEndpoint),
   }
+}
+
+
+export function googleNetworkSecurityServerTlsPolicyServerCertificateToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyServerCertificateOutputReference | GoogleNetworkSecurityServerTlsPolicyServerCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_provider_instance: {
+      value: googleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceToHclTerraform(struct!.certificateProviderInstance),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceList",
+    },
+    grpc_endpoint: {
+      value: googleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointToHclTerraform(struct!.grpcEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityServerTlsPolicyServerCertificateOutputReference extends cdktf.ComplexObject {
@@ -711,6 +863,37 @@ export function googleNetworkSecurityServerTlsPolicyTimeoutsToTerraform(struct?:
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNetworkSecurityServerTlsPolicyTimeoutsToHclTerraform(struct?: GoogleNetworkSecurityServerTlsPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkSecurityServerTlsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1079,5 +1262,73 @@ export class GoogleNetworkSecurityServerTlsPolicy extends cdktf.TerraformResourc
       server_certificate: googleNetworkSecurityServerTlsPolicyServerCertificateToTerraform(this._serverCertificate.internalValue),
       timeouts: googleNetworkSecurityServerTlsPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_open: {
+        value: cdktf.booleanToHclTerraform(this._allowOpen),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtls_policy: {
+        value: googleNetworkSecurityServerTlsPolicyMtlsPolicyToHclTerraform(this._mtlsPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkSecurityServerTlsPolicyMtlsPolicyList",
+      },
+      server_certificate: {
+        value: googleNetworkSecurityServerTlsPolicyServerCertificateToHclTerraform(this._serverCertificate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkSecurityServerTlsPolicyServerCertificateList",
+      },
+      timeouts: {
+        value: googleNetworkSecurityServerTlsPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNetworkSecurityServerTlsPolicyTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

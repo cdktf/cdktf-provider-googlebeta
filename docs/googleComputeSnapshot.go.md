@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.NewGoogleComputeSnapshot(scope Construct, id *string, config GoogleComputeSnapshotConfig) GoogleComputeSnapshot
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.toMetadata"></a>
 
@@ -480,7 +487,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.GoogleComputeSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.GoogleComputeSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ googlecomputesnapshot.GoogleComputeSnapshot_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.GoogleComputeSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ googlecomputesnapshot.GoogleComputeSnapshot_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.GoogleComputeSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1132,7 +1139,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 &googlecomputesnapshot.GoogleComputeSnapshotConfig {
 	Connection: interface{},
@@ -1149,10 +1156,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	SnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKey,
-	SourceDiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSnapshot.GoogleComputeSnapshotSourceDiskEncryptionKey,
+	SnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKey,
+	SourceDiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSnapshot.GoogleComputeSnapshotSourceDiskEncryptionKey,
 	StorageLocations: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeSnapshot.GoogleComputeSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSnapshot.GoogleComputeSnapshotTimeouts,
 	Zone: *string,
 }
 ```
@@ -1442,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 &googlecomputesnapshot.GoogleComputeSnapshotSnapshotEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -1510,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSourceDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 &googlecomputesnapshot.GoogleComputeSnapshotSourceDiskEncryptionKey {
 	KmsKeyServiceAccount: *string,
@@ -1562,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 &googlecomputesnapshot.GoogleComputeSnapshotTimeouts {
 	Create: *string,
@@ -1624,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference
 ```
@@ -1971,7 +1978,7 @@ func InternalValue() GoogleComputeSnapshotSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.NewGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference
 ```
@@ -2278,7 +2285,7 @@ func InternalValue() GoogleComputeSnapshotSourceDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputesnapshot"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshot"
 
 googlecomputesnapshot.NewGoogleComputeSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotTimeoutsOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_certificate_manager_certificate
 // generated from terraform resource schema
 
@@ -98,6 +93,17 @@ export function googleCertificateManagerCertificateManagedAuthorizationAttemptIn
   }
 }
 
+
+export function googleCertificateManagerCertificateManagedAuthorizationAttemptInfoToHclTerraform(struct?: GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -175,6 +181,17 @@ export function googleCertificateManagerCertificateManagedProvisioningIssueToTer
   }
   return {
   }
+}
+
+
+export function googleCertificateManagerCertificateManagedProvisioningIssueToHclTerraform(struct?: GoogleCertificateManagerCertificateManagedProvisioningIssue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleCertificateManagerCertificateManagedProvisioningIssueOutputReference extends cdktf.ComplexObject {
@@ -270,6 +287,37 @@ export function googleCertificateManagerCertificateManagedToTerraform(struct?: G
     domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
     issuance_config: cdktf.stringToTerraform(struct!.issuanceConfig),
   }
+}
+
+
+export function googleCertificateManagerCertificateManagedToHclTerraform(struct?: GoogleCertificateManagerCertificateManagedOutputReference | GoogleCertificateManagerCertificateManaged): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_authorizations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsAuthorizations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    issuance_config: {
+      value: cdktf.stringToHclTerraform(struct!.issuanceConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCertificateManagerCertificateManagedOutputReference extends cdktf.ComplexObject {
@@ -425,6 +473,43 @@ export function googleCertificateManagerCertificateSelfManagedToTerraform(struct
   }
 }
 
+
+export function googleCertificateManagerCertificateSelfManagedToHclTerraform(struct?: GoogleCertificateManagerCertificateSelfManagedOutputReference | GoogleCertificateManagerCertificateSelfManaged): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate_pem: {
+      value: cdktf.stringToHclTerraform(struct!.certificatePem),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.pemCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_private_key: {
+      value: cdktf.stringToHclTerraform(struct!.pemPrivateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key_pem: {
+      value: cdktf.stringToHclTerraform(struct!.privateKeyPem),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCertificateManagerCertificateSelfManagedOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -564,6 +649,37 @@ export function googleCertificateManagerCertificateTimeoutsToTerraform(struct?: 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleCertificateManagerCertificateTimeoutsToHclTerraform(struct?: GoogleCertificateManagerCertificateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCertificateManagerCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -922,5 +1038,73 @@ export class GoogleCertificateManagerCertificate extends cdktf.TerraformResource
       self_managed: googleCertificateManagerCertificateSelfManagedToTerraform(this._selfManaged.internalValue),
       timeouts: googleCertificateManagerCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed: {
+        value: googleCertificateManagerCertificateManagedToHclTerraform(this._managed.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCertificateManagerCertificateManagedList",
+      },
+      self_managed: {
+        value: googleCertificateManagerCertificateSelfManagedToHclTerraform(this._selfManaged.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCertificateManagerCertificateSelfManagedList",
+      },
+      timeouts: {
+        value: googleCertificateManagerCertificateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCertificateManagerCertificateTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

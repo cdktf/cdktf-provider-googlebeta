@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.NewGoogleDnsResponsePolicyRule(scope Construct, id *string, config GoogleDnsResponsePolicyRuleConfig) GoogleDnsResponsePolicyRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.GoogleDnsResponsePolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 &googlednsresponsepolicyrule.GoogleDnsResponsePolicyRuleConfig {
 	Connection: interface{},
@@ -912,9 +919,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsre
 	RuleName: *string,
 	Behavior: *string,
 	Id: *string,
-	LocalData: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalData,
+	LocalData: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalData,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleTimeouts,
 }
 ```
 
@@ -1126,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 &googlednsresponsepolicyrule.GoogleDnsResponsePolicyRuleLocalData {
 	LocalDatas: interface{},
@@ -1160,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 &googlednsresponsepolicyrule.GoogleDnsResponsePolicyRuleLocalDataLocalDatas {
 	Name: *string,
@@ -1244,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 &googlednsresponsepolicyrule.GoogleDnsResponsePolicyRuleTimeouts {
 	Create: *string,
@@ -1306,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.NewGoogleDnsResponsePolicyRuleLocalDataLocalDatasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDnsResponsePolicyRuleLocalDataLocalDatasList
 ```
@@ -1347,10 +1354,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1449,7 +1473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.NewGoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference
 ```
@@ -1818,7 +1842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.NewGoogleDnsResponsePolicyRuleLocalDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsResponsePolicyRuleLocalDataOutputReference
 ```
@@ -2102,7 +2126,7 @@ func InternalValue() GoogleDnsResponsePolicyRuleLocalData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlednsresponsepolicyrule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsresponsepolicyrule"
 
 googlednsresponsepolicyrule.NewGoogleDnsResponsePolicyRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsResponsePolicyRuleTimeoutsOutputReference
 ```

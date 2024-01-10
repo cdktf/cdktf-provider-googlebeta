@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocations(scope Construct, id *string, config DataGoogleAlloydbLocationsConfig) DataGoogleAlloydbLocations
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 &datagooglealloydblocations.DataGoogleAlloydbLocationsConfig {
 	Connection: interface{},
@@ -738,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 &datagooglealloydblocations.DataGoogleAlloydbLocationsLocations {
 
@@ -753,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglea
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocationsLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAlloydbLocationsLocationsList
 ```
@@ -794,10 +803,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -885,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/datagooglealloydblocations"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocationsLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAlloydbLocationsLocationsOutputReference
 ```

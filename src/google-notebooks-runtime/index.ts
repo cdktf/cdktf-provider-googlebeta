@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_notebooks_runtime
 // generated from terraform resource schema
 
@@ -87,6 +82,17 @@ export function googleNotebooksRuntimeMetricsToTerraform(struct?: GoogleNotebook
   }
 }
 
+
+export function googleNotebooksRuntimeMetricsToHclTerraform(struct?: GoogleNotebooksRuntimeMetrics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleNotebooksRuntimeMetricsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -167,6 +173,31 @@ export function googleNotebooksRuntimeAccessConfigToTerraform(struct?: GoogleNot
     access_type: cdktf.stringToTerraform(struct!.accessType),
     runtime_owner: cdktf.stringToTerraform(struct!.runtimeOwner),
   }
+}
+
+
+export function googleNotebooksRuntimeAccessConfigToHclTerraform(struct?: GoogleNotebooksRuntimeAccessConfigOutputReference | GoogleNotebooksRuntimeAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_type: {
+      value: cdktf.stringToHclTerraform(struct!.accessType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime_owner: {
+      value: cdktf.stringToHclTerraform(struct!.runtimeOwner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeAccessConfigOutputReference extends cdktf.ComplexObject {
@@ -269,6 +300,31 @@ export function googleNotebooksRuntimeSoftwareConfigKernelsToTerraform(struct?: 
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
   }
+}
+
+
+export function googleNotebooksRuntimeSoftwareConfigKernelsToHclTerraform(struct?: GoogleNotebooksRuntimeSoftwareConfigKernels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag: {
+      value: cdktf.stringToHclTerraform(struct!.tag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeSoftwareConfigKernelsOutputReference extends cdktf.ComplexObject {
@@ -449,6 +505,73 @@ export function googleNotebooksRuntimeSoftwareConfigToTerraform(struct?: GoogleN
     post_startup_script_behavior: cdktf.stringToTerraform(struct!.postStartupScriptBehavior),
     kernels: cdktf.listMapper(googleNotebooksRuntimeSoftwareConfigKernelsToTerraform, true)(struct!.kernels),
   }
+}
+
+
+export function googleNotebooksRuntimeSoftwareConfigToHclTerraform(struct?: GoogleNotebooksRuntimeSoftwareConfigOutputReference | GoogleNotebooksRuntimeSoftwareConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_gpu_driver_path: {
+      value: cdktf.stringToHclTerraform(struct!.customGpuDriverPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_health_monitoring: {
+      value: cdktf.booleanToHclTerraform(struct!.enableHealthMonitoring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    idle_shutdown: {
+      value: cdktf.booleanToHclTerraform(struct!.idleShutdown),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    idle_shutdown_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.idleShutdownTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    install_gpu_driver: {
+      value: cdktf.booleanToHclTerraform(struct!.installGpuDriver),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    notebook_upgrade_schedule: {
+      value: cdktf.stringToHclTerraform(struct!.notebookUpgradeSchedule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    post_startup_script: {
+      value: cdktf.stringToHclTerraform(struct!.postStartupScript),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    post_startup_script_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.postStartupScriptBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kernels: {
+      value: cdktf.listMapperHcl(googleNotebooksRuntimeSoftwareConfigKernelsToHclTerraform, true)(struct!.kernels),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeSoftwareConfigKernelsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeSoftwareConfigOutputReference extends cdktf.ComplexObject {
@@ -707,6 +830,37 @@ export function googleNotebooksRuntimeTimeoutsToTerraform(struct?: GoogleNoteboo
   }
 }
 
+
+export function googleNotebooksRuntimeTimeoutsToHclTerraform(struct?: GoogleNotebooksRuntimeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksRuntimeTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -837,6 +991,31 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigAccelera
   }
 }
 
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    core_count: {
+      value: cdktf.numberToHclTerraform(struct!.coreCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -932,6 +1111,31 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigContaine
     repository: cdktf.stringToTerraform(struct!.repository),
     tag: cdktf.stringToTerraform(struct!.tag),
   }
+}
+
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImages | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag: {
+      value: cdktf.stringToHclTerraform(struct!.tag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference extends cdktf.ComplexObject {
@@ -1089,6 +1293,49 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk
     disk_type: cdktf.stringToTerraform(struct!.diskType),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
   }
+}
+
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk_name: {
+      value: cdktf.stringToHclTerraform(struct!.diskName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk_size_gb: {
+      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    disk_type: {
+      value: cdktf.stringToHclTerraform(struct!.diskType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    labels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference extends cdktf.ComplexObject {
@@ -1281,6 +1528,49 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk
     type: cdktf.stringToTerraform(struct!.type),
     initialize_params: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsToTerraform(struct!.initializeParams),
   }
+}
+
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interface: {
+      value: cdktf.stringToHclTerraform(struct!.interface),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    initialize_params: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsToHclTerraform(struct!.initializeParams),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference extends cdktf.ComplexObject {
@@ -1477,6 +1767,25 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncrypti
   }
 }
 
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1566,6 +1875,37 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigShielded
     enable_secure_boot: cdktf.booleanToTerraform(struct!.enableSecureBoot),
     enable_vtpm: cdktf.booleanToTerraform(struct!.enableVtpm),
   }
+}
+
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_integrity_monitoring: {
+      value: cdktf.booleanToHclTerraform(struct!.enableIntegrityMonitoring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_secure_boot: {
+      value: cdktf.booleanToHclTerraform(struct!.enableSecureBoot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_vtpm: {
+      value: cdktf.booleanToHclTerraform(struct!.enableVtpm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigOutputReference extends cdktf.ComplexObject {
@@ -1803,6 +2143,103 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigToTerraf
     encryption_config: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigToTerraform(struct!.encryptionConfig),
     shielded_instance_config: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
   }
+}
+
+
+export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference | GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    internal_ip_only: {
+      value: cdktf.booleanToHclTerraform(struct!.internalIpOnly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    labels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    machine_type: {
+      value: cdktf.stringToHclTerraform(struct!.machineType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.metadata),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nic_type: {
+      value: cdktf.stringToHclTerraform(struct!.nicType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reserved_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.reservedIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet: {
+      value: cdktf.stringToHclTerraform(struct!.subnet),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    accelerator_config: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigToHclTerraform(struct!.acceleratorConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigList",
+    },
+    container_images: {
+      value: cdktf.listMapperHcl(googleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesToHclTerraform, true)(struct!.containerImages),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
+    },
+    data_disk: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskToHclTerraform(struct!.dataDisk),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskList",
+    },
+    encryption_config: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigToHclTerraform(struct!.encryptionConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigList",
+    },
+    shielded_instance_config: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigToHclTerraform(struct!.shieldedInstanceConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference extends cdktf.ComplexObject {
@@ -2163,6 +2600,25 @@ export function googleNotebooksRuntimeVirtualMachineToTerraform(struct?: GoogleN
   }
 }
 
+
+export function googleNotebooksRuntimeVirtualMachineToHclTerraform(struct?: GoogleNotebooksRuntimeVirtualMachineOutputReference | GoogleNotebooksRuntimeVirtualMachine): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    virtual_machine_config: {
+      value: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigToHclTerraform(struct!.virtualMachineConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNotebooksRuntimeVirtualMachineOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2470,5 +2926,67 @@ export class GoogleNotebooksRuntime extends cdktf.TerraformResource {
       timeouts: googleNotebooksRuntimeTimeoutsToTerraform(this._timeouts.internalValue),
       virtual_machine: googleNotebooksRuntimeVirtualMachineToTerraform(this._virtualMachine.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_config: {
+        value: googleNotebooksRuntimeAccessConfigToHclTerraform(this._accessConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksRuntimeAccessConfigList",
+      },
+      software_config: {
+        value: googleNotebooksRuntimeSoftwareConfigToHclTerraform(this._softwareConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksRuntimeSoftwareConfigList",
+      },
+      timeouts: {
+        value: googleNotebooksRuntimeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNotebooksRuntimeTimeouts",
+      },
+      virtual_machine: {
+        value: googleNotebooksRuntimeVirtualMachineToHclTerraform(this._virtualMachine.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNotebooksRuntimeVirtualMachineList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

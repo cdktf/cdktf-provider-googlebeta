@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.NewGoogleEndpointsServiceConsumersIamMember(scope Construct, id *string, config GoogleEndpointsServiceConsumersIamMemberConfig) GoogleEndpointsServiceConsumersIamMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMembe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMembe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 &googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMemberCondition {
 	Expression: *string,
@@ -890,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 &googleendpointsserviceconsumersiammember.GoogleEndpointsServiceConsumersIamMemberConfig {
 	Connection: interface{},
@@ -904,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpo
 	Member: *string,
 	Role: *string,
 	ServiceName: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1083,7 +1090,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleendpointsserviceconsumersiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiammember"
 
 googleendpointsserviceconsumersiammember.NewGoogleEndpointsServiceConsumersIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEndpointsServiceConsumersIamMemberConditionOutputReference
 ```

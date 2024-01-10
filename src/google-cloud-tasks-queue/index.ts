@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_cloud_tasks_queue
 // generated from terraform resource schema
 
@@ -103,6 +98,37 @@ export function googleCloudTasksQueueAppEngineRoutingOverrideToTerraform(struct?
     service: cdktf.stringToTerraform(struct!.service),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function googleCloudTasksQueueAppEngineRoutingOverrideToHclTerraform(struct?: GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference | GoogleCloudTasksQueueAppEngineRoutingOverride): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance: {
+      value: cdktf.stringToHclTerraform(struct!.instance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference extends cdktf.ComplexObject {
@@ -231,6 +257,31 @@ export function googleCloudTasksQueueRateLimitsToTerraform(struct?: GoogleCloudT
     max_concurrent_dispatches: cdktf.numberToTerraform(struct!.maxConcurrentDispatches),
     max_dispatches_per_second: cdktf.numberToTerraform(struct!.maxDispatchesPerSecond),
   }
+}
+
+
+export function googleCloudTasksQueueRateLimitsToHclTerraform(struct?: GoogleCloudTasksQueueRateLimitsOutputReference | GoogleCloudTasksQueueRateLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_concurrent_dispatches: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentDispatches),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_dispatches_per_second: {
+      value: cdktf.numberToHclTerraform(struct!.maxDispatchesPerSecond),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudTasksQueueRateLimitsOutputReference extends cdktf.ComplexObject {
@@ -376,6 +427,49 @@ export function googleCloudTasksQueueRetryConfigToTerraform(struct?: GoogleCloud
     max_retry_duration: cdktf.stringToTerraform(struct!.maxRetryDuration),
     min_backoff: cdktf.stringToTerraform(struct!.minBackoff),
   }
+}
+
+
+export function googleCloudTasksQueueRetryConfigToHclTerraform(struct?: GoogleCloudTasksQueueRetryConfigOutputReference | GoogleCloudTasksQueueRetryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_attempts: {
+      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_backoff: {
+      value: cdktf.stringToHclTerraform(struct!.maxBackoff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_doublings: {
+      value: cdktf.numberToHclTerraform(struct!.maxDoublings),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_retry_duration: {
+      value: cdktf.stringToHclTerraform(struct!.maxRetryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_backoff: {
+      value: cdktf.stringToHclTerraform(struct!.minBackoff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudTasksQueueRetryConfigOutputReference extends cdktf.ComplexObject {
@@ -535,6 +629,25 @@ export function googleCloudTasksQueueStackdriverLoggingConfigToTerraform(struct?
   }
 }
 
+
+export function googleCloudTasksQueueStackdriverLoggingConfigToHclTerraform(struct?: GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference | GoogleCloudTasksQueueStackdriverLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sampling_ratio: {
+      value: cdktf.numberToHclTerraform(struct!.samplingRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleCloudTasksQueueStackdriverLoggingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -605,6 +718,37 @@ export function googleCloudTasksQueueTimeoutsToTerraform(struct?: GoogleCloudTas
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleCloudTasksQueueTimeoutsToHclTerraform(struct?: GoogleCloudTasksQueueTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleCloudTasksQueueTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -933,5 +1077,67 @@ export class GoogleCloudTasksQueue extends cdktf.TerraformResource {
       stackdriver_logging_config: googleCloudTasksQueueStackdriverLoggingConfigToTerraform(this._stackdriverLoggingConfig.internalValue),
       timeouts: googleCloudTasksQueueTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      app_engine_routing_override: {
+        value: googleCloudTasksQueueAppEngineRoutingOverrideToHclTerraform(this._appEngineRoutingOverride.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudTasksQueueAppEngineRoutingOverrideList",
+      },
+      rate_limits: {
+        value: googleCloudTasksQueueRateLimitsToHclTerraform(this._rateLimits.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudTasksQueueRateLimitsList",
+      },
+      retry_config: {
+        value: googleCloudTasksQueueRetryConfigToHclTerraform(this._retryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudTasksQueueRetryConfigList",
+      },
+      stackdriver_logging_config: {
+        value: googleCloudTasksQueueStackdriverLoggingConfigToHclTerraform(this._stackdriverLoggingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudTasksQueueStackdriverLoggingConfigList",
+      },
+      timeouts: {
+        value: googleCloudTasksQueueTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleCloudTasksQueueTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

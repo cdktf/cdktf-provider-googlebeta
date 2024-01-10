@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_cloud_asset_resources_search_all
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataGoogleCloudAssetResourcesSearchAllResultsToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataGoogleCloudAssetResourcesSearchAllResultsToHclTerraform(struct?: DataGoogleCloudAssetResourcesSearchAllResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleCloudAssetResourcesSearchAllResultsOutputReference extends cdktf.ComplexObject {
@@ -277,5 +283,37 @@ export class DataGoogleCloudAssetResourcesSearchAll extends cdktf.TerraformDataS
       query: cdktf.stringToTerraform(this._query),
       scope: cdktf.stringToTerraform(this._scope),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      asset_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assetTypes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query: {
+        value: cdktf.stringToHclTerraform(this._query),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

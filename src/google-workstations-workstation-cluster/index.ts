@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_workstations_workstation_cluster
 // generated from terraform resource schema
 
@@ -104,6 +99,17 @@ export function googleWorkstationsWorkstationClusterConditionsToTerraform(struct
   }
 }
 
+
+export function googleWorkstationsWorkstationClusterConditionsToHclTerraform(struct?: GoogleWorkstationsWorkstationClusterConditions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleWorkstationsWorkstationClusterConditionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -186,6 +192,25 @@ export function googleWorkstationsWorkstationClusterDomainConfigToTerraform(stru
   }
 }
 
+
+export function googleWorkstationsWorkstationClusterDomainConfigToHclTerraform(struct?: GoogleWorkstationsWorkstationClusterDomainConfigOutputReference | GoogleWorkstationsWorkstationClusterDomainConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleWorkstationsWorkstationClusterDomainConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -256,6 +281,31 @@ export function googleWorkstationsWorkstationClusterPrivateClusterConfigToTerraf
     allowed_projects: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedProjects),
     enable_private_endpoint: cdktf.booleanToTerraform(struct!.enablePrivateEndpoint),
   }
+}
+
+
+export function googleWorkstationsWorkstationClusterPrivateClusterConfigToHclTerraform(struct?: GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference | GoogleWorkstationsWorkstationClusterPrivateClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_projects: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedProjects),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_private_endpoint: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePrivateEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference extends cdktf.ComplexObject {
@@ -360,6 +410,37 @@ export function googleWorkstationsWorkstationClusterTimeoutsToTerraform(struct?:
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleWorkstationsWorkstationClusterTimeoutsToHclTerraform(struct?: GoogleWorkstationsWorkstationClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleWorkstationsWorkstationClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -785,5 +866,85 @@ export class GoogleWorkstationsWorkstationCluster extends cdktf.TerraformResourc
       private_cluster_config: googleWorkstationsWorkstationClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),
       timeouts: googleWorkstationsWorkstationClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network: {
+        value: cdktf.stringToHclTerraform(this._network),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnetwork: {
+        value: cdktf.stringToHclTerraform(this._subnetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workstation_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._workstationClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_config: {
+        value: googleWorkstationsWorkstationClusterDomainConfigToHclTerraform(this._domainConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleWorkstationsWorkstationClusterDomainConfigList",
+      },
+      private_cluster_config: {
+        value: googleWorkstationsWorkstationClusterPrivateClusterConfigToHclTerraform(this._privateClusterConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleWorkstationsWorkstationClusterPrivateClusterConfigList",
+      },
+      timeouts: {
+        value: googleWorkstationsWorkstationClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleWorkstationsWorkstationClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

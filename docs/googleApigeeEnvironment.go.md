@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.NewGoogleApigeeEnvironment(scope Construct, id *string, config GoogleApigeeEnvironmentConfig) GoogleApigeeEnvironment
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.toMetadata"></a>
 
@@ -453,7 +460,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.GoogleApigeeEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.GoogleApigeeEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ googleapigeeenvironment.GoogleApigeeEnvironment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.GoogleApigeeEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +520,7 @@ googleapigeeenvironment.GoogleApigeeEnvironment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.GoogleApigeeEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -962,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 &googleapigeeenvironment.GoogleApigeeEnvironmentConfig {
 	Connection: interface{},
@@ -979,8 +986,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapige
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
-	NodeConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts,
+	NodeConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts,
 	Type: *string,
 }
 ```
@@ -1241,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 &googleapigeeenvironment.GoogleApigeeEnvironmentNodeConfig {
 	MaxNodeCount: *string,
@@ -1297,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 &googleapigeeenvironment.GoogleApigeeEnvironmentTimeouts {
 	Create: *string,
@@ -1359,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.NewGoogleApigeeEnvironmentNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeEnvironmentNodeConfigOutputReference
 ```
@@ -1677,7 +1684,7 @@ func InternalValue() GoogleApigeeEnvironmentNodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleapigeeenvironment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironment"
 
 googleapigeeenvironment.NewGoogleApigeeEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeEnvironmentTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.NewGoogleActiveDirectoryDomainTrust(scope Construct, id *string, config GoogleActiveDirectoryDomainTrustConfig) GoogleActiveDirectoryDomainTrust
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 &googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrustConfig {
 	Connection: interface{},
@@ -940,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactiv
 	Id: *string,
 	Project: *string,
 	SelectiveAuthentication: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts,
 }
 ```
 
@@ -1182,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 &googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrustTimeouts {
 	Create: *string,
@@ -1244,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.NewGoogleActiveDirectoryDomainTrustTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleActiveDirectoryDomainTrustTimeoutsOutputReference
 ```

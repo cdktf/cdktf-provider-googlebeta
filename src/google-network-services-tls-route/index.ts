@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_network_services_tls_route
 // generated from terraform resource schema
 
@@ -91,6 +86,31 @@ export function googleNetworkServicesTlsRouteRulesActionDestinationsToTerraform(
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function googleNetworkServicesTlsRouteRulesActionDestinationsToHclTerraform(struct?: GoogleNetworkServicesTlsRouteRulesActionDestinations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesTlsRouteRulesActionDestinationsOutputReference extends cdktf.ComplexObject {
@@ -214,6 +234,25 @@ export function googleNetworkServicesTlsRouteRulesActionToTerraform(struct?: Goo
   }
 }
 
+
+export function googleNetworkServicesTlsRouteRulesActionToHclTerraform(struct?: GoogleNetworkServicesTlsRouteRulesActionOutputReference | GoogleNetworkServicesTlsRouteRulesAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destinations: {
+      value: cdktf.listMapperHcl(googleNetworkServicesTlsRouteRulesActionDestinationsToHclTerraform, true)(struct!.destinations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesTlsRouteRulesActionDestinationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesTlsRouteRulesActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -287,6 +326,31 @@ export function googleNetworkServicesTlsRouteRulesMatchesToTerraform(struct?: Go
     alpn: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alpn),
     sni_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sniHost),
   }
+}
+
+
+export function googleNetworkServicesTlsRouteRulesMatchesToHclTerraform(struct?: GoogleNetworkServicesTlsRouteRulesMatches | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alpn: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alpn),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    sni_host: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sniHost),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesTlsRouteRulesMatchesOutputReference extends cdktf.ComplexObject {
@@ -417,6 +481,31 @@ export function googleNetworkServicesTlsRouteRulesToTerraform(struct?: GoogleNet
   }
 }
 
+
+export function googleNetworkServicesTlsRouteRulesToHclTerraform(struct?: GoogleNetworkServicesTlsRouteRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: googleNetworkServicesTlsRouteRulesActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesTlsRouteRulesActionList",
+    },
+    matches: {
+      value: cdktf.listMapperHcl(googleNetworkServicesTlsRouteRulesMatchesToHclTerraform, true)(struct!.matches),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleNetworkServicesTlsRouteRulesMatchesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleNetworkServicesTlsRouteRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -538,6 +627,37 @@ export function googleNetworkServicesTlsRouteTimeoutsToTerraform(struct?: Google
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleNetworkServicesTlsRouteTimeoutsToHclTerraform(struct?: GoogleNetworkServicesTlsRouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleNetworkServicesTlsRouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -860,5 +980,61 @@ export class GoogleNetworkServicesTlsRoute extends cdktf.TerraformResource {
       rules: cdktf.listMapper(googleNetworkServicesTlsRouteRulesToTerraform, true)(this._rules.internalValue),
       timeouts: googleNetworkServicesTlsRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateways: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gateways),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meshes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._meshes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(googleNetworkServicesTlsRouteRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkServicesTlsRouteRulesList",
+      },
+      timeouts: {
+        value: googleNetworkServicesTlsRouteTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleNetworkServicesTlsRouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

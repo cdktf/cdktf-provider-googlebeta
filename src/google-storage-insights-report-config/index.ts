@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_storage_insights_report_config
 // generated from terraform resource schema
 
@@ -92,6 +87,37 @@ export function googleStorageInsightsReportConfigCsvOptionsToTerraform(struct?: 
     header_required: cdktf.booleanToTerraform(struct!.headerRequired),
     record_separator: cdktf.stringToTerraform(struct!.recordSeparator),
   }
+}
+
+
+export function googleStorageInsightsReportConfigCsvOptionsToHclTerraform(struct?: GoogleStorageInsightsReportConfigCsvOptionsOutputReference | GoogleStorageInsightsReportConfigCsvOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.delimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_required: {
+      value: cdktf.booleanToHclTerraform(struct!.headerRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    record_separator: {
+      value: cdktf.stringToHclTerraform(struct!.recordSeparator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageInsightsReportConfigCsvOptionsOutputReference extends cdktf.ComplexObject {
@@ -219,6 +245,37 @@ export function googleStorageInsightsReportConfigFrequencyOptionsEndDateToTerraf
   }
 }
 
+
+export function googleStorageInsightsReportConfigFrequencyOptionsEndDateToHclTerraform(struct?: GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference | GoogleStorageInsightsReportConfigFrequencyOptionsEndDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageInsightsReportConfigFrequencyOptionsEndDateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -333,6 +390,37 @@ export function googleStorageInsightsReportConfigFrequencyOptionsStartDateToTerr
     month: cdktf.numberToTerraform(struct!.month),
     year: cdktf.numberToTerraform(struct!.year),
   }
+}
+
+
+export function googleStorageInsightsReportConfigFrequencyOptionsStartDateToHclTerraform(struct?: GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference | GoogleStorageInsightsReportConfigFrequencyOptionsStartDate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    month: {
+      value: cdktf.numberToHclTerraform(struct!.month),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    year: {
+      value: cdktf.numberToHclTerraform(struct!.year),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference extends cdktf.ComplexObject {
@@ -451,6 +539,37 @@ export function googleStorageInsightsReportConfigFrequencyOptionsToTerraform(str
   }
 }
 
+
+export function googleStorageInsightsReportConfigFrequencyOptionsToHclTerraform(struct?: GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference | GoogleStorageInsightsReportConfigFrequencyOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency: {
+      value: cdktf.stringToHclTerraform(struct!.frequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    end_date: {
+      value: googleStorageInsightsReportConfigFrequencyOptionsEndDateToHclTerraform(struct!.endDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageInsightsReportConfigFrequencyOptionsEndDateList",
+    },
+    start_date: {
+      value: googleStorageInsightsReportConfigFrequencyOptionsStartDateToHclTerraform(struct!.startDate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageInsightsReportConfigFrequencyOptionsStartDateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageInsightsReportConfigFrequencyOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -560,6 +679,31 @@ export function googleStorageInsightsReportConfigObjectMetadataReportOptionsStor
   }
 }
 
+
+export function googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToHclTerraform(struct?: GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference | GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_path: {
+      value: cdktf.stringToHclTerraform(struct!.destinationPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -646,6 +790,25 @@ export function googleStorageInsightsReportConfigObjectMetadataReportOptionsStor
   }
 }
 
+
+export function googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToHclTerraform(struct?: GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference | GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -725,6 +888,37 @@ export function googleStorageInsightsReportConfigObjectMetadataReportOptionsToTe
     storage_destination_options: googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToTerraform(struct!.storageDestinationOptions),
     storage_filters: googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToTerraform(struct!.storageFilters),
   }
+}
+
+
+export function googleStorageInsightsReportConfigObjectMetadataReportOptionsToHclTerraform(struct?: GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference | GoogleStorageInsightsReportConfigObjectMetadataReportOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    metadata_fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.metadataFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    storage_destination_options: {
+      value: googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsToHclTerraform(struct!.storageDestinationOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsList",
+    },
+    storage_filters: {
+      value: googleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersToHclTerraform(struct!.storageFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleStorageInsightsReportConfigObjectMetadataReportOptionsStorageFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageInsightsReportConfigObjectMetadataReportOptionsOutputReference extends cdktf.ComplexObject {
@@ -838,6 +1032,37 @@ export function googleStorageInsightsReportConfigTimeoutsToTerraform(struct?: Go
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleStorageInsightsReportConfigTimeoutsToHclTerraform(struct?: GoogleStorageInsightsReportConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleStorageInsightsReportConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1150,5 +1375,61 @@ export class GoogleStorageInsightsReportConfig extends cdktf.TerraformResource {
       object_metadata_report_options: googleStorageInsightsReportConfigObjectMetadataReportOptionsToTerraform(this._objectMetadataReportOptions.internalValue),
       timeouts: googleStorageInsightsReportConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_options: {
+        value: googleStorageInsightsReportConfigCsvOptionsToHclTerraform(this._csvOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageInsightsReportConfigCsvOptionsList",
+      },
+      frequency_options: {
+        value: googleStorageInsightsReportConfigFrequencyOptionsToHclTerraform(this._frequencyOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageInsightsReportConfigFrequencyOptionsList",
+      },
+      object_metadata_report_options: {
+        value: googleStorageInsightsReportConfigObjectMetadataReportOptionsToHclTerraform(this._objectMetadataReportOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleStorageInsightsReportConfigObjectMetadataReportOptionsList",
+      },
+      timeouts: {
+        value: googleStorageInsightsReportConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleStorageInsightsReportConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

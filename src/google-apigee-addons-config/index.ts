@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_apigee_addons_config
 // generated from terraform resource schema
 
@@ -55,6 +50,25 @@ export function googleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToTerraf
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function googleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference extends cdktf.ComplexObject {
@@ -122,6 +136,25 @@ export function googleApigeeAddonsConfigAddonsConfigApiSecurityConfigToTerraform
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function googleApigeeAddonsConfigAddonsConfigApiSecurityConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference extends cdktf.ComplexObject {
@@ -196,6 +229,25 @@ export function googleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToTe
   }
 }
 
+
+export function googleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -268,6 +320,25 @@ export function googleApigeeAddonsConfigAddonsConfigIntegrationConfigToTerraform
   }
 }
 
+
+export function googleApigeeAddonsConfigAddonsConfigIntegrationConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -333,6 +404,25 @@ export function googleApigeeAddonsConfigAddonsConfigMonetizationConfigToTerrafor
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function googleApigeeAddonsConfigAddonsConfigMonetizationConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference extends cdktf.ComplexObject {
@@ -428,6 +518,49 @@ export function googleApigeeAddonsConfigAddonsConfigToTerraform(struct?: GoogleA
     integration_config: googleApigeeAddonsConfigAddonsConfigIntegrationConfigToTerraform(struct!.integrationConfig),
     monetization_config: googleApigeeAddonsConfigAddonsConfigMonetizationConfigToTerraform(struct!.monetizationConfig),
   }
+}
+
+
+export function googleApigeeAddonsConfigAddonsConfigToHclTerraform(struct?: GoogleApigeeAddonsConfigAddonsConfigOutputReference | GoogleApigeeAddonsConfigAddonsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    advanced_api_ops_config: {
+      value: googleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigToHclTerraform(struct!.advancedApiOpsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigList",
+    },
+    api_security_config: {
+      value: googleApigeeAddonsConfigAddonsConfigApiSecurityConfigToHclTerraform(struct!.apiSecurityConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigList",
+    },
+    connectors_platform_config: {
+      value: googleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigToHclTerraform(struct!.connectorsPlatformConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigList",
+    },
+    integration_config: {
+      value: googleApigeeAddonsConfigAddonsConfigIntegrationConfigToHclTerraform(struct!.integrationConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigList",
+    },
+    monetization_config: {
+      value: googleApigeeAddonsConfigAddonsConfigMonetizationConfigToHclTerraform(struct!.monetizationConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeAddonsConfigAddonsConfigOutputReference extends cdktf.ComplexObject {
@@ -591,6 +724,37 @@ export function googleApigeeAddonsConfigTimeoutsToTerraform(struct?: GoogleApige
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleApigeeAddonsConfigTimeoutsToHclTerraform(struct?: GoogleApigeeAddonsConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleApigeeAddonsConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -829,5 +993,37 @@ export class GoogleApigeeAddonsConfig extends cdktf.TerraformResource {
       addons_config: googleApigeeAddonsConfigAddonsConfigToTerraform(this._addonsConfig.internalValue),
       timeouts: googleApigeeAddonsConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org: {
+        value: cdktf.stringToHclTerraform(this._org),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      addons_config: {
+        value: googleApigeeAddonsConfigAddonsConfigToHclTerraform(this._addonsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleApigeeAddonsConfigAddonsConfigList",
+      },
+      timeouts: {
+        value: googleApigeeAddonsConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleApigeeAddonsConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

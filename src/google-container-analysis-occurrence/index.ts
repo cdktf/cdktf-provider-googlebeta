@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_container_analysis_occurrence
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function googleContainerAnalysisOccurrenceAttestationSignaturesToTerrafor
     public_key_id: cdktf.stringToTerraform(struct!.publicKeyId),
     signature: cdktf.stringToTerraform(struct!.signature),
   }
+}
+
+
+export function googleContainerAnalysisOccurrenceAttestationSignaturesToHclTerraform(struct?: GoogleContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    public_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.publicKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signature: {
+      value: cdktf.stringToHclTerraform(struct!.signature),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAnalysisOccurrenceAttestationSignaturesOutputReference extends cdktf.ComplexObject {
@@ -226,6 +246,31 @@ export function googleContainerAnalysisOccurrenceAttestationToTerraform(struct?:
   }
 }
 
+
+export function googleContainerAnalysisOccurrenceAttestationToHclTerraform(struct?: GoogleContainerAnalysisOccurrenceAttestationOutputReference | GoogleContainerAnalysisOccurrenceAttestation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    serialized_payload: {
+      value: cdktf.stringToHclTerraform(struct!.serializedPayload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signatures: {
+      value: cdktf.listMapperHcl(googleContainerAnalysisOccurrenceAttestationSignaturesToHclTerraform, true)(struct!.signatures),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleContainerAnalysisOccurrenceAttestationSignaturesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleContainerAnalysisOccurrenceAttestationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -315,6 +360,37 @@ export function googleContainerAnalysisOccurrenceTimeoutsToTerraform(struct?: Go
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleContainerAnalysisOccurrenceTimeoutsToHclTerraform(struct?: GoogleContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -621,5 +697,55 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
       attestation: googleContainerAnalysisOccurrenceAttestationToTerraform(this._attestation.internalValue),
       timeouts: googleContainerAnalysisOccurrenceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      note_name: {
+        value: cdktf.stringToHclTerraform(this._noteName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remediation: {
+        value: cdktf.stringToHclTerraform(this._remediation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_uri: {
+        value: cdktf.stringToHclTerraform(this._resourceUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attestation: {
+        value: googleContainerAnalysisOccurrenceAttestationToHclTerraform(this._attestation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleContainerAnalysisOccurrenceAttestationList",
+      },
+      timeouts: {
+        value: googleContainerAnalysisOccurrenceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleContainerAnalysisOccurrenceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

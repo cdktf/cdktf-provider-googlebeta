@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_kms_secret_asymmetric
 // generated from terraform resource schema
 
@@ -174,5 +169,37 @@ export class DataGoogleKmsSecretAsymmetric extends cdktf.TerraformDataSource {
       crypto_key_version: cdktf.stringToTerraform(this._cryptoKeyVersion),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ciphertext: {
+        value: cdktf.stringToHclTerraform(this._ciphertext),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crc32: {
+        value: cdktf.stringToHclTerraform(this._crc32),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      crypto_key_version: {
+        value: cdktf.stringToHclTerraform(this._cryptoKeyVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.NewGoogleBetaProvider(scope Construct, id *string, config GoogleBetaProviderConfig) GoogleBetaProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetAccessApprovalCustomEndpoint">ResetAccessApprovalCustomEndpoint</a></code> | *No description.* |
@@ -264,6 +265,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.toMetadata"></a>
 
@@ -1229,7 +1236,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsConstruct(x interface{}) *bool
 ```
@@ -1261,7 +1268,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -1275,7 +1282,7 @@ provider.GoogleBetaProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1289,7 +1296,7 @@ provider.GoogleBetaProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 provider.GoogleBetaProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -4884,7 +4891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.provider.GoogleBetaProviderBatching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 &provider.GoogleBetaProviderBatching {
 	EnableBatching: interface{},
@@ -4930,7 +4937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/provider"
 
 &provider.GoogleBetaProviderConfig {
 	AccessApprovalCustomEndpoint: *string,
@@ -4946,7 +4953,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/provider"
 	ArtifactRegistryCustomEndpoint: *string,
 	AssuredWorkloadsCustomEndpoint: *string,
 	BackupDrCustomEndpoint: *string,
-	Batching: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.provider.GoogleBetaProviderBatching,
+	Batching: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.provider.GoogleBetaProviderBatching,
 	BeyondcorpCustomEndpoint: *string,
 	BiglakeCustomEndpoint: *string,
 	BigqueryAnalyticsHubCustomEndpoint: *string,

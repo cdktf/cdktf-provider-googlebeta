@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_biglake_table
 // generated from terraform resource schema
 
@@ -82,6 +77,37 @@ export function googleBiglakeTableHiveOptionsStorageDescriptorToTerraform(struct
     location_uri: cdktf.stringToTerraform(struct!.locationUri),
     output_format: cdktf.stringToTerraform(struct!.outputFormat),
   }
+}
+
+
+export function googleBiglakeTableHiveOptionsStorageDescriptorToHclTerraform(struct?: GoogleBiglakeTableHiveOptionsStorageDescriptorOutputReference | GoogleBiglakeTableHiveOptionsStorageDescriptor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input_format: {
+      value: cdktf.stringToHclTerraform(struct!.inputFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location_uri: {
+      value: cdktf.stringToHclTerraform(struct!.locationUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    output_format: {
+      value: cdktf.stringToHclTerraform(struct!.outputFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBiglakeTableHiveOptionsStorageDescriptorOutputReference extends cdktf.ComplexObject {
@@ -211,6 +237,37 @@ export function googleBiglakeTableHiveOptionsToTerraform(struct?: GoogleBiglakeT
   }
 }
 
+
+export function googleBiglakeTableHiveOptionsToHclTerraform(struct?: GoogleBiglakeTableHiveOptionsOutputReference | GoogleBiglakeTableHiveOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    table_type: {
+      value: cdktf.stringToHclTerraform(struct!.tableType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_descriptor: {
+      value: googleBiglakeTableHiveOptionsStorageDescriptorToHclTerraform(struct!.storageDescriptor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBiglakeTableHiveOptionsStorageDescriptorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleBiglakeTableHiveOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -328,6 +385,37 @@ export function googleBiglakeTableTimeoutsToTerraform(struct?: GoogleBiglakeTabl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleBiglakeTableTimeoutsToHclTerraform(struct?: GoogleBiglakeTableTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleBiglakeTableTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -627,5 +715,49 @@ export class GoogleBiglakeTable extends cdktf.TerraformResource {
       hive_options: googleBiglakeTableHiveOptionsToTerraform(this._hiveOptions.internalValue),
       timeouts: googleBiglakeTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hive_options: {
+        value: googleBiglakeTableHiveOptionsToHclTerraform(this._hiveOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBiglakeTableHiveOptionsList",
+      },
+      timeouts: {
+        value: googleBiglakeTableTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleBiglakeTableTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

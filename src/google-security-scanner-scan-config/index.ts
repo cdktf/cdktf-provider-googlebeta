@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_security_scanner_scan_config
 // generated from terraform resource schema
 
@@ -120,6 +115,37 @@ export function googleSecurityScannerScanConfigAuthenticationCustomAccountToTerr
   }
 }
 
+
+export function googleSecurityScannerScanConfigAuthenticationCustomAccountToHclTerraform(struct?: GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference | GoogleSecurityScannerScanConfigAuthenticationCustomAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    login_url: {
+      value: cdktf.stringToHclTerraform(struct!.loginUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecurityScannerScanConfigAuthenticationCustomAccountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -230,6 +256,31 @@ export function googleSecurityScannerScanConfigAuthenticationGoogleAccountToTerr
   }
 }
 
+
+export function googleSecurityScannerScanConfigAuthenticationGoogleAccountToHclTerraform(struct?: GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference | GoogleSecurityScannerScanConfigAuthenticationGoogleAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -318,6 +369,31 @@ export function googleSecurityScannerScanConfigAuthenticationToTerraform(struct?
     custom_account: googleSecurityScannerScanConfigAuthenticationCustomAccountToTerraform(struct!.customAccount),
     google_account: googleSecurityScannerScanConfigAuthenticationGoogleAccountToTerraform(struct!.googleAccount),
   }
+}
+
+
+export function googleSecurityScannerScanConfigAuthenticationToHclTerraform(struct?: GoogleSecurityScannerScanConfigAuthenticationOutputReference | GoogleSecurityScannerScanConfigAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_account: {
+      value: googleSecurityScannerScanConfigAuthenticationCustomAccountToHclTerraform(struct!.customAccount),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecurityScannerScanConfigAuthenticationCustomAccountList",
+    },
+    google_account: {
+      value: googleSecurityScannerScanConfigAuthenticationGoogleAccountToHclTerraform(struct!.googleAccount),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSecurityScannerScanConfigAuthenticationGoogleAccountList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecurityScannerScanConfigAuthenticationOutputReference extends cdktf.ComplexObject {
@@ -418,6 +494,31 @@ export function googleSecurityScannerScanConfigScheduleToTerraform(struct?: Goog
   }
 }
 
+
+export function googleSecurityScannerScanConfigScheduleToHclTerraform(struct?: GoogleSecurityScannerScanConfigScheduleOutputReference | GoogleSecurityScannerScanConfigSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval_duration_days: {
+      value: cdktf.numberToHclTerraform(struct!.intervalDurationDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    schedule_time: {
+      value: cdktf.stringToHclTerraform(struct!.scheduleTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSecurityScannerScanConfigScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -510,6 +611,37 @@ export function googleSecurityScannerScanConfigTimeoutsToTerraform(struct?: Goog
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleSecurityScannerScanConfigTimeoutsToHclTerraform(struct?: GoogleSecurityScannerScanConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecurityScannerScanConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -894,5 +1026,85 @@ export class GoogleSecurityScannerScanConfig extends cdktf.TerraformResource {
       schedule: googleSecurityScannerScanConfigScheduleToTerraform(this._schedule.internalValue),
       timeouts: googleSecurityScannerScanConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      blacklist_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blacklistPatterns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      export_to_security_command_center: {
+        value: cdktf.stringToHclTerraform(this._exportToSecurityCommandCenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_qps: {
+        value: cdktf.numberToHclTerraform(this._maxQps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      starting_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._startingUrls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      target_platforms: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targetPlatforms),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      user_agent: {
+        value: cdktf.stringToHclTerraform(this._userAgent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authentication: {
+        value: googleSecurityScannerScanConfigAuthenticationToHclTerraform(this._authentication.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecurityScannerScanConfigAuthenticationList",
+      },
+      schedule: {
+        value: googleSecurityScannerScanConfigScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecurityScannerScanConfigScheduleList",
+      },
+      timeouts: {
+        value: googleSecurityScannerScanConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSecurityScannerScanConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

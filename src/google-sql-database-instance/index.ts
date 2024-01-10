@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_sql_database_instance
 // generated from terraform resource schema
 
@@ -120,6 +115,17 @@ export function googleSqlDatabaseInstanceIpAddressToTerraform(struct?: GoogleSql
   }
 }
 
+
+export function googleSqlDatabaseInstanceIpAddressToHclTerraform(struct?: GoogleSqlDatabaseInstanceIpAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleSqlDatabaseInstanceIpAddressOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -192,6 +198,17 @@ export function googleSqlDatabaseInstanceServerCaCertToTerraform(struct?: Google
   }
   return {
   }
+}
+
+
+export function googleSqlDatabaseInstanceServerCaCertToHclTerraform(struct?: GoogleSqlDatabaseInstanceServerCaCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleSqlDatabaseInstanceServerCaCertOutputReference extends cdktf.ComplexObject {
@@ -311,6 +328,49 @@ export function googleSqlDatabaseInstanceCloneToTerraform(struct?: GoogleSqlData
     preferred_zone: cdktf.stringToTerraform(struct!.preferredZone),
     source_instance_name: cdktf.stringToTerraform(struct!.sourceInstanceName),
   }
+}
+
+
+export function googleSqlDatabaseInstanceCloneToHclTerraform(struct?: GoogleSqlDatabaseInstanceCloneOutputReference | GoogleSqlDatabaseInstanceClone): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocated_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.allocatedIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.databaseNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    point_in_time: {
+      value: cdktf.stringToHclTerraform(struct!.pointInTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preferred_zone: {
+      value: cdktf.stringToHclTerraform(struct!.preferredZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_instance_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceInstanceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceCloneOutputReference extends cdktf.ComplexObject {
@@ -533,6 +593,85 @@ export function googleSqlDatabaseInstanceReplicaConfigurationToTerraform(struct?
     username: cdktf.stringToTerraform(struct!.username),
     verify_server_certificate: cdktf.booleanToTerraform(struct!.verifyServerCertificate),
   }
+}
+
+
+export function googleSqlDatabaseInstanceReplicaConfigurationToHclTerraform(struct?: GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference | GoogleSqlDatabaseInstanceReplicaConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ca_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.caCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.clientCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_key: {
+      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connect_retry_interval: {
+      value: cdktf.numberToHclTerraform(struct!.connectRetryInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    dump_file_path: {
+      value: cdktf.stringToHclTerraform(struct!.dumpFilePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    failover_target: {
+      value: cdktf.booleanToHclTerraform(struct!.failoverTarget),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    master_heartbeat_period: {
+      value: cdktf.numberToHclTerraform(struct!.masterHeartbeatPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl_cipher: {
+      value: cdktf.stringToHclTerraform(struct!.sslCipher),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    verify_server_certificate: {
+      value: cdktf.booleanToHclTerraform(struct!.verifyServerCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference extends cdktf.ComplexObject {
@@ -836,6 +975,37 @@ export function googleSqlDatabaseInstanceRestoreBackupContextToTerraform(struct?
   }
 }
 
+
+export function googleSqlDatabaseInstanceRestoreBackupContextToHclTerraform(struct?: GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference | GoogleSqlDatabaseInstanceRestoreBackupContext): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup_run_id: {
+      value: cdktf.numberToHclTerraform(struct!.backupRunId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_id: {
+      value: cdktf.stringToHclTerraform(struct!.instanceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -944,6 +1114,25 @@ export function googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToTerrafor
   }
 }
 
+
+export function googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference | GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1006,6 +1195,25 @@ export function googleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesToTerraf
   return {
     threads_per_core: cdktf.numberToTerraform(struct!.threadsPerCore),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference | GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threads_per_core: {
+      value: cdktf.numberToHclTerraform(struct!.threadsPerCore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference extends cdktf.ComplexObject {
@@ -1080,6 +1288,31 @@ export function googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetent
     retained_backups: cdktf.numberToTerraform(struct!.retainedBackups),
     retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference | GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    retained_backups: {
+      value: cdktf.numberToHclTerraform(struct!.retainedBackups),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retention_unit: {
+      value: cdktf.stringToHclTerraform(struct!.retentionUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference extends cdktf.ComplexObject {
@@ -1208,6 +1441,61 @@ export function googleSqlDatabaseInstanceSettingsBackupConfigurationToTerraform(
     transaction_log_retention_days: cdktf.numberToTerraform(struct!.transactionLogRetentionDays),
     backup_retention_settings: googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsToTerraform(struct!.backupRetentionSettings),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsBackupConfigurationToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference | GoogleSqlDatabaseInstanceSettingsBackupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    binary_log_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.binaryLogEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    point_in_time_recovery_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.pointInTimeRecoveryEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transaction_log_retention_days: {
+      value: cdktf.numberToHclTerraform(struct!.transactionLogRetentionDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_retention_settings: {
+      value: googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsToHclTerraform(struct!.backupRetentionSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1409,6 +1697,25 @@ export function googleSqlDatabaseInstanceSettingsDataCacheConfigToTerraform(stru
   }
 }
 
+
+export function googleSqlDatabaseInstanceSettingsDataCacheConfigToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference | GoogleSqlDatabaseInstanceSettingsDataCacheConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_cache_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dataCacheEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1481,6 +1788,31 @@ export function googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform(struct
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsDatabaseFlagsToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference extends cdktf.ComplexObject {
@@ -1612,6 +1944,37 @@ export function googleSqlDatabaseInstanceSettingsDenyMaintenancePeriodToTerrafor
   }
 }
 
+
+export function googleSqlDatabaseInstanceSettingsDenyMaintenancePeriodToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference | GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_date: {
+      value: cdktf.stringToHclTerraform(struct!.endDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_date: {
+      value: cdktf.stringToHclTerraform(struct!.startDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1740,6 +2103,49 @@ export function googleSqlDatabaseInstanceSettingsInsightsConfigToTerraform(struc
     record_application_tags: cdktf.booleanToTerraform(struct!.recordApplicationTags),
     record_client_address: cdktf.booleanToTerraform(struct!.recordClientAddress),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsInsightsConfigToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference | GoogleSqlDatabaseInstanceSettingsInsightsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query_insights_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.queryInsightsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    query_plans_per_minute: {
+      value: cdktf.numberToHclTerraform(struct!.queryPlansPerMinute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query_string_length: {
+      value: cdktf.numberToHclTerraform(struct!.queryStringLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    record_application_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.recordApplicationTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    record_client_address: {
+      value: cdktf.booleanToHclTerraform(struct!.recordClientAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference extends cdktf.ComplexObject {
@@ -1905,6 +2311,37 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetwor
   }
 }
 
+
+export function googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expiration_time: {
+      value: cdktf.stringToHclTerraform(struct!.expirationTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2050,6 +2487,31 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationPscConfigToTerra
     allowed_consumer_projects: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedConsumerProjects),
     psc_enabled: cdktf.booleanToTerraform(struct!.pscEnabled),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsIpConfigurationPscConfigToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_consumer_projects: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedConsumerProjects),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    psc_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.pscEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference extends cdktf.ComplexObject {
@@ -2220,6 +2682,67 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(stru
     authorized_networks: cdktf.listMapper(googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToTerraform, true)(struct!.authorizedNetworks),
     psc_config: cdktf.listMapper(googleSqlDatabaseInstanceSettingsIpConfigurationPscConfigToTerraform, true)(struct!.pscConfig),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsIpConfigurationToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference | GoogleSqlDatabaseInstanceSettingsIpConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocated_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.allocatedIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_private_path_for_google_cloud_services: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePrivatePathForGoogleCloudServices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ipv4_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.ipv4Enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    private_network: {
+      value: cdktf.stringToHclTerraform(struct!.privateNetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    require_ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.requireSsl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ssl_mode: {
+      value: cdktf.stringToHclTerraform(struct!.sslMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorized_networks: {
+      value: cdktf.listMapperHcl(googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToHclTerraform, true)(struct!.authorizedNetworks),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+    },
+    psc_config: {
+      value: cdktf.listMapperHcl(googleSqlDatabaseInstanceSettingsIpConfigurationPscConfigToHclTerraform, true)(struct!.pscConfig),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference extends cdktf.ComplexObject {
@@ -2457,6 +2980,37 @@ export function googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(s
   }
 }
 
+
+export function googleSqlDatabaseInstanceSettingsLocationPreferenceToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference | GoogleSqlDatabaseInstanceSettingsLocationPreference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    follow_gae_application: {
+      value: cdktf.stringToHclTerraform(struct!.followGaeApplication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_zone: {
+      value: cdktf.stringToHclTerraform(struct!.secondaryZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone: {
+      value: cdktf.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2580,6 +3134,37 @@ export function googleSqlDatabaseInstanceSettingsMaintenanceWindowToTerraform(st
     hour: cdktf.numberToTerraform(struct!.hour),
     update_track: cdktf.stringToTerraform(struct!.updateTrack),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsMaintenanceWindowToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference | GoogleSqlDatabaseInstanceSettingsMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.numberToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    hour: {
+      value: cdktf.numberToHclTerraform(struct!.hour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    update_track: {
+      value: cdktf.stringToHclTerraform(struct!.updateTrack),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference extends cdktf.ComplexObject {
@@ -2726,6 +3311,55 @@ export function googleSqlDatabaseInstanceSettingsPasswordValidationPolicyToTerra
     password_change_interval: cdktf.stringToTerraform(struct!.passwordChangeInterval),
     reuse_interval: cdktf.numberToTerraform(struct!.reuseInterval),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsPasswordValidationPolicyToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference | GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    complexity: {
+      value: cdktf.stringToHclTerraform(struct!.complexity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disallow_username_substring: {
+      value: cdktf.booleanToHclTerraform(struct!.disallowUsernameSubstring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_password_policy: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePasswordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    min_length: {
+      value: cdktf.numberToHclTerraform(struct!.minLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    password_change_interval: {
+      value: cdktf.stringToHclTerraform(struct!.passwordChangeInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reuse_interval: {
+      value: cdktf.numberToHclTerraform(struct!.reuseInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference extends cdktf.ComplexObject {
@@ -2914,6 +3548,37 @@ export function googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToTerraform
     retention_interval: cdktf.stringToTerraform(struct!.retentionInterval),
     upload_interval: cdktf.stringToTerraform(struct!.uploadInterval),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference | GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_interval: {
+      value: cdktf.stringToHclTerraform(struct!.retentionInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upload_interval: {
+      value: cdktf.stringToHclTerraform(struct!.uploadInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference extends cdktf.ComplexObject {
@@ -3205,6 +3870,175 @@ export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlD
     password_validation_policy: googleSqlDatabaseInstanceSettingsPasswordValidationPolicyToTerraform(struct!.passwordValidationPolicy),
     sql_server_audit_config: googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToTerraform(struct!.sqlServerAuditConfig),
   }
+}
+
+
+export function googleSqlDatabaseInstanceSettingsToHclTerraform(struct?: GoogleSqlDatabaseInstanceSettingsOutputReference | GoogleSqlDatabaseInstanceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    activation_policy: {
+      value: cdktf.stringToHclTerraform(struct!.activationPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    availability_type: {
+      value: cdktf.stringToHclTerraform(struct!.availabilityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    collation: {
+      value: cdktf.stringToHclTerraform(struct!.collation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connector_enforcement: {
+      value: cdktf.stringToHclTerraform(struct!.connectorEnforcement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deletion_protection_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.deletionProtectionEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disk_autoresize: {
+      value: cdktf.booleanToHclTerraform(struct!.diskAutoresize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    disk_autoresize_limit: {
+      value: cdktf.numberToHclTerraform(struct!.diskAutoresizeLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    disk_size: {
+      value: cdktf.numberToHclTerraform(struct!.diskSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    disk_type: {
+      value: cdktf.stringToHclTerraform(struct!.diskType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    edition: {
+      value: cdktf.stringToHclTerraform(struct!.edition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pricing_plan: {
+      value: cdktf.stringToHclTerraform(struct!.pricingPlan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tier: {
+      value: cdktf.stringToHclTerraform(struct!.tier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_labels: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.userLabels),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    active_directory_config: {
+      value: googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToHclTerraform(struct!.activeDirectoryConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigList",
+    },
+    advanced_machine_features: {
+      value: googleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesToHclTerraform(struct!.advancedMachineFeatures),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
+    },
+    backup_configuration: {
+      value: googleSqlDatabaseInstanceSettingsBackupConfigurationToHclTerraform(struct!.backupConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsBackupConfigurationList",
+    },
+    data_cache_config: {
+      value: googleSqlDatabaseInstanceSettingsDataCacheConfigToHclTerraform(struct!.dataCacheConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsDataCacheConfigList",
+    },
+    database_flags: {
+      value: cdktf.listMapperHcl(googleSqlDatabaseInstanceSettingsDatabaseFlagsToHclTerraform, true)(struct!.databaseFlags),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
+    },
+    deny_maintenance_period: {
+      value: googleSqlDatabaseInstanceSettingsDenyMaintenancePeriodToHclTerraform(struct!.denyMaintenancePeriod),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList",
+    },
+    insights_config: {
+      value: googleSqlDatabaseInstanceSettingsInsightsConfigToHclTerraform(struct!.insightsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsInsightsConfigList",
+    },
+    ip_configuration: {
+      value: googleSqlDatabaseInstanceSettingsIpConfigurationToHclTerraform(struct!.ipConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsIpConfigurationList",
+    },
+    location_preference: {
+      value: googleSqlDatabaseInstanceSettingsLocationPreferenceToHclTerraform(struct!.locationPreference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsLocationPreferenceList",
+    },
+    maintenance_window: {
+      value: googleSqlDatabaseInstanceSettingsMaintenanceWindowToHclTerraform(struct!.maintenanceWindow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsMaintenanceWindowList",
+    },
+    password_validation_policy: {
+      value: googleSqlDatabaseInstanceSettingsPasswordValidationPolicyToHclTerraform(struct!.passwordValidationPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList",
+    },
+    sql_server_audit_config: {
+      value: googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToHclTerraform(struct!.sqlServerAuditConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.ComplexObject {
@@ -3834,6 +4668,37 @@ export function googleSqlDatabaseInstanceTimeoutsToTerraform(struct?: GoogleSqlD
   }
 }
 
+
+export function googleSqlDatabaseInstanceTimeoutsToHclTerraform(struct?: GoogleSqlDatabaseInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4343,5 +5208,109 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       settings: googleSqlDatabaseInstanceSettingsToTerraform(this._settings.internalValue),
       timeouts: googleSqlDatabaseInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database_version: {
+        value: cdktf.stringToHclTerraform(this._databaseVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deletion_protection: {
+        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      encryption_key_name: {
+        value: cdktf.stringToHclTerraform(this._encryptionKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_version: {
+        value: cdktf.stringToHclTerraform(this._maintenanceVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      master_instance_name: {
+        value: cdktf.stringToHclTerraform(this._masterInstanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      root_password: {
+        value: cdktf.stringToHclTerraform(this._rootPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      clone: {
+        value: googleSqlDatabaseInstanceCloneToHclTerraform(this._clone.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSqlDatabaseInstanceCloneList",
+      },
+      replica_configuration: {
+        value: googleSqlDatabaseInstanceReplicaConfigurationToHclTerraform(this._replicaConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSqlDatabaseInstanceReplicaConfigurationList",
+      },
+      restore_backup_context: {
+        value: googleSqlDatabaseInstanceRestoreBackupContextToHclTerraform(this._restoreBackupContext.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSqlDatabaseInstanceRestoreBackupContextList",
+      },
+      settings: {
+        value: googleSqlDatabaseInstanceSettingsToHclTerraform(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSqlDatabaseInstanceSettingsList",
+      },
+      timeouts: {
+        value: googleSqlDatabaseInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSqlDatabaseInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

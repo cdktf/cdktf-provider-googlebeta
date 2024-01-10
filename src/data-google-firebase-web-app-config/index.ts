@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/data-sources/google_firebase_web_app_config
 // generated from terraform resource schema
 
@@ -163,5 +158,25 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
       project: cdktf.stringToTerraform(this._project),
       web_app_id: cdktf.stringToTerraform(this._webAppId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      web_app_id: {
+        value: cdktf.stringToHclTerraform(this._webAppId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

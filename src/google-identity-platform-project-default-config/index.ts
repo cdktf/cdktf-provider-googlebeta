@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_identity_platform_project_default_config
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function googleIdentityPlatformProjectDefaultConfigSignInHashConfigToTerr
   }
   return {
   }
+}
+
+
+export function googleIdentityPlatformProjectDefaultConfigSignInHashConfigToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigSignInHashConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleIdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference extends cdktf.ComplexObject {
@@ -139,6 +145,25 @@ export function googleIdentityPlatformProjectDefaultConfigSignInAnonymousToTerra
   }
 }
 
+
+export function googleIdentityPlatformProjectDefaultConfigSignInAnonymousToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference | GoogleIdentityPlatformProjectDefaultConfigSignInAnonymous): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleIdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -210,6 +235,31 @@ export function googleIdentityPlatformProjectDefaultConfigSignInEmailToTerraform
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     password_required: cdktf.booleanToTerraform(struct!.passwordRequired),
   }
+}
+
+
+export function googleIdentityPlatformProjectDefaultConfigSignInEmailToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigSignInEmailOutputReference | GoogleIdentityPlatformProjectDefaultConfigSignInEmail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    password_required: {
+      value: cdktf.booleanToHclTerraform(struct!.passwordRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformProjectDefaultConfigSignInEmailOutputReference extends cdktf.ComplexObject {
@@ -306,6 +356,31 @@ export function googleIdentityPlatformProjectDefaultConfigSignInPhoneNumberToTer
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     test_phone_numbers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.testPhoneNumbers),
   }
+}
+
+
+export function googleIdentityPlatformProjectDefaultConfigSignInPhoneNumberToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference | GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumber): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    test_phone_numbers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.testPhoneNumbers),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference extends cdktf.ComplexObject {
@@ -416,6 +491,43 @@ export function googleIdentityPlatformProjectDefaultConfigSignInToTerraform(stru
     email: googleIdentityPlatformProjectDefaultConfigSignInEmailToTerraform(struct!.email),
     phone_number: googleIdentityPlatformProjectDefaultConfigSignInPhoneNumberToTerraform(struct!.phoneNumber),
   }
+}
+
+
+export function googleIdentityPlatformProjectDefaultConfigSignInToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference | GoogleIdentityPlatformProjectDefaultConfigSignIn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_duplicate_emails: {
+      value: cdktf.booleanToHclTerraform(struct!.allowDuplicateEmails),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    anonymous: {
+      value: googleIdentityPlatformProjectDefaultConfigSignInAnonymousToHclTerraform(struct!.anonymous),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIdentityPlatformProjectDefaultConfigSignInAnonymousList",
+    },
+    email: {
+      value: googleIdentityPlatformProjectDefaultConfigSignInEmailToHclTerraform(struct!.email),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIdentityPlatformProjectDefaultConfigSignInEmailList",
+    },
+    phone_number: {
+      value: googleIdentityPlatformProjectDefaultConfigSignInPhoneNumberToHclTerraform(struct!.phoneNumber),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformProjectDefaultConfigSignInOutputReference extends cdktf.ComplexObject {
@@ -563,6 +675,37 @@ export function googleIdentityPlatformProjectDefaultConfigTimeoutsToTerraform(st
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleIdentityPlatformProjectDefaultConfigTimeoutsToHclTerraform(struct?: GoogleIdentityPlatformProjectDefaultConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleIdentityPlatformProjectDefaultConfigTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -809,5 +952,37 @@ export class GoogleIdentityPlatformProjectDefaultConfig extends cdktf.TerraformR
       sign_in: googleIdentityPlatformProjectDefaultConfigSignInToTerraform(this._signIn.internalValue),
       timeouts: googleIdentityPlatformProjectDefaultConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sign_in: {
+        value: googleIdentityPlatformProjectDefaultConfigSignInToHclTerraform(this._signIn.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIdentityPlatformProjectDefaultConfigSignInList",
+      },
+      timeouts: {
+        value: googleIdentityPlatformProjectDefaultConfigTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleIdentityPlatformProjectDefaultConfigTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

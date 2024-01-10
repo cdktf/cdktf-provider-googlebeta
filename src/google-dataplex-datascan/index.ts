@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataplex_datascan
 // generated from terraform resource schema
 
@@ -100,6 +95,17 @@ export function googleDataplexDatascanExecutionStatusToTerraform(struct?: Google
   }
 }
 
+
+export function googleDataplexDatascanExecutionStatusToHclTerraform(struct?: GoogleDataplexDatascanExecutionStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDataplexDatascanExecutionStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +188,31 @@ export function googleDataplexDatascanDataToTerraform(struct?: GoogleDataplexDat
     entity: cdktf.stringToTerraform(struct!.entity),
     resource: cdktf.stringToTerraform(struct!.resource),
   }
+}
+
+
+export function googleDataplexDatascanDataToHclTerraform(struct?: GoogleDataplexDatascanDataOutputReference | GoogleDataplexDatascanData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity: {
+      value: cdktf.stringToHclTerraform(struct!.entity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataOutputReference extends cdktf.ComplexObject {
@@ -275,6 +306,25 @@ export function googleDataplexDatascanDataProfileSpecExcludeFieldsToTerraform(st
   }
 }
 
+
+export function googleDataplexDatascanDataProfileSpecExcludeFieldsToHclTerraform(struct?: GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference | GoogleDataplexDatascanDataProfileSpecExcludeFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fieldNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -342,6 +392,25 @@ export function googleDataplexDatascanDataProfileSpecIncludeFieldsToTerraform(st
   return {
     field_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fieldNames),
   }
+}
+
+
+export function googleDataplexDatascanDataProfileSpecIncludeFieldsToHclTerraform(struct?: GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference | GoogleDataplexDatascanDataProfileSpecIncludeFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fieldNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataProfileSpecIncludeFieldsOutputReference extends cdktf.ComplexObject {
@@ -412,6 +481,25 @@ export function googleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExpo
   }
 }
 
+
+export function googleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToHclTerraform(struct?: GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference | GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    results_table: {
+      value: cdktf.stringToHclTerraform(struct!.resultsTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -477,6 +565,25 @@ export function googleDataplexDatascanDataProfileSpecPostScanActionsToTerraform(
   return {
     bigquery_export: googleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToTerraform(struct!.bigqueryExport),
   }
+}
+
+
+export function googleDataplexDatascanDataProfileSpecPostScanActionsToHclTerraform(struct?: GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference | GoogleDataplexDatascanDataProfileSpecPostScanActions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bigquery_export: {
+      value: googleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportToHclTerraform(struct!.bigqueryExport),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference extends cdktf.ComplexObject {
@@ -574,6 +681,49 @@ export function googleDataplexDatascanDataProfileSpecToTerraform(struct?: Google
     include_fields: googleDataplexDatascanDataProfileSpecIncludeFieldsToTerraform(struct!.includeFields),
     post_scan_actions: googleDataplexDatascanDataProfileSpecPostScanActionsToTerraform(struct!.postScanActions),
   }
+}
+
+
+export function googleDataplexDatascanDataProfileSpecToHclTerraform(struct?: GoogleDataplexDatascanDataProfileSpecOutputReference | GoogleDataplexDatascanDataProfileSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    row_filter: {
+      value: cdktf.stringToHclTerraform(struct!.rowFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sampling_percent: {
+      value: cdktf.numberToHclTerraform(struct!.samplingPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    exclude_fields: {
+      value: googleDataplexDatascanDataProfileSpecExcludeFieldsToHclTerraform(struct!.excludeFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataProfileSpecExcludeFieldsList",
+    },
+    include_fields: {
+      value: googleDataplexDatascanDataProfileSpecIncludeFieldsToHclTerraform(struct!.includeFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataProfileSpecIncludeFieldsList",
+    },
+    post_scan_actions: {
+      value: googleDataplexDatascanDataProfileSpecPostScanActionsToHclTerraform(struct!.postScanActions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataProfileSpecPostScanActionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataProfileSpecOutputReference extends cdktf.ComplexObject {
@@ -732,6 +882,25 @@ export function googleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExpo
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference | GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExport): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    results_table: {
+      value: cdktf.stringToHclTerraform(struct!.resultsTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -799,6 +968,25 @@ export function googleDataplexDatascanDataQualitySpecPostScanActionsToTerraform(
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecPostScanActionsToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference | GoogleDataplexDatascanDataQualitySpecPostScanActions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bigquery_export: {
+      value: googleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportToHclTerraform(struct!.bigqueryExport),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -857,6 +1045,17 @@ export function googleDataplexDatascanDataQualitySpecRulesNonNullExpectationToTe
   }
   return {
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesNonNullExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference extends cdktf.ComplexObject {
@@ -925,6 +1124,43 @@ export function googleDataplexDatascanDataQualitySpecRulesRangeExpectationToTerr
     strict_max_enabled: cdktf.booleanToTerraform(struct!.strictMaxEnabled),
     strict_min_enabled: cdktf.booleanToTerraform(struct!.strictMinEnabled),
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesRangeExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_value: {
+      value: cdktf.stringToHclTerraform(struct!.maxValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_value: {
+      value: cdktf.stringToHclTerraform(struct!.minValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strict_max_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.strictMaxEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    strict_min_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.strictMinEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference extends cdktf.ComplexObject {
@@ -1060,6 +1296,25 @@ export function googleDataplexDatascanDataQualitySpecRulesRegexExpectationToTerr
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecRulesRegexExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1124,6 +1379,25 @@ export function googleDataplexDatascanDataQualitySpecRulesRowConditionExpectatio
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecRulesRowConditionExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sql_expression: {
+      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1186,6 +1460,25 @@ export function googleDataplexDatascanDataQualitySpecRulesSetExpectationToTerraf
   return {
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesSetExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesSetExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesSetExpectationOutputReference extends cdktf.ComplexObject {
@@ -1282,6 +1575,49 @@ export function googleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectat
     strict_max_enabled: cdktf.booleanToTerraform(struct!.strictMaxEnabled),
     strict_min_enabled: cdktf.booleanToTerraform(struct!.strictMinEnabled),
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_value: {
+      value: cdktf.stringToHclTerraform(struct!.maxValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_value: {
+      value: cdktf.stringToHclTerraform(struct!.minValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    statistic: {
+      value: cdktf.stringToHclTerraform(struct!.statistic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strict_max_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.strictMaxEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    strict_min_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.strictMinEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference extends cdktf.ComplexObject {
@@ -1436,6 +1772,25 @@ export function googleDataplexDatascanDataQualitySpecRulesTableConditionExpectat
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecRulesTableConditionExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sql_expression: {
+      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1491,6 +1846,17 @@ export function googleDataplexDatascanDataQualitySpecRulesUniquenessExpectationT
   }
   return {
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesUniquenessExpectationToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference | GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference extends cdktf.ComplexObject {
@@ -1632,6 +1998,103 @@ export function googleDataplexDatascanDataQualitySpecRulesToTerraform(struct?: G
     table_condition_expectation: googleDataplexDatascanDataQualitySpecRulesTableConditionExpectationToTerraform(struct!.tableConditionExpectation),
     uniqueness_expectation: googleDataplexDatascanDataQualitySpecRulesUniquenessExpectationToTerraform(struct!.uniquenessExpectation),
   }
+}
+
+
+export function googleDataplexDatascanDataQualitySpecRulesToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension: {
+      value: cdktf.stringToHclTerraform(struct!.dimension),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ignore_null: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreNull),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    non_null_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesNonNullExpectationToHclTerraform(struct!.nonNullExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectationList",
+    },
+    range_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesRangeExpectationToHclTerraform(struct!.rangeExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesRangeExpectationList",
+    },
+    regex_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesRegexExpectationToHclTerraform(struct!.regexExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesRegexExpectationList",
+    },
+    row_condition_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesRowConditionExpectationToHclTerraform(struct!.rowConditionExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesRowConditionExpectationList",
+    },
+    set_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesSetExpectationToHclTerraform(struct!.setExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesSetExpectationList",
+    },
+    statistic_range_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationToHclTerraform(struct!.statisticRangeExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationList",
+    },
+    table_condition_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesTableConditionExpectationToHclTerraform(struct!.tableConditionExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesTableConditionExpectationList",
+    },
+    uniqueness_expectation: {
+      value: googleDataplexDatascanDataQualitySpecRulesUniquenessExpectationToHclTerraform(struct!.uniquenessExpectation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanDataQualitySpecRulesOutputReference extends cdktf.ComplexObject {
@@ -2039,6 +2502,43 @@ export function googleDataplexDatascanDataQualitySpecToTerraform(struct?: Google
   }
 }
 
+
+export function googleDataplexDatascanDataQualitySpecToHclTerraform(struct?: GoogleDataplexDatascanDataQualitySpecOutputReference | GoogleDataplexDatascanDataQualitySpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    row_filter: {
+      value: cdktf.stringToHclTerraform(struct!.rowFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sampling_percent: {
+      value: cdktf.numberToHclTerraform(struct!.samplingPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    post_scan_actions: {
+      value: googleDataplexDatascanDataQualitySpecPostScanActionsToHclTerraform(struct!.postScanActions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecPostScanActionsList",
+    },
+    rules: {
+      value: cdktf.listMapperHcl(googleDataplexDatascanDataQualitySpecRulesToHclTerraform, true)(struct!.rules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanDataQualitySpecRulesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanDataQualitySpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2165,6 +2665,17 @@ export function googleDataplexDatascanExecutionSpecTriggerOnDemandToTerraform(st
   }
 }
 
+
+export function googleDataplexDatascanExecutionSpecTriggerOnDemandToHclTerraform(struct?: GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference | GoogleDataplexDatascanExecutionSpecTriggerOnDemand): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2208,6 +2719,25 @@ export function googleDataplexDatascanExecutionSpecTriggerScheduleToTerraform(st
   return {
     cron: cdktf.stringToTerraform(struct!.cron),
   }
+}
+
+
+export function googleDataplexDatascanExecutionSpecTriggerScheduleToHclTerraform(struct?: GoogleDataplexDatascanExecutionSpecTriggerScheduleOutputReference | GoogleDataplexDatascanExecutionSpecTriggerSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cron: {
+      value: cdktf.stringToHclTerraform(struct!.cron),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanExecutionSpecTriggerScheduleOutputReference extends cdktf.ComplexObject {
@@ -2279,6 +2809,31 @@ export function googleDataplexDatascanExecutionSpecTriggerToTerraform(struct?: G
     on_demand: googleDataplexDatascanExecutionSpecTriggerOnDemandToTerraform(struct!.onDemand),
     schedule: googleDataplexDatascanExecutionSpecTriggerScheduleToTerraform(struct!.schedule),
   }
+}
+
+
+export function googleDataplexDatascanExecutionSpecTriggerToHclTerraform(struct?: GoogleDataplexDatascanExecutionSpecTriggerOutputReference | GoogleDataplexDatascanExecutionSpecTrigger): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_demand: {
+      value: googleDataplexDatascanExecutionSpecTriggerOnDemandToHclTerraform(struct!.onDemand),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanExecutionSpecTriggerOnDemandList",
+    },
+    schedule: {
+      value: googleDataplexDatascanExecutionSpecTriggerScheduleToHclTerraform(struct!.schedule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanExecutionSpecTriggerScheduleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanExecutionSpecTriggerOutputReference extends cdktf.ComplexObject {
@@ -2377,6 +2932,31 @@ export function googleDataplexDatascanExecutionSpecToTerraform(struct?: GoogleDa
   }
 }
 
+
+export function googleDataplexDatascanExecutionSpecToHclTerraform(struct?: GoogleDataplexDatascanExecutionSpecOutputReference | GoogleDataplexDatascanExecutionSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    trigger: {
+      value: googleDataplexDatascanExecutionSpecTriggerToHclTerraform(struct!.trigger),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataplexDatascanExecutionSpecTriggerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDataplexDatascanExecutionSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2469,6 +3049,37 @@ export function googleDataplexDatascanTimeoutsToTerraform(struct?: GoogleDataple
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDataplexDatascanTimeoutsToHclTerraform(struct?: GoogleDataplexDatascanTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDataplexDatascanTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2890,5 +3501,85 @@ export class GoogleDataplexDatascan extends cdktf.TerraformResource {
       execution_spec: googleDataplexDatascanExecutionSpecToTerraform(this._executionSpec.internalValue),
       timeouts: googleDataplexDatascanTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_scan_id: {
+        value: cdktf.stringToHclTerraform(this._dataScanId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data: {
+        value: googleDataplexDatascanDataToHclTerraform(this._data.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataplexDatascanDataList",
+      },
+      data_profile_spec: {
+        value: googleDataplexDatascanDataProfileSpecToHclTerraform(this._dataProfileSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataplexDatascanDataProfileSpecList",
+      },
+      data_quality_spec: {
+        value: googleDataplexDatascanDataQualitySpecToHclTerraform(this._dataQualitySpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataplexDatascanDataQualitySpecList",
+      },
+      execution_spec: {
+        value: googleDataplexDatascanExecutionSpecToHclTerraform(this._executionSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataplexDatascanExecutionSpecList",
+      },
+      timeouts: {
+        value: googleDataplexDatascanTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDataplexDatascanTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

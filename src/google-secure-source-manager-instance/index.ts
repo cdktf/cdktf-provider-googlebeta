@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_secure_source_manager_instance
 // generated from terraform resource schema
 
@@ -76,6 +71,17 @@ export function googleSecureSourceManagerInstanceHostConfigToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function googleSecureSourceManagerInstanceHostConfigToHclTerraform(struct?: GoogleSecureSourceManagerInstanceHostConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleSecureSourceManagerInstanceHostConfigOutputReference extends cdktf.ComplexObject {
@@ -169,6 +175,31 @@ export function googleSecureSourceManagerInstancePrivateConfigToTerraform(struct
     ca_pool: cdktf.stringToTerraform(struct!.caPool),
     is_private: cdktf.booleanToTerraform(struct!.isPrivate),
   }
+}
+
+
+export function googleSecureSourceManagerInstancePrivateConfigToHclTerraform(struct?: GoogleSecureSourceManagerInstancePrivateConfigOutputReference | GoogleSecureSourceManagerInstancePrivateConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ca_pool: {
+      value: cdktf.stringToHclTerraform(struct!.caPool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_private: {
+      value: cdktf.booleanToHclTerraform(struct!.isPrivate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecureSourceManagerInstancePrivateConfigOutputReference extends cdktf.ComplexObject {
@@ -265,6 +296,31 @@ export function googleSecureSourceManagerInstanceTimeoutsToTerraform(struct?: Go
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function googleSecureSourceManagerInstanceTimeoutsToHclTerraform(struct?: GoogleSecureSourceManagerInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleSecureSourceManagerInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -593,5 +649,61 @@ export class GoogleSecureSourceManagerInstance extends cdktf.TerraformResource {
       private_config: googleSecureSourceManagerInstancePrivateConfigToTerraform(this._privateConfig.internalValue),
       timeouts: googleSecureSourceManagerInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key: {
+        value: cdktf.stringToHclTerraform(this._kmsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_config: {
+        value: googleSecureSourceManagerInstancePrivateConfigToHclTerraform(this._privateConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleSecureSourceManagerInstancePrivateConfigList",
+      },
+      timeouts: {
+        value: googleSecureSourceManagerInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleSecureSourceManagerInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

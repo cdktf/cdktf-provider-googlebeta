@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_logging_project_sink
 // generated from terraform resource schema
 
@@ -99,6 +94,25 @@ export function googleLoggingProjectSinkBigqueryOptionsToTerraform(struct?: Goog
   }
 }
 
+
+export function googleLoggingProjectSinkBigqueryOptionsToHclTerraform(struct?: GoogleLoggingProjectSinkBigqueryOptionsOutputReference | GoogleLoggingProjectSinkBigqueryOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    use_partitioned_tables: {
+      value: cdktf.booleanToHclTerraform(struct!.usePartitionedTables),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleLoggingProjectSinkBigqueryOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +196,43 @@ export function googleLoggingProjectSinkExclusionsToTerraform(struct?: GoogleLog
     filter: cdktf.stringToTerraform(struct!.filter),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function googleLoggingProjectSinkExclusionsToHclTerraform(struct?: GoogleLoggingProjectSinkExclusions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleLoggingProjectSinkExclusionsOutputReference extends cdktf.ComplexObject {
@@ -586,5 +637,79 @@ export class GoogleLoggingProjectSink extends cdktf.TerraformResource {
       bigquery_options: googleLoggingProjectSinkBigqueryOptionsToTerraform(this._bigqueryOptions.internalValue),
       exclusions: cdktf.listMapper(googleLoggingProjectSinkExclusionsToTerraform, true)(this._exclusions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_writer_identity: {
+        value: cdktf.stringToHclTerraform(this._customWriterIdentity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: cdktf.stringToHclTerraform(this._destination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled: {
+        value: cdktf.booleanToHclTerraform(this._disabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unique_writer_identity: {
+        value: cdktf.booleanToHclTerraform(this._uniqueWriterIdentity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      bigquery_options: {
+        value: googleLoggingProjectSinkBigqueryOptionsToHclTerraform(this._bigqueryOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLoggingProjectSinkBigqueryOptionsList",
+      },
+      exclusions: {
+        value: cdktf.listMapperHcl(googleLoggingProjectSinkExclusionsToHclTerraform, true)(this._exclusions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleLoggingProjectSinkExclusionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

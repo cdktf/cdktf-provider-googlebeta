@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_pubsub_lite_subscription
 // generated from terraform resource schema
 
@@ -79,6 +74,25 @@ export function googlePubsubLiteSubscriptionDeliveryConfigToTerraform(struct?: G
   }
 }
 
+
+export function googlePubsubLiteSubscriptionDeliveryConfigToHclTerraform(struct?: GooglePubsubLiteSubscriptionDeliveryConfigOutputReference | GooglePubsubLiteSubscriptionDeliveryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delivery_requirement: {
+      value: cdktf.stringToHclTerraform(struct!.deliveryRequirement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubLiteSubscriptionDeliveryConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -149,6 +163,37 @@ export function googlePubsubLiteSubscriptionTimeoutsToTerraform(struct?: GoogleP
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googlePubsubLiteSubscriptionTimeoutsToHclTerraform(struct?: GooglePubsubLiteSubscriptionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubLiteSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -456,5 +501,61 @@ export class GooglePubsubLiteSubscription extends cdktf.TerraformResource {
       delivery_config: googlePubsubLiteSubscriptionDeliveryConfigToTerraform(this._deliveryConfig.internalValue),
       timeouts: googlePubsubLiteSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic: {
+        value: cdktf.stringToHclTerraform(this._topic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_config: {
+        value: googlePubsubLiteSubscriptionDeliveryConfigToHclTerraform(this._deliveryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubLiteSubscriptionDeliveryConfigList",
+      },
+      timeouts: {
+        value: googlePubsubLiteSubscriptionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GooglePubsubLiteSubscriptionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

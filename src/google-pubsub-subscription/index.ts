@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_pubsub_subscription
 // generated from terraform resource schema
 
@@ -209,6 +204,43 @@ export function googlePubsubSubscriptionBigqueryConfigToTerraform(struct?: Googl
   }
 }
 
+
+export function googlePubsubSubscriptionBigqueryConfigToHclTerraform(struct?: GooglePubsubSubscriptionBigqueryConfigOutputReference | GooglePubsubSubscriptionBigqueryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    drop_unknown_fields: {
+      value: cdktf.booleanToHclTerraform(struct!.dropUnknownFields),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    table: {
+      value: cdktf.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_topic_schema: {
+      value: cdktf.booleanToHclTerraform(struct!.useTopicSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    write_metadata: {
+      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubSubscriptionBigqueryConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -339,6 +371,25 @@ export function googlePubsubSubscriptionCloudStorageConfigAvroConfigToTerraform(
   }
 }
 
+
+export function googlePubsubSubscriptionCloudStorageConfigAvroConfigToHclTerraform(struct?: GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference | GooglePubsubSubscriptionCloudStorageConfigAvroConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    write_metadata: {
+      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -442,6 +493,55 @@ export function googlePubsubSubscriptionCloudStorageConfigToTerraform(struct?: G
     max_duration: cdktf.stringToTerraform(struct!.maxDuration),
     avro_config: googlePubsubSubscriptionCloudStorageConfigAvroConfigToTerraform(struct!.avroConfig),
   }
+}
+
+
+export function googlePubsubSubscriptionCloudStorageConfigToHclTerraform(struct?: GooglePubsubSubscriptionCloudStorageConfigOutputReference | GooglePubsubSubscriptionCloudStorageConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.filenamePrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.filenameSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.maxBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_duration: {
+      value: cdktf.stringToHclTerraform(struct!.maxDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    avro_config: {
+      value: googlePubsubSubscriptionCloudStorageConfigAvroConfigToHclTerraform(struct!.avroConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GooglePubsubSubscriptionCloudStorageConfigAvroConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubSubscriptionCloudStorageConfigOutputReference extends cdktf.ComplexObject {
@@ -651,6 +751,31 @@ export function googlePubsubSubscriptionDeadLetterPolicyToTerraform(struct?: Goo
   }
 }
 
+
+export function googlePubsubSubscriptionDeadLetterPolicyToHclTerraform(struct?: GooglePubsubSubscriptionDeadLetterPolicyOutputReference | GooglePubsubSubscriptionDeadLetterPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dead_letter_topic: {
+      value: cdktf.stringToHclTerraform(struct!.deadLetterTopic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_delivery_attempts: {
+      value: cdktf.numberToHclTerraform(struct!.maxDeliveryAttempts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubSubscriptionDeadLetterPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -744,6 +869,25 @@ export function googlePubsubSubscriptionExpirationPolicyToTerraform(struct?: Goo
   }
 }
 
+
+export function googlePubsubSubscriptionExpirationPolicyToHclTerraform(struct?: GooglePubsubSubscriptionExpirationPolicyOutputReference | GooglePubsubSubscriptionExpirationPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ttl: {
+      value: cdktf.stringToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubSubscriptionExpirationPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -808,6 +952,25 @@ export function googlePubsubSubscriptionPushConfigNoWrapperToTerraform(struct?: 
   return {
     write_metadata: cdktf.booleanToTerraform(struct!.writeMetadata),
   }
+}
+
+
+export function googlePubsubSubscriptionPushConfigNoWrapperToHclTerraform(struct?: GooglePubsubSubscriptionPushConfigNoWrapperOutputReference | GooglePubsubSubscriptionPushConfigNoWrapper): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    write_metadata: {
+      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubSubscriptionPushConfigNoWrapperOutputReference extends cdktf.ComplexObject {
@@ -887,6 +1050,31 @@ export function googlePubsubSubscriptionPushConfigOidcTokenToTerraform(struct?: 
     audience: cdktf.stringToTerraform(struct!.audience),
     service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
   }
+}
+
+
+export function googlePubsubSubscriptionPushConfigOidcTokenToHclTerraform(struct?: GooglePubsubSubscriptionPushConfigOidcTokenOutputReference | GooglePubsubSubscriptionPushConfigOidcToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audience: {
+      value: cdktf.stringToHclTerraform(struct!.audience),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_account_email: {
+      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubSubscriptionPushConfigOidcTokenOutputReference extends cdktf.ComplexObject {
@@ -1018,6 +1206,43 @@ export function googlePubsubSubscriptionPushConfigToTerraform(struct?: GooglePub
     no_wrapper: googlePubsubSubscriptionPushConfigNoWrapperToTerraform(struct!.noWrapper),
     oidc_token: googlePubsubSubscriptionPushConfigOidcTokenToTerraform(struct!.oidcToken),
   }
+}
+
+
+export function googlePubsubSubscriptionPushConfigToHclTerraform(struct?: GooglePubsubSubscriptionPushConfigOutputReference | GooglePubsubSubscriptionPushConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attributes: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.attributes),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    push_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.pushEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    no_wrapper: {
+      value: googlePubsubSubscriptionPushConfigNoWrapperToHclTerraform(struct!.noWrapper),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GooglePubsubSubscriptionPushConfigNoWrapperList",
+    },
+    oidc_token: {
+      value: googlePubsubSubscriptionPushConfigOidcTokenToHclTerraform(struct!.oidcToken),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GooglePubsubSubscriptionPushConfigOidcTokenList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubSubscriptionPushConfigOutputReference extends cdktf.ComplexObject {
@@ -1159,6 +1384,31 @@ export function googlePubsubSubscriptionRetryPolicyToTerraform(struct?: GooglePu
   }
 }
 
+
+export function googlePubsubSubscriptionRetryPolicyToHclTerraform(struct?: GooglePubsubSubscriptionRetryPolicyOutputReference | GooglePubsubSubscriptionRetryPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_backoff: {
+      value: cdktf.stringToHclTerraform(struct!.maximumBackoff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    minimum_backoff: {
+      value: cdktf.stringToHclTerraform(struct!.minimumBackoff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GooglePubsubSubscriptionRetryPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1254,6 +1504,37 @@ export function googlePubsubSubscriptionTimeoutsToTerraform(struct?: GooglePubsu
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googlePubsubSubscriptionTimeoutsToHclTerraform(struct?: GooglePubsubSubscriptionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GooglePubsubSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1753,5 +2034,121 @@ export class GooglePubsubSubscription extends cdktf.TerraformResource {
       retry_policy: googlePubsubSubscriptionRetryPolicyToTerraform(this._retryPolicy.internalValue),
       timeouts: googlePubsubSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ack_deadline_seconds: {
+        value: cdktf.numberToHclTerraform(this._ackDeadlineSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_exactly_once_delivery: {
+        value: cdktf.booleanToHclTerraform(this._enableExactlyOnceDelivery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_message_ordering: {
+        value: cdktf.booleanToHclTerraform(this._enableMessageOrdering),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      message_retention_duration: {
+        value: cdktf.stringToHclTerraform(this._messageRetentionDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retain_acked_messages: {
+        value: cdktf.booleanToHclTerraform(this._retainAckedMessages),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      topic: {
+        value: cdktf.stringToHclTerraform(this._topic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bigquery_config: {
+        value: googlePubsubSubscriptionBigqueryConfigToHclTerraform(this._bigqueryConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionBigqueryConfigList",
+      },
+      cloud_storage_config: {
+        value: googlePubsubSubscriptionCloudStorageConfigToHclTerraform(this._cloudStorageConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionCloudStorageConfigList",
+      },
+      dead_letter_policy: {
+        value: googlePubsubSubscriptionDeadLetterPolicyToHclTerraform(this._deadLetterPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionDeadLetterPolicyList",
+      },
+      expiration_policy: {
+        value: googlePubsubSubscriptionExpirationPolicyToHclTerraform(this._expirationPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionExpirationPolicyList",
+      },
+      push_config: {
+        value: googlePubsubSubscriptionPushConfigToHclTerraform(this._pushConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionPushConfigList",
+      },
+      retry_policy: {
+        value: googlePubsubSubscriptionRetryPolicyToHclTerraform(this._retryPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GooglePubsubSubscriptionRetryPolicyList",
+      },
+      timeouts: {
+        value: googlePubsubSubscriptionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GooglePubsubSubscriptionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_kms_crypto_key
 // generated from terraform resource schema
 
@@ -105,6 +100,17 @@ export function googleKmsCryptoKeyPrimaryToTerraform(struct?: GoogleKmsCryptoKey
   }
 }
 
+
+export function googleKmsCryptoKeyPrimaryToHclTerraform(struct?: GoogleKmsCryptoKeyPrimary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleKmsCryptoKeyPrimaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -187,6 +193,37 @@ export function googleKmsCryptoKeyTimeoutsToTerraform(struct?: GoogleKmsCryptoKe
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleKmsCryptoKeyTimeoutsToHclTerraform(struct?: GoogleKmsCryptoKeyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleKmsCryptoKeyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -316,6 +353,31 @@ export function googleKmsCryptoKeyVersionTemplateToTerraform(struct?: GoogleKmsC
     algorithm: cdktf.stringToTerraform(struct!.algorithm),
     protection_level: cdktf.stringToTerraform(struct!.protectionLevel),
   }
+}
+
+
+export function googleKmsCryptoKeyVersionTemplateToHclTerraform(struct?: GoogleKmsCryptoKeyVersionTemplateOutputReference | GoogleKmsCryptoKeyVersionTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protection_level: {
+      value: cdktf.stringToHclTerraform(struct!.protectionLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleKmsCryptoKeyVersionTemplateOutputReference extends cdktf.ComplexObject {
@@ -660,5 +722,79 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
       timeouts: googleKmsCryptoKeyTimeoutsToTerraform(this._timeouts.internalValue),
       version_template: googleKmsCryptoKeyVersionTemplateToTerraform(this._versionTemplate.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destroy_scheduled_duration: {
+        value: cdktf.stringToHclTerraform(this._destroyScheduledDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      import_only: {
+        value: cdktf.booleanToHclTerraform(this._importOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_ring: {
+        value: cdktf.stringToHclTerraform(this._keyRing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      purpose: {
+        value: cdktf.stringToHclTerraform(this._purpose),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_period: {
+        value: cdktf.stringToHclTerraform(this._rotationPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_initial_version_creation: {
+        value: cdktf.booleanToHclTerraform(this._skipInitialVersionCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: googleKmsCryptoKeyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleKmsCryptoKeyTimeouts",
+      },
+      version_template: {
+        value: googleKmsCryptoKeyVersionTemplateToHclTerraform(this._versionTemplate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleKmsCryptoKeyVersionTemplateList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

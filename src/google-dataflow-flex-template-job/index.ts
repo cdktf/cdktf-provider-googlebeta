@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dataflow_flex_template_job
 // generated from terraform resource schema
 
@@ -691,5 +686,163 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
       temp_location: cdktf.stringToTerraform(this._tempLocation),
       transform_name_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(this._transformNameMapping),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      additional_experiments: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalExperiments),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      autoscaling_algorithm: {
+        value: cdktf.stringToHclTerraform(this._autoscalingAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_spec_gcs_path: {
+        value: cdktf.stringToHclTerraform(this._containerSpecGcsPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_streaming_engine: {
+        value: cdktf.booleanToHclTerraform(this._enableStreamingEngine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_configuration: {
+        value: cdktf.stringToHclTerraform(this._ipConfiguration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_name: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      launcher_machine_type: {
+        value: cdktf.stringToHclTerraform(this._launcherMachineType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      machine_type: {
+        value: cdktf.stringToHclTerraform(this._machineType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_workers: {
+        value: cdktf.numberToHclTerraform(this._maxWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network: {
+        value: cdktf.stringToHclTerraform(this._network),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      num_workers: {
+        value: cdktf.numberToHclTerraform(this._numWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      on_delete: {
+        value: cdktf.stringToHclTerraform(this._onDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdk_container_image: {
+        value: cdktf.stringToHclTerraform(this._sdkContainerImage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_email: {
+        value: cdktf.stringToHclTerraform(this._serviceAccountEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_wait_on_job_termination: {
+        value: cdktf.booleanToHclTerraform(this._skipWaitOnJobTermination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      staging_location: {
+        value: cdktf.stringToHclTerraform(this._stagingLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnetwork: {
+        value: cdktf.stringToHclTerraform(this._subnetwork),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      temp_location: {
+        value: cdktf.stringToHclTerraform(this._tempLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transform_name_mapping: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._transformNameMapping),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

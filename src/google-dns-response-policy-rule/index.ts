@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dns_response_policy_rule
 // generated from terraform resource schema
 
@@ -99,6 +94,43 @@ export function googleDnsResponsePolicyRuleLocalDataLocalDatasToTerraform(struct
     ttl: cdktf.numberToTerraform(struct!.ttl),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function googleDnsResponsePolicyRuleLocalDataLocalDatasToHclTerraform(struct?: GoogleDnsResponsePolicyRuleLocalDataLocalDatas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rrdatas: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    ttl: {
+      value: cdktf.numberToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference extends cdktf.ComplexObject {
@@ -260,6 +292,25 @@ export function googleDnsResponsePolicyRuleLocalDataToTerraform(struct?: GoogleD
   }
 }
 
+
+export function googleDnsResponsePolicyRuleLocalDataToHclTerraform(struct?: GoogleDnsResponsePolicyRuleLocalDataOutputReference | GoogleDnsResponsePolicyRuleLocalData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    local_datas: {
+      value: cdktf.listMapperHcl(googleDnsResponsePolicyRuleLocalDataLocalDatasToHclTerraform, true)(struct!.localDatas),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDnsResponsePolicyRuleLocalDataLocalDatasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDnsResponsePolicyRuleLocalDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -330,6 +381,37 @@ export function googleDnsResponsePolicyRuleTimeoutsToTerraform(struct?: GoogleDn
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDnsResponsePolicyRuleTimeoutsToHclTerraform(struct?: GoogleDnsResponsePolicyRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDnsResponsePolicyRuleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -634,5 +716,61 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
       local_data: googleDnsResponsePolicyRuleLocalDataToTerraform(this._localData.internalValue),
       timeouts: googleDnsResponsePolicyRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      behavior: {
+        value: cdktf.stringToHclTerraform(this._behavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_name: {
+        value: cdktf.stringToHclTerraform(this._dnsName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_policy: {
+        value: cdktf.stringToHclTerraform(this._responsePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_name: {
+        value: cdktf.stringToHclTerraform(this._ruleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_data: {
+        value: googleDnsResponsePolicyRuleLocalDataToHclTerraform(this._localData.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDnsResponsePolicyRuleLocalDataList",
+      },
+      timeouts: {
+        value: googleDnsResponsePolicyRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDnsResponsePolicyRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

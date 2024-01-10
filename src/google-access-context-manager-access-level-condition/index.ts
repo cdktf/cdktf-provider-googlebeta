@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_access_context_manager_access_level_condition
 // generated from terraform resource schema
 
@@ -124,6 +119,31 @@ export function googleAccessContextManagerAccessLevelConditionDevicePolicyOsCons
     minimum_version: cdktf.stringToTerraform(struct!.minimumVersion),
     os_type: cdktf.stringToTerraform(struct!.osType),
   }
+}
+
+
+export function googleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsToHclTerraform(struct?: GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    minimum_version: {
+      value: cdktf.stringToHclTerraform(struct!.minimumVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    os_type: {
+      value: cdktf.stringToHclTerraform(struct!.osType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference extends cdktf.ComplexObject {
@@ -280,6 +300,55 @@ export function googleAccessContextManagerAccessLevelConditionDevicePolicyToTerr
     require_screen_lock: cdktf.booleanToTerraform(struct!.requireScreenLock),
     os_constraints: cdktf.listMapper(googleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsToTerraform, true)(struct!.osConstraints),
   }
+}
+
+
+export function googleAccessContextManagerAccessLevelConditionDevicePolicyToHclTerraform(struct?: GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference | GoogleAccessContextManagerAccessLevelConditionDevicePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_device_management_levels: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDeviceManagementLevels),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_encryption_statuses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedEncryptionStatuses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    require_admin_approval: {
+      value: cdktf.booleanToHclTerraform(struct!.requireAdminApproval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    require_corp_owned: {
+      value: cdktf.booleanToHclTerraform(struct!.requireCorpOwned),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    require_screen_lock: {
+      value: cdktf.booleanToHclTerraform(struct!.requireScreenLock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    os_constraints: {
+      value: cdktf.listMapperHcl(googleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsToHclTerraform, true)(struct!.osConstraints),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference extends cdktf.ComplexObject {
@@ -462,6 +531,31 @@ export function googleAccessContextManagerAccessLevelConditionTimeoutsToTerrafor
   }
 }
 
+
+export function googleAccessContextManagerAccessLevelConditionTimeoutsToHclTerraform(struct?: GoogleAccessContextManagerAccessLevelConditionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAccessContextManagerAccessLevelConditionTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -568,6 +662,31 @@ export function googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesV
   }
 }
 
+
+export function googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkToHclTerraform(struct?: GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference | GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_ip_subnetworks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcIpSubnetworks),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -652,6 +771,25 @@ export function googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesT
   return {
     vpc_subnetwork: googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkToTerraform(struct!.vpcSubnetwork),
   }
+}
+
+
+export function googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesToHclTerraform(struct?: GoogleAccessContextManagerAccessLevelConditionVpcNetworkSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc_subnetwork: {
+      value: googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkToHclTerraform(struct!.vpcSubnetwork),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesOutputReference extends cdktf.ComplexObject {
@@ -976,5 +1114,73 @@ export class GoogleAccessContextManagerAccessLevelCondition extends cdktf.Terraf
       timeouts: googleAccessContextManagerAccessLevelConditionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_network_sources: cdktf.listMapper(googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesToTerraform, true)(this._vpcNetworkSources.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_level: {
+        value: cdktf.stringToHclTerraform(this._accessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_subnetworks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipSubnetworks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      negate: {
+        value: cdktf.booleanToHclTerraform(this._negate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      required_access_levels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._requiredAccessLevels),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      device_policy: {
+        value: googleAccessContextManagerAccessLevelConditionDevicePolicyToHclTerraform(this._devicePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAccessContextManagerAccessLevelConditionDevicePolicyList",
+      },
+      timeouts: {
+        value: googleAccessContextManagerAccessLevelConditionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleAccessContextManagerAccessLevelConditionTimeouts",
+      },
+      vpc_network_sources: {
+        value: cdktf.listMapperHcl(googleAccessContextManagerAccessLevelConditionVpcNetworkSourcesToHclTerraform, true)(this._vpcNetworkSources.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

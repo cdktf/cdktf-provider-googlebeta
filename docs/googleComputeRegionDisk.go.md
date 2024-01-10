@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDisk(scope Construct, id *string, config GoogleComputeRegionDiskConfig) GoogleComputeRegionDisk
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -146,6 +147,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.toMetadata"></a>
 
@@ -555,7 +562,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.GoogleComputeRegionDisk_IsConstruct(x interface{}) *bool
 ```
@@ -587,7 +594,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.GoogleComputeRegionDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -601,7 +608,7 @@ googlecomputeregiondisk.GoogleComputeRegionDisk_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.GoogleComputeRegionDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -615,7 +622,7 @@ googlecomputeregiondisk.GoogleComputeRegionDisk_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.GoogleComputeRegionDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1372,7 +1379,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskAsyncPrimaryDisk {
 	Disk: *string,
@@ -1406,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskConfig {
 	Connection: interface{},
@@ -1418,9 +1425,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Provisioners: *[]interface{},
 	Name: *string,
 	ReplicaZones: *[]*string,
-	AsyncPrimaryDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk,
+	AsyncPrimaryDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDisk,
 	Description: *string,
-	DiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey,
+	DiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey,
 	GuestOsFeatures: interface{},
 	Id: *string,
 	Interface: *string,
@@ -1432,8 +1439,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Size: *f64,
 	Snapshot: *string,
 	SourceDisk: *string,
-	SourceSnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts,
+	SourceSnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts,
 	Type: *string,
 }
 ```
@@ -1860,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskDiskEncryptionKey {
 	KmsKeyName: *string,
@@ -1910,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskGuestOsFeatures {
 	Type: *string,
@@ -1946,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKey {
 	KmsKeyName: *string,
@@ -1996,7 +2003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 &googlecomputeregiondisk.GoogleComputeRegionDiskTimeouts {
 	Create: *string,
@@ -2058,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference
 ```
@@ -2329,7 +2336,7 @@ func InternalValue() GoogleComputeRegionDiskAsyncPrimaryDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskDiskEncryptionKeyOutputReference
 ```
@@ -2647,7 +2654,7 @@ func InternalValue() GoogleComputeRegionDiskDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskGuestOsFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionDiskGuestOsFeaturesList
 ```
@@ -2688,10 +2695,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2790,7 +2814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskGuestOsFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskGuestOsFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRegionDiskGuestOsFeaturesOutputReference
 ```
@@ -3079,7 +3103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 ```
@@ -3397,7 +3421,7 @@ func InternalValue() GoogleComputeRegionDiskSourceSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDisk.GoogleComputeRegionDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregiondisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondisk"
 
 googlecomputeregiondisk.NewGoogleComputeRegionDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionDiskTimeoutsOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_compute_region_disk
 // generated from terraform resource schema
 
@@ -183,6 +178,25 @@ export function googleComputeRegionDiskAsyncPrimaryDiskToTerraform(struct?: Goog
   }
 }
 
+
+export function googleComputeRegionDiskAsyncPrimaryDiskToHclTerraform(struct?: GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference | GoogleComputeRegionDiskAsyncPrimaryDisk): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk: {
+      value: cdktf.stringToHclTerraform(struct!.disk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionDiskAsyncPrimaryDiskOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -253,6 +267,31 @@ export function googleComputeRegionDiskDiskEncryptionKeyToTerraform(struct?: Goo
     kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
     raw_key: cdktf.stringToTerraform(struct!.rawKey),
   }
+}
+
+
+export function googleComputeRegionDiskDiskEncryptionKeyToHclTerraform(struct?: GoogleComputeRegionDiskDiskEncryptionKeyOutputReference | GoogleComputeRegionDiskDiskEncryptionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    raw_key: {
+      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionDiskDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
@@ -347,6 +386,25 @@ export function googleComputeRegionDiskGuestOsFeaturesToTerraform(struct?: Googl
   return {
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function googleComputeRegionDiskGuestOsFeaturesToHclTerraform(struct?: GoogleComputeRegionDiskGuestOsFeatures | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionDiskGuestOsFeaturesOutputReference extends cdktf.ComplexObject {
@@ -453,6 +511,31 @@ export function googleComputeRegionDiskSourceSnapshotEncryptionKeyToTerraform(st
   }
 }
 
+
+export function googleComputeRegionDiskSourceSnapshotEncryptionKeyToHclTerraform(struct?: GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference | GoogleComputeRegionDiskSourceSnapshotEncryptionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    raw_key: {
+      value: cdktf.stringToHclTerraform(struct!.rawKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -553,6 +636,37 @@ export function googleComputeRegionDiskTimeoutsToTerraform(struct?: GoogleComput
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleComputeRegionDiskTimeoutsToHclTerraform(struct?: GoogleComputeRegionDiskTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleComputeRegionDiskTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1110,5 +1224,127 @@ export class GoogleComputeRegionDisk extends cdktf.TerraformResource {
       source_snapshot_encryption_key: googleComputeRegionDiskSourceSnapshotEncryptionKeyToTerraform(this._sourceSnapshotEncryptionKey.internalValue),
       timeouts: googleComputeRegionDiskTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface: {
+        value: cdktf.stringToHclTerraform(this._interface),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      licenses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._licenses),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      physical_block_size_bytes: {
+        value: cdktf.numberToHclTerraform(this._physicalBlockSizeBytes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replica_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._replicaZones),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      size: {
+        value: cdktf.numberToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      snapshot: {
+        value: cdktf.stringToHclTerraform(this._snapshot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_disk: {
+        value: cdktf.stringToHclTerraform(this._sourceDisk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      async_primary_disk: {
+        value: googleComputeRegionDiskAsyncPrimaryDiskToHclTerraform(this._asyncPrimaryDisk.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionDiskAsyncPrimaryDiskList",
+      },
+      disk_encryption_key: {
+        value: googleComputeRegionDiskDiskEncryptionKeyToHclTerraform(this._diskEncryptionKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionDiskDiskEncryptionKeyList",
+      },
+      guest_os_features: {
+        value: cdktf.listMapperHcl(googleComputeRegionDiskGuestOsFeaturesToHclTerraform, true)(this._guestOsFeatures.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleComputeRegionDiskGuestOsFeaturesList",
+      },
+      source_snapshot_encryption_key: {
+        value: googleComputeRegionDiskSourceSnapshotEncryptionKeyToHclTerraform(this._sourceSnapshotEncryptionKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionDiskSourceSnapshotEncryptionKeyList",
+      },
+      timeouts: {
+        value: googleComputeRegionDiskTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleComputeRegionDiskTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

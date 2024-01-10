@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_endpoints_service
 // generated from terraform resource schema
 
@@ -66,6 +61,17 @@ export function googleEndpointsServiceApisMethodsToTerraform(struct?: GoogleEndp
   }
   return {
   }
+}
+
+
+export function googleEndpointsServiceApisMethodsToHclTerraform(struct?: GoogleEndpointsServiceApisMethods): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleEndpointsServiceApisMethodsOutputReference extends cdktf.ComplexObject {
@@ -147,6 +153,17 @@ export function googleEndpointsServiceApisToTerraform(struct?: GoogleEndpointsSe
   }
 }
 
+
+export function googleEndpointsServiceApisToHclTerraform(struct?: GoogleEndpointsServiceApis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleEndpointsServiceApisOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -225,6 +242,17 @@ export function googleEndpointsServiceEndpointsToTerraform(struct?: GoogleEndpoi
   }
   return {
   }
+}
+
+
+export function googleEndpointsServiceEndpointsToHclTerraform(struct?: GoogleEndpointsServiceEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleEndpointsServiceEndpointsOutputReference extends cdktf.ComplexObject {
@@ -309,6 +337,37 @@ export function googleEndpointsServiceTimeoutsToTerraform(struct?: GoogleEndpoin
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleEndpointsServiceTimeoutsToHclTerraform(struct?: GoogleEndpointsServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleEndpointsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -623,5 +682,55 @@ export class GoogleEndpointsService extends cdktf.TerraformResource {
       service_name: cdktf.stringToTerraform(this._serviceName),
       timeouts: googleEndpointsServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      grpc_config: {
+        value: cdktf.stringToHclTerraform(this._grpcConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      openapi_config: {
+        value: cdktf.stringToHclTerraform(this._openapiConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protoc_output_base64: {
+        value: cdktf.stringToHclTerraform(this._protocOutputBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_name: {
+        value: cdktf.stringToHclTerraform(this._serviceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: googleEndpointsServiceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleEndpointsServiceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_dialogflow_cx_entity_type
 // generated from terraform resource schema
 
@@ -117,6 +112,31 @@ export function googleDialogflowCxEntityTypeEntitiesToTerraform(struct?: GoogleD
     synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function googleDialogflowCxEntityTypeEntitiesToHclTerraform(struct?: GoogleDialogflowCxEntityTypeEntities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    synonyms: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonyms),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowCxEntityTypeEntitiesOutputReference extends cdktf.ComplexObject {
@@ -240,6 +260,25 @@ export function googleDialogflowCxEntityTypeExcludedPhrasesToTerraform(struct?: 
   }
 }
 
+
+export function googleDialogflowCxEntityTypeExcludedPhrasesToHclTerraform(struct?: GoogleDialogflowCxEntityTypeExcludedPhrases | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleDialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -345,6 +384,37 @@ export function googleDialogflowCxEntityTypeTimeoutsToTerraform(struct?: GoogleD
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleDialogflowCxEntityTypeTimeoutsToHclTerraform(struct?: GoogleDialogflowCxEntityTypeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleDialogflowCxEntityTypeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -708,5 +778,79 @@ export class GoogleDialogflowCxEntityType extends cdktf.TerraformResource {
       excluded_phrases: cdktf.listMapper(googleDialogflowCxEntityTypeExcludedPhrasesToTerraform, true)(this._excludedPhrases.internalValue),
       timeouts: googleDialogflowCxEntityTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_expansion_mode: {
+        value: cdktf.stringToHclTerraform(this._autoExpansionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_fuzzy_extraction: {
+        value: cdktf.booleanToHclTerraform(this._enableFuzzyExtraction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      language_code: {
+        value: cdktf.stringToHclTerraform(this._languageCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktf.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redact: {
+        value: cdktf.booleanToHclTerraform(this._redact),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      entities: {
+        value: cdktf.listMapperHcl(googleDialogflowCxEntityTypeEntitiesToHclTerraform, true)(this._entities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowCxEntityTypeEntitiesList",
+      },
+      excluded_phrases: {
+        value: cdktf.listMapperHcl(googleDialogflowCxEntityTypeExcludedPhrasesToHclTerraform, true)(this._excludedPhrases.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDialogflowCxEntityTypeExcludedPhrasesList",
+      },
+      timeouts: {
+        value: googleDialogflowCxEntityTypeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleDialogflowCxEntityTypeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

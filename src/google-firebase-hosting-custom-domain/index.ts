@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_firebase_hosting_custom_domain
 // generated from terraform resource schema
 
@@ -77,6 +72,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecor
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredRecordsOutputReference extends cdktf.ComplexObject {
@@ -158,6 +164,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationDnsDesiredToTer
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainCertVerificationDnsDesiredToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationDnsDesired): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainCertVerificationDnsDesiredOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -226,6 +243,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRe
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredRecordsOutputReference extends cdktf.ComplexObject {
@@ -307,6 +335,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredTo
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscovered): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainCertVerificationDnsDiscoveredOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -375,6 +414,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationDnsToTerraform(
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainCertVerificationDnsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainCertVerificationDnsOutputReference extends cdktf.ComplexObject {
@@ -451,6 +501,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationHttpToTerraform
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainCertVerificationHttpToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerificationHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainCertVerificationHttpOutputReference extends cdktf.ComplexObject {
@@ -532,6 +593,17 @@ export function googleFirebaseHostingCustomDomainCertVerificationToTerraform(str
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainCertVerificationToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCertVerification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainCertVerificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -601,6 +673,17 @@ export function googleFirebaseHostingCustomDomainCertToTerraform(struct?: Google
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainCertToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainCertOutputReference extends cdktf.ComplexObject {
@@ -678,6 +761,17 @@ export function googleFirebaseHostingCustomDomainIssuesToTerraform(struct?: Goog
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainIssuesToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainIssues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainIssuesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -751,6 +845,17 @@ export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecord
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredRecordsOutputReference extends cdktf.ComplexObject {
@@ -832,6 +937,17 @@ export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredToTerr
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesired): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -900,6 +1016,17 @@ export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRec
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredRecordsOutputReference extends cdktf.ComplexObject {
@@ -981,6 +1108,17 @@ export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredToT
   }
 }
 
+
+export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscovered): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDiscoveredOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1049,6 +1187,17 @@ export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesToTerraform(s
   }
   return {
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainRequiredDnsUpdatesToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainRequiredDnsUpdates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesOutputReference extends cdktf.ComplexObject {
@@ -1140,6 +1289,37 @@ export function googleFirebaseHostingCustomDomainTimeoutsToTerraform(struct?: Go
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleFirebaseHostingCustomDomainTimeoutsToHclTerraform(struct?: GoogleFirebaseHostingCustomDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleFirebaseHostingCustomDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1510,5 +1690,61 @@ export class GoogleFirebaseHostingCustomDomain extends cdktf.TerraformResource {
       wait_dns_verification: cdktf.booleanToTerraform(this._waitDnsVerification),
       timeouts: googleFirebaseHostingCustomDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cert_preference: {
+        value: cdktf.stringToHclTerraform(this._certPreference),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_domain: {
+        value: cdktf.stringToHclTerraform(this._customDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redirect_target: {
+        value: cdktf.stringToHclTerraform(this._redirectTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      site_id: {
+        value: cdktf.stringToHclTerraform(this._siteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_dns_verification: {
+        value: cdktf.booleanToHclTerraform(this._waitDnsVerification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: googleFirebaseHostingCustomDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleFirebaseHostingCustomDomainTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

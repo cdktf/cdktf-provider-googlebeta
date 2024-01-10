@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheck(scope Construct, id *string, config GoogleComputeRegionHealthCheckConfig) GoogleComputeRegionHealthCheck
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -148,6 +149,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.toMetadata"></a>
 
@@ -587,7 +594,7 @@ func ResetUnhealthyThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -619,7 +626,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -633,7 +640,7 @@ googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -647,7 +654,7 @@ googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1283,7 +1290,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckConfig {
 	Connection: interface{},
@@ -1296,18 +1303,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecompu
 	Name: *string,
 	CheckIntervalSec: *f64,
 	Description: *string,
-	GrpcHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck,
+	GrpcHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck,
 	HealthyThreshold: *f64,
-	Http2HealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck,
-	HttpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck,
-	HttpsHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck,
+	Http2HealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck,
+	HttpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck,
+	HttpsHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck,
 	Id: *string,
-	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig,
+	LogConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig,
 	Project: *string,
 	Region: *string,
-	SslHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck,
-	TcpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts,
+	SslHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck,
+	TcpHealthCheck: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts,
 	TimeoutSec: *f64,
 	UnhealthyThreshold: *f64,
 }
@@ -1667,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckGrpcHealthCheck {
 	GrpcServiceName: *string,
@@ -1768,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttp2HealthCheck {
 	Host: *string,
@@ -1918,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttpHealthCheck {
 	Host: *string,
@@ -2068,7 +2075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckHttpsHealthCheck {
 	Host: *string,
@@ -2218,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckLogConfig {
 	Enable: interface{},
@@ -2255,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckSslHealthCheck {
 	Port: *f64,
@@ -2390,7 +2397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckTcpHealthCheck {
 	Port: *f64,
@@ -2525,7 +2532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 &googlecomputeregionhealthcheck.GoogleComputeRegionHealthCheckTimeouts {
 	Create: *string,
@@ -2587,7 +2594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckGrpcHealthCheckOutputReference
 ```
@@ -2952,7 +2959,7 @@ func InternalValue() GoogleComputeRegionHealthCheckGrpcHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttp2HealthCheckOutputReference
 ```
@@ -3404,7 +3411,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttp2HealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttpHealthCheckOutputReference
 ```
@@ -3856,7 +3863,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference
 ```
@@ -4308,7 +4315,7 @@ func InternalValue() GoogleComputeRegionHealthCheckHttpsHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckLogConfigOutputReference
 ```
@@ -4586,7 +4593,7 @@ func InternalValue() GoogleComputeRegionHealthCheckLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckSslHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckSslHealthCheckOutputReference
 ```
@@ -5009,7 +5016,7 @@ func InternalValue() GoogleComputeRegionHealthCheckSslHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckTcpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckTcpHealthCheckOutputReference
 ```
@@ -5432,7 +5439,7 @@ func InternalValue() GoogleComputeRegionHealthCheckTcpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputeregionhealthcheck"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionhealthcheck"
 
 googlecomputeregionhealthcheck.NewGoogleComputeRegionHealthCheckTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionHealthCheckTimeoutsOutputReference
 ```

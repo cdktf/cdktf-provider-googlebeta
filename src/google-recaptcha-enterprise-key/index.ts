@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_recaptcha_enterprise_key
 // generated from terraform resource schema
 
@@ -103,6 +98,31 @@ export function googleRecaptchaEnterpriseKeyAndroidSettingsToTerraform(struct?: 
   }
 }
 
+
+export function googleRecaptchaEnterpriseKeyAndroidSettingsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference | GoogleRecaptchaEnterpriseKeyAndroidSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_all_package_names: {
+      value: cdktf.booleanToHclTerraform(struct!.allowAllPackageNames),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allowed_package_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedPackageNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -197,6 +217,31 @@ export function googleRecaptchaEnterpriseKeyIosSettingsToTerraform(struct?: Goog
     allow_all_bundle_ids: cdktf.booleanToTerraform(struct!.allowAllBundleIds),
     allowed_bundle_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedBundleIds),
   }
+}
+
+
+export function googleRecaptchaEnterpriseKeyIosSettingsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference | GoogleRecaptchaEnterpriseKeyIosSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_all_bundle_ids: {
+      value: cdktf.booleanToHclTerraform(struct!.allowAllBundleIds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allowed_bundle_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedBundleIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference extends cdktf.ComplexObject {
@@ -295,6 +340,31 @@ export function googleRecaptchaEnterpriseKeyTestingOptionsToTerraform(struct?: G
   }
 }
 
+
+export function googleRecaptchaEnterpriseKeyTestingOptionsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference | GoogleRecaptchaEnterpriseKeyTestingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    testing_challenge: {
+      value: cdktf.stringToHclTerraform(struct!.testingChallenge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    testing_score: {
+      value: cdktf.numberToHclTerraform(struct!.testingScore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -390,6 +460,37 @@ export function googleRecaptchaEnterpriseKeyTimeoutsToTerraform(struct?: GoogleR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function googleRecaptchaEnterpriseKeyTimeoutsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -520,6 +621,31 @@ export function googleRecaptchaEnterpriseKeyWafSettingsToTerraform(struct?: Goog
   }
 }
 
+
+export function googleRecaptchaEnterpriseKeyWafSettingsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference | GoogleRecaptchaEnterpriseKeyWafSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    waf_feature: {
+      value: cdktf.stringToHclTerraform(struct!.wafFeature),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waf_service: {
+      value: cdktf.stringToHclTerraform(struct!.wafService),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GoogleRecaptchaEnterpriseKeyWafSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -629,6 +755,49 @@ export function googleRecaptchaEnterpriseKeyWebSettingsToTerraform(struct?: Goog
     challenge_security_preference: cdktf.stringToTerraform(struct!.challengeSecurityPreference),
     integration_type: cdktf.stringToTerraform(struct!.integrationType),
   }
+}
+
+
+export function googleRecaptchaEnterpriseKeyWebSettingsToHclTerraform(struct?: GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference | GoogleRecaptchaEnterpriseKeyWebSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_all_domains: {
+      value: cdktf.booleanToHclTerraform(struct!.allowAllDomains),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_amp_traffic: {
+      value: cdktf.booleanToHclTerraform(struct!.allowAmpTraffic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allowed_domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDomains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    challenge_security_preference: {
+      value: cdktf.stringToHclTerraform(struct!.challengeSecurityPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    integration_type: {
+      value: cdktf.stringToHclTerraform(struct!.integrationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference extends cdktf.ComplexObject {
@@ -1028,5 +1197,73 @@ export class GoogleRecaptchaEnterpriseKey extends cdktf.TerraformResource {
       waf_settings: googleRecaptchaEnterpriseKeyWafSettingsToTerraform(this._wafSettings.internalValue),
       web_settings: googleRecaptchaEnterpriseKeyWebSettingsToTerraform(this._webSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      android_settings: {
+        value: googleRecaptchaEnterpriseKeyAndroidSettingsToHclTerraform(this._androidSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyAndroidSettingsList",
+      },
+      ios_settings: {
+        value: googleRecaptchaEnterpriseKeyIosSettingsToHclTerraform(this._iosSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyIosSettingsList",
+      },
+      testing_options: {
+        value: googleRecaptchaEnterpriseKeyTestingOptionsToHclTerraform(this._testingOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyTestingOptionsList",
+      },
+      timeouts: {
+        value: googleRecaptchaEnterpriseKeyTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyTimeouts",
+      },
+      waf_settings: {
+        value: googleRecaptchaEnterpriseKeyWafSettingsToHclTerraform(this._wafSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyWafSettingsList",
+      },
+      web_settings: {
+        value: googleRecaptchaEnterpriseKeyWebSettingsToHclTerraform(this._webSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRecaptchaEnterpriseKeyWebSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
