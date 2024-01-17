@@ -4,7 +4,7 @@
 
 ### GoogleServiceAccount <a name="GoogleServiceAccount" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account google_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account google_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetCreateIgnoreAlreadyExists">resetCreateIgnoreAlreadyExists</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetDisplayName">resetDisplayName</a></code> | *No description.* |
@@ -383,6 +384,12 @@ public putTimeouts(value: GoogleServiceAccountTimeouts): void
 
 ---
 
+##### `resetCreateIgnoreAlreadyExists` <a name="resetCreateIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetCreateIgnoreAlreadyExists"></a>
+
+```typescript
+public resetCreateIgnoreAlreadyExists(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.resetDescription"></a>
 
 ```typescript
@@ -522,7 +529,7 @@ The construct id used in the generated config for the GoogleServiceAccount to im
 
 The id of the existing GoogleServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -558,6 +565,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountTimeoutsOutputReference">GoogleServiceAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.uniqueId">uniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.createIgnoreAlreadyExistsInput">createIgnoreAlreadyExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
@@ -565,6 +573,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountTimeouts">GoogleServiceAccountTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
@@ -775,6 +784,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `createIgnoreAlreadyExistsInput`<sup>Optional</sup> <a name="createIgnoreAlreadyExistsInput" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.createIgnoreAlreadyExistsInput"></a>
+
+```typescript
+public readonly createIgnoreAlreadyExistsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.descriptionInput"></a>
 
 ```typescript
@@ -842,6 +861,16 @@ public readonly accountId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `createIgnoreAlreadyExists`<sup>Required</sup> <a name="createIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccount.property.createIgnoreAlreadyExists"></a>
+
+```typescript
+public readonly createIgnoreAlreadyExists: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -937,10 +966,11 @@ const googleServiceAccountConfig: googleServiceAccount.GoogleServiceAccountConfi
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.accountId">accountId</a></code> | <code>string</code> | The account id that is used to generate the service account email address and a stable unique id. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, skip service account creation if a service account with the same email already exists. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.description">description</a></code> | <code>string</code> | A text description of the service account. Must be less than or equal to 256 UTF-8 bytes. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the service account is disabled. Defaults to false. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name for the service account. Can be updated without creating a new resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#id GoogleServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#id GoogleServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.project">project</a></code> | <code>string</code> | The ID of the project that the service account will be created in. Defaults to the provider project configuration. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountTimeouts">GoogleServiceAccountTimeouts</a></code> | timeouts block. |
 
@@ -1028,7 +1058,21 @@ The account id that is used to generate the service account email address and a 
 
 It is unique within a project, must be 6-30 characters long, and match the regular expression [a-z]([-a-z0-9]*[a-z0-9]) to comply with RFC1035. Changing this forces a new service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#account_id GoogleServiceAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#account_id GoogleServiceAccount#account_id}
+
+---
+
+##### `createIgnoreAlreadyExists`<sup>Optional</sup> <a name="createIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountConfig.property.createIgnoreAlreadyExists"></a>
+
+```typescript
+public readonly createIgnoreAlreadyExists: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If set to true, skip service account creation if a service account with the same email already exists.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#create_ignore_already_exists GoogleServiceAccount#create_ignore_already_exists}
 
 ---
 
@@ -1042,7 +1086,7 @@ public readonly description: string;
 
 A text description of the service account. Must be less than or equal to 256 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#description GoogleServiceAccount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#description GoogleServiceAccount#description}
 
 ---
 
@@ -1056,7 +1100,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the service account is disabled. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#disabled GoogleServiceAccount#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#disabled GoogleServiceAccount#disabled}
 
 ---
 
@@ -1070,7 +1114,7 @@ public readonly displayName: string;
 
 The display name for the service account. Can be updated without creating a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#display_name GoogleServiceAccount#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#display_name GoogleServiceAccount#display_name}
 
 ---
 
@@ -1082,7 +1126,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#id GoogleServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#id GoogleServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1143,7 @@ public readonly project: string;
 
 The ID of the project that the service account will be created in. Defaults to the provider project configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#project GoogleServiceAccount#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#project GoogleServiceAccount#project}
 
 ---
 
@@ -1113,7 +1157,7 @@ public readonly timeouts: GoogleServiceAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#timeouts GoogleServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#timeouts GoogleServiceAccount#timeouts}
 
 ---
 
@@ -1131,7 +1175,7 @@ const googleServiceAccountTimeouts: googleServiceAccount.GoogleServiceAccountTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#create GoogleServiceAccount#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccount.GoogleServiceAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#create GoogleServiceAccount#create}. |
 
 ---
 
@@ -1143,7 +1187,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account#create GoogleServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account#create GoogleServiceAccount#create}.
 
 ---
 

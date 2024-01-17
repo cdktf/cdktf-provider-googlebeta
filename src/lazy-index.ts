@@ -177,6 +177,7 @@ Object.defineProperty(exports, 'googleCloudbuildv2Repository', { get: function (
 Object.defineProperty(exports, 'googleClouddeployAutomation', { get: function () { return require('./google-clouddeploy-automation'); } });
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipeline', { get: function () { return require('./google-clouddeploy-delivery-pipeline'); } });
 Object.defineProperty(exports, 'googleClouddeployTarget', { get: function () { return require('./google-clouddeploy-target'); } });
+Object.defineProperty(exports, 'googleClouddomainsRegistration', { get: function () { return require('./google-clouddomains-registration'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2Function', { get: function () { return require('./google-cloudfunctions2-function'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2FunctionIamBinding', { get: function () { return require('./google-cloudfunctions2-function-iam-binding'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2FunctionIamMember', { get: function () { return require('./google-cloudfunctions2-function-iam-member'); } });
@@ -630,6 +631,7 @@ Object.defineProperty(exports, 'googleMonitoringSlo', { get: function () { retur
 Object.defineProperty(exports, 'googleMonitoringUptimeCheckConfig', { get: function () { return require('./google-monitoring-uptime-check-config'); } });
 Object.defineProperty(exports, 'googleNetappActiveDirectory', { get: function () { return require('./google-netapp-active-directory'); } });
 Object.defineProperty(exports, 'googleNetappBackupVault', { get: function () { return require('./google-netapp-backup-vault'); } });
+Object.defineProperty(exports, 'googleNetappKmsconfig', { get: function () { return require('./google-netapp-kmsconfig'); } });
 Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { return require('./google-netapp-storage-pool'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityHub', { get: function () { return require('./google-network-connectivity-hub'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityPolicyBasedRoute', { get: function () { return require('./google-network-connectivity-policy-based-route'); } });
@@ -814,6 +816,7 @@ Object.defineProperty(exports, 'googleVertexAiEndpointIamMember', { get: functio
 Object.defineProperty(exports, 'googleVertexAiEndpointIamPolicy', { get: function () { return require('./google-vertex-ai-endpoint-iam-policy'); } });
 Object.defineProperty(exports, 'googleVertexAiFeatureGroup', { get: function () { return require('./google-vertex-ai-feature-group'); } });
 Object.defineProperty(exports, 'googleVertexAiFeatureOnlineStore', { get: function () { return require('./google-vertex-ai-feature-online-store'); } });
+Object.defineProperty(exports, 'googleVertexAiFeatureOnlineStoreFeatureview', { get: function () { return require('./google-vertex-ai-feature-online-store-featureview'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestore', { get: function () { return require('./google-vertex-ai-featurestore'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestoreEntitytype', { get: function () { return require('./google-vertex-ai-featurestore-entitytype'); } });
 Object.defineProperty(exports, 'googleVertexAiFeaturestoreEntitytypeFeature', { get: function () { return require('./google-vertex-ai-featurestore-entitytype-feature'); } });
@@ -828,6 +831,7 @@ Object.defineProperty(exports, 'googleVertexAiIndexEndpoint', { get: function ()
 Object.defineProperty(exports, 'googleVertexAiMetadataStore', { get: function () { return require('./google-vertex-ai-metadata-store'); } });
 Object.defineProperty(exports, 'googleVertexAiTensorboard', { get: function () { return require('./google-vertex-ai-tensorboard'); } });
 Object.defineProperty(exports, 'googleVmwareengineCluster', { get: function () { return require('./google-vmwareengine-cluster'); } });
+Object.defineProperty(exports, 'googleVmwareengineExternalAccessRule', { get: function () { return require('./google-vmwareengine-external-access-rule'); } });
 Object.defineProperty(exports, 'googleVmwareengineExternalAddress', { get: function () { return require('./google-vmwareengine-external-address'); } });
 Object.defineProperty(exports, 'googleVmwareengineNetwork', { get: function () { return require('./google-vmwareengine-network'); } });
 Object.defineProperty(exports, 'googleVmwareengineNetworkPeering', { get: function () { return require('./google-vmwareengine-network-peering'); } });
@@ -983,9 +987,11 @@ Object.defineProperty(exports, 'dataGoogleDatastreamStaticIps', { get: function 
 Object.defineProperty(exports, 'dataGoogleDnsKeys', { get: function () { return require('./data-google-dns-keys'); } });
 Object.defineProperty(exports, 'dataGoogleDnsManagedZone', { get: function () { return require('./data-google-dns-managed-zone'); } });
 Object.defineProperty(exports, 'dataGoogleDnsManagedZoneIamPolicy', { get: function () { return require('./data-google-dns-managed-zone-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleDnsManagedZones', { get: function () { return require('./data-google-dns-managed-zones'); } });
 Object.defineProperty(exports, 'dataGoogleDnsRecordSet', { get: function () { return require('./data-google-dns-record-set'); } });
 Object.defineProperty(exports, 'dataGoogleEndpointsServiceConsumersIamPolicy', { get: function () { return require('./data-google-endpoints-service-consumers-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleEndpointsServiceIamPolicy', { get: function () { return require('./data-google-endpoints-service-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleFilestoreInstance', { get: function () { return require('./data-google-filestore-instance'); } });
 Object.defineProperty(exports, 'dataGoogleFirebaseAndroidApp', { get: function () { return require('./data-google-firebase-android-app'); } });
 Object.defineProperty(exports, 'dataGoogleFirebaseAndroidAppConfig', { get: function () { return require('./data-google-firebase-android-app-config'); } });
 Object.defineProperty(exports, 'dataGoogleFirebaseAppleApp', { get: function () { return require('./data-google-firebase-apple-app'); } });
@@ -1111,6 +1117,7 @@ Object.defineProperty(exports, 'dataGoogleVertexAiFeaturestoreEntitytypeIamPolic
 Object.defineProperty(exports, 'dataGoogleVertexAiFeaturestoreIamPolicy', { get: function () { return require('./data-google-vertex-ai-featurestore-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleVertexAiIndex', { get: function () { return require('./data-google-vertex-ai-index'); } });
 Object.defineProperty(exports, 'dataGoogleVmwareengineCluster', { get: function () { return require('./data-google-vmwareengine-cluster'); } });
+Object.defineProperty(exports, 'dataGoogleVmwareengineExternalAccessRule', { get: function () { return require('./data-google-vmwareengine-external-access-rule'); } });
 Object.defineProperty(exports, 'dataGoogleVmwareengineExternalAddress', { get: function () { return require('./data-google-vmwareengine-external-address'); } });
 Object.defineProperty(exports, 'dataGoogleVmwareengineNetwork', { get: function () { return require('./data-google-vmwareengine-network'); } });
 Object.defineProperty(exports, 'dataGoogleVmwareengineNetworkPeering', { get: function () { return require('./data-google-vmwareengine-network-peering'); } });
