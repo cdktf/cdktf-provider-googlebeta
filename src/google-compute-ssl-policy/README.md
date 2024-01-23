@@ -1,3 +1,3 @@
 # `google_compute_ssl_policy`
 
-Refer to the Terraform Registry for docs: [`google_compute_ssl_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_compute_ssl_policy).
+Refer to the Terraform Registry for docs: [`google_compute_ssl_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_compute_ssl_policy).
