@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleWorkflowsWorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Describes the level of platform logging to apply to calls and call responses during
+  * executions of this workflow. If both the workflow and the execution specify a logging level,
+  * the execution level takes precedence. Possible values: ["CALL_LOG_LEVEL_UNSPECIFIED", "LOG_ALL_CALLS", "LOG_ERRORS_ONLY", "LOG_NONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#call_log_level GoogleWorkflowsWorkflow#call_log_level}
+  */
+  readonly callLogLevel?: string;
+  /**
   * The KMS key used to encrypt workflow and execution data.
   * 
   * Format: projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{cryptoKey}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#crypto_key_name GoogleWorkflowsWorkflow#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#crypto_key_name GoogleWorkflowsWorkflow#crypto_key_name}
   */
   readonly cryptoKeyName?: string;
   /**
   * Description of the workflow provided by the user. Must be at most 1000 unicode characters long.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#description GoogleWorkflowsWorkflow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#description GoogleWorkflowsWorkflow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#id GoogleWorkflowsWorkflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#id GoogleWorkflowsWorkflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,27 +43,27 @@ export interface GoogleWorkflowsWorkflowConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#labels GoogleWorkflowsWorkflow#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#labels GoogleWorkflowsWorkflow#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the Workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#name GoogleWorkflowsWorkflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#name GoogleWorkflowsWorkflow#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#name_prefix GoogleWorkflowsWorkflow#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#name_prefix GoogleWorkflowsWorkflow#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#project GoogleWorkflowsWorkflow#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#project GoogleWorkflowsWorkflow#project}
   */
   readonly project?: string;
   /**
   * The region of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#region GoogleWorkflowsWorkflow#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#region GoogleWorkflowsWorkflow#region}
   */
   readonly region?: string;
   /**
@@ -72,39 +75,39 @@ export interface GoogleWorkflowsWorkflowConfig extends cdktf.TerraformMetaArgume
   * If not provided, workflow will use the project's default service account.
   * Modifying this field for an existing workflow results in a new workflow revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#service_account GoogleWorkflowsWorkflow#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#service_account GoogleWorkflowsWorkflow#service_account}
   */
   readonly serviceAccount?: string;
   /**
-  * Workflow code to be executed. The size limit is 32KB.
+  * Workflow code to be executed. The size limit is 128KB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#source_contents GoogleWorkflowsWorkflow#source_contents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#source_contents GoogleWorkflowsWorkflow#source_contents}
   */
   readonly sourceContents?: string;
   /**
   * User-defined environment variables associated with this workflow revision. This map has a maximum length of 20. Each string can take up to 4KiB. Keys cannot be empty strings and cannot start with “GOOGLE” or “WORKFLOWS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#user_env_vars GoogleWorkflowsWorkflow#user_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#user_env_vars GoogleWorkflowsWorkflow#user_env_vars}
   */
   readonly userEnvVars?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#timeouts GoogleWorkflowsWorkflow#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#timeouts GoogleWorkflowsWorkflow#timeouts}
   */
   readonly timeouts?: GoogleWorkflowsWorkflowTimeouts;
 }
 export interface GoogleWorkflowsWorkflowTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#create GoogleWorkflowsWorkflow#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#create GoogleWorkflowsWorkflow#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#delete GoogleWorkflowsWorkflow#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#delete GoogleWorkflowsWorkflow#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#update GoogleWorkflowsWorkflow#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#update GoogleWorkflowsWorkflow#update}
   */
   readonly update?: string;
 }
@@ -256,7 +259,7 @@ export class GoogleWorkflowsWorkflowTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow google_workflows_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow google_workflows_workflow}
 */
 export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
 
@@ -272,7 +275,7 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleWorkflowsWorkflow resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleWorkflowsWorkflow to import
-  * @param importFromId The id of the existing GoogleWorkflowsWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleWorkflowsWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleWorkflowsWorkflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -284,7 +287,7 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +298,7 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
       terraformResourceType: 'google_workflows_workflow',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -306,6 +309,7 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._callLogLevel = config.callLogLevel;
     this._cryptoKeyName = config.cryptoKeyName;
     this._description = config.description;
     this._id = config.id;
@@ -323,6 +327,22 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // call_log_level - computed: false, optional: true, required: false
+  private _callLogLevel?: string; 
+  public get callLogLevel() {
+    return this.getStringAttribute('call_log_level');
+  }
+  public set callLogLevel(value: string) {
+    this._callLogLevel = value;
+  }
+  public resetCallLogLevel() {
+    this._callLogLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get callLogLevelInput() {
+    return this._callLogLevel;
+  }
 
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
@@ -554,6 +574,7 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      call_log_level: cdktf.stringToTerraform(this._callLogLevel),
       crypto_key_name: cdktf.stringToTerraform(this._cryptoKeyName),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
@@ -571,6 +592,12 @@ export class GoogleWorkflowsWorkflow extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      call_log_level: {
+        value: cdktf.stringToHclTerraform(this._callLogLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       crypto_key_name: {
         value: cdktf.stringToHclTerraform(this._cryptoKeyName),
         isBlock: false,

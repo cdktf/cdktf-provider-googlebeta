@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleVertexAiFeatureOnlineStoreFeatureviewConfig extends cdktf
   /**
   * The name of the FeatureOnlineStore to use for the featureview.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureview#feature_online_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#feature_online_store GoogleVertexAiFeatureOnlineStoreFeatureview#feature_online_store}
   */
   readonly featureOnlineStore: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#id GoogleVertexAiFeatureOnlineStoreFeatureview#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#id GoogleVertexAiFeatureOnlineStoreFeatureview#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,55 +27,61 @@ export interface GoogleVertexAiFeatureOnlineStoreFeatureviewConfig extends cdktf
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#labels GoogleVertexAiFeatureOnlineStoreFeatureview#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#labels GoogleVertexAiFeatureOnlineStoreFeatureview#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the FeatureView. This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#name GoogleVertexAiFeatureOnlineStoreFeatureview#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#name GoogleVertexAiFeatureOnlineStoreFeatureview#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#project GoogleVertexAiFeatureOnlineStoreFeatureview#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#project GoogleVertexAiFeatureOnlineStoreFeatureview#project}
   */
   readonly project?: string;
   /**
   * The region for the resource. It should be the same as the featureonlinestore region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#region GoogleVertexAiFeatureOnlineStoreFeatureview#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#region GoogleVertexAiFeatureOnlineStoreFeatureview#region}
   */
   readonly region: string;
   /**
   * big_query_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#big_query_source GoogleVertexAiFeatureOnlineStoreFeatureview#big_query_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#big_query_source GoogleVertexAiFeatureOnlineStoreFeatureview#big_query_source}
   */
   readonly bigQuerySource?: GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource;
   /**
   * sync_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#sync_config GoogleVertexAiFeatureOnlineStoreFeatureview#sync_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#sync_config GoogleVertexAiFeatureOnlineStoreFeatureview#sync_config}
   */
   readonly syncConfig?: GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#timeouts GoogleVertexAiFeatureOnlineStoreFeatureview#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#timeouts GoogleVertexAiFeatureOnlineStoreFeatureview#timeouts}
   */
   readonly timeouts?: GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts;
+  /**
+  * vector_search_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#vector_search_config GoogleVertexAiFeatureOnlineStoreFeatureview#vector_search_config}
+  */
+  readonly vectorSearchConfig?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig;
 }
 export interface GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource {
   /**
   * Columns to construct entityId / row keys. Start by supporting 1 only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#entity_id_columns GoogleVertexAiFeatureOnlineStoreFeatureview#entity_id_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#entity_id_columns GoogleVertexAiFeatureOnlineStoreFeatureview#entity_id_columns}
   */
   readonly entityIdColumns: string[];
   /**
   * The BigQuery view URI that will be materialized on each sync trigger based on FeatureView.SyncConfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#uri GoogleVertexAiFeatureOnlineStoreFeatureview#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#uri GoogleVertexAiFeatureOnlineStoreFeatureview#uri}
   */
   readonly uri: string;
 }
@@ -190,7 +191,7 @@ export interface GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig {
   * Cron schedule (https://en.wikipedia.org/wiki/Cron) to launch scheduled runs.
   * To explicitly set a timezone to the cron tab, apply a prefix in the cron tab: "CRON_TZ=${IANA_TIME_ZONE}" or "TZ=${IANA_TIME_ZONE}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#cron GoogleVertexAiFeatureOnlineStoreFeatureview#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#cron GoogleVertexAiFeatureOnlineStoreFeatureview#cron}
   */
   readonly cron?: string;
 }
@@ -274,15 +275,15 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 }
 export interface GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#create GoogleVertexAiFeatureOnlineStoreFeatureview#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#create GoogleVertexAiFeatureOnlineStoreFeatureview#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#delete GoogleVertexAiFeatureOnlineStoreFeatureview#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#delete GoogleVertexAiFeatureOnlineStoreFeatureview#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#update GoogleVertexAiFeatureOnlineStoreFeatureview#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#update GoogleVertexAiFeatureOnlineStoreFeatureview#update}
   */
   readonly update?: string;
 }
@@ -432,9 +433,438 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference 
     return this._update;
   }
 }
+export interface GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig {
+}
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigToTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigToHclTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig {
+  /**
+  * Number of embeddings on each leaf node. The default value is 1000 if not set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#leaf_node_embedding_count GoogleVertexAiFeatureOnlineStoreFeatureview#leaf_node_embedding_count}
+  */
+  readonly leafNodeEmbeddingCount?: string;
+}
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigToTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    leaf_node_embedding_count: cdktf.stringToTerraform(struct!.leafNodeEmbeddingCount),
+  }
+}
+
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigToHclTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    leaf_node_embedding_count: {
+      value: cdktf.stringToHclTerraform(struct!.leafNodeEmbeddingCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._leafNodeEmbeddingCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.leafNodeEmbeddingCount = this._leafNodeEmbeddingCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._leafNodeEmbeddingCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._leafNodeEmbeddingCount = value.leafNodeEmbeddingCount;
+    }
+  }
+
+  // leaf_node_embedding_count - computed: true, optional: true, required: false
+  private _leafNodeEmbeddingCount?: string; 
+  public get leafNodeEmbeddingCount() {
+    return this.getStringAttribute('leaf_node_embedding_count');
+  }
+  public set leafNodeEmbeddingCount(value: string) {
+    this._leafNodeEmbeddingCount = value;
+  }
+  public resetLeafNodeEmbeddingCount() {
+    this._leafNodeEmbeddingCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get leafNodeEmbeddingCountInput() {
+    return this._leafNodeEmbeddingCount;
+  }
+}
+export interface GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig {
+  /**
+  * Column of crowding. This column contains crowding attribute which is a constraint on a neighbor list produced by nearest neighbor search requiring that no more than some value k' of the k neighbors returned have the same value of crowdingAttribute.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#crowding_column GoogleVertexAiFeatureOnlineStoreFeatureview#crowding_column}
+  */
+  readonly crowdingColumn?: string;
+  /**
+  * The distance measure used in nearest neighbor search.
+  * For details on allowed values, see the [API documentation](https://cloud.google.com/vertex-ai/docs/reference/rest/v1beta1/projects.locations.featureOnlineStores.featureViews#DistanceMeasureType). Possible values: ["SQUARED_L2_DISTANCE", "COSINE_DISTANCE", "DOT_PRODUCT_DISTANCE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#distance_measure_type GoogleVertexAiFeatureOnlineStoreFeatureview#distance_measure_type}
+  */
+  readonly distanceMeasureType?: string;
+  /**
+  * Column of embedding. This column contains the source data to create index for vector search.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#embedding_column GoogleVertexAiFeatureOnlineStoreFeatureview#embedding_column}
+  */
+  readonly embeddingColumn: string;
+  /**
+  * The number of dimensions of the input embedding.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#embedding_dimension GoogleVertexAiFeatureOnlineStoreFeatureview#embedding_dimension}
+  */
+  readonly embeddingDimension?: number;
+  /**
+  * Columns of features that are used to filter vector search results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#filter_columns GoogleVertexAiFeatureOnlineStoreFeatureview#filter_columns}
+  */
+  readonly filterColumns?: string[];
+  /**
+  * brute_force_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#brute_force_config GoogleVertexAiFeatureOnlineStoreFeatureview#brute_force_config}
+  */
+  readonly bruteForceConfig?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig;
+  /**
+  * tree_ah_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#tree_ah_config GoogleVertexAiFeatureOnlineStoreFeatureview#tree_ah_config}
+  */
+  readonly treeAhConfig?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig;
+}
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigToTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crowding_column: cdktf.stringToTerraform(struct!.crowdingColumn),
+    distance_measure_type: cdktf.stringToTerraform(struct!.distanceMeasureType),
+    embedding_column: cdktf.stringToTerraform(struct!.embeddingColumn),
+    embedding_dimension: cdktf.numberToTerraform(struct!.embeddingDimension),
+    filter_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterColumns),
+    brute_force_config: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigToTerraform(struct!.bruteForceConfig),
+    tree_ah_config: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigToTerraform(struct!.treeAhConfig),
+  }
+}
+
+
+export function googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigToHclTerraform(struct?: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference | GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    crowding_column: {
+      value: cdktf.stringToHclTerraform(struct!.crowdingColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    distance_measure_type: {
+      value: cdktf.stringToHclTerraform(struct!.distanceMeasureType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    embedding_column: {
+      value: cdktf.stringToHclTerraform(struct!.embeddingColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    embedding_dimension: {
+      value: cdktf.numberToHclTerraform(struct!.embeddingDimension),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    filter_columns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    brute_force_config: {
+      value: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigToHclTerraform(struct!.bruteForceConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigList",
+    },
+    tree_ah_config: {
+      value: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigToHclTerraform(struct!.treeAhConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crowdingColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crowdingColumn = this._crowdingColumn;
+    }
+    if (this._distanceMeasureType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.distanceMeasureType = this._distanceMeasureType;
+    }
+    if (this._embeddingColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.embeddingColumn = this._embeddingColumn;
+    }
+    if (this._embeddingDimension !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.embeddingDimension = this._embeddingDimension;
+    }
+    if (this._filterColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterColumns = this._filterColumns;
+    }
+    if (this._bruteForceConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bruteForceConfig = this._bruteForceConfig?.internalValue;
+    }
+    if (this._treeAhConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.treeAhConfig = this._treeAhConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._crowdingColumn = undefined;
+      this._distanceMeasureType = undefined;
+      this._embeddingColumn = undefined;
+      this._embeddingDimension = undefined;
+      this._filterColumns = undefined;
+      this._bruteForceConfig.internalValue = undefined;
+      this._treeAhConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._crowdingColumn = value.crowdingColumn;
+      this._distanceMeasureType = value.distanceMeasureType;
+      this._embeddingColumn = value.embeddingColumn;
+      this._embeddingDimension = value.embeddingDimension;
+      this._filterColumns = value.filterColumns;
+      this._bruteForceConfig.internalValue = value.bruteForceConfig;
+      this._treeAhConfig.internalValue = value.treeAhConfig;
+    }
+  }
+
+  // crowding_column - computed: false, optional: true, required: false
+  private _crowdingColumn?: string; 
+  public get crowdingColumn() {
+    return this.getStringAttribute('crowding_column');
+  }
+  public set crowdingColumn(value: string) {
+    this._crowdingColumn = value;
+  }
+  public resetCrowdingColumn() {
+    this._crowdingColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crowdingColumnInput() {
+    return this._crowdingColumn;
+  }
+
+  // distance_measure_type - computed: false, optional: true, required: false
+  private _distanceMeasureType?: string; 
+  public get distanceMeasureType() {
+    return this.getStringAttribute('distance_measure_type');
+  }
+  public set distanceMeasureType(value: string) {
+    this._distanceMeasureType = value;
+  }
+  public resetDistanceMeasureType() {
+    this._distanceMeasureType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get distanceMeasureTypeInput() {
+    return this._distanceMeasureType;
+  }
+
+  // embedding_column - computed: false, optional: false, required: true
+  private _embeddingColumn?: string; 
+  public get embeddingColumn() {
+    return this.getStringAttribute('embedding_column');
+  }
+  public set embeddingColumn(value: string) {
+    this._embeddingColumn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get embeddingColumnInput() {
+    return this._embeddingColumn;
+  }
+
+  // embedding_dimension - computed: false, optional: true, required: false
+  private _embeddingDimension?: number; 
+  public get embeddingDimension() {
+    return this.getNumberAttribute('embedding_dimension');
+  }
+  public set embeddingDimension(value: number) {
+    this._embeddingDimension = value;
+  }
+  public resetEmbeddingDimension() {
+    this._embeddingDimension = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get embeddingDimensionInput() {
+    return this._embeddingDimension;
+  }
+
+  // filter_columns - computed: false, optional: true, required: false
+  private _filterColumns?: string[]; 
+  public get filterColumns() {
+    return this.getListAttribute('filter_columns');
+  }
+  public set filterColumns(value: string[]) {
+    this._filterColumns = value;
+  }
+  public resetFilterColumns() {
+    this._filterColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterColumnsInput() {
+    return this._filterColumns;
+  }
+
+  // brute_force_config - computed: false, optional: true, required: false
+  private _bruteForceConfig = new GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference(this, "brute_force_config");
+  public get bruteForceConfig() {
+    return this._bruteForceConfig;
+  }
+  public putBruteForceConfig(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig) {
+    this._bruteForceConfig.internalValue = value;
+  }
+  public resetBruteForceConfig() {
+    this._bruteForceConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bruteForceConfigInput() {
+    return this._bruteForceConfig.internalValue;
+  }
+
+  // tree_ah_config - computed: false, optional: true, required: false
+  private _treeAhConfig = new GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference(this, "tree_ah_config");
+  public get treeAhConfig() {
+    return this._treeAhConfig;
+  }
+  public putTreeAhConfig(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig) {
+    this._treeAhConfig.internalValue = value;
+  }
+  public resetTreeAhConfig() {
+    this._treeAhConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get treeAhConfigInput() {
+    return this._treeAhConfig.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}
 */
 export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.TerraformResource {
 
@@ -450,7 +880,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
   * Generates CDKTF code for importing a GoogleVertexAiFeatureOnlineStoreFeatureview resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVertexAiFeatureOnlineStoreFeatureview to import
-  * @param importFromId The id of the existing GoogleVertexAiFeatureOnlineStoreFeatureview that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVertexAiFeatureOnlineStoreFeatureview that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVertexAiFeatureOnlineStoreFeatureview to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -462,7 +892,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -473,7 +903,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
       terraformResourceType: 'google_vertex_ai_feature_online_store_featureview',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -493,6 +923,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
     this._bigQuerySource.internalValue = config.bigQuerySource;
     this._syncConfig.internalValue = config.syncConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._vectorSearchConfig.internalValue = config.vectorSearchConfig;
   }
 
   // ==========
@@ -659,6 +1090,22 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
     return this._timeouts.internalValue;
   }
 
+  // vector_search_config - computed: false, optional: true, required: false
+  private _vectorSearchConfig = new GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference(this, "vector_search_config");
+  public get vectorSearchConfig() {
+    return this._vectorSearchConfig;
+  }
+  public putVectorSearchConfig(value: GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig) {
+    this._vectorSearchConfig.internalValue = value;
+  }
+  public resetVectorSearchConfig() {
+    this._vectorSearchConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vectorSearchConfigInput() {
+    return this._vectorSearchConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -674,6 +1121,7 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
       big_query_source: googleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceToTerraform(this._bigQuerySource.internalValue),
       sync_config: googleVertexAiFeatureOnlineStoreFeatureviewSyncConfigToTerraform(this._syncConfig.internalValue),
       timeouts: googleVertexAiFeatureOnlineStoreFeatureviewTimeoutsToTerraform(this._timeouts.internalValue),
+      vector_search_config: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigToTerraform(this._vectorSearchConfig.internalValue),
     };
   }
 
@@ -732,6 +1180,12 @@ export class GoogleVertexAiFeatureOnlineStoreFeatureview extends cdktf.Terraform
         isBlock: true,
         type: "struct",
         storageClassType: "GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts",
+      },
+      vector_search_config: {
+        value: googleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigToHclTerraform(this._vectorSearchConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigList",
       },
     };
 
