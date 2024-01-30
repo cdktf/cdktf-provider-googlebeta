@@ -433,6 +433,7 @@ Object.defineProperty(exports, 'googleDialogflowCxWebhook', { get: function () {
 Object.defineProperty(exports, 'googleDialogflowEntityType', { get: function () { return require('./google-dialogflow-entity-type'); } });
 Object.defineProperty(exports, 'googleDialogflowFulfillment', { get: function () { return require('./google-dialogflow-fulfillment'); } });
 Object.defineProperty(exports, 'googleDialogflowIntent', { get: function () { return require('./google-dialogflow-intent'); } });
+Object.defineProperty(exports, 'googleDiscoveryEngineDataStore', { get: function () { return require('./google-discovery-engine-data-store'); } });
 Object.defineProperty(exports, 'googleDnsManagedZone', { get: function () { return require('./google-dns-managed-zone'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamBinding', { get: function () { return require('./google-dns-managed-zone-iam-binding'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamMember', { get: function () { return require('./google-dns-managed-zone-iam-member'); } });
@@ -753,6 +754,8 @@ Object.defineProperty(exports, 'googleSecureSourceManagerInstanceIamBinding', { 
 Object.defineProperty(exports, 'googleSecureSourceManagerInstanceIamMember', { get: function () { return require('./google-secure-source-manager-instance-iam-member'); } });
 Object.defineProperty(exports, 'googleSecureSourceManagerInstanceIamPolicy', { get: function () { return require('./google-secure-source-manager-instance-iam-policy'); } });
 Object.defineProperty(exports, 'googleSecurityScannerScanConfig', { get: function () { return require('./google-security-scanner-scan-config'); } });
+Object.defineProperty(exports, 'googleSecurityposturePosture', { get: function () { return require('./google-securityposture-posture'); } });
+Object.defineProperty(exports, 'googleSecurityposturePostureDeployment', { get: function () { return require('./google-securityposture-posture-deployment'); } });
 Object.defineProperty(exports, 'googleServiceAccount', { get: function () { return require('./google-service-account'); } });
 Object.defineProperty(exports, 'googleServiceAccountIamBinding', { get: function () { return require('./google-service-account-iam-binding'); } });
 Object.defineProperty(exports, 'googleServiceAccountIamMember', { get: function () { return require('./google-service-account-iam-member'); } });

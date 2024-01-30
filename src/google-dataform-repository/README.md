@@ -1,3 +1,3 @@
 # `google_dataform_repository`
 
-Refer to the Terraform Registry for docs: [`google_dataform_repository`](https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_dataform_repository).
+Refer to the Terraform Registry for docs: [`google_dataform_repository`](https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_dataform_repository).

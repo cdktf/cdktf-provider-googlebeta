@@ -433,6 +433,7 @@ export * as googleDialogflowCxWebhook from './google-dialogflow-cx-webhook';
 export * as googleDialogflowEntityType from './google-dialogflow-entity-type';
 export * as googleDialogflowFulfillment from './google-dialogflow-fulfillment';
 export * as googleDialogflowIntent from './google-dialogflow-intent';
+export * as googleDiscoveryEngineDataStore from './google-discovery-engine-data-store';
 export * as googleDnsManagedZone from './google-dns-managed-zone';
 export * as googleDnsManagedZoneIamBinding from './google-dns-managed-zone-iam-binding';
 export * as googleDnsManagedZoneIamMember from './google-dns-managed-zone-iam-member';
@@ -753,6 +754,8 @@ export * as googleSecureSourceManagerInstanceIamBinding from './google-secure-so
 export * as googleSecureSourceManagerInstanceIamMember from './google-secure-source-manager-instance-iam-member';
 export * as googleSecureSourceManagerInstanceIamPolicy from './google-secure-source-manager-instance-iam-policy';
 export * as googleSecurityScannerScanConfig from './google-security-scanner-scan-config';
+export * as googleSecurityposturePosture from './google-securityposture-posture';
+export * as googleSecurityposturePostureDeployment from './google-securityposture-posture-deployment';
 export * as googleServiceAccount from './google-service-account';
 export * as googleServiceAccountIamBinding from './google-service-account-iam-binding';
 export * as googleServiceAccountIamMember from './google-service-account-iam-member';
