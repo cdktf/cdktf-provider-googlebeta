@@ -136,6 +136,7 @@ Object.defineProperty(exports, 'googleBinaryAuthorizationAttestorIamBinding', { 
 Object.defineProperty(exports, 'googleBinaryAuthorizationAttestorIamMember', { get: function () { return require('./google-binary-authorization-attestor-iam-member'); } });
 Object.defineProperty(exports, 'googleBinaryAuthorizationAttestorIamPolicy', { get: function () { return require('./google-binary-authorization-attestor-iam-policy'); } });
 Object.defineProperty(exports, 'googleBinaryAuthorizationPolicy', { get: function () { return require('./google-binary-authorization-policy'); } });
+Object.defineProperty(exports, 'googleBlockchainNodeEngineBlockchainNodes', { get: function () { return require('./google-blockchain-node-engine-blockchain-nodes'); } });
 Object.defineProperty(exports, 'googleCertificateManagerCertificate', { get: function () { return require('./google-certificate-manager-certificate'); } });
 Object.defineProperty(exports, 'googleCertificateManagerCertificateIssuanceConfig', { get: function () { return require('./google-certificate-manager-certificate-issuance-config'); } });
 Object.defineProperty(exports, 'googleCertificateManagerCertificateMap', { get: function () { return require('./google-certificate-manager-certificate-map'); } });
@@ -278,6 +279,7 @@ Object.defineProperty(exports, 'googleComputeRegionDiskResourcePolicyAttachment'
 Object.defineProperty(exports, 'googleComputeRegionHealthCheck', { get: function () { return require('./google-compute-region-health-check'); } });
 Object.defineProperty(exports, 'googleComputeRegionInstanceGroupManager', { get: function () { return require('./google-compute-region-instance-group-manager'); } });
 Object.defineProperty(exports, 'googleComputeRegionInstanceTemplate', { get: function () { return require('./google-compute-region-instance-template'); } });
+Object.defineProperty(exports, 'googleComputeRegionNetworkEndpoint', { get: function () { return require('./google-compute-region-network-endpoint'); } });
 Object.defineProperty(exports, 'googleComputeRegionNetworkEndpointGroup', { get: function () { return require('./google-compute-region-network-endpoint-group'); } });
 Object.defineProperty(exports, 'googleComputeRegionNetworkFirewallPolicy', { get: function () { return require('./google-compute-region-network-firewall-policy'); } });
 Object.defineProperty(exports, 'googleComputeRegionNetworkFirewallPolicyAssociation', { get: function () { return require('./google-compute-region-network-firewall-policy-association'); } });
@@ -433,7 +435,9 @@ Object.defineProperty(exports, 'googleDialogflowCxWebhook', { get: function () {
 Object.defineProperty(exports, 'googleDialogflowEntityType', { get: function () { return require('./google-dialogflow-entity-type'); } });
 Object.defineProperty(exports, 'googleDialogflowFulfillment', { get: function () { return require('./google-dialogflow-fulfillment'); } });
 Object.defineProperty(exports, 'googleDialogflowIntent', { get: function () { return require('./google-dialogflow-intent'); } });
+Object.defineProperty(exports, 'googleDiscoveryEngineChatEngine', { get: function () { return require('./google-discovery-engine-chat-engine'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineDataStore', { get: function () { return require('./google-discovery-engine-data-store'); } });
+Object.defineProperty(exports, 'googleDiscoveryEngineSearchEngine', { get: function () { return require('./google-discovery-engine-search-engine'); } });
 Object.defineProperty(exports, 'googleDnsManagedZone', { get: function () { return require('./google-dns-managed-zone'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamBinding', { get: function () { return require('./google-dns-managed-zone-iam-binding'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamMember', { get: function () { return require('./google-dns-managed-zone-iam-member'); } });
@@ -636,6 +640,7 @@ Object.defineProperty(exports, 'googleNetappBackupVault', { get: function () { r
 Object.defineProperty(exports, 'googleNetappKmsconfig', { get: function () { return require('./google-netapp-kmsconfig'); } });
 Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { return require('./google-netapp-storage-pool'); } });
 Object.defineProperty(exports, 'googleNetappVolume', { get: function () { return require('./google-netapp-volume'); } });
+Object.defineProperty(exports, 'googleNetappVolumeSnapshot', { get: function () { return require('./google-netapp-volume-snapshot'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityHub', { get: function () { return require('./google-network-connectivity-hub'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityPolicyBasedRoute', { get: function () { return require('./google-network-connectivity-policy-based-route'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityServiceConnectionPolicy', { get: function () { return require('./google-network-connectivity-service-connection-policy'); } });
@@ -941,6 +946,7 @@ Object.defineProperty(exports, 'dataGoogleComputeInstanceSerialPort', { get: fun
 Object.defineProperty(exports, 'dataGoogleComputeInstanceTemplate', { get: function () { return require('./data-google-compute-instance-template'); } });
 Object.defineProperty(exports, 'dataGoogleComputeLbIpRanges', { get: function () { return require('./data-google-compute-lb-ip-ranges'); } });
 Object.defineProperty(exports, 'dataGoogleComputeMachineImageIamPolicy', { get: function () { return require('./data-google-compute-machine-image-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleComputeMachineTypes', { get: function () { return require('./data-google-compute-machine-types'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetwork', { get: function () { return require('./data-google-compute-network'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkEndpointGroup', { get: function () { return require('./data-google-compute-network-endpoint-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeNetworkPeering', { get: function () { return require('./data-google-compute-network-peering'); } });
