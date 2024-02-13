@@ -177,6 +177,9 @@ export * as googleCloudbuildv2ConnectionIamPolicy from './google-cloudbuildv2-co
 export * as googleCloudbuildv2Repository from './google-cloudbuildv2-repository';
 export * as googleClouddeployAutomation from './google-clouddeploy-automation';
 export * as googleClouddeployDeliveryPipeline from './google-clouddeploy-delivery-pipeline';
+export * as googleClouddeployDeliveryPipelineIamBinding from './google-clouddeploy-delivery-pipeline-iam-binding';
+export * as googleClouddeployDeliveryPipelineIamMember from './google-clouddeploy-delivery-pipeline-iam-member';
+export * as googleClouddeployDeliveryPipelineIamPolicy from './google-clouddeploy-delivery-pipeline-iam-policy';
 export * as googleClouddeployTarget from './google-clouddeploy-target';
 export * as googleClouddomainsRegistration from './google-clouddomains-registration';
 export * as googleCloudfunctions2Function from './google-cloudfunctions2-function';
@@ -230,6 +233,7 @@ export * as googleComputeInstanceFromMachineImage from './google-compute-instanc
 export * as googleComputeInstanceFromTemplate from './google-compute-instance-from-template';
 export * as googleComputeInstanceGroup from './google-compute-instance-group';
 export * as googleComputeInstanceGroupManager from './google-compute-instance-group-manager';
+export * as googleComputeInstanceGroupMembership from './google-compute-instance-group-membership';
 export * as googleComputeInstanceGroupNamedPort from './google-compute-instance-group-named-port';
 export * as googleComputeInstanceIamBinding from './google-compute-instance-iam-binding';
 export * as googleComputeInstanceIamMember from './google-compute-instance-iam-member';
@@ -470,6 +474,7 @@ export * as googleFilestoreBackup from './google-filestore-backup';
 export * as googleFilestoreInstance from './google-filestore-instance';
 export * as googleFilestoreSnapshot from './google-filestore-snapshot';
 export * as googleFirebaseAndroidApp from './google-firebase-android-app';
+export * as googleFirebaseAppCheckServiceConfig from './google-firebase-app-check-service-config';
 export * as googleFirebaseAppleApp from './google-firebase-apple-app';
 export * as googleFirebaseDatabaseInstance from './google-firebase-database-instance';
 export * as googleFirebaseExtensionsInstance from './google-firebase-extensions-instance';
@@ -916,6 +921,7 @@ export * as dataGoogleCloudRunV2ServiceIamPolicy from './data-google-cloud-run-v
 export * as dataGoogleCloudTasksQueueIamPolicy from './data-google-cloud-tasks-queue-iam-policy';
 export * as dataGoogleCloudbuildTrigger from './data-google-cloudbuild-trigger';
 export * as dataGoogleCloudbuildv2ConnectionIamPolicy from './data-google-cloudbuildv2-connection-iam-policy';
+export * as dataGoogleClouddeployDeliveryPipelineIamPolicy from './data-google-clouddeploy-delivery-pipeline-iam-policy';
 export * as dataGoogleCloudfunctions2Function from './data-google-cloudfunctions2-function';
 export * as dataGoogleCloudfunctions2FunctionIamPolicy from './data-google-cloudfunctions2-function-iam-policy';
 export * as dataGoogleCloudfunctionsFunction from './data-google-cloudfunctions-function';
