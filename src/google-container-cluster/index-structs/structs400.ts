@@ -4,174 +4,17 @@
  */
 
 import * as cdktf from 'cdktf';
-import { GoogleContainerClusterResourceUsageExportConfigBigqueryDestination,
-googleContainerClusterResourceUsageExportConfigBigqueryDestinationToTerraform,
-googleContainerClusterResourceUsageExportConfigBigqueryDestinationToHclTerraform,
-GoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference } from './structs0'
-export interface GoogleContainerClusterResourceUsageExportConfig {
-  /**
-  * Whether to enable network egress metering for this cluster. If enabled, a daemonset will be created in the cluster to meter network egress traffic.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enable_network_egress_metering GoogleContainerCluster#enable_network_egress_metering}
-  */
-  readonly enableNetworkEgressMetering?: boolean | cdktf.IResolvable;
-  /**
-  * Whether to enable resource consumption metering on this cluster. When enabled, a table will be created in the resource export BigQuery dataset to store resource consumption data. The resulting table can be joined with the resource usage table or with BigQuery billing export. Defaults to true.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enable_resource_consumption_metering GoogleContainerCluster#enable_resource_consumption_metering}
-  */
-  readonly enableResourceConsumptionMetering?: boolean | cdktf.IResolvable;
-  /**
-  * bigquery_destination block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#bigquery_destination GoogleContainerCluster#bigquery_destination}
-  */
-  readonly bigqueryDestination: GoogleContainerClusterResourceUsageExportConfigBigqueryDestination;
-}
-
-export function googleContainerClusterResourceUsageExportConfigToTerraform(struct?: GoogleContainerClusterResourceUsageExportConfigOutputReference | GoogleContainerClusterResourceUsageExportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    enable_network_egress_metering: cdktf.booleanToTerraform(struct!.enableNetworkEgressMetering),
-    enable_resource_consumption_metering: cdktf.booleanToTerraform(struct!.enableResourceConsumptionMetering),
-    bigquery_destination: googleContainerClusterResourceUsageExportConfigBigqueryDestinationToTerraform(struct!.bigqueryDestination),
-  }
-}
-
-
-export function googleContainerClusterResourceUsageExportConfigToHclTerraform(struct?: GoogleContainerClusterResourceUsageExportConfigOutputReference | GoogleContainerClusterResourceUsageExportConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    enable_network_egress_metering: {
-      value: cdktf.booleanToHclTerraform(struct!.enableNetworkEgressMetering),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    enable_resource_consumption_metering: {
-      value: cdktf.booleanToHclTerraform(struct!.enableResourceConsumptionMetering),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    bigquery_destination: {
-      value: googleContainerClusterResourceUsageExportConfigBigqueryDestinationToHclTerraform(struct!.bigqueryDestination),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleContainerClusterResourceUsageExportConfigOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): GoogleContainerClusterResourceUsageExportConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._enableNetworkEgressMetering !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enableNetworkEgressMetering = this._enableNetworkEgressMetering;
-    }
-    if (this._enableResourceConsumptionMetering !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enableResourceConsumptionMetering = this._enableResourceConsumptionMetering;
-    }
-    if (this._bigqueryDestination?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bigqueryDestination = this._bigqueryDestination?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleContainerClusterResourceUsageExportConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._enableNetworkEgressMetering = undefined;
-      this._enableResourceConsumptionMetering = undefined;
-      this._bigqueryDestination.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._enableNetworkEgressMetering = value.enableNetworkEgressMetering;
-      this._enableResourceConsumptionMetering = value.enableResourceConsumptionMetering;
-      this._bigqueryDestination.internalValue = value.bigqueryDestination;
-    }
-  }
-
-  // enable_network_egress_metering - computed: false, optional: true, required: false
-  private _enableNetworkEgressMetering?: boolean | cdktf.IResolvable; 
-  public get enableNetworkEgressMetering() {
-    return this.getBooleanAttribute('enable_network_egress_metering');
-  }
-  public set enableNetworkEgressMetering(value: boolean | cdktf.IResolvable) {
-    this._enableNetworkEgressMetering = value;
-  }
-  public resetEnableNetworkEgressMetering() {
-    this._enableNetworkEgressMetering = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableNetworkEgressMeteringInput() {
-    return this._enableNetworkEgressMetering;
-  }
-
-  // enable_resource_consumption_metering - computed: false, optional: true, required: false
-  private _enableResourceConsumptionMetering?: boolean | cdktf.IResolvable; 
-  public get enableResourceConsumptionMetering() {
-    return this.getBooleanAttribute('enable_resource_consumption_metering');
-  }
-  public set enableResourceConsumptionMetering(value: boolean | cdktf.IResolvable) {
-    this._enableResourceConsumptionMetering = value;
-  }
-  public resetEnableResourceConsumptionMetering() {
-    this._enableResourceConsumptionMetering = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableResourceConsumptionMeteringInput() {
-    return this._enableResourceConsumptionMetering;
-  }
-
-  // bigquery_destination - computed: false, optional: false, required: true
-  private _bigqueryDestination = new GoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference(this, "bigquery_destination");
-  public get bigqueryDestination() {
-    return this._bigqueryDestination;
-  }
-  public putBigqueryDestination(value: GoogleContainerClusterResourceUsageExportConfigBigqueryDestination) {
-    this._bigqueryDestination.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bigqueryDestinationInput() {
-    return this._bigqueryDestination.internalValue;
-  }
-}
 export interface GoogleContainerClusterSecurityPostureConfig {
   /**
   * Sets the mode of the Kubernetes security posture API's off-cluster features. Available options include DISABLED and BASIC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
   */
   readonly mode?: string;
   /**
   * Sets the mode of the Kubernetes security posture API's workload vulnerability scanning. Available options include VULNERABILITY_DISABLED, VULNERABILITY_BASIC and VULNERABILITY_ENTERPRISE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#vulnerability_mode GoogleContainerCluster#vulnerability_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#vulnerability_mode GoogleContainerCluster#vulnerability_mode}
   */
   readonly vulnerabilityMode?: string;
 }
@@ -286,7 +129,7 @@ export interface GoogleContainerClusterServiceExternalIpsConfig {
   /**
   * When enabled, services with exterenal ips specified will be allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -367,19 +210,19 @@ export class GoogleContainerClusterServiceExternalIpsConfigOutputReference exten
 }
 export interface GoogleContainerClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#create GoogleContainerCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#create GoogleContainerCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#delete GoogleContainerCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#delete GoogleContainerCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#read GoogleContainerCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#read GoogleContainerCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#update GoogleContainerCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#update GoogleContainerCluster#update}
   */
   readonly update?: string;
 }
@@ -562,13 +405,13 @@ export interface GoogleContainerClusterTpuConfig {
   /**
   * Whether Cloud TPU integration is enabled or not
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Whether to use service networking for Cloud TPU or not
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#use_service_networking GoogleContainerCluster#use_service_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#use_service_networking GoogleContainerCluster#use_service_networking}
   */
   readonly useServiceNetworking?: boolean | cdktf.IResolvable;
 }
@@ -685,7 +528,7 @@ export interface GoogleContainerClusterVerticalPodAutoscaling {
   /**
   * Enables vertical pod autoscaling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -768,7 +611,7 @@ export interface GoogleContainerClusterWorkloadAltsConfig {
   /**
   * Whether the alts handshaker should be enabled or not for direct-path. Requires Workload Identity (workloadPool must be non-empty).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#enable_alts GoogleContainerCluster#enable_alts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#enable_alts GoogleContainerCluster#enable_alts}
   */
   readonly enableAlts: boolean | cdktf.IResolvable;
 }
@@ -851,7 +694,7 @@ export interface GoogleContainerClusterWorkloadIdentityConfig {
   /**
   * The workload pool to attach all Kubernetes service accounts to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_container_cluster#workload_pool GoogleContainerCluster#workload_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_container_cluster#workload_pool GoogleContainerCluster#workload_pool}
   */
   readonly workloadPool?: string;
 }
