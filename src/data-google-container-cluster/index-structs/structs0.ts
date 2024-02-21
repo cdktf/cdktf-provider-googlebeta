@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterAddonsConfigCloudrunConfig {
 }
@@ -3996,6 +3991,11 @@ export class DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabi
   // enable_metrics - computed: true, optional: false, required: false
   public get enableMetrics() {
     return this.getBooleanAttribute('enable_metrics');
+  }
+
+  // enable_relay - computed: true, optional: false, required: false
+  public get enableRelay() {
+    return this.getBooleanAttribute('enable_relay');
   }
 
   // relay_mode - computed: true, optional: false, required: false
