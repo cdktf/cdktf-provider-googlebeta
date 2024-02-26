@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.NewGoogleLoggingOrganizationSink(scope Construct, id *string, config GoogleLoggingOrganizationSinkConfig) GoogleLoggingOrganizationSink
 ```
@@ -453,7 +453,7 @@ func ResetIncludeChildren()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.GoogleLoggingOrganizationSink_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.GoogleLoggingOrganizationSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googleloggingorganizationsink.GoogleLoggingOrganizationSink_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.GoogleLoggingOrganizationSink_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googleloggingorganizationsink.GoogleLoggingOrganizationSink_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.GoogleLoggingOrganizationSink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 &googleloggingorganizationsink.GoogleLoggingOrganizationSinkBigqueryOptions {
 	UsePartitionedTables: interface{},
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 &googleloggingorganizationsink.GoogleLoggingOrganizationSinkConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggi
 	Destination: *string,
 	Name: *string,
 	OrgId: *string,
-	BigqueryOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptions,
+	BigqueryOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptions,
 	Description: *string,
 	Disabled: interface{},
 	Exclusions: interface{},
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 &googleloggingorganizationsink.GoogleLoggingOrganizationSinkExclusions {
 	Filter: *string,
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.NewGoogleLoggingOrganizationSinkBigqueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingOrganizationSinkBigqueryOptionsOutputReference
 ```
@@ -1635,7 +1635,7 @@ func InternalValue() GoogleLoggingOrganizationSinkBigqueryOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkExclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.NewGoogleLoggingOrganizationSinkExclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleLoggingOrganizationSinkExclusionsList
 ```
@@ -1795,7 +1795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSinkExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleloggingorganizationsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationsink"
 
 googleloggingorganizationsink.NewGoogleLoggingOrganizationSinkExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleLoggingOrganizationSinkExclusionsOutputReference
 ```
