@@ -475,7 +475,11 @@ Object.defineProperty(exports, 'googleFilestoreBackup', { get: function () { ret
 Object.defineProperty(exports, 'googleFilestoreInstance', { get: function () { return require('./google-filestore-instance'); } });
 Object.defineProperty(exports, 'googleFilestoreSnapshot', { get: function () { return require('./google-filestore-snapshot'); } });
 Object.defineProperty(exports, 'googleFirebaseAndroidApp', { get: function () { return require('./google-firebase-android-app'); } });
+Object.defineProperty(exports, 'googleFirebaseAppCheckAppAttestConfig', { get: function () { return require('./google-firebase-app-check-app-attest-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppCheckDebugToken', { get: function () { return require('./google-firebase-app-check-debug-token'); } });
+Object.defineProperty(exports, 'googleFirebaseAppCheckPlayIntegrityConfig', { get: function () { return require('./google-firebase-app-check-play-integrity-config'); } });
+Object.defineProperty(exports, 'googleFirebaseAppCheckRecaptchaEnterpriseConfig', { get: function () { return require('./google-firebase-app-check-recaptcha-enterprise-config'); } });
+Object.defineProperty(exports, 'googleFirebaseAppCheckRecaptchaV3Config', { get: function () { return require('./google-firebase-app-check-recaptcha-v3-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppCheckServiceConfig', { get: function () { return require('./google-firebase-app-check-service-config'); } });
 Object.defineProperty(exports, 'googleFirebaseAppleApp', { get: function () { return require('./google-firebase-apple-app'); } });
 Object.defineProperty(exports, 'googleFirebaseDatabaseInstance', { get: function () { return require('./google-firebase-database-instance'); } });
@@ -630,6 +634,7 @@ Object.defineProperty(exports, 'googleLoggingProjectSink', { get: function () { 
 Object.defineProperty(exports, 'googleLookerInstance', { get: function () { return require('./google-looker-instance'); } });
 Object.defineProperty(exports, 'googleMemcacheInstance', { get: function () { return require('./google-memcache-instance'); } });
 Object.defineProperty(exports, 'googleMigrationCenterGroup', { get: function () { return require('./google-migration-center-group'); } });
+Object.defineProperty(exports, 'googleMigrationCenterPreferenceSet', { get: function () { return require('./google-migration-center-preference-set'); } });
 Object.defineProperty(exports, 'googleMlEngineModel', { get: function () { return require('./google-ml-engine-model'); } });
 Object.defineProperty(exports, 'googleMonitoringAlertPolicy', { get: function () { return require('./google-monitoring-alert-policy'); } });
 Object.defineProperty(exports, 'googleMonitoringCustomService', { get: function () { return require('./google-monitoring-custom-service'); } });
@@ -647,6 +652,7 @@ Object.defineProperty(exports, 'googleNetappBackupVault', { get: function () { r
 Object.defineProperty(exports, 'googleNetappKmsconfig', { get: function () { return require('./google-netapp-kmsconfig'); } });
 Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { return require('./google-netapp-storage-pool'); } });
 Object.defineProperty(exports, 'googleNetappVolume', { get: function () { return require('./google-netapp-volume'); } });
+Object.defineProperty(exports, 'googleNetappVolumeReplication', { get: function () { return require('./google-netapp-volume-replication'); } });
 Object.defineProperty(exports, 'googleNetappVolumeSnapshot', { get: function () { return require('./google-netapp-volume-snapshot'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityHub', { get: function () { return require('./google-network-connectivity-hub'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityPolicyBasedRoute', { get: function () { return require('./google-network-connectivity-policy-based-route'); } });
@@ -942,6 +948,7 @@ Object.defineProperty(exports, 'dataGoogleComputeDefaultServiceAccount', { get: 
 Object.defineProperty(exports, 'dataGoogleComputeDisk', { get: function () { return require('./data-google-compute-disk'); } });
 Object.defineProperty(exports, 'dataGoogleComputeDiskIamPolicy', { get: function () { return require('./data-google-compute-disk-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeForwardingRule', { get: function () { return require('./data-google-compute-forwarding-rule'); } });
+Object.defineProperty(exports, 'dataGoogleComputeForwardingRules', { get: function () { return require('./data-google-compute-forwarding-rules'); } });
 Object.defineProperty(exports, 'dataGoogleComputeGlobalAddress', { get: function () { return require('./data-google-compute-global-address'); } });
 Object.defineProperty(exports, 'dataGoogleComputeGlobalForwardingRule', { get: function () { return require('./data-google-compute-global-forwarding-rule'); } });
 Object.defineProperty(exports, 'dataGoogleComputeHaVpnGateway', { get: function () { return require('./data-google-compute-ha-vpn-gateway'); } });

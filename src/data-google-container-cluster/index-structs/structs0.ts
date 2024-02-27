@@ -2610,6 +2610,16 @@ export class DataGoogleContainerClusterFleetOutputReference extends cdktf.Comple
     return this.getStringAttribute('membership');
   }
 
+  // membership_id - computed: true, optional: false, required: false
+  public get membershipId() {
+    return this.getStringAttribute('membership_id');
+  }
+
+  // membership_location - computed: true, optional: false, required: false
+  public get membershipLocation() {
+    return this.getStringAttribute('membership_location');
+  }
+
   // pre_registered - computed: true, optional: false, required: false
   public get preRegistered() {
     return this.getBooleanAttribute('pre_registered');
@@ -6224,6 +6234,12 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
   private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
   public get resourceLabels() {
     return this._resourceLabels;
+  }
+
+  // resource_manager_tags - computed: true, optional: false, required: false
+  private _resourceManagerTags = new cdktf.StringMap(this, "resource_manager_tags");
+  public get resourceManagerTags() {
+    return this._resourceManagerTags;
   }
 
   // sandbox_config - computed: true, optional: false, required: false

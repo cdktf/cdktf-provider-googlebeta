@@ -557,6 +557,12 @@ export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends
     return this._resourceLabels;
   }
 
+  // resource_manager_tags - computed: true, optional: false, required: false
+  private _resourceManagerTags = new cdktf.StringMap(this, "resource_manager_tags");
+  public get resourceManagerTags() {
+    return this._resourceManagerTags;
+  }
+
   // sandbox_config - computed: true, optional: false, required: false
   private _sandboxConfig = new DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList(this, "sandbox_config", false);
   public get sandboxConfig() {
