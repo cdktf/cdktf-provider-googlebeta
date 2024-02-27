@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList,
 DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList,
@@ -555,6 +550,12 @@ export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends
   private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
   public get resourceLabels() {
     return this._resourceLabels;
+  }
+
+  // resource_manager_tags - computed: true, optional: false, required: false
+  private _resourceManagerTags = new cdktf.StringMap(this, "resource_manager_tags");
+  public get resourceManagerTags() {
+    return this._resourceManagerTags;
   }
 
   // sandbox_config - computed: true, optional: false, required: false

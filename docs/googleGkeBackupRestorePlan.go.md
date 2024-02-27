@@ -4,12 +4,12 @@
 
 ### GoogleGkeBackupRestorePlan <a name="GoogleGkeBackupRestorePlan" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlan(scope Construct, id *string, config GoogleGkeBackupRestorePlanConfig) GoogleGkeBackupRestorePlan
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.GoogleGkeBackupRestorePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the GoogleGkeBackupRestorePlan
 
 The id of the existing GoogleGkeBackupRestorePlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanConfig {
 	Connection: interface{},
@@ -1017,12 +1017,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkeba
 	Cluster: *string,
 	Location: *string,
 	Name: *string,
-	RestoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig,
+	RestoreConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts,
 }
 ```
 
@@ -1043,9 +1043,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkeba
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.name">Name</a></code> | <code>*string</code> | The full name of the BackupPlan Resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.restoreConfig">RestoreConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig">GoogleGkeBackupRestorePlanRestoreConfig</a></code> | restore_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.description">Description</a></code> | <code>*string</code> | User specified descriptive string for this RestorePlan. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Description: A set of custom labels supplied by the user. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts">GoogleGkeBackupRestorePlanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1130,7 +1130,7 @@ BackupPlan *string
 
 A reference to the BackupPlan from which Backups may be used as the source for Restores created via this RestorePlan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#backup_plan GoogleGkeBackupRestorePlan#backup_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#backup_plan GoogleGkeBackupRestorePlan#backup_plan}
 
 ---
 
@@ -1144,7 +1144,7 @@ Cluster *string
 
 The source cluster from which Restores will be created via this RestorePlan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#cluster GoogleGkeBackupRestorePlan#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#cluster GoogleGkeBackupRestorePlan#cluster}
 
 ---
 
@@ -1158,7 +1158,7 @@ Location *string
 
 The region of the Restore Plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#location GoogleGkeBackupRestorePlan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#location GoogleGkeBackupRestorePlan#location}
 
 ---
 
@@ -1172,7 +1172,7 @@ Name *string
 
 The full name of the BackupPlan Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
 
 ---
 
@@ -1186,7 +1186,7 @@ RestoreConfig GoogleGkeBackupRestorePlanRestoreConfig
 
 restore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#restore_config GoogleGkeBackupRestorePlan#restore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#restore_config GoogleGkeBackupRestorePlan#restore_config}
 
 ---
 
@@ -1200,7 +1200,7 @@ Description *string
 
 User specified descriptive string for this RestorePlan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
 
 ---
 
@@ -1212,7 +1212,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1235,7 +1235,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#labels GoogleGkeBackupRestorePlan#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#labels GoogleGkeBackupRestorePlan#labels}
 
 ---
 
@@ -1247,7 +1247,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}.
 
 ---
 
@@ -1261,7 +1261,7 @@ Timeouts GoogleGkeBackupRestorePlanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#timeouts GoogleGkeBackupRestorePlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#timeouts GoogleGkeBackupRestorePlan#timeouts}
 
 ---
 
@@ -1270,17 +1270,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfig {
 	AllNamespaces: interface{},
 	ClusterResourceConflictPolicy: *string,
-	ClusterResourceRestoreScope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope,
-	ExcludedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces,
+	ClusterResourceRestoreScope: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope,
+	ExcludedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces,
 	NamespacedResourceRestoreMode: *string,
 	NoNamespaces: interface{},
-	SelectedApplications: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications,
-	SelectedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces,
+	SelectedApplications: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications,
+	SelectedNamespaces: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces,
 	TransformationRules: interface{},
 	VolumeDataRestorePolicy: *string,
 }
@@ -1313,7 +1313,7 @@ AllNamespaces interface{}
 
 If True, restore all namespaced resources in the Backup. Setting this field to False will result in an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#all_namespaces GoogleGkeBackupRestorePlan#all_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#all_namespaces GoogleGkeBackupRestorePlan#all_namespaces}
 
 ---
 
@@ -1332,7 +1332,7 @@ if 'clusterResourceRestoreScope' is anyting other than 'noGroupKinds'.
 See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#clusterresourceconflictpolicy
 for more information on each policy option. Possible values: ["USE_EXISTING_VERSION", "USE_BACKUP_VERSION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_conflict_policy GoogleGkeBackupRestorePlan#cluster_resource_conflict_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_conflict_policy GoogleGkeBackupRestorePlan#cluster_resource_conflict_policy}
 
 ---
 
@@ -1346,7 +1346,7 @@ ClusterResourceRestoreScope GoogleGkeBackupRestorePlanRestoreConfigClusterResour
 
 cluster_resource_restore_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_restore_scope GoogleGkeBackupRestorePlan#cluster_resource_restore_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_restore_scope GoogleGkeBackupRestorePlan#cluster_resource_restore_scope}
 
 ---
 
@@ -1360,7 +1360,7 @@ ExcludedNamespaces GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces
 
 excluded_namespaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#excluded_namespaces GoogleGkeBackupRestorePlan#excluded_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#excluded_namespaces GoogleGkeBackupRestorePlan#excluded_namespaces}
 
 ---
 
@@ -1379,7 +1379,7 @@ if the 'namespacedResourceRestoreScope' is anything other than 'noNamespaces'.
 See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#namespacedresourcerestoremode
 for more information on each mode. Possible values: ["DELETE_AND_RESTORE", "FAIL_ON_CONFLICT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespaced_resource_restore_mode GoogleGkeBackupRestorePlan#namespaced_resource_restore_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespaced_resource_restore_mode GoogleGkeBackupRestorePlan#namespaced_resource_restore_mode}
 
 ---
 
@@ -1393,7 +1393,7 @@ NoNamespaces interface{}
 
 Do not restore any namespaced resources if set to "True". Specifying this field to "False" is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#no_namespaces GoogleGkeBackupRestorePlan#no_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#no_namespaces GoogleGkeBackupRestorePlan#no_namespaces}
 
 ---
 
@@ -1407,7 +1407,7 @@ SelectedApplications GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications
 
 selected_applications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#selected_applications GoogleGkeBackupRestorePlan#selected_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#selected_applications GoogleGkeBackupRestorePlan#selected_applications}
 
 ---
 
@@ -1421,7 +1421,7 @@ SelectedNamespaces GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces
 
 selected_namespaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#selected_namespaces GoogleGkeBackupRestorePlan#selected_namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#selected_namespaces GoogleGkeBackupRestorePlan#selected_namespaces}
 
 ---
 
@@ -1435,7 +1435,7 @@ TransformationRules interface{}
 
 transformation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#transformation_rules GoogleGkeBackupRestorePlan#transformation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#transformation_rules GoogleGkeBackupRestorePlan#transformation_rules}
 
 ---
 
@@ -1455,7 +1455,7 @@ If not specified, it will be treated as 'NO_VOLUME_DATA_RESTORATION'.
 See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#VolumeDataRestorePolicy
 for more information on each policy option. Possible values: ["RESTORE_VOLUME_DATA_FROM_BACKUP", "REUSE_VOLUME_HANDLE_FROM_BACKUP", "NO_VOLUME_DATA_RESTORATION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#volume_data_restore_policy GoogleGkeBackupRestorePlan#volume_data_restore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#volume_data_restore_policy GoogleGkeBackupRestorePlan#volume_data_restore_policy}
 
 ---
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope {
 	AllGroupKinds: interface{},
@@ -1495,7 +1495,7 @@ AllGroupKinds interface{}
 
 If True, all valid cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#all_group_kinds GoogleGkeBackupRestorePlan#all_group_kinds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#all_group_kinds GoogleGkeBackupRestorePlan#all_group_kinds}
 
 ---
 
@@ -1509,7 +1509,7 @@ ExcludedGroupKinds interface{}
 
 excluded_group_kinds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#excluded_group_kinds GoogleGkeBackupRestorePlan#excluded_group_kinds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#excluded_group_kinds GoogleGkeBackupRestorePlan#excluded_group_kinds}
 
 ---
 
@@ -1523,7 +1523,7 @@ NoGroupKinds interface{}
 
 If True, no cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#no_group_kinds GoogleGkeBackupRestorePlan#no_group_kinds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#no_group_kinds GoogleGkeBackupRestorePlan#no_group_kinds}
 
 ---
 
@@ -1537,7 +1537,7 @@ SelectedGroupKinds interface{}
 
 selected_group_kinds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#selected_group_kinds GoogleGkeBackupRestorePlan#selected_group_kinds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#selected_group_kinds GoogleGkeBackupRestorePlan#selected_group_kinds}
 
 ---
 
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds {
 	ResourceGroup: *string,
@@ -1573,7 +1573,7 @@ ResourceGroup *string
 
 API Group string of a Kubernetes resource, e.g. "apiextensions.k8s.io", "storage.k8s.io", etc. Use empty string for core group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
 
 ---
 
@@ -1587,7 +1587,7 @@ ResourceKind *string
 
 Kind of a Kubernetes resource, e.g. "CustomResourceDefinition", "StorageClass", etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
 
 ---
 
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds {
 	ResourceGroup: *string,
@@ -1623,7 +1623,7 @@ ResourceGroup *string
 
 API Group string of a Kubernetes resource, e.g. "apiextensions.k8s.io", "storage.k8s.io", etc. Use empty string for core group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
 
 ---
 
@@ -1637,7 +1637,7 @@ ResourceKind *string
 
 Kind of a Kubernetes resource, e.g. "CustomResourceDefinition", "StorageClass", etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
 
 ---
 
@@ -1646,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces {
 	Namespaces: *[]*string,
@@ -1671,7 +1671,7 @@ Namespaces *[]*string
 
 A list of Kubernetes Namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
 
 ---
 
@@ -1680,7 +1680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications {
 	NamespacedNames: interface{},
@@ -1705,7 +1705,7 @@ NamespacedNames interface{}
 
 namespaced_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespaced_names GoogleGkeBackupRestorePlan#namespaced_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespaced_names GoogleGkeBackupRestorePlan#namespaced_names}
 
 ---
 
@@ -1714,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames {
 	Name: *string,
@@ -1741,7 +1741,7 @@ Name *string
 
 The name of a Kubernetes Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
 
 ---
 
@@ -1755,7 +1755,7 @@ Namespace *string
 
 The namespace of a Kubernetes Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespace GoogleGkeBackupRestorePlan#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespace GoogleGkeBackupRestorePlan#namespace}
 
 ---
 
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces {
 	Namespaces: *[]*string,
@@ -1789,7 +1789,7 @@ Namespaces *[]*string
 
 A list of Kubernetes Namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
 
 ---
 
@@ -1798,12 +1798,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRules {
 	FieldActions: interface{},
 	Description: *string,
-	ResourceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter,
+	ResourceFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter,
 }
 ```
 
@@ -1827,7 +1827,7 @@ FieldActions interface{}
 
 field_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#field_actions GoogleGkeBackupRestorePlan#field_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#field_actions GoogleGkeBackupRestorePlan#field_actions}
 
 ---
 
@@ -1841,7 +1841,7 @@ Description *string
 
 The description is a user specified string description of the transformation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
 
 ---
 
@@ -1855,7 +1855,7 @@ ResourceFilter GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourc
 
 resource_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_filter GoogleGkeBackupRestorePlan#resource_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_filter GoogleGkeBackupRestorePlan#resource_filter}
 
 ---
 
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions {
 	Op: *string,
@@ -1895,7 +1895,7 @@ Op *string
 
 Specifies the operation to perform. Possible values: ["REMOVE", "MOVE", "COPY", "ADD", "TEST", "REPLACE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#op GoogleGkeBackupRestorePlan#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#op GoogleGkeBackupRestorePlan#op}
 
 ---
 
@@ -1909,7 +1909,7 @@ FromPath *string
 
 A string containing a JSON Pointer value that references the location in the target document to move the value from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#from_path GoogleGkeBackupRestorePlan#from_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#from_path GoogleGkeBackupRestorePlan#from_path}
 
 ---
 
@@ -1923,7 +1923,7 @@ Path *string
 
 A string containing a JSON-Pointer value that references a location within the target document where the operation is performed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#path GoogleGkeBackupRestorePlan#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#path GoogleGkeBackupRestorePlan#path}
 
 ---
 
@@ -1937,7 +1937,7 @@ Value *string
 
 A string that specifies the desired value in string format to use for transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#value GoogleGkeBackupRestorePlan#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#value GoogleGkeBackupRestorePlan#value}
 
 ---
 
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter {
 	GroupKinds: interface{},
@@ -1975,7 +1975,7 @@ GroupKinds interface{}
 
 group_kinds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
 
 ---
 
@@ -1989,7 +1989,7 @@ JsonPath *string
 
 This is a JSONPath expression that matches specific fields of candidate resources and it operates as a filtering parameter (resources that are not matched with this expression will not be candidates for transformation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
 
 ---
 
@@ -2009,7 +2009,7 @@ cluster-scoped resources, will be candidates for transformation).
 To mix cluster-scoped and namespaced resources in the same rule,
 use an empty string ("") as one of the target namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
 
 ---
 
@@ -2018,7 +2018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds {
 	ResourceGroup: *string,
@@ -2045,7 +2045,7 @@ ResourceGroup *string
 
 API Group string of a Kubernetes resource, e.g. "apiextensions.k8s.io", "storage.k8s.io", etc. Use empty string for core group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
 
 ---
 
@@ -2059,7 +2059,7 @@ ResourceKind *string
 
 Kind of a Kubernetes resource, e.g. "CustomResourceDefinition", "StorageClass", etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
 
 ---
 
@@ -2068,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 &googlegkebackuprestoreplan.GoogleGkeBackupRestorePlanTimeouts {
 	Create: *string,
@@ -2081,9 +2081,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkeba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}. |
 
 ---
 
@@ -2095,7 +2095,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}.
 
 ---
 
@@ -2107,7 +2107,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}.
 
 ---
 
@@ -2119,7 +2119,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}.
 
 ---
 
@@ -2130,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList
 ```
@@ -2290,7 +2290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference
 ```
@@ -3006,7 +3006,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigClusterResourceResto
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList
 ```
@@ -3166,7 +3166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference
 ```
@@ -3491,7 +3491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference
 ```
@@ -3762,7 +3762,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigOutputReference
 ```
@@ -4366,7 +4366,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList
 ```
@@ -4526,7 +4526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference
 ```
@@ -4837,7 +4837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference
 ```
@@ -5121,7 +5121,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference
 ```
@@ -5392,7 +5392,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList
 ```
@@ -5552,7 +5552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference
 ```
@@ -5928,7 +5928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList
 ```
@@ -6088,7 +6088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference
 ```
@@ -6461,7 +6461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList
 ```
@@ -6621,7 +6621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference
 ```
@@ -6946,7 +6946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference
 ```
@@ -7295,7 +7295,7 @@ func InternalValue() GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesR
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupRestorePlan.GoogleGkeBackupRestorePlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlegkebackuprestoreplan"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkebackuprestoreplan"
 
 googlegkebackuprestoreplan.NewGoogleGkeBackupRestorePlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeBackupRestorePlanTimeoutsOutputReference
 ```

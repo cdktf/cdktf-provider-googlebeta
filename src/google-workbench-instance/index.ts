@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleWorkbenchInstanceConfig extends cdktf.TerraformMetaArgume
   /**
   * Desired state of the Workbench Instance. Set this field to 'ACTIVE' to start the Instance, and 'STOPPED' to stop the Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#desired_state GoogleWorkbenchInstance#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#desired_state GoogleWorkbenchInstance#desired_state}
   */
   readonly desiredState?: string;
   /**
   * Optional. If true, the workbench instance will not register with the proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disable_proxy_access GoogleWorkbenchInstance#disable_proxy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disable_proxy_access GoogleWorkbenchInstance#disable_proxy_access}
   */
   readonly disableProxyAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#id GoogleWorkbenchInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +29,7 @@ export interface GoogleWorkbenchInstanceConfig extends cdktf.TerraformMetaArgume
   /**
   * Required. User-defined unique ID of this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#instance_id GoogleWorkbenchInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#instance_id GoogleWorkbenchInstance#instance_id}
   */
   readonly instanceId?: string;
   /**
@@ -42,7 +37,7 @@ export interface GoogleWorkbenchInstanceConfig extends cdktf.TerraformMetaArgume
   * 'alias@example.com' Currently supports one owner only. If not specified, all of
   * the service account users of your VM instance''s service account can use the instance.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#instance_owners GoogleWorkbenchInstance#instance_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#instance_owners GoogleWorkbenchInstance#instance_owners}
   */
   readonly instanceOwners?: string[];
   /**
@@ -53,35 +48,35 @@ export interface GoogleWorkbenchInstanceConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#labels GoogleWorkbenchInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#labels GoogleWorkbenchInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Part of 'parent'. See documentation of 'projectsId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#location GoogleWorkbenchInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#location GoogleWorkbenchInstance#location}
   */
   readonly location: string;
   /**
   * The name of this workbench instance. Format: 'projects/{project_id}/locations/{location}/instances/{instance_id}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
   */
   readonly project?: string;
   /**
   * gce_setup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#gce_setup GoogleWorkbenchInstance#gce_setup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#gce_setup GoogleWorkbenchInstance#gce_setup}
   */
   readonly gceSetup?: GoogleWorkbenchInstanceGceSetup;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#timeouts GoogleWorkbenchInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#timeouts GoogleWorkbenchInstance#timeouts}
   */
   readonly timeouts?: GoogleWorkbenchInstanceTimeouts;
 }
@@ -274,13 +269,13 @@ export interface GoogleWorkbenchInstanceGceSetupAcceleratorConfigs {
   /**
   * Optional. Count of cores of this accelerator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#core_count GoogleWorkbenchInstance#core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#core_count GoogleWorkbenchInstance#core_count}
   */
   readonly coreCount?: string;
   /**
   * Optional. Type of this accelerator. Possible values: ["NVIDIA_TESLA_P100", "NVIDIA_TESLA_V100", "NVIDIA_TESLA_P4", "NVIDIA_TESLA_T4", "NVIDIA_TESLA_A100", "NVIDIA_A100_80GB", "NVIDIA_L4", "NVIDIA_TESLA_T4_VWS", "NVIDIA_TESLA_P100_VWS", "NVIDIA_TESLA_P4_VWS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#type GoogleWorkbenchInstance#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#type GoogleWorkbenchInstance#type}
   */
   readonly type?: string;
 }
@@ -428,7 +423,7 @@ export interface GoogleWorkbenchInstanceGceSetupBootDisk {
   * Optional. Input only. Disk encryption method used on the boot and
   * data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
   */
   readonly diskEncryption?: string;
   /**
@@ -436,13 +431,13 @@ export interface GoogleWorkbenchInstanceGceSetupBootDisk {
   * up to a maximum of 64000 GB (64 TB). If not specified, this defaults to the
   * recommended value of 150GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
   */
   readonly diskSizeGb?: string;
   /**
   * Optional. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
   */
   readonly diskType?: string;
   /**
@@ -450,7 +445,7 @@ export interface GoogleWorkbenchInstanceGceSetupBootDisk {
   * applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
   * Learn more about using your own encryption keys.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -619,12 +614,131 @@ export class GoogleWorkbenchInstanceGceSetupBootDiskOutputReference extends cdkt
     return this._kmsKey;
   }
 }
+export interface GoogleWorkbenchInstanceGceSetupContainerImage {
+  /**
+  * The path to the container image repository.
+  * For example: gcr.io/{project_id}/{imageName}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#repository GoogleWorkbenchInstance#repository}
+  */
+  readonly repository: string;
+  /**
+  * The tag of the container image. If not specified, this defaults to the latest tag.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#tag GoogleWorkbenchInstance#tag}
+  */
+  readonly tag?: string;
+}
+
+export function googleWorkbenchInstanceGceSetupContainerImageToTerraform(struct?: GoogleWorkbenchInstanceGceSetupContainerImageOutputReference | GoogleWorkbenchInstanceGceSetupContainerImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository: cdktf.stringToTerraform(struct!.repository),
+    tag: cdktf.stringToTerraform(struct!.tag),
+  }
+}
+
+
+export function googleWorkbenchInstanceGceSetupContainerImageToHclTerraform(struct?: GoogleWorkbenchInstanceGceSetupContainerImageOutputReference | GoogleWorkbenchInstanceGceSetupContainerImage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag: {
+      value: cdktf.stringToHclTerraform(struct!.tag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleWorkbenchInstanceGceSetupContainerImageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleWorkbenchInstanceGceSetupContainerImage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repository = this._repository;
+    }
+    if (this._tag !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tag = this._tag;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleWorkbenchInstanceGceSetupContainerImage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._repository = undefined;
+      this._tag = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._repository = value.repository;
+      this._tag = value.tag;
+    }
+  }
+
+  // repository - computed: false, optional: false, required: true
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
+  }
+
+  // tag - computed: false, optional: true, required: false
+  private _tag?: string; 
+  public get tag() {
+    return this.getStringAttribute('tag');
+  }
+  public set tag(value: string) {
+    this._tag = value;
+  }
+  public resetTag() {
+    this._tag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagInput() {
+    return this._tag;
+  }
+}
 export interface GoogleWorkbenchInstanceGceSetupDataDisks {
   /**
   * Optional. Input only. Disk encryption method used on the boot
   * and data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_encryption GoogleWorkbenchInstance#disk_encryption}
   */
   readonly diskEncryption?: string;
   /**
@@ -632,13 +746,13 @@ export interface GoogleWorkbenchInstanceGceSetupDataDisks {
   * up to a maximum of 64000 GB (64 TB). If not specified, this defaults to
   * 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_size_gb GoogleWorkbenchInstance#disk_size_gb}
   */
   readonly diskSizeGb?: string;
   /**
   * Optional. Input only. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disk_type GoogleWorkbenchInstance#disk_type}
   */
   readonly diskType?: string;
   /**
@@ -646,7 +760,7 @@ export interface GoogleWorkbenchInstanceGceSetupDataDisks {
   * only applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
   * Learn more about using your own encryption keys.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#kms_key GoogleWorkbenchInstance#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -819,20 +933,20 @@ export interface GoogleWorkbenchInstanceGceSetupNetworkInterfaces {
   /**
   * Optional. The name of the VPC that this VM instance is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#network GoogleWorkbenchInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#network GoogleWorkbenchInstance#network}
   */
   readonly network?: string;
   /**
   * Optional. The type of vNIC to be used on this interface. This
   * may be gVNIC or VirtioNet. Possible values: ["VIRTIO_NET", "GVNIC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#nic_type GoogleWorkbenchInstance#nic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#nic_type GoogleWorkbenchInstance#nic_type}
   */
   readonly nicType?: string;
   /**
   * Optional. The name of the subnet that this VM instance is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#subnet GoogleWorkbenchInstance#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#subnet GoogleWorkbenchInstance#subnet}
   */
   readonly subnet?: string;
 }
@@ -1008,7 +1122,7 @@ export interface GoogleWorkbenchInstanceGceSetupServiceAccounts {
   /**
   * Optional. Email address of the service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#email GoogleWorkbenchInstance#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#email GoogleWorkbenchInstance#email}
   */
   readonly email?: string;
 }
@@ -1127,25 +1241,189 @@ export class GoogleWorkbenchInstanceGceSetupServiceAccountsList extends cdktf.Co
     return new GoogleWorkbenchInstanceGceSetupServiceAccountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig {
+  /**
+  * Optional. Defines whether the VM instance has integrity monitoring
+  * enabled. Enables monitoring and attestation of the boot integrity of the VM
+  * instance. The attestation is performed against the integrity policy baseline.
+  * This baseline is initially derived from the implicitly trusted boot image
+  * when the VM instance is created. Enabled by default.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#enable_integrity_monitoring GoogleWorkbenchInstance#enable_integrity_monitoring}
+  */
+  readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
+  /**
+  * Optional. Defines whether the VM instance has Secure Boot enabled.
+  * Secure Boot helps ensure that the system only runs authentic software by verifying
+  * the digital signature of all boot components, and halting the boot process
+  * if signature verification fails. Disabled by default.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#enable_secure_boot GoogleWorkbenchInstance#enable_secure_boot}
+  */
+  readonly enableSecureBoot?: boolean | cdktf.IResolvable;
+  /**
+  * Optional. Defines whether the VM instance has the vTPM enabled.
+  * Enabled by default.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#enable_vtpm GoogleWorkbenchInstance#enable_vtpm}
+  */
+  readonly enableVtpm?: boolean | cdktf.IResolvable;
+}
+
+export function googleWorkbenchInstanceGceSetupShieldedInstanceConfigToTerraform(struct?: GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference | GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_integrity_monitoring: cdktf.booleanToTerraform(struct!.enableIntegrityMonitoring),
+    enable_secure_boot: cdktf.booleanToTerraform(struct!.enableSecureBoot),
+    enable_vtpm: cdktf.booleanToTerraform(struct!.enableVtpm),
+  }
+}
+
+
+export function googleWorkbenchInstanceGceSetupShieldedInstanceConfigToHclTerraform(struct?: GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference | GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_integrity_monitoring: {
+      value: cdktf.booleanToHclTerraform(struct!.enableIntegrityMonitoring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_secure_boot: {
+      value: cdktf.booleanToHclTerraform(struct!.enableSecureBoot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_vtpm: {
+      value: cdktf.booleanToHclTerraform(struct!.enableVtpm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableIntegrityMonitoring !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableIntegrityMonitoring = this._enableIntegrityMonitoring;
+    }
+    if (this._enableSecureBoot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableSecureBoot = this._enableSecureBoot;
+    }
+    if (this._enableVtpm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableVtpm = this._enableVtpm;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableIntegrityMonitoring = undefined;
+      this._enableSecureBoot = undefined;
+      this._enableVtpm = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableIntegrityMonitoring = value.enableIntegrityMonitoring;
+      this._enableSecureBoot = value.enableSecureBoot;
+      this._enableVtpm = value.enableVtpm;
+    }
+  }
+
+  // enable_integrity_monitoring - computed: false, optional: true, required: false
+  private _enableIntegrityMonitoring?: boolean | cdktf.IResolvable; 
+  public get enableIntegrityMonitoring() {
+    return this.getBooleanAttribute('enable_integrity_monitoring');
+  }
+  public set enableIntegrityMonitoring(value: boolean | cdktf.IResolvable) {
+    this._enableIntegrityMonitoring = value;
+  }
+  public resetEnableIntegrityMonitoring() {
+    this._enableIntegrityMonitoring = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableIntegrityMonitoringInput() {
+    return this._enableIntegrityMonitoring;
+  }
+
+  // enable_secure_boot - computed: false, optional: true, required: false
+  private _enableSecureBoot?: boolean | cdktf.IResolvable; 
+  public get enableSecureBoot() {
+    return this.getBooleanAttribute('enable_secure_boot');
+  }
+  public set enableSecureBoot(value: boolean | cdktf.IResolvable) {
+    this._enableSecureBoot = value;
+  }
+  public resetEnableSecureBoot() {
+    this._enableSecureBoot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableSecureBootInput() {
+    return this._enableSecureBoot;
+  }
+
+  // enable_vtpm - computed: false, optional: true, required: false
+  private _enableVtpm?: boolean | cdktf.IResolvable; 
+  public get enableVtpm() {
+    return this.getBooleanAttribute('enable_vtpm');
+  }
+  public set enableVtpm(value: boolean | cdktf.IResolvable) {
+    this._enableVtpm = value;
+  }
+  public resetEnableVtpm() {
+    this._enableVtpm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableVtpmInput() {
+    return this._enableVtpm;
+  }
+}
 export interface GoogleWorkbenchInstanceGceSetupVmImage {
   /**
   * Optional. Use this VM image family to find the image; the newest
   * image in this family will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#family GoogleWorkbenchInstance#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#family GoogleWorkbenchInstance#family}
   */
   readonly family?: string;
   /**
   * Optional. Use VM image name to find the image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#name GoogleWorkbenchInstance#name}
   */
   readonly name?: string;
   /**
   * The name of the Google Cloud project that this VM image belongs to.
   * Format: {project_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#project GoogleWorkbenchInstance#project}
   */
   readonly project?: string;
 }
@@ -1289,69 +1567,81 @@ export interface GoogleWorkbenchInstanceGceSetup {
   /**
   * Optional. If true, no external IP will be assigned to this VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#disable_public_ip GoogleWorkbenchInstance#disable_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#disable_public_ip GoogleWorkbenchInstance#disable_public_ip}
   */
   readonly disablePublicIp?: boolean | cdktf.IResolvable;
   /**
   * Optional. Flag to enable ip forwarding or not, default false/off.
   * https://cloud.google.com/vpc/docs/using-routes#canipforward
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#enable_ip_forwarding GoogleWorkbenchInstance#enable_ip_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#enable_ip_forwarding GoogleWorkbenchInstance#enable_ip_forwarding}
   */
   readonly enableIpForwarding?: boolean | cdktf.IResolvable;
   /**
   * Optional. The machine type of the VM instance. https://cloud.google.com/compute/docs/machine-resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#machine_type GoogleWorkbenchInstance#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#machine_type GoogleWorkbenchInstance#machine_type}
   */
   readonly machineType?: string;
   /**
   * Optional. Custom metadata to apply to this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#metadata GoogleWorkbenchInstance#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#metadata GoogleWorkbenchInstance#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Optional. The Compute Engine tags to add to instance (see [Tagging
   * instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#tags GoogleWorkbenchInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#tags GoogleWorkbenchInstance#tags}
   */
   readonly tags?: string[];
   /**
   * accelerator_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#accelerator_configs GoogleWorkbenchInstance#accelerator_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#accelerator_configs GoogleWorkbenchInstance#accelerator_configs}
   */
   readonly acceleratorConfigs?: GoogleWorkbenchInstanceGceSetupAcceleratorConfigs[] | cdktf.IResolvable;
   /**
   * boot_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#boot_disk GoogleWorkbenchInstance#boot_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#boot_disk GoogleWorkbenchInstance#boot_disk}
   */
   readonly bootDisk?: GoogleWorkbenchInstanceGceSetupBootDisk;
   /**
+  * container_image block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#container_image GoogleWorkbenchInstance#container_image}
+  */
+  readonly containerImage?: GoogleWorkbenchInstanceGceSetupContainerImage;
+  /**
   * data_disks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#data_disks GoogleWorkbenchInstance#data_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#data_disks GoogleWorkbenchInstance#data_disks}
   */
   readonly dataDisks?: GoogleWorkbenchInstanceGceSetupDataDisks;
   /**
   * network_interfaces block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#network_interfaces GoogleWorkbenchInstance#network_interfaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#network_interfaces GoogleWorkbenchInstance#network_interfaces}
   */
   readonly networkInterfaces?: GoogleWorkbenchInstanceGceSetupNetworkInterfaces[] | cdktf.IResolvable;
   /**
   * service_accounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#service_accounts GoogleWorkbenchInstance#service_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#service_accounts GoogleWorkbenchInstance#service_accounts}
   */
   readonly serviceAccounts?: GoogleWorkbenchInstanceGceSetupServiceAccounts[] | cdktf.IResolvable;
   /**
+  * shielded_instance_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#shielded_instance_config GoogleWorkbenchInstance#shielded_instance_config}
+  */
+  readonly shieldedInstanceConfig?: GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig;
+  /**
   * vm_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#vm_image GoogleWorkbenchInstance#vm_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#vm_image GoogleWorkbenchInstance#vm_image}
   */
   readonly vmImage?: GoogleWorkbenchInstanceGceSetupVmImage;
 }
@@ -1369,9 +1659,11 @@ export function googleWorkbenchInstanceGceSetupToTerraform(struct?: GoogleWorkbe
     tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     accelerator_configs: cdktf.listMapper(googleWorkbenchInstanceGceSetupAcceleratorConfigsToTerraform, true)(struct!.acceleratorConfigs),
     boot_disk: googleWorkbenchInstanceGceSetupBootDiskToTerraform(struct!.bootDisk),
+    container_image: googleWorkbenchInstanceGceSetupContainerImageToTerraform(struct!.containerImage),
     data_disks: googleWorkbenchInstanceGceSetupDataDisksToTerraform(struct!.dataDisks),
     network_interfaces: cdktf.listMapper(googleWorkbenchInstanceGceSetupNetworkInterfacesToTerraform, true)(struct!.networkInterfaces),
     service_accounts: cdktf.listMapper(googleWorkbenchInstanceGceSetupServiceAccountsToTerraform, true)(struct!.serviceAccounts),
+    shielded_instance_config: googleWorkbenchInstanceGceSetupShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
     vm_image: googleWorkbenchInstanceGceSetupVmImageToTerraform(struct!.vmImage),
   }
 }
@@ -1425,6 +1717,12 @@ export function googleWorkbenchInstanceGceSetupToHclTerraform(struct?: GoogleWor
       type: "list",
       storageClassType: "GoogleWorkbenchInstanceGceSetupBootDiskList",
     },
+    container_image: {
+      value: googleWorkbenchInstanceGceSetupContainerImageToHclTerraform(struct!.containerImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleWorkbenchInstanceGceSetupContainerImageList",
+    },
     data_disks: {
       value: googleWorkbenchInstanceGceSetupDataDisksToHclTerraform(struct!.dataDisks),
       isBlock: true,
@@ -1442,6 +1740,12 @@ export function googleWorkbenchInstanceGceSetupToHclTerraform(struct?: GoogleWor
       isBlock: true,
       type: "list",
       storageClassType: "GoogleWorkbenchInstanceGceSetupServiceAccountsList",
+    },
+    shielded_instance_config: {
+      value: googleWorkbenchInstanceGceSetupShieldedInstanceConfigToHclTerraform(struct!.shieldedInstanceConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigList",
     },
     vm_image: {
       value: googleWorkbenchInstanceGceSetupVmImageToHclTerraform(struct!.vmImage),
@@ -1497,6 +1801,10 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.bootDisk = this._bootDisk?.internalValue;
     }
+    if (this._containerImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerImage = this._containerImage?.internalValue;
+    }
     if (this._dataDisks?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataDisks = this._dataDisks?.internalValue;
@@ -1508,6 +1816,10 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
     if (this._serviceAccounts?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccounts = this._serviceAccounts?.internalValue;
+    }
+    if (this._shieldedInstanceConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shieldedInstanceConfig = this._shieldedInstanceConfig?.internalValue;
     }
     if (this._vmImage?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1526,9 +1838,11 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
       this._tags = undefined;
       this._acceleratorConfigs.internalValue = undefined;
       this._bootDisk.internalValue = undefined;
+      this._containerImage.internalValue = undefined;
       this._dataDisks.internalValue = undefined;
       this._networkInterfaces.internalValue = undefined;
       this._serviceAccounts.internalValue = undefined;
+      this._shieldedInstanceConfig.internalValue = undefined;
       this._vmImage.internalValue = undefined;
     }
     else {
@@ -1540,9 +1854,11 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
       this._tags = value.tags;
       this._acceleratorConfigs.internalValue = value.acceleratorConfigs;
       this._bootDisk.internalValue = value.bootDisk;
+      this._containerImage.internalValue = value.containerImage;
       this._dataDisks.internalValue = value.dataDisks;
       this._networkInterfaces.internalValue = value.networkInterfaces;
       this._serviceAccounts.internalValue = value.serviceAccounts;
+      this._shieldedInstanceConfig.internalValue = value.shieldedInstanceConfig;
       this._vmImage.internalValue = value.vmImage;
     }
   }
@@ -1659,6 +1975,22 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
     return this._bootDisk.internalValue;
   }
 
+  // container_image - computed: false, optional: true, required: false
+  private _containerImage = new GoogleWorkbenchInstanceGceSetupContainerImageOutputReference(this, "container_image");
+  public get containerImage() {
+    return this._containerImage;
+  }
+  public putContainerImage(value: GoogleWorkbenchInstanceGceSetupContainerImage) {
+    this._containerImage.internalValue = value;
+  }
+  public resetContainerImage() {
+    this._containerImage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerImageInput() {
+    return this._containerImage.internalValue;
+  }
+
   // data_disks - computed: false, optional: true, required: false
   private _dataDisks = new GoogleWorkbenchInstanceGceSetupDataDisksOutputReference(this, "data_disks");
   public get dataDisks() {
@@ -1707,6 +2039,22 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
     return this._serviceAccounts.internalValue;
   }
 
+  // shielded_instance_config - computed: false, optional: true, required: false
+  private _shieldedInstanceConfig = new GoogleWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference(this, "shielded_instance_config");
+  public get shieldedInstanceConfig() {
+    return this._shieldedInstanceConfig;
+  }
+  public putShieldedInstanceConfig(value: GoogleWorkbenchInstanceGceSetupShieldedInstanceConfig) {
+    this._shieldedInstanceConfig.internalValue = value;
+  }
+  public resetShieldedInstanceConfig() {
+    this._shieldedInstanceConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shieldedInstanceConfigInput() {
+    return this._shieldedInstanceConfig.internalValue;
+  }
+
   // vm_image - computed: false, optional: true, required: false
   private _vmImage = new GoogleWorkbenchInstanceGceSetupVmImageOutputReference(this, "vm_image");
   public get vmImage() {
@@ -1725,15 +2073,15 @@ export class GoogleWorkbenchInstanceGceSetupOutputReference extends cdktf.Comple
 }
 export interface GoogleWorkbenchInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#create GoogleWorkbenchInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#delete GoogleWorkbenchInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#update GoogleWorkbenchInstance#update}
   */
   readonly update?: string;
 }
@@ -1885,7 +2233,7 @@ export class GoogleWorkbenchInstanceTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance google_workbench_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance google_workbench_instance}
 */
 export class GoogleWorkbenchInstance extends cdktf.TerraformResource {
 
@@ -1901,7 +2249,7 @@ export class GoogleWorkbenchInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleWorkbenchInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleWorkbenchInstance to import
-  * @param importFromId The id of the existing GoogleWorkbenchInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleWorkbenchInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleWorkbenchInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1913,7 +2261,7 @@ export class GoogleWorkbenchInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_workbench_instance google_workbench_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_workbench_instance google_workbench_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1924,7 +2272,7 @@ export class GoogleWorkbenchInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_workbench_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
