@@ -4,7 +4,7 @@
 
 ### GoogleGkeHubScope <a name="GoogleGkeHubScope" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer"></a>
 
@@ -26,6 +26,7 @@ GoogleGkeHubScope.Builder.create(Construct scope, java.lang.String id)
     .scopeId(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .namespaceLabels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .timeouts(GoogleGkeHubScopeTimeouts)
     .build();
@@ -43,9 +44,10 @@ GoogleGkeHubScope.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The client-provided identifier of the scope. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels for this Scope. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.namespaceLabels">namespaceLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Scope-level cluster namespace labels. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The client-provided identifier of the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -140,7 +142,23 @@ Labels for this Scope.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
+
+---
+
+##### `namespaceLabels`<sup>Optional</sup> <a name="namespaceLabels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer.parameter.namespaceLabels"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Scope-level cluster namespace labels.
+
+For the member clusters bound
+to the Scope, these labels are applied to each namespace under the
+Scope. Scope-level labels take precedence over Namespace-level
+labels ('namespace_labels' in the Fleet Namespace resource) if they
+share a key. Keys and values must be Kubernetes-conformant.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#namespace_labels GoogleGkeHubScope#namespace_labels}
 
 ---
 
@@ -148,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
 
 ---
 
@@ -158,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
 
 ---
 
@@ -192,6 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetNamespaceLabels">resetNamespaceLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -511,6 +530,12 @@ public void resetId()
 public void resetLabels()
 ```
 
+##### `resetNamespaceLabels` <a name="resetNamespaceLabels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetNamespaceLabels"></a>
+
+```java
+public void resetNamespaceLabels()
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetProject"></a>
 
 ```java
@@ -626,7 +651,7 @@ The construct id used in the generated config for the GoogleGkeHubScope to impor
 
 The id of the existing GoogleGkeHubScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,11 +692,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.namespaceLabelsInput">namespaceLabelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.scopeIdInput">scopeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.namespaceLabels">namespaceLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -929,6 +956,16 @@ public java.util.Map<java.lang.String, java.lang.String> getLabelsInput();
 
 ---
 
+##### `namespaceLabelsInput`<sup>Optional</sup> <a name="namespaceLabelsInput" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.namespaceLabelsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getNamespaceLabelsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.projectInput"></a>
 
 ```java
@@ -973,6 +1010,16 @@ public java.lang.String getId();
 
 ```java
 public java.util.Map<java.lang.String, java.lang.String> getLabels();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `namespaceLabels`<sup>Required</sup> <a name="namespaceLabels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.namespaceLabels"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getNamespaceLabels();
 ```
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
@@ -1041,6 +1088,7 @@ GoogleGkeHubScopeConfig.builder()
     .scopeId(java.lang.String)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .namespaceLabels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .timeouts(GoogleGkeHubScopeTimeouts)
     .build();
@@ -1058,9 +1106,10 @@ GoogleGkeHubScopeConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The client-provided identifier of the scope. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels for this Scope. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.namespaceLabels">namespaceLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Scope-level cluster namespace labels. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1145,7 +1194,7 @@ public java.lang.String getScopeId();
 
 The client-provided identifier of the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
 
 ---
 
@@ -1157,7 +1206,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1226,27 @@ Labels for this Scope.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
+
+---
+
+##### `namespaceLabels`<sup>Optional</sup> <a name="namespaceLabels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.namespaceLabels"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getNamespaceLabels();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Scope-level cluster namespace labels.
+
+For the member clusters bound
+to the Scope, these labels are applied to each namespace under the
+Scope. Scope-level labels take precedence over Namespace-level
+labels ('namespace_labels' in the Fleet Namespace resource) if they
+share a key. Keys and values must be Kubernetes-conformant.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#namespace_labels GoogleGkeHubScope#namespace_labels}
 
 ---
 
@@ -1189,7 +1258,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
 
 ---
 
@@ -1203,7 +1272,7 @@ public GoogleGkeHubScopeTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
 
 ---
 
@@ -1237,9 +1306,9 @@ GoogleGkeHubScopeTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}. |
 
 ---
 
@@ -1251,7 +1320,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}.
 
 ---
 
@@ -1263,7 +1332,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}.
 
 ---
 
@@ -1275,7 +1344,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}.
 
 ---
 

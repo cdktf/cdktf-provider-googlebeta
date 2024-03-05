@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleGkeHubScopeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,23 +26,33 @@ export interface GoogleGkeHubScopeConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}
+  * Scope-level cluster namespace labels. For the member clusters bound
+  * to the Scope, these labels are applied to each namespace under the
+  * Scope. Scope-level labels take precedence over Namespace-level
+  * labels ('namespace_labels' in the Fleet Namespace resource) if they
+  * share a key. Keys and values must be Kubernetes-conformant.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#namespace_labels GoogleGkeHubScope#namespace_labels}
+  */
+  readonly namespaceLabels?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}
   */
   readonly project?: string;
   /**
   * The client-provided identifier of the scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
   */
   readonly scopeId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
   */
   readonly timeouts?: GoogleGkeHubScopeTimeouts;
 }
@@ -123,15 +133,15 @@ export class GoogleGkeHubScopeStateList extends cdktf.ComplexList {
 }
 export interface GoogleGkeHubScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}
   */
   readonly update?: string;
 }
@@ -283,7 +293,7 @@ export class GoogleGkeHubScopeTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}
 */
 export class GoogleGkeHubScope extends cdktf.TerraformResource {
 
@@ -299,7 +309,7 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleGkeHubScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleGkeHubScope to import
-  * @param importFromId The id of the existing GoogleGkeHubScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleGkeHubScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleGkeHubScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -311,7 +321,7 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -322,7 +332,7 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_scope',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -335,6 +345,7 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._labels = config.labels;
+    this._namespaceLabels = config.namespaceLabels;
     this._project = config.project;
     this._scopeId = config.scopeId;
     this._timeouts.internalValue = config.timeouts;
@@ -395,6 +406,22 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // namespace_labels - computed: false, optional: true, required: false
+  private _namespaceLabels?: { [key: string]: string }; 
+  public get namespaceLabels() {
+    return this.getStringMapAttribute('namespace_labels');
+  }
+  public set namespaceLabels(value: { [key: string]: string }) {
+    this._namespaceLabels = value;
+  }
+  public resetNamespaceLabels() {
+    this._namespaceLabels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceLabelsInput() {
+    return this._namespaceLabels;
   }
 
   // project - computed: true, optional: true, required: false
@@ -472,6 +499,7 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      namespace_labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._namespaceLabels),
       project: cdktf.stringToTerraform(this._project),
       scope_id: cdktf.stringToTerraform(this._scopeId),
       timeouts: googleGkeHubScopeTimeoutsToTerraform(this._timeouts.internalValue),
@@ -488,6 +516,12 @@ export class GoogleGkeHubScope extends cdktf.TerraformResource {
       },
       labels: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      namespace_labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._namespaceLabels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

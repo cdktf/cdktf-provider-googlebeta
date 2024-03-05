@@ -182,6 +182,9 @@ export * as googleClouddeployDeliveryPipelineIamBinding from './google-clouddepl
 export * as googleClouddeployDeliveryPipelineIamMember from './google-clouddeploy-delivery-pipeline-iam-member';
 export * as googleClouddeployDeliveryPipelineIamPolicy from './google-clouddeploy-delivery-pipeline-iam-policy';
 export * as googleClouddeployTarget from './google-clouddeploy-target';
+export * as googleClouddeployTargetIamBinding from './google-clouddeploy-target-iam-binding';
+export * as googleClouddeployTargetIamMember from './google-clouddeploy-target-iam-member';
+export * as googleClouddeployTargetIamPolicy from './google-clouddeploy-target-iam-policy';
 export * as googleClouddomainsRegistration from './google-clouddomains-registration';
 export * as googleCloudfunctions2Function from './google-cloudfunctions2-function';
 export * as googleCloudfunctions2FunctionIamBinding from './google-cloudfunctions2-function-iam-binding';
@@ -932,6 +935,7 @@ export * as dataGoogleCloudTasksQueueIamPolicy from './data-google-cloud-tasks-q
 export * as dataGoogleCloudbuildTrigger from './data-google-cloudbuild-trigger';
 export * as dataGoogleCloudbuildv2ConnectionIamPolicy from './data-google-cloudbuildv2-connection-iam-policy';
 export * as dataGoogleClouddeployDeliveryPipelineIamPolicy from './data-google-clouddeploy-delivery-pipeline-iam-policy';
+export * as dataGoogleClouddeployTargetIamPolicy from './data-google-clouddeploy-target-iam-policy';
 export * as dataGoogleCloudfunctions2Function from './data-google-cloudfunctions2-function';
 export * as dataGoogleCloudfunctions2FunctionIamPolicy from './data-google-cloudfunctions2-function-iam-policy';
 export * as dataGoogleCloudfunctionsFunction from './data-google-cloudfunctions-function';

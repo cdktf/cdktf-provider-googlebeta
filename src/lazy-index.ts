@@ -182,6 +182,9 @@ Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamBinding', { 
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamMember', { get: function () { return require('./google-clouddeploy-delivery-pipeline-iam-member'); } });
 Object.defineProperty(exports, 'googleClouddeployDeliveryPipelineIamPolicy', { get: function () { return require('./google-clouddeploy-delivery-pipeline-iam-policy'); } });
 Object.defineProperty(exports, 'googleClouddeployTarget', { get: function () { return require('./google-clouddeploy-target'); } });
+Object.defineProperty(exports, 'googleClouddeployTargetIamBinding', { get: function () { return require('./google-clouddeploy-target-iam-binding'); } });
+Object.defineProperty(exports, 'googleClouddeployTargetIamMember', { get: function () { return require('./google-clouddeploy-target-iam-member'); } });
+Object.defineProperty(exports, 'googleClouddeployTargetIamPolicy', { get: function () { return require('./google-clouddeploy-target-iam-policy'); } });
 Object.defineProperty(exports, 'googleClouddomainsRegistration', { get: function () { return require('./google-clouddomains-registration'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2Function', { get: function () { return require('./google-cloudfunctions2-function'); } });
 Object.defineProperty(exports, 'googleCloudfunctions2FunctionIamBinding', { get: function () { return require('./google-cloudfunctions2-function-iam-binding'); } });
@@ -932,6 +935,7 @@ Object.defineProperty(exports, 'dataGoogleCloudTasksQueueIamPolicy', { get: func
 Object.defineProperty(exports, 'dataGoogleCloudbuildTrigger', { get: function () { return require('./data-google-cloudbuild-trigger'); } });
 Object.defineProperty(exports, 'dataGoogleCloudbuildv2ConnectionIamPolicy', { get: function () { return require('./data-google-cloudbuildv2-connection-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleClouddeployDeliveryPipelineIamPolicy', { get: function () { return require('./data-google-clouddeploy-delivery-pipeline-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleClouddeployTargetIamPolicy', { get: function () { return require('./data-google-clouddeploy-target-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudfunctions2Function', { get: function () { return require('./data-google-cloudfunctions2-function'); } });
 Object.defineProperty(exports, 'dataGoogleCloudfunctions2FunctionIamPolicy', { get: function () { return require('./data-google-cloudfunctions2-function-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudfunctionsFunction', { get: function () { return require('./data-google-cloudfunctions-function'); } });
