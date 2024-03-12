@@ -177,6 +177,9 @@ export * as googleCloudbuildv2ConnectionIamPolicy from './google-cloudbuildv2-co
 export * as googleCloudbuildv2Repository from './google-cloudbuildv2-repository';
 export * as googleClouddeployAutomation from './google-clouddeploy-automation';
 export * as googleClouddeployCustomTargetType from './google-clouddeploy-custom-target-type';
+export * as googleClouddeployCustomTargetTypeIamBinding from './google-clouddeploy-custom-target-type-iam-binding';
+export * as googleClouddeployCustomTargetTypeIamMember from './google-clouddeploy-custom-target-type-iam-member';
+export * as googleClouddeployCustomTargetTypeIamPolicy from './google-clouddeploy-custom-target-type-iam-policy';
 export * as googleClouddeployDeliveryPipeline from './google-clouddeploy-delivery-pipeline';
 export * as googleClouddeployDeliveryPipelineIamBinding from './google-clouddeploy-delivery-pipeline-iam-binding';
 export * as googleClouddeployDeliveryPipelineIamMember from './google-clouddeploy-delivery-pipeline-iam-member';
@@ -934,6 +937,7 @@ export * as dataGoogleCloudRunV2ServiceIamPolicy from './data-google-cloud-run-v
 export * as dataGoogleCloudTasksQueueIamPolicy from './data-google-cloud-tasks-queue-iam-policy';
 export * as dataGoogleCloudbuildTrigger from './data-google-cloudbuild-trigger';
 export * as dataGoogleCloudbuildv2ConnectionIamPolicy from './data-google-cloudbuildv2-connection-iam-policy';
+export * as dataGoogleClouddeployCustomTargetTypeIamPolicy from './data-google-clouddeploy-custom-target-type-iam-policy';
 export * as dataGoogleClouddeployDeliveryPipelineIamPolicy from './data-google-clouddeploy-delivery-pipeline-iam-policy';
 export * as dataGoogleClouddeployTargetIamPolicy from './data-google-clouddeploy-target-iam-policy';
 export * as dataGoogleCloudfunctions2Function from './data-google-cloudfunctions2-function';
