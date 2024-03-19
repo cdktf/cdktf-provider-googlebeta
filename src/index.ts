@@ -70,6 +70,10 @@ export * as googleAppEngineFlexibleAppVersion from './google-app-engine-flexible
 export * as googleAppEngineServiceNetworkSettings from './google-app-engine-service-network-settings';
 export * as googleAppEngineServiceSplitTraffic from './google-app-engine-service-split-traffic';
 export * as googleAppEngineStandardAppVersion from './google-app-engine-standard-app-version';
+export * as googleApphubApplication from './google-apphub-application';
+export * as googleApphubService from './google-apphub-service';
+export * as googleApphubServiceProjectAttachment from './google-apphub-service-project-attachment';
+export * as googleApphubWorkload from './google-apphub-workload';
 export * as googleArtifactRegistryRepository from './google-artifact-registry-repository';
 export * as googleArtifactRegistryRepositoryIamBinding from './google-artifact-registry-repository-iam-binding';
 export * as googleArtifactRegistryRepositoryIamMember from './google-artifact-registry-repository-iam-member';
@@ -483,6 +487,7 @@ export * as googleFilestoreSnapshot from './google-filestore-snapshot';
 export * as googleFirebaseAndroidApp from './google-firebase-android-app';
 export * as googleFirebaseAppCheckAppAttestConfig from './google-firebase-app-check-app-attest-config';
 export * as googleFirebaseAppCheckDebugToken from './google-firebase-app-check-debug-token';
+export * as googleFirebaseAppCheckDeviceCheckConfig from './google-firebase-app-check-device-check-config';
 export * as googleFirebaseAppCheckPlayIntegrityConfig from './google-firebase-app-check-play-integrity-config';
 export * as googleFirebaseAppCheckRecaptchaEnterpriseConfig from './google-firebase-app-check-recaptcha-enterprise-config';
 export * as googleFirebaseAppCheckRecaptchaV3Config from './google-firebase-app-check-recaptcha-v3-config';
@@ -577,6 +582,10 @@ export * as googleIapAppEngineVersionIamMember from './google-iap-app-engine-ver
 export * as googleIapAppEngineVersionIamPolicy from './google-iap-app-engine-version-iam-policy';
 export * as googleIapBrand from './google-iap-brand';
 export * as googleIapClient from './google-iap-client';
+export * as googleIapTunnelDestGroup from './google-iap-tunnel-dest-group';
+export * as googleIapTunnelDestGroupIamBinding from './google-iap-tunnel-dest-group-iam-binding';
+export * as googleIapTunnelDestGroupIamMember from './google-iap-tunnel-dest-group-iam-member';
+export * as googleIapTunnelDestGroupIamPolicy from './google-iap-tunnel-dest-group-iam-policy';
 export * as googleIapTunnelIamBinding from './google-iap-tunnel-iam-binding';
 export * as googleIapTunnelIamMember from './google-iap-tunnel-iam-member';
 export * as googleIapTunnelIamPolicy from './google-iap-tunnel-iam-policy';
@@ -614,6 +623,7 @@ export * as googleKmsCryptoKeyIamBinding from './google-kms-crypto-key-iam-bindi
 export * as googleKmsCryptoKeyIamMember from './google-kms-crypto-key-iam-member';
 export * as googleKmsCryptoKeyIamPolicy from './google-kms-crypto-key-iam-policy';
 export * as googleKmsCryptoKeyVersion from './google-kms-crypto-key-version';
+export * as googleKmsEkmConnection from './google-kms-ekm-connection';
 export * as googleKmsKeyRing from './google-kms-key-ring';
 export * as googleKmsKeyRingIamBinding from './google-kms-key-ring-iam-binding';
 export * as googleKmsKeyRingIamMember from './google-kms-key-ring-iam-member';
@@ -672,6 +682,7 @@ export * as googleNetworkSecurityAddressGroupIamPolicy from './google-network-se
 export * as googleNetworkSecurityAuthorizationPolicy from './google-network-security-authorization-policy';
 export * as googleNetworkSecurityClientTlsPolicy from './google-network-security-client-tls-policy';
 export * as googleNetworkSecurityFirewallEndpoint from './google-network-security-firewall-endpoint';
+export * as googleNetworkSecurityFirewallEndpointAssociation from './google-network-security-firewall-endpoint-association';
 export * as googleNetworkSecurityGatewaySecurityPolicy from './google-network-security-gateway-security-policy';
 export * as googleNetworkSecurityGatewaySecurityPolicyRule from './google-network-security-gateway-security-policy-rule';
 export * as googleNetworkSecuritySecurityProfile from './google-network-security-security-profile';
@@ -901,6 +912,8 @@ export * as dataGoogleApiGatewayApiIamPolicy from './data-google-api-gateway-api
 export * as dataGoogleApiGatewayGatewayIamPolicy from './data-google-api-gateway-gateway-iam-policy';
 export * as dataGoogleApigeeEnvironmentIamPolicy from './data-google-apigee-environment-iam-policy';
 export * as dataGoogleAppEngineDefaultServiceAccount from './data-google-app-engine-default-service-account';
+export * as dataGoogleApphubDiscoveredService from './data-google-apphub-discovered-service';
+export * as dataGoogleApphubDiscoveredWorkload from './data-google-apphub-discovered-workload';
 export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
 export * as dataGoogleArtifactRegistryRepositoryIamPolicy from './data-google-artifact-registry-repository-iam-policy';
 export * as dataGoogleBackupDrManagementServer from './data-google-backup-dr-management-server';
@@ -927,6 +940,7 @@ export * as dataGoogleCloudAssetResourcesSearchAll from './data-google-cloud-ass
 export * as dataGoogleCloudIdentityGroupLookup from './data-google-cloud-identity-group-lookup';
 export * as dataGoogleCloudIdentityGroupMemberships from './data-google-cloud-identity-group-memberships';
 export * as dataGoogleCloudIdentityGroups from './data-google-cloud-identity-groups';
+export * as dataGoogleCloudQuotasQuotaInfo from './data-google-cloud-quotas-quota-info';
 export * as dataGoogleCloudRunLocations from './data-google-cloud-run-locations';
 export * as dataGoogleCloudRunService from './data-google-cloud-run-service';
 export * as dataGoogleCloudRunServiceIamPolicy from './data-google-cloud-run-service-iam-policy';
@@ -1062,6 +1076,7 @@ export * as dataGoogleIamWorkloadIdentityPoolProvider from './data-google-iam-wo
 export * as dataGoogleIapAppEngineServiceIamPolicy from './data-google-iap-app-engine-service-iam-policy';
 export * as dataGoogleIapAppEngineVersionIamPolicy from './data-google-iap-app-engine-version-iam-policy';
 export * as dataGoogleIapClient from './data-google-iap-client';
+export * as dataGoogleIapTunnelDestGroupIamPolicy from './data-google-iap-tunnel-dest-group-iam-policy';
 export * as dataGoogleIapTunnelIamPolicy from './data-google-iap-tunnel-iam-policy';
 export * as dataGoogleIapTunnelInstanceIamPolicy from './data-google-iap-tunnel-instance-iam-policy';
 export * as dataGoogleIapWebBackendServiceIamPolicy from './data-google-iap-web-backend-service-iam-policy';
