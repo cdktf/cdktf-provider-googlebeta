@@ -4,7 +4,7 @@
 
 ### GoogleFirebaseAndroidApp <a name="GoogleFirebaseAndroidApp" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetApiKeyId">ResetApiKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetPackageName">ResetPackageName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetSha1Hashes">ResetSha1Hashes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetSha256Hashes">ResetSha256Hashes</a></code> | *No description.* |
@@ -403,12 +402,6 @@ func ResetDeletionPolicy()
 func ResetId()
 ```
 
-##### `ResetPackageName` <a name="ResetPackageName" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetPackageName"></a>
-
-```go
-func ResetPackageName()
-```
-
 ##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp.resetProject"></a>
 
 ```go
@@ -536,7 +529,7 @@ The construct id used in the generated config for the GoogleFirebaseAndroidApp t
 
 The id of the existing GoogleFirebaseAndroidApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,10 +971,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlefireb
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	PackageName: *string,
 	ApiKeyId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	PackageName: *string,
 	Project: *string,
 	Sha1Hashes: *[]*string,
 	Sha256Hashes: *[]*string,
@@ -1001,11 +994,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlefireb
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The user-assigned display name of the AndroidApp. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.packageName">PackageName</a></code> | <code>*string</code> | The canonical package name of the Android app as would appear in the Google Play Developer Console. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.apiKeyId">ApiKeyId</a></code> | <code>*string</code> | The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | (Optional) Set to 'ABANDON' to allow the AndroidApp to be untracked from terraform state rather than deleted upon 'terraform destroy'. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.packageName">PackageName</a></code> | <code>*string</code> | Immutable. The canonical package name of the Android app as would appear in the Google Play Developer Console. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.sha1Hashes">Sha1Hashes</a></code> | <code>*[]*string</code> | The SHA1 certificate hashes for the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.sha256Hashes">Sha256Hashes</a></code> | <code>*[]*string</code> | The SHA256 certificate hashes for the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts">GoogleFirebaseAndroidAppTimeouts</a></code> | timeouts block. |
@@ -1092,7 +1085,21 @@ DisplayName *string
 
 The user-assigned display name of the AndroidApp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
+
+---
+
+##### `PackageName`<sup>Required</sup> <a name="PackageName" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.packageName"></a>
+
+```go
+PackageName *string
+```
+
+- *Type:* *string
+
+The canonical package name of the Android app as would appear in the Google Play Developer Console.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
 
 ---
 
@@ -1109,7 +1116,7 @@ The globally unique, Google-assigned identifier (UID) for the Firebase API key a
 If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the AndroidApp.
 This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#api_key_id GoogleFirebaseAndroidApp#api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#api_key_id GoogleFirebaseAndroidApp#api_key_id}
 
 ---
 
@@ -1126,7 +1133,7 @@ DeletionPolicy *string
 This is useful because the AndroidApp may be
 serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
 
 ---
 
@@ -1138,24 +1145,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#id GoogleFirebaseAndroidApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `PackageName`<sup>Optional</sup> <a name="PackageName" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppConfig.property.packageName"></a>
-
-```go
-PackageName *string
-```
-
-- *Type:* *string
-
-Immutable. The canonical package name of the Android app as would appear in the Google Play Developer Console.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
 
 ---
 
@@ -1167,7 +1160,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}.
 
 ---
 
@@ -1181,7 +1174,7 @@ Sha1Hashes *[]*string
 
 The SHA1 certificate hashes for the AndroidApp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
 
 ---
 
@@ -1195,7 +1188,7 @@ Sha256Hashes *[]*string
 
 The SHA256 certificate hashes for the AndroidApp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
 
 ---
 
@@ -1209,7 +1202,7 @@ Timeouts GoogleFirebaseAndroidAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
 
 ---
 
@@ -1231,9 +1224,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlefireb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}. |
 
 ---
 
@@ -1245,7 +1238,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#create GoogleFirebaseAndroidApp#create}.
 
 ---
 
@@ -1257,7 +1250,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#delete GoogleFirebaseAndroidApp#delete}.
 
 ---
 
@@ -1269,7 +1262,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_firebase_android_app#update GoogleFirebaseAndroidApp#update}.
 
 ---
 

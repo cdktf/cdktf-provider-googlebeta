@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'googleAccessContextManagerEgressPolicy', { get: 
 Object.defineProperty(exports, 'googleAccessContextManagerGcpUserAccessBinding', { get: function () { return require('./google-access-context-manager-gcp-user-access-binding'); } });
 Object.defineProperty(exports, 'googleAccessContextManagerIngressPolicy', { get: function () { return require('./google-access-context-manager-ingress-policy'); } });
 Object.defineProperty(exports, 'googleAccessContextManagerServicePerimeter', { get: function () { return require('./google-access-context-manager-service-perimeter'); } });
+Object.defineProperty(exports, 'googleAccessContextManagerServicePerimeterDryRunResource', { get: function () { return require('./google-access-context-manager-service-perimeter-dry-run-resource'); } });
 Object.defineProperty(exports, 'googleAccessContextManagerServicePerimeterEgressPolicy', { get: function () { return require('./google-access-context-manager-service-perimeter-egress-policy'); } });
 Object.defineProperty(exports, 'googleAccessContextManagerServicePerimeterIngressPolicy', { get: function () { return require('./google-access-context-manager-service-perimeter-ingress-policy'); } });
 Object.defineProperty(exports, 'googleAccessContextManagerServicePerimeterResource', { get: function () { return require('./google-access-context-manager-service-perimeter-resource'); } });
@@ -941,6 +942,7 @@ Object.defineProperty(exports, 'dataGoogleCloudIdentityGroupLookup', { get: func
 Object.defineProperty(exports, 'dataGoogleCloudIdentityGroupMemberships', { get: function () { return require('./data-google-cloud-identity-group-memberships'); } });
 Object.defineProperty(exports, 'dataGoogleCloudIdentityGroups', { get: function () { return require('./data-google-cloud-identity-groups'); } });
 Object.defineProperty(exports, 'dataGoogleCloudQuotasQuotaInfo', { get: function () { return require('./data-google-cloud-quotas-quota-info'); } });
+Object.defineProperty(exports, 'dataGoogleCloudQuotasQuotaInfos', { get: function () { return require('./data-google-cloud-quotas-quota-infos'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunLocations', { get: function () { return require('./data-google-cloud-run-locations'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunService', { get: function () { return require('./data-google-cloud-run-service'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunServiceIamPolicy', { get: function () { return require('./data-google-cloud-run-service-iam-policy'); } });

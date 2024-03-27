@@ -16,6 +16,7 @@ export * as googleAccessContextManagerEgressPolicy from './google-access-context
 export * as googleAccessContextManagerGcpUserAccessBinding from './google-access-context-manager-gcp-user-access-binding';
 export * as googleAccessContextManagerIngressPolicy from './google-access-context-manager-ingress-policy';
 export * as googleAccessContextManagerServicePerimeter from './google-access-context-manager-service-perimeter';
+export * as googleAccessContextManagerServicePerimeterDryRunResource from './google-access-context-manager-service-perimeter-dry-run-resource';
 export * as googleAccessContextManagerServicePerimeterEgressPolicy from './google-access-context-manager-service-perimeter-egress-policy';
 export * as googleAccessContextManagerServicePerimeterIngressPolicy from './google-access-context-manager-service-perimeter-ingress-policy';
 export * as googleAccessContextManagerServicePerimeterResource from './google-access-context-manager-service-perimeter-resource';
@@ -941,6 +942,7 @@ export * as dataGoogleCloudIdentityGroupLookup from './data-google-cloud-identit
 export * as dataGoogleCloudIdentityGroupMemberships from './data-google-cloud-identity-group-memberships';
 export * as dataGoogleCloudIdentityGroups from './data-google-cloud-identity-groups';
 export * as dataGoogleCloudQuotasQuotaInfo from './data-google-cloud-quotas-quota-info';
+export * as dataGoogleCloudQuotasQuotaInfos from './data-google-cloud-quotas-quota-infos';
 export * as dataGoogleCloudRunLocations from './data-google-cloud-run-locations';
 export * as dataGoogleCloudRunService from './data-google-cloud-run-service';
 export * as dataGoogleCloudRunServiceIamPolicy from './data-google-cloud-run-service-iam-policy';
