@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   /**
   * The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#database_type GoogleDataprocMetastoreService#database_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#database_type GoogleDataprocMetastoreService#database_type}
   */
   readonly databaseType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#id GoogleDataprocMetastoreService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#id GoogleDataprocMetastoreService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,14 +26,14 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#labels GoogleDataprocMetastoreService#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#labels GoogleDataprocMetastoreService#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the metastore service should reside.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#location GoogleDataprocMetastoreService#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#location GoogleDataprocMetastoreService#location}
   */
   readonly location?: string;
   /**
@@ -46,23 +41,23 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   * 
   * "projects/{projectNumber}/global/networks/{network_id}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#network GoogleDataprocMetastoreService#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#network GoogleDataprocMetastoreService#network}
   */
   readonly network?: string;
   /**
   * The TCP port at which the metastore service is reached. Default: 9083.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#port GoogleDataprocMetastoreService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#port GoogleDataprocMetastoreService#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#project GoogleDataprocMetastoreService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#project GoogleDataprocMetastoreService#project}
   */
   readonly project?: string;
   /**
   * The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#release_channel GoogleDataprocMetastoreService#release_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#release_channel GoogleDataprocMetastoreService#release_channel}
   */
   readonly releaseChannel?: string;
   /**
@@ -70,61 +65,67 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   * and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
   * 3 and 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#service_id GoogleDataprocMetastoreService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#service_id GoogleDataprocMetastoreService#service_id}
   */
   readonly serviceId: string;
   /**
   * The tier of the service. Possible values: ["DEVELOPER", "ENTERPRISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#tier GoogleDataprocMetastoreService#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#tier GoogleDataprocMetastoreService#tier}
   */
   readonly tier?: string;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#encryption_config GoogleDataprocMetastoreService#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#encryption_config GoogleDataprocMetastoreService#encryption_config}
   */
   readonly encryptionConfig?: GoogleDataprocMetastoreServiceEncryptionConfig;
   /**
   * hive_metastore_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#hive_metastore_config GoogleDataprocMetastoreService#hive_metastore_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#hive_metastore_config GoogleDataprocMetastoreService#hive_metastore_config}
   */
   readonly hiveMetastoreConfig?: GoogleDataprocMetastoreServiceHiveMetastoreConfig;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#maintenance_window GoogleDataprocMetastoreService#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#maintenance_window GoogleDataprocMetastoreService#maintenance_window}
   */
   readonly maintenanceWindow?: GoogleDataprocMetastoreServiceMaintenanceWindow;
   /**
   * metadata_integration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#metadata_integration GoogleDataprocMetastoreService#metadata_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#metadata_integration GoogleDataprocMetastoreService#metadata_integration}
   */
   readonly metadataIntegration?: GoogleDataprocMetastoreServiceMetadataIntegration;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#network_config GoogleDataprocMetastoreService#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#network_config GoogleDataprocMetastoreService#network_config}
   */
   readonly networkConfig?: GoogleDataprocMetastoreServiceNetworkConfig;
   /**
   * scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#scaling_config GoogleDataprocMetastoreService#scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#scaling_config GoogleDataprocMetastoreService#scaling_config}
   */
   readonly scalingConfig?: GoogleDataprocMetastoreServiceScalingConfig;
   /**
+  * scheduled_backup block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#scheduled_backup GoogleDataprocMetastoreService#scheduled_backup}
+  */
+  readonly scheduledBackup?: GoogleDataprocMetastoreServiceScheduledBackup;
+  /**
   * telemetry_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#telemetry_config GoogleDataprocMetastoreService#telemetry_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#telemetry_config GoogleDataprocMetastoreService#telemetry_config}
   */
   readonly telemetryConfig?: GoogleDataprocMetastoreServiceTelemetryConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#timeouts GoogleDataprocMetastoreService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#timeouts GoogleDataprocMetastoreService#timeouts}
   */
   readonly timeouts?: GoogleDataprocMetastoreServiceTimeouts;
 }
@@ -133,7 +134,7 @@ export interface GoogleDataprocMetastoreServiceEncryptionConfig {
   * The fully qualified customer provided Cloud KMS key name to use for customer data encryption.
   * Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#kms_key GoogleDataprocMetastoreService#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#kms_key GoogleDataprocMetastoreService#kms_key}
   */
   readonly kmsKey: string;
 }
@@ -217,17 +218,17 @@ export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersi
   * A mapping of Hive metastore configuration key-value pairs to apply to the auxiliary Hive metastore (configured in hive-site.xml) in addition to the primary version's overrides.
   * If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
   */
   readonly configOverrides?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#key GoogleDataprocMetastoreService#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#key GoogleDataprocMetastoreService#key}
   */
   readonly key: string;
   /**
   * The Hive metastore version of the auxiliary service. It must be less than the primary Hive metastore service's version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
   */
   readonly version: string;
 }
@@ -399,7 +400,7 @@ export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig
   * 
   * "projects/{projectNumber}/secrets/{secret_id}/versions/{version_id}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#cloud_secret GoogleDataprocMetastoreService#cloud_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#cloud_secret GoogleDataprocMetastoreService#cloud_secret}
   */
   readonly cloudSecret: string;
 }
@@ -482,19 +483,19 @@ export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig
   /**
   * A Cloud Storage URI that specifies the path to a krb5.conf file. It is of the form gs://{bucket_name}/path/to/krb5.conf, although the file does not need to be named krb5.conf explicitly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#krb5_config_gcs_uri GoogleDataprocMetastoreService#krb5_config_gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#krb5_config_gcs_uri GoogleDataprocMetastoreService#krb5_config_gcs_uri}
   */
   readonly krb5ConfigGcsUri: string;
   /**
   * A Kerberos principal that exists in the both the keytab the KDC to authenticate as. A typical principal is of the form "primary/instance@REALM", but there is no exact format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#principal GoogleDataprocMetastoreService#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#principal GoogleDataprocMetastoreService#principal}
   */
   readonly principal: string;
   /**
   * keytab block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#keytab GoogleDataprocMetastoreService#keytab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#keytab GoogleDataprocMetastoreService#keytab}
   */
   readonly keytab: GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab;
 }
@@ -630,31 +631,31 @@ export interface GoogleDataprocMetastoreServiceHiveMetastoreConfig {
   * A mapping of Hive metastore configuration key-value pairs to apply to the Hive metastore (configured in hive-site.xml).
   * The mappings override system defaults (some keys cannot be overridden)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
   */
   readonly configOverrides?: { [key: string]: string };
   /**
   * The protocol to use for the metastore service endpoint. If unspecified, defaults to 'THRIFT'. Default value: "THRIFT" Possible values: ["THRIFT", "GRPC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#endpoint_protocol GoogleDataprocMetastoreService#endpoint_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#endpoint_protocol GoogleDataprocMetastoreService#endpoint_protocol}
   */
   readonly endpointProtocol?: string;
   /**
   * The Hive metastore schema version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
   */
   readonly version: string;
   /**
   * auxiliary_versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#auxiliary_versions GoogleDataprocMetastoreService#auxiliary_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#auxiliary_versions GoogleDataprocMetastoreService#auxiliary_versions}
   */
   readonly auxiliaryVersions?: GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable;
   /**
   * kerberos_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#kerberos_config GoogleDataprocMetastoreService#kerberos_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#kerberos_config GoogleDataprocMetastoreService#kerberos_config}
   */
   readonly kerberosConfig?: GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig;
 }
@@ -853,13 +854,13 @@ export interface GoogleDataprocMetastoreServiceMaintenanceWindow {
   /**
   * The day of week, when the window starts. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#day_of_week GoogleDataprocMetastoreService#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#day_of_week GoogleDataprocMetastoreService#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
   * The hour of day (0-23) when the window starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#hour_of_day GoogleDataprocMetastoreService#hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#hour_of_day GoogleDataprocMetastoreService#hour_of_day}
   */
   readonly hourOfDay: number;
 }
@@ -968,7 +969,7 @@ export interface GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogCon
   /**
   * Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#enabled GoogleDataprocMetastoreService#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#enabled GoogleDataprocMetastoreService#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1051,7 +1052,7 @@ export interface GoogleDataprocMetastoreServiceMetadataIntegration {
   /**
   * data_catalog_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#data_catalog_config GoogleDataprocMetastoreService#data_catalog_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#data_catalog_config GoogleDataprocMetastoreService#data_catalog_config}
   */
   readonly dataCatalogConfig: GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig;
 }
@@ -1137,7 +1138,7 @@ export interface GoogleDataprocMetastoreServiceNetworkConfigConsumers {
   * There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
   * 'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#subnetwork GoogleDataprocMetastoreService#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#subnetwork GoogleDataprocMetastoreService#subnetwork}
   */
   readonly subnetwork: string;
 }
@@ -1257,13 +1258,13 @@ export interface GoogleDataprocMetastoreServiceNetworkConfig {
   /**
   * Enables custom routes to be imported and exported for the Dataproc Metastore service's peered VPC network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#custom_routes_enabled GoogleDataprocMetastoreService#custom_routes_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#custom_routes_enabled GoogleDataprocMetastoreService#custom_routes_enabled}
   */
   readonly customRoutesEnabled?: boolean | cdktf.IResolvable;
   /**
   * consumers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#consumers GoogleDataprocMetastoreService#consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#consumers GoogleDataprocMetastoreService#consumers}
   */
   readonly consumers: GoogleDataprocMetastoreServiceNetworkConfigConsumers[] | cdktf.IResolvable;
 }
@@ -1375,13 +1376,13 @@ export interface GoogleDataprocMetastoreServiceScalingConfig {
   /**
   * Metastore instance sizes. Possible values: ["EXTRA_SMALL", "SMALL", "MEDIUM", "LARGE", "EXTRA_LARGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#instance_size GoogleDataprocMetastoreService#instance_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#instance_size GoogleDataprocMetastoreService#instance_size}
   */
   readonly instanceSize?: string;
   /**
   * Scaling factor, in increments of 0.1 for values less than 1.0, and increments of 1.0 for values greater than 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#scaling_factor GoogleDataprocMetastoreService#scaling_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#scaling_factor GoogleDataprocMetastoreService#scaling_factor}
   */
   readonly scalingFactor?: number;
 }
@@ -1492,11 +1493,199 @@ export class GoogleDataprocMetastoreServiceScalingConfigOutputReference extends 
     return this._scalingFactor;
   }
 }
+export interface GoogleDataprocMetastoreServiceScheduledBackup {
+  /**
+  * A Cloud Storage URI of a folder, in the format gs://<bucket_name>/<path_inside_bucket>. A sub-folder <backup_folder> containing backup files will be stored below it.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#backup_location GoogleDataprocMetastoreService#backup_location}
+  */
+  readonly backupLocation: string;
+  /**
+  * The scheduled interval in Cron format, see https://en.wikipedia.org/wiki/Cron The default is empty: scheduled backup is not enabled. Must be specified to enable scheduled backups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#cron_schedule GoogleDataprocMetastoreService#cron_schedule}
+  */
+  readonly cronSchedule?: string;
+  /**
+  * Defines whether the scheduled backup is enabled. The default value is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#enabled GoogleDataprocMetastoreService#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the time zone to be used when interpreting cronSchedule. Must be a time zone name from the time zone database (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. America/Los_Angeles or Africa/Abidjan. If left unspecified, the default is UTC.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#time_zone GoogleDataprocMetastoreService#time_zone}
+  */
+  readonly timeZone?: string;
+}
+
+export function googleDataprocMetastoreServiceScheduledBackupToTerraform(struct?: GoogleDataprocMetastoreServiceScheduledBackupOutputReference | GoogleDataprocMetastoreServiceScheduledBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    backup_location: cdktf.stringToTerraform(struct!.backupLocation),
+    cron_schedule: cdktf.stringToTerraform(struct!.cronSchedule),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+  }
+}
+
+
+export function googleDataprocMetastoreServiceScheduledBackupToHclTerraform(struct?: GoogleDataprocMetastoreServiceScheduledBackupOutputReference | GoogleDataprocMetastoreServiceScheduledBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup_location: {
+      value: cdktf.stringToHclTerraform(struct!.backupLocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cron_schedule: {
+      value: cdktf.stringToHclTerraform(struct!.cronSchedule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataprocMetastoreServiceScheduledBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocMetastoreServiceScheduledBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backupLocation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupLocation = this._backupLocation;
+    }
+    if (this._cronSchedule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cronSchedule = this._cronSchedule;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._timeZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocMetastoreServiceScheduledBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._backupLocation = undefined;
+      this._cronSchedule = undefined;
+      this._enabled = undefined;
+      this._timeZone = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._backupLocation = value.backupLocation;
+      this._cronSchedule = value.cronSchedule;
+      this._enabled = value.enabled;
+      this._timeZone = value.timeZone;
+    }
+  }
+
+  // backup_location - computed: false, optional: false, required: true
+  private _backupLocation?: string; 
+  public get backupLocation() {
+    return this.getStringAttribute('backup_location');
+  }
+  public set backupLocation(value: string) {
+    this._backupLocation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupLocationInput() {
+    return this._backupLocation;
+  }
+
+  // cron_schedule - computed: false, optional: true, required: false
+  private _cronSchedule?: string; 
+  public get cronSchedule() {
+    return this.getStringAttribute('cron_schedule');
+  }
+  public set cronSchedule(value: string) {
+    this._cronSchedule = value;
+  }
+  public resetCronSchedule() {
+    this._cronSchedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cronScheduleInput() {
+    return this._cronSchedule;
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // time_zone - computed: true, optional: true, required: false
+  private _timeZone?: string; 
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone;
+  }
+}
 export interface GoogleDataprocMetastoreServiceTelemetryConfig {
   /**
   * The output format of the Dataproc Metastore service's logs. Default value: "JSON" Possible values: ["LEGACY", "JSON"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#log_format GoogleDataprocMetastoreService#log_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#log_format GoogleDataprocMetastoreService#log_format}
   */
   readonly logFormat?: string;
 }
@@ -1580,15 +1769,15 @@ export class GoogleDataprocMetastoreServiceTelemetryConfigOutputReference extend
 }
 export interface GoogleDataprocMetastoreServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#create GoogleDataprocMetastoreService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#create GoogleDataprocMetastoreService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#delete GoogleDataprocMetastoreService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#delete GoogleDataprocMetastoreService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#update GoogleDataprocMetastoreService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#update GoogleDataprocMetastoreService#update}
   */
   readonly update?: string;
 }
@@ -1740,7 +1929,7 @@ export class GoogleDataprocMetastoreServiceTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}
 */
 export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
 
@@ -1756,7 +1945,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataprocMetastoreService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataprocMetastoreService to import
-  * @param importFromId The id of the existing GoogleDataprocMetastoreService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataprocMetastoreService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataprocMetastoreService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1768,7 +1957,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1779,7 +1968,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1806,6 +1995,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     this._metadataIntegration.internalValue = config.metadataIntegration;
     this._networkConfig.internalValue = config.networkConfig;
     this._scalingConfig.internalValue = config.scalingConfig;
+    this._scheduledBackup.internalValue = config.scheduledBackup;
     this._telemetryConfig.internalValue = config.telemetryConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -2109,6 +2299,22 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     return this._scalingConfig.internalValue;
   }
 
+  // scheduled_backup - computed: false, optional: true, required: false
+  private _scheduledBackup = new GoogleDataprocMetastoreServiceScheduledBackupOutputReference(this, "scheduled_backup");
+  public get scheduledBackup() {
+    return this._scheduledBackup;
+  }
+  public putScheduledBackup(value: GoogleDataprocMetastoreServiceScheduledBackup) {
+    this._scheduledBackup.internalValue = value;
+  }
+  public resetScheduledBackup() {
+    this._scheduledBackup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduledBackupInput() {
+    return this._scheduledBackup.internalValue;
+  }
+
   // telemetry_config - computed: false, optional: true, required: false
   private _telemetryConfig = new GoogleDataprocMetastoreServiceTelemetryConfigOutputReference(this, "telemetry_config");
   public get telemetryConfig() {
@@ -2163,6 +2369,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       metadata_integration: googleDataprocMetastoreServiceMetadataIntegrationToTerraform(this._metadataIntegration.internalValue),
       network_config: googleDataprocMetastoreServiceNetworkConfigToTerraform(this._networkConfig.internalValue),
       scaling_config: googleDataprocMetastoreServiceScalingConfigToTerraform(this._scalingConfig.internalValue),
+      scheduled_backup: googleDataprocMetastoreServiceScheduledBackupToTerraform(this._scheduledBackup.internalValue),
       telemetry_config: googleDataprocMetastoreServiceTelemetryConfigToTerraform(this._telemetryConfig.internalValue),
       timeouts: googleDataprocMetastoreServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -2265,6 +2472,12 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleDataprocMetastoreServiceScalingConfigList",
+      },
+      scheduled_backup: {
+        value: googleDataprocMetastoreServiceScheduledBackupToHclTerraform(this._scheduledBackup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDataprocMetastoreServiceScheduledBackupList",
       },
       telemetry_config: {
         value: googleDataprocMetastoreServiceTelemetryConfigToHclTerraform(this._telemetryConfig.internalValue),
