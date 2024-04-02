@@ -154,6 +154,7 @@ Object.defineProperty(exports, 'googleCloudAssetProjectFeed', { get: function ()
 Object.defineProperty(exports, 'googleCloudIdentityGroup', { get: function () { return require('./google-cloud-identity-group'); } });
 Object.defineProperty(exports, 'googleCloudIdentityGroupMembership', { get: function () { return require('./google-cloud-identity-group-membership'); } });
 Object.defineProperty(exports, 'googleCloudIdsEndpoint', { get: function () { return require('./google-cloud-ids-endpoint'); } });
+Object.defineProperty(exports, 'googleCloudQuotasQuotaPreference', { get: function () { return require('./google-cloud-quotas-quota-preference'); } });
 Object.defineProperty(exports, 'googleCloudRunDomainMapping', { get: function () { return require('./google-cloud-run-domain-mapping'); } });
 Object.defineProperty(exports, 'googleCloudRunService', { get: function () { return require('./google-cloud-run-service'); } });
 Object.defineProperty(exports, 'googleCloudRunServiceIamBinding', { get: function () { return require('./google-cloud-run-service-iam-binding'); } });
@@ -619,6 +620,7 @@ Object.defineProperty(exports, 'googleIdentityPlatformTenantInboundSamlConfig', 
 Object.defineProperty(exports, 'googleIdentityPlatformTenantOauthIdpConfig', { get: function () { return require('./google-identity-platform-tenant-oauth-idp-config'); } });
 Object.defineProperty(exports, 'googleIntegrationConnectorsConnection', { get: function () { return require('./google-integration-connectors-connection'); } });
 Object.defineProperty(exports, 'googleIntegrationConnectorsEndpointAttachment', { get: function () { return require('./google-integration-connectors-endpoint-attachment'); } });
+Object.defineProperty(exports, 'googleIntegrationsClient', { get: function () { return require('./google-integrations-client'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKey', { get: function () { return require('./google-kms-crypto-key'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamBinding', { get: function () { return require('./google-kms-crypto-key-iam-binding'); } });
 Object.defineProperty(exports, 'googleKmsCryptoKeyIamMember', { get: function () { return require('./google-kms-crypto-key-iam-member'); } });
@@ -857,6 +859,7 @@ Object.defineProperty(exports, 'googleTagsTagValueIamPolicy', { get: function ()
 Object.defineProperty(exports, 'googleTpuNode', { get: function () { return require('./google-tpu-node'); } });
 Object.defineProperty(exports, 'googleTpuV2Vm', { get: function () { return require('./google-tpu-v2-vm'); } });
 Object.defineProperty(exports, 'googleVertexAiDataset', { get: function () { return require('./google-vertex-ai-dataset'); } });
+Object.defineProperty(exports, 'googleVertexAiDeploymentResourcePool', { get: function () { return require('./google-vertex-ai-deployment-resource-pool'); } });
 Object.defineProperty(exports, 'googleVertexAiEndpoint', { get: function () { return require('./google-vertex-ai-endpoint'); } });
 Object.defineProperty(exports, 'googleVertexAiEndpointIamBinding', { get: function () { return require('./google-vertex-ai-endpoint-iam-binding'); } });
 Object.defineProperty(exports, 'googleVertexAiEndpointIamMember', { get: function () { return require('./google-vertex-ai-endpoint-iam-member'); } });
@@ -913,6 +916,7 @@ Object.defineProperty(exports, 'dataGoogleApiGatewayApiIamPolicy', { get: functi
 Object.defineProperty(exports, 'dataGoogleApiGatewayGatewayIamPolicy', { get: function () { return require('./data-google-api-gateway-gateway-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleApigeeEnvironmentIamPolicy', { get: function () { return require('./data-google-apigee-environment-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleAppEngineDefaultServiceAccount', { get: function () { return require('./data-google-app-engine-default-service-account'); } });
+Object.defineProperty(exports, 'dataGoogleApphubApplication', { get: function () { return require('./data-google-apphub-application'); } });
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredService', { get: function () { return require('./data-google-apphub-discovered-service'); } });
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredWorkload', { get: function () { return require('./data-google-apphub-discovered-workload'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: function () { return require('./data-google-artifact-registry-repository'); } });

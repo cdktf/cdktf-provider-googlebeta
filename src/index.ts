@@ -154,6 +154,7 @@ export * as googleCloudAssetProjectFeed from './google-cloud-asset-project-feed'
 export * as googleCloudIdentityGroup from './google-cloud-identity-group';
 export * as googleCloudIdentityGroupMembership from './google-cloud-identity-group-membership';
 export * as googleCloudIdsEndpoint from './google-cloud-ids-endpoint';
+export * as googleCloudQuotasQuotaPreference from './google-cloud-quotas-quota-preference';
 export * as googleCloudRunDomainMapping from './google-cloud-run-domain-mapping';
 export * as googleCloudRunService from './google-cloud-run-service';
 export * as googleCloudRunServiceIamBinding from './google-cloud-run-service-iam-binding';
@@ -619,6 +620,7 @@ export * as googleIdentityPlatformTenantInboundSamlConfig from './google-identit
 export * as googleIdentityPlatformTenantOauthIdpConfig from './google-identity-platform-tenant-oauth-idp-config';
 export * as googleIntegrationConnectorsConnection from './google-integration-connectors-connection';
 export * as googleIntegrationConnectorsEndpointAttachment from './google-integration-connectors-endpoint-attachment';
+export * as googleIntegrationsClient from './google-integrations-client';
 export * as googleKmsCryptoKey from './google-kms-crypto-key';
 export * as googleKmsCryptoKeyIamBinding from './google-kms-crypto-key-iam-binding';
 export * as googleKmsCryptoKeyIamMember from './google-kms-crypto-key-iam-member';
@@ -857,6 +859,7 @@ export * as googleTagsTagValueIamPolicy from './google-tags-tag-value-iam-policy
 export * as googleTpuNode from './google-tpu-node';
 export * as googleTpuV2Vm from './google-tpu-v2-vm';
 export * as googleVertexAiDataset from './google-vertex-ai-dataset';
+export * as googleVertexAiDeploymentResourcePool from './google-vertex-ai-deployment-resource-pool';
 export * as googleVertexAiEndpoint from './google-vertex-ai-endpoint';
 export * as googleVertexAiEndpointIamBinding from './google-vertex-ai-endpoint-iam-binding';
 export * as googleVertexAiEndpointIamMember from './google-vertex-ai-endpoint-iam-member';
@@ -913,6 +916,7 @@ export * as dataGoogleApiGatewayApiIamPolicy from './data-google-api-gateway-api
 export * as dataGoogleApiGatewayGatewayIamPolicy from './data-google-api-gateway-gateway-iam-policy';
 export * as dataGoogleApigeeEnvironmentIamPolicy from './data-google-apigee-environment-iam-policy';
 export * as dataGoogleAppEngineDefaultServiceAccount from './data-google-app-engine-default-service-account';
+export * as dataGoogleApphubApplication from './data-google-apphub-application';
 export * as dataGoogleApphubDiscoveredService from './data-google-apphub-discovered-service';
 export * as dataGoogleApphubDiscoveredWorkload from './data-google-apphub-discovered-workload';
 export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
