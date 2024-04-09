@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster. Default value: "AUTH_MODE_DISABLED" Possible values: ["AUTH_MODE_UNSPECIFIED", "AUTH_MODE_IAM_AUTH", "AUTH_MODE_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#authorization_mode GoogleRedisCluster#authorization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#authorization_mode GoogleRedisCluster#authorization_mode}
   */
   readonly authorizationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#id GoogleRedisCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#id GoogleRedisCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,48 +29,55 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   * Unique name of the resource in this scope including project and location using the form:
   * projects/{projectId}/locations/{locationId}/clusters/{clusterId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#name GoogleRedisCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#name GoogleRedisCluster#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#project GoogleRedisCluster#project}
+  * The nodeType for the Redis cluster.
+  * If not provided, REDIS_HIGHMEM_MEDIUM will be used as default Possible values: ["REDIS_SHARED_CORE_NANO", "REDIS_HIGHMEM_MEDIUM", "REDIS_HIGHMEM_XLARGE", "REDIS_STANDARD_SMALL"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#node_type GoogleRedisCluster#node_type}
+  */
+  readonly nodeType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#project GoogleRedisCluster#project}
   */
   readonly project?: string;
   /**
   * The name of the region of the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#region GoogleRedisCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#region GoogleRedisCluster#region}
   */
   readonly region?: string;
   /**
   * Optional. The number of replica nodes per shard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#replica_count GoogleRedisCluster#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#replica_count GoogleRedisCluster#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * Required. Number of shards for the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#shard_count GoogleRedisCluster#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#shard_count GoogleRedisCluster#shard_count}
   */
   readonly shardCount: number;
   /**
   * Optional. The in-transit encryption for the Redis cluster.
   * If not provided, encryption is disabled for the cluster. Default value: "TRANSIT_ENCRYPTION_MODE_DISABLED" Possible values: ["TRANSIT_ENCRYPTION_MODE_UNSPECIFIED", "TRANSIT_ENCRYPTION_MODE_DISABLED", "TRANSIT_ENCRYPTION_MODE_SERVER_AUTHENTICATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#transit_encryption_mode GoogleRedisCluster#transit_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#transit_encryption_mode GoogleRedisCluster#transit_encryption_mode}
   */
   readonly transitEncryptionMode?: string;
   /**
   * psc_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#psc_configs GoogleRedisCluster#psc_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#psc_configs GoogleRedisCluster#psc_configs}
   */
   readonly pscConfigs: GoogleRedisClusterPscConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#timeouts GoogleRedisCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#timeouts GoogleRedisCluster#timeouts}
   */
   readonly timeouts?: GoogleRedisClusterTimeouts;
 }
@@ -492,7 +499,7 @@ export interface GoogleRedisClusterPscConfigs {
   * the discovery endpoint will be reserved, in the form of
   * projects/{network_project_id_or_number}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#network GoogleRedisCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#network GoogleRedisCluster#network}
   */
   readonly network: string;
 }
@@ -605,15 +612,15 @@ export class GoogleRedisClusterPscConfigsList extends cdktf.ComplexList {
 }
 export interface GoogleRedisClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#create GoogleRedisCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#create GoogleRedisCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#delete GoogleRedisCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#delete GoogleRedisCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#update GoogleRedisCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#update GoogleRedisCluster#update}
   */
   readonly update?: string;
 }
@@ -765,7 +772,7 @@ export class GoogleRedisClusterTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster google_redis_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster google_redis_cluster}
 */
 export class GoogleRedisCluster extends cdktf.TerraformResource {
 
@@ -781,7 +788,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleRedisCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleRedisCluster to import
-  * @param importFromId The id of the existing GoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleRedisCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -793,7 +800,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_redis_cluster google_redis_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_redis_cluster google_redis_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -804,7 +811,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_redis_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -818,6 +825,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
     this._authorizationMode = config.authorizationMode;
     this._id = config.id;
     this._name = config.name;
+    this._nodeType = config.nodeType;
     this._project = config.project;
     this._region = config.region;
     this._replicaCount = config.replicaCount;
@@ -888,6 +896,27 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // node_type - computed: true, optional: true, required: false
+  private _nodeType?: string; 
+  public get nodeType() {
+    return this.getStringAttribute('node_type');
+  }
+  public set nodeType(value: string) {
+    this._nodeType = value;
+  }
+  public resetNodeType() {
+    this._nodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeInput() {
+    return this._nodeType;
+  }
+
+  // precise_size_gb - computed: true, optional: false, required: false
+  public get preciseSizeGb() {
+    return this.getNumberAttribute('precise_size_gb');
   }
 
   // project - computed: true, optional: true, required: false
@@ -1032,6 +1061,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       authorization_mode: cdktf.stringToTerraform(this._authorizationMode),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      node_type: cdktf.stringToTerraform(this._nodeType),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
       replica_count: cdktf.numberToTerraform(this._replicaCount),
@@ -1058,6 +1088,12 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_type: {
+        value: cdktf.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

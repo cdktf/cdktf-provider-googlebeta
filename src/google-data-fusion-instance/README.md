@@ -1,3 +1,3 @@
 # `google_data_fusion_instance`
 
-Refer to the Terraform Registry for docs: [`google_data_fusion_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_data_fusion_instance).
+Refer to the Terraform Registry for docs: [`google_data_fusion_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_data_fusion_instance).
