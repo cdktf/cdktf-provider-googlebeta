@@ -727,6 +727,7 @@ export * as googleOsConfigGuestPolicies from './google-os-config-guest-policies'
 export * as googleOsConfigOsPolicyAssignment from './google-os-config-os-policy-assignment';
 export * as googleOsConfigPatchDeployment from './google-os-config-patch-deployment';
 export * as googleOsLoginSshPublicKey from './google-os-login-ssh-public-key';
+export * as googleParallelstoreInstance from './google-parallelstore-instance';
 export * as googlePrivatecaCaPool from './google-privateca-ca-pool';
 export * as googlePrivatecaCaPoolIamBinding from './google-privateca-ca-pool-iam-binding';
 export * as googlePrivatecaCaPoolIamMember from './google-privateca-ca-pool-iam-member';
@@ -1170,8 +1171,10 @@ export * as dataGoogleStorageProjectServiceAccount from './data-google-storage-p
 export * as dataGoogleStorageTransferProjectServiceAccount from './data-google-storage-transfer-project-service-account';
 export * as dataGoogleTagsTagKey from './data-google-tags-tag-key';
 export * as dataGoogleTagsTagKeyIamPolicy from './data-google-tags-tag-key-iam-policy';
+export * as dataGoogleTagsTagKeys from './data-google-tags-tag-keys';
 export * as dataGoogleTagsTagValue from './data-google-tags-tag-value';
 export * as dataGoogleTagsTagValueIamPolicy from './data-google-tags-tag-value-iam-policy';
+export * as dataGoogleTagsTagValues from './data-google-tags-tag-values';
 export * as dataGoogleTpuTensorflowVersions from './data-google-tpu-tensorflow-versions';
 export * as dataGoogleTpuV2AcceleratorTypes from './data-google-tpu-v2-accelerator-types';
 export * as dataGoogleTpuV2RuntimeVersions from './data-google-tpu-v2-runtime-versions';

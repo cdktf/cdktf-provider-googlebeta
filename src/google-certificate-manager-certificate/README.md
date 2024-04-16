@@ -1,3 +1,3 @@
 # `google_certificate_manager_certificate`
 
-Refer to the Terraform Registry for docs: [`google_certificate_manager_certificate`](https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_certificate_manager_certificate).
+Refer to the Terraform Registry for docs: [`google_certificate_manager_certificate`](https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_certificate_manager_certificate).
