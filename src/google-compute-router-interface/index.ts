@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputeRouterInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#id GoogleComputeRouterInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#id GoogleComputeRouterInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,77 +17,83 @@ export interface GoogleComputeRouterInterfaceConfig extends cdktf.TerraformMetaA
   /**
   * The name or resource link to the VLAN interconnect for this interface. Changing this forces a new interface to be created. Only one of interconnect_attachment, subnetwork or vpn_tunnel can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#interconnect_attachment GoogleComputeRouterInterface#interconnect_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#interconnect_attachment GoogleComputeRouterInterface#interconnect_attachment}
   */
   readonly interconnectAttachment?: string;
   /**
   * The IP address and range of the interface. The IP range must be in the RFC3927 link-local IP space. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#ip_range GoogleComputeRouterInterface#ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#ip_range GoogleComputeRouterInterface#ip_range}
   */
   readonly ipRange?: string;
   /**
+  * IP version of this interface.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#ip_version GoogleComputeRouterInterface#ip_version}
+  */
+  readonly ipVersion?: string;
+  /**
   * A unique name for the interface, required by GCE. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#name GoogleComputeRouterInterface#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#name GoogleComputeRouterInterface#name}
   */
   readonly name: string;
   /**
   * The regional private internal IP address that is used to establish BGP sessions to a VM instance acting as a third-party Router Appliance. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#private_ip_address GoogleComputeRouterInterface#private_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#private_ip_address GoogleComputeRouterInterface#private_ip_address}
   */
   readonly privateIpAddress?: string;
   /**
   * The ID of the project in which this interface's router belongs. If it is not provided, the provider project is used. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#project GoogleComputeRouterInterface#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#project GoogleComputeRouterInterface#project}
   */
   readonly project?: string;
   /**
   * The name of the interface that is redundant to this interface. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#redundant_interface GoogleComputeRouterInterface#redundant_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#redundant_interface GoogleComputeRouterInterface#redundant_interface}
   */
   readonly redundantInterface?: string;
   /**
   * The region this interface's router sits in. If not specified, the project region will be used. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#region GoogleComputeRouterInterface#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#region GoogleComputeRouterInterface#region}
   */
   readonly region?: string;
   /**
   * The name of the router this interface will be attached to. Changing this forces a new interface to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#router GoogleComputeRouterInterface#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#router GoogleComputeRouterInterface#router}
   */
   readonly router: string;
   /**
   * The URI of the subnetwork resource that this interface belongs to, which must be in the same region as the Cloud Router. Changing this forces a new interface to be created. Only one of subnetwork, interconnect_attachment or vpn_tunnel can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#subnetwork GoogleComputeRouterInterface#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#subnetwork GoogleComputeRouterInterface#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * The name or resource link to the VPN tunnel this interface will be linked to. Changing this forces a new interface to be created. Only one of vpn_tunnel, interconnect_attachment or subnetwork can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#vpn_tunnel GoogleComputeRouterInterface#vpn_tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#vpn_tunnel GoogleComputeRouterInterface#vpn_tunnel}
   */
   readonly vpnTunnel?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#timeouts GoogleComputeRouterInterface#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#timeouts GoogleComputeRouterInterface#timeouts}
   */
   readonly timeouts?: GoogleComputeRouterInterfaceTimeouts;
 }
 export interface GoogleComputeRouterInterfaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#create GoogleComputeRouterInterface#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#create GoogleComputeRouterInterface#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#delete GoogleComputeRouterInterface#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#delete GoogleComputeRouterInterface#delete}
   */
   readonly delete?: string;
 }
@@ -215,7 +216,7 @@ export class GoogleComputeRouterInterfaceTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface google_compute_router_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface google_compute_router_interface}
 */
 export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
 
@@ -231,7 +232,7 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeRouterInterface resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeRouterInterface to import
-  * @param importFromId The id of the existing GoogleComputeRouterInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeRouterInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeRouterInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -243,7 +244,7 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +255,7 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_router_interface',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -268,6 +269,7 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
     this._id = config.id;
     this._interconnectAttachment = config.interconnectAttachment;
     this._ipRange = config.ipRange;
+    this._ipVersion = config.ipVersion;
     this._name = config.name;
     this._privateIpAddress = config.privateIpAddress;
     this._project = config.project;
@@ -329,6 +331,22 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipRangeInput() {
     return this._ipRange;
+  }
+
+  // ip_version - computed: true, optional: true, required: false
+  private _ipVersion?: string; 
+  public get ipVersion() {
+    return this.getStringAttribute('ip_version');
+  }
+  public set ipVersion(value: string) {
+    this._ipVersion = value;
+  }
+  public resetIpVersion() {
+    this._ipVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipVersionInput() {
+    return this._ipVersion;
   }
 
   // name - computed: false, optional: false, required: true
@@ -478,6 +496,7 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       interconnect_attachment: cdktf.stringToTerraform(this._interconnectAttachment),
       ip_range: cdktf.stringToTerraform(this._ipRange),
+      ip_version: cdktf.stringToTerraform(this._ipVersion),
       name: cdktf.stringToTerraform(this._name),
       private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),
       project: cdktf.stringToTerraform(this._project),
@@ -506,6 +525,12 @@ export class GoogleComputeRouterInterface extends cdktf.TerraformResource {
       },
       ip_range: {
         value: cdktf.stringToHclTerraform(this._ipRange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_version: {
+        value: cdktf.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

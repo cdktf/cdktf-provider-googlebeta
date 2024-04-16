@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleVmwareenginePrivateCloudConfig extends cdktf.TerraformMet
   /**
   * User-provided description for this private cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,41 +23,53 @@ export interface GoogleVmwareenginePrivateCloudConfig extends cdktf.TerraformMet
   /**
   * The location where the PrivateCloud should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
   */
   readonly location: string;
   /**
   * The ID of the PrivateCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}
+  * The preferred single failure domain within a region.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#preferred_zone GoogleVmwareenginePrivateCloud#preferred_zone}
+  */
+  readonly preferredZone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}
   */
   readonly project?: string;
   /**
-  * Initial type of the private cloud. Possible values: ["STANDARD", "TIME_LIMITED"]
+  * The secondary single failure domain within a region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#type GoogleVmwareenginePrivateCloud#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#secondary_zone GoogleVmwareenginePrivateCloud#secondary_zone}
+  */
+  readonly secondaryZone?: string;
+  /**
+  * Initial type of the private cloud. Possible values: ["STANDARD", "TIME_LIMITED", "STRETCHED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#type GoogleVmwareenginePrivateCloud#type}
   */
   readonly type?: string;
   /**
   * management_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
   */
   readonly managementCluster: GoogleVmwareenginePrivateCloudManagementCluster;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
   */
   readonly networkConfig: GoogleVmwareenginePrivateCloudNetworkConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
   */
   readonly timeouts?: GoogleVmwareenginePrivateCloudTimeouts;
 }
@@ -343,17 +350,17 @@ export interface GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs 
   * If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
   * This cannot be changed once the PrivateCloud is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
   */
   readonly customCoreCount?: number;
   /**
   * The number of nodes of this type in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}
   */
   readonly nodeTypeId: string;
 }
@@ -528,13 +535,13 @@ export interface GoogleVmwareenginePrivateCloudManagementCluster {
   *   * Not formatted as a UUID
   *   * Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
   */
   readonly clusterId: string;
   /**
   * node_type_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
   */
   readonly nodeTypeConfigs?: GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs[] | cdktf.IResolvable;
 }
@@ -646,7 +653,7 @@ export interface GoogleVmwareenginePrivateCloudNetworkConfig {
   /**
   * Management CIDR used by VMware management appliances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
   */
   readonly managementCidr: string;
   /**
@@ -654,7 +661,7 @@ export interface GoogleVmwareenginePrivateCloudNetworkConfig {
   * Specify the name in the following form: projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId}
   * where {project} can either be a project number or a project ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
   */
   readonly vmwareEngineNetwork?: string;
 }
@@ -779,15 +786,15 @@ export class GoogleVmwareenginePrivateCloudNetworkConfigOutputReference extends 
 }
 export interface GoogleVmwareenginePrivateCloudTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}
   */
   readonly update?: string;
 }
@@ -939,7 +946,7 @@ export class GoogleVmwareenginePrivateCloudTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}
 */
 export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
 
@@ -955,7 +962,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVmwareenginePrivateCloud resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVmwareenginePrivateCloud to import
-  * @param importFromId The id of the existing GoogleVmwareenginePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVmwareenginePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVmwareenginePrivateCloud to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -967,7 +974,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -978,7 +985,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
       terraformResourceType: 'google_vmwareengine_private_cloud',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -993,7 +1000,9 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
+    this._preferredZone = config.preferredZone;
     this._project = config.project;
+    this._secondaryZone = config.secondaryZone;
     this._type = config.type;
     this._managementCluster.internalValue = config.managementCluster;
     this._networkConfig.internalValue = config.networkConfig;
@@ -1074,6 +1083,22 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
     return this._nsx;
   }
 
+  // preferred_zone - computed: false, optional: true, required: false
+  private _preferredZone?: string; 
+  public get preferredZone() {
+    return this.getStringAttribute('preferred_zone');
+  }
+  public set preferredZone(value: string) {
+    this._preferredZone = value;
+  }
+  public resetPreferredZone() {
+    this._preferredZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredZoneInput() {
+    return this._preferredZone;
+  }
+
   // project - computed: true, optional: true, required: false
   private _project?: string; 
   public get project() {
@@ -1088,6 +1113,22 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // secondary_zone - computed: false, optional: true, required: false
+  private _secondaryZone?: string; 
+  public get secondaryZone() {
+    return this.getStringAttribute('secondary_zone');
+  }
+  public set secondaryZone(value: string) {
+    this._secondaryZone = value;
+  }
+  public resetSecondaryZone() {
+    this._secondaryZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryZoneInput() {
+    return this._secondaryZone;
   }
 
   // state - computed: true, optional: false, required: false
@@ -1174,7 +1215,9 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      preferred_zone: cdktf.stringToTerraform(this._preferredZone),
       project: cdktf.stringToTerraform(this._project),
+      secondary_zone: cdktf.stringToTerraform(this._secondaryZone),
       type: cdktf.stringToTerraform(this._type),
       management_cluster: googleVmwareenginePrivateCloudManagementClusterToTerraform(this._managementCluster.internalValue),
       network_config: googleVmwareenginePrivateCloudNetworkConfigToTerraform(this._networkConfig.internalValue),
@@ -1208,8 +1251,20 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      preferred_zone: {
+        value: cdktf.stringToHclTerraform(this._preferredZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_zone: {
+        value: cdktf.stringToHclTerraform(this._secondaryZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
