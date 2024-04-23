@@ -1036,6 +1036,7 @@ The following submodules are available:
 - [googleProjectIamBinding](./googleProjectIamBinding.typescript.md)
 - [googleProjectIamCustomRole](./googleProjectIamCustomRole.typescript.md)
 - [googleProjectIamMember](./googleProjectIamMember.typescript.md)
+- [googleProjectIamMemberRemove](./googleProjectIamMemberRemove.typescript.md)
 - [googleProjectIamPolicy](./googleProjectIamPolicy.typescript.md)
 - [googleProjectOrganizationPolicy](./googleProjectOrganizationPolicy.typescript.md)
 - [googleProjectService](./googleProjectService.typescript.md)
