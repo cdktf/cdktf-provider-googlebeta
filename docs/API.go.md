@@ -1036,6 +1036,7 @@ The following submodules are available:
 - [googleProjectIamBinding](./googleProjectIamBinding.go.md)
 - [googleProjectIamCustomRole](./googleProjectIamCustomRole.go.md)
 - [googleProjectIamMember](./googleProjectIamMember.go.md)
+- [googleProjectIamMemberRemove](./googleProjectIamMemberRemove.go.md)
 - [googleProjectIamPolicy](./googleProjectIamPolicy.go.md)
 - [googleProjectOrganizationPolicy](./googleProjectOrganizationPolicy.go.md)
 - [googleProjectService](./googleProjectService.go.md)

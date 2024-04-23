@@ -745,6 +745,7 @@ Object.defineProperty(exports, 'googleProjectIamAuditConfig', { get: function ()
 Object.defineProperty(exports, 'googleProjectIamBinding', { get: function () { return require('./google-project-iam-binding'); } });
 Object.defineProperty(exports, 'googleProjectIamCustomRole', { get: function () { return require('./google-project-iam-custom-role'); } });
 Object.defineProperty(exports, 'googleProjectIamMember', { get: function () { return require('./google-project-iam-member'); } });
+Object.defineProperty(exports, 'googleProjectIamMemberRemove', { get: function () { return require('./google-project-iam-member-remove'); } });
 Object.defineProperty(exports, 'googleProjectIamPolicy', { get: function () { return require('./google-project-iam-policy'); } });
 Object.defineProperty(exports, 'googleProjectOrganizationPolicy', { get: function () { return require('./google-project-organization-policy'); } });
 Object.defineProperty(exports, 'googleProjectService', { get: function () { return require('./google-project-service'); } });

@@ -1036,6 +1036,7 @@ The following submodules are available:
 - [googleProjectIamBinding](./googleProjectIamBinding.csharp.md)
 - [googleProjectIamCustomRole](./googleProjectIamCustomRole.csharp.md)
 - [googleProjectIamMember](./googleProjectIamMember.csharp.md)
+- [googleProjectIamMemberRemove](./googleProjectIamMemberRemove.csharp.md)
 - [googleProjectIamPolicy](./googleProjectIamPolicy.csharp.md)
 - [googleProjectOrganizationPolicy](./googleProjectOrganizationPolicy.csharp.md)
 - [googleProjectService](./googleProjectService.csharp.md)

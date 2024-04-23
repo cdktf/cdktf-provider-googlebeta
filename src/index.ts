@@ -745,6 +745,7 @@ export * as googleProjectIamAuditConfig from './google-project-iam-audit-config'
 export * as googleProjectIamBinding from './google-project-iam-binding';
 export * as googleProjectIamCustomRole from './google-project-iam-custom-role';
 export * as googleProjectIamMember from './google-project-iam-member';
+export * as googleProjectIamMemberRemove from './google-project-iam-member-remove';
 export * as googleProjectIamPolicy from './google-project-iam-policy';
 export * as googleProjectOrganizationPolicy from './google-project-organization-policy';
 export * as googleProjectService from './google-project-service';
