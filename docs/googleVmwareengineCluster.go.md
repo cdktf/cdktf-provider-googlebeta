@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineCluster(scope Construct, id *string, config GoogleVmwareengineClusterConfig) GoogleVmwareengineCluster
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlevmwareenginecluster.GoogleVmwareengineCluster_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.GoogleVmwareengineCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareeng
 	Parent: *string,
 	Id: *string,
 	NodeTypeConfigs: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts,
 }
 ```
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterNodeTypeConfigs {
 	NodeCount: *f64,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 &googlevmwareenginecluster.GoogleVmwareengineClusterTimeouts {
 	Create: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareengineClusterNodeTypeConfigsList
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareengineClusterNodeTypeConfigsOutputReference
 ```
@@ -1673,7 +1673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareengineCluster.GoogleVmwareengineClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareenginecluster"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlevmwareenginecluster"
 
 googlevmwareenginecluster.NewGoogleVmwareengineClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareengineClusterTimeoutsOutputReference
 ```
