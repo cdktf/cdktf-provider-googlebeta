@@ -204,6 +204,7 @@ export * as googleCloudfunctionsFunctionIamBinding from './google-cloudfunctions
 export * as googleCloudfunctionsFunctionIamMember from './google-cloudfunctions-function-iam-member';
 export * as googleCloudfunctionsFunctionIamPolicy from './google-cloudfunctions-function-iam-policy';
 export * as googleComposerEnvironment from './google-composer-environment';
+export * as googleComposerUserWorkloadsSecret from './google-composer-user-workloads-secret';
 export * as googleComputeAddress from './google-compute-address';
 export * as googleComputeAttachedDisk from './google-compute-attached-disk';
 export * as googleComputeAutoscaler from './google-compute-autoscaler';
@@ -318,6 +319,7 @@ export * as googleComputeRouterInterface from './google-compute-router-interface
 export * as googleComputeRouterNat from './google-compute-router-nat';
 export * as googleComputeRouterPeer from './google-compute-router-peer';
 export * as googleComputeSecurityPolicy from './google-compute-security-policy';
+export * as googleComputeSecurityPolicyRule from './google-compute-security-policy-rule';
 export * as googleComputeServiceAttachment from './google-compute-service-attachment';
 export * as googleComputeSharedVpcHostProject from './google-compute-shared-vpc-host-project';
 export * as googleComputeSharedVpcServiceProject from './google-compute-shared-vpc-service-project';
@@ -378,6 +380,7 @@ export * as googleDataFusionInstanceIamBinding from './google-data-fusion-instan
 export * as googleDataFusionInstanceIamMember from './google-data-fusion-instance-iam-member';
 export * as googleDataFusionInstanceIamPolicy from './google-data-fusion-instance-iam-policy';
 export * as googleDataLossPreventionDeidentifyTemplate from './google-data-loss-prevention-deidentify-template';
+export * as googleDataLossPreventionDiscoveryConfig from './google-data-loss-prevention-discovery-config';
 export * as googleDataLossPreventionInspectTemplate from './google-data-loss-prevention-inspect-template';
 export * as googleDataLossPreventionJobTrigger from './google-data-loss-prevention-job-trigger';
 export * as googleDataLossPreventionStoredInfoType from './google-data-loss-prevention-stored-info-type';
@@ -620,6 +623,7 @@ export * as googleIdentityPlatformTenantInboundSamlConfig from './google-identit
 export * as googleIdentityPlatformTenantOauthIdpConfig from './google-identity-platform-tenant-oauth-idp-config';
 export * as googleIntegrationConnectorsConnection from './google-integration-connectors-connection';
 export * as googleIntegrationConnectorsEndpointAttachment from './google-integration-connectors-endpoint-attachment';
+export * as googleIntegrationsAuthConfig from './google-integrations-auth-config';
 export * as googleIntegrationsClient from './google-integrations-client';
 export * as googleKmsCryptoKey from './google-kms-crypto-key';
 export * as googleKmsCryptoKeyIamBinding from './google-kms-crypto-key-iam-binding';
@@ -674,6 +678,7 @@ export * as googleNetappVolume from './google-netapp-volume';
 export * as googleNetappVolumeReplication from './google-netapp-volume-replication';
 export * as googleNetappVolumeSnapshot from './google-netapp-volume-snapshot';
 export * as googleNetworkConnectivityHub from './google-network-connectivity-hub';
+export * as googleNetworkConnectivityInternalRange from './google-network-connectivity-internal-range';
 export * as googleNetworkConnectivityPolicyBasedRoute from './google-network-connectivity-policy-based-route';
 export * as googleNetworkConnectivityServiceConnectionPolicy from './google-network-connectivity-service-connection-policy';
 export * as googleNetworkConnectivitySpoke from './google-network-connectivity-spoke';
@@ -1167,6 +1172,7 @@ export * as dataGoogleStorageBucket from './data-google-storage-bucket';
 export * as dataGoogleStorageBucketIamPolicy from './data-google-storage-bucket-iam-policy';
 export * as dataGoogleStorageBucketObject from './data-google-storage-bucket-object';
 export * as dataGoogleStorageBucketObjectContent from './data-google-storage-bucket-object-content';
+export * as dataGoogleStorageBucketObjects from './data-google-storage-bucket-objects';
 export * as dataGoogleStorageObjectSignedUrl from './data-google-storage-object-signed-url';
 export * as dataGoogleStorageProjectServiceAccount from './data-google-storage-project-service-account';
 export * as dataGoogleStorageTransferProjectServiceAccount from './data-google-storage-transfer-project-service-account';
