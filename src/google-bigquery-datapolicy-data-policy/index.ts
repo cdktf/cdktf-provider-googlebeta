@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleBigqueryDatapolicyDataPolicyConfig extends cdktf.Terrafor
   /**
   * User-assigned (human readable) ID of the data policy that needs to be unique within a project. Used as {dataPolicyId} in part of the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicy#data_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicy#data_policy_id}
   */
   readonly dataPolicyId: string;
   /**
   * The enrollment level of the service. Possible values: ["COLUMN_LEVEL_SECURITY_POLICY", "DATA_MASKING_POLICY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#data_policy_type GoogleBigqueryDatapolicyDataPolicy#data_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#data_policy_type GoogleBigqueryDatapolicyDataPolicy#data_policy_type}
   */
   readonly dataPolicyType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#id GoogleBigqueryDatapolicyDataPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#id GoogleBigqueryDatapolicyDataPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,29 +29,29 @@ export interface GoogleBigqueryDatapolicyDataPolicyConfig extends cdktf.Terrafor
   /**
   * The name of the location of the data policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#location GoogleBigqueryDatapolicyDataPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#location GoogleBigqueryDatapolicyDataPolicy#location}
   */
   readonly location: string;
   /**
   * Policy tag resource name, in the format of projects/{project_number}/locations/{locationId}/taxonomies/{taxonomyId}/policyTags/{policyTag_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#policy_tag GoogleBigqueryDatapolicyDataPolicy#policy_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#policy_tag GoogleBigqueryDatapolicyDataPolicy#policy_tag}
   */
   readonly policyTag: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#project GoogleBigqueryDatapolicyDataPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#project GoogleBigqueryDatapolicyDataPolicy#project}
   */
   readonly project?: string;
   /**
   * data_masking_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#data_masking_policy GoogleBigqueryDatapolicyDataPolicy#data_masking_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#data_masking_policy GoogleBigqueryDatapolicyDataPolicy#data_masking_policy}
   */
   readonly dataMaskingPolicy?: GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#timeouts GoogleBigqueryDatapolicyDataPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#timeouts GoogleBigqueryDatapolicyDataPolicy#timeouts}
   */
   readonly timeouts?: GoogleBigqueryDatapolicyDataPolicyTimeouts;
 }
@@ -64,9 +59,15 @@ export interface GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy {
   /**
   * The available masking rules. Learn more here: https://cloud.google.com/bigquery/docs/column-data-masking-intro#masking_options. Possible values: ["SHA256", "ALWAYS_NULL", "DEFAULT_MASKING_VALUE", "LAST_FOUR_CHARACTERS", "FIRST_FOUR_CHARACTERS", "EMAIL_MASK", "DATE_YEAR_MASK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#predefined_expression GoogleBigqueryDatapolicyDataPolicy#predefined_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#predefined_expression GoogleBigqueryDatapolicyDataPolicy#predefined_expression}
   */
-  readonly predefinedExpression: string;
+  readonly predefinedExpression?: string;
+  /**
+  * The name of the BigQuery routine that contains the custom masking routine, in the format of projects/{projectNumber}/datasets/{dataset_id}/routines/{routine_id}.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#routine GoogleBigqueryDatapolicyDataPolicy#routine}
+  */
+  readonly routine?: string;
 }
 
 export function googleBigqueryDatapolicyDataPolicyDataMaskingPolicyToTerraform(struct?: GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference | GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy): any {
@@ -76,6 +77,7 @@ export function googleBigqueryDatapolicyDataPolicyDataMaskingPolicyToTerraform(s
   }
   return {
     predefined_expression: cdktf.stringToTerraform(struct!.predefinedExpression),
+    routine: cdktf.stringToTerraform(struct!.routine),
   }
 }
 
@@ -88,6 +90,12 @@ export function googleBigqueryDatapolicyDataPolicyDataMaskingPolicyToHclTerrafor
   const attrs = {
     predefined_expression: {
       value: cdktf.stringToHclTerraform(struct!.predefinedExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routine: {
+      value: cdktf.stringToHclTerraform(struct!.routine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,6 +124,10 @@ export class GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference 
       hasAnyValues = true;
       internalValueResult.predefinedExpression = this._predefinedExpression;
     }
+    if (this._routine !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routine = this._routine;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -123,14 +135,16 @@ export class GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._predefinedExpression = undefined;
+      this._routine = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedExpression = value.predefinedExpression;
+      this._routine = value.routine;
     }
   }
 
-  // predefined_expression - computed: false, optional: false, required: true
+  // predefined_expression - computed: false, optional: true, required: false
   private _predefinedExpression?: string; 
   public get predefinedExpression() {
     return this.getStringAttribute('predefined_expression');
@@ -138,22 +152,41 @@ export class GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference 
   public set predefinedExpression(value: string) {
     this._predefinedExpression = value;
   }
+  public resetPredefinedExpression() {
+    this._predefinedExpression = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get predefinedExpressionInput() {
     return this._predefinedExpression;
   }
+
+  // routine - computed: false, optional: true, required: false
+  private _routine?: string; 
+  public get routine() {
+    return this.getStringAttribute('routine');
+  }
+  public set routine(value: string) {
+    this._routine = value;
+  }
+  public resetRoutine() {
+    this._routine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routineInput() {
+    return this._routine;
+  }
 }
 export interface GoogleBigqueryDatapolicyDataPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#create GoogleBigqueryDatapolicyDataPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#create GoogleBigqueryDatapolicyDataPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#delete GoogleBigqueryDatapolicyDataPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#delete GoogleBigqueryDatapolicyDataPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#update GoogleBigqueryDatapolicyDataPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#update GoogleBigqueryDatapolicyDataPolicy#update}
   */
   readonly update?: string;
 }
@@ -305,7 +338,7 @@ export class GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy}
 */
 export class GoogleBigqueryDatapolicyDataPolicy extends cdktf.TerraformResource {
 
@@ -321,7 +354,7 @@ export class GoogleBigqueryDatapolicyDataPolicy extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a GoogleBigqueryDatapolicyDataPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigqueryDatapolicyDataPolicy to import
-  * @param importFromId The id of the existing GoogleBigqueryDatapolicyDataPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigqueryDatapolicyDataPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigqueryDatapolicyDataPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -333,7 +366,7 @@ export class GoogleBigqueryDatapolicyDataPolicy extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +377,7 @@ export class GoogleBigqueryDatapolicyDataPolicy extends cdktf.TerraformResource 
       terraformResourceType: 'google_bigquery_datapolicy_data_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
