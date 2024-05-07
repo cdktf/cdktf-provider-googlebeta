@@ -743,6 +743,7 @@ export * as googlePrivatecaCertificateTemplate from './google-privateca-certific
 export * as googlePrivatecaCertificateTemplateIamBinding from './google-privateca-certificate-template-iam-binding';
 export * as googlePrivatecaCertificateTemplateIamMember from './google-privateca-certificate-template-iam-member';
 export * as googlePrivatecaCertificateTemplateIamPolicy from './google-privateca-certificate-template-iam-policy';
+export * as googlePrivilegedAccessManagerEntitlement from './google-privileged-access-manager-entitlement';
 export * as googleProject from './google-project';
 export * as googleProjectAccessApprovalSettings from './google-project-access-approval-settings';
 export * as googleProjectDefaultServiceAccounts from './google-project-default-service-accounts';
@@ -1173,6 +1174,7 @@ export * as dataGoogleStorageBucketIamPolicy from './data-google-storage-bucket-
 export * as dataGoogleStorageBucketObject from './data-google-storage-bucket-object';
 export * as dataGoogleStorageBucketObjectContent from './data-google-storage-bucket-object-content';
 export * as dataGoogleStorageBucketObjects from './data-google-storage-bucket-objects';
+export * as dataGoogleStorageBuckets from './data-google-storage-buckets';
 export * as dataGoogleStorageObjectSignedUrl from './data-google-storage-object-signed-url';
 export * as dataGoogleStorageProjectServiceAccount from './data-google-storage-project-service-account';
 export * as dataGoogleStorageTransferProjectServiceAccount from './data-google-storage-transfer-project-service-account';

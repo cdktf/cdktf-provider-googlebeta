@@ -743,6 +743,7 @@ Object.defineProperty(exports, 'googlePrivatecaCertificateTemplate', { get: func
 Object.defineProperty(exports, 'googlePrivatecaCertificateTemplateIamBinding', { get: function () { return require('./google-privateca-certificate-template-iam-binding'); } });
 Object.defineProperty(exports, 'googlePrivatecaCertificateTemplateIamMember', { get: function () { return require('./google-privateca-certificate-template-iam-member'); } });
 Object.defineProperty(exports, 'googlePrivatecaCertificateTemplateIamPolicy', { get: function () { return require('./google-privateca-certificate-template-iam-policy'); } });
+Object.defineProperty(exports, 'googlePrivilegedAccessManagerEntitlement', { get: function () { return require('./google-privileged-access-manager-entitlement'); } });
 Object.defineProperty(exports, 'googleProject', { get: function () { return require('./google-project'); } });
 Object.defineProperty(exports, 'googleProjectAccessApprovalSettings', { get: function () { return require('./google-project-access-approval-settings'); } });
 Object.defineProperty(exports, 'googleProjectDefaultServiceAccounts', { get: function () { return require('./google-project-default-service-accounts'); } });
@@ -1173,6 +1174,7 @@ Object.defineProperty(exports, 'dataGoogleStorageBucketIamPolicy', { get: functi
 Object.defineProperty(exports, 'dataGoogleStorageBucketObject', { get: function () { return require('./data-google-storage-bucket-object'); } });
 Object.defineProperty(exports, 'dataGoogleStorageBucketObjectContent', { get: function () { return require('./data-google-storage-bucket-object-content'); } });
 Object.defineProperty(exports, 'dataGoogleStorageBucketObjects', { get: function () { return require('./data-google-storage-bucket-objects'); } });
+Object.defineProperty(exports, 'dataGoogleStorageBuckets', { get: function () { return require('./data-google-storage-buckets'); } });
 Object.defineProperty(exports, 'dataGoogleStorageObjectSignedUrl', { get: function () { return require('./data-google-storage-object-signed-url'); } });
 Object.defineProperty(exports, 'dataGoogleStorageProjectServiceAccount', { get: function () { return require('./data-google-storage-project-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleStorageTransferProjectServiceAccount', { get: function () { return require('./data-google-storage-transfer-project-service-account'); } });
