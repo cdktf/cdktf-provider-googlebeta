@@ -4,7 +4,7 @@
 
 ### GoogleIntegrationsClient <a name="GoogleIntegrationsClient" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client google_integrations_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client google_integrations_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer"></a>
 
@@ -23,6 +23,7 @@ googleIntegrationsClient.GoogleIntegrationsClient(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   location: str,
   cloud_kms_config: GoogleIntegrationsClientCloudKmsConfig = None,
+  create_sample_integrations: typing.Union[bool, IResolvable] = None,
   create_sample_workflows: typing.Union[bool, IResolvable] = None,
   id: str = None,
   project: str = None,
@@ -45,9 +46,10 @@ googleIntegrationsClient.GoogleIntegrationsClient(
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.location">location</a></code> | <code>str</code> | Location in which client needs to be provisioned. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.cloudKmsConfig">cloud_kms_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfig">GoogleIntegrationsClientCloudKmsConfig</a></code> | cloud_kms_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.createSampleIntegrations">create_sample_integrations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if sample integrations should be created along with provisioning. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.createSampleWorkflows">create_sample_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if sample workflow should be created along with provisioning. |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.provisionGmek">provision_gmek</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates provision with GMEK or CMEK. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.runAsServiceAccount">run_as_service_account</a></code> | <code>str</code> | User input run-as service account, if empty, will bring up a new default service account. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts">GoogleIntegrationsClientTimeouts</a></code> | timeouts block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Location in which client needs to be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#location GoogleIntegrationsClient#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#location GoogleIntegrationsClient#location}
 
 ---
 
@@ -130,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_kms_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#cloud_kms_config GoogleIntegrationsClient#cloud_kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#cloud_kms_config GoogleIntegrationsClient#cloud_kms_config}
+
+---
+
+##### `create_sample_integrations`<sup>Optional</sup> <a name="create_sample_integrations" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.Initializer.parameter.createSampleIntegrations"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates if sample integrations should be created along with provisioning.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create_sample_integrations GoogleIntegrationsClient#create_sample_integrations}
 
 ---
 
@@ -140,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates if sample workflow should be created along with provisioning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#create_sample_workflows GoogleIntegrationsClient#create_sample_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create_sample_workflows GoogleIntegrationsClient#create_sample_workflows}
 
 ---
 
@@ -148,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}.
 
 ---
 
@@ -169,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates provision with GMEK or CMEK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#provision_gmek GoogleIntegrationsClient#provision_gmek}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#provision_gmek GoogleIntegrationsClient#provision_gmek}
 
 ---
 
@@ -179,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User input run-as service account, if empty, will bring up a new default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#run_as_service_account GoogleIntegrationsClient#run_as_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#run_as_service_account GoogleIntegrationsClient#run_as_service_account}
 
 ---
 
@@ -189,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#timeouts GoogleIntegrationsClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#timeouts GoogleIntegrationsClient#timeouts}
 
 ---
 
@@ -223,6 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.putCloudKmsConfig">put_cloud_kms_config</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetCloudKmsConfig">reset_cloud_kms_config</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetCreateSampleIntegrations">reset_create_sample_integrations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetCreateSampleWorkflows">reset_create_sample_workflows</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetProject">reset_project</a></code> | *No description.* |
@@ -578,7 +591,7 @@ A Cloud KMS key is a named object containing one or more key versions, along wit
 A key exists on exactly one key ring tied to a
 specific location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#key GoogleIntegrationsClient#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#key GoogleIntegrationsClient#key}
 
 ---
 
@@ -588,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Location name of the key ring, e.g. "us-west1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_location GoogleIntegrationsClient#kms_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_location GoogleIntegrationsClient#kms_location}
 
 ---
 
@@ -601,7 +614,7 @@ A key ring organizes keys in a specific Google Cloud location and allows you to 
 A key ring's name does not need to be
 unique across a Google Cloud project, but must be unique within a given location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_ring GoogleIntegrationsClient#kms_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_ring GoogleIntegrationsClient#kms_ring}
 
 ---
 
@@ -615,7 +628,7 @@ A key's version is represented by an integer, starting at 1. To decrypt data
 or verify a signature, you must use the same key version that was used to
 encrypt or sign the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#key_version GoogleIntegrationsClient#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#key_version GoogleIntegrationsClient#key_version}
 
 ---
 
@@ -630,7 +643,7 @@ the kms key is stored at the same project as customer's project and ecrypted
 with CMEK, otherwise, the kms key is stored in the tenant project and
 encrypted with GMEK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_project_id GoogleIntegrationsClient#kms_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_project_id GoogleIntegrationsClient#kms_project_id}
 
 ---
 
@@ -647,7 +660,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}.
 
 ---
 
@@ -655,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}.
 
 ---
 
@@ -663,6 +676,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_cloud_kms_config() -> None
+```
+
+##### `reset_create_sample_integrations` <a name="reset_create_sample_integrations" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetCreateSampleIntegrations"></a>
+
+```python
+def reset_create_sample_integrations() -> None
 ```
 
 ##### `reset_create_sample_workflows` <a name="reset_create_sample_workflows" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.resetCreateSampleWorkflows"></a>
@@ -815,7 +834,7 @@ The construct id used in the generated config for the GoogleIntegrationsClient t
 
 The id of the existing GoogleIntegrationsClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,6 +867,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.cloudKmsConfig">cloud_kms_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfigOutputReference">GoogleIntegrationsClientCloudKmsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeoutsOutputReference">GoogleIntegrationsClientTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.cloudKmsConfigInput">cloud_kms_config_input</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfig">GoogleIntegrationsClientCloudKmsConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleIntegrationsInput">create_sample_integrations_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleWorkflowsInput">create_sample_workflows_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -855,6 +875,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.provisionGmekInput">provision_gmek_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.runAsServiceAccountInput">run_as_service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts">GoogleIntegrationsClientTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleIntegrations">create_sample_integrations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleWorkflows">create_sample_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -1036,6 +1057,16 @@ cloud_kms_config_input: GoogleIntegrationsClientCloudKmsConfig
 
 ---
 
+##### `create_sample_integrations_input`<sup>Optional</sup> <a name="create_sample_integrations_input" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleIntegrationsInput"></a>
+
+```python
+create_sample_integrations_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `create_sample_workflows_input`<sup>Optional</sup> <a name="create_sample_workflows_input" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleWorkflowsInput"></a>
 
 ```python
@@ -1103,6 +1134,16 @@ timeouts_input: typing.Union[IResolvable, GoogleIntegrationsClientTimeouts]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts">GoogleIntegrationsClientTimeouts</a>]
+
+---
+
+##### `create_sample_integrations`<sup>Required</sup> <a name="create_sample_integrations" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClient.property.createSampleIntegrations"></a>
+
+```python
+create_sample_integrations: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1227,7 +1268,7 @@ A Cloud KMS key is a named object containing one or more key versions, along wit
 A key exists on exactly one key ring tied to a
 specific location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#key GoogleIntegrationsClient#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#key GoogleIntegrationsClient#key}
 
 ---
 
@@ -1241,7 +1282,7 @@ kms_location: str
 
 Location name of the key ring, e.g. "us-west1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_location GoogleIntegrationsClient#kms_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_location GoogleIntegrationsClient#kms_location}
 
 ---
 
@@ -1258,7 +1299,7 @@ A key ring organizes keys in a specific Google Cloud location and allows you to 
 A key ring's name does not need to be
 unique across a Google Cloud project, but must be unique within a given location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_ring GoogleIntegrationsClient#kms_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_ring GoogleIntegrationsClient#kms_ring}
 
 ---
 
@@ -1276,7 +1317,7 @@ A key's version is represented by an integer, starting at 1. To decrypt data
 or verify a signature, you must use the same key version that was used to
 encrypt or sign the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#key_version GoogleIntegrationsClient#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#key_version GoogleIntegrationsClient#key_version}
 
 ---
 
@@ -1295,7 +1336,7 @@ the kms key is stored at the same project as customer's project and ecrypted
 with CMEK, otherwise, the kms key is stored in the tenant project and
 encrypted with GMEK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#kms_project_id GoogleIntegrationsClient#kms_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#kms_project_id GoogleIntegrationsClient#kms_project_id}
 
 ---
 
@@ -1316,6 +1357,7 @@ googleIntegrationsClient.GoogleIntegrationsClientConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   location: str,
   cloud_kms_config: GoogleIntegrationsClientCloudKmsConfig = None,
+  create_sample_integrations: typing.Union[bool, IResolvable] = None,
   create_sample_workflows: typing.Union[bool, IResolvable] = None,
   id: str = None,
   project: str = None,
@@ -1338,9 +1380,10 @@ googleIntegrationsClient.GoogleIntegrationsClientConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.location">location</a></code> | <code>str</code> | Location in which client needs to be provisioned. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.cloudKmsConfig">cloud_kms_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientCloudKmsConfig">GoogleIntegrationsClientCloudKmsConfig</a></code> | cloud_kms_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.createSampleIntegrations">create_sample_integrations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if sample integrations should be created along with provisioning. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.createSampleWorkflows">create_sample_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if sample workflow should be created along with provisioning. |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.provisionGmek">provision_gmek</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates provision with GMEK or CMEK. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.runAsServiceAccount">run_as_service_account</a></code> | <code>str</code> | User input run-as service account, if empty, will bring up a new default service account. |
 | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts">GoogleIntegrationsClientTimeouts</a></code> | timeouts block. |
@@ -1427,7 +1470,7 @@ location: str
 
 Location in which client needs to be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#location GoogleIntegrationsClient#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#location GoogleIntegrationsClient#location}
 
 ---
 
@@ -1441,7 +1484,21 @@ cloud_kms_config: GoogleIntegrationsClientCloudKmsConfig
 
 cloud_kms_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#cloud_kms_config GoogleIntegrationsClient#cloud_kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#cloud_kms_config GoogleIntegrationsClient#cloud_kms_config}
+
+---
+
+##### `create_sample_integrations`<sup>Optional</sup> <a name="create_sample_integrations" id="@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientConfig.property.createSampleIntegrations"></a>
+
+```python
+create_sample_integrations: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates if sample integrations should be created along with provisioning.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create_sample_integrations GoogleIntegrationsClient#create_sample_integrations}
 
 ---
 
@@ -1455,7 +1512,7 @@ create_sample_workflows: typing.Union[bool, IResolvable]
 
 Indicates if sample workflow should be created along with provisioning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#create_sample_workflows GoogleIntegrationsClient#create_sample_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create_sample_workflows GoogleIntegrationsClient#create_sample_workflows}
 
 ---
 
@@ -1467,7 +1524,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#id GoogleIntegrationsClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1482,7 +1539,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#project GoogleIntegrationsClient#project}.
 
 ---
 
@@ -1496,7 +1553,7 @@ provision_gmek: typing.Union[bool, IResolvable]
 
 Indicates provision with GMEK or CMEK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#provision_gmek GoogleIntegrationsClient#provision_gmek}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#provision_gmek GoogleIntegrationsClient#provision_gmek}
 
 ---
 
@@ -1510,7 +1567,7 @@ run_as_service_account: str
 
 User input run-as service account, if empty, will bring up a new default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#run_as_service_account GoogleIntegrationsClient#run_as_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#run_as_service_account GoogleIntegrationsClient#run_as_service_account}
 
 ---
 
@@ -1524,7 +1581,7 @@ timeouts: GoogleIntegrationsClientTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#timeouts GoogleIntegrationsClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#timeouts GoogleIntegrationsClient#timeouts}
 
 ---
 
@@ -1545,8 +1602,8 @@ googleIntegrationsClient.GoogleIntegrationsClientTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIntegrationsClient.GoogleIntegrationsClientTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}. |
 
 ---
 
@@ -1558,7 +1615,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#create GoogleIntegrationsClient#create}.
 
 ---
 
@@ -1570,7 +1627,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_integrations_client#delete GoogleIntegrationsClient#delete}.
 
 ---
 
