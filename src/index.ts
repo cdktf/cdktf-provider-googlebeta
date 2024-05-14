@@ -121,6 +121,7 @@ export * as googleBigqueryTableIamBinding from './google-bigquery-table-iam-bind
 export * as googleBigqueryTableIamMember from './google-bigquery-table-iam-member';
 export * as googleBigqueryTableIamPolicy from './google-bigquery-table-iam-policy';
 export * as googleBigtableAppProfile from './google-bigtable-app-profile';
+export * as googleBigtableAuthorizedView from './google-bigtable-authorized-view';
 export * as googleBigtableGcPolicy from './google-bigtable-gc-policy';
 export * as googleBigtableInstance from './google-bigtable-instance';
 export * as googleBigtableInstanceIamBinding from './google-bigtable-instance-iam-binding';
@@ -623,6 +624,7 @@ export * as googleIdentityPlatformTenantInboundSamlConfig from './google-identit
 export * as googleIdentityPlatformTenantOauthIdpConfig from './google-identity-platform-tenant-oauth-idp-config';
 export * as googleIntegrationConnectorsConnection from './google-integration-connectors-connection';
 export * as googleIntegrationConnectorsEndpointAttachment from './google-integration-connectors-endpoint-attachment';
+export * as googleIntegrationConnectorsManagedZone from './google-integration-connectors-managed-zone';
 export * as googleIntegrationsAuthConfig from './google-integrations-auth-config';
 export * as googleIntegrationsClient from './google-integrations-client';
 export * as googleKmsCryptoKey from './google-kms-crypto-key';
@@ -680,6 +682,7 @@ export * as googleNetappVolumeSnapshot from './google-netapp-volume-snapshot';
 export * as googleNetworkConnectivityHub from './google-network-connectivity-hub';
 export * as googleNetworkConnectivityInternalRange from './google-network-connectivity-internal-range';
 export * as googleNetworkConnectivityPolicyBasedRoute from './google-network-connectivity-policy-based-route';
+export * as googleNetworkConnectivityRegionalEndpoint from './google-network-connectivity-regional-endpoint';
 export * as googleNetworkConnectivityServiceConnectionPolicy from './google-network-connectivity-service-connection-policy';
 export * as googleNetworkConnectivitySpoke from './google-network-connectivity-spoke';
 export * as googleNetworkManagementConnectivityTest from './google-network-management-connectivity-test';

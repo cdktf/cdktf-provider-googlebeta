@@ -2526,6 +2526,11 @@ export class DataGoogleContainerClusterDnsConfigOutputReference extends cdktf.Co
     }
   }
 
+  // additive_vpc_scope_dns_domain - computed: true, optional: false, required: false
+  public get additiveVpcScopeDnsDomain() {
+    return this.getStringAttribute('additive_vpc_scope_dns_domain');
+  }
+
   // cluster_dns - computed: true, optional: false, required: false
   public get clusterDns() {
     return this.getStringAttribute('cluster_dns');
@@ -4409,6 +4414,11 @@ export class DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputRe
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // enable_nested_virtualization - computed: true, optional: false, required: false
+  public get enableNestedVirtualization() {
+    return this.getBooleanAttribute('enable_nested_virtualization');
   }
 
   // threads_per_core - computed: true, optional: false, required: false
@@ -7126,6 +7136,11 @@ export class DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // enable_nested_virtualization - computed: true, optional: false, required: false
+  public get enableNestedVirtualization() {
+    return this.getBooleanAttribute('enable_nested_virtualization');
   }
 
   // threads_per_core - computed: true, optional: false, required: false
