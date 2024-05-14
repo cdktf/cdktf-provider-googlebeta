@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,17 +13,17 @@ export interface GoogleClouddeployCustomTargetTypeConfig extends cdktf.Terraform
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#annotations GoogleClouddeployCustomTargetType#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#annotations GoogleClouddeployCustomTargetType#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Description of the 'CustomTargetType'. Max length is 255 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#description GoogleClouddeployCustomTargetType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#description GoogleClouddeployCustomTargetType#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#id GoogleClouddeployCustomTargetType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#id GoogleClouddeployCustomTargetType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,35 +35,35 @@ export interface GoogleClouddeployCustomTargetTypeConfig extends cdktf.Terraform
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#labels GoogleClouddeployCustomTargetType#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#labels GoogleClouddeployCustomTargetType#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#location GoogleClouddeployCustomTargetType#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#location GoogleClouddeployCustomTargetType#location}
   */
   readonly location: string;
   /**
   * Name of the 'CustomTargetType'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#name GoogleClouddeployCustomTargetType#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#name GoogleClouddeployCustomTargetType#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#project GoogleClouddeployCustomTargetType#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#project GoogleClouddeployCustomTargetType#project}
   */
   readonly project?: string;
   /**
   * custom_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#custom_actions GoogleClouddeployCustomTargetType#custom_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#custom_actions GoogleClouddeployCustomTargetType#custom_actions}
   */
   readonly customActions?: GoogleClouddeployCustomTargetTypeCustomActions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#timeouts GoogleClouddeployCustomTargetType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#timeouts GoogleClouddeployCustomTargetType#timeouts}
   */
   readonly timeouts?: GoogleClouddeployCustomTargetTypeTimeouts;
 }
@@ -76,19 +71,19 @@ export interface GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldMo
   /**
   * Relative path from the repository root to the Skaffold file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#path GoogleClouddeployCustomTargetType#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#path GoogleClouddeployCustomTargetType#path}
   */
   readonly path?: string;
   /**
   * Git ref the package should be cloned from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#ref GoogleClouddeployCustomTargetType#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#ref GoogleClouddeployCustomTargetType#ref}
   */
   readonly ref?: string;
   /**
   * Git repository the package should be cloned from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#repo GoogleClouddeployCustomTargetType#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#repo GoogleClouddeployCustomTargetType#repo}
   */
   readonly repo: string;
 }
@@ -225,17 +220,170 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
     return this._repo;
   }
 }
+export interface GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo {
+  /**
+  * Relative path from the repository root to the Skaffold file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#path GoogleClouddeployCustomTargetType#path}
+  */
+  readonly path?: string;
+  /**
+  * Branch or tag to use when cloning the repository.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#ref GoogleClouddeployCustomTargetType#ref}
+  */
+  readonly ref?: string;
+  /**
+  * Cloud Build 2nd gen repository in the format of 'projects/<project>/locations/<location>/connections/<connection>/repositories/<repository>'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#repository GoogleClouddeployCustomTargetType#repository}
+  */
+  readonly repository: string;
+}
+
+export function googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoToTerraform(struct?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference | GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+    ref: cdktf.stringToTerraform(struct!.ref),
+    repository: cdktf.stringToTerraform(struct!.repository),
+  }
+}
+
+
+export function googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoToHclTerraform(struct?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference | GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ref: {
+      value: cdktf.stringToHclTerraform(struct!.ref),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._ref !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ref = this._ref;
+    }
+    if (this._repository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repository = this._repository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+      this._ref = undefined;
+      this._repository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+      this._ref = value.ref;
+      this._repository = value.repository;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // ref - computed: false, optional: true, required: false
+  private _ref?: string; 
+  public get ref() {
+    return this.getStringAttribute('ref');
+  }
+  public set ref(value: string) {
+    this._ref = value;
+  }
+  public resetRef() {
+    this._ref = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refInput() {
+    return this._ref;
+  }
+
+  // repository - computed: false, optional: false, required: true
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
+  }
+}
 export interface GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage {
   /**
   * Relative path from the source to the Skaffold file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#path GoogleClouddeployCustomTargetType#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#path GoogleClouddeployCustomTargetType#path}
   */
   readonly path?: string;
   /**
   * Cloud Storage source paths to copy recursively. For example, providing 'gs://my-bucket/dir/configs/*' will result in Skaffold copying all files within the 'dir/configs' directory in the bucket 'my-bucket'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#source GoogleClouddeployCustomTargetType#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#source GoogleClouddeployCustomTargetType#source}
   */
   readonly source: string;
 }
@@ -347,19 +495,25 @@ export interface GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldMo
   /**
   * The Skaffold Config modules to use from the specified source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#configs GoogleClouddeployCustomTargetType#configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#configs GoogleClouddeployCustomTargetType#configs}
   */
   readonly configs?: string[];
   /**
   * git block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#git GoogleClouddeployCustomTargetType#git}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#git GoogleClouddeployCustomTargetType#git}
   */
   readonly git?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit;
   /**
+  * google_cloud_build_repo block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#google_cloud_build_repo GoogleClouddeployCustomTargetType#google_cloud_build_repo}
+  */
+  readonly googleCloudBuildRepo?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo;
+  /**
   * google_cloud_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#google_cloud_storage GoogleClouddeployCustomTargetType#google_cloud_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#google_cloud_storage GoogleClouddeployCustomTargetType#google_cloud_storage}
   */
   readonly googleCloudStorage?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage;
 }
@@ -372,6 +526,7 @@ export function googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldMod
   return {
     configs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.configs),
     git: googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitToTerraform(struct!.git),
+    google_cloud_build_repo: googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoToTerraform(struct!.googleCloudBuildRepo),
     google_cloud_storage: googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageToTerraform(struct!.googleCloudStorage),
   }
 }
@@ -394,6 +549,12 @@ export function googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldMod
       isBlock: true,
       type: "list",
       storageClassType: "GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitList",
+    },
+    google_cloud_build_repo: {
+      value: googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoToHclTerraform(struct!.googleCloudBuildRepo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoList",
     },
     google_cloud_storage: {
       value: googleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageToHclTerraform(struct!.googleCloudStorage),
@@ -435,6 +596,10 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
       hasAnyValues = true;
       internalValueResult.git = this._git?.internalValue;
     }
+    if (this._googleCloudBuildRepo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleCloudBuildRepo = this._googleCloudBuildRepo?.internalValue;
+    }
     if (this._googleCloudStorage?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.googleCloudStorage = this._googleCloudStorage?.internalValue;
@@ -448,6 +613,7 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
       this.resolvableValue = undefined;
       this._configs = undefined;
       this._git.internalValue = undefined;
+      this._googleCloudBuildRepo.internalValue = undefined;
       this._googleCloudStorage.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -459,6 +625,7 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
       this.resolvableValue = undefined;
       this._configs = value.configs;
       this._git.internalValue = value.git;
+      this._googleCloudBuildRepo.internalValue = value.googleCloudBuildRepo;
       this._googleCloudStorage.internalValue = value.googleCloudStorage;
     }
   }
@@ -493,6 +660,22 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
   // Temporarily expose input value. Use with caution.
   public get gitInput() {
     return this._git.internalValue;
+  }
+
+  // google_cloud_build_repo - computed: false, optional: true, required: false
+  private _googleCloudBuildRepo = new GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference(this, "google_cloud_build_repo");
+  public get googleCloudBuildRepo() {
+    return this._googleCloudBuildRepo;
+  }
+  public putGoogleCloudBuildRepo(value: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo) {
+    this._googleCloudBuildRepo.internalValue = value;
+  }
+  public resetGoogleCloudBuildRepo() {
+    this._googleCloudBuildRepo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleCloudBuildRepoInput() {
+    return this._googleCloudBuildRepo.internalValue;
   }
 
   // google_cloud_storage - computed: false, optional: true, required: false
@@ -535,19 +718,19 @@ export interface GoogleClouddeployCustomTargetTypeCustomActions {
   /**
   * The Skaffold custom action responsible for deploy operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#deploy_action GoogleClouddeployCustomTargetType#deploy_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#deploy_action GoogleClouddeployCustomTargetType#deploy_action}
   */
   readonly deployAction: string;
   /**
   * The Skaffold custom action responsible for render operations. If not provided then Cloud Deploy will perform the render operations via 'skaffold render'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#render_action GoogleClouddeployCustomTargetType#render_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#render_action GoogleClouddeployCustomTargetType#render_action}
   */
   readonly renderAction?: string;
   /**
   * include_skaffold_modules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#include_skaffold_modules GoogleClouddeployCustomTargetType#include_skaffold_modules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#include_skaffold_modules GoogleClouddeployCustomTargetType#include_skaffold_modules}
   */
   readonly includeSkaffoldModules?: GoogleClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules[] | cdktf.IResolvable;
 }
@@ -686,15 +869,15 @@ export class GoogleClouddeployCustomTargetTypeCustomActionsOutputReference exten
 }
 export interface GoogleClouddeployCustomTargetTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#create GoogleClouddeployCustomTargetType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#create GoogleClouddeployCustomTargetType#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#delete GoogleClouddeployCustomTargetType#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#delete GoogleClouddeployCustomTargetType#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#update GoogleClouddeployCustomTargetType#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#update GoogleClouddeployCustomTargetType#update}
   */
   readonly update?: string;
 }
@@ -846,7 +1029,7 @@ export class GoogleClouddeployCustomTargetTypeTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}
 */
 export class GoogleClouddeployCustomTargetType extends cdktf.TerraformResource {
 
@@ -862,7 +1045,7 @@ export class GoogleClouddeployCustomTargetType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleClouddeployCustomTargetType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleClouddeployCustomTargetType to import
-  * @param importFromId The id of the existing GoogleClouddeployCustomTargetType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleClouddeployCustomTargetType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleClouddeployCustomTargetType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -874,7 +1057,7 @@ export class GoogleClouddeployCustomTargetType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -885,7 +1068,7 @@ export class GoogleClouddeployCustomTargetType extends cdktf.TerraformResource {
       terraformResourceType: 'google_clouddeploy_custom_target_type',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

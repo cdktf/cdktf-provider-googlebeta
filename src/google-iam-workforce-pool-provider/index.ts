@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -33,7 +28,7 @@ export interface GoogleIamWorkforcePoolProviderConfig extends cdktf.TerraformMet
   * "'admins' in google.groups"
   * ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#attribute_condition GoogleIamWorkforcePoolProvider#attribute_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#attribute_condition GoogleIamWorkforcePoolProvider#attribute_condition}
   */
   readonly attributeCondition?: string;
   /**
@@ -89,30 +84,30 @@ export interface GoogleIamWorkforcePoolProviderConfig extends cdktf.TerraformMet
   * An object containing a list of '"key": value' pairs.
   * Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#attribute_mapping GoogleIamWorkforcePoolProvider#attribute_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#attribute_mapping GoogleIamWorkforcePoolProvider#attribute_mapping}
   */
   readonly attributeMapping?: { [key: string]: string };
   /**
   * A user-specified description of the provider. Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#description GoogleIamWorkforcePoolProvider#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#description GoogleIamWorkforcePoolProvider#description}
   */
   readonly description?: string;
   /**
   * Whether the provider is disabled. You cannot use a disabled provider to exchange tokens.
   * However, existing tokens still grant access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#disabled GoogleIamWorkforcePoolProvider#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#disabled GoogleIamWorkforcePoolProvider#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * A user-specified display name for the provider. Cannot exceed 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#display_name GoogleIamWorkforcePoolProvider#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#display_name GoogleIamWorkforcePoolProvider#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#id GoogleIamWorkforcePoolProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#id GoogleIamWorkforcePoolProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +116,7 @@ export interface GoogleIamWorkforcePoolProviderConfig extends cdktf.TerraformMet
   /**
   * The location for the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#location GoogleIamWorkforcePoolProvider#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#location GoogleIamWorkforcePoolProvider#location}
   */
   readonly location: string;
   /**
@@ -129,7 +124,7 @@ export interface GoogleIamWorkforcePoolProviderConfig extends cdktf.TerraformMet
   * This value must be 4-32 characters, and may contain the characters [a-z0-9-].
   * The prefix 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#provider_id GoogleIamWorkforcePoolProvider#provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#provider_id GoogleIamWorkforcePoolProvider#provider_id}
   */
   readonly providerId: string;
   /**
@@ -138,33 +133,519 @@ export interface GoogleIamWorkforcePoolProviderConfig extends cdktf.TerraformMet
   * It must start with a letter, and cannot have a trailing hyphen.
   * The prefix 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#workforce_pool_id GoogleIamWorkforcePoolProvider#workforce_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#workforce_pool_id GoogleIamWorkforcePoolProvider#workforce_pool_id}
   */
   readonly workforcePoolId: string;
   /**
+  * extra_attributes_oauth2_client block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#extra_attributes_oauth2_client GoogleIamWorkforcePoolProvider#extra_attributes_oauth2_client}
+  */
+  readonly extraAttributesOauth2Client?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client;
+  /**
   * oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#oidc GoogleIamWorkforcePoolProvider#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#oidc GoogleIamWorkforcePoolProvider#oidc}
   */
   readonly oidc?: GoogleIamWorkforcePoolProviderOidc;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#saml GoogleIamWorkforcePoolProvider#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#saml GoogleIamWorkforcePoolProvider#saml}
   */
   readonly saml?: GoogleIamWorkforcePoolProviderSaml;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#timeouts GoogleIamWorkforcePoolProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#timeouts GoogleIamWorkforcePoolProvider#timeouts}
   */
   readonly timeouts?: GoogleIamWorkforcePoolProviderTimeouts;
+}
+export interface GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue {
+  /**
+  * The plain text of the client secret value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#plain_text GoogleIamWorkforcePoolProvider#plain_text}
+  */
+  readonly plainText: string;
+}
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    plain_text: cdktf.stringToTerraform(struct!.plainText),
+  }
+}
+
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToHclTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    plain_text: {
+      value: cdktf.stringToHclTerraform(struct!.plainText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._plainText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.plainText = this._plainText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._plainText = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._plainText = value.plainText;
+    }
+  }
+
+  // plain_text - computed: false, optional: false, required: true
+  private _plainText?: string; 
+  public get plainText() {
+    return this.getStringAttribute('plain_text');
+  }
+  public set plainText(value: string) {
+    this._plainText = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get plainTextInput() {
+    return this._plainText;
+  }
+
+  // thumbprint - computed: true, optional: false, required: false
+  public get thumbprint() {
+    return this.getStringAttribute('thumbprint');
+  }
+}
+export interface GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret {
+  /**
+  * value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#value GoogleIamWorkforcePoolProvider#value}
+  */
+  readonly value?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue;
+}
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    value: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToTerraform(struct!.value),
+  }
+}
+
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToHclTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToHclTerraform(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._value.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._value.internalValue = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value = new GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference(this, "value");
+  public get value() {
+    return this._value;
+  }
+  public putValue(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue) {
+    this._value.internalValue = value;
+  }
+  public resetValue() {
+    this._value.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value.internalValue;
+  }
+}
+export interface GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters {
+  /**
+  * The filter used to request specific records from IdP. In case of attributes type as AZURE_AD_GROUPS_MAIL, it represents the
+  * filter used to request specific groups for users from IdP. By default, all of the groups associated with the user are fetched. The
+  * groups should be mail enabled and security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more details.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#filter GoogleIamWorkforcePoolProvider#filter}
+  */
+  readonly filter?: string;
+}
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    filter: cdktf.stringToTerraform(struct!.filter),
+  }
+}
+
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToHclTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._filter = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._filter = value.filter;
+    }
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+}
+export interface GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client {
+  /**
+  * Represents the IdP and type of claims that should be fetched.
+  * * AZURE_AD_GROUPS_MAIL: Used to get the user's group claims from the Azure AD identity provider using configuration provided
+  * in ExtraAttributesOAuth2Client and 'mail' property of the 'microsoft.graph.group' object is used for claim mapping.
+  * See https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0#properties for more details on
+  * 'microsoft.graph.group' properties. The attributes obtained from idntity provider are mapped to 'assertion.groups'. Possible values: ["AZURE_AD_GROUPS_MAIL"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#attributes_type GoogleIamWorkforcePoolProvider#attributes_type}
+  */
+  readonly attributesType: string;
+  /**
+  * The OAuth 2.0 client ID for retrieving extra attributes from the identity provider. Required to get the Access Token using client credentials grant flow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#client_id GoogleIamWorkforcePoolProvider#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * The OIDC identity provider's issuer URI. Must be a valid URI using the 'https' scheme. Required to get the OIDC discovery document.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#issuer_uri GoogleIamWorkforcePoolProvider#issuer_uri}
+  */
+  readonly issuerUri: string;
+  /**
+  * client_secret block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#client_secret GoogleIamWorkforcePoolProvider#client_secret}
+  */
+  readonly clientSecret: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret;
+  /**
+  * query_parameters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#query_parameters GoogleIamWorkforcePoolProvider#query_parameters}
+  */
+  readonly queryParameters?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters;
+}
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientToTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attributes_type: cdktf.stringToTerraform(struct!.attributesType),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
+    client_secret: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToTerraform(struct!.clientSecret),
+    query_parameters: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToTerraform(struct!.queryParameters),
+  }
+}
+
+
+export function googleIamWorkforcePoolProviderExtraAttributesOauth2ClientToHclTerraform(struct?: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference | GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attributes_type: {
+      value: cdktf.stringToHclTerraform(struct!.attributesType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer_uri: {
+      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToHclTerraform(struct!.clientSecret),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretList",
+    },
+    query_parameters: {
+      value: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToHclTerraform(struct!.queryParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributesType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributesType = this._attributesType;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._issuerUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.issuerUri = this._issuerUri;
+    }
+    if (this._clientSecret?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret?.internalValue;
+    }
+    if (this._queryParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryParameters = this._queryParameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attributesType = undefined;
+      this._clientId = undefined;
+      this._issuerUri = undefined;
+      this._clientSecret.internalValue = undefined;
+      this._queryParameters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attributesType = value.attributesType;
+      this._clientId = value.clientId;
+      this._issuerUri = value.issuerUri;
+      this._clientSecret.internalValue = value.clientSecret;
+      this._queryParameters.internalValue = value.queryParameters;
+    }
+  }
+
+  // attributes_type - computed: false, optional: false, required: true
+  private _attributesType?: string; 
+  public get attributesType() {
+    return this.getStringAttribute('attributes_type');
+  }
+  public set attributesType(value: string) {
+    this._attributesType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributesTypeInput() {
+    return this._attributesType;
+  }
+
+  // client_id - computed: false, optional: false, required: true
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // issuer_uri - computed: false, optional: false, required: true
+  private _issuerUri?: string; 
+  public get issuerUri() {
+    return this.getStringAttribute('issuer_uri');
+  }
+  public set issuerUri(value: string) {
+    this._issuerUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get issuerUriInput() {
+    return this._issuerUri;
+  }
+
+  // client_secret - computed: false, optional: false, required: true
+  private _clientSecret = new GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference(this, "client_secret");
+  public get clientSecret() {
+    return this._clientSecret;
+  }
+  public putClientSecret(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret) {
+    this._clientSecret.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret.internalValue;
+  }
+
+  // query_parameters - computed: false, optional: true, required: false
+  private _queryParameters = new GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference(this, "query_parameters");
+  public get queryParameters() {
+    return this._queryParameters;
+  }
+  public putQueryParameters(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters) {
+    this._queryParameters.internalValue = value;
+  }
+  public resetQueryParameters() {
+    this._queryParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryParametersInput() {
+    return this._queryParameters.internalValue;
+  }
 }
 export interface GoogleIamWorkforcePoolProviderOidcClientSecretValue {
   /**
   * The plain text of the client secret value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#plain_text GoogleIamWorkforcePoolProvider#plain_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#plain_text GoogleIamWorkforcePoolProvider#plain_text}
   */
   readonly plainText: string;
 }
@@ -252,7 +733,7 @@ export interface GoogleIamWorkforcePoolProviderOidcClientSecret {
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#value GoogleIamWorkforcePoolProvider#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#value GoogleIamWorkforcePoolProvider#value}
   */
   readonly value?: GoogleIamWorkforcePoolProviderOidcClientSecretValue;
 }
@@ -339,7 +820,7 @@ export interface GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
   * Additional scopes to request for in the OIDC authentication request on top of scopes requested by default. By default, the 'openid', 'profile' and 'email' scopes that are supported by the identity provider are requested.
   * Each additional scope may be at most 256 characters. A maximum of 10 additional scopes may be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#additional_scopes GoogleIamWorkforcePoolProvider#additional_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#additional_scopes GoogleIamWorkforcePoolProvider#additional_scopes}
   */
   readonly additionalScopes?: string[];
   /**
@@ -347,7 +828,7 @@ export interface GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
   * * MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS: Merge the UserInfo Endpoint Claims with ID Token Claims, preferring UserInfo Claim Values for the same Claim Name. This option is available only for the Authorization Code Flow.
   * * ONLY_ID_TOKEN_CLAIMS: Only include ID Token Claims. Possible values: ["MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS", "ONLY_ID_TOKEN_CLAIMS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#assertion_claims_behavior GoogleIamWorkforcePoolProvider#assertion_claims_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#assertion_claims_behavior GoogleIamWorkforcePoolProvider#assertion_claims_behavior}
   */
   readonly assertionClaimsBehavior: string;
   /**
@@ -357,7 +838,7 @@ export interface GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
   * * CODE: The 'response_type=code' selection uses the Authorization Code Flow for web sign-in. Requires a configured client secret.
   * * ID_TOKEN: The 'response_type=id_token' selection uses the Implicit Flow for web sign-in. Possible values: ["CODE", "ID_TOKEN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#response_type GoogleIamWorkforcePoolProvider#response_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#response_type GoogleIamWorkforcePoolProvider#response_type}
   */
   readonly responseType: string;
 }
@@ -495,13 +976,13 @@ export interface GoogleIamWorkforcePoolProviderOidc {
   /**
   * The client ID. Must match the audience claim of the JWT issued by the identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#client_id GoogleIamWorkforcePoolProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#client_id GoogleIamWorkforcePoolProvider#client_id}
   */
   readonly clientId: string;
   /**
   * The OIDC issuer URI. Must be a valid URI using the 'https' scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#issuer_uri GoogleIamWorkforcePoolProvider#issuer_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#issuer_uri GoogleIamWorkforcePoolProvider#issuer_uri}
   */
   readonly issuerUri: string;
   /**
@@ -529,19 +1010,19 @@ export interface GoogleIamWorkforcePoolProviderOidc {
   * }
   * ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#jwks_json GoogleIamWorkforcePoolProvider#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#jwks_json GoogleIamWorkforcePoolProvider#jwks_json}
   */
   readonly jwksJson?: string;
   /**
   * client_secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#client_secret GoogleIamWorkforcePoolProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#client_secret GoogleIamWorkforcePoolProvider#client_secret}
   */
   readonly clientSecret?: GoogleIamWorkforcePoolProviderOidcClientSecret;
   /**
   * web_sso_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#web_sso_config GoogleIamWorkforcePoolProvider#web_sso_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#web_sso_config GoogleIamWorkforcePoolProvider#web_sso_config}
   */
   readonly webSsoConfig?: GoogleIamWorkforcePoolProviderOidcWebSsoConfig;
 }
@@ -751,7 +1232,7 @@ export interface GoogleIamWorkforcePoolProviderSaml {
   * must overlap with the existing metadata. This requirement is skipped if there are
   * no non-expired signing keys present in the existing metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#idp_metadata_xml GoogleIamWorkforcePoolProvider#idp_metadata_xml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#idp_metadata_xml GoogleIamWorkforcePoolProvider#idp_metadata_xml}
   */
   readonly idpMetadataXml: string;
 }
@@ -832,15 +1313,15 @@ export class GoogleIamWorkforcePoolProviderSamlOutputReference extends cdktf.Com
 }
 export interface GoogleIamWorkforcePoolProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#create GoogleIamWorkforcePoolProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#create GoogleIamWorkforcePoolProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#delete GoogleIamWorkforcePoolProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#delete GoogleIamWorkforcePoolProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#update GoogleIamWorkforcePoolProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#update GoogleIamWorkforcePoolProvider#update}
   */
   readonly update?: string;
 }
@@ -992,7 +1473,7 @@ export class GoogleIamWorkforcePoolProviderTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider}
 */
 export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
 
@@ -1008,7 +1489,7 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIamWorkforcePoolProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIamWorkforcePoolProvider to import
-  * @param importFromId The id of the existing GoogleIamWorkforcePoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIamWorkforcePoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIamWorkforcePoolProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1020,7 +1501,7 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.28.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1031,7 +1512,7 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
       terraformResourceType: 'google_iam_workforce_pool_provider',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.28.0',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1051,6 +1532,7 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
     this._location = config.location;
     this._providerId = config.providerId;
     this._workforcePoolId = config.workforcePoolId;
+    this._extraAttributesOauth2Client.internalValue = config.extraAttributesOauth2Client;
     this._oidc.internalValue = config.oidc;
     this._saml.internalValue = config.saml;
     this._timeouts.internalValue = config.timeouts;
@@ -1205,6 +1687,22 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
     return this._workforcePoolId;
   }
 
+  // extra_attributes_oauth2_client - computed: false, optional: true, required: false
+  private _extraAttributesOauth2Client = new GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference(this, "extra_attributes_oauth2_client");
+  public get extraAttributesOauth2Client() {
+    return this._extraAttributesOauth2Client;
+  }
+  public putExtraAttributesOauth2Client(value: GoogleIamWorkforcePoolProviderExtraAttributesOauth2Client) {
+    this._extraAttributesOauth2Client.internalValue = value;
+  }
+  public resetExtraAttributesOauth2Client() {
+    this._extraAttributesOauth2Client.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraAttributesOauth2ClientInput() {
+    return this._extraAttributesOauth2Client.internalValue;
+  }
+
   // oidc - computed: false, optional: true, required: false
   private _oidc = new GoogleIamWorkforcePoolProviderOidcOutputReference(this, "oidc");
   public get oidc() {
@@ -1268,6 +1766,7 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       provider_id: cdktf.stringToTerraform(this._providerId),
       workforce_pool_id: cdktf.stringToTerraform(this._workforcePoolId),
+      extra_attributes_oauth2_client: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientToTerraform(this._extraAttributesOauth2Client.internalValue),
       oidc: googleIamWorkforcePoolProviderOidcToTerraform(this._oidc.internalValue),
       saml: googleIamWorkforcePoolProviderSamlToTerraform(this._saml.internalValue),
       timeouts: googleIamWorkforcePoolProviderTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1329,6 +1828,12 @@ export class GoogleIamWorkforcePoolProvider extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      extra_attributes_oauth2_client: {
+        value: googleIamWorkforcePoolProviderExtraAttributesOauth2ClientToHclTerraform(this._extraAttributesOauth2Client.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleIamWorkforcePoolProviderExtraAttributesOauth2ClientList",
       },
       oidc: {
         value: googleIamWorkforcePoolProviderOidcToHclTerraform(this._oidc.internalValue),
