@@ -12,13 +12,13 @@ export interface GoogleContainerClusterProtectConfig {
   /**
   * Sets which mode to use for Protect workload vulnerability scanning feature. Accepted values are DISABLED, BASIC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#workload_vulnerability_mode GoogleContainerCluster#workload_vulnerability_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#workload_vulnerability_mode GoogleContainerCluster#workload_vulnerability_mode}
   */
   readonly workloadVulnerabilityMode?: string;
   /**
   * workload_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#workload_config GoogleContainerCluster#workload_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#workload_config GoogleContainerCluster#workload_config}
   */
   readonly workloadConfig?: GoogleContainerClusterProtectConfigWorkloadConfig;
 }
@@ -137,7 +137,7 @@ export interface GoogleContainerClusterReleaseChannel {
   * * REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel.
   * * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#channel GoogleContainerCluster#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#channel GoogleContainerCluster#channel}
   */
   readonly channel: string;
 }
@@ -220,7 +220,7 @@ export interface GoogleContainerClusterResourceUsageExportConfigBigqueryDestinat
   /**
   * The ID of a BigQuery Dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#dataset_id GoogleContainerCluster#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#dataset_id GoogleContainerCluster#dataset_id}
   */
   readonly datasetId: string;
 }
@@ -303,19 +303,19 @@ export interface GoogleContainerClusterResourceUsageExportConfig {
   /**
   * Whether to enable network egress metering for this cluster. If enabled, a daemonset will be created in the cluster to meter network egress traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enable_network_egress_metering GoogleContainerCluster#enable_network_egress_metering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enable_network_egress_metering GoogleContainerCluster#enable_network_egress_metering}
   */
   readonly enableNetworkEgressMetering?: boolean | cdktf.IResolvable;
   /**
   * Whether to enable resource consumption metering on this cluster. When enabled, a table will be created in the resource export BigQuery dataset to store resource consumption data. The resulting table can be joined with the resource usage table or with BigQuery billing export. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enable_resource_consumption_metering GoogleContainerCluster#enable_resource_consumption_metering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enable_resource_consumption_metering GoogleContainerCluster#enable_resource_consumption_metering}
   */
   readonly enableResourceConsumptionMetering?: boolean | cdktf.IResolvable;
   /**
   * bigquery_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#bigquery_destination GoogleContainerCluster#bigquery_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#bigquery_destination GoogleContainerCluster#bigquery_destination}
   */
   readonly bigqueryDestination: GoogleContainerClusterResourceUsageExportConfigBigqueryDestination;
 }
@@ -456,13 +456,13 @@ export interface GoogleContainerClusterSecurityPostureConfig {
   /**
   * Sets the mode of the Kubernetes security posture API's off-cluster features. Available options include DISABLED and BASIC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
   */
   readonly mode?: string;
   /**
   * Sets the mode of the Kubernetes security posture API's workload vulnerability scanning. Available options include VULNERABILITY_DISABLED, VULNERABILITY_BASIC and VULNERABILITY_ENTERPRISE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#vulnerability_mode GoogleContainerCluster#vulnerability_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#vulnerability_mode GoogleContainerCluster#vulnerability_mode}
   */
   readonly vulnerabilityMode?: string;
 }
@@ -577,7 +577,7 @@ export interface GoogleContainerClusterServiceExternalIpsConfig {
   /**
   * When enabled, services with external ips specified will be allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -658,19 +658,19 @@ export class GoogleContainerClusterServiceExternalIpsConfigOutputReference exten
 }
 export interface GoogleContainerClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#create GoogleContainerCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#create GoogleContainerCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#delete GoogleContainerCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#delete GoogleContainerCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#read GoogleContainerCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#read GoogleContainerCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#update GoogleContainerCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#update GoogleContainerCluster#update}
   */
   readonly update?: string;
 }
@@ -853,13 +853,13 @@ export interface GoogleContainerClusterTpuConfig {
   /**
   * Whether Cloud TPU integration is enabled or not
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Whether to use service networking for Cloud TPU or not
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#use_service_networking GoogleContainerCluster#use_service_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#use_service_networking GoogleContainerCluster#use_service_networking}
   */
   readonly useServiceNetworking?: boolean | cdktf.IResolvable;
 }
@@ -976,7 +976,7 @@ export interface GoogleContainerClusterVerticalPodAutoscaling {
   /**
   * Enables vertical pod autoscaling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1059,7 +1059,7 @@ export interface GoogleContainerClusterWorkloadAltsConfig {
   /**
   * Whether the alts handshaker should be enabled or not for direct-path. Requires Workload Identity (workloadPool must be non-empty).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#enable_alts GoogleContainerCluster#enable_alts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#enable_alts GoogleContainerCluster#enable_alts}
   */
   readonly enableAlts: boolean | cdktf.IResolvable;
 }
@@ -1142,7 +1142,7 @@ export interface GoogleContainerClusterWorkloadIdentityConfig {
   /**
   * The workload pool to attach all Kubernetes service accounts to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.0/docs/resources/google_container_cluster#workload_pool GoogleContainerCluster#workload_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_container_cluster#workload_pool GoogleContainerCluster#workload_pool}
   */
   readonly workloadPool?: string;
 }
