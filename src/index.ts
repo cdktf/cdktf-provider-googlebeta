@@ -255,6 +255,7 @@ export * as googleComputeInstanceIamMember from './google-compute-instance-iam-m
 export * as googleComputeInstanceIamPolicy from './google-compute-instance-iam-policy';
 export * as googleComputeInstanceSettings from './google-compute-instance-settings';
 export * as googleComputeInstanceTemplate from './google-compute-instance-template';
+export * as googleComputeInterconnect from './google-compute-interconnect';
 export * as googleComputeInterconnectAttachment from './google-compute-interconnect-attachment';
 export * as googleComputeMachineImage from './google-compute-machine-image';
 export * as googleComputeMachineImageIamBinding from './google-compute-machine-image-iam-binding';
@@ -708,6 +709,7 @@ export * as googleNetworkServicesEndpointPolicy from './google-network-services-
 export * as googleNetworkServicesGateway from './google-network-services-gateway';
 export * as googleNetworkServicesGrpcRoute from './google-network-services-grpc-route';
 export * as googleNetworkServicesHttpRoute from './google-network-services-http-route';
+export * as googleNetworkServicesLbTrafficExtension from './google-network-services-lb-traffic-extension';
 export * as googleNetworkServicesMesh from './google-network-services-mesh';
 export * as googleNetworkServicesServiceBinding from './google-network-services-service-binding';
 export * as googleNetworkServicesTcpRoute from './google-network-services-tcp-route';
@@ -953,6 +955,7 @@ export * as dataGoogleCertificateManagerCertificateMap from './data-google-certi
 export * as dataGoogleClientConfig from './data-google-client-config';
 export * as dataGoogleClientOpenidUserinfo from './data-google-client-openid-userinfo';
 export * as dataGoogleCloudAssetResourcesSearchAll from './data-google-cloud-asset-resources-search-all';
+export * as dataGoogleCloudAssetSearchAllResources from './data-google-cloud-asset-search-all-resources';
 export * as dataGoogleCloudIdentityGroupLookup from './data-google-cloud-identity-group-lookup';
 export * as dataGoogleCloudIdentityGroupMemberships from './data-google-cloud-identity-group-memberships';
 export * as dataGoogleCloudIdentityGroups from './data-google-cloud-identity-groups';
