@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,23 +11,23 @@ export interface GoogleDatastreamStreamConfig extends cdktf.TerraformMetaArgumen
   * A reference to a KMS encryption key. If provided, it will be used to encrypt the data. If left blank, data
   * will be encrypted using an internal Stream-specific encryption key provisioned through KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#customer_managed_encryption_key GoogleDatastreamStream#customer_managed_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#customer_managed_encryption_key GoogleDatastreamStream#customer_managed_encryption_key}
   */
   readonly customerManagedEncryptionKey?: string;
   /**
   * Desired state of the Stream. Set this field to 'RUNNING' to start the stream, and 'PAUSED' to pause the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#desired_state GoogleDatastreamStream#desired_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#desired_state GoogleDatastreamStream#desired_state}
   */
   readonly desiredState?: string;
   /**
   * Display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#display_name GoogleDatastreamStream#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#display_name GoogleDatastreamStream#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#id GoogleDatastreamStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#id GoogleDatastreamStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,53 +39,53 @@ export interface GoogleDatastreamStreamConfig extends cdktf.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#labels GoogleDatastreamStream#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#labels GoogleDatastreamStream#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this stream is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#location GoogleDatastreamStream#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#location GoogleDatastreamStream#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#project GoogleDatastreamStream#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#project GoogleDatastreamStream#project}
   */
   readonly project?: string;
   /**
   * The stream identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#stream_id GoogleDatastreamStream#stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#stream_id GoogleDatastreamStream#stream_id}
   */
   readonly streamId: string;
   /**
   * backfill_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#backfill_all GoogleDatastreamStream#backfill_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#backfill_all GoogleDatastreamStream#backfill_all}
   */
   readonly backfillAll?: GoogleDatastreamStreamBackfillAll;
   /**
   * backfill_none block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#backfill_none GoogleDatastreamStream#backfill_none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#backfill_none GoogleDatastreamStream#backfill_none}
   */
   readonly backfillNone?: GoogleDatastreamStreamBackfillNone;
   /**
   * destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#destination_config GoogleDatastreamStream#destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#destination_config GoogleDatastreamStream#destination_config}
   */
   readonly destinationConfig: GoogleDatastreamStreamDestinationConfig;
   /**
   * source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#source_config GoogleDatastreamStream#source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#source_config GoogleDatastreamStream#source_config}
   */
   readonly sourceConfig: GoogleDatastreamStreamSourceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#timeouts GoogleDatastreamStream#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#timeouts GoogleDatastreamStream#timeouts}
   */
   readonly timeouts?: GoogleDatastreamStreamTimeouts;
 }
@@ -98,38 +93,38 @@ export interface GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatab
   /**
   * Column collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
   */
   readonly collation?: string;
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The MySQL data type. Full data types list can be found here:
   * https://dev.mysql.com/doc/refman/8.0/en/data-types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -397,13 +392,13 @@ export interface GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatab
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * mysql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
   */
   readonly mysqlColumns?: GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns[] | cdktf.IResolvable;
 }
@@ -547,13 +542,13 @@ export interface GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatab
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
   */
   readonly database: string;
   /**
   * mysql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
   */
   readonly mysqlTables?: GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables[] | cdktf.IResolvable;
 }
@@ -697,7 +692,7 @@ export interface GoogleDatastreamStreamBackfillAllMysqlExcludedObjects {
   /**
   * mysql_databases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
   */
   readonly mysqlDatabases: GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases[] | cdktf.IResolvable;
 }
@@ -780,14 +775,14 @@ export interface GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSch
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The Oracle data type. Full data types list can be found here:
   * https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Data-Types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
 }
@@ -969,13 +964,13 @@ export interface GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSch
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * oracle_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
   */
   readonly oracleColumns?: GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns[] | cdktf.IResolvable;
 }
@@ -1119,13 +1114,13 @@ export interface GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSch
   /**
   * Schema name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * oracle_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
   */
   readonly oracleTables?: GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables[] | cdktf.IResolvable;
 }
@@ -1269,7 +1264,7 @@ export interface GoogleDatastreamStreamBackfillAllOracleExcludedObjects {
   /**
   * oracle_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
   */
   readonly oracleSchemas: GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas[] | cdktf.IResolvable;
 }
@@ -1352,32 +1347,32 @@ export interface GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostg
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The PostgreSQL data type. Full data types list can be found here:
   * https://www.postgresql.org/docs/current/datatype.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -1626,13 +1621,13 @@ export interface GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostg
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * postgresql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
   */
   readonly postgresqlColumns?: GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[] | cdktf.IResolvable;
 }
@@ -1776,13 +1771,13 @@ export interface GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostg
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * postgresql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
   */
   readonly postgresqlTables?: GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables[] | cdktf.IResolvable;
 }
@@ -1926,7 +1921,7 @@ export interface GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects {
   /**
   * postgresql_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
   */
   readonly postgresqlSchemas: GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas[] | cdktf.IResolvable;
 }
@@ -2005,25 +2000,598 @@ export class GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputRef
     return this._postgresqlSchemas.internalValue;
   }
 }
+export interface GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns {
+  /**
+  * Column name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  */
+  readonly column?: string;
+  /**
+  * The SQL Server data type. Full data types list can be found here:
+  * https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  */
+  readonly dataType?: string;
+}
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsToTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    column: cdktf.stringToTerraform(struct!.column),
+    data_type: cdktf.stringToTerraform(struct!.dataType),
+  }
+}
+
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsToHclTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._column !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.column = this._column;
+    }
+    if (this._dataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataType = this._dataType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._column = undefined;
+      this._dataType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._column = value.column;
+      this._dataType = value.dataType;
+    }
+  }
+
+  // column - computed: false, optional: true, required: false
+  private _column?: string; 
+  public get column() {
+    return this.getStringAttribute('column');
+  }
+  public set column(value: string) {
+    this._column = value;
+  }
+  public resetColumn() {
+    this._column = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnInput() {
+    return this._column;
+  }
+
+  // data_type - computed: false, optional: true, required: false
+  private _dataType?: string; 
+  public get dataType() {
+    return this.getStringAttribute('data_type');
+  }
+  public set dataType(value: string) {
+    this._dataType = value;
+  }
+  public resetDataType() {
+    this._dataType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTypeInput() {
+    return this._dataType;
+  }
+
+  // length - computed: true, optional: false, required: false
+  public get length() {
+    return this.getNumberAttribute('length');
+  }
+
+  // nullable - computed: true, optional: false, required: false
+  public get nullable() {
+    return this.getBooleanAttribute('nullable');
+  }
+
+  // ordinal_position - computed: true, optional: false, required: false
+  public get ordinalPosition() {
+    return this.getNumberAttribute('ordinal_position');
+  }
+
+  // precision - computed: true, optional: false, required: false
+  public get precision() {
+    return this.getNumberAttribute('precision');
+  }
+
+  // primary_key - computed: true, optional: false, required: false
+  public get primaryKey() {
+    return this.getBooleanAttribute('primary_key');
+  }
+
+  // scale - computed: true, optional: false, required: false
+  public get scale() {
+    return this.getNumberAttribute('scale');
+  }
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference {
+    return new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables {
+  /**
+  * Table name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  */
+  readonly table: string;
+  /**
+  * columns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#columns GoogleDatastreamStream#columns}
+  */
+  readonly columns?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesToTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    table: cdktf.stringToTerraform(struct!.table),
+    columns: cdktf.listMapper(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsToTerraform, true)(struct!.columns),
+  }
+}
+
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesToHclTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    table: {
+      value: cdktf.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    columns: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._columns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columns = this._columns?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._table = undefined;
+      this._columns.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._table = value.table;
+      this._columns.internalValue = value.columns;
+    }
+  }
+
+  // table - computed: false, optional: false, required: true
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // columns - computed: false, optional: true, required: false
+  private _columns = new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList(this, "columns", false);
+  public get columns() {
+    return this._columns;
+  }
+  public putColumns(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[] | cdktf.IResolvable) {
+    this._columns.internalValue = value;
+  }
+  public resetColumns() {
+    this._columns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference {
+    return new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas {
+  /**
+  * Schema name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  */
+  readonly schema: string;
+  /**
+  * tables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#tables GoogleDatastreamStream#tables}
+  */
+  readonly tables?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasToTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schema: cdktf.stringToTerraform(struct!.schema),
+    tables: cdktf.listMapper(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesToTerraform, true)(struct!.tables),
+  }
+}
+
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasToHclTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tables: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesToHclTerraform, true)(struct!.tables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._tables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tables = this._tables?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._schema = undefined;
+      this._tables.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._schema = value.schema;
+      this._tables.internalValue = value.tables;
+    }
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // tables - computed: false, optional: true, required: false
+  private _tables = new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList(this, "tables", false);
+  public get tables() {
+    return this._tables;
+  }
+  public putTables(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[] | cdktf.IResolvable) {
+    this._tables.internalValue = value;
+  }
+  public resetTables() {
+    this._tables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablesInput() {
+    return this._tables.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference {
+    return new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects {
+  /**
+  * schemas block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schemas GoogleDatastreamStream#schemas}
+  */
+  readonly schemas: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsToTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference | GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schemas: cdktf.listMapper(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasToTerraform, true)(struct!.schemas),
+  }
+}
+
+
+export function googleDatastreamStreamBackfillAllSqlServerExcludedObjectsToHclTerraform(struct?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference | GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schemas: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasToHclTerraform, true)(struct!.schemas),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schemas?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemas = this._schemas?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._schemas.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._schemas.internalValue = value.schemas;
+    }
+  }
+
+  // schemas - computed: false, optional: false, required: true
+  private _schemas = new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList(this, "schemas", false);
+  public get schemas() {
+    return this._schemas;
+  }
+  public putSchemas(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[] | cdktf.IResolvable) {
+    this._schemas.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemasInput() {
+    return this._schemas.internalValue;
+  }
+}
 export interface GoogleDatastreamStreamBackfillAll {
   /**
   * mysql_excluded_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_excluded_objects GoogleDatastreamStream#mysql_excluded_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_excluded_objects GoogleDatastreamStream#mysql_excluded_objects}
   */
   readonly mysqlExcludedObjects?: GoogleDatastreamStreamBackfillAllMysqlExcludedObjects;
   /**
   * oracle_excluded_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_excluded_objects GoogleDatastreamStream#oracle_excluded_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_excluded_objects GoogleDatastreamStream#oracle_excluded_objects}
   */
   readonly oracleExcludedObjects?: GoogleDatastreamStreamBackfillAllOracleExcludedObjects;
   /**
   * postgresql_excluded_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_excluded_objects GoogleDatastreamStream#postgresql_excluded_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_excluded_objects GoogleDatastreamStream#postgresql_excluded_objects}
   */
   readonly postgresqlExcludedObjects?: GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjects;
+  /**
+  * sql_server_excluded_objects block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#sql_server_excluded_objects GoogleDatastreamStream#sql_server_excluded_objects}
+  */
+  readonly sqlServerExcludedObjects?: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects;
 }
 
 export function googleDatastreamStreamBackfillAllToTerraform(struct?: GoogleDatastreamStreamBackfillAllOutputReference | GoogleDatastreamStreamBackfillAll): any {
@@ -2035,6 +2603,7 @@ export function googleDatastreamStreamBackfillAllToTerraform(struct?: GoogleData
     mysql_excluded_objects: googleDatastreamStreamBackfillAllMysqlExcludedObjectsToTerraform(struct!.mysqlExcludedObjects),
     oracle_excluded_objects: googleDatastreamStreamBackfillAllOracleExcludedObjectsToTerraform(struct!.oracleExcludedObjects),
     postgresql_excluded_objects: googleDatastreamStreamBackfillAllPostgresqlExcludedObjectsToTerraform(struct!.postgresqlExcludedObjects),
+    sql_server_excluded_objects: googleDatastreamStreamBackfillAllSqlServerExcludedObjectsToTerraform(struct!.sqlServerExcludedObjects),
   }
 }
 
@@ -2062,6 +2631,12 @@ export function googleDatastreamStreamBackfillAllToHclTerraform(struct?: GoogleD
       isBlock: true,
       type: "list",
       storageClassType: "GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsList",
+    },
+    sql_server_excluded_objects: {
+      value: googleDatastreamStreamBackfillAllSqlServerExcludedObjectsToHclTerraform(struct!.sqlServerExcludedObjects),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsList",
     },
   };
 
@@ -2095,6 +2670,10 @@ export class GoogleDatastreamStreamBackfillAllOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.postgresqlExcludedObjects = this._postgresqlExcludedObjects?.internalValue;
     }
+    if (this._sqlServerExcludedObjects?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sqlServerExcludedObjects = this._sqlServerExcludedObjects?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2104,12 +2683,14 @@ export class GoogleDatastreamStreamBackfillAllOutputReference extends cdktf.Comp
       this._mysqlExcludedObjects.internalValue = undefined;
       this._oracleExcludedObjects.internalValue = undefined;
       this._postgresqlExcludedObjects.internalValue = undefined;
+      this._sqlServerExcludedObjects.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._mysqlExcludedObjects.internalValue = value.mysqlExcludedObjects;
       this._oracleExcludedObjects.internalValue = value.oracleExcludedObjects;
       this._postgresqlExcludedObjects.internalValue = value.postgresqlExcludedObjects;
+      this._sqlServerExcludedObjects.internalValue = value.sqlServerExcludedObjects;
     }
   }
 
@@ -2159,6 +2740,22 @@ export class GoogleDatastreamStreamBackfillAllOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get postgresqlExcludedObjectsInput() {
     return this._postgresqlExcludedObjects.internalValue;
+  }
+
+  // sql_server_excluded_objects - computed: false, optional: true, required: false
+  private _sqlServerExcludedObjects = new GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference(this, "sql_server_excluded_objects");
+  public get sqlServerExcludedObjects() {
+    return this._sqlServerExcludedObjects;
+  }
+  public putSqlServerExcludedObjects(value: GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects) {
+    this._sqlServerExcludedObjects.internalValue = value;
+  }
+  public resetSqlServerExcludedObjects() {
+    this._sqlServerExcludedObjects.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlServerExcludedObjectsInput() {
+    return this._sqlServerExcludedObjects.internalValue;
   }
 }
 export interface GoogleDatastreamStreamBackfillNone {
@@ -2215,7 +2812,7 @@ export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfi
   * Dataset ID in the format projects/{project}/datasets/{dataset_id} or
   * {project}:{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#dataset_id GoogleDatastreamStream#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#dataset_id GoogleDatastreamStream#dataset_id}
   */
   readonly datasetId: string;
 }
@@ -2299,7 +2896,7 @@ export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfi
   * If supplied, every created dataset will have its name prefixed by the provided value.
   * The prefix and name will be separated by an underscore. i.e. _.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#dataset_id_prefix GoogleDatastreamStream#dataset_id_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#dataset_id_prefix GoogleDatastreamStream#dataset_id_prefix}
   */
   readonly datasetIdPrefix?: string;
   /**
@@ -2308,14 +2905,14 @@ export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfi
   * encryption key. i.e. projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{cryptoKey}.
   * See https://cloud.google.com/bigquery/docs/customer-managed-encryption for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#kms_key_name GoogleDatastreamStream#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#kms_key_name GoogleDatastreamStream#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The geographic location where the dataset should reside.
   * See https://cloud.google.com/bigquery/docs/locations for supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#location GoogleDatastreamStream#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#location GoogleDatastreamStream#location}
   */
   readonly location: string;
 }
@@ -2456,7 +3053,7 @@ export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfi
   /**
   * dataset_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#dataset_template GoogleDatastreamStream#dataset_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#dataset_template GoogleDatastreamStream#dataset_template}
   */
   readonly datasetTemplate: GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate;
 }
@@ -2542,19 +3139,19 @@ export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfi
   * will not be impacted. Lower values mean that queries will return fresher data, but may result in higher cost.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". Defaults to 900s.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_freshness GoogleDatastreamStream#data_freshness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_freshness GoogleDatastreamStream#data_freshness}
   */
   readonly dataFreshness?: string;
   /**
   * single_target_dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#single_target_dataset GoogleDatastreamStream#single_target_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#single_target_dataset GoogleDatastreamStream#single_target_dataset}
   */
   readonly singleTargetDataset?: GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset;
   /**
   * source_hierarchy_datasets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#source_hierarchy_datasets GoogleDatastreamStream#source_hierarchy_datasets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#source_hierarchy_datasets GoogleDatastreamStream#source_hierarchy_datasets}
   */
   readonly sourceHierarchyDatasets?: GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets;
 }
@@ -2747,13 +3344,13 @@ export interface GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJson
   /**
   * Compression of the loaded JSON file. Possible values: ["NO_COMPRESSION", "GZIP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#compression GoogleDatastreamStream#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#compression GoogleDatastreamStream#compression}
   */
   readonly compression?: string;
   /**
   * The schema file format along JSON data files. Possible values: ["NO_SCHEMA_FILE", "AVRO_SCHEMA_FILE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema_file_format GoogleDatastreamStream#schema_file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema_file_format GoogleDatastreamStream#schema_file_format}
   */
   readonly schemaFileFormat?: string;
 }
@@ -2869,31 +3466,31 @@ export interface GoogleDatastreamStreamDestinationConfigGcsDestinationConfig {
   * The maximum duration for which new events are added before a file is closed and a new file is created.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". Defaults to 900s.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#file_rotation_interval GoogleDatastreamStream#file_rotation_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#file_rotation_interval GoogleDatastreamStream#file_rotation_interval}
   */
   readonly fileRotationInterval?: string;
   /**
   * The maximum file size to be saved in the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#file_rotation_mb GoogleDatastreamStream#file_rotation_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#file_rotation_mb GoogleDatastreamStream#file_rotation_mb}
   */
   readonly fileRotationMb?: number;
   /**
   * Path inside the Cloud Storage bucket to write data to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#path GoogleDatastreamStream#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#path GoogleDatastreamStream#path}
   */
   readonly path?: string;
   /**
   * avro_file_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#avro_file_format GoogleDatastreamStream#avro_file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#avro_file_format GoogleDatastreamStream#avro_file_format}
   */
   readonly avroFileFormat?: GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat;
   /**
   * json_file_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#json_file_format GoogleDatastreamStream#json_file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#json_file_format GoogleDatastreamStream#json_file_format}
   */
   readonly jsonFileFormat?: GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat;
 }
@@ -3095,19 +3692,19 @@ export interface GoogleDatastreamStreamDestinationConfig {
   /**
   * Destination connection profile resource. Format: projects/{project}/locations/{location}/connectionProfiles/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#destination_connection_profile GoogleDatastreamStream#destination_connection_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#destination_connection_profile GoogleDatastreamStream#destination_connection_profile}
   */
   readonly destinationConnectionProfile: string;
   /**
   * bigquery_destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#bigquery_destination_config GoogleDatastreamStream#bigquery_destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#bigquery_destination_config GoogleDatastreamStream#bigquery_destination_config}
   */
   readonly bigqueryDestinationConfig?: GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfig;
   /**
   * gcs_destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#gcs_destination_config GoogleDatastreamStream#gcs_destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#gcs_destination_config GoogleDatastreamStream#gcs_destination_config}
   */
   readonly gcsDestinationConfig?: GoogleDatastreamStreamDestinationConfigGcsDestinationConfig;
 }
@@ -3248,38 +3845,38 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjec
   /**
   * Column collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
   */
   readonly collation?: string;
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The MySQL data type. Full data types list can be found here:
   * https://dev.mysql.com/doc/refman/8.0/en/data-types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -3547,13 +4144,13 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjec
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * mysql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
   */
   readonly mysqlColumns?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[] | cdktf.IResolvable;
 }
@@ -3697,13 +4294,13 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjec
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
   */
   readonly database: string;
   /**
   * mysql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
   */
   readonly mysqlTables?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables[] | cdktf.IResolvable;
 }
@@ -3847,7 +4444,7 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjec
   /**
   * mysql_databases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
   */
   readonly mysqlDatabases: GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases[] | cdktf.IResolvable;
 }
@@ -3930,38 +4527,38 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjec
   /**
   * Column collation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#collation GoogleDatastreamStream#collation}
   */
   readonly collation?: string;
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The MySQL data type. Full data types list can be found here:
   * https://dev.mysql.com/doc/refman/8.0/en/data-types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -4229,13 +4826,13 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjec
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * mysql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_columns GoogleDatastreamStream#mysql_columns}
   */
   readonly mysqlColumns?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[] | cdktf.IResolvable;
 }
@@ -4379,13 +4976,13 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjec
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#database GoogleDatastreamStream#database}
   */
   readonly database: string;
   /**
   * mysql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
   */
   readonly mysqlTables?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables[] | cdktf.IResolvable;
 }
@@ -4529,7 +5126,7 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjec
   /**
   * mysql_databases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
   */
   readonly mysqlDatabases: GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases[] | cdktf.IResolvable;
 }
@@ -4613,26 +5210,26 @@ export interface GoogleDatastreamStreamSourceConfigMysqlSourceConfig {
   * Maximum number of concurrent backfill tasks. The number should be non negative.
   * If not set (or set to 0), the system's default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
   */
   readonly maxConcurrentBackfillTasks?: number;
   /**
   * Maximum number of concurrent CDC tasks. The number should be non negative.
   * If not set (or set to 0), the system's default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#max_concurrent_cdc_tasks GoogleDatastreamStream#max_concurrent_cdc_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_cdc_tasks GoogleDatastreamStream#max_concurrent_cdc_tasks}
   */
   readonly maxConcurrentCdcTasks?: number;
   /**
   * exclude_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
   */
   readonly excludeObjects?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects;
   /**
   * include_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
   */
   readonly includeObjects?: GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects;
 }
@@ -4854,14 +5451,14 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObje
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The Oracle data type. Full data types list can be found here:
   * https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Data-Types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
 }
@@ -5043,13 +5640,13 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObje
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * oracle_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
   */
   readonly oracleColumns?: GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns[] | cdktf.IResolvable;
 }
@@ -5193,13 +5790,13 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObje
   /**
   * Schema name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * oracle_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
   */
   readonly oracleTables?: GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables[] | cdktf.IResolvable;
 }
@@ -5343,7 +5940,7 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObje
   /**
   * oracle_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
   */
   readonly oracleSchemas: GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas[] | cdktf.IResolvable;
 }
@@ -5426,14 +6023,14 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObje
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The Oracle data type. Full data types list can be found here:
   * https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Data-Types.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
 }
@@ -5615,13 +6212,13 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObje
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * oracle_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_columns GoogleDatastreamStream#oracle_columns}
   */
   readonly oracleColumns?: GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns[] | cdktf.IResolvable;
 }
@@ -5765,13 +6362,13 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObje
   /**
   * Schema name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * oracle_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_tables GoogleDatastreamStream#oracle_tables}
   */
   readonly oracleTables?: GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables[] | cdktf.IResolvable;
 }
@@ -5915,7 +6512,7 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObje
   /**
   * oracle_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_schemas GoogleDatastreamStream#oracle_schemas}
   */
   readonly oracleSchemas: GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas[] | cdktf.IResolvable;
 }
@@ -6048,38 +6645,38 @@ export interface GoogleDatastreamStreamSourceConfigOracleSourceConfig {
   * Maximum number of concurrent backfill tasks. The number should be non negative.
   * If not set (or set to 0), the system's default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
   */
   readonly maxConcurrentBackfillTasks?: number;
   /**
   * Maximum number of concurrent CDC tasks. The number should be non negative.
   * If not set (or set to 0), the system's default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#max_concurrent_cdc_tasks GoogleDatastreamStream#max_concurrent_cdc_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_cdc_tasks GoogleDatastreamStream#max_concurrent_cdc_tasks}
   */
   readonly maxConcurrentCdcTasks?: number;
   /**
   * drop_large_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#drop_large_objects GoogleDatastreamStream#drop_large_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#drop_large_objects GoogleDatastreamStream#drop_large_objects}
   */
   readonly dropLargeObjects?: GoogleDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects;
   /**
   * exclude_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
   */
   readonly excludeObjects?: GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjects;
   /**
   * include_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
   */
   readonly includeObjects?: GoogleDatastreamStreamSourceConfigOracleSourceConfigIncludeObjects;
   /**
   * stream_large_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#stream_large_objects GoogleDatastreamStream#stream_large_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#stream_large_objects GoogleDatastreamStream#stream_large_objects}
   */
   readonly streamLargeObjects?: GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects;
 }
@@ -6310,32 +6907,32 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExclude
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The PostgreSQL data type. Full data types list can be found here:
   * https://www.postgresql.org/docs/current/datatype.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -6584,13 +7181,13 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExclude
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * postgresql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
   */
   readonly postgresqlColumns?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[] | cdktf.IResolvable;
 }
@@ -6734,13 +7331,13 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExclude
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * postgresql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
   */
   readonly postgresqlTables?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables[] | cdktf.IResolvable;
 }
@@ -6884,7 +7481,7 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExclude
   /**
   * postgresql_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
   */
   readonly postgresqlSchemas: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas[] | cdktf.IResolvable;
 }
@@ -6967,32 +7564,32 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigInclude
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The PostgreSQL data type. Full data types list can be found here:
   * https://www.postgresql.org/docs/current/datatype.html
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
   */
   readonly dataType?: string;
   /**
   * Whether or not the column can accept a null value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#nullable GoogleDatastreamStream#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * The ordinal position of the column in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#ordinal_position GoogleDatastreamStream#ordinal_position}
   */
   readonly ordinalPosition?: number;
   /**
   * Whether or not the column represents a primary key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#primary_key GoogleDatastreamStream#primary_key}
   */
   readonly primaryKey?: boolean | cdktf.IResolvable;
 }
@@ -7241,13 +7838,13 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigInclude
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
   */
   readonly table: string;
   /**
   * postgresql_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_columns GoogleDatastreamStream#postgresql_columns}
   */
   readonly postgresqlColumns?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[] | cdktf.IResolvable;
 }
@@ -7391,13 +7988,13 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigInclude
   /**
   * Database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * postgresql_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
   */
   readonly postgresqlTables?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables[] | cdktf.IResolvable;
 }
@@ -7541,7 +8138,7 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigInclude
   /**
   * postgresql_schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_schemas GoogleDatastreamStream#postgresql_schemas}
   */
   readonly postgresqlSchemas: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas[] | cdktf.IResolvable;
 }
@@ -7625,33 +8222,33 @@ export interface GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig {
   * Maximum number of concurrent backfill tasks. The number should be non
   * negative. If not set (or set to 0), the system's default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
   */
   readonly maxConcurrentBackfillTasks?: number;
   /**
   * The name of the publication that includes the set of all tables
   * that are defined in the stream's include_objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#publication GoogleDatastreamStream#publication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#publication GoogleDatastreamStream#publication}
   */
   readonly publication: string;
   /**
   * The name of the logical replication slot that's configured with
   * the pgoutput plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#replication_slot GoogleDatastreamStream#replication_slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#replication_slot GoogleDatastreamStream#replication_slot}
   */
   readonly replicationSlot: string;
   /**
   * exclude_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
   */
   readonly excludeObjects?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects;
   /**
   * include_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
   */
   readonly includeObjects?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects;
 }
@@ -7843,31 +8440,1362 @@ export class GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigOutputRefer
     return this._includeObjects.internalValue;
   }
 }
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns {
+  /**
+  * Column name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  */
+  readonly column?: string;
+  /**
+  * The SQL Server data type. Full data types list can be found here:
+  * https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  */
+  readonly dataType?: string;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    column: cdktf.stringToTerraform(struct!.column),
+    data_type: cdktf.stringToTerraform(struct!.dataType),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._column !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.column = this._column;
+    }
+    if (this._dataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataType = this._dataType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._column = undefined;
+      this._dataType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._column = value.column;
+      this._dataType = value.dataType;
+    }
+  }
+
+  // column - computed: false, optional: true, required: false
+  private _column?: string; 
+  public get column() {
+    return this.getStringAttribute('column');
+  }
+  public set column(value: string) {
+    this._column = value;
+  }
+  public resetColumn() {
+    this._column = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnInput() {
+    return this._column;
+  }
+
+  // data_type - computed: false, optional: true, required: false
+  private _dataType?: string; 
+  public get dataType() {
+    return this.getStringAttribute('data_type');
+  }
+  public set dataType(value: string) {
+    this._dataType = value;
+  }
+  public resetDataType() {
+    this._dataType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTypeInput() {
+    return this._dataType;
+  }
+
+  // length - computed: true, optional: false, required: false
+  public get length() {
+    return this.getNumberAttribute('length');
+  }
+
+  // nullable - computed: true, optional: false, required: false
+  public get nullable() {
+    return this.getBooleanAttribute('nullable');
+  }
+
+  // ordinal_position - computed: true, optional: false, required: false
+  public get ordinalPosition() {
+    return this.getNumberAttribute('ordinal_position');
+  }
+
+  // precision - computed: true, optional: false, required: false
+  public get precision() {
+    return this.getNumberAttribute('precision');
+  }
+
+  // primary_key - computed: true, optional: false, required: false
+  public get primaryKey() {
+    return this.getBooleanAttribute('primary_key');
+  }
+
+  // scale - computed: true, optional: false, required: false
+  public get scale() {
+    return this.getNumberAttribute('scale');
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables {
+  /**
+  * Table name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  */
+  readonly table: string;
+  /**
+  * columns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#columns GoogleDatastreamStream#columns}
+  */
+  readonly columns?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    table: cdktf.stringToTerraform(struct!.table),
+    columns: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsToTerraform, true)(struct!.columns),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    table: {
+      value: cdktf.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    columns: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._columns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columns = this._columns?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._table = undefined;
+      this._columns.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._table = value.table;
+      this._columns.internalValue = value.columns;
+    }
+  }
+
+  // table - computed: false, optional: false, required: true
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // columns - computed: false, optional: true, required: false
+  private _columns = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList(this, "columns", false);
+  public get columns() {
+    return this._columns;
+  }
+  public putColumns(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[] | cdktf.IResolvable) {
+    this._columns.internalValue = value;
+  }
+  public resetColumns() {
+    this._columns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas {
+  /**
+  * Schema name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  */
+  readonly schema: string;
+  /**
+  * tables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#tables GoogleDatastreamStream#tables}
+  */
+  readonly tables?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schema: cdktf.stringToTerraform(struct!.schema),
+    tables: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesToTerraform, true)(struct!.tables),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tables: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesToHclTerraform, true)(struct!.tables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._tables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tables = this._tables?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._schema = undefined;
+      this._tables.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._schema = value.schema;
+      this._tables.internalValue = value.tables;
+    }
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // tables - computed: false, optional: true, required: false
+  private _tables = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList(this, "tables", false);
+  public get tables() {
+    return this._tables;
+  }
+  public putTables(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[] | cdktf.IResolvable) {
+    this._tables.internalValue = value;
+  }
+  public resetTables() {
+    this._tables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablesInput() {
+    return this._tables.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects {
+  /**
+  * schemas block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schemas GoogleDatastreamStream#schemas}
+  */
+  readonly schemas: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schemas: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasToTerraform, true)(struct!.schemas),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schemas: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasToHclTerraform, true)(struct!.schemas),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schemas?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemas = this._schemas?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._schemas.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._schemas.internalValue = value.schemas;
+    }
+  }
+
+  // schemas - computed: false, optional: false, required: true
+  private _schemas = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList(this, "schemas", false);
+  public get schemas() {
+    return this._schemas;
+  }
+  public putSchemas(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[] | cdktf.IResolvable) {
+    this._schemas.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemasInput() {
+    return this._schemas.internalValue;
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns {
+  /**
+  * Column name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#column GoogleDatastreamStream#column}
+  */
+  readonly column?: string;
+  /**
+  * The SQL Server data type. Full data types list can be found here:
+  * https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#data_type GoogleDatastreamStream#data_type}
+  */
+  readonly dataType?: string;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    column: cdktf.stringToTerraform(struct!.column),
+    data_type: cdktf.stringToTerraform(struct!.dataType),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_type: {
+      value: cdktf.stringToHclTerraform(struct!.dataType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._column !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.column = this._column;
+    }
+    if (this._dataType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataType = this._dataType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._column = undefined;
+      this._dataType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._column = value.column;
+      this._dataType = value.dataType;
+    }
+  }
+
+  // column - computed: false, optional: true, required: false
+  private _column?: string; 
+  public get column() {
+    return this.getStringAttribute('column');
+  }
+  public set column(value: string) {
+    this._column = value;
+  }
+  public resetColumn() {
+    this._column = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnInput() {
+    return this._column;
+  }
+
+  // data_type - computed: false, optional: true, required: false
+  private _dataType?: string; 
+  public get dataType() {
+    return this.getStringAttribute('data_type');
+  }
+  public set dataType(value: string) {
+    this._dataType = value;
+  }
+  public resetDataType() {
+    this._dataType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTypeInput() {
+    return this._dataType;
+  }
+
+  // length - computed: true, optional: false, required: false
+  public get length() {
+    return this.getNumberAttribute('length');
+  }
+
+  // nullable - computed: true, optional: false, required: false
+  public get nullable() {
+    return this.getBooleanAttribute('nullable');
+  }
+
+  // ordinal_position - computed: true, optional: false, required: false
+  public get ordinalPosition() {
+    return this.getNumberAttribute('ordinal_position');
+  }
+
+  // precision - computed: true, optional: false, required: false
+  public get precision() {
+    return this.getNumberAttribute('precision');
+  }
+
+  // primary_key - computed: true, optional: false, required: false
+  public get primaryKey() {
+    return this.getBooleanAttribute('primary_key');
+  }
+
+  // scale - computed: true, optional: false, required: false
+  public get scale() {
+    return this.getNumberAttribute('scale');
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables {
+  /**
+  * Table name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#table GoogleDatastreamStream#table}
+  */
+  readonly table: string;
+  /**
+  * columns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#columns GoogleDatastreamStream#columns}
+  */
+  readonly columns?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    table: cdktf.stringToTerraform(struct!.table),
+    columns: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsToTerraform, true)(struct!.columns),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    table: {
+      value: cdktf.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    columns: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._columns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columns = this._columns?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._table = undefined;
+      this._columns.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._table = value.table;
+      this._columns.internalValue = value.columns;
+    }
+  }
+
+  // table - computed: false, optional: false, required: true
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // columns - computed: false, optional: true, required: false
+  private _columns = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList(this, "columns", false);
+  public get columns() {
+    return this._columns;
+  }
+  public putColumns(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[] | cdktf.IResolvable) {
+    this._columns.internalValue = value;
+  }
+  public resetColumns() {
+    this._columns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas {
+  /**
+  * Schema name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schema GoogleDatastreamStream#schema}
+  */
+  readonly schema: string;
+  /**
+  * tables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#tables GoogleDatastreamStream#tables}
+  */
+  readonly tables?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schema: cdktf.stringToTerraform(struct!.schema),
+    tables: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesToTerraform, true)(struct!.tables),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tables: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesToHclTerraform, true)(struct!.tables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._tables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tables = this._tables?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._schema = undefined;
+      this._tables.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._schema = value.schema;
+      this._tables.internalValue = value.tables;
+    }
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // tables - computed: false, optional: true, required: false
+  private _tables = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList(this, "tables", false);
+  public get tables() {
+    return this._tables;
+  }
+  public putTables(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[] | cdktf.IResolvable) {
+    this._tables.internalValue = value;
+  }
+  public resetTables() {
+    this._tables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablesInput() {
+    return this._tables.internalValue;
+  }
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList extends cdktf.ComplexList {
+  public internalValue? : GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference {
+    return new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects {
+  /**
+  * schemas block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#schemas GoogleDatastreamStream#schemas}
+  */
+  readonly schemas: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[] | cdktf.IResolvable;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schemas: cdktf.listMapper(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasToTerraform, true)(struct!.schemas),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schemas: {
+      value: cdktf.listMapperHcl(googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasToHclTerraform, true)(struct!.schemas),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schemas?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemas = this._schemas?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._schemas.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._schemas.internalValue = value.schemas;
+    }
+  }
+
+  // schemas - computed: false, optional: false, required: true
+  private _schemas = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList(this, "schemas", false);
+  public get schemas() {
+    return this._schemas;
+  }
+  public putSchemas(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[] | cdktf.IResolvable) {
+    this._schemas.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemasInput() {
+    return this._schemas.internalValue;
+  }
+}
+export interface GoogleDatastreamStreamSourceConfigSqlServerSourceConfig {
+  /**
+  * Max concurrent backfill tasks.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_backfill_tasks GoogleDatastreamStream#max_concurrent_backfill_tasks}
+  */
+  readonly maxConcurrentBackfillTasks?: number;
+  /**
+  * Max concurrent CDC tasks.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#max_concurrent_cdc_tasks GoogleDatastreamStream#max_concurrent_cdc_tasks}
+  */
+  readonly maxConcurrentCdcTasks?: number;
+  /**
+  * exclude_objects block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#exclude_objects GoogleDatastreamStream#exclude_objects}
+  */
+  readonly excludeObjects?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects;
+  /**
+  * include_objects block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#include_objects GoogleDatastreamStream#include_objects}
+  */
+  readonly includeObjects?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects;
+}
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigToTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_concurrent_backfill_tasks: cdktf.numberToTerraform(struct!.maxConcurrentBackfillTasks),
+    max_concurrent_cdc_tasks: cdktf.numberToTerraform(struct!.maxConcurrentCdcTasks),
+    exclude_objects: googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsToTerraform(struct!.excludeObjects),
+    include_objects: googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsToTerraform(struct!.includeObjects),
+  }
+}
+
+
+export function googleDatastreamStreamSourceConfigSqlServerSourceConfigToHclTerraform(struct?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference | GoogleDatastreamStreamSourceConfigSqlServerSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_concurrent_backfill_tasks: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentBackfillTasks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_concurrent_cdc_tasks: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentCdcTasks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    exclude_objects: {
+      value: googleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsToHclTerraform(struct!.excludeObjects),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsList",
+    },
+    include_objects: {
+      value: googleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsToHclTerraform(struct!.includeObjects),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamStreamSourceConfigSqlServerSourceConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxConcurrentBackfillTasks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConcurrentBackfillTasks = this._maxConcurrentBackfillTasks;
+    }
+    if (this._maxConcurrentCdcTasks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConcurrentCdcTasks = this._maxConcurrentCdcTasks;
+    }
+    if (this._excludeObjects?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludeObjects = this._excludeObjects?.internalValue;
+    }
+    if (this._includeObjects?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeObjects = this._includeObjects?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxConcurrentBackfillTasks = undefined;
+      this._maxConcurrentCdcTasks = undefined;
+      this._excludeObjects.internalValue = undefined;
+      this._includeObjects.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxConcurrentBackfillTasks = value.maxConcurrentBackfillTasks;
+      this._maxConcurrentCdcTasks = value.maxConcurrentCdcTasks;
+      this._excludeObjects.internalValue = value.excludeObjects;
+      this._includeObjects.internalValue = value.includeObjects;
+    }
+  }
+
+  // max_concurrent_backfill_tasks - computed: true, optional: true, required: false
+  private _maxConcurrentBackfillTasks?: number; 
+  public get maxConcurrentBackfillTasks() {
+    return this.getNumberAttribute('max_concurrent_backfill_tasks');
+  }
+  public set maxConcurrentBackfillTasks(value: number) {
+    this._maxConcurrentBackfillTasks = value;
+  }
+  public resetMaxConcurrentBackfillTasks() {
+    this._maxConcurrentBackfillTasks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrentBackfillTasksInput() {
+    return this._maxConcurrentBackfillTasks;
+  }
+
+  // max_concurrent_cdc_tasks - computed: true, optional: true, required: false
+  private _maxConcurrentCdcTasks?: number; 
+  public get maxConcurrentCdcTasks() {
+    return this.getNumberAttribute('max_concurrent_cdc_tasks');
+  }
+  public set maxConcurrentCdcTasks(value: number) {
+    this._maxConcurrentCdcTasks = value;
+  }
+  public resetMaxConcurrentCdcTasks() {
+    this._maxConcurrentCdcTasks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrentCdcTasksInput() {
+    return this._maxConcurrentCdcTasks;
+  }
+
+  // exclude_objects - computed: false, optional: true, required: false
+  private _excludeObjects = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference(this, "exclude_objects");
+  public get excludeObjects() {
+    return this._excludeObjects;
+  }
+  public putExcludeObjects(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) {
+    this._excludeObjects.internalValue = value;
+  }
+  public resetExcludeObjects() {
+    this._excludeObjects.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeObjectsInput() {
+    return this._excludeObjects.internalValue;
+  }
+
+  // include_objects - computed: false, optional: true, required: false
+  private _includeObjects = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference(this, "include_objects");
+  public get includeObjects() {
+    return this._includeObjects;
+  }
+  public putIncludeObjects(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects) {
+    this._includeObjects.internalValue = value;
+  }
+  public resetIncludeObjects() {
+    this._includeObjects.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeObjectsInput() {
+    return this._includeObjects.internalValue;
+  }
+}
 export interface GoogleDatastreamStreamSourceConfig {
   /**
   * Source connection profile resource. Format: projects/{project}/locations/{location}/connectionProfiles/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#source_connection_profile GoogleDatastreamStream#source_connection_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#source_connection_profile GoogleDatastreamStream#source_connection_profile}
   */
   readonly sourceConnectionProfile: string;
   /**
   * mysql_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#mysql_source_config GoogleDatastreamStream#mysql_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#mysql_source_config GoogleDatastreamStream#mysql_source_config}
   */
   readonly mysqlSourceConfig?: GoogleDatastreamStreamSourceConfigMysqlSourceConfig;
   /**
   * oracle_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#oracle_source_config GoogleDatastreamStream#oracle_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#oracle_source_config GoogleDatastreamStream#oracle_source_config}
   */
   readonly oracleSourceConfig?: GoogleDatastreamStreamSourceConfigOracleSourceConfig;
   /**
   * postgresql_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#postgresql_source_config GoogleDatastreamStream#postgresql_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#postgresql_source_config GoogleDatastreamStream#postgresql_source_config}
   */
   readonly postgresqlSourceConfig?: GoogleDatastreamStreamSourceConfigPostgresqlSourceConfig;
+  /**
+  * sql_server_source_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#sql_server_source_config GoogleDatastreamStream#sql_server_source_config}
+  */
+  readonly sqlServerSourceConfig?: GoogleDatastreamStreamSourceConfigSqlServerSourceConfig;
 }
 
 export function googleDatastreamStreamSourceConfigToTerraform(struct?: GoogleDatastreamStreamSourceConfigOutputReference | GoogleDatastreamStreamSourceConfig): any {
@@ -7880,6 +9808,7 @@ export function googleDatastreamStreamSourceConfigToTerraform(struct?: GoogleDat
     mysql_source_config: googleDatastreamStreamSourceConfigMysqlSourceConfigToTerraform(struct!.mysqlSourceConfig),
     oracle_source_config: googleDatastreamStreamSourceConfigOracleSourceConfigToTerraform(struct!.oracleSourceConfig),
     postgresql_source_config: googleDatastreamStreamSourceConfigPostgresqlSourceConfigToTerraform(struct!.postgresqlSourceConfig),
+    sql_server_source_config: googleDatastreamStreamSourceConfigSqlServerSourceConfigToTerraform(struct!.sqlServerSourceConfig),
   }
 }
 
@@ -7913,6 +9842,12 @@ export function googleDatastreamStreamSourceConfigToHclTerraform(struct?: Google
       isBlock: true,
       type: "list",
       storageClassType: "GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigList",
+    },
+    sql_server_source_config: {
+      value: googleDatastreamStreamSourceConfigSqlServerSourceConfigToHclTerraform(struct!.sqlServerSourceConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDatastreamStreamSourceConfigSqlServerSourceConfigList",
     },
   };
 
@@ -7950,6 +9885,10 @@ export class GoogleDatastreamStreamSourceConfigOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.postgresqlSourceConfig = this._postgresqlSourceConfig?.internalValue;
     }
+    if (this._sqlServerSourceConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sqlServerSourceConfig = this._sqlServerSourceConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -7960,6 +9899,7 @@ export class GoogleDatastreamStreamSourceConfigOutputReference extends cdktf.Com
       this._mysqlSourceConfig.internalValue = undefined;
       this._oracleSourceConfig.internalValue = undefined;
       this._postgresqlSourceConfig.internalValue = undefined;
+      this._sqlServerSourceConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -7967,6 +9907,7 @@ export class GoogleDatastreamStreamSourceConfigOutputReference extends cdktf.Com
       this._mysqlSourceConfig.internalValue = value.mysqlSourceConfig;
       this._oracleSourceConfig.internalValue = value.oracleSourceConfig;
       this._postgresqlSourceConfig.internalValue = value.postgresqlSourceConfig;
+      this._sqlServerSourceConfig.internalValue = value.sqlServerSourceConfig;
     }
   }
 
@@ -8030,18 +9971,34 @@ export class GoogleDatastreamStreamSourceConfigOutputReference extends cdktf.Com
   public get postgresqlSourceConfigInput() {
     return this._postgresqlSourceConfig.internalValue;
   }
+
+  // sql_server_source_config - computed: false, optional: true, required: false
+  private _sqlServerSourceConfig = new GoogleDatastreamStreamSourceConfigSqlServerSourceConfigOutputReference(this, "sql_server_source_config");
+  public get sqlServerSourceConfig() {
+    return this._sqlServerSourceConfig;
+  }
+  public putSqlServerSourceConfig(value: GoogleDatastreamStreamSourceConfigSqlServerSourceConfig) {
+    this._sqlServerSourceConfig.internalValue = value;
+  }
+  public resetSqlServerSourceConfig() {
+    this._sqlServerSourceConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlServerSourceConfigInput() {
+    return this._sqlServerSourceConfig.internalValue;
+  }
 }
 export interface GoogleDatastreamStreamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#create GoogleDatastreamStream#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#create GoogleDatastreamStream#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#delete GoogleDatastreamStream#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#delete GoogleDatastreamStream#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#update GoogleDatastreamStream#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#update GoogleDatastreamStream#update}
   */
   readonly update?: string;
 }
@@ -8193,7 +10150,7 @@ export class GoogleDatastreamStreamTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream google_datastream_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream google_datastream_stream}
 */
 export class GoogleDatastreamStream extends cdktf.TerraformResource {
 
@@ -8209,7 +10166,7 @@ export class GoogleDatastreamStream extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDatastreamStream resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDatastreamStream to import
-  * @param importFromId The id of the existing GoogleDatastreamStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDatastreamStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDatastreamStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -8221,7 +10178,7 @@ export class GoogleDatastreamStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_datastream_stream google_datastream_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_datastream_stream google_datastream_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -8232,7 +10189,7 @@ export class GoogleDatastreamStream extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_stream',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.29.1',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

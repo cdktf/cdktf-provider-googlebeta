@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,29 @@ export interface GoogleNetworkSecurityTlsInspectionPolicyConfig extends cdktf.Te
   /**
   * A CA pool resource used to issue interception certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#ca_pool GoogleNetworkSecurityTlsInspectionPolicy#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#ca_pool GoogleNetworkSecurityTlsInspectionPolicy#ca_pool}
   */
   readonly caPool: string;
   /**
+  * List of custom TLS cipher suites selected. This field is valid only if the selected tls_feature_profile is CUSTOM. The compute.SslPoliciesService.ListAvailableFeatures method returns the set of features that can be specified in this list. Note that Secure Web Proxy does not yet honor this field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#custom_tls_features GoogleNetworkSecurityTlsInspectionPolicy#custom_tls_features}
+  */
+  readonly customTlsFeatures?: string[];
+  /**
   * Free-text description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#description GoogleNetworkSecurityTlsInspectionPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#description GoogleNetworkSecurityTlsInspectionPolicy#description}
   */
   readonly description?: string;
   /**
   * If FALSE (the default), use our default set of public CAs in addition to any CAs specified in trustConfig. These public CAs are currently based on the Mozilla Root Program and are subject to change over time. If TRUE, do not accept our default set of public CAs. Only CAs specified in trustConfig will be accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#exclude_public_ca_set GoogleNetworkSecurityTlsInspectionPolicy#exclude_public_ca_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#exclude_public_ca_set GoogleNetworkSecurityTlsInspectionPolicy#exclude_public_ca_set}
   */
   readonly excludePublicCaSet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#id GoogleNetworkSecurityTlsInspectionPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#id GoogleNetworkSecurityTlsInspectionPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,37 +41,55 @@ export interface GoogleNetworkSecurityTlsInspectionPolicyConfig extends cdktf.Te
   /**
   * The location of the tls inspection policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#location GoogleNetworkSecurityTlsInspectionPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#location GoogleNetworkSecurityTlsInspectionPolicy#location}
   */
   readonly location?: string;
   /**
+  * Minimum TLS version that the firewall should use when negotiating connections with both clients and servers. If this is not set, then the default value is to allow the broadest set of clients and servers (TLS 1.0 or higher). Setting this to more restrictive values may improve security, but may also prevent the firewall from connecting to some clients or servers. Note that Secure Web Proxy does not yet honor this field. Possible values: ["TLS_VERSION_UNSPECIFIED", "TLS_1_0", "TLS_1_1", "TLS_1_2", "TLS_1_3"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#min_tls_version GoogleNetworkSecurityTlsInspectionPolicy#min_tls_version}
+  */
+  readonly minTlsVersion?: string;
+  /**
   * Short name of the TlsInspectionPolicy resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#name GoogleNetworkSecurityTlsInspectionPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#name GoogleNetworkSecurityTlsInspectionPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#project GoogleNetworkSecurityTlsInspectionPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#project GoogleNetworkSecurityTlsInspectionPolicy#project}
   */
   readonly project?: string;
   /**
+  * The selected Profile. If this is not set, then the default value is to allow the broadest set of clients and servers (\"PROFILE_COMPATIBLE\"). Setting this to more restrictive values may improve security, but may also prevent the TLS inspection proxy from connecting to some clients or servers. Note that Secure Web Proxy does not yet honor this field. Possible values: ["PROFILE_UNSPECIFIED", "PROFILE_COMPATIBLE", "PROFILE_MODERN", "PROFILE_RESTRICTED", "PROFILE_CUSTOM"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#tls_feature_profile GoogleNetworkSecurityTlsInspectionPolicy#tls_feature_profile}
+  */
+  readonly tlsFeatureProfile?: string;
+  /**
+  * A TrustConfig resource used when making a connection to the TLS server. This is a relative resource path following the form \"projects/{project}/locations/{location}/trustConfigs/{trust_config}\". This is necessary to intercept TLS connections to servers with certificates signed by a private CA or self-signed certificates. Trust config and the TLS inspection policy must be in the same region. Note that Secure Web Proxy does not yet honor this field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#trust_config GoogleNetworkSecurityTlsInspectionPolicy#trust_config}
+  */
+  readonly trustConfig?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#timeouts GoogleNetworkSecurityTlsInspectionPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#timeouts GoogleNetworkSecurityTlsInspectionPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityTlsInspectionPolicyTimeouts;
 }
 export interface GoogleNetworkSecurityTlsInspectionPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#create GoogleNetworkSecurityTlsInspectionPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#create GoogleNetworkSecurityTlsInspectionPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#delete GoogleNetworkSecurityTlsInspectionPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#delete GoogleNetworkSecurityTlsInspectionPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#update GoogleNetworkSecurityTlsInspectionPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#update GoogleNetworkSecurityTlsInspectionPolicy#update}
   */
   readonly update?: string;
 }
@@ -222,7 +241,7 @@ export class GoogleNetworkSecurityTlsInspectionPolicyTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}
 */
 export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformResource {
 
@@ -238,7 +257,7 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
   * Generates CDKTF code for importing a GoogleNetworkSecurityTlsInspectionPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkSecurityTlsInspectionPolicy to import
-  * @param importFromId The id of the existing GoogleNetworkSecurityTlsInspectionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkSecurityTlsInspectionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkSecurityTlsInspectionPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -250,7 +269,7 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.29.1/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.30.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -261,7 +280,7 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
       terraformResourceType: 'google_network_security_tls_inspection_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.29.1',
+        providerVersion: '5.30.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -273,12 +292,16 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
       forEach: config.forEach
     });
     this._caPool = config.caPool;
+    this._customTlsFeatures = config.customTlsFeatures;
     this._description = config.description;
     this._excludePublicCaSet = config.excludePublicCaSet;
     this._id = config.id;
     this._location = config.location;
+    this._minTlsVersion = config.minTlsVersion;
     this._name = config.name;
     this._project = config.project;
+    this._tlsFeatureProfile = config.tlsFeatureProfile;
+    this._trustConfig = config.trustConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -302,6 +325,22 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // custom_tls_features - computed: false, optional: true, required: false
+  private _customTlsFeatures?: string[]; 
+  public get customTlsFeatures() {
+    return this.getListAttribute('custom_tls_features');
+  }
+  public set customTlsFeatures(value: string[]) {
+    this._customTlsFeatures = value;
+  }
+  public resetCustomTlsFeatures() {
+    this._customTlsFeatures = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTlsFeaturesInput() {
+    return this._customTlsFeatures;
   }
 
   // description - computed: false, optional: true, required: false
@@ -368,6 +407,22 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
     return this._location;
   }
 
+  // min_tls_version - computed: false, optional: true, required: false
+  private _minTlsVersion?: string; 
+  public get minTlsVersion() {
+    return this.getStringAttribute('min_tls_version');
+  }
+  public set minTlsVersion(value: string) {
+    this._minTlsVersion = value;
+  }
+  public resetMinTlsVersion() {
+    this._minTlsVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minTlsVersionInput() {
+    return this._minTlsVersion;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -395,6 +450,38 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // tls_feature_profile - computed: false, optional: true, required: false
+  private _tlsFeatureProfile?: string; 
+  public get tlsFeatureProfile() {
+    return this.getStringAttribute('tls_feature_profile');
+  }
+  public set tlsFeatureProfile(value: string) {
+    this._tlsFeatureProfile = value;
+  }
+  public resetTlsFeatureProfile() {
+    this._tlsFeatureProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsFeatureProfileInput() {
+    return this._tlsFeatureProfile;
+  }
+
+  // trust_config - computed: false, optional: true, required: false
+  private _trustConfig?: string; 
+  public get trustConfig() {
+    return this.getStringAttribute('trust_config');
+  }
+  public set trustConfig(value: string) {
+    this._trustConfig = value;
+  }
+  public resetTrustConfig() {
+    this._trustConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustConfigInput() {
+    return this._trustConfig;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -425,12 +512,16 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       ca_pool: cdktf.stringToTerraform(this._caPool),
+      custom_tls_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customTlsFeatures),
       description: cdktf.stringToTerraform(this._description),
       exclude_public_ca_set: cdktf.booleanToTerraform(this._excludePublicCaSet),
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
+      min_tls_version: cdktf.stringToTerraform(this._minTlsVersion),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
+      tls_feature_profile: cdktf.stringToTerraform(this._tlsFeatureProfile),
+      trust_config: cdktf.stringToTerraform(this._trustConfig),
       timeouts: googleNetworkSecurityTlsInspectionPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -442,6 +533,12 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      custom_tls_features: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customTlsFeatures),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
@@ -467,6 +564,12 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
         type: "simple",
         storageClassType: "string",
       },
+      min_tls_version: {
+        value: cdktf.stringToHclTerraform(this._minTlsVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
@@ -475,6 +578,18 @@ export class GoogleNetworkSecurityTlsInspectionPolicy extends cdktf.TerraformRes
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_feature_profile: {
+        value: cdktf.stringToHclTerraform(this._tlsFeatureProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trust_config: {
+        value: cdktf.stringToHclTerraform(this._trustConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
