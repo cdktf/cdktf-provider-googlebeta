@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,23 +11,23 @@ export interface GoogleGkeBackupRestorePlanConfig extends cdktf.TerraformMetaArg
   * A reference to the BackupPlan from which Backups may be used
   * as the source for Restores created via this RestorePlan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#backup_plan GoogleGkeBackupRestorePlan#backup_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#backup_plan GoogleGkeBackupRestorePlan#backup_plan}
   */
   readonly backupPlan: string;
   /**
   * The source cluster from which Restores will be created via this RestorePlan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#cluster GoogleGkeBackupRestorePlan#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#cluster GoogleGkeBackupRestorePlan#cluster}
   */
   readonly cluster: string;
   /**
   * User specified descriptive string for this RestorePlan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#id GoogleGkeBackupRestorePlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,35 +42,35 @@ export interface GoogleGkeBackupRestorePlanConfig extends cdktf.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#labels GoogleGkeBackupRestorePlan#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#labels GoogleGkeBackupRestorePlan#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The region of the Restore Plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#location GoogleGkeBackupRestorePlan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#location GoogleGkeBackupRestorePlan#location}
   */
   readonly location: string;
   /**
   * The full name of the BackupPlan Resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#project GoogleGkeBackupRestorePlan#project}
   */
   readonly project?: string;
   /**
   * restore_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#restore_config GoogleGkeBackupRestorePlan#restore_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#restore_config GoogleGkeBackupRestorePlan#restore_config}
   */
   readonly restoreConfig: GoogleGkeBackupRestorePlanRestoreConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#timeouts GoogleGkeBackupRestorePlan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#timeouts GoogleGkeBackupRestorePlan#timeouts}
   */
   readonly timeouts?: GoogleGkeBackupRestorePlanTimeouts;
 }
@@ -85,14 +80,14 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreSc
   * "apiextensions.k8s.io", "storage.k8s.io", etc.
   * Use empty string for core group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
   */
   readonly resourceGroup?: string;
   /**
   * Kind of a Kubernetes resource, e.g.
   * "CustomResourceDefinition", "StorageClass", etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
   */
   readonly resourceKind?: string;
 }
@@ -241,14 +236,14 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreSc
   * "apiextensions.k8s.io", "storage.k8s.io", etc.
   * Use empty string for core group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
   */
   readonly resourceGroup?: string;
   /**
   * Kind of a Kubernetes resource, e.g.
   * "CustomResourceDefinition", "StorageClass", etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
   */
   readonly resourceKind?: string;
 }
@@ -396,26 +391,26 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreSc
   * If True, all valid cluster-scoped resources will be restored.
   * Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#all_group_kinds GoogleGkeBackupRestorePlan#all_group_kinds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#all_group_kinds GoogleGkeBackupRestorePlan#all_group_kinds}
   */
   readonly allGroupKinds?: boolean | cdktf.IResolvable;
   /**
   * If True, no cluster-scoped resources will be restored.
   * Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#no_group_kinds GoogleGkeBackupRestorePlan#no_group_kinds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#no_group_kinds GoogleGkeBackupRestorePlan#no_group_kinds}
   */
   readonly noGroupKinds?: boolean | cdktf.IResolvable;
   /**
   * excluded_group_kinds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#excluded_group_kinds GoogleGkeBackupRestorePlan#excluded_group_kinds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#excluded_group_kinds GoogleGkeBackupRestorePlan#excluded_group_kinds}
   */
   readonly excludedGroupKinds?: GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds[] | cdktf.IResolvable;
   /**
   * selected_group_kinds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#selected_group_kinds GoogleGkeBackupRestorePlan#selected_group_kinds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#selected_group_kinds GoogleGkeBackupRestorePlan#selected_group_kinds}
   */
   readonly selectedGroupKinds?: GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds[] | cdktf.IResolvable;
 }
@@ -588,7 +583,7 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces {
   /**
   * A list of Kubernetes Namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
   */
   readonly namespaces: string[];
 }
@@ -667,17 +662,495 @@ export class GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputRefe
     return this._namespaces;
   }
 }
+export interface GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring {
+  /**
+  * API Group of a Kubernetes resource, e.g.
+  * "apiextensions.k8s.io", "storage.k8s.io", etc.
+  * Use empty string for core group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+  */
+  readonly resourceGroup?: string;
+  /**
+  * Kind of a Kubernetes resource, e.g.
+  * "CustomResourceDefinition", "StorageClass", etc.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+  */
+  readonly resourceKind?: string;
+}
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
+    resource_kind: cdktf.stringToTerraform(struct!.resourceKind),
+  }
+}
+
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringToHclTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_group: {
+      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_kind: {
+      value: cdktf.stringToHclTerraform(struct!.resourceKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroup = this._resourceGroup;
+    }
+    if (this._resourceKind !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceKind = this._resourceKind;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceGroup = undefined;
+      this._resourceKind = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceGroup = value.resourceGroup;
+      this._resourceKind = value.resourceKind;
+    }
+  }
+
+  // resource_group - computed: false, optional: true, required: false
+  private _resourceGroup?: string; 
+  public get resourceGroup() {
+    return this.getStringAttribute('resource_group');
+  }
+  public set resourceGroup(value: string) {
+    this._resourceGroup = value;
+  }
+  public resetResourceGroup() {
+    this._resourceGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupInput() {
+    return this._resourceGroup;
+  }
+
+  // resource_kind - computed: false, optional: true, required: false
+  private _resourceKind?: string; 
+  public get resourceKind() {
+    return this.getStringAttribute('resource_kind');
+  }
+  public set resourceKind(value: string) {
+    this._resourceKind = value;
+  }
+  public resetResourceKind() {
+    this._resourceKind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceKindInput() {
+    return this._resourceKind;
+  }
+}
+export interface GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying {
+  /**
+  * API Group of a Kubernetes resource, e.g.
+  * "apiextensions.k8s.io", "storage.k8s.io", etc.
+  * Use empty string for core group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+  */
+  readonly resourceGroup?: string;
+  /**
+  * Kind of a Kubernetes resource, e.g.
+  * "CustomResourceDefinition", "StorageClass", etc.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+  */
+  readonly resourceKind?: string;
+}
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
+    resource_kind: cdktf.stringToTerraform(struct!.resourceKind),
+  }
+}
+
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingToHclTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_group: {
+      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_kind: {
+      value: cdktf.stringToHclTerraform(struct!.resourceKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroup = this._resourceGroup;
+    }
+    if (this._resourceKind !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceKind = this._resourceKind;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceGroup = undefined;
+      this._resourceKind = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceGroup = value.resourceGroup;
+      this._resourceKind = value.resourceKind;
+    }
+  }
+
+  // resource_group - computed: false, optional: true, required: false
+  private _resourceGroup?: string; 
+  public get resourceGroup() {
+    return this.getStringAttribute('resource_group');
+  }
+  public set resourceGroup(value: string) {
+    this._resourceGroup = value;
+  }
+  public resetResourceGroup() {
+    this._resourceGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupInput() {
+    return this._resourceGroup;
+  }
+
+  // resource_kind - computed: false, optional: true, required: false
+  private _resourceKind?: string; 
+  public get resourceKind() {
+    return this.getStringAttribute('resource_kind');
+  }
+  public set resourceKind(value: string) {
+    this._resourceKind = value;
+  }
+  public resetResourceKind() {
+    this._resourceKind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceKindInput() {
+    return this._resourceKind;
+  }
+}
+export interface GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies {
+  /**
+  * requiring block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#requiring GoogleGkeBackupRestorePlan#requiring}
+  */
+  readonly requiring: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring;
+  /**
+  * satisfying block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#satisfying GoogleGkeBackupRestorePlan#satisfying}
+  */
+  readonly satisfying: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying;
+}
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    requiring: googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringToTerraform(struct!.requiring),
+    satisfying: googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingToTerraform(struct!.satisfying),
+  }
+}
+
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesToHclTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    requiring: {
+      value: googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringToHclTerraform(struct!.requiring),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringList",
+    },
+    satisfying: {
+      value: googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingToHclTerraform(struct!.satisfying),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requiring?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requiring = this._requiring?.internalValue;
+    }
+    if (this._satisfying?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.satisfying = this._satisfying?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._requiring.internalValue = undefined;
+      this._satisfying.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._requiring.internalValue = value.requiring;
+      this._satisfying.internalValue = value.satisfying;
+    }
+  }
+
+  // requiring - computed: false, optional: false, required: true
+  private _requiring = new GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference(this, "requiring");
+  public get requiring() {
+    return this._requiring;
+  }
+  public putRequiring(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring) {
+    this._requiring.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiringInput() {
+    return this._requiring.internalValue;
+  }
+
+  // satisfying - computed: false, optional: false, required: true
+  private _satisfying = new GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference(this, "satisfying");
+  public get satisfying() {
+    return this._satisfying;
+  }
+  public putSatisfying(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying) {
+    this._satisfying.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get satisfyingInput() {
+    return this._satisfying.internalValue;
+  }
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList extends cdktf.ComplexList {
+  public internalValue? : GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference {
+    return new GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder {
+  /**
+  * group_kind_dependencies block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#group_kind_dependencies GoogleGkeBackupRestorePlan#group_kind_dependencies}
+  */
+  readonly groupKindDependencies: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[] | cdktf.IResolvable;
+}
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    group_kind_dependencies: cdktf.listMapper(googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesToTerraform, true)(struct!.groupKindDependencies),
+  }
+}
+
+
+export function googleGkeBackupRestorePlanRestoreConfigRestoreOrderToHclTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference | GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_kind_dependencies: {
+      value: cdktf.listMapperHcl(googleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesToHclTerraform, true)(struct!.groupKindDependencies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupKindDependencies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupKindDependencies = this._groupKindDependencies?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._groupKindDependencies.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._groupKindDependencies.internalValue = value.groupKindDependencies;
+    }
+  }
+
+  // group_kind_dependencies - computed: false, optional: false, required: true
+  private _groupKindDependencies = new GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList(this, "group_kind_dependencies", false);
+  public get groupKindDependencies() {
+    return this._groupKindDependencies;
+  }
+  public putGroupKindDependencies(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[] | cdktf.IResolvable) {
+    this._groupKindDependencies.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupKindDependenciesInput() {
+    return this._groupKindDependencies.internalValue;
+  }
+}
 export interface GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames {
   /**
   * The name of a Kubernetes Resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#name GoogleGkeBackupRestorePlan#name}
   */
   readonly name: string;
   /**
   * The namespace of a Kubernetes Resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespace GoogleGkeBackupRestorePlan#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespace GoogleGkeBackupRestorePlan#namespace}
   */
   readonly namespace: string;
 }
@@ -818,7 +1291,7 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications {
   /**
   * namespaced_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespaced_names GoogleGkeBackupRestorePlan#namespaced_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespaced_names GoogleGkeBackupRestorePlan#namespaced_names}
   */
   readonly namespacedNames: GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames[] | cdktf.IResolvable;
 }
@@ -901,7 +1374,7 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces {
   /**
   * A list of Kubernetes Namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
   */
   readonly namespaces: string[];
 }
@@ -985,27 +1458,27 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesField
   * A string containing a JSON Pointer value that references the
   * location in the target document to move the value from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#from_path GoogleGkeBackupRestorePlan#from_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#from_path GoogleGkeBackupRestorePlan#from_path}
   */
   readonly fromPath?: string;
   /**
   * Specifies the operation to perform. Possible values: ["REMOVE", "MOVE", "COPY", "ADD", "TEST", "REPLACE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#op GoogleGkeBackupRestorePlan#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#op GoogleGkeBackupRestorePlan#op}
   */
   readonly op: string;
   /**
   * A string containing a JSON-Pointer value that references a
   * location within the target document where the operation is performed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#path GoogleGkeBackupRestorePlan#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#path GoogleGkeBackupRestorePlan#path}
   */
   readonly path?: string;
   /**
   * A string that specifies the desired value in string format
   * to use for transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#value GoogleGkeBackupRestorePlan#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#value GoogleGkeBackupRestorePlan#value}
   */
   readonly value?: string;
 }
@@ -1209,14 +1682,14 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResou
   * "apiextensions.k8s.io", "storage.k8s.io", etc.
   * Use empty string for core group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_group GoogleGkeBackupRestorePlan#resource_group}
   */
   readonly resourceGroup?: string;
   /**
   * Kind of a Kubernetes resource, e.g.
   * "CustomResourceDefinition", "StorageClass", etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_kind GoogleGkeBackupRestorePlan#resource_kind}
   */
   readonly resourceKind?: string;
 }
@@ -1366,7 +1839,7 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResou
   * (resources that are not matched with this expression will not
   * be candidates for transformation).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#json_path GoogleGkeBackupRestorePlan#json_path}
   */
   readonly jsonPath?: string;
   /**
@@ -1378,13 +1851,13 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResou
   * To mix cluster-scoped and namespaced resources in the same rule,
   * use an empty string ("") as one of the target namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespaces GoogleGkeBackupRestorePlan#namespaces}
   */
   readonly namespaces?: string[];
   /**
   * group_kinds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#group_kinds GoogleGkeBackupRestorePlan#group_kinds}
   */
   readonly groupKinds?: GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds[] | cdktf.IResolvable;
 }
@@ -1529,19 +2002,19 @@ export interface GoogleGkeBackupRestorePlanRestoreConfigTransformationRules {
   * The description is a user specified string description
   * of the transformation rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#description GoogleGkeBackupRestorePlan#description}
   */
   readonly description?: string;
   /**
   * field_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#field_actions GoogleGkeBackupRestorePlan#field_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#field_actions GoogleGkeBackupRestorePlan#field_actions}
   */
   readonly fieldActions: GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions[] | cdktf.IResolvable;
   /**
   * resource_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#resource_filter GoogleGkeBackupRestorePlan#resource_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#resource_filter GoogleGkeBackupRestorePlan#resource_filter}
   */
   readonly resourceFilter?: GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter;
 }
@@ -1710,12 +2183,162 @@ export class GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList exte
     return new GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings {
+  /**
+  * Specifies the mechanism to be used to restore this volume data.
+  * See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#VolumeDataRestorePolicy
+  * for more information on each policy option. Possible values: ["RESTORE_VOLUME_DATA_FROM_BACKUP", "REUSE_VOLUME_HANDLE_FROM_BACKUP", "NO_VOLUME_DATA_RESTORATION"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#policy GoogleGkeBackupRestorePlan#policy}
+  */
+  readonly policy: string;
+  /**
+  * The volume type, as determined by the PVC's
+  * bound PV, to apply the policy to. Possible values: ["GCE_PERSISTENT_DISK"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#volume_type GoogleGkeBackupRestorePlan#volume_type}
+  */
+  readonly volumeType: string;
+}
+
+export function googleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    policy: cdktf.stringToTerraform(struct!.policy),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
+
+export function googleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsToHclTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._policy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policy = this._policy;
+    }
+    if (this._volumeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeType = this._volumeType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._policy = undefined;
+      this._volumeType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._policy = value.policy;
+      this._volumeType = value.volumeType;
+    }
+  }
+
+  // policy - computed: false, optional: false, required: true
+  private _policy?: string; 
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+  public set policy(value: string) {
+    this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy;
+  }
+
+  // volume_type - computed: false, optional: false, required: true
+  private _volumeType?: string; 
+  public get volumeType() {
+    return this.getStringAttribute('volume_type');
+  }
+  public set volumeType(value: string) {
+    this._volumeType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeTypeInput() {
+    return this._volumeType;
+  }
+}
+
+export class GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList extends cdktf.ComplexList {
+  public internalValue? : GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference {
+    return new GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleGkeBackupRestorePlanRestoreConfig {
   /**
   * If True, restore all namespaced resources in the Backup.
   * Setting this field to False will result in an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#all_namespaces GoogleGkeBackupRestorePlan#all_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#all_namespaces GoogleGkeBackupRestorePlan#all_namespaces}
   */
   readonly allNamespaces?: boolean | cdktf.IResolvable;
   /**
@@ -1726,7 +2349,7 @@ export interface GoogleGkeBackupRestorePlanRestoreConfig {
   * See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#clusterresourceconflictpolicy
   * for more information on each policy option. Possible values: ["USE_EXISTING_VERSION", "USE_BACKUP_VERSION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_conflict_policy GoogleGkeBackupRestorePlan#cluster_resource_conflict_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_conflict_policy GoogleGkeBackupRestorePlan#cluster_resource_conflict_policy}
   */
   readonly clusterResourceConflictPolicy?: string;
   /**
@@ -1735,16 +2358,16 @@ export interface GoogleGkeBackupRestorePlanRestoreConfig {
   * This MUST be set to a value other than 'NAMESPACED_RESOURCE_RESTORE_MODE_UNSPECIFIED'
   * if the 'namespacedResourceRestoreScope' is anything other than 'noNamespaces'.
   * See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#namespacedresourcerestoremode
-  * for more information on each mode. Possible values: ["DELETE_AND_RESTORE", "FAIL_ON_CONFLICT"]
+  * for more information on each mode. Possible values: ["DELETE_AND_RESTORE", "FAIL_ON_CONFLICT", "MERGE_SKIP_ON_CONFLICT", "MERGE_REPLACE_VOLUME_ON_CONFLICT", "MERGE_REPLACE_ON_CONFLICT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#namespaced_resource_restore_mode GoogleGkeBackupRestorePlan#namespaced_resource_restore_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#namespaced_resource_restore_mode GoogleGkeBackupRestorePlan#namespaced_resource_restore_mode}
   */
   readonly namespacedResourceRestoreMode?: string;
   /**
   * Do not restore any namespaced resources if set to "True".
   * Specifying this field to "False" is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#no_namespaces GoogleGkeBackupRestorePlan#no_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#no_namespaces GoogleGkeBackupRestorePlan#no_namespaces}
   */
   readonly noNamespaces?: boolean | cdktf.IResolvable;
   /**
@@ -1755,39 +2378,51 @@ export interface GoogleGkeBackupRestorePlanRestoreConfig {
   * See https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/reference/rest/v1/RestoreConfig#VolumeDataRestorePolicy
   * for more information on each policy option. Possible values: ["RESTORE_VOLUME_DATA_FROM_BACKUP", "REUSE_VOLUME_HANDLE_FROM_BACKUP", "NO_VOLUME_DATA_RESTORATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#volume_data_restore_policy GoogleGkeBackupRestorePlan#volume_data_restore_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#volume_data_restore_policy GoogleGkeBackupRestorePlan#volume_data_restore_policy}
   */
   readonly volumeDataRestorePolicy?: string;
   /**
   * cluster_resource_restore_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_restore_scope GoogleGkeBackupRestorePlan#cluster_resource_restore_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#cluster_resource_restore_scope GoogleGkeBackupRestorePlan#cluster_resource_restore_scope}
   */
   readonly clusterResourceRestoreScope?: GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope;
   /**
   * excluded_namespaces block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#excluded_namespaces GoogleGkeBackupRestorePlan#excluded_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#excluded_namespaces GoogleGkeBackupRestorePlan#excluded_namespaces}
   */
   readonly excludedNamespaces?: GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespaces;
   /**
+  * restore_order block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#restore_order GoogleGkeBackupRestorePlan#restore_order}
+  */
+  readonly restoreOrder?: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder;
+  /**
   * selected_applications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#selected_applications GoogleGkeBackupRestorePlan#selected_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#selected_applications GoogleGkeBackupRestorePlan#selected_applications}
   */
   readonly selectedApplications?: GoogleGkeBackupRestorePlanRestoreConfigSelectedApplications;
   /**
   * selected_namespaces block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#selected_namespaces GoogleGkeBackupRestorePlan#selected_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#selected_namespaces GoogleGkeBackupRestorePlan#selected_namespaces}
   */
   readonly selectedNamespaces?: GoogleGkeBackupRestorePlanRestoreConfigSelectedNamespaces;
   /**
   * transformation_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#transformation_rules GoogleGkeBackupRestorePlan#transformation_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#transformation_rules GoogleGkeBackupRestorePlan#transformation_rules}
   */
   readonly transformationRules?: GoogleGkeBackupRestorePlanRestoreConfigTransformationRules[] | cdktf.IResolvable;
+  /**
+  * volume_data_restore_policy_bindings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#volume_data_restore_policy_bindings GoogleGkeBackupRestorePlan#volume_data_restore_policy_bindings}
+  */
+  readonly volumeDataRestorePolicyBindings?: GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[] | cdktf.IResolvable;
 }
 
 export function googleGkeBackupRestorePlanRestoreConfigToTerraform(struct?: GoogleGkeBackupRestorePlanRestoreConfigOutputReference | GoogleGkeBackupRestorePlanRestoreConfig): any {
@@ -1803,9 +2438,11 @@ export function googleGkeBackupRestorePlanRestoreConfigToTerraform(struct?: Goog
     volume_data_restore_policy: cdktf.stringToTerraform(struct!.volumeDataRestorePolicy),
     cluster_resource_restore_scope: googleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeToTerraform(struct!.clusterResourceRestoreScope),
     excluded_namespaces: googleGkeBackupRestorePlanRestoreConfigExcludedNamespacesToTerraform(struct!.excludedNamespaces),
+    restore_order: googleGkeBackupRestorePlanRestoreConfigRestoreOrderToTerraform(struct!.restoreOrder),
     selected_applications: googleGkeBackupRestorePlanRestoreConfigSelectedApplicationsToTerraform(struct!.selectedApplications),
     selected_namespaces: googleGkeBackupRestorePlanRestoreConfigSelectedNamespacesToTerraform(struct!.selectedNamespaces),
     transformation_rules: cdktf.listMapper(googleGkeBackupRestorePlanRestoreConfigTransformationRulesToTerraform, true)(struct!.transformationRules),
+    volume_data_restore_policy_bindings: cdktf.listMapper(googleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsToTerraform, true)(struct!.volumeDataRestorePolicyBindings),
   }
 }
 
@@ -1858,6 +2495,12 @@ export function googleGkeBackupRestorePlanRestoreConfigToHclTerraform(struct?: G
       type: "list",
       storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigExcludedNamespacesList",
     },
+    restore_order: {
+      value: googleGkeBackupRestorePlanRestoreConfigRestoreOrderToHclTerraform(struct!.restoreOrder),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderList",
+    },
     selected_applications: {
       value: googleGkeBackupRestorePlanRestoreConfigSelectedApplicationsToHclTerraform(struct!.selectedApplications),
       isBlock: true,
@@ -1875,6 +2518,12 @@ export function googleGkeBackupRestorePlanRestoreConfigToHclTerraform(struct?: G
       isBlock: true,
       type: "list",
       storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigTransformationRulesList",
+    },
+    volume_data_restore_policy_bindings: {
+      value: cdktf.listMapperHcl(googleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsToHclTerraform, true)(struct!.volumeDataRestorePolicyBindings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList",
     },
   };
 
@@ -1924,6 +2573,10 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.excludedNamespaces = this._excludedNamespaces?.internalValue;
     }
+    if (this._restoreOrder?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restoreOrder = this._restoreOrder?.internalValue;
+    }
     if (this._selectedApplications?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.selectedApplications = this._selectedApplications?.internalValue;
@@ -1935,6 +2588,10 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
     if (this._transformationRules?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.transformationRules = this._transformationRules?.internalValue;
+    }
+    if (this._volumeDataRestorePolicyBindings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeDataRestorePolicyBindings = this._volumeDataRestorePolicyBindings?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1949,9 +2606,11 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
       this._volumeDataRestorePolicy = undefined;
       this._clusterResourceRestoreScope.internalValue = undefined;
       this._excludedNamespaces.internalValue = undefined;
+      this._restoreOrder.internalValue = undefined;
       this._selectedApplications.internalValue = undefined;
       this._selectedNamespaces.internalValue = undefined;
       this._transformationRules.internalValue = undefined;
+      this._volumeDataRestorePolicyBindings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1962,9 +2621,11 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
       this._volumeDataRestorePolicy = value.volumeDataRestorePolicy;
       this._clusterResourceRestoreScope.internalValue = value.clusterResourceRestoreScope;
       this._excludedNamespaces.internalValue = value.excludedNamespaces;
+      this._restoreOrder.internalValue = value.restoreOrder;
       this._selectedApplications.internalValue = value.selectedApplications;
       this._selectedNamespaces.internalValue = value.selectedNamespaces;
       this._transformationRules.internalValue = value.transformationRules;
+      this._volumeDataRestorePolicyBindings.internalValue = value.volumeDataRestorePolicyBindings;
     }
   }
 
@@ -2080,6 +2741,22 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
     return this._excludedNamespaces.internalValue;
   }
 
+  // restore_order - computed: false, optional: true, required: false
+  private _restoreOrder = new GoogleGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference(this, "restore_order");
+  public get restoreOrder() {
+    return this._restoreOrder;
+  }
+  public putRestoreOrder(value: GoogleGkeBackupRestorePlanRestoreConfigRestoreOrder) {
+    this._restoreOrder.internalValue = value;
+  }
+  public resetRestoreOrder() {
+    this._restoreOrder.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreOrderInput() {
+    return this._restoreOrder.internalValue;
+  }
+
   // selected_applications - computed: false, optional: true, required: false
   private _selectedApplications = new GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference(this, "selected_applications");
   public get selectedApplications() {
@@ -2127,18 +2804,34 @@ export class GoogleGkeBackupRestorePlanRestoreConfigOutputReference extends cdkt
   public get transformationRulesInput() {
     return this._transformationRules.internalValue;
   }
+
+  // volume_data_restore_policy_bindings - computed: false, optional: true, required: false
+  private _volumeDataRestorePolicyBindings = new GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList(this, "volume_data_restore_policy_bindings", false);
+  public get volumeDataRestorePolicyBindings() {
+    return this._volumeDataRestorePolicyBindings;
+  }
+  public putVolumeDataRestorePolicyBindings(value: GoogleGkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[] | cdktf.IResolvable) {
+    this._volumeDataRestorePolicyBindings.internalValue = value;
+  }
+  public resetVolumeDataRestorePolicyBindings() {
+    this._volumeDataRestorePolicyBindings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeDataRestorePolicyBindingsInput() {
+    return this._volumeDataRestorePolicyBindings.internalValue;
+  }
 }
 export interface GoogleGkeBackupRestorePlanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#create GoogleGkeBackupRestorePlan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#delete GoogleGkeBackupRestorePlan#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#update GoogleGkeBackupRestorePlan#update}
   */
   readonly update?: string;
 }
@@ -2290,7 +2983,7 @@ export class GoogleGkeBackupRestorePlanTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}
 */
 export class GoogleGkeBackupRestorePlan extends cdktf.TerraformResource {
 
@@ -2306,7 +2999,7 @@ export class GoogleGkeBackupRestorePlan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleGkeBackupRestorePlan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleGkeBackupRestorePlan to import
-  * @param importFromId The id of the existing GoogleGkeBackupRestorePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleGkeBackupRestorePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleGkeBackupRestorePlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2318,7 +3011,7 @@ export class GoogleGkeBackupRestorePlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2329,7 +3022,7 @@ export class GoogleGkeBackupRestorePlan extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_backup_restore_plan',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.32.0',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
