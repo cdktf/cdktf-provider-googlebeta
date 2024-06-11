@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleDataLossPreventionDiscoveryConfigConfig extends cdktf.Ter
   /**
   * Display Name (max 1000 Chars)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#display_name GoogleDataLossPreventionDiscoveryConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#display_name GoogleDataLossPreventionDiscoveryConfig#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#id GoogleDataLossPreventionDiscoveryConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#id GoogleDataLossPreventionDiscoveryConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigConfig extends cdktf.Ter
   /**
   * Detection logic for profile generation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#inspect_templates GoogleDataLossPreventionDiscoveryConfig#inspect_templates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#inspect_templates GoogleDataLossPreventionDiscoveryConfig#inspect_templates}
   */
   readonly inspectTemplates?: string[];
   /**
   * Location to create the discovery config in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#location GoogleDataLossPreventionDiscoveryConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#location GoogleDataLossPreventionDiscoveryConfig#location}
   */
   readonly location: string;
   /**
@@ -43,37 +43,37 @@ export interface GoogleDataLossPreventionDiscoveryConfigConfig extends cdktf.Ter
   * * 'projects/{{project}}/locations/{{location}}'
   * * 'organizations/{{organization_id}}/locations/{{location}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#parent GoogleDataLossPreventionDiscoveryConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#parent GoogleDataLossPreventionDiscoveryConfig#parent}
   */
   readonly parent: string;
   /**
   * Required. A status for this configuration Possible values: ["RUNNING", "PAUSED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#status GoogleDataLossPreventionDiscoveryConfig#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#status GoogleDataLossPreventionDiscoveryConfig#status}
   */
   readonly status?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#actions GoogleDataLossPreventionDiscoveryConfig#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#actions GoogleDataLossPreventionDiscoveryConfig#actions}
   */
   readonly actions?: GoogleDataLossPreventionDiscoveryConfigActions[] | cdktf.IResolvable;
   /**
   * org_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#org_config GoogleDataLossPreventionDiscoveryConfig#org_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#org_config GoogleDataLossPreventionDiscoveryConfig#org_config}
   */
   readonly orgConfig?: GoogleDataLossPreventionDiscoveryConfigOrgConfig;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#targets GoogleDataLossPreventionDiscoveryConfig#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#targets GoogleDataLossPreventionDiscoveryConfig#targets}
   */
   readonly targets?: GoogleDataLossPreventionDiscoveryConfigTargets[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#timeouts GoogleDataLossPreventionDiscoveryConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#timeouts GoogleDataLossPreventionDiscoveryConfig#timeouts}
   */
   readonly timeouts?: GoogleDataLossPreventionDiscoveryConfigTimeouts;
 }
@@ -248,19 +248,19 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsExportDataProfile
   /**
   * Dataset Id of the table
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#dataset_id GoogleDataLossPreventionDiscoveryConfig#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#dataset_id GoogleDataLossPreventionDiscoveryConfig#dataset_id}
   */
   readonly datasetId?: string;
   /**
   * The Google Cloud Platform project ID of the project containing the table. If omitted, the project ID is inferred from the API call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#project_id GoogleDataLossPreventionDiscoveryConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#project_id GoogleDataLossPreventionDiscoveryConfig#project_id}
   */
   readonly projectId?: string;
   /**
   * Name of the table
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#table_id GoogleDataLossPreventionDiscoveryConfig#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#table_id GoogleDataLossPreventionDiscoveryConfig#table_id}
   */
   readonly tableId?: string;
 }
@@ -404,7 +404,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsExportData {
   /**
   * profile_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#profile_table GoogleDataLossPreventionDiscoveryConfig#profile_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#profile_table GoogleDataLossPreventionDiscoveryConfig#profile_table}
   */
   readonly profileTable?: GoogleDataLossPreventionDiscoveryConfigActionsExportDataProfileTable;
 }
@@ -490,13 +490,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificatio
   /**
   * The minimum data risk score that triggers the condition. Possible values: ["HIGH", "MEDIUM_OR_HIGH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#minimum_risk_score GoogleDataLossPreventionDiscoveryConfig#minimum_risk_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#minimum_risk_score GoogleDataLossPreventionDiscoveryConfig#minimum_risk_score}
   */
   readonly minimumRiskScore?: string;
   /**
   * The minimum sensitivity level that triggers the condition. Possible values: ["HIGH", "MEDIUM_OR_HIGH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#minimum_sensitivity_score GoogleDataLossPreventionDiscoveryConfig#minimum_sensitivity_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#minimum_sensitivity_score GoogleDataLossPreventionDiscoveryConfig#minimum_sensitivity_score}
   */
   readonly minimumSensitivityScore?: string;
 }
@@ -643,13 +643,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificatio
   /**
   * The operator to apply to the collection of conditions Possible values: ["OR", "AND"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#logical_operator GoogleDataLossPreventionDiscoveryConfig#logical_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#logical_operator GoogleDataLossPreventionDiscoveryConfig#logical_operator}
   */
   readonly logicalOperator?: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
   */
   readonly conditions?: GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressionsConditions[] | cdktf.IResolvable;
 }
@@ -764,7 +764,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificatio
   /**
   * expressions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#expressions GoogleDataLossPreventionDiscoveryConfig#expressions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#expressions GoogleDataLossPreventionDiscoveryConfig#expressions}
   */
   readonly expressions?: GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionExpressions;
 }
@@ -850,25 +850,25 @@ export interface GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificatio
   /**
   * How much data to include in the pub/sub message. Possible values: ["TABLE_PROFILE", "RESOURCE_NAME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#detail_of_message GoogleDataLossPreventionDiscoveryConfig#detail_of_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#detail_of_message GoogleDataLossPreventionDiscoveryConfig#detail_of_message}
   */
   readonly detailOfMessage?: string;
   /**
   * The type of event that triggers a Pub/Sub. At most one PubSubNotification per EventType is permitted. Possible values: ["NEW_PROFILE", "CHANGED_PROFILE", "SCORE_INCREASED", "ERROR_CHANGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#event GoogleDataLossPreventionDiscoveryConfig#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#event GoogleDataLossPreventionDiscoveryConfig#event}
   */
   readonly event?: string;
   /**
   * Cloud Pub/Sub topic to send notifications to. Format is projects/{project}/topics/{topic}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#topic GoogleDataLossPreventionDiscoveryConfig#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#topic GoogleDataLossPreventionDiscoveryConfig#topic}
   */
   readonly topic?: string;
   /**
   * pubsub_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#pubsub_condition GoogleDataLossPreventionDiscoveryConfig#pubsub_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#pubsub_condition GoogleDataLossPreventionDiscoveryConfig#pubsub_condition}
   */
   readonly pubsubCondition?: GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubCondition;
 }
@@ -1041,13 +1041,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigActions {
   /**
   * export_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#export_data GoogleDataLossPreventionDiscoveryConfig#export_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#export_data GoogleDataLossPreventionDiscoveryConfig#export_data}
   */
   readonly exportData?: GoogleDataLossPreventionDiscoveryConfigActionsExportData;
   /**
   * pub_sub_notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#pub_sub_notification GoogleDataLossPreventionDiscoveryConfig#pub_sub_notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#pub_sub_notification GoogleDataLossPreventionDiscoveryConfig#pub_sub_notification}
   */
   readonly pubSubNotification?: GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotification;
 }
@@ -1194,13 +1194,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigOrgConfigLocation {
   /**
   * The ID for the folder within an organization to scan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#folder_id GoogleDataLossPreventionDiscoveryConfig#folder_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#folder_id GoogleDataLossPreventionDiscoveryConfig#folder_id}
   */
   readonly folderId?: string;
   /**
   * The ID of an organization to scan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#organization_id GoogleDataLossPreventionDiscoveryConfig#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#organization_id GoogleDataLossPreventionDiscoveryConfig#organization_id}
   */
   readonly organizationId?: string;
 }
@@ -1315,13 +1315,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigOrgConfig {
   /**
   * The project that will run the scan. The DLP service account that exists within this project must have access to all resources that are profiled, and the cloud DLP API must be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#project_id GoogleDataLossPreventionDiscoveryConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#project_id GoogleDataLossPreventionDiscoveryConfig#project_id}
   */
   readonly projectId?: string;
   /**
   * location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#location GoogleDataLossPreventionDiscoveryConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#location GoogleDataLossPreventionDiscoveryConfig#location}
   */
   readonly location?: GoogleDataLossPreventionDiscoveryConfigOrgConfigLocation;
 }
@@ -1436,13 +1436,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCad
   /**
   * How frequently profiles may be updated when schemas are modified. Default to monthly Possible values: ["UPDATE_FREQUENCY_NEVER", "UPDATE_FREQUENCY_DAILY", "UPDATE_FREQUENCY_MONTHLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
   */
   readonly frequency?: string;
   /**
   * The type of events to consider when deciding if the table's schema has been modified and should have the profile updated. Defaults to NEW_COLUMN. Possible values: ["SCHEMA_NEW_COLUMNS", "SCHEMA_REMOVED_COLUMNS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: string[];
 }
@@ -1557,13 +1557,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCad
   /**
   * How frequently data profiles can be updated when tables are modified. Defaults to never. Possible values: ["UPDATE_FREQUENCY_NEVER", "UPDATE_FREQUENCY_DAILY", "UPDATE_FREQUENCY_MONTHLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
   */
   readonly frequency?: string;
   /**
   * The type of events to consider when deciding if the table has been modified and should have the profile updated. Defaults to MODIFIED_TIMESTAMP Possible values: ["TABLE_MODIFIED_TIMESTAMP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: string[];
 }
@@ -1678,13 +1678,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCad
   /**
   * schema_modified_cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#schema_modified_cadence GoogleDataLossPreventionDiscoveryConfig#schema_modified_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#schema_modified_cadence GoogleDataLossPreventionDiscoveryConfig#schema_modified_cadence}
   */
   readonly schemaModifiedCadence?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence;
   /**
   * table_modified_cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#table_modified_cadence GoogleDataLossPreventionDiscoveryConfig#table_modified_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#table_modified_cadence GoogleDataLossPreventionDiscoveryConfig#table_modified_cadence}
   */
   readonly tableModifiedCadence?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceTableModifiedCadence;
 }
@@ -1799,13 +1799,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCon
   /**
   * Duration format. The minimum age a table must have before Cloud DLP can profile it. Value greater than 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#min_age GoogleDataLossPreventionDiscoveryConfig#min_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#min_age GoogleDataLossPreventionDiscoveryConfig#min_age}
   */
   readonly minAge?: string;
   /**
   * Minimum number of rows that should be present before Cloud DLP profiles as a table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#min_row_count GoogleDataLossPreventionDiscoveryConfig#min_row_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#min_row_count GoogleDataLossPreventionDiscoveryConfig#min_row_count}
   */
   readonly minRowCount?: number;
 }
@@ -1920,7 +1920,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCon
   /**
   * A set of BiqQuery table types Possible values: ["BIG_QUERY_TABLE_TYPE_TABLE", "BIG_QUERY_TABLE_TYPE_EXTERNAL_BIG_LAKE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: string[];
 }
@@ -2006,25 +2006,25 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCon
   /**
   * A timestamp in RFC3339 UTC "Zulu" format with nanosecond resolution and upto nine fractional digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#created_after GoogleDataLossPreventionDiscoveryConfig#created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#created_after GoogleDataLossPreventionDiscoveryConfig#created_after}
   */
   readonly createdAfter?: string;
   /**
   * Restrict discovery to categories of table types. Currently view, materialized view, snapshot and non-biglake external tables are supported. Possible values: ["BIG_QUERY_COLLECTION_ALL_TYPES", "BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#type_collection GoogleDataLossPreventionDiscoveryConfig#type_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#type_collection GoogleDataLossPreventionDiscoveryConfig#type_collection}
   */
   readonly typeCollection?: string;
   /**
   * or_conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#or_conditions GoogleDataLossPreventionDiscoveryConfig#or_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#or_conditions GoogleDataLossPreventionDiscoveryConfig#or_conditions}
   */
   readonly orConditions?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsOrConditions;
   /**
   * types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditionsTypes;
 }
@@ -2291,23 +2291,138 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterO
     }
   }
 }
+export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference {
+  /**
+  * Dataset ID of the table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#dataset_id GoogleDataLossPreventionDiscoveryConfig#dataset_id}
+  */
+  readonly datasetId: string;
+  /**
+  * Name of the table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#table_id GoogleDataLossPreventionDiscoveryConfig#table_id}
+  */
+  readonly tableId: string;
+}
+
+export function googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceToTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dataset_id: cdktf.stringToTerraform(struct!.datasetId),
+    table_id: cdktf.stringToTerraform(struct!.tableId),
+  }
+}
+
+
+export function googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceToHclTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dataset_id: {
+      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._datasetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datasetId = this._datasetId;
+    }
+    if (this._tableId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableId = this._tableId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._datasetId = undefined;
+      this._tableId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._datasetId = value.datasetId;
+      this._tableId = value.tableId;
+    }
+  }
+
+  // dataset_id - computed: false, optional: false, required: true
+  private _datasetId?: string; 
+  public get datasetId() {
+    return this.getStringAttribute('dataset_id');
+  }
+  public set datasetId(value: string) {
+    this._datasetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetIdInput() {
+    return this._datasetId;
+  }
+
+  // table_id - computed: false, optional: false, required: true
+  private _tableId?: string; 
+  public get tableId() {
+    return this.getStringAttribute('table_id');
+  }
+  public set tableId(value: string) {
+    this._tableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableIdInput() {
+    return this._tableId;
+  }
+}
 export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatterns {
   /**
   * if unset, this property matches all datasets
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#dataset_id_regex GoogleDataLossPreventionDiscoveryConfig#dataset_id_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#dataset_id_regex GoogleDataLossPreventionDiscoveryConfig#dataset_id_regex}
   */
   readonly datasetIdRegex?: string;
   /**
   * For organizations, if unset, will match all projects. Has no effect for data profile configurations created within a project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#project_id_regex GoogleDataLossPreventionDiscoveryConfig#project_id_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#project_id_regex GoogleDataLossPreventionDiscoveryConfig#project_id_regex}
   */
   readonly projectIdRegex?: string;
   /**
   * if unset, this property matches all tables
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#table_id_regex GoogleDataLossPreventionDiscoveryConfig#table_id_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#table_id_regex GoogleDataLossPreventionDiscoveryConfig#table_id_regex}
   */
   readonly tableIdRegex?: string;
 }
@@ -2483,7 +2598,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFil
   /**
   * patterns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#patterns GoogleDataLossPreventionDiscoveryConfig#patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#patterns GoogleDataLossPreventionDiscoveryConfig#patterns}
   */
   readonly patterns?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexesPatterns[] | cdktf.IResolvable;
 }
@@ -2569,7 +2684,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFil
   /**
   * include_regexes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#include_regexes GoogleDataLossPreventionDiscoveryConfig#include_regexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#include_regexes GoogleDataLossPreventionDiscoveryConfig#include_regexes}
   */
   readonly includeRegexes?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesIncludeRegexes;
 }
@@ -2655,13 +2770,19 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFil
   /**
   * other_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#other_tables GoogleDataLossPreventionDiscoveryConfig#other_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#other_tables GoogleDataLossPreventionDiscoveryConfig#other_tables}
   */
   readonly otherTables?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTables;
   /**
+  * table_reference block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#table_reference GoogleDataLossPreventionDiscoveryConfig#table_reference}
+  */
+  readonly tableReference?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference;
+  /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#tables GoogleDataLossPreventionDiscoveryConfig#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#tables GoogleDataLossPreventionDiscoveryConfig#tables}
   */
   readonly tables?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables;
 }
@@ -2673,6 +2794,7 @@ export function googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilt
   }
   return {
     other_tables: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesToTerraform(struct!.otherTables),
+    table_reference: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceToTerraform(struct!.tableReference),
     tables: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesToTerraform(struct!.tables),
   }
 }
@@ -2689,6 +2811,12 @@ export function googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilt
       isBlock: true,
       type: "list",
       storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOtherTablesList",
+    },
+    table_reference: {
+      value: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceToHclTerraform(struct!.tableReference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceList",
     },
     tables: {
       value: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTablesToHclTerraform(struct!.tables),
@@ -2720,6 +2848,10 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterO
       hasAnyValues = true;
       internalValueResult.otherTables = this._otherTables?.internalValue;
     }
+    if (this._tableReference?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableReference = this._tableReference?.internalValue;
+    }
     if (this._tables?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tables = this._tables?.internalValue;
@@ -2731,11 +2863,13 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterO
     if (value === undefined) {
       this.isEmptyObject = false;
       this._otherTables.internalValue = undefined;
+      this._tableReference.internalValue = undefined;
       this._tables.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._otherTables.internalValue = value.otherTables;
+      this._tableReference.internalValue = value.tableReference;
       this._tables.internalValue = value.tables;
     }
   }
@@ -2754,6 +2888,22 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterO
   // Temporarily expose input value. Use with caution.
   public get otherTablesInput() {
     return this._otherTables.internalValue;
+  }
+
+  // table_reference - computed: false, optional: true, required: false
+  private _tableReference = new GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReferenceOutputReference(this, "table_reference");
+  public get tableReference() {
+    return this._tableReference;
+  }
+  public putTableReference(value: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference) {
+    this._tableReference.internalValue = value;
+  }
+  public resetTableReference() {
+    this._tableReference.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableReferenceInput() {
+    return this._tableReference.internalValue;
   }
 
   // tables - computed: false, optional: true, required: false
@@ -2776,25 +2926,25 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTarget {
   /**
   * cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#cadence GoogleDataLossPreventionDiscoveryConfig#cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#cadence GoogleDataLossPreventionDiscoveryConfig#cadence}
   */
   readonly cadence?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
   */
   readonly conditions?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetConditions;
   /**
   * disabled block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#disabled GoogleDataLossPreventionDiscoveryConfig#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#disabled GoogleDataLossPreventionDiscoveryConfig#disabled}
   */
   readonly disabled?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetDisabled;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#filter GoogleDataLossPreventionDiscoveryConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#filter GoogleDataLossPreventionDiscoveryConfig#filter}
   */
   readonly filter?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilter;
 }
@@ -2967,13 +3117,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetCon
   /**
   * Database engines that should be profiled. Optional. Defaults to ALL_SUPPORTED_DATABASE_ENGINES if unspecified. Possible values: ["ALL_SUPPORTED_DATABASE_ENGINES", "MYSQL", "POSTGRES"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#database_engines GoogleDataLossPreventionDiscoveryConfig#database_engines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database_engines GoogleDataLossPreventionDiscoveryConfig#database_engines}
   */
   readonly databaseEngines?: string[];
   /**
   * Data profiles will only be generated for the database resource types specified in this field. If not specified, defaults to [DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES]. Possible values: ["DATABASE_RESOURCE_TYPE_ALL_SUPPORTED_TYPES", "DATABASE_RESOURCE_TYPE_TABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: string[];
 }
@@ -3137,25 +3287,25 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFil
   /**
   * Regex to test the database name against. If empty, all databases match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#database_regex GoogleDataLossPreventionDiscoveryConfig#database_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database_regex GoogleDataLossPreventionDiscoveryConfig#database_regex}
   */
   readonly databaseRegex?: string;
   /**
   * Regex to test the database resource's name against. An example of a database resource name is a table's name. Other database resource names like view names could be included in the future. If empty, all database resources match.'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#database_resource_name_regex GoogleDataLossPreventionDiscoveryConfig#database_resource_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database_resource_name_regex GoogleDataLossPreventionDiscoveryConfig#database_resource_name_regex}
   */
   readonly databaseResourceNameRegex?: string;
   /**
   * Regex to test the instance name against. If empty, all instances match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#instance_regex GoogleDataLossPreventionDiscoveryConfig#instance_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#instance_regex GoogleDataLossPreventionDiscoveryConfig#instance_regex}
   */
   readonly instanceRegex?: string;
   /**
   * For organizations, if unset, will match all projects. Has no effect for data profile configurations created within a project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#project_id_regex GoogleDataLossPreventionDiscoveryConfig#project_id_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#project_id_regex GoogleDataLossPreventionDiscoveryConfig#project_id_regex}
   */
   readonly projectIdRegex?: string;
 }
@@ -3360,7 +3510,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFil
   /**
   * patterns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#patterns GoogleDataLossPreventionDiscoveryConfig#patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#patterns GoogleDataLossPreventionDiscoveryConfig#patterns}
   */
   readonly patterns?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexesPatterns[] | cdktf.IResolvable;
 }
@@ -3446,7 +3596,7 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFil
   /**
   * include_regexes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#include_regexes GoogleDataLossPreventionDiscoveryConfig#include_regexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#include_regexes GoogleDataLossPreventionDiscoveryConfig#include_regexes}
   */
   readonly includeRegexes?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionIncludeRegexes;
 }
@@ -3528,6 +3678,185 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterC
     return this._includeRegexes.internalValue;
   }
 }
+export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference {
+  /**
+  * Required. Name of a database within the instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database GoogleDataLossPreventionDiscoveryConfig#database}
+  */
+  readonly database: string;
+  /**
+  * Required. Name of a database resource, for example, a table within the database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database_resource GoogleDataLossPreventionDiscoveryConfig#database_resource}
+  */
+  readonly databaseResource: string;
+  /**
+  * Required. The instance where this resource is located. For example: Cloud SQL instance ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#instance GoogleDataLossPreventionDiscoveryConfig#instance}
+  */
+  readonly instance: string;
+  /**
+  * Required. If within a project-level config, then this must match the config's project ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#project_id GoogleDataLossPreventionDiscoveryConfig#project_id}
+  */
+  readonly projectId: string;
+}
+
+export function googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceToTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    database: cdktf.stringToTerraform(struct!.database),
+    database_resource: cdktf.stringToTerraform(struct!.databaseResource),
+    instance: cdktf.stringToTerraform(struct!.instance),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+  }
+}
+
+
+export function googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceToHclTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_resource: {
+      value: cdktf.stringToHclTerraform(struct!.databaseResource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance: {
+      value: cdktf.stringToHclTerraform(struct!.instance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._databaseResource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseResource = this._databaseResource;
+    }
+    if (this._instance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instance = this._instance;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._database = undefined;
+      this._databaseResource = undefined;
+      this._instance = undefined;
+      this._projectId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._database = value.database;
+      this._databaseResource = value.databaseResource;
+      this._instance = value.instance;
+      this._projectId = value.projectId;
+    }
+  }
+
+  // database - computed: false, optional: false, required: true
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // database_resource - computed: false, optional: false, required: true
+  private _databaseResource?: string; 
+  public get databaseResource() {
+    return this.getStringAttribute('database_resource');
+  }
+  public set databaseResource(value: string) {
+    this._databaseResource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseResourceInput() {
+    return this._databaseResource;
+  }
+
+  // instance - computed: false, optional: false, required: true
+  private _instance?: string; 
+  public get instance() {
+    return this.getStringAttribute('instance');
+  }
+  public set instance(value: string) {
+    this._instance = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceInput() {
+    return this._instance;
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+}
 export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers {
 }
 
@@ -3581,13 +3910,19 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFil
   /**
   * collection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#collection GoogleDataLossPreventionDiscoveryConfig#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#collection GoogleDataLossPreventionDiscoveryConfig#collection}
   */
   readonly collection?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection;
   /**
+  * database_resource_reference block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#database_resource_reference GoogleDataLossPreventionDiscoveryConfig#database_resource_reference}
+  */
+  readonly databaseResourceReference?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference;
+  /**
   * others block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#others GoogleDataLossPreventionDiscoveryConfig#others}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#others GoogleDataLossPreventionDiscoveryConfig#others}
   */
   readonly others?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers;
 }
@@ -3599,6 +3934,7 @@ export function googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilt
   }
   return {
     collection: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionToTerraform(struct!.collection),
+    database_resource_reference: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceToTerraform(struct!.databaseResourceReference),
     others: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthersToTerraform(struct!.others),
   }
 }
@@ -3615,6 +3951,12 @@ export function googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilt
       isBlock: true,
       type: "list",
       storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollectionList",
+    },
+    database_resource_reference: {
+      value: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceToHclTerraform(struct!.databaseResourceReference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceList",
     },
     others: {
       value: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthersToHclTerraform(struct!.others),
@@ -3646,6 +3988,10 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
       hasAnyValues = true;
       internalValueResult.collection = this._collection?.internalValue;
     }
+    if (this._databaseResourceReference?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseResourceReference = this._databaseResourceReference?.internalValue;
+    }
     if (this._others?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.others = this._others?.internalValue;
@@ -3657,11 +4003,13 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
     if (value === undefined) {
       this.isEmptyObject = false;
       this._collection.internalValue = undefined;
+      this._databaseResourceReference.internalValue = undefined;
       this._others.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._collection.internalValue = value.collection;
+      this._databaseResourceReference.internalValue = value.databaseResourceReference;
       this._others.internalValue = value.others;
     }
   }
@@ -3680,6 +4028,22 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
   // Temporarily expose input value. Use with caution.
   public get collectionInput() {
     return this._collection.internalValue;
+  }
+
+  // database_resource_reference - computed: false, optional: true, required: false
+  private _databaseResourceReference = new GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference(this, "database_resource_reference");
+  public get databaseResourceReference() {
+    return this._databaseResourceReference;
+  }
+  public putDatabaseResourceReference(value: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference) {
+    this._databaseResourceReference.internalValue = value;
+  }
+  public resetDatabaseResourceReference() {
+    this._databaseResourceReference.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseResourceReferenceInput() {
+    return this._databaseResourceReference.internalValue;
   }
 
   // others - computed: false, optional: true, required: false
@@ -3702,13 +4066,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGen
   /**
   * Frequency to regenerate data profiles when the schema is modified. Defaults to monthly. Possible values: ["UPDATE_FREQUENCY_NEVER", "UPDATE_FREQUENCY_DAILY", "UPDATE_FREQUENCY_MONTHLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#frequency GoogleDataLossPreventionDiscoveryConfig#frequency}
   */
   readonly frequency?: string;
   /**
   * The types of schema modifications to consider. Defaults to NEW_COLUMNS. Possible values: ["NEW_COLUMNS", "REMOVED_COLUMNS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#types GoogleDataLossPreventionDiscoveryConfig#types}
   */
   readonly types?: string[];
 }
@@ -3823,13 +4187,13 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGen
   /**
   * Data changes (non-schema changes) in Cloud SQL tables can't trigger reprofiling. If you set this field, profiles are refreshed at this frequency regardless of whether the underlying tables have changes. Defaults to never. Possible values: ["UPDATE_FREQUENCY_NEVER", "UPDATE_FREQUENCY_DAILY", "UPDATE_FREQUENCY_MONTHLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#refresh_frequency GoogleDataLossPreventionDiscoveryConfig#refresh_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#refresh_frequency GoogleDataLossPreventionDiscoveryConfig#refresh_frequency}
   */
   readonly refreshFrequency?: string;
   /**
   * schema_modified_cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#schema_modified_cadence GoogleDataLossPreventionDiscoveryConfig#schema_modified_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#schema_modified_cadence GoogleDataLossPreventionDiscoveryConfig#schema_modified_cadence}
   */
   readonly schemaModifiedCadence?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence;
 }
@@ -3944,25 +4308,25 @@ export interface GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget {
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#conditions GoogleDataLossPreventionDiscoveryConfig#conditions}
   */
   readonly conditions?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetConditions;
   /**
   * disabled block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#disabled GoogleDataLossPreventionDiscoveryConfig#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#disabled GoogleDataLossPreventionDiscoveryConfig#disabled}
   */
   readonly disabled?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetDisabled;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#filter GoogleDataLossPreventionDiscoveryConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#filter GoogleDataLossPreventionDiscoveryConfig#filter}
   */
   readonly filter: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter;
   /**
   * generation_cadence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#generation_cadence GoogleDataLossPreventionDiscoveryConfig#generation_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#generation_cadence GoogleDataLossPreventionDiscoveryConfig#generation_cadence}
   */
   readonly generationCadence?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadence;
 }
@@ -4128,19 +4492,74 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputR
     return this._generationCadence.internalValue;
   }
 }
+export interface GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget {
+}
+
+export function googleDataLossPreventionDiscoveryConfigTargetsSecretsTargetToTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleDataLossPreventionDiscoveryConfigTargetsSecretsTargetToHclTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference | GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
 export interface GoogleDataLossPreventionDiscoveryConfigTargets {
   /**
   * big_query_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#big_query_target GoogleDataLossPreventionDiscoveryConfig#big_query_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#big_query_target GoogleDataLossPreventionDiscoveryConfig#big_query_target}
   */
   readonly bigQueryTarget?: GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTarget;
   /**
   * cloud_sql_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#cloud_sql_target GoogleDataLossPreventionDiscoveryConfig#cloud_sql_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#cloud_sql_target GoogleDataLossPreventionDiscoveryConfig#cloud_sql_target}
   */
   readonly cloudSqlTarget?: GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget;
+  /**
+  * secrets_target block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#secrets_target GoogleDataLossPreventionDiscoveryConfig#secrets_target}
+  */
+  readonly secretsTarget?: GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget;
 }
 
 export function googleDataLossPreventionDiscoveryConfigTargetsToTerraform(struct?: GoogleDataLossPreventionDiscoveryConfigTargets | cdktf.IResolvable): any {
@@ -4151,6 +4570,7 @@ export function googleDataLossPreventionDiscoveryConfigTargetsToTerraform(struct
   return {
     big_query_target: googleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetToTerraform(struct!.bigQueryTarget),
     cloud_sql_target: googleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetToTerraform(struct!.cloudSqlTarget),
+    secrets_target: googleDataLossPreventionDiscoveryConfigTargetsSecretsTargetToTerraform(struct!.secretsTarget),
   }
 }
 
@@ -4172,6 +4592,12 @@ export function googleDataLossPreventionDiscoveryConfigTargetsToHclTerraform(str
       isBlock: true,
       type: "list",
       storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetList",
+    },
+    secrets_target: {
+      value: googleDataLossPreventionDiscoveryConfigTargetsSecretsTargetToHclTerraform(struct!.secretsTarget),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetList",
     },
   };
 
@@ -4207,6 +4633,10 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference exten
       hasAnyValues = true;
       internalValueResult.cloudSqlTarget = this._cloudSqlTarget?.internalValue;
     }
+    if (this._secretsTarget?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretsTarget = this._secretsTarget?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4216,6 +4646,7 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference exten
       this.resolvableValue = undefined;
       this._bigQueryTarget.internalValue = undefined;
       this._cloudSqlTarget.internalValue = undefined;
+      this._secretsTarget.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -4226,6 +4657,7 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference exten
       this.resolvableValue = undefined;
       this._bigQueryTarget.internalValue = value.bigQueryTarget;
       this._cloudSqlTarget.internalValue = value.cloudSqlTarget;
+      this._secretsTarget.internalValue = value.secretsTarget;
     }
   }
 
@@ -4260,6 +4692,22 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference exten
   public get cloudSqlTargetInput() {
     return this._cloudSqlTarget.internalValue;
   }
+
+  // secrets_target - computed: false, optional: true, required: false
+  private _secretsTarget = new GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference(this, "secrets_target");
+  public get secretsTarget() {
+    return this._secretsTarget;
+  }
+  public putSecretsTarget(value: GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget) {
+    this._secretsTarget.internalValue = value;
+  }
+  public resetSecretsTarget() {
+    this._secretsTarget.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsTargetInput() {
+    return this._secretsTarget.internalValue;
+  }
 }
 
 export class GoogleDataLossPreventionDiscoveryConfigTargetsList extends cdktf.ComplexList {
@@ -4283,15 +4731,15 @@ export class GoogleDataLossPreventionDiscoveryConfigTargetsList extends cdktf.Co
 }
 export interface GoogleDataLossPreventionDiscoveryConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#create GoogleDataLossPreventionDiscoveryConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#create GoogleDataLossPreventionDiscoveryConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#delete GoogleDataLossPreventionDiscoveryConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#delete GoogleDataLossPreventionDiscoveryConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#update GoogleDataLossPreventionDiscoveryConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#update GoogleDataLossPreventionDiscoveryConfig#update}
   */
   readonly update?: string;
 }
@@ -4443,7 +4891,7 @@ export class GoogleDataLossPreventionDiscoveryConfigTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config}
 */
 export class GoogleDataLossPreventionDiscoveryConfig extends cdktf.TerraformResource {
 
@@ -4459,7 +4907,7 @@ export class GoogleDataLossPreventionDiscoveryConfig extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleDataLossPreventionDiscoveryConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataLossPreventionDiscoveryConfig to import
-  * @param importFromId The id of the existing GoogleDataLossPreventionDiscoveryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataLossPreventionDiscoveryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataLossPreventionDiscoveryConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4471,7 +4919,7 @@ export class GoogleDataLossPreventionDiscoveryConfig extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4482,7 +4930,7 @@ export class GoogleDataLossPreventionDiscoveryConfig extends cdktf.TerraformReso
       terraformResourceType: 'google_data_loss_prevention_discovery_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.32.0',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

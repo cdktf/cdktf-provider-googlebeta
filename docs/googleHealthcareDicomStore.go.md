@@ -4,7 +4,7 @@
 
 ### GoogleHealthcareDicomStore <a name="GoogleHealthcareDicomStore" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the GoogleHealthcareDicomStore
 
 The id of the existing GoogleHealthcareDicomStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlehealt
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.dataset">Dataset</a></code> | <code>*string</code> | Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.name">Name</a></code> | <code>*string</code> | The resource name for the DicomStore. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-supplied key-value pairs used to organize DICOM stores. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.notificationConfig">NotificationConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig">GoogleHealthcareDicomStoreNotificationConfig</a></code> | notification_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig.property.streamConfigs">StreamConfigs</a></code> | <code>interface{}</code> | stream_configs block. |
@@ -1049,7 +1049,7 @@ Dataset *string
 
 Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#dataset GoogleHealthcareDicomStore#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#dataset GoogleHealthcareDicomStore#dataset}
 
 ---
 
@@ -1065,7 +1065,7 @@ The resource name for the DicomStore.
 
 ** Changing this property may recreate the Dicom store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
 
 ---
 
@@ -1077,7 +1077,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}
 
 ---
 
@@ -1122,7 +1122,7 @@ NotificationConfig GoogleHealthcareDicomStoreNotificationConfig
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#notification_config GoogleHealthcareDicomStore#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#notification_config GoogleHealthcareDicomStore#notification_config}
 
 ---
 
@@ -1136,7 +1136,7 @@ StreamConfigs interface{}
 
 stream_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#stream_configs GoogleHealthcareDicomStore#stream_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#stream_configs GoogleHealthcareDicomStore#stream_configs}
 
 ---
 
@@ -1150,7 +1150,7 @@ Timeouts GoogleHealthcareDicomStoreTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#timeouts GoogleHealthcareDicomStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#timeouts GoogleHealthcareDicomStore#timeouts}
 
 ---
 
@@ -1163,6 +1163,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlehealt
 
 &googlehealthcaredicomstore.GoogleHealthcareDicomStoreNotificationConfig {
 	PubsubTopic: *string,
+	SendForBulkImport: interface{},
 }
 ```
 
@@ -1171,6 +1172,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlehealt
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig.property.pubsubTopic">PubsubTopic</a></code> | <code>*string</code> | The Cloud Pub/Sub topic that notifications of changes are published on. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig.property.sendForBulkImport">SendForBulkImport</a></code> | <code>interface{}</code> | Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports. |
 
 ---
 
@@ -1191,7 +1193,21 @@ was published. Notifications are only sent if the topic is non-empty. Topic name
 project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#pubsub_topic GoogleHealthcareDicomStore#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#pubsub_topic GoogleHealthcareDicomStore#pubsub_topic}
+
+---
+
+##### `SendForBulkImport`<sup>Optional</sup> <a name="SendForBulkImport" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig.property.sendForBulkImport"></a>
+
+```go
+SendForBulkImport interface{}
+```
+
+- *Type:* interface{}
+
+Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#send_for_bulk_import GoogleHealthcareDicomStore#send_for_bulk_import}
 
 ---
 
@@ -1225,7 +1241,7 @@ BigqueryDestination GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination
 
 bigquery_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#bigquery_destination GoogleHealthcareDicomStore#bigquery_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#bigquery_destination GoogleHealthcareDicomStore#bigquery_destination}
 
 ---
 
@@ -1259,7 +1275,7 @@ TableUri *string
 
 a fully qualified BigQuery table URI where DICOM instance metadata will be streamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#table_uri GoogleHealthcareDicomStore#table_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#table_uri GoogleHealthcareDicomStore#table_uri}
 
 ---
 
@@ -1281,9 +1297,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlehealt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}. |
 
 ---
 
@@ -1295,7 +1311,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}.
 
 ---
 
@@ -1307,7 +1323,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}.
 
 ---
 
@@ -1319,7 +1335,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.32.0/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}.
 
 ---
 
@@ -1375,6 +1391,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.resetSendForBulkImport">ResetSendForBulkImport</a></code> | *No description.* |
 
 ---
 
@@ -1528,6 +1545,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetSendForBulkImport` <a name="ResetSendForBulkImport" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.resetSendForBulkImport"></a>
+
+```go
+func ResetSendForBulkImport()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1536,7 +1559,9 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.pubsubTopicInput">PubsubTopicInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.sendForBulkImportInput">SendForBulkImportInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.pubsubTopic">PubsubTopic</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.sendForBulkImport">SendForBulkImport</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig">GoogleHealthcareDicomStoreNotificationConfig</a></code> | *No description.* |
 
 ---
@@ -1575,6 +1600,16 @@ func PubsubTopicInput() *string
 
 ---
 
+##### `SendForBulkImportInput`<sup>Optional</sup> <a name="SendForBulkImportInput" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.sendForBulkImportInput"></a>
+
+```go
+func SendForBulkImportInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `PubsubTopic`<sup>Required</sup> <a name="PubsubTopic" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.pubsubTopic"></a>
 
 ```go
@@ -1582,6 +1617,16 @@ func PubsubTopic() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `SendForBulkImport`<sup>Required</sup> <a name="SendForBulkImport" id="@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference.property.sendForBulkImport"></a>
+
+```go
+func SendForBulkImport() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
