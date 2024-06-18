@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleDiscoveryEngineDataStoreConfig extends cdktf.TerraformMet
   /**
   * The content config of the data store. Possible values: ["NO_CONTENT", "CONTENT_REQUIRED", "PUBLIC_WEBSITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#content_config GoogleDiscoveryEngineDataStore#content_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#content_config GoogleDiscoveryEngineDataStore#content_config}
   */
   readonly contentConfig: string;
   /**
@@ -23,24 +23,24 @@ export interface GoogleDiscoveryEngineDataStoreConfig extends cdktf.TerraformMet
   * data store is not configured as site search (GENERIC vertical and
   * PUBLIC_WEBSITE contentConfig), this flag will be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#create_advanced_site_search GoogleDiscoveryEngineDataStore#create_advanced_site_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#create_advanced_site_search GoogleDiscoveryEngineDataStore#create_advanced_site_search}
   */
   readonly createAdvancedSiteSearch?: boolean | cdktf.IResolvable;
   /**
   * The unique id of the data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#data_store_id GoogleDiscoveryEngineDataStore#data_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#data_store_id GoogleDiscoveryEngineDataStore#data_store_id}
   */
   readonly dataStoreId: string;
   /**
   * The display name of the data store. This field must be a UTF-8 encoded
   * string with a length limit of 128 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#display_name GoogleDiscoveryEngineDataStore#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#display_name GoogleDiscoveryEngineDataStore#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#id GoogleDiscoveryEngineDataStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#id GoogleDiscoveryEngineDataStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,44 +49,750 @@ export interface GoogleDiscoveryEngineDataStoreConfig extends cdktf.TerraformMet
   /**
   * The industry vertical that the data store registers. Possible values: ["GENERIC", "MEDIA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#industry_vertical GoogleDiscoveryEngineDataStore#industry_vertical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#industry_vertical GoogleDiscoveryEngineDataStore#industry_vertical}
   */
   readonly industryVertical: string;
   /**
   * The geographic location where the data store should reside. The value can
   * only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#location GoogleDiscoveryEngineDataStore#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#location GoogleDiscoveryEngineDataStore#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#project GoogleDiscoveryEngineDataStore#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#project GoogleDiscoveryEngineDataStore#project}
   */
   readonly project?: string;
   /**
   * The solutions that the data store enrolls. Possible values: ["SOLUTION_TYPE_RECOMMENDATION", "SOLUTION_TYPE_SEARCH", "SOLUTION_TYPE_CHAT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#solution_types GoogleDiscoveryEngineDataStore#solution_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#solution_types GoogleDiscoveryEngineDataStore#solution_types}
   */
   readonly solutionTypes?: string[];
   /**
+  * document_processing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#document_processing_config GoogleDiscoveryEngineDataStore#document_processing_config}
+  */
+  readonly documentProcessingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#timeouts GoogleDiscoveryEngineDataStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#timeouts GoogleDiscoveryEngineDataStore#timeouts}
   */
   readonly timeouts?: GoogleDiscoveryEngineDataStoreTimeouts;
 }
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig {
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig {
+  /**
+  * If true, will use native text instead of OCR text on pages containing native text.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#use_native_text GoogleDiscoveryEngineDataStore#use_native_text}
+  */
+  readonly useNativeText?: boolean | cdktf.IResolvable;
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    use_native_text: cdktf.booleanToTerraform(struct!.useNativeText),
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    use_native_text: {
+      value: cdktf.booleanToHclTerraform(struct!.useNativeText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._useNativeText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useNativeText = this._useNativeText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._useNativeText = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._useNativeText = value.useNativeText;
+    }
+  }
+
+  // use_native_text - computed: false, optional: true, required: false
+  private _useNativeText?: boolean | cdktf.IResolvable; 
+  public get useNativeText() {
+    return this.getBooleanAttribute('use_native_text');
+  }
+  public set useNativeText(value: boolean | cdktf.IResolvable) {
+    this._useNativeText = value;
+  }
+  public resetUseNativeText() {
+    this._useNativeText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useNativeTextInput() {
+    return this._useNativeText;
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig {
+  /**
+  * digital_parsing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#digital_parsing_config GoogleDiscoveryEngineDataStore#digital_parsing_config}
+  */
+  readonly digitalParsingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig;
+  /**
+  * ocr_parsing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#ocr_parsing_config GoogleDiscoveryEngineDataStore#ocr_parsing_config}
+  */
+  readonly ocrParsingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig;
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    digital_parsing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToTerraform(struct!.digitalParsingConfig),
+    ocr_parsing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToTerraform(struct!.ocrParsingConfig),
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    digital_parsing_config: {
+      value: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToHclTerraform(struct!.digitalParsingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigList",
+    },
+    ocr_parsing_config: {
+      value: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToHclTerraform(struct!.ocrParsingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._digitalParsingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.digitalParsingConfig = this._digitalParsingConfig?.internalValue;
+    }
+    if (this._ocrParsingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ocrParsingConfig = this._ocrParsingConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._digitalParsingConfig.internalValue = undefined;
+      this._ocrParsingConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._digitalParsingConfig.internalValue = value.digitalParsingConfig;
+      this._ocrParsingConfig.internalValue = value.ocrParsingConfig;
+    }
+  }
+
+  // digital_parsing_config - computed: false, optional: true, required: false
+  private _digitalParsingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference(this, "digital_parsing_config");
+  public get digitalParsingConfig() {
+    return this._digitalParsingConfig;
+  }
+  public putDigitalParsingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig) {
+    this._digitalParsingConfig.internalValue = value;
+  }
+  public resetDigitalParsingConfig() {
+    this._digitalParsingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get digitalParsingConfigInput() {
+    return this._digitalParsingConfig.internalValue;
+  }
+
+  // ocr_parsing_config - computed: false, optional: true, required: false
+  private _ocrParsingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference(this, "ocr_parsing_config");
+  public get ocrParsingConfig() {
+    return this._ocrParsingConfig;
+  }
+  public putOcrParsingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) {
+    this._ocrParsingConfig.internalValue = value;
+  }
+  public resetOcrParsingConfig() {
+    this._ocrParsingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocrParsingConfigInput() {
+    return this._ocrParsingConfig.internalValue;
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig {
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig {
+  /**
+  * If true, will use native text instead of OCR text on pages containing native text.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#use_native_text GoogleDiscoveryEngineDataStore#use_native_text}
+  */
+  readonly useNativeText?: boolean | cdktf.IResolvable;
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    use_native_text: cdktf.booleanToTerraform(struct!.useNativeText),
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    use_native_text: {
+      value: cdktf.booleanToHclTerraform(struct!.useNativeText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._useNativeText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useNativeText = this._useNativeText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._useNativeText = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._useNativeText = value.useNativeText;
+    }
+  }
+
+  // use_native_text - computed: false, optional: true, required: false
+  private _useNativeText?: boolean | cdktf.IResolvable; 
+  public get useNativeText() {
+    return this.getBooleanAttribute('use_native_text');
+  }
+  public set useNativeText(value: boolean | cdktf.IResolvable) {
+    this._useNativeText = value;
+  }
+  public resetUseNativeText() {
+    this._useNativeText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useNativeTextInput() {
+    return this._useNativeText;
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#file_type GoogleDiscoveryEngineDataStore#file_type}
+  */
+  readonly fileType: string;
+  /**
+  * digital_parsing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#digital_parsing_config GoogleDiscoveryEngineDataStore#digital_parsing_config}
+  */
+  readonly digitalParsingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig;
+  /**
+  * ocr_parsing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#ocr_parsing_config GoogleDiscoveryEngineDataStore#ocr_parsing_config}
+  */
+  readonly ocrParsingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig;
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    file_type: cdktf.stringToTerraform(struct!.fileType),
+    digital_parsing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToTerraform(struct!.digitalParsingConfig),
+    ocr_parsing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToTerraform(struct!.ocrParsingConfig),
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_type: {
+      value: cdktf.stringToHclTerraform(struct!.fileType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    digital_parsing_config: {
+      value: googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToHclTerraform(struct!.digitalParsingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigList",
+    },
+    ocr_parsing_config: {
+      value: googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToHclTerraform(struct!.ocrParsingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileType = this._fileType;
+    }
+    if (this._digitalParsingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.digitalParsingConfig = this._digitalParsingConfig?.internalValue;
+    }
+    if (this._ocrParsingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ocrParsingConfig = this._ocrParsingConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fileType = undefined;
+      this._digitalParsingConfig.internalValue = undefined;
+      this._ocrParsingConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fileType = value.fileType;
+      this._digitalParsingConfig.internalValue = value.digitalParsingConfig;
+      this._ocrParsingConfig.internalValue = value.ocrParsingConfig;
+    }
+  }
+
+  // file_type - computed: false, optional: false, required: true
+  private _fileType?: string; 
+  public get fileType() {
+    return this.getStringAttribute('file_type');
+  }
+  public set fileType(value: string) {
+    this._fileType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileTypeInput() {
+    return this._fileType;
+  }
+
+  // digital_parsing_config - computed: false, optional: true, required: false
+  private _digitalParsingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference(this, "digital_parsing_config");
+  public get digitalParsingConfig() {
+    return this._digitalParsingConfig;
+  }
+  public putDigitalParsingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig) {
+    this._digitalParsingConfig.internalValue = value;
+  }
+  public resetDigitalParsingConfig() {
+    this._digitalParsingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get digitalParsingConfigInput() {
+    return this._digitalParsingConfig.internalValue;
+  }
+
+  // ocr_parsing_config - computed: false, optional: true, required: false
+  private _ocrParsingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference(this, "ocr_parsing_config");
+  public get ocrParsingConfig() {
+    return this._ocrParsingConfig;
+  }
+  public putOcrParsingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig) {
+    this._ocrParsingConfig.internalValue = value;
+  }
+  public resetOcrParsingConfig() {
+    this._ocrParsingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocrParsingConfigInput() {
+    return this._ocrParsingConfig.internalValue;
+  }
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference {
+    return new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDiscoveryEngineDataStoreDocumentProcessingConfig {
+  /**
+  * default_parsing_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#default_parsing_config GoogleDiscoveryEngineDataStore#default_parsing_config}
+  */
+  readonly defaultParsingConfig?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig;
+  /**
+  * parsing_config_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#parsing_config_overrides GoogleDiscoveryEngineDataStore#parsing_config_overrides}
+  */
+  readonly parsingConfigOverrides?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable;
+}
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigToTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_parsing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToTerraform(struct!.defaultParsingConfig),
+    parsing_config_overrides: cdktf.listMapper(googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform, true)(struct!.parsingConfigOverrides),
+  }
+}
+
+
+export function googleDiscoveryEngineDataStoreDocumentProcessingConfigToHclTerraform(struct?: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference | GoogleDiscoveryEngineDataStoreDocumentProcessingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_parsing_config: {
+      value: googleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToHclTerraform(struct!.defaultParsingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigList",
+    },
+    parsing_config_overrides: {
+      value: cdktf.listMapperHcl(googleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform, true)(struct!.parsingConfigOverrides),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDiscoveryEngineDataStoreDocumentProcessingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultParsingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultParsingConfig = this._defaultParsingConfig?.internalValue;
+    }
+    if (this._parsingConfigOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parsingConfigOverrides = this._parsingConfigOverrides?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultParsingConfig.internalValue = undefined;
+      this._parsingConfigOverrides.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultParsingConfig.internalValue = value.defaultParsingConfig;
+      this._parsingConfigOverrides.internalValue = value.parsingConfigOverrides;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // default_parsing_config - computed: false, optional: true, required: false
+  private _defaultParsingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference(this, "default_parsing_config");
+  public get defaultParsingConfig() {
+    return this._defaultParsingConfig;
+  }
+  public putDefaultParsingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig) {
+    this._defaultParsingConfig.internalValue = value;
+  }
+  public resetDefaultParsingConfig() {
+    this._defaultParsingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultParsingConfigInput() {
+    return this._defaultParsingConfig.internalValue;
+  }
+
+  // parsing_config_overrides - computed: false, optional: true, required: false
+  private _parsingConfigOverrides = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList(this, "parsing_config_overrides", true);
+  public get parsingConfigOverrides() {
+    return this._parsingConfigOverrides;
+  }
+  public putParsingConfigOverrides(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable) {
+    this._parsingConfigOverrides.internalValue = value;
+  }
+  public resetParsingConfigOverrides() {
+    this._parsingConfigOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parsingConfigOverridesInput() {
+    return this._parsingConfigOverrides.internalValue;
+  }
+}
 export interface GoogleDiscoveryEngineDataStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#create GoogleDiscoveryEngineDataStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#create GoogleDiscoveryEngineDataStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#delete GoogleDiscoveryEngineDataStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#delete GoogleDiscoveryEngineDataStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#update GoogleDiscoveryEngineDataStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#update GoogleDiscoveryEngineDataStore#update}
   */
   readonly update?: string;
 }
@@ -238,7 +944,7 @@ export class GoogleDiscoveryEngineDataStoreTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}
 */
 export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
 
@@ -254,7 +960,7 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDiscoveryEngineDataStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDiscoveryEngineDataStore to import
-  * @param importFromId The id of the existing GoogleDiscoveryEngineDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDiscoveryEngineDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDiscoveryEngineDataStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -266,7 +972,7 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -277,7 +983,7 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_discovery_engine_data_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -297,6 +1003,7 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
     this._location = config.location;
     this._project = config.project;
     this._solutionTypes = config.solutionTypes;
+    this._documentProcessingConfig.internalValue = config.documentProcessingConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -448,6 +1155,22 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
     return this._solutionTypes;
   }
 
+  // document_processing_config - computed: false, optional: true, required: false
+  private _documentProcessingConfig = new GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference(this, "document_processing_config");
+  public get documentProcessingConfig() {
+    return this._documentProcessingConfig;
+  }
+  public putDocumentProcessingConfig(value: GoogleDiscoveryEngineDataStoreDocumentProcessingConfig) {
+    this._documentProcessingConfig.internalValue = value;
+  }
+  public resetDocumentProcessingConfig() {
+    this._documentProcessingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get documentProcessingConfigInput() {
+    return this._documentProcessingConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleDiscoveryEngineDataStoreTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -479,6 +1202,7 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
       solution_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._solutionTypes),
+      document_processing_config: googleDiscoveryEngineDataStoreDocumentProcessingConfigToTerraform(this._documentProcessingConfig.internalValue),
       timeouts: googleDiscoveryEngineDataStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -538,6 +1262,12 @@ export class GoogleDiscoveryEngineDataStore extends cdktf.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      document_processing_config: {
+        value: googleDiscoveryEngineDataStoreDocumentProcessingConfigToHclTerraform(this._documentProcessingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDiscoveryEngineDataStoreDocumentProcessingConfigList",
       },
       timeouts: {
         value: googleDiscoveryEngineDataStoreTimeoutsToHclTerraform(this._timeouts.internalValue),

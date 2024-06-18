@@ -205,6 +205,7 @@ export * as googleCloudfunctionsFunctionIamBinding from './google-cloudfunctions
 export * as googleCloudfunctionsFunctionIamMember from './google-cloudfunctions-function-iam-member';
 export * as googleCloudfunctionsFunctionIamPolicy from './google-cloudfunctions-function-iam-policy';
 export * as googleComposerEnvironment from './google-composer-environment';
+export * as googleComposerUserWorkloadsConfigMap from './google-composer-user-workloads-config-map';
 export * as googleComposerUserWorkloadsSecret from './google-composer-user-workloads-secret';
 export * as googleComputeAddress from './google-compute-address';
 export * as googleComputeAttachedDisk from './google-compute-attached-disk';
@@ -676,6 +677,8 @@ export * as googleLoggingProjectBucketConfig from './google-logging-project-buck
 export * as googleLoggingProjectExclusion from './google-logging-project-exclusion';
 export * as googleLoggingProjectSink from './google-logging-project-sink';
 export * as googleLookerInstance from './google-looker-instance';
+export * as googleManagedKafkaCluster from './google-managed-kafka-cluster';
+export * as googleManagedKafkaTopic from './google-managed-kafka-topic';
 export * as googleMemcacheInstance from './google-memcache-instance';
 export * as googleMigrationCenterGroup from './google-migration-center-group';
 export * as googleMigrationCenterPreferenceSet from './google-migration-center-preference-set';
@@ -691,6 +694,7 @@ export * as googleMonitoringService from './google-monitoring-service';
 export * as googleMonitoringSlo from './google-monitoring-slo';
 export * as googleMonitoringUptimeCheckConfig from './google-monitoring-uptime-check-config';
 export * as googleNetappActiveDirectory from './google-netapp-active-directory';
+export * as googleNetappBackup from './google-netapp-backup';
 export * as googleNetappBackupPolicy from './google-netapp-backup-policy';
 export * as googleNetappBackupVault from './google-netapp-backup-vault';
 export * as googleNetappKmsconfig from './google-netapp-kmsconfig';
@@ -809,7 +813,10 @@ export * as googleRuntimeconfigConfigIamPolicy from './google-runtimeconfig-conf
 export * as googleRuntimeconfigVariable from './google-runtimeconfig-variable';
 export * as googleSccEventThreatDetectionCustomModule from './google-scc-event-threat-detection-custom-module';
 export * as googleSccFolderCustomModule from './google-scc-folder-custom-module';
+export * as googleSccManagementFolderSecurityHealthAnalyticsCustomModule from './google-scc-management-folder-security-health-analytics-custom-module';
 export * as googleSccManagementOrganizationEventThreatDetectionCustomModule from './google-scc-management-organization-event-threat-detection-custom-module';
+export * as googleSccManagementOrganizationSecurityHealthAnalyticsCustomModule from './google-scc-management-organization-security-health-analytics-custom-module';
+export * as googleSccManagementProjectSecurityHealthAnalyticsCustomModule from './google-scc-management-project-security-health-analytics-custom-module';
 export * as googleSccMuteConfig from './google-scc-mute-config';
 export * as googleSccNotificationConfig from './google-scc-notification-config';
 export * as googleSccOrganizationCustomModule from './google-scc-organization-custom-module';
@@ -1002,6 +1009,8 @@ export * as dataGoogleCloudfunctionsFunction from './data-google-cloudfunctions-
 export * as dataGoogleCloudfunctionsFunctionIamPolicy from './data-google-cloudfunctions-function-iam-policy';
 export * as dataGoogleComposerEnvironment from './data-google-composer-environment';
 export * as dataGoogleComposerImageVersions from './data-google-composer-image-versions';
+export * as dataGoogleComposerUserWorkloadsConfigMap from './data-google-composer-user-workloads-config-map';
+export * as dataGoogleComposerUserWorkloadsSecret from './data-google-composer-user-workloads-secret';
 export * as dataGoogleComputeAddress from './data-google-compute-address';
 export * as dataGoogleComputeAddresses from './data-google-compute-addresses';
 export * as dataGoogleComputeBackendBucket from './data-google-compute-backend-bucket';

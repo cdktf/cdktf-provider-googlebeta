@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,17 +17,17 @@ export interface GoogleEdgecontainerClusterConfig extends cdktf.TerraformMetaArg
   * specified explicitly for a node pool in this cluster. If unspecified, the
   * Kubernetes default value will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#default_max_pods_per_node GoogleEdgecontainerCluster#default_max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#default_max_pods_per_node GoogleEdgecontainerCluster#default_max_pods_per_node}
   */
   readonly defaultMaxPodsPerNode?: number;
   /**
   * Address pools for cluster data plane external load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#external_load_balancer_ipv4_address_pools GoogleEdgecontainerCluster#external_load_balancer_ipv4_address_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#external_load_balancer_ipv4_address_pools GoogleEdgecontainerCluster#external_load_balancer_ipv4_address_pools}
   */
   readonly externalLoadBalancerIpv4AddressPools?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,83 +39,83 @@ export interface GoogleEdgecontainerClusterConfig extends cdktf.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#labels GoogleEdgecontainerCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#labels GoogleEdgecontainerCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#location GoogleEdgecontainerCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#location GoogleEdgecontainerCluster#location}
   */
   readonly location: string;
   /**
   * The GDCE cluster name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#name GoogleEdgecontainerCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#name GoogleEdgecontainerCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
   */
   readonly project?: string;
   /**
   * The release channel a cluster is subscribed to. Possible values: ["RELEASE_CHANNEL_UNSPECIFIED", "NONE", "REGULAR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#release_channel GoogleEdgecontainerCluster#release_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#release_channel GoogleEdgecontainerCluster#release_channel}
   */
   readonly releaseChannel?: string;
   /**
   * The target cluster version. For example: "1.5.0".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#target_version GoogleEdgecontainerCluster#target_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#target_version GoogleEdgecontainerCluster#target_version}
   */
   readonly targetVersion?: string;
   /**
   * authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#authorization GoogleEdgecontainerCluster#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#authorization GoogleEdgecontainerCluster#authorization}
   */
   readonly authorization: GoogleEdgecontainerClusterAuthorization;
   /**
   * control_plane block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#control_plane GoogleEdgecontainerCluster#control_plane}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#control_plane GoogleEdgecontainerCluster#control_plane}
   */
   readonly controlPlane?: GoogleEdgecontainerClusterControlPlane;
   /**
   * control_plane_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#control_plane_encryption GoogleEdgecontainerCluster#control_plane_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#control_plane_encryption GoogleEdgecontainerCluster#control_plane_encryption}
   */
   readonly controlPlaneEncryption?: GoogleEdgecontainerClusterControlPlaneEncryption;
   /**
   * fleet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#fleet GoogleEdgecontainerCluster#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#fleet GoogleEdgecontainerCluster#fleet}
   */
   readonly fleet: GoogleEdgecontainerClusterFleet;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#maintenance_policy GoogleEdgecontainerCluster#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#maintenance_policy GoogleEdgecontainerCluster#maintenance_policy}
   */
   readonly maintenancePolicy?: GoogleEdgecontainerClusterMaintenancePolicy;
   /**
   * networking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#networking GoogleEdgecontainerCluster#networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#networking GoogleEdgecontainerCluster#networking}
   */
   readonly networking: GoogleEdgecontainerClusterNetworking;
   /**
   * system_addons_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#system_addons_config GoogleEdgecontainerCluster#system_addons_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#system_addons_config GoogleEdgecontainerCluster#system_addons_config}
   */
   readonly systemAddonsConfig?: GoogleEdgecontainerClusterSystemAddonsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#timeouts GoogleEdgecontainerCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#timeouts GoogleEdgecontainerCluster#timeouts}
   */
   readonly timeouts?: GoogleEdgecontainerClusterTimeouts;
 }
@@ -243,7 +243,7 @@ export interface GoogleEdgecontainerClusterAuthorizationAdminUsers {
   /**
   * An active Google username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#username GoogleEdgecontainerCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#username GoogleEdgecontainerCluster#username}
   */
   readonly username: string;
 }
@@ -326,7 +326,7 @@ export interface GoogleEdgecontainerClusterAuthorization {
   /**
   * admin_users block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#admin_users GoogleEdgecontainerCluster#admin_users}
   */
   readonly adminUsers: GoogleEdgecontainerClusterAuthorizationAdminUsers;
 }
@@ -411,27 +411,27 @@ export interface GoogleEdgecontainerClusterControlPlaneLocal {
   * plane nodes. The filtering language accepts strings like "name=<name>",
   * and is documented here: [AIP-160](https://google.aip.dev/160).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#machine_filter GoogleEdgecontainerCluster#machine_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#machine_filter GoogleEdgecontainerCluster#machine_filter}
   */
   readonly machineFilter?: string;
   /**
   * The number of nodes to serve as replicas of the Control Plane.
   * Only 1 and 3 are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#node_count GoogleEdgecontainerCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#node_count GoogleEdgecontainerCluster#node_count}
   */
   readonly nodeCount?: number;
   /**
   * Name of the Google Distributed Cloud Edge zones where this node pool
   * will be created. For example: 'us-central1-edge-customer-a'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
   */
   readonly nodeLocation?: string;
   /**
   * Policy configuration about how user applications are deployed. Possible values: ["SHARED_DEPLOYMENT_POLICY_UNSPECIFIED", "ALLOWED", "DISALLOWED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#shared_deployment_policy GoogleEdgecontainerCluster#shared_deployment_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#shared_deployment_policy GoogleEdgecontainerCluster#shared_deployment_policy}
   */
   readonly sharedDeploymentPolicy?: string;
 }
@@ -605,7 +605,7 @@ export interface GoogleEdgecontainerClusterControlPlaneRemote {
   * Name of the Google Distributed Cloud Edge zones where this node pool
   * will be created. For example: 'us-central1-edge-customer-a'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#node_location GoogleEdgecontainerCluster#node_location}
   */
   readonly nodeLocation?: string;
 }
@@ -691,13 +691,13 @@ export interface GoogleEdgecontainerClusterControlPlane {
   /**
   * local block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#local GoogleEdgecontainerCluster#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#local GoogleEdgecontainerCluster#local}
   */
   readonly local?: GoogleEdgecontainerClusterControlPlaneLocal;
   /**
   * remote block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#remote GoogleEdgecontainerCluster#remote}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#remote GoogleEdgecontainerCluster#remote}
   */
   readonly remote?: GoogleEdgecontainerClusterControlPlaneRemote;
 }
@@ -895,7 +895,7 @@ export interface GoogleEdgecontainerClusterControlPlaneEncryption {
   * to use for protecting control plane disks. If not specified, a
   * Google-managed key will be used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#kms_key GoogleEdgecontainerCluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#kms_key GoogleEdgecontainerCluster#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -999,7 +999,7 @@ export interface GoogleEdgecontainerClusterFleet {
   * Project names are formatted as
   * 'projects/<project-number>'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#project GoogleEdgecontainerCluster#project}
   */
   readonly project: string;
 }
@@ -1083,18 +1083,296 @@ export class GoogleEdgecontainerClusterFleetOutputReference extends cdktf.Comple
     return this._project;
   }
 }
-export interface GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow {
+export interface GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow {
   /**
   * The time that the window ends. The end time must take place after the
   * start time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
   */
   readonly endTime?: string;
   /**
   * The time that the window first starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
+  */
+  readonly startTime?: string;
+}
+
+export function googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToTerraform(struct?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference | GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end_time: cdktf.stringToTerraform(struct!.endTime),
+    start_time: cdktf.stringToTerraform(struct!.startTime),
+  }
+}
+
+
+export function googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToHclTerraform(struct?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference | GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endTime = undefined;
+      this._startTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endTime = value.endTime;
+      this._startTime = value.startTime;
+    }
+  }
+
+  // end_time - computed: true, optional: true, required: false
+  private _endTime?: string; 
+  public get endTime() {
+    return this.getStringAttribute('end_time');
+  }
+  public set endTime(value: string) {
+    this._endTime = value;
+  }
+  public resetEndTime() {
+    this._endTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endTimeInput() {
+    return this._endTime;
+  }
+
+  // start_time - computed: true, optional: true, required: false
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  public resetStartTime() {
+    this._startTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+}
+export interface GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions {
+  /**
+  * A unique (per cluster) id for the window.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#id GoogleEdgecontainerCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+  */
+  readonly window?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow;
+}
+
+export function googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsToTerraform(struct?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    window: googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToTerraform(struct!.window),
+  }
+}
+
+
+export function googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsToHclTerraform(struct?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    window: {
+      value: googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowToHclTerraform(struct!.window),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._window?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.window = this._window?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._window.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._window.internalValue = value.window;
+    }
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // window - computed: false, optional: true, required: false
+  private _window = new GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference(this, "window");
+  public get window() {
+    return this._window;
+  }
+  public putWindow(value: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindow) {
+    this._window.internalValue = value;
+  }
+  public resetWindow() {
+    this._window.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowInput() {
+    return this._window.internalValue;
+  }
+}
+
+export class GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList extends cdktf.ComplexList {
+  public internalValue? : GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference {
+    return new GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow {
+  /**
+  * The time that the window ends. The end time must take place after the
+  * start time.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#end_time GoogleEdgecontainerCluster#end_time}
+  */
+  readonly endTime?: string;
+  /**
+  * The time that the window first starts.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#start_time GoogleEdgecontainerCluster#start_time}
   */
   readonly startTime?: string;
 }
@@ -1211,13 +1489,13 @@ export interface GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindo
   * this window recurs. They go on for the span of time between the start and
   * end time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#recurrence GoogleEdgecontainerCluster#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#recurrence GoogleEdgecontainerCluster#recurrence}
   */
   readonly recurrence?: string;
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
   */
   readonly window?: GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow;
 }
@@ -1332,7 +1610,7 @@ export interface GoogleEdgecontainerClusterMaintenancePolicyWindow {
   /**
   * recurring_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#recurring_window GoogleEdgecontainerCluster#recurring_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#recurring_window GoogleEdgecontainerCluster#recurring_window}
   */
   readonly recurringWindow: GoogleEdgecontainerClusterMaintenancePolicyWindowRecurringWindow;
 }
@@ -1413,9 +1691,15 @@ export class GoogleEdgecontainerClusterMaintenancePolicyWindowOutputReference ex
 }
 export interface GoogleEdgecontainerClusterMaintenancePolicy {
   /**
+  * maintenance_exclusions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#maintenance_exclusions GoogleEdgecontainerCluster#maintenance_exclusions}
+  */
+  readonly maintenanceExclusions?: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions[] | cdktf.IResolvable;
+  /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#window GoogleEdgecontainerCluster#window}
   */
   readonly window: GoogleEdgecontainerClusterMaintenancePolicyWindow;
 }
@@ -1426,6 +1710,7 @@ export function googleEdgecontainerClusterMaintenancePolicyToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    maintenance_exclusions: cdktf.listMapper(googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsToTerraform, true)(struct!.maintenanceExclusions),
     window: googleEdgecontainerClusterMaintenancePolicyWindowToTerraform(struct!.window),
   }
 }
@@ -1437,6 +1722,12 @@ export function googleEdgecontainerClusterMaintenancePolicyToHclTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    maintenance_exclusions: {
+      value: cdktf.listMapperHcl(googleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsToHclTerraform, true)(struct!.maintenanceExclusions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList",
+    },
     window: {
       value: googleEdgecontainerClusterMaintenancePolicyWindowToHclTerraform(struct!.window),
       isBlock: true,
@@ -1463,6 +1754,10 @@ export class GoogleEdgecontainerClusterMaintenancePolicyOutputReference extends 
   public get internalValue(): GoogleEdgecontainerClusterMaintenancePolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._maintenanceExclusions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenanceExclusions = this._maintenanceExclusions?.internalValue;
+    }
     if (this._window?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.window = this._window?.internalValue;
@@ -1473,12 +1768,30 @@ export class GoogleEdgecontainerClusterMaintenancePolicyOutputReference extends 
   public set internalValue(value: GoogleEdgecontainerClusterMaintenancePolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._maintenanceExclusions.internalValue = undefined;
       this._window.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._maintenanceExclusions.internalValue = value.maintenanceExclusions;
       this._window.internalValue = value.window;
     }
+  }
+
+  // maintenance_exclusions - computed: false, optional: true, required: false
+  private _maintenanceExclusions = new GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList(this, "maintenance_exclusions", false);
+  public get maintenanceExclusions() {
+    return this._maintenanceExclusions;
+  }
+  public putMaintenanceExclusions(value: GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions[] | cdktf.IResolvable) {
+    this._maintenanceExclusions.internalValue = value;
+  }
+  public resetMaintenanceExclusions() {
+    this._maintenanceExclusions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceExclusionsInput() {
+    return this._maintenanceExclusions.internalValue;
   }
 
   // window - computed: false, optional: false, required: true
@@ -1500,7 +1813,7 @@ export interface GoogleEdgecontainerClusterNetworking {
   * blocks. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#cluster_ipv4_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv4_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#cluster_ipv4_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv4_cidr_blocks}
   */
   readonly clusterIpv4CidrBlocks: string[];
   /**
@@ -1509,7 +1822,7 @@ export interface GoogleEdgecontainerClusterNetworking {
   * address. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#cluster_ipv6_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv6_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#cluster_ipv6_cidr_blocks GoogleEdgecontainerCluster#cluster_ipv6_cidr_blocks}
   */
   readonly clusterIpv6CidrBlocks?: string[];
   /**
@@ -1517,7 +1830,7 @@ export interface GoogleEdgecontainerClusterNetworking {
   * blocks. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#services_ipv4_cidr_blocks GoogleEdgecontainerCluster#services_ipv4_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#services_ipv4_cidr_blocks GoogleEdgecontainerCluster#services_ipv4_cidr_blocks}
   */
   readonly servicesIpv4CidrBlocks: string[];
   /**
@@ -1526,7 +1839,7 @@ export interface GoogleEdgecontainerClusterNetworking {
   * address. Only a single block is supported. This field cannot be changed
   * after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#services_ipv6_cidr_blocks GoogleEdgecontainerCluster#services_ipv6_cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#services_ipv6_cidr_blocks GoogleEdgecontainerCluster#services_ipv6_cidr_blocks}
   */
   readonly servicesIpv6CidrBlocks?: string[];
 }
@@ -1698,13 +2011,13 @@ export interface GoogleEdgecontainerClusterSystemAddonsConfigIngress {
   /**
   * Whether Ingress is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#disabled GoogleEdgecontainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#disabled GoogleEdgecontainerCluster#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Ingress VIP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#ipv4_vip GoogleEdgecontainerCluster#ipv4_vip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#ipv4_vip GoogleEdgecontainerCluster#ipv4_vip}
   */
   readonly ipv4Vip?: string;
 }
@@ -1819,7 +2132,7 @@ export interface GoogleEdgecontainerClusterSystemAddonsConfig {
   /**
   * ingress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#ingress GoogleEdgecontainerCluster#ingress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#ingress GoogleEdgecontainerCluster#ingress}
   */
   readonly ingress?: GoogleEdgecontainerClusterSystemAddonsConfigIngress;
 }
@@ -1903,15 +2216,15 @@ export class GoogleEdgecontainerClusterSystemAddonsConfigOutputReference extends
 }
 export interface GoogleEdgecontainerClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#create GoogleEdgecontainerCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#delete GoogleEdgecontainerCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#update GoogleEdgecontainerCluster#update}
   */
   readonly update?: string;
 }
@@ -2063,7 +2376,7 @@ export class GoogleEdgecontainerClusterTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}
 */
 export class GoogleEdgecontainerCluster extends cdktf.TerraformResource {
 
@@ -2079,7 +2392,7 @@ export class GoogleEdgecontainerCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleEdgecontainerCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleEdgecontainerCluster to import
-  * @param importFromId The id of the existing GoogleEdgecontainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleEdgecontainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleEdgecontainerCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2091,7 +2404,7 @@ export class GoogleEdgecontainerCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2102,7 +2415,7 @@ export class GoogleEdgecontainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_edgecontainer_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
