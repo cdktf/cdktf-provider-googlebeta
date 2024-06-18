@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,25 +9,27 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMetaArguments {
   /**
   * URLs to certificate manager certificate resources that are used to authenticate connections between users and the load balancer.
-  * Currently, you may specify up to 15 certificates. Certificate manager certificates do not apply when the load balancing scheme is set to INTERNAL_SELF_MANAGED.
+  * Certificate manager certificates only apply when the load balancing scheme is set to INTERNAL_MANAGED.
+  * For EXTERNAL and EXTERNAL_MANAGED, use certificate_map instead.
   * sslCertificates and certificateManagerCertificates fields can not be defined together.
   * Accepted format is '//certificatemanager.googleapis.com/projects/{project}/locations/{location}/certificates/{resourceName}' or just the self_link 'projects/{project}/locations/{location}/certificates/{resourceName}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#certificate_manager_certificates GoogleComputeTargetHttpsProxy#certificate_manager_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#certificate_manager_certificates GoogleComputeTargetHttpsProxy#certificate_manager_certificates}
   */
   readonly certificateManagerCertificates?: string[];
   /**
   * A reference to the CertificateMap resource uri that identifies a certificate map
-  * associated with the given target proxy. This field can only be set for global target proxies.
+  * associated with the given target proxy. This field is only supported for EXTERNAL and EXTERNAL_MANAGED load balancing schemes.
+  * For INTERNAL_MANAGED, use certificate_manager_certificates instead.
   * Accepted format is '//certificatemanager.googleapis.com/projects/{project}/locations/{location}/certificateMaps/{resourceName}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#certificate_map GoogleComputeTargetHttpsProxy#certificate_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#certificate_map GoogleComputeTargetHttpsProxy#certificate_map}
   */
   readonly certificateMap?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#description GoogleComputeTargetHttpsProxy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#description GoogleComputeTargetHttpsProxy#description}
   */
   readonly description?: string;
   /**
@@ -43,11 +40,11 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * the maximum allowed value is 1200 seconds. For Global external HTTP(S)
   * load balancer (classic), this option is not available publicly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#http_keep_alive_timeout_sec GoogleComputeTargetHttpsProxy#http_keep_alive_timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#http_keep_alive_timeout_sec GoogleComputeTargetHttpsProxy#http_keep_alive_timeout_sec}
   */
   readonly httpKeepAliveTimeoutSec?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#id GoogleComputeTargetHttpsProxy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#id GoogleComputeTargetHttpsProxy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -62,18 +59,18 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#name GoogleComputeTargetHttpsProxy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#name GoogleComputeTargetHttpsProxy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#project GoogleComputeTargetHttpsProxy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#project GoogleComputeTargetHttpsProxy#project}
   */
   readonly project?: string;
   /**
   * This field only applies when the forwarding rule that references
   * this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#proxy_bind GoogleComputeTargetHttpsProxy#proxy_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#proxy_bind GoogleComputeTargetHttpsProxy#proxy_bind}
   */
   readonly proxyBind?: boolean | cdktf.IResolvable;
   /**
@@ -82,7 +79,7 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * or not. Can specify one of NONE, ENABLE, or DISABLE. If NONE is
   * specified, Google manages whether QUIC is used. Default value: "NONE" Possible values: ["NONE", "ENABLE", "DISABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#quic_override GoogleComputeTargetHttpsProxy#quic_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#quic_override GoogleComputeTargetHttpsProxy#quic_override}
   */
   readonly quicOverride?: string;
   /**
@@ -96,7 +93,7 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * loadBalancingScheme consult ServerTlsPolicy documentation.
   * If left blank, communications are not encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#server_tls_policy GoogleComputeTargetHttpsProxy#server_tls_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#server_tls_policy GoogleComputeTargetHttpsProxy#server_tls_policy}
   */
   readonly serverTlsPolicy?: string;
   /**
@@ -104,7 +101,7 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * Currently, you may specify up to 15 SSL certificates. sslCertificates do not apply when the load balancing scheme is set to INTERNAL_SELF_MANAGED.
   * sslCertificates and certificateManagerCertificates can not be defined together.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#ssl_certificates GoogleComputeTargetHttpsProxy#ssl_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#ssl_certificates GoogleComputeTargetHttpsProxy#ssl_certificates}
   */
   readonly sslCertificates?: string[];
   /**
@@ -112,34 +109,34 @@ export interface GoogleComputeTargetHttpsProxyConfig extends cdktf.TerraformMeta
   * the TargetHttpsProxy resource. If not set, the TargetHttpsProxy
   * resource will not have any SSL policy configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#ssl_policy GoogleComputeTargetHttpsProxy#ssl_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#ssl_policy GoogleComputeTargetHttpsProxy#ssl_policy}
   */
   readonly sslPolicy?: string;
   /**
   * A reference to the UrlMap resource that defines the mapping from URL
   * to the BackendService.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#url_map GoogleComputeTargetHttpsProxy#url_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#url_map GoogleComputeTargetHttpsProxy#url_map}
   */
   readonly urlMap: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#timeouts GoogleComputeTargetHttpsProxy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#timeouts GoogleComputeTargetHttpsProxy#timeouts}
   */
   readonly timeouts?: GoogleComputeTargetHttpsProxyTimeouts;
 }
 export interface GoogleComputeTargetHttpsProxyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#create GoogleComputeTargetHttpsProxy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#create GoogleComputeTargetHttpsProxy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#delete GoogleComputeTargetHttpsProxy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#delete GoogleComputeTargetHttpsProxy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#update GoogleComputeTargetHttpsProxy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#update GoogleComputeTargetHttpsProxy#update}
   */
   readonly update?: string;
 }
@@ -291,7 +288,7 @@ export class GoogleComputeTargetHttpsProxyTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy}
 */
 export class GoogleComputeTargetHttpsProxy extends cdktf.TerraformResource {
 
@@ -307,7 +304,7 @@ export class GoogleComputeTargetHttpsProxy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeTargetHttpsProxy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeTargetHttpsProxy to import
-  * @param importFromId The id of the existing GoogleComputeTargetHttpsProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeTargetHttpsProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeTargetHttpsProxy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -319,7 +316,7 @@ export class GoogleComputeTargetHttpsProxy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.33.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -330,7 +327,7 @@ export class GoogleComputeTargetHttpsProxy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_target_https_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
