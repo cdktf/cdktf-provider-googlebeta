@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Job <a name="DataGoogleCloudRunV2Job" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Job to
 
 The id of the existing DataGoogleCloudRunV2Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -434,6 +434,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.launchStage">LaunchStage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.observedGeneration">ObservedGeneration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.reconciling">Reconciling</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.runExecutionToken">RunExecutionToken</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.startExecutionToken">StartExecutionToken</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.template">Template</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateList">DataGoogleCloudRunV2JobTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.terminalCondition">TerminalCondition</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTerminalConditionList">DataGoogleCloudRunV2JobTerminalConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
@@ -772,6 +774,26 @@ func Reconciling() IResolvable
 
 ---
 
+##### `RunExecutionToken`<sup>Required</sup> <a name="RunExecutionToken" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.runExecutionToken"></a>
+
+```go
+func RunExecutionToken() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartExecutionToken`<sup>Required</sup> <a name="StartExecutionToken" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.startExecutionToken"></a>
+
+```go
+func StartExecutionToken() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Template`<sup>Required</sup> <a name="Template" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.property.template"></a>
 
 ```go
@@ -982,9 +1004,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Job. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.location">Location</a></code> | <code>*string</code> | The location of the cloud run job. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -1068,7 +1090,7 @@ Name *string
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -1080,7 +1102,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1119,7 @@ Location *string
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -1109,7 +1131,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.34.0/docs/data-sources/google_cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 

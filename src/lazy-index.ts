@@ -853,6 +853,7 @@ Object.defineProperty(exports, 'googleServiceDirectoryServiceIamMember', { get: 
 Object.defineProperty(exports, 'googleServiceDirectoryServiceIamPolicy', { get: function () { return require('./google-service-directory-service-iam-policy'); } });
 Object.defineProperty(exports, 'googleServiceNetworkingConnection', { get: function () { return require('./google-service-networking-connection'); } });
 Object.defineProperty(exports, 'googleServiceNetworkingPeeredDnsDomain', { get: function () { return require('./google-service-networking-peered-dns-domain'); } });
+Object.defineProperty(exports, 'googleServiceNetworkingVpcServiceControls', { get: function () { return require('./google-service-networking-vpc-service-controls'); } });
 Object.defineProperty(exports, 'googleServiceUsageConsumerQuotaOverride', { get: function () { return require('./google-service-usage-consumer-quota-override'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepository', { get: function () { return require('./google-sourcerepo-repository'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepositoryIamBinding', { get: function () { return require('./google-sourcerepo-repository-iam-binding'); } });
@@ -961,6 +962,7 @@ Object.defineProperty(exports, 'dataGoogleAppEngineDefaultServiceAccount', { get
 Object.defineProperty(exports, 'dataGoogleApphubApplication', { get: function () { return require('./data-google-apphub-application'); } });
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredService', { get: function () { return require('./data-google-apphub-discovered-service'); } });
 Object.defineProperty(exports, 'dataGoogleApphubDiscoveredWorkload', { get: function () { return require('./data-google-apphub-discovered-workload'); } });
+Object.defineProperty(exports, 'dataGoogleArtifactRegistryDockerImage', { get: function () { return require('./data-google-artifact-registry-docker-image'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: function () { return require('./data-google-artifact-registry-repository'); } });
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositoryIamPolicy', { get: function () { return require('./data-google-artifact-registry-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrManagementServer', { get: function () { return require('./data-google-backup-dr-management-server'); } });
