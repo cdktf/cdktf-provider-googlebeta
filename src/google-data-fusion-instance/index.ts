@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArgum
   /**
   * User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#dataproc_service_account GoogleDataFusionInstance#dataproc_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#dataproc_service_account GoogleDataFusionInstance#dataproc_service_account}
   */
   readonly dataprocServiceAccount?: string;
   /**
   * An optional description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#description GoogleDataFusionInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#description GoogleDataFusionInstance#description}
   */
   readonly description?: string;
   /**
   * Display name for an instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#display_name GoogleDataFusionInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#display_name GoogleDataFusionInstance#display_name}
   */
   readonly displayName?: string;
   /**
   * Option to enable granular role-based access control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#enable_rbac GoogleDataFusionInstance#enable_rbac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#enable_rbac GoogleDataFusionInstance#enable_rbac}
   */
   readonly enableRbac?: boolean | cdktf.IResolvable;
   /**
   * Option to enable Stackdriver Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#enable_stackdriver_logging GoogleDataFusionInstance#enable_stackdriver_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#enable_stackdriver_logging GoogleDataFusionInstance#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
   /**
   * Option to enable Stackdriver Monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#enable_stackdriver_monitoring GoogleDataFusionInstance#enable_stackdriver_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#enable_stackdriver_monitoring GoogleDataFusionInstance#enable_stackdriver_monitoring}
   */
   readonly enableStackdriverMonitoring?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#id GoogleDataFusionInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#id GoogleDataFusionInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,19 +63,19 @@ export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#labels GoogleDataFusionInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#labels GoogleDataFusionInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The ID of the instance or a fully qualified identifier for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#name GoogleDataFusionInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#name GoogleDataFusionInstance#name}
   */
   readonly name: string;
   /**
   * Map of additional options used to configure the behavior of Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#options GoogleDataFusionInstance#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#options GoogleDataFusionInstance#options}
   */
   readonly options?: { [key: string]: string };
   /**
@@ -83,17 +83,17 @@ export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArgum
   * true, all Data Fusion nodes will have private IP addresses and will not be
   * able to access the public internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#private_instance GoogleDataFusionInstance#private_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#private_instance GoogleDataFusionInstance#private_instance}
   */
   readonly privateInstance?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#project GoogleDataFusionInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#project GoogleDataFusionInstance#project}
   */
   readonly project?: string;
   /**
   * The region of the Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#region GoogleDataFusionInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#region GoogleDataFusionInstance#region}
   */
   readonly region?: string;
   /**
@@ -108,49 +108,49 @@ export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArgum
   * with restrictive capabilities. This is to help enterprises design and develop their data ingestion and integration
   * pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#type GoogleDataFusionInstance#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#type GoogleDataFusionInstance#type}
   */
   readonly type: string;
   /**
   * Current version of the Data Fusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#version GoogleDataFusionInstance#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#version GoogleDataFusionInstance#version}
   */
   readonly version?: string;
   /**
   * Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#zone GoogleDataFusionInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#zone GoogleDataFusionInstance#zone}
   */
   readonly zone?: string;
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#accelerators GoogleDataFusionInstance#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#accelerators GoogleDataFusionInstance#accelerators}
   */
   readonly accelerators?: GoogleDataFusionInstanceAccelerators[] | cdktf.IResolvable;
   /**
   * crypto_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#crypto_key_config GoogleDataFusionInstance#crypto_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#crypto_key_config GoogleDataFusionInstance#crypto_key_config}
   */
   readonly cryptoKeyConfig?: GoogleDataFusionInstanceCryptoKeyConfig;
   /**
   * event_publish_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#event_publish_config GoogleDataFusionInstance#event_publish_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#event_publish_config GoogleDataFusionInstance#event_publish_config}
   */
   readonly eventPublishConfig?: GoogleDataFusionInstanceEventPublishConfig;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#network_config GoogleDataFusionInstance#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#network_config GoogleDataFusionInstance#network_config}
   */
   readonly networkConfig?: GoogleDataFusionInstanceNetworkConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#timeouts GoogleDataFusionInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#timeouts GoogleDataFusionInstance#timeouts}
   */
   readonly timeouts?: GoogleDataFusionInstanceTimeouts;
 }
@@ -158,13 +158,13 @@ export interface GoogleDataFusionInstanceAccelerators {
   /**
   * The type of an accelator for a CDF instance. Possible values: ["CDC", "HEALTHCARE", "CCAI_INSIGHTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#accelerator_type GoogleDataFusionInstance#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#accelerator_type GoogleDataFusionInstance#accelerator_type}
   */
   readonly acceleratorType: string;
   /**
   * The type of an accelator for a CDF instance. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#state GoogleDataFusionInstance#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#state GoogleDataFusionInstance#state}
   */
   readonly state: string;
 }
@@ -305,7 +305,7 @@ export interface GoogleDataFusionInstanceCryptoKeyConfig {
   /**
   * The name of the key which is used to encrypt/decrypt customer data. For key in Cloud KMS, the key should be in the format of projects/* /locations/* /keyRings/* /cryptoKeys/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#key_reference GoogleDataFusionInstance#key_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#key_reference GoogleDataFusionInstance#key_reference}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -390,13 +390,13 @@ export interface GoogleDataFusionInstanceEventPublishConfig {
   /**
   * Option to enable Event Publishing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#enabled GoogleDataFusionInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#enabled GoogleDataFusionInstance#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The resource name of the Pub/Sub topic. Format: projects/{projectId}/topics/{topic_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#topic GoogleDataFusionInstance#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#topic GoogleDataFusionInstance#topic}
   */
   readonly topic: string;
 }
@@ -501,22 +501,167 @@ export class GoogleDataFusionInstanceEventPublishConfigOutputReference extends c
     return this._topic;
   }
 }
+export interface GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
+  /**
+  * Optional. The reference to the network attachment used to establish private connectivity.
+  * It will be of the form projects/{project-id}/regions/{region}/networkAttachments/{network-attachment-id}.
+  * This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#network_attachment GoogleDataFusionInstance#network_attachment}
+  */
+  readonly networkAttachment?: string;
+  /**
+  * Optional. Input only. The CIDR block to which the CDF instance can't route traffic to in the consumer project VPC.
+  * The size of this block should be at least /25. This range should not overlap with the primary address range of any subnetwork used by the network attachment.
+  * This range can be used for other purposes in the consumer VPC as long as there is no requirement for CDF to reach destinations using these addresses.
+  * If this value is not provided, the server chooses a non RFC 1918 address range. The format of this field is governed by RFC 4632.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#unreachable_cidr_block GoogleDataFusionInstance#unreachable_cidr_block}
+  */
+  readonly unreachableCidrBlock?: string;
+}
+
+export function googleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigToTerraform(struct?: GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference | GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_attachment: cdktf.stringToTerraform(struct!.networkAttachment),
+    unreachable_cidr_block: cdktf.stringToTerraform(struct!.unreachableCidrBlock),
+  }
+}
+
+
+export function googleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigToHclTerraform(struct?: GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference | GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_attachment: {
+      value: cdktf.stringToHclTerraform(struct!.networkAttachment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unreachable_cidr_block: {
+      value: cdktf.stringToHclTerraform(struct!.unreachableCidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkAttachment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkAttachment = this._networkAttachment;
+    }
+    if (this._unreachableCidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unreachableCidrBlock = this._unreachableCidrBlock;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._networkAttachment = undefined;
+      this._unreachableCidrBlock = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkAttachment = value.networkAttachment;
+      this._unreachableCidrBlock = value.unreachableCidrBlock;
+    }
+  }
+
+  // effective_unreachable_cidr_block - computed: true, optional: false, required: false
+  public get effectiveUnreachableCidrBlock() {
+    return this.getStringAttribute('effective_unreachable_cidr_block');
+  }
+
+  // network_attachment - computed: false, optional: true, required: false
+  private _networkAttachment?: string; 
+  public get networkAttachment() {
+    return this.getStringAttribute('network_attachment');
+  }
+  public set networkAttachment(value: string) {
+    this._networkAttachment = value;
+  }
+  public resetNetworkAttachment() {
+    this._networkAttachment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkAttachmentInput() {
+    return this._networkAttachment;
+  }
+
+  // unreachable_cidr_block - computed: false, optional: true, required: false
+  private _unreachableCidrBlock?: string; 
+  public get unreachableCidrBlock() {
+    return this.getStringAttribute('unreachable_cidr_block');
+  }
+  public set unreachableCidrBlock(value: string) {
+    this._unreachableCidrBlock = value;
+  }
+  public resetUnreachableCidrBlock() {
+    this._unreachableCidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unreachableCidrBlockInput() {
+    return this._unreachableCidrBlock;
+  }
+}
 export interface GoogleDataFusionInstanceNetworkConfig {
+  /**
+  * Optional. Type of connection for establishing private IP connectivity between the Data Fusion customer project VPC and
+  * the corresponding tenant project from a predefined list of available connection modes.
+  * If this field is unspecified for a private instance, VPC peering is used. Possible values: ["VPC_PEERING", "PRIVATE_SERVICE_CONNECT_INTERFACES"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#connection_type GoogleDataFusionInstance#connection_type}
+  */
+  readonly connectionType?: string;
   /**
   * The IP range in CIDR notation to use for the managed Data Fusion instance
   * nodes. This range must not overlap with any other ranges used in the Data Fusion instance network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#ip_allocation GoogleDataFusionInstance#ip_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#ip_allocation GoogleDataFusionInstance#ip_allocation}
   */
-  readonly ipAllocation: string;
+  readonly ipAllocation?: string;
   /**
   * Name of the network in the project with which the tenant project
   * will be peered for executing pipelines. In case of shared VPC where the network resides in another host
   * project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#network GoogleDataFusionInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#network GoogleDataFusionInstance#network}
   */
-  readonly network: string;
+  readonly network?: string;
+  /**
+  * private_service_connect_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#private_service_connect_config GoogleDataFusionInstance#private_service_connect_config}
+  */
+  readonly privateServiceConnectConfig?: GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig;
 }
 
 export function googleDataFusionInstanceNetworkConfigToTerraform(struct?: GoogleDataFusionInstanceNetworkConfigOutputReference | GoogleDataFusionInstanceNetworkConfig): any {
@@ -525,8 +670,10 @@ export function googleDataFusionInstanceNetworkConfigToTerraform(struct?: Google
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    connection_type: cdktf.stringToTerraform(struct!.connectionType),
     ip_allocation: cdktf.stringToTerraform(struct!.ipAllocation),
     network: cdktf.stringToTerraform(struct!.network),
+    private_service_connect_config: googleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigToTerraform(struct!.privateServiceConnectConfig),
   }
 }
 
@@ -537,6 +684,12 @@ export function googleDataFusionInstanceNetworkConfigToHclTerraform(struct?: Goo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    connection_type: {
+      value: cdktf.stringToHclTerraform(struct!.connectionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     ip_allocation: {
       value: cdktf.stringToHclTerraform(struct!.ipAllocation),
       isBlock: false,
@@ -548,6 +701,12 @@ export function googleDataFusionInstanceNetworkConfigToHclTerraform(struct?: Goo
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    private_service_connect_config: {
+      value: googleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigToHclTerraform(struct!.privateServiceConnectConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigList",
     },
   };
 
@@ -569,6 +728,10 @@ export class GoogleDataFusionInstanceNetworkConfigOutputReference extends cdktf.
   public get internalValue(): GoogleDataFusionInstanceNetworkConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._connectionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionType = this._connectionType;
+    }
     if (this._ipAllocation !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipAllocation = this._ipAllocation;
@@ -577,23 +740,47 @@ export class GoogleDataFusionInstanceNetworkConfigOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.network = this._network;
     }
+    if (this._privateServiceConnectConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateServiceConnectConfig = this._privateServiceConnectConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: GoogleDataFusionInstanceNetworkConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._connectionType = undefined;
       this._ipAllocation = undefined;
       this._network = undefined;
+      this._privateServiceConnectConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._connectionType = value.connectionType;
       this._ipAllocation = value.ipAllocation;
       this._network = value.network;
+      this._privateServiceConnectConfig.internalValue = value.privateServiceConnectConfig;
     }
   }
 
-  // ip_allocation - computed: false, optional: false, required: true
+  // connection_type - computed: false, optional: true, required: false
+  private _connectionType?: string; 
+  public get connectionType() {
+    return this.getStringAttribute('connection_type');
+  }
+  public set connectionType(value: string) {
+    this._connectionType = value;
+  }
+  public resetConnectionType() {
+    this._connectionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionTypeInput() {
+    return this._connectionType;
+  }
+
+  // ip_allocation - computed: false, optional: true, required: false
   private _ipAllocation?: string; 
   public get ipAllocation() {
     return this.getStringAttribute('ip_allocation');
@@ -601,12 +788,15 @@ export class GoogleDataFusionInstanceNetworkConfigOutputReference extends cdktf.
   public set ipAllocation(value: string) {
     this._ipAllocation = value;
   }
+  public resetIpAllocation() {
+    this._ipAllocation = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get ipAllocationInput() {
     return this._ipAllocation;
   }
 
-  // network - computed: false, optional: false, required: true
+  // network - computed: false, optional: true, required: false
   private _network?: string; 
   public get network() {
     return this.getStringAttribute('network');
@@ -614,22 +804,41 @@ export class GoogleDataFusionInstanceNetworkConfigOutputReference extends cdktf.
   public set network(value: string) {
     this._network = value;
   }
+  public resetNetwork() {
+    this._network = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get networkInput() {
     return this._network;
   }
+
+  // private_service_connect_config - computed: false, optional: true, required: false
+  private _privateServiceConnectConfig = new GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference(this, "private_service_connect_config");
+  public get privateServiceConnectConfig() {
+    return this._privateServiceConnectConfig;
+  }
+  public putPrivateServiceConnectConfig(value: GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig) {
+    this._privateServiceConnectConfig.internalValue = value;
+  }
+  public resetPrivateServiceConnectConfig() {
+    this._privateServiceConnectConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateServiceConnectConfigInput() {
+    return this._privateServiceConnectConfig.internalValue;
+  }
 }
 export interface GoogleDataFusionInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#create GoogleDataFusionInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#create GoogleDataFusionInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#delete GoogleDataFusionInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#delete GoogleDataFusionInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#update GoogleDataFusionInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#update GoogleDataFusionInstance#update}
   */
   readonly update?: string;
 }
@@ -781,7 +990,7 @@ export class GoogleDataFusionInstanceTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance google_data_fusion_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance google_data_fusion_instance}
 */
 export class GoogleDataFusionInstance extends cdktf.TerraformResource {
 
@@ -797,7 +1006,7 @@ export class GoogleDataFusionInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDataFusionInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDataFusionInstance to import
-  * @param importFromId The id of the existing GoogleDataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDataFusionInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -809,7 +1018,7 @@ export class GoogleDataFusionInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_data_fusion_instance google_data_fusion_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -820,7 +1029,7 @@ export class GoogleDataFusionInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_fusion_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

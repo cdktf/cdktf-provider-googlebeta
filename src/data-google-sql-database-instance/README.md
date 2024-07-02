@@ -1,3 +1,3 @@
 # `data_google_sql_database_instance`
 
-Refer to the Terraform Registry for docs: [`data_google_sql_database_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_sql_database_instance).
+Refer to the Terraform Registry for docs: [`data_google_sql_database_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/data-sources/google_sql_database_instance).

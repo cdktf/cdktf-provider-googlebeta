@@ -884,6 +884,10 @@ export * as googleStorageDefaultObjectAccessControl from './google-storage-defau
 export * as googleStorageDefaultObjectAcl from './google-storage-default-object-acl';
 export * as googleStorageHmacKey from './google-storage-hmac-key';
 export * as googleStorageInsightsReportConfig from './google-storage-insights-report-config';
+export * as googleStorageManagedFolder from './google-storage-managed-folder';
+export * as googleStorageManagedFolderIamBinding from './google-storage-managed-folder-iam-binding';
+export * as googleStorageManagedFolderIamMember from './google-storage-managed-folder-iam-member';
+export * as googleStorageManagedFolderIamPolicy from './google-storage-managed-folder-iam-policy';
 export * as googleStorageNotification from './google-storage-notification';
 export * as googleStorageObjectAccessControl from './google-storage-object-access-control';
 export * as googleStorageObjectAcl from './google-storage-object-acl';
@@ -1220,6 +1224,7 @@ export * as dataGoogleStorageBucketObject from './data-google-storage-bucket-obj
 export * as dataGoogleStorageBucketObjectContent from './data-google-storage-bucket-object-content';
 export * as dataGoogleStorageBucketObjects from './data-google-storage-bucket-objects';
 export * as dataGoogleStorageBuckets from './data-google-storage-buckets';
+export * as dataGoogleStorageManagedFolderIamPolicy from './data-google-storage-managed-folder-iam-policy';
 export * as dataGoogleStorageObjectSignedUrl from './data-google-storage-object-signed-url';
 export * as dataGoogleStorageProjectServiceAccount from './data-google-storage-project-service-account';
 export * as dataGoogleStorageTransferProjectServiceAccount from './data-google-storage-transfer-project-service-account';
