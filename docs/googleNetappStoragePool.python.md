@@ -4,7 +4,7 @@
 
 ### GoogleNetappStoragePool <a name="GoogleNetappStoragePool" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer"></a>
 
@@ -33,7 +33,9 @@ googleNetappStoragePool.GoogleNetappStoragePool(
   labels: typing.Mapping[str] = None,
   ldap_enabled: typing.Union[bool, IResolvable] = None,
   project: str = None,
-  timeouts: GoogleNetappStoragePoolTimeouts = None
+  replica_zone: str = None,
+  timeouts: GoogleNetappStoragePoolTimeouts = None,
+  zone: str = None
 )
 ```
 
@@ -49,18 +51,20 @@ googleNetappStoragePool.GoogleNetappStoragePool(
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.capacityGib">capacity_gib</a></code> | <code>str</code> | Capacity of the storage pool (in GiB). |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the location. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the storage pool. Needs to be unique per location. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the storage pool. Needs to be unique per location/region. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.network">network</a></code> | <code>str</code> | VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.serviceLevel">service_level</a></code> | <code>str</code> | Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.activeDirectory">active_directory</a></code> | <code>str</code> | Specifies the Active Directory policy to be used. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.kmsConfig">kms_config</a></code> | <code>str</code> | Specifies the CMEK policy to be used for volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.ldapEnabled">ldap_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.replicaZone">replica_zone</a></code> | <code>str</code> | Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones). |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts">GoogleNetappStoragePoolTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Specifies the active zone for regional Flex pools. |
 
 ---
 
@@ -130,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Capacity of the storage pool (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#capacity_gib GoogleNetappStoragePool#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#capacity_gib GoogleNetappStoragePool#capacity_gib}
 
 ---
 
@@ -138,11 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Name of the location.
+Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name.
 
-Usually a region name, expect for some FLEX service level pools which require a zone name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#location GoogleNetappStoragePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#location GoogleNetappStoragePool#location}
 
 ---
 
@@ -150,9 +152,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The resource name of the storage pool. Needs to be unique per location.
+The resource name of the storage pool. Needs to be unique per location/region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#name GoogleNetappStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#name GoogleNetappStoragePool#name}
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#network GoogleNetappStoragePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#network GoogleNetappStoragePool#network}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#service_level GoogleNetappStoragePool#service_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#service_level GoogleNetappStoragePool#service_level}
 
 ---
 
@@ -185,7 +187,7 @@ Specifies the Active Directory policy to be used.
 Format: 'projects/{{project}}/locations/{{location}}/activeDirectories/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#active_directory GoogleNetappStoragePool#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#active_directory GoogleNetappStoragePool#active_directory}
 
 ---
 
@@ -195,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#description GoogleNetappStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#description GoogleNetappStoragePool#description}
 
 ---
 
@@ -203,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -219,7 +221,7 @@ Specifies the CMEK policy to be used for volume encryption.
 Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#kms_config GoogleNetappStoragePool#kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#kms_config GoogleNetappStoragePool#kms_config}
 
 ---
 
@@ -232,7 +234,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#labels GoogleNetappStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#labels GoogleNetappStoragePool#labels}
 
 ---
 
@@ -245,7 +247,7 @@ When enabled, the volumes uses Active Directory as LDAP name service for UID/GID
 Required to enable extended group support for NFSv3,
 using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#ldap_enabled GoogleNetappStoragePool#ldap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#ldap_enabled GoogleNetappStoragePool#ldap_enabled}
 
 ---
 
@@ -253,7 +255,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}.
+
+---
+
+##### `replica_zone`<sup>Optional</sup> <a name="replica_zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.replicaZone"></a>
+
+- *Type:* str
+
+Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#replica_zone GoogleNetappStoragePool#replica_zone}
 
 ---
 
@@ -263,7 +275,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#timeouts GoogleNetappStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#timeouts GoogleNetappStoragePool#timeouts}
+
+---
+
+##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.Initializer.parameter.zone"></a>
+
+- *Type:* str
+
+Specifies the active zone for regional Flex pools.
+
+'zone' and 'replica_zone' values can be swapped to initiate a
+[zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
+If you want to create a zonal Flex pool, specify a zone name for 'location' and omit 'zone'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#zone GoogleNetappStoragePool#zone}
 
 ---
 
@@ -302,7 +328,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetLdapEnabled">reset_ldap_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetReplicaZone">reset_replica_zone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetZone">reset_zone</a></code> | *No description.* |
 
 ---
 
@@ -645,7 +673,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}.
 
 ---
 
@@ -653,7 +681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}.
 
 ---
 
@@ -661,7 +689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}.
 
 ---
 
@@ -707,10 +735,22 @@ def reset_ldap_enabled() -> None
 def reset_project() -> None
 ```
 
+##### `reset_replica_zone` <a name="reset_replica_zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetReplicaZone"></a>
+
+```python
+def reset_replica_zone() -> None
+```
+
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
+```
+
+##### `reset_zone` <a name="reset_zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.resetZone"></a>
+
+```python
+def reset_zone() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -827,7 +867,7 @@ The construct id used in the generated config for the GoogleNetappStoragePool to
 
 The id of the existing GoogleNetappStoragePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -874,8 +914,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.replicaZoneInput">replica_zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.serviceLevelInput">service_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts">GoogleNetappStoragePoolTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.activeDirectory">active_directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.capacityGib">capacity_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -887,7 +929,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.replicaZone">replica_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.serviceLevel">service_level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.zone">zone</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1203,6 +1247,16 @@ project_input: str
 
 ---
 
+##### `replica_zone_input`<sup>Optional</sup> <a name="replica_zone_input" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.replicaZoneInput"></a>
+
+```python
+replica_zone_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `service_level_input`<sup>Optional</sup> <a name="service_level_input" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.serviceLevelInput"></a>
 
 ```python
@@ -1220,6 +1274,16 @@ timeouts_input: typing.Union[IResolvable, GoogleNetappStoragePoolTimeouts]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts">GoogleNetappStoragePoolTimeouts</a>]
+
+---
+
+##### `zone_input`<sup>Optional</sup> <a name="zone_input" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.zoneInput"></a>
+
+```python
+zone_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1333,10 +1397,30 @@ project: str
 
 ---
 
+##### `replica_zone`<sup>Required</sup> <a name="replica_zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.replicaZone"></a>
+
+```python
+replica_zone: str
+```
+
+- *Type:* str
+
+---
+
 ##### `service_level`<sup>Required</sup> <a name="service_level" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.serviceLevel"></a>
 
 ```python
 service_level: str
+```
+
+- *Type:* str
+
+---
+
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePool.property.zone"></a>
+
+```python
+zone: str
 ```
 
 - *Type:* str
@@ -1390,7 +1474,9 @@ googleNetappStoragePool.GoogleNetappStoragePoolConfig(
   labels: typing.Mapping[str] = None,
   ldap_enabled: typing.Union[bool, IResolvable] = None,
   project: str = None,
-  timeouts: GoogleNetappStoragePoolTimeouts = None
+  replica_zone: str = None,
+  timeouts: GoogleNetappStoragePoolTimeouts = None,
+  zone: str = None
 )
 ```
 
@@ -1406,18 +1492,20 @@ googleNetappStoragePool.GoogleNetappStoragePoolConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.capacityGib">capacity_gib</a></code> | <code>str</code> | Capacity of the storage pool (in GiB). |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.location">location</a></code> | <code>str</code> | Name of the location. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.name">name</a></code> | <code>str</code> | The resource name of the storage pool. Needs to be unique per location. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.location">location</a></code> | <code>str</code> | Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.name">name</a></code> | <code>str</code> | The resource name of the storage pool. Needs to be unique per location/region. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.network">network</a></code> | <code>str</code> | VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.serviceLevel">service_level</a></code> | <code>str</code> | Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.activeDirectory">active_directory</a></code> | <code>str</code> | Specifies the Active Directory policy to be used. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.kmsConfig">kms_config</a></code> | <code>str</code> | Specifies the CMEK policy to be used for volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.ldapEnabled">ldap_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.replicaZone">replica_zone</a></code> | <code>str</code> | Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones). |
 | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts">GoogleNetappStoragePoolTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.zone">zone</a></code> | <code>str</code> | Specifies the active zone for regional Flex pools. |
 
 ---
 
@@ -1501,7 +1589,7 @@ capacity_gib: str
 
 Capacity of the storage pool (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#capacity_gib GoogleNetappStoragePool#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#capacity_gib GoogleNetappStoragePool#capacity_gib}
 
 ---
 
@@ -1513,11 +1601,9 @@ location: str
 
 - *Type:* str
 
-Name of the location.
+Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name.
 
-Usually a region name, expect for some FLEX service level pools which require a zone name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#location GoogleNetappStoragePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#location GoogleNetappStoragePool#location}
 
 ---
 
@@ -1529,9 +1615,9 @@ name: str
 
 - *Type:* str
 
-The resource name of the storage pool. Needs to be unique per location.
+The resource name of the storage pool. Needs to be unique per location/region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#name GoogleNetappStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#name GoogleNetappStoragePool#name}
 
 ---
 
@@ -1545,7 +1631,7 @@ network: str
 
 VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#network GoogleNetappStoragePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#network GoogleNetappStoragePool#network}
 
 ---
 
@@ -1559,7 +1645,7 @@ service_level: str
 
 Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#service_level GoogleNetappStoragePool#service_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#service_level GoogleNetappStoragePool#service_level}
 
 ---
 
@@ -1576,7 +1662,7 @@ Specifies the Active Directory policy to be used.
 Format: 'projects/{{project}}/locations/{{location}}/activeDirectories/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#active_directory GoogleNetappStoragePool#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#active_directory GoogleNetappStoragePool#active_directory}
 
 ---
 
@@ -1590,7 +1676,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#description GoogleNetappStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#description GoogleNetappStoragePool#description}
 
 ---
 
@@ -1602,7 +1688,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#id GoogleNetappStoragePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1622,7 +1708,7 @@ Specifies the CMEK policy to be used for volume encryption.
 Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#kms_config GoogleNetappStoragePool#kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#kms_config GoogleNetappStoragePool#kms_config}
 
 ---
 
@@ -1639,7 +1725,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#labels GoogleNetappStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#labels GoogleNetappStoragePool#labels}
 
 ---
 
@@ -1656,7 +1742,7 @@ When enabled, the volumes uses Active Directory as LDAP name service for UID/GID
 Required to enable extended group support for NFSv3,
 using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#ldap_enabled GoogleNetappStoragePool#ldap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#ldap_enabled GoogleNetappStoragePool#ldap_enabled}
 
 ---
 
@@ -1668,7 +1754,21 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#project GoogleNetappStoragePool#project}.
+
+---
+
+##### `replica_zone`<sup>Optional</sup> <a name="replica_zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.replicaZone"></a>
+
+```python
+replica_zone: str
+```
+
+- *Type:* str
+
+Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#replica_zone GoogleNetappStoragePool#replica_zone}
 
 ---
 
@@ -1682,7 +1782,25 @@ timeouts: GoogleNetappStoragePoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#timeouts GoogleNetappStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#timeouts GoogleNetappStoragePool#timeouts}
+
+---
+
+##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolConfig.property.zone"></a>
+
+```python
+zone: str
+```
+
+- *Type:* str
+
+Specifies the active zone for regional Flex pools.
+
+'zone' and 'replica_zone' values can be swapped to initiate a
+[zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
+If you want to create a zonal Flex pool, specify a zone name for 'location' and omit 'zone'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#zone GoogleNetappStoragePool#zone}
 
 ---
 
@@ -1704,9 +1822,9 @@ googleNetappStoragePool.GoogleNetappStoragePoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetappStoragePool.GoogleNetappStoragePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}. |
 
 ---
 
@@ -1718,7 +1836,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#create GoogleNetappStoragePool#create}.
 
 ---
 
@@ -1730,7 +1848,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#delete GoogleNetappStoragePool#delete}.
 
 ---
 
@@ -1742,7 +1860,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_netapp_storage_pool#update GoogleNetappStoragePool#update}.
 
 ---
 
