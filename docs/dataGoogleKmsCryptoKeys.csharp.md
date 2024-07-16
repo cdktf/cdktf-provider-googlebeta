@@ -4,7 +4,7 @@
 
 ### DataGoogleKmsCryptoKeys <a name="DataGoogleKmsCryptoKeys" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeys.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGoogleKmsCryptoKeys to
 
 The id of the existing DataGoogleKmsCryptoKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ new DataGoogleKmsCryptoKeysConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysConfig.property.keyRing">KeyRing</a></code> | <code>string</code> | The key ring that the keys belongs to. Format: 'projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}'. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysConfig.property.filter">Filter</a></code> | <code>string</code> | The filter argument is used to add a filter query parameter that limits which keys are retrieved by the data source: ?filter={{filter}}. Example values:. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ public string KeyRing { get; set; }
 
 The key ring that the keys belongs to. Format: 'projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
 
 ---
 
@@ -766,7 +766,7 @@ The filter argument is used to add a filter query parameter that limits which ke
 
 [See the documentation about using filters](https://cloud.google.com/kms/docs/sorting-and-filtering)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
 
 ---
 
@@ -778,7 +778,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,6 +793,19 @@ If you experience problems setting this value it might not be settable. Please t
 using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new DataGoogleKmsCryptoKeysKeys {
+
+};
+```
+
+
+### DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy <a name="DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy {
 
 };
 ```
@@ -825,6 +838,433 @@ new DataGoogleKmsCryptoKeysKeysVersionTemplate {
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList <a name="DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.get"></a>
+
+```csharp
+private DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference <a name="DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.allowedAccessReasons">AllowedAccessReasons</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy">DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AllowedAccessReasons`<sup>Required</sup> <a name="AllowedAccessReasons" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.allowedAccessReasons"></a>
+
+```csharp
+public string[] AllowedAccessReasons { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference.property.internalValue"></a>
+
+```csharp
+public DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy">DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy</a>
+
+---
+
 
 ### DataGoogleKmsCryptoKeysKeysList <a name="DataGoogleKmsCryptoKeysKeysList" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysList"></a>
 
@@ -1208,6 +1648,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.effectiveLabels">EffectiveLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.importOnly">ImportOnly</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.keyAccessJustificationsPolicy">KeyAccessJustificationsPolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList">DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.keyRing">KeyRing</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.labels">Labels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -1292,6 +1733,16 @@ public IResolvable ImportOnly { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `KeyAccessJustificationsPolicy`<sup>Required</sup> <a name="KeyAccessJustificationsPolicy" id="@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysOutputReference.property.keyAccessJustificationsPolicy"></a>
+
+```csharp
+public DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList KeyAccessJustificationsPolicy { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.dataGoogleKmsCryptoKeys.DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList">DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList</a>
 
 ---
 

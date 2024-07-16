@@ -821,6 +821,7 @@ Object.defineProperty(exports, 'googleSccMuteConfig', { get: function () { retur
 Object.defineProperty(exports, 'googleSccNotificationConfig', { get: function () { return require('./google-scc-notification-config'); } });
 Object.defineProperty(exports, 'googleSccOrganizationCustomModule', { get: function () { return require('./google-scc-organization-custom-module'); } });
 Object.defineProperty(exports, 'googleSccProjectCustomModule', { get: function () { return require('./google-scc-project-custom-module'); } });
+Object.defineProperty(exports, 'googleSccProjectNotificationConfig', { get: function () { return require('./google-scc-project-notification-config'); } });
 Object.defineProperty(exports, 'googleSccSource', { get: function () { return require('./google-scc-source'); } });
 Object.defineProperty(exports, 'googleSccSourceIamBinding', { get: function () { return require('./google-scc-source-iam-binding'); } });
 Object.defineProperty(exports, 'googleSccSourceIamMember', { get: function () { return require('./google-scc-source-iam-member'); } });
@@ -1128,6 +1129,7 @@ Object.defineProperty(exports, 'dataGoogleFolders', { get: function () { return 
 Object.defineProperty(exports, 'dataGoogleGkeBackupBackupPlanIamPolicy', { get: function () { return require('./data-google-gke-backup-backup-plan-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGkeBackupRestorePlanIamPolicy', { get: function () { return require('./data-google-gke-backup-restore-plan-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGkeHubFeatureIamPolicy', { get: function () { return require('./data-google-gke-hub-feature-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleGkeHubMembershipBinding', { get: function () { return require('./data-google-gke-hub-membership-binding'); } });
 Object.defineProperty(exports, 'dataGoogleGkeHubMembershipIamPolicy', { get: function () { return require('./data-google-gke-hub-membership-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGkeHubScopeIamPolicy', { get: function () { return require('./data-google-gke-hub-scope-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleHealthcareConsentStoreIamPolicy', { get: function () { return require('./data-google-healthcare-consent-store-iam-policy'); } });
@@ -1213,6 +1215,7 @@ Object.defineProperty(exports, 'dataGoogleServiceAccountKey', { get: function ()
 Object.defineProperty(exports, 'dataGoogleServiceDirectoryNamespaceIamPolicy', { get: function () { return require('./data-google-service-directory-namespace-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleServiceDirectoryServiceIamPolicy', { get: function () { return require('./data-google-service-directory-service-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleServiceNetworkingPeeredDnsDomain', { get: function () { return require('./data-google-service-networking-peered-dns-domain'); } });
+Object.defineProperty(exports, 'dataGoogleSiteVerificationToken', { get: function () { return require('./data-google-site-verification-token'); } });
 Object.defineProperty(exports, 'dataGoogleSourcerepoRepository', { get: function () { return require('./data-google-sourcerepo-repository'); } });
 Object.defineProperty(exports, 'dataGoogleSourcerepoRepositoryIamPolicy', { get: function () { return require('./data-google-sourcerepo-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleSpannerDatabaseIamPolicy', { get: function () { return require('./data-google-spanner-database-iam-policy'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey.
   * The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#crypto_key_backend GoogleKmsCryptoKey#crypto_key_backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#crypto_key_backend GoogleKmsCryptoKey#crypto_key_backend}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -25,11 +25,11 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED.
   * If not specified at creation time, the default duration is 30 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#destroy_scheduled_duration GoogleKmsCryptoKey#destroy_scheduled_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#destroy_scheduled_duration GoogleKmsCryptoKey#destroy_scheduled_duration}
   */
   readonly destroyScheduledDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#id GoogleKmsCryptoKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#id GoogleKmsCryptoKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,14 +38,14 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether this key may contain imported versions only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#import_only GoogleKmsCryptoKey#import_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#import_only GoogleKmsCryptoKey#import_only}
   */
   readonly importOnly?: boolean | cdktf.IResolvable;
   /**
   * The KeyRing that this key belongs to.
   * Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#key_ring GoogleKmsCryptoKey#key_ring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#key_ring GoogleKmsCryptoKey#key_ring}
   */
   readonly keyRing: string;
   /**
@@ -55,13 +55,13 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#labels GoogleKmsCryptoKey#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#labels GoogleKmsCryptoKey#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The resource name for the CryptoKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#name GoogleKmsCryptoKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#name GoogleKmsCryptoKey#name}
   */
   readonly name: string;
   /**
@@ -70,7 +70,7 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * for possible inputs.
   * Default value is "ENCRYPT_DECRYPT".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#purpose GoogleKmsCryptoKey#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#purpose GoogleKmsCryptoKey#purpose}
   */
   readonly purpose?: string;
   /**
@@ -79,7 +79,7 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * the format of a decimal number with up to 9 fractional digits, followed by the
   * letter 's' (seconds). It must be greater than a day (ie, 86400).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#rotation_period GoogleKmsCryptoKey#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#rotation_period GoogleKmsCryptoKey#rotation_period}
   */
   readonly rotationPeriod?: string;
   /**
@@ -87,19 +87,25 @@ export interface GoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArguments {
   * You must use the 'google_kms_crypto_key_version' resource to create a new CryptoKeyVersion
   * or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#skip_initial_version_creation GoogleKmsCryptoKey#skip_initial_version_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#skip_initial_version_creation GoogleKmsCryptoKey#skip_initial_version_creation}
   */
   readonly skipInitialVersionCreation?: boolean | cdktf.IResolvable;
   /**
+  * key_access_justifications_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#key_access_justifications_policy GoogleKmsCryptoKey#key_access_justifications_policy}
+  */
+  readonly keyAccessJustificationsPolicy?: GoogleKmsCryptoKeyKeyAccessJustificationsPolicy;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#timeouts GoogleKmsCryptoKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#timeouts GoogleKmsCryptoKey#timeouts}
   */
   readonly timeouts?: GoogleKmsCryptoKeyTimeouts;
   /**
   * version_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#version_template GoogleKmsCryptoKey#version_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#version_template GoogleKmsCryptoKey#version_template}
   */
   readonly versionTemplate?: GoogleKmsCryptoKeyVersionTemplate;
 }
@@ -183,17 +189,105 @@ export class GoogleKmsCryptoKeyPrimaryList extends cdktf.ComplexList {
     return new GoogleKmsCryptoKeyPrimaryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleKmsCryptoKeyKeyAccessJustificationsPolicy {
+  /**
+  * The list of allowed reasons for access to this CryptoKey. Zero allowed
+  * access reasons means all encrypt, decrypt, and sign operations for
+  * this CryptoKey will fail.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#allowed_access_reasons GoogleKmsCryptoKey#allowed_access_reasons}
+  */
+  readonly allowedAccessReasons?: string[];
+}
+
+export function googleKmsCryptoKeyKeyAccessJustificationsPolicyToTerraform(struct?: GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference | GoogleKmsCryptoKeyKeyAccessJustificationsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_access_reasons: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAccessReasons),
+  }
+}
+
+
+export function googleKmsCryptoKeyKeyAccessJustificationsPolicyToHclTerraform(struct?: GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference | GoogleKmsCryptoKeyKeyAccessJustificationsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_access_reasons: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAccessReasons),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleKmsCryptoKeyKeyAccessJustificationsPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedAccessReasons !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedAccessReasons = this._allowedAccessReasons;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleKmsCryptoKeyKeyAccessJustificationsPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedAccessReasons = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedAccessReasons = value.allowedAccessReasons;
+    }
+  }
+
+  // allowed_access_reasons - computed: false, optional: true, required: false
+  private _allowedAccessReasons?: string[]; 
+  public get allowedAccessReasons() {
+    return this.getListAttribute('allowed_access_reasons');
+  }
+  public set allowedAccessReasons(value: string[]) {
+    this._allowedAccessReasons = value;
+  }
+  public resetAllowedAccessReasons() {
+    this._allowedAccessReasons = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedAccessReasonsInput() {
+    return this._allowedAccessReasons;
+  }
+}
 export interface GoogleKmsCryptoKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#create GoogleKmsCryptoKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#create GoogleKmsCryptoKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#delete GoogleKmsCryptoKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#delete GoogleKmsCryptoKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#update GoogleKmsCryptoKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#update GoogleKmsCryptoKey#update}
   */
   readonly update?: string;
 }
@@ -348,13 +442,13 @@ export interface GoogleKmsCryptoKeyVersionTemplate {
   * The algorithm to use when creating a version based on this template.
   * See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#algorithm GoogleKmsCryptoKey#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#algorithm GoogleKmsCryptoKey#algorithm}
   */
   readonly algorithm: string;
   /**
   * The protection level to use when creating a version based on this template. Possible values include "SOFTWARE", "HSM", "EXTERNAL", "EXTERNAL_VPC". Defaults to "SOFTWARE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#protection_level GoogleKmsCryptoKey#protection_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#protection_level GoogleKmsCryptoKey#protection_level}
   */
   readonly protectionLevel?: string;
 }
@@ -464,7 +558,7 @@ export class GoogleKmsCryptoKeyVersionTemplateOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}
 */
 export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
 
@@ -480,7 +574,7 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleKmsCryptoKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleKmsCryptoKey to import
-  * @param importFromId The id of the existing GoogleKmsCryptoKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleKmsCryptoKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleKmsCryptoKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -492,7 +586,7 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +597,7 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_crypto_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.37.0',
+        providerVersion: '5.38.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -524,6 +618,7 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
     this._purpose = config.purpose;
     this._rotationPeriod = config.rotationPeriod;
     this._skipInitialVersionCreation = config.skipInitialVersionCreation;
+    this._keyAccessJustificationsPolicy.internalValue = config.keyAccessJustificationsPolicy;
     this._timeouts.internalValue = config.timeouts;
     this._versionTemplate.internalValue = config.versionTemplate;
   }
@@ -704,6 +799,22 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
     return this._terraformLabels;
   }
 
+  // key_access_justifications_policy - computed: false, optional: true, required: false
+  private _keyAccessJustificationsPolicy = new GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference(this, "key_access_justifications_policy");
+  public get keyAccessJustificationsPolicy() {
+    return this._keyAccessJustificationsPolicy;
+  }
+  public putKeyAccessJustificationsPolicy(value: GoogleKmsCryptoKeyKeyAccessJustificationsPolicy) {
+    this._keyAccessJustificationsPolicy.internalValue = value;
+  }
+  public resetKeyAccessJustificationsPolicy() {
+    this._keyAccessJustificationsPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyAccessJustificationsPolicyInput() {
+    return this._keyAccessJustificationsPolicy.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleKmsCryptoKeyTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -752,6 +863,7 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
       purpose: cdktf.stringToTerraform(this._purpose),
       rotation_period: cdktf.stringToTerraform(this._rotationPeriod),
       skip_initial_version_creation: cdktf.booleanToTerraform(this._skipInitialVersionCreation),
+      key_access_justifications_policy: googleKmsCryptoKeyKeyAccessJustificationsPolicyToTerraform(this._keyAccessJustificationsPolicy.internalValue),
       timeouts: googleKmsCryptoKeyTimeoutsToTerraform(this._timeouts.internalValue),
       version_template: googleKmsCryptoKeyVersionTemplateToTerraform(this._versionTemplate.internalValue),
     };
@@ -818,6 +930,12 @@ export class GoogleKmsCryptoKey extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      key_access_justifications_policy: {
+        value: googleKmsCryptoKeyKeyAccessJustificationsPolicyToHclTerraform(this._keyAccessJustificationsPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleKmsCryptoKeyKeyAccessJustificationsPolicyList",
       },
       timeouts: {
         value: googleKmsCryptoKeyTimeoutsToHclTerraform(this._timeouts.internalValue),

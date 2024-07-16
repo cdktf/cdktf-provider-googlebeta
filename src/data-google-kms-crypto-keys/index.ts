@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -23,11 +23,11 @@ export interface DataGoogleKmsCryptoKeysConfig extends cdktf.TerraformMetaArgume
   * 					[See the documentation about using filters](https://cloud.google.com/kms/docs/sorting-and-filtering)
   * 				
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,9 +36,84 @@ export interface DataGoogleKmsCryptoKeysConfig extends cdktf.TerraformMetaArgume
   /**
   * The key ring that the keys belongs to. Format: 'projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
   */
   readonly keyRing: string;
+}
+export interface DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy {
+}
+
+export function dataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyToTerraform(struct?: DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyToHclTerraform(struct?: DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed_access_reasons - computed: true, optional: false, required: false
+  public get allowedAccessReasons() {
+    return this.getListAttribute('allowed_access_reasons');
+  }
+}
+
+export class DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference {
+    return new DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataGoogleKmsCryptoKeysKeysPrimary {
 }
@@ -277,6 +352,12 @@ export class DataGoogleKmsCryptoKeysKeysOutputReference extends cdktf.ComplexObj
     return this.getBooleanAttribute('import_only');
   }
 
+  // key_access_justifications_policy - computed: true, optional: false, required: false
+  private _keyAccessJustificationsPolicy = new DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList(this, "key_access_justifications_policy", false);
+  public get keyAccessJustificationsPolicy() {
+    return this._keyAccessJustificationsPolicy;
+  }
+
   // key_ring - computed: true, optional: false, required: false
   public get keyRing() {
     return this.getStringAttribute('key_ring');
@@ -347,7 +428,7 @@ export class DataGoogleKmsCryptoKeysKeysList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys}
 */
 export class DataGoogleKmsCryptoKeys extends cdktf.TerraformDataSource {
 
@@ -363,7 +444,7 @@ export class DataGoogleKmsCryptoKeys extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGoogleKmsCryptoKeys resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleKmsCryptoKeys to import
-  * @param importFromId The id of the existing DataGoogleKmsCryptoKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleKmsCryptoKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleKmsCryptoKeys to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -375,7 +456,7 @@ export class DataGoogleKmsCryptoKeys extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_kms_crypto_keys google_kms_crypto_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -386,7 +467,7 @@ export class DataGoogleKmsCryptoKeys extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_kms_crypto_keys',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.37.0',
+        providerVersion: '5.38.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
