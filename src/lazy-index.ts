@@ -50,6 +50,8 @@ Object.defineProperty(exports, 'googleApigeeEnvironment', { get: function () { r
 Object.defineProperty(exports, 'googleApigeeEnvironmentIamBinding', { get: function () { return require('./google-apigee-environment-iam-binding'); } });
 Object.defineProperty(exports, 'googleApigeeEnvironmentIamMember', { get: function () { return require('./google-apigee-environment-iam-member'); } });
 Object.defineProperty(exports, 'googleApigeeEnvironmentIamPolicy', { get: function () { return require('./google-apigee-environment-iam-policy'); } });
+Object.defineProperty(exports, 'googleApigeeEnvironmentKeyvaluemaps', { get: function () { return require('./google-apigee-environment-keyvaluemaps'); } });
+Object.defineProperty(exports, 'googleApigeeEnvironmentKeyvaluemapsEntries', { get: function () { return require('./google-apigee-environment-keyvaluemaps-entries'); } });
 Object.defineProperty(exports, 'googleApigeeFlowhook', { get: function () { return require('./google-apigee-flowhook'); } });
 Object.defineProperty(exports, 'googleApigeeInstance', { get: function () { return require('./google-apigee-instance'); } });
 Object.defineProperty(exports, 'googleApigeeInstanceAttachment', { get: function () { return require('./google-apigee-instance-attachment'); } });
@@ -316,12 +318,14 @@ Object.defineProperty(exports, 'googleComputeRegionTargetHttpsProxy', { get: fun
 Object.defineProperty(exports, 'googleComputeRegionTargetTcpProxy', { get: function () { return require('./google-compute-region-target-tcp-proxy'); } });
 Object.defineProperty(exports, 'googleComputeRegionUrlMap', { get: function () { return require('./google-compute-region-url-map'); } });
 Object.defineProperty(exports, 'googleComputeReservation', { get: function () { return require('./google-compute-reservation'); } });
+Object.defineProperty(exports, 'googleComputeResizeRequest', { get: function () { return require('./google-compute-resize-request'); } });
 Object.defineProperty(exports, 'googleComputeResourcePolicy', { get: function () { return require('./google-compute-resource-policy'); } });
 Object.defineProperty(exports, 'googleComputeRoute', { get: function () { return require('./google-compute-route'); } });
 Object.defineProperty(exports, 'googleComputeRouter', { get: function () { return require('./google-compute-router'); } });
 Object.defineProperty(exports, 'googleComputeRouterInterface', { get: function () { return require('./google-compute-router-interface'); } });
 Object.defineProperty(exports, 'googleComputeRouterNat', { get: function () { return require('./google-compute-router-nat'); } });
 Object.defineProperty(exports, 'googleComputeRouterPeer', { get: function () { return require('./google-compute-router-peer'); } });
+Object.defineProperty(exports, 'googleComputeRouterRoutePolicy', { get: function () { return require('./google-compute-router-route-policy'); } });
 Object.defineProperty(exports, 'googleComputeSecurityPolicy', { get: function () { return require('./google-compute-security-policy'); } });
 Object.defineProperty(exports, 'googleComputeSecurityPolicyRule', { get: function () { return require('./google-compute-security-policy-rule'); } });
 Object.defineProperty(exports, 'googleComputeServiceAttachment', { get: function () { return require('./google-compute-service-attachment'); } });
@@ -826,6 +830,7 @@ Object.defineProperty(exports, 'googleSccSource', { get: function () { return re
 Object.defineProperty(exports, 'googleSccSourceIamBinding', { get: function () { return require('./google-scc-source-iam-binding'); } });
 Object.defineProperty(exports, 'googleSccSourceIamMember', { get: function () { return require('./google-scc-source-iam-member'); } });
 Object.defineProperty(exports, 'googleSccSourceIamPolicy', { get: function () { return require('./google-scc-source-iam-policy'); } });
+Object.defineProperty(exports, 'googleSccV2OrganizationMuteConfig', { get: function () { return require('./google-scc-v2-organization-mute-config'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationNotificationConfig', { get: function () { return require('./google-scc-v2-organization-notification-config'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecret', { get: function () { return require('./google-secret-manager-secret'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecretIamBinding', { get: function () { return require('./google-secret-manager-secret-iam-binding'); } });
