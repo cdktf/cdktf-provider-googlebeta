@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePool(scope Construct, id *string, config GoogleContainerAwsNodePoolConfig) GoogleContainerAwsNodePool
 ```
@@ -498,7 +498,7 @@ func ResetUpdateSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.GoogleContainerAwsNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.GoogleContainerAwsNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ googlecontainerawsnodepool.GoogleContainerAwsNodePool_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.GoogleContainerAwsNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ googlecontainerawsnodepool.GoogleContainerAwsNodePool_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.GoogleContainerAwsNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1172,7 +1172,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolAutoscaling {
 	MaxNodeCount: *f64,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfig {
 	Connection: interface{},
@@ -1232,20 +1232,20 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainer
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Autoscaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolAutoscaling,
+	Autoscaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolAutoscaling,
 	Cluster: *string,
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigA,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigA,
 	Location: *string,
-	MaxPodsConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolMaxPodsConstraint,
+	MaxPodsConstraint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolMaxPodsConstraint,
 	Name: *string,
 	SubnetId: *string,
 	Version: *string,
 	Annotations: *map[string]*string,
 	Id: *string,
-	Management: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolManagement,
+	Management: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolManagement,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeouts,
-	UpdateSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettings,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeouts,
+	UpdateSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettings,
 }
 ```
 
@@ -1554,21 +1554,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigA {
-	ConfigEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigConfigEncryption,
+	ConfigEncryption: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigConfigEncryption,
 	IamInstanceProfile: *string,
-	AutoscalingMetricsCollection: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection,
+	AutoscalingMetricsCollection: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection,
 	ImageType: *string,
-	InstancePlacement: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigInstancePlacement,
+	InstancePlacement: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigInstancePlacement,
 	InstanceType: *string,
 	Labels: *map[string]*string,
-	ProxyConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfig,
-	RootVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolume,
+	ProxyConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfig,
+	RootVolume: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolume,
 	SecurityGroupIds: *[]*string,
-	SpotConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfig,
-	SshConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSshConfig,
+	SpotConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfig,
+	SshConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSshConfig,
 	Tags: *map[string]*string,
 	Taints: interface{},
 }
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection {
 	Granularity: *string,
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigConfigEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigConfigEncryption {
 	KmsKeyArn: *string,
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigInstancePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigInstancePlacement {
 	Tenancy: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigProxyConfig {
 	SecretArn: *string,
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigRootVolume {
 	Iops: *f64,
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigSpotConfig {
 	InstanceTypes: *[]*string,
@@ -2112,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigSshConfig {
 	Ec2KeyPair: *string,
@@ -2146,7 +2146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolConfigTaints {
 	Effect: *string,
@@ -2212,7 +2212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolManagement {
 	AutoRepair: interface{},
@@ -2246,7 +2246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolMaxPodsConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolMaxPodsConstraint {
 	MaxPodsPerNode: *f64,
@@ -2280,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolTimeouts {
 	Create: *string,
@@ -2340,10 +2340,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolUpdateSettings {
-	SurgeSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettingsSurgeSettings,
+	SurgeSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettingsSurgeSettings,
 }
 ```
 
@@ -2374,7 +2374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettingsSurgeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 &googlecontainerawsnodepool.GoogleContainerAwsNodePoolUpdateSettingsSurgeSettings {
 	MaxSurge: *f64,
@@ -2430,7 +2430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolAutoscalingOutputReference
 ```
@@ -2723,7 +2723,7 @@ func InternalValue() GoogleContainerAwsNodePoolAutoscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigAOutputReference
 ```
@@ -3468,7 +3468,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigConfigEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigConfigEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigConfigEncryptionOutputReference
 ```
@@ -4039,7 +4039,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigConfigEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigInstancePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference
 ```
@@ -4317,7 +4317,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigInstancePlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigProxyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigProxyConfigOutputReference
 ```
@@ -4610,7 +4610,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigProxyConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigRootVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigRootVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigRootVolumeOutputReference
 ```
@@ -5004,7 +5004,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigRootVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigSpotConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigSpotConfigOutputReference
 ```
@@ -5275,7 +5275,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigSpotConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSshConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigSshConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolConfigSshConfigOutputReference
 ```
@@ -5546,7 +5546,7 @@ func InternalValue() GoogleContainerAwsNodePoolConfigSshConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleContainerAwsNodePoolConfigTaintsList
 ```
@@ -5706,7 +5706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolConfigTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleContainerAwsNodePoolConfigTaintsOutputReference
 ```
@@ -6039,7 +6039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolManagementOutputReference
 ```
@@ -6317,7 +6317,7 @@ func InternalValue() GoogleContainerAwsNodePoolManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolMaxPodsConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolMaxPodsConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolMaxPodsConstraintOutputReference
 ```
@@ -6588,7 +6588,7 @@ func InternalValue() GoogleContainerAwsNodePoolMaxPodsConstraint
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolTimeoutsOutputReference
 ```
@@ -6924,7 +6924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolUpdateSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolUpdateSettingsOutputReference
 ```
@@ -7215,7 +7215,7 @@ func InternalValue() GoogleContainerAwsNodePoolUpdateSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecontainerawsnodepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainerawsnodepool"
 
 googlecontainerawsnodepool.NewGoogleContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference
 ```
