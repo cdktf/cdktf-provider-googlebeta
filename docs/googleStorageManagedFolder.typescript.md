@@ -4,7 +4,7 @@
 
 ### GoogleStorageManagedFolder <a name="GoogleStorageManagedFolder" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder google_storage_managed_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder google_storage_managed_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -379,6 +380,12 @@ public putTimeouts(value: GoogleStorageManagedFolderTimeouts): void
 
 ---
 
+##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.resetForceDestroy"></a>
+
+```typescript
+public resetForceDestroy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.resetId"></a>
 
 ```typescript
@@ -494,7 +501,7 @@ The construct id used in the generated config for the GoogleStorageManagedFolder
 
 The id of the existing GoogleStorageManagedFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,10 +537,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference">GoogleStorageManagedFolderTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts">GoogleStorageManagedFolderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.name">name</a></code> | <code>string</code> | *No description.* |
 
@@ -741,6 +750,16 @@ public readonly bucketInput: string;
 
 ---
 
+##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.forceDestroyInput"></a>
+
+```typescript
+public readonly forceDestroyInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.idInput"></a>
 
 ```typescript
@@ -778,6 +797,16 @@ public readonly bucket: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `forceDestroy`<sup>Required</sup> <a name="forceDestroy" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolder.property.forceDestroy"></a>
+
+```typescript
+public readonly forceDestroy: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -844,7 +873,8 @@ const googleStorageManagedFolderConfig: googleStorageManagedFolder.GoogleStorage
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.bucket">bucket</a></code> | <code>string</code> | The name of the bucket that contains the managed folder. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.name">name</a></code> | <code>string</code> | The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allows the deletion of a managed folder even if contains objects. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts">GoogleStorageManagedFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -929,7 +959,7 @@ public readonly bucket: string;
 
 The name of the bucket that contains the managed folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#bucket GoogleStorageManagedFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#bucket GoogleStorageManagedFolder#bucket}
 
 ---
 
@@ -943,7 +973,25 @@ public readonly name: string;
 
 The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#name GoogleStorageManagedFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#name GoogleStorageManagedFolder#name}
+
+---
+
+##### `forceDestroy`<sup>Optional</sup> <a name="forceDestroy" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderConfig.property.forceDestroy"></a>
+
+```typescript
+public readonly forceDestroy: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Allows the deletion of a managed folder even if contains objects.
+
+If a non-empty managed folder is deleted, any objects
+within the folder will remain in a simulated folder with the
+same name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#force_destroy GoogleStorageManagedFolder#force_destroy}
 
 ---
 
@@ -955,7 +1003,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#id GoogleStorageManagedFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +1020,7 @@ public readonly timeouts: GoogleStorageManagedFolderTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#timeouts GoogleStorageManagedFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#timeouts GoogleStorageManagedFolder#timeouts}
 
 ---
 
@@ -990,8 +1038,9 @@ const googleStorageManagedFolderTimeouts: googleStorageManagedFolder.GoogleStora
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#update GoogleStorageManagedFolder#update}. |
 
 ---
 
@@ -1003,7 +1052,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#create GoogleStorageManagedFolder#create}.
 
 ---
 
@@ -1015,7 +1064,19 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#delete GoogleStorageManagedFolder#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_storage_managed_folder#update GoogleStorageManagedFolder#update}.
 
 ---
 
@@ -1073,6 +1134,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -1238,6 +1300,12 @@ public resetCreate(): void
 public resetDelete(): void
 ```
 
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1247,8 +1315,10 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeouts">GoogleStorageManagedFolderTimeouts</a></code> | *No description.* |
 
 ---
@@ -1297,6 +1367,16 @@ public readonly deleteInput: string;
 
 ---
 
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.create"></a>
 
 ```typescript
@@ -1311,6 +1391,16 @@ public readonly create: string;
 
 ```typescript
 public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google-beta.googleStorageManagedFolder.GoogleStorageManagedFolderTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
 ```
 
 - *Type:* string

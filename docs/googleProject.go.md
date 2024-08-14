@@ -4,12 +4,12 @@
 
 ### GoogleProject <a name="GoogleProject" id="@cdktf/provider-google-beta.googleProject.GoogleProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project google_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project google_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.NewGoogleProject(scope Construct, id *string, config GoogleProjectConfig) GoogleProject
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetAutoCreateNetwork">ResetAutoCreateNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetBillingAccount">ResetBillingAccount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetFolderId">ResetFolderId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -397,6 +398,12 @@ func ResetAutoCreateNetwork()
 func ResetBillingAccount()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktf/provider-google-beta.googleProject.GoogleProject.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetFolderId` <a name="ResetFolderId" id="@cdktf/provider-google-beta.googleProject.GoogleProject.resetFolderId"></a>
 
 ```go
@@ -447,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleProject.GoogleProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.GoogleProject_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleProject.GoogleProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.GoogleProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ googleproject.GoogleProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleProject.GoogleProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.GoogleProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ googleproject.GoogleProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleProject.GoogleProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.GoogleProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +543,7 @@ The construct id used in the generated config for the GoogleProject to import.
 
 The id of the existing GoogleProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeoutsOutputReference">GoogleProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.autoCreateNetworkInput">AutoCreateNetworkInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.billingAccountInput">BillingAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.folderIdInput">FolderIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -582,6 +590,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.autoCreateNetwork">AutoCreateNetwork</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.billingAccount">BillingAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.folderId">FolderId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -794,6 +803,16 @@ func BillingAccountInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `FolderIdInput`<sup>Optional</sup> <a name="FolderIdInput" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.folderIdInput"></a>
 
 ```go
@@ -888,6 +907,16 @@ func AutoCreateNetwork() interface{}
 
 ```go
 func BillingAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -989,7 +1018,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 &googleproject.GoogleProjectConfig {
 	Connection: interface{},
@@ -1003,12 +1032,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproje
 	ProjectId: *string,
 	AutoCreateNetwork: interface{},
 	BillingAccount: *string,
+	DeletionPolicy: *string,
 	FolderId: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	OrgId: *string,
 	SkipDelete: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13.googleProject.GoogleProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProject.GoogleProjectTimeouts,
 }
 ```
 
@@ -1027,8 +1057,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproje
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The project ID. Changing this forces a new project to be created. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.autoCreateNetwork">AutoCreateNetwork</a></code> | <code>interface{}</code> | Create the 'default' network automatically. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.billingAccount">BillingAccount</a></code> | <code>*string</code> | The alphanumeric ID of the billing account this project belongs to. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | The deletion policy for the Project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.folderId">FolderId</a></code> | <code>*string</code> | The numeric ID of the folder this project should be created under. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#id GoogleProject#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#id GoogleProject#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A set of key/value label pairs to assign to the project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The numeric ID of the organization this project belongs to. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.skipDelete">SkipDelete</a></code> | <code>interface{}</code> | If true, the Terraform resource can be deleted without deleting the Project via the Google API. |
@@ -1116,7 +1147,7 @@ Name *string
 
 The display name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#name GoogleProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#name GoogleProject#name}
 
 ---
 
@@ -1130,7 +1161,7 @@ ProjectId *string
 
 The project ID. Changing this forces a new project to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#project_id GoogleProject#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#project_id GoogleProject#project_id}
 
 ---
 
@@ -1146,7 +1177,7 @@ Create the 'default' network automatically.
 
 Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
 
 ---
 
@@ -1162,7 +1193,24 @@ The alphanumeric ID of the billing account this project belongs to.
 
 The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#billing_account GoogleProject#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#billing_account GoogleProject#billing_account}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+The deletion policy for the Project.
+
+Setting PREVENT will protect the project against any destroy actions caused by a terraform apply or terraform destroy. Setting ABANDON allows the resource
+to be abandoned rather than deleted. Possible values are: "PREVENT", "ABANDON", "DELETE"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#deletion_policy GoogleProject#deletion_policy}
 
 ---
 
@@ -1178,7 +1226,7 @@ The numeric ID of the folder this project should be created under.
 
 Only one of org_id or folder_id may be specified. If the folder_id is specified, then the project is created under the specified folder. Changing this forces the project to be migrated to the newly specified folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#folder_id GoogleProject#folder_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#folder_id GoogleProject#folder_id}
 
 ---
 
@@ -1190,7 +1238,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#id GoogleProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#id GoogleProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1210,7 +1258,7 @@ A set of key/value label pairs to assign to the project.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#labels GoogleProject#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#labels GoogleProject#labels}
 
 ---
 
@@ -1226,7 +1274,7 @@ The numeric ID of the organization this project belongs to.
 
 Changing this forces a new project to be created.  Only one of org_id or folder_id may be specified. If the org_id is specified then the project is created at the top level. Changing this forces the project to be migrated to the newly specified organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#org_id GoogleProject#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#org_id GoogleProject#org_id}
 
 ---
 
@@ -1240,7 +1288,7 @@ SkipDelete interface{}
 
 If true, the Terraform resource can be deleted without deleting the Project via the Google API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#skip_delete GoogleProject#skip_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#skip_delete GoogleProject#skip_delete}
 
 ---
 
@@ -1254,7 +1302,7 @@ Timeouts GoogleProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#timeouts GoogleProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#timeouts GoogleProject#timeouts}
 
 ---
 
@@ -1263,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 &googleproject.GoogleProjectTimeouts {
 	Create: *string,
@@ -1277,10 +1325,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#create GoogleProject#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#delete GoogleProject#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#read GoogleProject#read}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#update GoogleProject#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#create GoogleProject#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#delete GoogleProject#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#read GoogleProject#read}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#update GoogleProject#update}. |
 
 ---
 
@@ -1292,7 +1340,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#create GoogleProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#create GoogleProject#create}.
 
 ---
 
@@ -1304,7 +1352,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#delete GoogleProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#delete GoogleProject#delete}.
 
 ---
 
@@ -1316,7 +1364,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#read GoogleProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#read GoogleProject#read}.
 
 ---
 
@@ -1328,7 +1376,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_project#update GoogleProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_project#update GoogleProject#update}.
 
 ---
 
@@ -1339,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProject.GoogleProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleproject"
 
 googleproject.NewGoogleProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectTimeoutsOutputReference
 ```
