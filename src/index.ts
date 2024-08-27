@@ -656,6 +656,9 @@ export * as googleKmsCryptoKeyIamMember from './google-kms-crypto-key-iam-member
 export * as googleKmsCryptoKeyIamPolicy from './google-kms-crypto-key-iam-policy';
 export * as googleKmsCryptoKeyVersion from './google-kms-crypto-key-version';
 export * as googleKmsEkmConnection from './google-kms-ekm-connection';
+export * as googleKmsEkmConnectionIamBinding from './google-kms-ekm-connection-iam-binding';
+export * as googleKmsEkmConnectionIamMember from './google-kms-ekm-connection-iam-member';
+export * as googleKmsEkmConnectionIamPolicy from './google-kms-ekm-connection-iam-policy';
 export * as googleKmsKeyHandle from './google-kms-key-handle';
 export * as googleKmsKeyRing from './google-kms-key-ring';
 export * as googleKmsKeyRingIamBinding from './google-kms-key-ring-iam-binding';
@@ -838,6 +841,7 @@ export * as googleSccV2FolderMuteConfig from './google-scc-v2-folder-mute-config
 export * as googleSccV2FolderNotificationConfig from './google-scc-v2-folder-notification-config';
 export * as googleSccV2OrganizationMuteConfig from './google-scc-v2-organization-mute-config';
 export * as googleSccV2OrganizationNotificationConfig from './google-scc-v2-organization-notification-config';
+export * as googleSccV2OrganizationSccBigQueryExports from './google-scc-v2-organization-scc-big-query-exports';
 export * as googleSccV2OrganizationSource from './google-scc-v2-organization-source';
 export * as googleSccV2OrganizationSourceIamBinding from './google-scc-v2-organization-source-iam-binding';
 export * as googleSccV2OrganizationSourceIamMember from './google-scc-v2-organization-source-iam-member';
@@ -1177,6 +1181,7 @@ export * as dataGoogleKmsCryptoKey from './data-google-kms-crypto-key';
 export * as dataGoogleKmsCryptoKeyIamPolicy from './data-google-kms-crypto-key-iam-policy';
 export * as dataGoogleKmsCryptoKeyVersion from './data-google-kms-crypto-key-version';
 export * as dataGoogleKmsCryptoKeys from './data-google-kms-crypto-keys';
+export * as dataGoogleKmsEkmConnectionIamPolicy from './data-google-kms-ekm-connection-iam-policy';
 export * as dataGoogleKmsKeyRing from './data-google-kms-key-ring';
 export * as dataGoogleKmsKeyRingIamPolicy from './data-google-kms-key-ring-iam-policy';
 export * as dataGoogleKmsKeyRings from './data-google-kms-key-rings';
