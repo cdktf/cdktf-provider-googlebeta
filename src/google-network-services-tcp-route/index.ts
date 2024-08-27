@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +10,20 @@ export interface GoogleNetworkServicesTcpRouteConfig extends cdktf.TerraformMeta
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#description GoogleNetworkServicesTcpRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#description GoogleNetworkServicesTcpRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TcpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
   * Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#gateways GoogleNetworkServicesTcpRoute#gateways}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#gateways GoogleNetworkServicesTcpRoute#gateways}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gateways?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#id GoogleNetworkServicesTcpRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#id GoogleNetworkServicesTcpRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +35,7 @@ export interface GoogleNetworkServicesTcpRouteConfig extends cdktf.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#labels GoogleNetworkServicesTcpRoute#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#labels GoogleNetworkServicesTcpRoute#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -48,7 +43,7 @@ export interface GoogleNetworkServicesTcpRouteConfig extends cdktf.TerraformMeta
   * Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
   * The attached Mesh should be of a type SIDECAR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#meshes GoogleNetworkServicesTcpRoute#meshes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#meshes GoogleNetworkServicesTcpRoute#meshes}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -56,23 +51,23 @@ export interface GoogleNetworkServicesTcpRouteConfig extends cdktf.TerraformMeta
   /**
   * Name of the TcpRoute resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#name GoogleNetworkServicesTcpRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#name GoogleNetworkServicesTcpRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#project GoogleNetworkServicesTcpRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#project GoogleNetworkServicesTcpRoute#project}
   */
   readonly project?: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#rules GoogleNetworkServicesTcpRoute#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#rules GoogleNetworkServicesTcpRoute#rules}
   */
   readonly rules: GoogleNetworkServicesTcpRouteRules[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#timeouts GoogleNetworkServicesTcpRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#timeouts GoogleNetworkServicesTcpRoute#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesTcpRouteTimeouts;
 }
@@ -80,7 +75,7 @@ export interface GoogleNetworkServicesTcpRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#service_name GoogleNetworkServicesTcpRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#service_name GoogleNetworkServicesTcpRoute#service_name}
   */
   readonly serviceName?: string;
   /**
@@ -89,7 +84,7 @@ export interface GoogleNetworkServicesTcpRouteRulesActionDestinations {
   * If weights are specified for any one service name, they need to be specified for all of them.
   * If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#weight GoogleNetworkServicesTcpRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#weight GoogleNetworkServicesTcpRoute#weight}
   */
   readonly weight?: number;
 }
@@ -234,15 +229,23 @@ export class GoogleNetworkServicesTcpRouteRulesActionDestinationsList extends cd
 }
 export interface GoogleNetworkServicesTcpRouteRulesAction {
   /**
+  * Specifies the idle timeout for the selected route. The idle timeout is defined as the period in which there are no bytes sent or received on either the upstream or downstream connection. If not set, the default idle timeout is 30 seconds. If set to 0s, the timeout will be disabled.
+  * 
+  * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#idle_timeout GoogleNetworkServicesTcpRoute#idle_timeout}
+  */
+  readonly idleTimeout?: string;
+  /**
   * If true, Router will use the destination IP and port of the original connection as the destination of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#original_destination GoogleNetworkServicesTcpRoute#original_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#original_destination GoogleNetworkServicesTcpRoute#original_destination}
   */
   readonly originalDestination?: boolean | cdktf.IResolvable;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#destinations GoogleNetworkServicesTcpRoute#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#destinations GoogleNetworkServicesTcpRoute#destinations}
   */
   readonly destinations?: GoogleNetworkServicesTcpRouteRulesActionDestinations[] | cdktf.IResolvable;
 }
@@ -253,6 +256,7 @@ export function googleNetworkServicesTcpRouteRulesActionToTerraform(struct?: Goo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    idle_timeout: cdktf.stringToTerraform(struct!.idleTimeout),
     original_destination: cdktf.booleanToTerraform(struct!.originalDestination),
     destinations: cdktf.listMapper(googleNetworkServicesTcpRouteRulesActionDestinationsToTerraform, true)(struct!.destinations),
   }
@@ -265,6 +269,12 @@ export function googleNetworkServicesTcpRouteRulesActionToHclTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    idle_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.idleTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     original_destination: {
       value: cdktf.booleanToHclTerraform(struct!.originalDestination),
       isBlock: false,
@@ -297,6 +307,10 @@ export class GoogleNetworkServicesTcpRouteRulesActionOutputReference extends cdk
   public get internalValue(): GoogleNetworkServicesTcpRouteRulesAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._idleTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.idleTimeout = this._idleTimeout;
+    }
     if (this._originalDestination !== undefined) {
       hasAnyValues = true;
       internalValueResult.originalDestination = this._originalDestination;
@@ -311,14 +325,32 @@ export class GoogleNetworkServicesTcpRouteRulesActionOutputReference extends cdk
   public set internalValue(value: GoogleNetworkServicesTcpRouteRulesAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._idleTimeout = undefined;
       this._originalDestination = undefined;
       this._destinations.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._idleTimeout = value.idleTimeout;
       this._originalDestination = value.originalDestination;
       this._destinations.internalValue = value.destinations;
     }
+  }
+
+  // idle_timeout - computed: false, optional: true, required: false
+  private _idleTimeout?: string; 
+  public get idleTimeout() {
+    return this.getStringAttribute('idle_timeout');
+  }
+  public set idleTimeout(value: string) {
+    this._idleTimeout = value;
+  }
+  public resetIdleTimeout() {
+    this._idleTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idleTimeoutInput() {
+    return this._idleTimeout;
   }
 
   // original_destination - computed: false, optional: true, required: false
@@ -358,13 +390,13 @@ export interface GoogleNetworkServicesTcpRouteRulesMatches {
   * Must be specified in the CIDR range format. A CIDR range consists of an IP Address and a prefix length to construct the subnet mask.
   * By default, the prefix length is 32 (i.e. matches a single IP address). Only IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this exact IP address. "10.0.0.0/8" - matches against any IP address within the 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any IP address'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#address GoogleNetworkServicesTcpRoute#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#address GoogleNetworkServicesTcpRoute#address}
   */
   readonly address: string;
   /**
   * Specifies the destination port to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#port GoogleNetworkServicesTcpRoute#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#port GoogleNetworkServicesTcpRoute#port}
   */
   readonly port: string;
 }
@@ -505,13 +537,13 @@ export interface GoogleNetworkServicesTcpRouteRules {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#action GoogleNetworkServicesTcpRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#action GoogleNetworkServicesTcpRoute#action}
   */
   readonly action: GoogleNetworkServicesTcpRouteRulesAction;
   /**
   * matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#matches GoogleNetworkServicesTcpRoute#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#matches GoogleNetworkServicesTcpRoute#matches}
   */
   readonly matches?: GoogleNetworkServicesTcpRouteRulesMatches[] | cdktf.IResolvable;
 }
@@ -653,15 +685,15 @@ export class GoogleNetworkServicesTcpRouteRulesList extends cdktf.ComplexList {
 }
 export interface GoogleNetworkServicesTcpRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#create GoogleNetworkServicesTcpRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#create GoogleNetworkServicesTcpRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#delete GoogleNetworkServicesTcpRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#delete GoogleNetworkServicesTcpRoute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#update GoogleNetworkServicesTcpRoute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#update GoogleNetworkServicesTcpRoute#update}
   */
   readonly update?: string;
 }
@@ -813,7 +845,7 @@ export class GoogleNetworkServicesTcpRouteTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route}
 */
 export class GoogleNetworkServicesTcpRoute extends cdktf.TerraformResource {
 
@@ -829,7 +861,7 @@ export class GoogleNetworkServicesTcpRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleNetworkServicesTcpRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkServicesTcpRoute to import
-  * @param importFromId The id of the existing GoogleNetworkServicesTcpRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkServicesTcpRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkServicesTcpRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -841,7 +873,7 @@ export class GoogleNetworkServicesTcpRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -852,7 +884,7 @@ export class GoogleNetworkServicesTcpRoute extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_services_tcp_route',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.42.0',
+        providerVersion: '5.43.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
