@@ -1,3 +1,3 @@
 # `google_document_ai_warehouse_document_schema`
 
-Refer to the Terraform Registry for docs: [`google_document_ai_warehouse_document_schema`](https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_document_ai_warehouse_document_schema).
+Refer to the Terraform Registry for docs: [`google_document_ai_warehouse_document_schema`](https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_document_ai_warehouse_document_schema).

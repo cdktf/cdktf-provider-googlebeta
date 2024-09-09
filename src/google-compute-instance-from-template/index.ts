@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,59 +10,47 @@ export interface GoogleComputeInstanceFromTemplateConfig extends cdktf.Terraform
   /**
   * If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#allow_stopping_for_update GoogleComputeInstanceFromTemplate#allow_stopping_for_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#allow_stopping_for_update GoogleComputeInstanceFromTemplate#allow_stopping_for_update}
   */
   readonly allowStoppingForUpdate?: boolean | cdktf.IResolvable;
   /**
-  * List of disks attached to the instance
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#attached_disk GoogleComputeInstanceFromTemplate#attached_disk}
-  */
-  readonly attachedDisk?: GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable;
-  /**
   * Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#can_ip_forward GoogleComputeInstanceFromTemplate#can_ip_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#can_ip_forward GoogleComputeInstanceFromTemplate#can_ip_forward}
   */
   readonly canIpForward?: boolean | cdktf.IResolvable;
   /**
   * Whether deletion protection is enabled on this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#deletion_protection GoogleComputeInstanceFromTemplate#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#deletion_protection GoogleComputeInstanceFromTemplate#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * A brief description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#description GoogleComputeInstanceFromTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#description GoogleComputeInstanceFromTemplate#description}
   */
   readonly description?: string;
   /**
   * Desired status of the instance. Either "RUNNING" or "TERMINATED".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#desired_status GoogleComputeInstanceFromTemplate#desired_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#desired_status GoogleComputeInstanceFromTemplate#desired_status}
   */
   readonly desiredStatus?: string;
   /**
   * Whether the instance has virtual displays enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_display GoogleComputeInstanceFromTemplate#enable_display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_display GoogleComputeInstanceFromTemplate#enable_display}
   */
   readonly enableDisplay?: boolean | cdktf.IResolvable;
   /**
-  * List of the type and count of accelerator cards attached to the instance.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#guest_accelerator GoogleComputeInstanceFromTemplate#guest_accelerator}
-  */
-  readonly guestAccelerator?: GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable;
-  /**
   * A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid. Valid format is a series of labels 1-63 characters long matching the regular expression [a-z]([-a-z0-9]*[a-z0-9]), concatenated with periods. The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#hostname GoogleComputeInstanceFromTemplate#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#hostname GoogleComputeInstanceFromTemplate#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#id GoogleComputeInstanceFromTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#id GoogleComputeInstanceFromTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -79,926 +62,177 @@ export interface GoogleComputeInstanceFromTemplateConfig extends cdktf.Terraform
   * 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#labels GoogleComputeInstanceFromTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#labels GoogleComputeInstanceFromTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The machine type to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#machine_type GoogleComputeInstanceFromTemplate#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#machine_type GoogleComputeInstanceFromTemplate#machine_type}
   */
   readonly machineType?: string;
   /**
   * Metadata key/value pairs made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#metadata GoogleComputeInstanceFromTemplate#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#metadata GoogleComputeInstanceFromTemplate#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Metadata startup scripts made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#metadata_startup_script GoogleComputeInstanceFromTemplate#metadata_startup_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#metadata_startup_script GoogleComputeInstanceFromTemplate#metadata_startup_script}
   */
   readonly metadataStartupScript?: string;
   /**
   * The minimum CPU platform specified for the VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#min_cpu_platform GoogleComputeInstanceFromTemplate#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#min_cpu_platform GoogleComputeInstanceFromTemplate#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * The name of the instance. One of name or self_link must be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#name GoogleComputeInstanceFromTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#name GoogleComputeInstanceFromTemplate#name}
   */
   readonly name: string;
   /**
   * Partner Metadata Map made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#partner_metadata GoogleComputeInstanceFromTemplate#partner_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#partner_metadata GoogleComputeInstanceFromTemplate#partner_metadata}
   */
   readonly partnerMetadata?: { [key: string]: string };
   /**
   * The ID of the project in which the resource belongs. If self_link is provided, this value is ignored. If neither self_link nor project are provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#project GoogleComputeInstanceFromTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#project GoogleComputeInstanceFromTemplate#project}
   */
   readonly project?: string;
   /**
   * A list of self_links of resource policies to attach to the instance. Currently a max of 1 resource policy is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#resource_policies GoogleComputeInstanceFromTemplate#resource_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#resource_policies GoogleComputeInstanceFromTemplate#resource_policies}
   */
   readonly resourcePolicies?: string[];
   /**
-  * The scratch disks attached to the instance.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#scratch_disk GoogleComputeInstanceFromTemplate#scratch_disk}
-  */
-  readonly scratchDisk?: GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable;
-  /**
-  * The service account to attach to the instance.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#service_account GoogleComputeInstanceFromTemplate#service_account}
-  */
-  readonly serviceAccount?: GoogleComputeInstanceFromTemplateServiceAccount[] | cdktf.IResolvable;
-  /**
   * Name or self link of an instance template to create the instance based on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#source_instance_template GoogleComputeInstanceFromTemplate#source_instance_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#source_instance_template GoogleComputeInstanceFromTemplate#source_instance_template}
   */
   readonly sourceInstanceTemplate: string;
   /**
   * The list of tags attached to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#tags GoogleComputeInstanceFromTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#tags GoogleComputeInstanceFromTemplate#tags}
   */
   readonly tags?: string[];
   /**
   * The zone of the instance. If self_link is provided, this value is ignored. If neither self_link nor zone are provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#zone GoogleComputeInstanceFromTemplate#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#zone GoogleComputeInstanceFromTemplate#zone}
   */
   readonly zone?: string;
   /**
   * advanced_machine_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#advanced_machine_features GoogleComputeInstanceFromTemplate#advanced_machine_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#advanced_machine_features GoogleComputeInstanceFromTemplate#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: GoogleComputeInstanceFromTemplateAdvancedMachineFeatures;
   /**
+  * attached_disk block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#attached_disk GoogleComputeInstanceFromTemplate#attached_disk}
+  */
+  readonly attachedDisk?: GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable;
+  /**
   * boot_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#boot_disk GoogleComputeInstanceFromTemplate#boot_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#boot_disk GoogleComputeInstanceFromTemplate#boot_disk}
   */
   readonly bootDisk?: GoogleComputeInstanceFromTemplateBootDisk;
   /**
   * confidential_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#confidential_instance_config GoogleComputeInstanceFromTemplate#confidential_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#confidential_instance_config GoogleComputeInstanceFromTemplate#confidential_instance_config}
   */
   readonly confidentialInstanceConfig?: GoogleComputeInstanceFromTemplateConfidentialInstanceConfig;
   /**
+  * guest_accelerator block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#guest_accelerator GoogleComputeInstanceFromTemplate#guest_accelerator}
+  */
+  readonly guestAccelerator?: GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable;
+  /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_interface GoogleComputeInstanceFromTemplate#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_interface GoogleComputeInstanceFromTemplate#network_interface}
   */
   readonly networkInterface?: GoogleComputeInstanceFromTemplateNetworkInterface[] | cdktf.IResolvable;
   /**
   * network_performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_performance_config GoogleComputeInstanceFromTemplate#network_performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_performance_config GoogleComputeInstanceFromTemplate#network_performance_config}
   */
   readonly networkPerformanceConfig?: GoogleComputeInstanceFromTemplateNetworkPerformanceConfig;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#params GoogleComputeInstanceFromTemplate#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#params GoogleComputeInstanceFromTemplate#params}
   */
   readonly params?: GoogleComputeInstanceFromTemplateParams;
   /**
   * reservation_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#reservation_affinity GoogleComputeInstanceFromTemplate#reservation_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#reservation_affinity GoogleComputeInstanceFromTemplate#reservation_affinity}
   */
   readonly reservationAffinity?: GoogleComputeInstanceFromTemplateReservationAffinity;
   /**
   * scheduling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#scheduling GoogleComputeInstanceFromTemplate#scheduling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#scheduling GoogleComputeInstanceFromTemplate#scheduling}
   */
   readonly scheduling?: GoogleComputeInstanceFromTemplateScheduling;
   /**
+  * scratch_disk block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#scratch_disk GoogleComputeInstanceFromTemplate#scratch_disk}
+  */
+  readonly scratchDisk?: GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable;
+  /**
+  * service_account block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#service_account GoogleComputeInstanceFromTemplate#service_account}
+  */
+  readonly serviceAccount?: GoogleComputeInstanceFromTemplateServiceAccount;
+  /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#shielded_instance_config GoogleComputeInstanceFromTemplate#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#shielded_instance_config GoogleComputeInstanceFromTemplate#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleComputeInstanceFromTemplateShieldedInstanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#timeouts GoogleComputeInstanceFromTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#timeouts GoogleComputeInstanceFromTemplate#timeouts}
   */
   readonly timeouts?: GoogleComputeInstanceFromTemplateTimeouts;
-}
-export interface GoogleComputeInstanceFromTemplateAttachedDisk {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
-  */
-  readonly deviceName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#disk_encryption_key_raw GoogleComputeInstanceFromTemplate#disk_encryption_key_raw}
-  */
-  readonly diskEncryptionKeyRaw?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#disk_encryption_key_sha256 GoogleComputeInstanceFromTemplate#disk_encryption_key_sha256}
-  */
-  readonly diskEncryptionKeySha256?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#kms_key_self_link GoogleComputeInstanceFromTemplate#kms_key_self_link}
-  */
-  readonly kmsKeySelfLink?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#mode GoogleComputeInstanceFromTemplate#mode}
-  */
-  readonly mode?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#source GoogleComputeInstanceFromTemplate#source}
-  */
-  readonly source?: string;
-}
-
-export function googleComputeInstanceFromTemplateAttachedDiskToTerraform(struct?: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    disk_encryption_key_raw: cdktf.stringToTerraform(struct!.diskEncryptionKeyRaw),
-    disk_encryption_key_sha256: cdktf.stringToTerraform(struct!.diskEncryptionKeySha256),
-    kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    source: cdktf.stringToTerraform(struct!.source),
-  }
-}
-
-
-export function googleComputeInstanceFromTemplateAttachedDiskToHclTerraform(struct?: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    device_name: {
-      value: cdktf.stringToHclTerraform(struct!.deviceName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    disk_encryption_key_raw: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionKeyRaw),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    disk_encryption_key_sha256: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionKeySha256),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    kms_key_self_link: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeySelfLink),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromTemplateAttachedDiskOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._deviceName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.deviceName = this._deviceName;
-    }
-    if (this._diskEncryptionKeyRaw !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.diskEncryptionKeyRaw = this._diskEncryptionKeyRaw;
-    }
-    if (this._diskEncryptionKeySha256 !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.diskEncryptionKeySha256 = this._diskEncryptionKeySha256;
-    }
-    if (this._kmsKeySelfLink !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.kmsKeySelfLink = this._kmsKeySelfLink;
-    }
-    if (this._mode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.mode = this._mode;
-    }
-    if (this._source !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source = this._source;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._deviceName = undefined;
-      this._diskEncryptionKeyRaw = undefined;
-      this._diskEncryptionKeySha256 = undefined;
-      this._kmsKeySelfLink = undefined;
-      this._mode = undefined;
-      this._source = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._deviceName = value.deviceName;
-      this._diskEncryptionKeyRaw = value.diskEncryptionKeyRaw;
-      this._diskEncryptionKeySha256 = value.diskEncryptionKeySha256;
-      this._kmsKeySelfLink = value.kmsKeySelfLink;
-      this._mode = value.mode;
-      this._source = value.source;
-    }
-  }
-
-  // device_name - computed: true, optional: true, required: false
-  private _deviceName?: string; 
-  public get deviceName() {
-    return this.getStringAttribute('device_name');
-  }
-  public set deviceName(value: string) {
-    this._deviceName = value;
-  }
-  public resetDeviceName() {
-    this._deviceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deviceNameInput() {
-    return this._deviceName;
-  }
-
-  // disk_encryption_key_raw - computed: true, optional: true, required: false
-  private _diskEncryptionKeyRaw?: string; 
-  public get diskEncryptionKeyRaw() {
-    return this.getStringAttribute('disk_encryption_key_raw');
-  }
-  public set diskEncryptionKeyRaw(value: string) {
-    this._diskEncryptionKeyRaw = value;
-  }
-  public resetDiskEncryptionKeyRaw() {
-    this._diskEncryptionKeyRaw = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get diskEncryptionKeyRawInput() {
-    return this._diskEncryptionKeyRaw;
-  }
-
-  // disk_encryption_key_sha256 - computed: true, optional: true, required: false
-  private _diskEncryptionKeySha256?: string; 
-  public get diskEncryptionKeySha256() {
-    return this.getStringAttribute('disk_encryption_key_sha256');
-  }
-  public set diskEncryptionKeySha256(value: string) {
-    this._diskEncryptionKeySha256 = value;
-  }
-  public resetDiskEncryptionKeySha256() {
-    this._diskEncryptionKeySha256 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get diskEncryptionKeySha256Input() {
-    return this._diskEncryptionKeySha256;
-  }
-
-  // kms_key_self_link - computed: true, optional: true, required: false
-  private _kmsKeySelfLink?: string; 
-  public get kmsKeySelfLink() {
-    return this.getStringAttribute('kms_key_self_link');
-  }
-  public set kmsKeySelfLink(value: string) {
-    this._kmsKeySelfLink = value;
-  }
-  public resetKmsKeySelfLink() {
-    this._kmsKeySelfLink = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeySelfLinkInput() {
-    return this._kmsKeySelfLink;
-  }
-
-  // mode - computed: true, optional: true, required: false
-  private _mode?: string; 
-  public get mode() {
-    return this.getStringAttribute('mode');
-  }
-  public set mode(value: string) {
-    this._mode = value;
-  }
-  public resetMode() {
-    this._mode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modeInput() {
-    return this._mode;
-  }
-
-  // source - computed: true, optional: true, required: false
-  private _source?: string; 
-  public get source() {
-    return this.getStringAttribute('source');
-  }
-  public set source(value: string) {
-    this._source = value;
-  }
-  public resetSource() {
-    this._source = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source;
-  }
-}
-
-export class GoogleComputeInstanceFromTemplateAttachedDiskList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromTemplateAttachedDiskOutputReference {
-    return new GoogleComputeInstanceFromTemplateAttachedDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleComputeInstanceFromTemplateGuestAccelerator {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#count GoogleComputeInstanceFromTemplate#count}
-  */
-  readonly count?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
-  */
-  readonly type?: string;
-}
-
-export function googleComputeInstanceFromTemplateGuestAcceleratorToTerraform(struct?: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    count: cdktf.numberToTerraform(struct!.count),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-
-export function googleComputeInstanceFromTemplateGuestAcceleratorToHclTerraform(struct?: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._count !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.count = this._count;
-    }
-    if (this._type !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.type = this._type;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._count = undefined;
-      this._type = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._count = value.count;
-      this._type = value.type;
-    }
-  }
-
-  // count - computed: true, optional: true, required: false
-  private _count?: number; 
-  public get count() {
-    return this.getNumberAttribute('count');
-  }
-  public set count(value: number) {
-    this._count = value;
-  }
-  public resetCount() {
-    this._count = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countInput() {
-    return this._count;
-  }
-
-  // type - computed: true, optional: true, required: false
-  private _type?: string; 
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
-  }
-}
-
-export class GoogleComputeInstanceFromTemplateGuestAcceleratorList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference {
-    return new GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleComputeInstanceFromTemplateScratchDisk {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
-  */
-  readonly deviceName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#interface GoogleComputeInstanceFromTemplate#interface}
-  */
-  readonly interface?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#size GoogleComputeInstanceFromTemplate#size}
-  */
-  readonly size?: number;
-}
-
-export function googleComputeInstanceFromTemplateScratchDiskToTerraform(struct?: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    interface: cdktf.stringToTerraform(struct!.interface),
-    size: cdktf.numberToTerraform(struct!.size),
-  }
-}
-
-
-export function googleComputeInstanceFromTemplateScratchDiskToHclTerraform(struct?: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    device_name: {
-      value: cdktf.stringToHclTerraform(struct!.deviceName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    interface: {
-      value: cdktf.stringToHclTerraform(struct!.interface),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._deviceName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.deviceName = this._deviceName;
-    }
-    if (this._interface !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interface = this._interface;
-    }
-    if (this._size !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.size = this._size;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._deviceName = undefined;
-      this._interface = undefined;
-      this._size = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._deviceName = value.deviceName;
-      this._interface = value.interface;
-      this._size = value.size;
-    }
-  }
-
-  // device_name - computed: true, optional: true, required: false
-  private _deviceName?: string; 
-  public get deviceName() {
-    return this.getStringAttribute('device_name');
-  }
-  public set deviceName(value: string) {
-    this._deviceName = value;
-  }
-  public resetDeviceName() {
-    this._deviceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deviceNameInput() {
-    return this._deviceName;
-  }
-
-  // interface - computed: true, optional: true, required: false
-  private _interface?: string; 
-  public get interface() {
-    return this.getStringAttribute('interface');
-  }
-  public set interface(value: string) {
-    this._interface = value;
-  }
-  public resetInterface() {
-    this._interface = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get interfaceInput() {
-    return this._interface;
-  }
-
-  // size - computed: true, optional: true, required: false
-  private _size?: number; 
-  public get size() {
-    return this.getNumberAttribute('size');
-  }
-  public set size(value: number) {
-    this._size = value;
-  }
-  public resetSize() {
-    this._size = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sizeInput() {
-    return this._size;
-  }
-}
-
-export class GoogleComputeInstanceFromTemplateScratchDiskList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromTemplateScratchDiskOutputReference {
-    return new GoogleComputeInstanceFromTemplateScratchDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface GoogleComputeInstanceFromTemplateServiceAccount {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#email GoogleComputeInstanceFromTemplate#email}
-  */
-  readonly email?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#scopes GoogleComputeInstanceFromTemplate#scopes}
-  */
-  readonly scopes?: string[];
-}
-
-export function googleComputeInstanceFromTemplateServiceAccountToTerraform(struct?: GoogleComputeInstanceFromTemplateServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    email: cdktf.stringToTerraform(struct!.email),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
-  }
-}
-
-
-export function googleComputeInstanceFromTemplateServiceAccountToHclTerraform(struct?: GoogleComputeInstanceFromTemplateServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromTemplateServiceAccountOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromTemplateServiceAccount | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._scopes !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scopes = this._scopes;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromTemplateServiceAccount | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._email = undefined;
-      this._scopes = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._email = value.email;
-      this._scopes = value.scopes;
-    }
-  }
-
-  // email - computed: true, optional: true, required: false
-  private _email?: string; 
-  public get email() {
-    return this.getStringAttribute('email');
-  }
-  public set email(value: string) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // scopes - computed: true, optional: true, required: false
-  private _scopes?: string[]; 
-  public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
-  }
-  public set scopes(value: string[]) {
-    this._scopes = value;
-  }
-  public resetScopes() {
-    this._scopes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopesInput() {
-    return this._scopes;
-  }
-}
-
-export class GoogleComputeInstanceFromTemplateServiceAccountList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromTemplateServiceAccount[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromTemplateServiceAccountOutputReference {
-    return new GoogleComputeInstanceFromTemplateServiceAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface GoogleComputeInstanceFromTemplateAdvancedMachineFeatures {
   /**
   * Whether to enable nested virtualization or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_nested_virtualization GoogleComputeInstanceFromTemplate#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_nested_virtualization GoogleComputeInstanceFromTemplate#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktf.IResolvable;
   /**
   * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#threads_per_core GoogleComputeInstanceFromTemplate#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#threads_per_core GoogleComputeInstanceFromTemplate#threads_per_core}
   */
   readonly threadsPerCore?: number;
   /**
   * The number of physical cores to expose to an instance. Multiply by the number of threads per core to compute the total number of virtual CPUs to expose to the instance. If unset, the number of cores is inferred from the instance\'s nominal CPU count and the underlying platform\'s SMT width.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#visible_core_count GoogleComputeInstanceFromTemplate#visible_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#visible_core_count GoogleComputeInstanceFromTemplate#visible_core_count}
   */
   readonly visibleCoreCount?: number;
 }
@@ -1138,59 +372,319 @@ export class GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
     return this._visibleCoreCount;
   }
 }
+export interface GoogleComputeInstanceFromTemplateAttachedDisk {
+  /**
+  * Name with which the attached disk is accessible under /dev/disk/by-id/
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
+  */
+  readonly deviceName?: string;
+  /**
+  * A 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#disk_encryption_key_raw GoogleComputeInstanceFromTemplate#disk_encryption_key_raw}
+  */
+  readonly diskEncryptionKeyRaw?: string;
+  /**
+  * The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#kms_key_self_link GoogleComputeInstanceFromTemplate#kms_key_self_link}
+  */
+  readonly kmsKeySelfLink?: string;
+  /**
+  * Read/write mode for the disk. One of "READ_ONLY" or "READ_WRITE".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#mode GoogleComputeInstanceFromTemplate#mode}
+  */
+  readonly mode?: string;
+  /**
+  * The name or self_link of the disk attached to this instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#source GoogleComputeInstanceFromTemplate#source}
+  */
+  readonly source: string;
+}
+
+export function googleComputeInstanceFromTemplateAttachedDiskToTerraform(struct?: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    disk_encryption_key_raw: cdktf.stringToTerraform(struct!.diskEncryptionKeyRaw),
+    kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    source: cdktf.stringToTerraform(struct!.source),
+  }
+}
+
+
+export function googleComputeInstanceFromTemplateAttachedDiskToHclTerraform(struct?: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk_encryption_key_raw: {
+      value: cdktf.stringToHclTerraform(struct!.diskEncryptionKeyRaw),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_self_link: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeySelfLink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromTemplateAttachedDiskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._diskEncryptionKeyRaw !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskEncryptionKeyRaw = this._diskEncryptionKeyRaw;
+    }
+    if (this._kmsKeySelfLink !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeySelfLink = this._kmsKeySelfLink;
+    }
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromTemplateAttachedDisk | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceName = undefined;
+      this._diskEncryptionKeyRaw = undefined;
+      this._kmsKeySelfLink = undefined;
+      this._mode = undefined;
+      this._source = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceName = value.deviceName;
+      this._diskEncryptionKeyRaw = value.diskEncryptionKeyRaw;
+      this._kmsKeySelfLink = value.kmsKeySelfLink;
+      this._mode = value.mode;
+      this._source = value.source;
+    }
+  }
+
+  // device_name - computed: true, optional: true, required: false
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // disk_encryption_key_raw - computed: true, optional: true, required: false
+  private _diskEncryptionKeyRaw?: string; 
+  public get diskEncryptionKeyRaw() {
+    return this.getStringAttribute('disk_encryption_key_raw');
+  }
+  public set diskEncryptionKeyRaw(value: string) {
+    this._diskEncryptionKeyRaw = value;
+  }
+  public resetDiskEncryptionKeyRaw() {
+    this._diskEncryptionKeyRaw = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskEncryptionKeyRawInput() {
+    return this._diskEncryptionKeyRaw;
+  }
+
+  // disk_encryption_key_sha256 - computed: true, optional: false, required: false
+  public get diskEncryptionKeySha256() {
+    return this.getStringAttribute('disk_encryption_key_sha256');
+  }
+
+  // kms_key_self_link - computed: true, optional: true, required: false
+  private _kmsKeySelfLink?: string; 
+  public get kmsKeySelfLink() {
+    return this.getStringAttribute('kms_key_self_link');
+  }
+  public set kmsKeySelfLink(value: string) {
+    this._kmsKeySelfLink = value;
+  }
+  public resetKmsKeySelfLink() {
+    this._kmsKeySelfLink = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeySelfLinkInput() {
+    return this._kmsKeySelfLink;
+  }
+
+  // mode - computed: true, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class GoogleComputeInstanceFromTemplateAttachedDiskList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromTemplateAttachedDiskOutputReference {
+    return new GoogleComputeInstanceFromTemplateAttachedDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromTemplateBootDiskInitializeParams {
   /**
   * A flag to enable confidential compute mode on boot disk
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_confidential_compute GoogleComputeInstanceFromTemplate#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_confidential_compute GoogleComputeInstanceFromTemplate#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktf.IResolvable;
   /**
   * The image from which this disk was initialised.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#image GoogleComputeInstanceFromTemplate#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#image GoogleComputeInstanceFromTemplate#image}
   */
   readonly image?: string;
   /**
   * A set of key/value label pairs assigned to the disk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#labels GoogleComputeInstanceFromTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#labels GoogleComputeInstanceFromTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#provisioned_iops GoogleComputeInstanceFromTemplate#provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#provisioned_iops GoogleComputeInstanceFromTemplate#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
   * Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#provisioned_throughput GoogleComputeInstanceFromTemplate#provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#provisioned_throughput GoogleComputeInstanceFromTemplate#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#resource_manager_tags GoogleComputeInstanceFromTemplate#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#resource_manager_tags GoogleComputeInstanceFromTemplate#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
   /**
   * The size of the image in gigabytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#size GoogleComputeInstanceFromTemplate#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#size GoogleComputeInstanceFromTemplate#size}
   */
   readonly size?: number;
   /**
   * The URL of the storage pool in which the new disk is created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#storage_pool GoogleComputeInstanceFromTemplate#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#storage_pool GoogleComputeInstanceFromTemplate#storage_pool}
   */
   readonly storagePool?: string;
   /**
   * The Google Compute Engine disk type. Such as pd-standard, pd-ssd or pd-balanced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
   */
   readonly type?: string;
 }
@@ -1508,43 +1002,43 @@ export interface GoogleComputeInstanceFromTemplateBootDisk {
   /**
   * Whether the disk will be auto-deleted when the instance is deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#auto_delete GoogleComputeInstanceFromTemplate#auto_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#auto_delete GoogleComputeInstanceFromTemplate#auto_delete}
   */
   readonly autoDelete?: boolean | cdktf.IResolvable;
   /**
   * Name with which attached disk will be accessible under /dev/disk/by-id/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
   */
   readonly deviceName?: string;
   /**
   * A 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#disk_encryption_key_raw GoogleComputeInstanceFromTemplate#disk_encryption_key_raw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#disk_encryption_key_raw GoogleComputeInstanceFromTemplate#disk_encryption_key_raw}
   */
   readonly diskEncryptionKeyRaw?: string;
   /**
   * The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#kms_key_self_link GoogleComputeInstanceFromTemplate#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#kms_key_self_link GoogleComputeInstanceFromTemplate#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * Read/write mode for the disk. One of "READ_ONLY" or "READ_WRITE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#mode GoogleComputeInstanceFromTemplate#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#mode GoogleComputeInstanceFromTemplate#mode}
   */
   readonly mode?: string;
   /**
   * The name or self_link of the disk attached to this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#source GoogleComputeInstanceFromTemplate#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#source GoogleComputeInstanceFromTemplate#source}
   */
   readonly source?: string;
   /**
   * initialize_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#initialize_params GoogleComputeInstanceFromTemplate#initialize_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#initialize_params GoogleComputeInstanceFromTemplate#initialize_params}
   */
   readonly initializeParams?: GoogleComputeInstanceFromTemplateBootDiskInitializeParams;
 }
@@ -1813,13 +1307,13 @@ export interface GoogleComputeInstanceFromTemplateConfidentialInstanceConfig {
   * 								values is required: SEV, SEV_SNP, TDX. If SEV_SNP, min_cpu_platform =
   * 								"AMD Milan" is currently required. TDX is only available in beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#confidential_instance_type GoogleComputeInstanceFromTemplate#confidential_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#confidential_instance_type GoogleComputeInstanceFromTemplate#confidential_instance_type}
   */
   readonly confidentialInstanceType?: string;
   /**
   * Defines whether the instance should have confidential compute enabled. Field will be deprecated in a future release
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_confidential_compute GoogleComputeInstanceFromTemplate#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_confidential_compute GoogleComputeInstanceFromTemplate#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktf.IResolvable;
 }
@@ -1930,23 +1424,172 @@ export class GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputRe
     return this._enableConfidentialCompute;
   }
 }
+export interface GoogleComputeInstanceFromTemplateGuestAccelerator {
+  /**
+  * The number of the guest accelerator cards exposed to this instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#count GoogleComputeInstanceFromTemplate#count}
+  */
+  readonly count: number;
+  /**
+  * The accelerator type resource exposed to this instance. E.g. nvidia-tesla-k80.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
+  */
+  readonly type: string;
+}
+
+export function googleComputeInstanceFromTemplateGuestAcceleratorToTerraform(struct?: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function googleComputeInstanceFromTemplateGuestAcceleratorToHclTerraform(struct?: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromTemplateGuestAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._count = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._count = value.count;
+      this._type = value.type;
+    }
+  }
+
+  // count - computed: false, optional: false, required: true
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleComputeInstanceFromTemplateGuestAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference {
+    return new GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#nat_ip GoogleComputeInstanceFromTemplate#nat_ip}
+  * The IP address that is be 1:1 mapped to the instance's network ip.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#nat_ip GoogleComputeInstanceFromTemplate#nat_ip}
   */
   readonly natIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_tier GoogleComputeInstanceFromTemplate#network_tier}
+  * The networking tier used for configuring this instance. One of PREMIUM or STANDARD.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_tier GoogleComputeInstanceFromTemplate#network_tier}
   */
   readonly networkTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#public_ptr_domain_name GoogleComputeInstanceFromTemplate#public_ptr_domain_name}
+  * The DNS domain name for the public PTR record.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#public_ptr_domain_name GoogleComputeInstanceFromTemplate#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#security_policy GoogleComputeInstanceFromTemplate#security_policy}
-  */
-  readonly securityPolicy?: string;
 }
 
 export function googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToTerraform(struct?: GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig | cdktf.IResolvable): any {
@@ -1958,7 +1601,6 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToT
     nat_ip: cdktf.stringToTerraform(struct!.natIp),
     network_tier: cdktf.stringToTerraform(struct!.networkTier),
     public_ptr_domain_name: cdktf.stringToTerraform(struct!.publicPtrDomainName),
-    security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
   }
 }
 
@@ -1983,12 +1625,6 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToH
     },
     public_ptr_domain_name: {
       value: cdktf.stringToHclTerraform(struct!.publicPtrDomainName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.securityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2031,10 +1667,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutput
       hasAnyValues = true;
       internalValueResult.publicPtrDomainName = this._publicPtrDomainName;
     }
-    if (this._securityPolicy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.securityPolicy = this._securityPolicy;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2045,7 +1677,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutput
       this._natIp = undefined;
       this._networkTier = undefined;
       this._publicPtrDomainName = undefined;
-      this._securityPolicy = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2057,7 +1688,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutput
       this._natIp = value.natIp;
       this._networkTier = value.networkTier;
       this._publicPtrDomainName = value.publicPtrDomainName;
-      this._securityPolicy = value.securityPolicy;
     }
   }
 
@@ -2109,20 +1739,9 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutput
     return this._publicPtrDomainName;
   }
 
-  // security_policy - computed: true, optional: true, required: false
-  private _securityPolicy?: string; 
+  // security_policy - computed: true, optional: false, required: false
   public get securityPolicy() {
     return this.getStringAttribute('security_policy');
-  }
-  public set securityPolicy(value: string) {
-    this._securityPolicy = value;
-  }
-  public resetSecurityPolicy() {
-    this._securityPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityPolicyInput() {
-    return this._securityPolicy;
   }
 }
 
@@ -2147,11 +1766,15 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList e
 }
 export interface GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#ip_cidr_range GoogleComputeInstanceFromTemplate#ip_cidr_range}
+  * The IP CIDR range represented by this alias IP range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#ip_cidr_range GoogleComputeInstanceFromTemplate#ip_cidr_range}
   */
-  readonly ipCidrRange?: string;
+  readonly ipCidrRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#subnetwork_range_name GoogleComputeInstanceFromTemplate#subnetwork_range_name}
+  * The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#subnetwork_range_name GoogleComputeInstanceFromTemplate#subnetwork_range_name}
   */
   readonly subnetworkRangeName?: string;
 }
@@ -2242,16 +1865,13 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutput
     }
   }
 
-  // ip_cidr_range - computed: true, optional: true, required: false
+  // ip_cidr_range - computed: false, optional: false, required: true
   private _ipCidrRange?: string; 
   public get ipCidrRange() {
     return this.getStringAttribute('ip_cidr_range');
   }
   public set ipCidrRange(value: string) {
     this._ipCidrRange = value;
-  }
-  public resetIpCidrRange() {
-    this._ipCidrRange = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipCidrRangeInput() {
@@ -2298,31 +1918,31 @@ export interface GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConf
   /**
   * The first IPv6 address of the external IPv6 range associated with this instance, prefix length is stored in externalIpv6PrefixLength in ipv6AccessConfig. To use a static external IP address, it must be unused and in the same region as the instance's zone. If not specified, Google Cloud will automatically assign an external IPv6 address from the instance's subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#external_ipv6 GoogleComputeInstanceFromTemplate#external_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#external_ipv6 GoogleComputeInstanceFromTemplate#external_ipv6}
   */
   readonly externalIpv6?: string;
   /**
   * The prefix length of the external IPv6 range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#external_ipv6_prefix_length GoogleComputeInstanceFromTemplate#external_ipv6_prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#external_ipv6_prefix_length GoogleComputeInstanceFromTemplate#external_ipv6_prefix_length}
   */
   readonly externalIpv6PrefixLength?: string;
   /**
   * The name of this access configuration. In ipv6AccessConfigs, the recommended name is External IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#name GoogleComputeInstanceFromTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#name GoogleComputeInstanceFromTemplate#name}
   */
   readonly name?: string;
   /**
   * The service-level to be provided for IPv6 traffic when the subnet has an external subnet. Only PREMIUM tier is valid for IPv6
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_tier GoogleComputeInstanceFromTemplate#network_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_tier GoogleComputeInstanceFromTemplate#network_tier}
   */
   readonly networkTier: string;
   /**
   * The domain name to be used when creating DNSv6 records for the external IPv6 ranges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#public_ptr_domain_name GoogleComputeInstanceFromTemplate#public_ptr_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#public_ptr_domain_name GoogleComputeInstanceFromTemplate#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
 }
@@ -2556,87 +2176,87 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigLi
 }
 export interface GoogleComputeInstanceFromTemplateNetworkInterface {
   /**
-  * Access configurations, i.e. IPs via which this instance can be accessed via the Internet.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#access_config GoogleComputeInstanceFromTemplate#access_config}
-  */
-  readonly accessConfig?: GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig[] | cdktf.IResolvable;
-  /**
-  * An array of alias IP ranges for this network interface.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#alias_ip_range GoogleComputeInstanceFromTemplate#alias_ip_range}
-  */
-  readonly aliasIpRange?: GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange[] | cdktf.IResolvable;
-  /**
   * The prefix length of the primary internal IPv6 range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#internal_ipv6_prefix_length GoogleComputeInstanceFromTemplate#internal_ipv6_prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#internal_ipv6_prefix_length GoogleComputeInstanceFromTemplate#internal_ipv6_prefix_length}
   */
   readonly internalIpv6PrefixLength?: number;
   /**
   * An IPv6 internal network address for this network interface. If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#ipv6_address GoogleComputeInstanceFromTemplate#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#ipv6_address GoogleComputeInstanceFromTemplate#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
   * The name or self_link of the network attached to this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network GoogleComputeInstanceFromTemplate#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network GoogleComputeInstanceFromTemplate#network}
   */
   readonly network?: string;
   /**
   * The URL of the network attachment that this interface should connect to in the following format: projects/{projectNumber}/regions/{region_name}/networkAttachments/{network_attachment_name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_attachment GoogleComputeInstanceFromTemplate#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_attachment GoogleComputeInstanceFromTemplate#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
   * The private IP address assigned to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#network_ip GoogleComputeInstanceFromTemplate#network_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#network_ip GoogleComputeInstanceFromTemplate#network_ip}
   */
   readonly networkIp?: string;
   /**
   * The type of vNIC to be used on this interface. Possible values:GVNIC, VIRTIO_NET
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#nic_type GoogleComputeInstanceFromTemplate#nic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#nic_type GoogleComputeInstanceFromTemplate#nic_type}
   */
   readonly nicType?: string;
   /**
   * The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#queue_count GoogleComputeInstanceFromTemplate#queue_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#queue_count GoogleComputeInstanceFromTemplate#queue_count}
   */
   readonly queueCount?: number;
   /**
   * A full or partial URL to a security policy to add to this instance. If this field is set to an empty string it will remove the associated security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#security_policy GoogleComputeInstanceFromTemplate#security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#security_policy GoogleComputeInstanceFromTemplate#security_policy}
   */
   readonly securityPolicy?: string;
   /**
   * The stack type for this network interface to identify whether the IPv6 feature is enabled or not. If not specified, IPV4_ONLY will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#stack_type GoogleComputeInstanceFromTemplate#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#stack_type GoogleComputeInstanceFromTemplate#stack_type}
   */
   readonly stackType?: string;
   /**
   * The name or self_link of the subnetwork attached to this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#subnetwork GoogleComputeInstanceFromTemplate#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#subnetwork GoogleComputeInstanceFromTemplate#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * The project in which the subnetwork belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#subnetwork_project GoogleComputeInstanceFromTemplate#subnetwork_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#subnetwork_project GoogleComputeInstanceFromTemplate#subnetwork_project}
   */
   readonly subnetworkProject?: string;
   /**
+  * access_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#access_config GoogleComputeInstanceFromTemplate#access_config}
+  */
+  readonly accessConfig?: GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig[] | cdktf.IResolvable;
+  /**
+  * alias_ip_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#alias_ip_range GoogleComputeInstanceFromTemplate#alias_ip_range}
+  */
+  readonly aliasIpRange?: GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange[] | cdktf.IResolvable;
+  /**
   * ipv6_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#ipv6_access_config GoogleComputeInstanceFromTemplate#ipv6_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#ipv6_access_config GoogleComputeInstanceFromTemplate#ipv6_access_config}
   */
   readonly ipv6AccessConfig?: GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfig[] | cdktf.IResolvable;
 }
@@ -2647,8 +2267,6 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_config: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToTerraform, false)(struct!.accessConfig),
-    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeToTerraform, false)(struct!.aliasIpRange),
     internal_ipv6_prefix_length: cdktf.numberToTerraform(struct!.internalIpv6PrefixLength),
     ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
     network: cdktf.stringToTerraform(struct!.network),
@@ -2660,6 +2278,8 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceToTerraform(str
     stack_type: cdktf.stringToTerraform(struct!.stackType),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
     subnetwork_project: cdktf.stringToTerraform(struct!.subnetworkProject),
+    access_config: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToTerraform, true)(struct!.accessConfig),
+    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeToTerraform, true)(struct!.aliasIpRange),
     ipv6_access_config: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigToTerraform, true)(struct!.ipv6AccessConfig),
   }
 }
@@ -2671,18 +2291,6 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceToHclTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    access_config: {
-      value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToHclTerraform, false)(struct!.accessConfig),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList",
-    },
-    alias_ip_range: {
-      value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeToHclTerraform, false)(struct!.aliasIpRange),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
-    },
     internal_ipv6_prefix_length: {
       value: cdktf.numberToHclTerraform(struct!.internalIpv6PrefixLength),
       isBlock: false,
@@ -2749,6 +2357,18 @@ export function googleComputeInstanceFromTemplateNetworkInterfaceToHclTerraform(
       type: "simple",
       storageClassType: "string",
     },
+    access_config: {
+      value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceAccessConfigToHclTerraform, true)(struct!.accessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList",
+    },
+    alias_ip_range: {
+      value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeToHclTerraform, true)(struct!.aliasIpRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
+    },
     ipv6_access_config: {
       value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigToHclTerraform, true)(struct!.ipv6AccessConfig),
       isBlock: true,
@@ -2781,14 +2401,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessConfig?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.accessConfig = this._accessConfig?.internalValue;
-    }
-    if (this._aliasIpRange?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aliasIpRange = this._aliasIpRange?.internalValue;
-    }
     if (this._internalIpv6PrefixLength !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalIpv6PrefixLength = this._internalIpv6PrefixLength;
@@ -2833,6 +2445,14 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
       hasAnyValues = true;
       internalValueResult.subnetworkProject = this._subnetworkProject;
     }
+    if (this._accessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessConfig = this._accessConfig?.internalValue;
+    }
+    if (this._aliasIpRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aliasIpRange = this._aliasIpRange?.internalValue;
+    }
     if (this._ipv6AccessConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipv6AccessConfig = this._ipv6AccessConfig?.internalValue;
@@ -2844,8 +2464,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._accessConfig.internalValue = undefined;
-      this._aliasIpRange.internalValue = undefined;
       this._internalIpv6PrefixLength = undefined;
       this._ipv6Address = undefined;
       this._network = undefined;
@@ -2857,6 +2475,8 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
       this._stackType = undefined;
       this._subnetwork = undefined;
       this._subnetworkProject = undefined;
+      this._accessConfig.internalValue = undefined;
+      this._aliasIpRange.internalValue = undefined;
       this._ipv6AccessConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -2866,8 +2486,6 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._accessConfig.internalValue = value.accessConfig;
-      this._aliasIpRange.internalValue = value.aliasIpRange;
       this._internalIpv6PrefixLength = value.internalIpv6PrefixLength;
       this._ipv6Address = value.ipv6Address;
       this._network = value.network;
@@ -2879,40 +2497,10 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
       this._stackType = value.stackType;
       this._subnetwork = value.subnetwork;
       this._subnetworkProject = value.subnetworkProject;
+      this._accessConfig.internalValue = value.accessConfig;
+      this._aliasIpRange.internalValue = value.aliasIpRange;
       this._ipv6AccessConfig.internalValue = value.ipv6AccessConfig;
     }
-  }
-
-  // access_config - computed: true, optional: true, required: false
-  private _accessConfig = new GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList(this, "access_config", false);
-  public get accessConfig() {
-    return this._accessConfig;
-  }
-  public putAccessConfig(value: GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig[] | cdktf.IResolvable) {
-    this._accessConfig.internalValue = value;
-  }
-  public resetAccessConfig() {
-    this._accessConfig.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accessConfigInput() {
-    return this._accessConfig.internalValue;
-  }
-
-  // alias_ip_range - computed: true, optional: true, required: false
-  private _aliasIpRange = new GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList(this, "alias_ip_range", false);
-  public get aliasIpRange() {
-    return this._aliasIpRange;
-  }
-  public putAliasIpRange(value: GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange[] | cdktf.IResolvable) {
-    this._aliasIpRange.internalValue = value;
-  }
-  public resetAliasIpRange() {
-    this._aliasIpRange.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aliasIpRangeInput() {
-    return this._aliasIpRange.internalValue;
   }
 
   // internal_ipv6_prefix_length - computed: true, optional: true, required: false
@@ -3101,6 +2689,38 @@ export class GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference ex
     return this._subnetworkProject;
   }
 
+  // access_config - computed: false, optional: true, required: false
+  private _accessConfig = new GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList(this, "access_config", false);
+  public get accessConfig() {
+    return this._accessConfig;
+  }
+  public putAccessConfig(value: GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig[] | cdktf.IResolvable) {
+    this._accessConfig.internalValue = value;
+  }
+  public resetAccessConfig() {
+    this._accessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConfigInput() {
+    return this._accessConfig.internalValue;
+  }
+
+  // alias_ip_range - computed: false, optional: true, required: false
+  private _aliasIpRange = new GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList(this, "alias_ip_range", false);
+  public get aliasIpRange() {
+    return this._aliasIpRange;
+  }
+  public putAliasIpRange(value: GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange[] | cdktf.IResolvable) {
+    this._aliasIpRange.internalValue = value;
+  }
+  public resetAliasIpRange() {
+    this._aliasIpRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasIpRangeInput() {
+    return this._aliasIpRange.internalValue;
+  }
+
   // ipv6_access_config - computed: false, optional: true, required: false
   private _ipv6AccessConfig = new GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList(this, "ipv6_access_config", false);
   public get ipv6AccessConfig() {
@@ -3141,7 +2761,7 @@ export interface GoogleComputeInstanceFromTemplateNetworkPerformanceConfig {
   /**
   * The egress bandwidth tier to enable. Possible values:TIER_1, DEFAULT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#total_egress_bandwidth_tier GoogleComputeInstanceFromTemplate#total_egress_bandwidth_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#total_egress_bandwidth_tier GoogleComputeInstanceFromTemplate#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
 }
@@ -3224,7 +2844,7 @@ export interface GoogleComputeInstanceFromTemplateParams {
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#resource_manager_tags GoogleComputeInstanceFromTemplate#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#resource_manager_tags GoogleComputeInstanceFromTemplate#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -3310,13 +2930,13 @@ export interface GoogleComputeInstanceFromTemplateReservationAffinitySpecificRes
   /**
   * Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#key GoogleComputeInstanceFromTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#key GoogleComputeInstanceFromTemplate#key}
   */
   readonly key: string;
   /**
   * Corresponds to the label values of a reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#values GoogleComputeInstanceFromTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#values GoogleComputeInstanceFromTemplate#values}
   */
   readonly values: string[];
 }
@@ -3425,13 +3045,13 @@ export interface GoogleComputeInstanceFromTemplateReservationAffinity {
   /**
   * The type of reservation from which this instance can consume resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#type GoogleComputeInstanceFromTemplate#type}
   */
   readonly type: string;
   /**
   * specific_reservation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#specific_reservation GoogleComputeInstanceFromTemplate#specific_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#specific_reservation GoogleComputeInstanceFromTemplate#specific_reservation}
   */
   readonly specificReservation?: GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservation;
 }
@@ -3546,14 +3166,14 @@ export interface GoogleComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTime
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#nanos GoogleComputeInstanceFromTemplate#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#nanos GoogleComputeInstanceFromTemplate#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#seconds GoogleComputeInstanceFromTemplate#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#seconds GoogleComputeInstanceFromTemplate#seconds}
   */
   readonly seconds: number;
 }
@@ -3668,14 +3288,14 @@ export interface GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration {
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#nanos GoogleComputeInstanceFromTemplate#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#nanos GoogleComputeInstanceFromTemplate#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#seconds GoogleComputeInstanceFromTemplate#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#seconds GoogleComputeInstanceFromTemplate#seconds}
   */
   readonly seconds: number;
 }
@@ -3785,15 +3405,15 @@ export class GoogleComputeInstanceFromTemplateSchedulingMaxRunDurationOutputRefe
 }
 export interface GoogleComputeInstanceFromTemplateSchedulingNodeAffinities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#key GoogleComputeInstanceFromTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#key GoogleComputeInstanceFromTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#operator GoogleComputeInstanceFromTemplate#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#operator GoogleComputeInstanceFromTemplate#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#values GoogleComputeInstanceFromTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#values GoogleComputeInstanceFromTemplate#values}
   */
   readonly values: string[];
 }
@@ -3960,7 +3580,7 @@ export interface GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction
   /**
   * If true, the contents of any attached Local SSD disks will be discarded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#discard_local_ssd GoogleComputeInstanceFromTemplate#discard_local_ssd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#discard_local_ssd GoogleComputeInstanceFromTemplate#discard_local_ssd}
   */
   readonly discardLocalSsd?: boolean | cdktf.IResolvable;
 }
@@ -4046,65 +3666,65 @@ export interface GoogleComputeInstanceFromTemplateScheduling {
   /**
   * Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#automatic_restart GoogleComputeInstanceFromTemplate#automatic_restart}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#automatic_restart GoogleComputeInstanceFromTemplate#automatic_restart}
   */
   readonly automaticRestart?: boolean | cdktf.IResolvable;
   /**
   * Specifies the action GCE should take when SPOT VM is preempted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#instance_termination_action GoogleComputeInstanceFromTemplate#instance_termination_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#instance_termination_action GoogleComputeInstanceFromTemplate#instance_termination_action}
   */
   readonly instanceTerminationAction?: string;
   /**
   * Specifies the frequency of planned maintenance events. The accepted values are: PERIODIC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#maintenance_interval GoogleComputeInstanceFromTemplate#maintenance_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#maintenance_interval GoogleComputeInstanceFromTemplate#maintenance_interval}
   */
   readonly maintenanceInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#min_node_cpus GoogleComputeInstanceFromTemplate#min_node_cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#min_node_cpus GoogleComputeInstanceFromTemplate#min_node_cpus}
   */
   readonly minNodeCpus?: number;
   /**
   * Describes maintenance behavior for the instance. One of MIGRATE or TERMINATE,
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#on_host_maintenance GoogleComputeInstanceFromTemplate#on_host_maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#on_host_maintenance GoogleComputeInstanceFromTemplate#on_host_maintenance}
   */
   readonly onHostMaintenance?: string;
   /**
   * Whether the instance is preemptible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#preemptible GoogleComputeInstanceFromTemplate#preemptible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#preemptible GoogleComputeInstanceFromTemplate#preemptible}
   */
   readonly preemptible?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance is spot. If this is set as SPOT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#provisioning_model GoogleComputeInstanceFromTemplate#provisioning_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#provisioning_model GoogleComputeInstanceFromTemplate#provisioning_model}
   */
   readonly provisioningModel?: string;
   /**
   * local_ssd_recovery_timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#local_ssd_recovery_timeout GoogleComputeInstanceFromTemplate#local_ssd_recovery_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#local_ssd_recovery_timeout GoogleComputeInstanceFromTemplate#local_ssd_recovery_timeout}
   */
   readonly localSsdRecoveryTimeout?: GoogleComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout;
   /**
   * max_run_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#max_run_duration GoogleComputeInstanceFromTemplate#max_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#max_run_duration GoogleComputeInstanceFromTemplate#max_run_duration}
   */
   readonly maxRunDuration?: GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration;
   /**
   * node_affinities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#node_affinities GoogleComputeInstanceFromTemplate#node_affinities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#node_affinities GoogleComputeInstanceFromTemplate#node_affinities}
   */
   readonly nodeAffinities?: GoogleComputeInstanceFromTemplateSchedulingNodeAffinities[] | cdktf.IResolvable;
   /**
   * on_instance_stop_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#on_instance_stop_action GoogleComputeInstanceFromTemplate#on_instance_stop_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#on_instance_stop_action GoogleComputeInstanceFromTemplate#on_instance_stop_action}
   */
   readonly onInstanceStopAction?: GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction;
 }
@@ -4476,23 +4096,326 @@ export class GoogleComputeInstanceFromTemplateSchedulingOutputReference extends 
     return this._onInstanceStopAction.internalValue;
   }
 }
+export interface GoogleComputeInstanceFromTemplateScratchDisk {
+  /**
+  * Name with which the attached disk is accessible under /dev/disk/by-id/
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#device_name GoogleComputeInstanceFromTemplate#device_name}
+  */
+  readonly deviceName?: string;
+  /**
+  * The disk interface used for attaching this disk. One of SCSI or NVME.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#interface GoogleComputeInstanceFromTemplate#interface}
+  */
+  readonly interface: string;
+  /**
+  * The size of the disk in gigabytes. One of 375 or 3000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#size GoogleComputeInstanceFromTemplate#size}
+  */
+  readonly size?: number;
+}
+
+export function googleComputeInstanceFromTemplateScratchDiskToTerraform(struct?: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    interface: cdktf.stringToTerraform(struct!.interface),
+    size: cdktf.numberToTerraform(struct!.size),
+  }
+}
+
+
+export function googleComputeInstanceFromTemplateScratchDiskToHclTerraform(struct?: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interface: {
+      value: cdktf.stringToHclTerraform(struct!.interface),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._interface !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interface = this._interface;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceName = undefined;
+      this._interface = undefined;
+      this._size = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceName = value.deviceName;
+      this._interface = value.interface;
+      this._size = value.size;
+    }
+  }
+
+  // device_name - computed: true, optional: true, required: false
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // interface - computed: false, optional: false, required: true
+  private _interface?: string; 
+  public get interface() {
+    return this.getStringAttribute('interface');
+  }
+  public set interface(value: string) {
+    this._interface = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceInput() {
+    return this._interface;
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+}
+
+export class GoogleComputeInstanceFromTemplateScratchDiskList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromTemplateScratchDiskOutputReference {
+    return new GoogleComputeInstanceFromTemplateScratchDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeInstanceFromTemplateServiceAccount {
+  /**
+  * The service account e-mail address.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#email GoogleComputeInstanceFromTemplate#email}
+  */
+  readonly email?: string;
+  /**
+  * A list of service scopes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#scopes GoogleComputeInstanceFromTemplate#scopes}
+  */
+  readonly scopes: string[];
+}
+
+export function googleComputeInstanceFromTemplateServiceAccountToTerraform(struct?: GoogleComputeInstanceFromTemplateServiceAccountOutputReference | GoogleComputeInstanceFromTemplateServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+  }
+}
+
+
+export function googleComputeInstanceFromTemplateServiceAccountToHclTerraform(struct?: GoogleComputeInstanceFromTemplateServiceAccountOutputReference | GoogleComputeInstanceFromTemplateServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromTemplateServiceAccountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromTemplateServiceAccount | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromTemplateServiceAccount | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._email = undefined;
+      this._scopes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._email = value.email;
+      this._scopes = value.scopes;
+    }
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // scopes - computed: false, optional: false, required: true
+  private _scopes?: string[]; 
+  public get scopes() {
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+}
 export interface GoogleComputeInstanceFromTemplateShieldedInstanceConfig {
   /**
   * Whether integrity monitoring is enabled for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_integrity_monitoring GoogleComputeInstanceFromTemplate#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_integrity_monitoring GoogleComputeInstanceFromTemplate#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Whether secure boot is enabled for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_secure_boot GoogleComputeInstanceFromTemplate#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_secure_boot GoogleComputeInstanceFromTemplate#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance uses vTPM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#enable_vtpm GoogleComputeInstanceFromTemplate#enable_vtpm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#enable_vtpm GoogleComputeInstanceFromTemplate#enable_vtpm}
   */
   readonly enableVtpm?: boolean | cdktf.IResolvable;
 }
@@ -4634,15 +4557,15 @@ export class GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputRefere
 }
 export interface GoogleComputeInstanceFromTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#create GoogleComputeInstanceFromTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#create GoogleComputeInstanceFromTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#delete GoogleComputeInstanceFromTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#delete GoogleComputeInstanceFromTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#update GoogleComputeInstanceFromTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#update GoogleComputeInstanceFromTemplate#update}
   */
   readonly update?: string;
 }
@@ -4794,7 +4717,7 @@ export class GoogleComputeInstanceFromTemplateTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}
 */
 export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
 
@@ -4810,7 +4733,7 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeInstanceFromTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeInstanceFromTemplate to import
-  * @param importFromId The id of the existing GoogleComputeInstanceFromTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeInstanceFromTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeInstanceFromTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4822,7 +4745,7 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4833,8 +4756,8 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_from_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.43.1',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.1.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4845,13 +4768,11 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowStoppingForUpdate = config.allowStoppingForUpdate;
-    this._attachedDisk.internalValue = config.attachedDisk;
     this._canIpForward = config.canIpForward;
     this._deletionProtection = config.deletionProtection;
     this._description = config.description;
     this._desiredStatus = config.desiredStatus;
     this._enableDisplay = config.enableDisplay;
-    this._guestAccelerator.internalValue = config.guestAccelerator;
     this._hostname = config.hostname;
     this._id = config.id;
     this._labels = config.labels;
@@ -4863,19 +4784,21 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
     this._partnerMetadata = config.partnerMetadata;
     this._project = config.project;
     this._resourcePolicies = config.resourcePolicies;
-    this._scratchDisk.internalValue = config.scratchDisk;
-    this._serviceAccount.internalValue = config.serviceAccount;
     this._sourceInstanceTemplate = config.sourceInstanceTemplate;
     this._tags = config.tags;
     this._zone = config.zone;
     this._advancedMachineFeatures.internalValue = config.advancedMachineFeatures;
+    this._attachedDisk.internalValue = config.attachedDisk;
     this._bootDisk.internalValue = config.bootDisk;
     this._confidentialInstanceConfig.internalValue = config.confidentialInstanceConfig;
+    this._guestAccelerator.internalValue = config.guestAccelerator;
     this._networkInterface.internalValue = config.networkInterface;
     this._networkPerformanceConfig.internalValue = config.networkPerformanceConfig;
     this._params.internalValue = config.params;
     this._reservationAffinity.internalValue = config.reservationAffinity;
     this._scheduling.internalValue = config.scheduling;
+    this._scratchDisk.internalValue = config.scratchDisk;
+    this._serviceAccount.internalValue = config.serviceAccount;
     this._shieldedInstanceConfig.internalValue = config.shieldedInstanceConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -4898,22 +4821,6 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowStoppingForUpdateInput() {
     return this._allowStoppingForUpdate;
-  }
-
-  // attached_disk - computed: true, optional: true, required: false
-  private _attachedDisk = new GoogleComputeInstanceFromTemplateAttachedDiskList(this, "attached_disk", false);
-  public get attachedDisk() {
-    return this._attachedDisk;
-  }
-  public putAttachedDisk(value: GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable) {
-    this._attachedDisk.internalValue = value;
-  }
-  public resetAttachedDisk() {
-    this._attachedDisk.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attachedDiskInput() {
-    return this._attachedDisk.internalValue;
   }
 
   // can_ip_forward - computed: true, optional: true, required: false
@@ -5010,22 +4917,6 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableDisplayInput() {
     return this._enableDisplay;
-  }
-
-  // guest_accelerator - computed: true, optional: true, required: false
-  private _guestAccelerator = new GoogleComputeInstanceFromTemplateGuestAcceleratorList(this, "guest_accelerator", false);
-  public get guestAccelerator() {
-    return this._guestAccelerator;
-  }
-  public putGuestAccelerator(value: GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable) {
-    this._guestAccelerator.internalValue = value;
-  }
-  public resetGuestAccelerator() {
-    this._guestAccelerator.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get guestAcceleratorInput() {
-    return this._guestAccelerator.internalValue;
   }
 
   // hostname - computed: true, optional: true, required: false
@@ -5216,41 +5107,9 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
     return this._resourcePolicies;
   }
 
-  // scratch_disk - computed: true, optional: true, required: false
-  private _scratchDisk = new GoogleComputeInstanceFromTemplateScratchDiskList(this, "scratch_disk", false);
-  public get scratchDisk() {
-    return this._scratchDisk;
-  }
-  public putScratchDisk(value: GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable) {
-    this._scratchDisk.internalValue = value;
-  }
-  public resetScratchDisk() {
-    this._scratchDisk.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scratchDiskInput() {
-    return this._scratchDisk.internalValue;
-  }
-
   // self_link - computed: true, optional: false, required: false
   public get selfLink() {
     return this.getStringAttribute('self_link');
-  }
-
-  // service_account - computed: true, optional: true, required: false
-  private _serviceAccount = new GoogleComputeInstanceFromTemplateServiceAccountList(this, "service_account", false);
-  public get serviceAccount() {
-    return this._serviceAccount;
-  }
-  public putServiceAccount(value: GoogleComputeInstanceFromTemplateServiceAccount[] | cdktf.IResolvable) {
-    this._serviceAccount.internalValue = value;
-  }
-  public resetServiceAccount() {
-    this._serviceAccount.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceAccountInput() {
-    return this._serviceAccount.internalValue;
   }
 
   // source_instance_template - computed: false, optional: false, required: true
@@ -5325,6 +5184,22 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
     return this._advancedMachineFeatures.internalValue;
   }
 
+  // attached_disk - computed: false, optional: true, required: false
+  private _attachedDisk = new GoogleComputeInstanceFromTemplateAttachedDiskList(this, "attached_disk", false);
+  public get attachedDisk() {
+    return this._attachedDisk;
+  }
+  public putAttachedDisk(value: GoogleComputeInstanceFromTemplateAttachedDisk[] | cdktf.IResolvable) {
+    this._attachedDisk.internalValue = value;
+  }
+  public resetAttachedDisk() {
+    this._attachedDisk.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attachedDiskInput() {
+    return this._attachedDisk.internalValue;
+  }
+
   // boot_disk - computed: false, optional: true, required: false
   private _bootDisk = new GoogleComputeInstanceFromTemplateBootDiskOutputReference(this, "boot_disk");
   public get bootDisk() {
@@ -5355,6 +5230,22 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get confidentialInstanceConfigInput() {
     return this._confidentialInstanceConfig.internalValue;
+  }
+
+  // guest_accelerator - computed: false, optional: true, required: false
+  private _guestAccelerator = new GoogleComputeInstanceFromTemplateGuestAcceleratorList(this, "guest_accelerator", false);
+  public get guestAccelerator() {
+    return this._guestAccelerator;
+  }
+  public putGuestAccelerator(value: GoogleComputeInstanceFromTemplateGuestAccelerator[] | cdktf.IResolvable) {
+    this._guestAccelerator.internalValue = value;
+  }
+  public resetGuestAccelerator() {
+    this._guestAccelerator.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guestAcceleratorInput() {
+    return this._guestAccelerator.internalValue;
   }
 
   // network_interface - computed: false, optional: true, required: false
@@ -5437,6 +5328,38 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
     return this._scheduling.internalValue;
   }
 
+  // scratch_disk - computed: false, optional: true, required: false
+  private _scratchDisk = new GoogleComputeInstanceFromTemplateScratchDiskList(this, "scratch_disk", false);
+  public get scratchDisk() {
+    return this._scratchDisk;
+  }
+  public putScratchDisk(value: GoogleComputeInstanceFromTemplateScratchDisk[] | cdktf.IResolvable) {
+    this._scratchDisk.internalValue = value;
+  }
+  public resetScratchDisk() {
+    this._scratchDisk.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scratchDiskInput() {
+    return this._scratchDisk.internalValue;
+  }
+
+  // service_account - computed: false, optional: true, required: false
+  private _serviceAccount = new GoogleComputeInstanceFromTemplateServiceAccountOutputReference(this, "service_account");
+  public get serviceAccount() {
+    return this._serviceAccount;
+  }
+  public putServiceAccount(value: GoogleComputeInstanceFromTemplateServiceAccount) {
+    this._serviceAccount.internalValue = value;
+  }
+  public resetServiceAccount() {
+    this._serviceAccount.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountInput() {
+    return this._serviceAccount.internalValue;
+  }
+
   // shielded_instance_config - computed: false, optional: true, required: false
   private _shieldedInstanceConfig = new GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference(this, "shielded_instance_config");
   public get shieldedInstanceConfig() {
@@ -5476,13 +5399,11 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_stopping_for_update: cdktf.booleanToTerraform(this._allowStoppingForUpdate),
-      attached_disk: cdktf.listMapper(googleComputeInstanceFromTemplateAttachedDiskToTerraform, false)(this._attachedDisk.internalValue),
       can_ip_forward: cdktf.booleanToTerraform(this._canIpForward),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       description: cdktf.stringToTerraform(this._description),
       desired_status: cdktf.stringToTerraform(this._desiredStatus),
       enable_display: cdktf.booleanToTerraform(this._enableDisplay),
-      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromTemplateGuestAcceleratorToTerraform, false)(this._guestAccelerator.internalValue),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -5494,19 +5415,21 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       partner_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._partnerMetadata),
       project: cdktf.stringToTerraform(this._project),
       resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourcePolicies),
-      scratch_disk: cdktf.listMapper(googleComputeInstanceFromTemplateScratchDiskToTerraform, false)(this._scratchDisk.internalValue),
-      service_account: cdktf.listMapper(googleComputeInstanceFromTemplateServiceAccountToTerraform, false)(this._serviceAccount.internalValue),
       source_instance_template: cdktf.stringToTerraform(this._sourceInstanceTemplate),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       zone: cdktf.stringToTerraform(this._zone),
       advanced_machine_features: googleComputeInstanceFromTemplateAdvancedMachineFeaturesToTerraform(this._advancedMachineFeatures.internalValue),
+      attached_disk: cdktf.listMapper(googleComputeInstanceFromTemplateAttachedDiskToTerraform, true)(this._attachedDisk.internalValue),
       boot_disk: googleComputeInstanceFromTemplateBootDiskToTerraform(this._bootDisk.internalValue),
       confidential_instance_config: googleComputeInstanceFromTemplateConfidentialInstanceConfigToTerraform(this._confidentialInstanceConfig.internalValue),
+      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromTemplateGuestAcceleratorToTerraform, true)(this._guestAccelerator.internalValue),
       network_interface: cdktf.listMapper(googleComputeInstanceFromTemplateNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       network_performance_config: googleComputeInstanceFromTemplateNetworkPerformanceConfigToTerraform(this._networkPerformanceConfig.internalValue),
       params: googleComputeInstanceFromTemplateParamsToTerraform(this._params.internalValue),
       reservation_affinity: googleComputeInstanceFromTemplateReservationAffinityToTerraform(this._reservationAffinity.internalValue),
       scheduling: googleComputeInstanceFromTemplateSchedulingToTerraform(this._scheduling.internalValue),
+      scratch_disk: cdktf.listMapper(googleComputeInstanceFromTemplateScratchDiskToTerraform, true)(this._scratchDisk.internalValue),
+      service_account: googleComputeInstanceFromTemplateServiceAccountToTerraform(this._serviceAccount.internalValue),
       shielded_instance_config: googleComputeInstanceFromTemplateShieldedInstanceConfigToTerraform(this._shieldedInstanceConfig.internalValue),
       timeouts: googleComputeInstanceFromTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -5519,12 +5442,6 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      attached_disk: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateAttachedDiskToHclTerraform, false)(this._attachedDisk.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromTemplateAttachedDiskList",
       },
       can_ip_forward: {
         value: cdktf.booleanToHclTerraform(this._canIpForward),
@@ -5555,12 +5472,6 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      guest_accelerator: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateGuestAcceleratorToHclTerraform, false)(this._guestAccelerator.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromTemplateGuestAcceleratorList",
       },
       hostname: {
         value: cdktf.stringToHclTerraform(this._hostname),
@@ -5628,18 +5539,6 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "stringList",
       },
-      scratch_disk: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateScratchDiskToHclTerraform, false)(this._scratchDisk.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromTemplateScratchDiskList",
-      },
-      service_account: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateServiceAccountToHclTerraform, false)(this._serviceAccount.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromTemplateServiceAccountList",
-      },
       source_instance_template: {
         value: cdktf.stringToHclTerraform(this._sourceInstanceTemplate),
         isBlock: false,
@@ -5664,6 +5563,12 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesList",
       },
+      attached_disk: {
+        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateAttachedDiskToHclTerraform, true)(this._attachedDisk.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromTemplateAttachedDiskList",
+      },
       boot_disk: {
         value: googleComputeInstanceFromTemplateBootDiskToHclTerraform(this._bootDisk.internalValue),
         isBlock: true,
@@ -5675,6 +5580,12 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleComputeInstanceFromTemplateConfidentialInstanceConfigList",
+      },
+      guest_accelerator: {
+        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateGuestAcceleratorToHclTerraform, true)(this._guestAccelerator.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromTemplateGuestAcceleratorList",
       },
       network_interface: {
         value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
@@ -5705,6 +5616,18 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleComputeInstanceFromTemplateSchedulingList",
+      },
+      scratch_disk: {
+        value: cdktf.listMapperHcl(googleComputeInstanceFromTemplateScratchDiskToHclTerraform, true)(this._scratchDisk.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromTemplateScratchDiskList",
+      },
+      service_account: {
+        value: googleComputeInstanceFromTemplateServiceAccountToHclTerraform(this._serviceAccount.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromTemplateServiceAccountList",
       },
       shielded_instance_config: {
         value: googleComputeInstanceFromTemplateShieldedInstanceConfigToHclTerraform(this._shieldedInstanceConfig.internalValue),
