@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.NewGoogleNetworkSecurityAddressGroupIamMember(scope Construct, id *string, config GoogleNetworkSecurityAddressGroupIamMemberConfig) GoogleNetworkSecurityAddressGroupIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamM
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamM
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 &googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 &googlenetworksecurityaddressgroupiammember.GoogleNetworkSecurityAddressGroupIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkse
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAddressGroupIamMember.GoogleNetworkSecurityAddressGroupIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworksecurityaddressgroupiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworksecurityaddressgroupiammember"
 
 googlenetworksecurityaddressgroupiammember.NewGoogleNetworkSecurityAddressGroupIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityAddressGroupIamMemberConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.NewGoogleMonitoringMetricDescriptor(scope Construct, id *string, config GoogleMonitoringMetricDescriptorConfig) GoogleMonitoringMetricDescriptor
 ```
@@ -466,7 +466,7 @@ func ResetUnit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 &googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptorConfig {
 	Connection: interface{},
@@ -1059,9 +1059,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitorin
 	Id: *string,
 	Labels: interface{},
 	LaunchStage: *string,
-	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadata,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeouts,
 	Unit: *string,
 }
 ```
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 &googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptorLabels {
 	Key: *string,
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 &googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptorMetadata {
 	IngestDelay: *string,
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 &googlemonitoringmetricdescriptor.GoogleMonitoringMetricDescriptorTimeouts {
 	Create: *string,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.NewGoogleMonitoringMetricDescriptorLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringMetricDescriptorLabelsList
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.NewGoogleMonitoringMetricDescriptorLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringMetricDescriptorLabelsOutputReference
 ```
@@ -2054,7 +2054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.NewGoogleMonitoringMetricDescriptorMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringMetricDescriptorMetadataOutputReference
 ```
@@ -2361,7 +2361,7 @@ func InternalValue() GoogleMonitoringMetricDescriptorMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringmetricdescriptor"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemonitoringmetricdescriptor"
 
 googlemonitoringmetricdescriptor.NewGoogleMonitoringMetricDescriptorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringMetricDescriptorTimeoutsOutputReference
 ```

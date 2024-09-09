@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnect(scope Construct, id *string, config GoogleComputeInterconnectConfig) GoogleComputeInterconnect
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.GoogleComputeInterconnect_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.GoogleComputeInterconnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googlecomputeinterconnect.GoogleComputeInterconnect_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.GoogleComputeInterconnect_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ googlecomputeinterconnect.GoogleComputeInterconnect_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnect.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.GoogleComputeInterconnect_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1309,7 +1309,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectCircuitInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectCircuitInfos {
 
@@ -1322,7 +1322,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectConfig {
 	Connection: interface{},
@@ -1342,13 +1342,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	Macsec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInterconnect.GoogleComputeInterconnectMacsec,
+	Macsec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeInterconnect.GoogleComputeInterconnectMacsec,
 	MacsecEnabled: interface{},
 	NocContactEmail: *string,
 	Project: *string,
 	RemoteLocation: *string,
 	RequestedFeatures: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInterconnect.GoogleComputeInterconnectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeInterconnect.GoogleComputeInterconnectTimeouts,
 }
 ```
 
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectExpectedOutages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectExpectedOutages {
 
@@ -1744,7 +1744,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectMacsec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectMacsec {
 	PreSharedKeys: interface{},
@@ -1778,7 +1778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectMacsecPreSharedKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectMacsecPreSharedKeys {
 	Name: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 &googlecomputeinterconnect.GoogleComputeInterconnectTimeouts {
 	Create: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectCircuitInfosList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectCircuitInfosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInterconnectCircuitInfosList
 ```
@@ -2071,7 +2071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectCircuitInfosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectCircuitInfosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInterconnectCircuitInfosOutputReference
 ```
@@ -2371,7 +2371,7 @@ func InternalValue() GoogleComputeInterconnectCircuitInfos
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectExpectedOutagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectExpectedOutagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInterconnectExpectedOutagesList
 ```
@@ -2520,7 +2520,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectExpectedOutagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectExpectedOutagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInterconnectExpectedOutagesOutputReference
 ```
@@ -2875,7 +2875,7 @@ func InternalValue() GoogleComputeInterconnectExpectedOutages
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectMacsecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectMacsecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInterconnectMacsecOutputReference
 ```
@@ -3159,7 +3159,7 @@ func InternalValue() GoogleComputeInterconnectMacsec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectMacsecPreSharedKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectMacsecPreSharedKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInterconnectMacsecPreSharedKeysList
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectMacsecPreSharedKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInterconnectMacsecPreSharedKeysOutputReference
 ```
@@ -3666,7 +3666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinterconnect"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect"
 
 googlecomputeinterconnect.NewGoogleComputeInterconnectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInterconnectTimeoutsOutputReference
 ```
