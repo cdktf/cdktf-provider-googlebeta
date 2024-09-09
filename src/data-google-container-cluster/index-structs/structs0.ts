@@ -4346,11 +4346,6 @@ export class DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabi
   public get enableRelay() {
     return this.getBooleanAttribute('enable_relay');
   }
-
-  // relay_mode - computed: true, optional: false, required: false
-  public get relayMode() {
-    return this.getStringAttribute('relay_mode');
-  }
 }
 
 export class DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList extends cdktf.ComplexList {

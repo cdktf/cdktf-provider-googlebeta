@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface GoogleBigqueryAnalyticsHubDataExchangeConfig extends cdktf.Terr
   /**
   * The ID of the data exchange. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#data_exchange_id GoogleBigqueryAnalyticsHubDataExchange#data_exchange_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#data_exchange_id GoogleBigqueryAnalyticsHubDataExchange#data_exchange_id}
   */
   readonly dataExchangeId: string;
   /**
   * Description of the data exchange.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#description GoogleBigqueryAnalyticsHubDataExchange#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#description GoogleBigqueryAnalyticsHubDataExchange#description}
   */
   readonly description?: string;
   /**
   * Human-readable display name of the data exchange. The display name must contain only Unicode letters, numbers (0-9), underscores (_), dashes (-), spaces ( ), and must not start or end with spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#display_name GoogleBigqueryAnalyticsHubDataExchange#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#display_name GoogleBigqueryAnalyticsHubDataExchange#display_name}
   */
   readonly displayName: string;
   /**
   * Documentation describing the data exchange.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#documentation GoogleBigqueryAnalyticsHubDataExchange#documentation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#documentation GoogleBigqueryAnalyticsHubDataExchange#documentation}
   */
   readonly documentation?: string;
   /**
   * Base64 encoded image representing the data exchange.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#icon GoogleBigqueryAnalyticsHubDataExchange#icon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#icon GoogleBigqueryAnalyticsHubDataExchange#icon}
   */
   readonly icon?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#id GoogleBigqueryAnalyticsHubDataExchange#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#id GoogleBigqueryAnalyticsHubDataExchange#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,37 +52,262 @@ export interface GoogleBigqueryAnalyticsHubDataExchangeConfig extends cdktf.Terr
   /**
   * The name of the location this data exchange.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#location GoogleBigqueryAnalyticsHubDataExchange#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#location GoogleBigqueryAnalyticsHubDataExchange#location}
   */
   readonly location: string;
   /**
   * Email or URL of the primary point of contact of the data exchange.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#primary_contact GoogleBigqueryAnalyticsHubDataExchange#primary_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#primary_contact GoogleBigqueryAnalyticsHubDataExchange#primary_contact}
   */
   readonly primaryContact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#project GoogleBigqueryAnalyticsHubDataExchange#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#project GoogleBigqueryAnalyticsHubDataExchange#project}
   */
   readonly project?: string;
   /**
+  * sharing_environment_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#sharing_environment_config GoogleBigqueryAnalyticsHubDataExchange#sharing_environment_config}
+  */
+  readonly sharingEnvironmentConfig?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#timeouts GoogleBigqueryAnalyticsHubDataExchange#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#timeouts GoogleBigqueryAnalyticsHubDataExchange#timeouts}
   */
   readonly timeouts?: GoogleBigqueryAnalyticsHubDataExchangeTimeouts;
 }
+export interface GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig {
+}
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigToTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigToHclTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig {
+}
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigToTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigToHclTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig {
+  /**
+  * dcr_exchange_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#dcr_exchange_config GoogleBigqueryAnalyticsHubDataExchange#dcr_exchange_config}
+  */
+  readonly dcrExchangeConfig?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig;
+  /**
+  * default_exchange_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#default_exchange_config GoogleBigqueryAnalyticsHubDataExchange#default_exchange_config}
+  */
+  readonly defaultExchangeConfig?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig;
+}
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigToTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dcr_exchange_config: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigToTerraform(struct!.dcrExchangeConfig),
+    default_exchange_config: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigToTerraform(struct!.defaultExchangeConfig),
+  }
+}
+
+
+export function googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigToHclTerraform(struct?: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference | GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dcr_exchange_config: {
+      value: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigToHclTerraform(struct!.dcrExchangeConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigList",
+    },
+    default_exchange_config: {
+      value: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigToHclTerraform(struct!.defaultExchangeConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dcrExchangeConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dcrExchangeConfig = this._dcrExchangeConfig?.internalValue;
+    }
+    if (this._defaultExchangeConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultExchangeConfig = this._defaultExchangeConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dcrExchangeConfig.internalValue = undefined;
+      this._defaultExchangeConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dcrExchangeConfig.internalValue = value.dcrExchangeConfig;
+      this._defaultExchangeConfig.internalValue = value.defaultExchangeConfig;
+    }
+  }
+
+  // dcr_exchange_config - computed: false, optional: true, required: false
+  private _dcrExchangeConfig = new GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference(this, "dcr_exchange_config");
+  public get dcrExchangeConfig() {
+    return this._dcrExchangeConfig;
+  }
+  public putDcrExchangeConfig(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig) {
+    this._dcrExchangeConfig.internalValue = value;
+  }
+  public resetDcrExchangeConfig() {
+    this._dcrExchangeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dcrExchangeConfigInput() {
+    return this._dcrExchangeConfig.internalValue;
+  }
+
+  // default_exchange_config - computed: false, optional: true, required: false
+  private _defaultExchangeConfig = new GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference(this, "default_exchange_config");
+  public get defaultExchangeConfig() {
+    return this._defaultExchangeConfig;
+  }
+  public putDefaultExchangeConfig(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig) {
+    this._defaultExchangeConfig.internalValue = value;
+  }
+  public resetDefaultExchangeConfig() {
+    this._defaultExchangeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultExchangeConfigInput() {
+    return this._defaultExchangeConfig.internalValue;
+  }
+}
 export interface GoogleBigqueryAnalyticsHubDataExchangeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#create GoogleBigqueryAnalyticsHubDataExchange#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#create GoogleBigqueryAnalyticsHubDataExchange#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#delete GoogleBigqueryAnalyticsHubDataExchange#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#delete GoogleBigqueryAnalyticsHubDataExchange#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#update GoogleBigqueryAnalyticsHubDataExchange#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#update GoogleBigqueryAnalyticsHubDataExchange#update}
   */
   readonly update?: string;
 }
@@ -234,7 +459,7 @@ export class GoogleBigqueryAnalyticsHubDataExchangeTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}
 */
 export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResource {
 
@@ -250,7 +475,7 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
   * Generates CDKTF code for importing a GoogleBigqueryAnalyticsHubDataExchange resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigqueryAnalyticsHubDataExchange to import
-  * @param importFromId The id of the existing GoogleBigqueryAnalyticsHubDataExchange that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigqueryAnalyticsHubDataExchange that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigqueryAnalyticsHubDataExchange to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +487,7 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,8 +498,8 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
       terraformResourceType: 'google_bigquery_analytics_hub_data_exchange',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.43.1',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.1.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -293,6 +518,7 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
     this._location = config.location;
     this._primaryContact = config.primaryContact;
     this._project = config.project;
+    this._sharingEnvironmentConfig.internalValue = config.sharingEnvironmentConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -445,6 +671,22 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
     return this._project;
   }
 
+  // sharing_environment_config - computed: false, optional: true, required: false
+  private _sharingEnvironmentConfig = new GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference(this, "sharing_environment_config");
+  public get sharingEnvironmentConfig() {
+    return this._sharingEnvironmentConfig;
+  }
+  public putSharingEnvironmentConfig(value: GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) {
+    this._sharingEnvironmentConfig.internalValue = value;
+  }
+  public resetSharingEnvironmentConfig() {
+    this._sharingEnvironmentConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharingEnvironmentConfigInput() {
+    return this._sharingEnvironmentConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleBigqueryAnalyticsHubDataExchangeTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -476,6 +718,7 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
       location: cdktf.stringToTerraform(this._location),
       primary_contact: cdktf.stringToTerraform(this._primaryContact),
       project: cdktf.stringToTerraform(this._project),
+      sharing_environment_config: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigToTerraform(this._sharingEnvironmentConfig.internalValue),
       timeouts: googleBigqueryAnalyticsHubDataExchangeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -535,6 +778,12 @@ export class GoogleBigqueryAnalyticsHubDataExchange extends cdktf.TerraformResou
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      sharing_environment_config: {
+        value: googleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigToHclTerraform(this._sharingEnvironmentConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigList",
       },
       timeouts: {
         value: googleBigqueryAnalyticsHubDataExchangeTimeoutsToHclTerraform(this._timeouts.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArgu
   /**
   * CPU overcommit. Default value: "NONE" Possible values: ["ENABLED", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#cpu_overcommit_type GoogleComputeNodeTemplate#cpu_overcommit_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#cpu_overcommit_type GoogleComputeNodeTemplate#cpu_overcommit_type}
   */
   readonly cpuOvercommitType?: string;
   /**
   * An optional textual description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#description GoogleComputeNodeTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#description GoogleComputeNodeTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#id GoogleComputeNodeTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#id GoogleComputeNodeTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,64 +34,225 @@ export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArgu
   /**
   * Name of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#name GoogleComputeNodeTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#name GoogleComputeNodeTemplate#name}
   */
   readonly name?: string;
   /**
   * Labels to use for node affinity, which will be used in
   * instance scheduling.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#node_affinity_labels GoogleComputeNodeTemplate#node_affinity_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#node_affinity_labels GoogleComputeNodeTemplate#node_affinity_labels}
   */
   readonly nodeAffinityLabels?: { [key: string]: string };
   /**
   * Node type to use for nodes group that are created from this template.
   * Only one of nodeTypeFlexibility and nodeType can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#node_type GoogleComputeNodeTemplate#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#node_type GoogleComputeNodeTemplate#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#project GoogleComputeNodeTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#project GoogleComputeNodeTemplate#project}
   */
   readonly project?: string;
   /**
   * Region where nodes using the node template will be created.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#region GoogleComputeNodeTemplate#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#region GoogleComputeNodeTemplate#region}
   */
   readonly region?: string;
   /**
+  * accelerators block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#accelerators GoogleComputeNodeTemplate#accelerators}
+  */
+  readonly accelerators?: GoogleComputeNodeTemplateAccelerators[] | cdktf.IResolvable;
+  /**
   * node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#node_type_flexibility GoogleComputeNodeTemplate#node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#node_type_flexibility GoogleComputeNodeTemplate#node_type_flexibility}
   */
   readonly nodeTypeFlexibility?: GoogleComputeNodeTemplateNodeTypeFlexibility;
   /**
   * server_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#server_binding GoogleComputeNodeTemplate#server_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#server_binding GoogleComputeNodeTemplate#server_binding}
   */
   readonly serverBinding?: GoogleComputeNodeTemplateServerBinding;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#timeouts GoogleComputeNodeTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#timeouts GoogleComputeNodeTemplate#timeouts}
   */
   readonly timeouts?: GoogleComputeNodeTemplateTimeouts;
+}
+export interface GoogleComputeNodeTemplateAccelerators {
+  /**
+  * The number of the guest accelerator cards exposed to this
+  * node template.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#accelerator_count GoogleComputeNodeTemplate#accelerator_count}
+  */
+  readonly acceleratorCount?: number;
+  /**
+  * Full or partial URL of the accelerator type resource to expose
+  * to this node template.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#accelerator_type GoogleComputeNodeTemplate#accelerator_type}
+  */
+  readonly acceleratorType?: string;
+}
+
+export function googleComputeNodeTemplateAcceleratorsToTerraform(struct?: GoogleComputeNodeTemplateAccelerators | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accelerator_count: cdktf.numberToTerraform(struct!.acceleratorCount),
+    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
+  }
+}
+
+
+export function googleComputeNodeTemplateAcceleratorsToHclTerraform(struct?: GoogleComputeNodeTemplateAccelerators | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accelerator_count: {
+      value: cdktf.numberToHclTerraform(struct!.acceleratorCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    accelerator_type: {
+      value: cdktf.stringToHclTerraform(struct!.acceleratorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeNodeTemplateAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeNodeTemplateAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeNodeTemplateAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleComputeNodeTemplateAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeNodeTemplateAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeNodeTemplateAcceleratorsOutputReference {
+    return new GoogleComputeNodeTemplateAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleComputeNodeTemplateNodeTypeFlexibility {
   /**
   * Number of virtual CPUs to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#cpus GoogleComputeNodeTemplate#cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#cpus GoogleComputeNodeTemplate#cpus}
   */
   readonly cpus?: string;
   /**
   * Physical memory available to the node, defined in MB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#memory GoogleComputeNodeTemplate#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#memory GoogleComputeNodeTemplate#memory}
   */
   readonly memory?: string;
 }
@@ -222,7 +383,7 @@ export interface GoogleComputeNodeTemplateServerBinding {
   * additional licenses when maintenance occurs. However, VMs on such
   * nodes will experience outages while maintenance is applied. Possible values: ["RESTART_NODE_ON_ANY_SERVER", "RESTART_NODE_ON_MINIMAL_SERVERS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
   */
   readonly type: string;
 }
@@ -303,11 +464,11 @@ export class GoogleComputeNodeTemplateServerBindingOutputReference extends cdktf
 }
 export interface GoogleComputeNodeTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#create GoogleComputeNodeTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#create GoogleComputeNodeTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#delete GoogleComputeNodeTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#delete GoogleComputeNodeTemplate#delete}
   */
   readonly delete?: string;
 }
@@ -430,7 +591,7 @@ export class GoogleComputeNodeTemplateTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template google_compute_node_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template google_compute_node_template}
 */
 export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
 
@@ -446,7 +607,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeNodeTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNodeTemplate to import
-  * @param importFromId The id of the existing GoogleComputeNodeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNodeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNodeTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -458,7 +619,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template google_compute_node_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template google_compute_node_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -469,8 +630,8 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_node_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.43.1',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.1.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -488,6 +649,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
     this._nodeType = config.nodeType;
     this._project = config.project;
     this._region = config.region;
+    this._accelerators.internalValue = config.accelerators;
     this._nodeTypeFlexibility.internalValue = config.nodeTypeFlexibility;
     this._serverBinding.internalValue = config.serverBinding;
     this._timeouts.internalValue = config.timeouts;
@@ -635,6 +797,22 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
     return this.getStringAttribute('self_link');
   }
 
+  // accelerators - computed: false, optional: true, required: false
+  private _accelerators = new GoogleComputeNodeTemplateAcceleratorsList(this, "accelerators", false);
+  public get accelerators() {
+    return this._accelerators;
+  }
+  public putAccelerators(value: GoogleComputeNodeTemplateAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
+  }
+  public resetAccelerators() {
+    this._accelerators.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorsInput() {
+    return this._accelerators.internalValue;
+  }
+
   // node_type_flexibility - computed: false, optional: true, required: false
   private _nodeTypeFlexibility = new GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference(this, "node_type_flexibility");
   public get nodeTypeFlexibility() {
@@ -697,6 +875,7 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
       node_type: cdktf.stringToTerraform(this._nodeType),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
+      accelerators: cdktf.listMapper(googleComputeNodeTemplateAcceleratorsToTerraform, true)(this._accelerators.internalValue),
       node_type_flexibility: googleComputeNodeTemplateNodeTypeFlexibilityToTerraform(this._nodeTypeFlexibility.internalValue),
       server_binding: googleComputeNodeTemplateServerBindingToTerraform(this._serverBinding.internalValue),
       timeouts: googleComputeNodeTemplateTimeoutsToTerraform(this._timeouts.internalValue),
@@ -752,6 +931,12 @@ export class GoogleComputeNodeTemplate extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      accelerators: {
+        value: cdktf.listMapperHcl(googleComputeNodeTemplateAcceleratorsToHclTerraform, true)(this._accelerators.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeNodeTemplateAcceleratorsList",
       },
       node_type_flexibility: {
         value: googleComputeNodeTemplateNodeTypeFlexibilityToHclTerraform(this._nodeTypeFlexibility.internalValue),

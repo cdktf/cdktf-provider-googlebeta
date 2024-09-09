@@ -4,7 +4,7 @@
 
 ### GoogleProject <a name="GoogleProject" id="@cdktf/provider-google-beta.googleProject.GoogleProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project google_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project google_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer"></a>
 
@@ -33,8 +33,6 @@ GoogleProject.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .orgId(java.lang.String)
-//  .skipDelete(java.lang.Boolean)
-//  .skipDelete(IResolvable)
 //  .timeouts(GoogleProjectTimeouts)
     .build();
 ```
@@ -56,10 +54,9 @@ GoogleProject.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | The alphanumeric ID of the billing account this project belongs to. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the Project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.folderId">folderId</a></code> | <code>java.lang.String</code> | The numeric ID of the folder this project should be created under. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#id GoogleProject#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#id GoogleProject#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to the project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | The numeric ID of the organization this project belongs to. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.skipDelete">skipDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the Terraform resource can be deleted without deleting the Project via the Google API. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts">GoogleProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 The display name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#name GoogleProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#name GoogleProject#name}
 
 ---
 
@@ -140,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The project ID. Changing this forces a new project to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#project_id GoogleProject#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#project_id GoogleProject#project_id}
 
 ---
 
@@ -152,7 +149,7 @@ Create the 'default' network automatically.
 
 Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
 
 ---
 
@@ -164,7 +161,7 @@ The alphanumeric ID of the billing account this project belongs to.
 
 The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#billing_account GoogleProject#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#billing_account GoogleProject#billing_account}
 
 ---
 
@@ -177,7 +174,7 @@ The deletion policy for the Project.
 Setting PREVENT will protect the project against any destroy actions caused by a terraform apply or terraform destroy. Setting ABANDON allows the resource
 to be abandoned rather than deleted. Possible values are: "PREVENT", "ABANDON", "DELETE"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#deletion_policy GoogleProject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#deletion_policy GoogleProject#deletion_policy}
 
 ---
 
@@ -189,7 +186,7 @@ The numeric ID of the folder this project should be created under.
 
 Only one of org_id or folder_id may be specified. If the folder_id is specified, then the project is created under the specified folder. Changing this forces the project to be migrated to the newly specified folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#folder_id GoogleProject#folder_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#folder_id GoogleProject#folder_id}
 
 ---
 
@@ -197,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#id GoogleProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#id GoogleProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -213,7 +210,7 @@ A set of key/value label pairs to assign to the project.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#labels GoogleProject#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#labels GoogleProject#labels}
 
 ---
 
@@ -225,17 +222,7 @@ The numeric ID of the organization this project belongs to.
 
 Changing this forces a new project to be created.  Only one of org_id or folder_id may be specified. If the org_id is specified then the project is created at the top level. Changing this forces the project to be migrated to the newly specified organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#org_id GoogleProject#org_id}
-
----
-
-##### `skipDelete`<sup>Optional</sup> <a name="skipDelete" id="@cdktf/provider-google-beta.googleProject.GoogleProject.Initializer.parameter.skipDelete"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-If true, the Terraform resource can be deleted without deleting the Project via the Google API.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#skip_delete GoogleProject#skip_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#org_id GoogleProject#org_id}
 
 ---
 
@@ -245,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#timeouts GoogleProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#timeouts GoogleProject#timeouts}
 
 ---
 
@@ -284,7 +271,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetOrgId">resetOrgId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetSkipDelete">resetSkipDelete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -633,12 +619,6 @@ public void resetLabels()
 public void resetOrgId()
 ```
 
-##### `resetSkipDelete` <a name="resetSkipDelete" id="@cdktf/provider-google-beta.googleProject.GoogleProject.resetSkipDelete"></a>
-
-```java
-public void resetSkipDelete()
-```
-
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-google-beta.googleProject.GoogleProject.resetTimeouts"></a>
 
 ```java
@@ -748,7 +728,7 @@ The construct id used in the generated config for the GoogleProject to import.
 
 The id of the existing GoogleProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +771,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.orgIdInput">orgIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.skipDeleteInput">skipDeleteInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts">GoogleProjectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.autoCreateNetwork">autoCreateNetwork</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -802,7 +781,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.orgId">orgId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProject.property.skipDelete">skipDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1078,16 +1056,6 @@ public java.lang.String getProjectIdInput();
 
 ---
 
-##### `skipDeleteInput`<sup>Optional</sup> <a name="skipDeleteInput" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.skipDeleteInput"></a>
-
-```java
-public java.lang.Object getSkipDeleteInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.timeoutsInput"></a>
 
 ```java
@@ -1188,16 +1156,6 @@ public java.lang.String getProjectId();
 
 ---
 
-##### `skipDelete`<sup>Required</sup> <a name="skipDelete" id="@cdktf/provider-google-beta.googleProject.GoogleProject.property.skipDelete"></a>
-
-```java
-public java.lang.Object getSkipDelete();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1247,8 +1205,6 @@ GoogleProjectConfig.builder()
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .orgId(java.lang.String)
-//  .skipDelete(java.lang.Boolean)
-//  .skipDelete(IResolvable)
 //  .timeouts(GoogleProjectTimeouts)
     .build();
 ```
@@ -1270,10 +1226,9 @@ GoogleProjectConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | The alphanumeric ID of the billing account this project belongs to. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the Project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.folderId">folderId</a></code> | <code>java.lang.String</code> | The numeric ID of the folder this project should be created under. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#id GoogleProject#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#id GoogleProject#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to the project. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | The numeric ID of the organization this project belongs to. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.skipDelete">skipDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the Terraform resource can be deleted without deleting the Project via the Google API. |
 | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts">GoogleProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1358,7 +1313,7 @@ public java.lang.String getName();
 
 The display name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#name GoogleProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#name GoogleProject#name}
 
 ---
 
@@ -1372,7 +1327,7 @@ public java.lang.String getProjectId();
 
 The project ID. Changing this forces a new project to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#project_id GoogleProject#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#project_id GoogleProject#project_id}
 
 ---
 
@@ -1388,7 +1343,7 @@ Create the 'default' network automatically.
 
 Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
 
 ---
 
@@ -1404,7 +1359,7 @@ The alphanumeric ID of the billing account this project belongs to.
 
 The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#billing_account GoogleProject#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#billing_account GoogleProject#billing_account}
 
 ---
 
@@ -1421,7 +1376,7 @@ The deletion policy for the Project.
 Setting PREVENT will protect the project against any destroy actions caused by a terraform apply or terraform destroy. Setting ABANDON allows the resource
 to be abandoned rather than deleted. Possible values are: "PREVENT", "ABANDON", "DELETE"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#deletion_policy GoogleProject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#deletion_policy GoogleProject#deletion_policy}
 
 ---
 
@@ -1437,7 +1392,7 @@ The numeric ID of the folder this project should be created under.
 
 Only one of org_id or folder_id may be specified. If the folder_id is specified, then the project is created under the specified folder. Changing this forces the project to be migrated to the newly specified folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#folder_id GoogleProject#folder_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#folder_id GoogleProject#folder_id}
 
 ---
 
@@ -1449,7 +1404,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#id GoogleProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#id GoogleProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1469,7 +1424,7 @@ A set of key/value label pairs to assign to the project.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#labels GoogleProject#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#labels GoogleProject#labels}
 
 ---
 
@@ -1485,21 +1440,7 @@ The numeric ID of the organization this project belongs to.
 
 Changing this forces a new project to be created.  Only one of org_id or folder_id may be specified. If the org_id is specified then the project is created at the top level. Changing this forces the project to be migrated to the newly specified organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#org_id GoogleProject#org_id}
-
----
-
-##### `skipDelete`<sup>Optional</sup> <a name="skipDelete" id="@cdktf/provider-google-beta.googleProject.GoogleProjectConfig.property.skipDelete"></a>
-
-```java
-public java.lang.Object getSkipDelete();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-If true, the Terraform resource can be deleted without deleting the Project via the Google API.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#skip_delete GoogleProject#skip_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#org_id GoogleProject#org_id}
 
 ---
 
@@ -1513,7 +1454,7 @@ public GoogleProjectTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#timeouts GoogleProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#timeouts GoogleProject#timeouts}
 
 ---
 
@@ -1536,10 +1477,10 @@ GoogleProjectTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#create GoogleProject#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#delete GoogleProject#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#read GoogleProject#read}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#update GoogleProject#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#create GoogleProject#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#delete GoogleProject#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#read GoogleProject#read}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProject.GoogleProjectTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#update GoogleProject#update}. |
 
 ---
 
@@ -1551,7 +1492,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#create GoogleProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#create GoogleProject#create}.
 
 ---
 
@@ -1563,7 +1504,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#delete GoogleProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#delete GoogleProject#delete}.
 
 ---
 
@@ -1575,7 +1516,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#read GoogleProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#read GoogleProject#read}.
 
 ---
 
@@ -1587,7 +1528,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project#update GoogleProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project#update GoogleProject#update}.
 
 ---
 

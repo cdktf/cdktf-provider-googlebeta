@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,47 @@ export interface GoogleComputeInstanceFromMachineImageConfig extends cdktf.Terra
   /**
   * If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#allow_stopping_for_update GoogleComputeInstanceFromMachineImage#allow_stopping_for_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#allow_stopping_for_update GoogleComputeInstanceFromMachineImage#allow_stopping_for_update}
   */
   readonly allowStoppingForUpdate?: boolean | cdktf.IResolvable;
   /**
   * Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#can_ip_forward GoogleComputeInstanceFromMachineImage#can_ip_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#can_ip_forward GoogleComputeInstanceFromMachineImage#can_ip_forward}
   */
   readonly canIpForward?: boolean | cdktf.IResolvable;
   /**
   * Whether deletion protection is enabled on this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#deletion_protection GoogleComputeInstanceFromMachineImage#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#deletion_protection GoogleComputeInstanceFromMachineImage#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * A brief description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#description GoogleComputeInstanceFromMachineImage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#description GoogleComputeInstanceFromMachineImage#description}
   */
   readonly description?: string;
   /**
   * Desired status of the instance. Either "RUNNING" or "TERMINATED".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#desired_status GoogleComputeInstanceFromMachineImage#desired_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#desired_status GoogleComputeInstanceFromMachineImage#desired_status}
   */
   readonly desiredStatus?: string;
   /**
   * Whether the instance has virtual displays enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_display GoogleComputeInstanceFromMachineImage#enable_display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_display GoogleComputeInstanceFromMachineImage#enable_display}
   */
   readonly enableDisplay?: boolean | cdktf.IResolvable;
   /**
-  * List of the type and count of accelerator cards attached to the instance.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#guest_accelerator GoogleComputeInstanceFromMachineImage#guest_accelerator}
-  */
-  readonly guestAccelerator?: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable;
-  /**
   * A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid. Valid format is a series of labels 1-63 characters long matching the regular expression [a-z]([-a-z0-9]*[a-z0-9]), concatenated with periods. The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#hostname GoogleComputeInstanceFromMachineImage#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#hostname GoogleComputeInstanceFromMachineImage#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#id GoogleComputeInstanceFromMachineImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#id GoogleComputeInstanceFromMachineImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -73,133 +67,139 @@ export interface GoogleComputeInstanceFromMachineImageConfig extends cdktf.Terra
   * 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#labels GoogleComputeInstanceFromMachineImage#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#labels GoogleComputeInstanceFromMachineImage#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The machine type to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#machine_type GoogleComputeInstanceFromMachineImage#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#machine_type GoogleComputeInstanceFromMachineImage#machine_type}
   */
   readonly machineType?: string;
   /**
   * Metadata key/value pairs made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#metadata GoogleComputeInstanceFromMachineImage#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#metadata GoogleComputeInstanceFromMachineImage#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Metadata startup scripts made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#metadata_startup_script GoogleComputeInstanceFromMachineImage#metadata_startup_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#metadata_startup_script GoogleComputeInstanceFromMachineImage#metadata_startup_script}
   */
   readonly metadataStartupScript?: string;
   /**
   * The minimum CPU platform specified for the VM instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#min_cpu_platform GoogleComputeInstanceFromMachineImage#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#min_cpu_platform GoogleComputeInstanceFromMachineImage#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * The name of the instance. One of name or self_link must be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#name GoogleComputeInstanceFromMachineImage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#name GoogleComputeInstanceFromMachineImage#name}
   */
   readonly name: string;
   /**
   * Partner Metadata Map made available within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#partner_metadata GoogleComputeInstanceFromMachineImage#partner_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#partner_metadata GoogleComputeInstanceFromMachineImage#partner_metadata}
   */
   readonly partnerMetadata?: { [key: string]: string };
   /**
   * The ID of the project in which the resource belongs. If self_link is provided, this value is ignored. If neither self_link nor project are provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#project GoogleComputeInstanceFromMachineImage#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#project GoogleComputeInstanceFromMachineImage#project}
   */
   readonly project?: string;
   /**
   * A list of self_links of resource policies to attach to the instance. Currently a max of 1 resource policy is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#resource_policies GoogleComputeInstanceFromMachineImage#resource_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#resource_policies GoogleComputeInstanceFromMachineImage#resource_policies}
   */
   readonly resourcePolicies?: string[];
   /**
-  * The service account to attach to the instance.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#service_account GoogleComputeInstanceFromMachineImage#service_account}
-  */
-  readonly serviceAccount?: GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable;
-  /**
   * Name or self link of a machine image to create the instance from on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#source_machine_image GoogleComputeInstanceFromMachineImage#source_machine_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#source_machine_image GoogleComputeInstanceFromMachineImage#source_machine_image}
   */
   readonly sourceMachineImage: string;
   /**
   * The list of tags attached to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#tags GoogleComputeInstanceFromMachineImage#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#tags GoogleComputeInstanceFromMachineImage#tags}
   */
   readonly tags?: string[];
   /**
   * The zone of the instance. If self_link is provided, this value is ignored. If neither self_link nor zone are provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#zone GoogleComputeInstanceFromMachineImage#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#zone GoogleComputeInstanceFromMachineImage#zone}
   */
   readonly zone?: string;
   /**
   * advanced_machine_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#advanced_machine_features GoogleComputeInstanceFromMachineImage#advanced_machine_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#advanced_machine_features GoogleComputeInstanceFromMachineImage#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures;
   /**
   * confidential_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#confidential_instance_config GoogleComputeInstanceFromMachineImage#confidential_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#confidential_instance_config GoogleComputeInstanceFromMachineImage#confidential_instance_config}
   */
   readonly confidentialInstanceConfig?: GoogleComputeInstanceFromMachineImageConfidentialInstanceConfig;
   /**
+  * guest_accelerator block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#guest_accelerator GoogleComputeInstanceFromMachineImage#guest_accelerator}
+  */
+  readonly guestAccelerator?: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable;
+  /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_interface GoogleComputeInstanceFromMachineImage#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_interface GoogleComputeInstanceFromMachineImage#network_interface}
   */
   readonly networkInterface?: GoogleComputeInstanceFromMachineImageNetworkInterface[] | cdktf.IResolvable;
   /**
   * network_performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_performance_config GoogleComputeInstanceFromMachineImage#network_performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_performance_config GoogleComputeInstanceFromMachineImage#network_performance_config}
   */
   readonly networkPerformanceConfig?: GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#params GoogleComputeInstanceFromMachineImage#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#params GoogleComputeInstanceFromMachineImage#params}
   */
   readonly params?: GoogleComputeInstanceFromMachineImageParams;
   /**
   * reservation_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#reservation_affinity GoogleComputeInstanceFromMachineImage#reservation_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#reservation_affinity GoogleComputeInstanceFromMachineImage#reservation_affinity}
   */
   readonly reservationAffinity?: GoogleComputeInstanceFromMachineImageReservationAffinity;
   /**
   * scheduling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#scheduling GoogleComputeInstanceFromMachineImage#scheduling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#scheduling GoogleComputeInstanceFromMachineImage#scheduling}
   */
   readonly scheduling?: GoogleComputeInstanceFromMachineImageScheduling;
   /**
+  * service_account block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#service_account GoogleComputeInstanceFromMachineImage#service_account}
+  */
+  readonly serviceAccount?: GoogleComputeInstanceFromMachineImageServiceAccount;
+  /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#shielded_instance_config GoogleComputeInstanceFromMachineImage#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#shielded_instance_config GoogleComputeInstanceFromMachineImage#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleComputeInstanceFromMachineImageShieldedInstanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#timeouts GoogleComputeInstanceFromMachineImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#timeouts GoogleComputeInstanceFromMachineImage#timeouts}
   */
   readonly timeouts?: GoogleComputeInstanceFromMachineImageTimeouts;
 }
@@ -531,155 +531,6 @@ export class GoogleComputeInstanceFromMachineImageBootDiskList extends cdktf.Com
     return new GoogleComputeInstanceFromMachineImageBootDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleComputeInstanceFromMachineImageGuestAccelerator {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#count GoogleComputeInstanceFromMachineImage#count}
-  */
-  readonly count?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#type GoogleComputeInstanceFromMachineImage#type}
-  */
-  readonly type?: string;
-}
-
-export function googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform(struct?: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    count: cdktf.numberToTerraform(struct!.count),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-
-export function googleComputeInstanceFromMachineImageGuestAcceleratorToHclTerraform(struct?: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._count !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.count = this._count;
-    }
-    if (this._type !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.type = this._type;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._count = undefined;
-      this._type = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._count = value.count;
-      this._type = value.type;
-    }
-  }
-
-  // count - computed: true, optional: true, required: false
-  private _count?: number; 
-  public get count() {
-    return this.getNumberAttribute('count');
-  }
-  public set count(value: number) {
-    this._count = value;
-  }
-  public resetCount() {
-    this._count = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countInput() {
-    return this._count;
-  }
-
-  // type - computed: true, optional: true, required: false
-  private _type?: string; 
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
-  }
-}
-
-export class GoogleComputeInstanceFromMachineImageGuestAcceleratorList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference {
-    return new GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface GoogleComputeInstanceFromMachineImageScratchDisk {
 }
 
@@ -765,172 +616,23 @@ export class GoogleComputeInstanceFromMachineImageScratchDiskList extends cdktf.
     return new GoogleComputeInstanceFromMachineImageScratchDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface GoogleComputeInstanceFromMachineImageServiceAccount {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#email GoogleComputeInstanceFromMachineImage#email}
-  */
-  readonly email?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#scopes GoogleComputeInstanceFromMachineImage#scopes}
-  */
-  readonly scopes?: string[];
-}
-
-export function googleComputeInstanceFromMachineImageServiceAccountToTerraform(struct?: GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    email: cdktf.stringToTerraform(struct!.email),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
-  }
-}
-
-
-export function googleComputeInstanceFromMachineImageServiceAccountToHclTerraform(struct?: GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class GoogleComputeInstanceFromMachineImageServiceAccountOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._scopes !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scopes = this._scopes;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._email = undefined;
-      this._scopes = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._email = value.email;
-      this._scopes = value.scopes;
-    }
-  }
-
-  // email - computed: true, optional: true, required: false
-  private _email?: string; 
-  public get email() {
-    return this.getStringAttribute('email');
-  }
-  public set email(value: string) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // scopes - computed: true, optional: true, required: false
-  private _scopes?: string[]; 
-  public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
-  }
-  public set scopes(value: string[]) {
-    this._scopes = value;
-  }
-  public resetScopes() {
-    this._scopes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopesInput() {
-    return this._scopes;
-  }
-}
-
-export class GoogleComputeInstanceFromMachineImageServiceAccountList extends cdktf.ComplexList {
-  public internalValue? : GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): GoogleComputeInstanceFromMachineImageServiceAccountOutputReference {
-    return new GoogleComputeInstanceFromMachineImageServiceAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures {
   /**
   * Whether to enable nested virtualization or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_nested_virtualization GoogleComputeInstanceFromMachineImage#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_nested_virtualization GoogleComputeInstanceFromMachineImage#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktf.IResolvable;
   /**
   * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#threads_per_core GoogleComputeInstanceFromMachineImage#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#threads_per_core GoogleComputeInstanceFromMachineImage#threads_per_core}
   */
   readonly threadsPerCore?: number;
   /**
   * The number of physical cores to expose to an instance. Multiply by the number of threads per core to compute the total number of virtual CPUs to expose to the instance. If unset, the number of cores is inferred from the instance\'s nominal CPU count and the underlying platform\'s SMT width.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#visible_core_count GoogleComputeInstanceFromMachineImage#visible_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#visible_core_count GoogleComputeInstanceFromMachineImage#visible_core_count}
   */
   readonly visibleCoreCount?: number;
 }
@@ -1078,13 +780,13 @@ export interface GoogleComputeInstanceFromMachineImageConfidentialInstanceConfig
   * 								values is required: SEV, SEV_SNP, TDX. If SEV_SNP, min_cpu_platform =
   * 								"AMD Milan" is currently required. TDX is only available in beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#confidential_instance_type GoogleComputeInstanceFromMachineImage#confidential_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#confidential_instance_type GoogleComputeInstanceFromMachineImage#confidential_instance_type}
   */
   readonly confidentialInstanceType?: string;
   /**
   * Defines whether the instance should have confidential compute enabled. Field will be deprecated in a future release
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_confidential_compute GoogleComputeInstanceFromMachineImage#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_confidential_compute GoogleComputeInstanceFromMachineImage#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktf.IResolvable;
 }
@@ -1195,23 +897,172 @@ export class GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutp
     return this._enableConfidentialCompute;
   }
 }
+export interface GoogleComputeInstanceFromMachineImageGuestAccelerator {
+  /**
+  * The number of the guest accelerator cards exposed to this instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#count GoogleComputeInstanceFromMachineImage#count}
+  */
+  readonly count: number;
+  /**
+  * The accelerator type resource exposed to this instance. E.g. nvidia-tesla-k80.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#type GoogleComputeInstanceFromMachineImage#type}
+  */
+  readonly type: string;
+}
+
+export function googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform(struct?: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function googleComputeInstanceFromMachineImageGuestAcceleratorToHclTerraform(struct?: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._count = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._count = value.count;
+      this._type = value.type;
+    }
+  }
+
+  // count - computed: false, optional: false, required: true
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageGuestAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference {
+    return new GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#nat_ip GoogleComputeInstanceFromMachineImage#nat_ip}
+  * The IP address that is be 1:1 mapped to the instance's network ip.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#nat_ip GoogleComputeInstanceFromMachineImage#nat_ip}
   */
   readonly natIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_tier GoogleComputeInstanceFromMachineImage#network_tier}
+  * The networking tier used for configuring this instance. One of PREMIUM or STANDARD.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_tier GoogleComputeInstanceFromMachineImage#network_tier}
   */
   readonly networkTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#public_ptr_domain_name GoogleComputeInstanceFromMachineImage#public_ptr_domain_name}
+  * The DNS domain name for the public PTR record.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#public_ptr_domain_name GoogleComputeInstanceFromMachineImage#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#security_policy GoogleComputeInstanceFromMachineImage#security_policy}
-  */
-  readonly securityPolicy?: string;
 }
 
 export function googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToTerraform(struct?: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig | cdktf.IResolvable): any {
@@ -1223,7 +1074,6 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfi
     nat_ip: cdktf.stringToTerraform(struct!.natIp),
     network_tier: cdktf.stringToTerraform(struct!.networkTier),
     public_ptr_domain_name: cdktf.stringToTerraform(struct!.publicPtrDomainName),
-    security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
   }
 }
 
@@ -1248,12 +1098,6 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfi
     },
     public_ptr_domain_name: {
       value: cdktf.stringToHclTerraform(struct!.publicPtrDomainName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.securityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1296,10 +1140,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOu
       hasAnyValues = true;
       internalValueResult.publicPtrDomainName = this._publicPtrDomainName;
     }
-    if (this._securityPolicy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.securityPolicy = this._securityPolicy;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1310,7 +1150,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOu
       this._natIp = undefined;
       this._networkTier = undefined;
       this._publicPtrDomainName = undefined;
-      this._securityPolicy = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1322,7 +1161,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOu
       this._natIp = value.natIp;
       this._networkTier = value.networkTier;
       this._publicPtrDomainName = value.publicPtrDomainName;
-      this._securityPolicy = value.securityPolicy;
     }
   }
 
@@ -1374,20 +1212,9 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOu
     return this._publicPtrDomainName;
   }
 
-  // security_policy - computed: true, optional: true, required: false
-  private _securityPolicy?: string; 
+  // security_policy - computed: true, optional: false, required: false
   public get securityPolicy() {
     return this.getStringAttribute('security_policy');
-  }
-  public set securityPolicy(value: string) {
-    this._securityPolicy = value;
-  }
-  public resetSecurityPolicy() {
-    this._securityPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityPolicyInput() {
-    return this._securityPolicy;
   }
 }
 
@@ -1412,11 +1239,15 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigLi
 }
 export interface GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#ip_cidr_range GoogleComputeInstanceFromMachineImage#ip_cidr_range}
+  * The IP CIDR range represented by this alias IP range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#ip_cidr_range GoogleComputeInstanceFromMachineImage#ip_cidr_range}
   */
-  readonly ipCidrRange?: string;
+  readonly ipCidrRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#subnetwork_range_name GoogleComputeInstanceFromMachineImage#subnetwork_range_name}
+  * The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#subnetwork_range_name GoogleComputeInstanceFromMachineImage#subnetwork_range_name}
   */
   readonly subnetworkRangeName?: string;
 }
@@ -1507,16 +1338,13 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOu
     }
   }
 
-  // ip_cidr_range - computed: true, optional: true, required: false
+  // ip_cidr_range - computed: false, optional: false, required: true
   private _ipCidrRange?: string; 
   public get ipCidrRange() {
     return this.getStringAttribute('ip_cidr_range');
   }
   public set ipCidrRange(value: string) {
     this._ipCidrRange = value;
-  }
-  public resetIpCidrRange() {
-    this._ipCidrRange = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipCidrRangeInput() {
@@ -1563,31 +1391,31 @@ export interface GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6Access
   /**
   * The first IPv6 address of the external IPv6 range associated with this instance, prefix length is stored in externalIpv6PrefixLength in ipv6AccessConfig. To use a static external IP address, it must be unused and in the same region as the instance's zone. If not specified, Google Cloud will automatically assign an external IPv6 address from the instance's subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#external_ipv6 GoogleComputeInstanceFromMachineImage#external_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#external_ipv6 GoogleComputeInstanceFromMachineImage#external_ipv6}
   */
   readonly externalIpv6?: string;
   /**
   * The prefix length of the external IPv6 range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#external_ipv6_prefix_length GoogleComputeInstanceFromMachineImage#external_ipv6_prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#external_ipv6_prefix_length GoogleComputeInstanceFromMachineImage#external_ipv6_prefix_length}
   */
   readonly externalIpv6PrefixLength?: string;
   /**
   * The name of this access configuration. In ipv6AccessConfigs, the recommended name is External IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#name GoogleComputeInstanceFromMachineImage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#name GoogleComputeInstanceFromMachineImage#name}
   */
   readonly name?: string;
   /**
   * The service-level to be provided for IPv6 traffic when the subnet has an external subnet. Only PREMIUM tier is valid for IPv6
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_tier GoogleComputeInstanceFromMachineImage#network_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_tier GoogleComputeInstanceFromMachineImage#network_tier}
   */
   readonly networkTier: string;
   /**
   * The domain name to be used when creating DNSv6 records for the external IPv6 ranges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#public_ptr_domain_name GoogleComputeInstanceFromMachineImage#public_ptr_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#public_ptr_domain_name GoogleComputeInstanceFromMachineImage#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
 }
@@ -1821,87 +1649,87 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConf
 }
 export interface GoogleComputeInstanceFromMachineImageNetworkInterface {
   /**
-  * Access configurations, i.e. IPs via which this instance can be accessed via the Internet.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#access_config GoogleComputeInstanceFromMachineImage#access_config}
-  */
-  readonly accessConfig?: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable;
-  /**
-  * An array of alias IP ranges for this network interface.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#alias_ip_range GoogleComputeInstanceFromMachineImage#alias_ip_range}
-  */
-  readonly aliasIpRange?: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable;
-  /**
   * The prefix length of the primary internal IPv6 range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#internal_ipv6_prefix_length GoogleComputeInstanceFromMachineImage#internal_ipv6_prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#internal_ipv6_prefix_length GoogleComputeInstanceFromMachineImage#internal_ipv6_prefix_length}
   */
   readonly internalIpv6PrefixLength?: number;
   /**
   * An IPv6 internal network address for this network interface. If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#ipv6_address GoogleComputeInstanceFromMachineImage#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#ipv6_address GoogleComputeInstanceFromMachineImage#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
   * The name or self_link of the network attached to this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network GoogleComputeInstanceFromMachineImage#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network GoogleComputeInstanceFromMachineImage#network}
   */
   readonly network?: string;
   /**
   * The URL of the network attachment that this interface should connect to in the following format: projects/{projectNumber}/regions/{region_name}/networkAttachments/{network_attachment_name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_attachment GoogleComputeInstanceFromMachineImage#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_attachment GoogleComputeInstanceFromMachineImage#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
   * The private IP address assigned to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#network_ip GoogleComputeInstanceFromMachineImage#network_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#network_ip GoogleComputeInstanceFromMachineImage#network_ip}
   */
   readonly networkIp?: string;
   /**
   * The type of vNIC to be used on this interface. Possible values:GVNIC, VIRTIO_NET
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#nic_type GoogleComputeInstanceFromMachineImage#nic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#nic_type GoogleComputeInstanceFromMachineImage#nic_type}
   */
   readonly nicType?: string;
   /**
   * The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#queue_count GoogleComputeInstanceFromMachineImage#queue_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#queue_count GoogleComputeInstanceFromMachineImage#queue_count}
   */
   readonly queueCount?: number;
   /**
   * A full or partial URL to a security policy to add to this instance. If this field is set to an empty string it will remove the associated security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#security_policy GoogleComputeInstanceFromMachineImage#security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#security_policy GoogleComputeInstanceFromMachineImage#security_policy}
   */
   readonly securityPolicy?: string;
   /**
   * The stack type for this network interface to identify whether the IPv6 feature is enabled or not. If not specified, IPV4_ONLY will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#stack_type GoogleComputeInstanceFromMachineImage#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#stack_type GoogleComputeInstanceFromMachineImage#stack_type}
   */
   readonly stackType?: string;
   /**
   * The name or self_link of the subnetwork attached to this interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#subnetwork GoogleComputeInstanceFromMachineImage#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#subnetwork GoogleComputeInstanceFromMachineImage#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * The project in which the subnetwork belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#subnetwork_project GoogleComputeInstanceFromMachineImage#subnetwork_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#subnetwork_project GoogleComputeInstanceFromMachineImage#subnetwork_project}
   */
   readonly subnetworkProject?: string;
   /**
+  * access_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#access_config GoogleComputeInstanceFromMachineImage#access_config}
+  */
+  readonly accessConfig?: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable;
+  /**
+  * alias_ip_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#alias_ip_range GoogleComputeInstanceFromMachineImage#alias_ip_range}
+  */
+  readonly aliasIpRange?: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable;
+  /**
   * ipv6_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#ipv6_access_config GoogleComputeInstanceFromMachineImage#ipv6_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#ipv6_access_config GoogleComputeInstanceFromMachineImage#ipv6_access_config}
   */
   readonly ipv6AccessConfig?: GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig[] | cdktf.IResolvable;
 }
@@ -1912,8 +1740,6 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToTerraform, false)(struct!.accessConfig),
-    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToTerraform, false)(struct!.aliasIpRange),
     internal_ipv6_prefix_length: cdktf.numberToTerraform(struct!.internalIpv6PrefixLength),
     ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
     network: cdktf.stringToTerraform(struct!.network),
@@ -1925,6 +1751,8 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform
     stack_type: cdktf.stringToTerraform(struct!.stackType),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
     subnetwork_project: cdktf.stringToTerraform(struct!.subnetworkProject),
+    access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToTerraform, true)(struct!.accessConfig),
+    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToTerraform, true)(struct!.aliasIpRange),
     ipv6_access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigToTerraform, true)(struct!.ipv6AccessConfig),
   }
 }
@@ -1936,18 +1764,6 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToHclTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    access_config: {
-      value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToHclTerraform, false)(struct!.accessConfig),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList",
-    },
-    alias_ip_range: {
-      value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToHclTerraform, false)(struct!.aliasIpRange),
-      isBlock: true,
-      type: "list",
-      storageClassType: "GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList",
-    },
     internal_ipv6_prefix_length: {
       value: cdktf.numberToHclTerraform(struct!.internalIpv6PrefixLength),
       isBlock: false,
@@ -2014,6 +1830,18 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToHclTerraf
       type: "simple",
       storageClassType: "string",
     },
+    access_config: {
+      value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToHclTerraform, true)(struct!.accessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList",
+    },
+    alias_ip_range: {
+      value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToHclTerraform, true)(struct!.aliasIpRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList",
+    },
     ipv6_access_config: {
       value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigToHclTerraform, true)(struct!.ipv6AccessConfig),
       isBlock: true,
@@ -2046,14 +1874,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessConfig?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.accessConfig = this._accessConfig?.internalValue;
-    }
-    if (this._aliasIpRange?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aliasIpRange = this._aliasIpRange?.internalValue;
-    }
     if (this._internalIpv6PrefixLength !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalIpv6PrefixLength = this._internalIpv6PrefixLength;
@@ -2098,6 +1918,14 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
       hasAnyValues = true;
       internalValueResult.subnetworkProject = this._subnetworkProject;
     }
+    if (this._accessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessConfig = this._accessConfig?.internalValue;
+    }
+    if (this._aliasIpRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aliasIpRange = this._aliasIpRange?.internalValue;
+    }
     if (this._ipv6AccessConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipv6AccessConfig = this._ipv6AccessConfig?.internalValue;
@@ -2109,8 +1937,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._accessConfig.internalValue = undefined;
-      this._aliasIpRange.internalValue = undefined;
       this._internalIpv6PrefixLength = undefined;
       this._ipv6Address = undefined;
       this._network = undefined;
@@ -2122,6 +1948,8 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
       this._stackType = undefined;
       this._subnetwork = undefined;
       this._subnetworkProject = undefined;
+      this._accessConfig.internalValue = undefined;
+      this._aliasIpRange.internalValue = undefined;
       this._ipv6AccessConfig.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -2131,8 +1959,6 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._accessConfig.internalValue = value.accessConfig;
-      this._aliasIpRange.internalValue = value.aliasIpRange;
       this._internalIpv6PrefixLength = value.internalIpv6PrefixLength;
       this._ipv6Address = value.ipv6Address;
       this._network = value.network;
@@ -2144,40 +1970,10 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
       this._stackType = value.stackType;
       this._subnetwork = value.subnetwork;
       this._subnetworkProject = value.subnetworkProject;
+      this._accessConfig.internalValue = value.accessConfig;
+      this._aliasIpRange.internalValue = value.aliasIpRange;
       this._ipv6AccessConfig.internalValue = value.ipv6AccessConfig;
     }
-  }
-
-  // access_config - computed: true, optional: true, required: false
-  private _accessConfig = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList(this, "access_config", false);
-  public get accessConfig() {
-    return this._accessConfig;
-  }
-  public putAccessConfig(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable) {
-    this._accessConfig.internalValue = value;
-  }
-  public resetAccessConfig() {
-    this._accessConfig.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accessConfigInput() {
-    return this._accessConfig.internalValue;
-  }
-
-  // alias_ip_range - computed: true, optional: true, required: false
-  private _aliasIpRange = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList(this, "alias_ip_range", false);
-  public get aliasIpRange() {
-    return this._aliasIpRange;
-  }
-  public putAliasIpRange(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable) {
-    this._aliasIpRange.internalValue = value;
-  }
-  public resetAliasIpRange() {
-    this._aliasIpRange.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aliasIpRangeInput() {
-    return this._aliasIpRange.internalValue;
   }
 
   // internal_ipv6_prefix_length - computed: true, optional: true, required: false
@@ -2366,6 +2162,38 @@ export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReferenc
     return this._subnetworkProject;
   }
 
+  // access_config - computed: false, optional: true, required: false
+  private _accessConfig = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList(this, "access_config", false);
+  public get accessConfig() {
+    return this._accessConfig;
+  }
+  public putAccessConfig(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable) {
+    this._accessConfig.internalValue = value;
+  }
+  public resetAccessConfig() {
+    this._accessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConfigInput() {
+    return this._accessConfig.internalValue;
+  }
+
+  // alias_ip_range - computed: false, optional: true, required: false
+  private _aliasIpRange = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList(this, "alias_ip_range", false);
+  public get aliasIpRange() {
+    return this._aliasIpRange;
+  }
+  public putAliasIpRange(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable) {
+    this._aliasIpRange.internalValue = value;
+  }
+  public resetAliasIpRange() {
+    this._aliasIpRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasIpRangeInput() {
+    return this._aliasIpRange.internalValue;
+  }
+
   // ipv6_access_config - computed: false, optional: true, required: false
   private _ipv6AccessConfig = new GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList(this, "ipv6_access_config", false);
   public get ipv6AccessConfig() {
@@ -2406,7 +2234,7 @@ export interface GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig {
   /**
   * The egress bandwidth tier to enable. Possible values:TIER_1, DEFAULT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#total_egress_bandwidth_tier GoogleComputeInstanceFromMachineImage#total_egress_bandwidth_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#total_egress_bandwidth_tier GoogleComputeInstanceFromMachineImage#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
 }
@@ -2489,7 +2317,7 @@ export interface GoogleComputeInstanceFromMachineImageParams {
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#resource_manager_tags GoogleComputeInstanceFromMachineImage#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#resource_manager_tags GoogleComputeInstanceFromMachineImage#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -2575,13 +2403,13 @@ export interface GoogleComputeInstanceFromMachineImageReservationAffinitySpecifi
   /**
   * Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#key GoogleComputeInstanceFromMachineImage#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#key GoogleComputeInstanceFromMachineImage#key}
   */
   readonly key: string;
   /**
   * Corresponds to the label values of a reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#values GoogleComputeInstanceFromMachineImage#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#values GoogleComputeInstanceFromMachineImage#values}
   */
   readonly values: string[];
 }
@@ -2690,13 +2518,13 @@ export interface GoogleComputeInstanceFromMachineImageReservationAffinity {
   /**
   * The type of reservation from which this instance can consume resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#type GoogleComputeInstanceFromMachineImage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#type GoogleComputeInstanceFromMachineImage#type}
   */
   readonly type: string;
   /**
   * specific_reservation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#specific_reservation GoogleComputeInstanceFromMachineImage#specific_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#specific_reservation GoogleComputeInstanceFromMachineImage#specific_reservation}
   */
   readonly specificReservation?: GoogleComputeInstanceFromMachineImageReservationAffinitySpecificReservation;
 }
@@ -2811,14 +2639,14 @@ export interface GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecovery
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
   */
   readonly seconds: number;
 }
@@ -2933,14 +2761,14 @@ export interface GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration {
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#nanos GoogleComputeInstanceFromMachineImage#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#seconds GoogleComputeInstanceFromMachineImage#seconds}
   */
   readonly seconds: number;
 }
@@ -3050,15 +2878,15 @@ export class GoogleComputeInstanceFromMachineImageSchedulingMaxRunDurationOutput
 }
 export interface GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#key GoogleComputeInstanceFromMachineImage#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#key GoogleComputeInstanceFromMachineImage#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#operator GoogleComputeInstanceFromMachineImage#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#operator GoogleComputeInstanceFromMachineImage#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#values GoogleComputeInstanceFromMachineImage#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#values GoogleComputeInstanceFromMachineImage#values}
   */
   readonly values: string[];
 }
@@ -3225,7 +3053,7 @@ export interface GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAc
   /**
   * If true, the contents of any attached Local SSD disks will be discarded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#discard_local_ssd GoogleComputeInstanceFromMachineImage#discard_local_ssd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#discard_local_ssd GoogleComputeInstanceFromMachineImage#discard_local_ssd}
   */
   readonly discardLocalSsd?: boolean | cdktf.IResolvable;
 }
@@ -3311,65 +3139,65 @@ export interface GoogleComputeInstanceFromMachineImageScheduling {
   /**
   * Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#automatic_restart GoogleComputeInstanceFromMachineImage#automatic_restart}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#automatic_restart GoogleComputeInstanceFromMachineImage#automatic_restart}
   */
   readonly automaticRestart?: boolean | cdktf.IResolvable;
   /**
   * Specifies the action GCE should take when SPOT VM is preempted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#instance_termination_action GoogleComputeInstanceFromMachineImage#instance_termination_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#instance_termination_action GoogleComputeInstanceFromMachineImage#instance_termination_action}
   */
   readonly instanceTerminationAction?: string;
   /**
   * Specifies the frequency of planned maintenance events. The accepted values are: PERIODIC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#maintenance_interval GoogleComputeInstanceFromMachineImage#maintenance_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#maintenance_interval GoogleComputeInstanceFromMachineImage#maintenance_interval}
   */
   readonly maintenanceInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#min_node_cpus GoogleComputeInstanceFromMachineImage#min_node_cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#min_node_cpus GoogleComputeInstanceFromMachineImage#min_node_cpus}
   */
   readonly minNodeCpus?: number;
   /**
   * Describes maintenance behavior for the instance. One of MIGRATE or TERMINATE,
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#on_host_maintenance GoogleComputeInstanceFromMachineImage#on_host_maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#on_host_maintenance GoogleComputeInstanceFromMachineImage#on_host_maintenance}
   */
   readonly onHostMaintenance?: string;
   /**
   * Whether the instance is preemptible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#preemptible GoogleComputeInstanceFromMachineImage#preemptible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#preemptible GoogleComputeInstanceFromMachineImage#preemptible}
   */
   readonly preemptible?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance is spot. If this is set as SPOT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#provisioning_model GoogleComputeInstanceFromMachineImage#provisioning_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#provisioning_model GoogleComputeInstanceFromMachineImage#provisioning_model}
   */
   readonly provisioningModel?: string;
   /**
   * local_ssd_recovery_timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#local_ssd_recovery_timeout GoogleComputeInstanceFromMachineImage#local_ssd_recovery_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#local_ssd_recovery_timeout GoogleComputeInstanceFromMachineImage#local_ssd_recovery_timeout}
   */
   readonly localSsdRecoveryTimeout?: GoogleComputeInstanceFromMachineImageSchedulingLocalSsdRecoveryTimeout;
   /**
   * max_run_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#max_run_duration GoogleComputeInstanceFromMachineImage#max_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#max_run_duration GoogleComputeInstanceFromMachineImage#max_run_duration}
   */
   readonly maxRunDuration?: GoogleComputeInstanceFromMachineImageSchedulingMaxRunDuration;
   /**
   * node_affinities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#node_affinities GoogleComputeInstanceFromMachineImage#node_affinities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#node_affinities GoogleComputeInstanceFromMachineImage#node_affinities}
   */
   readonly nodeAffinities?: GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities[] | cdktf.IResolvable;
   /**
   * on_instance_stop_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#on_instance_stop_action GoogleComputeInstanceFromMachineImage#on_instance_stop_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#on_instance_stop_action GoogleComputeInstanceFromMachineImage#on_instance_stop_action}
   */
   readonly onInstanceStopAction?: GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopAction;
 }
@@ -3741,23 +3569,141 @@ export class GoogleComputeInstanceFromMachineImageSchedulingOutputReference exte
     return this._onInstanceStopAction.internalValue;
   }
 }
+export interface GoogleComputeInstanceFromMachineImageServiceAccount {
+  /**
+  * The service account e-mail address.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#email GoogleComputeInstanceFromMachineImage#email}
+  */
+  readonly email?: string;
+  /**
+  * A list of service scopes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#scopes GoogleComputeInstanceFromMachineImage#scopes}
+  */
+  readonly scopes: string[];
+}
+
+export function googleComputeInstanceFromMachineImageServiceAccountToTerraform(struct?: GoogleComputeInstanceFromMachineImageServiceAccountOutputReference | GoogleComputeInstanceFromMachineImageServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktf.stringToTerraform(struct!.email),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+  }
+}
+
+
+export function googleComputeInstanceFromMachineImageServiceAccountToHclTerraform(struct?: GoogleComputeInstanceFromMachineImageServiceAccountOutputReference | GoogleComputeInstanceFromMachineImageServiceAccount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeInstanceFromMachineImageServiceAccountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageServiceAccount | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageServiceAccount | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._email = undefined;
+      this._scopes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._email = value.email;
+      this._scopes = value.scopes;
+    }
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // scopes - computed: false, optional: false, required: true
+  private _scopes?: string[]; 
+  public get scopes() {
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageShieldedInstanceConfig {
   /**
   * Whether integrity monitoring is enabled for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_integrity_monitoring GoogleComputeInstanceFromMachineImage#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_integrity_monitoring GoogleComputeInstanceFromMachineImage#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Whether secure boot is enabled for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_secure_boot GoogleComputeInstanceFromMachineImage#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_secure_boot GoogleComputeInstanceFromMachineImage#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance uses vTPM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#enable_vtpm GoogleComputeInstanceFromMachineImage#enable_vtpm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#enable_vtpm GoogleComputeInstanceFromMachineImage#enable_vtpm}
   */
   readonly enableVtpm?: boolean | cdktf.IResolvable;
 }
@@ -3899,15 +3845,15 @@ export class GoogleComputeInstanceFromMachineImageShieldedInstanceConfigOutputRe
 }
 export interface GoogleComputeInstanceFromMachineImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#create GoogleComputeInstanceFromMachineImage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#create GoogleComputeInstanceFromMachineImage#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#delete GoogleComputeInstanceFromMachineImage#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#delete GoogleComputeInstanceFromMachineImage#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#update GoogleComputeInstanceFromMachineImage#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#update GoogleComputeInstanceFromMachineImage#update}
   */
   readonly update?: string;
 }
@@ -4059,7 +4005,7 @@ export class GoogleComputeInstanceFromMachineImageTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}
 */
 export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResource {
 
@@ -4075,7 +4021,7 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   * Generates CDKTF code for importing a GoogleComputeInstanceFromMachineImage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeInstanceFromMachineImage to import
-  * @param importFromId The id of the existing GoogleComputeInstanceFromMachineImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeInstanceFromMachineImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeInstanceFromMachineImage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4087,7 +4033,7 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4098,8 +4044,8 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       terraformResourceType: 'google_compute_instance_from_machine_image',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '5.43.1',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.1.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4115,7 +4061,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     this._description = config.description;
     this._desiredStatus = config.desiredStatus;
     this._enableDisplay = config.enableDisplay;
-    this._guestAccelerator.internalValue = config.guestAccelerator;
     this._hostname = config.hostname;
     this._id = config.id;
     this._labels = config.labels;
@@ -4127,17 +4072,18 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     this._partnerMetadata = config.partnerMetadata;
     this._project = config.project;
     this._resourcePolicies = config.resourcePolicies;
-    this._serviceAccount.internalValue = config.serviceAccount;
     this._sourceMachineImage = config.sourceMachineImage;
     this._tags = config.tags;
     this._zone = config.zone;
     this._advancedMachineFeatures.internalValue = config.advancedMachineFeatures;
     this._confidentialInstanceConfig.internalValue = config.confidentialInstanceConfig;
+    this._guestAccelerator.internalValue = config.guestAccelerator;
     this._networkInterface.internalValue = config.networkInterface;
     this._networkPerformanceConfig.internalValue = config.networkPerformanceConfig;
     this._params.internalValue = config.params;
     this._reservationAffinity.internalValue = config.reservationAffinity;
     this._scheduling.internalValue = config.scheduling;
+    this._serviceAccount.internalValue = config.serviceAccount;
     this._shieldedInstanceConfig.internalValue = config.shieldedInstanceConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -4268,22 +4214,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   // Temporarily expose input value. Use with caution.
   public get enableDisplayInput() {
     return this._enableDisplay;
-  }
-
-  // guest_accelerator - computed: true, optional: true, required: false
-  private _guestAccelerator = new GoogleComputeInstanceFromMachineImageGuestAcceleratorList(this, "guest_accelerator", false);
-  public get guestAccelerator() {
-    return this._guestAccelerator;
-  }
-  public putGuestAccelerator(value: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable) {
-    this._guestAccelerator.internalValue = value;
-  }
-  public resetGuestAccelerator() {
-    this._guestAccelerator.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get guestAcceleratorInput() {
-    return this._guestAccelerator.internalValue;
   }
 
   // hostname - computed: true, optional: true, required: false
@@ -4485,22 +4415,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     return this.getStringAttribute('self_link');
   }
 
-  // service_account - computed: true, optional: true, required: false
-  private _serviceAccount = new GoogleComputeInstanceFromMachineImageServiceAccountList(this, "service_account", false);
-  public get serviceAccount() {
-    return this._serviceAccount;
-  }
-  public putServiceAccount(value: GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable) {
-    this._serviceAccount.internalValue = value;
-  }
-  public resetServiceAccount() {
-    this._serviceAccount.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceAccountInput() {
-    return this._serviceAccount.internalValue;
-  }
-
   // source_machine_image - computed: false, optional: false, required: true
   private _sourceMachineImage?: string; 
   public get sourceMachineImage() {
@@ -4589,6 +4503,22 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     return this._confidentialInstanceConfig.internalValue;
   }
 
+  // guest_accelerator - computed: false, optional: true, required: false
+  private _guestAccelerator = new GoogleComputeInstanceFromMachineImageGuestAcceleratorList(this, "guest_accelerator", false);
+  public get guestAccelerator() {
+    return this._guestAccelerator;
+  }
+  public putGuestAccelerator(value: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable) {
+    this._guestAccelerator.internalValue = value;
+  }
+  public resetGuestAccelerator() {
+    this._guestAccelerator.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guestAcceleratorInput() {
+    return this._guestAccelerator.internalValue;
+  }
+
   // network_interface - computed: false, optional: true, required: false
   private _networkInterface = new GoogleComputeInstanceFromMachineImageNetworkInterfaceList(this, "network_interface", false);
   public get networkInterface() {
@@ -4669,6 +4599,22 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     return this._scheduling.internalValue;
   }
 
+  // service_account - computed: false, optional: true, required: false
+  private _serviceAccount = new GoogleComputeInstanceFromMachineImageServiceAccountOutputReference(this, "service_account");
+  public get serviceAccount() {
+    return this._serviceAccount;
+  }
+  public putServiceAccount(value: GoogleComputeInstanceFromMachineImageServiceAccount) {
+    this._serviceAccount.internalValue = value;
+  }
+  public resetServiceAccount() {
+    this._serviceAccount.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountInput() {
+    return this._serviceAccount.internalValue;
+  }
+
   // shielded_instance_config - computed: false, optional: true, required: false
   private _shieldedInstanceConfig = new GoogleComputeInstanceFromMachineImageShieldedInstanceConfigOutputReference(this, "shielded_instance_config");
   public get shieldedInstanceConfig() {
@@ -4713,7 +4659,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       description: cdktf.stringToTerraform(this._description),
       desired_status: cdktf.stringToTerraform(this._desiredStatus),
       enable_display: cdktf.booleanToTerraform(this._enableDisplay),
-      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform, false)(this._guestAccelerator.internalValue),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -4725,17 +4670,18 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       partner_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._partnerMetadata),
       project: cdktf.stringToTerraform(this._project),
       resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourcePolicies),
-      service_account: cdktf.listMapper(googleComputeInstanceFromMachineImageServiceAccountToTerraform, false)(this._serviceAccount.internalValue),
       source_machine_image: cdktf.stringToTerraform(this._sourceMachineImage),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       zone: cdktf.stringToTerraform(this._zone),
       advanced_machine_features: googleComputeInstanceFromMachineImageAdvancedMachineFeaturesToTerraform(this._advancedMachineFeatures.internalValue),
       confidential_instance_config: googleComputeInstanceFromMachineImageConfidentialInstanceConfigToTerraform(this._confidentialInstanceConfig.internalValue),
+      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform, true)(this._guestAccelerator.internalValue),
       network_interface: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       network_performance_config: googleComputeInstanceFromMachineImageNetworkPerformanceConfigToTerraform(this._networkPerformanceConfig.internalValue),
       params: googleComputeInstanceFromMachineImageParamsToTerraform(this._params.internalValue),
       reservation_affinity: googleComputeInstanceFromMachineImageReservationAffinityToTerraform(this._reservationAffinity.internalValue),
       scheduling: googleComputeInstanceFromMachineImageSchedulingToTerraform(this._scheduling.internalValue),
+      service_account: googleComputeInstanceFromMachineImageServiceAccountToTerraform(this._serviceAccount.internalValue),
       shielded_instance_config: googleComputeInstanceFromMachineImageShieldedInstanceConfigToTerraform(this._shieldedInstanceConfig.internalValue),
       timeouts: googleComputeInstanceFromMachineImageTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -4778,12 +4724,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      guest_accelerator: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageGuestAcceleratorToHclTerraform, false)(this._guestAccelerator.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromMachineImageGuestAcceleratorList",
       },
       hostname: {
         value: cdktf.stringToHclTerraform(this._hostname),
@@ -4851,12 +4791,6 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
         type: "list",
         storageClassType: "stringList",
       },
-      service_account: {
-        value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageServiceAccountToHclTerraform, false)(this._serviceAccount.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "GoogleComputeInstanceFromMachineImageServiceAccountList",
-      },
       source_machine_image: {
         value: cdktf.stringToHclTerraform(this._sourceMachineImage),
         isBlock: false,
@@ -4887,6 +4821,12 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
         type: "list",
         storageClassType: "GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigList",
       },
+      guest_accelerator: {
+        value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageGuestAcceleratorToHclTerraform, true)(this._guestAccelerator.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromMachineImageGuestAcceleratorList",
+      },
       network_interface: {
         value: cdktf.listMapperHcl(googleComputeInstanceFromMachineImageNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
         isBlock: true,
@@ -4916,6 +4856,12 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
         isBlock: true,
         type: "list",
         storageClassType: "GoogleComputeInstanceFromMachineImageSchedulingList",
+      },
+      service_account: {
+        value: googleComputeInstanceFromMachineImageServiceAccountToHclTerraform(this._serviceAccount.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeInstanceFromMachineImageServiceAccountList",
       },
       shielded_instance_config: {
         value: googleComputeInstanceFromMachineImageShieldedInstanceConfigToHclTerraform(this._shieldedInstanceConfig.internalValue),

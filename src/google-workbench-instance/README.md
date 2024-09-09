@@ -1,3 +1,3 @@
 # `google_workbench_instance`
 
-Refer to the Terraform Registry for docs: [`google_workbench_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_workbench_instance).
+Refer to the Terraform Registry for docs: [`google_workbench_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_workbench_instance).
