@@ -4,7 +4,7 @@
 
 ### GoogleFolder <a name="GoogleFolder" id="@cdktf/provider-google-beta.googleFolder.GoogleFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder google_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder google_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolder.GoogleFolder.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleFolder to import.
 
 The id of the existing GoogleFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 | <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The folder's display name. |
 | <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.parent">Parent</a></code> | <code>*string</code> | The resource name of the parent Folder or Organization. Must be of the form folders/{folder_id} or organizations/{org_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#id GoogleFolder#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#id GoogleFolder#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts">GoogleFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -974,7 +974,7 @@ The folder's display name.
 
 A folder's display name must be unique amongst its siblings, e.g. no two folders with the same parent can share the same display name. The display name must start and end with a letter or digit, may contain letters, digits, spaces, hyphens and underscores and can be no longer than 30 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#display_name GoogleFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#display_name GoogleFolder#display_name}
 
 ---
 
@@ -988,7 +988,7 @@ Parent *string
 
 The resource name of the parent Folder or Organization. Must be of the form folders/{folder_id} or organizations/{org_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#parent GoogleFolder#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#parent GoogleFolder#parent}
 
 ---
 
@@ -1004,7 +1004,7 @@ When the field is set to true or unset in Terraform state, a terraform apply or 
 
 When the field is set to false, deleting the instance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#deletion_protection GoogleFolder#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#deletion_protection GoogleFolder#deletion_protection}
 
 ---
 
@@ -1016,7 +1016,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#id GoogleFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#id GoogleFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1033,7 +1033,7 @@ Timeouts GoogleFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#timeouts GoogleFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#timeouts GoogleFolder#timeouts}
 
 ---
 
@@ -1056,10 +1056,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefolde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#create GoogleFolder#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#delete GoogleFolder#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#read GoogleFolder#read}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#update GoogleFolder#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#create GoogleFolder#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#delete GoogleFolder#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#read GoogleFolder#read}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#update GoogleFolder#update}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#create GoogleFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#create GoogleFolder#create}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#delete GoogleFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#delete GoogleFolder#delete}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#read GoogleFolder#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#read GoogleFolder#read}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_folder#update GoogleFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_folder#update GoogleFolder#update}.
 
 ---
 

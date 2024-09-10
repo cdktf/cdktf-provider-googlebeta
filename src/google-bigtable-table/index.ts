@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleBigtableTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * Duration to retain change stream data for the table. Set to 0 to disable. Must be between 1 and 7 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#change_stream_retention GoogleBigtableTable#change_stream_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#change_stream_retention GoogleBigtableTable#change_stream_retention}
   */
   readonly changeStreamRetention?: string;
   /**
   * A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
   */
   readonly deletionProtection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,43 @@ export interface GoogleBigtableTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the Bigtable instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
   */
   readonly instanceName: string;
   /**
   * The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
   */
   readonly project?: string;
   /**
   * A list of predefined keys to split the table on. !> Warning: Modifying the split_keys of an existing table will cause Terraform to delete/recreate the entire google_bigtable_table resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
   */
   readonly splitKeys?: string[];
   /**
   * automated_backup_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#automated_backup_policy GoogleBigtableTable#automated_backup_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#automated_backup_policy GoogleBigtableTable#automated_backup_policy}
   */
   readonly automatedBackupPolicy?: GoogleBigtableTableAutomatedBackupPolicy;
   /**
   * column_family block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
   */
   readonly columnFamily?: GoogleBigtableTableColumnFamily[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
   */
   readonly timeouts?: GoogleBigtableTableTimeouts;
 }
@@ -78,13 +78,13 @@ export interface GoogleBigtableTableAutomatedBackupPolicy {
   /**
   * How frequently automated backups should occur.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#frequency GoogleBigtableTable#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#frequency GoogleBigtableTable#frequency}
   */
   readonly frequency?: string;
   /**
   * How long the automated backups should be retained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#retention_period GoogleBigtableTable#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#retention_period GoogleBigtableTable#retention_period}
   */
   readonly retentionPeriod?: string;
 }
@@ -199,9 +199,15 @@ export interface GoogleBigtableTableColumnFamily {
   /**
   * The name of the column family.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#family GoogleBigtableTable#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#family GoogleBigtableTable#family}
   */
   readonly family: string;
+  /**
+  * The type of the column family.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#type GoogleBigtableTable#type}
+  */
+  readonly type?: string;
 }
 
 export function googleBigtableTableColumnFamilyToTerraform(struct?: GoogleBigtableTableColumnFamily | cdktf.IResolvable): any {
@@ -211,6 +217,7 @@ export function googleBigtableTableColumnFamilyToTerraform(struct?: GoogleBigtab
   }
   return {
     family: cdktf.stringToTerraform(struct!.family),
+    type: cdktf.stringToTerraform(struct!.type),
   }
 }
 
@@ -223,6 +230,12 @@ export function googleBigtableTableColumnFamilyToHclTerraform(struct?: GoogleBig
   const attrs = {
     family: {
       value: cdktf.stringToHclTerraform(struct!.family),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,6 +270,10 @@ export class GoogleBigtableTableColumnFamilyOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.family = this._family;
     }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -265,6 +282,7 @@ export class GoogleBigtableTableColumnFamilyOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._family = undefined;
+      this._type = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -274,6 +292,7 @@ export class GoogleBigtableTableColumnFamilyOutputReference extends cdktf.Comple
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._family = value.family;
+      this._type = value.type;
     }
   }
 
@@ -288,6 +307,22 @@ export class GoogleBigtableTableColumnFamilyOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get familyInput() {
     return this._family;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
   }
 }
 
@@ -312,11 +347,11 @@ export class GoogleBigtableTableColumnFamilyList extends cdktf.ComplexList {
 }
 export interface GoogleBigtableTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}
   */
   readonly update?: string;
 }
@@ -439,7 +474,7 @@ export class GoogleBigtableTableTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table google_bigtable_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table google_bigtable_table}
 */
 export class GoogleBigtableTable extends cdktf.TerraformResource {
 
@@ -455,7 +490,7 @@ export class GoogleBigtableTable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBigtableTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBigtableTable to import
-  * @param importFromId The id of the existing GoogleBigtableTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBigtableTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBigtableTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -467,7 +502,7 @@ export class GoogleBigtableTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigtable_table google_bigtable_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_bigtable_table google_bigtable_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +513,7 @@ export class GoogleBigtableTable extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigtable_table',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.1.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

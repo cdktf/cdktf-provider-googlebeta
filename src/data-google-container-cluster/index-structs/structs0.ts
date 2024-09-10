@@ -5929,6 +5929,11 @@ export class DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference ex
     return this.getStringAttribute('cpu_manager_policy');
   }
 
+  // insecure_kubelet_readonly_port_enabled - computed: true, optional: false, required: false
+  public get insecureKubeletReadonlyPortEnabled() {
+    return this.getStringAttribute('insecure_kubelet_readonly_port_enabled');
+  }
+
   // pod_pids_limit - computed: true, optional: false, required: false
   public get podPidsLimit() {
     return this.getNumberAttribute('pod_pids_limit');
