@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterAddonsConfigCloudrunConfig {
 }
@@ -5927,6 +5922,11 @@ export class DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference ex
   // cpu_manager_policy - computed: true, optional: false, required: false
   public get cpuManagerPolicy() {
     return this.getStringAttribute('cpu_manager_policy');
+  }
+
+  // insecure_kubelet_readonly_port_enabled - computed: true, optional: false, required: false
+  public get insecureKubeletReadonlyPortEnabled() {
+    return this.getStringAttribute('insecure_kubelet_readonly_port_enabled');
   }
 
   // pod_pids_limit - computed: true, optional: false, required: false

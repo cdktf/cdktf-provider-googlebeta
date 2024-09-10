@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
   */
   readonly project?: string;
   /**
@@ -28,7 +23,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktf.T
   * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
@@ -36,7 +31,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktf.T
   * value must be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
   */
   readonly workloadIdentityPoolProviderId: string;
 }
@@ -275,9 +270,317 @@ export class DataGoogleIamWorkloadIdentityPoolProviderSamlList extends cdktf.Com
     return new DataGoogleIamWorkloadIdentityPoolProviderSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas {
+}
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // pem_certificate - computed: true, optional: false, required: false
+  public get pemCertificate() {
+    return this.getStringAttribute('pem_certificate');
+  }
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference {
+    return new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors {
+}
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // pem_certificate - computed: true, optional: false, required: false
+  public get pemCertificate() {
+    return this.getStringAttribute('pem_certificate');
+  }
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference {
+    return new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore {
+}
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleIamWorkloadIdentityPoolProviderX509TrustStore | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // intermediate_cas - computed: true, optional: false, required: false
+  private _intermediateCas = new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList(this, "intermediate_cas", false);
+  public get intermediateCas() {
+    return this._intermediateCas;
+  }
+
+  // trust_anchors - computed: true, optional: false, required: false
+  private _trustAnchors = new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList(this, "trust_anchors", false);
+  public get trustAnchors() {
+    return this._trustAnchors;
+  }
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference {
+    return new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleIamWorkloadIdentityPoolProviderX509 {
+}
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509ToTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleIamWorkloadIdentityPoolProviderX509ToHclTerraform(struct?: DataGoogleIamWorkloadIdentityPoolProviderX509): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleIamWorkloadIdentityPoolProviderX509 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleIamWorkloadIdentityPoolProviderX509 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // trust_store - computed: true, optional: false, required: false
+  private _trustStore = new DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreList(this, "trust_store", false);
+  public get trustStore() {
+    return this._trustStore;
+  }
+}
+
+export class DataGoogleIamWorkloadIdentityPoolProviderX509List extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleIamWorkloadIdentityPoolProviderX509OutputReference {
+    return new DataGoogleIamWorkloadIdentityPoolProviderX509OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
 */
 export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDataSource {
 
@@ -293,7 +596,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataGoogleIamWorkloadIdentityPoolProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamWorkloadIdentityPoolProvider to import
-  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamWorkloadIdentityPoolProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -305,7 +608,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -316,7 +619,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
       terraformResourceType: 'google_iam_workload_identity_pool_provider',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.1.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -447,6 +750,12 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
   // Temporarily expose input value. Use with caution.
   public get workloadIdentityPoolProviderIdInput() {
     return this._workloadIdentityPoolProviderId;
+  }
+
+  // x509 - computed: true, optional: false, required: false
+  private _x509 = new DataGoogleIamWorkloadIdentityPoolProviderX509List(this, "x509", false);
+  public get x509() {
+    return this._x509;
   }
 
   // =========
