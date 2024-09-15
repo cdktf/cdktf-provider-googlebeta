@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.NewDataGoogleDatastreamStaticIps(scope Construct, id *string, config DataGoogleDatastreamStaticIpsConfig) DataGoogleDatastreamStaticIps
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogledatastreamstaticips"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatastreamstaticips"
 
 &datagoogledatastreamstaticips.DataGoogleDatastreamStaticIpsConfig {
 	Connection: interface{},

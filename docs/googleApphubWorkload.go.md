@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkload(scope Construct, id *string, config GoogleApphubWorkloadConfig) GoogleApphubWorkload
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkload.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.GoogleApphubWorkload_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.GoogleApphubWorkload_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googleapphubworkload.GoogleApphubWorkload_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkload.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.GoogleApphubWorkload_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googleapphubworkload.GoogleApphubWorkload_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.GoogleApphubWorkload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1032,13 +1032,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributes {
 	BusinessOwners: interface{},
-	Criticality: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubWorkload.GoogleApphubWorkloadAttributesCriticality,
+	Criticality: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubWorkload.GoogleApphubWorkloadAttributesCriticality,
 	DeveloperOwners: interface{},
-	Environment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubWorkload.GoogleApphubWorkloadAttributesEnvironment,
+	Environment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubWorkload.GoogleApphubWorkloadAttributesEnvironment,
 	OperatorOwners: interface{},
 }
 ```
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributesBusinessOwners {
 	Email: *string,
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributesCriticality {
 	Type: *string,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributesDeveloperOwners {
 	Email: *string,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributesEnvironment {
 	Type: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadAttributesOperatorOwners {
 	Email: *string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadConfig {
 	Connection: interface{},
@@ -1362,12 +1362,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 	DiscoveredWorkload: *string,
 	Location: *string,
 	WorkloadId: *string,
-	Attributes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubWorkload.GoogleApphubWorkloadAttributes,
+	Attributes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubWorkload.GoogleApphubWorkloadAttributes,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApphubWorkload.GoogleApphubWorkloadTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApphubWorkload.GoogleApphubWorkloadTimeouts,
 }
 ```
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadTimeouts {
 	Create: *string,
@@ -1669,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadWorkloadProperties {
 
@@ -1682,7 +1682,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 &googleapphubworkload.GoogleApphubWorkloadWorkloadReference {
 
@@ -1697,7 +1697,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphu
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubWorkloadAttributesBusinessOwnersList
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubWorkloadAttributesBusinessOwnersOutputReference
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubWorkloadAttributesCriticalityOutputReference
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() GoogleApphubWorkloadAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubWorkloadAttributesDeveloperOwnersList
 ```
@@ -2606,7 +2606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubWorkloadAttributesDeveloperOwnersOutputReference
 ```
@@ -2924,7 +2924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubWorkloadAttributesEnvironmentOutputReference
 ```
@@ -3195,7 +3195,7 @@ func InternalValue() GoogleApphubWorkloadAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubWorkloadAttributesOperatorOwnersList
 ```
@@ -3355,7 +3355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubWorkloadAttributesOperatorOwnersOutputReference
 ```
@@ -3673,7 +3673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubWorkloadAttributesOutputReference
 ```
@@ -4132,7 +4132,7 @@ func InternalValue() GoogleApphubWorkloadAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApphubWorkloadTimeoutsOutputReference
 ```
@@ -4468,7 +4468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadWorkloadPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubWorkloadWorkloadPropertiesList
 ```
@@ -4617,7 +4617,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadWorkloadPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubWorkloadWorkloadPropertiesOutputReference
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() GoogleApphubWorkloadWorkloadProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadWorkloadReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApphubWorkloadWorkloadReferenceList
 ```
@@ -5066,7 +5066,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApphubWorkload.GoogleApphubWorkloadWorkloadReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapphubworkload"
 
 googleapphubworkload.NewGoogleApphubWorkloadWorkloadReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApphubWorkloadWorkloadReferenceOutputReference
 ```
