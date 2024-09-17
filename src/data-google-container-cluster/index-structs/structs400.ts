@@ -1716,6 +1716,11 @@ export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends
     return this.getBooleanAttribute('spot');
   }
 
+  // storage_pools - computed: true, optional: false, required: false
+  public get storagePools() {
+    return this.getListAttribute('storage_pools');
+  }
+
   // tags - computed: true, optional: false, required: false
   public get tags() {
     return this.getListAttribute('tags');
