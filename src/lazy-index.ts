@@ -236,6 +236,7 @@ Object.defineProperty(exports, 'googleComputeFirewall', { get: function () { ret
 Object.defineProperty(exports, 'googleComputeFirewallPolicy', { get: function () { return require('./google-compute-firewall-policy'); } });
 Object.defineProperty(exports, 'googleComputeFirewallPolicyAssociation', { get: function () { return require('./google-compute-firewall-policy-association'); } });
 Object.defineProperty(exports, 'googleComputeFirewallPolicyRule', { get: function () { return require('./google-compute-firewall-policy-rule'); } });
+Object.defineProperty(exports, 'googleComputeFirewallPolicyWithRules', { get: function () { return require('./google-compute-firewall-policy-with-rules'); } });
 Object.defineProperty(exports, 'googleComputeForwardingRule', { get: function () { return require('./google-compute-forwarding-rule'); } });
 Object.defineProperty(exports, 'googleComputeGlobalAddress', { get: function () { return require('./google-compute-global-address'); } });
 Object.defineProperty(exports, 'googleComputeGlobalForwardingRule', { get: function () { return require('./google-compute-global-forwarding-rule'); } });
@@ -398,6 +399,7 @@ Object.defineProperty(exports, 'googleDataLossPreventionJobTrigger', { get: func
 Object.defineProperty(exports, 'googleDataLossPreventionStoredInfoType', { get: function () { return require('./google-data-loss-prevention-stored-info-type'); } });
 Object.defineProperty(exports, 'googleDataPipelinePipeline', { get: function () { return require('./google-data-pipeline-pipeline'); } });
 Object.defineProperty(exports, 'googleDatabaseMigrationServiceConnectionProfile', { get: function () { return require('./google-database-migration-service-connection-profile'); } });
+Object.defineProperty(exports, 'googleDatabaseMigrationServiceMigrationJob', { get: function () { return require('./google-database-migration-service-migration-job'); } });
 Object.defineProperty(exports, 'googleDatabaseMigrationServicePrivateConnection', { get: function () { return require('./google-database-migration-service-private-connection'); } });
 Object.defineProperty(exports, 'googleDataflowFlexTemplateJob', { get: function () { return require('./google-dataflow-flex-template-job'); } });
 Object.defineProperty(exports, 'googleDataflowJob', { get: function () { return require('./google-dataflow-job'); } });
@@ -484,6 +486,7 @@ Object.defineProperty(exports, 'googleDiscoveryEngineChatEngine', { get: functio
 Object.defineProperty(exports, 'googleDiscoveryEngineDataStore', { get: function () { return require('./google-discovery-engine-data-store'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineSchema', { get: function () { return require('./google-discovery-engine-schema'); } });
 Object.defineProperty(exports, 'googleDiscoveryEngineSearchEngine', { get: function () { return require('./google-discovery-engine-search-engine'); } });
+Object.defineProperty(exports, 'googleDiscoveryEngineTargetSite', { get: function () { return require('./google-discovery-engine-target-site'); } });
 Object.defineProperty(exports, 'googleDnsManagedZone', { get: function () { return require('./google-dns-managed-zone'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamBinding', { get: function () { return require('./google-dns-managed-zone-iam-binding'); } });
 Object.defineProperty(exports, 'googleDnsManagedZoneIamMember', { get: function () { return require('./google-dns-managed-zone-iam-member'); } });
@@ -599,6 +602,7 @@ Object.defineProperty(exports, 'googleHealthcareHl7V2Store', { get: function () 
 Object.defineProperty(exports, 'googleHealthcareHl7V2StoreIamBinding', { get: function () { return require('./google-healthcare-hl7-v2-store-iam-binding'); } });
 Object.defineProperty(exports, 'googleHealthcareHl7V2StoreIamMember', { get: function () { return require('./google-healthcare-hl7-v2-store-iam-member'); } });
 Object.defineProperty(exports, 'googleHealthcareHl7V2StoreIamPolicy', { get: function () { return require('./google-healthcare-hl7-v2-store-iam-policy'); } });
+Object.defineProperty(exports, 'googleHealthcareWorkspace', { get: function () { return require('./google-healthcare-workspace'); } });
 Object.defineProperty(exports, 'googleIamAccessBoundaryPolicy', { get: function () { return require('./google-iam-access-boundary-policy'); } });
 Object.defineProperty(exports, 'googleIamDenyPolicy', { get: function () { return require('./google-iam-deny-policy'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePool', { get: function () { return require('./google-iam-workforce-pool'); } });
@@ -827,6 +831,7 @@ Object.defineProperty(exports, 'googleRuntimeconfigVariable', { get: function ()
 Object.defineProperty(exports, 'googleSccEventThreatDetectionCustomModule', { get: function () { return require('./google-scc-event-threat-detection-custom-module'); } });
 Object.defineProperty(exports, 'googleSccFolderCustomModule', { get: function () { return require('./google-scc-folder-custom-module'); } });
 Object.defineProperty(exports, 'googleSccFolderNotificationConfig', { get: function () { return require('./google-scc-folder-notification-config'); } });
+Object.defineProperty(exports, 'googleSccFolderSccBigQueryExport', { get: function () { return require('./google-scc-folder-scc-big-query-export'); } });
 Object.defineProperty(exports, 'googleSccManagementFolderSecurityHealthAnalyticsCustomModule', { get: function () { return require('./google-scc-management-folder-security-health-analytics-custom-module'); } });
 Object.defineProperty(exports, 'googleSccManagementOrganizationEventThreatDetectionCustomModule', { get: function () { return require('./google-scc-management-organization-event-threat-detection-custom-module'); } });
 Object.defineProperty(exports, 'googleSccManagementOrganizationSecurityHealthAnalyticsCustomModule', { get: function () { return require('./google-scc-management-organization-security-health-analytics-custom-module'); } });
@@ -834,8 +839,10 @@ Object.defineProperty(exports, 'googleSccManagementProjectSecurityHealthAnalytic
 Object.defineProperty(exports, 'googleSccMuteConfig', { get: function () { return require('./google-scc-mute-config'); } });
 Object.defineProperty(exports, 'googleSccNotificationConfig', { get: function () { return require('./google-scc-notification-config'); } });
 Object.defineProperty(exports, 'googleSccOrganizationCustomModule', { get: function () { return require('./google-scc-organization-custom-module'); } });
+Object.defineProperty(exports, 'googleSccOrganizationSccBigQueryExport', { get: function () { return require('./google-scc-organization-scc-big-query-export'); } });
 Object.defineProperty(exports, 'googleSccProjectCustomModule', { get: function () { return require('./google-scc-project-custom-module'); } });
 Object.defineProperty(exports, 'googleSccProjectNotificationConfig', { get: function () { return require('./google-scc-project-notification-config'); } });
+Object.defineProperty(exports, 'googleSccProjectSccBigQueryExport', { get: function () { return require('./google-scc-project-scc-big-query-export'); } });
 Object.defineProperty(exports, 'googleSccSource', { get: function () { return require('./google-scc-source'); } });
 Object.defineProperty(exports, 'googleSccSourceIamBinding', { get: function () { return require('./google-scc-source-iam-binding'); } });
 Object.defineProperty(exports, 'googleSccSourceIamMember', { get: function () { return require('./google-scc-source-iam-member'); } });
@@ -845,6 +852,7 @@ Object.defineProperty(exports, 'googleSccV2FolderNotificationConfig', { get: fun
 Object.defineProperty(exports, 'googleSccV2FolderSccBigQueryExport', { get: function () { return require('./google-scc-v2-folder-scc-big-query-export'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationMuteConfig', { get: function () { return require('./google-scc-v2-organization-mute-config'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationNotificationConfig', { get: function () { return require('./google-scc-v2-organization-notification-config'); } });
+Object.defineProperty(exports, 'googleSccV2OrganizationSccBigQueryExport', { get: function () { return require('./google-scc-v2-organization-scc-big-query-export'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationSccBigQueryExports', { get: function () { return require('./google-scc-v2-organization-scc-big-query-exports'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationSource', { get: function () { return require('./google-scc-v2-organization-source'); } });
 Object.defineProperty(exports, 'googleSccV2OrganizationSourceIamBinding', { get: function () { return require('./google-scc-v2-organization-source-iam-binding'); } });
@@ -853,6 +861,11 @@ Object.defineProperty(exports, 'googleSccV2OrganizationSourceIamPolicy', { get: 
 Object.defineProperty(exports, 'googleSccV2ProjectMuteConfig', { get: function () { return require('./google-scc-v2-project-mute-config'); } });
 Object.defineProperty(exports, 'googleSccV2ProjectNotificationConfig', { get: function () { return require('./google-scc-v2-project-notification-config'); } });
 Object.defineProperty(exports, 'googleSccV2ProjectSccBigQueryExport', { get: function () { return require('./google-scc-v2-project-scc-big-query-export'); } });
+Object.defineProperty(exports, 'googleSecretManagerRegionalSecret', { get: function () { return require('./google-secret-manager-regional-secret'); } });
+Object.defineProperty(exports, 'googleSecretManagerRegionalSecretIamBinding', { get: function () { return require('./google-secret-manager-regional-secret-iam-binding'); } });
+Object.defineProperty(exports, 'googleSecretManagerRegionalSecretIamMember', { get: function () { return require('./google-secret-manager-regional-secret-iam-member'); } });
+Object.defineProperty(exports, 'googleSecretManagerRegionalSecretIamPolicy', { get: function () { return require('./google-secret-manager-regional-secret-iam-policy'); } });
+Object.defineProperty(exports, 'googleSecretManagerRegionalSecretVersion', { get: function () { return require('./google-secret-manager-regional-secret-version'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecret', { get: function () { return require('./google-secret-manager-secret'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecretIamBinding', { get: function () { return require('./google-secret-manager-secret-iam-binding'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecretIamMember', { get: function () { return require('./google-secret-manager-secret-iam-member'); } });
@@ -887,10 +900,12 @@ Object.defineProperty(exports, 'googleServiceNetworkingConnection', { get: funct
 Object.defineProperty(exports, 'googleServiceNetworkingPeeredDnsDomain', { get: function () { return require('./google-service-networking-peered-dns-domain'); } });
 Object.defineProperty(exports, 'googleServiceNetworkingVpcServiceControls', { get: function () { return require('./google-service-networking-vpc-service-controls'); } });
 Object.defineProperty(exports, 'googleServiceUsageConsumerQuotaOverride', { get: function () { return require('./google-service-usage-consumer-quota-override'); } });
+Object.defineProperty(exports, 'googleSiteVerificationWebResource', { get: function () { return require('./google-site-verification-web-resource'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepository', { get: function () { return require('./google-sourcerepo-repository'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepositoryIamBinding', { get: function () { return require('./google-sourcerepo-repository-iam-binding'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepositoryIamMember', { get: function () { return require('./google-sourcerepo-repository-iam-member'); } });
 Object.defineProperty(exports, 'googleSourcerepoRepositoryIamPolicy', { get: function () { return require('./google-sourcerepo-repository-iam-policy'); } });
+Object.defineProperty(exports, 'googleSpannerBackupSchedule', { get: function () { return require('./google-spanner-backup-schedule'); } });
 Object.defineProperty(exports, 'googleSpannerDatabase', { get: function () { return require('./google-spanner-database'); } });
 Object.defineProperty(exports, 'googleSpannerDatabaseIamBinding', { get: function () { return require('./google-spanner-database-iam-binding'); } });
 Object.defineProperty(exports, 'googleSpannerDatabaseIamMember', { get: function () { return require('./google-spanner-database-iam-member'); } });
@@ -1234,6 +1249,9 @@ Object.defineProperty(exports, 'dataGoogleRuntimeconfigConfigIamPolicy', { get: 
 Object.defineProperty(exports, 'dataGoogleRuntimeconfigVariable', { get: function () { return require('./data-google-runtimeconfig-variable'); } });
 Object.defineProperty(exports, 'dataGoogleSccSourceIamPolicy', { get: function () { return require('./data-google-scc-source-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleSccV2OrganizationSourceIamPolicy', { get: function () { return require('./data-google-scc-v2-organization-source-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleSecretManagerRegionalSecret', { get: function () { return require('./data-google-secret-manager-regional-secret'); } });
+Object.defineProperty(exports, 'dataGoogleSecretManagerRegionalSecretIamPolicy', { get: function () { return require('./data-google-secret-manager-regional-secret-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleSecretManagerRegionalSecretVersion', { get: function () { return require('./data-google-secret-manager-regional-secret-version'); } });
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecret', { get: function () { return require('./data-google-secret-manager-secret'); } });
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecretIamPolicy', { get: function () { return require('./data-google-secret-manager-secret-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleSecretManagerSecretVersion', { get: function () { return require('./data-google-secret-manager-secret-version'); } });
