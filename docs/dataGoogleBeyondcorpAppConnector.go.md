@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnector(scope Construct, id *string, config DataGoogleBeyondcorpAppConnectorConfig) DataGoogleBeyondcorpAppConnector
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorPrincipalInfo {
 
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleb
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 &datagooglebeyondcorpappconnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount {
 
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleb
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoList
 ```
@@ -1060,7 +1060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference
 ```
@@ -1338,7 +1338,7 @@ func InternalValue() DataGoogleBeyondcorpAppConnectorPrincipalInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList
 ```
@@ -1487,7 +1487,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebeyondcorpappconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglebeyondcorpappconnector"
 
 datagooglebeyondcorpappconnector.NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference
 ```
