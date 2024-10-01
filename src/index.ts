@@ -313,6 +313,7 @@ export * as googleComputeRegionNetworkEndpointGroup from './google-compute-regio
 export * as googleComputeRegionNetworkFirewallPolicy from './google-compute-region-network-firewall-policy';
 export * as googleComputeRegionNetworkFirewallPolicyAssociation from './google-compute-region-network-firewall-policy-association';
 export * as googleComputeRegionNetworkFirewallPolicyRule from './google-compute-region-network-firewall-policy-rule';
+export * as googleComputeRegionNetworkFirewallPolicyWithRules from './google-compute-region-network-firewall-policy-with-rules';
 export * as googleComputeRegionPerInstanceConfig from './google-compute-region-per-instance-config';
 export * as googleComputeRegionSecurityPolicy from './google-compute-region-security-policy';
 export * as googleComputeRegionSecurityPolicyRule from './google-compute-region-security-policy-rule';
@@ -329,6 +330,7 @@ export * as googleComputeRoute from './google-compute-route';
 export * as googleComputeRouter from './google-compute-router';
 export * as googleComputeRouterInterface from './google-compute-router-interface';
 export * as googleComputeRouterNat from './google-compute-router-nat';
+export * as googleComputeRouterNatAddress from './google-compute-router-nat-address';
 export * as googleComputeRouterPeer from './google-compute-router-peer';
 export * as googleComputeRouterRoutePolicy from './google-compute-router-route-policy';
 export * as googleComputeSecurityPolicy from './google-compute-security-policy';
@@ -680,6 +682,7 @@ export * as googleLoggingFolderExclusion from './google-logging-folder-exclusion
 export * as googleLoggingFolderSettings from './google-logging-folder-settings';
 export * as googleLoggingFolderSink from './google-logging-folder-sink';
 export * as googleLoggingLinkedDataset from './google-logging-linked-dataset';
+export * as googleLoggingLogScope from './google-logging-log-scope';
 export * as googleLoggingLogView from './google-logging-log-view';
 export * as googleLoggingLogViewIamBinding from './google-logging-log-view-iam-binding';
 export * as googleLoggingLogViewIamMember from './google-logging-log-view-iam-member';
@@ -1104,6 +1107,7 @@ export * as dataGoogleComputeRegionBackendServiceIamPolicy from './data-google-c
 export * as dataGoogleComputeRegionDisk from './data-google-compute-region-disk';
 export * as dataGoogleComputeRegionDiskIamPolicy from './data-google-compute-region-disk-iam-policy';
 export * as dataGoogleComputeRegionInstanceGroup from './data-google-compute-region-instance-group';
+export * as dataGoogleComputeRegionInstanceGroupManager from './data-google-compute-region-instance-group-manager';
 export * as dataGoogleComputeRegionInstanceTemplate from './data-google-compute-region-instance-template';
 export * as dataGoogleComputeRegionNetworkEndpointGroup from './data-google-compute-region-network-endpoint-group';
 export * as dataGoogleComputeRegionSslCertificate from './data-google-compute-region-ssl-certificate';
@@ -1233,6 +1237,7 @@ export * as dataGoogleOrganizationIamPolicy from './data-google-organization-iam
 export * as dataGooglePrivatecaCaPoolIamPolicy from './data-google-privateca-ca-pool-iam-policy';
 export * as dataGooglePrivatecaCertificateAuthority from './data-google-privateca-certificate-authority';
 export * as dataGooglePrivatecaCertificateTemplateIamPolicy from './data-google-privateca-certificate-template-iam-policy';
+export * as dataGooglePrivilegedAccessManagerEntitlement from './data-google-privileged-access-manager-entitlement';
 export * as dataGoogleProject from './data-google-project';
 export * as dataGoogleProjectIamPolicy from './data-google-project-iam-policy';
 export * as dataGoogleProjectOrganizationPolicy from './data-google-project-organization-policy';
@@ -1252,6 +1257,8 @@ export * as dataGoogleSccV2OrganizationSourceIamPolicy from './data-google-scc-v
 export * as dataGoogleSecretManagerRegionalSecret from './data-google-secret-manager-regional-secret';
 export * as dataGoogleSecretManagerRegionalSecretIamPolicy from './data-google-secret-manager-regional-secret-iam-policy';
 export * as dataGoogleSecretManagerRegionalSecretVersion from './data-google-secret-manager-regional-secret-version';
+export * as dataGoogleSecretManagerRegionalSecretVersionAccess from './data-google-secret-manager-regional-secret-version-access';
+export * as dataGoogleSecretManagerRegionalSecrets from './data-google-secret-manager-regional-secrets';
 export * as dataGoogleSecretManagerSecret from './data-google-secret-manager-secret';
 export * as dataGoogleSecretManagerSecretIamPolicy from './data-google-secret-manager-secret-iam-policy';
 export * as dataGoogleSecretManagerSecretVersion from './data-google-secret-manager-secret-version';
