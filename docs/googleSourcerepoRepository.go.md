@@ -4,12 +4,12 @@
 
 ### GoogleSourcerepoRepository <a name="GoogleSourcerepoRepository" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository google_sourcerepo_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository google_sourcerepo_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.NewGoogleSourcerepoRepository(scope Construct, id *string, config GoogleSourcerepoRepositoryConfig) GoogleSourcerepoRepository
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.putPubsubConfigs">PutPubsubConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetCreateIgnoreAlreadyExists">ResetCreateIgnoreAlreadyExists</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetPubsubConfigs">ResetPubsubConfigs</a></code> | *No description.* |
@@ -394,6 +395,12 @@ func PutTimeouts(value GoogleSourcerepoRepositoryTimeouts)
 
 ---
 
+##### `ResetCreateIgnoreAlreadyExists` <a name="ResetCreateIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetCreateIgnoreAlreadyExists"></a>
+
+```go
+func ResetCreateIgnoreAlreadyExists()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.resetId"></a>
 
 ```go
@@ -432,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.GoogleSourcerepoRepository_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.GoogleSourcerepoRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ googlesourcereporepository.GoogleSourcerepoRepository_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.GoogleSourcerepoRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ googlesourcereporepository.GoogleSourcerepoRepository_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.GoogleSourcerepoRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +528,7 @@ The construct id used in the generated config for the GoogleSourcerepoRepository
 
 The id of the existing GoogleSourcerepoRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -555,11 +562,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference">GoogleSourcerepoRepositoryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.url">Url</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.createIgnoreAlreadyExistsInput">CreateIgnoreAlreadyExistsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.pubsubConfigsInput">PubsubConfigsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.createIgnoreAlreadyExists">CreateIgnoreAlreadyExists</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.project">Project</a></code> | <code>*string</code> | *No description.* |
@@ -748,6 +757,16 @@ func Url() *string
 
 ---
 
+##### `CreateIgnoreAlreadyExistsInput`<sup>Optional</sup> <a name="CreateIgnoreAlreadyExistsInput" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.createIgnoreAlreadyExistsInput"></a>
+
+```go
+func CreateIgnoreAlreadyExistsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.idInput"></a>
 
 ```go
@@ -792,6 +811,16 @@ func PubsubConfigsInput() interface{}
 
 ```go
 func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CreateIgnoreAlreadyExists`<sup>Required</sup> <a name="CreateIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepository.property.createIgnoreAlreadyExists"></a>
+
+```go
+func CreateIgnoreAlreadyExists() interface{}
 ```
 
 - *Type:* interface{}
@@ -853,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 &googlesourcereporepository.GoogleSourcerepoRepositoryConfig {
 	Connection: interface{},
@@ -864,10 +893,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourc
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	CreateIgnoreAlreadyExists: interface{},
 	Id: *string,
 	Project: *string,
 	PubsubConfigs: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts,
 }
 ```
 
@@ -883,8 +913,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourc
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.name">Name</a></code> | <code>*string</code> | Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'. |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.createIgnoreAlreadyExists">CreateIgnoreAlreadyExists</a></code> | <code>interface{}</code> | If set to true, skip repository creation if a repository with the same name already exists. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.pubsubConfigs">PubsubConfigs</a></code> | <code>interface{}</code> | pubsub_configs block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts">GoogleSourcerepoRepositoryTimeouts</a></code> | timeouts block. |
 
@@ -970,7 +1001,21 @@ Name *string
 
 Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#name GoogleSourcerepoRepository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#name GoogleSourcerepoRepository#name}
+
+---
+
+##### `CreateIgnoreAlreadyExists`<sup>Optional</sup> <a name="CreateIgnoreAlreadyExists" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryConfig.property.createIgnoreAlreadyExists"></a>
+
+```go
+CreateIgnoreAlreadyExists interface{}
+```
+
+- *Type:* interface{}
+
+If set to true, skip repository creation if a repository with the same name already exists.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#create_ignore_already_exists GoogleSourcerepoRepository#create_ignore_already_exists}
 
 ---
 
@@ -982,7 +1027,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -997,7 +1042,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}.
 
 ---
 
@@ -1011,7 +1056,7 @@ PubsubConfigs interface{}
 
 pubsub_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#pubsub_configs GoogleSourcerepoRepository#pubsub_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#pubsub_configs GoogleSourcerepoRepository#pubsub_configs}
 
 ---
 
@@ -1025,7 +1070,7 @@ Timeouts GoogleSourcerepoRepositoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#timeouts GoogleSourcerepoRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#timeouts GoogleSourcerepoRepository#timeouts}
 
 ---
 
@@ -1034,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 &googlesourcereporepository.GoogleSourcerepoRepositoryPubsubConfigs {
 	MessageFormat: *string,
@@ -1048,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourc
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigs.property.messageFormat">MessageFormat</a></code> | <code>*string</code> | The format of the Cloud Pub/Sub messages. |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigs.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigs.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigs.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>*string</code> | Email address of the service account used for publishing Cloud Pub/Sub messages. |
 
 ---
@@ -1066,7 +1111,7 @@ The format of the Cloud Pub/Sub messages.
 * PROTOBUF: The message payload is a serialized protocol buffer of SourceRepoEvent.
 * JSON: The message payload is a JSON string of SourceRepoEvent. Possible values: ["PROTOBUF", "JSON"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#message_format GoogleSourcerepoRepository#message_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#message_format GoogleSourcerepoRepository#message_format}
 
 ---
 
@@ -1078,7 +1123,7 @@ Topic *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}.
 
 ---
 
@@ -1096,7 +1141,7 @@ This service account needs to be in the same project as the PubsubConfig. When a
 the caller needs to have iam.serviceAccounts.actAs permission on this service account.
 If unspecified, it defaults to the compute engine default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#service_account_email GoogleSourcerepoRepository#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#service_account_email GoogleSourcerepoRepository#service_account_email}
 
 ---
 
@@ -1105,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 &googlesourcereporepository.GoogleSourcerepoRepositoryTimeouts {
 	Create: *string,
@@ -1118,9 +1163,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}. |
 
 ---
 
@@ -1132,7 +1177,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}.
 
 ---
 
@@ -1144,7 +1189,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}.
 
 ---
 
@@ -1156,7 +1201,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}.
 
 ---
 
@@ -1167,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.NewGoogleSourcerepoRepositoryPubsubConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSourcerepoRepositoryPubsubConfigsList
 ```
@@ -1327,7 +1372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryPubsubConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.NewGoogleSourcerepoRepositoryPubsubConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSourcerepoRepositoryPubsubConfigsOutputReference
 ```
@@ -1667,7 +1712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSourcerepoRepository.GoogleSourcerepoRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesourcereporepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesourcereporepository"
 
 googlesourcereporepository.NewGoogleSourcerepoRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSourcerepoRepositoryTimeoutsOutputReference
 ```

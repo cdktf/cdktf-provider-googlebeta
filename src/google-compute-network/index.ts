@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,32 +15,51 @@ export interface GoogleComputeNetworkConfig extends cdktf.TerraformMetaArguments
   * When set to 'false', the network is created in "custom subnet mode" so
   * the user can explicitly connect subnetwork resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
   */
   readonly autoCreateSubnetworks?: boolean | cdktf.IResolvable;
+  /**
+  * Enables/disables the comparison of MED across routes with different Neighbor ASNs.
+  * This value can only be set if the --bgp-best-path-selection-mode is STANDARD
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
+  */
+  readonly bgpAlwaysCompareMed?: boolean | cdktf.IResolvable;
+  /**
+  * The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
+  */
+  readonly bgpBestPathSelectionMode?: string;
+  /**
+  * Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#bgp_inter_region_cost GoogleComputeNetwork#bgp_inter_region_cost}
+  */
+  readonly bgpInterRegionCost?: string;
   /**
   * If set to 'true', default routes ('0.0.0.0/0') will be deleted
   * immediately after network creation. Defaults to 'false'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
   */
   readonly deleteDefaultRoutesOnCreate?: boolean | cdktf.IResolvable;
   /**
   * An optional description of this resource. The resource must be
   * recreated to modify this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
   */
   readonly description?: string;
   /**
   * Enable ULA internal ipv6 on this network. Enabling this feature will assign
   * a /48 from google defined ULA prefix fd20::/20.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
   */
   readonly enableUlaInternalIpv6?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,7 +72,7 @@ export interface GoogleComputeNetworkConfig extends cdktf.TerraformMetaArguments
   * fail if the speficied /48 is already in used by another resource.
   * If the field is not speficied, then a /48 range will be randomly allocated from fd20::/20 and returned via this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#internal_ipv6_range GoogleComputeNetwork#internal_ipv6_range}
   */
   readonly internalIpv6Range?: string;
   /**
@@ -68,7 +82,7 @@ export interface GoogleComputeNetworkConfig extends cdktf.TerraformMetaArguments
   * with an ICMP 'Fragmentation-Needed' message if the packets are routed to the Internet or other VPCs
   * with varying MTUs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#mtu GoogleComputeNetwork#mtu}
   */
   readonly mtu?: number;
   /**
@@ -80,17 +94,17 @@ export interface GoogleComputeNetworkConfig extends cdktf.TerraformMetaArguments
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#name GoogleComputeNetwork#name}
   */
   readonly name: string;
   /**
   * Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#network_firewall_policy_enforcement_order GoogleComputeNetwork#network_firewall_policy_enforcement_order}
   */
   readonly networkFirewallPolicyEnforcementOrder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#project GoogleComputeNetwork#project}
   */
   readonly project?: string;
   /**
@@ -100,27 +114,27 @@ export interface GoogleComputeNetworkConfig extends cdktf.TerraformMetaArguments
   * this network's cloud routers will advertise routes with all
   * subnetworks of this network, across regions. Possible values: ["REGIONAL", "GLOBAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#routing_mode GoogleComputeNetwork#routing_mode}
   */
   readonly routingMode?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkTimeouts;
 }
 export interface GoogleComputeNetworkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#create GoogleComputeNetwork#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#delete GoogleComputeNetwork#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#update GoogleComputeNetwork#update}
   */
   readonly update?: string;
 }
@@ -272,7 +286,7 @@ export class GoogleComputeNetworkTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network google_compute_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network google_compute_network}
 */
 export class GoogleComputeNetwork extends cdktf.TerraformResource {
 
@@ -288,7 +302,7 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeNetwork to import
-  * @param importFromId The id of the existing GoogleComputeNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -300,7 +314,7 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network google_compute_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network google_compute_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -311,7 +325,7 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_network',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.5.0',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -323,6 +337,9 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._autoCreateSubnetworks = config.autoCreateSubnetworks;
+    this._bgpAlwaysCompareMed = config.bgpAlwaysCompareMed;
+    this._bgpBestPathSelectionMode = config.bgpBestPathSelectionMode;
+    this._bgpInterRegionCost = config.bgpInterRegionCost;
     this._deleteDefaultRoutesOnCreate = config.deleteDefaultRoutesOnCreate;
     this._description = config.description;
     this._enableUlaInternalIpv6 = config.enableUlaInternalIpv6;
@@ -354,6 +371,54 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoCreateSubnetworksInput() {
     return this._autoCreateSubnetworks;
+  }
+
+  // bgp_always_compare_med - computed: true, optional: true, required: false
+  private _bgpAlwaysCompareMed?: boolean | cdktf.IResolvable; 
+  public get bgpAlwaysCompareMed() {
+    return this.getBooleanAttribute('bgp_always_compare_med');
+  }
+  public set bgpAlwaysCompareMed(value: boolean | cdktf.IResolvable) {
+    this._bgpAlwaysCompareMed = value;
+  }
+  public resetBgpAlwaysCompareMed() {
+    this._bgpAlwaysCompareMed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpAlwaysCompareMedInput() {
+    return this._bgpAlwaysCompareMed;
+  }
+
+  // bgp_best_path_selection_mode - computed: true, optional: true, required: false
+  private _bgpBestPathSelectionMode?: string; 
+  public get bgpBestPathSelectionMode() {
+    return this.getStringAttribute('bgp_best_path_selection_mode');
+  }
+  public set bgpBestPathSelectionMode(value: string) {
+    this._bgpBestPathSelectionMode = value;
+  }
+  public resetBgpBestPathSelectionMode() {
+    this._bgpBestPathSelectionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpBestPathSelectionModeInput() {
+    return this._bgpBestPathSelectionMode;
+  }
+
+  // bgp_inter_region_cost - computed: true, optional: true, required: false
+  private _bgpInterRegionCost?: string; 
+  public get bgpInterRegionCost() {
+    return this.getStringAttribute('bgp_inter_region_cost');
+  }
+  public set bgpInterRegionCost(value: string) {
+    this._bgpInterRegionCost = value;
+  }
+  public resetBgpInterRegionCost() {
+    this._bgpInterRegionCost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpInterRegionCostInput() {
+    return this._bgpInterRegionCost;
   }
 
   // delete_default_routes_on_create - computed: false, optional: true, required: false
@@ -551,6 +616,9 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_create_subnetworks: cdktf.booleanToTerraform(this._autoCreateSubnetworks),
+      bgp_always_compare_med: cdktf.booleanToTerraform(this._bgpAlwaysCompareMed),
+      bgp_best_path_selection_mode: cdktf.stringToTerraform(this._bgpBestPathSelectionMode),
+      bgp_inter_region_cost: cdktf.stringToTerraform(this._bgpInterRegionCost),
       delete_default_routes_on_create: cdktf.booleanToTerraform(this._deleteDefaultRoutesOnCreate),
       description: cdktf.stringToTerraform(this._description),
       enable_ula_internal_ipv6: cdktf.booleanToTerraform(this._enableUlaInternalIpv6),
@@ -572,6 +640,24 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      bgp_always_compare_med: {
+        value: cdktf.booleanToHclTerraform(this._bgpAlwaysCompareMed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      bgp_best_path_selection_mode: {
+        value: cdktf.stringToHclTerraform(this._bgpBestPathSelectionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bgp_inter_region_cost: {
+        value: cdktf.stringToHclTerraform(this._bgpInterRegionCost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       delete_default_routes_on_create: {
         value: cdktf.booleanToHclTerraform(this._deleteDefaultRoutesOnCreate),
