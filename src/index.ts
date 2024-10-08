@@ -447,6 +447,7 @@ export * as googleDataprocAutoscalingPolicy from './google-dataproc-autoscaling-
 export * as googleDataprocAutoscalingPolicyIamBinding from './google-dataproc-autoscaling-policy-iam-binding';
 export * as googleDataprocAutoscalingPolicyIamMember from './google-dataproc-autoscaling-policy-iam-member';
 export * as googleDataprocAutoscalingPolicyIamPolicy from './google-dataproc-autoscaling-policy-iam-policy';
+export * as googleDataprocBatch from './google-dataproc-batch';
 export * as googleDataprocCluster from './google-dataproc-cluster';
 export * as googleDataprocClusterIamBinding from './google-dataproc-cluster-iam-binding';
 export * as googleDataprocClusterIamMember from './google-dataproc-cluster-iam-member';
@@ -604,6 +605,7 @@ export * as googleHealthcareHl7V2Store from './google-healthcare-hl7-v2-store';
 export * as googleHealthcareHl7V2StoreIamBinding from './google-healthcare-hl7-v2-store-iam-binding';
 export * as googleHealthcareHl7V2StoreIamMember from './google-healthcare-hl7-v2-store-iam-member';
 export * as googleHealthcareHl7V2StoreIamPolicy from './google-healthcare-hl7-v2-store-iam-policy';
+export * as googleHealthcarePipelineJob from './google-healthcare-pipeline-job';
 export * as googleHealthcareWorkspace from './google-healthcare-workspace';
 export * as googleIamAccessBoundaryPolicy from './google-iam-access-boundary-policy';
 export * as googleIamDenyPolicy from './google-iam-deny-policy';
@@ -903,6 +905,7 @@ export * as googleServiceNetworkingConnection from './google-service-networking-
 export * as googleServiceNetworkingPeeredDnsDomain from './google-service-networking-peered-dns-domain';
 export * as googleServiceNetworkingVpcServiceControls from './google-service-networking-vpc-service-controls';
 export * as googleServiceUsageConsumerQuotaOverride from './google-service-usage-consumer-quota-override';
+export * as googleSiteVerificationOwner from './google-site-verification-owner';
 export * as googleSiteVerificationWebResource from './google-site-verification-web-resource';
 export * as googleSourcerepoRepository from './google-sourcerepo-repository';
 export * as googleSourcerepoRepositoryIamBinding from './google-sourcerepo-repository-iam-binding';
