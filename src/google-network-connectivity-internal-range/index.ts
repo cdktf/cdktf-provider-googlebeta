@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleNetworkConnectivityInternalRangeConfig extends cdktf.Terr
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#description GoogleNetworkConnectivityInternalRange#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#description GoogleNetworkConnectivityInternalRange#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#id GoogleNetworkConnectivityInternalRange#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#id GoogleNetworkConnectivityInternalRange#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface GoogleNetworkConnectivityInternalRangeConfig extends cdktf.Terr
   /**
   * The IP range that this internal range defines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#ip_cidr_range GoogleNetworkConnectivityInternalRange#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#ip_cidr_range GoogleNetworkConnectivityInternalRange#ip_cidr_range}
   */
   readonly ipCidrRange?: string;
   /**
@@ -38,75 +33,202 @@ export interface GoogleNetworkConnectivityInternalRangeConfig extends cdktf.Terr
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#labels GoogleNetworkConnectivityInternalRange#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#labels GoogleNetworkConnectivityInternalRange#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the policy based route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#name GoogleNetworkConnectivityInternalRange#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#name GoogleNetworkConnectivityInternalRange#name}
   */
   readonly name: string;
   /**
   * Fully-qualified URL of the network that this route applies to, for example: projects/my-project/global/networks/my-network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#network GoogleNetworkConnectivityInternalRange#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#network GoogleNetworkConnectivityInternalRange#network}
   */
   readonly network: string;
   /**
   * Optional. Types of resources that are allowed to overlap with the current internal range. Possible values: ["OVERLAP_ROUTE_RANGE", "OVERLAP_EXISTING_SUBNET_RANGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#overlaps GoogleNetworkConnectivityInternalRange#overlaps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#overlaps GoogleNetworkConnectivityInternalRange#overlaps}
   */
   readonly overlaps?: string[];
   /**
   * The type of peering set for this internal range. Possible values: ["FOR_SELF", "FOR_PEER", "NOT_SHARED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#peering GoogleNetworkConnectivityInternalRange#peering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#peering GoogleNetworkConnectivityInternalRange#peering}
   */
   readonly peering: string;
   /**
   * An alternate to ipCidrRange. Can be set when trying to create a reservation that automatically finds a free range of the given size.
   * If both ipCidrRange and prefixLength are set, there is an error if the range sizes do not match. Can also be used during updates to change the range size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#prefix_length GoogleNetworkConnectivityInternalRange#prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#prefix_length GoogleNetworkConnectivityInternalRange#prefix_length}
   */
   readonly prefixLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#project GoogleNetworkConnectivityInternalRange#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#project GoogleNetworkConnectivityInternalRange#project}
   */
   readonly project?: string;
   /**
   * Optional. Can be set to narrow down or pick a different address space while searching for a free range.
   * If not set, defaults to the "10.0.0.0/8" address space. This can be used to search in other rfc-1918 address spaces like "172.16.0.0/12" and "192.168.0.0/16" or non-rfc-1918 address spaces used in the VPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#target_cidr_range GoogleNetworkConnectivityInternalRange#target_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#target_cidr_range GoogleNetworkConnectivityInternalRange#target_cidr_range}
   */
   readonly targetCidrRange?: string[];
   /**
-  * The type of usage set for this InternalRange. Possible values: ["FOR_VPC", "EXTERNAL_TO_VPC"]
+  * The type of usage set for this InternalRange. Possible values: ["FOR_VPC", "EXTERNAL_TO_VPC", "FOR_MIGRATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#usage GoogleNetworkConnectivityInternalRange#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#usage GoogleNetworkConnectivityInternalRange#usage}
   */
   readonly usage: string;
   /**
+  * migration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#migration GoogleNetworkConnectivityInternalRange#migration}
+  */
+  readonly migration?: GoogleNetworkConnectivityInternalRangeMigration;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#timeouts GoogleNetworkConnectivityInternalRange#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#timeouts GoogleNetworkConnectivityInternalRange#timeouts}
   */
   readonly timeouts?: GoogleNetworkConnectivityInternalRangeTimeouts;
 }
+export interface GoogleNetworkConnectivityInternalRangeMigration {
+  /**
+  * Resource path as an URI of the source resource, for example a subnet.
+  * The project for the source resource should match the project for the
+  * InternalRange.
+  * An example /projects/{project}/regions/{region}/subnetworks/{subnet}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#source GoogleNetworkConnectivityInternalRange#source}
+  */
+  readonly source: string;
+  /**
+  * Resource path of the target resource. The target project can be
+  * different, as in the cases when migrating to peer networks. The resource
+  * may not exist yet.
+  * For example /projects/{project}/regions/{region}/subnetworks/{subnet}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#target GoogleNetworkConnectivityInternalRange#target}
+  */
+  readonly target: string;
+}
+
+export function googleNetworkConnectivityInternalRangeMigrationToTerraform(struct?: GoogleNetworkConnectivityInternalRangeMigrationOutputReference | GoogleNetworkConnectivityInternalRangeMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    source: cdktf.stringToTerraform(struct!.source),
+    target: cdktf.stringToTerraform(struct!.target),
+  }
+}
+
+
+export function googleNetworkConnectivityInternalRangeMigrationToHclTerraform(struct?: GoogleNetworkConnectivityInternalRangeMigrationOutputReference | GoogleNetworkConnectivityInternalRangeMigration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleNetworkConnectivityInternalRangeMigrationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleNetworkConnectivityInternalRangeMigration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleNetworkConnectivityInternalRangeMigration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._source = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._source = value.source;
+      this._target = value.target;
+    }
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+}
 export interface GoogleNetworkConnectivityInternalRangeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#create GoogleNetworkConnectivityInternalRange#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#create GoogleNetworkConnectivityInternalRange#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#delete GoogleNetworkConnectivityInternalRange#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#delete GoogleNetworkConnectivityInternalRange#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#update GoogleNetworkConnectivityInternalRange#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#update GoogleNetworkConnectivityInternalRange#update}
   */
   readonly update?: string;
 }
@@ -258,7 +380,7 @@ export class GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}
 */
 export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResource {
 
@@ -274,7 +396,7 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
   * Generates CDKTF code for importing a GoogleNetworkConnectivityInternalRange resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkConnectivityInternalRange to import
-  * @param importFromId The id of the existing GoogleNetworkConnectivityInternalRange that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkConnectivityInternalRange that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkConnectivityInternalRange to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -286,7 +408,7 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -297,7 +419,7 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
       terraformResourceType: 'google_network_connectivity_internal_range',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -320,6 +442,7 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
     this._project = config.project;
     this._targetCidrRange = config.targetCidrRange;
     this._usage = config.usage;
+    this._migration.internalValue = config.migration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -524,6 +647,22 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
     return this.getListAttribute('users');
   }
 
+  // migration - computed: false, optional: true, required: false
+  private _migration = new GoogleNetworkConnectivityInternalRangeMigrationOutputReference(this, "migration");
+  public get migration() {
+    return this._migration;
+  }
+  public putMigration(value: GoogleNetworkConnectivityInternalRangeMigration) {
+    this._migration.internalValue = value;
+  }
+  public resetMigration() {
+    this._migration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get migrationInput() {
+    return this._migration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -558,6 +697,7 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
       project: cdktf.stringToTerraform(this._project),
       target_cidr_range: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetCidrRange),
       usage: cdktf.stringToTerraform(this._usage),
+      migration: googleNetworkConnectivityInternalRangeMigrationToTerraform(this._migration.internalValue),
       timeouts: googleNetworkConnectivityInternalRangeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -635,6 +775,12 @@ export class GoogleNetworkConnectivityInternalRange extends cdktf.TerraformResou
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      migration: {
+        value: googleNetworkConnectivityInternalRangeMigrationToHclTerraform(this._migration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkConnectivityInternalRangeMigrationList",
       },
       timeouts: {
         value: googleNetworkConnectivityInternalRangeTimeoutsToHclTerraform(this._timeouts.internalValue),

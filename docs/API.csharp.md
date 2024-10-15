@@ -1200,6 +1200,7 @@ The following submodules are available:
 - [googleSecretManagerSecretIamMember](./googleSecretManagerSecretIamMember.csharp.md)
 - [googleSecretManagerSecretIamPolicy](./googleSecretManagerSecretIamPolicy.csharp.md)
 - [googleSecretManagerSecretVersion](./googleSecretManagerSecretVersion.csharp.md)
+- [googleSecureSourceManagerBranchRule](./googleSecureSourceManagerBranchRule.csharp.md)
 - [googleSecureSourceManagerInstance](./googleSecureSourceManagerInstance.csharp.md)
 - [googleSecureSourceManagerInstanceIamBinding](./googleSecureSourceManagerInstanceIamBinding.csharp.md)
 - [googleSecureSourceManagerInstanceIamMember](./googleSecureSourceManagerInstanceIamMember.csharp.md)
