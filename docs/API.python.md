@@ -1200,6 +1200,7 @@ The following submodules are available:
 - [googleSecretManagerSecretIamMember](./googleSecretManagerSecretIamMember.python.md)
 - [googleSecretManagerSecretIamPolicy](./googleSecretManagerSecretIamPolicy.python.md)
 - [googleSecretManagerSecretVersion](./googleSecretManagerSecretVersion.python.md)
+- [googleSecureSourceManagerBranchRule](./googleSecureSourceManagerBranchRule.python.md)
 - [googleSecureSourceManagerInstance](./googleSecureSourceManagerInstance.python.md)
 - [googleSecureSourceManagerInstanceIamBinding](./googleSecureSourceManagerInstanceIamBinding.python.md)
 - [googleSecureSourceManagerInstanceIamMember](./googleSecureSourceManagerInstanceIamMember.python.md)

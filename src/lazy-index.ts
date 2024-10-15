@@ -876,6 +876,7 @@ Object.defineProperty(exports, 'googleSecretManagerSecretIamBinding', { get: fun
 Object.defineProperty(exports, 'googleSecretManagerSecretIamMember', { get: function () { return require('./google-secret-manager-secret-iam-member'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecretIamPolicy', { get: function () { return require('./google-secret-manager-secret-iam-policy'); } });
 Object.defineProperty(exports, 'googleSecretManagerSecretVersion', { get: function () { return require('./google-secret-manager-secret-version'); } });
+Object.defineProperty(exports, 'googleSecureSourceManagerBranchRule', { get: function () { return require('./google-secure-source-manager-branch-rule'); } });
 Object.defineProperty(exports, 'googleSecureSourceManagerInstance', { get: function () { return require('./google-secure-source-manager-instance'); } });
 Object.defineProperty(exports, 'googleSecureSourceManagerInstanceIamBinding', { get: function () { return require('./google-secure-source-manager-instance-iam-binding'); } });
 Object.defineProperty(exports, 'googleSecureSourceManagerInstanceIamMember', { get: function () { return require('./google-secure-source-manager-instance-iam-member'); } });

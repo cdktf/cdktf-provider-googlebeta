@@ -1200,6 +1200,7 @@ The following submodules are available:
 - [googleSecretManagerSecretIamMember](./googleSecretManagerSecretIamMember.java.md)
 - [googleSecretManagerSecretIamPolicy](./googleSecretManagerSecretIamPolicy.java.md)
 - [googleSecretManagerSecretVersion](./googleSecretManagerSecretVersion.java.md)
+- [googleSecureSourceManagerBranchRule](./googleSecureSourceManagerBranchRule.java.md)
 - [googleSecureSourceManagerInstance](./googleSecureSourceManagerInstance.java.md)
 - [googleSecureSourceManagerInstanceIamBinding](./googleSecureSourceManagerInstanceIamBinding.java.md)
 - [googleSecureSourceManagerInstanceIamMember](./googleSecureSourceManagerInstanceIamMember.java.md)

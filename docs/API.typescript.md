@@ -1200,6 +1200,7 @@ The following submodules are available:
 - [googleSecretManagerSecretIamMember](./googleSecretManagerSecretIamMember.typescript.md)
 - [googleSecretManagerSecretIamPolicy](./googleSecretManagerSecretIamPolicy.typescript.md)
 - [googleSecretManagerSecretVersion](./googleSecretManagerSecretVersion.typescript.md)
+- [googleSecureSourceManagerBranchRule](./googleSecureSourceManagerBranchRule.typescript.md)
 - [googleSecureSourceManagerInstance](./googleSecureSourceManagerInstance.typescript.md)
 - [googleSecureSourceManagerInstanceIamBinding](./googleSecureSourceManagerInstanceIamBinding.typescript.md)
 - [googleSecureSourceManagerInstanceIamMember](./googleSecureSourceManagerInstanceIamMember.typescript.md)

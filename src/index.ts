@@ -876,6 +876,7 @@ export * as googleSecretManagerSecretIamBinding from './google-secret-manager-se
 export * as googleSecretManagerSecretIamMember from './google-secret-manager-secret-iam-member';
 export * as googleSecretManagerSecretIamPolicy from './google-secret-manager-secret-iam-policy';
 export * as googleSecretManagerSecretVersion from './google-secret-manager-secret-version';
+export * as googleSecureSourceManagerBranchRule from './google-secure-source-manager-branch-rule';
 export * as googleSecureSourceManagerInstance from './google-secure-source-manager-instance';
 export * as googleSecureSourceManagerInstanceIamBinding from './google-secure-source-manager-instance-iam-binding';
 export * as googleSecureSourceManagerInstanceIamMember from './google-secure-source-manager-instance-iam-member';
