@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.NewGoogleSecretManagerRegionalSecretIamMember(scope Construct, id *string, config GoogleSecretManagerRegionalSecretIamMemberConfig) GoogleSecretManagerRegionalSecretIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamM
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamM
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 &googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 &googlesecretmanagerregionalsecretiammember.GoogleSecretManagerRegionalSecretIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretman
 	Member: *string,
 	Role: *string,
 	SecretId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerRegionalSecretIamMember.GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesecretmanagerregionalsecretiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagerregionalsecretiammember"
 
 googlesecretmanagerregionalsecretiammember.NewGoogleSecretManagerRegionalSecretIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerRegionalSecretIamMemberConditionOutputReference
 ```
