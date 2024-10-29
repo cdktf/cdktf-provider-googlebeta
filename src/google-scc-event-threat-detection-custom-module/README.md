@@ -1,3 +1,3 @@
 # `google_scc_event_threat_detection_custom_module`
 
-Refer to the Terraform Registry for docs: [`google_scc_event_threat_detection_custom_module`](https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_scc_event_threat_detection_custom_module).
+Refer to the Terraform Registry for docs: [`google_scc_event_threat_detection_custom_module`](https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_scc_event_threat_detection_custom_module).

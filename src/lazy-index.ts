@@ -43,6 +43,8 @@ Object.defineProperty(exports, 'googleApiGatewayGatewayIamBinding', { get: funct
 Object.defineProperty(exports, 'googleApiGatewayGatewayIamMember', { get: function () { return require('./google-api-gateway-gateway-iam-member'); } });
 Object.defineProperty(exports, 'googleApiGatewayGatewayIamPolicy', { get: function () { return require('./google-api-gateway-gateway-iam-policy'); } });
 Object.defineProperty(exports, 'googleApigeeAddonsConfig', { get: function () { return require('./google-apigee-addons-config'); } });
+Object.defineProperty(exports, 'googleApigeeAppGroup', { get: function () { return require('./google-apigee-app-group'); } });
+Object.defineProperty(exports, 'googleApigeeDeveloper', { get: function () { return require('./google-apigee-developer'); } });
 Object.defineProperty(exports, 'googleApigeeEndpointAttachment', { get: function () { return require('./google-apigee-endpoint-attachment'); } });
 Object.defineProperty(exports, 'googleApigeeEnvKeystore', { get: function () { return require('./google-apigee-env-keystore'); } });
 Object.defineProperty(exports, 'googleApigeeEnvReferences', { get: function () { return require('./google-apigee-env-references'); } });
@@ -724,6 +726,7 @@ Object.defineProperty(exports, 'googleNetappStoragePool', { get: function () { r
 Object.defineProperty(exports, 'googleNetappVolume', { get: function () { return require('./google-netapp-volume'); } });
 Object.defineProperty(exports, 'googleNetappVolumeReplication', { get: function () { return require('./google-netapp-volume-replication'); } });
 Object.defineProperty(exports, 'googleNetappVolumeSnapshot', { get: function () { return require('./google-netapp-volume-snapshot'); } });
+Object.defineProperty(exports, 'googleNetworkConnectivityGroup', { get: function () { return require('./google-network-connectivity-group'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityHub', { get: function () { return require('./google-network-connectivity-hub'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityInternalRange', { get: function () { return require('./google-network-connectivity-internal-range'); } });
 Object.defineProperty(exports, 'googleNetworkConnectivityPolicyBasedRoute', { get: function () { return require('./google-network-connectivity-policy-based-route'); } });
@@ -1241,8 +1244,12 @@ Object.defineProperty(exports, 'dataGoogleNetblockIpRanges', { get: function () 
 Object.defineProperty(exports, 'dataGoogleNetworkSecurityAddressGroupIamPolicy', { get: function () { return require('./data-google-network-security-address-group-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleNotebooksInstanceIamPolicy', { get: function () { return require('./data-google-notebooks-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleNotebooksRuntimeIamPolicy', { get: function () { return require('./data-google-notebooks-runtime-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleOracleDatabaseAutonomousDatabase', { get: function () { return require('./data-google-oracle-database-autonomous-database'); } });
+Object.defineProperty(exports, 'dataGoogleOracleDatabaseAutonomousDatabases', { get: function () { return require('./data-google-oracle-database-autonomous-databases'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudExadataInfrastructure', { get: function () { return require('./data-google-oracle-database-cloud-exadata-infrastructure'); } });
+Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudExadataInfrastructures', { get: function () { return require('./data-google-oracle-database-cloud-exadata-infrastructures'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudVmCluster', { get: function () { return require('./data-google-oracle-database-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'dataGoogleOracleDatabaseCloudVmClusters', { get: function () { return require('./data-google-oracle-database-cloud-vm-clusters'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbNodes', { get: function () { return require('./data-google-oracle-database-db-nodes'); } });
 Object.defineProperty(exports, 'dataGoogleOracleDatabaseDbServers', { get: function () { return require('./data-google-oracle-database-db-servers'); } });
 Object.defineProperty(exports, 'dataGoogleOrganization', { get: function () { return require('./data-google-organization'); } });
