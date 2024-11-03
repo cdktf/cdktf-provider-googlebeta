@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 googlestoragedefaultobjectacl.NewGoogleStorageDefaultObjectAcl(scope Construct, id *string, config GoogleStorageDefaultObjectAclConfig) GoogleStorageDefaultObjectAcl
 ```
@@ -392,7 +392,7 @@ func ResetRoleEntity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragedefaultobjectacl"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragedefaultobjectacl"
 
 &googlestoragedefaultobjectacl.GoogleStorageDefaultObjectAclConfig {
 	Connection: interface{},
