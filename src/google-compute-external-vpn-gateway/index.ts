@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleComputeExternalVpnGatewayConfig extends cdktf.TerraformMe
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#description GoogleComputeExternalVpnGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#description GoogleComputeExternalVpnGateway#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#id GoogleComputeExternalVpnGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#id GoogleComputeExternalVpnGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,7 +26,7 @@ export interface GoogleComputeExternalVpnGatewayConfig extends cdktf.TerraformMe
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#labels GoogleComputeExternalVpnGateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#labels GoogleComputeExternalVpnGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -43,29 +38,29 @@ export interface GoogleComputeExternalVpnGatewayConfig extends cdktf.TerraformMe
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#name GoogleComputeExternalVpnGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#name GoogleComputeExternalVpnGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#project GoogleComputeExternalVpnGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#project GoogleComputeExternalVpnGateway#project}
   */
   readonly project?: string;
   /**
   * Indicates the redundancy type of this external VPN gateway Possible values: ["FOUR_IPS_REDUNDANCY", "SINGLE_IP_INTERNALLY_REDUNDANT", "TWO_IPS_REDUNDANCY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#redundancy_type GoogleComputeExternalVpnGateway#redundancy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#redundancy_type GoogleComputeExternalVpnGateway#redundancy_type}
   */
   readonly redundancyType?: string;
   /**
   * interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#interface GoogleComputeExternalVpnGateway#interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#interface GoogleComputeExternalVpnGateway#interface}
   */
   readonly interface?: GoogleComputeExternalVpnGatewayInterface[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#timeouts GoogleComputeExternalVpnGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#timeouts GoogleComputeExternalVpnGateway#timeouts}
   */
   readonly timeouts?: GoogleComputeExternalVpnGatewayTimeouts;
 }
@@ -77,7 +72,7 @@ export interface GoogleComputeExternalVpnGatewayInterface {
   * * '0, 1 - TWO_IPS_REDUNDANCY'
   * * '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#id GoogleComputeExternalVpnGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#id GoogleComputeExternalVpnGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -89,9 +84,20 @@ export interface GoogleComputeExternalVpnGatewayInterface {
   * your on-premise gateway or another Cloud provider's VPN gateway,
   * it cannot be an IP address from Google Compute Engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#ip_address GoogleComputeExternalVpnGateway#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#ip_address GoogleComputeExternalVpnGateway#ip_address}
   */
   readonly ipAddress?: string;
+  /**
+  * IPv6 address of the interface in the external VPN gateway. This IPv6
+  * address can be either from your on-premise gateway or another Cloud
+  * provider's VPN gateway, it cannot be an IP address from Google Compute
+  * Engine. Must specify an IPv6 address (not IPV4-mapped) using any format
+  * described in RFC 4291 (e.g. 2001:db8:0:0:2d9:51:0:0). The output format
+  * is RFC 5952 format (e.g. 2001:db8::2d9:51:0:0).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#ipv6_address GoogleComputeExternalVpnGateway#ipv6_address}
+  */
+  readonly ipv6Address?: string;
 }
 
 export function googleComputeExternalVpnGatewayInterfaceToTerraform(struct?: GoogleComputeExternalVpnGatewayInterface | cdktf.IResolvable): any {
@@ -102,6 +108,7 @@ export function googleComputeExternalVpnGatewayInterfaceToTerraform(struct?: Goo
   return {
     id: cdktf.numberToTerraform(struct!.id),
     ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
   }
 }
 
@@ -120,6 +127,12 @@ export function googleComputeExternalVpnGatewayInterfaceToHclTerraform(struct?: 
     },
     ip_address: {
       value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6Address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,6 +171,10 @@ export class GoogleComputeExternalVpnGatewayInterfaceOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.ipAddress = this._ipAddress;
     }
+    if (this._ipv6Address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Address = this._ipv6Address;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -167,6 +184,7 @@ export class GoogleComputeExternalVpnGatewayInterfaceOutputReference extends cdk
       this.resolvableValue = undefined;
       this._id = undefined;
       this._ipAddress = undefined;
+      this._ipv6Address = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -177,6 +195,7 @@ export class GoogleComputeExternalVpnGatewayInterfaceOutputReference extends cdk
       this.resolvableValue = undefined;
       this._id = value.id;
       this._ipAddress = value.ipAddress;
+      this._ipv6Address = value.ipv6Address;
     }
   }
 
@@ -211,6 +230,22 @@ export class GoogleComputeExternalVpnGatewayInterfaceOutputReference extends cdk
   public get ipAddressInput() {
     return this._ipAddress;
   }
+
+  // ipv6_address - computed: false, optional: true, required: false
+  private _ipv6Address?: string; 
+  public get ipv6Address() {
+    return this.getStringAttribute('ipv6_address');
+  }
+  public set ipv6Address(value: string) {
+    this._ipv6Address = value;
+  }
+  public resetIpv6Address() {
+    this._ipv6Address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressInput() {
+    return this._ipv6Address;
+  }
 }
 
 export class GoogleComputeExternalVpnGatewayInterfaceList extends cdktf.ComplexList {
@@ -234,15 +269,15 @@ export class GoogleComputeExternalVpnGatewayInterfaceList extends cdktf.ComplexL
 }
 export interface GoogleComputeExternalVpnGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#create GoogleComputeExternalVpnGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#create GoogleComputeExternalVpnGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#delete GoogleComputeExternalVpnGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#delete GoogleComputeExternalVpnGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#update GoogleComputeExternalVpnGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#update GoogleComputeExternalVpnGateway#update}
   */
   readonly update?: string;
 }
@@ -394,7 +429,7 @@ export class GoogleComputeExternalVpnGatewayTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway}
 */
 export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
 
@@ -410,7 +445,7 @@ export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeExternalVpnGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeExternalVpnGateway to import
-  * @param importFromId The id of the existing GoogleComputeExternalVpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeExternalVpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeExternalVpnGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -422,7 +457,7 @@ export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -433,7 +468,7 @@ export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_external_vpn_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.9.0',
+        providerVersion: '6.10.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

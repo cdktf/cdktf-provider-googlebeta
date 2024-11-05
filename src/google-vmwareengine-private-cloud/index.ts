@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleVmwareenginePrivateCloudConfig extends cdktf.TerraformMet
   /**
   * The number of hours to delay this request. You can set this value to an hour between 0 to 8, where setting it to 0 starts the deletion request immediately. If no value is set, a default value is set at the API Level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#deletion_delay_hours GoogleVmwareenginePrivateCloud#deletion_delay_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#deletion_delay_hours GoogleVmwareenginePrivateCloud#deletion_delay_hours}
   */
   readonly deletionDelayHours?: number;
   /**
   * User-provided description for this private cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,47 +29,47 @@ export interface GoogleVmwareenginePrivateCloudConfig extends cdktf.TerraformMet
   /**
   * The location where the PrivateCloud should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
   */
   readonly location: string;
   /**
   * The ID of the PrivateCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}
   */
   readonly project?: string;
   /**
   * While set true, deletion_delay_hours value will be sent in the request even for zero value of the field. This field is only useful for setting 0 value to the deletion_delay_hours field. It can be used both alone and together with deletion_delay_hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#send_deletion_delay_hours_if_zero GoogleVmwareenginePrivateCloud#send_deletion_delay_hours_if_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#send_deletion_delay_hours_if_zero GoogleVmwareenginePrivateCloud#send_deletion_delay_hours_if_zero}
   */
   readonly sendDeletionDelayHoursIfZero?: boolean | cdktf.IResolvable;
   /**
   * Initial type of the private cloud. Possible values: ["STANDARD", "TIME_LIMITED", "STRETCHED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#type GoogleVmwareenginePrivateCloud#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#type GoogleVmwareenginePrivateCloud#type}
   */
   readonly type?: string;
   /**
   * management_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
   */
   readonly managementCluster: GoogleVmwareenginePrivateCloudManagementCluster;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
   */
   readonly networkConfig: GoogleVmwareenginePrivateCloudNetworkConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
   */
   readonly timeouts?: GoogleVmwareenginePrivateCloudTimeouts;
 }
@@ -348,6 +343,828 @@ export class GoogleVmwareenginePrivateCloudVcenterList extends cdktf.ComplexList
     return new GoogleVmwareenginePrivateCloudVcenterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds {
+  /**
+  * The utilization triggering the scale-in operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_in GoogleVmwareenginePrivateCloud#scale_in}
+  */
+  readonly scaleIn: number;
+  /**
+  * The utilization triggering the scale-out operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_out GoogleVmwareenginePrivateCloud#scale_out}
+  */
+  readonly scaleOut: number;
+}
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scale_in: cdktf.numberToTerraform(struct!.scaleIn),
+    scale_out: cdktf.numberToTerraform(struct!.scaleOut),
+  }
+}
+
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToHclTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scale_in: {
+      value: cdktf.numberToHclTerraform(struct!.scaleIn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale_out: {
+      value: cdktf.numberToHclTerraform(struct!.scaleOut),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scaleIn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleIn = this._scaleIn;
+    }
+    if (this._scaleOut !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleOut = this._scaleOut;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scaleIn = undefined;
+      this._scaleOut = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scaleIn = value.scaleIn;
+      this._scaleOut = value.scaleOut;
+    }
+  }
+
+  // scale_in - computed: false, optional: false, required: true
+  private _scaleIn?: number; 
+  public get scaleIn() {
+    return this.getNumberAttribute('scale_in');
+  }
+  public set scaleIn(value: number) {
+    this._scaleIn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleInInput() {
+    return this._scaleIn;
+  }
+
+  // scale_out - computed: false, optional: false, required: true
+  private _scaleOut?: number; 
+  public get scaleOut() {
+    return this.getNumberAttribute('scale_out');
+  }
+  public set scaleOut(value: number) {
+    this._scaleOut = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleOutInput() {
+    return this._scaleOut;
+  }
+}
+export interface GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds {
+  /**
+  * The utilization triggering the scale-in operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_in GoogleVmwareenginePrivateCloud#scale_in}
+  */
+  readonly scaleIn: number;
+  /**
+  * The utilization triggering the scale-out operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_out GoogleVmwareenginePrivateCloud#scale_out}
+  */
+  readonly scaleOut: number;
+}
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scale_in: cdktf.numberToTerraform(struct!.scaleIn),
+    scale_out: cdktf.numberToTerraform(struct!.scaleOut),
+  }
+}
+
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToHclTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scale_in: {
+      value: cdktf.numberToHclTerraform(struct!.scaleIn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale_out: {
+      value: cdktf.numberToHclTerraform(struct!.scaleOut),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scaleIn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleIn = this._scaleIn;
+    }
+    if (this._scaleOut !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleOut = this._scaleOut;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scaleIn = undefined;
+      this._scaleOut = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scaleIn = value.scaleIn;
+      this._scaleOut = value.scaleOut;
+    }
+  }
+
+  // scale_in - computed: false, optional: false, required: true
+  private _scaleIn?: number; 
+  public get scaleIn() {
+    return this.getNumberAttribute('scale_in');
+  }
+  public set scaleIn(value: number) {
+    this._scaleIn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleInInput() {
+    return this._scaleIn;
+  }
+
+  // scale_out - computed: false, optional: false, required: true
+  private _scaleOut?: number; 
+  public get scaleOut() {
+    return this.getNumberAttribute('scale_out');
+  }
+  public set scaleOut(value: number) {
+    this._scaleOut = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleOutInput() {
+    return this._scaleOut;
+  }
+}
+export interface GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds {
+  /**
+  * The utilization triggering the scale-in operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_in GoogleVmwareenginePrivateCloud#scale_in}
+  */
+  readonly scaleIn: number;
+  /**
+  * The utilization triggering the scale-out operation in percent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_out GoogleVmwareenginePrivateCloud#scale_out}
+  */
+  readonly scaleOut: number;
+}
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scale_in: cdktf.numberToTerraform(struct!.scaleIn),
+    scale_out: cdktf.numberToTerraform(struct!.scaleOut),
+  }
+}
+
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToHclTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scale_in: {
+      value: cdktf.numberToHclTerraform(struct!.scaleIn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale_out: {
+      value: cdktf.numberToHclTerraform(struct!.scaleOut),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scaleIn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleIn = this._scaleIn;
+    }
+    if (this._scaleOut !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleOut = this._scaleOut;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scaleIn = undefined;
+      this._scaleOut = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scaleIn = value.scaleIn;
+      this._scaleOut = value.scaleOut;
+    }
+  }
+
+  // scale_in - computed: false, optional: false, required: true
+  private _scaleIn?: number; 
+  public get scaleIn() {
+    return this.getNumberAttribute('scale_in');
+  }
+  public set scaleIn(value: number) {
+    this._scaleIn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleInInput() {
+    return this._scaleIn;
+  }
+
+  // scale_out - computed: false, optional: false, required: true
+  private _scaleOut?: number; 
+  public get scaleOut() {
+    return this.getNumberAttribute('scale_out');
+  }
+  public set scaleOut(value: number) {
+    this._scaleOut = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleOutInput() {
+    return this._scaleOut;
+  }
+}
+export interface GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#autoscale_policy_id GoogleVmwareenginePrivateCloud#autoscale_policy_id}
+  */
+  readonly autoscalePolicyId: string;
+  /**
+  * The canonical identifier of the node type to add or remove.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}
+  */
+  readonly nodeTypeId: string;
+  /**
+  * Number of nodes to add to a cluster during a scale-out operation.
+  * Must be divisible by 2 for stretched clusters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#scale_out_size GoogleVmwareenginePrivateCloud#scale_out_size}
+  */
+  readonly scaleOutSize: number;
+  /**
+  * consumed_memory_thresholds block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#consumed_memory_thresholds GoogleVmwareenginePrivateCloud#consumed_memory_thresholds}
+  */
+  readonly consumedMemoryThresholds?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds;
+  /**
+  * cpu_thresholds block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#cpu_thresholds GoogleVmwareenginePrivateCloud#cpu_thresholds}
+  */
+  readonly cpuThresholds?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds;
+  /**
+  * storage_thresholds block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#storage_thresholds GoogleVmwareenginePrivateCloud#storage_thresholds}
+  */
+  readonly storageThresholds?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds;
+}
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesToTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    autoscale_policy_id: cdktf.stringToTerraform(struct!.autoscalePolicyId),
+    node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
+    scale_out_size: cdktf.numberToTerraform(struct!.scaleOutSize),
+    consumed_memory_thresholds: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToTerraform(struct!.consumedMemoryThresholds),
+    cpu_thresholds: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToTerraform(struct!.cpuThresholds),
+    storage_thresholds: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToTerraform(struct!.storageThresholds),
+  }
+}
+
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesToHclTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    autoscale_policy_id: {
+      value: cdktf.stringToHclTerraform(struct!.autoscalePolicyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    node_type_id: {
+      value: cdktf.stringToHclTerraform(struct!.nodeTypeId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scale_out_size: {
+      value: cdktf.numberToHclTerraform(struct!.scaleOutSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    consumed_memory_thresholds: {
+      value: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsToHclTerraform(struct!.consumedMemoryThresholds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsList",
+    },
+    cpu_thresholds: {
+      value: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsToHclTerraform(struct!.cpuThresholds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList",
+    },
+    storage_thresholds: {
+      value: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsToHclTerraform(struct!.storageThresholds),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoscalePolicyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalePolicyId = this._autoscalePolicyId;
+    }
+    if (this._nodeTypeId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeTypeId = this._nodeTypeId;
+    }
+    if (this._scaleOutSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scaleOutSize = this._scaleOutSize;
+    }
+    if (this._consumedMemoryThresholds?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.consumedMemoryThresholds = this._consumedMemoryThresholds?.internalValue;
+    }
+    if (this._cpuThresholds?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuThresholds = this._cpuThresholds?.internalValue;
+    }
+    if (this._storageThresholds?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageThresholds = this._storageThresholds?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._autoscalePolicyId = undefined;
+      this._nodeTypeId = undefined;
+      this._scaleOutSize = undefined;
+      this._consumedMemoryThresholds.internalValue = undefined;
+      this._cpuThresholds.internalValue = undefined;
+      this._storageThresholds.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._autoscalePolicyId = value.autoscalePolicyId;
+      this._nodeTypeId = value.nodeTypeId;
+      this._scaleOutSize = value.scaleOutSize;
+      this._consumedMemoryThresholds.internalValue = value.consumedMemoryThresholds;
+      this._cpuThresholds.internalValue = value.cpuThresholds;
+      this._storageThresholds.internalValue = value.storageThresholds;
+    }
+  }
+
+  // autoscale_policy_id - computed: false, optional: false, required: true
+  private _autoscalePolicyId?: string; 
+  public get autoscalePolicyId() {
+    return this.getStringAttribute('autoscale_policy_id');
+  }
+  public set autoscalePolicyId(value: string) {
+    this._autoscalePolicyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalePolicyIdInput() {
+    return this._autoscalePolicyId;
+  }
+
+  // node_type_id - computed: false, optional: false, required: true
+  private _nodeTypeId?: string; 
+  public get nodeTypeId() {
+    return this.getStringAttribute('node_type_id');
+  }
+  public set nodeTypeId(value: string) {
+    this._nodeTypeId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeIdInput() {
+    return this._nodeTypeId;
+  }
+
+  // scale_out_size - computed: false, optional: false, required: true
+  private _scaleOutSize?: number; 
+  public get scaleOutSize() {
+    return this.getNumberAttribute('scale_out_size');
+  }
+  public set scaleOutSize(value: number) {
+    this._scaleOutSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleOutSizeInput() {
+    return this._scaleOutSize;
+  }
+
+  // consumed_memory_thresholds - computed: false, optional: true, required: false
+  private _consumedMemoryThresholds = new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference(this, "consumed_memory_thresholds");
+  public get consumedMemoryThresholds() {
+    return this._consumedMemoryThresholds;
+  }
+  public putConsumedMemoryThresholds(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds) {
+    this._consumedMemoryThresholds.internalValue = value;
+  }
+  public resetConsumedMemoryThresholds() {
+    this._consumedMemoryThresholds.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get consumedMemoryThresholdsInput() {
+    return this._consumedMemoryThresholds.internalValue;
+  }
+
+  // cpu_thresholds - computed: false, optional: true, required: false
+  private _cpuThresholds = new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference(this, "cpu_thresholds");
+  public get cpuThresholds() {
+    return this._cpuThresholds;
+  }
+  public putCpuThresholds(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds) {
+    this._cpuThresholds.internalValue = value;
+  }
+  public resetCpuThresholds() {
+    this._cpuThresholds.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuThresholdsInput() {
+    return this._cpuThresholds.internalValue;
+  }
+
+  // storage_thresholds - computed: false, optional: true, required: false
+  private _storageThresholds = new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference(this, "storage_thresholds");
+  public get storageThresholds() {
+    return this._storageThresholds;
+  }
+  public putStorageThresholds(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds) {
+    this._storageThresholds.internalValue = value;
+  }
+  public resetStorageThresholds() {
+    this._storageThresholds.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageThresholdsInput() {
+    return this._storageThresholds.internalValue;
+  }
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList extends cdktf.ComplexList {
+  public internalValue? : GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference {
+    return new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings {
+  /**
+  * The minimum duration between consecutive autoscale operations.
+  * It starts once addition or removal of nodes is fully completed.
+  * Minimum cool down period is 30m.
+  * Cool down period must be in whole minutes (for example, 30m, 31m, 50m).
+  * Mandatory for successful addition of autoscaling settings in cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#cool_down_period GoogleVmwareenginePrivateCloud#cool_down_period}
+  */
+  readonly coolDownPeriod?: string;
+  /**
+  * Maximum number of nodes of any type in a cluster.
+  * Mandatory for successful addition of autoscaling settings in cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#max_cluster_node_count GoogleVmwareenginePrivateCloud#max_cluster_node_count}
+  */
+  readonly maxClusterNodeCount?: number;
+  /**
+  * Minimum number of nodes of any type in a cluster.
+  * Mandatory for successful addition of autoscaling settings in cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#min_cluster_node_count GoogleVmwareenginePrivateCloud#min_cluster_node_count}
+  */
+  readonly minClusterNodeCount?: number;
+  /**
+  * autoscaling_policies block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#autoscaling_policies GoogleVmwareenginePrivateCloud#autoscaling_policies}
+  */
+  readonly autoscalingPolicies: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies[] | cdktf.IResolvable;
+}
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsToTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cool_down_period: cdktf.stringToTerraform(struct!.coolDownPeriod),
+    max_cluster_node_count: cdktf.numberToTerraform(struct!.maxClusterNodeCount),
+    min_cluster_node_count: cdktf.numberToTerraform(struct!.minClusterNodeCount),
+    autoscaling_policies: cdktf.listMapper(googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesToTerraform, true)(struct!.autoscalingPolicies),
+  }
+}
+
+
+export function googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsToHclTerraform(struct?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference | GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cool_down_period: {
+      value: cdktf.stringToHclTerraform(struct!.coolDownPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_cluster_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxClusterNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_cluster_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.minClusterNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    autoscaling_policies: {
+      value: cdktf.listMapperHcl(googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesToHclTerraform, true)(struct!.autoscalingPolicies),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._coolDownPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.coolDownPeriod = this._coolDownPeriod;
+    }
+    if (this._maxClusterNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxClusterNodeCount = this._maxClusterNodeCount;
+    }
+    if (this._minClusterNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minClusterNodeCount = this._minClusterNodeCount;
+    }
+    if (this._autoscalingPolicies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalingPolicies = this._autoscalingPolicies?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._coolDownPeriod = undefined;
+      this._maxClusterNodeCount = undefined;
+      this._minClusterNodeCount = undefined;
+      this._autoscalingPolicies.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._coolDownPeriod = value.coolDownPeriod;
+      this._maxClusterNodeCount = value.maxClusterNodeCount;
+      this._minClusterNodeCount = value.minClusterNodeCount;
+      this._autoscalingPolicies.internalValue = value.autoscalingPolicies;
+    }
+  }
+
+  // cool_down_period - computed: false, optional: true, required: false
+  private _coolDownPeriod?: string; 
+  public get coolDownPeriod() {
+    return this.getStringAttribute('cool_down_period');
+  }
+  public set coolDownPeriod(value: string) {
+    this._coolDownPeriod = value;
+  }
+  public resetCoolDownPeriod() {
+    this._coolDownPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coolDownPeriodInput() {
+    return this._coolDownPeriod;
+  }
+
+  // max_cluster_node_count - computed: false, optional: true, required: false
+  private _maxClusterNodeCount?: number; 
+  public get maxClusterNodeCount() {
+    return this.getNumberAttribute('max_cluster_node_count');
+  }
+  public set maxClusterNodeCount(value: number) {
+    this._maxClusterNodeCount = value;
+  }
+  public resetMaxClusterNodeCount() {
+    this._maxClusterNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxClusterNodeCountInput() {
+    return this._maxClusterNodeCount;
+  }
+
+  // min_cluster_node_count - computed: false, optional: true, required: false
+  private _minClusterNodeCount?: number; 
+  public get minClusterNodeCount() {
+    return this.getNumberAttribute('min_cluster_node_count');
+  }
+  public set minClusterNodeCount(value: number) {
+    this._minClusterNodeCount = value;
+  }
+  public resetMinClusterNodeCount() {
+    this._minClusterNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minClusterNodeCountInput() {
+    return this._minClusterNodeCount;
+  }
+
+  // autoscaling_policies - computed: false, optional: false, required: true
+  private _autoscalingPolicies = new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList(this, "autoscaling_policies", true);
+  public get autoscalingPolicies() {
+    return this._autoscalingPolicies;
+  }
+  public putAutoscalingPolicies(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPolicies[] | cdktf.IResolvable) {
+    this._autoscalingPolicies.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingPoliciesInput() {
+    return this._autoscalingPolicies.internalValue;
+  }
+}
 export interface GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs {
   /**
   * Customized number of cores available to each node of the type.
@@ -355,17 +1172,17 @@ export interface GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs 
   * If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
   * This cannot be changed once the PrivateCloud is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
   */
   readonly customCoreCount?: number;
   /**
   * The number of nodes of this type in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}
   */
   readonly nodeTypeId: string;
 }
@@ -535,13 +1352,13 @@ export interface GoogleVmwareenginePrivateCloudManagementClusterStretchedCluster
   /**
   * Zone that will remain operational when connection between the two zones is lost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#preferred_location GoogleVmwareenginePrivateCloud#preferred_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#preferred_location GoogleVmwareenginePrivateCloud#preferred_location}
   */
   readonly preferredLocation?: string;
   /**
   * Additional zone for a higher level of availability and load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#secondary_location GoogleVmwareenginePrivateCloud#secondary_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#secondary_location GoogleVmwareenginePrivateCloud#secondary_location}
   */
   readonly secondaryLocation?: string;
 }
@@ -661,19 +1478,25 @@ export interface GoogleVmwareenginePrivateCloudManagementCluster {
   *   * Not formatted as a UUID
   *   * Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
   */
   readonly clusterId: string;
   /**
+  * autoscaling_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#autoscaling_settings GoogleVmwareenginePrivateCloud#autoscaling_settings}
+  */
+  readonly autoscalingSettings?: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings;
+  /**
   * node_type_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
   */
   readonly nodeTypeConfigs?: GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs[] | cdktf.IResolvable;
   /**
   * stretched_cluster_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#stretched_cluster_config GoogleVmwareenginePrivateCloud#stretched_cluster_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#stretched_cluster_config GoogleVmwareenginePrivateCloud#stretched_cluster_config}
   */
   readonly stretchedClusterConfig?: GoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfig;
 }
@@ -685,6 +1508,7 @@ export function googleVmwareenginePrivateCloudManagementClusterToTerraform(struc
   }
   return {
     cluster_id: cdktf.stringToTerraform(struct!.clusterId),
+    autoscaling_settings: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsToTerraform(struct!.autoscalingSettings),
     node_type_configs: cdktf.listMapper(googleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsToTerraform, true)(struct!.nodeTypeConfigs),
     stretched_cluster_config: googleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigToTerraform(struct!.stretchedClusterConfig),
   }
@@ -702,6 +1526,12 @@ export function googleVmwareenginePrivateCloudManagementClusterToHclTerraform(st
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    autoscaling_settings: {
+      value: googleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsToHclTerraform(struct!.autoscalingSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList",
     },
     node_type_configs: {
       value: cdktf.listMapperHcl(googleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsToHclTerraform, true)(struct!.nodeTypeConfigs),
@@ -739,6 +1569,10 @@ export class GoogleVmwareenginePrivateCloudManagementClusterOutputReference exte
       hasAnyValues = true;
       internalValueResult.clusterId = this._clusterId;
     }
+    if (this._autoscalingSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalingSettings = this._autoscalingSettings?.internalValue;
+    }
     if (this._nodeTypeConfigs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeTypeConfigs = this._nodeTypeConfigs?.internalValue;
@@ -754,12 +1588,14 @@ export class GoogleVmwareenginePrivateCloudManagementClusterOutputReference exte
     if (value === undefined) {
       this.isEmptyObject = false;
       this._clusterId = undefined;
+      this._autoscalingSettings.internalValue = undefined;
       this._nodeTypeConfigs.internalValue = undefined;
       this._stretchedClusterConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterId = value.clusterId;
+      this._autoscalingSettings.internalValue = value.autoscalingSettings;
       this._nodeTypeConfigs.internalValue = value.nodeTypeConfigs;
       this._stretchedClusterConfig.internalValue = value.stretchedClusterConfig;
     }
@@ -776,6 +1612,22 @@ export class GoogleVmwareenginePrivateCloudManagementClusterOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId;
+  }
+
+  // autoscaling_settings - computed: false, optional: true, required: false
+  private _autoscalingSettings = new GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference(this, "autoscaling_settings");
+  public get autoscalingSettings() {
+    return this._autoscalingSettings;
+  }
+  public putAutoscalingSettings(value: GoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettings) {
+    this._autoscalingSettings.internalValue = value;
+  }
+  public resetAutoscalingSettings() {
+    this._autoscalingSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingSettingsInput() {
+    return this._autoscalingSettings.internalValue;
   }
 
   // node_type_configs - computed: false, optional: true, required: false
@@ -814,7 +1666,7 @@ export interface GoogleVmwareenginePrivateCloudNetworkConfig {
   /**
   * Management CIDR used by VMware management appliances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
   */
   readonly managementCidr: string;
   /**
@@ -822,7 +1674,7 @@ export interface GoogleVmwareenginePrivateCloudNetworkConfig {
   * Specify the name in the following form: projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId}
   * where {project} can either be a project number or a project ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
   */
   readonly vmwareEngineNetwork?: string;
 }
@@ -947,15 +1799,15 @@ export class GoogleVmwareenginePrivateCloudNetworkConfigOutputReference extends 
 }
 export interface GoogleVmwareenginePrivateCloudTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}
   */
   readonly update?: string;
 }
@@ -1107,7 +1959,7 @@ export class GoogleVmwareenginePrivateCloudTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}
 */
 export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
 
@@ -1123,7 +1975,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleVmwareenginePrivateCloud resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleVmwareenginePrivateCloud to import
-  * @param importFromId The id of the existing GoogleVmwareenginePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleVmwareenginePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleVmwareenginePrivateCloud to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1135,7 +1987,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1146,7 +1998,7 @@ export class GoogleVmwareenginePrivateCloud extends cdktf.TerraformResource {
       terraformResourceType: 'google_vmwareengine_private_cloud',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.9.0',
+        providerVersion: '6.10.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
