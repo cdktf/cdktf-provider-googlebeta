@@ -623,6 +623,7 @@ export * as googleIapAppEngineVersionIamMember from './google-iap-app-engine-ver
 export * as googleIapAppEngineVersionIamPolicy from './google-iap-app-engine-version-iam-policy';
 export * as googleIapBrand from './google-iap-brand';
 export * as googleIapClient from './google-iap-client';
+export * as googleIapSettings from './google-iap-settings';
 export * as googleIapTunnelDestGroup from './google-iap-tunnel-dest-group';
 export * as googleIapTunnelDestGroupIamBinding from './google-iap-tunnel-dest-group-iam-binding';
 export * as googleIapTunnelDestGroupIamMember from './google-iap-tunnel-dest-group-iam-member';
@@ -1104,6 +1105,7 @@ export * as dataGoogleComputeImageIamPolicy from './data-google-compute-image-ia
 export * as dataGoogleComputeInstance from './data-google-compute-instance';
 export * as dataGoogleComputeInstanceGroup from './data-google-compute-instance-group';
 export * as dataGoogleComputeInstanceGroupManager from './data-google-compute-instance-group-manager';
+export * as dataGoogleComputeInstanceGuestAttributes from './data-google-compute-instance-guest-attributes';
 export * as dataGoogleComputeInstanceIamPolicy from './data-google-compute-instance-iam-policy';
 export * as dataGoogleComputeInstanceSerialPort from './data-google-compute-instance-serial-port';
 export * as dataGoogleComputeInstanceTemplate from './data-google-compute-instance-template';
@@ -1292,6 +1294,7 @@ export * as dataGoogleServiceAccountIamPolicy from './data-google-service-accoun
 export * as dataGoogleServiceAccountIdToken from './data-google-service-account-id-token';
 export * as dataGoogleServiceAccountJwt from './data-google-service-account-jwt';
 export * as dataGoogleServiceAccountKey from './data-google-service-account-key';
+export * as dataGoogleServiceAccounts from './data-google-service-accounts';
 export * as dataGoogleServiceDirectoryNamespaceIamPolicy from './data-google-service-directory-namespace-iam-policy';
 export * as dataGoogleServiceDirectoryServiceIamPolicy from './data-google-service-directory-service-iam-policy';
 export * as dataGoogleServiceNetworkingPeeredDnsDomain from './data-google-service-networking-peered-dns-domain';
