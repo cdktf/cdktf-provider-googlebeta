@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstance(scope Construct, id *string, config GoogleLookerInstanceConfig) GoogleLookerInstance
 ```
@@ -635,7 +635,7 @@ func ResetUserMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.GoogleLookerInstance_IsConstruct(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.GoogleLookerInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ googlelookerinstance.GoogleLookerInstance_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.GoogleLookerInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ googlelookerinstance.GoogleLookerInstance_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.GoogleLookerInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1463,7 +1463,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceAdminSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceAdminSettings {
 	AllowedEmailDomains: *[]*string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceConfig {
 	Connection: interface{},
@@ -1513,26 +1513,26 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerins
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AdminSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceAdminSettings,
+	AdminSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceAdminSettings,
 	ConsumerNetwork: *string,
-	CustomDomain: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceCustomDomain,
+	CustomDomain: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceCustomDomain,
 	DeletionPolicy: *string,
-	DenyMaintenancePeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriod,
-	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceEncryptionConfig,
+	DenyMaintenancePeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriod,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceEncryptionConfig,
 	FipsEnabled: interface{},
 	Id: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindow,
-	OauthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceOauthConfig,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceMaintenanceWindow,
+	OauthConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceOauthConfig,
 	PlatformEdition: *string,
 	PrivateIpEnabled: interface{},
 	Project: *string,
-	PscConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstancePscConfig,
+	PscConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstancePscConfig,
 	PscEnabled: interface{},
 	PublicIpEnabled: interface{},
 	Region: *string,
 	ReservedRange: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceTimeouts,
-	UserMetadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceUserMetadata,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceTimeouts,
+	UserMetadata: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceUserMetadata,
 }
 ```
 
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceCustomDomain {
 	Domain: *string,
@@ -1987,12 +1987,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceDenyMaintenancePeriod {
-	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDate,
-	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDate,
-	Time: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTime,
+	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDate,
+	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDate,
+	Time: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTime,
 }
 ```
 
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceDenyMaintenancePeriodEndDate {
 	Day: *f64,
@@ -2125,7 +2125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceDenyMaintenancePeriodStartDate {
 	Day: *f64,
@@ -2197,7 +2197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceDenyMaintenancePeriodTime {
 	Hours: *f64,
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceEncryptionConfig {
 	KmsKeyName: *string,
@@ -2313,11 +2313,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceMaintenanceWindow {
 	DayOfWeek: *string,
-	StartTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTime,
+	StartTime: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTime,
 }
 ```
 
@@ -2371,7 +2371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceMaintenanceWindowStartTime {
 	Hours: *f64,
@@ -2453,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceOauthConfig {
 	ClientId: *string,
@@ -2503,7 +2503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstancePscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstancePscConfig {
 	AllowedVpcs: *[]*string,
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstancePscConfigServiceAttachments {
 	LocalFqdn: *string,
@@ -2603,7 +2603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceTimeouts {
 	Create: *string,
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceUserMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 &googlelookerinstance.GoogleLookerInstanceUserMetadata {
 	AdditionalDeveloperUserCount: *f64,
@@ -2731,7 +2731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceAdminSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceAdminSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceAdminSettingsOutputReference
 ```
@@ -3009,7 +3009,7 @@ func InternalValue() GoogleLookerInstanceAdminSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceCustomDomainOutputReference
 ```
@@ -3298,7 +3298,7 @@ func InternalValue() GoogleLookerInstanceCustomDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference
 ```
@@ -3634,7 +3634,7 @@ func InternalValue() GoogleLookerInstanceDenyMaintenancePeriodEndDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceDenyMaintenancePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceDenyMaintenancePeriodOutputReference
 ```
@@ -3988,7 +3988,7 @@ func InternalValue() GoogleLookerInstanceDenyMaintenancePeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference
 ```
@@ -4324,7 +4324,7 @@ func InternalValue() GoogleLookerInstanceDenyMaintenancePeriodStartDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference
 ```
@@ -4689,7 +4689,7 @@ func InternalValue() GoogleLookerInstanceDenyMaintenancePeriodTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceEncryptionConfigOutputReference
 ```
@@ -4989,7 +4989,7 @@ func InternalValue() GoogleLookerInstanceEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceMaintenanceWindowOutputReference
 ```
@@ -5295,7 +5295,7 @@ func InternalValue() GoogleLookerInstanceMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference
 ```
@@ -5660,7 +5660,7 @@ func InternalValue() GoogleLookerInstanceMaintenanceWindowStartTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceOauthConfigOutputReference
 ```
@@ -5953,7 +5953,7 @@ func InternalValue() GoogleLookerInstanceOauthConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstancePscConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstancePscConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstancePscConfigOutputReference
 ```
@@ -6284,7 +6284,7 @@ func InternalValue() GoogleLookerInstancePscConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstancePscConfigServiceAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleLookerInstancePscConfigServiceAttachmentsList
 ```
@@ -6444,7 +6444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstancePscConfigServiceAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleLookerInstancePscConfigServiceAttachmentsOutputReference
 ```
@@ -6780,7 +6780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceTimeoutsOutputReference
 ```
@@ -7116,7 +7116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLookerInstance.GoogleLookerInstanceUserMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelookerinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelookerinstance"
 
 googlelookerinstance.NewGoogleLookerInstanceUserMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLookerInstanceUserMetadataOutputReference
 ```
