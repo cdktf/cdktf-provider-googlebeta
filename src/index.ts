@@ -43,6 +43,7 @@ export * as googleApiGatewayGatewayIamBinding from './google-api-gateway-gateway
 export * as googleApiGatewayGatewayIamMember from './google-api-gateway-gateway-iam-member';
 export * as googleApiGatewayGatewayIamPolicy from './google-api-gateway-gateway-iam-policy';
 export * as googleApigeeAddonsConfig from './google-apigee-addons-config';
+export * as googleApigeeApi from './google-apigee-api';
 export * as googleApigeeAppGroup from './google-apigee-app-group';
 export * as googleApigeeDeveloper from './google-apigee-developer';
 export * as googleApigeeEndpointAttachment from './google-apigee-endpoint-attachment';
@@ -87,6 +88,8 @@ export * as googleArtifactRegistryRepositoryIamMember from './google-artifact-re
 export * as googleArtifactRegistryRepositoryIamPolicy from './google-artifact-registry-repository-iam-policy';
 export * as googleArtifactRegistryVpcscConfig from './google-artifact-registry-vpcsc-config';
 export * as googleAssuredWorkloadsWorkload from './google-assured-workloads-workload';
+export * as googleBackupDrBackupPlan from './google-backup-dr-backup-plan';
+export * as googleBackupDrBackupPlanAssociation from './google-backup-dr-backup-plan-association';
 export * as googleBackupDrBackupVault from './google-backup-dr-backup-vault';
 export * as googleBackupDrManagementServer from './google-backup-dr-management-server';
 export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connection';
@@ -317,6 +320,7 @@ export * as googleComputeRegionNetworkFirewallPolicyAssociation from './google-c
 export * as googleComputeRegionNetworkFirewallPolicyRule from './google-compute-region-network-firewall-policy-rule';
 export * as googleComputeRegionNetworkFirewallPolicyWithRules from './google-compute-region-network-firewall-policy-with-rules';
 export * as googleComputeRegionPerInstanceConfig from './google-compute-region-per-instance-config';
+export * as googleComputeRegionResizeRequest from './google-compute-region-resize-request';
 export * as googleComputeRegionSecurityPolicy from './google-compute-region-security-policy';
 export * as googleComputeRegionSecurityPolicyRule from './google-compute-region-security-policy-rule';
 export * as googleComputeRegionSslCertificate from './google-compute-region-ssl-certificate';
@@ -454,6 +458,8 @@ export * as googleDataprocCluster from './google-dataproc-cluster';
 export * as googleDataprocClusterIamBinding from './google-dataproc-cluster-iam-binding';
 export * as googleDataprocClusterIamMember from './google-dataproc-cluster-iam-member';
 export * as googleDataprocClusterIamPolicy from './google-dataproc-cluster-iam-policy';
+export * as googleDataprocGdcApplicationEnvironment from './google-dataproc-gdc-application-environment';
+export * as googleDataprocGdcServiceInstance from './google-dataproc-gdc-service-instance';
 export * as googleDataprocJob from './google-dataproc-job';
 export * as googleDataprocJobIamBinding from './google-dataproc-job-iam-binding';
 export * as googleDataprocJobIamMember from './google-dataproc-job-iam-member';
@@ -611,6 +617,7 @@ export * as googleHealthcarePipelineJob from './google-healthcare-pipeline-job';
 export * as googleHealthcareWorkspace from './google-healthcare-workspace';
 export * as googleIamAccessBoundaryPolicy from './google-iam-access-boundary-policy';
 export * as googleIamDenyPolicy from './google-iam-deny-policy';
+export * as googleIamPrincipalAccessBoundaryPolicy from './google-iam-principal-access-boundary-policy';
 export * as googleIamWorkforcePool from './google-iam-workforce-pool';
 export * as googleIamWorkforcePoolProvider from './google-iam-workforce-pool-provider';
 export * as googleIamWorkloadIdentityPool from './google-iam-workload-identity-pool';
@@ -735,6 +742,7 @@ export * as googleNetworkConnectivityRegionalEndpoint from './google-network-con
 export * as googleNetworkConnectivityServiceConnectionPolicy from './google-network-connectivity-service-connection-policy';
 export * as googleNetworkConnectivitySpoke from './google-network-connectivity-spoke';
 export * as googleNetworkManagementConnectivityTest from './google-network-management-connectivity-test';
+export * as googleNetworkManagementVpcFlowLogsConfig from './google-network-management-vpc-flow-logs-config';
 export * as googleNetworkSecurityAddressGroup from './google-network-security-address-group';
 export * as googleNetworkSecurityAddressGroupIamBinding from './google-network-security-address-group-iam-binding';
 export * as googleNetworkSecurityAddressGroupIamMember from './google-network-security-address-group-iam-member';
@@ -1034,6 +1042,8 @@ export * as dataGoogleArtifactRegistryDockerImage from './data-google-artifact-r
 export * as dataGoogleArtifactRegistryLocations from './data-google-artifact-registry-locations';
 export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
 export * as dataGoogleArtifactRegistryRepositoryIamPolicy from './data-google-artifact-registry-repository-iam-policy';
+export * as dataGoogleBackupDrBackupPlan from './data-google-backup-dr-backup-plan';
+export * as dataGoogleBackupDrBackupPlanAssociation from './data-google-backup-dr-backup-plan-association';
 export * as dataGoogleBackupDrManagementServer from './data-google-backup-dr-management-server';
 export * as dataGoogleBeyondcorpAppConnection from './data-google-beyondcorp-app-connection';
 export * as dataGoogleBeyondcorpAppConnector from './data-google-beyondcorp-app-connector';
@@ -1301,6 +1311,7 @@ export * as dataGoogleServiceNetworkingPeeredDnsDomain from './data-google-servi
 export * as dataGoogleSiteVerificationToken from './data-google-site-verification-token';
 export * as dataGoogleSourcerepoRepository from './data-google-sourcerepo-repository';
 export * as dataGoogleSourcerepoRepositoryIamPolicy from './data-google-sourcerepo-repository-iam-policy';
+export * as dataGoogleSpannerDatabase from './data-google-spanner-database';
 export * as dataGoogleSpannerDatabaseIamPolicy from './data-google-spanner-database-iam-policy';
 export * as dataGoogleSpannerInstance from './data-google-spanner-instance';
 export * as dataGoogleSpannerInstanceIamPolicy from './data-google-spanner-instance-iam-policy';
