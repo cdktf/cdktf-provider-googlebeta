@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope Construct, id *string, config GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) GoogleVertexAiFeatureOnlineStoreFeatureview
 ```
@@ -506,7 +506,7 @@ func ResetVectorSearchConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformElement(x interface{}) *bool
 ```
@@ -552,7 +552,7 @@ googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureview_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource {
 	EntityIdColumns: *[]*string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewConfig {
 	Connection: interface{},
@@ -1143,15 +1143,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaif
 	Provisioners: *[]interface{},
 	FeatureOnlineStore: *string,
 	Region: *string,
-	BigQuerySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource,
-	FeatureRegistrySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource,
+	BigQuerySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource,
+	FeatureRegistrySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource,
 	Id: *string,
 	Labels: *map[string]*string,
 	Name: *string,
 	Project: *string,
-	SyncConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts,
-	VectorSearchConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig,
+	SyncConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts,
+	VectorSearchConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig,
 }
 ```
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource {
 	FeatureGroups: interface{},
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroups {
 	FeatureGroupId: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig {
 	Cron: *string,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts {
 	Create: *string,
@@ -1607,16 +1607,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig {
 	EmbeddingColumn: *string,
-	BruteForceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig,
+	BruteForceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig,
 	CrowdingColumn: *string,
 	DistanceMeasureType: *string,
 	EmbeddingDimension: *f64,
 	FilterColumns: *[]*string,
-	TreeAhConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig,
+	TreeAhConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig,
 }
 ```
 
@@ -1741,7 +1741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfig {
 
@@ -1754,7 +1754,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 &googlevertexaifeatureonlinestorefeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfig {
 	LeafNodeEmbeddingCount: *string,
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference
 ```
@@ -2083,7 +2083,7 @@ func InternalValue() GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsList
 ```
@@ -2243,7 +2243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceFeatureGroupsOutputReference
 ```
@@ -2554,7 +2554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference
 ```
@@ -2867,7 +2867,7 @@ func InternalValue() GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistryS
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference
 ```
@@ -3145,7 +3145,7 @@ func InternalValue() GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigBruteForceConfigOutputReference
 ```
@@ -3730,7 +3730,7 @@ func InternalValue() GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference
 ```
@@ -4201,7 +4201,7 @@ func InternalValue() GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeatureOnlineStoreFeatureview.GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeatureonlinestorefeatureview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeatureonlinestorefeatureview"
 
 googlevertexaifeatureonlinestorefeatureview.NewGoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigTreeAhConfigOutputReference
 ```
