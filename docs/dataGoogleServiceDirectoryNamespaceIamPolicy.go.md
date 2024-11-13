@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 datagoogleservicedirectorynamespaceiampolicy.NewDataGoogleServiceDirectoryNamespaceIamPolicy(scope Construct, id *string, config DataGoogleServiceDirectoryNamespaceIamPolicyConfig) DataGoogleServiceDirectoryNamespaceIamPolicy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespace
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespace
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespaceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleServiceDirectoryNamespaceIamPolicy.DataGoogleServiceDirectoryNamespaceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleservicedirectorynamespaceiampolicy"
 
 &datagoogleservicedirectorynamespaceiampolicy.DataGoogleServiceDirectoryNamespaceIamPolicyConfig {
 	Connection: interface{},
