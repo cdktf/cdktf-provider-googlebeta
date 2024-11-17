@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 googleclouddeploydeliverypipelineiampolicy.NewGoogleClouddeployDeliveryPipelineIamPolicy(scope Construct, id *string, config GoogleClouddeployDeliveryPipelineIamPolicyConfig) GoogleClouddeployDeliveryPipelineIamPolicy
 ```
@@ -399,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddeployDeliveryPipelineIamPolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddeploydeliverypipelineiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddeploydeliverypipelineiampolicy"
 
 &googleclouddeploydeliverypipelineiampolicy.GoogleClouddeployDeliveryPipelineIamPolicyConfig {
 	Connection: interface{},
