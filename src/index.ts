@@ -460,6 +460,7 @@ export * as googleDataprocClusterIamMember from './google-dataproc-cluster-iam-m
 export * as googleDataprocClusterIamPolicy from './google-dataproc-cluster-iam-policy';
 export * as googleDataprocGdcApplicationEnvironment from './google-dataproc-gdc-application-environment';
 export * as googleDataprocGdcServiceInstance from './google-dataproc-gdc-service-instance';
+export * as googleDataprocGdcSparkApplication from './google-dataproc-gdc-spark-application';
 export * as googleDataprocJob from './google-dataproc-job';
 export * as googleDataprocJobIamBinding from './google-dataproc-job-iam-binding';
 export * as googleDataprocJobIamMember from './google-dataproc-job-iam-member';
@@ -617,6 +618,8 @@ export * as googleHealthcarePipelineJob from './google-healthcare-pipeline-job';
 export * as googleHealthcareWorkspace from './google-healthcare-workspace';
 export * as googleIamAccessBoundaryPolicy from './google-iam-access-boundary-policy';
 export * as googleIamDenyPolicy from './google-iam-deny-policy';
+export * as googleIamFoldersPolicyBinding from './google-iam-folders-policy-binding';
+export * as googleIamOrganizationsPolicyBinding from './google-iam-organizations-policy-binding';
 export * as googleIamPrincipalAccessBoundaryPolicy from './google-iam-principal-access-boundary-policy';
 export * as googleIamWorkforcePool from './google-iam-workforce-pool';
 export * as googleIamWorkforcePoolProvider from './google-iam-workforce-pool-provider';
@@ -1026,6 +1029,7 @@ export * as googleWorkstationsWorkstationIamPolicy from './google-workstations-w
 export * as dataGoogleAccessApprovalFolderServiceAccount from './data-google-access-approval-folder-service-account';
 export * as dataGoogleAccessApprovalOrganizationServiceAccount from './data-google-access-approval-organization-service-account';
 export * as dataGoogleAccessApprovalProjectServiceAccount from './data-google-access-approval-project-service-account';
+export * as dataGoogleAccessContextManagerAccessPolicy from './data-google-access-context-manager-access-policy';
 export * as dataGoogleAccessContextManagerAccessPolicyIamPolicy from './data-google-access-context-manager-access-policy-iam-policy';
 export * as dataGoogleActiveFolder from './data-google-active-folder';
 export * as dataGoogleAlloydbLocations from './data-google-alloydb-locations';
@@ -1044,6 +1048,7 @@ export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-re
 export * as dataGoogleArtifactRegistryRepositoryIamPolicy from './data-google-artifact-registry-repository-iam-policy';
 export * as dataGoogleBackupDrBackupPlan from './data-google-backup-dr-backup-plan';
 export * as dataGoogleBackupDrBackupPlanAssociation from './data-google-backup-dr-backup-plan-association';
+export * as dataGoogleBackupDrDataSource from './data-google-backup-dr-data-source';
 export * as dataGoogleBackupDrManagementServer from './data-google-backup-dr-management-server';
 export * as dataGoogleBeyondcorpAppConnection from './data-google-beyondcorp-app-connection';
 export * as dataGoogleBeyondcorpAppConnector from './data-google-beyondcorp-app-connector';

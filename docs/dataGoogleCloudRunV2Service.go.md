@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Service <a name="DataGoogleCloudRunV2Service" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Servic
 
 The id of the existing DataGoogleCloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,6 +449,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.uri">Uri</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.urls">Urls</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -932,6 +933,16 @@ func Uri() *string
 
 ---
 
+##### `Urls`<sup>Required</sup> <a name="Urls" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.urls"></a>
+
+```go
+func Urls() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.idInput"></a>
 
 ```go
@@ -1092,9 +1103,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Service. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.location">Location</a></code> | <code>*string</code> | The location of the cloud run service. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -1178,7 +1189,7 @@ Name *string
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -1190,7 +1201,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1218,7 @@ Location *string
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -1219,7 +1230,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/data-sources/google_cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 

@@ -460,6 +460,7 @@ Object.defineProperty(exports, 'googleDataprocClusterIamMember', { get: function
 Object.defineProperty(exports, 'googleDataprocClusterIamPolicy', { get: function () { return require('./google-dataproc-cluster-iam-policy'); } });
 Object.defineProperty(exports, 'googleDataprocGdcApplicationEnvironment', { get: function () { return require('./google-dataproc-gdc-application-environment'); } });
 Object.defineProperty(exports, 'googleDataprocGdcServiceInstance', { get: function () { return require('./google-dataproc-gdc-service-instance'); } });
+Object.defineProperty(exports, 'googleDataprocGdcSparkApplication', { get: function () { return require('./google-dataproc-gdc-spark-application'); } });
 Object.defineProperty(exports, 'googleDataprocJob', { get: function () { return require('./google-dataproc-job'); } });
 Object.defineProperty(exports, 'googleDataprocJobIamBinding', { get: function () { return require('./google-dataproc-job-iam-binding'); } });
 Object.defineProperty(exports, 'googleDataprocJobIamMember', { get: function () { return require('./google-dataproc-job-iam-member'); } });
@@ -617,6 +618,8 @@ Object.defineProperty(exports, 'googleHealthcarePipelineJob', { get: function ()
 Object.defineProperty(exports, 'googleHealthcareWorkspace', { get: function () { return require('./google-healthcare-workspace'); } });
 Object.defineProperty(exports, 'googleIamAccessBoundaryPolicy', { get: function () { return require('./google-iam-access-boundary-policy'); } });
 Object.defineProperty(exports, 'googleIamDenyPolicy', { get: function () { return require('./google-iam-deny-policy'); } });
+Object.defineProperty(exports, 'googleIamFoldersPolicyBinding', { get: function () { return require('./google-iam-folders-policy-binding'); } });
+Object.defineProperty(exports, 'googleIamOrganizationsPolicyBinding', { get: function () { return require('./google-iam-organizations-policy-binding'); } });
 Object.defineProperty(exports, 'googleIamPrincipalAccessBoundaryPolicy', { get: function () { return require('./google-iam-principal-access-boundary-policy'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePool', { get: function () { return require('./google-iam-workforce-pool'); } });
 Object.defineProperty(exports, 'googleIamWorkforcePoolProvider', { get: function () { return require('./google-iam-workforce-pool-provider'); } });
@@ -1026,6 +1029,7 @@ Object.defineProperty(exports, 'googleWorkstationsWorkstationIamPolicy', { get: 
 Object.defineProperty(exports, 'dataGoogleAccessApprovalFolderServiceAccount', { get: function () { return require('./data-google-access-approval-folder-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleAccessApprovalOrganizationServiceAccount', { get: function () { return require('./data-google-access-approval-organization-service-account'); } });
 Object.defineProperty(exports, 'dataGoogleAccessApprovalProjectServiceAccount', { get: function () { return require('./data-google-access-approval-project-service-account'); } });
+Object.defineProperty(exports, 'dataGoogleAccessContextManagerAccessPolicy', { get: function () { return require('./data-google-access-context-manager-access-policy'); } });
 Object.defineProperty(exports, 'dataGoogleAccessContextManagerAccessPolicyIamPolicy', { get: function () { return require('./data-google-access-context-manager-access-policy-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleActiveFolder', { get: function () { return require('./data-google-active-folder'); } });
 Object.defineProperty(exports, 'dataGoogleAlloydbLocations', { get: function () { return require('./data-google-alloydb-locations'); } });
@@ -1044,6 +1048,7 @@ Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepository', { get: fu
 Object.defineProperty(exports, 'dataGoogleArtifactRegistryRepositoryIamPolicy', { get: function () { return require('./data-google-artifact-registry-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrBackupPlan', { get: function () { return require('./data-google-backup-dr-backup-plan'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrBackupPlanAssociation', { get: function () { return require('./data-google-backup-dr-backup-plan-association'); } });
+Object.defineProperty(exports, 'dataGoogleBackupDrDataSource', { get: function () { return require('./data-google-backup-dr-data-source'); } });
 Object.defineProperty(exports, 'dataGoogleBackupDrManagementServer', { get: function () { return require('./data-google-backup-dr-management-server'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnection', { get: function () { return require('./data-google-beyondcorp-app-connection'); } });
 Object.defineProperty(exports, 'dataGoogleBeyondcorpAppConnector', { get: function () { return require('./data-google-beyondcorp-app-connector'); } });
