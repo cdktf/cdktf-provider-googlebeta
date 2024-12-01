@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.NewGoogleBigqueryDatapolicyDataPolicy(scope Construct, id *string, config GoogleBigqueryDatapolicyDataPolicyConfig) GoogleBigqueryDatapolicyDataPolicy
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 &googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicyConfig {
 	Connection: interface{},
@@ -922,10 +922,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryd
 	DataPolicyType: *string,
 	Location: *string,
 	PolicyTag: *string,
-	DataMaskingPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy,
+	DataMaskingPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 &googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy {
 	PredefinedExpression: *string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 &googlebigquerydatapolicydatapolicy.GoogleBigqueryDatapolicyDataPolicyTimeouts {
 	Create: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.NewGoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference
 ```
@@ -1558,7 +1558,7 @@ func InternalValue() GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatapolicydatapolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatapolicydatapolicy"
 
 googlebigquerydatapolicydatapolicy.NewGoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference
 ```
