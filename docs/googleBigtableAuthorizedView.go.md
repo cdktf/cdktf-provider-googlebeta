@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.NewGoogleBigtableAuthorizedView(scope Construct, id *string, config GoogleBigtableAuthorizedViewConfig) GoogleBigtableAuthorizedView
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.GoogleBigtableAuthorizedView_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.GoogleBigtableAuthorizedView_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlebigtableauthorizedview.GoogleBigtableAuthorizedView_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.GoogleBigtableAuthorizedView_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlebigtableauthorizedview.GoogleBigtableAuthorizedView_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.GoogleBigtableAuthorizedView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 &googlebigtableauthorizedview.GoogleBigtableAuthorizedViewConfig {
 	Connection: interface{},
@@ -920,8 +920,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtablea
 	DeletionProtection: *string,
 	Id: *string,
 	Project: *string,
-	SubsetView: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetView,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewTimeouts,
+	SubsetView: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetView,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 &googlebigtableauthorizedview.GoogleBigtableAuthorizedViewSubsetView {
 	FamilySubsets: interface{},
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetViewFamilySubsets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 &googlebigtableauthorizedview.GoogleBigtableAuthorizedViewSubsetViewFamilySubsets {
 	FamilyName: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 &googlebigtableauthorizedview.GoogleBigtableAuthorizedViewTimeouts {
 	Create: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.NewGoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsList
 ```
@@ -1467,7 +1467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.NewGoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewSubsetViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.NewGoogleBigtableAuthorizedViewSubsetViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigtableAuthorizedViewSubsetViewOutputReference
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() GoogleBigtableAuthorizedViewSubsetView
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableAuthorizedView.GoogleBigtableAuthorizedViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableauthorizedview"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableauthorizedview"
 
 googlebigtableauthorizedview.NewGoogleBigtableAuthorizedViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigtableAuthorizedViewTimeoutsOutputReference
 ```
