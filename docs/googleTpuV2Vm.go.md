@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2Vm(scope Construct, id *string, config GoogleTpuV2VmConfig) GoogleTpuV2Vm
 ```
@@ -581,7 +581,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsConstruct(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ googletpuv2vm.GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ googletpuv2vm.GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1376,7 +1376,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmAcceleratorConfig {
 	Topology: *string,
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmConfig {
 	Connection: interface{},
@@ -1438,7 +1438,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 	Provisioners: *[]interface{},
 	Name: *string,
 	RuntimeVersion: *string,
-	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig,
+	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig,
 	AcceleratorType: *string,
 	CidrBlock: *string,
 	DataDisks: interface{},
@@ -1446,13 +1446,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 	Id: *string,
 	Labels: *map[string]*string,
 	Metadata: *map[string]*string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig,
 	Project: *string,
-	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig,
-	ServiceAccount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount,
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig,
+	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig,
+	ServiceAccount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmServiceAccount,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmTimeouts,
 	Zone: *string,
 }
 ```
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmDataDisks {
 	SourceDisk: *string,
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkConfig {
 	CanIpForward: interface{},
@@ -1978,7 +1978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkEndpoints {
 
@@ -1991,7 +1991,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkEndpointsAccessConfig {
 
@@ -2004,7 +2004,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmSchedulingConfig {
 	Preemptible: interface{},
@@ -2054,7 +2054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmServiceAccount {
 	Email: *string,
@@ -2107,7 +2107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmShieldedInstanceConfig {
 	EnableSecureBoot: interface{},
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptoms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmSymptoms {
 
@@ -2154,7 +2154,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmTimeouts {
 	Create: *string,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmAcceleratorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmAcceleratorConfigOutputReference
 ```
@@ -2509,7 +2509,7 @@ func InternalValue() GoogleTpuV2VmAcceleratorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmDataDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmDataDisksList
 ```
@@ -2669,7 +2669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmDataDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmDataDisksOutputReference
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmNetworkConfigOutputReference
 ```
@@ -3352,7 +3352,7 @@ func InternalValue() GoogleTpuV2VmNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmNetworkEndpointsAccessConfigList
 ```
@@ -3501,7 +3501,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference
 ```
@@ -3779,7 +3779,7 @@ func InternalValue() GoogleTpuV2VmNetworkEndpointsAccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmNetworkEndpointsList
 ```
@@ -3928,7 +3928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkEndpointsOutputReference
 ```
@@ -4228,7 +4228,7 @@ func InternalValue() GoogleTpuV2VmNetworkEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSchedulingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmSchedulingConfigOutputReference
 ```
@@ -4535,7 +4535,7 @@ func InternalValue() GoogleTpuV2VmSchedulingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmServiceAccountOutputReference
 ```
@@ -4842,7 +4842,7 @@ func InternalValue() GoogleTpuV2VmServiceAccount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmShieldedInstanceConfigOutputReference
 ```
@@ -5113,7 +5113,7 @@ func InternalValue() GoogleTpuV2VmShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSymptomsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmSymptomsList
 ```
@@ -5262,7 +5262,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSymptomsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmSymptomsOutputReference
 ```
@@ -5573,7 +5573,7 @@ func InternalValue() GoogleTpuV2VmSymptoms
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmTimeoutsOutputReference
 ```
