@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,23 +17,23 @@ export interface GoogleApiGatewayGatewayConfig extends cdktf.TerraformMetaArgume
   * When changing api configs please ensure the new config is a new resource and the
   * [lifecycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle) rule 'create_before_destroy' is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
   */
   readonly apiConfig: string;
   /**
   * A user-visible name for the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
   */
   readonly displayName?: string;
   /**
   * Identifier to assign to the Gateway. Must be unique within scope of the parent resource(project).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
   */
   readonly gatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface GoogleApiGatewayGatewayConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}
   */
   readonly project?: string;
   /**
   * The region of the gateway for the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
   */
   readonly timeouts?: GoogleApiGatewayGatewayTimeouts;
 }
 export interface GoogleApiGatewayGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}
   */
   readonly update?: string;
 }
@@ -228,7 +228,7 @@ export class GoogleApiGatewayGatewayTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}
 */
 export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
 
@@ -244,7 +244,7 @@ export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApiGatewayGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApiGatewayGateway to import
-  * @param importFromId The id of the existing GoogleApiGatewayGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApiGatewayGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApiGatewayGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -256,7 +256,7 @@ export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +267,7 @@ export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
       terraformResourceType: 'google_api_gateway_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

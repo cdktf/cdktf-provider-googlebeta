@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster. Default value: "AUTH_MODE_DISABLED" Possible values: ["AUTH_MODE_UNSPECIFIED", "AUTH_MODE_IAM_AUTH", "AUTH_MODE_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#authorization_mode GoogleRedisCluster#authorization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#authorization_mode GoogleRedisCluster#authorization_mode}
   */
   readonly authorizationMode?: string;
   /**
@@ -23,11 +23,11 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   * If the value if set to true, any delete cluster operation will fail.
   * Default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#deletion_protection_enabled GoogleRedisCluster#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#deletion_protection_enabled GoogleRedisCluster#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#id GoogleRedisCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#id GoogleRedisCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,18 +37,18 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   * Unique name of the resource in this scope including project and location using the form:
   * projects/{projectId}/locations/{locationId}/clusters/{clusterId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#name GoogleRedisCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#name GoogleRedisCluster#name}
   */
   readonly name?: string;
   /**
   * The nodeType for the Redis cluster.
   * If not provided, REDIS_HIGHMEM_MEDIUM will be used as default Possible values: ["REDIS_SHARED_CORE_NANO", "REDIS_HIGHMEM_MEDIUM", "REDIS_HIGHMEM_XLARGE", "REDIS_STANDARD_SMALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#node_type GoogleRedisCluster#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#node_type GoogleRedisCluster#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#project GoogleRedisCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#project GoogleRedisCluster#project}
   */
   readonly project?: string;
   /**
@@ -56,62 +56,68 @@ export interface GoogleRedisClusterConfig extends cdktf.TerraformMetaArguments {
   * Please check Memorystore documentation for the list of supported parameters:
   * https://cloud.google.com/memorystore/docs/cluster/supported-instance-configurations
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#redis_configs GoogleRedisCluster#redis_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#redis_configs GoogleRedisCluster#redis_configs}
   */
   readonly redisConfigs?: { [key: string]: string };
   /**
   * The name of the region of the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#region GoogleRedisCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#region GoogleRedisCluster#region}
   */
   readonly region?: string;
   /**
   * Optional. The number of replica nodes per shard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#replica_count GoogleRedisCluster#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#replica_count GoogleRedisCluster#replica_count}
   */
   readonly replicaCount?: number;
   /**
   * Required. Number of shards for the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#shard_count GoogleRedisCluster#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#shard_count GoogleRedisCluster#shard_count}
   */
   readonly shardCount: number;
   /**
   * Optional. The in-transit encryption for the Redis cluster.
   * If not provided, encryption is disabled for the cluster. Default value: "TRANSIT_ENCRYPTION_MODE_DISABLED" Possible values: ["TRANSIT_ENCRYPTION_MODE_UNSPECIFIED", "TRANSIT_ENCRYPTION_MODE_DISABLED", "TRANSIT_ENCRYPTION_MODE_SERVER_AUTHENTICATION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#transit_encryption_mode GoogleRedisCluster#transit_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#transit_encryption_mode GoogleRedisCluster#transit_encryption_mode}
   */
   readonly transitEncryptionMode?: string;
   /**
+  * cross_cluster_replication_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#cross_cluster_replication_config GoogleRedisCluster#cross_cluster_replication_config}
+  */
+  readonly crossClusterReplicationConfig?: GoogleRedisClusterCrossClusterReplicationConfig;
+  /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#maintenance_policy GoogleRedisCluster#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#maintenance_policy GoogleRedisCluster#maintenance_policy}
   */
   readonly maintenancePolicy?: GoogleRedisClusterMaintenancePolicy;
   /**
   * persistence_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#persistence_config GoogleRedisCluster#persistence_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#persistence_config GoogleRedisCluster#persistence_config}
   */
   readonly persistenceConfig?: GoogleRedisClusterPersistenceConfig;
   /**
   * psc_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#psc_configs GoogleRedisCluster#psc_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#psc_configs GoogleRedisCluster#psc_configs}
   */
   readonly pscConfigs: GoogleRedisClusterPscConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#timeouts GoogleRedisCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#timeouts GoogleRedisCluster#timeouts}
   */
   readonly timeouts?: GoogleRedisClusterTimeouts;
   /**
   * zone_distribution_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#zone_distribution_config GoogleRedisCluster#zone_distribution_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#zone_distribution_config GoogleRedisCluster#zone_distribution_config}
   */
   readonly zoneDistributionConfig?: GoogleRedisClusterZoneDistributionConfig;
 }
@@ -612,31 +618,662 @@ export class GoogleRedisClusterStateInfoList extends cdktf.ComplexList {
     return new GoogleRedisClusterStateInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster {
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cluster - computed: true, optional: false, required: false
+  public get cluster() {
+    return this.getStringAttribute('cluster');
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference {
+    return new GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters {
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cluster - computed: true, optional: false, required: false
+  public get cluster() {
+    return this.getStringAttribute('cluster');
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference {
+    return new GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleRedisClusterCrossClusterReplicationConfigMembership {
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigMembershipToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfigMembership | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfigMembership | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // primary_cluster - computed: true, optional: false, required: false
+  private _primaryCluster = new GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList(this, "primary_cluster", false);
+  public get primaryCluster() {
+    return this._primaryCluster;
+  }
+
+  // secondary_clusters - computed: true, optional: false, required: false
+  private _secondaryClusters = new GoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList(this, "secondary_clusters", false);
+  public get secondaryClusters() {
+    return this._secondaryClusters;
+  }
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigMembershipList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference {
+    return new GoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster {
+  /**
+  * The full resource path of the primary cluster in the format: projects/{project}/locations/{region}/clusters/{cluster-id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#cluster GoogleRedisCluster#cluster}
+  */
+  readonly cluster?: string;
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigPrimaryClusterToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference | GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cluster: cdktf.stringToTerraform(struct!.cluster),
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigPrimaryClusterToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference | GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster: {
+      value: cdktf.stringToHclTerraform(struct!.cluster),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cluster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cluster = this._cluster;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cluster = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cluster = value.cluster;
+    }
+  }
+
+  // cluster - computed: false, optional: true, required: false
+  private _cluster?: string; 
+  public get cluster() {
+    return this.getStringAttribute('cluster');
+  }
+  public set cluster(value: string) {
+    this._cluster = value;
+  }
+  public resetCluster() {
+    this._cluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterInput() {
+    return this._cluster;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+export interface GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters {
+  /**
+  * The full resource path of the secondary cluster in the format: projects/{project}/locations/{region}/clusters/{cluster-id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#cluster GoogleRedisCluster#cluster}
+  */
+  readonly cluster?: string;
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cluster: cdktf.stringToTerraform(struct!.cluster),
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster: {
+      value: cdktf.stringToHclTerraform(struct!.cluster),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cluster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cluster = this._cluster;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cluster = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cluster = value.cluster;
+    }
+  }
+
+  // cluster - computed: false, optional: true, required: false
+  private _cluster?: string; 
+  public get cluster() {
+    return this.getStringAttribute('cluster');
+  }
+  public set cluster(value: string) {
+    this._cluster = value;
+  }
+  public resetCluster() {
+    this._cluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterInput() {
+    return this._cluster;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList extends cdktf.ComplexList {
+  public internalValue? : GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference {
+    return new GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleRedisClusterCrossClusterReplicationConfig {
+  /**
+  * The role of the cluster in cross cluster replication. Supported values are:
+  * 
+  * 1. 'CLUSTER_ROLE_UNSPECIFIED': This is an independent cluster that has never participated in cross cluster replication. It allows both reads and writes.
+  * 
+  * 1. 'NONE': This is an independent cluster that previously participated in cross cluster replication(either as a 'PRIMARY' or 'SECONDARY' cluster). It allows both reads and writes.
+  * 
+  * 1. 'PRIMARY': This cluster serves as the replication source for secondary clusters that are replicating from it. Any data written to it is automatically replicated to its secondary clusters. It allows both reads and writes.
+  * 
+  * 1. 'SECONDARY': This cluster replicates data from the primary cluster. It allows only reads. Possible values: ["CLUSTER_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#cluster_role GoogleRedisCluster#cluster_role}
+  */
+  readonly clusterRole?: string;
+  /**
+  * primary_cluster block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#primary_cluster GoogleRedisCluster#primary_cluster}
+  */
+  readonly primaryCluster?: GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster;
+  /**
+  * secondary_clusters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#secondary_clusters GoogleRedisCluster#secondary_clusters}
+  */
+  readonly secondaryClusters?: GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable;
+}
+
+export function googleRedisClusterCrossClusterReplicationConfigToTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigOutputReference | GoogleRedisClusterCrossClusterReplicationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cluster_role: cdktf.stringToTerraform(struct!.clusterRole),
+    primary_cluster: googleRedisClusterCrossClusterReplicationConfigPrimaryClusterToTerraform(struct!.primaryCluster),
+    secondary_clusters: cdktf.listMapper(googleRedisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform, true)(struct!.secondaryClusters),
+  }
+}
+
+
+export function googleRedisClusterCrossClusterReplicationConfigToHclTerraform(struct?: GoogleRedisClusterCrossClusterReplicationConfigOutputReference | GoogleRedisClusterCrossClusterReplicationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_role: {
+      value: cdktf.stringToHclTerraform(struct!.clusterRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_cluster: {
+      value: googleRedisClusterCrossClusterReplicationConfigPrimaryClusterToHclTerraform(struct!.primaryCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterList",
+    },
+    secondary_clusters: {
+      value: cdktf.listMapperHcl(googleRedisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform, true)(struct!.secondaryClusters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleRedisClusterCrossClusterReplicationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleRedisClusterCrossClusterReplicationConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clusterRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterRole = this._clusterRole;
+    }
+    if (this._primaryCluster?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryCluster = this._primaryCluster?.internalValue;
+    }
+    if (this._secondaryClusters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secondaryClusters = this._secondaryClusters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleRedisClusterCrossClusterReplicationConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clusterRole = undefined;
+      this._primaryCluster.internalValue = undefined;
+      this._secondaryClusters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clusterRole = value.clusterRole;
+      this._primaryCluster.internalValue = value.primaryCluster;
+      this._secondaryClusters.internalValue = value.secondaryClusters;
+    }
+  }
+
+  // cluster_role - computed: false, optional: true, required: false
+  private _clusterRole?: string; 
+  public get clusterRole() {
+    return this.getStringAttribute('cluster_role');
+  }
+  public set clusterRole(value: string) {
+    this._clusterRole = value;
+  }
+  public resetClusterRole() {
+    this._clusterRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterRoleInput() {
+    return this._clusterRole;
+  }
+
+  // membership - computed: true, optional: false, required: false
+  private _membership = new GoogleRedisClusterCrossClusterReplicationConfigMembershipList(this, "membership", false);
+  public get membership() {
+    return this._membership;
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
+  }
+
+  // primary_cluster - computed: false, optional: true, required: false
+  private _primaryCluster = new GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference(this, "primary_cluster");
+  public get primaryCluster() {
+    return this._primaryCluster;
+  }
+  public putPrimaryCluster(value: GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster) {
+    this._primaryCluster.internalValue = value;
+  }
+  public resetPrimaryCluster() {
+    this._primaryCluster.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryClusterInput() {
+    return this._primaryCluster.internalValue;
+  }
+
+  // secondary_clusters - computed: false, optional: true, required: false
+  private _secondaryClusters = new GoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList(this, "secondary_clusters", false);
+  public get secondaryClusters() {
+    return this._secondaryClusters;
+  }
+  public putSecondaryClusters(value: GoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable) {
+    this._secondaryClusters.internalValue = value;
+  }
+  public resetSecondaryClusters() {
+    this._secondaryClusters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryClustersInput() {
+    return this._secondaryClusters.internalValue;
+  }
+}
 export interface GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
   * An API may choose to allow the value "24:00:00" for scenarios like business closing time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#hours GoogleRedisCluster#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#hours GoogleRedisCluster#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#minutes GoogleRedisCluster#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#minutes GoogleRedisCluster#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#nanos GoogleRedisCluster#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#nanos GoogleRedisCluster#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   * An API may allow the value 60 if it allows leap-seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#seconds GoogleRedisCluster#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#seconds GoogleRedisCluster#seconds}
   */
   readonly seconds?: number;
 }
@@ -818,13 +1455,13 @@ export interface GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindow {
   * - SATURDAY: Saturday
   * - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#day GoogleRedisCluster#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#day GoogleRedisCluster#day}
   */
   readonly day: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#start_time GoogleRedisCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#start_time GoogleRedisCluster#start_time}
   */
   readonly startTime: GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
@@ -970,7 +1607,7 @@ export interface GoogleRedisClusterMaintenancePolicy {
   /**
   * weekly_maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#weekly_maintenance_window GoogleRedisCluster#weekly_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#weekly_maintenance_window GoogleRedisCluster#weekly_maintenance_window}
   */
   readonly weeklyMaintenanceWindow?: GoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable;
 }
@@ -1066,11 +1703,11 @@ export interface GoogleRedisClusterPersistenceConfigAofConfig {
   /**
   * Optional. Available fsync modes.
   * 
-  * - NO - Do not explicilty call fsync(). Rely on OS defaults.
+  * - NO - Do not explicitly call fsync(). Rely on OS defaults.
   * - EVERYSEC - Call fsync() once per second in a background thread. A balance between performance and durability.
   * - ALWAYS - Call fsync() for earch write command. Possible values: ["APPEND_FSYNC_UNSPECIFIED", "NO", "EVERYSEC", "ALWAYS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#append_fsync GoogleRedisCluster#append_fsync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#append_fsync GoogleRedisCluster#append_fsync}
   */
   readonly appendFsync?: string;
 }
@@ -1161,7 +1798,7 @@ export interface GoogleRedisClusterPersistenceConfigRdbConfig {
   * - TWELVE_HOURS:	Snapshot every 12 hours.
   * - TWENTY_FOUR_HOURS:	Snapshot every 24 hours. Possible values: ["SNAPSHOT_PERIOD_UNSPECIFIED", "ONE_HOUR", "SIX_HOURS", "TWELVE_HOURS", "TWENTY_FOUR_HOURS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#rdb_snapshot_period GoogleRedisCluster#rdb_snapshot_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#rdb_snapshot_period GoogleRedisCluster#rdb_snapshot_period}
   */
   readonly rdbSnapshotPeriod?: string;
   /**
@@ -1169,7 +1806,7 @@ export interface GoogleRedisClusterPersistenceConfigRdbConfig {
   * future snapshots will be aligned.
   * If not provided, the current time will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#rdb_snapshot_start_time GoogleRedisCluster#rdb_snapshot_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#rdb_snapshot_start_time GoogleRedisCluster#rdb_snapshot_start_time}
   */
   readonly rdbSnapshotStartTime?: string;
 }
@@ -1288,19 +1925,19 @@ export interface GoogleRedisClusterPersistenceConfig {
   * - RDB: RDB based Persistence is enabled.
   * - AOF: AOF based Persistence is enabled. Possible values: ["PERSISTENCE_MODE_UNSPECIFIED", "DISABLED", "RDB", "AOF"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#mode GoogleRedisCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#mode GoogleRedisCluster#mode}
   */
   readonly mode?: string;
   /**
   * aof_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#aof_config GoogleRedisCluster#aof_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#aof_config GoogleRedisCluster#aof_config}
   */
   readonly aofConfig?: GoogleRedisClusterPersistenceConfigAofConfig;
   /**
   * rdb_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#rdb_config GoogleRedisCluster#rdb_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#rdb_config GoogleRedisCluster#rdb_config}
   */
   readonly rdbConfig?: GoogleRedisClusterPersistenceConfigRdbConfig;
 }
@@ -1446,7 +2083,7 @@ export interface GoogleRedisClusterPscConfigs {
   * the discovery endpoint will be reserved, in the form of
   * projects/{network_project_id_or_number}/global/networks/{network_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#network GoogleRedisCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#network GoogleRedisCluster#network}
   */
   readonly network: string;
 }
@@ -1559,15 +2196,15 @@ export class GoogleRedisClusterPscConfigsList extends cdktf.ComplexList {
 }
 export interface GoogleRedisClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#create GoogleRedisCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#create GoogleRedisCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#delete GoogleRedisCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#delete GoogleRedisCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#update GoogleRedisCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#update GoogleRedisCluster#update}
   */
   readonly update?: string;
 }
@@ -1722,13 +2359,13 @@ export interface GoogleRedisClusterZoneDistributionConfig {
   * Immutable. The mode for zone distribution for Memorystore Redis cluster.
   * If not provided, MULTI_ZONE will be used as default Possible values: ["MULTI_ZONE", "SINGLE_ZONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#mode GoogleRedisCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#mode GoogleRedisCluster#mode}
   */
   readonly mode?: string;
   /**
   * Immutable. The zone for single zone Memorystore Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#zone GoogleRedisCluster#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#zone GoogleRedisCluster#zone}
   */
   readonly zone?: string;
 }
@@ -1841,7 +2478,7 @@ export class GoogleRedisClusterZoneDistributionConfigOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster google_redis_cluster}
 */
 export class GoogleRedisCluster extends cdktf.TerraformResource {
 
@@ -1857,7 +2494,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleRedisCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleRedisCluster to import
-  * @param importFromId The id of the existing GoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleRedisCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1869,7 +2506,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster google_redis_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1880,7 +2517,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_redis_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1902,6 +2539,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
     this._replicaCount = config.replicaCount;
     this._shardCount = config.shardCount;
     this._transitEncryptionMode = config.transitEncryptionMode;
+    this._crossClusterReplicationConfig.internalValue = config.crossClusterReplicationConfig;
     this._maintenancePolicy.internalValue = config.maintenancePolicy;
     this._persistenceConfig.internalValue = config.persistenceConfig;
     this._pscConfigs.internalValue = config.pscConfigs;
@@ -2135,6 +2773,22 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('uid');
   }
 
+  // cross_cluster_replication_config - computed: false, optional: true, required: false
+  private _crossClusterReplicationConfig = new GoogleRedisClusterCrossClusterReplicationConfigOutputReference(this, "cross_cluster_replication_config");
+  public get crossClusterReplicationConfig() {
+    return this._crossClusterReplicationConfig;
+  }
+  public putCrossClusterReplicationConfig(value: GoogleRedisClusterCrossClusterReplicationConfig) {
+    this._crossClusterReplicationConfig.internalValue = value;
+  }
+  public resetCrossClusterReplicationConfig() {
+    this._crossClusterReplicationConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossClusterReplicationConfigInput() {
+    return this._crossClusterReplicationConfig.internalValue;
+  }
+
   // maintenance_policy - computed: false, optional: true, required: false
   private _maintenancePolicy = new GoogleRedisClusterMaintenancePolicyOutputReference(this, "maintenance_policy");
   public get maintenancePolicy() {
@@ -2229,6 +2883,7 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
       replica_count: cdktf.numberToTerraform(this._replicaCount),
       shard_count: cdktf.numberToTerraform(this._shardCount),
       transit_encryption_mode: cdktf.stringToTerraform(this._transitEncryptionMode),
+      cross_cluster_replication_config: googleRedisClusterCrossClusterReplicationConfigToTerraform(this._crossClusterReplicationConfig.internalValue),
       maintenance_policy: googleRedisClusterMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       persistence_config: googleRedisClusterPersistenceConfigToTerraform(this._persistenceConfig.internalValue),
       psc_configs: cdktf.listMapper(googleRedisClusterPscConfigsToTerraform, true)(this._pscConfigs.internalValue),
@@ -2304,6 +2959,12 @@ export class GoogleRedisCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      cross_cluster_replication_config: {
+        value: googleRedisClusterCrossClusterReplicationConfigToHclTerraform(this._crossClusterReplicationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleRedisClusterCrossClusterReplicationConfigList",
       },
       maintenance_policy: {
         value: googleRedisClusterMaintenancePolicyToHclTerraform(this._maintenancePolicy.internalValue),
