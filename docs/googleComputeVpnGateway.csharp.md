@@ -4,7 +4,7 @@
 
 ### GoogleComputeVpnGateway <a name="GoogleComputeVpnGateway" id="@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway google_compute_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway google_compute_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGateway.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleComputeVpnGateway to
 
 The id of the existing GoogleComputeVpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,8 +936,8 @@ new GoogleComputeVpnGatewayConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.network">Network</a></code> | <code>string</code> | The network this VPN gateway is accepting traffic for. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#id GoogleComputeVpnGateway#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#project GoogleComputeVpnGateway#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#id GoogleComputeVpnGateway#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#project GoogleComputeVpnGateway#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.region">Region</a></code> | <code>string</code> | The region this gateway should sit in. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts">GoogleComputeVpnGatewayTimeouts</a></code> | timeouts block. |
 
@@ -1031,7 +1031,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#name GoogleComputeVpnGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#name GoogleComputeVpnGateway#name}
 
 ---
 
@@ -1045,7 +1045,7 @@ public string Network { get; set; }
 
 The network this VPN gateway is accepting traffic for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#network GoogleComputeVpnGateway#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#network GoogleComputeVpnGateway#network}
 
 ---
 
@@ -1059,7 +1059,7 @@ public string Description { get; set; }
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#description GoogleComputeVpnGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#description GoogleComputeVpnGateway#description}
 
 ---
 
@@ -1071,7 +1071,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#id GoogleComputeVpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#id GoogleComputeVpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#project GoogleComputeVpnGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#project GoogleComputeVpnGateway#project}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public string Region { get; set; }
 
 The region this gateway should sit in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#region GoogleComputeVpnGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#region GoogleComputeVpnGateway#region}
 
 ---
 
@@ -1114,7 +1114,7 @@ public GoogleComputeVpnGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#timeouts GoogleComputeVpnGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#timeouts GoogleComputeVpnGateway#timeouts}
 
 ---
 
@@ -1135,8 +1135,8 @@ new GoogleComputeVpnGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#create GoogleComputeVpnGateway#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#delete GoogleComputeVpnGateway#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#create GoogleComputeVpnGateway#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeVpnGateway.GoogleComputeVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#delete GoogleComputeVpnGateway#delete}. |
 
 ---
 
@@ -1148,7 +1148,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#create GoogleComputeVpnGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#create GoogleComputeVpnGateway#create}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_vpn_gateway#delete GoogleComputeVpnGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_vpn_gateway#delete GoogleComputeVpnGateway#delete}.
 
 ---
 

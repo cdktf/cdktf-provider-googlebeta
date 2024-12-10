@@ -4,12 +4,12 @@
 
 ### GooglePubsubSchemaIamMember <a name="GooglePubsubSchemaIamMember" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member google_pubsub_schema_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member google_pubsub_schema_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.NewGooglePubsubSchemaIamMember(scope Construct, id *string, config GooglePubsubSchemaIamMemberConfig) GooglePubsubSchemaIamMember
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlepubsubschemaiammember.GooglePubsubSchemaIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.GooglePubsubSchemaIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GooglePubsubSchemaIamMembe
 
 The id of the existing GooglePubsubSchemaIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 &googlepubsubschemaiammember.GooglePubsubSchemaIamMemberCondition {
 	Expression: *string,
@@ -857,9 +857,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#expression GooglePubsubSchemaIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#title GooglePubsubSchemaIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#description GooglePubsubSchemaIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#expression GooglePubsubSchemaIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#title GooglePubsubSchemaIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#description GooglePubsubSchemaIamMember#description}. |
 
 ---
 
@@ -871,7 +871,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#expression GooglePubsubSchemaIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#expression GooglePubsubSchemaIamMember#expression}.
 
 ---
 
@@ -883,7 +883,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#title GooglePubsubSchemaIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#title GooglePubsubSchemaIamMember#title}.
 
 ---
 
@@ -895,7 +895,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#description GooglePubsubSchemaIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#description GooglePubsubSchemaIamMember#description}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 &googlepubsubschemaiammember.GooglePubsubSchemaIamMemberConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsu
 	Member: *string,
 	Role: *string,
 	Schema: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -934,12 +934,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsu
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#member GooglePubsubSchemaIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#role GooglePubsubSchemaIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#schema GooglePubsubSchemaIamMember#schema}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#member GooglePubsubSchemaIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#role GooglePubsubSchemaIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#schema GooglePubsubSchemaIamMember#schema}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberCondition">GooglePubsubSchemaIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#id GooglePubsubSchemaIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#project GooglePubsubSchemaIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#id GooglePubsubSchemaIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#project GooglePubsubSchemaIamMember#project}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#member GooglePubsubSchemaIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#member GooglePubsubSchemaIamMember#member}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#role GooglePubsubSchemaIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#role GooglePubsubSchemaIamMember#role}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#schema GooglePubsubSchemaIamMember#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#schema GooglePubsubSchemaIamMember#schema}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Condition GooglePubsubSchemaIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#condition GooglePubsubSchemaIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#condition GooglePubsubSchemaIamMember#condition}
 
 ---
 
@@ -1071,7 +1071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#id GooglePubsubSchemaIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#id GooglePubsubSchemaIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_pubsub_schema_iam_member#project GooglePubsubSchemaIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_pubsub_schema_iam_member#project GooglePubsubSchemaIamMember#project}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchemaIamMember.GooglePubsubSchemaIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsubschemaiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschemaiammember"
 
 googlepubsubschemaiammember.NewGooglePubsubSchemaIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubSchemaIamMemberConditionOutputReference
 ```

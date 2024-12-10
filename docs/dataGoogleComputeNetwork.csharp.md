@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeNetwork <a name="DataGoogleComputeNetwork" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network google_compute_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network google_compute_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetNetworkProfile">ResetNetworkProfile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetNetworkProfile` <a name="ResetNetworkProfile" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetNetworkProfile"></a>
+
+```csharp
+private void ResetNetworkProfile()
+```
+
 ##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.resetProject"></a>
 
 ```csharp
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataGoogleComputeNetwork t
 
 The id of the existing DataGoogleComputeNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -410,13 +417,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.gatewayIpv4">GatewayIpv4</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.internalIpv6Range">InternalIpv6Range</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.numericId">NumericId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.subnetworksSelfLinks">SubnetworksSelfLinks</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfileInput">NetworkProfileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfile">NetworkProfile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.project">Project</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -573,6 +583,16 @@ public string InternalIpv6Range { get; }
 
 ---
 
+##### `NumericId`<sup>Required</sup> <a name="NumericId" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.numericId"></a>
+
+```csharp
+public string NumericId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.selfLink"></a>
 
 ```csharp
@@ -613,6 +633,16 @@ public string NameInput { get; }
 
 ---
 
+##### `NetworkProfileInput`<sup>Optional</sup> <a name="NetworkProfileInput" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfileInput"></a>
+
+```csharp
+public string NetworkProfileInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.projectInput"></a>
 
 ```csharp
@@ -637,6 +667,16 @@ public string Id { get; }
 
 ```csharp
 public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NetworkProfile`<sup>Required</sup> <a name="NetworkProfile" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetwork.property.networkProfile"></a>
+
+```csharp
+public string NetworkProfile { get; }
 ```
 
 - *Type:* string
@@ -690,6 +730,7 @@ new DataGoogleComputeNetworkConfig {
     object[] Provisioners = null,
     string Name,
     string Id = null,
+    string NetworkProfile = null,
     string Project = null
 };
 ```
@@ -705,9 +746,10 @@ new DataGoogleComputeNetworkConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#name DataGoogleComputeNetwork#name}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#id DataGoogleComputeNetwork#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#project DataGoogleComputeNetwork#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#name DataGoogleComputeNetwork#name}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#id DataGoogleComputeNetwork#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile">NetworkProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#network_profile DataGoogleComputeNetwork#network_profile}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#project DataGoogleComputeNetwork#project}. |
 
 ---
 
@@ -789,7 +831,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#name DataGoogleComputeNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#name DataGoogleComputeNetwork#name}.
 
 ---
 
@@ -801,10 +843,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#id DataGoogleComputeNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#id DataGoogleComputeNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `NetworkProfile`<sup>Optional</sup> <a name="NetworkProfile" id="@cdktf/provider-google-beta.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile"></a>
+
+```csharp
+public string NetworkProfile { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#network_profile DataGoogleComputeNetwork#network_profile}.
 
 ---
 
@@ -816,7 +870,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_network#project DataGoogleComputeNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_network#project DataGoogleComputeNetwork#project}.
 
 ---
 

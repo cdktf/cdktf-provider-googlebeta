@@ -4,12 +4,12 @@
 
 ### GoogleSqlDatabaseInstance <a name="GoogleSqlDatabaseInstance" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstance(scope Construct, id *string, config GoogleSqlDatabaseInstanceConfig) GoogleSqlDatabaseInstance
 ```
@@ -555,7 +555,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.GoogleSqlDatabaseInstance_IsConstruct(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.GoogleSqlDatabaseInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ googlesqldatabaseinstance.GoogleSqlDatabaseInstance_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.GoogleSqlDatabaseInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ googlesqldatabaseinstance.GoogleSqlDatabaseInstance_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.GoogleSqlDatabaseInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -644,7 +644,7 @@ The construct id used in the generated config for the GoogleSqlDatabaseInstance 
 
 The id of the existing GoogleSqlDatabaseInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1339,7 +1339,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceClone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceClone {
 	SourceInstanceName: *string,
@@ -1372,7 +1372,7 @@ SourceInstanceName *string
 
 The name of the instance from which the point in time should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#source_instance_name GoogleSqlDatabaseInstance#source_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#source_instance_name GoogleSqlDatabaseInstance#source_instance_name}
 
 ---
 
@@ -1388,7 +1388,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the cloned instance ip will be created in the allocated range. The range name must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035). Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -1404,7 +1404,7 @@ DatabaseNames *[]*string
 
 Clone all databases if empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#database_names GoogleSqlDatabaseInstance#database_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#database_names GoogleSqlDatabaseInstance#database_names}
 
 ---
 
@@ -1418,7 +1418,7 @@ PointInTime *string
 
 The timestamp of the point in time that should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
 
 ---
 
@@ -1434,7 +1434,7 @@ PreferredZone *string
 
 If no zone is specified, clone to the same zone as the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#preferred_zone GoogleSqlDatabaseInstance#preferred_zone}
 
 ---
 
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceConfig {
 	Connection: interface{},
@@ -1454,7 +1454,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DatabaseVersion: *string,
-	Clone: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceClone,
+	Clone: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceClone,
 	DeletionProtection: interface{},
 	EncryptionKeyName: *string,
 	Id: *string,
@@ -1464,12 +1464,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 	Name: *string,
 	Project: *string,
 	Region: *string,
-	ReplicaConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfiguration,
+	ReplicaConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfiguration,
 	ReplicaNames: *[]*string,
-	RestoreBackupContext: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceRestoreBackupContext,
+	RestoreBackupContext: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceRestoreBackupContext,
 	RootPassword: *string,
-	Settings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettings,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts,
+	Settings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettings,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts,
 }
 ```
 
@@ -1487,8 +1487,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.databaseVersion">DatabaseVersion</a></code> | <code>*string</code> | The MySQL, PostgreSQL or SQL Server (beta) version to use. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.clone">Clone</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceClone">GoogleSqlDatabaseInstanceClone</a></code> | clone block. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Used to block Terraform from deleting a SQL Instance. Defaults to true. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.encryptionKeyName">EncryptionKeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.encryptionKeyName">EncryptionKeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | The type of the instance. The valid values are:- 'SQL_INSTANCE_TYPE_UNSPECIFIED', 'CLOUD_SQL_INSTANCE', 'ON_PREMISES_INSTANCE' and 'READ_REPLICA_INSTANCE'. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.maintenanceVersion">MaintenanceVersion</a></code> | <code>*string</code> | Maintenance version. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceConfig.property.masterInstanceName">MasterInstanceName</a></code> | <code>*string</code> | The name of the instance that will act as the master in the replication setup. |
@@ -1586,7 +1586,7 @@ The MySQL, PostgreSQL or SQL Server (beta) version to use.
 
 Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB. Database Version Policies includes an up-to-date reference of supported versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#database_version GoogleSqlDatabaseInstance#database_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#database_version GoogleSqlDatabaseInstance#database_version}
 
 ---
 
@@ -1600,7 +1600,7 @@ Clone GoogleSqlDatabaseInstanceClone
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#clone GoogleSqlDatabaseInstance#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#clone GoogleSqlDatabaseInstance#clone}
 
 ---
 
@@ -1614,7 +1614,7 @@ DeletionProtection interface{}
 
 Used to block Terraform from deleting a SQL Instance. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#deletion_protection GoogleSqlDatabaseInstance#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#deletion_protection GoogleSqlDatabaseInstance#deletion_protection}
 
 ---
 
@@ -1626,7 +1626,7 @@ EncryptionKeyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}.
 
 ---
 
@@ -1638,7 +1638,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1655,7 +1655,7 @@ InstanceType *string
 
 The type of the instance. The valid values are:- 'SQL_INSTANCE_TYPE_UNSPECIFIED', 'CLOUD_SQL_INSTANCE', 'ON_PREMISES_INSTANCE' and 'READ_REPLICA_INSTANCE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#instance_type GoogleSqlDatabaseInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#instance_type GoogleSqlDatabaseInstance#instance_type}
 
 ---
 
@@ -1669,7 +1669,7 @@ MaintenanceVersion *string
 
 Maintenance version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#maintenance_version GoogleSqlDatabaseInstance#maintenance_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#maintenance_version GoogleSqlDatabaseInstance#maintenance_version}
 
 ---
 
@@ -1685,7 +1685,7 @@ The name of the instance that will act as the master in the replication setup.
 
 Note, this requires the master to have binary_log_enabled set, as well as existing backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
 
 ---
 
@@ -1701,7 +1701,7 @@ The name of the instance.
 
 If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
 
 ---
 
@@ -1717,7 +1717,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
 
 ---
 
@@ -1733,7 +1733,7 @@ The region the instance will sit in.
 
 Note, Cloud SQL is not available in all regions. A valid region must be provided to use this resource. If a region is not provided in the resource definition, the provider region will be used instead, but this will be an apply-time error for instances if the provider region is not supported with Cloud SQL. If you choose not to provide the region argument for this resource, make sure you understand this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
 
 ---
 
@@ -1747,7 +1747,7 @@ ReplicaConfiguration GoogleSqlDatabaseInstanceReplicaConfiguration
 
 replica_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#replica_configuration GoogleSqlDatabaseInstance#replica_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#replica_configuration GoogleSqlDatabaseInstance#replica_configuration}
 
 ---
 
@@ -1761,7 +1761,7 @@ ReplicaNames *[]*string
 
 The replicas of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#replica_names GoogleSqlDatabaseInstance#replica_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#replica_names GoogleSqlDatabaseInstance#replica_names}
 
 ---
 
@@ -1775,7 +1775,7 @@ RestoreBackupContext GoogleSqlDatabaseInstanceRestoreBackupContext
 
 restore_backup_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#restore_backup_context GoogleSqlDatabaseInstance#restore_backup_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#restore_backup_context GoogleSqlDatabaseInstance#restore_backup_context}
 
 ---
 
@@ -1789,7 +1789,7 @@ RootPassword *string
 
 Initial root password. Required for MS SQL Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#root_password GoogleSqlDatabaseInstance#root_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#root_password GoogleSqlDatabaseInstance#root_password}
 
 ---
 
@@ -1803,7 +1803,7 @@ Settings GoogleSqlDatabaseInstanceSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#settings GoogleSqlDatabaseInstance#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#settings GoogleSqlDatabaseInstance#settings}
 
 ---
 
@@ -1817,7 +1817,7 @@ Timeouts GoogleSqlDatabaseInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#timeouts GoogleSqlDatabaseInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#timeouts GoogleSqlDatabaseInstance#timeouts}
 
 ---
 
@@ -1826,7 +1826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceIpAddress {
 
@@ -1839,7 +1839,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceReplicaConfiguration {
 	CaCertificate: *string,
@@ -1886,7 +1886,7 @@ CaCertificate *string
 
 PEM representation of the trusted CA's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#ca_certificate GoogleSqlDatabaseInstance#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#ca_certificate GoogleSqlDatabaseInstance#ca_certificate}
 
 ---
 
@@ -1902,7 +1902,7 @@ Specifies if a SQL Server replica is a cascadable replica.
 
 A cascadable replica is a SQL Server cross region replica that supports replica(s) under it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#cascadable_replica GoogleSqlDatabaseInstance#cascadable_replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#cascadable_replica GoogleSqlDatabaseInstance#cascadable_replica}
 
 ---
 
@@ -1916,7 +1916,7 @@ ClientCertificate *string
 
 PEM representation of the replica's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#client_certificate GoogleSqlDatabaseInstance#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#client_certificate GoogleSqlDatabaseInstance#client_certificate}
 
 ---
 
@@ -1930,7 +1930,7 @@ ClientKey *string
 
 PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#client_key GoogleSqlDatabaseInstance#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#client_key GoogleSqlDatabaseInstance#client_key}
 
 ---
 
@@ -1944,7 +1944,7 @@ ConnectRetryInterval *f64
 
 The number of seconds between connect retries. MySQL's default is 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#connect_retry_interval GoogleSqlDatabaseInstance#connect_retry_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#connect_retry_interval GoogleSqlDatabaseInstance#connect_retry_interval}
 
 ---
 
@@ -1958,7 +1958,7 @@ DumpFilePath *string
 
 Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#dump_file_path GoogleSqlDatabaseInstance#dump_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#dump_file_path GoogleSqlDatabaseInstance#dump_file_path}
 
 ---
 
@@ -1974,7 +1974,7 @@ Specifies if the replica is the failover target.
 
 If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance. Not supported for Postgres
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#failover_target GoogleSqlDatabaseInstance#failover_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#failover_target GoogleSqlDatabaseInstance#failover_target}
 
 ---
 
@@ -1988,7 +1988,7 @@ MasterHeartbeatPeriod *f64
 
 Time in ms between replication heartbeats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#master_heartbeat_period GoogleSqlDatabaseInstance#master_heartbeat_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#master_heartbeat_period GoogleSqlDatabaseInstance#master_heartbeat_period}
 
 ---
 
@@ -2002,7 +2002,7 @@ Password *string
 
 Password for the replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#password GoogleSqlDatabaseInstance#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#password GoogleSqlDatabaseInstance#password}
 
 ---
 
@@ -2016,7 +2016,7 @@ SslCipher *string
 
 Permissible ciphers for use in SSL encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#ssl_cipher GoogleSqlDatabaseInstance#ssl_cipher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#ssl_cipher GoogleSqlDatabaseInstance#ssl_cipher}
 
 ---
 
@@ -2030,7 +2030,7 @@ Username *string
 
 Username for replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#username GoogleSqlDatabaseInstance#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#username GoogleSqlDatabaseInstance#username}
 
 ---
 
@@ -2044,7 +2044,7 @@ VerifyServerCertificate interface{}
 
 True if the master's common name value is checked during the SSL handshake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#verify_server_certificate GoogleSqlDatabaseInstance#verify_server_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#verify_server_certificate GoogleSqlDatabaseInstance#verify_server_certificate}
 
 ---
 
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceRestoreBackupContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceRestoreBackupContext {
 	BackupRunId: *f64,
@@ -2082,7 +2082,7 @@ BackupRunId *f64
 
 The ID of the backup run to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#backup_run_id GoogleSqlDatabaseInstance#backup_run_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#backup_run_id GoogleSqlDatabaseInstance#backup_run_id}
 
 ---
 
@@ -2096,7 +2096,7 @@ InstanceId *string
 
 The ID of the instance that the backup was taken from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#instance_id GoogleSqlDatabaseInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#instance_id GoogleSqlDatabaseInstance#instance_id}
 
 ---
 
@@ -2110,7 +2110,7 @@ Project *string
 
 The full project ID of the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
 
 ---
 
@@ -2119,7 +2119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceServerCaCert {
 
@@ -2132,21 +2132,21 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettings {
 	Tier: *string,
 	ActivationPolicy: *string,
-	ActiveDirectoryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig,
-	AdvancedMachineFeatures: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures,
+	ActiveDirectoryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig,
+	AdvancedMachineFeatures: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures,
 	AvailabilityType: *string,
-	BackupConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfiguration,
+	BackupConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfiguration,
 	Collation: *string,
 	ConnectorEnforcement: *string,
 	DatabaseFlags: interface{},
-	DataCacheConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDataCacheConfig,
+	DataCacheConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDataCacheConfig,
 	DeletionProtectionEnabled: interface{},
-	DenyMaintenancePeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod,
+	DenyMaintenancePeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod,
 	DiskAutoresize: interface{},
 	DiskAutoresizeLimit: *f64,
 	DiskSize: *f64,
@@ -2154,13 +2154,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 	Edition: *string,
 	EnableDataplexIntegration: interface{},
 	EnableGoogleMlIntegration: interface{},
-	InsightsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfig,
-	IpConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfiguration,
-	LocationPreference: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreference,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsMaintenanceWindow,
-	PasswordValidationPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy,
+	InsightsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfig,
+	IpConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfiguration,
+	LocationPreference: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreference,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsMaintenanceWindow,
+	PasswordValidationPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy,
 	PricingPlan: *string,
-	SqlServerAuditConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig,
+	SqlServerAuditConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig,
 	TimeZone: *string,
 	UserLabels: *map[string]*string,
 }
@@ -2213,7 +2213,7 @@ The machine type to use.
 
 See tiers for more details and supported versions. Postgres supports only shared-core machine types, and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#tier GoogleSqlDatabaseInstance#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#tier GoogleSqlDatabaseInstance#tier}
 
 ---
 
@@ -2227,7 +2227,7 @@ ActivationPolicy *string
 
 This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#activation_policy GoogleSqlDatabaseInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#activation_policy GoogleSqlDatabaseInstance#activation_policy}
 
 ---
 
@@ -2241,7 +2241,7 @@ ActiveDirectoryConfig GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig
 
 active_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#active_directory_config GoogleSqlDatabaseInstance#active_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#active_directory_config GoogleSqlDatabaseInstance#active_directory_config}
 
 ---
 
@@ -2255,7 +2255,7 @@ AdvancedMachineFeatures GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#advanced_machine_features GoogleSqlDatabaseInstance#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#advanced_machine_features GoogleSqlDatabaseInstance#advanced_machine_features}
 
 ---
 
@@ -2275,7 +2275,7 @@ For MySQL instances, ensure that settings.backup_configuration.binary_log_enable
 For Postgres instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
 is set to true. Defaults to ZONAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
 
 ---
 
@@ -2289,7 +2289,7 @@ BackupConfiguration GoogleSqlDatabaseInstanceSettingsBackupConfiguration
 
 backup_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#backup_configuration GoogleSqlDatabaseInstance#backup_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#backup_configuration GoogleSqlDatabaseInstance#backup_configuration}
 
 ---
 
@@ -2303,7 +2303,7 @@ Collation *string
 
 The name of server instance collation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
 
 ---
 
@@ -2319,7 +2319,7 @@ Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all 
 
 If enabled, all the direct connections are rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#connector_enforcement GoogleSqlDatabaseInstance#connector_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#connector_enforcement GoogleSqlDatabaseInstance#connector_enforcement}
 
 ---
 
@@ -2333,7 +2333,7 @@ DatabaseFlags interface{}
 
 database_flags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
 
 ---
 
@@ -2347,7 +2347,7 @@ DataCacheConfig GoogleSqlDatabaseInstanceSettingsDataCacheConfig
 
 data_cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#data_cache_config GoogleSqlDatabaseInstance#data_cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#data_cache_config GoogleSqlDatabaseInstance#data_cache_config}
 
 ---
 
@@ -2361,7 +2361,7 @@ DeletionProtectionEnabled interface{}
 
 Configuration to protect against accidental instance deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#deletion_protection_enabled GoogleSqlDatabaseInstance#deletion_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#deletion_protection_enabled GoogleSqlDatabaseInstance#deletion_protection_enabled}
 
 ---
 
@@ -2375,7 +2375,7 @@ DenyMaintenancePeriod GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
 
 deny_maintenance_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#deny_maintenance_period GoogleSqlDatabaseInstance#deny_maintenance_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#deny_maintenance_period GoogleSqlDatabaseInstance#deny_maintenance_period}
 
 ---
 
@@ -2389,7 +2389,7 @@ DiskAutoresize interface{}
 
 Enables auto-resizing of the storage size. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
 
 ---
 
@@ -2405,7 +2405,7 @@ The maximum size, in GB, to which storage capacity can be automatically increase
 
 The default value is 0, which specifies that there is no limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#disk_autoresize_limit GoogleSqlDatabaseInstance#disk_autoresize_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#disk_autoresize_limit GoogleSqlDatabaseInstance#disk_autoresize_limit}
 
 ---
 
@@ -2421,7 +2421,7 @@ The size of data disk, in GB.
 
 Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
 
 ---
 
@@ -2435,7 +2435,7 @@ DiskType *string
 
 The type of data disk: PD_SSD or PD_HDD. Defaults to PD_SSD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
 
 ---
 
@@ -2449,7 +2449,7 @@ Edition *string
 
 The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#edition GoogleSqlDatabaseInstance#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#edition GoogleSqlDatabaseInstance#edition}
 
 ---
 
@@ -2463,7 +2463,7 @@ EnableDataplexIntegration interface{}
 
 Enables Dataplex Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#enable_dataplex_integration GoogleSqlDatabaseInstance#enable_dataplex_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#enable_dataplex_integration GoogleSqlDatabaseInstance#enable_dataplex_integration}
 
 ---
 
@@ -2477,7 +2477,7 @@ EnableGoogleMlIntegration interface{}
 
 Enables Vertex AI Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#enable_google_ml_integration GoogleSqlDatabaseInstance#enable_google_ml_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#enable_google_ml_integration GoogleSqlDatabaseInstance#enable_google_ml_integration}
 
 ---
 
@@ -2491,7 +2491,7 @@ InsightsConfig GoogleSqlDatabaseInstanceSettingsInsightsConfig
 
 insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
 
 ---
 
@@ -2505,7 +2505,7 @@ IpConfiguration GoogleSqlDatabaseInstanceSettingsIpConfiguration
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#ip_configuration GoogleSqlDatabaseInstance#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#ip_configuration GoogleSqlDatabaseInstance#ip_configuration}
 
 ---
 
@@ -2519,7 +2519,7 @@ LocationPreference GoogleSqlDatabaseInstanceSettingsLocationPreference
 
 location_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#location_preference GoogleSqlDatabaseInstance#location_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#location_preference GoogleSqlDatabaseInstance#location_preference}
 
 ---
 
@@ -2533,7 +2533,7 @@ MaintenanceWindow GoogleSqlDatabaseInstanceSettingsMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
 
 ---
 
@@ -2547,7 +2547,7 @@ PasswordValidationPolicy GoogleSqlDatabaseInstanceSettingsPasswordValidationPoli
 
 password_validation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#password_validation_policy GoogleSqlDatabaseInstance#password_validation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#password_validation_policy GoogleSqlDatabaseInstance#password_validation_policy}
 
 ---
 
@@ -2561,7 +2561,7 @@ PricingPlan *string
 
 Pricing plan for this instance, can only be PER_USE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#pricing_plan GoogleSqlDatabaseInstance#pricing_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#pricing_plan GoogleSqlDatabaseInstance#pricing_plan}
 
 ---
 
@@ -2575,7 +2575,7 @@ SqlServerAuditConfig GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig
 
 sql_server_audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
 
 ---
 
@@ -2589,7 +2589,7 @@ TimeZone *string
 
 The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#time_zone GoogleSqlDatabaseInstance#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#time_zone GoogleSqlDatabaseInstance#time_zone}
 
 ---
 
@@ -2603,7 +2603,7 @@ UserLabels *map[string]*string
 
 A set of key/value user label pairs to assign to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
 
 ---
 
@@ -2612,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig {
 	Domain: *string,
@@ -2637,7 +2637,7 @@ Domain *string
 
 Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
 
 ---
 
@@ -2646,7 +2646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures {
 	ThreadsPerCore: *f64,
@@ -2671,7 +2671,7 @@ ThreadsPerCore *f64
 
 The number of threads per physical core. Can be 1 or 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#threads_per_core GoogleSqlDatabaseInstance#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#threads_per_core GoogleSqlDatabaseInstance#threads_per_core}
 
 ---
 
@@ -2680,10 +2680,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsBackupConfiguration {
-	BackupRetentionSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings,
+	BackupRetentionSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings,
 	BinaryLogEnabled: interface{},
 	Enabled: interface{},
 	Location: *string,
@@ -2717,7 +2717,7 @@ BackupRetentionSettings GoogleSqlDatabaseInstanceSettingsBackupConfigurationBack
 
 backup_retention_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#backup_retention_settings GoogleSqlDatabaseInstance#backup_retention_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#backup_retention_settings GoogleSqlDatabaseInstance#backup_retention_settings}
 
 ---
 
@@ -2733,7 +2733,7 @@ True if binary logging is enabled.
 
 If settings.backup_configuration.enabled is false, this must be as well. Can only be used with MySQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
 
 ---
 
@@ -2747,7 +2747,7 @@ Enabled interface{}
 
 True if backup configuration is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
 
 ---
 
@@ -2761,7 +2761,7 @@ Location *string
 
 Location of the backup configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#location GoogleSqlDatabaseInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#location GoogleSqlDatabaseInstance#location}
 
 ---
 
@@ -2775,7 +2775,7 @@ PointInTimeRecoveryEnabled interface{}
 
 True if Point-in-time recovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#point_in_time_recovery_enabled GoogleSqlDatabaseInstance#point_in_time_recovery_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#point_in_time_recovery_enabled GoogleSqlDatabaseInstance#point_in_time_recovery_enabled}
 
 ---
 
@@ -2789,7 +2789,7 @@ StartTime *string
 
 HH:MM format time indicating when backup configuration starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#start_time GoogleSqlDatabaseInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#start_time GoogleSqlDatabaseInstance#start_time}
 
 ---
 
@@ -2805,7 +2805,7 @@ The number of days of transaction logs we retain for point in time restore, from
 
 (For PostgreSQL Enterprise Plus instances, from 1 to 35.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#transaction_log_retention_days GoogleSqlDatabaseInstance#transaction_log_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#transaction_log_retention_days GoogleSqlDatabaseInstance#transaction_log_retention_days}
 
 ---
 
@@ -2814,7 +2814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings {
 	RetainedBackups: *f64,
@@ -2841,7 +2841,7 @@ RetainedBackups *f64
 
 Number of backups to retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#retained_backups GoogleSqlDatabaseInstance#retained_backups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#retained_backups GoogleSqlDatabaseInstance#retained_backups}
 
 ---
 
@@ -2855,7 +2855,7 @@ RetentionUnit *string
 
 The unit that 'retainedBackups' represents. Defaults to COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#retention_unit GoogleSqlDatabaseInstance#retention_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#retention_unit GoogleSqlDatabaseInstance#retention_unit}
 
 ---
 
@@ -2864,7 +2864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDatabaseFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsDatabaseFlags {
 	Name: *string,
@@ -2891,7 +2891,7 @@ Name *string
 
 Name of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
 
 ---
 
@@ -2905,7 +2905,7 @@ Value *string
 
 Value of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
 
 ---
 
@@ -2914,7 +2914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDataCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsDataCacheConfig {
 	DataCacheEnabled: interface{},
@@ -2939,7 +2939,7 @@ DataCacheEnabled interface{}
 
 Whether data cache is enabled for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#data_cache_enabled GoogleSqlDatabaseInstance#data_cache_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#data_cache_enabled GoogleSqlDatabaseInstance#data_cache_enabled}
 
 ---
 
@@ -2948,7 +2948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod {
 	EndDate: *string,
@@ -2979,7 +2979,7 @@ End date before which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#end_date GoogleSqlDatabaseInstance#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#end_date GoogleSqlDatabaseInstance#end_date}
 
 ---
 
@@ -2995,7 +2995,7 @@ Start date after which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#start_date GoogleSqlDatabaseInstance#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#start_date GoogleSqlDatabaseInstance#start_date}
 
 ---
 
@@ -3011,7 +3011,7 @@ Time in UTC when the "deny maintenance period" starts on start_date and ends on 
 
 The time is in format: HH:mm:SS, i.e., 00:00:00
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#time GoogleSqlDatabaseInstance#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#time GoogleSqlDatabaseInstance#time}
 
 ---
 
@@ -3020,7 +3020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsInsightsConfig {
 	QueryInsightsEnabled: interface{},
@@ -3053,7 +3053,7 @@ QueryInsightsEnabled interface{}
 
 True if Query Insights feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
 
 ---
 
@@ -3069,7 +3069,7 @@ Number of query execution plans captured by Insights per minute for all queries 
 
 Between 0 and 20. Default to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#query_plans_per_minute GoogleSqlDatabaseInstance#query_plans_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#query_plans_per_minute GoogleSqlDatabaseInstance#query_plans_per_minute}
 
 ---
 
@@ -3083,7 +3083,7 @@ QueryStringLength *f64
 
 Maximum query length stored in bytes. Between 256 and 4500. Default to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#query_string_length GoogleSqlDatabaseInstance#query_string_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#query_string_length GoogleSqlDatabaseInstance#query_string_length}
 
 ---
 
@@ -3097,7 +3097,7 @@ RecordApplicationTags interface{}
 
 True if Query Insights will record application tags from query when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
 
 ---
 
@@ -3111,7 +3111,7 @@ RecordClientAddress interface{}
 
 True if Query Insights will record client address when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
 
 ---
 
@@ -3120,7 +3120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsIpConfiguration {
 	AllocatedIpRange: *string,
@@ -3161,7 +3161,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -3175,7 +3175,7 @@ AuthorizedNetworks interface{}
 
 authorized_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#authorized_networks GoogleSqlDatabaseInstance#authorized_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#authorized_networks GoogleSqlDatabaseInstance#authorized_networks}
 
 ---
 
@@ -3191,7 +3191,7 @@ Whether Google Cloud services such as BigQuery are allowed to access data in thi
 
 SQLSERVER database type is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#enable_private_path_for_google_cloud_services GoogleSqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#enable_private_path_for_google_cloud_services GoogleSqlDatabaseInstance#enable_private_path_for_google_cloud_services}
 
 ---
 
@@ -3207,7 +3207,7 @@ Whether this Cloud SQL instance should be assigned a public IPV4 address.
 
 At least ipv4_enabled must be enabled or a private_network must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
 
 ---
 
@@ -3223,7 +3223,7 @@ The VPC network from which the Cloud SQL instance is accessible for private IP.
 
 For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#private_network GoogleSqlDatabaseInstance#private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#private_network GoogleSqlDatabaseInstance#private_network}
 
 ---
 
@@ -3237,7 +3237,7 @@ PscConfig interface{}
 
 psc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#psc_config GoogleSqlDatabaseInstance#psc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#psc_config GoogleSqlDatabaseInstance#psc_config}
 
 ---
 
@@ -3251,7 +3251,7 @@ ServerCaMode *string
 
 Specify how the server certificate's Certificate Authority is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#server_ca_mode GoogleSqlDatabaseInstance#server_ca_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#server_ca_mode GoogleSqlDatabaseInstance#server_ca_mode}
 
 ---
 
@@ -3265,7 +3265,7 @@ SslMode *string
 
 Specify how SSL connection should be enforced in DB connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#ssl_mode GoogleSqlDatabaseInstance#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#ssl_mode GoogleSqlDatabaseInstance#ssl_mode}
 
 ---
 
@@ -3274,7 +3274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks {
 	Value: *string,
@@ -3287,9 +3287,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">ExpirationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">ExpirationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}. |
 
 ---
 
@@ -3301,7 +3301,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}.
 
 ---
 
@@ -3313,7 +3313,7 @@ ExpirationTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}.
 
 ---
 
@@ -3325,7 +3325,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}.
 
 ---
 
@@ -3334,7 +3334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig {
 	AllowedConsumerProjects: *[]*string,
@@ -3365,7 +3365,7 @@ List of consumer projects that are allow-listed for PSC connections to this inst
 
 This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#allowed_consumer_projects GoogleSqlDatabaseInstance#allowed_consumer_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#allowed_consumer_projects GoogleSqlDatabaseInstance#allowed_consumer_projects}
 
 ---
 
@@ -3379,7 +3379,7 @@ PscAutoConnections interface{}
 
 psc_auto_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#psc_auto_connections GoogleSqlDatabaseInstance#psc_auto_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#psc_auto_connections GoogleSqlDatabaseInstance#psc_auto_connections}
 
 ---
 
@@ -3393,7 +3393,7 @@ PscEnabled interface{}
 
 Whether PSC connectivity is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#psc_enabled GoogleSqlDatabaseInstance#psc_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#psc_enabled GoogleSqlDatabaseInstance#psc_enabled}
 
 ---
 
@@ -3402,7 +3402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections {
 	ConsumerNetwork: *string,
@@ -3431,7 +3431,7 @@ The consumer network of this consumer endpoint.
 
 This must be a resource path that includes both the host project and the network name. The consumer host project of this network might be different from the consumer service project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#consumer_network GoogleSqlDatabaseInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#consumer_network GoogleSqlDatabaseInstance#consumer_network}
 
 ---
 
@@ -3445,7 +3445,7 @@ ConsumerServiceProjectId *string
 
 The project ID of consumer service project of this consumer endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#consumer_service_project_id GoogleSqlDatabaseInstance#consumer_service_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#consumer_service_project_id GoogleSqlDatabaseInstance#consumer_service_project_id}
 
 ---
 
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsLocationPreference {
 	FollowGaeApplication: *string,
@@ -3483,7 +3483,7 @@ FollowGaeApplication *string
 
 A Google App Engine application whose zone to remain in. Must be in the same region as this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#follow_gae_application GoogleSqlDatabaseInstance#follow_gae_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#follow_gae_application GoogleSqlDatabaseInstance#follow_gae_application}
 
 ---
 
@@ -3497,7 +3497,7 @@ SecondaryZone *string
 
 The preferred Compute Engine zone for the secondary/failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#secondary_zone GoogleSqlDatabaseInstance#secondary_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#secondary_zone GoogleSqlDatabaseInstance#secondary_zone}
 
 ---
 
@@ -3511,7 +3511,7 @@ Zone *string
 
 The preferred compute engine zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
 
 ---
 
@@ -3520,7 +3520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsMaintenanceWindow {
 	Day: *f64,
@@ -3549,7 +3549,7 @@ Day *f64
 
 Day of week (1-7), starting on Monday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#day GoogleSqlDatabaseInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#day GoogleSqlDatabaseInstance#day}
 
 ---
 
@@ -3563,7 +3563,7 @@ Hour *f64
 
 Hour of day (0-23), ignored if day not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#hour GoogleSqlDatabaseInstance#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#hour GoogleSqlDatabaseInstance#hour}
 
 ---
 
@@ -3577,7 +3577,7 @@ UpdateTrack *string
 
 Receive updates after one week (canary) or after two weeks (stable) or after five weeks (week5) of notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#update_track GoogleSqlDatabaseInstance#update_track}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#update_track GoogleSqlDatabaseInstance#update_track}
 
 ---
 
@@ -3586,7 +3586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy {
 	EnablePasswordPolicy: interface{},
@@ -3621,7 +3621,7 @@ EnablePasswordPolicy interface{}
 
 Whether the password policy is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#enable_password_policy GoogleSqlDatabaseInstance#enable_password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#enable_password_policy GoogleSqlDatabaseInstance#enable_password_policy}
 
 ---
 
@@ -3635,7 +3635,7 @@ Complexity *string
 
 Password complexity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#complexity GoogleSqlDatabaseInstance#complexity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#complexity GoogleSqlDatabaseInstance#complexity}
 
 ---
 
@@ -3649,7 +3649,7 @@ DisallowUsernameSubstring interface{}
 
 Disallow username as a part of the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#disallow_username_substring GoogleSqlDatabaseInstance#disallow_username_substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#disallow_username_substring GoogleSqlDatabaseInstance#disallow_username_substring}
 
 ---
 
@@ -3663,7 +3663,7 @@ MinLength *f64
 
 Minimum number of characters allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#min_length GoogleSqlDatabaseInstance#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#min_length GoogleSqlDatabaseInstance#min_length}
 
 ---
 
@@ -3677,7 +3677,7 @@ PasswordChangeInterval *string
 
 Minimum interval after which the password can be changed. This flag is only supported for PostgresSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#password_change_interval GoogleSqlDatabaseInstance#password_change_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#password_change_interval GoogleSqlDatabaseInstance#password_change_interval}
 
 ---
 
@@ -3691,7 +3691,7 @@ ReuseInterval *f64
 
 Number of previous passwords that cannot be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#reuse_interval GoogleSqlDatabaseInstance#reuse_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#reuse_interval GoogleSqlDatabaseInstance#reuse_interval}
 
 ---
 
@@ -3700,7 +3700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig {
 	Bucket: *string,
@@ -3729,7 +3729,7 @@ Bucket *string
 
 The name of the destination bucket (e.g., gs://mybucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#bucket GoogleSqlDatabaseInstance#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#bucket GoogleSqlDatabaseInstance#bucket}
 
 ---
 
@@ -3745,7 +3745,7 @@ How long to keep generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#retention_interval GoogleSqlDatabaseInstance#retention_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#retention_interval GoogleSqlDatabaseInstance#retention_interval}
 
 ---
 
@@ -3761,7 +3761,7 @@ How often to upload generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#upload_interval GoogleSqlDatabaseInstance#upload_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#upload_interval GoogleSqlDatabaseInstance#upload_interval}
 
 ---
 
@@ -3770,7 +3770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 &googlesqldatabaseinstance.GoogleSqlDatabaseInstanceTimeouts {
 	Create: *string,
@@ -3783,9 +3783,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlda
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}. |
 
 ---
 
@@ -3797,7 +3797,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}.
 
 ---
 
@@ -3809,7 +3809,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}.
 
 ---
 
@@ -3821,7 +3821,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}.
 
 ---
 
@@ -3832,7 +3832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceCloneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceCloneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceCloneOutputReference
 ```
@@ -4219,7 +4219,7 @@ func InternalValue() GoogleSqlDatabaseInstanceClone
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceIpAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceIpAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceIpAddressList
 ```
@@ -4368,7 +4368,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceIpAddressOutputReference
 ```
@@ -4668,7 +4668,7 @@ func InternalValue() GoogleSqlDatabaseInstanceIpAddress
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference
 ```
@@ -5265,7 +5265,7 @@ func InternalValue() GoogleSqlDatabaseInstanceReplicaConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 ```
@@ -5594,7 +5594,7 @@ func InternalValue() GoogleSqlDatabaseInstanceRestoreBackupContext
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceServerCaCertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceServerCaCertList
 ```
@@ -5743,7 +5743,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceServerCaCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceServerCaCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceServerCaCertOutputReference
 ```
@@ -6065,7 +6065,7 @@ func InternalValue() GoogleSqlDatabaseInstanceServerCaCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference
 ```
@@ -6336,7 +6336,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
 ```
@@ -6614,7 +6614,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference
 ```
@@ -6914,7 +6914,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupR
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 ```
@@ -7379,7 +7379,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsBackupConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 ```
@@ -7539,7 +7539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference
 ```
@@ -7850,7 +7850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
 ```
@@ -8128,7 +8128,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsDataCacheConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
 ```
@@ -8443,7 +8443,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference
 ```
@@ -8837,7 +8837,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsInsightsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList
 ```
@@ -8997,7 +8997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference
 ```
@@ -9344,7 +9344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference
 ```
@@ -9851,7 +9851,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 ```
@@ -10011,7 +10011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference
 ```
@@ -10378,7 +10378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
 ```
@@ -10538,7 +10538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference
 ```
@@ -10856,7 +10856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference
 ```
@@ -11192,7 +11192,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsLocationPreference
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference
 ```
@@ -11528,7 +11528,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsOutputReference
 ```
@@ -12749,7 +12749,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference
 ```
@@ -13165,7 +13165,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 ```
@@ -13501,7 +13501,7 @@ func InternalValue() GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqldatabaseinstance"
 
 googlesqldatabaseinstance.NewGoogleSqlDatabaseInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceTimeoutsOutputReference
 ```

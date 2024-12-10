@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleKmsKeyRingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,33 +18,33 @@ export interface GoogleKmsKeyRingConfig extends cdktf.TerraformMetaArguments {
   * The location for the KeyRing.
   * A full list of valid locations can be found by running 'gcloud kms locations list'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
   */
   readonly location: string;
   /**
   * The resource name for the KeyRing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
   */
   readonly timeouts?: GoogleKmsKeyRingTimeouts;
 }
 export interface GoogleKmsKeyRingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}
   */
   readonly delete?: string;
 }
@@ -172,7 +167,7 @@ export class GoogleKmsKeyRingTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring google_kms_key_ring}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring google_kms_key_ring}
 */
 export class GoogleKmsKeyRing extends cdktf.TerraformResource {
 
@@ -188,7 +183,7 @@ export class GoogleKmsKeyRing extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleKmsKeyRing resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleKmsKeyRing to import
-  * @param importFromId The id of the existing GoogleKmsKeyRing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleKmsKeyRing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleKmsKeyRing to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -200,7 +195,7 @@ export class GoogleKmsKeyRing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +206,7 @@ export class GoogleKmsKeyRing extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_key_ring',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

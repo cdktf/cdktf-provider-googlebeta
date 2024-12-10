@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +11,11 @@ export interface GoogleComputeRegionNetworkEndpointGroupConfig extends cdktf.Ter
   * An optional description of this resource. Provide this property when
   * you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#description GoogleComputeRegionNetworkEndpointGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#description GoogleComputeRegionNetworkEndpointGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#id GoogleComputeRegionNetworkEndpointGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#id GoogleComputeRegionNetworkEndpointGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +30,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupConfig extends cdktf.Ter
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#name GoogleComputeRegionNetworkEndpointGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#name GoogleComputeRegionNetworkEndpointGroup#name}
   */
   readonly name: string;
   /**
@@ -44,17 +39,17 @@ export interface GoogleComputeRegionNetworkEndpointGroupConfig extends cdktf.Ter
   * The URL of the network to which all network endpoints in the NEG belong. Uses
   * "default" project network if unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#network GoogleComputeRegionNetworkEndpointGroup#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#network GoogleComputeRegionNetworkEndpointGroup#network}
   */
   readonly network?: string;
   /**
   * Type of network endpoints in this network endpoint group. Defaults to SERVERLESS. Default value: "SERVERLESS" Possible values: ["SERVERLESS", "PRIVATE_SERVICE_CONNECT", "INTERNET_IP_PORT", "INTERNET_FQDN_PORT", "GCE_VM_IP_PORTMAP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#network_endpoint_type GoogleComputeRegionNetworkEndpointGroup#network_endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#network_endpoint_type GoogleComputeRegionNetworkEndpointGroup#network_endpoint_type}
   */
   readonly networkEndpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#project GoogleComputeRegionNetworkEndpointGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#project GoogleComputeRegionNetworkEndpointGroup#project}
   */
   readonly project?: string;
   /**
@@ -63,13 +58,13 @@ export interface GoogleComputeRegionNetworkEndpointGroupConfig extends cdktf.Ter
   * The target service url used to set up private service connection to
   * a Google API or a PSC Producer Service Attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#psc_target_service GoogleComputeRegionNetworkEndpointGroup#psc_target_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#psc_target_service GoogleComputeRegionNetworkEndpointGroup#psc_target_service}
   */
   readonly pscTargetService?: string;
   /**
   * A reference to the region where the regional NEGs reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#region GoogleComputeRegionNetworkEndpointGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#region GoogleComputeRegionNetworkEndpointGroup#region}
   */
   readonly region: string;
   /**
@@ -77,37 +72,43 @@ export interface GoogleComputeRegionNetworkEndpointGroupConfig extends cdktf.Ter
   * 
   * Optional URL of the subnetwork to which all network endpoints in the NEG belong.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#subnetwork GoogleComputeRegionNetworkEndpointGroup#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#subnetwork GoogleComputeRegionNetworkEndpointGroup#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * app_engine block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#app_engine GoogleComputeRegionNetworkEndpointGroup#app_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#app_engine GoogleComputeRegionNetworkEndpointGroup#app_engine}
   */
   readonly appEngine?: GoogleComputeRegionNetworkEndpointGroupAppEngine;
   /**
   * cloud_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#cloud_function GoogleComputeRegionNetworkEndpointGroup#cloud_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#cloud_function GoogleComputeRegionNetworkEndpointGroup#cloud_function}
   */
   readonly cloudFunction?: GoogleComputeRegionNetworkEndpointGroupCloudFunction;
   /**
   * cloud_run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#cloud_run GoogleComputeRegionNetworkEndpointGroup#cloud_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#cloud_run GoogleComputeRegionNetworkEndpointGroup#cloud_run}
   */
   readonly cloudRun?: GoogleComputeRegionNetworkEndpointGroupCloudRun;
   /**
+  * psc_data block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#psc_data GoogleComputeRegionNetworkEndpointGroup#psc_data}
+  */
+  readonly pscData?: GoogleComputeRegionNetworkEndpointGroupPscData;
+  /**
   * serverless_deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#serverless_deployment GoogleComputeRegionNetworkEndpointGroup#serverless_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#serverless_deployment GoogleComputeRegionNetworkEndpointGroup#serverless_deployment}
   */
   readonly serverlessDeployment?: GoogleComputeRegionNetworkEndpointGroupServerlessDeployment;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#timeouts GoogleComputeRegionNetworkEndpointGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#timeouts GoogleComputeRegionNetworkEndpointGroup#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionNetworkEndpointGroupTimeouts;
 }
@@ -117,7 +118,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupAppEngine {
   * The service name must be 1-63 characters long, and comply with RFC1035.
   * Example value: "default", "my-service".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
   */
   readonly service?: string;
   /**
@@ -130,7 +131,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupAppEngine {
   * URL mask "-dot-appname.appspot.com/". The URL mask will parse
   * them to { service = "foo1", version = "v1" } and { service = "foo1", version = "v2" } respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
   */
   readonly urlMask?: string;
   /**
@@ -138,7 +139,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupAppEngine {
   * The version must be 1-63 characters long, and comply with RFC1035.
   * Example value: "v1", "v2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
   */
   readonly version?: string;
 }
@@ -284,7 +285,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupCloudFunction {
   * The function name is case-sensitive and must be 1-63 characters long.
   * Example value: "func1".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#function GoogleComputeRegionNetworkEndpointGroup#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#function GoogleComputeRegionNetworkEndpointGroup#function}
   */
   readonly function?: string;
   /**
@@ -296,7 +297,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupCloudFunction {
   * can be backed by the same Serverless NEG with URL mask "/". The URL mask
   * will parse them to { function = "function1" } and { function = "function2" } respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
   */
   readonly urlMask?: string;
 }
@@ -413,7 +414,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupCloudRun {
   * The service must be 1-63 characters long, and comply with RFC1035.
   * Example value: "run-service".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#service GoogleComputeRegionNetworkEndpointGroup#service}
   */
   readonly service?: string;
   /**
@@ -422,7 +423,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupCloudRun {
   * The tag must be 1-63 characters long, and comply with RFC1035.
   * Example value: "revision-0010".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#tag GoogleComputeRegionNetworkEndpointGroup#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#tag GoogleComputeRegionNetworkEndpointGroup#tag}
   */
   readonly tag?: string;
   /**
@@ -435,7 +436,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupCloudRun {
   * URL mask ".domain.com/". The URL mask will parse them to { service="bar1", tag="foo1" }
   * and { service="bar2", tag="foo2" } respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
   */
   readonly urlMask?: string;
 }
@@ -575,12 +576,101 @@ export class GoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference exte
     return this._urlMask;
   }
 }
+export interface GoogleComputeRegionNetworkEndpointGroupPscData {
+  /**
+  * The PSC producer port to use when consumer PSC NEG connects to a producer. If
+  * this flag isn't specified for a PSC NEG with endpoint type
+  * private-service-connect, then PSC NEG will be connected to a first port in the
+  * available PSC producer port range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#producer_port GoogleComputeRegionNetworkEndpointGroup#producer_port}
+  */
+  readonly producerPort?: string;
+}
+
+export function googleComputeRegionNetworkEndpointGroupPscDataToTerraform(struct?: GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference | GoogleComputeRegionNetworkEndpointGroupPscData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    producer_port: cdktf.stringToTerraform(struct!.producerPort),
+  }
+}
+
+
+export function googleComputeRegionNetworkEndpointGroupPscDataToHclTerraform(struct?: GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference | GoogleComputeRegionNetworkEndpointGroupPscData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    producer_port: {
+      value: cdktf.stringToHclTerraform(struct!.producerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeRegionNetworkEndpointGroupPscData | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._producerPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.producerPort = this._producerPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionNetworkEndpointGroupPscData | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._producerPort = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._producerPort = value.producerPort;
+    }
+  }
+
+  // producer_port - computed: false, optional: true, required: false
+  private _producerPort?: string; 
+  public get producerPort() {
+    return this.getStringAttribute('producer_port');
+  }
+  public set producerPort(value: string) {
+    this._producerPort = value;
+  }
+  public resetProducerPort() {
+    this._producerPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get producerPortInput() {
+    return this._producerPort;
+  }
+}
 export interface GoogleComputeRegionNetworkEndpointGroupServerlessDeployment {
   /**
   * The platform of the NEG backend target(s). Possible values:
   * API Gateway: apigateway.googleapis.com
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#platform GoogleComputeRegionNetworkEndpointGroup#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#platform GoogleComputeRegionNetworkEndpointGroup#platform}
   */
   readonly platform: string;
   /**
@@ -588,7 +678,7 @@ export interface GoogleComputeRegionNetworkEndpointGroupServerlessDeployment {
   * The resource identified by this value is platform-specific and is as follows: API Gateway: The gateway ID, App Engine: The service name,
   * Cloud Functions: The function name, Cloud Run: The service name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#resource GoogleComputeRegionNetworkEndpointGroup#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#resource GoogleComputeRegionNetworkEndpointGroup#resource}
   */
   readonly resource?: string;
   /**
@@ -597,14 +687,14 @@ export interface GoogleComputeRegionNetworkEndpointGroupServerlessDeployment {
   * The fields parsed by this template are platform-specific and are as follows: API Gateway: The gateway ID,
   * App Engine: The service and version, Cloud Functions: The function name, Cloud Run: The service and tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
   */
   readonly urlMask?: string;
   /**
   * The optional resource version. The version identified by this value is platform-specific and is follows:
   * API Gateway: Unused, App Engine: The service version, Cloud Functions: Unused, Cloud Run: The service tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#version GoogleComputeRegionNetworkEndpointGroup#version}
   */
   readonly version?: string;
 }
@@ -772,11 +862,11 @@ export class GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputRe
 }
 export interface GoogleComputeRegionNetworkEndpointGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#create GoogleComputeRegionNetworkEndpointGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#create GoogleComputeRegionNetworkEndpointGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#delete GoogleComputeRegionNetworkEndpointGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#delete GoogleComputeRegionNetworkEndpointGroup#delete}
   */
   readonly delete?: string;
 }
@@ -899,7 +989,7 @@ export class GoogleComputeRegionNetworkEndpointGroupTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}
 */
 export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformResource {
 
@@ -915,7 +1005,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleComputeRegionNetworkEndpointGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeRegionNetworkEndpointGroup to import
-  * @param importFromId The id of the existing GoogleComputeRegionNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeRegionNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeRegionNetworkEndpointGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -927,7 +1017,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -938,7 +1028,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_region_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -961,6 +1051,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
     this._appEngine.internalValue = config.appEngine;
     this._cloudFunction.internalValue = config.cloudFunction;
     this._cloudRun.internalValue = config.cloudRun;
+    this._pscData.internalValue = config.pscData;
     this._serverlessDeployment.internalValue = config.serverlessDeployment;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1160,6 +1251,22 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
     return this._cloudRun.internalValue;
   }
 
+  // psc_data - computed: false, optional: true, required: false
+  private _pscData = new GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference(this, "psc_data");
+  public get pscData() {
+    return this._pscData;
+  }
+  public putPscData(value: GoogleComputeRegionNetworkEndpointGroupPscData) {
+    this._pscData.internalValue = value;
+  }
+  public resetPscData() {
+    this._pscData.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscDataInput() {
+    return this._pscData.internalValue;
+  }
+
   // serverless_deployment - computed: false, optional: true, required: false
   private _serverlessDeployment = new GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference(this, "serverless_deployment");
   public get serverlessDeployment() {
@@ -1210,6 +1317,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
       app_engine: googleComputeRegionNetworkEndpointGroupAppEngineToTerraform(this._appEngine.internalValue),
       cloud_function: googleComputeRegionNetworkEndpointGroupCloudFunctionToTerraform(this._cloudFunction.internalValue),
       cloud_run: googleComputeRegionNetworkEndpointGroupCloudRunToTerraform(this._cloudRun.internalValue),
+      psc_data: googleComputeRegionNetworkEndpointGroupPscDataToTerraform(this._pscData.internalValue),
       serverless_deployment: googleComputeRegionNetworkEndpointGroupServerlessDeploymentToTerraform(this._serverlessDeployment.internalValue),
       timeouts: googleComputeRegionNetworkEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1288,6 +1396,12 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
         isBlock: true,
         type: "list",
         storageClassType: "GoogleComputeRegionNetworkEndpointGroupCloudRunList",
+      },
+      psc_data: {
+        value: googleComputeRegionNetworkEndpointGroupPscDataToHclTerraform(this._pscData.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleComputeRegionNetworkEndpointGroupPscDataList",
       },
       serverless_deployment: {
         value: googleComputeRegionNetworkEndpointGroupServerlessDeploymentToHclTerraform(this._serverlessDeployment.internalValue),

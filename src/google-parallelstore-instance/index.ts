@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   /**
   * Required. Immutable. Storage capacity of Parallelstore instance in Gibibytes (GiB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#capacity_gib GoogleParallelstoreInstance#capacity_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#capacity_gib GoogleParallelstoreInstance#capacity_gib}
   */
   readonly capacityGib: string;
   /**
   * The description of the instance. 2048 characters or less.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#description GoogleParallelstoreInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#description GoogleParallelstoreInstance#description}
   */
   readonly description?: string;
   /**
@@ -34,7 +29,7 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   *   DIRECTORY_STRIPE_LEVEL_BALANCED
   *   DIRECTORY_STRIPE_LEVEL_MAX
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#directory_stripe_level GoogleParallelstoreInstance#directory_stripe_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#directory_stripe_level GoogleParallelstoreInstance#directory_stripe_level}
   */
   readonly directoryStripeLevel?: string;
   /**
@@ -47,11 +42,11 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   *   FILE_STRIPE_LEVEL_BALANCED
   *   FILE_STRIPE_LEVEL_MAX
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#file_stripe_level GoogleParallelstoreInstance#file_stripe_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#file_stripe_level GoogleParallelstoreInstance#file_stripe_level}
   */
   readonly fileStripeLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#id GoogleParallelstoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#id GoogleParallelstoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,7 +60,7 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   *   * Must end with a number or a letter.
   *   * Must be unique within the customer project/ location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#instance_id GoogleParallelstoreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#instance_id GoogleParallelstoreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
@@ -95,24 +90,24 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#labels GoogleParallelstoreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#labels GoogleParallelstoreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Part of 'parent'. See documentation of 'projectsId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#location GoogleParallelstoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#location GoogleParallelstoreInstance#location}
   */
   readonly location: string;
   /**
   * Immutable. The name of the Google Compute Engine [VPC network](https://cloud.google.com/vpc/docs/vpc)
   * to which the instance is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#network GoogleParallelstoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#network GoogleParallelstoreInstance#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#project GoogleParallelstoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#project GoogleParallelstoreInstance#project}
   */
   readonly project?: string;
   /**
@@ -121,27 +116,27 @@ export interface GoogleParallelstoreInstanceConfig extends cdktf.TerraformMetaAr
   * associated with IP range 10.0.0.0/29. If no range id is provided all ranges will
   * be considered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#reserved_ip_range GoogleParallelstoreInstance#reserved_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#reserved_ip_range GoogleParallelstoreInstance#reserved_ip_range}
   */
   readonly reservedIpRange?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#timeouts GoogleParallelstoreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#timeouts GoogleParallelstoreInstance#timeouts}
   */
   readonly timeouts?: GoogleParallelstoreInstanceTimeouts;
 }
 export interface GoogleParallelstoreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#create GoogleParallelstoreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#create GoogleParallelstoreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#delete GoogleParallelstoreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#delete GoogleParallelstoreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#update GoogleParallelstoreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#update GoogleParallelstoreInstance#update}
   */
   readonly update?: string;
 }
@@ -293,7 +288,7 @@ export class GoogleParallelstoreInstanceTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance google_parallelstore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance google_parallelstore_instance}
 */
 export class GoogleParallelstoreInstance extends cdktf.TerraformResource {
 
@@ -309,7 +304,7 @@ export class GoogleParallelstoreInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleParallelstoreInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleParallelstoreInstance to import
-  * @param importFromId The id of the existing GoogleParallelstoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleParallelstoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleParallelstoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +316,7 @@ export class GoogleParallelstoreInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +327,7 @@ export class GoogleParallelstoreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_parallelstore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

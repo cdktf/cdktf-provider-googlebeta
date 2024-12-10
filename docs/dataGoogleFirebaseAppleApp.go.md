@@ -4,12 +4,12 @@
 
 ### DataGoogleFirebaseAppleApp <a name="DataGoogleFirebaseAppleApp" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 datagooglefirebaseappleapp.NewDataGoogleFirebaseAppleApp(scope Construct, id *string, config DataGoogleFirebaseAppleAppConfig) DataGoogleFirebaseAppleApp
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 datagooglefirebaseappleapp.DataGoogleFirebaseAppleApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGoogleFirebaseAppleApp
 
 The id of the existing DataGoogleFirebaseAppleApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebaseappleapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseappleapp"
 
 &datagooglefirebaseappleapp.DataGoogleFirebaseAppleAppConfig {
 	Connection: interface{},
@@ -728,8 +728,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglef
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.appId">AppId</a></code> | <code>*string</code> | The globally unique, Firebase-assigned identifier of the App. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}. |
 
 ---
 
@@ -815,7 +815,7 @@ The globally unique, Firebase-assigned identifier of the App.
 
 This identifier should be treated as an opaque token, as the data format is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#app_id DataGoogleFirebaseAppleApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#app_id DataGoogleFirebaseAppleApp#app_id}
 
 ---
 
@@ -827,7 +827,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -842,7 +842,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   /**
   * Access restriction for the backup vault. Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#access_restriction GoogleBackupDrBackupVault#access_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#access_restriction GoogleBackupDrBackupVault#access_restriction}
   */
   readonly accessRestriction?: string;
   /**
   * Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#allow_missing GoogleBackupDrBackupVault#allow_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#allow_missing GoogleBackupDrBackupVault#allow_missing}
   */
   readonly allowMissing?: boolean | cdktf.IResolvable;
   /**
@@ -31,31 +26,31 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#annotations GoogleBackupDrBackupVault#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#annotations GoogleBackupDrBackupVault#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Required. The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#backup_minimum_enforced_retention_duration GoogleBackupDrBackupVault#backup_minimum_enforced_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#backup_minimum_enforced_retention_duration GoogleBackupDrBackupVault#backup_minimum_enforced_retention_duration}
   */
   readonly backupMinimumEnforcedRetentionDuration: string;
   /**
   * Required. ID of the requesting object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#backup_vault_id GoogleBackupDrBackupVault#backup_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#backup_vault_id GoogleBackupDrBackupVault#backup_vault_id}
   */
   readonly backupVaultId: string;
   /**
   * Optional. The description of the BackupVault instance (2048 characters or less).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#description GoogleBackupDrBackupVault#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#description GoogleBackupDrBackupVault#description}
   */
   readonly description?: string;
   /**
   * Optional. Time after which the BackupVault resource is locked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#effective_time GoogleBackupDrBackupVault#effective_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#effective_time GoogleBackupDrBackupVault#effective_time}
   */
   readonly effectiveTime?: string;
   /**
@@ -63,7 +58,7 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   *    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
   *    * deletion of a backup vault instance that is being referenced by an active backup plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#force_delete GoogleBackupDrBackupVault#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#force_delete GoogleBackupDrBackupVault#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
@@ -72,11 +67,11 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   *  expiration schedule defined by the associated backup plan is shorter than the minimum
   *  retention set by the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#force_update GoogleBackupDrBackupVault#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#force_update GoogleBackupDrBackupVault#force_update}
   */
   readonly forceUpdate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#id GoogleBackupDrBackupVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#id GoogleBackupDrBackupVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -86,14 +81,14 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   * If set, the following restrictions against deletion of the backup vault instance can be overridden:
   *    * deletion of a backup vault instance that is being referenced by an active backup plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#ignore_backup_plan_references GoogleBackupDrBackupVault#ignore_backup_plan_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#ignore_backup_plan_references GoogleBackupDrBackupVault#ignore_backup_plan_references}
   */
   readonly ignoreBackupPlanReferences?: boolean | cdktf.IResolvable;
   /**
   * If set, the following restrictions against deletion of the backup vault instance can be overridden:
   *    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#ignore_inactive_datasources GoogleBackupDrBackupVault#ignore_inactive_datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#ignore_inactive_datasources GoogleBackupDrBackupVault#ignore_inactive_datasources}
   */
   readonly ignoreInactiveDatasources?: boolean | cdktf.IResolvable;
   /**
@@ -102,37 +97,37 @@ export interface GoogleBackupDrBackupVaultConfig extends cdktf.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#labels GoogleBackupDrBackupVault#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#labels GoogleBackupDrBackupVault#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The GCP location for the backup vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#location GoogleBackupDrBackupVault#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#location GoogleBackupDrBackupVault#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#project GoogleBackupDrBackupVault#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#project GoogleBackupDrBackupVault#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#timeouts GoogleBackupDrBackupVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#timeouts GoogleBackupDrBackupVault#timeouts}
   */
   readonly timeouts?: GoogleBackupDrBackupVaultTimeouts;
 }
 export interface GoogleBackupDrBackupVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#create GoogleBackupDrBackupVault#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#create GoogleBackupDrBackupVault#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#delete GoogleBackupDrBackupVault#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#delete GoogleBackupDrBackupVault#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#update GoogleBackupDrBackupVault#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#update GoogleBackupDrBackupVault#update}
   */
   readonly update?: string;
 }
@@ -284,7 +279,7 @@ export class GoogleBackupDrBackupVaultTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}
 */
 export class GoogleBackupDrBackupVault extends cdktf.TerraformResource {
 
@@ -300,7 +295,7 @@ export class GoogleBackupDrBackupVault extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleBackupDrBackupVault resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleBackupDrBackupVault to import
-  * @param importFromId The id of the existing GoogleBackupDrBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleBackupDrBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleBackupDrBackupVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -312,7 +307,7 @@ export class GoogleBackupDrBackupVault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -323,7 +318,7 @@ export class GoogleBackupDrBackupVault extends cdktf.TerraformResource {
       terraformResourceType: 'google_backup_dr_backup_vault',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

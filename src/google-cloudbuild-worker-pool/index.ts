@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,17 +13,17 @@ export interface GoogleCloudbuildWorkerPoolConfig extends cdktf.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field `effective_annotations` for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#annotations GoogleCloudbuildWorkerPool#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#annotations GoogleCloudbuildWorkerPool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#display_name GoogleCloudbuildWorkerPool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#display_name GoogleCloudbuildWorkerPool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#id GoogleCloudbuildWorkerPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#id GoogleCloudbuildWorkerPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,37 +32,43 @@ export interface GoogleCloudbuildWorkerPoolConfig extends cdktf.TerraformMetaArg
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#location GoogleCloudbuildWorkerPool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#location GoogleCloudbuildWorkerPool#location}
   */
   readonly location: string;
   /**
   * User-defined name of the `WorkerPool`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#name GoogleCloudbuildWorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#name GoogleCloudbuildWorkerPool#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#project GoogleCloudbuildWorkerPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#project GoogleCloudbuildWorkerPool#project}
   */
   readonly project?: string;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#network_config GoogleCloudbuildWorkerPool#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#network_config GoogleCloudbuildWorkerPool#network_config}
   */
   readonly networkConfig?: GoogleCloudbuildWorkerPoolNetworkConfig;
   /**
+  * private_service_connect block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#private_service_connect GoogleCloudbuildWorkerPool#private_service_connect}
+  */
+  readonly privateServiceConnect?: GoogleCloudbuildWorkerPoolPrivateServiceConnect;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#timeouts GoogleCloudbuildWorkerPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#timeouts GoogleCloudbuildWorkerPool#timeouts}
   */
   readonly timeouts?: GoogleCloudbuildWorkerPoolTimeouts;
   /**
   * worker_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#worker_config GoogleCloudbuildWorkerPool#worker_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#worker_config GoogleCloudbuildWorkerPool#worker_config}
   */
   readonly workerConfig?: GoogleCloudbuildWorkerPoolWorkerConfig;
 }
@@ -75,13 +76,13 @@ export interface GoogleCloudbuildWorkerPoolNetworkConfig {
   /**
   * Required. Immutable. The network definition that the workers are peered to. If this section is left empty, the workers will be peered to `WorkerPool.project_id` on the service producer network. Must be in the format `projects/{project}/global/networks/{network}`, where `{project}` is a project number, such as `12345`, and `{network}` is the name of a VPC network in the project. See [Understanding network configuration options](https://cloud.google.com/cloud-build/docs/custom-workers/set-up-custom-worker-pool-environment#understanding_the_network_configuration_options)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#peered_network GoogleCloudbuildWorkerPool#peered_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#peered_network GoogleCloudbuildWorkerPool#peered_network}
   */
   readonly peeredNetwork: string;
   /**
   * Optional. Immutable. Subnet IP range within the peered network. This is specified in CIDR notation with a slash and the subnet prefix size. You can optionally specify an IP address before the subnet prefix value. e.g. `192.168.0.0/29` would specify an IP range starting at 192.168.0.0 with a prefix size of 29 bits. `/16` would specify a prefix size of 16 bits, with an automatically determined IP within the peered VPC. If unspecified, a value of `/24` will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#peered_network_ip_range GoogleCloudbuildWorkerPool#peered_network_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#peered_network_ip_range GoogleCloudbuildWorkerPool#peered_network_ip_range}
   */
   readonly peeredNetworkIpRange?: string;
 }
@@ -189,17 +190,135 @@ export class GoogleCloudbuildWorkerPoolNetworkConfigOutputReference extends cdkt
     return this._peeredNetworkIpRange;
   }
 }
+export interface GoogleCloudbuildWorkerPoolPrivateServiceConnect {
+  /**
+  * Required. Immutable. The network attachment that the worker network interface is connected to. Must be in the format `projects/{project}/regions/{region}/networkAttachments/{networkAttachment}`. The region of network attachment must be the same as the worker pool. See [Network Attachments](https://cloud.google.com/vpc/docs/about-network-attachments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#network_attachment GoogleCloudbuildWorkerPool#network_attachment}
+  */
+  readonly networkAttachment: string;
+  /**
+  * Immutable. Route all traffic through PSC interface. Enable this if you want full control of traffic in the private pool. Configure Cloud NAT for the subnet of network attachment if you need to access public Internet. If false, Only route private IPs, e.g. 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 through PSC interface.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#route_all_traffic GoogleCloudbuildWorkerPool#route_all_traffic}
+  */
+  readonly routeAllTraffic?: boolean | cdktf.IResolvable;
+}
+
+export function googleCloudbuildWorkerPoolPrivateServiceConnectToTerraform(struct?: GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference | GoogleCloudbuildWorkerPoolPrivateServiceConnect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_attachment: cdktf.stringToTerraform(struct!.networkAttachment),
+    route_all_traffic: cdktf.booleanToTerraform(struct!.routeAllTraffic),
+  }
+}
+
+
+export function googleCloudbuildWorkerPoolPrivateServiceConnectToHclTerraform(struct?: GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference | GoogleCloudbuildWorkerPoolPrivateServiceConnect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_attachment: {
+      value: cdktf.stringToHclTerraform(struct!.networkAttachment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route_all_traffic: {
+      value: cdktf.booleanToHclTerraform(struct!.routeAllTraffic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildWorkerPoolPrivateServiceConnect | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkAttachment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkAttachment = this._networkAttachment;
+    }
+    if (this._routeAllTraffic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routeAllTraffic = this._routeAllTraffic;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildWorkerPoolPrivateServiceConnect | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._networkAttachment = undefined;
+      this._routeAllTraffic = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkAttachment = value.networkAttachment;
+      this._routeAllTraffic = value.routeAllTraffic;
+    }
+  }
+
+  // network_attachment - computed: false, optional: false, required: true
+  private _networkAttachment?: string; 
+  public get networkAttachment() {
+    return this.getStringAttribute('network_attachment');
+  }
+  public set networkAttachment(value: string) {
+    this._networkAttachment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkAttachmentInput() {
+    return this._networkAttachment;
+  }
+
+  // route_all_traffic - computed: false, optional: true, required: false
+  private _routeAllTraffic?: boolean | cdktf.IResolvable; 
+  public get routeAllTraffic() {
+    return this.getBooleanAttribute('route_all_traffic');
+  }
+  public set routeAllTraffic(value: boolean | cdktf.IResolvable) {
+    this._routeAllTraffic = value;
+  }
+  public resetRouteAllTraffic() {
+    this._routeAllTraffic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeAllTrafficInput() {
+    return this._routeAllTraffic;
+  }
+}
 export interface GoogleCloudbuildWorkerPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#create GoogleCloudbuildWorkerPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#create GoogleCloudbuildWorkerPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#delete GoogleCloudbuildWorkerPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#delete GoogleCloudbuildWorkerPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#update GoogleCloudbuildWorkerPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#update GoogleCloudbuildWorkerPool#update}
   */
   readonly update?: string;
 }
@@ -353,19 +472,19 @@ export interface GoogleCloudbuildWorkerPoolWorkerConfig {
   /**
   * Size of the disk attached to the worker, in GB. See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). Specify a value of up to 1000. If `0` is specified, Cloud Build will use a standard disk size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#disk_size_gb GoogleCloudbuildWorkerPool#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#disk_size_gb GoogleCloudbuildWorkerPool#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
   * Machine type of a worker, such as `n1-standard-1`. See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). If left blank, Cloud Build will use `n1-standard-1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#machine_type GoogleCloudbuildWorkerPool#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#machine_type GoogleCloudbuildWorkerPool#machine_type}
   */
   readonly machineType?: string;
   /**
   * If true, workers are created without any public address, which prevents network egress to public IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#no_external_ip GoogleCloudbuildWorkerPool#no_external_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#no_external_ip GoogleCloudbuildWorkerPool#no_external_ip}
   */
   readonly noExternalIp?: boolean | cdktf.IResolvable;
 }
@@ -507,7 +626,7 @@ export class GoogleCloudbuildWorkerPoolWorkerConfigOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}
 */
 export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
 
@@ -523,7 +642,7 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleCloudbuildWorkerPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudbuildWorkerPool to import
-  * @param importFromId The id of the existing GoogleCloudbuildWorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudbuildWorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudbuildWorkerPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -535,7 +654,7 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +665,7 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuild_worker_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -564,6 +683,7 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._networkConfig.internalValue = config.networkConfig;
+    this._privateServiceConnect.internalValue = config.privateServiceConnect;
     this._timeouts.internalValue = config.timeouts;
     this._workerConfig.internalValue = config.workerConfig;
   }
@@ -709,6 +829,22 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
     return this._networkConfig.internalValue;
   }
 
+  // private_service_connect - computed: false, optional: true, required: false
+  private _privateServiceConnect = new GoogleCloudbuildWorkerPoolPrivateServiceConnectOutputReference(this, "private_service_connect");
+  public get privateServiceConnect() {
+    return this._privateServiceConnect;
+  }
+  public putPrivateServiceConnect(value: GoogleCloudbuildWorkerPoolPrivateServiceConnect) {
+    this._privateServiceConnect.internalValue = value;
+  }
+  public resetPrivateServiceConnect() {
+    this._privateServiceConnect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateServiceConnectInput() {
+    return this._privateServiceConnect.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleCloudbuildWorkerPoolTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -754,6 +890,7 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       network_config: googleCloudbuildWorkerPoolNetworkConfigToTerraform(this._networkConfig.internalValue),
+      private_service_connect: googleCloudbuildWorkerPoolPrivateServiceConnectToTerraform(this._privateServiceConnect.internalValue),
       timeouts: googleCloudbuildWorkerPoolTimeoutsToTerraform(this._timeouts.internalValue),
       worker_config: googleCloudbuildWorkerPoolWorkerConfigToTerraform(this._workerConfig.internalValue),
     };
@@ -802,6 +939,12 @@ export class GoogleCloudbuildWorkerPool extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleCloudbuildWorkerPoolNetworkConfigList",
+      },
+      private_service_connect: {
+        value: googleCloudbuildWorkerPoolPrivateServiceConnectToHclTerraform(this._privateServiceConnect.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleCloudbuildWorkerPoolPrivateServiceConnectList",
       },
       timeouts: {
         value: googleCloudbuildWorkerPoolTimeoutsToHclTerraform(this._timeouts.internalValue),

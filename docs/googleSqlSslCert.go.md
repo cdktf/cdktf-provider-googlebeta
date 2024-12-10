@@ -4,12 +4,12 @@
 
 ### GoogleSqlSslCert <a name="GoogleSqlSslCert" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.NewGoogleSqlSslCert(scope Construct, id *string, config GoogleSqlSslCertConfig) GoogleSqlSslCert
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.GoogleSqlSslCert_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.GoogleSqlSslCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googlesqlsslcert.GoogleSqlSslCert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.GoogleSqlSslCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlesqlsslcert.GoogleSqlSslCert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.GoogleSqlSslCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleSqlSslCert to import
 
 The id of the existing GoogleSqlSslCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 &googlesqlsslcert.GoogleSqlSslCertConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlss
 	Instance: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSqlSslCert.GoogleSqlSslCertTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSqlSslCert.GoogleSqlSslCertTimeouts,
 }
 ```
 
@@ -919,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlss
 | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.commonName">CommonName</a></code> | <code>*string</code> | The common name to be used in the certificate to identify the client. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.instance">Instance</a></code> | <code>*string</code> | The name of the Cloud SQL instance. Changing this forces a new resource to be created. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts">GoogleSqlSslCertTimeouts</a></code> | timeouts block. |
 
@@ -1007,7 +1007,7 @@ The common name to be used in the certificate to identify the client.
 
 Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#common_name GoogleSqlSslCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#common_name GoogleSqlSslCert#common_name}
 
 ---
 
@@ -1021,7 +1021,7 @@ Instance *string
 
 The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#instance GoogleSqlSslCert#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#instance GoogleSqlSslCert#instance}
 
 ---
 
@@ -1033,7 +1033,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#id GoogleSqlSslCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#project GoogleSqlSslCert#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#project GoogleSqlSslCert#project}
 
 ---
 
@@ -1066,7 +1066,7 @@ Timeouts GoogleSqlSslCertTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#timeouts GoogleSqlSslCert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#timeouts GoogleSqlSslCert#timeouts}
 
 ---
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 &googlesqlsslcert.GoogleSqlSslCertTimeouts {
 	Create: *string,
@@ -1087,8 +1087,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlss
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#create GoogleSqlSslCert#create}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_sql_ssl_cert#delete GoogleSqlSslCert#delete}.
 
 ---
 
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCertTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqlsslcert"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesqlsslcert"
 
 googlesqlsslcert.NewGoogleSqlSslCertTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSqlSslCertTimeoutsOutputReference
 ```

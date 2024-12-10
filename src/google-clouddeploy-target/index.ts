@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,23 +13,23 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field `effective_annotations` for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#annotations GoogleClouddeployTarget#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#annotations GoogleClouddeployTarget#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Optional. The deploy parameters to use for this target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#deploy_parameters GoogleClouddeployTarget#deploy_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#deploy_parameters GoogleClouddeployTarget#deploy_parameters}
   */
   readonly deployParameters?: { [key: string]: string };
   /**
   * Optional. Description of the `Target`. Max length is 255 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#description GoogleClouddeployTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#description GoogleClouddeployTarget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#id GoogleClouddeployTarget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#id GoogleClouddeployTarget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,73 +41,79 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field `effective_labels` for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#labels GoogleClouddeployTarget#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#labels GoogleClouddeployTarget#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
   */
   readonly location: string;
   /**
   * Name of the `Target`. Format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#name GoogleClouddeployTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#name GoogleClouddeployTarget#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#project GoogleClouddeployTarget#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#project GoogleClouddeployTarget#project}
   */
   readonly project?: string;
   /**
   * Optional. Whether or not the `Target` requires approval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#require_approval GoogleClouddeployTarget#require_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#require_approval GoogleClouddeployTarget#require_approval}
   */
   readonly requireApproval?: boolean | cdktf.IResolvable;
   /**
   * anthos_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#anthos_cluster GoogleClouddeployTarget#anthos_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#anthos_cluster GoogleClouddeployTarget#anthos_cluster}
   */
   readonly anthosCluster?: GoogleClouddeployTargetAnthosCluster;
   /**
+  * associated_entities block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#associated_entities GoogleClouddeployTarget#associated_entities}
+  */
+  readonly associatedEntities?: GoogleClouddeployTargetAssociatedEntities[] | cdktf.IResolvable;
+  /**
   * custom_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#custom_target GoogleClouddeployTarget#custom_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#custom_target GoogleClouddeployTarget#custom_target}
   */
   readonly customTarget?: GoogleClouddeployTargetCustomTarget;
   /**
   * execution_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#execution_configs GoogleClouddeployTarget#execution_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#execution_configs GoogleClouddeployTarget#execution_configs}
   */
   readonly executionConfigs?: GoogleClouddeployTargetExecutionConfigs[] | cdktf.IResolvable;
   /**
   * gke block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#gke GoogleClouddeployTarget#gke}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#gke GoogleClouddeployTarget#gke}
   */
   readonly gke?: GoogleClouddeployTargetGke;
   /**
   * multi_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#multi_target GoogleClouddeployTarget#multi_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#multi_target GoogleClouddeployTarget#multi_target}
   */
   readonly multiTarget?: GoogleClouddeployTargetMultiTarget;
   /**
   * run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#run GoogleClouddeployTarget#run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#run GoogleClouddeployTarget#run}
   */
   readonly run?: GoogleClouddeployTargetRun;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#timeouts GoogleClouddeployTarget#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#timeouts GoogleClouddeployTarget#timeouts}
   */
   readonly timeouts?: GoogleClouddeployTargetTimeouts;
 }
@@ -120,7 +121,7 @@ export interface GoogleClouddeployTargetAnthosCluster {
   /**
   * Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#membership GoogleClouddeployTarget#membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#membership GoogleClouddeployTarget#membership}
   */
   readonly membership?: string;
 }
@@ -202,11 +203,502 @@ export class GoogleClouddeployTargetAnthosClusterOutputReference extends cdktf.C
     return this._membership;
   }
 }
+export interface GoogleClouddeployTargetAssociatedEntitiesAnthosClusters {
+  /**
+  * Optional. Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#membership GoogleClouddeployTarget#membership}
+  */
+  readonly membership?: string;
+}
+
+export function googleClouddeployTargetAssociatedEntitiesAnthosClustersToTerraform(struct?: GoogleClouddeployTargetAssociatedEntitiesAnthosClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    membership: cdktf.stringToTerraform(struct!.membership),
+  }
+}
+
+
+export function googleClouddeployTargetAssociatedEntitiesAnthosClustersToHclTerraform(struct?: GoogleClouddeployTargetAssociatedEntitiesAnthosClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    membership: {
+      value: cdktf.stringToHclTerraform(struct!.membership),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleClouddeployTargetAssociatedEntitiesAnthosClusters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._membership !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.membership = this._membership;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployTargetAssociatedEntitiesAnthosClusters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._membership = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._membership = value.membership;
+    }
+  }
+
+  // membership - computed: false, optional: true, required: false
+  private _membership?: string; 
+  public get membership() {
+    return this.getStringAttribute('membership');
+  }
+  public set membership(value: string) {
+    this._membership = value;
+  }
+  public resetMembership() {
+    this._membership = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get membershipInput() {
+    return this._membership;
+  }
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList extends cdktf.ComplexList {
+  public internalValue? : GoogleClouddeployTargetAssociatedEntitiesAnthosClusters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference {
+    return new GoogleClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleClouddeployTargetAssociatedEntitiesGkeClusters {
+  /**
+  * Optional. Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#cluster GoogleClouddeployTarget#cluster}
+  */
+  readonly cluster?: string;
+  /**
+  * Optional. If true, `cluster` is accessed using the private IP address of the control plane endpoint. Otherwise, the default IP address of the control plane endpoint is used. The default IP address is the private IP address for clusters with private control-plane endpoints and the public IP address otherwise. Only specify this option when `cluster` is a [private GKE cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#internal_ip GoogleClouddeployTarget#internal_ip}
+  */
+  readonly internalIp?: boolean | cdktf.IResolvable;
+  /**
+  * Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#proxy_url GoogleClouddeployTarget#proxy_url}
+  */
+  readonly proxyUrl?: string;
+}
+
+export function googleClouddeployTargetAssociatedEntitiesGkeClustersToTerraform(struct?: GoogleClouddeployTargetAssociatedEntitiesGkeClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cluster: cdktf.stringToTerraform(struct!.cluster),
+    internal_ip: cdktf.booleanToTerraform(struct!.internalIp),
+    proxy_url: cdktf.stringToTerraform(struct!.proxyUrl),
+  }
+}
+
+
+export function googleClouddeployTargetAssociatedEntitiesGkeClustersToHclTerraform(struct?: GoogleClouddeployTargetAssociatedEntitiesGkeClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster: {
+      value: cdktf.stringToHclTerraform(struct!.cluster),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    internal_ip: {
+      value: cdktf.booleanToHclTerraform(struct!.internalIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    proxy_url: {
+      value: cdktf.stringToHclTerraform(struct!.proxyUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleClouddeployTargetAssociatedEntitiesGkeClusters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cluster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cluster = this._cluster;
+    }
+    if (this._internalIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalIp = this._internalIp;
+    }
+    if (this._proxyUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.proxyUrl = this._proxyUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployTargetAssociatedEntitiesGkeClusters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cluster = undefined;
+      this._internalIp = undefined;
+      this._proxyUrl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cluster = value.cluster;
+      this._internalIp = value.internalIp;
+      this._proxyUrl = value.proxyUrl;
+    }
+  }
+
+  // cluster - computed: false, optional: true, required: false
+  private _cluster?: string; 
+  public get cluster() {
+    return this.getStringAttribute('cluster');
+  }
+  public set cluster(value: string) {
+    this._cluster = value;
+  }
+  public resetCluster() {
+    this._cluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterInput() {
+    return this._cluster;
+  }
+
+  // internal_ip - computed: false, optional: true, required: false
+  private _internalIp?: boolean | cdktf.IResolvable; 
+  public get internalIp() {
+    return this.getBooleanAttribute('internal_ip');
+  }
+  public set internalIp(value: boolean | cdktf.IResolvable) {
+    this._internalIp = value;
+  }
+  public resetInternalIp() {
+    this._internalIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalIpInput() {
+    return this._internalIp;
+  }
+
+  // proxy_url - computed: false, optional: true, required: false
+  private _proxyUrl?: string; 
+  public get proxyUrl() {
+    return this.getStringAttribute('proxy_url');
+  }
+  public set proxyUrl(value: string) {
+    this._proxyUrl = value;
+  }
+  public resetProxyUrl() {
+    this._proxyUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyUrlInput() {
+    return this._proxyUrl;
+  }
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesGkeClustersList extends cdktf.ComplexList {
+  public internalValue? : GoogleClouddeployTargetAssociatedEntitiesGkeClusters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference {
+    return new GoogleClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleClouddeployTargetAssociatedEntities {
+  /**
+  * The name for the key in the map for which this object is mapped to in the API
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#entity_id GoogleClouddeployTarget#entity_id}
+  */
+  readonly entityId: string;
+  /**
+  * anthos_clusters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#anthos_clusters GoogleClouddeployTarget#anthos_clusters}
+  */
+  readonly anthosClusters?: GoogleClouddeployTargetAssociatedEntitiesAnthosClusters[] | cdktf.IResolvable;
+  /**
+  * gke_clusters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#gke_clusters GoogleClouddeployTarget#gke_clusters}
+  */
+  readonly gkeClusters?: GoogleClouddeployTargetAssociatedEntitiesGkeClusters[] | cdktf.IResolvable;
+}
+
+export function googleClouddeployTargetAssociatedEntitiesToTerraform(struct?: GoogleClouddeployTargetAssociatedEntities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_id: cdktf.stringToTerraform(struct!.entityId),
+    anthos_clusters: cdktf.listMapper(googleClouddeployTargetAssociatedEntitiesAnthosClustersToTerraform, true)(struct!.anthosClusters),
+    gke_clusters: cdktf.listMapper(googleClouddeployTargetAssociatedEntitiesGkeClustersToTerraform, true)(struct!.gkeClusters),
+  }
+}
+
+
+export function googleClouddeployTargetAssociatedEntitiesToHclTerraform(struct?: GoogleClouddeployTargetAssociatedEntities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_id: {
+      value: cdktf.stringToHclTerraform(struct!.entityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    anthos_clusters: {
+      value: cdktf.listMapperHcl(googleClouddeployTargetAssociatedEntitiesAnthosClustersToHclTerraform, true)(struct!.anthosClusters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList",
+    },
+    gke_clusters: {
+      value: cdktf.listMapperHcl(googleClouddeployTargetAssociatedEntitiesGkeClustersToHclTerraform, true)(struct!.gkeClusters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleClouddeployTargetAssociatedEntitiesGkeClustersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleClouddeployTargetAssociatedEntities | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityId = this._entityId;
+    }
+    if (this._anthosClusters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.anthosClusters = this._anthosClusters?.internalValue;
+    }
+    if (this._gkeClusters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gkeClusters = this._gkeClusters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployTargetAssociatedEntities | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._entityId = undefined;
+      this._anthosClusters.internalValue = undefined;
+      this._gkeClusters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._entityId = value.entityId;
+      this._anthosClusters.internalValue = value.anthosClusters;
+      this._gkeClusters.internalValue = value.gkeClusters;
+    }
+  }
+
+  // entity_id - computed: false, optional: false, required: true
+  private _entityId?: string; 
+  public get entityId() {
+    return this.getStringAttribute('entity_id');
+  }
+  public set entityId(value: string) {
+    this._entityId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityIdInput() {
+    return this._entityId;
+  }
+
+  // anthos_clusters - computed: false, optional: true, required: false
+  private _anthosClusters = new GoogleClouddeployTargetAssociatedEntitiesAnthosClustersList(this, "anthos_clusters", false);
+  public get anthosClusters() {
+    return this._anthosClusters;
+  }
+  public putAnthosClusters(value: GoogleClouddeployTargetAssociatedEntitiesAnthosClusters[] | cdktf.IResolvable) {
+    this._anthosClusters.internalValue = value;
+  }
+  public resetAnthosClusters() {
+    this._anthosClusters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anthosClustersInput() {
+    return this._anthosClusters.internalValue;
+  }
+
+  // gke_clusters - computed: false, optional: true, required: false
+  private _gkeClusters = new GoogleClouddeployTargetAssociatedEntitiesGkeClustersList(this, "gke_clusters", false);
+  public get gkeClusters() {
+    return this._gkeClusters;
+  }
+  public putGkeClusters(value: GoogleClouddeployTargetAssociatedEntitiesGkeClusters[] | cdktf.IResolvable) {
+    this._gkeClusters.internalValue = value;
+  }
+  public resetGkeClusters() {
+    this._gkeClusters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeClustersInput() {
+    return this._gkeClusters.internalValue;
+  }
+}
+
+export class GoogleClouddeployTargetAssociatedEntitiesList extends cdktf.ComplexList {
+  public internalValue? : GoogleClouddeployTargetAssociatedEntities[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleClouddeployTargetAssociatedEntitiesOutputReference {
+    return new GoogleClouddeployTargetAssociatedEntitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleClouddeployTargetCustomTarget {
   /**
   * Required. The name of the CustomTargetType. Format must be `projects/{project}/locations/{location}/customTargetTypes/{custom_target_type}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#custom_target_type GoogleClouddeployTarget#custom_target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#custom_target_type GoogleClouddeployTarget#custom_target_type}
   */
   readonly customTargetType: string;
 }
@@ -289,37 +781,37 @@ export interface GoogleClouddeployTargetExecutionConfigs {
   /**
   * Optional. Cloud Storage location in which to store execution outputs. This can either be a bucket ("gs://my-bucket") or a path within a bucket ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the same region will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#artifact_storage GoogleClouddeployTarget#artifact_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#artifact_storage GoogleClouddeployTarget#artifact_storage}
   */
   readonly artifactStorage?: string;
   /**
   * Optional. Execution timeout for a Cloud Build Execution. This must be between 10m and 24h in seconds format. If unspecified, a default timeout of 1h is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#execution_timeout GoogleClouddeployTarget#execution_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#execution_timeout GoogleClouddeployTarget#execution_timeout}
   */
   readonly executionTimeout?: string;
   /**
   * Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#service_account GoogleClouddeployTarget#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#service_account GoogleClouddeployTarget#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Required. Usages when this configuration should be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#usages GoogleClouddeployTarget#usages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#usages GoogleClouddeployTarget#usages}
   */
   readonly usages: string[];
   /**
   * Optional. If true, additional logging will be enabled when running builds in this execution environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#verbose GoogleClouddeployTarget#verbose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#verbose GoogleClouddeployTarget#verbose}
   */
   readonly verbose?: boolean | cdktf.IResolvable;
   /**
   * Optional. The resource name of the `WorkerPool`, with the format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. If this optional field is unspecified, the default Cloud Build pool will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#worker_pool GoogleClouddeployTarget#worker_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#worker_pool GoogleClouddeployTarget#worker_pool}
   */
   readonly workerPool?: string;
 }
@@ -579,19 +1071,19 @@ export interface GoogleClouddeployTargetGke {
   /**
   * Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#cluster GoogleClouddeployTarget#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#cluster GoogleClouddeployTarget#cluster}
   */
   readonly cluster?: string;
   /**
   * Optional. If true, `cluster` is accessed using the private IP address of the control plane endpoint. Otherwise, the default IP address of the control plane endpoint is used. The default IP address is the private IP address for clusters with private control-plane endpoints and the public IP address otherwise. Only specify this option when `cluster` is a [private GKE cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#internal_ip GoogleClouddeployTarget#internal_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#internal_ip GoogleClouddeployTarget#internal_ip}
   */
   readonly internalIp?: boolean | cdktf.IResolvable;
   /**
   * Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#proxy_url GoogleClouddeployTarget#proxy_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#proxy_url GoogleClouddeployTarget#proxy_url}
   */
   readonly proxyUrl?: string;
 }
@@ -735,7 +1227,7 @@ export interface GoogleClouddeployTargetMultiTarget {
   /**
   * Required. The target_ids of this multiTarget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#target_ids GoogleClouddeployTarget#target_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#target_ids GoogleClouddeployTarget#target_ids}
   */
   readonly targetIds: string[];
 }
@@ -818,7 +1310,7 @@ export interface GoogleClouddeployTargetRun {
   /**
   * Required. The location where the Cloud Run Service should be located. Format is `projects/{project}/locations/{location}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
   */
   readonly location: string;
 }
@@ -899,15 +1391,15 @@ export class GoogleClouddeployTargetRunOutputReference extends cdktf.ComplexObje
 }
 export interface GoogleClouddeployTargetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#create GoogleClouddeployTarget#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#create GoogleClouddeployTarget#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#delete GoogleClouddeployTarget#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#delete GoogleClouddeployTarget#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#update GoogleClouddeployTarget#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#update GoogleClouddeployTarget#update}
   */
   readonly update?: string;
 }
@@ -1059,7 +1551,7 @@ export class GoogleClouddeployTargetTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}
 */
 export class GoogleClouddeployTarget extends cdktf.TerraformResource {
 
@@ -1075,7 +1567,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleClouddeployTarget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleClouddeployTarget to import
-  * @param importFromId The id of the existing GoogleClouddeployTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleClouddeployTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleClouddeployTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1087,7 +1579,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1098,7 +1590,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       terraformResourceType: 'google_clouddeploy_target',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1119,6 +1611,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     this._project = config.project;
     this._requireApproval = config.requireApproval;
     this._anthosCluster.internalValue = config.anthosCluster;
+    this._associatedEntities.internalValue = config.associatedEntities;
     this._customTarget.internalValue = config.customTarget;
     this._executionConfigs.internalValue = config.executionConfigs;
     this._gke.internalValue = config.gke;
@@ -1328,6 +1821,22 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     return this._anthosCluster.internalValue;
   }
 
+  // associated_entities - computed: false, optional: true, required: false
+  private _associatedEntities = new GoogleClouddeployTargetAssociatedEntitiesList(this, "associated_entities", true);
+  public get associatedEntities() {
+    return this._associatedEntities;
+  }
+  public putAssociatedEntities(value: GoogleClouddeployTargetAssociatedEntities[] | cdktf.IResolvable) {
+    this._associatedEntities.internalValue = value;
+  }
+  public resetAssociatedEntities() {
+    this._associatedEntities.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get associatedEntitiesInput() {
+    return this._associatedEntities.internalValue;
+  }
+
   // custom_target - computed: false, optional: true, required: false
   private _customTarget = new GoogleClouddeployTargetCustomTargetOutputReference(this, "custom_target");
   public get customTarget() {
@@ -1440,6 +1949,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       require_approval: cdktf.booleanToTerraform(this._requireApproval),
       anthos_cluster: googleClouddeployTargetAnthosClusterToTerraform(this._anthosCluster.internalValue),
+      associated_entities: cdktf.listMapper(googleClouddeployTargetAssociatedEntitiesToTerraform, true)(this._associatedEntities.internalValue),
       custom_target: googleClouddeployTargetCustomTargetToTerraform(this._customTarget.internalValue),
       execution_configs: cdktf.listMapper(googleClouddeployTargetExecutionConfigsToTerraform, true)(this._executionConfigs.internalValue),
       gke: googleClouddeployTargetGkeToTerraform(this._gke.internalValue),
@@ -1510,6 +2020,12 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleClouddeployTargetAnthosClusterList",
+      },
+      associated_entities: {
+        value: cdktf.listMapperHcl(googleClouddeployTargetAssociatedEntitiesToHclTerraform, true)(this._associatedEntities.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GoogleClouddeployTargetAssociatedEntitiesList",
       },
       custom_target: {
         value: googleClouddeployTargetCustomTargetToHclTerraform(this._customTarget.internalValue),
