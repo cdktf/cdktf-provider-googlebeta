@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_binary_authorization_attestor_iam_member
 // generated from terraform resource schema
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 googleendpointsserviceconsumersiampolicy.NewGoogleEndpointsServiceConsumersIamPolicy(scope Construct, id *string, config GoogleEndpointsServiceConsumersIamPolicyConfig) GoogleEndpointsServiceConsumersIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceconsumersiampolicy"
 
 &googleendpointsserviceconsumersiampolicy.GoogleEndpointsServiceConsumersIamPolicyConfig {
 	Connection: interface{},

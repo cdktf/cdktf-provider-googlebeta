@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.NewGoogleManagedKafkaTopic(scope Construct, id *string, config GoogleManagedKafkaTopicConfig) GoogleManagedKafkaTopic
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.GoogleManagedKafkaTopic_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.GoogleManagedKafkaTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlemanagedkafkatopic.GoogleManagedKafkaTopic_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.GoogleManagedKafkaTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlemanagedkafkatopic.GoogleManagedKafkaTopic_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.GoogleManagedKafkaTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 &googlemanagedkafkatopic.GoogleManagedKafkaTopicConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanag
 	Id: *string,
 	PartitionCount: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleManagedKafkaTopic.GoogleManagedKafkaTopicTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleManagedKafkaTopic.GoogleManagedKafkaTopicTimeouts,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 &googlemanagedkafkatopic.GoogleManagedKafkaTopicTimeouts {
 	Create: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleManagedKafkaTopic.GoogleManagedKafkaTopicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlemanagedkafkatopic"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemanagedkafkatopic"
 
 googlemanagedkafkatopic.NewGoogleManagedKafkaTopicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleManagedKafkaTopicTimeoutsOutputReference
 ```

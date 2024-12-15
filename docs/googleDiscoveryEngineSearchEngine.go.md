@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.NewGoogleDiscoveryEngineSearchEngine(scope Construct, id *string, config GoogleDiscoveryEngineSearchEngineConfig) GoogleDiscoveryEngineSearchEngine
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1016,7 +1016,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineCommonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 &googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngineCommonConfig {
 	CompanyName: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 &googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngineConfig {
 	Connection: interface{},
@@ -1067,12 +1067,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledisco
 	DisplayName: *string,
 	EngineId: *string,
 	Location: *string,
-	SearchEngineConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineSearchEngineConfig,
-	CommonConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineCommonConfig,
+	SearchEngineConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineSearchEngineConfig,
+	CommonConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineCommonConfig,
 	Id: *string,
 	IndustryVertical: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineTimeouts,
 }
 ```
 
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineSearchEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 &googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngineSearchEngineConfig {
 	SearchAddOns: *[]*string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 &googlediscoveryenginesearchengine.GoogleDiscoveryEngineSearchEngineTimeouts {
 	Create: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineCommonConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.NewGoogleDiscoveryEngineSearchEngineCommonConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineSearchEngineCommonConfigOutputReference
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() GoogleDiscoveryEngineSearchEngineCommonConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.NewGoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference
 ```
@@ -2032,7 +2032,7 @@ func InternalValue() GoogleDiscoveryEngineSearchEngineSearchEngineConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDiscoveryEngineSearchEngine.GoogleDiscoveryEngineSearchEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginesearchengine"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlediscoveryenginesearchengine"
 
 googlediscoveryenginesearchengine.NewGoogleDiscoveryEngineSearchEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDiscoveryEngineSearchEngineTimeoutsOutputReference
 ```

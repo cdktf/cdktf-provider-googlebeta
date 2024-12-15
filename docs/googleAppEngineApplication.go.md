@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplication(scope Construct, id *string, config GoogleAppEngineApplicationConfig) GoogleAppEngineApplication
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.GoogleAppEngineApplication_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.GoogleAppEngineApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googleappengineapplication.GoogleAppEngineApplication_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.GoogleAppEngineApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ googleappengineapplication.GoogleAppEngineApplication_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.GoogleAppEngineApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 &googleappengineapplication.GoogleAppEngineApplicationConfig {
 	Connection: interface{},
@@ -1050,12 +1050,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappen
 	LocationId: *string,
 	AuthDomain: *string,
 	DatabaseType: *string,
-	FeatureSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettings,
-	Iap: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleAppEngineApplication.GoogleAppEngineApplicationIap,
+	FeatureSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettings,
+	Iap: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineApplication.GoogleAppEngineApplicationIap,
 	Id: *string,
 	Project: *string,
 	ServingStatus: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleAppEngineApplication.GoogleAppEngineApplicationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAppEngineApplication.GoogleAppEngineApplicationTimeouts,
 }
 ```
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 &googleappengineapplication.GoogleAppEngineApplicationFeatureSettings {
 	SplitHealthChecks: interface{},
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 &googleappengineapplication.GoogleAppEngineApplicationIap {
 	Oauth2ClientId: *string,
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 &googleappengineapplication.GoogleAppEngineApplicationTimeouts {
 	Create: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 &googleappengineapplication.GoogleAppEngineApplicationUrlDispatchRule {
 
@@ -1443,7 +1443,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappen
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplicationFeatureSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineApplicationFeatureSettingsOutputReference
 ```
@@ -1714,7 +1714,7 @@ func InternalValue() GoogleAppEngineApplicationFeatureSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplicationIapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineApplicationIapOutputReference
 ```
@@ -2047,7 +2047,7 @@ func InternalValue() GoogleAppEngineApplicationIap
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineApplicationTimeoutsOutputReference
 ```
@@ -2354,7 +2354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplicationUrlDispatchRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineApplicationUrlDispatchRuleList
 ```
@@ -2503,7 +2503,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleappengineapplication"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleappengineapplication"
 
 googleappengineapplication.NewGoogleAppEngineApplicationUrlDispatchRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAppEngineApplicationUrlDispatchRuleOutputReference
 ```
