@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,13 @@ export interface GoogleNetappVolumeReplicationConfig extends cdktf.TerraformMeta
   * For production use, it is recommended to keep this parameter false to avoid accidental volume
   * deletion. Handle with care. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#delete_destination_volume GoogleNetappVolumeReplication#delete_destination_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#delete_destination_volume GoogleNetappVolumeReplication#delete_destination_volume}
   */
   readonly deleteDestinationVolume?: boolean | cdktf.IResolvable;
   /**
   * An description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#description GoogleNetappVolumeReplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#description GoogleNetappVolumeReplication#description}
   */
   readonly description?: string;
   /**
@@ -36,11 +36,11 @@ export interface GoogleNetappVolumeReplicationConfig extends cdktf.TerraformMeta
   * to stop anyway. All data transferred to the destination will be discarded and content of destination
   * volume will remain at the state of the last successful update. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#force_stopping GoogleNetappVolumeReplication#force_stopping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#force_stopping GoogleNetappVolumeReplication#force_stopping}
   */
   readonly forceStopping?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#id GoogleNetappVolumeReplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#id GoogleNetappVolumeReplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,23 +53,23 @@ export interface GoogleNetappVolumeReplicationConfig extends cdktf.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#labels GoogleNetappVolumeReplication#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#labels GoogleNetappVolumeReplication#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of region for this resource. The resource needs to be created in the region of the destination volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#location GoogleNetappVolumeReplication#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#location GoogleNetappVolumeReplication#location}
   */
   readonly location: string;
   /**
   * The name of the replication. Needs to be unique per location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#name GoogleNetappVolumeReplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#name GoogleNetappVolumeReplication#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#project GoogleNetappVolumeReplication#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#project GoogleNetappVolumeReplication#project}
   */
   readonly project?: string;
   /**
@@ -78,19 +78,19 @@ export interface GoogleNetappVolumeReplicationConfig extends cdktf.TerraformMeta
   * Set to true to enable/resume the mirror. WARNING: Resuming a mirror overwrites any changes
   * done to the destination volume with the content of the source volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#replication_enabled GoogleNetappVolumeReplication#replication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#replication_enabled GoogleNetappVolumeReplication#replication_enabled}
   */
   readonly replicationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Specifies the replication interval. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#replication_schedule GoogleNetappVolumeReplication#replication_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#replication_schedule GoogleNetappVolumeReplication#replication_schedule}
   */
   readonly replicationSchedule: string;
   /**
   * The name of the existing source volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#volume_name GoogleNetappVolumeReplication#volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#volume_name GoogleNetappVolumeReplication#volume_name}
   */
   readonly volumeName: string;
   /**
@@ -98,19 +98,19 @@ export interface GoogleNetappVolumeReplicationConfig extends cdktf.TerraformMeta
   * for mirror_state to reach MIRRORED. If you want Terraform to wait for the mirror to finish on
   * create/stop/resume operations, set this parameter to true. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#wait_for_mirror GoogleNetappVolumeReplication#wait_for_mirror}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#wait_for_mirror GoogleNetappVolumeReplication#wait_for_mirror}
   */
   readonly waitForMirror?: boolean | cdktf.IResolvable;
   /**
   * destination_volume_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#destination_volume_parameters GoogleNetappVolumeReplication#destination_volume_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#destination_volume_parameters GoogleNetappVolumeReplication#destination_volume_parameters}
   */
   readonly destinationVolumeParameters?: GoogleNetappVolumeReplicationDestinationVolumeParameters;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#timeouts GoogleNetappVolumeReplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#timeouts GoogleNetappVolumeReplication#timeouts}
   */
   readonly timeouts?: GoogleNetappVolumeReplicationTimeouts;
 }
@@ -228,25 +228,25 @@ export interface GoogleNetappVolumeReplicationDestinationVolumeParameters {
   /**
   * Description for the destination volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#description GoogleNetappVolumeReplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#description GoogleNetappVolumeReplication#description}
   */
   readonly description?: string;
   /**
   * Share name for destination volume. If not specified, name of source volume's share name will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#share_name GoogleNetappVolumeReplication#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#share_name GoogleNetappVolumeReplication#share_name}
   */
   readonly shareName?: string;
   /**
   * Name of an existing storage pool for the destination volume with format: 'projects/{{project}}/locations/{{location}}/storagePools/{{poolId}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#storage_pool GoogleNetappVolumeReplication#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#storage_pool GoogleNetappVolumeReplication#storage_pool}
   */
   readonly storagePool: string;
   /**
   * Name for the destination volume to be created. If not specified, the name of the source volume will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#volume_id GoogleNetappVolumeReplication#volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#volume_id GoogleNetappVolumeReplication#volume_id}
   */
   readonly volumeId?: string;
 }
@@ -414,15 +414,15 @@ export class GoogleNetappVolumeReplicationDestinationVolumeParametersOutputRefer
 }
 export interface GoogleNetappVolumeReplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#create GoogleNetappVolumeReplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#create GoogleNetappVolumeReplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#delete GoogleNetappVolumeReplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#delete GoogleNetappVolumeReplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#update GoogleNetappVolumeReplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#update GoogleNetappVolumeReplication#update}
   */
   readonly update?: string;
 }
@@ -574,7 +574,7 @@ export class GoogleNetappVolumeReplicationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication google_netapp_volume_replication}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication google_netapp_volume_replication}
 */
 export class GoogleNetappVolumeReplication extends cdktf.TerraformResource {
 
@@ -590,7 +590,7 @@ export class GoogleNetappVolumeReplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleNetappVolumeReplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetappVolumeReplication to import
-  * @param importFromId The id of the existing GoogleNetappVolumeReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetappVolumeReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetappVolumeReplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -602,7 +602,7 @@ export class GoogleNetappVolumeReplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_netapp_volume_replication google_netapp_volume_replication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_netapp_volume_replication google_netapp_volume_replication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -613,7 +613,7 @@ export class GoogleNetappVolumeReplication extends cdktf.TerraformResource {
       terraformResourceType: 'google_netapp_volume_replication',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

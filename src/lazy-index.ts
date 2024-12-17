@@ -757,11 +757,14 @@ Object.defineProperty(exports, 'googleNetworkSecurityAddressGroupIamBinding', { 
 Object.defineProperty(exports, 'googleNetworkSecurityAddressGroupIamMember', { get: function () { return require('./google-network-security-address-group-iam-member'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityAddressGroupIamPolicy', { get: function () { return require('./google-network-security-address-group-iam-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityAuthorizationPolicy', { get: function () { return require('./google-network-security-authorization-policy'); } });
+Object.defineProperty(exports, 'googleNetworkSecurityAuthzPolicy', { get: function () { return require('./google-network-security-authz-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityClientTlsPolicy', { get: function () { return require('./google-network-security-client-tls-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityFirewallEndpoint', { get: function () { return require('./google-network-security-firewall-endpoint'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityFirewallEndpointAssociation', { get: function () { return require('./google-network-security-firewall-endpoint-association'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityGatewaySecurityPolicy', { get: function () { return require('./google-network-security-gateway-security-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityGatewaySecurityPolicyRule', { get: function () { return require('./google-network-security-gateway-security-policy-rule'); } });
+Object.defineProperty(exports, 'googleNetworkSecurityInterceptDeployment', { get: function () { return require('./google-network-security-intercept-deployment'); } });
+Object.defineProperty(exports, 'googleNetworkSecurityInterceptDeploymentGroup', { get: function () { return require('./google-network-security-intercept-deployment-group'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityMirroringDeployment', { get: function () { return require('./google-network-security-mirroring-deployment'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityMirroringDeploymentGroup', { get: function () { return require('./google-network-security-mirroring-deployment-group'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityMirroringEndpointGroup', { get: function () { return require('./google-network-security-mirroring-endpoint-group'); } });
@@ -771,6 +774,7 @@ Object.defineProperty(exports, 'googleNetworkSecuritySecurityProfileGroup', { ge
 Object.defineProperty(exports, 'googleNetworkSecurityServerTlsPolicy', { get: function () { return require('./google-network-security-server-tls-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityTlsInspectionPolicy', { get: function () { return require('./google-network-security-tls-inspection-policy'); } });
 Object.defineProperty(exports, 'googleNetworkSecurityUrlLists', { get: function () { return require('./google-network-security-url-lists'); } });
+Object.defineProperty(exports, 'googleNetworkServicesAuthzExtension', { get: function () { return require('./google-network-services-authz-extension'); } });
 Object.defineProperty(exports, 'googleNetworkServicesEdgeCacheKeyset', { get: function () { return require('./google-network-services-edge-cache-keyset'); } });
 Object.defineProperty(exports, 'googleNetworkServicesEdgeCacheOrigin', { get: function () { return require('./google-network-services-edge-cache-origin'); } });
 Object.defineProperty(exports, 'googleNetworkServicesEdgeCacheService', { get: function () { return require('./google-network-services-edge-cache-service'); } });

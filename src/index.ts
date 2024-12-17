@@ -757,11 +757,14 @@ export * as googleNetworkSecurityAddressGroupIamBinding from './google-network-s
 export * as googleNetworkSecurityAddressGroupIamMember from './google-network-security-address-group-iam-member';
 export * as googleNetworkSecurityAddressGroupIamPolicy from './google-network-security-address-group-iam-policy';
 export * as googleNetworkSecurityAuthorizationPolicy from './google-network-security-authorization-policy';
+export * as googleNetworkSecurityAuthzPolicy from './google-network-security-authz-policy';
 export * as googleNetworkSecurityClientTlsPolicy from './google-network-security-client-tls-policy';
 export * as googleNetworkSecurityFirewallEndpoint from './google-network-security-firewall-endpoint';
 export * as googleNetworkSecurityFirewallEndpointAssociation from './google-network-security-firewall-endpoint-association';
 export * as googleNetworkSecurityGatewaySecurityPolicy from './google-network-security-gateway-security-policy';
 export * as googleNetworkSecurityGatewaySecurityPolicyRule from './google-network-security-gateway-security-policy-rule';
+export * as googleNetworkSecurityInterceptDeployment from './google-network-security-intercept-deployment';
+export * as googleNetworkSecurityInterceptDeploymentGroup from './google-network-security-intercept-deployment-group';
 export * as googleNetworkSecurityMirroringDeployment from './google-network-security-mirroring-deployment';
 export * as googleNetworkSecurityMirroringDeploymentGroup from './google-network-security-mirroring-deployment-group';
 export * as googleNetworkSecurityMirroringEndpointGroup from './google-network-security-mirroring-endpoint-group';
@@ -771,6 +774,7 @@ export * as googleNetworkSecuritySecurityProfileGroup from './google-network-sec
 export * as googleNetworkSecurityServerTlsPolicy from './google-network-security-server-tls-policy';
 export * as googleNetworkSecurityTlsInspectionPolicy from './google-network-security-tls-inspection-policy';
 export * as googleNetworkSecurityUrlLists from './google-network-security-url-lists';
+export * as googleNetworkServicesAuthzExtension from './google-network-services-authz-extension';
 export * as googleNetworkServicesEdgeCacheKeyset from './google-network-services-edge-cache-keyset';
 export * as googleNetworkServicesEdgeCacheOrigin from './google-network-services-edge-cache-origin';
 export * as googleNetworkServicesEdgeCacheService from './google-network-services-edge-cache-service';

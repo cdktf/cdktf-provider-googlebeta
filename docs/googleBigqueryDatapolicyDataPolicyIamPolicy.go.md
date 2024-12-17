@@ -4,7 +4,7 @@
 
 ### GoogleBigqueryDatapolicyDataPolicyIamPolicy <a name="GoogleBigqueryDatapolicyDataPolicyIamPolicy" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleBigqueryDatapolicyDa
 
 The id of the existing GoogleBigqueryDatapolicyDataPolicyIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigqu
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.dataPolicyId">DataPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamPolicy#data_policy_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#policy_data GoogleBigqueryDatapolicyDataPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#id GoogleBigqueryDatapolicyDataPolicyIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#location GoogleBigqueryDatapolicyDataPolicyIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#project GoogleBigqueryDatapolicyDataPolicyIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.dataPolicyId">DataPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamPolicy#data_policy_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#policy_data GoogleBigqueryDatapolicyDataPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#id GoogleBigqueryDatapolicyDataPolicyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#location GoogleBigqueryDatapolicyDataPolicyIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamPolicy.GoogleBigqueryDatapolicyDataPolicyIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#project GoogleBigqueryDatapolicyDataPolicyIamPolicy#project}. |
 
 ---
 
@@ -924,7 +924,7 @@ DataPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamPolicy#data_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#data_policy_id GoogleBigqueryDatapolicyDataPolicyIamPolicy#data_policy_id}.
 
 ---
 
@@ -936,7 +936,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#policy_data GoogleBigqueryDatapolicyDataPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#policy_data GoogleBigqueryDatapolicyDataPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#id GoogleBigqueryDatapolicyDataPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#id GoogleBigqueryDatapolicyDataPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -963,7 +963,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#location GoogleBigqueryDatapolicyDataPolicyIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#location GoogleBigqueryDatapolicyDataPolicyIamPolicy#location}.
 
 ---
 
@@ -975,7 +975,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#project GoogleBigqueryDatapolicyDataPolicyIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_bigquery_datapolicy_data_policy_iam_policy#project GoogleBigqueryDatapolicyDataPolicyIamPolicy#project}.
 
 ---
 

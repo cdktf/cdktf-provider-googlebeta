@@ -4,7 +4,7 @@
 
 ### GoogleLoggingLogView <a name="GoogleLoggingLogView" id="@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view google_logging_log_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view google_logging_log_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the GoogleLoggingLogView to im
 
 The id of the existing GoogleLoggingLogView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,7 +940,7 @@ const googleLoggingLogViewConfig: googleLoggingLogView.GoogleLoggingLogViewConfi
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.name">name</a></code> | <code>string</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.description">description</a></code> | <code>string</code> | Describes this view. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.filter">filter</a></code> | <code>string</code> | Filter that restricts which log entries in a bucket are visible in this view. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#id GoogleLoggingLogView#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#id GoogleLoggingLogView#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.location">location</a></code> | <code>string</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.parent">parent</a></code> | <code>string</code> | The parent of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts">GoogleLoggingLogViewTimeouts</a></code> | timeouts block. |
@@ -1027,7 +1027,7 @@ public readonly bucket: string;
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#bucket GoogleLoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#bucket GoogleLoggingLogView#bucket}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly name: string;
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#name GoogleLoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#name GoogleLoggingLogView#name}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly description: string;
 
 Describes this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#description GoogleLoggingLogView#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#description GoogleLoggingLogView#description}
 
 ---
 
@@ -1071,7 +1071,7 @@ Filter that restricts which log entries in a bucket are visible in this view.
 
 Filters are restricted to be a logical AND of ==/!= of any of the following: - originating project/folder/organization/billing account. - resource type - log id For example: SOURCE("projects/myproject") AND resource.type = "gce_instance" AND LOG_ID("stdout")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#filter GoogleLoggingLogView#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#filter GoogleLoggingLogView#filter}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#id GoogleLoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#id GoogleLoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1100,7 @@ public readonly location: string;
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#location GoogleLoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#location GoogleLoggingLogView#location}
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly parent: string;
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#parent GoogleLoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#parent GoogleLoggingLogView#parent}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly timeouts: GoogleLoggingLogViewTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#timeouts GoogleLoggingLogView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#timeouts GoogleLoggingLogView#timeouts}
 
 ---
 
@@ -1146,9 +1146,9 @@ const googleLoggingLogViewTimeouts: googleLoggingLogView.GoogleLoggingLogViewTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#create GoogleLoggingLogView#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#delete GoogleLoggingLogView#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#update GoogleLoggingLogView#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#create GoogleLoggingLogView#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#delete GoogleLoggingLogView#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#update GoogleLoggingLogView#update}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#create GoogleLoggingLogView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#create GoogleLoggingLogView#create}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#delete GoogleLoggingLogView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#delete GoogleLoggingLogView#delete}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_logging_log_view#update GoogleLoggingLogView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_logging_log_view#update GoogleLoggingLogView#update}.
 
 ---
 

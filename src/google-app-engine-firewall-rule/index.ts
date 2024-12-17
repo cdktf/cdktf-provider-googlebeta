@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleAppEngineFirewallRuleConfig extends cdktf.TerraformMetaAr
   /**
   * The action to take if this rule matches. Possible values: ["UNSPECIFIED_ACTION", "ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#action GoogleAppEngineFirewallRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#action GoogleAppEngineFirewallRule#action}
   */
   readonly action: string;
   /**
   * An optional string description of this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#description GoogleAppEngineFirewallRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#description GoogleAppEngineFirewallRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#id GoogleAppEngineFirewallRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#id GoogleAppEngineFirewallRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,37 +39,37 @@ export interface GoogleAppEngineFirewallRuleConfig extends cdktf.TerraformMetaAr
   * IPv6 traffic when no previous rule matches. Only the action of
   * this rule can be modified by the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#priority GoogleAppEngineFirewallRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#priority GoogleAppEngineFirewallRule#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#project GoogleAppEngineFirewallRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#project GoogleAppEngineFirewallRule#project}
   */
   readonly project?: string;
   /**
   * IP address or range, defined using CIDR notation, of requests that this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#source_range GoogleAppEngineFirewallRule#source_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#source_range GoogleAppEngineFirewallRule#source_range}
   */
   readonly sourceRange: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#timeouts GoogleAppEngineFirewallRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#timeouts GoogleAppEngineFirewallRule#timeouts}
   */
   readonly timeouts?: GoogleAppEngineFirewallRuleTimeouts;
 }
 export interface GoogleAppEngineFirewallRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#create GoogleAppEngineFirewallRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#create GoogleAppEngineFirewallRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#delete GoogleAppEngineFirewallRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#delete GoogleAppEngineFirewallRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#update GoogleAppEngineFirewallRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#update GoogleAppEngineFirewallRule#update}
   */
   readonly update?: string;
 }
@@ -221,7 +221,7 @@ export class GoogleAppEngineFirewallRuleTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule google_app_engine_firewall_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule google_app_engine_firewall_rule}
 */
 export class GoogleAppEngineFirewallRule extends cdktf.TerraformResource {
 
@@ -237,7 +237,7 @@ export class GoogleAppEngineFirewallRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAppEngineFirewallRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAppEngineFirewallRule to import
-  * @param importFromId The id of the existing GoogleAppEngineFirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAppEngineFirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAppEngineFirewallRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -249,7 +249,7 @@ export class GoogleAppEngineFirewallRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_app_engine_firewall_rule google_app_engine_firewall_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_app_engine_firewall_rule google_app_engine_firewall_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -260,7 +260,7 @@ export class GoogleAppEngineFirewallRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_firewall_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
