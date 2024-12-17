@@ -4,7 +4,7 @@
 
 ### GoogleDataprocCluster <a name="GoogleDataprocCluster" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer"></a>
 
@@ -47,7 +47,7 @@ googleDataprocCluster.GoogleDataprocCluster(
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the cluster, unique within the project and zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.clusterConfig">cluster_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.gracefulDecommissionTimeout">graceful_decommission_timeout</a></code> | <code>str</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The list of the labels (key/value pairs) configured on the resource and to be applied to instances in the cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the cluster will exist. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.region">region</a></code> | <code>str</code> | The region in which the cluster and associated nodes will be created in. Defaults to global. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the cluster, unique within the project and zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#name GoogleDataprocCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#name GoogleDataprocCluster#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cluster_config GoogleDataprocCluster#cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cluster_config GoogleDataprocCluster#cluster_config}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#graceful_decommission_timeout GoogleDataprocCluster#graceful_decommission_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#graceful_decommission_timeout GoogleDataprocCluster#graceful_decommission_timeout}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -166,7 +166,7 @@ The list of the labels (key/value pairs) configured on the resource and to be ap
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
 
 ---
 
@@ -178,7 +178,7 @@ The ID of the project in which the cluster will exist.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#project GoogleDataprocCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#project GoogleDataprocCluster#project}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region in which the cluster and associated nodes will be created in. Defaults to global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#region GoogleDataprocCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#region GoogleDataprocCluster#region}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 virtual_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
 
 ---
 
@@ -607,7 +607,7 @@ def put_cluster_config(
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#autoscaling_config GoogleDataprocCluster#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#autoscaling_config GoogleDataprocCluster#autoscaling_config}
 
 ---
 
@@ -617,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auxiliary_node_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auxiliary_node_groups GoogleDataprocCluster#auxiliary_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auxiliary_node_groups GoogleDataprocCluster#auxiliary_node_groups}
 
 ---
 
@@ -627,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dataproc_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metric_config GoogleDataprocCluster#dataproc_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metric_config GoogleDataprocCluster#dataproc_metric_config}
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#encryption_config GoogleDataprocCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#encryption_config GoogleDataprocCluster#encryption_config}
 
 ---
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 endpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#endpoint_config GoogleDataprocCluster#endpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#endpoint_config GoogleDataprocCluster#endpoint_config}
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gce_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gce_cluster_config GoogleDataprocCluster#gce_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gce_cluster_config GoogleDataprocCluster#gce_cluster_config}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 initialization_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lifecycle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
 
 ---
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 master_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#master_config GoogleDataprocCluster#master_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#master_config GoogleDataprocCluster#master_config}
 
 ---
 
@@ -697,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
 
 ---
 
@@ -707,7 +707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 preemptible_worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptible_worker_config GoogleDataprocCluster#preemptible_worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptible_worker_config GoogleDataprocCluster#preemptible_worker_config}
 
 ---
 
@@ -717,7 +717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 security_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#security_config GoogleDataprocCluster#security_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#security_config GoogleDataprocCluster#security_config}
 
 ---
 
@@ -727,7 +727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#software_config GoogleDataprocCluster#software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#software_config GoogleDataprocCluster#software_config}
 
 ---
 
@@ -739,7 +739,7 @@ The Cloud Storage staging bucket used to stage files, such as Hadoop jars, betwe
 
 Note: If you don't explicitly specify a staging_bucket then GCP will auto create / assign one for you. However, you are not guaranteed an auto generated bucket which is solely dedicated to your cluster; it may be shared with other clusters in the same region/zone also choosing to use the auto generation option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
 
 ---
 
@@ -751,7 +751,7 @@ The Cloud Storage temp bucket used to store ephemeral cluster and jobs data, suc
 
 Note: If you don't explicitly specify a temp_bucket then GCP will auto create / assign one for you.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#temp_bucket GoogleDataprocCluster#temp_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#temp_bucket GoogleDataprocCluster#temp_bucket}
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
 
 ---
 
@@ -779,7 +779,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}.
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}.
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}.
 
 ---
 
@@ -815,7 +815,7 @@ def put_virtual_cluster_config(
 
 auxiliary_services_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
 
 ---
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kubernetes_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
 
 ---
 
@@ -837,7 +837,7 @@ A Cloud Storage bucket used to stage job dependencies, config files, and job dri
 
 If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
 
 ---
 
@@ -1003,7 +1003,7 @@ The construct id used in the generated config for the GoogleDataprocCluster to i
 
 The id of the existing GoogleDataprocCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1478,7 +1478,7 @@ autoscaling_config: GoogleDataprocClusterClusterConfigAutoscalingConfig
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#autoscaling_config GoogleDataprocCluster#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#autoscaling_config GoogleDataprocCluster#autoscaling_config}
 
 ---
 
@@ -1492,7 +1492,7 @@ auxiliary_node_groups: typing.Union[IResolvable, typing.List[GoogleDataprocClust
 
 auxiliary_node_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auxiliary_node_groups GoogleDataprocCluster#auxiliary_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auxiliary_node_groups GoogleDataprocCluster#auxiliary_node_groups}
 
 ---
 
@@ -1506,7 +1506,7 @@ dataproc_metric_config: GoogleDataprocClusterClusterConfigDataprocMetricConfig
 
 dataproc_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metric_config GoogleDataprocCluster#dataproc_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metric_config GoogleDataprocCluster#dataproc_metric_config}
 
 ---
 
@@ -1520,7 +1520,7 @@ encryption_config: GoogleDataprocClusterClusterConfigEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#encryption_config GoogleDataprocCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#encryption_config GoogleDataprocCluster#encryption_config}
 
 ---
 
@@ -1534,7 +1534,7 @@ endpoint_config: GoogleDataprocClusterClusterConfigEndpointConfig
 
 endpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#endpoint_config GoogleDataprocCluster#endpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#endpoint_config GoogleDataprocCluster#endpoint_config}
 
 ---
 
@@ -1548,7 +1548,7 @@ gce_cluster_config: GoogleDataprocClusterClusterConfigGceClusterConfig
 
 gce_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gce_cluster_config GoogleDataprocCluster#gce_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gce_cluster_config GoogleDataprocCluster#gce_cluster_config}
 
 ---
 
@@ -1562,7 +1562,7 @@ initialization_action: typing.Union[IResolvable, typing.List[GoogleDataprocClust
 
 initialization_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
 
 ---
 
@@ -1576,7 +1576,7 @@ lifecycle_config: GoogleDataprocClusterClusterConfigLifecycleConfig
 
 lifecycle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
 
 ---
 
@@ -1590,7 +1590,7 @@ master_config: GoogleDataprocClusterClusterConfigMasterConfig
 
 master_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#master_config GoogleDataprocCluster#master_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#master_config GoogleDataprocCluster#master_config}
 
 ---
 
@@ -1604,7 +1604,7 @@ metastore_config: GoogleDataprocClusterClusterConfigMetastoreConfig
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
 
 ---
 
@@ -1618,7 +1618,7 @@ preemptible_worker_config: GoogleDataprocClusterClusterConfigPreemptibleWorkerCo
 
 preemptible_worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptible_worker_config GoogleDataprocCluster#preemptible_worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptible_worker_config GoogleDataprocCluster#preemptible_worker_config}
 
 ---
 
@@ -1632,7 +1632,7 @@ security_config: GoogleDataprocClusterClusterConfigSecurityConfig
 
 security_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#security_config GoogleDataprocCluster#security_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#security_config GoogleDataprocCluster#security_config}
 
 ---
 
@@ -1646,7 +1646,7 @@ software_config: GoogleDataprocClusterClusterConfigSoftwareConfig
 
 software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#software_config GoogleDataprocCluster#software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#software_config GoogleDataprocCluster#software_config}
 
 ---
 
@@ -1662,7 +1662,7 @@ The Cloud Storage staging bucket used to stage files, such as Hadoop jars, betwe
 
 Note: If you don't explicitly specify a staging_bucket then GCP will auto create / assign one for you. However, you are not guaranteed an auto generated bucket which is solely dedicated to your cluster; it may be shared with other clusters in the same region/zone also choosing to use the auto generation option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
 
 ---
 
@@ -1678,7 +1678,7 @@ The Cloud Storage temp bucket used to store ephemeral cluster and jobs data, suc
 
 Note: If you don't explicitly specify a temp_bucket then GCP will auto create / assign one for you.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#temp_bucket GoogleDataprocCluster#temp_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#temp_bucket GoogleDataprocCluster#temp_bucket}
 
 ---
 
@@ -1692,7 +1692,7 @@ worker_config: GoogleDataprocClusterClusterConfigWorkerConfig
 
 worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
 
 ---
 
@@ -1726,7 +1726,7 @@ policy_uri: str
 
 The autoscaling policy used by the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#policy_uri GoogleDataprocCluster#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#policy_uri GoogleDataprocCluster#policy_uri}
 
 ---
 
@@ -1762,7 +1762,7 @@ node_group: typing.Union[IResolvable, typing.List[GoogleDataprocClusterClusterCo
 
 node_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group GoogleDataprocCluster#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group GoogleDataprocCluster#node_group}
 
 ---
 
@@ -1778,7 +1778,7 @@ A node group ID.
 
 Generated if not specified. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_id GoogleDataprocCluster#node_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_id GoogleDataprocCluster#node_group_id}
 
 ---
 
@@ -1814,7 +1814,7 @@ roles: typing.List[str]
 
 Node group roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
 
 ---
 
@@ -1828,7 +1828,7 @@ node_group_config: GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGrou
 
 node_group_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_config GoogleDataprocCluster#node_group_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_config GoogleDataprocCluster#node_group_config}
 
 ---
 
@@ -1870,7 +1870,7 @@ accelerators: typing.Union[IResolvable, typing.List[GoogleDataprocClusterCluster
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -1884,7 +1884,7 @@ disk_config: GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeG
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -1898,7 +1898,7 @@ machine_type: str
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -1914,7 +1914,7 @@ The name of a minimum generation of CPU family for the auxiliary node group.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -1928,7 +1928,7 @@ num_instances: typing.Union[int, float]
 
 Specifies the number of auxiliary nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -1966,7 +1966,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
 
 ---
 
@@ -1980,7 +1980,7 @@ accelerator_type: str
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
 
 ---
 
@@ -2022,7 +2022,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -2036,7 +2036,7 @@ boot_disk_type: str
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -2050,7 +2050,7 @@ local_ssd_interface: str
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -2064,7 +2064,7 @@ num_local_ssds: typing.Union[int, float]
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -2098,7 +2098,7 @@ metrics: typing.Union[IResolvable, typing.List[GoogleDataprocClusterClusterConfi
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metrics GoogleDataprocCluster#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metrics GoogleDataprocCluster#metrics}
 
 ---
 
@@ -2134,7 +2134,7 @@ metric_source: str
 
 A source for the collection of Dataproc OSS metrics (see [available OSS metrics] (https://cloud.google.com//dataproc/docs/guides/monitoring#available_oss_metrics)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metric_source GoogleDataprocCluster#metric_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metric_source GoogleDataprocCluster#metric_source}
 
 ---
 
@@ -2148,7 +2148,7 @@ metric_overrides: typing.List[str]
 
 Specify one or more [available OSS metrics] (https://cloud.google.com/dataproc/docs/guides/monitoring#available_oss_metrics) to collect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metric_overrides GoogleDataprocCluster#metric_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metric_overrides GoogleDataprocCluster#metric_overrides}
 
 ---
 
@@ -2182,7 +2182,7 @@ kms_key_name: str
 
 The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kms_key_name GoogleDataprocCluster#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kms_key_name GoogleDataprocCluster#kms_key_name}
 
 ---
 
@@ -2218,7 +2218,7 @@ The flag to enable http access to specific ports on the cluster from external so
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_http_port_access GoogleDataprocCluster#enable_http_port_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_http_port_access GoogleDataprocCluster#enable_http_port_access}
 
 ---
 
@@ -2274,7 +2274,7 @@ confidential_instance_config: GoogleDataprocClusterClusterConfigGceClusterConfig
 
 confidential_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#confidential_instance_config GoogleDataprocCluster#confidential_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#confidential_instance_config GoogleDataprocCluster#confidential_instance_config}
 
 ---
 
@@ -2290,7 +2290,7 @@ By default, clusters are not restricted to internal IP addresses, and will have 
 
 If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#internal_ip_only GoogleDataprocCluster#internal_ip_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#internal_ip_only GoogleDataprocCluster#internal_ip_only}
 
 ---
 
@@ -2304,7 +2304,7 @@ metadata: typing.Mapping[str]
 
 A map of the Compute Engine metadata entries to add to all instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metadata GoogleDataprocCluster#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metadata GoogleDataprocCluster#metadata}
 
 ---
 
@@ -2320,7 +2320,7 @@ The name or self_link of the Google Compute Engine network to the cluster will b
 
 Conflicts with subnetwork. If neither is specified, this defaults to the "default" network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#network GoogleDataprocCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#network GoogleDataprocCluster#network}
 
 ---
 
@@ -2334,7 +2334,7 @@ node_group_affinity: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroup
 
 node_group_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
 
 ---
 
@@ -2348,7 +2348,7 @@ reservation_affinity: GoogleDataprocClusterClusterConfigGceClusterConfigReservat
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
 
 ---
 
@@ -2362,7 +2362,7 @@ service_account: str
 
 The service account to be used by the Node VMs. If not specified, the "default" service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}
 
 ---
 
@@ -2378,7 +2378,7 @@ The set of Google API scopes to be made available on all of the node VMs under t
 
 These can be either FQDNs, or scope aliases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#service_account_scopes GoogleDataprocCluster#service_account_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#service_account_scopes GoogleDataprocCluster#service_account_scopes}
 
 ---
 
@@ -2392,7 +2392,7 @@ shielded_instance_config: GoogleDataprocClusterClusterConfigGceClusterConfigShie
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#shielded_instance_config GoogleDataprocCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#shielded_instance_config GoogleDataprocCluster#shielded_instance_config}
 
 ---
 
@@ -2406,7 +2406,7 @@ subnetwork: str
 
 The name or self_link of the Google Compute Engine subnetwork the cluster will be part of. Conflicts with network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#subnetwork GoogleDataprocCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#subnetwork GoogleDataprocCluster#subnetwork}
 
 ---
 
@@ -2422,7 +2422,7 @@ The list of instance tags applied to instances in the cluster.
 
 Tags are used to identify valid sources or targets for network firewalls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#tags GoogleDataprocCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#tags GoogleDataprocCluster#tags}
 
 ---
 
@@ -2436,7 +2436,7 @@ zone: str
 
 The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#zone GoogleDataprocCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#zone GoogleDataprocCluster#zone}
 
 ---
 
@@ -2470,7 +2470,7 @@ enable_confidential_compute: typing.Union[bool, IResolvable]
 
 Defines whether the instance should have confidential compute enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_confidential_compute GoogleDataprocCluster#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_confidential_compute GoogleDataprocCluster#enable_confidential_compute}
 
 ---
 
@@ -2504,7 +2504,7 @@ node_group_uri: str
 
 The URI of a sole-tenant that the cluster will be created on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_uri GoogleDataprocCluster#node_group_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_uri GoogleDataprocCluster#node_group_uri}
 
 ---
 
@@ -2542,7 +2542,7 @@ consume_reservation_type: str
 
 Type of reservation to consume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#consume_reservation_type GoogleDataprocCluster#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#consume_reservation_type GoogleDataprocCluster#consume_reservation_type}
 
 ---
 
@@ -2556,7 +2556,7 @@ key: str
 
 Corresponds to the label key of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#key GoogleDataprocCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#key GoogleDataprocCluster#key}
 
 ---
 
@@ -2570,7 +2570,7 @@ values: typing.List[str]
 
 Corresponds to the label values of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#values GoogleDataprocCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#values GoogleDataprocCluster#values}
 
 ---
 
@@ -2608,7 +2608,7 @@ enable_integrity_monitoring: typing.Union[bool, IResolvable]
 
 Defines whether instances have integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_integrity_monitoring GoogleDataprocCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_integrity_monitoring GoogleDataprocCluster#enable_integrity_monitoring}
 
 ---
 
@@ -2622,7 +2622,7 @@ enable_secure_boot: typing.Union[bool, IResolvable]
 
 Defines whether instances have Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_secure_boot GoogleDataprocCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_secure_boot GoogleDataprocCluster#enable_secure_boot}
 
 ---
 
@@ -2636,7 +2636,7 @@ enable_vtpm: typing.Union[bool, IResolvable]
 
 Defines whether instances have the vTPM enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_vtpm GoogleDataprocCluster#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_vtpm GoogleDataprocCluster#enable_vtpm}
 
 ---
 
@@ -2674,7 +2674,7 @@ The script to be executed during initialization of the cluster.
 
 The script must be a GCS file with a gs:// prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#script GoogleDataprocCluster#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#script GoogleDataprocCluster#script}
 
 ---
 
@@ -2690,7 +2690,7 @@ The maximum duration (in seconds) which script is allowed to take to execute its
 
 GCP will default to a predetermined computed value if not set (currently 300).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#timeout_sec GoogleDataprocCluster#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#timeout_sec GoogleDataprocCluster#timeout_sec}
 
 ---
 
@@ -2726,7 +2726,7 @@ auto_delete_time: str
 
 The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auto_delete_time GoogleDataprocCluster#auto_delete_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auto_delete_time GoogleDataprocCluster#auto_delete_time}
 
 ---
 
@@ -2742,7 +2742,7 @@ The duration to keep the cluster alive while idling (no jobs running).
 
 After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#idle_delete_ttl GoogleDataprocCluster#idle_delete_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#idle_delete_ttl GoogleDataprocCluster#idle_delete_ttl}
 
 ---
 
@@ -2786,7 +2786,7 @@ accelerators: typing.Union[IResolvable, typing.List[GoogleDataprocClusterCluster
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -2800,7 +2800,7 @@ disk_config: GoogleDataprocClusterClusterConfigMasterConfigDiskConfig
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -2814,7 +2814,7 @@ image_uri: str
 
 The URI for the image to use for this master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
 
 ---
 
@@ -2828,7 +2828,7 @@ machine_type: str
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -2844,7 +2844,7 @@ The name of a minimum generation of CPU family for the master.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -2858,7 +2858,7 @@ num_instances: typing.Union[int, float]
 
 Specifies the number of master nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -2896,7 +2896,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
 
 ---
 
@@ -2910,7 +2910,7 @@ accelerator_type: str
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
 
 ---
 
@@ -2952,7 +2952,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -2966,7 +2966,7 @@ boot_disk_type: str
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -2980,7 +2980,7 @@ local_ssd_interface: str
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -2994,7 +2994,7 @@ num_local_ssds: typing.Union[int, float]
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -3028,7 +3028,7 @@ dataproc_metastore_service: str
 
 Resource name of an existing Dataproc Metastore service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -3068,7 +3068,7 @@ disk_config: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -3082,7 +3082,7 @@ instance_flexibility_policy: GoogleDataprocClusterClusterConfigPreemptibleWorker
 
 instance_flexibility_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#instance_flexibility_policy GoogleDataprocCluster#instance_flexibility_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#instance_flexibility_policy GoogleDataprocCluster#instance_flexibility_policy}
 
 ---
 
@@ -3096,7 +3096,7 @@ num_instances: typing.Union[int, float]
 
 Specifies the number of preemptible nodes to create. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -3110,7 +3110,7 @@ preemptibility: str
 
 Specifies the preemptibility of the secondary nodes. Defaults to PREEMPTIBLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptibility GoogleDataprocCluster#preemptibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptibility GoogleDataprocCluster#preemptibility}
 
 ---
 
@@ -3152,7 +3152,7 @@ Size of the primary disk attached to each preemptible worker node, specified in 
 
 The smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -3168,7 +3168,7 @@ The disk type of the primary disk attached to each preemptible worker node.
 
 Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -3182,7 +3182,7 @@ local_ssd_interface: str
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -3196,7 +3196,7 @@ num_local_ssds: typing.Union[int, float]
 
 The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -3232,7 +3232,7 @@ instance_selection_list: typing.Union[IResolvable, typing.List[GoogleDataprocClu
 
 instance_selection_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#instance_selection_list GoogleDataprocCluster#instance_selection_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#instance_selection_list GoogleDataprocCluster#instance_selection_list}
 
 ---
 
@@ -3246,7 +3246,7 @@ provisioning_model_mix: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfi
 
 provisioning_model_mix block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#provisioning_model_mix GoogleDataprocCluster#provisioning_model_mix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#provisioning_model_mix GoogleDataprocCluster#provisioning_model_mix}
 
 ---
 
@@ -3282,7 +3282,7 @@ machine_types: typing.List[str]
 
 Full machine-type names, e.g. "n1-standard-16".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_types GoogleDataprocCluster#machine_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_types GoogleDataprocCluster#machine_types}
 
 ---
 
@@ -3298,7 +3298,7 @@ Preference of this instance selection.
 
 Lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#rank GoogleDataprocCluster#rank}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#rank GoogleDataprocCluster#rank}
 
 ---
 
@@ -3345,7 +3345,7 @@ standard_capacity_base: typing.Union[int, float]
 
 The base capacity that will always use Standard VMs to avoid risk of more preemption than the minimum capacity you need.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#standard_capacity_base GoogleDataprocCluster#standard_capacity_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#standard_capacity_base GoogleDataprocCluster#standard_capacity_base}
 
 ---
 
@@ -3359,7 +3359,7 @@ standard_capacity_percent_above_base: typing.Union[int, float]
 
 The percentage of target capacity that should use Standard VM. The remaining percentage will use Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#standard_capacity_percent_above_base GoogleDataprocCluster#standard_capacity_percent_above_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#standard_capacity_percent_above_base GoogleDataprocCluster#standard_capacity_percent_above_base}
 
 ---
 
@@ -3393,7 +3393,7 @@ kerberos_config: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig
 
 kerberos_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kerberos_config GoogleDataprocCluster#kerberos_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kerberos_config GoogleDataprocCluster#kerberos_config}
 
 ---
 
@@ -3455,7 +3455,7 @@ kms_key_uri: str
 
 The uri of the KMS key used to encrypt various sensitive files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kms_key_uri GoogleDataprocCluster#kms_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kms_key_uri GoogleDataprocCluster#kms_key_uri}
 
 ---
 
@@ -3469,7 +3469,7 @@ root_principal_password_uri: str
 
 The cloud Storage URI of a KMS encrypted file containing the root principal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#root_principal_password_uri GoogleDataprocCluster#root_principal_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#root_principal_password_uri GoogleDataprocCluster#root_principal_password_uri}
 
 ---
 
@@ -3483,7 +3483,7 @@ cross_realm_trust_admin_server: str
 
 The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_admin_server GoogleDataprocCluster#cross_realm_trust_admin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_admin_server GoogleDataprocCluster#cross_realm_trust_admin_server}
 
 ---
 
@@ -3497,7 +3497,7 @@ cross_realm_trust_kdc: str
 
 The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_kdc GoogleDataprocCluster#cross_realm_trust_kdc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_kdc GoogleDataprocCluster#cross_realm_trust_kdc}
 
 ---
 
@@ -3511,7 +3511,7 @@ cross_realm_trust_realm: str
 
 The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_realm GoogleDataprocCluster#cross_realm_trust_realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_realm GoogleDataprocCluster#cross_realm_trust_realm}
 
 ---
 
@@ -3525,7 +3525,7 @@ cross_realm_trust_shared_password_uri: str
 
 The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
 
 ---
 
@@ -3539,7 +3539,7 @@ enable_kerberos: typing.Union[bool, IResolvable]
 
 Flag to indicate whether to Kerberize the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_kerberos GoogleDataprocCluster#enable_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_kerberos GoogleDataprocCluster#enable_kerberos}
 
 ---
 
@@ -3553,7 +3553,7 @@ kdc_db_key_uri: str
 
 The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kdc_db_key_uri GoogleDataprocCluster#kdc_db_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kdc_db_key_uri GoogleDataprocCluster#kdc_db_key_uri}
 
 ---
 
@@ -3569,7 +3569,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#key_password_uri GoogleDataprocCluster#key_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#key_password_uri GoogleDataprocCluster#key_password_uri}
 
 ---
 
@@ -3586,7 +3586,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 For the self-signed certificate, this password is generated
 by Dataproc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
 
 ---
 
@@ -3602,7 +3602,7 @@ The Cloud Storage URI of the keystore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#keystore_uri GoogleDataprocCluster#keystore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#keystore_uri GoogleDataprocCluster#keystore_uri}
 
 ---
 
@@ -3616,7 +3616,7 @@ realm: str
 
 The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#realm GoogleDataprocCluster#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#realm GoogleDataprocCluster#realm}
 
 ---
 
@@ -3630,7 +3630,7 @@ tgt_lifetime_hours: typing.Union[int, float]
 
 The lifetime of the ticket granting ticket, in hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#tgt_lifetime_hours GoogleDataprocCluster#tgt_lifetime_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#tgt_lifetime_hours GoogleDataprocCluster#tgt_lifetime_hours}
 
 ---
 
@@ -3646,7 +3646,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#truststore_password_uri GoogleDataprocCluster#truststore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#truststore_password_uri GoogleDataprocCluster#truststore_password_uri}
 
 ---
 
@@ -3662,7 +3662,7 @@ The Cloud Storage URI of the truststore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#truststore_uri GoogleDataprocCluster#truststore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#truststore_uri GoogleDataprocCluster#truststore_uri}
 
 ---
 
@@ -3702,7 +3702,7 @@ The Cloud Dataproc image version to use for the cluster - this controls the sets
 
 If not specified, defaults to the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_version GoogleDataprocCluster#image_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_version GoogleDataprocCluster#image_version}
 
 ---
 
@@ -3716,7 +3716,7 @@ optional_components: typing.List[str]
 
 The set of optional components to activate on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#optional_components GoogleDataprocCluster#optional_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#optional_components GoogleDataprocCluster#optional_components}
 
 ---
 
@@ -3730,7 +3730,7 @@ override_properties: typing.Mapping[str]
 
 A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#override_properties GoogleDataprocCluster#override_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#override_properties GoogleDataprocCluster#override_properties}
 
 ---
 
@@ -3776,7 +3776,7 @@ accelerators: typing.Union[IResolvable, typing.List[GoogleDataprocClusterCluster
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -3790,7 +3790,7 @@ disk_config: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -3804,7 +3804,7 @@ image_uri: str
 
 The URI for the image to use for this master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
 
 ---
 
@@ -3818,7 +3818,7 @@ machine_type: str
 
 The name of a Google Compute Engine machine type to create for the master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -3834,7 +3834,7 @@ The name of a minimum generation of CPU family for the master/worker.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -3848,7 +3848,7 @@ min_num_instances: typing.Union[int, float]
 
 The minimum number of primary worker instances to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_num_instances GoogleDataprocCluster#min_num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_num_instances GoogleDataprocCluster#min_num_instances}
 
 ---
 
@@ -3862,7 +3862,7 @@ num_instances: typing.Union[int, float]
 
 Specifies the number of worker nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -3900,7 +3900,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
 
 ---
 
@@ -3914,7 +3914,7 @@ accelerator_type: str
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
 
 ---
 
@@ -3956,7 +3956,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -3970,7 +3970,7 @@ boot_disk_type: str
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -3984,7 +3984,7 @@ local_ssd_interface: str
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -3998,7 +3998,7 @@ num_local_ssds: typing.Union[int, float]
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -4043,7 +4043,7 @@ googleDataprocCluster.GoogleDataprocClusterConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.name">name</a></code> | <code>str</code> | The name of the cluster, unique within the project and zone. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.clusterConfig">cluster_config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.gracefulDecommissionTimeout">graceful_decommission_timeout</a></code> | <code>str</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The list of the labels (key/value pairs) configured on the resource and to be applied to instances in the cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the cluster will exist. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.region">region</a></code> | <code>str</code> | The region in which the cluster and associated nodes will be created in. Defaults to global. |
@@ -4132,7 +4132,7 @@ name: str
 
 The name of the cluster, unique within the project and zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#name GoogleDataprocCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#name GoogleDataprocCluster#name}
 
 ---
 
@@ -4146,7 +4146,7 @@ cluster_config: GoogleDataprocClusterClusterConfig
 
 cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cluster_config GoogleDataprocCluster#cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cluster_config GoogleDataprocCluster#cluster_config}
 
 ---
 
@@ -4160,7 +4160,7 @@ graceful_decommission_timeout: str
 
 The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#graceful_decommission_timeout GoogleDataprocCluster#graceful_decommission_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#graceful_decommission_timeout GoogleDataprocCluster#graceful_decommission_timeout}
 
 ---
 
@@ -4172,7 +4172,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#id GoogleDataprocCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4192,7 +4192,7 @@ The list of the labels (key/value pairs) configured on the resource and to be ap
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
 
 ---
 
@@ -4208,7 +4208,7 @@ The ID of the project in which the cluster will exist.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#project GoogleDataprocCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#project GoogleDataprocCluster#project}
 
 ---
 
@@ -4222,7 +4222,7 @@ region: str
 
 The region in which the cluster and associated nodes will be created in. Defaults to global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#region GoogleDataprocCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#region GoogleDataprocCluster#region}
 
 ---
 
@@ -4236,7 +4236,7 @@ timeouts: GoogleDataprocClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
 
 ---
 
@@ -4250,7 +4250,7 @@ virtual_cluster_config: GoogleDataprocClusterVirtualClusterConfig
 
 virtual_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
 
 ---
 
@@ -4272,9 +4272,9 @@ googleDataprocCluster.GoogleDataprocClusterTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}. |
 
 ---
 
@@ -4286,7 +4286,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#create GoogleDataprocCluster#create}.
 
 ---
 
@@ -4298,7 +4298,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#delete GoogleDataprocCluster#delete}.
 
 ---
 
@@ -4310,7 +4310,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#update GoogleDataprocCluster#update}.
 
 ---
 
@@ -4348,7 +4348,7 @@ auxiliary_services_config: GoogleDataprocClusterVirtualClusterConfigAuxiliarySer
 
 auxiliary_services_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
 
 ---
 
@@ -4362,7 +4362,7 @@ kubernetes_cluster_config: GoogleDataprocClusterVirtualClusterConfigKubernetesCl
 
 kubernetes_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
 
 ---
 
@@ -4378,7 +4378,7 @@ A Cloud Storage bucket used to stage job dependencies, config files, and job dri
 
 If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
 
 ---
 
@@ -4414,7 +4414,7 @@ metastore_config: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConf
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
 
 ---
 
@@ -4428,7 +4428,7 @@ spark_history_server_config: GoogleDataprocClusterVirtualClusterConfigAuxiliaryS
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
 
 ---
 
@@ -4462,7 +4462,7 @@ dataproc_metastore_service: str
 
 The Hive Metastore configuration for this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -4496,7 +4496,7 @@ dataproc_cluster: str
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
 
 ---
 
@@ -4534,7 +4534,7 @@ gke_cluster_config: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterCo
 
 gke_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
 
 ---
 
@@ -4548,7 +4548,7 @@ kubernetes_software_config: GoogleDataprocClusterVirtualClusterConfigKubernetesC
 
 kubernetes_software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
 
 ---
 
@@ -4564,7 +4564,7 @@ A namespace within the Kubernetes cluster to deploy into.
 
 If this namespace does not exist, it is created. If it exists, Dataproc verifies that another Dataproc VirtualCluster is not installed into it. If not specified, the name of the Dataproc Cluster is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
 
 ---
 
@@ -4602,7 +4602,7 @@ A target GKE cluster to deploy to.
 
 It must be in the same project and region as the Dataproc cluster (the GKE cluster can be zonal or regional). Format: 'projects/{project}/locations/{location}/clusters/{cluster_id}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
 
 ---
 
@@ -4616,7 +4616,7 @@ node_pool_target: typing.Union[IResolvable, typing.List[GoogleDataprocClusterVir
 
 node_pool_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
 
 ---
 
@@ -4654,7 +4654,7 @@ node_pool: str
 
 The target GKE node pool. Format: 'projects/{project}/locations/{location}/clusters/{cluster}/nodePools/{nodePool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_pool GoogleDataprocCluster#node_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_pool GoogleDataprocCluster#node_pool}
 
 ---
 
@@ -4668,7 +4668,7 @@ roles: typing.List[str]
 
 The roles associated with the GKE node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
 
 ---
 
@@ -4682,7 +4682,7 @@ node_pool_config: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConf
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_pool_config GoogleDataprocCluster#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_pool_config GoogleDataprocCluster#node_pool_config}
 
 ---
 
@@ -4720,7 +4720,7 @@ locations: typing.List[str]
 
 The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
 
 ---
 
@@ -4734,7 +4734,7 @@ autoscaling: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGke
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
 
 ---
 
@@ -4748,7 +4748,7 @@ config: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClust
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#config GoogleDataprocCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#config GoogleDataprocCluster#config}
 
 ---
 
@@ -4784,7 +4784,7 @@ max_node_count: typing.Union[int, float]
 
 The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
 
 ---
 
@@ -4798,7 +4798,7 @@ min_node_count: typing.Union[int, float]
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
 
 ---
 
@@ -4840,7 +4840,7 @@ local_ssd_count: typing.Union[int, float]
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
 
 ---
 
@@ -4854,7 +4854,7 @@ machine_type: str
 
 The name of a Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -4870,7 +4870,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or a newer CPU platform. Specify the friendly names of CPU platforms, such as "Intel Haswell" or "Intel Sandy Bridge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -4886,7 +4886,7 @@ Whether the nodes are created as preemptible VM instances.
 
 Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
 
 ---
 
@@ -4900,7 +4900,7 @@ spot: typing.Union[bool, IResolvable]
 
 Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
 
 ---
 
@@ -4938,7 +4938,7 @@ The components that should be installed in this Dataproc cluster.
 
 The key must be a string from the KubernetesComponent enumeration. The value is the version of the software to be installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
 
 ---
 
@@ -4952,7 +4952,7 @@ properties: typing.Mapping[str]
 
 The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
 
 ---
 
@@ -6760,7 +6760,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -6770,7 +6770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -6780,7 +6780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -6790,7 +6790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -7259,7 +7259,7 @@ def put_node_group_config(
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -7269,7 +7269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -7279,7 +7279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -7291,7 +7291,7 @@ The name of a minimum generation of CPU family for the auxiliary node group.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -7301,7 +7301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the number of auxiliary nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -10058,7 +10058,7 @@ def put_confidential_instance_config(
 
 Defines whether the instance should have confidential compute enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_confidential_compute GoogleDataprocCluster#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_confidential_compute GoogleDataprocCluster#enable_confidential_compute}
 
 ---
 
@@ -10076,7 +10076,7 @@ def put_node_group_affinity(
 
 The URI of a sole-tenant that the cluster will be created on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_uri GoogleDataprocCluster#node_group_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_uri GoogleDataprocCluster#node_group_uri}
 
 ---
 
@@ -10096,7 +10096,7 @@ def put_reservation_affinity(
 
 Type of reservation to consume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#consume_reservation_type GoogleDataprocCluster#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#consume_reservation_type GoogleDataprocCluster#consume_reservation_type}
 
 ---
 
@@ -10106,7 +10106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Corresponds to the label key of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#key GoogleDataprocCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#key GoogleDataprocCluster#key}
 
 ---
 
@@ -10116,7 +10116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Corresponds to the label values of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#values GoogleDataprocCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#values GoogleDataprocCluster#values}
 
 ---
 
@@ -10136,7 +10136,7 @@ def put_shielded_instance_config(
 
 Defines whether instances have integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_integrity_monitoring GoogleDataprocCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_integrity_monitoring GoogleDataprocCluster#enable_integrity_monitoring}
 
 ---
 
@@ -10146,7 +10146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines whether instances have Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_secure_boot GoogleDataprocCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_secure_boot GoogleDataprocCluster#enable_secure_boot}
 
 ---
 
@@ -10156,7 +10156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines whether instances have the vTPM enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_vtpm GoogleDataprocCluster#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_vtpm GoogleDataprocCluster#enable_vtpm}
 
 ---
 
@@ -13289,7 +13289,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -13299,7 +13299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -13309,7 +13309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -13319,7 +13319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -14116,7 +14116,7 @@ def put_autoscaling_config(
 
 The autoscaling policy used by the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#policy_uri GoogleDataprocCluster#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#policy_uri GoogleDataprocCluster#policy_uri}
 
 ---
 
@@ -14148,7 +14148,7 @@ def put_dataproc_metric_config(
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metrics GoogleDataprocCluster#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metrics GoogleDataprocCluster#metrics}
 
 ---
 
@@ -14166,7 +14166,7 @@ def put_encryption_config(
 
 The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kms_key_name GoogleDataprocCluster#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kms_key_name GoogleDataprocCluster#kms_key_name}
 
 ---
 
@@ -14186,7 +14186,7 @@ The flag to enable http access to specific ports on the cluster from external so
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_http_port_access GoogleDataprocCluster#enable_http_port_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_http_port_access GoogleDataprocCluster#enable_http_port_access}
 
 ---
 
@@ -14215,7 +14215,7 @@ def put_gce_cluster_config(
 
 confidential_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#confidential_instance_config GoogleDataprocCluster#confidential_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#confidential_instance_config GoogleDataprocCluster#confidential_instance_config}
 
 ---
 
@@ -14227,7 +14227,7 @@ By default, clusters are not restricted to internal IP addresses, and will have 
 
 If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#internal_ip_only GoogleDataprocCluster#internal_ip_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#internal_ip_only GoogleDataprocCluster#internal_ip_only}
 
 ---
 
@@ -14237,7 +14237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of the Compute Engine metadata entries to add to all instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metadata GoogleDataprocCluster#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metadata GoogleDataprocCluster#metadata}
 
 ---
 
@@ -14249,7 +14249,7 @@ The name or self_link of the Google Compute Engine network to the cluster will b
 
 Conflicts with subnetwork. If neither is specified, this defaults to the "default" network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#network GoogleDataprocCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#network GoogleDataprocCluster#network}
 
 ---
 
@@ -14259,7 +14259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_group_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
 
 ---
 
@@ -14269,7 +14269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
 
 ---
 
@@ -14279,7 +14279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The service account to be used by the Node VMs. If not specified, the "default" service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}
 
 ---
 
@@ -14291,7 +14291,7 @@ The set of Google API scopes to be made available on all of the node VMs under t
 
 These can be either FQDNs, or scope aliases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#service_account_scopes GoogleDataprocCluster#service_account_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#service_account_scopes GoogleDataprocCluster#service_account_scopes}
 
 ---
 
@@ -14301,7 +14301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#shielded_instance_config GoogleDataprocCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#shielded_instance_config GoogleDataprocCluster#shielded_instance_config}
 
 ---
 
@@ -14311,7 +14311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name or self_link of the Google Compute Engine subnetwork the cluster will be part of. Conflicts with network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#subnetwork GoogleDataprocCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#subnetwork GoogleDataprocCluster#subnetwork}
 
 ---
 
@@ -14323,7 +14323,7 @@ The list of instance tags applied to instances in the cluster.
 
 Tags are used to identify valid sources or targets for network firewalls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#tags GoogleDataprocCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#tags GoogleDataprocCluster#tags}
 
 ---
 
@@ -14333,7 +14333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#zone GoogleDataprocCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#zone GoogleDataprocCluster#zone}
 
 ---
 
@@ -14366,7 +14366,7 @@ def put_lifecycle_config(
 
 The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#auto_delete_time GoogleDataprocCluster#auto_delete_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#auto_delete_time GoogleDataprocCluster#auto_delete_time}
 
 ---
 
@@ -14378,7 +14378,7 @@ The duration to keep the cluster alive while idling (no jobs running).
 
 After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#idle_delete_ttl GoogleDataprocCluster#idle_delete_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#idle_delete_ttl GoogleDataprocCluster#idle_delete_ttl}
 
 ---
 
@@ -14401,7 +14401,7 @@ def put_master_config(
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -14411,7 +14411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -14421,7 +14421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The URI for the image to use for this master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
 
 ---
 
@@ -14431,7 +14431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -14443,7 +14443,7 @@ The name of a minimum generation of CPU family for the master.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -14453,7 +14453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the number of master nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -14471,7 +14471,7 @@ def put_metastore_config(
 
 Resource name of an existing Dataproc Metastore service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -14492,7 +14492,7 @@ def put_preemptible_worker_config(
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -14502,7 +14502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 instance_flexibility_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#instance_flexibility_policy GoogleDataprocCluster#instance_flexibility_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#instance_flexibility_policy GoogleDataprocCluster#instance_flexibility_policy}
 
 ---
 
@@ -14512,7 +14512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the number of preemptible nodes to create. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -14522,7 +14522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the preemptibility of the secondary nodes. Defaults to PREEMPTIBLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptibility GoogleDataprocCluster#preemptibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptibility GoogleDataprocCluster#preemptibility}
 
 ---
 
@@ -14540,7 +14540,7 @@ def put_security_config(
 
 kerberos_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kerberos_config GoogleDataprocCluster#kerberos_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kerberos_config GoogleDataprocCluster#kerberos_config}
 
 ---
 
@@ -14562,7 +14562,7 @@ The Cloud Dataproc image version to use for the cluster - this controls the sets
 
 If not specified, defaults to the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_version GoogleDataprocCluster#image_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_version GoogleDataprocCluster#image_version}
 
 ---
 
@@ -14572,7 +14572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The set of optional components to activate on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#optional_components GoogleDataprocCluster#optional_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#optional_components GoogleDataprocCluster#optional_components}
 
 ---
 
@@ -14582,7 +14582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#override_properties GoogleDataprocCluster#override_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#override_properties GoogleDataprocCluster#override_properties}
 
 ---
 
@@ -14606,7 +14606,7 @@ def put_worker_config(
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
 
 ---
 
@@ -14616,7 +14616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
 
 ---
 
@@ -14626,7 +14626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The URI for the image to use for this master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
 
 ---
 
@@ -14636,7 +14636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Google Compute Engine machine type to create for the master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -14648,7 +14648,7 @@ The name of a minimum generation of CPU family for the master/worker.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -14658,7 +14658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The minimum number of primary worker instances to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_num_instances GoogleDataprocCluster#min_num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_num_instances GoogleDataprocCluster#min_num_instances}
 
 ---
 
@@ -14668,7 +14668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the number of worker nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
 
 ---
 
@@ -16825,7 +16825,7 @@ def put_provisioning_model_mix(
 
 The base capacity that will always use Standard VMs to avoid risk of more preemption than the minimum capacity you need.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#standard_capacity_base GoogleDataprocCluster#standard_capacity_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#standard_capacity_base GoogleDataprocCluster#standard_capacity_base}
 
 ---
 
@@ -16835,7 +16835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of target capacity that should use Standard VM. The remaining percentage will use Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#standard_capacity_percent_above_base GoogleDataprocCluster#standard_capacity_percent_above_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#standard_capacity_percent_above_base GoogleDataprocCluster#standard_capacity_percent_above_base}
 
 ---
 
@@ -17537,7 +17537,7 @@ Size of the primary disk attached to each preemptible worker node, specified in 
 
 The smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -17549,7 +17549,7 @@ The disk type of the primary disk attached to each preemptible worker node.
 
 Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -17559,7 +17559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -17569,7 +17569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -17588,7 +17588,7 @@ def put_instance_flexibility_policy(
 
 instance_selection_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#instance_selection_list GoogleDataprocCluster#instance_selection_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#instance_selection_list GoogleDataprocCluster#instance_selection_list}
 
 ---
 
@@ -17598,7 +17598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 provisioning_model_mix block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#provisioning_model_mix GoogleDataprocCluster#provisioning_model_mix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#provisioning_model_mix GoogleDataprocCluster#provisioning_model_mix}
 
 ---
 
@@ -18723,7 +18723,7 @@ def put_kerberos_config(
 
 The uri of the KMS key used to encrypt various sensitive files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kms_key_uri GoogleDataprocCluster#kms_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kms_key_uri GoogleDataprocCluster#kms_key_uri}
 
 ---
 
@@ -18733,7 +18733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The cloud Storage URI of a KMS encrypted file containing the root principal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#root_principal_password_uri GoogleDataprocCluster#root_principal_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#root_principal_password_uri GoogleDataprocCluster#root_principal_password_uri}
 
 ---
 
@@ -18743,7 +18743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_admin_server GoogleDataprocCluster#cross_realm_trust_admin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_admin_server GoogleDataprocCluster#cross_realm_trust_admin_server}
 
 ---
 
@@ -18753,7 +18753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_kdc GoogleDataprocCluster#cross_realm_trust_kdc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_kdc GoogleDataprocCluster#cross_realm_trust_kdc}
 
 ---
 
@@ -18763,7 +18763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_realm GoogleDataprocCluster#cross_realm_trust_realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_realm GoogleDataprocCluster#cross_realm_trust_realm}
 
 ---
 
@@ -18773,7 +18773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
 
 ---
 
@@ -18783,7 +18783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to indicate whether to Kerberize the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#enable_kerberos GoogleDataprocCluster#enable_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#enable_kerberos GoogleDataprocCluster#enable_kerberos}
 
 ---
 
@@ -18793,7 +18793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kdc_db_key_uri GoogleDataprocCluster#kdc_db_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kdc_db_key_uri GoogleDataprocCluster#kdc_db_key_uri}
 
 ---
 
@@ -18805,7 +18805,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#key_password_uri GoogleDataprocCluster#key_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#key_password_uri GoogleDataprocCluster#key_password_uri}
 
 ---
 
@@ -18818,7 +18818,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 For the self-signed certificate, this password is generated
 by Dataproc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
 
 ---
 
@@ -18830,7 +18830,7 @@ The Cloud Storage URI of the keystore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#keystore_uri GoogleDataprocCluster#keystore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#keystore_uri GoogleDataprocCluster#keystore_uri}
 
 ---
 
@@ -18840,7 +18840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#realm GoogleDataprocCluster#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#realm GoogleDataprocCluster#realm}
 
 ---
 
@@ -18850,7 +18850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The lifetime of the ticket granting ticket, in hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#tgt_lifetime_hours GoogleDataprocCluster#tgt_lifetime_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#tgt_lifetime_hours GoogleDataprocCluster#tgt_lifetime_hours}
 
 ---
 
@@ -18862,7 +18862,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#truststore_password_uri GoogleDataprocCluster#truststore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#truststore_password_uri GoogleDataprocCluster#truststore_password_uri}
 
 ---
 
@@ -18874,7 +18874,7 @@ The Cloud Storage URI of the truststore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#truststore_uri GoogleDataprocCluster#truststore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#truststore_uri GoogleDataprocCluster#truststore_uri}
 
 ---
 
@@ -20486,7 +20486,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -20496,7 +20496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
 
 ---
 
@@ -20506,7 +20506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_interface GoogleDataprocCluster#local_ssd_interface}
 
 ---
 
@@ -20516,7 +20516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
 
 ---
 
@@ -21683,7 +21683,7 @@ def put_metastore_config(
 
 The Hive Metastore configuration for this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -21701,7 +21701,7 @@ def put_spark_history_server_config(
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
 
 ---
 
@@ -23278,7 +23278,7 @@ def put_autoscaling(
 
 The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
 
 ---
 
@@ -23288,7 +23288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
 
 ---
 
@@ -23310,7 +23310,7 @@ def put_config(
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
 
 ---
 
@@ -23320,7 +23320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
 
 ---
 
@@ -23332,7 +23332,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or a newer CPU platform. Specify the friendly names of CPU platforms, such as "Intel Haswell" or "Intel Sandy Bridge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
 
 ---
 
@@ -23344,7 +23344,7 @@ Whether the nodes are created as preemptible VM instances.
 
 Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
 
 ---
 
@@ -23354,7 +23354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
 
 ---
 
@@ -23748,7 +23748,7 @@ def put_node_pool_config(
 
 The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
 
 ---
 
@@ -23758,7 +23758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
 
 ---
 
@@ -23768,7 +23768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#config GoogleDataprocCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#config GoogleDataprocCluster#config}
 
 ---
 
@@ -24810,7 +24810,7 @@ A target GKE cluster to deploy to.
 
 It must be in the same project and region as the Dataproc cluster (the GKE cluster can be zonal or regional). Format: 'projects/{project}/locations/{location}/clusters/{cluster_id}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
 
 ---
 
@@ -24820,7 +24820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_pool_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
 
 ---
 
@@ -24841,7 +24841,7 @@ The components that should be installed in this Dataproc cluster.
 
 The key must be a string from the KubernetesComponent enumeration. The value is the version of the software to be installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
 
 ---
 
@@ -24851,7 +24851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
 
 ---
 
@@ -25221,7 +25221,7 @@ def put_auxiliary_services_config(
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
 
 ---
 
@@ -25231,7 +25231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
 
 ---
 
@@ -25251,7 +25251,7 @@ def put_kubernetes_cluster_config(
 
 gke_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
 
 ---
 
@@ -25261,7 +25261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kubernetes_software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
 
 ---
 
@@ -25273,7 +25273,7 @@ A namespace within the Kubernetes cluster to deploy into.
 
 If this namespace does not exist, it is created. If it exists, Dataproc verifies that another Dataproc VirtualCluster is not installed into it. If not specified, the name of the Dataproc Cluster is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
 
 ---
 

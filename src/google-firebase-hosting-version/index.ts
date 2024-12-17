@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#id GoogleFirebaseHostingVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#id GoogleFirebaseHostingVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,27 +17,212 @@ export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaA
   /**
   * Required. The ID of the site in which to create this Version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#site_id GoogleFirebaseHostingVersion#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#site_id GoogleFirebaseHostingVersion#site_id}
   */
   readonly siteId: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#config GoogleFirebaseHostingVersion#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#config GoogleFirebaseHostingVersion#config}
   */
   readonly config?: GoogleFirebaseHostingVersionConfigA;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#timeouts GoogleFirebaseHostingVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#timeouts GoogleFirebaseHostingVersion#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingVersionTimeouts;
+}
+export interface GoogleFirebaseHostingVersionConfigHeaders {
+  /**
+  * The user-supplied glob to match against the request URL path.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+  */
+  readonly glob?: string;
+  /**
+  * The additional headers to add to the response. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#headers GoogleFirebaseHostingVersion#headers}
+  */
+  readonly headers: { [key: string]: string };
+  /**
+  * The user-supplied RE2 regular expression to match against the request URL path.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+  */
+  readonly regex?: string;
+}
+
+export function googleFirebaseHostingVersionConfigHeadersToTerraform(struct?: GoogleFirebaseHostingVersionConfigHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    glob: cdktf.stringToTerraform(struct!.glob),
+    headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
+    regex: cdktf.stringToTerraform(struct!.regex),
+  }
+}
+
+
+export function googleFirebaseHostingVersionConfigHeadersToHclTerraform(struct?: GoogleFirebaseHostingVersionConfigHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    glob: {
+      value: cdktf.stringToHclTerraform(struct!.glob),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headers),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleFirebaseHostingVersionConfigHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleFirebaseHostingVersionConfigHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._glob !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.glob = this._glob;
+    }
+    if (this._headers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleFirebaseHostingVersionConfigHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._glob = undefined;
+      this._headers = undefined;
+      this._regex = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._glob = value.glob;
+      this._headers = value.headers;
+      this._regex = value.regex;
+    }
+  }
+
+  // glob - computed: false, optional: true, required: false
+  private _glob?: string; 
+  public get glob() {
+    return this.getStringAttribute('glob');
+  }
+  public set glob(value: string) {
+    this._glob = value;
+  }
+  public resetGlob() {
+    this._glob = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globInput() {
+    return this._glob;
+  }
+
+  // headers - computed: false, optional: false, required: true
+  private _headers?: { [key: string]: string }; 
+  public get headers() {
+    return this.getStringMapAttribute('headers');
+  }
+  public set headers(value: { [key: string]: string }) {
+    this._headers = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headersInput() {
+    return this._headers;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+}
+
+export class GoogleFirebaseHostingVersionConfigHeadersList extends cdktf.ComplexList {
+  public internalValue? : GoogleFirebaseHostingVersionConfigHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleFirebaseHostingVersionConfigHeadersOutputReference {
+    return new GoogleFirebaseHostingVersionConfigHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleFirebaseHostingVersionConfigRedirects {
   /**
   * The user-supplied glob to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
   /**
@@ -58,19 +238,19 @@ export interface GoogleFirebaseHostingVersionConfigRedirects {
   * }
   * ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
   */
   readonly location: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * The status HTTP code to return in the response. It must be a valid 3xx status code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#status_code GoogleFirebaseHostingVersion#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#status_code GoogleFirebaseHostingVersion#status_code}
   */
   readonly statusCode: number;
 }
@@ -269,13 +449,13 @@ export interface GoogleFirebaseHostingVersionConfigRewritesRun {
   /**
   * Optional. User-provided region where the Cloud Run service is hosted. Defaults to 'us-central1' if not supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#region GoogleFirebaseHostingVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#region GoogleFirebaseHostingVersion#region}
   */
   readonly region?: string;
   /**
   * User-defined ID of the Cloud Run service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#service_id GoogleFirebaseHostingVersion#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#service_id GoogleFirebaseHostingVersion#service_id}
   */
   readonly serviceId: string;
 }
@@ -387,31 +567,31 @@ export interface GoogleFirebaseHostingVersionConfigRewrites {
   /**
   * The function to proxy requests to. Must match the exported function name exactly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
   */
   readonly function?: string;
   /**
   * The user-supplied glob to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
   /**
   * The URL path to rewrite the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#path GoogleFirebaseHostingVersion#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#path GoogleFirebaseHostingVersion#path}
   */
   readonly path?: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
   */
   readonly run?: GoogleFirebaseHostingVersionConfigRewritesRun;
 }
@@ -643,15 +823,21 @@ export class GoogleFirebaseHostingVersionConfigRewritesList extends cdktf.Comple
 }
 export interface GoogleFirebaseHostingVersionConfigA {
   /**
+  * headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#headers GoogleFirebaseHostingVersion#headers}
+  */
+  readonly headers?: GoogleFirebaseHostingVersionConfigHeaders[] | cdktf.IResolvable;
+  /**
   * redirects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#redirects GoogleFirebaseHostingVersion#redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#redirects GoogleFirebaseHostingVersion#redirects}
   */
   readonly redirects?: GoogleFirebaseHostingVersionConfigRedirects[] | cdktf.IResolvable;
   /**
   * rewrites block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#rewrites GoogleFirebaseHostingVersion#rewrites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#rewrites GoogleFirebaseHostingVersion#rewrites}
   */
   readonly rewrites?: GoogleFirebaseHostingVersionConfigRewrites[] | cdktf.IResolvable;
 }
@@ -662,6 +848,7 @@ export function googleFirebaseHostingVersionConfigAToTerraform(struct?: GoogleFi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    headers: cdktf.listMapper(googleFirebaseHostingVersionConfigHeadersToTerraform, true)(struct!.headers),
     redirects: cdktf.listMapper(googleFirebaseHostingVersionConfigRedirectsToTerraform, true)(struct!.redirects),
     rewrites: cdktf.listMapper(googleFirebaseHostingVersionConfigRewritesToTerraform, true)(struct!.rewrites),
   }
@@ -674,6 +861,12 @@ export function googleFirebaseHostingVersionConfigAToHclTerraform(struct?: Googl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    headers: {
+      value: cdktf.listMapperHcl(googleFirebaseHostingVersionConfigHeadersToHclTerraform, true)(struct!.headers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleFirebaseHostingVersionConfigHeadersList",
+    },
     redirects: {
       value: cdktf.listMapperHcl(googleFirebaseHostingVersionConfigRedirectsToHclTerraform, true)(struct!.redirects),
       isBlock: true,
@@ -706,6 +899,10 @@ export class GoogleFirebaseHostingVersionConfigAOutputReference extends cdktf.Co
   public get internalValue(): GoogleFirebaseHostingVersionConfigA | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._headers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers?.internalValue;
+    }
     if (this._redirects?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirects = this._redirects?.internalValue;
@@ -720,14 +917,32 @@ export class GoogleFirebaseHostingVersionConfigAOutputReference extends cdktf.Co
   public set internalValue(value: GoogleFirebaseHostingVersionConfigA | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._headers.internalValue = undefined;
       this._redirects.internalValue = undefined;
       this._rewrites.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._headers.internalValue = value.headers;
       this._redirects.internalValue = value.redirects;
       this._rewrites.internalValue = value.rewrites;
     }
+  }
+
+  // headers - computed: false, optional: true, required: false
+  private _headers = new GoogleFirebaseHostingVersionConfigHeadersList(this, "headers", false);
+  public get headers() {
+    return this._headers;
+  }
+  public putHeaders(value: GoogleFirebaseHostingVersionConfigHeaders[] | cdktf.IResolvable) {
+    this._headers.internalValue = value;
+  }
+  public resetHeaders() {
+    this._headers.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headersInput() {
+    return this._headers.internalValue;
   }
 
   // redirects - computed: false, optional: true, required: false
@@ -764,11 +979,11 @@ export class GoogleFirebaseHostingVersionConfigAOutputReference extends cdktf.Co
 }
 export interface GoogleFirebaseHostingVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#create GoogleFirebaseHostingVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#create GoogleFirebaseHostingVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#delete GoogleFirebaseHostingVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#delete GoogleFirebaseHostingVersion#delete}
   */
   readonly delete?: string;
 }
@@ -891,7 +1106,7 @@ export class GoogleFirebaseHostingVersionTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version}
 */
 export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
 
@@ -907,7 +1122,7 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFirebaseHostingVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFirebaseHostingVersion to import
-  * @param importFromId The id of the existing GoogleFirebaseHostingVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFirebaseHostingVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFirebaseHostingVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -919,7 +1134,7 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -930,7 +1145,7 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_hosting_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

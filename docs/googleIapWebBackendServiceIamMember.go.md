@@ -4,12 +4,12 @@
 
 ### GoogleIapWebBackendServiceIamMember <a name="GoogleIapWebBackendServiceIamMember" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member google_iap_web_backend_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member google_iap_web_backend_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.NewGoogleIapWebBackendServiceIamMember(scope Construct, id *string, config GoogleIapWebBackendServiceIamMemberConfig) GoogleIapWebBackendServiceIamMember
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleIapWebBackendService
 
 The id of the existing GoogleIapWebBackendServiceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 &googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMemberCondition {
 	Expression: *string,
@@ -857,9 +857,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#expression GoogleIapWebBackendServiceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#title GoogleIapWebBackendServiceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#description GoogleIapWebBackendServiceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#expression GoogleIapWebBackendServiceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#title GoogleIapWebBackendServiceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#description GoogleIapWebBackendServiceIamMember#description}. |
 
 ---
 
@@ -871,7 +871,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#expression GoogleIapWebBackendServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#expression GoogleIapWebBackendServiceIamMember#expression}.
 
 ---
 
@@ -883,7 +883,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#title GoogleIapWebBackendServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#title GoogleIapWebBackendServiceIamMember#title}.
 
 ---
 
@@ -895,7 +895,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#description GoogleIapWebBackendServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#description GoogleIapWebBackendServiceIamMember#description}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 &googleiapwebbackendserviceiammember.GoogleIapWebBackendServiceIamMemberConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 	Member: *string,
 	Role: *string,
 	WebBackendService: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -934,12 +934,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#member GoogleIapWebBackendServiceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#role GoogleIapWebBackendServiceIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.webBackendService">WebBackendService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#web_backend_service GoogleIapWebBackendServiceIamMember#web_backend_service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#member GoogleIapWebBackendServiceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#role GoogleIapWebBackendServiceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.webBackendService">WebBackendService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#web_backend_service GoogleIapWebBackendServiceIamMember#web_backend_service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition">GoogleIapWebBackendServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#id GoogleIapWebBackendServiceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#project GoogleIapWebBackendServiceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#id GoogleIapWebBackendServiceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#project GoogleIapWebBackendServiceIamMember#project}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#member GoogleIapWebBackendServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#member GoogleIapWebBackendServiceIamMember#member}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#role GoogleIapWebBackendServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#role GoogleIapWebBackendServiceIamMember#role}.
 
 ---
 
@@ -1045,7 +1045,7 @@ WebBackendService *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#web_backend_service GoogleIapWebBackendServiceIamMember#web_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#web_backend_service GoogleIapWebBackendServiceIamMember#web_backend_service}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Condition GoogleIapWebBackendServiceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#condition GoogleIapWebBackendServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#condition GoogleIapWebBackendServiceIamMember#condition}
 
 ---
 
@@ -1071,7 +1071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#id GoogleIapWebBackendServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#id GoogleIapWebBackendServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_iap_web_backend_service_iam_member#project GoogleIapWebBackendServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iap_web_backend_service_iam_member#project GoogleIapWebBackendServiceIamMember#project}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebbackendserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebbackendserviceiammember"
 
 googleiapwebbackendserviceiammember.NewGoogleIapWebBackendServiceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebBackendServiceIamMemberConditionOutputReference
 ```

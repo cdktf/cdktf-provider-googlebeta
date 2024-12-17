@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +11,7 @@ export interface GoogleTpuV2VmConfig extends cdktf.TerraformMetaArguments {
   * TPU accelerator type for the TPU. 'accelerator_type' cannot be used at the same time as
   * 'accelerator_config'. If neither is specified, 'accelerator_type' defaults to 'v2-8'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#accelerator_type GoogleTpuV2Vm#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#accelerator_type GoogleTpuV2Vm#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
@@ -27,17 +22,17 @@ export interface GoogleTpuV2VmConfig extends cdktf.TerraformMetaArguments {
   * with any subnetworks in the user's provided network, or the provided network is peered with
   * another network that is using that CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#cidr_block GoogleTpuV2Vm#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#cidr_block GoogleTpuV2Vm#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
   * Text description of the TPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#description GoogleTpuV2Vm#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#description GoogleTpuV2Vm#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,83 +44,89 @@ export interface GoogleTpuV2VmConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#labels GoogleTpuV2Vm#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#labels GoogleTpuV2Vm#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Custom metadata to apply to the TPU Node. Can set startup-script and shutdown-script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#metadata GoogleTpuV2Vm#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#metadata GoogleTpuV2Vm#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The immutable name of the TPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#name GoogleTpuV2Vm#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#name GoogleTpuV2Vm#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}
   */
   readonly project?: string;
   /**
   * Runtime version for the TPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#runtime_version GoogleTpuV2Vm#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#runtime_version GoogleTpuV2Vm#runtime_version}
   */
   readonly runtimeVersion: string;
   /**
   * Tags to apply to the TPU Node. Tags are used to identify valid sources or targets for network firewalls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#tags GoogleTpuV2Vm#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#tags GoogleTpuV2Vm#tags}
   */
   readonly tags?: string[];
   /**
   * The GCP location for the TPU. If it is not provided, the provider zone is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#zone GoogleTpuV2Vm#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#zone GoogleTpuV2Vm#zone}
   */
   readonly zone?: string;
   /**
   * accelerator_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#accelerator_config GoogleTpuV2Vm#accelerator_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#accelerator_config GoogleTpuV2Vm#accelerator_config}
   */
   readonly acceleratorConfig?: GoogleTpuV2VmAcceleratorConfig;
   /**
   * data_disks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#data_disks GoogleTpuV2Vm#data_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#data_disks GoogleTpuV2Vm#data_disks}
   */
   readonly dataDisks?: GoogleTpuV2VmDataDisks[] | cdktf.IResolvable;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#network_config GoogleTpuV2Vm#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#network_config GoogleTpuV2Vm#network_config}
   */
   readonly networkConfig?: GoogleTpuV2VmNetworkConfig;
   /**
+  * network_configs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#network_configs GoogleTpuV2Vm#network_configs}
+  */
+  readonly networkConfigs?: GoogleTpuV2VmNetworkConfigs[] | cdktf.IResolvable;
+  /**
   * scheduling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#scheduling_config GoogleTpuV2Vm#scheduling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#scheduling_config GoogleTpuV2Vm#scheduling_config}
   */
   readonly schedulingConfig?: GoogleTpuV2VmSchedulingConfig;
   /**
   * service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#service_account GoogleTpuV2Vm#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#service_account GoogleTpuV2Vm#service_account}
   */
   readonly serviceAccount?: GoogleTpuV2VmServiceAccount;
   /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#shielded_instance_config GoogleTpuV2Vm#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#shielded_instance_config GoogleTpuV2Vm#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleTpuV2VmShieldedInstanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#timeouts GoogleTpuV2Vm#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#timeouts GoogleTpuV2Vm#timeouts}
   */
   readonly timeouts?: GoogleTpuV2VmTimeouts;
 }
@@ -384,13 +385,13 @@ export interface GoogleTpuV2VmAcceleratorConfig {
   /**
   * Topology of TPU in chips.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#topology GoogleTpuV2Vm#topology}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#topology GoogleTpuV2Vm#topology}
   */
   readonly topology: string;
   /**
   * Type of TPU. Please select one of the allowed types: https://cloud.google.com/tpu/docs/reference/rest/v2/AcceleratorConfig#Type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#type GoogleTpuV2Vm#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#type GoogleTpuV2Vm#type}
   */
   readonly type: string;
 }
@@ -500,14 +501,14 @@ export interface GoogleTpuV2VmDataDisks {
   * The mode in which to attach this disk. If not specified, the default is READ_WRITE
   * mode. Only applicable to dataDisks. Default value: "READ_WRITE" Possible values: ["READ_WRITE", "READ_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#mode GoogleTpuV2Vm#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#mode GoogleTpuV2Vm#mode}
   */
   readonly mode?: string;
   /**
   * Specifies the full path to an existing disk. For example:
   * "projects/my-project/zones/us-central1-c/disks/my-disk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#source_disk GoogleTpuV2Vm#source_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#source_disk GoogleTpuV2Vm#source_disk}
   */
   readonly sourceDisk: string;
 }
@@ -652,32 +653,34 @@ export interface GoogleTpuV2VmNetworkConfig {
   * Allows the TPU node to send and receive packets with non-matching destination or source
   * IPs. This is required if you plan to use the TPU workers to forward routes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
   */
   readonly canIpForward?: boolean | cdktf.IResolvable;
   /**
   * Indicates that external IP addresses would be associated with the TPU workers. If set to
   * false, the specified subnetwork or network should have Private Google Access enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
   */
   readonly enableExternalIps?: boolean | cdktf.IResolvable;
   /**
   * The name of the network for the TPU node. It must be a preexisting Google Compute Engine
-  * network. If both network and subnetwork are specified, the given subnetwork must belong
-  * to the given network. If network is not specified, it will be looked up from the
-  * subnetwork if one is provided, or otherwise use "default".
+  * network. If none is provided, "default" will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
   */
   readonly network?: string;
   /**
-  * The name of the subnetwork for the TPU node. It must be a preexisting Google Compute
-  * Engine subnetwork. If both network and subnetwork are specified, the given subnetwork
-  * must belong to the given network. If subnetwork is not specified, the subnetwork with the
-  * same name as the network will be used.
+  * Specifies networking queue count for TPU VM instance's network interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
+  */
+  readonly queueCount?: number;
+  /**
+  * The name of the subnetwork for the TPU node. It must be a preexisting Google Compute
+  * Engine subnetwork. If none is provided, "default" will be used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -691,6 +694,7 @@ export function googleTpuV2VmNetworkConfigToTerraform(struct?: GoogleTpuV2VmNetw
     can_ip_forward: cdktf.booleanToTerraform(struct!.canIpForward),
     enable_external_ips: cdktf.booleanToTerraform(struct!.enableExternalIps),
     network: cdktf.stringToTerraform(struct!.network),
+    queue_count: cdktf.numberToTerraform(struct!.queueCount),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
   }
 }
@@ -719,6 +723,12 @@ export function googleTpuV2VmNetworkConfigToHclTerraform(struct?: GoogleTpuV2VmN
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    queue_count: {
+      value: cdktf.numberToHclTerraform(struct!.queueCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     subnetwork: {
       value: cdktf.stringToHclTerraform(struct!.subnetwork),
@@ -758,6 +768,10 @@ export class GoogleTpuV2VmNetworkConfigOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.network = this._network;
     }
+    if (this._queueCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueCount = this._queueCount;
+    }
     if (this._subnetwork !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetwork = this._subnetwork;
@@ -771,6 +785,7 @@ export class GoogleTpuV2VmNetworkConfigOutputReference extends cdktf.ComplexObje
       this._canIpForward = undefined;
       this._enableExternalIps = undefined;
       this._network = undefined;
+      this._queueCount = undefined;
       this._subnetwork = undefined;
     }
     else {
@@ -778,6 +793,7 @@ export class GoogleTpuV2VmNetworkConfigOutputReference extends cdktf.ComplexObje
       this._canIpForward = value.canIpForward;
       this._enableExternalIps = value.enableExternalIps;
       this._network = value.network;
+      this._queueCount = value.queueCount;
       this._subnetwork = value.subnetwork;
     }
   }
@@ -830,6 +846,22 @@ export class GoogleTpuV2VmNetworkConfigOutputReference extends cdktf.ComplexObje
     return this._network;
   }
 
+  // queue_count - computed: false, optional: true, required: false
+  private _queueCount?: number; 
+  public get queueCount() {
+    return this.getNumberAttribute('queue_count');
+  }
+  public set queueCount(value: number) {
+    this._queueCount = value;
+  }
+  public resetQueueCount() {
+    this._queueCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueCountInput() {
+    return this._queueCount;
+  }
+
   // subnetwork - computed: true, optional: true, required: false
   private _subnetwork?: string; 
   public get subnetwork() {
@@ -846,17 +878,279 @@ export class GoogleTpuV2VmNetworkConfigOutputReference extends cdktf.ComplexObje
     return this._subnetwork;
   }
 }
+export interface GoogleTpuV2VmNetworkConfigs {
+  /**
+  * Allows the TPU node to send and receive packets with non-matching destination or source
+  * IPs. This is required if you plan to use the TPU workers to forward routes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
+  */
+  readonly canIpForward?: boolean | cdktf.IResolvable;
+  /**
+  * Indicates that external IP addresses would be associated with the TPU workers. If set to
+  * false, the specified subnetwork or network should have Private Google Access enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
+  */
+  readonly enableExternalIps?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the network for the TPU node. It must be a preexisting Google Compute Engine
+  * network. If none is provided, "default" will be used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
+  */
+  readonly network?: string;
+  /**
+  * Specifies networking queue count for TPU VM instance's network interface.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
+  */
+  readonly queueCount?: number;
+  /**
+  * The name of the subnetwork for the TPU node. It must be a preexisting Google Compute
+  * Engine subnetwork. If none is provided, "default" will be used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
+  */
+  readonly subnetwork?: string;
+}
+
+export function googleTpuV2VmNetworkConfigsToTerraform(struct?: GoogleTpuV2VmNetworkConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    can_ip_forward: cdktf.booleanToTerraform(struct!.canIpForward),
+    enable_external_ips: cdktf.booleanToTerraform(struct!.enableExternalIps),
+    network: cdktf.stringToTerraform(struct!.network),
+    queue_count: cdktf.numberToTerraform(struct!.queueCount),
+    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
+  }
+}
+
+
+export function googleTpuV2VmNetworkConfigsToHclTerraform(struct?: GoogleTpuV2VmNetworkConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    can_ip_forward: {
+      value: cdktf.booleanToHclTerraform(struct!.canIpForward),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_external_ips: {
+      value: cdktf.booleanToHclTerraform(struct!.enableExternalIps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_count: {
+      value: cdktf.numberToHclTerraform(struct!.queueCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    subnetwork: {
+      value: cdktf.stringToHclTerraform(struct!.subnetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleTpuV2VmNetworkConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleTpuV2VmNetworkConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._canIpForward !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.canIpForward = this._canIpForward;
+    }
+    if (this._enableExternalIps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableExternalIps = this._enableExternalIps;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._queueCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueCount = this._queueCount;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleTpuV2VmNetworkConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._canIpForward = undefined;
+      this._enableExternalIps = undefined;
+      this._network = undefined;
+      this._queueCount = undefined;
+      this._subnetwork = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._canIpForward = value.canIpForward;
+      this._enableExternalIps = value.enableExternalIps;
+      this._network = value.network;
+      this._queueCount = value.queueCount;
+      this._subnetwork = value.subnetwork;
+    }
+  }
+
+  // can_ip_forward - computed: false, optional: true, required: false
+  private _canIpForward?: boolean | cdktf.IResolvable; 
+  public get canIpForward() {
+    return this.getBooleanAttribute('can_ip_forward');
+  }
+  public set canIpForward(value: boolean | cdktf.IResolvable) {
+    this._canIpForward = value;
+  }
+  public resetCanIpForward() {
+    this._canIpForward = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get canIpForwardInput() {
+    return this._canIpForward;
+  }
+
+  // enable_external_ips - computed: false, optional: true, required: false
+  private _enableExternalIps?: boolean | cdktf.IResolvable; 
+  public get enableExternalIps() {
+    return this.getBooleanAttribute('enable_external_ips');
+  }
+  public set enableExternalIps(value: boolean | cdktf.IResolvable) {
+    this._enableExternalIps = value;
+  }
+  public resetEnableExternalIps() {
+    this._enableExternalIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableExternalIpsInput() {
+    return this._enableExternalIps;
+  }
+
+  // network - computed: true, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // queue_count - computed: false, optional: true, required: false
+  private _queueCount?: number; 
+  public get queueCount() {
+    return this.getNumberAttribute('queue_count');
+  }
+  public set queueCount(value: number) {
+    this._queueCount = value;
+  }
+  public resetQueueCount() {
+    this._queueCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueCountInput() {
+    return this._queueCount;
+  }
+
+  // subnetwork - computed: true, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+}
+
+export class GoogleTpuV2VmNetworkConfigsList extends cdktf.ComplexList {
+  public internalValue? : GoogleTpuV2VmNetworkConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleTpuV2VmNetworkConfigsOutputReference {
+    return new GoogleTpuV2VmNetworkConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleTpuV2VmSchedulingConfig {
   /**
   * Defines whether the node is preemptible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#preemptible GoogleTpuV2Vm#preemptible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#preemptible GoogleTpuV2Vm#preemptible}
   */
   readonly preemptible?: boolean | cdktf.IResolvable;
   /**
   * Whether the node is created under a reservation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#reserved GoogleTpuV2Vm#reserved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#reserved GoogleTpuV2Vm#reserved}
   */
   readonly reserved?: boolean | cdktf.IResolvable;
 }
@@ -971,14 +1265,14 @@ export interface GoogleTpuV2VmServiceAccount {
   /**
   * Email address of the service account. If empty, default Compute service account will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#email GoogleTpuV2Vm#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#email GoogleTpuV2Vm#email}
   */
   readonly email?: string;
   /**
   * The list of scopes to be made available for this service account. If empty, access to all
   * Cloud APIs will be allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#scope GoogleTpuV2Vm#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#scope GoogleTpuV2Vm#scope}
   */
   readonly scope?: string[];
 }
@@ -1093,7 +1387,7 @@ export interface GoogleTpuV2VmShieldedInstanceConfig {
   /**
   * Defines whether the instance has Secure Boot enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#enable_secure_boot GoogleTpuV2Vm#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#enable_secure_boot GoogleTpuV2Vm#enable_secure_boot}
   */
   readonly enableSecureBoot: boolean | cdktf.IResolvable;
 }
@@ -1174,15 +1468,15 @@ export class GoogleTpuV2VmShieldedInstanceConfigOutputReference extends cdktf.Co
 }
 export interface GoogleTpuV2VmTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}
   */
   readonly update?: string;
 }
@@ -1334,7 +1628,7 @@ export class GoogleTpuV2VmTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}
 */
 export class GoogleTpuV2Vm extends cdktf.TerraformResource {
 
@@ -1350,7 +1644,7 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleTpuV2Vm resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleTpuV2Vm to import
-  * @param importFromId The id of the existing GoogleTpuV2Vm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleTpuV2Vm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleTpuV2Vm to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1362,7 +1656,7 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1373,7 +1667,7 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
       terraformResourceType: 'google_tpu_v2_vm',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1398,6 +1692,7 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
     this._acceleratorConfig.internalValue = config.acceleratorConfig;
     this._dataDisks.internalValue = config.dataDisks;
     this._networkConfig.internalValue = config.networkConfig;
+    this._networkConfigs.internalValue = config.networkConfigs;
     this._schedulingConfig.internalValue = config.schedulingConfig;
     this._serviceAccount.internalValue = config.serviceAccount;
     this._shieldedInstanceConfig.internalValue = config.shieldedInstanceConfig;
@@ -1680,6 +1975,22 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
     return this._networkConfig.internalValue;
   }
 
+  // network_configs - computed: false, optional: true, required: false
+  private _networkConfigs = new GoogleTpuV2VmNetworkConfigsList(this, "network_configs", false);
+  public get networkConfigs() {
+    return this._networkConfigs;
+  }
+  public putNetworkConfigs(value: GoogleTpuV2VmNetworkConfigs[] | cdktf.IResolvable) {
+    this._networkConfigs.internalValue = value;
+  }
+  public resetNetworkConfigs() {
+    this._networkConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkConfigsInput() {
+    return this._networkConfigs.internalValue;
+  }
+
   // scheduling_config - computed: false, optional: true, required: false
   private _schedulingConfig = new GoogleTpuV2VmSchedulingConfigOutputReference(this, "scheduling_config");
   public get schedulingConfig() {
@@ -1764,6 +2075,7 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
       accelerator_config: googleTpuV2VmAcceleratorConfigToTerraform(this._acceleratorConfig.internalValue),
       data_disks: cdktf.listMapper(googleTpuV2VmDataDisksToTerraform, true)(this._dataDisks.internalValue),
       network_config: googleTpuV2VmNetworkConfigToTerraform(this._networkConfig.internalValue),
+      network_configs: cdktf.listMapper(googleTpuV2VmNetworkConfigsToTerraform, true)(this._networkConfigs.internalValue),
       scheduling_config: googleTpuV2VmSchedulingConfigToTerraform(this._schedulingConfig.internalValue),
       service_account: googleTpuV2VmServiceAccountToTerraform(this._serviceAccount.internalValue),
       shielded_instance_config: googleTpuV2VmShieldedInstanceConfigToTerraform(this._shieldedInstanceConfig.internalValue),
@@ -1856,6 +2168,12 @@ export class GoogleTpuV2Vm extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GoogleTpuV2VmNetworkConfigList",
+      },
+      network_configs: {
+        value: cdktf.listMapperHcl(googleTpuV2VmNetworkConfigsToHclTerraform, true)(this._networkConfigs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleTpuV2VmNetworkConfigsList",
       },
       scheduling_config: {
         value: googleTpuV2VmSchedulingConfigToHclTerraform(this._schedulingConfig.internalValue),

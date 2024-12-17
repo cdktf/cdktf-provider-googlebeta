@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataGoogleFirebaseWebAppConfigAConfig extends cdktf.TerraformMe
   /**
   * The project id of the Firebase web App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
   */
   readonly project?: string;
   /**
   * The id of the Firebase web App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
   */
   readonly webAppId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}
 */
 export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGoogleFirebaseWebAppConfigA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFirebaseWebAppConfigA to import
-  * @param importFromId The id of the existing DataGoogleFirebaseWebAppConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleFirebaseWebAppConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFirebaseWebAppConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

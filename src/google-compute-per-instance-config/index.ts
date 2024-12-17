@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#id GoogleComputePerInstanceConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMet
   /**
   * The instance group manager this instance config is part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#instance_group_manager GoogleComputePerInstanceConfig#instance_group_manager}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#instance_group_manager GoogleComputePerInstanceConfig#instance_group_manager}
   */
   readonly instanceGroupManager: string;
   /**
@@ -33,7 +28,7 @@ export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMet
   * * REFRESH
   * * NONE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#minimal_action GoogleComputePerInstanceConfig#minimal_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#minimal_action GoogleComputePerInstanceConfig#minimal_action}
   */
   readonly minimalAction?: string;
   /**
@@ -44,24 +39,24 @@ export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMet
   * * REFRESH
   * * NONE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#most_disruptive_allowed_action GoogleComputePerInstanceConfig#most_disruptive_allowed_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#most_disruptive_allowed_action GoogleComputePerInstanceConfig#most_disruptive_allowed_action}
   */
   readonly mostDisruptiveAllowedAction?: string;
   /**
   * The name for this per-instance config and its corresponding instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#name GoogleComputePerInstanceConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#name GoogleComputePerInstanceConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#project GoogleComputePerInstanceConfig#project}
   */
   readonly project?: string;
   /**
   * When true, deleting this config will immediately remove the underlying instance.
   * When false, deleting this config will use the behavior as determined by remove_instance_on_destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#remove_instance_on_destroy GoogleComputePerInstanceConfig#remove_instance_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#remove_instance_on_destroy GoogleComputePerInstanceConfig#remove_instance_on_destroy}
   */
   readonly removeInstanceOnDestroy?: boolean | cdktf.IResolvable;
   /**
@@ -69,25 +64,25 @@ export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMet
   * When false, deleting this config will *not* immediately remove any state from the underlying instance.
   * State will be removed on the next instance recreation or update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#remove_instance_state_on_destroy GoogleComputePerInstanceConfig#remove_instance_state_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#remove_instance_state_on_destroy GoogleComputePerInstanceConfig#remove_instance_state_on_destroy}
   */
   readonly removeInstanceStateOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Zone where the containing instance group manager is located
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#zone GoogleComputePerInstanceConfig#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#zone GoogleComputePerInstanceConfig#zone}
   */
   readonly zone?: string;
   /**
   * preserved_state block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#preserved_state GoogleComputePerInstanceConfig#preserved_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#preserved_state GoogleComputePerInstanceConfig#preserved_state}
   */
   readonly preservedState?: GoogleComputePerInstanceConfigPreservedState;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#timeouts GoogleComputePerInstanceConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#timeouts GoogleComputePerInstanceConfig#timeouts}
   */
   readonly timeouts?: GoogleComputePerInstanceConfigTimeouts;
 }
@@ -99,26 +94,26 @@ export interface GoogleComputePerInstanceConfigPreservedStateDisk {
   * 'ON_PERMANENT_INSTANCE_DELETION' will delete the stateful disk when the VM is permanently
   * deleted from the instance group. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#delete_rule GoogleComputePerInstanceConfig#delete_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#delete_rule GoogleComputePerInstanceConfig#delete_rule}
   */
   readonly deleteRule?: string;
   /**
   * A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#device_name GoogleComputePerInstanceConfig#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#device_name GoogleComputePerInstanceConfig#device_name}
   */
   readonly deviceName: string;
   /**
   * The mode of the disk. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#mode GoogleComputePerInstanceConfig#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#mode GoogleComputePerInstanceConfig#mode}
   */
   readonly mode?: string;
   /**
   * The URI of an existing persistent disk to attach under the specified device-name in the format
   * 'projects/project-id/zones/zone/disks/disk-name'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#source GoogleComputePerInstanceConfig#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#source GoogleComputePerInstanceConfig#source}
   */
   readonly source: string;
 }
@@ -317,7 +312,7 @@ export interface GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress
   /**
   * The URL of the reservation for this IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
   */
   readonly address?: string;
 }
@@ -403,17 +398,17 @@ export interface GoogleComputePerInstanceConfigPreservedStateExternalIp {
   /**
   * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
   */
   readonly autoDelete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}
   */
   readonly interfaceName: string;
   /**
   * ip_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
   */
   readonly ipAddress?: GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress;
 }
@@ -586,7 +581,7 @@ export interface GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress
   /**
   * The URL of the reservation for this IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
   */
   readonly address?: string;
 }
@@ -672,17 +667,17 @@ export interface GoogleComputePerInstanceConfigPreservedStateInternalIp {
   /**
   * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
   */
   readonly autoDelete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#interface_name GoogleComputePerInstanceConfig#interface_name}
   */
   readonly interfaceName: string;
   /**
   * ip_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
   */
   readonly ipAddress?: GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress;
 }
@@ -855,25 +850,25 @@ export interface GoogleComputePerInstanceConfigPreservedState {
   /**
   * Preserved metadata defined for this instance. This is a list of key->value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#metadata GoogleComputePerInstanceConfig#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#metadata GoogleComputePerInstanceConfig#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#disk GoogleComputePerInstanceConfig#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#disk GoogleComputePerInstanceConfig#disk}
   */
   readonly disk?: GoogleComputePerInstanceConfigPreservedStateDisk[] | cdktf.IResolvable;
   /**
   * external_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#external_ip GoogleComputePerInstanceConfig#external_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#external_ip GoogleComputePerInstanceConfig#external_ip}
   */
   readonly externalIp?: GoogleComputePerInstanceConfigPreservedStateExternalIp[] | cdktf.IResolvable;
   /**
   * internal_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#internal_ip GoogleComputePerInstanceConfig#internal_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#internal_ip GoogleComputePerInstanceConfig#internal_ip}
   */
   readonly internalIp?: GoogleComputePerInstanceConfigPreservedStateInternalIp[] | cdktf.IResolvable;
 }
@@ -1044,15 +1039,15 @@ export class GoogleComputePerInstanceConfigPreservedStateOutputReference extends
 }
 export interface GoogleComputePerInstanceConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#create GoogleComputePerInstanceConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#delete GoogleComputePerInstanceConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#update GoogleComputePerInstanceConfig#update}
   */
   readonly update?: string;
 }
@@ -1204,7 +1199,7 @@ export class GoogleComputePerInstanceConfigTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}
 */
 export class GoogleComputePerInstanceConfig extends cdktf.TerraformResource {
 
@@ -1220,7 +1215,7 @@ export class GoogleComputePerInstanceConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputePerInstanceConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputePerInstanceConfig to import
-  * @param importFromId The id of the existing GoogleComputePerInstanceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputePerInstanceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputePerInstanceConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1232,7 +1227,7 @@ export class GoogleComputePerInstanceConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1243,7 +1238,7 @@ export class GoogleComputePerInstanceConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_per_instance_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

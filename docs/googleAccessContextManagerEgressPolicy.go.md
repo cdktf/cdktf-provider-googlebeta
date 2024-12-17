@@ -4,12 +4,12 @@
 
 ### GoogleAccessContextManagerEgressPolicy <a name="GoogleAccessContextManagerEgressPolicy" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy google_access_context_manager_egress_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.NewGoogleAccessContextManagerEgressPolicy(scope Construct, id *string, config GoogleAccessContextManagerEgressPolicyConfig) GoogleAccessContextManagerEgressPolicy
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GoogleAccessContextManager
 
 The id of the existing GoogleAccessContextManagerEgressPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 &googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicyConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleacces
 	EgressPolicyName: *string,
 	Resource: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts,
 }
 ```
 
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleacces
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.egressPolicyName">EgressPolicyName</a></code> | <code>*string</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.resource">Resource</a></code> | <code>*string</code> | A GCP resource that is inside of the service perimeter. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#id GoogleAccessContextManagerEgressPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#id GoogleAccessContextManagerEgressPolicy#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts">GoogleAccessContextManagerEgressPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -897,7 +897,7 @@ EgressPolicyName *string
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#egress_policy_name GoogleAccessContextManagerEgressPolicy#egress_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#egress_policy_name GoogleAccessContextManagerEgressPolicy#egress_policy_name}
 
 ---
 
@@ -911,7 +911,7 @@ Resource *string
 
 A GCP resource that is inside of the service perimeter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#resource GoogleAccessContextManagerEgressPolicy#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#resource GoogleAccessContextManagerEgressPolicy#resource}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#id GoogleAccessContextManagerEgressPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#id GoogleAccessContextManagerEgressPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ Timeouts GoogleAccessContextManagerEgressPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#timeouts GoogleAccessContextManagerEgressPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#timeouts GoogleAccessContextManagerEgressPolicy#timeouts}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 &googleaccesscontextmanageregresspolicy.GoogleAccessContextManagerEgressPolicyTimeouts {
 	Create: *string,
@@ -961,8 +961,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleacces
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#create GoogleAccessContextManagerEgressPolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#delete GoogleAccessContextManagerEgressPolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#create GoogleAccessContextManagerEgressPolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#delete GoogleAccessContextManagerEgressPolicy#delete}. |
 
 ---
 
@@ -974,7 +974,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#create GoogleAccessContextManagerEgressPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#create GoogleAccessContextManagerEgressPolicy#create}.
 
 ---
 
@@ -986,7 +986,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_access_context_manager_egress_policy#delete GoogleAccessContextManagerEgressPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_access_context_manager_egress_policy#delete GoogleAccessContextManagerEgressPolicy#delete}.
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerEgressPolicy.GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleaccesscontextmanageregresspolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleaccesscontextmanageregresspolicy"
 
 googleaccesscontextmanageregresspolicy.NewGoogleAccessContextManagerEgressPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerEgressPolicyTimeoutsOutputReference
 ```

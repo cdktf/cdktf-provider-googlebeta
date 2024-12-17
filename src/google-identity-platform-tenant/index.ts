@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface GoogleIdentityPlatformTenantConfig extends cdktf.TerraformMetaA
   /**
   * Whether to allow email/password user authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#allow_password_signup GoogleIdentityPlatformTenant#allow_password_signup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#allow_password_signup GoogleIdentityPlatformTenant#allow_password_signup}
   */
   readonly allowPasswordSignup?: boolean | cdktf.IResolvable;
   /**
@@ -23,50 +18,50 @@ export interface GoogleIdentityPlatformTenantConfig extends cdktf.TerraformMetaA
   * the disabled tenant are not allowed to sign-in. Admins of the disabled tenant
   * are not able to manage its users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#disable_auth GoogleIdentityPlatformTenant#disable_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#disable_auth GoogleIdentityPlatformTenant#disable_auth}
   */
   readonly disableAuth?: boolean | cdktf.IResolvable;
   /**
   * Human friendly display name of the tenant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#display_name GoogleIdentityPlatformTenant#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#display_name GoogleIdentityPlatformTenant#display_name}
   */
   readonly displayName: string;
   /**
   * Whether to enable email link user authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#enable_email_link_signin GoogleIdentityPlatformTenant#enable_email_link_signin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#enable_email_link_signin GoogleIdentityPlatformTenant#enable_email_link_signin}
   */
   readonly enableEmailLinkSignin?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#id GoogleIdentityPlatformTenant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#id GoogleIdentityPlatformTenant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#project GoogleIdentityPlatformTenant#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#project GoogleIdentityPlatformTenant#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#timeouts GoogleIdentityPlatformTenant#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#timeouts GoogleIdentityPlatformTenant#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformTenantTimeouts;
 }
 export interface GoogleIdentityPlatformTenantTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#create GoogleIdentityPlatformTenant#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#create GoogleIdentityPlatformTenant#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#delete GoogleIdentityPlatformTenant#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#delete GoogleIdentityPlatformTenant#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#update GoogleIdentityPlatformTenant#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#update GoogleIdentityPlatformTenant#update}
   */
   readonly update?: string;
 }
@@ -218,7 +213,7 @@ export class GoogleIdentityPlatformTenantTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}
 */
 export class GoogleIdentityPlatformTenant extends cdktf.TerraformResource {
 
@@ -234,7 +229,7 @@ export class GoogleIdentityPlatformTenant extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIdentityPlatformTenant resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIdentityPlatformTenant to import
-  * @param importFromId The id of the existing GoogleIdentityPlatformTenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIdentityPlatformTenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIdentityPlatformTenant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -246,7 +241,7 @@ export class GoogleIdentityPlatformTenant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +252,7 @@ export class GoogleIdentityPlatformTenant extends cdktf.TerraformResource {
       terraformResourceType: 'google_identity_platform_tenant',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

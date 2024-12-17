@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataGoogleFirebaseAppleAppConfigAConfig extends cdktf.Terraform
   /**
   * The id of the Firebase iOS App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
   */
   readonly appId: string;
   /**
   * The project id of the Firebase iOS App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}
 */
 export class DataGoogleFirebaseAppleAppConfigA extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataGoogleFirebaseAppleAppConfigA extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataGoogleFirebaseAppleAppConfigA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleFirebaseAppleAppConfigA to import
-  * @param importFromId The id of the existing DataGoogleFirebaseAppleAppConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleFirebaseAppleAppConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleFirebaseAppleAppConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataGoogleFirebaseAppleAppConfigA extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataGoogleFirebaseAppleAppConfigA extends cdktf.TerraformDataSource
       terraformResourceType: 'google_firebase_apple_app_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

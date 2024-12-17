@@ -4,7 +4,7 @@
 
 ### GoogleDataplexDatascanIamPolicy <a name="GoogleDataplexDatascanIamPolicy" id="@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy google_dataplex_datascan_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleDataplexDatascanIamP
 
 The id of the existing GoogleDataplexDatascanIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const googleDataplexDatascanIamPolicyConfig: googleDataplexDatascanIamPolicy.Goo
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.dataScanId">dataScanId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#data_scan_id GoogleDataplexDatascanIamPolicy#data_scan_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#policy_data GoogleDataplexDatascanIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#id GoogleDataplexDatascanIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#location GoogleDataplexDatascanIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#project GoogleDataplexDatascanIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.dataScanId">dataScanId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#data_scan_id GoogleDataplexDatascanIamPolicy#data_scan_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#policy_data GoogleDataplexDatascanIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#id GoogleDataplexDatascanIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#location GoogleDataplexDatascanIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#project GoogleDataplexDatascanIamPolicy#project}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly dataScanId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#data_scan_id GoogleDataplexDatascanIamPolicy#data_scan_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#data_scan_id GoogleDataplexDatascanIamPolicy#data_scan_id}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#policy_data GoogleDataplexDatascanIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#policy_data GoogleDataplexDatascanIamPolicy#policy_data}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#id GoogleDataplexDatascanIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#id GoogleDataplexDatascanIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#location GoogleDataplexDatascanIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#location GoogleDataplexDatascanIamPolicy#location}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_dataplex_datascan_iam_policy#project GoogleDataplexDatascanIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_datascan_iam_policy#project GoogleDataplexDatascanIamPolicy#project}.
 
 ---
 
