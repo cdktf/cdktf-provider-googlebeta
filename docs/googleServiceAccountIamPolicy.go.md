@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 googleserviceaccountiampolicy.NewGoogleServiceAccountIamPolicy(scope Construct, id *string, config GoogleServiceAccountIamPolicyConfig) GoogleServiceAccountIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 googleserviceaccountiampolicy.GoogleServiceAccountIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleserviceaccountiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleserviceaccountiampolicy"
 
 &googleserviceaccountiampolicy.GoogleServiceAccountIamPolicyConfig {
 	Connection: interface{},

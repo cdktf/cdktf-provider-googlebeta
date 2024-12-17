@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.NewGoogleDataprocGdcServiceInstance(scope Construct, id *string, config GoogleDataprocGdcServiceInstanceConfig) GoogleDataprocGdcServiceInstance
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1103,7 +1103,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 &googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstanceConfig {
 	Connection: interface{},
@@ -1116,13 +1116,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocg
 	Location: *string,
 	ServiceInstanceId: *string,
 	DisplayName: *string,
-	GdceCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceCluster,
+	GdceCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceCluster,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
 	ServiceAccount: *string,
-	SparkServiceInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceTimeouts,
+	SparkServiceInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceTimeouts,
 }
 ```
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 &googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstanceGdceCluster {
 	GdceCluster: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 &googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig {
 
@@ -1414,7 +1414,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocg
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 &googledataprocgdcserviceinstance.GoogleDataprocGdcServiceInstanceTimeouts {
 	Create: *string,
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceGdceClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.NewGoogleDataprocGdcServiceInstanceGdceClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocGdcServiceInstanceGdceClusterOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() GoogleDataprocGdcServiceInstanceGdceCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.NewGoogleDataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() GoogleDataprocGdcServiceInstanceSparkServiceInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocGdcServiceInstance.GoogleDataprocGdcServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocgdcserviceinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataprocgdcserviceinstance"
 
 googledataprocgdcserviceinstance.NewGoogleDataprocGdcServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocGdcServiceInstanceTimeoutsOutputReference
 ```
