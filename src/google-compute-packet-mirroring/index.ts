@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleComputePacketMirroringConfig extends cdktf.TerraformMetaA
   /**
   * A human-readable description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#description GoogleComputePacketMirroring#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#description GoogleComputePacketMirroring#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#id GoogleComputePacketMirroring#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#id GoogleComputePacketMirroring#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface GoogleComputePacketMirroringConfig extends cdktf.TerraformMetaA
   /**
   * The name of the packet mirroring rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#name GoogleComputePacketMirroring#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#name GoogleComputePacketMirroring#name}
   */
   readonly name: string;
   /**
@@ -36,48 +31,48 @@ export interface GoogleComputePacketMirroringConfig extends cdktf.TerraformMetaA
   * used to break ties in the case of two rules that apply to
   * the same instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#priority GoogleComputePacketMirroring#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#priority GoogleComputePacketMirroring#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#project GoogleComputePacketMirroring#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#project GoogleComputePacketMirroring#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created address should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#region GoogleComputePacketMirroring#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#region GoogleComputePacketMirroring#region}
   */
   readonly region?: string;
   /**
   * collector_ilb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#collector_ilb GoogleComputePacketMirroring#collector_ilb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#collector_ilb GoogleComputePacketMirroring#collector_ilb}
   */
   readonly collectorIlb: GoogleComputePacketMirroringCollectorIlb;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#filter GoogleComputePacketMirroring#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#filter GoogleComputePacketMirroring#filter}
   */
   readonly filter?: GoogleComputePacketMirroringFilter;
   /**
   * mirrored_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#mirrored_resources GoogleComputePacketMirroring#mirrored_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#mirrored_resources GoogleComputePacketMirroring#mirrored_resources}
   */
   readonly mirroredResources: GoogleComputePacketMirroringMirroredResources;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#network GoogleComputePacketMirroring#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#network GoogleComputePacketMirroring#network}
   */
   readonly network: GoogleComputePacketMirroringNetwork;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#timeouts GoogleComputePacketMirroring#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#timeouts GoogleComputePacketMirroring#timeouts}
   */
   readonly timeouts?: GoogleComputePacketMirroringTimeouts;
 }
@@ -85,7 +80,7 @@ export interface GoogleComputePacketMirroringCollectorIlb {
   /**
   * The URL of the forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -169,19 +164,19 @@ export interface GoogleComputePacketMirroringFilter {
   * IP CIDR ranges that apply as a filter on the source (ingress) or
   * destination (egress) IP in the IP header. Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#cidr_ranges GoogleComputePacketMirroring#cidr_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#cidr_ranges GoogleComputePacketMirroring#cidr_ranges}
   */
   readonly cidrRanges?: string[];
   /**
   * Direction of traffic to mirror. Default value: "BOTH" Possible values: ["INGRESS", "EGRESS", "BOTH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#direction GoogleComputePacketMirroring#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#direction GoogleComputePacketMirroring#direction}
   */
   readonly direction?: string;
   /**
   * Possible IP protocols including tcp, udp, icmp and esp
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#ip_protocols GoogleComputePacketMirroring#ip_protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#ip_protocols GoogleComputePacketMirroring#ip_protocols}
   */
   readonly ipProtocols?: string[];
 }
@@ -325,7 +320,7 @@ export interface GoogleComputePacketMirroringMirroredResourcesInstances {
   /**
   * The URL of the instances where this rule should be active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -440,7 +435,7 @@ export interface GoogleComputePacketMirroringMirroredResourcesSubnetworks {
   /**
   * The URL of the subnetwork where this rule should be active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -555,19 +550,19 @@ export interface GoogleComputePacketMirroringMirroredResources {
   /**
   * All instances with these tags will be mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#tags GoogleComputePacketMirroring#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#tags GoogleComputePacketMirroring#tags}
   */
   readonly tags?: string[];
   /**
   * instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#instances GoogleComputePacketMirroring#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#instances GoogleComputePacketMirroring#instances}
   */
   readonly instances?: GoogleComputePacketMirroringMirroredResourcesInstances[] | cdktf.IResolvable;
   /**
   * subnetworks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#subnetworks GoogleComputePacketMirroring#subnetworks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#subnetworks GoogleComputePacketMirroring#subnetworks}
   */
   readonly subnetworks?: GoogleComputePacketMirroringMirroredResourcesSubnetworks[] | cdktf.IResolvable;
 }
@@ -711,7 +706,7 @@ export interface GoogleComputePacketMirroringNetwork {
   /**
   * The full self_link URL of the network where this rule is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#url GoogleComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -792,15 +787,15 @@ export class GoogleComputePacketMirroringNetworkOutputReference extends cdktf.Co
 }
 export interface GoogleComputePacketMirroringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#create GoogleComputePacketMirroring#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#create GoogleComputePacketMirroring#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#delete GoogleComputePacketMirroring#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#delete GoogleComputePacketMirroring#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#update GoogleComputePacketMirroring#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#update GoogleComputePacketMirroring#update}
   */
   readonly update?: string;
 }
@@ -952,7 +947,7 @@ export class GoogleComputePacketMirroringTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}
 */
 export class GoogleComputePacketMirroring extends cdktf.TerraformResource {
 
@@ -968,7 +963,7 @@ export class GoogleComputePacketMirroring extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputePacketMirroring resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputePacketMirroring to import
-  * @param importFromId The id of the existing GoogleComputePacketMirroring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputePacketMirroring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputePacketMirroring to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -980,7 +975,7 @@ export class GoogleComputePacketMirroring extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -991,7 +986,7 @@ export class GoogleComputePacketMirroring extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_packet_mirroring',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

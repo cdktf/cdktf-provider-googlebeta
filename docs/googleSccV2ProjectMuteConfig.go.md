@@ -4,12 +4,12 @@
 
 ### GoogleSccV2ProjectMuteConfig <a name="GoogleSccV2ProjectMuteConfig" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config google_scc_v2_project_mute_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.NewGoogleSccV2ProjectMuteConfig(scope Construct, id *string, config GoogleSccV2ProjectMuteConfigConfig) GoogleSccV2ProjectMuteConfig
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleSccV2ProjectMuteConf
 
 The id of the existing GoogleSccV2ProjectMuteConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 &googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfigConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts,
 }
 ```
 
@@ -971,9 +971,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.muteConfigId">MuteConfigId</a></code> | <code>*string</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.type">Type</a></code> | <code>*string</code> | The type of the mute config. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.description">Description</a></code> | <code>*string</code> | A description of the mute config. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#id GoogleSccV2ProjectMuteConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#id GoogleSccV2ProjectMuteConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.location">Location</a></code> | <code>*string</code> | location Id is provided by project. If not provided, Use global as default. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#project GoogleSccV2ProjectMuteConfig#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#project GoogleSccV2ProjectMuteConfig#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts">GoogleSccV2ProjectMuteConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1063,7 +1063,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#filter GoogleSccV2ProjectMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#filter GoogleSccV2ProjectMuteConfig#filter}
 
 ---
 
@@ -1077,7 +1077,7 @@ MuteConfigId *string
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#mute_config_id GoogleSccV2ProjectMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#mute_config_id GoogleSccV2ProjectMuteConfig#mute_config_id}
 
 ---
 
@@ -1091,7 +1091,7 @@ Type *string
 
 The type of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#type GoogleSccV2ProjectMuteConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#type GoogleSccV2ProjectMuteConfig#type}
 
 ---
 
@@ -1105,7 +1105,7 @@ Description *string
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#description GoogleSccV2ProjectMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#description GoogleSccV2ProjectMuteConfig#description}
 
 ---
 
@@ -1117,7 +1117,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#id GoogleSccV2ProjectMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#id GoogleSccV2ProjectMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1134,7 @@ Location *string
 
 location Id is provided by project. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#location GoogleSccV2ProjectMuteConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#location GoogleSccV2ProjectMuteConfig#location}
 
 ---
 
@@ -1146,7 +1146,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#project GoogleSccV2ProjectMuteConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#project GoogleSccV2ProjectMuteConfig#project}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Timeouts GoogleSccV2ProjectMuteConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#timeouts GoogleSccV2ProjectMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#timeouts GoogleSccV2ProjectMuteConfig#timeouts}
 
 ---
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 &googlesccv2projectmuteconfig.GoogleSccV2ProjectMuteConfigTimeouts {
 	Create: *string,
@@ -1182,9 +1182,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#create GoogleSccV2ProjectMuteConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#delete GoogleSccV2ProjectMuteConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#update GoogleSccV2ProjectMuteConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#create GoogleSccV2ProjectMuteConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#delete GoogleSccV2ProjectMuteConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#update GoogleSccV2ProjectMuteConfig#update}. |
 
 ---
 
@@ -1196,7 +1196,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#create GoogleSccV2ProjectMuteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#create GoogleSccV2ProjectMuteConfig#create}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#delete GoogleSccV2ProjectMuteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#delete GoogleSccV2ProjectMuteConfig#delete}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_project_mute_config#update GoogleSccV2ProjectMuteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_project_mute_config#update GoogleSccV2ProjectMuteConfig#update}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccV2ProjectMuteConfig.GoogleSccV2ProjectMuteConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2projectmuteconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccv2projectmuteconfig"
 
 googlesccv2projectmuteconfig.NewGoogleSccV2ProjectMuteConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSccV2ProjectMuteConfigTimeoutsOutputReference
 ```

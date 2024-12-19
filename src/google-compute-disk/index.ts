@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,25 +14,25 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * * READ_WRITE_MANY
   * * READ_ONLY_SINGLE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#access_mode GoogleComputeDisk#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#access_mode GoogleComputeDisk#access_mode}
   */
   readonly accessMode?: string;
   /**
   * An optional description of this resource. Provide this property when
   * you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
   */
   readonly description?: string;
   /**
   * Whether this disk is using confidential compute mode.
   * Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#enable_confidential_compute GoogleComputeDisk#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#enable_confidential_compute GoogleComputeDisk#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#id GoogleComputeDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,13 +49,13 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
   * These images can be referred by family name here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
   */
   readonly image?: string;
   /**
   * Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. The default is SCSI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
   */
   readonly interface?: string;
   /**
@@ -70,19 +65,19 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Any applicable license URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#licenses GoogleComputeDisk#licenses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#licenses GoogleComputeDisk#licenses}
   */
   readonly licenses?: string[];
   /**
   * Indicates whether or not the disk can be read/write attached to more than one instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
   */
   readonly multiWriter?: boolean | cdktf.IResolvable;
   /**
@@ -94,7 +89,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
   */
   readonly name: string;
   /**
@@ -104,11 +99,11 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * If an unsupported value is requested, the error message will list
   * the supported values for the caller's project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
   */
   readonly physicalBlockSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#project GoogleComputeDisk#project}
   */
   readonly project?: string;
   /**
@@ -116,7 +111,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
   * allows for an update of IOPS every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
@@ -124,7 +119,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
   * allows for an update of Throughput every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#provisioned_throughput GoogleComputeDisk#provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#provisioned_throughput GoogleComputeDisk#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
@@ -136,7 +131,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * ['google_compute_disk_resource_policy_attachment'](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk_resource_policy_attachment)
   * to allow for updating the resource policy attached to the disk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
   */
   readonly resourcePolicies?: string[];
   /**
@@ -154,7 +149,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
   * and recreating.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
   */
   readonly size?: number;
   /**
@@ -168,7 +163,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * * 'global/snapshots/snapshot'
   * * 'snapshot'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
   */
   readonly snapshot?: string;
   /**
@@ -182,7 +177,7 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * * zones/{zone}/disks/{disk}
   * * regions/{region}/disks/{disk}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
   */
   readonly sourceDisk?: string;
   /**
@@ -193,56 +188,56 @@ export interface GoogleComputeDiskConfig extends cdktf.TerraformMetaArguments {
   * * /zones/{zone}/storagePools/{storagePool}
   * * /{storagePool}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#storage_pool GoogleComputeDisk#storage_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#storage_pool GoogleComputeDisk#storage_pool}
   */
   readonly storagePool?: string;
   /**
   * URL of the disk type resource describing which disk type to use to
   * create the disk. Provide this when creating the disk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
   */
   readonly type?: string;
   /**
   * A reference to the zone where the disk resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
   */
   readonly zone?: string;
   /**
   * async_primary_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
   */
   readonly asyncPrimaryDisk?: GoogleComputeDiskAsyncPrimaryDisk;
   /**
   * disk_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
   */
   readonly diskEncryptionKey?: GoogleComputeDiskDiskEncryptionKey;
   /**
   * guest_os_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#guest_os_features GoogleComputeDisk#guest_os_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#guest_os_features GoogleComputeDisk#guest_os_features}
   */
   readonly guestOsFeatures?: GoogleComputeDiskGuestOsFeatures[] | cdktf.IResolvable;
   /**
   * source_image_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
   */
   readonly sourceImageEncryptionKey?: GoogleComputeDiskSourceImageEncryptionKey;
   /**
   * source_snapshot_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
   */
   readonly sourceSnapshotEncryptionKey?: GoogleComputeDiskSourceSnapshotEncryptionKey;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
   */
   readonly timeouts?: GoogleComputeDiskTimeouts;
 }
@@ -250,7 +245,7 @@ export interface GoogleComputeDiskAsyncPrimaryDisk {
   /**
   * Primary disk for asynchronous disk replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#disk GoogleComputeDisk#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#disk GoogleComputeDisk#disk}
   */
   readonly disk: string;
 }
@@ -337,21 +332,21 @@ export interface GoogleComputeDiskDiskEncryptionKey {
   * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
   * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
   * If absent, the Compute Engine Service Agent service account is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
   readonly rawKey?: string;
   /**
@@ -359,7 +354,7 @@ export interface GoogleComputeDiskDiskEncryptionKey {
   * customer-supplied encryption key to either encrypt or decrypt
   * this resource. You can provide either the rawKey or the rsaEncryptedKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
   */
   readonly rsaEncryptedKey?: string;
 }
@@ -537,7 +532,7 @@ export interface GoogleComputeDiskGuestOsFeatures {
   /**
   * The type of supported feature. Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
   */
   readonly type: string;
 }
@@ -656,21 +651,21 @@ export interface GoogleComputeDiskSourceImageEncryptionKey {
   * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
   * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
   * If absent, the Compute Engine Service Agent service account is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
   readonly rawKey?: string;
 }
@@ -823,21 +818,21 @@ export interface GoogleComputeDiskSourceSnapshotEncryptionKey {
   * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
   * See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
   * If absent, the Compute Engine Service Agent service account is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
   readonly rawKey?: string;
 }
@@ -984,15 +979,15 @@ export class GoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference extends
 }
 export interface GoogleComputeDiskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#create GoogleComputeDisk#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#create GoogleComputeDisk#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#update GoogleComputeDisk#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#update GoogleComputeDisk#update}
   */
   readonly update?: string;
 }
@@ -1144,7 +1139,7 @@ export class GoogleComputeDiskTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk google_compute_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk google_compute_disk}
 */
 export class GoogleComputeDisk extends cdktf.TerraformResource {
 
@@ -1160,7 +1155,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeDisk resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeDisk to import
-  * @param importFromId The id of the existing GoogleComputeDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeDisk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1172,7 +1167,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_disk google_compute_disk} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_disk google_compute_disk} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1183,7 +1178,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_disk',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
