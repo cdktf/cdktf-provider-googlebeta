@@ -4,7 +4,7 @@
 
 ### GoogleServiceDirectoryService <a name="GoogleServiceDirectoryService" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service google_service_directory_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service google_service_directory_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryService.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleServiceDirectoryServ
 
 The id of the existing GoogleServiceDirectoryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ const googleServiceDirectoryServiceConfig: googleServiceDirectoryService.GoogleS
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.namespace">namespace</a></code> | <code>string</code> | The resource name of the namespace this service will belong to. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.serviceId">serviceId</a></code> | <code>string</code> | The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Metadata for the service. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts">GoogleServiceDirectoryServiceTimeouts</a></code> | timeouts block. |
 
@@ -926,7 +926,7 @@ public readonly namespace: string;
 
 The resource name of the namespace this service will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly serviceId: string;
 
 The Resource ID must be 1-63 characters long, including digits, lowercase letters or the hyphen character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
 
 ---
 
@@ -952,7 +952,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -974,7 +974,7 @@ by service clients. The entire metadata dictionary may contain
 up to 2000 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly timeouts: GoogleServiceDirectoryServiceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
 
 ---
 
@@ -1006,9 +1006,9 @@ const googleServiceDirectoryServiceTimeouts: googleServiceDirectoryService.Googl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}. |
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}.
 
 ---
 

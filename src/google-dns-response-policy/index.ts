@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,42 +15,42 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * The description of the response policy, such as 'My new response policy'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#description GoogleDnsResponsePolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#description GoogleDnsResponsePolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#id GoogleDnsResponsePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#id GoogleDnsResponsePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#project GoogleDnsResponsePolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#project GoogleDnsResponsePolicy#project}
   */
   readonly project?: string;
   /**
   * The user assigned name for this Response Policy, such as 'myresponsepolicy'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#response_policy_name GoogleDnsResponsePolicy#response_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#response_policy_name GoogleDnsResponsePolicy#response_policy_name}
   */
   readonly responsePolicyName: string;
   /**
   * gke_clusters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#gke_clusters GoogleDnsResponsePolicy#gke_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#gke_clusters GoogleDnsResponsePolicy#gke_clusters}
   */
   readonly gkeClusters?: GoogleDnsResponsePolicyGkeClusters[] | cdktf.IResolvable;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#networks GoogleDnsResponsePolicy#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#networks GoogleDnsResponsePolicy#networks}
   */
   readonly networks?: GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#timeouts GoogleDnsResponsePolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#timeouts GoogleDnsResponsePolicy#timeouts}
   */
   readonly timeouts?: GoogleDnsResponsePolicyTimeouts;
 }
@@ -60,7 +60,7 @@ export interface GoogleDnsResponsePolicyGkeClusters {
   * This should be specified in the format like
   * 'projects/* /locations/* /clusters/*'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#gke_cluster_name GoogleDnsResponsePolicy#gke_cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#gke_cluster_name GoogleDnsResponsePolicy#gke_cluster_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -179,7 +179,7 @@ export interface GoogleDnsResponsePolicyNetworks {
   * This should be formatted like
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#network_url GoogleDnsResponsePolicy#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#network_url GoogleDnsResponsePolicy#network_url}
   */
   readonly networkUrl: string;
 }
@@ -292,15 +292,15 @@ export class GoogleDnsResponsePolicyNetworksList extends cdktf.ComplexList {
 }
 export interface GoogleDnsResponsePolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#create GoogleDnsResponsePolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#create GoogleDnsResponsePolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#delete GoogleDnsResponsePolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#delete GoogleDnsResponsePolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#update GoogleDnsResponsePolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#update GoogleDnsResponsePolicy#update}
   */
   readonly update?: string;
 }
@@ -452,7 +452,7 @@ export class GoogleDnsResponsePolicyTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy google_dns_response_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy google_dns_response_policy}
 */
 export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
 
@@ -468,7 +468,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDnsResponsePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDnsResponsePolicy to import
-  * @param importFromId The id of the existing GoogleDnsResponsePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDnsResponsePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDnsResponsePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -480,7 +480,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dns_response_policy google_dns_response_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dns_response_policy google_dns_response_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -491,7 +491,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_response_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

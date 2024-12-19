@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface GoogleApigeeEnvironmentKeyvaluemapsConfig extends cdktf.Terrafo
   * The Apigee environment group associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#env_id GoogleApigeeEnvironmentKeyvaluemaps#env_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#env_id GoogleApigeeEnvironmentKeyvaluemaps#env_id}
   */
   readonly envId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#id GoogleApigeeEnvironmentKeyvaluemaps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#id GoogleApigeeEnvironmentKeyvaluemaps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,23 +29,23 @@ export interface GoogleApigeeEnvironmentKeyvaluemapsConfig extends cdktf.Terrafo
   /**
   * Required. ID of the key value map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#name GoogleApigeeEnvironmentKeyvaluemaps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#name GoogleApigeeEnvironmentKeyvaluemaps#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#timeouts GoogleApigeeEnvironmentKeyvaluemaps#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#timeouts GoogleApigeeEnvironmentKeyvaluemaps#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvironmentKeyvaluemapsTimeouts;
 }
 export interface GoogleApigeeEnvironmentKeyvaluemapsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#create GoogleApigeeEnvironmentKeyvaluemaps#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#create GoogleApigeeEnvironmentKeyvaluemaps#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#delete GoogleApigeeEnvironmentKeyvaluemaps#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#delete GoogleApigeeEnvironmentKeyvaluemaps#delete}
   */
   readonly delete?: string;
 }
@@ -168,7 +168,7 @@ export class GoogleApigeeEnvironmentKeyvaluemapsTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps google_apigee_environment_keyvaluemaps}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps google_apigee_environment_keyvaluemaps}
 */
 export class GoogleApigeeEnvironmentKeyvaluemaps extends cdktf.TerraformResource {
 
@@ -184,7 +184,7 @@ export class GoogleApigeeEnvironmentKeyvaluemaps extends cdktf.TerraformResource
   * Generates CDKTF code for importing a GoogleApigeeEnvironmentKeyvaluemaps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeEnvironmentKeyvaluemaps to import
-  * @param importFromId The id of the existing GoogleApigeeEnvironmentKeyvaluemaps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeEnvironmentKeyvaluemaps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeEnvironmentKeyvaluemaps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +196,7 @@ export class GoogleApigeeEnvironmentKeyvaluemaps extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_apigee_environment_keyvaluemaps google_apigee_environment_keyvaluemaps} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_apigee_environment_keyvaluemaps google_apigee_environment_keyvaluemaps} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class GoogleApigeeEnvironmentKeyvaluemaps extends cdktf.TerraformResource
       terraformResourceType: 'google_apigee_environment_keyvaluemaps',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

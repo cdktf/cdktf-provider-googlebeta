@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,23 +19,23 @@ export interface GoogleIamFoldersPolicyBindingConfig extends cdktf.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#annotations GoogleIamFoldersPolicyBinding#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#annotations GoogleIamFoldersPolicyBinding#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Optional. The description of the policy binding. Must be less than or equal to 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#display_name GoogleIamFoldersPolicyBinding#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#display_name GoogleIamFoldersPolicyBinding#display_name}
   */
   readonly displayName?: string;
   /**
   * The parent folder for the PolicyBinding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#folder GoogleIamFoldersPolicyBinding#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#folder GoogleIamFoldersPolicyBinding#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#id GoogleIamFoldersPolicyBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#id GoogleIamFoldersPolicyBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,19 +44,19 @@ export interface GoogleIamFoldersPolicyBindingConfig extends cdktf.TerraformMeta
   /**
   * The location of the PolicyBinding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#location GoogleIamFoldersPolicyBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#location GoogleIamFoldersPolicyBinding#location}
   */
   readonly location: string;
   /**
   * Required. Immutable. The resource name of the policy to be bound. The binding parent and policy must belong to the same Organization (or Project).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#policy GoogleIamFoldersPolicyBinding#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#policy GoogleIamFoldersPolicyBinding#policy}
   */
   readonly policy: string;
   /**
   * The Policy Binding ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#policy_binding_id GoogleIamFoldersPolicyBinding#policy_binding_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#policy_binding_id GoogleIamFoldersPolicyBinding#policy_binding_id}
   */
   readonly policyBindingId: string;
   /**
@@ -64,25 +64,25 @@ export interface GoogleIamFoldersPolicyBindingConfig extends cdktf.TerraformMeta
   * field must be one of the following:  - Left empty (will be automatically set
   * to the policy kind) - The input policy kind   Possible values:  POLICY_KIND_UNSPECIFIED PRINCIPAL_ACCESS_BOUNDARY ACCESS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#policy_kind GoogleIamFoldersPolicyBinding#policy_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#policy_kind GoogleIamFoldersPolicyBinding#policy_kind}
   */
   readonly policyKind?: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#condition GoogleIamFoldersPolicyBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#condition GoogleIamFoldersPolicyBinding#condition}
   */
   readonly condition?: GoogleIamFoldersPolicyBindingCondition;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#target GoogleIamFoldersPolicyBinding#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#target GoogleIamFoldersPolicyBinding#target}
   */
   readonly target: GoogleIamFoldersPolicyBindingTarget;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#timeouts GoogleIamFoldersPolicyBinding#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#timeouts GoogleIamFoldersPolicyBinding#timeouts}
   */
   readonly timeouts?: GoogleIamFoldersPolicyBindingTimeouts;
 }
@@ -90,25 +90,25 @@ export interface GoogleIamFoldersPolicyBindingCondition {
   /**
   * Optional. Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#description GoogleIamFoldersPolicyBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#description GoogleIamFoldersPolicyBinding#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#expression GoogleIamFoldersPolicyBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#expression GoogleIamFoldersPolicyBinding#expression}
   */
   readonly expression?: string;
   /**
   * Optional. String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#location GoogleIamFoldersPolicyBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#location GoogleIamFoldersPolicyBinding#location}
   */
   readonly location?: string;
   /**
   * Optional. Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#title GoogleIamFoldersPolicyBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#title GoogleIamFoldersPolicyBinding#title}
   */
   readonly title?: string;
 }
@@ -282,7 +282,7 @@ export interface GoogleIamFoldersPolicyBindingTarget {
   * Required. Immutable. The resource name of the policy to be bound.
   * The binding parent and policy must belong to the same Organization (or Project).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#principal_set GoogleIamFoldersPolicyBinding#principal_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#principal_set GoogleIamFoldersPolicyBinding#principal_set}
   */
   readonly principalSet?: string;
 }
@@ -366,15 +366,15 @@ export class GoogleIamFoldersPolicyBindingTargetOutputReference extends cdktf.Co
 }
 export interface GoogleIamFoldersPolicyBindingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#create GoogleIamFoldersPolicyBinding#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#create GoogleIamFoldersPolicyBinding#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#delete GoogleIamFoldersPolicyBinding#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#delete GoogleIamFoldersPolicyBinding#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#update GoogleIamFoldersPolicyBinding#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#update GoogleIamFoldersPolicyBinding#update}
   */
   readonly update?: string;
 }
@@ -526,7 +526,7 @@ export class GoogleIamFoldersPolicyBindingTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding google_iam_folders_policy_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding google_iam_folders_policy_binding}
 */
 export class GoogleIamFoldersPolicyBinding extends cdktf.TerraformResource {
 
@@ -542,7 +542,7 @@ export class GoogleIamFoldersPolicyBinding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleIamFoldersPolicyBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleIamFoldersPolicyBinding to import
-  * @param importFromId The id of the existing GoogleIamFoldersPolicyBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleIamFoldersPolicyBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleIamFoldersPolicyBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -554,7 +554,7 @@ export class GoogleIamFoldersPolicyBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_iam_folders_policy_binding google_iam_folders_policy_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_folders_policy_binding google_iam_folders_policy_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -565,7 +565,7 @@ export class GoogleIamFoldersPolicyBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_iam_folders_policy_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

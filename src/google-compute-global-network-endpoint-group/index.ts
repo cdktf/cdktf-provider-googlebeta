@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,18 +16,18 @@ export interface GoogleComputeGlobalNetworkEndpointGroupConfig extends cdktf.Ter
   * The default port used if the port number is not specified in the
   * network endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#default_port GoogleComputeGlobalNetworkEndpointGroup#default_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#default_port GoogleComputeGlobalNetworkEndpointGroup#default_port}
   */
   readonly defaultPort?: number;
   /**
   * An optional description of this resource. Provide this property when
   * you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#description GoogleComputeGlobalNetworkEndpointGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#description GoogleComputeGlobalNetworkEndpointGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,33 +42,33 @@ export interface GoogleComputeGlobalNetworkEndpointGroupConfig extends cdktf.Ter
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#name GoogleComputeGlobalNetworkEndpointGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#name GoogleComputeGlobalNetworkEndpointGroup#name}
   */
   readonly name: string;
   /**
   * Type of network endpoints in this network endpoint group. Possible values: ["INTERNET_IP_PORT", "INTERNET_FQDN_PORT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#network_endpoint_type GoogleComputeGlobalNetworkEndpointGroup#network_endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#network_endpoint_type GoogleComputeGlobalNetworkEndpointGroup#network_endpoint_type}
   */
   readonly networkEndpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#timeouts GoogleComputeGlobalNetworkEndpointGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#timeouts GoogleComputeGlobalNetworkEndpointGroup#timeouts}
   */
   readonly timeouts?: GoogleComputeGlobalNetworkEndpointGroupTimeouts;
 }
 export interface GoogleComputeGlobalNetworkEndpointGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}
   */
   readonly delete?: string;
 }
@@ -191,7 +191,7 @@ export class GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}
 */
 export class GoogleComputeGlobalNetworkEndpointGroup extends cdktf.TerraformResource {
 
@@ -207,7 +207,7 @@ export class GoogleComputeGlobalNetworkEndpointGroup extends cdktf.TerraformReso
   * Generates CDKTF code for importing a GoogleComputeGlobalNetworkEndpointGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeGlobalNetworkEndpointGroup to import
-  * @param importFromId The id of the existing GoogleComputeGlobalNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeGlobalNetworkEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeGlobalNetworkEndpointGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -219,7 +219,7 @@ export class GoogleComputeGlobalNetworkEndpointGroup extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,7 +230,7 @@ export class GoogleComputeGlobalNetworkEndpointGroup extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_global_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

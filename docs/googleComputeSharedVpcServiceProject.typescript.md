@@ -4,7 +4,7 @@
 
 ### GoogleComputeSharedVpcServiceProject <a name="GoogleComputeSharedVpcServiceProject" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the GoogleComputeSharedVpcServ
 
 The id of the existing GoogleComputeSharedVpcServiceProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ const googleComputeSharedVpcServiceProjectConfig: googleComputeSharedVpcServiceP
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.hostProject">hostProject</a></code> | <code>string</code> | The ID of a host project to associate. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.serviceProject">serviceProject</a></code> | <code>string</code> | The ID of the project that will serve as a Shared VPC service project. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | The deletion policy for the shared VPC service. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#id GoogleComputeSharedVpcServiceProject#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#id GoogleComputeSharedVpcServiceProject#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts">GoogleComputeSharedVpcServiceProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -915,7 +915,7 @@ public readonly hostProject: string;
 
 The ID of a host project to associate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#host_project GoogleComputeSharedVpcServiceProject#host_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#host_project GoogleComputeSharedVpcServiceProject#host_project}
 
 ---
 
@@ -929,7 +929,7 @@ public readonly serviceProject: string;
 
 The ID of the project that will serve as a Shared VPC service project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#service_project GoogleComputeSharedVpcServiceProject#service_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#service_project GoogleComputeSharedVpcServiceProject#service_project}
 
 ---
 
@@ -946,7 +946,7 @@ The deletion policy for the shared VPC service.
 Setting ABANDON allows the resource
 				to be abandoned rather than deleted. Possible values are: "ABANDON".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#deletion_policy GoogleComputeSharedVpcServiceProject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#deletion_policy GoogleComputeSharedVpcServiceProject#deletion_policy}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#id GoogleComputeSharedVpcServiceProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#id GoogleComputeSharedVpcServiceProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ public readonly timeouts: GoogleComputeSharedVpcServiceProjectTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#timeouts GoogleComputeSharedVpcServiceProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#timeouts GoogleComputeSharedVpcServiceProject#timeouts}
 
 ---
 
@@ -993,8 +993,8 @@ const googleComputeSharedVpcServiceProjectTimeouts: googleComputeSharedVpcServic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#create GoogleComputeSharedVpcServiceProject#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#delete GoogleComputeSharedVpcServiceProject#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#create GoogleComputeSharedVpcServiceProject#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#delete GoogleComputeSharedVpcServiceProject#delete}. |
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#create GoogleComputeSharedVpcServiceProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#create GoogleComputeSharedVpcServiceProject#create}.
 
 ---
 
@@ -1018,7 +1018,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_shared_vpc_service_project#delete GoogleComputeSharedVpcServiceProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_shared_vpc_service_project#delete GoogleComputeSharedVpcServiceProject#delete}.
 
 ---
 

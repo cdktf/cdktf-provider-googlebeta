@@ -4,7 +4,7 @@
 
 ### GoogleDataplexAspectTypeIamBinding <a name="GoogleDataplexAspectTypeIamBinding" id="@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBinding.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GoogleDataplexAspectTypeIa
 
 The id of the existing GoogleDataplexAspectTypeIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,9 +886,9 @@ new GoogleDataplexAspectTypeIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#expression GoogleDataplexAspectTypeIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#title GoogleDataplexAspectTypeIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#description GoogleDataplexAspectTypeIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#expression GoogleDataplexAspectTypeIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#title GoogleDataplexAspectTypeIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#description GoogleDataplexAspectTypeIamBinding#description}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#expression GoogleDataplexAspectTypeIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#expression GoogleDataplexAspectTypeIamBinding#expression}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#title GoogleDataplexAspectTypeIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#title GoogleDataplexAspectTypeIamBinding#title}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#description GoogleDataplexAspectTypeIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#description GoogleDataplexAspectTypeIamBinding#description}.
 
 ---
 
@@ -964,13 +964,13 @@ new GoogleDataplexAspectTypeIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.aspectTypeId">AspectTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#aspect_type_id GoogleDataplexAspectTypeIamBinding#aspect_type_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#members GoogleDataplexAspectTypeIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#role GoogleDataplexAspectTypeIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.aspectTypeId">AspectTypeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#aspect_type_id GoogleDataplexAspectTypeIamBinding#aspect_type_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#members GoogleDataplexAspectTypeIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#role GoogleDataplexAspectTypeIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingCondition">GoogleDataplexAspectTypeIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#id GoogleDataplexAspectTypeIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#location GoogleDataplexAspectTypeIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#project GoogleDataplexAspectTypeIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#id GoogleDataplexAspectTypeIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#location GoogleDataplexAspectTypeIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexAspectTypeIamBinding.GoogleDataplexAspectTypeIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#project GoogleDataplexAspectTypeIamBinding#project}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string AspectTypeId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#aspect_type_id GoogleDataplexAspectTypeIamBinding#aspect_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#aspect_type_id GoogleDataplexAspectTypeIamBinding#aspect_type_id}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#members GoogleDataplexAspectTypeIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#members GoogleDataplexAspectTypeIamBinding#members}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#role GoogleDataplexAspectTypeIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#role GoogleDataplexAspectTypeIamBinding#role}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public GoogleDataplexAspectTypeIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#condition GoogleDataplexAspectTypeIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#condition GoogleDataplexAspectTypeIamBinding#condition}
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#id GoogleDataplexAspectTypeIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#id GoogleDataplexAspectTypeIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#location GoogleDataplexAspectTypeIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#location GoogleDataplexAspectTypeIamBinding#location}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_dataplex_aspect_type_iam_binding#project GoogleDataplexAspectTypeIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataplex_aspect_type_iam_binding#project GoogleDataplexAspectTypeIamBinding#project}.
 
 ---
 

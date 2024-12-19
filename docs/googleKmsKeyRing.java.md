@@ -4,7 +4,7 @@
 
 ### GoogleKmsKeyRing <a name="GoogleKmsKeyRing" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring google_kms_key_ring}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring google_kms_key_ring}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer"></a>
 
@@ -44,8 +44,8 @@ GoogleKmsKeyRing.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The resource name for the KeyRing. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRing.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts">GoogleKmsKeyRingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name for the KeyRing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the GoogleKmsKeyRing to import
 
 The id of the existing GoogleKmsKeyRing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,8 +961,8 @@ GoogleKmsKeyRingConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.name">name</a></code> | <code>java.lang.String</code> | The resource name for the KeyRing. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts">GoogleKmsKeyRingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1047,7 +1047,7 @@ public java.lang.String getLocation();
 
 The location for the KeyRing. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getName();
 
 The resource name for the KeyRing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public GoogleKmsKeyRingTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
 
 ---
 
@@ -1123,8 +1123,8 @@ GoogleKmsKeyRingTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}. |
 
 ---
 
@@ -1136,7 +1136,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}.
 
 ---
 
@@ -1148,7 +1148,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleClouddeployCustomTargetTypeIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#id GoogleClouddeployCustomTargetTypeIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#id GoogleClouddeployCustomTargetTypeIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#location GoogleClouddeployCustomTargetTypeIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#location GoogleClouddeployCustomTargetTypeIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#members GoogleClouddeployCustomTargetTypeIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#members GoogleClouddeployCustomTargetTypeIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#name GoogleClouddeployCustomTargetTypeIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#name GoogleClouddeployCustomTargetTypeIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#project GoogleClouddeployCustomTargetTypeIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#project GoogleClouddeployCustomTargetTypeIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#role GoogleClouddeployCustomTargetTypeIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#role GoogleClouddeployCustomTargetTypeIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#condition GoogleClouddeployCustomTargetTypeIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#condition GoogleClouddeployCustomTargetTypeIamBinding#condition}
   */
   readonly condition?: GoogleClouddeployCustomTargetTypeIamBindingCondition;
 }
 export interface GoogleClouddeployCustomTargetTypeIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#description GoogleClouddeployCustomTargetTypeIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#description GoogleClouddeployCustomTargetTypeIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#expression GoogleClouddeployCustomTargetTypeIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#expression GoogleClouddeployCustomTargetTypeIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#title GoogleClouddeployCustomTargetTypeIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#title GoogleClouddeployCustomTargetTypeIamBinding#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class GoogleClouddeployCustomTargetTypeIamBindingConditionOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding}
 */
 export class GoogleClouddeployCustomTargetTypeIamBinding extends cdktf.TerraformResource {
 
@@ -208,7 +208,7 @@ export class GoogleClouddeployCustomTargetTypeIamBinding extends cdktf.Terraform
   * Generates CDKTF code for importing a GoogleClouddeployCustomTargetTypeIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleClouddeployCustomTargetTypeIamBinding to import
-  * @param importFromId The id of the existing GoogleClouddeployCustomTargetTypeIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleClouddeployCustomTargetTypeIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleClouddeployCustomTargetTypeIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +220,7 @@ export class GoogleClouddeployCustomTargetTypeIamBinding extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class GoogleClouddeployCustomTargetTypeIamBinding extends cdktf.Terraform
       terraformResourceType: 'google_clouddeploy_custom_target_type_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

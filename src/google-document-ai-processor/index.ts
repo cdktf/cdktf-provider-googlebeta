@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleDocumentAiProcessorConfig extends cdktf.TerraformMetaArgu
   /**
   * The display name. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#display_name GoogleDocumentAiProcessor#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#display_name GoogleDocumentAiProcessor#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#id GoogleDocumentAiProcessor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#id GoogleDocumentAiProcessor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +28,39 @@ export interface GoogleDocumentAiProcessorConfig extends cdktf.TerraformMetaArgu
   /**
   * The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#kms_key_name GoogleDocumentAiProcessor#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#kms_key_name GoogleDocumentAiProcessor#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#location GoogleDocumentAiProcessor#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#location GoogleDocumentAiProcessor#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#project GoogleDocumentAiProcessor#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#project GoogleDocumentAiProcessor#project}
   */
   readonly project?: string;
   /**
   * The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#type GoogleDocumentAiProcessor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#type GoogleDocumentAiProcessor#type}
   */
   readonly type: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#timeouts GoogleDocumentAiProcessor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#timeouts GoogleDocumentAiProcessor#timeouts}
   */
   readonly timeouts?: GoogleDocumentAiProcessorTimeouts;
 }
 export interface GoogleDocumentAiProcessorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#create GoogleDocumentAiProcessor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#create GoogleDocumentAiProcessor#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#delete GoogleDocumentAiProcessor#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#delete GoogleDocumentAiProcessor#delete}
   */
   readonly delete?: string;
 }
@@ -183,7 +183,7 @@ export class GoogleDocumentAiProcessorTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor google_document_ai_processor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor google_document_ai_processor}
 */
 export class GoogleDocumentAiProcessor extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class GoogleDocumentAiProcessor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDocumentAiProcessor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDocumentAiProcessor to import
-  * @param importFromId The id of the existing GoogleDocumentAiProcessor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDocumentAiProcessor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDocumentAiProcessor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class GoogleDocumentAiProcessor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_document_ai_processor google_document_ai_processor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_document_ai_processor google_document_ai_processor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class GoogleDocumentAiProcessor extends cdktf.TerraformResource {
       terraformResourceType: 'google_document_ai_processor',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.0',
+        providerVersion: '6.14.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
