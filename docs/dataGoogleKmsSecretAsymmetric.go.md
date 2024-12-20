@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 datagooglekmssecretasymmetric.NewDataGoogleKmsSecretAsymmetric(scope Construct, id *string, config DataGoogleKmsSecretAsymmetricConfig) DataGoogleKmsSecretAsymmetric
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmssecretasymmetric"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglekmssecretasymmetric"
 
 &datagooglekmssecretasymmetric.DataGoogleKmsSecretAsymmetricConfig {
 	Connection: interface{},

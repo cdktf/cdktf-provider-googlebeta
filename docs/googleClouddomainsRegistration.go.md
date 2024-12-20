@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistration(scope Construct, id *string, config GoogleClouddomainsRegistrationConfig) GoogleClouddomainsRegistration
 ```
@@ -499,7 +499,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.GoogleClouddomainsRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.GoogleClouddomainsRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ googleclouddomainsregistration.GoogleClouddomainsRegistration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.GoogleClouddomainsRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ googleclouddomainsregistration.GoogleClouddomainsRegistration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.GoogleClouddomainsRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1151,7 +1151,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationConfig {
 	Connection: interface{},
@@ -1161,18 +1161,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloud
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ContactSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettings,
+	ContactSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettings,
 	DomainName: *string,
 	Location: *string,
-	YearlyPrice: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPrice,
+	YearlyPrice: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPrice,
 	ContactNotices: *[]*string,
-	DnsSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettings,
+	DnsSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettings,
 	DomainNotices: *[]*string,
 	Id: *string,
 	Labels: *map[string]*string,
-	ManagementSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettings,
+	ManagementSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettings,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeouts,
 }
 ```
 
@@ -1447,13 +1447,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettings {
-	AdminContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContact,
+	AdminContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContact,
 	Privacy: *string,
-	RegistrantContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContact,
-	TechnicalContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContact,
+	RegistrantContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContact,
+	TechnicalContact: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContact,
 }
 ```
 
@@ -1529,12 +1529,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsAdminContact {
 	Email: *string,
 	PhoneNumber: *string,
-	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress,
+	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress,
 	FaxNumber: *string,
 }
 ```
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress {
 	RegionCode: *string,
@@ -1765,12 +1765,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContact {
 	Email: *string,
 	PhoneNumber: *string,
-	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress,
+	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress,
 	FaxNumber: *string,
 }
 ```
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress {
 	RegionCode: *string,
@@ -2001,12 +2001,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContact {
 	Email: *string,
 	PhoneNumber: *string,
-	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress,
+	PostalAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress,
 	FaxNumber: *string,
 }
 ```
@@ -2083,7 +2083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress {
 	RegionCode: *string,
@@ -2237,10 +2237,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationDnsSettings {
-	CustomDns: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDns,
+	CustomDns: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDns,
 	GlueRecords: interface{},
 }
 ```
@@ -2287,7 +2287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationDnsSettingsCustomDns {
 	NameServers: *[]*string,
@@ -2340,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecords {
 	Algorithm: *string,
@@ -2422,7 +2422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecords {
 	HostName: *string,
@@ -2488,7 +2488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationManagementSettings {
 	PreferredRenewalMethod: *string,
@@ -2547,7 +2547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationTimeouts {
 	Create: *string,
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPrice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 &googleclouddomainsregistration.GoogleClouddomainsRegistrationYearlyPrice {
 	CurrencyCode: *string,
@@ -2659,7 +2659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference
 ```
@@ -3016,7 +3016,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsAdminContact
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference
 ```
@@ -3461,7 +3461,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsAdminContactPo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsOutputReference
 ```
@@ -3837,7 +3837,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference
 ```
@@ -4194,7 +4194,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsRegistrantCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference
 ```
@@ -4639,7 +4639,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsRegistrantCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference
 ```
@@ -4996,7 +4996,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsTechnicalConta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference
 ```
@@ -5441,7 +5441,7 @@ func InternalValue() GoogleClouddomainsRegistrationContactSettingsTechnicalConta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList
 ```
@@ -5601,7 +5601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference
 ```
@@ -5984,7 +5984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference
 ```
@@ -6297,7 +6297,7 @@ func InternalValue() GoogleClouddomainsRegistrationDnsSettingsCustomDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsGlueRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList
 ```
@@ -6457,7 +6457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference
 ```
@@ -6804,7 +6804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationDnsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationDnsSettingsOutputReference
 ```
@@ -7137,7 +7137,7 @@ func InternalValue() GoogleClouddomainsRegistrationDnsSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationManagementSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationManagementSettingsOutputReference
 ```
@@ -7455,7 +7455,7 @@ func InternalValue() GoogleClouddomainsRegistrationManagementSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationTimeoutsOutputReference
 ```
@@ -7791,7 +7791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPriceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleclouddomainsregistration"
 
 googleclouddomainsregistration.NewGoogleClouddomainsRegistrationYearlyPriceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationYearlyPriceOutputReference
 ```
