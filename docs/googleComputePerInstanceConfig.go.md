@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfig(scope Construct, id *string, config GoogleComputePerInstanceConfigConfig) GoogleComputePerInstanceConfig
 ```
@@ -467,7 +467,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.GoogleComputePerInstanceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -998,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigConfig {
 	Connection: interface{},
@@ -1013,11 +1013,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Id: *string,
 	MinimalAction: *string,
 	MostDisruptiveAllowedAction: *string,
-	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState,
+	PreservedState: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState,
 	Project: *string,
 	RemoveInstanceOnDestroy: interface{},
 	RemoveInstanceStateOnDestroy: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts,
 	Zone: *string,
 }
 ```
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedState {
 	Disk: interface{},
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateDisk {
 	DeviceName: *string,
@@ -1463,12 +1463,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateExternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress,
 }
 ```
 
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress {
 	Address: *string,
@@ -1563,12 +1563,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateInternalIp {
 	InterfaceName: *string,
 	AutoDelete: *string,
-	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress,
+	IpAddress: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress,
 }
 ```
 
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress {
 	Address: *string,
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 &googlecomputeperinstanceconfig.GoogleComputePerInstanceConfigTimeouts {
 	Create: *string,
@@ -1725,7 +1725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateDiskList
 ```
@@ -1885,7 +1885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateDiskOutputReference
 ```
@@ -2254,7 +2254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 ```
@@ -2532,7 +2532,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedStateExternalIpIpAdd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateExternalIpList
 ```
@@ -2692,7 +2692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateExternalIpOutputReference
 ```
@@ -3052,7 +3052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutputReference
 ```
@@ -3330,7 +3330,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedStateInternalIpIpAdd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputePerInstanceConfigPreservedStateInternalIpList
 ```
@@ -3490,7 +3490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputePerInstanceConfigPreservedStateInternalIpOutputReference
 ```
@@ -3850,7 +3850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigPreservedStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateOutputReference
 ```
@@ -4254,7 +4254,7 @@ func InternalValue() GoogleComputePerInstanceConfigPreservedState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeperinstanceconfig"
 
 googlecomputeperinstanceconfig.NewGoogleComputePerInstanceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigTimeoutsOutputReference
 ```
