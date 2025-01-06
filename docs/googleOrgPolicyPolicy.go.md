@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicy(scope Construct, id *string, config GoogleOrgPolicyPolicyConfig) GoogleOrgPolicyPolicy
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.GoogleOrgPolicyPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.GoogleOrgPolicyPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ googleorgpolicypolicy.GoogleOrgPolicyPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.GoogleOrgPolicyPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googleorgpolicypolicy.GoogleOrgPolicyPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.GoogleOrgPolicyPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyConfig {
 	Connection: interface{},
@@ -889,10 +889,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicy
 	Provisioners: *[]interface{},
 	Name: *string,
 	Parent: *string,
-	DryRunSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpec,
+	DryRunSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpec,
 	Id: *string,
-	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpec,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyTimeouts,
+	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpec,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyDryRunSpec {
 	InheritFromParent: interface{},
@@ -1148,15 +1148,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyDryRunSpecRules {
 	AllowAll: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesCondition,
 	DenyAll: *string,
 	Enforce: *string,
 	Parameters: *string,
-	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesValues,
+	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesValues,
 }
 ```
 
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyDryRunSpecRulesCondition {
 	Description: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyDryRunSpecRulesValues {
 	AllowedValues: *[]*string,
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicySpec {
 	InheritFromParent: interface{},
@@ -1478,15 +1478,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicySpecRules {
 	AllowAll: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesCondition,
 	DenyAll: *string,
 	Enforce: *string,
 	Parameters: *string,
-	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValues,
+	Values: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValues,
 }
 ```
 
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicySpecRulesCondition {
 	Description: *string,
@@ -1688,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicySpecRulesValues {
 	AllowedValues: *[]*string,
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 &googleorgpolicypolicy.GoogleOrgPolicyPolicyTimeouts {
 	Create: *string,
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyDryRunSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicyDryRunSpecOutputReference
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() GoogleOrgPolicyPolicyDryRunSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicyDryRunSpecRulesConditionOutputReference
 ```
@@ -2536,7 +2536,7 @@ func InternalValue() GoogleOrgPolicyPolicyDryRunSpecRulesCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyDryRunSpecRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOrgPolicyPolicyDryRunSpecRulesList
 ```
@@ -2696,7 +2696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference
 ```
@@ -3163,7 +3163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicyDryRunSpecRulesValuesOutputReference
 ```
@@ -3470,7 +3470,7 @@ func InternalValue() GoogleOrgPolicyPolicyDryRunSpecRulesValues
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicySpecOutputReference
 ```
@@ -3841,7 +3841,7 @@ func InternalValue() GoogleOrgPolicyPolicySpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicySpecRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicySpecRulesConditionOutputReference
 ```
@@ -4206,7 +4206,7 @@ func InternalValue() GoogleOrgPolicyPolicySpecRulesCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicySpecRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOrgPolicyPolicySpecRulesList
 ```
@@ -4366,7 +4366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicySpecRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOrgPolicyPolicySpecRulesOutputReference
 ```
@@ -4833,7 +4833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicySpecRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicySpecRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicySpecRulesValuesOutputReference
 ```
@@ -5140,7 +5140,7 @@ func InternalValue() GoogleOrgPolicyPolicySpecRulesValues
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrgPolicyPolicy.GoogleOrgPolicyPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorgpolicypolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgpolicypolicy"
 
 googleorgpolicypolicy.NewGoogleOrgPolicyPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrgPolicyPolicyTimeoutsOutputReference
 ```
