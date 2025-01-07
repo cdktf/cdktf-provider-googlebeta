@@ -4,7 +4,7 @@
 
 ### GoogleFilestoreBackup <a name="GoogleFilestoreBackup" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup google_filestore_backup}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup google_filestore_backup}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer"></a>
 
@@ -29,6 +29,7 @@ googleFilestoreBackup.GoogleFilestoreBackup(
   id: str = None,
   labels: typing.Mapping[str] = None,
   project: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: GoogleFilestoreBackupTimeouts = None
 )
 ```
@@ -49,9 +50,10 @@ googleFilestoreBackup.GoogleFilestoreBackup(
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.sourceFileShare">source_file_share</a></code> | <code>str</code> | Name of the file share in the source Cloud Filestore instance that the backup is created from. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.sourceInstance">source_instance</a></code> | <code>str</code> | The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts">GoogleFilestoreBackupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
 
 ---
 
@@ -139,7 +141,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
 
 ---
 
@@ -149,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the file share in the source Cloud Filestore instance that the backup is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
 
 ---
 
@@ -159,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
 
 ---
 
@@ -169,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
 
 ---
 
@@ -177,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +195,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
 
 ---
 
@@ -201,7 +203,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+A map of resource manager tags.
+
+Resource manager tag keys and values have the same definition as resource manager tags.
+Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+The field is ignored (both PUT & PATCH) when empty.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#tags GoogleFilestoreBackup#tags}
 
 ---
 
@@ -211,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
 
 ---
 
@@ -247,6 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -590,7 +607,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}.
 
 ---
 
@@ -598,7 +615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}.
 
 ---
 
@@ -606,7 +623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}.
 
 ---
 
@@ -632,6 +649,12 @@ def reset_labels() -> None
 
 ```python
 def reset_project() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetTags"></a>
+
+```python
+def reset_tags() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.resetTimeouts"></a>
@@ -754,7 +777,7 @@ The construct id used in the generated config for the GoogleFilestoreBackup to i
 
 The id of the existing GoogleFilestoreBackup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,6 +825,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.sourceFileShareInput">source_file_share_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.sourceInstanceInput">source_instance_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts">GoogleFilestoreBackupTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -811,6 +835,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.sourceFileShare">source_file_share</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.sourceInstance">source_instance</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -1136,6 +1161,16 @@ source_instance_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.timeoutsInput"></a>
 
 ```python
@@ -1226,6 +1261,16 @@ source_instance: str
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackup.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1269,6 +1314,7 @@ googleFilestoreBackup.GoogleFilestoreBackupConfig(
   id: str = None,
   labels: typing.Mapping[str] = None,
   project: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: GoogleFilestoreBackupTimeouts = None
 )
 ```
@@ -1289,9 +1335,10 @@ googleFilestoreBackup.GoogleFilestoreBackupConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.sourceFileShare">source_file_share</a></code> | <code>str</code> | Name of the file share in the source Cloud Filestore instance that the backup is created from. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.sourceInstance">source_instance</a></code> | <code>str</code> | The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.description">description</a></code> | <code>str</code> | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts">GoogleFilestoreBackupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1376,7 +1423,7 @@ location: str
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
 
 ---
 
@@ -1397,7 +1444,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
 
 ---
 
@@ -1411,7 +1458,7 @@ source_file_share: str
 
 Name of the file share in the source Cloud Filestore instance that the backup is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
 
 ---
 
@@ -1425,7 +1472,7 @@ source_instance: str
 
 The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
 
 ---
 
@@ -1439,7 +1486,7 @@ description: str
 
 A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
 
 ---
 
@@ -1451,7 +1498,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#id GoogleFilestoreBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1471,7 +1518,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
 
 ---
 
@@ -1483,7 +1530,25 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#project GoogleFilestoreBackup#project}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+A map of resource manager tags.
+
+Resource manager tag keys and values have the same definition as resource manager tags.
+Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+The field is ignored (both PUT & PATCH) when empty.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#tags GoogleFilestoreBackup#tags}
 
 ---
 
@@ -1497,7 +1562,7 @@ timeouts: GoogleFilestoreBackupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
 
 ---
 
@@ -1519,9 +1584,9 @@ googleFilestoreBackup.GoogleFilestoreBackupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFilestoreBackup.GoogleFilestoreBackupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}. |
 
 ---
 
@@ -1533,7 +1598,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#create GoogleFilestoreBackup#create}.
 
 ---
 
@@ -1545,7 +1610,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#delete GoogleFilestoreBackup#delete}.
 
 ---
 
@@ -1557,7 +1622,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_filestore_backup#update GoogleFilestoreBackup#update}.
 
 ---
 

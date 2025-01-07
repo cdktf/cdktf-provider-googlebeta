@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,20 +14,20 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#annotations GoogleDeveloperConnectConnection#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#annotations GoogleDeveloperConnectConnection#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Required. Id of the requesting object. If auto-generating Id server-side,
   * remove this field and connection_id from the method_signature of Create RPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#connection_id GoogleDeveloperConnectConnection#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#connection_id GoogleDeveloperConnectConnection#connection_id}
   */
   readonly connectionId: string;
   /**
   * Optional. If disabled is set to true, functionality is disabled for this connection. Repository based API methods and webhooks processing for repositories in this connection will be disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#disabled GoogleDeveloperConnectConnection#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#disabled GoogleDeveloperConnectConnection#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
@@ -40,11 +35,11 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   * of other fields, and may be sent on update and delete requests to ensure the
   * client has an up-to-date value before proceeding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#etag GoogleDeveloperConnectConnection#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#etag GoogleDeveloperConnectConnection#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#id GoogleDeveloperConnectConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#id GoogleDeveloperConnectConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,7 +52,7 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#labels GoogleDeveloperConnectConnection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#labels GoogleDeveloperConnectConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -65,23 +60,23 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   * within its parent collection as described in https://google.aip.dev/122. See documentation
   * for resource type 'developerconnect.googleapis.com/GitRepositoryLink'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#location GoogleDeveloperConnectConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#location GoogleDeveloperConnectConnection#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#project GoogleDeveloperConnectConnection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#project GoogleDeveloperConnectConnection#project}
   */
   readonly project?: string;
   /**
   * github_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#github_config GoogleDeveloperConnectConnection#github_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#github_config GoogleDeveloperConnectConnection#github_config}
   */
   readonly githubConfig?: GoogleDeveloperConnectConnectionGithubConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#timeouts GoogleDeveloperConnectConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#timeouts GoogleDeveloperConnectConnection#timeouts}
   */
   readonly timeouts?: GoogleDeveloperConnectConnectionTimeouts;
 }
@@ -176,7 +171,7 @@ export interface GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentia
   * that authorizes the connection.
   * Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#oauth_token_secret_version GoogleDeveloperConnectConnection#oauth_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#oauth_token_secret_version GoogleDeveloperConnectConnection#oauth_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -266,7 +261,7 @@ export interface GoogleDeveloperConnectConnectionGithubConfig {
   /**
   * Optional. GitHub App installation id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#app_installation_id GoogleDeveloperConnectConnection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#app_installation_id GoogleDeveloperConnectConnection#app_installation_id}
   */
   readonly appInstallationId?: string;
   /**
@@ -277,13 +272,13 @@ export interface GoogleDeveloperConnectConnectionGithubConfig {
   *   DEVELOPER_CONNECT
   *   FIREBASE"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#github_app GoogleDeveloperConnectConnection#github_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#github_app GoogleDeveloperConnectConnection#github_app}
   */
   readonly githubApp: string;
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
   */
   readonly authorizerCredential?: GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential;
 }
@@ -375,7 +370,7 @@ export class GoogleDeveloperConnectConnectionGithubConfigOutputReference extends
     }
   }
 
-  // app_installation_id - computed: false, optional: true, required: false
+  // app_installation_id - computed: true, optional: true, required: false
   private _appInstallationId?: string; 
   public get appInstallationId() {
     return this.getStringAttribute('app_installation_id');
@@ -427,15 +422,15 @@ export class GoogleDeveloperConnectConnectionGithubConfigOutputReference extends
 }
 export interface GoogleDeveloperConnectConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#create GoogleDeveloperConnectConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#create GoogleDeveloperConnectConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#delete GoogleDeveloperConnectConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#delete GoogleDeveloperConnectConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#update GoogleDeveloperConnectConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#update GoogleDeveloperConnectConnection#update}
   */
   readonly update?: string;
 }
@@ -587,7 +582,7 @@ export class GoogleDeveloperConnectConnectionTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection google_developer_connect_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}
 */
 export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
 
@@ -603,7 +598,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDeveloperConnectConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDeveloperConnectConnection to import
-  * @param importFromId The id of the existing GoogleDeveloperConnectConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDeveloperConnectConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDeveloperConnectConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -615,7 +610,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -626,7 +621,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
       terraformResourceType: 'google_developer_connect_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

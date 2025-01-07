@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCloudfunctionsFunctionIamPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#cloud_function GoogleCloudfunctionsFunctionIamPolicy#cloud_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#cloud_function GoogleCloudfunctionsFunctionIamPolicy#cloud_function}
   */
   readonly cloudFunction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#id GoogleCloudfunctionsFunctionIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#id GoogleCloudfunctionsFunctionIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#policy_data GoogleCloudfunctionsFunctionIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#policy_data GoogleCloudfunctionsFunctionIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#project GoogleCloudfunctionsFunctionIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#project GoogleCloudfunctionsFunctionIamPolicy#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#region GoogleCloudfunctionsFunctionIamPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#region GoogleCloudfunctionsFunctionIamPolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}
 */
 export class GoogleCloudfunctionsFunctionIamPolicy extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class GoogleCloudfunctionsFunctionIamPolicy extends cdktf.TerraformResour
   * Generates CDKTF code for importing a GoogleCloudfunctionsFunctionIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleCloudfunctionsFunctionIamPolicy to import
-  * @param importFromId The id of the existing GoogleCloudfunctionsFunctionIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleCloudfunctionsFunctionIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleCloudfunctionsFunctionIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +61,7 @@ export class GoogleCloudfunctionsFunctionIamPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class GoogleCloudfunctionsFunctionIamPolicy extends cdktf.TerraformResour
       terraformResourceType: 'google_cloudfunctions_function_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,35 +15,35 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#annotations GoogleAlloydbBackup#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#annotations GoogleAlloydbBackup#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * The ID of the alloydb backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
   */
   readonly backupId: string;
   /**
   * The full resource name of the backup source cluster (e.g., projects/{project}/locations/{location}/clusters/{clusterId}).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
   */
   readonly clusterName: string;
   /**
   * User-provided description of the backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
   */
   readonly description?: string;
   /**
   * User-settable and human-readable display name for the Backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#display_name GoogleAlloydbBackup#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#display_name GoogleAlloydbBackup#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,35 +56,35 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the alloydb backup should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
   */
   readonly project?: string;
   /**
   * The backup type, which suggests the trigger for the backup. Possible values: ["TYPE_UNSPECIFIED", "ON_DEMAND", "AUTOMATED", "CONTINUOUS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#type GoogleAlloydbBackup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#type GoogleAlloydbBackup#type}
   */
   readonly type?: string;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbBackupEncryptionConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
   */
   readonly timeouts?: GoogleAlloydbBackupTimeouts;
 }
@@ -257,7 +252,7 @@ export interface GoogleAlloydbBackupEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -341,15 +336,15 @@ export class GoogleAlloydbBackupEncryptionConfigOutputReference extends cdktf.Co
 }
 export interface GoogleAlloydbBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
   */
   readonly update?: string;
 }
@@ -501,7 +496,7 @@ export class GoogleAlloydbBackupTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup google_alloydb_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup google_alloydb_backup}
 */
 export class GoogleAlloydbBackup extends cdktf.TerraformResource {
 
@@ -517,7 +512,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleAlloydbBackup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleAlloydbBackup to import
-  * @param importFromId The id of the existing GoogleAlloydbBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleAlloydbBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleAlloydbBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -529,7 +524,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -540,7 +535,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_backup',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

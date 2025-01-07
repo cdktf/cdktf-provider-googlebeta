@@ -4,12 +4,12 @@
 
 ### GoogleOsConfigGuestPolicies <a name="GoogleOsConfigGuestPolicies" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies google_os_config_guest_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPolicies(scope Construct, id *string, config GoogleOsConfigGuestPoliciesConfig) GoogleOsConfigGuestPolicies
 ```
@@ -499,7 +499,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.GoogleOsConfigGuestPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -588,7 +588,7 @@ The construct id used in the generated config for the GoogleOsConfigGuestPolicie
 
 The id of the existing GoogleOsConfigGuestPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesAssignment {
 	GroupLabels: interface{},
@@ -1074,7 +1074,7 @@ GroupLabels interface{}
 
 group_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#group_labels GoogleOsConfigGuestPolicies#group_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#group_labels GoogleOsConfigGuestPolicies#group_labels}
 
 ---
 
@@ -1092,7 +1092,7 @@ Like labels, this is another way to group VM instances when targeting configs,
 for example prefix="prod-".
 Only supported for project-level policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#instance_name_prefixes GoogleOsConfigGuestPolicies#instance_name_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#instance_name_prefixes GoogleOsConfigGuestPolicies#instance_name_prefixes}
 
 ---
 
@@ -1112,7 +1112,7 @@ Instance targeting is uncommon and is supported to facilitate the management of 
 by the instance or to target specific VM instances for development and testing.
 Only supported for project-level policies and must reference instances within this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#instances GoogleOsConfigGuestPolicies#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#instances GoogleOsConfigGuestPolicies#instances}
 
 ---
 
@@ -1126,7 +1126,7 @@ OsTypes interface{}
 
 os_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#os_types GoogleOsConfigGuestPolicies#os_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#os_types GoogleOsConfigGuestPolicies#os_types}
 
 ---
 
@@ -1143,7 +1143,7 @@ Targets instances in any of these zones.
 Leave empty to target instances in any zone.
 Zonal targeting is uncommon and is supported to facilitate the management of changes by zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#zones GoogleOsConfigGuestPolicies#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#zones GoogleOsConfigGuestPolicies#zones}
 
 ---
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabels {
 	Labels: *map[string]*string,
@@ -1177,7 +1177,7 @@ Labels *map[string]*string
 
 Google Compute Engine instance labels that must be present for an instance to be included in this assignment group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#labels GoogleOsConfigGuestPolicies#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#labels GoogleOsConfigGuestPolicies#labels}
 
 ---
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypes {
 	OsArchitecture: *string,
@@ -1215,7 +1215,7 @@ OsArchitecture *string
 
 Targets VM instances with OS Inventory enabled and having the following OS architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#os_architecture GoogleOsConfigGuestPolicies#os_architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#os_architecture GoogleOsConfigGuestPolicies#os_architecture}
 
 ---
 
@@ -1229,7 +1229,7 @@ OsShortName *string
 
 Targets VM instances with OS Inventory enabled and having the following OS short name, for example "debian" or "windows".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#os_short_name GoogleOsConfigGuestPolicies#os_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#os_short_name GoogleOsConfigGuestPolicies#os_short_name}
 
 ---
 
@@ -1243,7 +1243,7 @@ OsVersion *string
 
 Targets VM instances with OS Inventory enabled and having the following following OS version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#os_version GoogleOsConfigGuestPolicies#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#os_version GoogleOsConfigGuestPolicies#os_version}
 
 ---
 
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesConfig {
 	Connection: interface{},
@@ -1262,7 +1262,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoscon
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Assignment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignment,
+	Assignment: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignment,
 	GuestPolicyId: *string,
 	Description: *string,
 	Etag: *string,
@@ -1271,7 +1271,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoscon
 	Packages: interface{},
 	Project: *string,
 	Recipes: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts,
 }
 ```
 
@@ -1290,10 +1290,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoscon
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.guestPolicyId">GuestPolicyId</a></code> | <code>*string</code> | The logical name of the guest policy in the project with the following restrictions: * Must contain only lowercase letters, numbers, and hyphens. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.description">Description</a></code> | <code>*string</code> | Description of the guest policy. Length of the description is limited to 1024 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.etag">Etag</a></code> | <code>*string</code> | The etag for this guest policy. If this is provided on update, it must match the server's etag. |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.packageRepositories">PackageRepositories</a></code> | <code>interface{}</code> | package_repositories block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.packages">Packages</a></code> | <code>interface{}</code> | packages block. |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.recipes">Recipes</a></code> | <code>interface{}</code> | recipes block. |
 | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts">GoogleOsConfigGuestPoliciesTimeouts</a></code> | timeouts block. |
 
@@ -1379,7 +1379,7 @@ Assignment GoogleOsConfigGuestPoliciesAssignment
 
 assignment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#assignment GoogleOsConfigGuestPolicies#assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#assignment GoogleOsConfigGuestPolicies#assignment}
 
 ---
 
@@ -1398,7 +1398,7 @@ The logical name of the guest policy in the project with the following restricti
 * Must end with a number or a letter.
 * Must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#guest_policy_id GoogleOsConfigGuestPolicies#guest_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#guest_policy_id GoogleOsConfigGuestPolicies#guest_policy_id}
 
 ---
 
@@ -1412,7 +1412,7 @@ Description *string
 
 Description of the guest policy. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#description GoogleOsConfigGuestPolicies#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#description GoogleOsConfigGuestPolicies#description}
 
 ---
 
@@ -1426,7 +1426,7 @@ Etag *string
 
 The etag for this guest policy. If this is provided on update, it must match the server's etag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#etag GoogleOsConfigGuestPolicies#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#etag GoogleOsConfigGuestPolicies#etag}
 
 ---
 
@@ -1438,7 +1438,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1455,7 +1455,7 @@ PackageRepositories interface{}
 
 package_repositories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#package_repositories GoogleOsConfigGuestPolicies#package_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#package_repositories GoogleOsConfigGuestPolicies#package_repositories}
 
 ---
 
@@ -1469,7 +1469,7 @@ Packages interface{}
 
 packages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#packages GoogleOsConfigGuestPolicies#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#packages GoogleOsConfigGuestPolicies#packages}
 
 ---
 
@@ -1481,7 +1481,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}.
 
 ---
 
@@ -1495,7 +1495,7 @@ Recipes interface{}
 
 recipes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#recipes GoogleOsConfigGuestPolicies#recipes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#recipes GoogleOsConfigGuestPolicies#recipes}
 
 ---
 
@@ -1509,7 +1509,7 @@ Timeouts GoogleOsConfigGuestPoliciesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#timeouts GoogleOsConfigGuestPolicies#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#timeouts GoogleOsConfigGuestPolicies#timeouts}
 
 ---
 
@@ -1518,13 +1518,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackageRepositories {
-	Apt: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesApt,
-	Goo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGoo,
-	Yum: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYum,
-	Zypper: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypper,
+	Apt: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesApt,
+	Goo: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGoo,
+	Yum: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYum,
+	Zypper: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypper,
 }
 ```
 
@@ -1549,7 +1549,7 @@ Apt GoogleOsConfigGuestPoliciesPackageRepositoriesApt
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#apt GoogleOsConfigGuestPolicies#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#apt GoogleOsConfigGuestPolicies#apt}
 
 ---
 
@@ -1563,7 +1563,7 @@ Goo GoogleOsConfigGuestPoliciesPackageRepositoriesGoo
 
 goo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#goo GoogleOsConfigGuestPolicies#goo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#goo GoogleOsConfigGuestPolicies#goo}
 
 ---
 
@@ -1577,7 +1577,7 @@ Yum GoogleOsConfigGuestPoliciesPackageRepositoriesYum
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#yum GoogleOsConfigGuestPolicies#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#yum GoogleOsConfigGuestPolicies#yum}
 
 ---
 
@@ -1591,7 +1591,7 @@ Zypper GoogleOsConfigGuestPoliciesPackageRepositoriesZypper
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#zypper GoogleOsConfigGuestPolicies#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#zypper GoogleOsConfigGuestPolicies#zypper}
 
 ---
 
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesApt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesApt {
 	Components: *[]*string,
@@ -1633,7 +1633,7 @@ Components *[]*string
 
 List of components for this repository. Must contain at least one item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#components GoogleOsConfigGuestPolicies#components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#components GoogleOsConfigGuestPolicies#components}
 
 ---
 
@@ -1647,7 +1647,7 @@ Distribution *string
 
 Distribution of this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#distribution GoogleOsConfigGuestPolicies#distribution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#distribution GoogleOsConfigGuestPolicies#distribution}
 
 ---
 
@@ -1661,7 +1661,7 @@ Uri *string
 
 URI for this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#uri GoogleOsConfigGuestPolicies#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#uri GoogleOsConfigGuestPolicies#uri}
 
 ---
 
@@ -1675,7 +1675,7 @@ ArchiveType *string
 
 Type of archive files in this repository. The default behavior is DEB. Default value: "DEB" Possible values: ["DEB", "DEB_SRC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#archive_type GoogleOsConfigGuestPolicies#archive_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#archive_type GoogleOsConfigGuestPolicies#archive_type}
 
 ---
 
@@ -1692,7 +1692,7 @@ URI of the key file for this repository.
 The agent maintains a keyring at
 /etc/apt/trusted.gpg.d/osconfig_agent_managed.gpg containing all the keys in any applied guest policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#gpg_key GoogleOsConfigGuestPolicies#gpg_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#gpg_key GoogleOsConfigGuestPolicies#gpg_key}
 
 ---
 
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGoo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGoo {
 	Name: *string,
@@ -1728,7 +1728,7 @@ Name *string
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
 
 ---
 
@@ -1742,7 +1742,7 @@ Url *string
 
 The url of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#url GoogleOsConfigGuestPolicies#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#url GoogleOsConfigGuestPolicies#url}
 
 ---
 
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYum.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYum {
 	BaseUrl: *string,
@@ -1782,7 +1782,7 @@ BaseUrl *string
 
 The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#base_url GoogleOsConfigGuestPolicies#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#base_url GoogleOsConfigGuestPolicies#base_url}
 
 ---
 
@@ -1799,7 +1799,7 @@ A one word, unique name for this repository.
 This is the repo id in the Yum config file and also the displayName
 if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1816,7 +1816,7 @@ DisplayName *string
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#display_name GoogleOsConfigGuestPolicies#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#display_name GoogleOsConfigGuestPolicies#display_name}
 
 ---
 
@@ -1830,7 +1830,7 @@ GpgKeys *[]*string
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#gpg_keys GoogleOsConfigGuestPolicies#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#gpg_keys GoogleOsConfigGuestPolicies#gpg_keys}
 
 ---
 
@@ -1839,7 +1839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypper {
 	BaseUrl: *string,
@@ -1870,7 +1870,7 @@ BaseUrl *string
 
 The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#base_url GoogleOsConfigGuestPolicies#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#base_url GoogleOsConfigGuestPolicies#base_url}
 
 ---
 
@@ -1887,7 +1887,7 @@ A one word, unique name for this repository.
 This is the repo id in the zypper config file and also the displayName
 if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1904,7 +1904,7 @@ DisplayName *string
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#display_name GoogleOsConfigGuestPolicies#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#display_name GoogleOsConfigGuestPolicies#display_name}
 
 ---
 
@@ -1918,7 +1918,7 @@ GpgKeys *[]*string
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#gpg_keys GoogleOsConfigGuestPolicies#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#gpg_keys GoogleOsConfigGuestPolicies#gpg_keys}
 
 ---
 
@@ -1927,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesPackages {
 	Name: *string,
@@ -1959,7 +1959,7 @@ The name of the package.
 A package is uniquely identified for conflict validation
 by checking the package name and the manager(s) that the package targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
 
 ---
 
@@ -1975,7 +1975,7 @@ The desiredState the agent should maintain for this package.
 
 The default is to ensure the package is installed. Possible values: ["INSTALLED", "UPDATED", "REMOVED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#desired_state GoogleOsConfigGuestPolicies#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#desired_state GoogleOsConfigGuestPolicies#desired_state}
 
 ---
 
@@ -1995,7 +1995,7 @@ the agent attempts to install and remove this package using the default package 
 This is useful when creating a policy that applies to different types of systems.
 The default behavior is ANY. Default value: "ANY" Possible values: ["ANY", "APT", "YUM", "ZYPPER", "GOO"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#manager GoogleOsConfigGuestPolicies#manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#manager GoogleOsConfigGuestPolicies#manager}
 
 ---
 
@@ -2004,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipes {
 	Name: *string,
@@ -2044,7 +2044,7 @@ Names are also used to identify resources which helps to determine whether guest
 This means that requests to create multiple recipes with the same name and version are rejected since they
 could potentially have conflicting assignments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#name GoogleOsConfigGuestPolicies#name}
 
 ---
 
@@ -2058,7 +2058,7 @@ Artifacts interface{}
 
 artifacts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifacts GoogleOsConfigGuestPolicies#artifacts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifacts GoogleOsConfigGuestPolicies#artifacts}
 
 ---
 
@@ -2077,7 +2077,7 @@ INSTALLED_KEEP_UPDATED: The software recipe is installed on the instance. The re
 if a higher version of the recipe is assigned to this instance.
 REMOVE: Remove is unsupported for software recipes and attempts to create or update a recipe to the REMOVE state is rejected. Default value: "INSTALLED" Possible values: ["INSTALLED", "UPDATED", "REMOVED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#desired_state GoogleOsConfigGuestPolicies#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#desired_state GoogleOsConfigGuestPolicies#desired_state}
 
 ---
 
@@ -2091,7 +2091,7 @@ InstallSteps interface{}
 
 install_steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#install_steps GoogleOsConfigGuestPolicies#install_steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#install_steps GoogleOsConfigGuestPolicies#install_steps}
 
 ---
 
@@ -2105,7 +2105,7 @@ UpdateSteps interface{}
 
 update_steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#update_steps GoogleOsConfigGuestPolicies#update_steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#update_steps GoogleOsConfigGuestPolicies#update_steps}
 
 ---
 
@@ -2119,7 +2119,7 @@ Version *string
 
 The version of this software recipe. Version can be up to 4 period separated numbers (e.g. 12.34.56.78).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#version GoogleOsConfigGuestPolicies#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#version GoogleOsConfigGuestPolicies#version}
 
 ---
 
@@ -2128,13 +2128,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesArtifacts {
 	Id: *string,
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcs,
-	Remote: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemote,
+	Gcs: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcs,
+	Remote: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemote,
 }
 ```
 
@@ -2161,7 +2161,7 @@ Id of the artifact, which the installation and update steps of this recipe can r
 
 Artifacts in a recipe cannot have the same id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2182,7 +2182,7 @@ When false, recipes are subject to validations based on the artifact type:
 Remote: A checksum must be specified, and only protocols with transport-layer security are permitted.
 GCS: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allow_insecure GoogleOsConfigGuestPolicies#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allow_insecure GoogleOsConfigGuestPolicies#allow_insecure}
 
 ---
 
@@ -2196,7 +2196,7 @@ Gcs GoogleOsConfigGuestPoliciesRecipesArtifactsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#gcs GoogleOsConfigGuestPolicies#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#gcs GoogleOsConfigGuestPolicies#gcs}
 
 ---
 
@@ -2210,7 +2210,7 @@ Remote GoogleOsConfigGuestPoliciesRecipesArtifactsRemote
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#remote GoogleOsConfigGuestPolicies#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#remote GoogleOsConfigGuestPolicies#remote}
 
 ---
 
@@ -2219,7 +2219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcs {
 	Bucket: *string,
@@ -2248,7 +2248,7 @@ Bucket *string
 
 Bucket of the Google Cloud Storage object. Given an example URL: https://storage.googleapis.com/my-bucket/foo/bar#1234567 this value would be my-bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#bucket GoogleOsConfigGuestPolicies#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#bucket GoogleOsConfigGuestPolicies#bucket}
 
 ---
 
@@ -2265,7 +2265,7 @@ Must be provided if allowInsecure is false.
 Generation number of the Google Cloud Storage object.
 https://storage.googleapis.com/my-bucket/foo/bar#1234567 this value would be 1234567.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#generation GoogleOsConfigGuestPolicies#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#generation GoogleOsConfigGuestPolicies#generation}
 
 ---
 
@@ -2279,7 +2279,7 @@ Object *string
 
 Name of the Google Cloud Storage object. Given an example URL: https://storage.googleapis.com/my-bucket/foo/bar#1234567 this value would be foo/bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#object GoogleOsConfigGuestPolicies#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#object GoogleOsConfigGuestPolicies#object}
 
 ---
 
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemote {
 	CheckSum: *string,
@@ -2319,7 +2319,7 @@ SHA256 checksum in hex format, to compare to the checksum of the artifact.
 If the checksum is not empty and it doesn't match the artifact then the recipe installation fails before running any
 of the steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#check_sum GoogleOsConfigGuestPolicies#check_sum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#check_sum GoogleOsConfigGuestPolicies#check_sum}
 
 ---
 
@@ -2333,7 +2333,7 @@ Uri *string
 
 URI from which to fetch the object. It should contain both the protocol and path following the format {protocol}://{location}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#uri GoogleOsConfigGuestPolicies#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#uri GoogleOsConfigGuestPolicies#uri}
 
 ---
 
@@ -2342,16 +2342,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallSteps {
-	ArchiveExtraction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction,
-	DpkgInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation,
-	FileCopy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy,
-	FileExec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec,
-	MsiInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation,
-	RpmInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation,
-	ScriptRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun,
+	ArchiveExtraction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction,
+	DpkgInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation,
+	FileCopy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy,
+	FileExec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec,
+	MsiInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation,
+	RpmInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation,
+	ScriptRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun,
 }
 ```
 
@@ -2379,7 +2379,7 @@ ArchiveExtraction GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractio
 
 archive_extraction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#archive_extraction GoogleOsConfigGuestPolicies#archive_extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#archive_extraction GoogleOsConfigGuestPolicies#archive_extraction}
 
 ---
 
@@ -2393,7 +2393,7 @@ DpkgInstallation GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation
 
 dpkg_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#dpkg_installation GoogleOsConfigGuestPolicies#dpkg_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#dpkg_installation GoogleOsConfigGuestPolicies#dpkg_installation}
 
 ---
 
@@ -2407,7 +2407,7 @@ FileCopy GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy
 
 file_copy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#file_copy GoogleOsConfigGuestPolicies#file_copy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#file_copy GoogleOsConfigGuestPolicies#file_copy}
 
 ---
 
@@ -2421,7 +2421,7 @@ FileExec GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec
 
 file_exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#file_exec GoogleOsConfigGuestPolicies#file_exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#file_exec GoogleOsConfigGuestPolicies#file_exec}
 
 ---
 
@@ -2435,7 +2435,7 @@ MsiInstallation GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation
 
 msi_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#msi_installation GoogleOsConfigGuestPolicies#msi_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#msi_installation GoogleOsConfigGuestPolicies#msi_installation}
 
 ---
 
@@ -2449,7 +2449,7 @@ RpmInstallation GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation
 
 rpm_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#rpm_installation GoogleOsConfigGuestPolicies#rpm_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#rpm_installation GoogleOsConfigGuestPolicies#rpm_installation}
 
 ---
 
@@ -2463,7 +2463,7 @@ ScriptRun GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun
 
 script_run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#script_run GoogleOsConfigGuestPolicies#script_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#script_run GoogleOsConfigGuestPolicies#script_run}
 
 ---
 
@@ -2472,7 +2472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction {
 	ArtifactId: *string,
@@ -2501,7 +2501,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2515,7 +2515,7 @@ Type *string
 
 The type of the archive to extract. Possible values: ["TAR", "TAR_GZIP", "TAR_BZIP", "TAR_LZMA", "TAR_XZ", "ZIP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#type GoogleOsConfigGuestPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#type GoogleOsConfigGuestPolicies#type}
 
 ---
 
@@ -2529,7 +2529,7 @@ Destination *string
 
 Directory to extract archive to. Defaults to / on Linux or C:\ on Windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
 
 ---
 
@@ -2538,7 +2538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation {
 	ArtifactId: *string,
@@ -2563,7 +2563,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2572,7 +2572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy {
 	ArtifactId: *string,
@@ -2603,7 +2603,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2617,7 +2617,7 @@ Destination *string
 
 The absolute path on the instance to put the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
 
 ---
 
@@ -2631,7 +2631,7 @@ Overwrite interface{}
 
 Whether to allow this step to overwrite existing files.If this is false and the file already exists the file is not overwritten and the step is considered a success. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
 
 ---
 
@@ -2652,7 +2652,7 @@ bit corresponds to the execute permission. Default behavior is 755.
 Below are some examples of permissions and their associated values:
 read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
 
 ---
 
@@ -2661,7 +2661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec {
 	AllowedExitCodes: *string,
@@ -2692,7 +2692,7 @@ AllowedExitCodes *string
 
 A list of possible return values that the program can return to indicate a success. Defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -2706,7 +2706,7 @@ Args *[]*string
 
 Arguments to be passed to the provided executable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#args GoogleOsConfigGuestPolicies#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#args GoogleOsConfigGuestPolicies#args}
 
 ---
 
@@ -2720,7 +2720,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2734,7 +2734,7 @@ LocalPath *string
 
 The absolute path of the file on the local filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#local_path GoogleOsConfigGuestPolicies#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#local_path GoogleOsConfigGuestPolicies#local_path}
 
 ---
 
@@ -2743,7 +2743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation {
 	ArtifactId: *string,
@@ -2772,7 +2772,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2786,7 +2786,7 @@ AllowedExitCodes *[]*f64
 
 Return codes that indicate that the software installed or updated successfully. Behaviour defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -2800,7 +2800,7 @@ Flags *[]*string
 
 The flags to use when installing the MSI. Defaults to the install flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#flags GoogleOsConfigGuestPolicies#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#flags GoogleOsConfigGuestPolicies#flags}
 
 ---
 
@@ -2809,7 +2809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation {
 	ArtifactId: *string,
@@ -2834,7 +2834,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -2843,7 +2843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun {
 	Script: *string,
@@ -2872,7 +2872,7 @@ Script *string
 
 The shell script to be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#script GoogleOsConfigGuestPolicies#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#script GoogleOsConfigGuestPolicies#script}
 
 ---
 
@@ -2886,7 +2886,7 @@ AllowedExitCodes *[]*f64
 
 Return codes that indicate that the software installed or updated successfully. Behaviour defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -2903,7 +2903,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script is executed directly,
 which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
 
 ---
 
@@ -2912,16 +2912,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateSteps {
-	ArchiveExtraction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction,
-	DpkgInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation,
-	FileCopy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy,
-	FileExec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec,
-	MsiInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation,
-	RpmInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation,
-	ScriptRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun,
+	ArchiveExtraction: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction,
+	DpkgInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation,
+	FileCopy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy,
+	FileExec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec,
+	MsiInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation,
+	RpmInstallation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation,
+	ScriptRun: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun,
 }
 ```
 
@@ -2949,7 +2949,7 @@ ArchiveExtraction GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction
 
 archive_extraction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#archive_extraction GoogleOsConfigGuestPolicies#archive_extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#archive_extraction GoogleOsConfigGuestPolicies#archive_extraction}
 
 ---
 
@@ -2963,7 +2963,7 @@ DpkgInstallation GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation
 
 dpkg_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#dpkg_installation GoogleOsConfigGuestPolicies#dpkg_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#dpkg_installation GoogleOsConfigGuestPolicies#dpkg_installation}
 
 ---
 
@@ -2977,7 +2977,7 @@ FileCopy GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy
 
 file_copy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#file_copy GoogleOsConfigGuestPolicies#file_copy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#file_copy GoogleOsConfigGuestPolicies#file_copy}
 
 ---
 
@@ -2991,7 +2991,7 @@ FileExec GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec
 
 file_exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#file_exec GoogleOsConfigGuestPolicies#file_exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#file_exec GoogleOsConfigGuestPolicies#file_exec}
 
 ---
 
@@ -3005,7 +3005,7 @@ MsiInstallation GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation
 
 msi_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#msi_installation GoogleOsConfigGuestPolicies#msi_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#msi_installation GoogleOsConfigGuestPolicies#msi_installation}
 
 ---
 
@@ -3019,7 +3019,7 @@ RpmInstallation GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation
 
 rpm_installation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#rpm_installation GoogleOsConfigGuestPolicies#rpm_installation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#rpm_installation GoogleOsConfigGuestPolicies#rpm_installation}
 
 ---
 
@@ -3033,7 +3033,7 @@ ScriptRun GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun
 
 script_run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#script_run GoogleOsConfigGuestPolicies#script_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#script_run GoogleOsConfigGuestPolicies#script_run}
 
 ---
 
@@ -3042,7 +3042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction {
 	ArtifactId: *string,
@@ -3071,7 +3071,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3085,7 +3085,7 @@ Type *string
 
 The type of the archive to extract. Possible values: ["TAR", "TAR_GZIP", "TAR_BZIP", "TAR_LZMA", "TAR_XZ", "ZIP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#type GoogleOsConfigGuestPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#type GoogleOsConfigGuestPolicies#type}
 
 ---
 
@@ -3099,7 +3099,7 @@ Destination *string
 
 Directory to extract archive to. Defaults to / on Linux or C:\ on Windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
 
 ---
 
@@ -3108,7 +3108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation {
 	ArtifactId: *string,
@@ -3133,7 +3133,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3142,7 +3142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy {
 	ArtifactId: *string,
@@ -3173,7 +3173,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3187,7 +3187,7 @@ Destination *string
 
 The absolute path on the instance to put the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#destination GoogleOsConfigGuestPolicies#destination}
 
 ---
 
@@ -3201,7 +3201,7 @@ Overwrite interface{}
 
 Whether to allow this step to overwrite existing files.If this is false and the file already exists the file is not overwritten and the step is considered a success. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
 
 ---
 
@@ -3222,7 +3222,7 @@ bit corresponds to the execute permission. Default behavior is 755.
 Below are some examples of permissions and their associated values:
 read, write, and execute: 7 read and execute: 5 read and write: 6 read only: 4
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
 
 ---
 
@@ -3231,7 +3231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec {
 	AllowedExitCodes: *[]*f64,
@@ -3262,7 +3262,7 @@ AllowedExitCodes *[]*f64
 
 A list of possible return values that the program can return to indicate a success. Defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -3276,7 +3276,7 @@ Args *[]*string
 
 Arguments to be passed to the provided executable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#args GoogleOsConfigGuestPolicies#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#args GoogleOsConfigGuestPolicies#args}
 
 ---
 
@@ -3290,7 +3290,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3304,7 +3304,7 @@ LocalPath *string
 
 The absolute path of the file on the local filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#local_path GoogleOsConfigGuestPolicies#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#local_path GoogleOsConfigGuestPolicies#local_path}
 
 ---
 
@@ -3313,7 +3313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation {
 	ArtifactId: *string,
@@ -3342,7 +3342,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3356,7 +3356,7 @@ AllowedExitCodes *[]*f64
 
 Return codes that indicate that the software installed or updated successfully. Behaviour defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -3370,7 +3370,7 @@ Flags *[]*string
 
 The flags to use when installing the MSI. Defaults to the install flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#flags GoogleOsConfigGuestPolicies#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#flags GoogleOsConfigGuestPolicies#flags}
 
 ---
 
@@ -3379,7 +3379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation {
 	ArtifactId: *string,
@@ -3404,7 +3404,7 @@ ArtifactId *string
 
 The id of the relevant artifact in the recipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#artifact_id GoogleOsConfigGuestPolicies#artifact_id}
 
 ---
 
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun {
 	Script: *string,
@@ -3442,7 +3442,7 @@ Script *string
 
 The shell script to be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#script GoogleOsConfigGuestPolicies#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#script GoogleOsConfigGuestPolicies#script}
 
 ---
 
@@ -3456,7 +3456,7 @@ AllowedExitCodes *[]*f64
 
 Return codes that indicate that the software installed or updated successfully. Behaviour defaults to [0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#allowed_exit_codes GoogleOsConfigGuestPolicies#allowed_exit_codes}
 
 ---
 
@@ -3473,7 +3473,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script is executed directly,
 which likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#interpreter GoogleOsConfigGuestPolicies#interpreter}
 
 ---
 
@@ -3482,7 +3482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 &googleosconfigguestpolicies.GoogleOsConfigGuestPoliciesTimeouts {
 	Create: *string,
@@ -3495,9 +3495,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleoscon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#create GoogleOsConfigGuestPolicies#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#delete GoogleOsConfigGuestPolicies#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#update GoogleOsConfigGuestPolicies#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#create GoogleOsConfigGuestPolicies#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#delete GoogleOsConfigGuestPolicies#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#update GoogleOsConfigGuestPolicies#update}. |
 
 ---
 
@@ -3509,7 +3509,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#create GoogleOsConfigGuestPolicies#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#create GoogleOsConfigGuestPolicies#create}.
 
 ---
 
@@ -3521,7 +3521,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#delete GoogleOsConfigGuestPolicies#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#delete GoogleOsConfigGuestPolicies#delete}.
 
 ---
 
@@ -3533,7 +3533,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_config_guest_policies#update GoogleOsConfigGuestPolicies#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_config_guest_policies#update GoogleOsConfigGuestPolicies#update}.
 
 ---
 
@@ -3544,7 +3544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesAssignmentGroupLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesAssignmentOsTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesAssignmentOsTypesList
 ```
@@ -4153,7 +4153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference
 ```
@@ -4507,7 +4507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesAssignmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesAssignmentOutputReference
 ```
@@ -4927,7 +4927,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesAssignment
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference
 ```
@@ -5300,7 +5300,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesPackageRepositoriesApt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference
 ```
@@ -5593,7 +5593,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesPackageRepositoriesGoo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesPackageRepositoriesList
 ```
@@ -5753,7 +5753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference
 ```
@@ -6188,7 +6188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference
 ```
@@ -6539,7 +6539,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesPackageRepositoriesYum
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference
 ```
@@ -6890,7 +6890,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesPackageRepositoriesZypper
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesPackagesList
 ```
@@ -7050,7 +7050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesPackagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesPackagesOutputReference
 ```
@@ -7397,7 +7397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference
 ```
@@ -7733,7 +7733,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesArtifactsGcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesArtifactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesRecipesArtifactsList
 ```
@@ -7893,7 +7893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference
 ```
@@ -8295,7 +8295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference
 ```
@@ -8602,7 +8602,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesArtifactsRemote
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference
 ```
@@ -8924,7 +8924,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtrac
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference
 ```
@@ -9195,7 +9195,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallat
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference
 ```
@@ -9546,7 +9546,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference
 ```
@@ -9911,7 +9911,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesRecipesInstallStepsList
 ```
@@ -10071,7 +10071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference
 ```
@@ -10400,7 +10400,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallati
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference
 ```
@@ -10961,7 +10961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference
 ```
@@ -11232,7 +11232,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallati
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference
 ```
@@ -11561,7 +11561,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesRecipesList
 ```
@@ -11721,7 +11721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesOutputReference
 ```
@@ -12194,7 +12194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference
 ```
@@ -12516,7 +12516,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtract
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference
 ```
@@ -12787,7 +12787,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallati
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference
 ```
@@ -13138,7 +13138,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference
 ```
@@ -13503,7 +13503,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleOsConfigGuestPoliciesRecipesUpdateStepsList
 ```
@@ -13663,7 +13663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference
 ```
@@ -13992,7 +13992,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference
 ```
@@ -14553,7 +14553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference
 ```
@@ -14824,7 +14824,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference
 ```
@@ -15153,7 +15153,7 @@ func InternalValue() GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleosconfigguestpolicies"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleosconfigguestpolicies"
 
 googleosconfigguestpolicies.NewGoogleOsConfigGuestPoliciesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOsConfigGuestPoliciesTimeoutsOutputReference
 ```

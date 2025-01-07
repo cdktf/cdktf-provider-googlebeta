@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleComputeAutoscalerConfig extends cdktf.TerraformMetaArgume
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#description GoogleComputeAutoscaler#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#description GoogleComputeAutoscaler#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#id GoogleComputeAutoscaler#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#id GoogleComputeAutoscaler#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,35 +27,35 @@ export interface GoogleComputeAutoscalerConfig extends cdktf.TerraformMetaArgume
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#project GoogleComputeAutoscaler#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#project GoogleComputeAutoscaler#project}
   */
   readonly project?: string;
   /**
   * URL of the managed instance group that this autoscaler will scale.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
   */
   readonly target: string;
   /**
   * URL of the zone where the instance group resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#zone GoogleComputeAutoscaler#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#zone GoogleComputeAutoscaler#zone}
   */
   readonly zone?: string;
   /**
   * autoscaling_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#autoscaling_policy GoogleComputeAutoscaler#autoscaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#autoscaling_policy GoogleComputeAutoscaler#autoscaling_policy}
   */
   readonly autoscalingPolicy: GoogleComputeAutoscalerAutoscalingPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#timeouts GoogleComputeAutoscaler#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#timeouts GoogleComputeAutoscaler#timeouts}
   */
   readonly timeouts?: GoogleComputeAutoscalerTimeouts;
 }
@@ -72,7 +67,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization {
   * 
   * - OPTIMIZE_AVAILABILITY. Predictive autoscaling improves availability by monitoring daily and weekly load patterns and scaling out ahead of anticipated demand.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#predictive_method GoogleComputeAutoscaler#predictive_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#predictive_method GoogleComputeAutoscaler#predictive_method}
   */
   readonly predictiveMethod?: string;
   /**
@@ -90,7 +85,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization {
   * specified or until the average utilization reaches the target
   * utilization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
   */
   readonly target: number;
 }
@@ -204,7 +199,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizatio
   * balancing configuration) that autoscaler should maintain. Must
   * be a positive float value. If not defined, the default is 0.8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
   */
   readonly target: number;
 }
@@ -318,7 +313,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyMetric {
   * TimeSeries are returned upon the query execution, the autoscaler
   * will sum their respective values to obtain its scaling value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#filter GoogleComputeAutoscaler#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#filter GoogleComputeAutoscaler#filter}
   */
   readonly filter?: string;
   /**
@@ -327,7 +322,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyMetric {
   * 
   * The metric must have a value type of INT64 or DOUBLE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
   */
   readonly name: string;
   /**
@@ -348,7 +343,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyMetric {
   * single instance, it could be better used with utilization_target
   * instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#single_instance_assignment GoogleComputeAutoscaler#single_instance_assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#single_instance_assignment GoogleComputeAutoscaler#single_instance_assignment}
   */
   readonly singleInstanceAssignment?: number;
   /**
@@ -362,14 +357,14 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyMetric {
   * The autoscaler will work to keep this value constant for each
   * of the instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#target GoogleComputeAutoscaler#target}
   */
   readonly target?: number;
   /**
   * Defines how target utilization value is expressed for a
   * Stackdriver Monitoring metric. Possible values: ["GAUGE", "DELTA_PER_SECOND", "DELTA_PER_MINUTE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#type GoogleComputeAutoscaler#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#type GoogleComputeAutoscaler#type}
   */
   readonly type?: string;
 }
@@ -601,14 +596,14 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlMaxScal
   * Specifies a fixed number of VM instances. This must be a positive
   * integer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#fixed GoogleComputeAutoscaler#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#fixed GoogleComputeAutoscaler#fixed}
   */
   readonly fixed?: number;
   /**
   * Specifies a percentage of instances between 0 to 100%, inclusive.
   * For example, specify 80 for 80%.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#percent GoogleComputeAutoscaler#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#percent GoogleComputeAutoscaler#percent}
   */
   readonly percent?: number;
 }
@@ -724,13 +719,13 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyScaleDownControl {
   * How long back autoscaling should look when computing recommendations
   * to include directives regarding slower scale down, as described above.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#time_window_sec GoogleComputeAutoscaler#time_window_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#time_window_sec GoogleComputeAutoscaler#time_window_sec}
   */
   readonly timeWindowSec?: number;
   /**
   * max_scaled_down_replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#max_scaled_down_replicas GoogleComputeAutoscaler#max_scaled_down_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#max_scaled_down_replicas GoogleComputeAutoscaler#max_scaled_down_replicas}
   */
   readonly maxScaledDownReplicas?: GoogleComputeAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicas;
 }
@@ -846,14 +841,14 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaled
   * Specifies a fixed number of VM instances. This must be a positive
   * integer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#fixed GoogleComputeAutoscaler#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#fixed GoogleComputeAutoscaler#fixed}
   */
   readonly fixed?: number;
   /**
   * Specifies a percentage of instances between 0 to 100%, inclusive.
   * For example, specify 80 for 80%.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#percent GoogleComputeAutoscaler#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#percent GoogleComputeAutoscaler#percent}
   */
   readonly percent?: number;
 }
@@ -969,13 +964,13 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyScaleInControl {
   * How long back autoscaling should look when computing recommendations
   * to include directives regarding slower scale down, as described above.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#time_window_sec GoogleComputeAutoscaler#time_window_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#time_window_sec GoogleComputeAutoscaler#time_window_sec}
   */
   readonly timeWindowSec?: number;
   /**
   * max_scaled_in_replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#max_scaled_in_replicas GoogleComputeAutoscaler#max_scaled_in_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#max_scaled_in_replicas GoogleComputeAutoscaler#max_scaled_in_replicas}
   */
   readonly maxScaledInReplicas?: GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas;
 }
@@ -1090,41 +1085,41 @@ export interface GoogleComputeAutoscalerAutoscalingPolicyScalingSchedules {
   /**
   * A description of a scaling schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#description GoogleComputeAutoscaler#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#description GoogleComputeAutoscaler#description}
   */
   readonly description?: string;
   /**
   * A boolean value that specifies if a scaling schedule can influence autoscaler recommendations. If set to true, then a scaling schedule has no effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#disabled GoogleComputeAutoscaler#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#disabled GoogleComputeAutoscaler#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The duration of time intervals (in seconds) for which this scaling schedule will be running. The minimum allowed value is 300.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#duration_sec GoogleComputeAutoscaler#duration_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#duration_sec GoogleComputeAutoscaler#duration_sec}
   */
   readonly durationSec: number;
   /**
   * Minimum number of VM instances that autoscaler will recommend in time intervals starting according to schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#min_required_replicas GoogleComputeAutoscaler#min_required_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#min_required_replicas GoogleComputeAutoscaler#min_required_replicas}
   */
   readonly minRequiredReplicas: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#name GoogleComputeAutoscaler#name}
   */
   readonly name: string;
   /**
   * The start timestamps of time intervals when this scaling schedule should provide a scaling signal. This field uses the extended cron format (with an optional year field).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#schedule GoogleComputeAutoscaler#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#schedule GoogleComputeAutoscaler#schedule}
   */
   readonly schedule: string;
   /**
   * The time zone to be used when interpreting the schedule. The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#time_zone GoogleComputeAutoscaler#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#time_zone GoogleComputeAutoscaler#time_zone}
   */
   readonly timeZone?: string;
 }
@@ -1413,7 +1408,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicy {
   * instance may take to initialize. To do this, create an instance
   * and time the startup process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#cooldown_period GoogleComputeAutoscaler#cooldown_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#cooldown_period GoogleComputeAutoscaler#cooldown_period}
   */
   readonly cooldownPeriod?: number;
   /**
@@ -1422,7 +1417,7 @@ export interface GoogleComputeAutoscalerAutoscalingPolicy {
   * maximum number of replicas should not be lower than minimal number
   * of replicas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#max_replicas GoogleComputeAutoscaler#max_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#max_replicas GoogleComputeAutoscaler#max_replicas}
   */
   readonly maxReplicas: number;
   /**
@@ -1431,49 +1426,49 @@ export interface GoogleComputeAutoscalerAutoscalingPolicy {
   * choose a default value depending on maximum number of instances
   * allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#min_replicas GoogleComputeAutoscaler#min_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#min_replicas GoogleComputeAutoscaler#min_replicas}
   */
   readonly minReplicas: number;
   /**
   * Defines operating mode for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#mode GoogleComputeAutoscaler#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#mode GoogleComputeAutoscaler#mode}
   */
   readonly mode?: string;
   /**
   * cpu_utilization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#cpu_utilization GoogleComputeAutoscaler#cpu_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#cpu_utilization GoogleComputeAutoscaler#cpu_utilization}
   */
   readonly cpuUtilization?: GoogleComputeAutoscalerAutoscalingPolicyCpuUtilization;
   /**
   * load_balancing_utilization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#load_balancing_utilization GoogleComputeAutoscaler#load_balancing_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#load_balancing_utilization GoogleComputeAutoscaler#load_balancing_utilization}
   */
   readonly loadBalancingUtilization?: GoogleComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization;
   /**
   * metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#metric GoogleComputeAutoscaler#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#metric GoogleComputeAutoscaler#metric}
   */
   readonly metric?: GoogleComputeAutoscalerAutoscalingPolicyMetric[] | cdktf.IResolvable;
   /**
   * scale_down_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#scale_down_control GoogleComputeAutoscaler#scale_down_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#scale_down_control GoogleComputeAutoscaler#scale_down_control}
   */
   readonly scaleDownControl?: GoogleComputeAutoscalerAutoscalingPolicyScaleDownControl;
   /**
   * scale_in_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#scale_in_control GoogleComputeAutoscaler#scale_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#scale_in_control GoogleComputeAutoscaler#scale_in_control}
   */
   readonly scaleInControl?: GoogleComputeAutoscalerAutoscalingPolicyScaleInControl;
   /**
   * scaling_schedules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#scaling_schedules GoogleComputeAutoscaler#scaling_schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#scaling_schedules GoogleComputeAutoscaler#scaling_schedules}
   */
   readonly scalingSchedules?: GoogleComputeAutoscalerAutoscalingPolicyScalingSchedules[] | cdktf.IResolvable;
 }
@@ -1812,15 +1807,15 @@ export class GoogleComputeAutoscalerAutoscalingPolicyOutputReference extends cdk
 }
 export interface GoogleComputeAutoscalerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#create GoogleComputeAutoscaler#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#create GoogleComputeAutoscaler#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#delete GoogleComputeAutoscaler#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#delete GoogleComputeAutoscaler#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#update GoogleComputeAutoscaler#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#update GoogleComputeAutoscaler#update}
   */
   readonly update?: string;
 }
@@ -1972,7 +1967,7 @@ export class GoogleComputeAutoscalerTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler google_compute_autoscaler}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler google_compute_autoscaler}
 */
 export class GoogleComputeAutoscaler extends cdktf.TerraformResource {
 
@@ -1988,7 +1983,7 @@ export class GoogleComputeAutoscaler extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeAutoscaler resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeAutoscaler to import
-  * @param importFromId The id of the existing GoogleComputeAutoscaler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeAutoscaler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeAutoscaler to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2000,7 +1995,7 @@ export class GoogleComputeAutoscaler extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2011,7 +2006,7 @@ export class GoogleComputeAutoscaler extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_autoscaler',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

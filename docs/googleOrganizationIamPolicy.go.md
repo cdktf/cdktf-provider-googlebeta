@@ -4,12 +4,12 @@
 
 ### GoogleOrganizationIamPolicy <a name="GoogleOrganizationIamPolicy" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy google_organization_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy google_organization_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.NewGoogleOrganizationIamPolicy(scope Construct, id *string, config GoogleOrganizationIamPolicyConfig) GoogleOrganizationIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googleorganizationiampolicy.GoogleOrganizationIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 googleorganizationiampolicy.GoogleOrganizationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GoogleOrganizationIamPolic
 
 The id of the existing GoogleOrganizationIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorganizationiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiampolicy"
 
 &googleorganizationiampolicy.GoogleOrganizationIamPolicyConfig {
 	Connection: interface{},
@@ -779,8 +779,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleorgan
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#policy_data GoogleOrganizationIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#id GoogleOrganizationIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#policy_data GoogleOrganizationIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#id GoogleOrganizationIamPolicy#id}. |
 
 ---
 
@@ -864,7 +864,7 @@ OrgId *string
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#org_id GoogleOrganizationIamPolicy#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#org_id GoogleOrganizationIamPolicy#org_id}
 
 ---
 
@@ -876,7 +876,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#policy_data GoogleOrganizationIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#policy_data GoogleOrganizationIamPolicy#policy_data}.
 
 ---
 
@@ -888,7 +888,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_organization_iam_policy#id GoogleOrganizationIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_organization_iam_policy#id GoogleOrganizationIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

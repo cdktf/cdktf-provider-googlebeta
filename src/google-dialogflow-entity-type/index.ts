@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleDialogflowEntityTypeConfig extends cdktf.TerraformMetaArg
   /**
   * The name of this entity type to be displayed on the console.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#display_name GoogleDialogflowEntityType#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#display_name GoogleDialogflowEntityType#display_name}
   */
   readonly displayName: string;
   /**
   * Enables fuzzy entity extraction during classification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#enable_fuzzy_extraction GoogleDialogflowEntityType#enable_fuzzy_extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#enable_fuzzy_extraction GoogleDialogflowEntityType#enable_fuzzy_extraction}
   */
   readonly enableFuzzyExtraction?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#id GoogleDialogflowEntityType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,23 +33,23 @@ export interface GoogleDialogflowEntityTypeConfig extends cdktf.TerraformMetaArg
   * types can contain references to other entity types (with or without aliases).
   * * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#kind GoogleDialogflowEntityType#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#kind GoogleDialogflowEntityType#kind}
   */
   readonly kind: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#project GoogleDialogflowEntityType#project}
   */
   readonly project?: string;
   /**
   * entities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#entities GoogleDialogflowEntityType#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#entities GoogleDialogflowEntityType#entities}
   */
   readonly entities?: GoogleDialogflowEntityTypeEntities[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#timeouts GoogleDialogflowEntityType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#timeouts GoogleDialogflowEntityType#timeouts}
   */
   readonly timeouts?: GoogleDialogflowEntityTypeTimeouts;
 }
@@ -65,7 +60,7 @@ export interface GoogleDialogflowEntityTypeEntities {
   * For KIND_LIST entity types:
   * * This collection must contain exactly one synonym equal to value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#synonyms GoogleDialogflowEntityType#synonyms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#synonyms GoogleDialogflowEntityType#synonyms}
   */
   readonly synonyms: string[];
   /**
@@ -76,7 +71,7 @@ export interface GoogleDialogflowEntityTypeEntities {
   * For KIND_LIST entity types:
   * * A string that can contain references to other entity types (with or without aliases).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#value GoogleDialogflowEntityType#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#value GoogleDialogflowEntityType#value}
   */
   readonly value: string;
 }
@@ -215,15 +210,15 @@ export class GoogleDialogflowEntityTypeEntitiesList extends cdktf.ComplexList {
 }
 export interface GoogleDialogflowEntityTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#create GoogleDialogflowEntityType#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#delete GoogleDialogflowEntityType#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#update GoogleDialogflowEntityType#update}
   */
   readonly update?: string;
 }
@@ -375,7 +370,7 @@ export class GoogleDialogflowEntityTypeTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type}
 */
 export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
 
@@ -391,7 +386,7 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDialogflowEntityType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDialogflowEntityType to import
-  * @param importFromId The id of the existing GoogleDialogflowEntityType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDialogflowEntityType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDialogflowEntityType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -403,7 +398,7 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_entity_type google_dialogflow_entity_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -414,7 +409,7 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_entity_type',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

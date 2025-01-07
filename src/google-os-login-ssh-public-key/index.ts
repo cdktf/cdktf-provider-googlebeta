@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleOsLoginSshPublicKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * An expiration time in microseconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#expiration_time_usec GoogleOsLoginSshPublicKey#expiration_time_usec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#expiration_time_usec GoogleOsLoginSshPublicKey#expiration_time_usec}
   */
   readonly expirationTimeUsec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#id GoogleOsLoginSshPublicKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#id GoogleOsLoginSshPublicKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +23,39 @@ export interface GoogleOsLoginSshPublicKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * Public key text in SSH format, defined by RFC4253 section 6.6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#key GoogleOsLoginSshPublicKey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#key GoogleOsLoginSshPublicKey#key}
   */
   readonly key: string;
   /**
   * The project ID of the Google Cloud Platform project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#project GoogleOsLoginSshPublicKey#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#project GoogleOsLoginSshPublicKey#project}
   */
   readonly project?: string;
   /**
   * The user email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#user GoogleOsLoginSshPublicKey#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#user GoogleOsLoginSshPublicKey#user}
   */
   readonly user: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#timeouts GoogleOsLoginSshPublicKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#timeouts GoogleOsLoginSshPublicKey#timeouts}
   */
   readonly timeouts?: GoogleOsLoginSshPublicKeyTimeouts;
 }
 export interface GoogleOsLoginSshPublicKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#create GoogleOsLoginSshPublicKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#create GoogleOsLoginSshPublicKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#delete GoogleOsLoginSshPublicKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#delete GoogleOsLoginSshPublicKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#update GoogleOsLoginSshPublicKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#update GoogleOsLoginSshPublicKey#update}
   */
   readonly update?: string;
 }
@@ -212,7 +207,7 @@ export class GoogleOsLoginSshPublicKeyTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key google_os_login_ssh_public_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key google_os_login_ssh_public_key}
 */
 export class GoogleOsLoginSshPublicKey extends cdktf.TerraformResource {
 
@@ -228,7 +223,7 @@ export class GoogleOsLoginSshPublicKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleOsLoginSshPublicKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleOsLoginSshPublicKey to import
-  * @param importFromId The id of the existing GoogleOsLoginSshPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleOsLoginSshPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleOsLoginSshPublicKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -240,7 +235,7 @@ export class GoogleOsLoginSshPublicKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_os_login_ssh_public_key google_os_login_ssh_public_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_os_login_ssh_public_key google_os_login_ssh_public_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +246,7 @@ export class GoogleOsLoginSshPublicKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_os_login_ssh_public_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

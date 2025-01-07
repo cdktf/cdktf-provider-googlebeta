@@ -4,7 +4,7 @@
 
 ### GoogleGeminiRepositoryGroupIamBinding <a name="GoogleGeminiRepositoryGroupIamBinding" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding google_gemini_repository_group_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer"></a>
 
@@ -43,14 +43,14 @@ googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding(
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition">GoogleGeminiRepositoryGroupIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#condition GoogleGeminiRepositoryGroupIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#condition GoogleGeminiRepositoryGroupIamBinding#condition}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}.
 
 ---
 
@@ -557,7 +557,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}.
 
 ---
 
@@ -565,7 +565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}.
 
 ---
 
@@ -573,7 +573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}.
 
 ---
 
@@ -715,7 +715,7 @@ The construct id used in the generated config for the GoogleGeminiRepositoryGrou
 
 The id of the existing GoogleGeminiRepositoryGroupIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1115,9 +1115,9 @@ googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#expression GoogleGeminiRepositoryGroupIamBinding#expression}.
 
 ---
 
@@ -1141,7 +1141,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#title GoogleGeminiRepositoryGroupIamBinding#title}.
 
 ---
 
@@ -1153,7 +1153,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#description GoogleGeminiRepositoryGroupIamBinding#description}.
 
 ---
 
@@ -1194,14 +1194,14 @@ googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfi
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingCondition">GoogleGeminiRepositoryGroupIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamBinding.GoogleGeminiRepositoryGroupIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}. |
 
 ---
 
@@ -1283,7 +1283,7 @@ code_repository_index: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#code_repository_index GoogleGeminiRepositoryGroupIamBinding#code_repository_index}.
 
 ---
 
@@ -1295,7 +1295,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#members GoogleGeminiRepositoryGroupIamBinding#members}.
 
 ---
 
@@ -1307,7 +1307,7 @@ repository_group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#repository_group_id GoogleGeminiRepositoryGroupIamBinding#repository_group_id}.
 
 ---
 
@@ -1319,7 +1319,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#role GoogleGeminiRepositoryGroupIamBinding#role}.
 
 ---
 
@@ -1333,7 +1333,7 @@ condition: GoogleGeminiRepositoryGroupIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#condition GoogleGeminiRepositoryGroupIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#condition GoogleGeminiRepositoryGroupIamBinding#condition}
 
 ---
 
@@ -1345,7 +1345,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#id GoogleGeminiRepositoryGroupIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1360,7 +1360,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#location GoogleGeminiRepositoryGroupIamBinding#location}.
 
 ---
 
@@ -1372,7 +1372,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gemini_repository_group_iam_binding#project GoogleGeminiRepositoryGroupIamBinding#project}.
 
 ---
 

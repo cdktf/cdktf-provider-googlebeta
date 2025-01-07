@@ -4,12 +4,12 @@
 
 ### GoogleWorkstationsWorkstation <a name="GoogleWorkstationsWorkstation" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation google_workstations_workstation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstation(scope Construct, id *string, config GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation
 ```
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetSourceWorkstation">ResetSourceWorkstation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -420,6 +421,12 @@ func ResetLabels()
 func ResetProject()
 ```
 
+##### `ResetSourceWorkstation` <a name="ResetSourceWorkstation" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetSourceWorkstation"></a>
+
+```go
+func ResetSourceWorkstation()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.resetTimeouts"></a>
 
 ```go
@@ -440,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +507,7 @@ googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +536,7 @@ The construct id used in the generated config for the GoogleWorkstationsWorkstat
 
 The id of the existing GoogleWorkstationsWorkstation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.sourceWorkstationInput">SourceWorkstationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationClusterIdInput">WorkstationClusterIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationConfigIdInput">WorkstationConfigIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -586,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-bet
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.sourceWorkstation">SourceWorkstation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationClusterId">WorkstationClusterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationConfigId">WorkstationConfigId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationId">WorkstationId</a></code> | <code>*string</code> | *No description.* |
@@ -894,6 +903,16 @@ func ProjectInput() *string
 
 ---
 
+##### `SourceWorkstationInput`<sup>Optional</sup> <a name="SourceWorkstationInput" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.sourceWorkstationInput"></a>
+
+```go
+func SourceWorkstationInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.timeoutsInput"></a>
 
 ```go
@@ -1004,6 +1023,16 @@ func Project() *string
 
 ---
 
+##### `SourceWorkstation`<sup>Required</sup> <a name="SourceWorkstation" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.sourceWorkstation"></a>
+
+```go
+func SourceWorkstation() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `WorkstationClusterId`<sup>Required</sup> <a name="WorkstationClusterId" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.property.workstationClusterId"></a>
 
 ```go
@@ -1059,7 +1088,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationConfig {
 	Connection: interface{},
@@ -1079,7 +1108,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworks
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
+	SourceWorkstation: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
 }
 ```
 
@@ -1101,9 +1131,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworks
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Client-specified annotations. This is distinct from labels. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Human-readable name for this resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.env">Env</a></code> | <code>*map[string]*string</code> | 'Client-specified environment variables passed to the workstation container's entrypoint.'. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.sourceWorkstation">SourceWorkstation</a></code> | <code>*string</code> | Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts">GoogleWorkstationsWorkstationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1188,7 +1219,7 @@ Location *string
 
 The location where the workstation parent resources reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#location GoogleWorkstationsWorkstation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#location GoogleWorkstationsWorkstation#location}
 
 ---
 
@@ -1202,7 +1233,7 @@ WorkstationClusterId *string
 
 The ID of the parent workstation cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#workstation_cluster_id GoogleWorkstationsWorkstation#workstation_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#workstation_cluster_id GoogleWorkstationsWorkstation#workstation_cluster_id}
 
 ---
 
@@ -1216,7 +1247,7 @@ WorkstationConfigId *string
 
 The ID of the parent workstation cluster config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#workstation_config_id GoogleWorkstationsWorkstation#workstation_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#workstation_config_id GoogleWorkstationsWorkstation#workstation_config_id}
 
 ---
 
@@ -1230,7 +1261,7 @@ WorkstationId *string
 
 ID to use for the workstation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#workstation_id GoogleWorkstationsWorkstation#workstation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#workstation_id GoogleWorkstationsWorkstation#workstation_id}
 
 ---
 
@@ -1247,7 +1278,7 @@ Client-specified annotations. This is distinct from labels.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
 
 ---
 
@@ -1261,7 +1292,7 @@ DisplayName *string
 
 Human-readable name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#display_name GoogleWorkstationsWorkstation#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#display_name GoogleWorkstationsWorkstation#display_name}
 
 ---
 
@@ -1275,7 +1306,7 @@ Env *map[string]*string
 
 'Client-specified environment variables passed to the workstation container's entrypoint.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#env GoogleWorkstationsWorkstation#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#env GoogleWorkstationsWorkstation#env}
 
 ---
 
@@ -1287,7 +1318,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#id GoogleWorkstationsWorkstation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1307,7 +1338,7 @@ Client-specified labels that are applied to the resource and that are also propa
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
 
 ---
 
@@ -1319,7 +1350,21 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#project GoogleWorkstationsWorkstation#project}.
+
+---
+
+##### `SourceWorkstation`<sup>Optional</sup> <a name="SourceWorkstation" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.property.sourceWorkstation"></a>
+
+```go
+SourceWorkstation *string
+```
+
+- *Type:* *string
+
+Full resource name of the source workstation from which the workstation's persistent directories will be cloned from during creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#source_workstation GoogleWorkstationsWorkstation#source_workstation}
 
 ---
 
@@ -1333,7 +1378,7 @@ Timeouts GoogleWorkstationsWorkstationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#timeouts GoogleWorkstationsWorkstation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#timeouts GoogleWorkstationsWorkstation#timeouts}
 
 ---
 
@@ -1342,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationTimeouts {
 	Create: *string,
@@ -1355,9 +1400,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}. |
 
 ---
 
@@ -1369,7 +1414,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#create GoogleWorkstationsWorkstation#create}.
 
 ---
 
@@ -1381,7 +1426,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#delete GoogleWorkstationsWorkstation#delete}.
 
 ---
 
@@ -1393,7 +1438,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation#update GoogleWorkstationsWorkstation#update}.
 
 ---
 
@@ -1404,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationTimeoutsOutputReference
 ```

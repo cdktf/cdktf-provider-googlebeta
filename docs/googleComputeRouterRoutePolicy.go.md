@@ -4,12 +4,12 @@
 
 ### GoogleComputeRouterRoutePolicy <a name="GoogleComputeRouterRoutePolicy" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy google_compute_router_route_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy google_compute_router_route_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicy(scope Construct, id *string, config GoogleComputeRouterRoutePolicyConfig) GoogleComputeRouterRoutePolicy
 ```
@@ -439,7 +439,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the GoogleComputeRouterRoutePo
 
 The id of the existing GoogleComputeRouterRoutePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -950,8 +950,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the route policy. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.router">Router</a></code> | <code>*string</code> | The name of the Cloud Router in which this route policy will be configured. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.terms">Terms</a></code> | <code>interface{}</code> | terms block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#id GoogleComputeRouterRoutePolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#project GoogleComputeRouterRoutePolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#id GoogleComputeRouterRoutePolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#project GoogleComputeRouterRoutePolicy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router and NAT reside. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts">GoogleComputeRouterRoutePolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.property.type">Type</a></code> | <code>*string</code> | This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"]. |
@@ -1040,7 +1040,7 @@ Name of the route policy.
 
 This policy's name, which must be a resource ID segment and unique within all policies owned by the Router
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#name GoogleComputeRouterRoutePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#name GoogleComputeRouterRoutePolicy#name}
 
 ---
 
@@ -1054,7 +1054,7 @@ Router *string
 
 The name of the Cloud Router in which this route policy will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#router GoogleComputeRouterRoutePolicy#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#router GoogleComputeRouterRoutePolicy#router}
 
 ---
 
@@ -1068,7 +1068,7 @@ Terms interface{}
 
 terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#terms GoogleComputeRouterRoutePolicy#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#terms GoogleComputeRouterRoutePolicy#terms}
 
 ---
 
@@ -1080,7 +1080,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#id GoogleComputeRouterRoutePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#id GoogleComputeRouterRoutePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#project GoogleComputeRouterRoutePolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#project GoogleComputeRouterRoutePolicy#project}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Region *string
 
 Region where the router and NAT reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#region GoogleComputeRouterRoutePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#region GoogleComputeRouterRoutePolicy#region}
 
 ---
 
@@ -1123,7 +1123,7 @@ Timeouts GoogleComputeRouterRoutePolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#timeouts GoogleComputeRouterRoutePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#timeouts GoogleComputeRouterRoutePolicy#timeouts}
 
 ---
 
@@ -1137,7 +1137,7 @@ Type *string
 
 This is policy's type, which is one of IMPORT or EXPORT Possible values: ["ROUTE_POLICY_TYPE_IMPORT", "ROUTE_POLICY_TYPE_EXPORT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#type GoogleComputeRouterRoutePolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#type GoogleComputeRouterRoutePolicy#type}
 
 ---
 
@@ -1146,12 +1146,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTerms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTerms {
 	Priority: *f64,
 	Actions: interface{},
-	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch,
+	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Priority *f64
 
 The evaluation priority for this term, which must be between 0 (inclusive) and 231 (exclusive), and unique within the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#priority GoogleComputeRouterRoutePolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#priority GoogleComputeRouterRoutePolicy#priority}
 
 ---
 
@@ -1189,7 +1189,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#actions GoogleComputeRouterRoutePolicy#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#actions GoogleComputeRouterRoutePolicy#actions}
 
 ---
 
@@ -1203,7 +1203,7 @@ Match GoogleComputeRouterRoutePolicyTermsMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#match GoogleComputeRouterRoutePolicy#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#match GoogleComputeRouterRoutePolicy#match}
 
 ---
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTermsActions {
 	Expression: *string,
@@ -1243,7 +1243,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#expression GoogleComputeRouterRoutePolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#expression GoogleComputeRouterRoutePolicy#expression}
 
 ---
 
@@ -1257,7 +1257,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#description GoogleComputeRouterRoutePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#description GoogleComputeRouterRoutePolicy#description}
 
 ---
 
@@ -1271,7 +1271,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#location GoogleComputeRouterRoutePolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#location GoogleComputeRouterRoutePolicy#location}
 
 ---
 
@@ -1285,7 +1285,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#title GoogleComputeRouterRoutePolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#title GoogleComputeRouterRoutePolicy#title}
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTermsMatch {
 	Expression: *string,
@@ -1325,7 +1325,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#expression GoogleComputeRouterRoutePolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#expression GoogleComputeRouterRoutePolicy#expression}
 
 ---
 
@@ -1339,7 +1339,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#description GoogleComputeRouterRoutePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#description GoogleComputeRouterRoutePolicy#description}
 
 ---
 
@@ -1353,7 +1353,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#location GoogleComputeRouterRoutePolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#location GoogleComputeRouterRoutePolicy#location}
 
 ---
 
@@ -1367,7 +1367,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#title GoogleComputeRouterRoutePolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#title GoogleComputeRouterRoutePolicy#title}
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTimeouts {
 	Create: *string,
@@ -1389,9 +1389,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#create GoogleComputeRouterRoutePolicy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#delete GoogleComputeRouterRoutePolicy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#update GoogleComputeRouterRoutePolicy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#create GoogleComputeRouterRoutePolicy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#delete GoogleComputeRouterRoutePolicy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#update GoogleComputeRouterRoutePolicy#update}. |
 
 ---
 
@@ -1403,7 +1403,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#create GoogleComputeRouterRoutePolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#create GoogleComputeRouterRoutePolicy#create}.
 
 ---
 
@@ -1415,7 +1415,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#delete GoogleComputeRouterRoutePolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#delete GoogleComputeRouterRoutePolicy#delete}.
 
 ---
 
@@ -1427,7 +1427,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_compute_router_route_policy#update GoogleComputeRouterRoutePolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_compute_router_route_policy#update GoogleComputeRouterRoutePolicy#update}.
 
 ---
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterRoutePolicyTermsActionsList
 ```
@@ -1598,7 +1598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterRoutePolicyTermsActionsOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterRoutePolicyTermsList
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterRoutePolicyTermsMatchOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() GoogleComputeRouterRoutePolicyTermsMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterRoutePolicyTermsOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterRoutePolicyTimeoutsOutputReference
 ```

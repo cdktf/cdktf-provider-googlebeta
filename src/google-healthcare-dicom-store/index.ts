@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +11,11 @@ export interface GoogleHealthcareDicomStoreConfig extends cdktf.TerraformMetaArg
   * Identifies the dataset addressed by this request. Must be in the format
   * 'projects/{project}/locations/{location}/datasets/{dataset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#dataset GoogleHealthcareDicomStore#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#dataset GoogleHealthcareDicomStore#dataset}
   */
   readonly dataset: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#id GoogleHealthcareDicomStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,7 +39,7 @@ export interface GoogleHealthcareDicomStoreConfig extends cdktf.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -52,25 +47,25 @@ export interface GoogleHealthcareDicomStoreConfig extends cdktf.TerraformMetaArg
   * 
   * ** Changing this property may recreate the Dicom store (removing all data) **
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
   */
   readonly name: string;
   /**
   * notification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#notification_config GoogleHealthcareDicomStore#notification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#notification_config GoogleHealthcareDicomStore#notification_config}
   */
   readonly notificationConfig?: GoogleHealthcareDicomStoreNotificationConfig;
   /**
   * stream_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#stream_configs GoogleHealthcareDicomStore#stream_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#stream_configs GoogleHealthcareDicomStore#stream_configs}
   */
   readonly streamConfigs?: GoogleHealthcareDicomStoreStreamConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#timeouts GoogleHealthcareDicomStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#timeouts GoogleHealthcareDicomStore#timeouts}
   */
   readonly timeouts?: GoogleHealthcareDicomStoreTimeouts;
 }
@@ -83,13 +78,13 @@ export interface GoogleHealthcareDicomStoreNotificationConfig {
   * project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
   * Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#pubsub_topic GoogleHealthcareDicomStore#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#pubsub_topic GoogleHealthcareDicomStore#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * Indicates whether or not to send Pub/Sub notifications on bulk import. Only supported for DICOM imports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#send_for_bulk_import GoogleHealthcareDicomStore#send_for_bulk_import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#send_for_bulk_import GoogleHealthcareDicomStore#send_for_bulk_import}
   */
   readonly sendForBulkImport?: boolean | cdktf.IResolvable;
 }
@@ -201,7 +196,7 @@ export interface GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination {
   /**
   * a fully qualified BigQuery table URI where DICOM instance metadata will be streamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#table_uri GoogleHealthcareDicomStore#table_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#table_uri GoogleHealthcareDicomStore#table_uri}
   */
   readonly tableUri: string;
 }
@@ -284,7 +279,7 @@ export interface GoogleHealthcareDicomStoreStreamConfigs {
   /**
   * bigquery_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#bigquery_destination GoogleHealthcareDicomStore#bigquery_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#bigquery_destination GoogleHealthcareDicomStore#bigquery_destination}
   */
   readonly bigqueryDestination: GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination;
 }
@@ -397,15 +392,15 @@ export class GoogleHealthcareDicomStoreStreamConfigsList extends cdktf.ComplexLi
 }
 export interface GoogleHealthcareDicomStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#create GoogleHealthcareDicomStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#delete GoogleHealthcareDicomStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#update GoogleHealthcareDicomStore#update}
   */
   readonly update?: string;
 }
@@ -557,7 +552,7 @@ export class GoogleHealthcareDicomStoreTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store}
 */
 export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
 
@@ -573,7 +568,7 @@ export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleHealthcareDicomStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleHealthcareDicomStore to import
-  * @param importFromId The id of the existing GoogleHealthcareDicomStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleHealthcareDicomStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleHealthcareDicomStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -585,7 +580,7 @@ export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_healthcare_dicom_store google_healthcare_dicom_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -596,7 +591,7 @@ export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_healthcare_dicom_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

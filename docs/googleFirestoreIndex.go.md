@@ -4,12 +4,12 @@
 
 ### GoogleFirestoreIndex <a name="GoogleFirestoreIndex" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index google_firestore_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index google_firestore_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndex(scope Construct, id *string, config GoogleFirestoreIndexConfig) GoogleFirestoreIndex
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ googlefirestoreindex.GoogleFirestoreIndex_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googlefirestoreindex.GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.GoogleFirestoreIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the GoogleFirestoreIndex to im
 
 The id of the existing GoogleFirestoreIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefires
 	Id: *string,
 	Project: *string,
 	QueryScope: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirestoreIndex.GoogleFirestoreIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts,
 }
 ```
 
@@ -958,8 +958,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefires
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.fields">Fields</a></code> | <code>interface{}</code> | fields block. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.apiScope">ApiScope</a></code> | <code>*string</code> | The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.database">Database</a></code> | <code>*string</code> | The Firestore database id. Defaults to '"(default)"'. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.queryScope">QueryScope</a></code> | <code>*string</code> | The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts">GoogleFirestoreIndexTimeouts</a></code> | timeouts block. |
 
@@ -1045,7 +1045,7 @@ Collection *string
 
 The collection being indexed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#collection GoogleFirestoreIndex#collection}
 
 ---
 
@@ -1059,7 +1059,7 @@ Fields interface{}
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#fields GoogleFirestoreIndex#fields}
 
 ---
 
@@ -1073,7 +1073,7 @@ ApiScope *string
 
 The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#api_scope GoogleFirestoreIndex#api_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#api_scope GoogleFirestoreIndex#api_scope}
 
 ---
 
@@ -1087,7 +1087,7 @@ Database *string
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#database GoogleFirestoreIndex#database}
 
 ---
 
@@ -1099,7 +1099,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#id GoogleFirestoreIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1114,7 +1114,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#project GoogleFirestoreIndex#project}.
 
 ---
 
@@ -1128,7 +1128,7 @@ QueryScope *string
 
 The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#query_scope GoogleFirestoreIndex#query_scope}
 
 ---
 
@@ -1142,7 +1142,7 @@ Timeouts GoogleFirestoreIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#timeouts GoogleFirestoreIndex#timeouts}
 
 ---
 
@@ -1151,13 +1151,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFields {
 	ArrayConfig: *string,
 	FieldPath: *string,
 	Order: *string,
-	VectorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig,
+	VectorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig,
 }
 ```
 
@@ -1185,7 +1185,7 @@ Indicates that this field supports operations on arrayValues.
 Only one of 'order', 'arrayConfig', and
 'vectorConfig' can be specified. Possible values: ["CONTAINS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#array_config GoogleFirestoreIndex#array_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#array_config GoogleFirestoreIndex#array_config}
 
 ---
 
@@ -1199,7 +1199,7 @@ FieldPath *string
 
 Name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#field_path GoogleFirestoreIndex#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#field_path GoogleFirestoreIndex#field_path}
 
 ---
 
@@ -1215,7 +1215,7 @@ Indicates that this field supports ordering by the specified order or comparing 
 
 Only one of 'order', 'arrayConfig', and 'vectorConfig' can be specified. Possible values: ["ASCENDING", "DESCENDING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#order GoogleFirestoreIndex#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#order GoogleFirestoreIndex#order}
 
 ---
 
@@ -1229,7 +1229,7 @@ VectorConfig GoogleFirestoreIndexFieldsVectorConfig
 
 vector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#vector_config GoogleFirestoreIndex#vector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#vector_config GoogleFirestoreIndex#vector_config}
 
 ---
 
@@ -1238,11 +1238,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFieldsVectorConfig {
 	Dimension: *f64,
-	Flat: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat,
+	Flat: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat,
 }
 ```
 
@@ -1265,7 +1265,7 @@ Dimension *f64
 
 The resulting index will only include vectors of this dimension, and can be used for vector search with the same dimension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#dimension GoogleFirestoreIndex#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#dimension GoogleFirestoreIndex#dimension}
 
 ---
 
@@ -1279,7 +1279,7 @@ Flat GoogleFirestoreIndexFieldsVectorConfigFlat
 
 flat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#flat GoogleFirestoreIndex#flat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#flat GoogleFirestoreIndex#flat}
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexFieldsVectorConfigFlat {
 
@@ -1301,7 +1301,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefires
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 &googlefirestoreindex.GoogleFirestoreIndexTimeouts {
 	Create: *string,
@@ -1313,8 +1313,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefires
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#create GoogleFirestoreIndex#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#delete GoogleFirestoreIndex#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#create GoogleFirestoreIndex#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#delete GoogleFirestoreIndex#delete}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#create GoogleFirestoreIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#create GoogleFirestoreIndex#create}.
 
 ---
 
@@ -1338,7 +1338,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_firestore_index#delete GoogleFirestoreIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_firestore_index#delete GoogleFirestoreIndex#delete}.
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirestoreIndexFieldsList
 ```
@@ -1509,7 +1509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirestoreIndexFieldsOutputReference
 ```
@@ -1905,7 +1905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsVectorConfigFlatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() GoogleFirestoreIndexFieldsVectorConfigFlat
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigOutputReference
 ```
@@ -2474,7 +2474,7 @@ func InternalValue() GoogleFirestoreIndexFieldsVectorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlefirestoreindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoreindex"
 
 googlefirestoreindex.NewGoogleFirestoreIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexTimeoutsOutputReference
 ```

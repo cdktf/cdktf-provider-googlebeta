@@ -4,12 +4,12 @@
 
 ### GoogleIamWorkforcePool <a name="GoogleIamWorkforcePool" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool google_iam_workforce_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.NewGoogleIamWorkforcePool(scope Construct, id *string, config GoogleIamWorkforcePoolConfig) GoogleIamWorkforcePool
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.GoogleIamWorkforcePool_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.GoogleIamWorkforcePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googleiamworkforcepool.GoogleIamWorkforcePool_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.GoogleIamWorkforcePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ googleiamworkforcepool.GoogleIamWorkforcePool_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.GoogleIamWorkforcePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the GoogleIamWorkforcePool to 
 
 The id of the existing GoogleIamWorkforcePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 &googleiamworkforcepool.GoogleIamWorkforcePoolAccessRestrictions {
 	AllowedServices: interface{},
@@ -1011,7 +1011,7 @@ AllowedServices interface{}
 
 allowed_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#allowed_services GoogleIamWorkforcePool#allowed_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#allowed_services GoogleIamWorkforcePool#allowed_services}
 
 ---
 
@@ -1025,7 +1025,7 @@ DisableProgrammaticSignin interface{}
 
 Disable programmatic sign-in by disabling token issue via the Security Token API endpoint. See [Security Token Service API](https://cloud.google.com/iam/docs/reference/sts/rest).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#disable_programmatic_signin GoogleIamWorkforcePool#disable_programmatic_signin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#disable_programmatic_signin GoogleIamWorkforcePool#disable_programmatic_signin}
 
 ---
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 &googleiamworkforcepool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServices {
 	Domain: *string,
@@ -1059,7 +1059,7 @@ Domain *string
 
 Domain name of the service. Example: console.cloud.google.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#domain GoogleIamWorkforcePool#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#domain GoogleIamWorkforcePool#domain}
 
 ---
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 &googleiamworkforcepool.GoogleIamWorkforcePoolConfig {
 	Connection: interface{},
@@ -1081,13 +1081,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamwo
 	Location: *string,
 	Parent: *string,
 	WorkforcePoolId: *string,
-	AccessRestrictions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictions,
+	AccessRestrictions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictions,
 	Description: *string,
 	Disabled: interface{},
 	DisplayName: *string,
 	Id: *string,
 	SessionDuration: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts,
 }
 ```
 
@@ -1109,7 +1109,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamwo
 | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.description">Description</a></code> | <code>*string</code> | A user-specified description of the pool. Cannot exceed 256 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Whether the pool is disabled. |
 | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A user-specified display name of the pool in Google Cloud Console. Cannot exceed 32 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.sessionDuration">SessionDuration</a></code> | <code>*string</code> | Duration that the Google Cloud access tokens, console sign-in sessions, and 'gcloud' sign-in sessions from this pool are valid. |
 | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts">GoogleIamWorkforcePoolTimeouts</a></code> | timeouts block. |
 
@@ -1195,7 +1195,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#location GoogleIamWorkforcePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#location GoogleIamWorkforcePool#location}
 
 ---
 
@@ -1209,7 +1209,7 @@ Parent *string
 
 Immutable. The resource name of the parent. Format: 'organizations/{org-id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#parent GoogleIamWorkforcePool#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#parent GoogleIamWorkforcePool#parent}
 
 ---
 
@@ -1227,7 +1227,7 @@ The ID must be a globally unique string of 6 to 63 lowercase letters,
 digits, or hyphens. It must start with a letter, and cannot have a trailing hyphen.
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#workforce_pool_id GoogleIamWorkforcePool#workforce_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#workforce_pool_id GoogleIamWorkforcePool#workforce_pool_id}
 
 ---
 
@@ -1241,7 +1241,7 @@ AccessRestrictions GoogleIamWorkforcePoolAccessRestrictions
 
 access_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#access_restrictions GoogleIamWorkforcePool#access_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#access_restrictions GoogleIamWorkforcePool#access_restrictions}
 
 ---
 
@@ -1255,7 +1255,7 @@ Description *string
 
 A user-specified description of the pool. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#description GoogleIamWorkforcePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#description GoogleIamWorkforcePool#description}
 
 ---
 
@@ -1272,7 +1272,7 @@ Whether the pool is disabled.
 You cannot use a disabled pool to exchange tokens,
 or use existing tokens to access resources. If the pool is re-enabled, existing tokens grant access again.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#disabled GoogleIamWorkforcePool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#disabled GoogleIamWorkforcePool#disabled}
 
 ---
 
@@ -1286,7 +1286,7 @@ DisplayName *string
 
 A user-specified display name of the pool in Google Cloud Console. Cannot exceed 32 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#display_name GoogleIamWorkforcePool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#display_name GoogleIamWorkforcePool#display_name}
 
 ---
 
@@ -1298,7 +1298,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#id GoogleIamWorkforcePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1319,7 +1319,7 @@ Must be greater than 15 minutes (900s) and less than 12 hours (43200s).
 If 'sessionDuration' is not configured, minted credentials have a default duration of one hour (3600s).
 A duration in seconds with up to nine fractional digits, ending with ''s''. Example: "'3.5s'".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#session_duration GoogleIamWorkforcePool#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#session_duration GoogleIamWorkforcePool#session_duration}
 
 ---
 
@@ -1333,7 +1333,7 @@ Timeouts GoogleIamWorkforcePoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#timeouts GoogleIamWorkforcePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#timeouts GoogleIamWorkforcePool#timeouts}
 
 ---
 
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 &googleiamworkforcepool.GoogleIamWorkforcePoolTimeouts {
 	Create: *string,
@@ -1355,9 +1355,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamwo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}. |
 
 ---
 
@@ -1369,7 +1369,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#create GoogleIamWorkforcePool#create}.
 
 ---
 
@@ -1381,7 +1381,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#delete GoogleIamWorkforcePool#delete}.
 
 ---
 
@@ -1393,7 +1393,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_iam_workforce_pool#update GoogleIamWorkforcePool#update}.
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.NewGoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesList
 ```
@@ -1564,7 +1564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.NewGoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolAccessRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.NewGoogleIamWorkforcePoolAccessRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIamWorkforcePoolAccessRestrictionsOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() GoogleIamWorkforcePoolAccessRestrictions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIamWorkforcePool.GoogleIamWorkforcePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkforcepool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiamworkforcepool"
 
 googleiamworkforcepool.NewGoogleIamWorkforcePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIamWorkforcePoolTimeoutsOutputReference
 ```
