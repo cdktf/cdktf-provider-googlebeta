@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnection(scope Construct, id *string, config GoogleDeveloperConnectConnectionConfig) GoogleDeveloperConnectConnection
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.GoogleDeveloperConnectConnection_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.GoogleDeveloperConnectConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ googledeveloperconnectconnection.GoogleDeveloperConnectConnection_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.GoogleDeveloperConnectConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googledeveloperconnectconnection.GoogleDeveloperConnectConnection_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.GoogleDeveloperConnectConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1079,7 +1079,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 &googledeveloperconnectconnection.GoogleDeveloperConnectConnectionConfig {
 	Connection: interface{},
@@ -1094,11 +1094,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledevel
 	Annotations: *map[string]*string,
 	Disabled: interface{},
 	Etag: *string,
-	GithubConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfig,
+	GithubConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfig,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionTimeouts,
 }
 ```
 
@@ -1359,12 +1359,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 &googledeveloperconnectconnection.GoogleDeveloperConnectConnectionGithubConfig {
 	GithubApp: *string,
 	AppInstallationId: *string,
-	AuthorizerCredential: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential,
 }
 ```
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 &googledeveloperconnectconnection.GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential {
 	OauthTokenSecretVersion: *string,
@@ -1468,7 +1468,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionInstallationState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 &googledeveloperconnectconnection.GoogleDeveloperConnectConnectionInstallationState {
 
@@ -1481,7 +1481,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledevel
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 &googledeveloperconnectconnection.GoogleDeveloperConnectConnectionTimeouts {
 	Create: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference
 ```
@@ -1825,7 +1825,7 @@ func InternalValue() GoogleDeveloperConnectConnectionGithubConfigAuthorizerCrede
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionGithubConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnectionGithubConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDeveloperConnectConnectionGithubConfigOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() GoogleDeveloperConnectConnectionGithubConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionInstallationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnectionInstallationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDeveloperConnectConnectionInstallationStateList
 ```
@@ -2327,7 +2327,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionInstallationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnectionInstallationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDeveloperConnectConnectionInstallationStateOutputReference
 ```
@@ -2627,7 +2627,7 @@ func InternalValue() GoogleDeveloperConnectConnectionInstallationState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDeveloperConnectConnection.GoogleDeveloperConnectConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledeveloperconnectconnection"
 
 googledeveloperconnectconnection.NewGoogleDeveloperConnectConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDeveloperConnectConnectionTimeoutsOutputReference
 ```

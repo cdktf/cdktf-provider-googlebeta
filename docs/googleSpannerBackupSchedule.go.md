@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupSchedule(scope Construct, id *string, config GoogleSpannerBackupScheduleConfig) GoogleSpannerBackupSchedule
 ```
@@ -479,7 +479,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.GoogleSpannerBackupSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.GoogleSpannerBackupSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ googlespannerbackupschedule.GoogleSpannerBackupSchedule_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.GoogleSpannerBackupSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ googlespannerbackupschedule.GoogleSpannerBackupSchedule_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.GoogleSpannerBackupSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleConfig {
 	Connection: interface{},
@@ -1001,13 +1001,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespann
 	Database: *string,
 	Instance: *string,
 	RetentionDuration: *string,
-	FullBackupSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleFullBackupSpec,
+	FullBackupSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleFullBackupSpec,
 	Id: *string,
-	IncrementalBackupSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpec,
+	IncrementalBackupSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpec,
 	Name: *string,
 	Project: *string,
-	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpec,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleTimeouts,
+	Spec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpec,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleTimeouts,
 }
 ```
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleFullBackupSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleFullBackupSpec {
 
@@ -1264,7 +1264,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespann
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleIncrementalBackupSpec {
 
@@ -1277,10 +1277,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespann
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleSpec {
-	CronSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpec,
+	CronSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpec,
 }
 ```
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleSpecCronSpec {
 	Text: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 &googlespannerbackupschedule.GoogleSpannerBackupScheduleTimeouts {
 	Create: *string,
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleFullBackupSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupScheduleFullBackupSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleFullBackupSpecOutputReference
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() GoogleSpannerBackupScheduleFullBackupSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference
 ```
@@ -1917,7 +1917,7 @@ func InternalValue() GoogleSpannerBackupScheduleIncrementalBackupSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleSpecCronSpecOutputReference
 ```
@@ -2195,7 +2195,7 @@ func InternalValue() GoogleSpannerBackupScheduleSpecCronSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupScheduleSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleSpecOutputReference
 ```
@@ -2486,7 +2486,7 @@ func InternalValue() GoogleSpannerBackupScheduleSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerbackupschedule"
 
 googlespannerbackupschedule.NewGoogleSpannerBackupScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleTimeoutsOutputReference
 ```
