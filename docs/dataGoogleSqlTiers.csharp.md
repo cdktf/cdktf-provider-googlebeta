@@ -4,7 +4,7 @@
 
 ### DataGoogleSqlTiers <a name="DataGoogleSqlTiers" id="@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/data-sources/google_sql_tiers google_sql_tiers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_sql_tiers google_sql_tiers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiers.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGoogleSqlTiers to impo
 
 The id of the existing DataGoogleSqlTiers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/data-sources/google_sql_tiers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_sql_tiers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ new DataGoogleSqlTiersConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/data-sources/google_sql_tiers#id DataGoogleSqlTiers#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_sql_tiers#id DataGoogleSqlTiers#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlTiers.DataGoogleSqlTiersConfig.property.project">Project</a></code> | <code>string</code> | Project ID of the project for which to list tiers. |
 
 ---
@@ -721,7 +721,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/data-sources/google_sql_tiers#id DataGoogleSqlTiers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_sql_tiers#id DataGoogleSqlTiers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ public string Project { get; set; }
 
 Project ID of the project for which to list tiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/data-sources/google_sql_tiers#project DataGoogleSqlTiers#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_sql_tiers#project DataGoogleSqlTiers#project}
 
 ---
 

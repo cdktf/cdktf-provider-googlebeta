@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleDialogflowCxTestCaseConfig extends cdktf.TerraformMetaArg
   /**
   * The human-readable name of the test case, unique within the agent. Limit of 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#display_name GoogleDialogflowCxTestCase#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#display_name GoogleDialogflowCxTestCase#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#id GoogleDialogflowCxTestCase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#id GoogleDialogflowCxTestCase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +28,39 @@ export interface GoogleDialogflowCxTestCaseConfig extends cdktf.TerraformMetaArg
   /**
   * Additional freeform notes about the test case. Limit of 400 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#notes GoogleDialogflowCxTestCase#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#notes GoogleDialogflowCxTestCase#notes}
   */
   readonly notes?: string;
   /**
   * The agent to create the test case for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#parent GoogleDialogflowCxTestCase#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#parent GoogleDialogflowCxTestCase#parent}
   */
   readonly parent?: string;
   /**
   * Tags are short descriptions that users may apply to test cases for organizational and filtering purposes.
   * Each tag should start with "#" and has a limit of 30 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#tags GoogleDialogflowCxTestCase#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#tags GoogleDialogflowCxTestCase#tags}
   */
   readonly tags?: string[];
   /**
   * test_case_conversation_turns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#test_case_conversation_turns GoogleDialogflowCxTestCase#test_case_conversation_turns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#test_case_conversation_turns GoogleDialogflowCxTestCase#test_case_conversation_turns}
   */
   readonly testCaseConversationTurns?: GoogleDialogflowCxTestCaseTestCaseConversationTurns[] | cdktf.IResolvable;
   /**
   * test_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#test_config GoogleDialogflowCxTestCase#test_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#test_config GoogleDialogflowCxTestCase#test_config}
   */
   readonly testConfig?: GoogleDialogflowCxTestCaseTestConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#timeouts GoogleDialogflowCxTestCase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#timeouts GoogleDialogflowCxTestCase#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxTestCaseTimeouts;
 }
@@ -1165,13 +1165,13 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInp
   /**
   * The dtmf digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#digits GoogleDialogflowCxTestCase#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#digits GoogleDialogflowCxTestCase#digits}
   */
   readonly digits?: string;
   /**
   * The finish digit (if any).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#finish_digit GoogleDialogflowCxTestCase#finish_digit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#finish_digit GoogleDialogflowCxTestCase#finish_digit}
   */
   readonly finishDigit?: string;
 }
@@ -1286,7 +1286,7 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInp
   /**
   * Name of the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#event GoogleDialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#event GoogleDialogflowCxTestCase#event}
   */
   readonly event: string;
 }
@@ -1369,7 +1369,7 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInp
   /**
   * The natural language text to be processed. Text length must not exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
   */
   readonly text: string;
 }
@@ -1453,25 +1453,25 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInp
   * The language of the input. See [Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language) for a list of the currently supported language codes.
   * Note that queries in the same session do not necessarily need to specify the same language.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#language_code GoogleDialogflowCxTestCase#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#language_code GoogleDialogflowCxTestCase#language_code}
   */
   readonly languageCode?: string;
   /**
   * dtmf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#dtmf GoogleDialogflowCxTestCase#dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#dtmf GoogleDialogflowCxTestCase#dtmf}
   */
   readonly dtmf?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#event GoogleDialogflowCxTestCase#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#event GoogleDialogflowCxTestCase#event}
   */
   readonly event?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
   */
   readonly text?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText;
 }
@@ -1644,25 +1644,25 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInput {
   /**
   * Whether sentiment analysis is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#enable_sentiment_analysis GoogleDialogflowCxTestCase#enable_sentiment_analysis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#enable_sentiment_analysis GoogleDialogflowCxTestCase#enable_sentiment_analysis}
   */
   readonly enableSentimentAnalysis?: boolean | cdktf.IResolvable;
   /**
   * Parameters that need to be injected into the conversation during intent detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#injected_parameters GoogleDialogflowCxTestCase#injected_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#injected_parameters GoogleDialogflowCxTestCase#injected_parameters}
   */
   readonly injectedParameters?: string;
   /**
   * If webhooks should be allowed to trigger in response to the user utterance. Often if parameters are injected, webhooks should not be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#is_webhook_enabled GoogleDialogflowCxTestCase#is_webhook_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#is_webhook_enabled GoogleDialogflowCxTestCase#is_webhook_enabled}
   */
   readonly isWebhookEnabled?: boolean | cdktf.IResolvable;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#input GoogleDialogflowCxTestCase#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#input GoogleDialogflowCxTestCase#input}
   */
   readonly input?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputInput;
 }
@@ -1836,7 +1836,7 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgent
   * The unique identifier of the page.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -1927,7 +1927,7 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgent
   /**
   * A collection of text responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
   */
   readonly text?: string[];
 }
@@ -2046,7 +2046,7 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgent
   * The unique identifier of the intent.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#name GoogleDialogflowCxTestCase#name}
   */
   readonly name?: string;
 }
@@ -2137,25 +2137,25 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgent
   /**
   * The session parameters available to the bot at this point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#session_parameters GoogleDialogflowCxTestCase#session_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#session_parameters GoogleDialogflowCxTestCase#session_parameters}
   */
   readonly sessionParameters?: string;
   /**
   * current_page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#current_page GoogleDialogflowCxTestCase#current_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#current_page GoogleDialogflowCxTestCase#current_page}
   */
   readonly currentPage?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage;
   /**
   * text_responses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#text_responses GoogleDialogflowCxTestCase#text_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#text_responses GoogleDialogflowCxTestCase#text_responses}
   */
   readonly textResponses?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses[] | cdktf.IResolvable;
   /**
   * triggered_intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#triggered_intent GoogleDialogflowCxTestCase#triggered_intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#triggered_intent GoogleDialogflowCxTestCase#triggered_intent}
   */
   readonly triggeredIntent?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent;
 }
@@ -2328,13 +2328,13 @@ export interface GoogleDialogflowCxTestCaseTestCaseConversationTurns {
   /**
   * user_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#user_input GoogleDialogflowCxTestCase#user_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#user_input GoogleDialogflowCxTestCase#user_input}
   */
   readonly userInput?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInput;
   /**
   * virtual_agent_output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#virtual_agent_output GoogleDialogflowCxTestCase#virtual_agent_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#virtual_agent_output GoogleDialogflowCxTestCase#virtual_agent_output}
   */
   readonly virtualAgentOutput?: GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput;
 }
@@ -2483,7 +2483,7 @@ export interface GoogleDialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#flow GoogleDialogflowCxTestCase#flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#flow GoogleDialogflowCxTestCase#flow}
   */
   readonly flow?: string;
   /**
@@ -2491,13 +2491,13 @@ export interface GoogleDialogflowCxTestCaseTestConfig {
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   * Only one of flow and page should be set to indicate the starting point of the test case. If neither is set, the test case will start with start page on the default start flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#page GoogleDialogflowCxTestCase#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#page GoogleDialogflowCxTestCase#page}
   */
   readonly page?: string;
   /**
   * Session parameters to be compared when calculating differences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#tracking_parameters GoogleDialogflowCxTestCase#tracking_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#tracking_parameters GoogleDialogflowCxTestCase#tracking_parameters}
   */
   readonly trackingParameters?: string[];
 }
@@ -2639,15 +2639,15 @@ export class GoogleDialogflowCxTestCaseTestConfigOutputReference extends cdktf.C
 }
 export interface GoogleDialogflowCxTestCaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#create GoogleDialogflowCxTestCase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#create GoogleDialogflowCxTestCase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#delete GoogleDialogflowCxTestCase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#delete GoogleDialogflowCxTestCase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#update GoogleDialogflowCxTestCase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#update GoogleDialogflowCxTestCase#update}
   */
   readonly update?: string;
 }
@@ -2799,7 +2799,7 @@ export class GoogleDialogflowCxTestCaseTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case}
 */
 export class GoogleDialogflowCxTestCase extends cdktf.TerraformResource {
 
@@ -2815,7 +2815,7 @@ export class GoogleDialogflowCxTestCase extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDialogflowCxTestCase resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDialogflowCxTestCase to import
-  * @param importFromId The id of the existing GoogleDialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDialogflowCxTestCase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDialogflowCxTestCase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2827,7 +2827,7 @@ export class GoogleDialogflowCxTestCase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2838,7 +2838,7 @@ export class GoogleDialogflowCxTestCase extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_test_case',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

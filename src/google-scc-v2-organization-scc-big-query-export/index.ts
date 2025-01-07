@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleSccV2OrganizationSccBigQueryExportConfig extends cdktf.Te
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#big_query_export_id GoogleSccV2OrganizationSccBigQueryExport#big_query_export_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#big_query_export_id GoogleSccV2OrganizationSccBigQueryExport#big_query_export_id}
   */
   readonly bigQueryExportId: string;
   /**
@@ -23,13 +23,13 @@ export interface GoogleSccV2OrganizationSccBigQueryExportConfig extends cdktf.Te
   * Its format is "projects/[projectId]/datasets/[bigquery_dataset_id]".
   * BigQuery Dataset unique ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#dataset GoogleSccV2OrganizationSccBigQueryExport#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#dataset GoogleSccV2OrganizationSccBigQueryExport#dataset}
   */
   readonly dataset?: string;
   /**
   * The description of the notification config (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#description GoogleSccV2OrganizationSccBigQueryExport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#description GoogleSccV2OrganizationSccBigQueryExport#description}
   */
   readonly description?: string;
   /**
@@ -59,11 +59,11 @@ export interface GoogleSccV2OrganizationSccBigQueryExportConfig extends cdktf.Te
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#filter GoogleSccV2OrganizationSccBigQueryExport#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#filter GoogleSccV2OrganizationSccBigQueryExport#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#id GoogleSccV2OrganizationSccBigQueryExport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#id GoogleSccV2OrganizationSccBigQueryExport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -72,7 +72,7 @@ export interface GoogleSccV2OrganizationSccBigQueryExportConfig extends cdktf.Te
   /**
   * location Id is provided by organization. If not provided, Use global as default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#location GoogleSccV2OrganizationSccBigQueryExport#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#location GoogleSccV2OrganizationSccBigQueryExport#location}
   */
   readonly location?: string;
   /**
@@ -80,34 +80,34 @@ export interface GoogleSccV2OrganizationSccBigQueryExportConfig extends cdktf.Te
   * 'organizations/{{organization}}/locations/{{location}}/bigQueryExports/{{big_query_export_id}}'.
   * This field is provided in responses, and is ignored when provided in create requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#name GoogleSccV2OrganizationSccBigQueryExport#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#name GoogleSccV2OrganizationSccBigQueryExport#name}
   */
   readonly name?: string;
   /**
   * The organization whose Cloud Security Command Center the Big Query Export
   * Config lives in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#organization GoogleSccV2OrganizationSccBigQueryExport#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#organization GoogleSccV2OrganizationSccBigQueryExport#organization}
   */
   readonly organization: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#timeouts GoogleSccV2OrganizationSccBigQueryExport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#timeouts GoogleSccV2OrganizationSccBigQueryExport#timeouts}
   */
   readonly timeouts?: GoogleSccV2OrganizationSccBigQueryExportTimeouts;
 }
 export interface GoogleSccV2OrganizationSccBigQueryExportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#create GoogleSccV2OrganizationSccBigQueryExport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#create GoogleSccV2OrganizationSccBigQueryExport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#delete GoogleSccV2OrganizationSccBigQueryExport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#delete GoogleSccV2OrganizationSccBigQueryExport#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#update GoogleSccV2OrganizationSccBigQueryExport#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#update GoogleSccV2OrganizationSccBigQueryExport#update}
   */
   readonly update?: string;
 }
@@ -259,7 +259,7 @@ export class GoogleSccV2OrganizationSccBigQueryExportTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export google_scc_v2_organization_scc_big_query_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export google_scc_v2_organization_scc_big_query_export}
 */
 export class GoogleSccV2OrganizationSccBigQueryExport extends cdktf.TerraformResource {
 
@@ -275,7 +275,7 @@ export class GoogleSccV2OrganizationSccBigQueryExport extends cdktf.TerraformRes
   * Generates CDKTF code for importing a GoogleSccV2OrganizationSccBigQueryExport resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccV2OrganizationSccBigQueryExport to import
-  * @param importFromId The id of the existing GoogleSccV2OrganizationSccBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccV2OrganizationSccBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccV2OrganizationSccBigQueryExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -287,7 +287,7 @@ export class GoogleSccV2OrganizationSccBigQueryExport extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_scc_big_query_export google_scc_v2_organization_scc_big_query_export} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_scc_v2_organization_scc_big_query_export google_scc_v2_organization_scc_big_query_export} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class GoogleSccV2OrganizationSccBigQueryExport extends cdktf.TerraformRes
       terraformResourceType: 'google_scc_v2_organization_scc_big_query_export',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

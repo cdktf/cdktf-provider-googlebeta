@@ -4,7 +4,7 @@
 
 ### GoogleContainerRegistry <a name="GoogleContainerRegistry" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry google_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry google_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer"></a>
 
@@ -38,7 +38,7 @@ googleContainerRegistry.GoogleContainerRegistry(
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#id GoogleContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the registry. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#id GoogleContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ The location of the registry.
 
 One of ASIA, EU, US or not specified. See the official documentation for more information on registry locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
 
 ---
 
@@ -135,7 +135,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
 
 ---
 
@@ -629,7 +629,7 @@ The construct id used in the generated config for the GoogleContainerRegistry to
 
 The id of the existing GoogleContainerRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ googleContainerRegistry.GoogleContainerRegistryConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#id GoogleContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.location">location</a></code> | <code>str</code> | The location of the registry. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
@@ -1017,7 +1017,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#id GoogleContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ The location of the registry.
 
 One of ASIA, EU, US or not specified. See the official documentation for more information on registry locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
 
 ---
 
@@ -1052,7 +1052,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
 
 ---
 

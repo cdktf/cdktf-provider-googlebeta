@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleComposerUserWorkloadsSecretConfig extends cdktf.Terraform
   /**
   * A map of the secret data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#data GoogleComposerUserWorkloadsSecret#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#data GoogleComposerUserWorkloadsSecret#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#environment GoogleComposerUserWorkloadsSecret#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#environment GoogleComposerUserWorkloadsSecret#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#id GoogleComposerUserWorkloadsSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#id GoogleComposerUserWorkloadsSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,39 +34,39 @@ export interface GoogleComposerUserWorkloadsSecretConfig extends cdktf.Terraform
   /**
   * Name of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#name GoogleComposerUserWorkloadsSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#name GoogleComposerUserWorkloadsSecret#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#project GoogleComposerUserWorkloadsSecret#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#project GoogleComposerUserWorkloadsSecret#project}
   */
   readonly project?: string;
   /**
   * The location or Compute Engine region for the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#region GoogleComposerUserWorkloadsSecret#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#region GoogleComposerUserWorkloadsSecret#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#timeouts GoogleComposerUserWorkloadsSecret#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#timeouts GoogleComposerUserWorkloadsSecret#timeouts}
   */
   readonly timeouts?: GoogleComposerUserWorkloadsSecretTimeouts;
 }
 export interface GoogleComposerUserWorkloadsSecretTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#create GoogleComposerUserWorkloadsSecret#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#create GoogleComposerUserWorkloadsSecret#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#delete GoogleComposerUserWorkloadsSecret#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#delete GoogleComposerUserWorkloadsSecret#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#update GoogleComposerUserWorkloadsSecret#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#update GoogleComposerUserWorkloadsSecret#update}
   */
   readonly update?: string;
 }
@@ -218,7 +218,7 @@ export class GoogleComposerUserWorkloadsSecretTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret google_composer_user_workloads_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret google_composer_user_workloads_secret}
 */
 export class GoogleComposerUserWorkloadsSecret extends cdktf.TerraformResource {
 
@@ -234,7 +234,7 @@ export class GoogleComposerUserWorkloadsSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComposerUserWorkloadsSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComposerUserWorkloadsSecret to import
-  * @param importFromId The id of the existing GoogleComposerUserWorkloadsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComposerUserWorkloadsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComposerUserWorkloadsSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -246,7 +246,7 @@ export class GoogleComposerUserWorkloadsSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_composer_user_workloads_secret google_composer_user_workloads_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_composer_user_workloads_secret google_composer_user_workloads_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +257,7 @@ export class GoogleComposerUserWorkloadsSecret extends cdktf.TerraformResource {
       terraformResourceType: 'google_composer_user_workloads_secret',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.14.1',
+        providerVersion: '6.15.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
