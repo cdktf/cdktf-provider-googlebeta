@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlist.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlist(scope Construct, id *string, config GoogleChronicleWatchlistConfig) GoogleChronicleWatchlist
 ```
@@ -459,7 +459,7 @@ func ResetWatchlistUserPreferences()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.GoogleChronicleWatchlist_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.GoogleChronicleWatchlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ googlechroniclewatchlist.GoogleChronicleWatchlist_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.GoogleChronicleWatchlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ googlechroniclewatchlist.GoogleChronicleWatchlist_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.GoogleChronicleWatchlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1034,7 +1034,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistConfig {
 	Connection: interface{},
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicle
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	EntityPopulationMechanism: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanism,
+	EntityPopulationMechanism: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanism,
 	Instance: *string,
 	Location: *string,
 	WatchlistId: *string,
@@ -1053,8 +1053,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicle
 	Id: *string,
 	MultiplyingFactor: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleWatchlist.GoogleChronicleWatchlistTimeouts,
-	WatchlistUserPreferences: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleWatchlist.GoogleChronicleWatchlistWatchlistUserPreferences,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleWatchlist.GoogleChronicleWatchlistTimeouts,
+	WatchlistUserPreferences: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleWatchlist.GoogleChronicleWatchlistWatchlistUserPreferences,
 }
 ```
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistEntityCount {
 
@@ -1331,10 +1331,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicle
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanism.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistEntityPopulationMechanism {
-	Manual: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanismManual,
+	Manual: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanismManual,
 }
 ```
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanismManual.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistEntityPopulationMechanismManual {
 
@@ -1378,7 +1378,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechronicle
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistTimeouts {
 	Create: *string,
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistWatchlistUserPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 &googlechroniclewatchlist.GoogleChronicleWatchlistWatchlistUserPreferences {
 	Pinned: interface{},
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistEntityCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleChronicleWatchlistEntityCountList
 ```
@@ -1623,7 +1623,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistEntityCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleChronicleWatchlistEntityCountOutputReference
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() GoogleChronicleWatchlistEntityCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanismManualOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistEntityPopulationMechanismManualOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleWatchlistEntityPopulationMechanismManualOutputReference
 ```
@@ -2161,7 +2161,7 @@ func InternalValue() GoogleChronicleWatchlistEntityPopulationMechanismManual
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistEntityPopulationMechanismOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistEntityPopulationMechanismOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleWatchlistEntityPopulationMechanismOutputReference
 ```
@@ -2452,7 +2452,7 @@ func InternalValue() GoogleChronicleWatchlistEntityPopulationMechanism
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleWatchlistTimeoutsOutputReference
 ```
@@ -2788,7 +2788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleChronicleWatchlist.GoogleChronicleWatchlistWatchlistUserPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlechroniclewatchlist"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechroniclewatchlist"
 
 googlechroniclewatchlist.NewGoogleChronicleWatchlistWatchlistUserPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleChronicleWatchlistWatchlistUserPreferencesOutputReference
 ```

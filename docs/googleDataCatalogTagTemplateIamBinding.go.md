@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.NewGoogleDataCatalogTagTemplateIamBinding(scope Construct, id *string, config GoogleDataCatalogTagTemplateIamBindingConfig) GoogleDataCatalogTagTemplateIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 &googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBindingCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 &googledatacatalogtagtemplateiambinding.GoogleDataCatalogTagTemplateIamBindingConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatal
 	Members: *[]*string,
 	Role: *string,
 	TagTemplate: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTagTemplateIamBinding.GoogleDataCatalogTagTemplateIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtagtemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatacatalogtagtemplateiambinding"
 
 googledatacatalogtagtemplateiambinding.NewGoogleDataCatalogTagTemplateIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataCatalogTagTemplateIamBindingConditionOutputReference
 ```
