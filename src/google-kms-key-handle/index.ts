@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleKmsKeyHandleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#id GoogleKmsKeyHandle#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#id GoogleKmsKeyHandle#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,40 +18,40 @@ export interface GoogleKmsKeyHandleConfig extends cdktf.TerraformMetaArguments {
   * The location for the KeyHandle.
   * A full list of valid locations can be found by running 'gcloud kms locations list'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#location GoogleKmsKeyHandle#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#location GoogleKmsKeyHandle#location}
   */
   readonly location: string;
   /**
   * The resource name for the KeyHandle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#name GoogleKmsKeyHandle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#name GoogleKmsKeyHandle#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#project GoogleKmsKeyHandle#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#project GoogleKmsKeyHandle#project}
   */
   readonly project?: string;
   /**
   * Selector of the resource type where we want to protect resources.
   * For example, 'storage.googleapis.com/Bucket'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#resource_type_selector GoogleKmsKeyHandle#resource_type_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#resource_type_selector GoogleKmsKeyHandle#resource_type_selector}
   */
   readonly resourceTypeSelector: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#timeouts GoogleKmsKeyHandle#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#timeouts GoogleKmsKeyHandle#timeouts}
   */
   readonly timeouts?: GoogleKmsKeyHandleTimeouts;
 }
 export interface GoogleKmsKeyHandleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#create GoogleKmsKeyHandle#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#create GoogleKmsKeyHandle#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#delete GoogleKmsKeyHandle#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#delete GoogleKmsKeyHandle#delete}
   */
   readonly delete?: string;
 }
@@ -179,7 +174,7 @@ export class GoogleKmsKeyHandleTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle google_kms_key_handle}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle google_kms_key_handle}
 */
 export class GoogleKmsKeyHandle extends cdktf.TerraformResource {
 
@@ -195,7 +190,7 @@ export class GoogleKmsKeyHandle extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleKmsKeyHandle resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleKmsKeyHandle to import
-  * @param importFromId The id of the existing GoogleKmsKeyHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleKmsKeyHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleKmsKeyHandle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +202,7 @@ export class GoogleKmsKeyHandle extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_kms_key_handle google_kms_key_handle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_kms_key_handle google_kms_key_handle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +213,7 @@ export class GoogleKmsKeyHandle extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_key_handle',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.15.0',
+        providerVersion: '6.16.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

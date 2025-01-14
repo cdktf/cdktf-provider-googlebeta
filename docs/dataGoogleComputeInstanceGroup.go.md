@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeInstanceGroup <a name="DataGoogleComputeInstanceGroup" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group google_compute_instance_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group google_compute_instance_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.NewDataGoogleComputeInstanceGroup(scope Construct, id *string, config DataGoogleComputeInstanceGroupConfig) DataGoogleComputeInstanceGroup
 ```
@@ -311,7 +311,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataGoogleComputeInstanceG
 
 The id of the existing DataGoogleComputeInstanceGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 &datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroupConfig {
 	Connection: interface{},
@@ -772,11 +772,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglec
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#id DataGoogleComputeInstanceGroup#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#name DataGoogleComputeInstanceGroup#name}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#project DataGoogleComputeInstanceGroup#project}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.selfLink">SelfLink</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#self_link DataGoogleComputeInstanceGroup#self_link}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#zone DataGoogleComputeInstanceGroup#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#id DataGoogleComputeInstanceGroup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#name DataGoogleComputeInstanceGroup#name}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#project DataGoogleComputeInstanceGroup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.selfLink">SelfLink</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#self_link DataGoogleComputeInstanceGroup#self_link}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#zone DataGoogleComputeInstanceGroup#zone}. |
 
 ---
 
@@ -858,7 +858,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#id DataGoogleComputeInstanceGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#id DataGoogleComputeInstanceGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +873,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#name DataGoogleComputeInstanceGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#name DataGoogleComputeInstanceGroup#name}.
 
 ---
 
@@ -885,7 +885,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#project DataGoogleComputeInstanceGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#project DataGoogleComputeInstanceGroup#project}.
 
 ---
 
@@ -897,7 +897,7 @@ SelfLink *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#self_link DataGoogleComputeInstanceGroup#self_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#self_link DataGoogleComputeInstanceGroup#self_link}.
 
 ---
 
@@ -909,7 +909,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/data-sources/google_compute_instance_group#zone DataGoogleComputeInstanceGroup#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_compute_instance_group#zone DataGoogleComputeInstanceGroup#zone}.
 
 ---
 
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 &datagooglecomputeinstancegroup.DataGoogleComputeInstanceGroupNamedPort {
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.NewDataGoogleComputeInstanceGroupNamedPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupNamedPortList
 ```
@@ -1082,7 +1082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeinstancegroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroup"
 
 datagooglecomputeinstancegroup.NewDataGoogleComputeInstanceGroupNamedPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupNamedPortOutputReference
 ```

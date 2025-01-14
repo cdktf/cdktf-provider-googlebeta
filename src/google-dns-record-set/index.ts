@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDnsRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#id GoogleDnsRecordSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#id GoogleDnsRecordSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +17,43 @@ export interface GoogleDnsRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the zone in which this record set will reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#managed_zone GoogleDnsRecordSet#managed_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#managed_zone GoogleDnsRecordSet#managed_zone}
   */
   readonly managedZone: string;
   /**
   * The DNS name this record set will apply to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#name GoogleDnsRecordSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#name GoogleDnsRecordSet#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
   */
   readonly project?: string;
   /**
   * The string data for the records in this record set whose meaning depends on the DNS type. For TXT record, if the string data contains spaces, add surrounding \" if you don't want your string to get split on spaces. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add \"\" inside the Terraform configuration string (e.g. "first255characters\"\"morecharacters").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * The time-to-live of this record set (seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ttl GoogleDnsRecordSet#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ttl GoogleDnsRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * The DNS record set type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#type GoogleDnsRecordSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#type GoogleDnsRecordSet#type}
   */
   readonly type: string;
   /**
   * routing_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#routing_policy GoogleDnsRecordSet#routing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#routing_policy GoogleDnsRecordSet#routing_policy}
   */
   readonly routingPolicy?: GoogleDnsRecordSetRoutingPolicy;
 }
@@ -66,43 +61,43 @@ export interface GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalL
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -377,11 +372,17 @@ export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadB
 }
 export interface GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
   /**
+  * The Internet IP addresses to be health checked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#external_endpoints GoogleDnsRecordSet#external_endpoints}
+  */
+  readonly externalEndpoints?: string[];
+  /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
 }
 
 export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
@@ -390,6 +391,7 @@ export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
     internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
@@ -401,6 +403,12 @@ export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    external_endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     internal_load_balancers: {
       value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
@@ -427,6 +435,10 @@ export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReferen
   public get internalValue(): GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._externalEndpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEndpoints = this._externalEndpoints;
+    }
     if (this._internalLoadBalancers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
@@ -437,21 +449,42 @@ export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReferen
   public set internalValue(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._externalEndpoints = undefined;
       this._internalLoadBalancers.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._externalEndpoints = value.externalEndpoints;
       this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
     }
   }
 
-  // internal_load_balancers - computed: false, optional: false, required: true
+  // external_endpoints - computed: false, optional: true, required: false
+  private _externalEndpoints?: string[]; 
+  public get externalEndpoints() {
+    return this.getListAttribute('external_endpoints');
+  }
+  public set externalEndpoints(value: string[]) {
+    this._externalEndpoints = value;
+  }
+  public resetExternalEndpoints() {
+    this._externalEndpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEndpointsInput() {
+    return this._externalEndpoints;
+  }
+
+  // internal_load_balancers - computed: false, optional: true, required: false
   private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
   public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
+  }
+  public resetInternalLoadBalancers() {
+    this._internalLoadBalancers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get internalLoadBalancersInput() {
@@ -462,17 +495,17 @@ export interface GoogleDnsRecordSetRoutingPolicyGeo {
   /**
   * The location name defined in Google Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#location GoogleDnsRecordSet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#location GoogleDnsRecordSet#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets;
 }
@@ -645,43 +678,43 @@ export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthChec
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -956,11 +989,17 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedT
 }
 export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets {
   /**
+  * The Internet IP addresses to be health checked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#external_endpoints GoogleDnsRecordSet#external_endpoints}
+  */
+  readonly externalEndpoints?: string[];
+  /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
 }
 
 export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
@@ -969,6 +1008,7 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheck
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
     internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
@@ -980,6 +1020,12 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheck
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    external_endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     internal_load_balancers: {
       value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
@@ -1006,6 +1052,10 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedT
   public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._externalEndpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEndpoints = this._externalEndpoints;
+    }
     if (this._internalLoadBalancers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
@@ -1016,21 +1066,42 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedT
   public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._externalEndpoints = undefined;
       this._internalLoadBalancers.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._externalEndpoints = value.externalEndpoints;
       this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
     }
   }
 
-  // internal_load_balancers - computed: false, optional: false, required: true
+  // external_endpoints - computed: false, optional: true, required: false
+  private _externalEndpoints?: string[]; 
+  public get externalEndpoints() {
+    return this.getListAttribute('external_endpoints');
+  }
+  public set externalEndpoints(value: string[]) {
+    this._externalEndpoints = value;
+  }
+  public resetExternalEndpoints() {
+    this._externalEndpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEndpointsInput() {
+    return this._externalEndpoints;
+  }
+
+  // internal_load_balancers - computed: false, optional: true, required: false
   private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
   public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
+  }
+  public resetInternalLoadBalancers() {
+    this._internalLoadBalancers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get internalLoadBalancersInput() {
@@ -1041,17 +1112,17 @@ export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo {
   /**
   * The location name defined in Google Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#location GoogleDnsRecordSet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#location GoogleDnsRecordSet#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets;
 }
@@ -1224,43 +1295,43 @@ export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoad
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -1535,11 +1606,17 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBala
 }
 export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary {
   /**
+  * The Internet IP addresses to be health checked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#external_endpoints GoogleDnsRecordSet#external_endpoints}
+  */
+  readonly externalEndpoints?: string[];
+  /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable;
 }
 
 export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
@@ -1548,6 +1625,7 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
     internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
@@ -1559,6 +1637,12 @@ export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    external_endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     internal_load_balancers: {
       value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
@@ -1585,6 +1669,10 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference 
   public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._externalEndpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEndpoints = this._externalEndpoints;
+    }
     if (this._internalLoadBalancers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
@@ -1595,21 +1683,42 @@ export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference 
   public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._externalEndpoints = undefined;
       this._internalLoadBalancers.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._externalEndpoints = value.externalEndpoints;
       this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
     }
   }
 
-  // internal_load_balancers - computed: false, optional: false, required: true
+  // external_endpoints - computed: false, optional: true, required: false
+  private _externalEndpoints?: string[]; 
+  public get externalEndpoints() {
+    return this.getListAttribute('external_endpoints');
+  }
+  public set externalEndpoints(value: string[]) {
+    this._externalEndpoints = value;
+  }
+  public resetExternalEndpoints() {
+    this._externalEndpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEndpointsInput() {
+    return this._externalEndpoints;
+  }
+
+  // internal_load_balancers - computed: false, optional: true, required: false
   private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList(this, "internal_load_balancers", false);
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
   public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
+  }
+  public resetInternalLoadBalancers() {
+    this._internalLoadBalancers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get internalLoadBalancersInput() {
@@ -1620,25 +1729,25 @@ export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackup {
   /**
   * Specifies whether to enable fencing for backup geo queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#enable_geo_fencing_for_backups GoogleDnsRecordSet#enable_geo_fencing_for_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#enable_geo_fencing_for_backups GoogleDnsRecordSet#enable_geo_fencing_for_backups}
   */
   readonly enableGeoFencingForBackups?: boolean | cdktf.IResolvable;
   /**
   * Specifies the percentage of traffic to send to the backup targets even when the primary targets are healthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#trickle_ratio GoogleDnsRecordSet#trickle_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#trickle_ratio GoogleDnsRecordSet#trickle_ratio}
   */
   readonly trickleRatio?: number;
   /**
   * backup_geo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#backup_geo GoogleDnsRecordSet#backup_geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#backup_geo GoogleDnsRecordSet#backup_geo}
   */
   readonly backupGeo: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable;
   /**
   * primary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#primary GoogleDnsRecordSet#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#primary GoogleDnsRecordSet#primary}
   */
   readonly primary: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary;
 }
@@ -1805,43 +1914,43 @@ export interface GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalL
   /**
   * The frontend IP address of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb", "regionalL7ilb", "globalL7ilb"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
   * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
   */
   readonly networkUrl: string;
   /**
   * The configured port of the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#port GoogleDnsRecordSet#port}
   */
   readonly port: string;
   /**
   * The ID of the project in which the load balancer belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#project GoogleDnsRecordSet#project}
   */
   readonly project: string;
   /**
   * The region of the load balancer. Only needed for regional load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#region GoogleDnsRecordSet#region}
   */
   readonly region?: string;
 }
@@ -2116,11 +2225,17 @@ export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadB
 }
 export interface GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
   /**
+  * The Internet IP addresses to be health checked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#external_endpoints GoogleDnsRecordSet#external_endpoints}
+  */
+  readonly externalEndpoints?: string[];
+  /**
   * internal_load_balancers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
 }
 
 export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
@@ -2129,6 +2244,7 @@ export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
     internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
@@ -2140,6 +2256,12 @@ export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    external_endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     internal_load_balancers: {
       value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
@@ -2166,6 +2288,10 @@ export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReferen
   public get internalValue(): GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._externalEndpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalEndpoints = this._externalEndpoints;
+    }
     if (this._internalLoadBalancers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
@@ -2176,21 +2302,42 @@ export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReferen
   public set internalValue(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._externalEndpoints = undefined;
       this._internalLoadBalancers.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._externalEndpoints = value.externalEndpoints;
       this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
     }
   }
 
-  // internal_load_balancers - computed: false, optional: false, required: true
+  // external_endpoints - computed: false, optional: true, required: false
+  private _externalEndpoints?: string[]; 
+  public get externalEndpoints() {
+    return this.getListAttribute('external_endpoints');
+  }
+  public set externalEndpoints(value: string[]) {
+    this._externalEndpoints = value;
+  }
+  public resetExternalEndpoints() {
+    this._externalEndpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalEndpointsInput() {
+    return this._externalEndpoints;
+  }
+
+  // internal_load_balancers - computed: false, optional: true, required: false
   private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
   public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
+  }
+  public resetInternalLoadBalancers() {
+    this._internalLoadBalancers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get internalLoadBalancersInput() {
@@ -2199,19 +2346,19 @@ export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReferen
 }
 export interface GoogleDnsRecordSetRoutingPolicyWrr {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * The ratio of traffic routed to the target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#weight GoogleDnsRecordSet#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#weight GoogleDnsRecordSet#weight}
   */
   readonly weight: number;
   /**
   * health_checked_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
   */
   readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets;
 }
@@ -2384,25 +2531,31 @@ export interface GoogleDnsRecordSetRoutingPolicy {
   /**
   * Specifies whether to enable fencing for geo queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#enable_geo_fencing GoogleDnsRecordSet#enable_geo_fencing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#enable_geo_fencing GoogleDnsRecordSet#enable_geo_fencing}
   */
   readonly enableGeoFencing?: boolean | cdktf.IResolvable;
   /**
+  * Specifies the health check.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#health_check GoogleDnsRecordSet#health_check}
+  */
+  readonly healthCheck?: string;
+  /**
   * geo block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#geo GoogleDnsRecordSet#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#geo GoogleDnsRecordSet#geo}
   */
   readonly geo?: GoogleDnsRecordSetRoutingPolicyGeo[] | cdktf.IResolvable;
   /**
   * primary_backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#primary_backup GoogleDnsRecordSet#primary_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#primary_backup GoogleDnsRecordSet#primary_backup}
   */
   readonly primaryBackup?: GoogleDnsRecordSetRoutingPolicyPrimaryBackup;
   /**
   * wrr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#wrr GoogleDnsRecordSet#wrr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#wrr GoogleDnsRecordSet#wrr}
   */
   readonly wrr?: GoogleDnsRecordSetRoutingPolicyWrr[] | cdktf.IResolvable;
 }
@@ -2414,6 +2567,7 @@ export function googleDnsRecordSetRoutingPolicyToTerraform(struct?: GoogleDnsRec
   }
   return {
     enable_geo_fencing: cdktf.booleanToTerraform(struct!.enableGeoFencing),
+    health_check: cdktf.stringToTerraform(struct!.healthCheck),
     geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoToTerraform, true)(struct!.geo),
     primary_backup: googleDnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct!.primaryBackup),
     wrr: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
@@ -2432,6 +2586,12 @@ export function googleDnsRecordSetRoutingPolicyToHclTerraform(struct?: GoogleDns
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     geo: {
       value: cdktf.listMapperHcl(googleDnsRecordSetRoutingPolicyGeoToHclTerraform, true)(struct!.geo),
@@ -2475,6 +2635,10 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.enableGeoFencing = this._enableGeoFencing;
     }
+    if (this._healthCheck !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.healthCheck = this._healthCheck;
+    }
     if (this._geo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.geo = this._geo?.internalValue;
@@ -2494,6 +2658,7 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enableGeoFencing = undefined;
+      this._healthCheck = undefined;
       this._geo.internalValue = undefined;
       this._primaryBackup.internalValue = undefined;
       this._wrr.internalValue = undefined;
@@ -2501,6 +2666,7 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enableGeoFencing = value.enableGeoFencing;
+      this._healthCheck = value.healthCheck;
       this._geo.internalValue = value.geo;
       this._primaryBackup.internalValue = value.primaryBackup;
       this._wrr.internalValue = value.wrr;
@@ -2521,6 +2687,22 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get enableGeoFencingInput() {
     return this._enableGeoFencing;
+  }
+
+  // health_check - computed: false, optional: true, required: false
+  private _healthCheck?: string; 
+  public get healthCheck() {
+    return this.getStringAttribute('health_check');
+  }
+  public set healthCheck(value: string) {
+    this._healthCheck = value;
+  }
+  public resetHealthCheck() {
+    this._healthCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckInput() {
+    return this._healthCheck;
   }
 
   // geo - computed: false, optional: true, required: false
@@ -2573,7 +2755,7 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set google_dns_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set google_dns_record_set}
 */
 export class GoogleDnsRecordSet extends cdktf.TerraformResource {
 
@@ -2589,7 +2771,7 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDnsRecordSet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDnsRecordSet to import
-  * @param importFromId The id of the existing GoogleDnsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDnsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDnsRecordSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2601,7 +2783,7 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dns_record_set google_dns_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_record_set google_dns_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2612,7 +2794,7 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_record_set',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.15.0',
+        providerVersion: '6.16.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

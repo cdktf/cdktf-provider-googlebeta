@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +10,20 @@ export interface GoogleNetworkServicesTlsRouteConfig extends cdktf.TerraformMeta
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#description GoogleNetworkServicesTlsRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#description GoogleNetworkServicesTlsRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
   * Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#gateways GoogleNetworkServicesTlsRoute#gateways}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#gateways GoogleNetworkServicesTlsRoute#gateways}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gateways?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#id GoogleNetworkServicesTlsRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#id GoogleNetworkServicesTlsRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,7 +34,7 @@ export interface GoogleNetworkServicesTlsRouteConfig extends cdktf.TerraformMeta
   * Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
   * The attached Mesh should be of a type SIDECAR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#meshes GoogleNetworkServicesTlsRoute#meshes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#meshes GoogleNetworkServicesTlsRoute#meshes}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -47,23 +42,23 @@ export interface GoogleNetworkServicesTlsRouteConfig extends cdktf.TerraformMeta
   /**
   * Name of the TlsRoute resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#name GoogleNetworkServicesTlsRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#name GoogleNetworkServicesTlsRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#project GoogleNetworkServicesTlsRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#project GoogleNetworkServicesTlsRoute#project}
   */
   readonly project?: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#rules GoogleNetworkServicesTlsRoute#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#rules GoogleNetworkServicesTlsRoute#rules}
   */
   readonly rules: GoogleNetworkServicesTlsRouteRules[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#timeouts GoogleNetworkServicesTlsRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#timeouts GoogleNetworkServicesTlsRoute#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesTlsRouteTimeouts;
 }
@@ -71,13 +66,13 @@ export interface GoogleNetworkServicesTlsRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#service_name GoogleNetworkServicesTlsRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#service_name GoogleNetworkServicesTlsRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#weight GoogleNetworkServicesTlsRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#weight GoogleNetworkServicesTlsRoute#weight}
   */
   readonly weight?: number;
 }
@@ -224,7 +219,7 @@ export interface GoogleNetworkServicesTlsRouteRulesAction {
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#destinations GoogleNetworkServicesTlsRoute#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#destinations GoogleNetworkServicesTlsRoute#destinations}
   */
   readonly destinations?: GoogleNetworkServicesTlsRouteRulesActionDestinations[] | cdktf.IResolvable;
 }
@@ -310,14 +305,14 @@ export interface GoogleNetworkServicesTlsRouteRulesMatches {
   /**
   * ALPN (Application-Layer Protocol Negotiation) to match against. Examples: "http/1.1", "h2". At least one of sniHost and alpn is required. Up to 5 alpns across all matches can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#alpn GoogleNetworkServicesTlsRoute#alpn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#alpn GoogleNetworkServicesTlsRoute#alpn}
   */
   readonly alpn?: string[];
   /**
   * SNI (server name indicator) to match against. SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
   * Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#sni_host GoogleNetworkServicesTlsRoute#sni_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#sni_host GoogleNetworkServicesTlsRoute#sni_host}
   */
   readonly sniHost?: string[];
 }
@@ -464,13 +459,13 @@ export interface GoogleNetworkServicesTlsRouteRules {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#action GoogleNetworkServicesTlsRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#action GoogleNetworkServicesTlsRoute#action}
   */
   readonly action: GoogleNetworkServicesTlsRouteRulesAction;
   /**
   * matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#matches GoogleNetworkServicesTlsRoute#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#matches GoogleNetworkServicesTlsRoute#matches}
   */
   readonly matches: GoogleNetworkServicesTlsRouteRulesMatches[] | cdktf.IResolvable;
 }
@@ -609,15 +604,15 @@ export class GoogleNetworkServicesTlsRouteRulesList extends cdktf.ComplexList {
 }
 export interface GoogleNetworkServicesTlsRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#create GoogleNetworkServicesTlsRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#create GoogleNetworkServicesTlsRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#delete GoogleNetworkServicesTlsRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#delete GoogleNetworkServicesTlsRoute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#update GoogleNetworkServicesTlsRoute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#update GoogleNetworkServicesTlsRoute#update}
   */
   readonly update?: string;
 }
@@ -769,7 +764,7 @@ export class GoogleNetworkServicesTlsRouteTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route google_network_services_tls_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route google_network_services_tls_route}
 */
 export class GoogleNetworkServicesTlsRoute extends cdktf.TerraformResource {
 
@@ -785,7 +780,7 @@ export class GoogleNetworkServicesTlsRoute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleNetworkServicesTlsRoute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkServicesTlsRoute to import
-  * @param importFromId The id of the existing GoogleNetworkServicesTlsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkServicesTlsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkServicesTlsRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -797,7 +792,7 @@ export class GoogleNetworkServicesTlsRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_network_services_tls_route google_network_services_tls_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -808,7 +803,7 @@ export class GoogleNetworkServicesTlsRoute extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_services_tls_route',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.15.0',
+        providerVersion: '6.16.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

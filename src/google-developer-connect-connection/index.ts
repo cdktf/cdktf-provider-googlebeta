@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,36 +10,38 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   /**
   * Optional. Allows clients to store small amounts of arbitrary data.
   * 
-  * 
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#annotations GoogleDeveloperConnectConnection#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#annotations GoogleDeveloperConnectConnection#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
-  * Required. Id of the requesting object. If auto-generating Id server-side,
-  * remove this field and connection_id from the method_signature of Create RPC.
+  * Required. Id of the requesting object
+  * If auto-generating Id server-side, remove this field and
+  * connection_id from the method_signature of Create RPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#connection_id GoogleDeveloperConnectConnection#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#connection_id GoogleDeveloperConnectConnection#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Optional. If disabled is set to true, functionality is disabled for this connection. Repository based API methods and webhooks processing for repositories in this connection will be disabled.
+  * Optional. If disabled is set to true, functionality is disabled for this connection.
+  * Repository based API methods and webhooks processing for repositories in
+  * this connection will be disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#disabled GoogleDeveloperConnectConnection#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#disabled GoogleDeveloperConnectConnection#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Optional. This checksum is computed by the server based on the value
-  * of other fields, and may be sent on update and delete requests to ensure the
+  * Optional. This checksum is computed by the server based on the value of other
+  * fields, and may be sent on update and delete requests to ensure the
   * client has an up-to-date value before proceeding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#etag GoogleDeveloperConnectConnection#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#etag GoogleDeveloperConnectConnection#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#id GoogleDeveloperConnectConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#id GoogleDeveloperConnectConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,35 +50,56 @@ export interface GoogleDeveloperConnectConnectionConfig extends cdktf.TerraformM
   /**
   * Optional. Labels as key value pairs
   * 
-  * 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#labels GoogleDeveloperConnectConnection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#labels GoogleDeveloperConnectConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Resource ID segment making up resource 'name'. It identifies the resource
-  * within its parent collection as described in https://google.aip.dev/122. See documentation
-  * for resource type 'developerconnect.googleapis.com/GitRepositoryLink'.
+  * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#location GoogleDeveloperConnectConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#location GoogleDeveloperConnectConnection#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#project GoogleDeveloperConnectConnection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#project GoogleDeveloperConnectConnection#project}
   */
   readonly project?: string;
   /**
+  * crypto_key_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#crypto_key_config GoogleDeveloperConnectConnection#crypto_key_config}
+  */
+  readonly cryptoKeyConfig?: GoogleDeveloperConnectConnectionCryptoKeyConfig;
+  /**
   * github_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#github_config GoogleDeveloperConnectConnection#github_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#github_config GoogleDeveloperConnectConnection#github_config}
   */
   readonly githubConfig?: GoogleDeveloperConnectConnectionGithubConfig;
   /**
+  * github_enterprise_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#github_enterprise_config GoogleDeveloperConnectConnection#github_enterprise_config}
+  */
+  readonly githubEnterpriseConfig?: GoogleDeveloperConnectConnectionGithubEnterpriseConfig;
+  /**
+  * gitlab_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#gitlab_config GoogleDeveloperConnectConnection#gitlab_config}
+  */
+  readonly gitlabConfig?: GoogleDeveloperConnectConnectionGitlabConfig;
+  /**
+  * gitlab_enterprise_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#gitlab_enterprise_config GoogleDeveloperConnectConnection#gitlab_enterprise_config}
+  */
+  readonly gitlabEnterpriseConfig?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#timeouts GoogleDeveloperConnectConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#timeouts GoogleDeveloperConnectConnection#timeouts}
   */
   readonly timeouts?: GoogleDeveloperConnectConnectionTimeouts;
 }
@@ -170,13 +188,99 @@ export class GoogleDeveloperConnectConnectionInstallationStateList extends cdktf
     return new GoogleDeveloperConnectConnectionInstallationStateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleDeveloperConnectConnectionCryptoKeyConfig {
+  /**
+  * Required. The name of the key which is used to encrypt/decrypt customer data. For key
+  * in Cloud KMS, the key should be in the format of
+  * 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#key_reference GoogleDeveloperConnectConnection#key_reference}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly keyReference: string;
+}
+
+export function googleDeveloperConnectConnectionCryptoKeyConfigToTerraform(struct?: GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference | GoogleDeveloperConnectConnectionCryptoKeyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key_reference: cdktf.stringToTerraform(struct!.keyReference),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionCryptoKeyConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference | GoogleDeveloperConnectConnectionCryptoKeyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_reference: {
+      value: cdktf.stringToHclTerraform(struct!.keyReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionCryptoKeyConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._keyReference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyReference = this._keyReference;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionCryptoKeyConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._keyReference = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._keyReference = value.keyReference;
+    }
+  }
+
+  // key_reference - computed: false, optional: false, required: true
+  private _keyReference?: string; 
+  public get keyReference() {
+    return this.getStringAttribute('key_reference');
+  }
+  public set keyReference(value: string) {
+    this._keyReference = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyReferenceInput() {
+    return this._keyReference;
+  }
+}
 export interface GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential {
   /**
-  * Required. A SecretManager resource containing the OAuth token
-  * that authorizes the connection.
-  * Format: 'projects/* /secrets/* /versions/*'.
+  * Required. A SecretManager resource containing the OAuth token that authorizes
+  * the connection. Format: 'projects/* /secrets/* /versions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#oauth_token_secret_version GoogleDeveloperConnectConnection#oauth_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#oauth_token_secret_version GoogleDeveloperConnectConnection#oauth_token_secret_version}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -266,24 +370,24 @@ export interface GoogleDeveloperConnectConnectionGithubConfig {
   /**
   * Optional. GitHub App installation id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#app_installation_id GoogleDeveloperConnectConnection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#app_installation_id GoogleDeveloperConnectConnection#app_installation_id}
   */
   readonly appInstallationId?: string;
   /**
-  * Required. Immutable. The GitHub Application that was installed to
-  * the GitHub user or organization.
+  * Required. Immutable. The GitHub Application that was installed to the GitHub user or
+  * organization.
   * Possible values:
-  *   GIT_HUB_APP_UNSPECIFIED
-  *   DEVELOPER_CONNECT
-  *   FIREBASE"
+  * GIT_HUB_APP_UNSPECIFIED
+  * DEVELOPER_CONNECT
+  * FIREBASE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#github_app GoogleDeveloperConnectConnection#github_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#github_app GoogleDeveloperConnectConnection#github_app}
   */
   readonly githubApp: string;
   /**
   * authorizer_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
   */
   readonly authorizerCredential?: GoogleDeveloperConnectConnectionGithubConfigAuthorizerCredential;
 }
@@ -425,17 +529,1279 @@ export class GoogleDeveloperConnectConnectionGithubConfigOutputReference extends
     return this._authorizerCredential.internalValue;
   }
 }
+export interface GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig {
+  /**
+  * Required. The Service Directory service name.
+  * Format:
+  * projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#service GoogleDeveloperConnectConnection#service}
+  */
+  readonly service: string;
+}
+
+export function googleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigToTerraform(struct?: GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference | GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._service = value.service;
+    }
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+export interface GoogleDeveloperConnectConnectionGithubEnterpriseConfig {
+  /**
+  * Optional. ID of the GitHub App created from the manifest.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#app_id GoogleDeveloperConnectConnection#app_id}
+  */
+  readonly appId?: string;
+  /**
+  * Optional. ID of the installation of the GitHub App.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#app_installation_id GoogleDeveloperConnectConnection#app_installation_id}
+  */
+  readonly appInstallationId?: string;
+  /**
+  * Required. The URI of the GitHub Enterprise host this connection is for.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#host_uri GoogleDeveloperConnectConnection#host_uri}
+  */
+  readonly hostUri: string;
+  /**
+  * Optional. SecretManager resource containing the private key of the GitHub App,
+  * formatted as 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#private_key_secret_version GoogleDeveloperConnectConnection#private_key_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly privateKeySecretVersion?: string;
+  /**
+  * Optional. SSL certificate to use for requests to GitHub Enterprise.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#ssl_ca_certificate GoogleDeveloperConnectConnection#ssl_ca_certificate}
+  */
+  readonly sslCaCertificate?: string;
+  /**
+  * Optional. SecretManager resource containing the webhook secret of the GitHub App,
+  * formatted as 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#webhook_secret_secret_version GoogleDeveloperConnectConnection#webhook_secret_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly webhookSecretSecretVersion?: string;
+  /**
+  * service_directory_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#service_directory_config GoogleDeveloperConnectConnection#service_directory_config}
+  */
+  readonly serviceDirectoryConfig?: GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig;
+}
+
+export function googleDeveloperConnectConnectionGithubEnterpriseConfigToTerraform(struct?: GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference | GoogleDeveloperConnectConnectionGithubEnterpriseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    app_id: cdktf.stringToTerraform(struct!.appId),
+    app_installation_id: cdktf.stringToTerraform(struct!.appInstallationId),
+    host_uri: cdktf.stringToTerraform(struct!.hostUri),
+    private_key_secret_version: cdktf.stringToTerraform(struct!.privateKeySecretVersion),
+    ssl_ca_certificate: cdktf.stringToTerraform(struct!.sslCaCertificate),
+    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    service_directory_config: googleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGithubEnterpriseConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference | GoogleDeveloperConnectConnectionGithubEnterpriseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_id: {
+      value: cdktf.stringToHclTerraform(struct!.appId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    app_installation_id: {
+      value: cdktf.stringToHclTerraform(struct!.appInstallationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host_uri: {
+      value: cdktf.stringToHclTerraform(struct!.hostUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.privateKeySecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl_ca_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.sslCaCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webhook_secret_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_directory_config: {
+      value: googleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct!.serviceDirectoryConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGithubEnterpriseConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appId = this._appId;
+    }
+    if (this._appInstallationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appInstallationId = this._appInstallationId;
+    }
+    if (this._hostUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostUri = this._hostUri;
+    }
+    if (this._privateKeySecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKeySecretVersion = this._privateKeySecretVersion;
+    }
+    if (this._sslCaCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCaCertificate = this._sslCaCertificate;
+    }
+    if (this._webhookSecretSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookSecretSecretVersion = this._webhookSecretSecretVersion;
+    }
+    if (this._serviceDirectoryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceDirectoryConfig = this._serviceDirectoryConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGithubEnterpriseConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._appId = undefined;
+      this._appInstallationId = undefined;
+      this._hostUri = undefined;
+      this._privateKeySecretVersion = undefined;
+      this._sslCaCertificate = undefined;
+      this._webhookSecretSecretVersion = undefined;
+      this._serviceDirectoryConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._appId = value.appId;
+      this._appInstallationId = value.appInstallationId;
+      this._hostUri = value.hostUri;
+      this._privateKeySecretVersion = value.privateKeySecretVersion;
+      this._sslCaCertificate = value.sslCaCertificate;
+      this._webhookSecretSecretVersion = value.webhookSecretSecretVersion;
+      this._serviceDirectoryConfig.internalValue = value.serviceDirectoryConfig;
+    }
+  }
+
+  // app_id - computed: false, optional: true, required: false
+  private _appId?: string; 
+  public get appId() {
+    return this.getStringAttribute('app_id');
+  }
+  public set appId(value: string) {
+    this._appId = value;
+  }
+  public resetAppId() {
+    this._appId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appIdInput() {
+    return this._appId;
+  }
+
+  // app_installation_id - computed: false, optional: true, required: false
+  private _appInstallationId?: string; 
+  public get appInstallationId() {
+    return this.getStringAttribute('app_installation_id');
+  }
+  public set appInstallationId(value: string) {
+    this._appInstallationId = value;
+  }
+  public resetAppInstallationId() {
+    this._appInstallationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appInstallationIdInput() {
+    return this._appInstallationId;
+  }
+
+  // app_slug - computed: true, optional: false, required: false
+  public get appSlug() {
+    return this.getStringAttribute('app_slug');
+  }
+
+  // host_uri - computed: false, optional: false, required: true
+  private _hostUri?: string; 
+  public get hostUri() {
+    return this.getStringAttribute('host_uri');
+  }
+  public set hostUri(value: string) {
+    this._hostUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostUriInput() {
+    return this._hostUri;
+  }
+
+  // installation_uri - computed: true, optional: false, required: false
+  public get installationUri() {
+    return this.getStringAttribute('installation_uri');
+  }
+
+  // private_key_secret_version - computed: false, optional: true, required: false
+  private _privateKeySecretVersion?: string; 
+  public get privateKeySecretVersion() {
+    return this.getStringAttribute('private_key_secret_version');
+  }
+  public set privateKeySecretVersion(value: string) {
+    this._privateKeySecretVersion = value;
+  }
+  public resetPrivateKeySecretVersion() {
+    this._privateKeySecretVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeySecretVersionInput() {
+    return this._privateKeySecretVersion;
+  }
+
+  // server_version - computed: true, optional: false, required: false
+  public get serverVersion() {
+    return this.getStringAttribute('server_version');
+  }
+
+  // ssl_ca_certificate - computed: false, optional: true, required: false
+  private _sslCaCertificate?: string; 
+  public get sslCaCertificate() {
+    return this.getStringAttribute('ssl_ca_certificate');
+  }
+  public set sslCaCertificate(value: string) {
+    this._sslCaCertificate = value;
+  }
+  public resetSslCaCertificate() {
+    this._sslCaCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCaCertificateInput() {
+    return this._sslCaCertificate;
+  }
+
+  // webhook_secret_secret_version - computed: false, optional: true, required: false
+  private _webhookSecretSecretVersion?: string; 
+  public get webhookSecretSecretVersion() {
+    return this.getStringAttribute('webhook_secret_secret_version');
+  }
+  public set webhookSecretSecretVersion(value: string) {
+    this._webhookSecretSecretVersion = value;
+  }
+  public resetWebhookSecretSecretVersion() {
+    this._webhookSecretSecretVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookSecretSecretVersionInput() {
+    return this._webhookSecretSecretVersion;
+  }
+
+  // service_directory_config - computed: false, optional: true, required: false
+  private _serviceDirectoryConfig = new GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference(this, "service_directory_config");
+  public get serviceDirectoryConfig() {
+    return this._serviceDirectoryConfig;
+  }
+  public putServiceDirectoryConfig(value: GoogleDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig) {
+    this._serviceDirectoryConfig.internalValue = value;
+  }
+  public resetServiceDirectoryConfig() {
+    this._serviceDirectoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceDirectoryConfigInput() {
+    return this._serviceDirectoryConfig.internalValue;
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes
+  * the Developer Connect connection. Format:
+  * 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#user_token_secret_version GoogleDeveloperConnectConnection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    user_token_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes
+  * the Developer Connect connection. Format:
+  * 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#user_token_secret_version GoogleDeveloperConnectConnection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    user_token_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabConfig {
+  /**
+  * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab project,
+  * formatted as 'projects/* /secrets/* /versions/*'. This is used to validate
+  * webhooks.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#webhook_secret_secret_version GoogleDeveloperConnectConnection#webhook_secret_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly webhookSecretSecretVersion: string;
+  /**
+  * authorizer_credential block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
+  */
+  readonly authorizerCredential: GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential;
+  /**
+  * read_authorizer_credential block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#read_authorizer_credential GoogleDeveloperConnectConnection#read_authorizer_credential}
+  */
+  readonly readAuthorizerCredential: GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential;
+}
+
+export function googleDeveloperConnectConnectionGitlabConfigToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigOutputReference | GoogleDeveloperConnectConnectionGitlabConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    authorizer_credential: googleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
+    read_authorizer_credential: googleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabConfigOutputReference | GoogleDeveloperConnectConnectionGitlabConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    webhook_secret_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorizer_credential: {
+      value: googleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialToHclTerraform(struct!.authorizerCredential),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialList",
+    },
+    read_authorizer_credential: {
+      value: googleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialToHclTerraform(struct!.readAuthorizerCredential),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._webhookSecretSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookSecretSecretVersion = this._webhookSecretSecretVersion;
+    }
+    if (this._authorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizerCredential = this._authorizerCredential?.internalValue;
+    }
+    if (this._readAuthorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readAuthorizerCredential = this._readAuthorizerCredential?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._webhookSecretSecretVersion = undefined;
+      this._authorizerCredential.internalValue = undefined;
+      this._readAuthorizerCredential.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._webhookSecretSecretVersion = value.webhookSecretSecretVersion;
+      this._authorizerCredential.internalValue = value.authorizerCredential;
+      this._readAuthorizerCredential.internalValue = value.readAuthorizerCredential;
+    }
+  }
+
+  // webhook_secret_secret_version - computed: false, optional: false, required: true
+  private _webhookSecretSecretVersion?: string; 
+  public get webhookSecretSecretVersion() {
+    return this.getStringAttribute('webhook_secret_secret_version');
+  }
+  public set webhookSecretSecretVersion(value: string) {
+    this._webhookSecretSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookSecretSecretVersionInput() {
+    return this._webhookSecretSecretVersion;
+  }
+
+  // authorizer_credential - computed: false, optional: false, required: true
+  private _authorizerCredential = new GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference(this, "authorizer_credential");
+  public get authorizerCredential() {
+    return this._authorizerCredential;
+  }
+  public putAuthorizerCredential(value: GoogleDeveloperConnectConnectionGitlabConfigAuthorizerCredential) {
+    this._authorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerCredentialInput() {
+    return this._authorizerCredential.internalValue;
+  }
+
+  // read_authorizer_credential - computed: false, optional: false, required: true
+  private _readAuthorizerCredential = new GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference(this, "read_authorizer_credential");
+  public get readAuthorizerCredential() {
+    return this._readAuthorizerCredential;
+  }
+  public putReadAuthorizerCredential(value: GoogleDeveloperConnectConnectionGitlabConfigReadAuthorizerCredential) {
+    this._readAuthorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readAuthorizerCredentialInput() {
+    return this._readAuthorizerCredential.internalValue;
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes
+  * the Developer Connect connection. Format:
+  * 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#user_token_secret_version GoogleDeveloperConnectConnection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    user_token_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes
+  * the Developer Connect connection. Format:
+  * 'projects/* /secrets/* /versions/*'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#user_token_secret_version GoogleDeveloperConnectConnection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    user_token_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.userTokenSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig {
+  /**
+  * Required. The Service Directory service name.
+  * Format:
+  * projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#service GoogleDeveloperConnectConnection#service}
+  */
+  readonly service: string;
+}
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._service = value.service;
+    }
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+export interface GoogleDeveloperConnectConnectionGitlabEnterpriseConfig {
+  /**
+  * Required. The URI of the GitLab Enterprise host this connection is for.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#host_uri GoogleDeveloperConnectConnection#host_uri}
+  */
+  readonly hostUri: string;
+  /**
+  * Optional. SSL Certificate Authority certificate to use for requests to GitLab
+  * Enterprise instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#ssl_ca_certificate GoogleDeveloperConnectConnection#ssl_ca_certificate}
+  */
+  readonly sslCaCertificate?: string;
+  /**
+  * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab project,
+  * formatted as 'projects/* /secrets/* /versions/*'. This is used to validate
+  * webhooks.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#webhook_secret_secret_version GoogleDeveloperConnectConnection#webhook_secret_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+  */
+  readonly webhookSecretSecretVersion: string;
+  /**
+  * authorizer_credential block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#authorizer_credential GoogleDeveloperConnectConnection#authorizer_credential}
+  */
+  readonly authorizerCredential: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential;
+  /**
+  * read_authorizer_credential block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#read_authorizer_credential GoogleDeveloperConnectConnection#read_authorizer_credential}
+  */
+  readonly readAuthorizerCredential: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential;
+  /**
+  * service_directory_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#service_directory_config GoogleDeveloperConnectConnection#service_directory_config}
+  */
+  readonly serviceDirectoryConfig?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig;
+}
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigToTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    host_uri: cdktf.stringToTerraform(struct!.hostUri),
+    ssl_ca_certificate: cdktf.stringToTerraform(struct!.sslCaCertificate),
+    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    authorizer_credential: googleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
+    read_authorizer_credential: googleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
+    service_directory_config: googleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
+  }
+}
+
+
+export function googleDeveloperConnectConnectionGitlabEnterpriseConfigToHclTerraform(struct?: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference | GoogleDeveloperConnectConnectionGitlabEnterpriseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_uri: {
+      value: cdktf.stringToHclTerraform(struct!.hostUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssl_ca_certificate: {
+      value: cdktf.stringToHclTerraform(struct!.sslCaCertificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    webhook_secret_secret_version: {
+      value: cdktf.stringToHclTerraform(struct!.webhookSecretSecretVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorizer_credential: {
+      value: googleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialToHclTerraform(struct!.authorizerCredential),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialList",
+    },
+    read_authorizer_credential: {
+      value: googleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialToHclTerraform(struct!.readAuthorizerCredential),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialList",
+    },
+    service_directory_config: {
+      value: googleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigToHclTerraform(struct!.serviceDirectoryConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDeveloperConnectConnectionGitlabEnterpriseConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostUri = this._hostUri;
+    }
+    if (this._sslCaCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCaCertificate = this._sslCaCertificate;
+    }
+    if (this._webhookSecretSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookSecretSecretVersion = this._webhookSecretSecretVersion;
+    }
+    if (this._authorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizerCredential = this._authorizerCredential?.internalValue;
+    }
+    if (this._readAuthorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readAuthorizerCredential = this._readAuthorizerCredential?.internalValue;
+    }
+    if (this._serviceDirectoryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceDirectoryConfig = this._serviceDirectoryConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostUri = undefined;
+      this._sslCaCertificate = undefined;
+      this._webhookSecretSecretVersion = undefined;
+      this._authorizerCredential.internalValue = undefined;
+      this._readAuthorizerCredential.internalValue = undefined;
+      this._serviceDirectoryConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostUri = value.hostUri;
+      this._sslCaCertificate = value.sslCaCertificate;
+      this._webhookSecretSecretVersion = value.webhookSecretSecretVersion;
+      this._authorizerCredential.internalValue = value.authorizerCredential;
+      this._readAuthorizerCredential.internalValue = value.readAuthorizerCredential;
+      this._serviceDirectoryConfig.internalValue = value.serviceDirectoryConfig;
+    }
+  }
+
+  // host_uri - computed: false, optional: false, required: true
+  private _hostUri?: string; 
+  public get hostUri() {
+    return this.getStringAttribute('host_uri');
+  }
+  public set hostUri(value: string) {
+    this._hostUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostUriInput() {
+    return this._hostUri;
+  }
+
+  // server_version - computed: true, optional: false, required: false
+  public get serverVersion() {
+    return this.getStringAttribute('server_version');
+  }
+
+  // ssl_ca_certificate - computed: false, optional: true, required: false
+  private _sslCaCertificate?: string; 
+  public get sslCaCertificate() {
+    return this.getStringAttribute('ssl_ca_certificate');
+  }
+  public set sslCaCertificate(value: string) {
+    this._sslCaCertificate = value;
+  }
+  public resetSslCaCertificate() {
+    this._sslCaCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCaCertificateInput() {
+    return this._sslCaCertificate;
+  }
+
+  // webhook_secret_secret_version - computed: false, optional: false, required: true
+  private _webhookSecretSecretVersion?: string; 
+  public get webhookSecretSecretVersion() {
+    return this.getStringAttribute('webhook_secret_secret_version');
+  }
+  public set webhookSecretSecretVersion(value: string) {
+    this._webhookSecretSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookSecretSecretVersionInput() {
+    return this._webhookSecretSecretVersion;
+  }
+
+  // authorizer_credential - computed: false, optional: false, required: true
+  private _authorizerCredential = new GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference(this, "authorizer_credential");
+  public get authorizerCredential() {
+    return this._authorizerCredential;
+  }
+  public putAuthorizerCredential(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential) {
+    this._authorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerCredentialInput() {
+    return this._authorizerCredential.internalValue;
+  }
+
+  // read_authorizer_credential - computed: false, optional: false, required: true
+  private _readAuthorizerCredential = new GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference(this, "read_authorizer_credential");
+  public get readAuthorizerCredential() {
+    return this._readAuthorizerCredential;
+  }
+  public putReadAuthorizerCredential(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential) {
+    this._readAuthorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readAuthorizerCredentialInput() {
+    return this._readAuthorizerCredential.internalValue;
+  }
+
+  // service_directory_config - computed: false, optional: true, required: false
+  private _serviceDirectoryConfig = new GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference(this, "service_directory_config");
+  public get serviceDirectoryConfig() {
+    return this._serviceDirectoryConfig;
+  }
+  public putServiceDirectoryConfig(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig) {
+    this._serviceDirectoryConfig.internalValue = value;
+  }
+  public resetServiceDirectoryConfig() {
+    this._serviceDirectoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceDirectoryConfigInput() {
+    return this._serviceDirectoryConfig.internalValue;
+  }
+}
 export interface GoogleDeveloperConnectConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#create GoogleDeveloperConnectConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#create GoogleDeveloperConnectConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#delete GoogleDeveloperConnectConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#delete GoogleDeveloperConnectConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#update GoogleDeveloperConnectConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#update GoogleDeveloperConnectConnection#update}
   */
   readonly update?: string;
 }
@@ -587,7 +1953,7 @@ export class GoogleDeveloperConnectConnectionTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}
 */
 export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
 
@@ -603,7 +1969,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleDeveloperConnectConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleDeveloperConnectConnection to import
-  * @param importFromId The id of the existing GoogleDeveloperConnectConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleDeveloperConnectConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleDeveloperConnectConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -615,7 +1981,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -626,7 +1992,7 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
       terraformResourceType: 'google_developer_connect_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.15.0',
+        providerVersion: '6.16.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -645,7 +2011,11 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
     this._labels = config.labels;
     this._location = config.location;
     this._project = config.project;
+    this._cryptoKeyConfig.internalValue = config.cryptoKeyConfig;
     this._githubConfig.internalValue = config.githubConfig;
+    this._githubEnterpriseConfig.internalValue = config.githubEnterpriseConfig;
+    this._gitlabConfig.internalValue = config.gitlabConfig;
+    this._gitlabEnterpriseConfig.internalValue = config.gitlabEnterpriseConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -829,6 +2199,22 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // crypto_key_config - computed: false, optional: true, required: false
+  private _cryptoKeyConfig = new GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference(this, "crypto_key_config");
+  public get cryptoKeyConfig() {
+    return this._cryptoKeyConfig;
+  }
+  public putCryptoKeyConfig(value: GoogleDeveloperConnectConnectionCryptoKeyConfig) {
+    this._cryptoKeyConfig.internalValue = value;
+  }
+  public resetCryptoKeyConfig() {
+    this._cryptoKeyConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyConfigInput() {
+    return this._cryptoKeyConfig.internalValue;
+  }
+
   // github_config - computed: false, optional: true, required: false
   private _githubConfig = new GoogleDeveloperConnectConnectionGithubConfigOutputReference(this, "github_config");
   public get githubConfig() {
@@ -843,6 +2229,54 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get githubConfigInput() {
     return this._githubConfig.internalValue;
+  }
+
+  // github_enterprise_config - computed: false, optional: true, required: false
+  private _githubEnterpriseConfig = new GoogleDeveloperConnectConnectionGithubEnterpriseConfigOutputReference(this, "github_enterprise_config");
+  public get githubEnterpriseConfig() {
+    return this._githubEnterpriseConfig;
+  }
+  public putGithubEnterpriseConfig(value: GoogleDeveloperConnectConnectionGithubEnterpriseConfig) {
+    this._githubEnterpriseConfig.internalValue = value;
+  }
+  public resetGithubEnterpriseConfig() {
+    this._githubEnterpriseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubEnterpriseConfigInput() {
+    return this._githubEnterpriseConfig.internalValue;
+  }
+
+  // gitlab_config - computed: false, optional: true, required: false
+  private _gitlabConfig = new GoogleDeveloperConnectConnectionGitlabConfigOutputReference(this, "gitlab_config");
+  public get gitlabConfig() {
+    return this._gitlabConfig;
+  }
+  public putGitlabConfig(value: GoogleDeveloperConnectConnectionGitlabConfig) {
+    this._gitlabConfig.internalValue = value;
+  }
+  public resetGitlabConfig() {
+    this._gitlabConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitlabConfigInput() {
+    return this._gitlabConfig.internalValue;
+  }
+
+  // gitlab_enterprise_config - computed: false, optional: true, required: false
+  private _gitlabEnterpriseConfig = new GoogleDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference(this, "gitlab_enterprise_config");
+  public get gitlabEnterpriseConfig() {
+    return this._gitlabEnterpriseConfig;
+  }
+  public putGitlabEnterpriseConfig(value: GoogleDeveloperConnectConnectionGitlabEnterpriseConfig) {
+    this._gitlabEnterpriseConfig.internalValue = value;
+  }
+  public resetGitlabEnterpriseConfig() {
+    this._gitlabEnterpriseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitlabEnterpriseConfigInput() {
+    return this._gitlabEnterpriseConfig.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -875,7 +2309,11 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
+      crypto_key_config: googleDeveloperConnectConnectionCryptoKeyConfigToTerraform(this._cryptoKeyConfig.internalValue),
       github_config: googleDeveloperConnectConnectionGithubConfigToTerraform(this._githubConfig.internalValue),
+      github_enterprise_config: googleDeveloperConnectConnectionGithubEnterpriseConfigToTerraform(this._githubEnterpriseConfig.internalValue),
+      gitlab_config: googleDeveloperConnectConnectionGitlabConfigToTerraform(this._gitlabConfig.internalValue),
+      gitlab_enterprise_config: googleDeveloperConnectConnectionGitlabEnterpriseConfigToTerraform(this._gitlabEnterpriseConfig.internalValue),
       timeouts: googleDeveloperConnectConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -930,11 +2368,35 @@ export class GoogleDeveloperConnectConnection extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      crypto_key_config: {
+        value: googleDeveloperConnectConnectionCryptoKeyConfigToHclTerraform(this._cryptoKeyConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDeveloperConnectConnectionCryptoKeyConfigList",
+      },
       github_config: {
         value: googleDeveloperConnectConnectionGithubConfigToHclTerraform(this._githubConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GoogleDeveloperConnectConnectionGithubConfigList",
+      },
+      github_enterprise_config: {
+        value: googleDeveloperConnectConnectionGithubEnterpriseConfigToHclTerraform(this._githubEnterpriseConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDeveloperConnectConnectionGithubEnterpriseConfigList",
+      },
+      gitlab_config: {
+        value: googleDeveloperConnectConnectionGitlabConfigToHclTerraform(this._gitlabConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDeveloperConnectConnectionGitlabConfigList",
+      },
+      gitlab_enterprise_config: {
+        value: googleDeveloperConnectConnectionGitlabEnterpriseConfigToHclTerraform(this._gitlabEnterpriseConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleDeveloperConnectConnectionGitlabEnterpriseConfigList",
       },
       timeouts: {
         value: googleDeveloperConnectConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),

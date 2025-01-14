@@ -4,12 +4,12 @@
 
 ### GoogleLoggingProjectExclusion <a name="GoogleLoggingProjectExclusion" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 googleloggingprojectexclusion.NewGoogleLoggingProjectExclusion(scope Construct, id *string, config GoogleLoggingProjectExclusionConfig) GoogleLoggingProjectExclusion
 ```
@@ -406,7 +406,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 googleloggingprojectexclusion.GoogleLoggingProjectExclusion_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 googleloggingprojectexclusion.GoogleLoggingProjectExclusion_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ googleloggingprojectexclusion.GoogleLoggingProjectExclusion_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 googleloggingprojectexclusion.GoogleLoggingProjectExclusion_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ googleloggingprojectexclusion.GoogleLoggingProjectExclusion_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 googleloggingprojectexclusion.GoogleLoggingProjectExclusion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the GoogleLoggingProjectExclus
 
 The id of the existing GoogleLoggingProjectExclusion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggingprojectexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingprojectexclusion"
 
 &googleloggingprojectexclusion.GoogleLoggingProjectExclusionConfig {
 	Connection: interface{},
@@ -861,8 +861,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleloggi
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.name">Name</a></code> | <code>*string</code> | The name of the logging exclusion. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Whether this exclusion rule should be disabled or not. This defaults to false. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}. |
 
 ---
 
@@ -946,7 +946,7 @@ Filter *string
 
 The filter to apply when excluding logs. Only log entries that match the filter are excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#filter GoogleLoggingProjectExclusion#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#filter GoogleLoggingProjectExclusion#filter}
 
 ---
 
@@ -960,7 +960,7 @@ Name *string
 
 The name of the logging exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#name GoogleLoggingProjectExclusion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#name GoogleLoggingProjectExclusion#name}
 
 ---
 
@@ -974,7 +974,7 @@ Description *string
 
 A human-readable description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#description GoogleLoggingProjectExclusion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#description GoogleLoggingProjectExclusion#description}
 
 ---
 
@@ -988,7 +988,7 @@ Disabled interface{}
 
 Whether this exclusion rule should be disabled or not. This defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#disabled GoogleLoggingProjectExclusion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#disabled GoogleLoggingProjectExclusion#disabled}
 
 ---
 
@@ -1000,7 +1000,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#id GoogleLoggingProjectExclusion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_logging_project_exclusion#project GoogleLoggingProjectExclusion#project}.
 
 ---
 
