@@ -4,7 +4,7 @@
 
 ### GoogleGkeBackupBackupPlanIamPolicy <a name="GoogleGkeBackupBackupPlanIamPolicy" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleGkeBackupBackupPlanI
 
 The id of the existing GoogleGkeBackupBackupPlanIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const googleGkeBackupBackupPlanIamPolicyConfig: googleGkeBackupBackupPlanIamPoli
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#name GoogleGkeBackupBackupPlanIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#policy_data GoogleGkeBackupBackupPlanIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#id GoogleGkeBackupBackupPlanIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#location GoogleGkeBackupBackupPlanIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#project GoogleGkeBackupBackupPlanIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#name GoogleGkeBackupBackupPlanIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#policy_data GoogleGkeBackupBackupPlanIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#id GoogleGkeBackupBackupPlanIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#location GoogleGkeBackupBackupPlanIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy.GoogleGkeBackupBackupPlanIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#project GoogleGkeBackupBackupPlanIamPolicy#project}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#name GoogleGkeBackupBackupPlanIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#name GoogleGkeBackupBackupPlanIamPolicy#name}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#policy_data GoogleGkeBackupBackupPlanIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#policy_data GoogleGkeBackupBackupPlanIamPolicy#policy_data}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#id GoogleGkeBackupBackupPlanIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#id GoogleGkeBackupBackupPlanIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#location GoogleGkeBackupBackupPlanIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#location GoogleGkeBackupBackupPlanIamPolicy#location}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_gke_backup_backup_plan_iam_policy#project GoogleGkeBackupBackupPlanIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gke_backup_backup_plan_iam_policy#project GoogleGkeBackupBackupPlanIamPolicy#project}.
 
 ---
 

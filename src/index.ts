@@ -95,6 +95,7 @@ export * as googleBackupDrManagementServer from './google-backup-dr-management-s
 export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connection';
 export * as googleBeyondcorpAppConnector from './google-beyondcorp-app-connector';
 export * as googleBeyondcorpAppGateway from './google-beyondcorp-app-gateway';
+export * as googleBeyondcorpSecurityGateway from './google-beyondcorp-security-gateway';
 export * as googleBiglakeCatalog from './google-biglake-catalog';
 export * as googleBiglakeDatabase from './google-biglake-database';
 export * as googleBiglakeTable from './google-biglake-table';
@@ -159,6 +160,8 @@ export * as googleCertificateManagerCertificateMap from './google-certificate-ma
 export * as googleCertificateManagerCertificateMapEntry from './google-certificate-manager-certificate-map-entry';
 export * as googleCertificateManagerDnsAuthorization from './google-certificate-manager-dns-authorization';
 export * as googleCertificateManagerTrustConfig from './google-certificate-manager-trust-config';
+export * as googleChronicleDataAccessLabel from './google-chronicle-data-access-label';
+export * as googleChronicleDataAccessScope from './google-chronicle-data-access-scope';
 export * as googleChronicleWatchlist from './google-chronicle-watchlist';
 export * as googleCloudAssetFolderFeed from './google-cloud-asset-folder-feed';
 export * as googleCloudAssetOrganizationFeed from './google-cloud-asset-organization-feed';
@@ -166,6 +169,7 @@ export * as googleCloudAssetProjectFeed from './google-cloud-asset-project-feed'
 export * as googleCloudIdentityGroup from './google-cloud-identity-group';
 export * as googleCloudIdentityGroupMembership from './google-cloud-identity-group-membership';
 export * as googleCloudIdsEndpoint from './google-cloud-ids-endpoint';
+export * as googleCloudQuotasQuotaAdjusterSettings from './google-cloud-quotas-quota-adjuster-settings';
 export * as googleCloudQuotasQuotaPreference from './google-cloud-quotas-quota-preference';
 export * as googleCloudRunDomainMapping from './google-cloud-run-domain-mapping';
 export * as googleCloudRunService from './google-cloud-run-service';

@@ -95,6 +95,7 @@ Object.defineProperty(exports, 'googleBackupDrManagementServer', { get: function
 Object.defineProperty(exports, 'googleBeyondcorpAppConnection', { get: function () { return require('./google-beyondcorp-app-connection'); } });
 Object.defineProperty(exports, 'googleBeyondcorpAppConnector', { get: function () { return require('./google-beyondcorp-app-connector'); } });
 Object.defineProperty(exports, 'googleBeyondcorpAppGateway', { get: function () { return require('./google-beyondcorp-app-gateway'); } });
+Object.defineProperty(exports, 'googleBeyondcorpSecurityGateway', { get: function () { return require('./google-beyondcorp-security-gateway'); } });
 Object.defineProperty(exports, 'googleBiglakeCatalog', { get: function () { return require('./google-biglake-catalog'); } });
 Object.defineProperty(exports, 'googleBiglakeDatabase', { get: function () { return require('./google-biglake-database'); } });
 Object.defineProperty(exports, 'googleBiglakeTable', { get: function () { return require('./google-biglake-table'); } });
@@ -159,6 +160,8 @@ Object.defineProperty(exports, 'googleCertificateManagerCertificateMap', { get: 
 Object.defineProperty(exports, 'googleCertificateManagerCertificateMapEntry', { get: function () { return require('./google-certificate-manager-certificate-map-entry'); } });
 Object.defineProperty(exports, 'googleCertificateManagerDnsAuthorization', { get: function () { return require('./google-certificate-manager-dns-authorization'); } });
 Object.defineProperty(exports, 'googleCertificateManagerTrustConfig', { get: function () { return require('./google-certificate-manager-trust-config'); } });
+Object.defineProperty(exports, 'googleChronicleDataAccessLabel', { get: function () { return require('./google-chronicle-data-access-label'); } });
+Object.defineProperty(exports, 'googleChronicleDataAccessScope', { get: function () { return require('./google-chronicle-data-access-scope'); } });
 Object.defineProperty(exports, 'googleChronicleWatchlist', { get: function () { return require('./google-chronicle-watchlist'); } });
 Object.defineProperty(exports, 'googleCloudAssetFolderFeed', { get: function () { return require('./google-cloud-asset-folder-feed'); } });
 Object.defineProperty(exports, 'googleCloudAssetOrganizationFeed', { get: function () { return require('./google-cloud-asset-organization-feed'); } });
@@ -166,6 +169,7 @@ Object.defineProperty(exports, 'googleCloudAssetProjectFeed', { get: function ()
 Object.defineProperty(exports, 'googleCloudIdentityGroup', { get: function () { return require('./google-cloud-identity-group'); } });
 Object.defineProperty(exports, 'googleCloudIdentityGroupMembership', { get: function () { return require('./google-cloud-identity-group-membership'); } });
 Object.defineProperty(exports, 'googleCloudIdsEndpoint', { get: function () { return require('./google-cloud-ids-endpoint'); } });
+Object.defineProperty(exports, 'googleCloudQuotasQuotaAdjusterSettings', { get: function () { return require('./google-cloud-quotas-quota-adjuster-settings'); } });
 Object.defineProperty(exports, 'googleCloudQuotasQuotaPreference', { get: function () { return require('./google-cloud-quotas-quota-preference'); } });
 Object.defineProperty(exports, 'googleCloudRunDomainMapping', { get: function () { return require('./google-cloud-run-domain-mapping'); } });
 Object.defineProperty(exports, 'googleCloudRunService', { get: function () { return require('./google-cloud-run-service'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleSpannerBackupScheduleConfig extends cdktf.TerraformMetaAr
   /**
   * The database to create the backup schedule on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#database GoogleSpannerBackupSchedule#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#database GoogleSpannerBackupSchedule#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#id GoogleSpannerBackupSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#id GoogleSpannerBackupSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,18 +28,18 @@ export interface GoogleSpannerBackupScheduleConfig extends cdktf.TerraformMetaAr
   /**
   * The instance to create the database on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#instance GoogleSpannerBackupSchedule#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#instance GoogleSpannerBackupSchedule#instance}
   */
   readonly instance: string;
   /**
   * A unique identifier for the backup schedule, which cannot be changed after
   * the backup schedule is created. Values are of the form [a-z][-a-z0-9]*[a-z0-9].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#name GoogleSpannerBackupSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#name GoogleSpannerBackupSchedule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#project GoogleSpannerBackupSchedule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#project GoogleSpannerBackupSchedule#project}
   */
   readonly project?: string;
   /**
@@ -47,31 +47,31 @@ export interface GoogleSpannerBackupScheduleConfig extends cdktf.TerraformMetaAr
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: '3.5s'.
   * You can set this to a value up to 366 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#retention_duration GoogleSpannerBackupSchedule#retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#retention_duration GoogleSpannerBackupSchedule#retention_duration}
   */
   readonly retentionDuration: string;
   /**
   * full_backup_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#full_backup_spec GoogleSpannerBackupSchedule#full_backup_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#full_backup_spec GoogleSpannerBackupSchedule#full_backup_spec}
   */
   readonly fullBackupSpec?: GoogleSpannerBackupScheduleFullBackupSpec;
   /**
   * incremental_backup_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#incremental_backup_spec GoogleSpannerBackupSchedule#incremental_backup_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#incremental_backup_spec GoogleSpannerBackupSchedule#incremental_backup_spec}
   */
   readonly incrementalBackupSpec?: GoogleSpannerBackupScheduleIncrementalBackupSpec;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#spec GoogleSpannerBackupSchedule#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#spec GoogleSpannerBackupSchedule#spec}
   */
   readonly spec?: GoogleSpannerBackupScheduleSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#timeouts GoogleSpannerBackupSchedule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#timeouts GoogleSpannerBackupSchedule#timeouts}
   */
   readonly timeouts?: GoogleSpannerBackupScheduleTimeouts;
 }
@@ -187,7 +187,7 @@ export interface GoogleSpannerBackupScheduleSpecCronSpec {
   *   0 2 * * 0    : once a week every Sunday at 2 past midnight in UTC.
   *   0 2 8 * *    : once a month on 8th day at 2 past midnight in UTC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#text GoogleSpannerBackupSchedule#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#text GoogleSpannerBackupSchedule#text}
   */
   readonly text?: string;
 }
@@ -273,7 +273,7 @@ export interface GoogleSpannerBackupScheduleSpec {
   /**
   * cron_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#cron_spec GoogleSpannerBackupSchedule#cron_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#cron_spec GoogleSpannerBackupSchedule#cron_spec}
   */
   readonly cronSpec?: GoogleSpannerBackupScheduleSpecCronSpec;
 }
@@ -357,15 +357,15 @@ export class GoogleSpannerBackupScheduleSpecOutputReference extends cdktf.Comple
 }
 export interface GoogleSpannerBackupScheduleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#create GoogleSpannerBackupSchedule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#create GoogleSpannerBackupSchedule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#delete GoogleSpannerBackupSchedule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#delete GoogleSpannerBackupSchedule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#update GoogleSpannerBackupSchedule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#update GoogleSpannerBackupSchedule#update}
   */
   readonly update?: string;
 }
@@ -517,7 +517,7 @@ export class GoogleSpannerBackupScheduleTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}
 */
 export class GoogleSpannerBackupSchedule extends cdktf.TerraformResource {
 
@@ -533,7 +533,7 @@ export class GoogleSpannerBackupSchedule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSpannerBackupSchedule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSpannerBackupSchedule to import
-  * @param importFromId The id of the existing GoogleSpannerBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSpannerBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSpannerBackupSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -545,7 +545,7 @@ export class GoogleSpannerBackupSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -556,7 +556,7 @@ export class GoogleSpannerBackupSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_backup_schedule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.15.0',
+        providerVersion: '6.16.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
