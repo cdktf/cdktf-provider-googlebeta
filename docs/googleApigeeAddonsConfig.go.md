@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfig(scope Construct, id *string, config GoogleApigeeAddonsConfigConfig) GoogleApigeeAddonsConfig
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.GoogleApigeeAddonsConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,14 +802,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfig {
-	AdvancedApiOpsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
-	ApiSecurityConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig,
-	ConnectorsPlatformConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
-	IntegrationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig,
-	MonetizationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig,
+	AdvancedApiOpsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
+	ApiSecurityConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig,
+	ConnectorsPlatformConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
+	IntegrationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig,
+	MonetizationConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig,
 }
 ```
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig {
 	Enabled: interface{},
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig {
 	Enabled: interface{},
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig {
 	Enabled: interface{},
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig {
 	Enabled: interface{},
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig {
 	Enabled: interface{},
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigConfig {
 	Connection: interface{},
@@ -1081,9 +1081,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapige
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Org: *string,
-	AddonsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfig,
+	AddonsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfig,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeouts,
 }
 ```
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 &googleapigeeaddonsconfig.GoogleApigeeAddonsConfigTimeouts {
 	Create: *string,
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference
 ```
@@ -1577,7 +1577,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference
 ```
@@ -1866,7 +1866,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference
 ```
@@ -2155,7 +2155,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference
 ```
@@ -2433,7 +2433,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference
 ```
@@ -2711,7 +2711,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigAddonsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigOutputReference
 ```
@@ -3170,7 +3170,7 @@ func InternalValue() GoogleApigeeAddonsConfigAddonsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeaddonsconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeaddonsconfig"
 
 googleapigeeaddonsconfig.NewGoogleApigeeAddonsConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigTimeoutsOutputReference
 ```
