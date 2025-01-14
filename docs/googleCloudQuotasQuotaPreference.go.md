@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.NewGoogleCloudQuotasQuotaPreference(scope Construct, id *string, config GoogleCloudQuotasQuotaPreferenceConfig) GoogleCloudQuotasQuotaPreference
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreference_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1049,7 +1049,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 &googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreferenceConfig {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquot
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	QuotaConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfig,
+	QuotaConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfig,
 	ContactEmail: *string,
 	Dimensions: *map[string]*string,
 	Id: *string,
@@ -1069,7 +1069,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquot
 	Parent: *string,
 	QuotaId: *string,
 	Service: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeouts,
 }
 ```
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 &googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreferenceQuotaConfig {
 	PreferredValue: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 &googlecloudquotasquotapreference.GoogleCloudQuotasQuotaPreferenceTimeouts {
 	Create: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.NewGoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference
 ```
@@ -1803,7 +1803,7 @@ func InternalValue() GoogleCloudQuotasQuotaPreferenceQuotaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudquotasquotapreference"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudquotasquotapreference"
 
 googlecloudquotasquotapreference.NewGoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference
 ```
