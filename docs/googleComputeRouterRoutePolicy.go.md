@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicy(scope Construct, id *string, config GoogleComputeRouterRoutePolicyConfig) GoogleComputeRouterRoutePolicy
 ```
@@ -439,7 +439,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputero
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1146,12 +1146,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTerms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTerms {
 	Priority: *f64,
 	Actions: interface{},
-	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch,
+	Match: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTermsActions {
 	Expression: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTermsMatch {
 	Expression: *string,
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 &googlecomputerouterroutepolicy.GoogleComputeRouterRoutePolicyTimeouts {
 	Create: *string,
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterRoutePolicyTermsActionsList
 ```
@@ -1598,7 +1598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterRoutePolicyTermsActionsOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterRoutePolicyTermsList
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterRoutePolicyTermsMatchOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() GoogleComputeRouterRoutePolicyTermsMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTermsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTermsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterRoutePolicyTermsOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterRoutePolicy.GoogleComputeRouterRoutePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterroutepolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputerouterroutepolicy"
 
 googlecomputerouterroutepolicy.NewGoogleComputeRouterRoutePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterRoutePolicyTimeoutsOutputReference
 ```
