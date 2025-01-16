@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplate(scope Construct, id *string, config GoogleTranscoderJobTemplateConfig) GoogleTranscoderJobTemplate
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.GoogleTranscoderJobTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.GoogleTranscoderJobTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ googletranscoderjobtemplate.GoogleTranscoderJobTemplate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.GoogleTranscoderJobTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googletranscoderjobtemplate.GoogleTranscoderJobTemplate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.GoogleTranscoderJobTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfig {
 	Connection: interface{},
@@ -927,11 +927,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 	Provisioners: *[]interface{},
 	JobTemplateId: *string,
 	Location: *string,
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigA,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigA,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateTimeouts,
 }
 ```
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigA {
 	AdBreaks: interface{},
@@ -1141,9 +1141,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 	Inputs: interface{},
 	Manifests: interface{},
 	MuxStreams: interface{},
-	Output: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOutput,
+	Output: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOutput,
 	Overlays: interface{},
-	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigPubsubDestination,
+	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigPubsubDestination,
 }
 ```
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigAdBreaks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigAdBreaks {
 	StartTimeOffset: *string,
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEditListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEditListStruct {
 	Inputs: *[]*string,
@@ -1409,12 +1409,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreams {
-	AudioStream: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStream,
+	AudioStream: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStream,
 	Key: *string,
-	VideoStream: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStream,
+	VideoStream: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStream,
 }
 ```
 
@@ -1475,7 +1475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStream {
 	BitrateBps: *f64,
@@ -1573,10 +1573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStream {
-	H264: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264,
+	H264: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264 {
 	BitrateBps: *f64,
@@ -1616,12 +1616,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 	EntropyCoder: *string,
 	GopDuration: *string,
 	HeightPixels: *f64,
-	Hlg: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg,
+	Hlg: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg,
 	PixelFormat: *string,
 	Preset: *string,
 	Profile: *string,
 	RateControlMode: *string,
-	Sdr: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr,
+	Sdr: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr,
 	VbvFullnessBits: *f64,
 	VbvSizeBits: *f64,
 	WidthPixels: *f64,
@@ -1865,7 +1865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg {
 
@@ -1878,7 +1878,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr {
 
@@ -1891,15 +1891,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptions {
 	Id: *string,
-	Aes128: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsAes128,
-	DrmSystems: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems,
-	MpegCenc: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc,
-	SampleAes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSampleAes,
-	SecretManagerKeySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySource,
+	Aes128: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsAes128,
+	DrmSystems: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems,
+	MpegCenc: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc,
+	SampleAes: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSampleAes,
+	SecretManagerKeySource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySource,
 }
 ```
 
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsAes128.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsAes128 {
 
@@ -2021,13 +2021,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems {
-	Clearkey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey,
-	Fairplay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay,
-	Playready: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready,
-	Widevine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine,
+	Clearkey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey,
+	Fairplay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay,
+	Playready: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready,
+	Widevine: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine,
 }
 ```
 
@@ -2103,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey {
 
@@ -2116,7 +2116,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay {
 
@@ -2129,7 +2129,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready {
 
@@ -2142,7 +2142,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine {
 
@@ -2155,7 +2155,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc {
 	Scheme: *string,
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSampleAes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsSampleAes {
 
@@ -2202,7 +2202,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySource {
 	SecretVersion: *string,
@@ -2236,7 +2236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigInputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigInputs {
 	Key: *string,
@@ -2289,7 +2289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigManifests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigManifests {
 	FileName: *string,
@@ -2355,7 +2355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigMuxStreams {
 	Container: *string,
@@ -2363,7 +2363,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletrans
 	EncryptionId: *string,
 	FileName: *string,
 	Key: *string,
-	SegmentSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettings,
+	SegmentSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettings,
 }
 ```
 
@@ -2469,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettings {
 	SegmentDuration: *string,
@@ -2503,7 +2503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOutput {
 	Uri: *string,
@@ -2537,11 +2537,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlays.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOverlays {
 	Animations: interface{},
-	Image: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysImage,
+	Image: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysImage,
 }
 ```
 
@@ -2587,10 +2587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimations {
-	AnimationFade: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFade,
+	AnimationFade: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFade,
 }
 ```
 
@@ -2621,13 +2621,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFade.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFade {
 	FadeType: *string,
 	EndTimeOffset: *string,
 	StartTimeOffset: *string,
-	Xy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy,
+	Xy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy,
 }
 ```
 
@@ -2707,7 +2707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy {
 	X: *f64,
@@ -2757,7 +2757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigOverlaysImage {
 	Uri: *string,
@@ -2791,7 +2791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigPubsubDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateConfigPubsubDestination {
 	Topic: *string,
@@ -2825,7 +2825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 &googletranscoderjobtemplate.GoogleTranscoderJobTemplateTimeouts {
 	Create: *string,
@@ -2887,7 +2887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigAdBreaksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigAdBreaksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigAdBreaksList
 ```
@@ -3047,7 +3047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigAdBreaksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigAdBreaksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigAdBreaksOutputReference
 ```
@@ -3343,7 +3343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigAOutputReference
 ```
@@ -4012,7 +4012,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEditListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEditListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigEditListStructList
 ```
@@ -4172,7 +4172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEditListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEditListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigEditListStructOutputReference
 ```
@@ -4526,7 +4526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference
 ```
@@ -4913,7 +4913,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigElementaryStreamsAudioStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigElementaryStreamsList
 ```
@@ -5073,7 +5073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigElementaryStreamsOutputReference
 ```
@@ -5453,7 +5453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference
 ```
@@ -5702,7 +5702,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference
 ```
@@ -6398,7 +6398,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference
 ```
@@ -6647,7 +6647,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference
 ```
@@ -6938,7 +6938,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigElementaryStreamsVideoStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsAes128OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsAes128OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsAes128OutputReference
 ```
@@ -7187,7 +7187,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsAes128
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference
 ```
@@ -7436,7 +7436,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsClear
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference
 ```
@@ -7685,7 +7685,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsFairp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference
 ```
@@ -8102,7 +8102,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsDrmSystems
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference
 ```
@@ -8351,7 +8351,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsPlayr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference
 ```
@@ -8600,7 +8600,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsDrmSystemsWidev
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigEncryptionsList
 ```
@@ -8760,7 +8760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsMpegCencOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsMpegCencOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsMpegCencOutputReference
 ```
@@ -9031,7 +9031,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsMpegCenc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigEncryptionsOutputReference
 ```
@@ -9530,7 +9530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference
 ```
@@ -9779,7 +9779,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsSampleAes
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference
 ```
@@ -10050,7 +10050,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigEncryptionsSecretManagerKe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigInputsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigInputsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigInputsList
 ```
@@ -10210,7 +10210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigInputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigInputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigInputsOutputReference
 ```
@@ -10535,7 +10535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigManifestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigManifestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigManifestsList
 ```
@@ -10695,7 +10695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigManifestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigManifestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigManifestsOutputReference
 ```
@@ -11049,7 +11049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigMuxStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigMuxStreamsList
 ```
@@ -11209,7 +11209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigMuxStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigMuxStreamsOutputReference
 ```
@@ -11663,7 +11663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference
 ```
@@ -11941,7 +11941,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigMuxStreamsSegmentSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigOutputOutputReference
 ```
@@ -12219,7 +12219,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference
 ```
@@ -12590,7 +12590,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference
 ```
@@ -12897,7 +12897,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigOverlaysAnimationsAnimatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysAnimationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigOverlaysAnimationsList
 ```
@@ -13057,7 +13057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysAnimationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysAnimationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigOverlaysAnimationsOutputReference
 ```
@@ -13366,7 +13366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigOverlaysImageOutputReference
 ```
@@ -13637,7 +13637,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigOverlaysImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTranscoderJobTemplateConfigOverlaysList
 ```
@@ -13797,7 +13797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigOverlaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigOverlaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTranscoderJobTemplateConfigOverlaysOutputReference
 ```
@@ -14148,7 +14148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateConfigPubsubDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateConfigPubsubDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateConfigPubsubDestinationOutputReference
 ```
@@ -14426,7 +14426,7 @@ func InternalValue() GoogleTranscoderJobTemplateConfigPubsubDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTranscoderJobTemplate.GoogleTranscoderJobTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletranscoderjobtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletranscoderjobtemplate"
 
 googletranscoderjobtemplate.NewGoogleTranscoderJobTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobTemplateTimeoutsOutputReference
 ```

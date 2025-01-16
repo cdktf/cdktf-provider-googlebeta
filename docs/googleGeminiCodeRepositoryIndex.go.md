@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.NewGoogleGeminiCodeRepositoryIndex(scope Construct, id *string, config GoogleGeminiCodeRepositoryIndexConfig) GoogleGeminiCodeRepositoryIndex
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 &googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndexConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegemin
 	KmsKey: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndexTimeouts,
 }
 ```
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 &googlegeminicoderepositoryindex.GoogleGeminiCodeRepositoryIndexTimeouts {
 	Create: *string,
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGeminiCodeRepositoryIndex.GoogleGeminiCodeRepositoryIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminicoderepositoryindex"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminicoderepositoryindex"
 
 googlegeminicoderepositoryindex.NewGoogleGeminiCodeRepositoryIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGeminiCodeRepositoryIndexTimeoutsOutputReference
 ```
