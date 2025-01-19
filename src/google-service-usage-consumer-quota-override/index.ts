@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_service_usage_consumer_quota_override
 // generated from terraform resource schema
 

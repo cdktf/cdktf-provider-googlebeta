@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.NewGoogleApigeeEnvironmentIamBinding(scope Construct, id *string, config GoogleApigeeEnvironmentIamBindingConfig) GoogleApigeeEnvironmentIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 &googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 &googleapigeeenvironmentiambinding.GoogleApigeeEnvironmentIamBindingConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenv
 	Members: *[]*string,
 	OrgId: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1090,7 +1090,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamBinding.GoogleApigeeEnvironmentIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeeenvironmentiambinding"
 
 googleapigeeenvironmentiambinding.NewGoogleApigeeEnvironmentIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeEnvironmentIamBindingConditionOutputReference
 ```
