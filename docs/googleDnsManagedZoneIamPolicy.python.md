@@ -4,7 +4,7 @@
 
 ### GoogleDnsManagedZoneIamPolicy <a name="GoogleDnsManagedZoneIamPolicy" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer"></a>
 
@@ -39,10 +39,10 @@ googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy(
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.managedZone">managed_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.managedZone">managed_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the GoogleDnsManagedZoneIamPol
 
 The id of the existing GoogleDnsManagedZoneIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,10 +951,10 @@ googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.managedZone">managed_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.managedZone">managed_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ managed_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#managed_zone GoogleDnsManagedZoneIamPolicy#managed_zone}.
 
 ---
 
@@ -1048,7 +1048,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#policy_data GoogleDnsManagedZoneIamPolicy#policy_data}.
 
 ---
 
@@ -1060,7 +1060,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#id GoogleDnsManagedZoneIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1075,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dns_managed_zone_iam_policy#project GoogleDnsManagedZoneIamPolicy#project}.
 
 ---
 

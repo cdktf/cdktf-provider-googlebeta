@@ -4,7 +4,7 @@
 
 ### DataGoogleProjects <a name="DataGoogleProjects" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects google_projects}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects google_projects}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGoogleProjects to impo
 
 The id of the existing DataGoogleProjects that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,8 +621,8 @@ const dataGoogleProjectsConfig: dataGoogleProjects.DataGoogleProjectsConfig = { 
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects#filter DataGoogleProjects#filter}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects#id DataGoogleProjects#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects#filter DataGoogleProjects#filter}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects#id DataGoogleProjects#id}. |
 
 ---
 
@@ -704,7 +704,7 @@ public readonly filter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects#filter DataGoogleProjects#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects#filter DataGoogleProjects#filter}.
 
 ---
 
@@ -716,7 +716,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/data-sources/google_projects#id DataGoogleProjects#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_projects#id DataGoogleProjects#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

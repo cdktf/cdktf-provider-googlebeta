@@ -4,7 +4,7 @@
 
 ### GoogleCloudbuildv2Repository <a name="GoogleCloudbuildv2Repository" id="@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository google_cloudbuildv2_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the GoogleCloudbuildv2Reposito
 
 The id of the existing GoogleCloudbuildv2Repository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,9 +955,9 @@ const googleCloudbuildv2RepositoryConfig: googleCloudbuildv2Repository.GoogleClo
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.parentConnection">parentConnection</a></code> | <code>string</code> | The connection for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.remoteUri">remoteUri</a></code> | <code>string</code> | Required. Git Clone HTTPS URI. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Allows clients to store small amounts of arbitrary data. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.location">location</a></code> | <code>string</code> | The location for the resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1042,7 +1042,7 @@ public readonly name: string;
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#name GoogleCloudbuildv2Repository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#name GoogleCloudbuildv2Repository#name}
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly parentConnection: string;
 
 The connection for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#parent_connection GoogleCloudbuildv2Repository#parent_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#parent_connection GoogleCloudbuildv2Repository#parent_connection}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly remoteUri: string;
 
 Required. Git Clone HTTPS URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#remote_uri GoogleCloudbuildv2Repository#remote_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#remote_uri GoogleCloudbuildv2Repository#remote_uri}
 
 ---
 
@@ -1087,7 +1087,7 @@ Allows clients to store small amounts of arbitrary data.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#annotations GoogleCloudbuildv2Repository#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#annotations GoogleCloudbuildv2Repository#annotations}
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#id GoogleCloudbuildv2Repository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#location GoogleCloudbuildv2Repository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#location GoogleCloudbuildv2Repository#location}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#project GoogleCloudbuildv2Repository#project}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly timeouts: GoogleCloudbuildv2RepositoryTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#timeouts GoogleCloudbuildv2Repository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#timeouts GoogleCloudbuildv2Repository#timeouts}
 
 ---
 
@@ -1160,8 +1160,8 @@ const googleCloudbuildv2RepositoryTimeouts: googleCloudbuildv2Repository.GoogleC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}. |
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#create GoogleCloudbuildv2Repository#create}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_cloudbuildv2_repository#delete GoogleCloudbuildv2Repository#delete}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleApigeeApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the config zip bundle
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#config_bundle GoogleApigeeApi#config_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#config_bundle GoogleApigeeApi#config_bundle}
   */
   readonly configBundle: string;
   /**
   * A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. A change in hash will trigger an update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#detect_md5hash GoogleApigeeApi#detect_md5hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#detect_md5hash GoogleApigeeApi#detect_md5hash}
   */
   readonly detectMd5Hash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#id GoogleApigeeApi#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#id GoogleApigeeApi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface GoogleApigeeApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the API proxy. This field only accepts the following characters: A-Za-z0-9._-.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#name GoogleApigeeApi#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#name GoogleApigeeApi#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization name associated with the Apigee instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#org_id GoogleApigeeApi#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#org_id GoogleApigeeApi#org_id}
   */
   readonly orgId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#timeouts GoogleApigeeApi#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#timeouts GoogleApigeeApi#timeouts}
   */
   readonly timeouts?: GoogleApigeeApiTimeouts;
 }
@@ -137,15 +137,15 @@ export class GoogleApigeeApiMetaDataList extends cdktf.ComplexList {
 }
 export interface GoogleApigeeApiTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#create GoogleApigeeApi#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#create GoogleApigeeApi#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#delete GoogleApigeeApi#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#delete GoogleApigeeApi#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#update GoogleApigeeApi#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#update GoogleApigeeApi#update}
   */
   readonly update?: string;
 }
@@ -297,7 +297,7 @@ export class GoogleApigeeApiTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api google_apigee_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api google_apigee_api}
 */
 export class GoogleApigeeApi extends cdktf.TerraformResource {
 
@@ -313,7 +313,7 @@ export class GoogleApigeeApi extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleApigeeApi resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleApigeeApi to import
-  * @param importFromId The id of the existing GoogleApigeeApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleApigeeApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleApigeeApi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -325,7 +325,7 @@ export class GoogleApigeeApi extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_apigee_api google_apigee_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_apigee_api google_apigee_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -336,7 +336,7 @@ export class GoogleApigeeApi extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_api',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.16.0',
+        providerVersion: '6.17.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
