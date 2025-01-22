@@ -4,12 +4,12 @@
 
 ### GoogleTpuV2Vm <a name="GoogleTpuV2Vm" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2Vm(scope Construct, id *string, config GoogleTpuV2VmConfig) GoogleTpuV2Vm
 ```
@@ -601,7 +601,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsConstruct(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool
 ```
@@ -647,7 +647,7 @@ googletpuv2vm.GoogleTpuV2Vm_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ googletpuv2vm.GoogleTpuV2Vm_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2Vm.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.GoogleTpuV2Vm_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ The construct id used in the generated config for the GoogleTpuV2Vm to import.
 
 The id of the existing GoogleTpuV2Vm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1418,7 +1418,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmAcceleratorConfig {
 	Topology: *string,
@@ -1445,7 +1445,7 @@ Topology *string
 
 Topology of TPU in chips.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#topology GoogleTpuV2Vm#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#topology GoogleTpuV2Vm#topology}
 
 ---
 
@@ -1459,7 +1459,7 @@ Type *string
 
 Type of TPU. Please select one of the allowed types: https://cloud.google.com/tpu/docs/reference/rest/v2/AcceleratorConfig#Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#type GoogleTpuV2Vm#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#type GoogleTpuV2Vm#type}
 
 ---
 
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmConfig {
 	Connection: interface{},
@@ -1480,7 +1480,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 	Provisioners: *[]interface{},
 	Name: *string,
 	RuntimeVersion: *string,
-	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig,
+	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfig,
 	AcceleratorType: *string,
 	CidrBlock: *string,
 	DataDisks: interface{},
@@ -1488,14 +1488,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 	Id: *string,
 	Labels: *map[string]*string,
 	Metadata: *map[string]*string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig,
 	NetworkConfigs: interface{},
 	Project: *string,
-	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig,
-	ServiceAccount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmServiceAccount,
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig,
+	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig,
+	ServiceAccount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleTpuV2Vm.GoogleTpuV2VmTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuV2Vm.GoogleTpuV2VmTimeouts,
 	Zone: *string,
 }
 ```
@@ -1518,12 +1518,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | The CIDR block that the TPU node will use when selecting an IP address. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.dataDisks">DataDisks</a></code> | <code>interface{}</code> | data_disks block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.description">Description</a></code> | <code>*string</code> | Text description of the TPU. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user-provided metadata. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Custom metadata to apply to the TPU Node. Can set startup-script and shutdown-script. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig">GoogleTpuV2VmNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.networkConfigs">NetworkConfigs</a></code> | <code>interface{}</code> | network_configs block. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.schedulingConfig">SchedulingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig">GoogleTpuV2VmSchedulingConfig</a></code> | scheduling_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.serviceAccount">ServiceAccount</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount">GoogleTpuV2VmServiceAccount</a></code> | service_account block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmConfig.property.shieldedInstanceConfig">ShieldedInstanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig">GoogleTpuV2VmShieldedInstanceConfig</a></code> | shielded_instance_config block. |
@@ -1613,7 +1613,7 @@ Name *string
 
 The immutable name of the TPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#name GoogleTpuV2Vm#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#name GoogleTpuV2Vm#name}
 
 ---
 
@@ -1627,7 +1627,7 @@ RuntimeVersion *string
 
 Runtime version for the TPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#runtime_version GoogleTpuV2Vm#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#runtime_version GoogleTpuV2Vm#runtime_version}
 
 ---
 
@@ -1641,7 +1641,7 @@ AcceleratorConfig GoogleTpuV2VmAcceleratorConfig
 
 accelerator_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#accelerator_config GoogleTpuV2Vm#accelerator_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#accelerator_config GoogleTpuV2Vm#accelerator_config}
 
 ---
 
@@ -1658,7 +1658,7 @@ TPU accelerator type for the TPU.
 'accelerator_type' cannot be used at the same time as
 'accelerator_config'. If neither is specified, 'accelerator_type' defaults to 'v2-8'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#accelerator_type GoogleTpuV2Vm#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#accelerator_type GoogleTpuV2Vm#accelerator_type}
 
 ---
 
@@ -1679,7 +1679,7 @@ CIDR block has already been used for a currently existing TPU node, the CIDR blo
 with any subnetworks in the user's provided network, or the provided network is peered with
 another network that is using that CIDR block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#cidr_block GoogleTpuV2Vm#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#cidr_block GoogleTpuV2Vm#cidr_block}
 
 ---
 
@@ -1693,7 +1693,7 @@ DataDisks interface{}
 
 data_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#data_disks GoogleTpuV2Vm#data_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#data_disks GoogleTpuV2Vm#data_disks}
 
 ---
 
@@ -1707,7 +1707,7 @@ Description *string
 
 Text description of the TPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#description GoogleTpuV2Vm#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#description GoogleTpuV2Vm#description}
 
 ---
 
@@ -1719,7 +1719,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#id GoogleTpuV2Vm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1739,7 +1739,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#labels GoogleTpuV2Vm#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#labels GoogleTpuV2Vm#labels}
 
 ---
 
@@ -1753,7 +1753,7 @@ Metadata *map[string]*string
 
 Custom metadata to apply to the TPU Node. Can set startup-script and shutdown-script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#metadata GoogleTpuV2Vm#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#metadata GoogleTpuV2Vm#metadata}
 
 ---
 
@@ -1767,7 +1767,7 @@ NetworkConfig GoogleTpuV2VmNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#network_config GoogleTpuV2Vm#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#network_config GoogleTpuV2Vm#network_config}
 
 ---
 
@@ -1781,7 +1781,7 @@ NetworkConfigs interface{}
 
 network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#network_configs GoogleTpuV2Vm#network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#network_configs GoogleTpuV2Vm#network_configs}
 
 ---
 
@@ -1793,7 +1793,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#project GoogleTpuV2Vm#project}.
 
 ---
 
@@ -1807,7 +1807,7 @@ SchedulingConfig GoogleTpuV2VmSchedulingConfig
 
 scheduling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#scheduling_config GoogleTpuV2Vm#scheduling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#scheduling_config GoogleTpuV2Vm#scheduling_config}
 
 ---
 
@@ -1821,7 +1821,7 @@ ServiceAccount GoogleTpuV2VmServiceAccount
 
 service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#service_account GoogleTpuV2Vm#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#service_account GoogleTpuV2Vm#service_account}
 
 ---
 
@@ -1835,7 +1835,7 @@ ShieldedInstanceConfig GoogleTpuV2VmShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#shielded_instance_config GoogleTpuV2Vm#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#shielded_instance_config GoogleTpuV2Vm#shielded_instance_config}
 
 ---
 
@@ -1849,7 +1849,7 @@ Tags *[]*string
 
 Tags to apply to the TPU Node. Tags are used to identify valid sources or targets for network firewalls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#tags GoogleTpuV2Vm#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#tags GoogleTpuV2Vm#tags}
 
 ---
 
@@ -1863,7 +1863,7 @@ Timeouts GoogleTpuV2VmTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#timeouts GoogleTpuV2Vm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#timeouts GoogleTpuV2Vm#timeouts}
 
 ---
 
@@ -1877,7 +1877,7 @@ Zone *string
 
 The GCP location for the TPU. If it is not provided, the provider zone is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#zone GoogleTpuV2Vm#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#zone GoogleTpuV2Vm#zone}
 
 ---
 
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmDataDisks {
 	SourceDisk: *string,
@@ -1913,7 +1913,7 @@ SourceDisk *string
 
 Specifies the full path to an existing disk. For example: "projects/my-project/zones/us-central1-c/disks/my-disk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#source_disk GoogleTpuV2Vm#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#source_disk GoogleTpuV2Vm#source_disk}
 
 ---
 
@@ -1930,7 +1930,7 @@ The mode in which to attach this disk.
 If not specified, the default is READ_WRITE
 mode. Only applicable to dataDisks. Default value: "READ_WRITE" Possible values: ["READ_WRITE", "READ_ONLY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#mode GoogleTpuV2Vm#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#mode GoogleTpuV2Vm#mode}
 
 ---
 
@@ -1939,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkConfig {
 	CanIpForward: interface{},
@@ -1974,7 +1974,7 @@ Allows the TPU node to send and receive packets with non-matching destination or
 
 This is required if you plan to use the TPU workers to forward routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
 
 ---
 
@@ -1991,7 +1991,7 @@ Indicates that external IP addresses would be associated with the TPU workers.
 If set to
 false, the specified subnetwork or network should have Private Google Access enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
 
 ---
 
@@ -2008,7 +2008,7 @@ The name of the network for the TPU node.
 It must be a preexisting Google Compute Engine
 network. If none is provided, "default" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
 
 ---
 
@@ -2022,7 +2022,7 @@ QueueCount *f64
 
 Specifies networking queue count for TPU VM instance's network interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
 
 ---
 
@@ -2039,7 +2039,7 @@ The name of the subnetwork for the TPU node.
 It must be a preexisting Google Compute
 Engine subnetwork. If none is provided, "default" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
 
 ---
 
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkConfigs {
 	CanIpForward: interface{},
@@ -2083,7 +2083,7 @@ Allows the TPU node to send and receive packets with non-matching destination or
 
 This is required if you plan to use the TPU workers to forward routes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#can_ip_forward GoogleTpuV2Vm#can_ip_forward}
 
 ---
 
@@ -2100,7 +2100,7 @@ Indicates that external IP addresses would be associated with the TPU workers.
 If set to
 false, the specified subnetwork or network should have Private Google Access enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#enable_external_ips GoogleTpuV2Vm#enable_external_ips}
 
 ---
 
@@ -2117,7 +2117,7 @@ The name of the network for the TPU node.
 It must be a preexisting Google Compute Engine
 network. If none is provided, "default" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#network GoogleTpuV2Vm#network}
 
 ---
 
@@ -2131,7 +2131,7 @@ QueueCount *f64
 
 Specifies networking queue count for TPU VM instance's network interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#queue_count GoogleTpuV2Vm#queue_count}
 
 ---
 
@@ -2148,7 +2148,7 @@ The name of the subnetwork for the TPU node.
 It must be a preexisting Google Compute
 Engine subnetwork. If none is provided, "default" will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#subnetwork GoogleTpuV2Vm#subnetwork}
 
 ---
 
@@ -2157,7 +2157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkEndpoints {
 
@@ -2170,7 +2170,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmNetworkEndpointsAccessConfig {
 
@@ -2183,7 +2183,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmSchedulingConfig {
 	Preemptible: interface{},
@@ -2210,7 +2210,7 @@ Preemptible interface{}
 
 Defines whether the node is preemptible.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#preemptible GoogleTpuV2Vm#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#preemptible GoogleTpuV2Vm#preemptible}
 
 ---
 
@@ -2224,7 +2224,7 @@ Reserved interface{}
 
 Whether the node is created under a reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#reserved GoogleTpuV2Vm#reserved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#reserved GoogleTpuV2Vm#reserved}
 
 ---
 
@@ -2233,7 +2233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmServiceAccount {
 	Email: *string,
@@ -2260,7 +2260,7 @@ Email *string
 
 Email address of the service account. If empty, default Compute service account will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#email GoogleTpuV2Vm#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#email GoogleTpuV2Vm#email}
 
 ---
 
@@ -2277,7 +2277,7 @@ The list of scopes to be made available for this service account.
 If empty, access to all
 Cloud APIs will be allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#scope GoogleTpuV2Vm#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#scope GoogleTpuV2Vm#scope}
 
 ---
 
@@ -2286,7 +2286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmShieldedInstanceConfig {
 	EnableSecureBoot: interface{},
@@ -2311,7 +2311,7 @@ EnableSecureBoot interface{}
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#enable_secure_boot GoogleTpuV2Vm#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#enable_secure_boot GoogleTpuV2Vm#enable_secure_boot}
 
 ---
 
@@ -2320,7 +2320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptoms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmSymptoms {
 
@@ -2333,7 +2333,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 &googletpuv2vm.GoogleTpuV2VmTimeouts {
 	Create: *string,
@@ -2346,9 +2346,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}. |
 
 ---
 
@@ -2360,7 +2360,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#create GoogleTpuV2Vm#create}.
 
 ---
 
@@ -2372,7 +2372,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#delete GoogleTpuV2Vm#delete}.
 
 ---
 
@@ -2384,7 +2384,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tpu_v2_vm#update GoogleTpuV2Vm#update}.
 
 ---
 
@@ -2395,7 +2395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmAcceleratorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmAcceleratorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmAcceleratorConfigOutputReference
 ```
@@ -2688,7 +2688,7 @@ func InternalValue() GoogleTpuV2VmAcceleratorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmDataDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmDataDisksList
 ```
@@ -2848,7 +2848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmDataDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmDataDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmDataDisksOutputReference
 ```
@@ -3166,7 +3166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmNetworkConfigOutputReference
 ```
@@ -3560,7 +3560,7 @@ func InternalValue() GoogleTpuV2VmNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmNetworkConfigsList
 ```
@@ -3720,7 +3720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkConfigsOutputReference
 ```
@@ -4132,7 +4132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmNetworkEndpointsAccessConfigList
 ```
@@ -4281,7 +4281,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkEndpointsAccessConfigOutputReference
 ```
@@ -4559,7 +4559,7 @@ func InternalValue() GoogleTpuV2VmNetworkEndpointsAccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmNetworkEndpointsList
 ```
@@ -4708,7 +4708,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmNetworkEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmNetworkEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkEndpointsOutputReference
 ```
@@ -5008,7 +5008,7 @@ func InternalValue() GoogleTpuV2VmNetworkEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSchedulingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmSchedulingConfigOutputReference
 ```
@@ -5315,7 +5315,7 @@ func InternalValue() GoogleTpuV2VmSchedulingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmServiceAccountOutputReference
 ```
@@ -5622,7 +5622,7 @@ func InternalValue() GoogleTpuV2VmServiceAccount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmShieldedInstanceConfigOutputReference
 ```
@@ -5893,7 +5893,7 @@ func InternalValue() GoogleTpuV2VmShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSymptomsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuV2VmSymptomsList
 ```
@@ -6042,7 +6042,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmSymptomsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmSymptomsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuV2VmSymptomsOutputReference
 ```
@@ -6353,7 +6353,7 @@ func InternalValue() GoogleTpuV2VmSymptoms
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuV2Vm.GoogleTpuV2VmTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletpuv2vm"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpuv2vm"
 
 googletpuv2vm.NewGoogleTpuV2VmTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmTimeoutsOutputReference
 ```

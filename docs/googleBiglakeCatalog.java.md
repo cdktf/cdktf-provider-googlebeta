@@ -4,7 +4,7 @@
 
 ### GoogleBiglakeCatalog <a name="GoogleBiglakeCatalog" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog google_biglake_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog google_biglake_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer"></a>
 
@@ -44,8 +44,8 @@ GoogleBiglakeCatalog.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the Catalog should reside. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalog.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts">GoogleBiglakeCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The geographic location where the Catalog should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the GoogleBiglakeCatalog to im
 
 The id of the existing GoogleBiglakeCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,8 +1005,8 @@ GoogleBiglakeCatalogConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the Catalog should reside. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts">GoogleBiglakeCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1091,7 @@ public java.lang.String getLocation();
 
 The geographic location where the Catalog should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#location GoogleBiglakeCatalog#location}
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getName();
 
 The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#name GoogleBiglakeCatalog#name}
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#id GoogleBiglakeCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#project GoogleBiglakeCatalog#project}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public GoogleBiglakeCatalogTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#timeouts GoogleBiglakeCatalog#timeouts}
 
 ---
 
@@ -1167,8 +1167,8 @@ GoogleBiglakeCatalogTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBiglakeCatalog.GoogleBiglakeCatalogTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}. |
 
 ---
 
@@ -1180,7 +1180,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#create GoogleBiglakeCatalog#create}.
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_biglake_catalog#delete GoogleBiglakeCatalog#delete}.
 
 ---
 

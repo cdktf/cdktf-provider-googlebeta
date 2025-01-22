@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface GoogleSccSourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the source (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#description GoogleSccSource#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#description GoogleSccSource#description}
   */
   readonly description?: string;
   /**
@@ -25,11 +20,11 @@ export interface GoogleSccSourceConfig extends cdktf.TerraformMetaArguments {
   * with a letter or digit, may contain letters, digits, spaces, hyphens,
   * and underscores, and can be no longer than 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#display_name GoogleSccSource#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#display_name GoogleSccSource#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#id GoogleSccSource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#id GoogleSccSource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,27 +34,27 @@ export interface GoogleSccSourceConfig extends cdktf.TerraformMetaArguments {
   * The organization whose Cloud Security Command Center the Source
   * lives in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#organization GoogleSccSource#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#organization GoogleSccSource#organization}
   */
   readonly organization: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#timeouts GoogleSccSource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#timeouts GoogleSccSource#timeouts}
   */
   readonly timeouts?: GoogleSccSourceTimeouts;
 }
 export interface GoogleSccSourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#create GoogleSccSource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#create GoogleSccSource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#delete GoogleSccSource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#delete GoogleSccSource#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#update GoogleSccSource#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#update GoogleSccSource#update}
   */
   readonly update?: string;
 }
@@ -211,7 +206,7 @@ export class GoogleSccSourceTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source google_scc_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source google_scc_source}
 */
 export class GoogleSccSource extends cdktf.TerraformResource {
 
@@ -227,7 +222,7 @@ export class GoogleSccSource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleSccSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleSccSource to import
-  * @param importFromId The id of the existing GoogleSccSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleSccSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleSccSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -239,7 +234,7 @@ export class GoogleSccSource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_scc_source google_scc_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_source google_scc_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +245,7 @@ export class GoogleSccSource extends cdktf.TerraformResource {
       terraformResourceType: 'google_scc_source',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.16.0',
+        providerVersion: '6.17.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

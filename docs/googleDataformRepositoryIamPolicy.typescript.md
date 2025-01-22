@@ -4,7 +4,7 @@
 
 ### GoogleDataformRepositoryIamPolicy <a name="GoogleDataformRepositoryIamPolicy" id="@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy google_dataform_repository_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy google_dataform_repository_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GoogleDataformRepositoryIa
 
 The id of the existing GoogleDataformRepositoryIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const googleDataformRepositoryIamPolicyConfig: googleDataformRepositoryIamPolicy
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#policy_data GoogleDataformRepositoryIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#repository GoogleDataformRepositoryIamPolicy#repository}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#id GoogleDataformRepositoryIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#project GoogleDataformRepositoryIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#region GoogleDataformRepositoryIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#policy_data GoogleDataformRepositoryIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#repository GoogleDataformRepositoryIamPolicy#repository}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#id GoogleDataformRepositoryIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#project GoogleDataformRepositoryIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataformRepositoryIamPolicy.GoogleDataformRepositoryIamPolicyConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#region GoogleDataformRepositoryIamPolicy#region}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#policy_data GoogleDataformRepositoryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#policy_data GoogleDataformRepositoryIamPolicy#policy_data}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#repository GoogleDataformRepositoryIamPolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#repository GoogleDataformRepositoryIamPolicy#repository}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#id GoogleDataformRepositoryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#id GoogleDataformRepositoryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#project GoogleDataformRepositoryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#project GoogleDataformRepositoryIamPolicy#project}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_dataform_repository_iam_policy#region GoogleDataformRepositoryIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_dataform_repository_iam_policy#region GoogleDataformRepositoryIamPolicy#region}.
 
 ---
 

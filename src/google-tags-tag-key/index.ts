@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * User-assigned description of the TagKey. Must not exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#description GoogleTagsTagKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#description GoogleTagsTagKey#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#id GoogleTagsTagKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#id GoogleTagsTagKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#parent GoogleTagsTagKey#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#parent GoogleTagsTagKey#parent}
   */
   readonly parent: string;
   /**
@@ -36,7 +31,7 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   * 
   * A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#purpose GoogleTagsTagKey#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#purpose GoogleTagsTagKey#purpose}
   */
   readonly purpose?: string;
   /**
@@ -44,7 +39,7 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#purpose_data GoogleTagsTagKey#purpose_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#purpose_data GoogleTagsTagKey#purpose_data}
   */
   readonly purposeData?: { [key: string]: string };
   /**
@@ -52,27 +47,27 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   * 
   * The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\\), and forward slashes (/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#short_name GoogleTagsTagKey#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#short_name GoogleTagsTagKey#short_name}
   */
   readonly shortName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#timeouts GoogleTagsTagKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#timeouts GoogleTagsTagKey#timeouts}
   */
   readonly timeouts?: GoogleTagsTagKeyTimeouts;
 }
 export interface GoogleTagsTagKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#create GoogleTagsTagKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#create GoogleTagsTagKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#delete GoogleTagsTagKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#delete GoogleTagsTagKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#update GoogleTagsTagKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#update GoogleTagsTagKey#update}
   */
   readonly update?: string;
 }
@@ -224,7 +219,7 @@ export class GoogleTagsTagKeyTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key google_tags_tag_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key google_tags_tag_key}
 */
 export class GoogleTagsTagKey extends cdktf.TerraformResource {
 
@@ -240,7 +235,7 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleTagsTagKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleTagsTagKey to import
-  * @param importFromId The id of the existing GoogleTagsTagKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleTagsTagKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleTagsTagKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -252,7 +247,7 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +258,7 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_tags_tag_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.16.0',
+        providerVersion: '6.17.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

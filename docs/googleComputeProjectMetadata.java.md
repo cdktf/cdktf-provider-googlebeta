@@ -4,7 +4,7 @@
 
 ### GoogleComputeProjectMetadata <a name="GoogleComputeProjectMetadata" id="@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata google_compute_project_metadata}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata google_compute_project_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer"></a>
 
@@ -42,7 +42,7 @@ GoogleComputeProjectMetadata.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A series of key value pairs. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadata.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts">GoogleComputeProjectMetadataTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 A series of key value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#metadata GoogleComputeProjectMetadata#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#metadata GoogleComputeProjectMetadata#metadata}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#project GoogleComputeProjectMetadata#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#project GoogleComputeProjectMetadata#project}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#timeouts GoogleComputeProjectMetadata#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#timeouts GoogleComputeProjectMetadata#timeouts}
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the GoogleComputeProjectMetada
 
 The id of the existing GoogleComputeProjectMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,7 +929,7 @@ GoogleComputeProjectMetadataConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A series of key value pairs. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts">GoogleComputeProjectMetadataTimeouts</a></code> | timeouts block. |
 
@@ -1015,7 +1015,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 A series of key value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#metadata GoogleComputeProjectMetadata#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#metadata GoogleComputeProjectMetadata#metadata}
 
 ---
 
@@ -1027,7 +1027,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#id GoogleComputeProjectMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1046,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#project GoogleComputeProjectMetadata#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#project GoogleComputeProjectMetadata#project}
 
 ---
 
@@ -1060,7 +1060,7 @@ public GoogleComputeProjectMetadataTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#timeouts GoogleComputeProjectMetadata#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#timeouts GoogleComputeProjectMetadata#timeouts}
 
 ---
 
@@ -1081,8 +1081,8 @@ GoogleComputeProjectMetadataTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#create GoogleComputeProjectMetadata#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#delete GoogleComputeProjectMetadata#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#create GoogleComputeProjectMetadata#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadata.GoogleComputeProjectMetadataTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#delete GoogleComputeProjectMetadata#delete}. |
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#create GoogleComputeProjectMetadata#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#create GoogleComputeProjectMetadata#create}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_project_metadata#delete GoogleComputeProjectMetadata#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_project_metadata#delete GoogleComputeProjectMetadata#delete}.
 
 ---
 

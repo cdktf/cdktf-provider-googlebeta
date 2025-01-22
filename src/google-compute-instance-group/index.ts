@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleComputeInstanceGroupConfig extends cdktf.TerraformMetaArg
   /**
   * An optional textual description of the instance group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#description GoogleComputeInstanceGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#description GoogleComputeInstanceGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#id GoogleComputeInstanceGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#id GoogleComputeInstanceGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +23,43 @@ export interface GoogleComputeInstanceGroupConfig extends cdktf.TerraformMetaArg
   /**
   * The list of instances in the group, in self_link format. When adding instances they must all be in the same network and zone as the instance group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#instances GoogleComputeInstanceGroup#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#instances GoogleComputeInstanceGroup#instances}
   */
   readonly instances?: string[];
   /**
   * The name of the instance group. Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
   */
   readonly name: string;
   /**
   * The URL of the network the instance group is in. If this is different from the network where the instances are in, the creation fails. Defaults to the network where the instances are in (if neither network nor instances is specified, this field will be blank).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#network GoogleComputeInstanceGroup#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#network GoogleComputeInstanceGroup#network}
   */
   readonly network?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#project GoogleComputeInstanceGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#project GoogleComputeInstanceGroup#project}
   */
   readonly project?: string;
   /**
   * The zone that this instance group should be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#zone GoogleComputeInstanceGroup#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#zone GoogleComputeInstanceGroup#zone}
   */
   readonly zone?: string;
   /**
   * named_port block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#named_port GoogleComputeInstanceGroup#named_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#named_port GoogleComputeInstanceGroup#named_port}
   */
   readonly namedPort?: GoogleComputeInstanceGroupNamedPort[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#timeouts GoogleComputeInstanceGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#timeouts GoogleComputeInstanceGroup#timeouts}
   */
   readonly timeouts?: GoogleComputeInstanceGroupTimeouts;
 }
@@ -72,13 +67,13 @@ export interface GoogleComputeInstanceGroupNamedPort {
   /**
   * The name which the port will be mapped to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#name GoogleComputeInstanceGroup#name}
   */
   readonly name: string;
   /**
   * The port number to map the name to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#port GoogleComputeInstanceGroup#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#port GoogleComputeInstanceGroup#port}
   */
   readonly port: number;
 }
@@ -217,15 +212,15 @@ export class GoogleComputeInstanceGroupNamedPortList extends cdktf.ComplexList {
 }
 export interface GoogleComputeInstanceGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#create GoogleComputeInstanceGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#create GoogleComputeInstanceGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#delete GoogleComputeInstanceGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#delete GoogleComputeInstanceGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#update GoogleComputeInstanceGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#update GoogleComputeInstanceGroup#update}
   */
   readonly update?: string;
 }
@@ -377,7 +372,7 @@ export class GoogleComputeInstanceGroupTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group google_compute_instance_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group google_compute_instance_group}
 */
 export class GoogleComputeInstanceGroup extends cdktf.TerraformResource {
 
@@ -393,7 +388,7 @@ export class GoogleComputeInstanceGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleComputeInstanceGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleComputeInstanceGroup to import
-  * @param importFromId The id of the existing GoogleComputeInstanceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleComputeInstanceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleComputeInstanceGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -405,7 +400,7 @@ export class GoogleComputeInstanceGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_compute_instance_group google_compute_instance_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_compute_instance_group google_compute_instance_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -416,7 +411,7 @@ export class GoogleComputeInstanceGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.16.0',
+        providerVersion: '6.17.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
