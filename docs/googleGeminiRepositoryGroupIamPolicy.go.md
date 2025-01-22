@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 googlegeminirepositorygroupiampolicy.NewGoogleGeminiRepositoryGroupIamPolicy(scope Construct, id *string, config GoogleGeminiRepositoryGroupIamPolicyConfig) GoogleGeminiRepositoryGroupIamPolicy
 ```
@@ -399,7 +399,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGeminiRepositoryGroupIamPolicy.GoogleGeminiRepositoryGroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegeminirepositorygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminirepositorygroupiampolicy"
 
 &googlegeminirepositorygroupiampolicy.GoogleGeminiRepositoryGroupIamPolicyConfig {
 	Connection: interface{},

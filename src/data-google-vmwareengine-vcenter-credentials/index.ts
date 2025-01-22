@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/data-sources/google_vmwareengine_vcenter_credentials
 // generated from terraform resource schema
 
