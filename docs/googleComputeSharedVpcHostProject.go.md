@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.NewGoogleComputeSharedVpcHostProject(scope Construct, id *string, config GoogleComputeSharedVpcHostProjectConfig) GoogleComputeSharedVpcHostProject
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 &googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProjectConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecompu
 	Provisioners: *[]interface{},
 	Project: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeouts,
 }
 ```
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 &googlecomputesharedvpchostproject.GoogleComputeSharedVpcHostProjectTimeouts {
 	Create: *string,
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesharedvpchostproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpchostproject"
 
 googlecomputesharedvpchostproject.NewGoogleComputeSharedVpcHostProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSharedVpcHostProjectTimeoutsOutputReference
 ```
