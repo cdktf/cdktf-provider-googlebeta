@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZone(scope Construct, id *string, config GoogleDnsManagedZoneConfig) GoogleDnsManagedZone
 ```
@@ -567,7 +567,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.GoogleDnsManagedZone_IsConstruct(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.GoogleDnsManagedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ googlednsmanagedzone.GoogleDnsManagedZone_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.GoogleDnsManagedZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ googlednsmanagedzone.GoogleDnsManagedZone_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.GoogleDnsManagedZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1263,7 +1263,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneCloudLoggingConfig {
 	EnableLogging: interface{},
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneConfig {
 	Connection: interface{},
@@ -1309,19 +1309,19 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsma
 	Provisioners: *[]interface{},
 	DnsName: *string,
 	Name: *string,
-	CloudLoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfig,
+	CloudLoggingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfig,
 	Description: *string,
-	DnssecConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfig,
+	DnssecConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfig,
 	ForceDestroy: interface{},
-	ForwardingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfig,
+	ForwardingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfig,
 	Id: *string,
 	Labels: *map[string]*string,
-	PeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfig,
-	PrivateVisibilityConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfig,
+	PeeringConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfig,
+	PrivateVisibilityConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfig,
 	Project: *string,
 	ReverseLookup: interface{},
-	ServiceDirectoryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneTimeouts,
+	ServiceDirectoryConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneTimeouts,
 	Visibility: *string,
 }
 ```
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneDnssecConfig {
 	DefaultKeySpecs: interface{},
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs {
 	Algorithm: *string,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneForwardingConfig {
 	TargetNameServers: interface{},
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneForwardingConfigTargetNameServers {
 	Ipv4Address: *string,
@@ -1923,10 +1923,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZonePeeringConfig {
-	TargetNetwork: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetwork,
+	TargetNetwork: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetwork,
 }
 ```
 
@@ -1957,7 +1957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZonePeeringConfigTargetNetwork {
 	NetworkUrl: *string,
@@ -1994,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZonePrivateVisibilityConfig {
 	GkeClusters: interface{},
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters {
 	GkeClusterName: *string,
@@ -2083,7 +2083,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZonePrivateVisibilityConfigNetworks {
 	NetworkUrl: *string,
@@ -2117,10 +2117,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneServiceDirectoryConfig {
-	Namespace: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace,
+	Namespace: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace,
 }
 ```
 
@@ -2151,7 +2151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace {
 	NamespaceUrl: *string,
@@ -2190,7 +2190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 &googlednsmanagedzone.GoogleDnsManagedZoneTimeouts {
 	Create: *string,
@@ -2252,7 +2252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneCloudLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneCloudLoggingConfigOutputReference
 ```
@@ -2523,7 +2523,7 @@ func InternalValue() GoogleDnsManagedZoneCloudLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference
 ```
@@ -3066,7 +3066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneDnssecConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneDnssecConfigOutputReference
 ```
@@ -3444,7 +3444,7 @@ func InternalValue() GoogleDnsManagedZoneDnssecConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneForwardingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneForwardingConfigOutputReference
 ```
@@ -3728,7 +3728,7 @@ func InternalValue() GoogleDnsManagedZoneForwardingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneForwardingConfigTargetNameServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDnsManagedZoneForwardingConfigTargetNameServersList
 ```
@@ -3888,7 +3888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference
 ```
@@ -4206,7 +4206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePeeringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZonePeeringConfigOutputReference
 ```
@@ -4490,7 +4490,7 @@ func InternalValue() GoogleDnsManagedZonePeeringConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference
 ```
@@ -4761,7 +4761,7 @@ func InternalValue() GoogleDnsManagedZonePeeringConfigTargetNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList
 ```
@@ -4921,7 +4921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference
 ```
@@ -5210,7 +5210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePrivateVisibilityConfigNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDnsManagedZonePrivateVisibilityConfigNetworksList
 ```
@@ -5370,7 +5370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference
 ```
@@ -5659,7 +5659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZonePrivateVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZonePrivateVisibilityConfigOutputReference
 ```
@@ -5992,7 +5992,7 @@ func InternalValue() GoogleDnsManagedZonePrivateVisibilityConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference
 ```
@@ -6263,7 +6263,7 @@ func InternalValue() GoogleDnsManagedZoneServiceDirectoryConfigNamespace
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneServiceDirectoryConfigOutputReference
 ```
@@ -6547,7 +6547,7 @@ func InternalValue() GoogleDnsManagedZoneServiceDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednsmanagedzone"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlednsmanagedzone"
 
 googlednsmanagedzone.NewGoogleDnsManagedZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneTimeoutsOutputReference
 ```

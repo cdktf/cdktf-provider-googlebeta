@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_data_catalog_entry_group_iam_binding
 // generated from terraform resource schema
 

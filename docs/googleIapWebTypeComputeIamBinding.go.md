@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.NewGoogleIapWebTypeComputeIamBinding(scope Construct, id *string, config GoogleIapWebTypeComputeIamBindingConfig) GoogleIapWebTypeComputeIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 &googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBindingCondition {
 	Expression: *string,
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 &googleiapwebtypecomputeiambinding.GoogleIapWebTypeComputeIamBindingConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwe
 	Provisioners: *[]interface{},
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapwebtypecomputeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiambinding"
 
 googleiapwebtypecomputeiambinding.NewGoogleIapWebTypeComputeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapWebTypeComputeIamBindingConditionOutputReference
 ```
