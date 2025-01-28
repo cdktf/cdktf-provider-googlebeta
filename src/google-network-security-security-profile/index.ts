@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleNetworkSecuritySecurityProfileConfig extends cdktf.Terraf
   /**
   * An optional description of the security profile. The Max length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#description GoogleNetworkSecuritySecurityProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#description GoogleNetworkSecuritySecurityProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#id GoogleNetworkSecuritySecurityProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#id GoogleNetworkSecuritySecurityProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,59 +32,239 @@ export interface GoogleNetworkSecuritySecurityProfileConfig extends cdktf.Terraf
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#labels GoogleNetworkSecuritySecurityProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#labels GoogleNetworkSecuritySecurityProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the security profile.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#location GoogleNetworkSecuritySecurityProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#location GoogleNetworkSecuritySecurityProfile#location}
   */
   readonly location?: string;
   /**
   * The name of the security profile resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#name GoogleNetworkSecuritySecurityProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#name GoogleNetworkSecuritySecurityProfile#name}
   */
   readonly name: string;
   /**
   * The name of the parent this security profile belongs to.
   * Format: organizations/{organization_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#parent GoogleNetworkSecuritySecurityProfile#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#parent GoogleNetworkSecuritySecurityProfile#parent}
   */
   readonly parent?: string;
   /**
-  * The type of security profile. Possible values: ["THREAT_PREVENTION"]
+  * The type of security profile. Possible values: ["THREAT_PREVENTION", "CUSTOM_MIRRORING", "CUSTOM_INTERCEPT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#type GoogleNetworkSecuritySecurityProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#type GoogleNetworkSecuritySecurityProfile#type}
   */
   readonly type: string;
   /**
+  * custom_intercept_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#custom_intercept_profile GoogleNetworkSecuritySecurityProfile#custom_intercept_profile}
+  */
+  readonly customInterceptProfile?: GoogleNetworkSecuritySecurityProfileCustomInterceptProfile;
+  /**
+  * custom_mirroring_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#custom_mirroring_profile GoogleNetworkSecuritySecurityProfile#custom_mirroring_profile}
+  */
+  readonly customMirroringProfile?: GoogleNetworkSecuritySecurityProfileCustomMirroringProfile;
+  /**
   * threat_prevention_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#threat_prevention_profile GoogleNetworkSecuritySecurityProfile#threat_prevention_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#threat_prevention_profile GoogleNetworkSecuritySecurityProfile#threat_prevention_profile}
   */
   readonly threatPreventionProfile?: GoogleNetworkSecuritySecurityProfileThreatPreventionProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#timeouts GoogleNetworkSecuritySecurityProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#timeouts GoogleNetworkSecuritySecurityProfile#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecuritySecurityProfileTimeouts;
+}
+export interface GoogleNetworkSecuritySecurityProfileCustomInterceptProfile {
+  /**
+  * The Intercept Endpoint Group to which matching traffic should be intercepted.
+  * Format: projects/{project_id}/locations/global/interceptEndpointGroups/{endpoint_group_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#intercept_endpoint_group GoogleNetworkSecuritySecurityProfile#intercept_endpoint_group}
+  */
+  readonly interceptEndpointGroup: string;
+}
+
+export function googleNetworkSecuritySecurityProfileCustomInterceptProfileToTerraform(struct?: GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference | GoogleNetworkSecuritySecurityProfileCustomInterceptProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    intercept_endpoint_group: cdktf.stringToTerraform(struct!.interceptEndpointGroup),
+  }
+}
+
+
+export function googleNetworkSecuritySecurityProfileCustomInterceptProfileToHclTerraform(struct?: GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference | GoogleNetworkSecuritySecurityProfileCustomInterceptProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    intercept_endpoint_group: {
+      value: cdktf.stringToHclTerraform(struct!.interceptEndpointGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleNetworkSecuritySecurityProfileCustomInterceptProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._interceptEndpointGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interceptEndpointGroup = this._interceptEndpointGroup;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleNetworkSecuritySecurityProfileCustomInterceptProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._interceptEndpointGroup = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._interceptEndpointGroup = value.interceptEndpointGroup;
+    }
+  }
+
+  // intercept_endpoint_group - computed: false, optional: false, required: true
+  private _interceptEndpointGroup?: string; 
+  public get interceptEndpointGroup() {
+    return this.getStringAttribute('intercept_endpoint_group');
+  }
+  public set interceptEndpointGroup(value: string) {
+    this._interceptEndpointGroup = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interceptEndpointGroupInput() {
+    return this._interceptEndpointGroup;
+  }
+}
+export interface GoogleNetworkSecuritySecurityProfileCustomMirroringProfile {
+  /**
+  * The Mirroring Endpoint Group to which matching traffic should be mirrored.
+  * Format: projects/{project_id}/locations/global/mirroringEndpointGroups/{endpoint_group_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#mirroring_endpoint_group GoogleNetworkSecuritySecurityProfile#mirroring_endpoint_group}
+  */
+  readonly mirroringEndpointGroup: string;
+}
+
+export function googleNetworkSecuritySecurityProfileCustomMirroringProfileToTerraform(struct?: GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference | GoogleNetworkSecuritySecurityProfileCustomMirroringProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mirroring_endpoint_group: cdktf.stringToTerraform(struct!.mirroringEndpointGroup),
+  }
+}
+
+
+export function googleNetworkSecuritySecurityProfileCustomMirroringProfileToHclTerraform(struct?: GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference | GoogleNetworkSecuritySecurityProfileCustomMirroringProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mirroring_endpoint_group: {
+      value: cdktf.stringToHclTerraform(struct!.mirroringEndpointGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleNetworkSecuritySecurityProfileCustomMirroringProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mirroringEndpointGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mirroringEndpointGroup = this._mirroringEndpointGroup;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleNetworkSecuritySecurityProfileCustomMirroringProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mirroringEndpointGroup = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mirroringEndpointGroup = value.mirroringEndpointGroup;
+    }
+  }
+
+  // mirroring_endpoint_group - computed: false, optional: false, required: true
+  private _mirroringEndpointGroup?: string; 
+  public get mirroringEndpointGroup() {
+    return this.getStringAttribute('mirroring_endpoint_group');
+  }
+  public set mirroringEndpointGroup(value: string) {
+    this._mirroringEndpointGroup = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mirroringEndpointGroupInput() {
+    return this._mirroringEndpointGroup;
+  }
 }
 export interface GoogleNetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides {
   /**
   * Threat action override. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#action GoogleNetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#action GoogleNetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Severity level to match. Possible values: ["CRITICAL", "HIGH", "INFORMATIONAL", "LOW", "MEDIUM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#severity GoogleNetworkSecuritySecurityProfile#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#severity GoogleNetworkSecuritySecurityProfile#severity}
   */
   readonly severity: string;
 }
@@ -225,13 +405,13 @@ export interface GoogleNetworkSecuritySecurityProfileThreatPreventionProfileThre
   /**
   * Threat action. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#action GoogleNetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#action GoogleNetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Vendor-specific ID of a threat to override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#threat_id GoogleNetworkSecuritySecurityProfile#threat_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#threat_id GoogleNetworkSecuritySecurityProfile#threat_id}
   */
   readonly threatId: string;
 }
@@ -377,13 +557,13 @@ export interface GoogleNetworkSecuritySecurityProfileThreatPreventionProfile {
   /**
   * severity_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#severity_overrides GoogleNetworkSecuritySecurityProfile#severity_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#severity_overrides GoogleNetworkSecuritySecurityProfile#severity_overrides}
   */
   readonly severityOverrides?: GoogleNetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktf.IResolvable;
   /**
   * threat_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#threat_overrides GoogleNetworkSecuritySecurityProfile#threat_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#threat_overrides GoogleNetworkSecuritySecurityProfile#threat_overrides}
   */
   readonly threatOverrides?: GoogleNetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktf.IResolvable;
 }
@@ -496,15 +676,15 @@ export class GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 }
 export interface GoogleNetworkSecuritySecurityProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#create GoogleNetworkSecuritySecurityProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#create GoogleNetworkSecuritySecurityProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#delete GoogleNetworkSecuritySecurityProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#delete GoogleNetworkSecuritySecurityProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#update GoogleNetworkSecuritySecurityProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#update GoogleNetworkSecuritySecurityProfile#update}
   */
   readonly update?: string;
 }
@@ -656,7 +836,7 @@ export class GoogleNetworkSecuritySecurityProfileTimeoutsOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile google_network_security_security_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile google_network_security_security_profile}
 */
 export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResource {
 
@@ -672,7 +852,7 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
   * Generates CDKTF code for importing a GoogleNetworkSecuritySecurityProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkSecuritySecurityProfile to import
-  * @param importFromId The id of the existing GoogleNetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkSecuritySecurityProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -684,7 +864,7 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile google_network_security_security_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -695,7 +875,7 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
       terraformResourceType: 'google_network_security_security_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -713,6 +893,8 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
     this._name = config.name;
     this._parent = config.parent;
     this._type = config.type;
+    this._customInterceptProfile.internalValue = config.customInterceptProfile;
+    this._customMirroringProfile.internalValue = config.customMirroringProfile;
     this._threatPreventionProfile.internalValue = config.threatPreventionProfile;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -859,6 +1041,38 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
     return this.getStringAttribute('update_time');
   }
 
+  // custom_intercept_profile - computed: false, optional: true, required: false
+  private _customInterceptProfile = new GoogleNetworkSecuritySecurityProfileCustomInterceptProfileOutputReference(this, "custom_intercept_profile");
+  public get customInterceptProfile() {
+    return this._customInterceptProfile;
+  }
+  public putCustomInterceptProfile(value: GoogleNetworkSecuritySecurityProfileCustomInterceptProfile) {
+    this._customInterceptProfile.internalValue = value;
+  }
+  public resetCustomInterceptProfile() {
+    this._customInterceptProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customInterceptProfileInput() {
+    return this._customInterceptProfile.internalValue;
+  }
+
+  // custom_mirroring_profile - computed: false, optional: true, required: false
+  private _customMirroringProfile = new GoogleNetworkSecuritySecurityProfileCustomMirroringProfileOutputReference(this, "custom_mirroring_profile");
+  public get customMirroringProfile() {
+    return this._customMirroringProfile;
+  }
+  public putCustomMirroringProfile(value: GoogleNetworkSecuritySecurityProfileCustomMirroringProfile) {
+    this._customMirroringProfile.internalValue = value;
+  }
+  public resetCustomMirroringProfile() {
+    this._customMirroringProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMirroringProfileInput() {
+    return this._customMirroringProfile.internalValue;
+  }
+
   // threat_prevention_profile - computed: false, optional: true, required: false
   private _threatPreventionProfile = new GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference(this, "threat_prevention_profile");
   public get threatPreventionProfile() {
@@ -904,6 +1118,8 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
       name: cdktf.stringToTerraform(this._name),
       parent: cdktf.stringToTerraform(this._parent),
       type: cdktf.stringToTerraform(this._type),
+      custom_intercept_profile: googleNetworkSecuritySecurityProfileCustomInterceptProfileToTerraform(this._customInterceptProfile.internalValue),
+      custom_mirroring_profile: googleNetworkSecuritySecurityProfileCustomMirroringProfileToTerraform(this._customMirroringProfile.internalValue),
       threat_prevention_profile: googleNetworkSecuritySecurityProfileThreatPreventionProfileToTerraform(this._threatPreventionProfile.internalValue),
       timeouts: googleNetworkSecuritySecurityProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -952,6 +1168,18 @@ export class GoogleNetworkSecuritySecurityProfile extends cdktf.TerraformResourc
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      custom_intercept_profile: {
+        value: googleNetworkSecuritySecurityProfileCustomInterceptProfileToHclTerraform(this._customInterceptProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkSecuritySecurityProfileCustomInterceptProfileList",
+      },
+      custom_mirroring_profile: {
+        value: googleNetworkSecuritySecurityProfileCustomMirroringProfileToHclTerraform(this._customMirroringProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GoogleNetworkSecuritySecurityProfileCustomMirroringProfileList",
       },
       threat_prevention_profile: {
         value: googleNetworkSecuritySecurityProfileThreatPreventionProfileToHclTerraform(this._threatPreventionProfile.internalValue),

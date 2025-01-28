@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFolderIamAuditConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#folder GoogleFolderIamAuditConfig#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#folder GoogleFolderIamAuditConfig#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#id GoogleFolderIamAuditConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#id GoogleFolderIamAuditConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,13 +26,13 @@ export interface GoogleFolderIamAuditConfigConfig extends cdktf.TerraformMetaArg
   /**
   * Service which will be enabled for audit logging. The special value allServices covers all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#service GoogleFolderIamAuditConfig#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#service GoogleFolderIamAuditConfig#service}
   */
   readonly service: string;
   /**
   * audit_log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#audit_log_config GoogleFolderIamAuditConfig#audit_log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#audit_log_config GoogleFolderIamAuditConfig#audit_log_config}
   */
   readonly auditLogConfig: GoogleFolderIamAuditConfigAuditLogConfig[] | cdktf.IResolvable;
 }
@@ -40,13 +40,13 @@ export interface GoogleFolderIamAuditConfigAuditLogConfig {
   /**
   * Identities that do not cause logging for this type of permission. Each entry can have one of the following values:user:{emailid}: An email address that represents a specific Google account. For example, alice@gmail.com or joe@example.com. serviceAccount:{emailid}: An email address that represents a service account. For example, my-other-app@appspot.gserviceaccount.com. group:{emailid}: An email address that represents a Google group. For example, admins@example.com. domain:{domain}: A G Suite domain (primary, instead of alias) name that represents all the users of that domain. For example, google.com or example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#exempted_members GoogleFolderIamAuditConfig#exempted_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#exempted_members GoogleFolderIamAuditConfig#exempted_members}
   */
   readonly exemptedMembers?: string[];
   /**
   * Permission type for which logging is to be configured. Must be one of DATA_READ, DATA_WRITE, or ADMIN_READ.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#log_type GoogleFolderIamAuditConfig#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#log_type GoogleFolderIamAuditConfig#log_type}
   */
   readonly logType: string;
 }
@@ -188,7 +188,7 @@ export class GoogleFolderIamAuditConfigAuditLogConfigList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config google_folder_iam_audit_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config google_folder_iam_audit_config}
 */
 export class GoogleFolderIamAuditConfig extends cdktf.TerraformResource {
 
@@ -204,7 +204,7 @@ export class GoogleFolderIamAuditConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleFolderIamAuditConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleFolderIamAuditConfig to import
-  * @param importFromId The id of the existing GoogleFolderIamAuditConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleFolderIamAuditConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleFolderIamAuditConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +216,7 @@ export class GoogleFolderIamAuditConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_folder_iam_audit_config google_folder_iam_audit_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_folder_iam_audit_config google_folder_iam_audit_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class GoogleFolderIamAuditConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_folder_iam_audit_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

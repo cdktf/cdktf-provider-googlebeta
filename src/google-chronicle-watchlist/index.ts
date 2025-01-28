@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface GoogleChronicleWatchlistConfig extends cdktf.TerraformMetaArgum
   /**
   * Optional. Description of the watchlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#description GoogleChronicleWatchlist#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#description GoogleChronicleWatchlist#description}
   */
   readonly description?: string;
   /**
@@ -23,11 +23,11 @@ export interface GoogleChronicleWatchlistConfig extends cdktf.TerraformMetaArgum
   * Note that it must be at least one character and less than 63 characters
   * (https://google.aip.dev/148).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#display_name GoogleChronicleWatchlist#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#display_name GoogleChronicleWatchlist#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#id GoogleChronicleWatchlist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#id GoogleChronicleWatchlist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,13 +36,13 @@ export interface GoogleChronicleWatchlistConfig extends cdktf.TerraformMetaArgum
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#instance GoogleChronicleWatchlist#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#instance GoogleChronicleWatchlist#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#location GoogleChronicleWatchlist#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#location GoogleChronicleWatchlist#location}
   */
   readonly location: string;
   /**
@@ -50,11 +50,11 @@ export interface GoogleChronicleWatchlistConfig extends cdktf.TerraformMetaArgum
   * in this watchlist.
   * The default is 1.0 if it is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#multiplying_factor GoogleChronicleWatchlist#multiplying_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#multiplying_factor GoogleChronicleWatchlist#multiplying_factor}
   */
   readonly multiplyingFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#project GoogleChronicleWatchlist#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#project GoogleChronicleWatchlist#project}
   */
   readonly project?: string;
   /**
@@ -63,25 +63,25 @@ export interface GoogleChronicleWatchlistConfig extends cdktf.TerraformMetaArgum
   * This value should be 4-63 characters, and valid characters
   * are /a-z-/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#watchlist_id GoogleChronicleWatchlist#watchlist_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#watchlist_id GoogleChronicleWatchlist#watchlist_id}
   */
   readonly watchlistId?: string;
   /**
   * entity_population_mechanism block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#entity_population_mechanism GoogleChronicleWatchlist#entity_population_mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#entity_population_mechanism GoogleChronicleWatchlist#entity_population_mechanism}
   */
   readonly entityPopulationMechanism: GoogleChronicleWatchlistEntityPopulationMechanism;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#timeouts GoogleChronicleWatchlist#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#timeouts GoogleChronicleWatchlist#timeouts}
   */
   readonly timeouts?: GoogleChronicleWatchlistTimeouts;
   /**
   * watchlist_user_preferences block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#watchlist_user_preferences GoogleChronicleWatchlist#watchlist_user_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#watchlist_user_preferences GoogleChronicleWatchlist#watchlist_user_preferences}
   */
   readonly watchlistUserPreferences?: GoogleChronicleWatchlistWatchlistUserPreferences;
 }
@@ -218,7 +218,7 @@ export interface GoogleChronicleWatchlistEntityPopulationMechanism {
   /**
   * manual block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#manual GoogleChronicleWatchlist#manual}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#manual GoogleChronicleWatchlist#manual}
   */
   readonly manual?: GoogleChronicleWatchlistEntityPopulationMechanismManual;
 }
@@ -302,15 +302,15 @@ export class GoogleChronicleWatchlistEntityPopulationMechanismOutputReference ex
 }
 export interface GoogleChronicleWatchlistTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#create GoogleChronicleWatchlist#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#create GoogleChronicleWatchlist#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#delete GoogleChronicleWatchlist#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#delete GoogleChronicleWatchlist#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#update GoogleChronicleWatchlist#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#update GoogleChronicleWatchlist#update}
   */
   readonly update?: string;
 }
@@ -464,7 +464,7 @@ export interface GoogleChronicleWatchlistWatchlistUserPreferences {
   /**
   * Optional. Whether the watchlist is pinned on the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#pinned GoogleChronicleWatchlist#pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#pinned GoogleChronicleWatchlist#pinned}
   */
   readonly pinned?: boolean | cdktf.IResolvable;
 }
@@ -548,7 +548,7 @@ export class GoogleChronicleWatchlistWatchlistUserPreferencesOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist}
 */
 export class GoogleChronicleWatchlist extends cdktf.TerraformResource {
 
@@ -564,7 +564,7 @@ export class GoogleChronicleWatchlist extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GoogleChronicleWatchlist resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleChronicleWatchlist to import
-  * @param importFromId The id of the existing GoogleChronicleWatchlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleChronicleWatchlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleChronicleWatchlist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -576,7 +576,7 @@ export class GoogleChronicleWatchlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_chronicle_watchlist google_chronicle_watchlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -587,7 +587,7 @@ export class GoogleChronicleWatchlist extends cdktf.TerraformResource {
       terraformResourceType: 'google_chronicle_watchlist',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group
+// https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleNetworkSecuritySecurityProfileGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Reference to a SecurityProfile with the CustomIntercept configuration.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#custom_intercept_profile GoogleNetworkSecuritySecurityProfileGroup#custom_intercept_profile}
+  */
+  readonly customInterceptProfile?: string;
+  /**
+  * Reference to a SecurityProfile with the custom mirroring configuration for the SecurityProfileGroup.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#custom_mirroring_profile GoogleNetworkSecuritySecurityProfileGroup#custom_mirroring_profile}
+  */
+  readonly customMirroringProfile?: string;
+  /**
   * An optional description of the profile. The Max length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#description GoogleNetworkSecuritySecurityProfileGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#description GoogleNetworkSecuritySecurityProfileGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#id GoogleNetworkSecuritySecurityProfileGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#id GoogleNetworkSecuritySecurityProfileGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,53 +44,53 @@ export interface GoogleNetworkSecuritySecurityProfileGroupConfig extends cdktf.T
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#labels GoogleNetworkSecuritySecurityProfileGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#labels GoogleNetworkSecuritySecurityProfileGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the security profile group.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#location GoogleNetworkSecuritySecurityProfileGroup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#location GoogleNetworkSecuritySecurityProfileGroup#location}
   */
   readonly location?: string;
   /**
   * The name of the security profile group resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#name GoogleNetworkSecuritySecurityProfileGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#name GoogleNetworkSecuritySecurityProfileGroup#name}
   */
   readonly name: string;
   /**
   * The name of the parent this security profile group belongs to.
   * Format: organizations/{organization_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#parent GoogleNetworkSecuritySecurityProfileGroup#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#parent GoogleNetworkSecuritySecurityProfileGroup#parent}
   */
   readonly parent?: string;
   /**
   * Reference to a SecurityProfile with the threat prevention configuration for the SecurityProfileGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#threat_prevention_profile GoogleNetworkSecuritySecurityProfileGroup#threat_prevention_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#threat_prevention_profile GoogleNetworkSecuritySecurityProfileGroup#threat_prevention_profile}
   */
   readonly threatPreventionProfile?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#timeouts GoogleNetworkSecuritySecurityProfileGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#timeouts GoogleNetworkSecuritySecurityProfileGroup#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecuritySecurityProfileGroupTimeouts;
 }
 export interface GoogleNetworkSecuritySecurityProfileGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#create GoogleNetworkSecuritySecurityProfileGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#create GoogleNetworkSecuritySecurityProfileGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#delete GoogleNetworkSecuritySecurityProfileGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#delete GoogleNetworkSecuritySecurityProfileGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#update GoogleNetworkSecuritySecurityProfileGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#update GoogleNetworkSecuritySecurityProfileGroup#update}
   */
   readonly update?: string;
 }
@@ -230,7 +242,7 @@ export class GoogleNetworkSecuritySecurityProfileGroupTimeoutsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group}
 */
 export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformResource {
 
@@ -246,7 +258,7 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
   * Generates CDKTF code for importing a GoogleNetworkSecuritySecurityProfileGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GoogleNetworkSecuritySecurityProfileGroup to import
-  * @param importFromId The id of the existing GoogleNetworkSecuritySecurityProfileGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GoogleNetworkSecuritySecurityProfileGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GoogleNetworkSecuritySecurityProfileGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,7 +270,7 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_network_security_security_profile_group google_network_security_security_profile_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +281,7 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
       terraformResourceType: 'google_network_security_security_profile_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '6.17.0',
+        providerVersion: '6.18.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -280,6 +292,8 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
       connection: config.connection,
       forEach: config.forEach
     });
+    this._customInterceptProfile = config.customInterceptProfile;
+    this._customMirroringProfile = config.customMirroringProfile;
     this._description = config.description;
     this._id = config.id;
     this._labels = config.labels;
@@ -297,6 +311,38 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // custom_intercept_profile - computed: false, optional: true, required: false
+  private _customInterceptProfile?: string; 
+  public get customInterceptProfile() {
+    return this.getStringAttribute('custom_intercept_profile');
+  }
+  public set customInterceptProfile(value: string) {
+    this._customInterceptProfile = value;
+  }
+  public resetCustomInterceptProfile() {
+    this._customInterceptProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customInterceptProfileInput() {
+    return this._customInterceptProfile;
+  }
+
+  // custom_mirroring_profile - computed: false, optional: true, required: false
+  private _customMirroringProfile?: string; 
+  public get customMirroringProfile() {
+    return this.getStringAttribute('custom_mirroring_profile');
+  }
+  public set customMirroringProfile(value: string) {
+    this._customMirroringProfile = value;
+  }
+  public resetCustomMirroringProfile() {
+    this._customMirroringProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMirroringProfileInput() {
+    return this._customMirroringProfile;
   }
 
   // description - computed: false, optional: true, required: false
@@ -452,6 +498,8 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      custom_intercept_profile: cdktf.stringToTerraform(this._customInterceptProfile),
+      custom_mirroring_profile: cdktf.stringToTerraform(this._customMirroringProfile),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -465,6 +513,18 @@ export class GoogleNetworkSecuritySecurityProfileGroup extends cdktf.TerraformRe
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      custom_intercept_profile: {
+        value: cdktf.stringToHclTerraform(this._customInterceptProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_mirroring_profile: {
+        value: cdktf.stringToHclTerraform(this._customMirroringProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
